@@ -55,23 +55,19 @@ func reset_pool(max_chunks: int):
 		multi.material_override = node_mat
 		chunk.add_child(multi)
 		
-		# Hide it initially (TEST B MODIFICATION: Keep visible, move out of frustum)
-		chunk.visible = true 
-		chunk.position.y = -1000.0
+		# Hide it initially
+		chunk.visible = false 
 		add_child(chunk)
 		pooled_chunks.append(chunk)
 
 func spawn_at_offset(_z_offset: float):
 	for chunk in pooled_chunks:
-		# Check custom state instead of visibility
-		if chunk.position.y == -1000.0: # Our "pooled" state marker
-			chunk.position.y = 0.0
+		if not chunk.visible:
 			chunk.position.z = _z_offset
+			chunk.visible = true
 			print("[CHUNK POOL] Activated chunk at Z: ", _z_offset)
 			return
 
 func recycle_chunk(_chunk_node: Node3D):
-	# Test B: Visibility Invariant. Do NOT touch visible flag.
-	# Move out of frustum temporarily to signify pooling without invalidating render state.
-	_chunk_node.position.y = -1000.0
+	_chunk_node.visible = false
 	print("[CHUNK POOL] Recycled chunk behind camera.")

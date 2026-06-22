@@ -23,8 +23,8 @@ func _ready():
 	chunk_pool.spawn_at_offset(-200.0)
 	
 	# Start flow
-	stream_controller.set_flow_speed(1.0)
+	stream_controller.set_flow_speed(0.0) # PROTOCOL 3: TEST B (Frozen Geometry)
 	
 	# Inform health monitor
 	health_monitor.push_context(health_monitor.ExecContext.CHUNK_STREAMING, true)
-	print("[BENCHMARK] Protocol 1 Active. Pure Chunk Streaming.")
+	print("[BENCHMARK] Protocol 3 Active. Frozen Geometry Movement.")
