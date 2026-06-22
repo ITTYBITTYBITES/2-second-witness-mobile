@@ -9,6 +9,10 @@ config/name="LiquidMemory_V2"
 run/main_scene="res://MainShell.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
+
 [autoload]
 
 NavigationEngine="*res://scripts/NavigationEngine.gd"
