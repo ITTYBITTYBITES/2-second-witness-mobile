@@ -1,6 +1,6 @@
 extends Node
 
-var session_start_time: int = 0
+var session_start_time: float = 0.0
 var total_loops: int = 0
 var spikes_completed: int = 0
 var spikes_failed: int = 0

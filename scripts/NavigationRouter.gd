@@ -11,8 +11,6 @@ func handle_navigation_event(event: Dictionary):
 		print("[ROUTER] Executing continuous scene shift to Destination: ", dest)
 		
 		# Vertical Slice v2: Weighted Scenario Rotation
-		# 50% Memory Cascade | 25% Pattern Continuation | 25% Rapid Classification
-		var roll = randi() % 5
 		var cascade_scene
 		
 		# 10 Cognitive Spikes (Milestone 1)

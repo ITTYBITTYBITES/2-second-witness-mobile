@@ -22,8 +22,8 @@ func reset_pool(max_chunks: int):
 		var torus = TorusMesh.new()
 		torus.inner_radius = 18.0
 		torus.outer_radius = 20.0
-		torus.rings = 6 # Make it hexagonal for the Science Lab vibe
-		torus.radial_segments = 32
+		torus.rings = 32 # Higher res for rings
+		torus.radial_segments = 6 # Make it hexagonal radially
 		main_ring.mesh = torus
 		main_ring.material_override = structure_mat
 		main_ring.rotation_degrees.x = 90 # Orient to fly *through* it

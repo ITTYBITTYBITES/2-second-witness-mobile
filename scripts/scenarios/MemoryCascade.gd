@@ -29,7 +29,7 @@ func _on_btn_pressed(val: int):
 			
 			# Delay slightly so user sees success before spatial ejection
 			SessionTracker.record_spike_result("memory_cascade", true)
-		await get_tree().create_timer(0.5).timeout
+			await get_tree().create_timer(0.5).timeout
 			completed.emit()
 			queue_free()
 	else:
