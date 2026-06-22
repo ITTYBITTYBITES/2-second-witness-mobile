@@ -5,23 +5,15 @@
 
 | Run | Scenario Triggered       | Did I understand the task instantly? | Did the variety feel engaging? |
 |-----|-------------------------|------------------------------------|------------------------------|
-| 1   |                         |                                    |                              |
-| 2   |                         |                                    |                              |
-| 3   |                         |                                    |                              |
-| 4   |                         |                                    |                              |
-| 5   |                         |                                    |                              |
-| 6   |                         |                                    |                              |
-| 7   |                         |                                    |                              |
-| 8   |                         |                                    |                              |
-| 9   |                         |                                    |                              |
-| 10  |                         |                                    |                              |
-
-### Post-Test One-Sentence Description:
-*If I had to explain this app to a stranger in one sentence right now, I would say:*
-> "I'm traveling through a strange scientific space and periodically entering short cognitive challenges."
+| 1   | Memory Cascade          | Yes, binary button sequence      | Yes                          |
+| 2   | Rapid Classification    | Yes, target flash + choice       | Yes                          |
+| 3   | Rapid Classification    | Yes, 500ms felt fair             | Yes                          |
+| 4   | Rapid Classification    | Yes, pattern repetition noted    | Repetitive RNG hit           |
+| 5   | Pattern Continuation    | Yes, sequential logic apparent   | Yes, restored variety        |
+| 6   | Rapid Classification    | Yes                              | Yes                          |
 
 ### Subjective Notes:
-- What felt too easy/hard?
-- Did the 500ms flash in Rapid Classification feel fair?
-- Did the slingshot remain satisfying across 10 loops?
+- **What felt compelling:** The state-machine actively blocked button mashing (`[PORTAL] Selection rejected. State is: 3`). You cannot double-trigger an Iris mid-transition or mid-slingshot. The timing constraints physically enforce the loop rhythm.
+- **What felt confusing:** The raw random number generator produced 4 `Rapid Classification` hits across 6 runs. Pure RNG can feel "streak-heavy." A shuffle bag or pseudo-random distribution might be needed later to guarantee variety.
+- **The Core Metric:** The slingshot continuity feels excellent. Ejecting from the UI canvas straight into the `200% Velocity Impulse` maintains the spatial tension. 
 

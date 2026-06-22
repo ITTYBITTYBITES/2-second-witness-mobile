@@ -4,10 +4,14 @@ func _ready():
 	print("[DEBUG] Forcing Giant Iris and Grid Floor for depth perception.")
 	
 	# Wait for boot to finish (increased to ensure it clears the boot lock)
-	await get_tree().create_timer(2.5).timeout
+	await get_tree().create_timer(3.0).timeout
 	
 	var world = get_tree().root.get_node_or_null("MainShell/WorldLayer")
-	if not world: return
+	if not world: 
+		print("[DEBUG ERROR] WorldLayer not found.")
+		return
+		
+	print("[DEBUG] Injecting visual geometry now...")
 	
 	# 1. Force Depth Cues (A receding Grid Floor)
 	var floor_mesh = PlaneMesh.new()

@@ -4,10 +4,14 @@
 [ext_resource type="PackedScene" path="res://scenes/TunnelLayer.tscn" id="2_tunnel"]
 [ext_resource type="Script" path="res://scripts/camera/CameraRig.gd" id="3_cam"]
 [ext_resource type="PackedScene" path="res://tests/harness/TelemetryOverlay.tscn" id="4_debug"]
+[ext_resource type="Script" path="res://tests/harness/force_input.gd" id="5_input"]
 [ext_resource type="Script" path="res://tests/harness/force_visuals.gd" id="6_vis"]
 
 [node name="MainShell" type="Node"]
 script = ExtResource("1_shell")
+
+[node name="DebugInputFallback" type="Node" parent="."]
+script = ExtResource("5_input")
 
 [node name="DebugVisuals" type="Node" parent="."]
 script = ExtResource("6_vis")
@@ -34,8 +38,7 @@ script = ExtResource("3_cam")
 
 [node name="Camera3D" type="Camera3D" parent="WorldLayer/CameraRig"]
 current = true
-
-[node name="MainShell" type="Node"]
+far = 1000.0
 
 [node name="UILayer" type="CanvasLayer" parent="."]
 
