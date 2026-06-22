@@ -11,6 +11,10 @@ enum ExecContext {
 	SCENARIO_ACTIVE = 8 
 }
 var active_contexts: int = ExecContext.IDLE
+var primary_context: int = ExecContext.IDLE # Deterministic causation tag
+
+# Persistence Intent for Resource Tracking
+enum PersistenceIntent { EPHEMERAL, CACHED, SHARED, PERSISTENT }
 
 # Android Hard Constraints
 const MEMORY_WARNING_MB = 900.0
@@ -26,7 +30,7 @@ var _buffer_indices: Dictionary = {}
 var _buffer_counts: Dictionary = {}
 
 # Resource Ownership Attribution (Causal Tracking)
-var _tracked_resources: Array[Dictionary] = [] # Array of {"tag": String, "ref": WeakRef}
+var _tracked_resources: Array[Dictionary] = [] # Array of {"tag": String, "ref": WeakRef, "intent": int}
 
 func _ready():
 	print("[HEALTH MONITOR] Online. Enforcing Android Budget Constraints.")
@@ -37,26 +41,31 @@ func _ready():
 		_buffer_indices[ctx] = 0
 		_buffer_counts[ctx] = 0
 
-func push_context(ctx: int):
+func push_context(ctx: int, is_primary: bool = false):
 	active_contexts |= ctx
-	active_contexts &= ~ExecContext.IDLE # Remove IDLE if we are doing work
+	active_contexts &= ~ExecContext.IDLE
+	if is_primary or primary_context == ExecContext.IDLE:
+		primary_context = ctx
 
 func pop_context(ctx: int):
 	active_contexts &= ~ctx
 	if active_contexts == 0:
 		active_contexts = ExecContext.IDLE
+		primary_context = ExecContext.IDLE
+	elif primary_context == ctx:
+		# Fallback arbitration: pick the lowest set bit as the new primary
+		primary_context = active_contexts & -active_contexts
 
-func track_allocation(resource: Resource, owner_tag: String):
-	_tracked_resources.append({"tag": owner_tag, "ref": weakref(resource)})
+func track_allocation(resource: Resource, owner_tag: String, intent: int = PersistenceIntent.EPHEMERAL):
+	_tracked_resources.append({"tag": owner_tag, "ref": weakref(resource), "intent": intent})
 
 func _process(delta):
-	# Push to all currently active segment buffers (solves context aliasing)
-	for ctx in [1, 2, 4, 8]:
-		if (active_contexts & ctx) != 0:
-			var idx = _buffer_indices[ctx]
-			_frame_buffers[ctx][idx] = delta
-			_buffer_indices[ctx] = (idx + 1) % BUFFER_SIZE
-			_buffer_counts[ctx] = min(_buffer_counts[ctx] + 1, BUFFER_SIZE)
+	# Push to primary segment buffer (Solves context aliasing/causation duality)
+	# We index by primary_context to ensure deterministic regression mapping
+	var idx = _buffer_indices[primary_context]
+	_frame_buffers[primary_context][idx] = delta
+	_buffer_indices[primary_context] = (idx + 1) % BUFFER_SIZE
+	_buffer_counts[primary_context] = min(_buffer_counts[primary_context] + 1, BUFFER_SIZE)
 
 	var mem_mb = OS.get_static_memory_usage() / 1048576.0
 	var fps = Engine.get_frames_per_second()
@@ -69,7 +78,7 @@ func _process(delta):
 	else:
 		_degrade_timer = max(0.0, _degrade_timer - delta)
 
-# Quiescence-Gated Dump (Ensures event atomicity)
+# Quiescence-Gated Dump (CPU boundary only - GPU in-flight unverified)
 func queue_telemetry_dump(event_trigger: String):
 	# Await two frames to guarantee the Godot MessageQueue, deferred calls, and signals have fully drained
 	await get_tree().process_frame
@@ -79,14 +88,14 @@ func queue_telemetry_dump(event_trigger: String):
 func _execute_dump(event_trigger: String):
 	var mem_mb = OS.get_static_memory_usage() / 1048576.0
 	
-	# Evaluate Resource Leak Attribution
+	# Evaluate Resource Leak Attribution by Intent
 	var active_tags = {}
 	var alive_resources = []
 	for item in _tracked_resources:
 		if item["ref"].get_ref():
 			alive_resources.append(item)
-			var tag = item["tag"]
-			active_tags[tag] = active_tags.get(tag, 0) + 1
+			var tag_intent = item["tag"] + " [" + PersistenceIntent.keys()[item["intent"]] + "]"
+			active_tags[tag_intent] = active_tags.get(tag_intent, 0) + 1
 	_tracked_resources = alive_resources # Prune dead weakrefs
 	
 	print("\n=== [TELEMETRY DUMP: %s] ===" % event_trigger)
@@ -112,6 +121,7 @@ func _execute_dump(event_trigger: String):
 		var p50 = samples[int(count * 0.5)] * 1000.0
 		var p95 = samples[int(count * 0.95)] * 1000.0
 		var p99 = samples[int(count * 0.99)] * 1000.0
+		var sample_density = count / total_time_sec if total_time_sec > 0 else 0.0
 		
 		# Map bitmask back to name
 		var ctx_name = "UNKNOWN"
@@ -121,8 +131,8 @@ func _execute_dump(event_trigger: String):
 			4: ctx_name = "TRANSITION"
 			8: ctx_name = "SCENARIO_ACTIVE"
 		
-		# Time-Normalized Reporting prevents overwrite blindness distortion
-		print("Context [%s] (Window: %.2fs) -> P50: %.2fms | P95: %.2fms | P99: %.2fms" % [ctx_name, total_time_sec, p50, p95, p99])
+		# Fully Normalized Schema Output
+		print("Context [%s] | Span: %.2fs | Density: %.1fHz -> P50: %.2fms | P95: %.2fms | P99: %.2fms" % [ctx_name, total_time_sec, sample_density, p50, p95, p99])
 	
 	print("==================================\n")
 
