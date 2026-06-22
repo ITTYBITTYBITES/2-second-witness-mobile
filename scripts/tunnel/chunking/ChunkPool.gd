@@ -13,7 +13,12 @@ func reset_pool(max_chunks: int):
 	var structure_mat = load("res://assets/materials/lab_structure.tres")
 	var node_mat = load("res://assets/materials/lab_data_node.tres")
 	
-	for i in range(max_chunks):
+	var approved = FidelityEnforcer.request_allocation(FidelityEnforcer.ResourceType.MULTIMESH_INSTANCE, max_chunks, "ChunkPool")
+	if approved == 0:
+		print("[CHUNK POOL ERROR] Cannot pool chunks. Budget denied.")
+		return
+	
+	for i in range(approved):
 		var chunk = Node3D.new()
 		chunk.name = "Chunk_" + str(i)
 		
