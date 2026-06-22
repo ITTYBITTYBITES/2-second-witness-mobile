@@ -41,6 +41,10 @@ func check_monetization_gate() -> bool:
 	return true
 
 func _on_input_event(_camera, event, _position, _normal, _shape_idx):
+	# Handle both Mouse Clicks (PC) and Touch Screen taps (Android)
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		print("[IRIS] Touched! Initiating transition.")
+		print("[IRIS] Mouse Clicked! Initiating transition.")
+		select_portal()
+	elif event is InputEventScreenTouch and event.pressed:
+		print("[IRIS] Screen Touched! Initiating transition.")
 		select_portal()
