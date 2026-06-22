@@ -9,31 +9,50 @@ func reset_pool(max_chunks: int):
 		child.queue_free()
 	pooled_chunks.clear()
 
-	# Create debug geometric representation
-	var debug_mesh = BoxMesh.new()
-	var debug_mat = StandardMaterial3D.new()
-	debug_mat.albedo_color = Color(0.5, 0.5, 0.5) # Gray boxes
-	debug_mesh.material = debug_mat
-	debug_mesh.size = Vector3(5, 5, 5)
+	# Replace debug boxes with Science Lab structural rings
+	var structure_mat = load("res://assets/materials/lab_structure.tres")
+	var node_mat = load("res://assets/materials/lab_data_node.tres")
 	
 	for i in range(max_chunks):
 		var chunk = Node3D.new()
 		chunk.name = "Chunk_" + str(i)
 		
-		# Give it actual multi-mesh placeholder data for visual verification
+		# Inner Hexagonal Structural Ring (Torus)
+		var main_ring = MeshInstance3D.new()
+		var torus = TorusMesh.new()
+		torus.inner_radius = 18.0
+		torus.outer_radius = 20.0
+		torus.rings = 6 # Make it hexagonal for the Science Lab vibe
+		torus.radial_segments = 32
+		main_ring.mesh = torus
+		main_ring.material_override = structure_mat
+		main_ring.rotation_degrees.x = 90 # Orient to fly *through* it
+		chunk.add_child(main_ring)
+		
+		# MultiMesh for floating data nodes inside the ring
 		var multi = MultiMeshInstance3D.new()
 		var mm = MultiMesh.new()
 		mm.transform_format = MultiMesh.TRANSFORM_3D
-		mm.mesh = debug_mesh
-		mm.instance_count = 5 # 5 debug boxes per chunk
+		var sphere = SphereMesh.new()
+		sphere.radius = 0.2
+		sphere.height = 0.4
+		sphere.radial_segments = 8
+		sphere.rings = 4
+		mm.mesh = sphere
+		mm.instance_count = 15
 		
-		# Layout 5 boxes loosely
-		for j in range(5):
+		# Scatter the data nodes along the inner perimeter
+		for j in range(15):
 			var pos = Transform3D()
-			pos = pos.translated(Vector3(randf_range(-10, 10), randf_range(-5, 5), randf_range(-20, 20)))
+			# Random point in a ring shape
+			var angle = randf() * TAU
+			var radius = randf_range(8.0, 16.0)
+			var z_drift = randf_range(-10.0, 10.0)
+			pos = pos.translated(Vector3(cos(angle) * radius, sin(angle) * radius, z_drift))
 			mm.set_instance_transform(j, pos)
 			
 		multi.multimesh = mm
+		multi.material_override = node_mat
 		chunk.add_child(multi)
 		
 		# Hide it initially

@@ -15,24 +15,29 @@ func handle_navigation_event(event: Dictionary):
 		var roll = randi() % 5
 		var cascade_scene
 		
-		# Expanded Cognitive Spike Array
-		# 0: Memory Cascade
-		# 1: Pattern Continuation
-		# 2: Rapid Classification
-		# 3: Spatial Recall (Memory)
-		# 4: Math Surprise (Novelty)
-		var roll = randi() % 5
+		# 10 Cognitive Spikes (Milestone 1)
+		var roll = randi() % 10
 		
 		if roll == 0:
 			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
 		elif roll == 1:
-			cascade_scene = preload("res://scenes/scenarios/PatternContinuation.tscn")
-		elif roll == 2:
-			cascade_scene = preload("res://scenes/scenarios/RapidClassification.tscn")
-		elif roll == 3:
 			cascade_scene = preload("res://scenes/scenarios/SpatialRecall.tscn")
-		else:
+		elif roll == 2:
+			cascade_scene = preload("res://scenes/scenarios/SequenceReverse.tscn")
+		elif roll == 3:
+			cascade_scene = preload("res://scenes/scenarios/PatternContinuation.tscn")
+		elif roll == 4:
+			cascade_scene = preload("res://scenes/scenarios/OddOneOut.tscn")
+		elif roll == 5:
+			cascade_scene = preload("res://scenes/scenarios/StroopTest.tscn")
+		elif roll == 6:
+			cascade_scene = preload("res://scenes/scenarios/RapidClassification.tscn")
+		elif roll == 7:
+			cascade_scene = preload("res://scenes/scenarios/SpeedSort.tscn")
+		elif roll == 8:
 			cascade_scene = preload("res://scenes/scenarios/MathSurprise.tscn")
+		else:
+			cascade_scene = preload("res://scenes/scenarios/ReflexTap.tscn")
 			
 		var cascade = cascade_scene.instantiate()
 		
