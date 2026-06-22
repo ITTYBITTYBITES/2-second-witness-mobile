@@ -6,7 +6,7 @@ config_version=5
 [application]
 
 config/name="LiquidMemory_V2"
-run/main_scene="res://MainShell.tscn"
+run/main_scene="res://benchmark/benchmark_protocol_1.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 
 [rendering]
@@ -15,13 +15,3 @@ textures/vram_compression/import_etc2_astc=true
 
 [autoload]
 
-NavigationEngine="*res://scripts/NavigationEngine.gd"
-
-NavigationRouter="*res://scripts/NavigationRouter.gd"
-ThemeManager="*res://scripts/ThemeManager.gd"
-ContentRegistry="*res://scripts/content/ContentRegistry.gd"
-ContentLoader="*res://scripts/content/ContentLoader.gd"
-SystemHealthMonitor="*res://scripts/system/SystemHealthMonitor.gd"
-ContentSnapshotManager="*res://scripts/system/deployment/ContentSnapshotManager.gd"
-SessionTracker="*res://scripts/system/SessionTracker.gd"
-GitHubSyncManager="*res://scripts/content/GitHubSyncManager.gd"

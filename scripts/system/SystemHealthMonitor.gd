@@ -70,13 +70,14 @@ func _process(delta):
 	var mem_mb = OS.get_static_memory_usage() / 1048576.0
 	var fps = Engine.get_frames_per_second()
 	
-	if fps < FPS_MINIMUM or mem_mb > MEMORY_WARNING_MB:
-		_degrade_timer += delta
-		if _degrade_timer > 3.0:
-			_degrade_quality()
-			_degrade_timer = 0.0
-	else:
-		_degrade_timer = max(0.0, _degrade_timer - delta)
+	# DISABLED FOR PROTOCOL 1 BENCHMARK PURITY
+	# if fps < FPS_MINIMUM or mem_mb > MEMORY_WARNING_MB:
+	# 	_degrade_timer += delta
+	# 	if _degrade_timer > 3.0:
+	# 		_degrade_quality()
+	# 		_degrade_timer = 0.0
+	# else:
+	# 	_degrade_timer = max(0.0, _degrade_timer - delta)
 
 # Quiescence-Gated Dump (CPU boundary only - GPU in-flight unverified)
 func queue_telemetry_dump(event_trigger: String):
@@ -98,11 +99,12 @@ func _execute_dump(event_trigger: String):
 			active_tags[tag_intent] = active_tags.get(tag_intent, 0) + 1
 	_tracked_resources = alive_resources # Prune dead weakrefs
 	
-	print("\n=== [TELEMETRY DUMP: %s] ===" % event_trigger)
-	print("Static Memory: %.2fMB" % mem_mb)
-	
-	if not active_tags.is_empty():
-		print("Active Custom Allocations: ", JSON.stringify(active_tags))
+	var dump_data = {
+		"event": event_trigger,
+		"static_memory_mb": mem_mb,
+		"active_custom_allocations": active_tags,
+		"contexts": {}
+	}
 	
 	for ctx in [1, 2, 4, 8]:
 		var count = _buffer_counts[ctx]
@@ -130,11 +132,23 @@ func _execute_dump(event_trigger: String):
 			2: ctx_name = "CHUNK_STREAMING"
 			4: ctx_name = "TRANSITION"
 			8: ctx_name = "SCENARIO_ACTIVE"
-		
-		# Fully Normalized Schema Output
-		print("Context [%s] | Span: %.2fs | Density: %.1fHz -> P50: %.2fms | P95: %.2fms | P99: %.2fms" % [ctx_name, total_time_sec, sample_density, p50, p95, p99])
+			
+		dump_data["contexts"][ctx_name] = {
+			"span_sec": total_time_sec,
+			"density_hz": sample_density,
+			"p50_ms": p50,
+			"p95_ms": p95,
+			"p99_ms": p99
+		}
 	
-	print("==================================\n")
+	var filename = "user://protocol1_run_%d.txt" % Time.get_unix_time_from_system()
+	var file = FileAccess.open(filename, FileAccess.WRITE)
+	if file:
+		file.store_string(JSON.stringify(dump_data, "\t"))
+		file.close()
+		print("[TELEMETRY] Successfully wrote dump to ", filename)
+	else:
+		print("[TELEMETRY ERROR] Failed to write dump to file.")
 
 func _degrade_quality():
 	if current_profile == PerformanceProfile.HIGH:

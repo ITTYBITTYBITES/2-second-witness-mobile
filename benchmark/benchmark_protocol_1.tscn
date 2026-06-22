@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bench1"]
+
+[ext_resource type="Script" path="res://benchmark/benchmark_protocol_1.gd" id="1_bench"]
+[ext_resource type="Script" path="res://scripts/tunnel/chunking/ChunkPool.gd" id="2_pool"]
+[ext_resource type="Script" path="res://scripts/tunnel/chunking/StreamController.gd" id="3_stream"]
+[ext_resource type="Script" path="res://scripts/system/SystemHealthMonitor.gd" id="4_health"]
+
+[node name="BenchmarkProtocol1" type="Node3D"]
+script = ExtResource("1_bench")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+far = 1000.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 10, 0)
+light_energy = 2.0
+
+[node name="ChunkPool" type="Node" parent="."]
+script = ExtResource("2_pool")
+
+[node name="StreamController" type="Node" parent="."]
+script = ExtResource("3_stream")
+
+[node name="SystemHealthMonitor" type="Node" parent="."]
+script = ExtResource("4_health")
