@@ -4,9 +4,15 @@
 [ext_resource type="PackedScene" path="res://scenes/TunnelLayer.tscn" id="2_tunnel"]
 [ext_resource type="Script" path="res://scripts/camera/CameraRig.gd" id="3_cam"]
 [ext_resource type="PackedScene" path="res://tests/harness/TelemetryOverlay.tscn" id="4_debug"]
+[ext_resource type="Script" path="res://tests/harness/force_input.gd" id="5_input"]
+
+[ext_resource type="Script" path="res://tests/harness/force_visuals.gd" id="6_vis"]
 
 [node name="MainShell" type="Node"]
 script = ExtResource("1_shell")
+
+[node name="DebugVisuals" type="Node" parent="."]
+script = ExtResource("6_vis")
 
 [node name="SystemLayer" type="Node" parent="."]
 __meta__ = { "_editor_description_": "BOOT STRAP ONLY. Owns global state wiring." }
@@ -15,7 +21,9 @@ __meta__ = { "_editor_description_": "BOOT STRAP ONLY. Owns global state wiring.
 
 [node name="TunnelLayer" parent="WorldLayer" instance=ExtResource("2_tunnel")]
 
-[node name="EnvironmentController" type="Node3D" parent="WorldLayer"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldLayer"]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 10, 0)
+light_energy = 2.0
 
 [node name="CameraRig" type="Node3D" parent="WorldLayer"]
 script = ExtResource("3_cam")
@@ -27,6 +35,10 @@ script = ExtResource("3_cam")
 [node name="TransitionAnimator" type="Node" parent="WorldLayer/CameraRig"]
 
 [node name="Camera3D" type="Camera3D" parent="WorldLayer/CameraRig"]
+current = true
+
+[node name="DebugInputFallback" type="Node" parent="."]
+script = ExtResource("5_input")
 
 [node name="UILayer" type="CanvasLayer" parent="."]
 

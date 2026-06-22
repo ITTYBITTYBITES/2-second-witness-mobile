@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://memorycascade"]
+
+[ext_resource type="Script" path="res://scripts/scenarios/MemoryCascade.gd" id="1_cascade"]
+
+[node name="MemoryCascade" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_cascade")
+
+[node name="VoidBG" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.04, 0.04, 0.06, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -50.0
+offset_right = 200.0
+offset_bottom = 50.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="BtnLeft" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "LEFT"
+
+[node name="BtnCenter" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "CENTER"
+
+[node name="BtnRight" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "RIGHT"
+
+[node name="FeedbackLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -150.0
+offset_right = 200.0
+offset_bottom = -100.0
+horizontal_alignment = 1
+vertical_alignment = 1

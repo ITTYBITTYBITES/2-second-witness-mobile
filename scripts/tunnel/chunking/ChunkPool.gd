@@ -11,7 +11,10 @@ func reset_pool(max_chunks: int):
 
 	# Create debug geometric representation
 	var debug_mesh = BoxMesh.new()
-	debug_mesh.size = Vector3(10, 1, 10)
+	var debug_mat = StandardMaterial3D.new()
+	debug_mat.albedo_color = Color(0.5, 0.5, 0.5) # Gray boxes
+	debug_mesh.material = debug_mat
+	debug_mesh.size = Vector3(5, 5, 5)
 	
 	for i in range(max_chunks):
 		var chunk = Node3D.new()

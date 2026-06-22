@@ -9,7 +9,22 @@ func handle_navigation_event(event: Dictionary):
 	if event.get("type") == "portal_selected":
 		var dest = event.get("destination", {})
 		print("[ROUTER] Executing continuous scene shift to Destination: ", dest)
+		
+		# UGLY LOOP IMPLEMENTATION: Instantiating the cognitive spike overlay
+		var cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
+		var cascade = cascade_scene.instantiate()
+		
+		# Attach to World Layer to visually suppress the tunnel
+		var world_layer = get_tree().root.get_node("MainShell/WorldLayer")
+		if world_layer:
+			world_layer.add_child(cascade)
+			cascade.completed.connect(_on_cascade_completed)
 		emit_signal("routed_to", dest)
-		# Future: Actual Godot change_scene_to_file logic to the World Layer goes here
 	else:
 		print("[ROUTER] Unknown routing event: ", event)
+
+func _on_cascade_completed():
+	print("[ROUTER] Cognitive Spike resolved. Passing control back to Tunnel for Slingshot.")
+	var tunnel = get_tree().root.get_node("MainShell/WorldLayer/TunnelLayer")
+	if tunnel and tunnel.has_method("trigger_slingshot"):
+		tunnel.trigger_slingshot()

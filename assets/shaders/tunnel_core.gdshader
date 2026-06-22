@@ -49,7 +49,7 @@ void fragment() {
     
     // Cheap vignette without length() cost
     float dist = distance(uv, vec2(0.5));
-    col.rgb *= smoothstep(0.8, 0.2, dist);
+    col.rgb *= smoothstep(0.9, 0.1, dist);
 
     COLOR = col;
 }
