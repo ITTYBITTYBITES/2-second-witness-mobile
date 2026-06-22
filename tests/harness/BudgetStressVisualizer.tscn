@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://budgetvis"]
+
+[ext_resource type="Script" path="res://scripts/system/debug/BudgetStressVisualizer.gd" id="1_vis"]
+
+[node name="BudgetStressVisualizer" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_vis")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 300.0
+offset_bottom = 200.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TierLabel" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Active Tier: MID"
+
+[node name="LabelMM" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "MultiMesh Pressure:"
+
+[node name="PressureBarMM" type="TextureProgressBar" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+nine_patch_stretch = true
+
+[node name="LabelPT" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Particle Pressure:"
+
+[node name="PressureBarPT" type="TextureProgressBar" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+nine_patch_stretch = true
+
+[node name="ViolationLabel" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Violations Blocked: 0"
