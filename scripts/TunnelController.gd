@@ -49,6 +49,7 @@ func _on_theme_applied(theme_data: Dictionary):
 
 func _on_transition_started():
 	print("[TUNNEL CORE] Transition Sequence: Slowing tunnel speed, fading non-selected portals...")
+	SystemHealthMonitor.set_context(SystemHealthMonitor.ExecContext.TRANSITION)
 	# Logic to interpolate speed_multiplier to a crawl (e.g. 0.1x)
 	# Logic to dispatch portal expansion
 

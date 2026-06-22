@@ -50,6 +50,8 @@ func handle_navigation_event(event: Dictionary):
 
 func _on_cascade_completed():
 	print("[ROUTER] Cognitive Spike resolved. Passing control back to Tunnel for Slingshot.")
+	SystemHealthMonitor.set_context(SystemHealthMonitor.ExecContext.IDLE)
+	SystemHealthMonitor.dump_telemetry("Post-Scenario Return")
 	var tunnel = get_tree().root.get_node("MainShell/WorldLayer/TunnelLayer")
 	if tunnel and tunnel.has_method("trigger_slingshot"):
 		tunnel.trigger_slingshot()
