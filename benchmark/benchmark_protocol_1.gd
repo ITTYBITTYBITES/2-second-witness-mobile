@@ -22,9 +22,12 @@ func _ready():
 	chunk_pool.spawn_at_offset(-150.0)
 	chunk_pool.spawn_at_offset(-200.0)
 	
-	# Start flow
-	stream_controller.set_flow_speed(0.0) # PROTOCOL 3: TEST B (Frozen Geometry)
+	# Start flow (Restore Protocol 1 Movement)
+	stream_controller.set_flow_speed(1.0) 
+	
+	# PROTOCOL 4: TEST B (Uncoupled Swapchain)
+	DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
 	
 	# Inform health monitor
 	health_monitor.push_context(health_monitor.ExecContext.CHUNK_STREAMING, true)
-	print("[BENCHMARK] Protocol 3 Active. Frozen Geometry Movement.")
+	print("[BENCHMARK] Protocol 4 Active. V-Sync Disabled. Swapchain Uncoupled.")
