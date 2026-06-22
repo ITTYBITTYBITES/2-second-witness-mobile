@@ -39,9 +39,12 @@ func _on_answer(chose_organic: bool):
 		btn_organic.disabled = true
 		btn_mechanical.disabled = true
 		
+		SessionTracker.record_spike_result("rapid_classification", true)
+		
 		await get_tree().create_timer(0.5).timeout
 		completed.emit()
 		queue_free()
 	else:
 		print("[RAPID CLASSIFICATION] Error. Resetting.")
+		SessionTracker.record_spike_result("rapid_classification", false)
 		feedback_label.text = "ERROR! Try again."

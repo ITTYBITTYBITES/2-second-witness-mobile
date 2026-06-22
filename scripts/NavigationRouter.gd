@@ -12,15 +12,27 @@ func handle_navigation_event(event: Dictionary):
 		
 		# Vertical Slice v2: Weighted Scenario Rotation
 		# 50% Memory Cascade | 25% Pattern Continuation | 25% Rapid Classification
-		var roll = randf()
+		var roll = randi() % 5
 		var cascade_scene
 		
-		if roll < 0.5:
+		# Expanded Cognitive Spike Array
+		# 0: Memory Cascade
+		# 1: Pattern Continuation
+		# 2: Rapid Classification
+		# 3: Spatial Recall (Memory)
+		# 4: Math Surprise (Novelty)
+		var roll = randi() % 5
+		
+		if roll == 0:
 			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
-		elif roll < 0.75:
+		elif roll == 1:
 			cascade_scene = preload("res://scenes/scenarios/PatternContinuation.tscn")
-		else:
+		elif roll == 2:
 			cascade_scene = preload("res://scenes/scenarios/RapidClassification.tscn")
+		elif roll == 3:
+			cascade_scene = preload("res://scenes/scenarios/SpatialRecall.tscn")
+		else:
+			cascade_scene = preload("res://scenes/scenarios/MathSurprise.tscn")
 			
 		var cascade = cascade_scene.instantiate()
 		

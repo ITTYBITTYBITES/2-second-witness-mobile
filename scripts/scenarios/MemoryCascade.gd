@@ -28,10 +28,12 @@ func _on_btn_pressed(val: int):
 			feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
 			
 			# Delay slightly so user sees success before spatial ejection
-			await get_tree().create_timer(0.5).timeout
+			SessionTracker.record_spike_result("memory_cascade", true)
+		await get_tree().create_timer(0.5).timeout
 			completed.emit()
 			queue_free()
 	else:
 		print("[MEMORY CASCADE] Error. Resetting.")
 		feedback_label.text = "ERROR! Resetting."
+		SessionTracker.record_spike_result("memory_cascade", false)
 		current_step = 0

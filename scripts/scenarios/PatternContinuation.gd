@@ -30,9 +30,12 @@ func _on_answer(is_correct: bool):
 		btn_a.disabled = true
 		btn_b.disabled = true
 		
+		SessionTracker.record_spike_result("pattern_continuation", true)
+		
 		await get_tree().create_timer(0.5).timeout
 		completed.emit()
 		queue_free()
 	else:
 		print("[PATTERN CONTINUATION] Error. Resetting.")
+		SessionTracker.record_spike_result("pattern_continuation", false)
 		feedback_label.text = "ERROR! Try again."
