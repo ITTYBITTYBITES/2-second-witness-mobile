@@ -10,8 +10,18 @@ func handle_navigation_event(event: Dictionary):
 		var dest = event.get("destination", {})
 		print("[ROUTER] Executing continuous scene shift to Destination: ", dest)
 		
-		# UGLY LOOP IMPLEMENTATION: Instantiating the cognitive spike overlay
-		var cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
+		# Vertical Slice v2: Weighted Scenario Rotation
+		# 50% Memory Cascade | 25% Pattern Continuation | 25% Rapid Classification
+		var roll = randf()
+		var cascade_scene
+		
+		if roll < 0.5:
+			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
+		elif roll < 0.75:
+			cascade_scene = preload("res://scenes/scenarios/PatternContinuation.tscn")
+		else:
+			cascade_scene = preload("res://scenes/scenarios/RapidClassification.tscn")
+			
 		var cascade = cascade_scene.instantiate()
 		
 		# Attach to World Layer to visually suppress the tunnel

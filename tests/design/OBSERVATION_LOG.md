@@ -1,28 +1,27 @@
-# VERTICAL SLICE V1 - BEHAVIORAL OBSERVATION LOG
+# VERTICAL SLICE V2 - DEPTH & VARIETY OBSERVATION LOG
 
-## Date: 2026-06-22
-## Loops Completed: 2
+## Goal: 10-Loop Replayability Test
+**Focus:** Does the weighted uncertainty (Memory, Pattern, Classification) keep the loop interesting without needing instructions? Can the player describe the app simply after 10 runs?
 
-### 1. What I built today:
-- Locked the architecture and ran the first visual vertical slice in Godot 4.6.
-- Spawned the Giant Crystalline Iris, the Depth Ribs, and the Memory Cascade overlay.
+| Run | Scenario Triggered       | Did I understand the task instantly? | Did the variety feel engaging? |
+|-----|-------------------------|------------------------------------|------------------------------|
+| 1   |                         |                                    |                              |
+| 2   |                         |                                    |                              |
+| 3   |                         |                                    |                              |
+| 4   |                         |                                    |                              |
+| 5   |                         |                                    |                              |
+| 6   |                         |                                    |                              |
+| 7   |                         |                                    |                              |
+| 8   |                         |                                    |                              |
+| 9   |                         |                                    |                              |
+| 10  |                         |                                    |                              |
 
-### 2. What I expected to feel:
-- Expected the tunnel to feel like a space rather than a flat shader.
-- Expected the transition from the Iris to the Memory Cascade to feel instantaneous.
-- Expected the slingshot to feel propulsive upon return.
+### Post-Test One-Sentence Description:
+*If I had to explain this app to a stranger in one sentence right now, I would say:*
+> "I'm traveling through a strange scientific space and periodically entering short cognitive challenges."
 
-### 3. What I actually felt:
-- The Spacebar fallback worked perfectly. The Void opened immediately.
-- Clicking the buttons (Center -> Right -> Left) successfully triggered the 200% Velocity Slingshot.
-- The next Iris spawned exactly when the slingshot stabilized, creating a seamless second loop.
+### Subjective Notes:
+- What felt too easy/hard?
+- Did the 500ms flash in Rapid Classification feel fair?
+- Did the slingshot remain satisfying across 10 loops?
 
-### 4. What felt confusing:
-- Mouse picking for 3D physics remains slightly inconsistent in the debug environment, requiring the Spacebar hook.
-
-### 5. What felt compelling:
-- The closed behavioral loop actually works. The system cleans up the memory cascade, accelerates the tunnel, and spawns the next target without breaking the scene.
-
-### 6. Why I stopped playing (e.g., bored at loop 7, fatigue, bug):
-- Stopped after 2 loops to verify the exact log output. The momentum mechanic proves the design holds.
----
