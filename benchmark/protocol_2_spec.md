@@ -1,23 +1,23 @@
-# PROTOCOL 2: VISIBILITY SYNCHRONIZATION SATURATION
+# PROTOCOL 2: VISIBILITY SYNCHRONIZATION SATURATION (REVISED)
 
 **Objective:**
-Isolate and confirm whether the P99 tail-latency spikes observed in Protocol 1 (18.0ms - 19.5ms) are caused by pipeline synchronization barriers triggered by Chunk visibility state toggling.
+Isolate and confirm whether the P99 tail-latency spikes observed in Protocol 1 are caused by render state invalidation (triggered by Chunk `visible` toggling), or if they are inherent to continuous spatial graph updates (movement/transform propagation).
 
 **Hypothesis:**
-The CPU is stable, but `chunk.visible = true` / `chunk.visible = false` forces the Godot rendering engine to rebuild spatial partitions and flush the Vulkan command buffer, causing a transient pipeline stall that surfaces as a P99 CPU frame-time spike.
+Toggling `chunk.visible = true / false` forces the Godot rendering engine to flush the Vulkan command buffer and rebuild spatial occlusion state, causing a transient pipeline stall that surfaces as a P99 CPU frame-time spike.
 
 **Experimental Invariants:**
-1. Maintain Protocol 1 invariants (Cold start, 60fps cap, Seed 12345, No UI/Network/Game logic).
-2. Maintain identical geometry and material complexity.
+1. Maintain Protocol 1 invariants (Cold start, 60fps cap, Seed 12345).
+2. **CRITICAL:** Maintain identical spatial movement, transform updates, and pooling logic. Chunks must still physically traverse the `+Z` axis exactly as they did in Protocol 1.
 
 **The Perturbation (Independent Variable):**
-- **Test A (Baseline Repeat):** Standard streaming. Chunks toggle visibility at bounds (-150z and +50z).
-- **Test B (Always Visible):** Chunks NEVER toggle `visible = false`. They are simply teleported from +50z back to -150z while remaining fully visible to the renderer the entire time.
+- **Test A (Baseline Repeat):** Chunks toggle visibility at bounds (-150z and +50z).
+- **Test B (Visibility Invariant Movement):** Chunks are moved and recycled exactly as in Test A, but the `visible` property is NEVER toggled. They remain `visible = true` continuously, even when pooled behind the camera.
 
 **Expected Falsification:**
-If Test B eliminates the P99 spikes (dropping them closer to P95 bounds ~16.8ms), the hypothesis is confirmed: visibility toggling is the root cause of the pipeline stall.
-If Test B produces identical or worse P99 spikes, the hypothesis is falsified, and the stall is likely a Vulkan driver memory-transfer artifact during transform updates, not a spatial partition rebuild.
+- **If Test B eliminates P99 spikes:** The hypothesis is confirmed. Render state invalidation (visibility toggling) is the root cause of the pipeline stall.
+- **If Test B retains P99 spikes:** The hypothesis is falsified. The stall is NOT caused by visibility toggling, but is instead inherent to continuous spatial transform updates or driver batching thresholds.
 
 ---
 **Execution:**
-Modify `StreamController.gd` to teleport chunks without touching the `visible` property. Run 5 iterations of Test B.
+Modify `StreamController.gd` and `ChunkPool.gd` to completely ignore `chunk.visible = false` during the `recycle_chunk` phase, while keeping transform translation identical. Run 5 iterations of Test B.
