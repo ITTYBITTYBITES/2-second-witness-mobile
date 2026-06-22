@@ -16,7 +16,7 @@ func _process(delta):
 	var max_z = 0.0
 	
 	for chunk in chunk_pool.pooled_chunks:
-		if chunk.visible:
+		if chunk.position.y == 0.0: # Check "active" state instead of visibility
 			chunk.position.z += movement
 			if chunk.position.z > cull_threshold_z:
 				chunk_pool.recycle_chunk(chunk)
@@ -25,7 +25,7 @@ func _process(delta):
 	
 	# Spawn a new chunk ahead if needed
 	for chunk in chunk_pool.pooled_chunks:
-		if not chunk.visible:
+		if chunk.position.y == -1000.0: # Check "pooled" state
 			if max_z > spawn_threshold_z:
 				chunk_pool.spawn_at_offset(max_z - 50.0)
 				break
