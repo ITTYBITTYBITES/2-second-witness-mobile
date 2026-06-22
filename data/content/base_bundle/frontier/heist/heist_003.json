@@ -1,0 +1,27 @@
+{
+    "id": "heist_003",
+    "universe": "frontier",
+    "world": "heist",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TUNNEL",
+        "legacy_prompt": "Underground passage discovered leading to bank vault.",
+        "correct_answer": "Tunnel Robbery",
+        "wrong_answers": [
+            "Inside Job",
+            "Smash and Grab",
+            "Armed Robbery"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

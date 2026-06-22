@@ -1,0 +1,27 @@
+{
+    "id": "crime_012",
+    "universe": "society_mind",
+    "world": "crime",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MOTIVE",
+        "legacy_prompt": "Financial benefit from a person's death.",
+        "correct_answer": "Insurance Motive",
+        "wrong_answers": [
+            "Revenge",
+            "Jealousy",
+            "Cover-up"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

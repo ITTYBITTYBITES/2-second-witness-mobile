@@ -1,0 +1,27 @@
+{
+    "id": "telecom_006",
+    "universe": "tech_ops",
+    "world": "telecom",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ENCRYPT",
+        "legacy_prompt": "Scrambling voice data so only intended receiver can hear.",
+        "correct_answer": "End-to-End Encryption",
+        "wrong_answers": [
+            "Compression",
+            "Encoding",
+            "Modulation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

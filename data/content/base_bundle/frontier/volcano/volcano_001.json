@@ -1,0 +1,27 @@
+{
+    "id": "volcano_001",
+    "universe": "frontier",
+    "world": "volcano",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "LAVA",
+        "legacy_prompt": "Molten rock flowing down the side of a mountain.",
+        "correct_answer": "Lava Flow",
+        "wrong_answers": [
+            "Pyroclastic Flow",
+            "Lahar",
+            "Mudslide"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

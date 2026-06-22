@@ -1,0 +1,27 @@
+{
+    "id": "food_006",
+    "universe": "life_sciences",
+    "world": "food",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "KNIFE",
+        "legacy_prompt": "Rolling basil leaves tightly and slicing into thin ribbons.",
+        "correct_answer": "Chiffonade",
+        "wrong_answers": [
+            "Julienne",
+            "Brunoise",
+            "Dice"
+        ]
+    },
+    "presentation": {
+        "title": "Technique:",
+        "visual_theme_override": null
+    }
+}

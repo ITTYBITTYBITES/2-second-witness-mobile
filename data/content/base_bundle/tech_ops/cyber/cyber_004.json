@@ -1,0 +1,27 @@
+{
+    "id": "cyber_004",
+    "universe": "tech_ops",
+    "world": "cyber",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "POISON",
+        "legacy_prompt": "Website address resolving to fake banking login page.",
+        "correct_answer": "DNS Poisoning",
+        "wrong_answers": [
+            "Power Surge",
+            "Broken Keyboard",
+            "Expired Badge"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

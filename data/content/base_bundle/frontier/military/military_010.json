@@ -1,0 +1,27 @@
+{
+    "id": "military_010",
+    "universe": "frontier",
+    "world": "military",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TERRAIN",
+        "legacy_prompt": "Occupying high ground to gain tactical advantage.",
+        "correct_answer": "Terrain Advantage",
+        "wrong_answers": [
+            "Air Superiority",
+            "Naval Control",
+            "Supply Control"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

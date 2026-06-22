@@ -1,0 +1,27 @@
+{
+    "id": "gamedev_008",
+    "universe": "tech_ops",
+    "world": "gamedev",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "LOD",
+        "legacy_prompt": "Far-away mountains using fewer polygons than nearby rocks.",
+        "correct_answer": "Level of Detail",
+        "wrong_answers": [
+            "Frustum Culling",
+            "Occlusion Culling",
+            "Mipmapping"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

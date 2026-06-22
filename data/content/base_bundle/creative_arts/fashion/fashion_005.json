@@ -1,0 +1,27 @@
+{
+    "id": "fashion_005",
+    "universe": "creative_arts",
+    "world": "fashion",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WEAVE",
+        "legacy_prompt": "Interlacing vertical and horizontal threads on a loom.",
+        "correct_answer": "Weaving",
+        "wrong_answers": [
+            "Knitting",
+            "Crocheting",
+            "Felting"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

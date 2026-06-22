@@ -1,0 +1,27 @@
+{
+    "id": "blockchain_010",
+    "universe": "tech_ops",
+    "world": "blockchain",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "KEY",
+        "legacy_prompt": "Losing your private key means losing access permanently.",
+        "correct_answer": "Key Loss",
+        "wrong_answers": [
+            "Account Lock",
+            "Password Reset",
+            "Hack"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

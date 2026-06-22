@@ -1,0 +1,27 @@
+{
+    "id": "disaster_015",
+    "universe": "frontier",
+    "world": "disaster",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PANDEMIC",
+        "legacy_prompt": "Disease spreading rapidly across multiple countries simultaneously.",
+        "correct_answer": "Pandemic",
+        "wrong_answers": [
+            "Epidemic",
+            "Outbreak",
+            "Endemic"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

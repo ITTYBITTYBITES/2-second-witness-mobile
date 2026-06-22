@@ -1,0 +1,27 @@
+{
+    "id": "crime_014",
+    "universe": "society_mind",
+    "world": "crime",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DIGITAL",
+        "legacy_prompt": "Deleted files recovered from suspect's hard drive.",
+        "correct_answer": "Digital Forensics",
+        "wrong_answers": [
+            "Surveillance",
+            "Wiretapping",
+            "Hacking"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

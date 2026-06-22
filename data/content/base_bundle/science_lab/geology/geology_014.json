@@ -1,0 +1,27 @@
+{
+    "id": "geology_014",
+    "universe": "science_lab",
+    "world": "geology",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "METAMORPHIC",
+        "legacy_prompt": "Limestone transforming into marble under extreme heat and pressure.",
+        "correct_answer": "Metamorphism",
+        "wrong_answers": [
+            "Melting",
+            "Erosion",
+            "Deposition"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

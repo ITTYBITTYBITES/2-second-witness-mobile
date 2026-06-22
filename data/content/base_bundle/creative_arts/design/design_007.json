@@ -1,0 +1,27 @@
+{
+    "id": "design_007",
+    "universe": "creative_arts",
+    "world": "design",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "KERNING",
+        "legacy_prompt": "Adjusting the space between two specific letter pairs.",
+        "correct_answer": "Kerning",
+        "wrong_answers": [
+            "Tracking",
+            "Leading",
+            "Baseline Shift"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

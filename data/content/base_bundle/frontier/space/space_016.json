@@ -1,0 +1,27 @@
+{
+    "id": "space_016",
+    "universe": "frontier",
+    "world": "space",
+    "type": "stroop_test",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ECLIPSE",
+        "legacy_prompt": "Moon passing directly between Earth and the Sun.",
+        "correct_answer": "Solar Eclipse",
+        "wrong_answers": [
+            "Lunar Eclipse",
+            "Transit",
+            "Occultation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

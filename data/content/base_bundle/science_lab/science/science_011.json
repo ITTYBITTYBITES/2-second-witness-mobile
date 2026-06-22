@@ -1,0 +1,27 @@
+{
+    "id": "science_011",
+    "universe": "science_lab",
+    "world": "science",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ATOM",
+        "legacy_prompt": "Two hydrogen atoms bonded to one oxygen atom.",
+        "correct_answer": "Water Molecule",
+        "wrong_answers": [
+            "Hydrogen Peroxide",
+            "Ozone",
+            "Carbon Dioxide"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

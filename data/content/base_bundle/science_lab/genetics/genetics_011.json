@@ -1,0 +1,27 @@
+{
+    "id": "genetics_011",
+    "universe": "science_lab",
+    "world": "genetics",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CLONE",
+        "legacy_prompt": "Genetically identical organism produced from a single cell.",
+        "correct_answer": "Cloning",
+        "wrong_answers": [
+            "Grafting",
+            "Budding",
+            "Pollination"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

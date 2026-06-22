@@ -1,0 +1,27 @@
+{
+    "id": "space_004",
+    "universe": "frontier",
+    "world": "space",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PLANET",
+        "legacy_prompt": "Rocky world in habitable zone with liquid water on surface.",
+        "correct_answer": "Potentially Habitable",
+        "wrong_answers": [
+            "Gas Giant",
+            "Ice World",
+            "Tidally Locked"
+        ]
+    },
+    "presentation": {
+        "title": "Classify:",
+        "visual_theme_override": null
+    }
+}

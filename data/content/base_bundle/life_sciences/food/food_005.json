@@ -1,0 +1,27 @@
+{
+    "id": "food_005",
+    "universe": "life_sciences",
+    "world": "food",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BAKING",
+        "legacy_prompt": "Bread did not rise. Yeast was added to boiling water.",
+        "correct_answer": "Killed the Yeast",
+        "wrong_answers": [
+            "Not Enough Sugar",
+            "Wrong Flour",
+            "Over-kneaded"
+        ]
+    },
+    "presentation": {
+        "title": "Cause:",
+        "visual_theme_override": null
+    }
+}

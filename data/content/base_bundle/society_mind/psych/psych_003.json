@@ -1,0 +1,27 @@
+{
+    "id": "psych_003",
+    "universe": "society_mind",
+    "world": "psych",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MEMORY",
+        "legacy_prompt": "Witness confidently recalls details of event that never happened.",
+        "correct_answer": "False Memory",
+        "wrong_answers": [
+            "Deja Vu",
+            "Repression",
+            "Amnesia"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

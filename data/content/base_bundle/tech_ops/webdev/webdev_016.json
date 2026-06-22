@@ -1,0 +1,27 @@
+{
+    "id": "webdev_016",
+    "universe": "tech_ops",
+    "world": "webdev",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WEBSOCKET",
+        "legacy_prompt": "Real-time two-way communication between browser and server.",
+        "correct_answer": "WebSocket",
+        "wrong_answers": [
+            "HTTP Polling",
+            "Server-Sent Events",
+            "Long Polling"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "influence_006",
+    "universe": "society_mind",
+    "world": "influence",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "COMMIT",
+        "legacy_prompt": "Small request followed by progressively larger ones.",
+        "correct_answer": "Foot in the Door",
+        "wrong_answers": [
+            "Door in the Face",
+            "Low Ball",
+            "Bait and Switch"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

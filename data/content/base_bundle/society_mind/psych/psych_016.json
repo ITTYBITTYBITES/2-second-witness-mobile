@@ -1,0 +1,27 @@
+{
+    "id": "psych_016",
+    "universe": "society_mind",
+    "world": "psych",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DUNNING",
+        "legacy_prompt": "Incompetent person overestimating their own ability.",
+        "correct_answer": "Dunning-Kruger Effect",
+        "wrong_answers": [
+            "Imposter Syndrome",
+            "Narcissism",
+            "Overconfidence"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

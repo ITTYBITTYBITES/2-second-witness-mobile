@@ -1,0 +1,27 @@
+{
+    "id": "influence_013",
+    "universe": "society_mind",
+    "world": "influence",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FRAME",
+        "legacy_prompt": "Saying 90% fat free instead of contains 10% fat.",
+        "correct_answer": "Framing Effect",
+        "wrong_answers": [
+            "Anchoring",
+            "Spin",
+            "Misdirection"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

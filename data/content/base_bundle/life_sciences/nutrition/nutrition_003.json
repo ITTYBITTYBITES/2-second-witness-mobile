@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_003",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CALORIE",
+        "legacy_prompt": "Unit measuring the energy content of food.",
+        "correct_answer": "Calorie",
+        "wrong_answers": [
+            "Joule",
+            "Watt",
+            "Gram"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

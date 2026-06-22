@@ -1,0 +1,27 @@
+{
+    "id": "medical_015",
+    "universe": "life_sciences",
+    "world": "medical",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SKIN",
+        "legacy_prompt": "Yellow discoloration of skin and whites of eyes.",
+        "correct_answer": "Jaundice",
+        "wrong_answers": [
+            "Hepatitis",
+            "Anemia",
+            "Dehydration"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

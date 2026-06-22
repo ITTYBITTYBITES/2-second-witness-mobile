@@ -1,0 +1,27 @@
+{
+    "id": "history_016",
+    "universe": "society_mind",
+    "world": "history",
+    "type": "stroop_test",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MOON",
+        "legacy_prompt": "First humans walking on the lunar surface in July 1969.",
+        "correct_answer": "Apollo 11",
+        "wrong_answers": [
+            "Apollo 13",
+            "Gemini",
+            "Mercury"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

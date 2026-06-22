@@ -1,0 +1,27 @@
+{
+    "id": "photography_013",
+    "universe": "creative_arts",
+    "world": "photography",
+    "type": "stroop_test",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WHITE",
+        "legacy_prompt": "Adjusting colors so a white object looks truly white.",
+        "correct_answer": "White Balance",
+        "wrong_answers": [
+            "Color Correction",
+            "Tint",
+            "Saturation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

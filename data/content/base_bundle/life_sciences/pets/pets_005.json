@@ -1,0 +1,27 @@
+{
+    "id": "pets_005",
+    "universe": "life_sciences",
+    "world": "pets",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "VACCINE",
+        "legacy_prompt": "Puppy needing a series of shots in first year of life.",
+        "correct_answer": "Core Vaccinations",
+        "wrong_answers": [
+            "Optional Boosters",
+            "Deworming",
+            "Flea Treatment"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

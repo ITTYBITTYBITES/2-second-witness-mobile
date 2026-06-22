@@ -1,0 +1,27 @@
+{
+    "id": "hardware_002",
+    "universe": "tech_ops",
+    "world": "hardware",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CAPACITOR",
+        "legacy_prompt": "Component storing electrical charge and releasing it quickly.",
+        "correct_answer": "Capacitor",
+        "wrong_answers": [
+            "Battery",
+            "Resistor",
+            "Diode"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

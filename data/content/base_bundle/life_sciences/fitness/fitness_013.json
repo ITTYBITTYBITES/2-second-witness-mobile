@@ -1,0 +1,27 @@
+{
+    "id": "fitness_013",
+    "universe": "life_sciences",
+    "world": "fitness",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DOMS",
+        "legacy_prompt": "Muscle soreness appearing 24-48 hours after exercise.",
+        "correct_answer": "Delayed Onset Muscle Soreness",
+        "wrong_answers": [
+            "Injury",
+            "Lactic Acid",
+            "Inflammation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

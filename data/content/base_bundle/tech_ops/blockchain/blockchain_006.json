@@ -1,0 +1,27 @@
+{
+    "id": "blockchain_006",
+    "universe": "tech_ops",
+    "world": "blockchain",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GAS",
+        "legacy_prompt": "Fee paid to process a transaction on the network.",
+        "correct_answer": "Gas Fee",
+        "wrong_answers": [
+            "Mining Fee",
+            "Service Charge",
+            "Transfer Fee"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

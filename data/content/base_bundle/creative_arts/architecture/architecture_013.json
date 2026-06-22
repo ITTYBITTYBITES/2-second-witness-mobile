@@ -1,0 +1,27 @@
+{
+    "id": "architecture_013",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ART DECO",
+        "legacy_prompt": "Geometric patterns, bold colors, and luxurious materials from the 1920s.",
+        "correct_answer": "Art Deco",
+        "wrong_answers": [
+            "Art Nouveau",
+            "Bauhaus",
+            "Streamline Moderne"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

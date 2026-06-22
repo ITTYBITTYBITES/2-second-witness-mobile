@@ -1,0 +1,27 @@
+{
+    "id": "weather_016",
+    "universe": "science_lab",
+    "world": "weather",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FOG",
+        "legacy_prompt": "Clouds forming at ground level reducing visibility.",
+        "correct_answer": "Radiation Fog",
+        "wrong_answers": [
+            "Advection Fog",
+            "Steam Fog",
+            "Mist"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "gamedev_010",
+    "universe": "tech_ops",
+    "world": "gamedev",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SINGLETON",
+        "legacy_prompt": "Manager class that only has one instance accessible globally.",
+        "correct_answer": "Singleton Pattern",
+        "wrong_answers": [
+            "Factory Pattern",
+            "Observer Pattern",
+            "Strategy Pattern"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

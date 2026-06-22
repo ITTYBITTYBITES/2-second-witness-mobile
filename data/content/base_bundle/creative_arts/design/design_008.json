@@ -1,0 +1,27 @@
+{
+    "id": "design_008",
+    "universe": "creative_arts",
+    "world": "design",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "VECTOR",
+        "legacy_prompt": "Image that stays sharp at any size because it uses math, not pixels.",
+        "correct_answer": "Vector Graphics",
+        "wrong_answers": [
+            "Raster Graphics",
+            "Bitmap",
+            "Pixel Art"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

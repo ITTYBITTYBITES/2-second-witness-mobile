@@ -1,0 +1,27 @@
+{
+    "id": "microbiology_009",
+    "universe": "science_lab",
+    "world": "microbiology",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GRAM",
+        "legacy_prompt": "Staining technique dividing bacteria into two major groups.",
+        "correct_answer": "Gram Stain",
+        "wrong_answers": [
+            "Acid-Fast Stain",
+            "Fluorescence",
+            "PCR Test"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

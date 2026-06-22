@@ -1,0 +1,27 @@
+{
+    "id": "parenting_002",
+    "universe": "life_sciences",
+    "world": "parenting",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FEVER",
+        "legacy_prompt": "Child's temperature at 101F with no other symptoms.",
+        "correct_answer": "Low Grade Fever",
+        "wrong_answers": [
+            "Emergency",
+            "Normal Variation",
+            "Teething"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

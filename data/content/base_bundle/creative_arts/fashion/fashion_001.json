@@ -1,0 +1,27 @@
+{
+    "id": "fashion_001",
+    "universe": "creative_arts",
+    "world": "fashion",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SILK",
+        "legacy_prompt": "Luxurious fabric produced by silkworm cocoons.",
+        "correct_answer": "Silk",
+        "wrong_answers": [
+            "Satin",
+            "Polyester",
+            "Rayon"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

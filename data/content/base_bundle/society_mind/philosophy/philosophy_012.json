@@ -1,0 +1,27 @@
+{
+    "id": "philosophy_012",
+    "universe": "society_mind",
+    "world": "philosophy",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FREE",
+        "legacy_prompt": "Question of whether our choices are truly our own or predetermined.",
+        "correct_answer": "Free Will vs Determinism",
+        "wrong_answers": [
+            "Nature vs Nurture",
+            "Mind vs Body",
+            "Good vs Evil"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

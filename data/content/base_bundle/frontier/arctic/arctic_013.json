@@ -1,0 +1,27 @@
+{
+    "id": "arctic_013",
+    "universe": "frontier",
+    "world": "arctic",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PACK",
+        "legacy_prompt": "Large flat pieces of sea ice pushed together by wind and currents.",
+        "correct_answer": "Pack Ice",
+        "wrong_answers": [
+            "Fast Ice",
+            "Drift Ice",
+            "Shelf Ice"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

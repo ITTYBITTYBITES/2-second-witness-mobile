@@ -1,0 +1,27 @@
+{
+    "id": "influence_010",
+    "universe": "society_mind",
+    "world": "influence",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CROWD",
+        "legacy_prompt": "Buying a product because millions of others already did.",
+        "correct_answer": "Social Proof",
+        "wrong_answers": [
+            "Bandwagon Effect",
+            "Herd Mentality",
+            "FOMO"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

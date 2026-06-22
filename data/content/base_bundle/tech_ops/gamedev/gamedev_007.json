@@ -1,0 +1,27 @@
+{
+    "id": "gamedev_007",
+    "universe": "tech_ops",
+    "world": "gamedev",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PATHFIND",
+        "legacy_prompt": "Enemy finding the shortest route around obstacles to reach player.",
+        "correct_answer": "A* Pathfinding",
+        "wrong_answers": [
+            "Dijkstra",
+            "Breadth First",
+            "Random Walk"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

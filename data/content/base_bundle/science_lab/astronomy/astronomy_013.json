@@ -1,0 +1,27 @@
+{
+    "id": "astronomy_013",
+    "universe": "science_lab",
+    "world": "astronomy",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ASTEROID",
+        "legacy_prompt": "Rocky body orbiting the Sun between Mars and Jupiter.",
+        "correct_answer": "Asteroid Belt",
+        "wrong_answers": [
+            "Kuiper Belt",
+            "Oort Cloud",
+            "Debris Disk"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

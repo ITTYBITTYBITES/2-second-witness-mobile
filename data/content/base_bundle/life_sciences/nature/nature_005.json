@@ -1,0 +1,27 @@
+{
+    "id": "nature_005",
+    "universe": "life_sciences",
+    "world": "nature",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SNAKE",
+        "legacy_prompt": "Triangular head, vertical pupils, heat-sensing pits.",
+        "correct_answer": "Venomous",
+        "wrong_answers": [
+            "Non-venomous",
+            "Constrictor",
+            "Harmless"
+        ]
+    },
+    "presentation": {
+        "title": "Classify:",
+        "visual_theme_override": null
+    }
+}

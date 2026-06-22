@@ -1,0 +1,27 @@
+{
+    "id": "politics_012",
+    "universe": "society_mind",
+    "world": "politics",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SANCTION",
+        "legacy_prompt": "Country restricting trade with another to force policy change.",
+        "correct_answer": "Economic Sanctions",
+        "wrong_answers": [
+            "Embargo",
+            "Tariff",
+            "Blockade"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

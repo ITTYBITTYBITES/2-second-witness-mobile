@@ -1,0 +1,27 @@
+{
+    "id": "design_011",
+    "universe": "creative_arts",
+    "world": "design",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BRAND",
+        "legacy_prompt": "Consistent visual identity across all touchpoints.",
+        "correct_answer": "Brand Identity",
+        "wrong_answers": [
+            "Logo",
+            "Marketing",
+            "Advertising"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

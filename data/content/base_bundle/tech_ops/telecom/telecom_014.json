@@ -1,0 +1,27 @@
+{
+    "id": "telecom_014",
+    "universe": "tech_ops",
+    "world": "telecom",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "QOS",
+        "legacy_prompt": "Prioritizing video call traffic over file downloads.",
+        "correct_answer": "Quality of Service",
+        "wrong_answers": [
+            "Load Balancing",
+            "Traffic Shaping",
+            "Bandwidth Throttling"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

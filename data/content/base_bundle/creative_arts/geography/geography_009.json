@@ -1,0 +1,27 @@
+{
+    "id": "geography_009",
+    "universe": "creative_arts",
+    "world": "geography",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "STRAIT",
+        "legacy_prompt": "Narrow water passage connecting the Mediterranean to the Atlantic.",
+        "correct_answer": "Strait of Gibraltar",
+        "wrong_answers": [
+            "Strait of Hormuz",
+            "Bering Strait",
+            "Strait of Malacca"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

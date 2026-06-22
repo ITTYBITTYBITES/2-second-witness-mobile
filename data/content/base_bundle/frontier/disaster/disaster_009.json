@@ -1,0 +1,27 @@
+{
+    "id": "disaster_009",
+    "universe": "frontier",
+    "world": "disaster",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SHELTER",
+        "legacy_prompt": "Taking cover in a basement or interior room during a tornado.",
+        "correct_answer": "Tornado Shelter Protocol",
+        "wrong_answers": [
+            "Earthquake Protocol",
+            "Hurricane Protocol",
+            "Flood Protocol"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

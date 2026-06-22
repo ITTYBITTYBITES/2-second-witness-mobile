@@ -1,0 +1,27 @@
+{
+    "id": "quantum_016",
+    "universe": "science_lab",
+    "world": "quantum",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DECAY",
+        "legacy_prompt": "Unstable atom releasing energy to become stable.",
+        "correct_answer": "Radioactive Decay",
+        "wrong_answers": [
+            "Fission",
+            "Fusion",
+            "Ionization"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

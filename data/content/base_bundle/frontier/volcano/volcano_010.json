@@ -1,0 +1,27 @@
+{
+    "id": "volcano_010",
+    "universe": "frontier",
+    "world": "volcano",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DORMANT",
+        "legacy_prompt": "Volcano that hasn't erupted in centuries but could again.",
+        "correct_answer": "Dormant Volcano",
+        "wrong_answers": [
+            "Extinct Volcano",
+            "Active Volcano",
+            "Dead Volcano"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

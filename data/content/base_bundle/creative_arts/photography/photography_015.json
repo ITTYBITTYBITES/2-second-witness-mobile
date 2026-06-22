@@ -1,0 +1,27 @@
+{
+    "id": "photography_015",
+    "universe": "creative_arts",
+    "world": "photography",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "HDR",
+        "legacy_prompt": "Combining multiple exposures to capture full range of light.",
+        "correct_answer": "High Dynamic Range",
+        "wrong_answers": [
+            "Bracketing",
+            "Tone Mapping",
+            "Exposure Blending"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

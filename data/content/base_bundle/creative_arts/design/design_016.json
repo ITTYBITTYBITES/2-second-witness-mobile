@@ -1,0 +1,27 @@
+{
+    "id": "design_016",
+    "universe": "creative_arts",
+    "world": "design",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ACCESSIBILITY",
+        "legacy_prompt": "Designing so people with disabilities can use the product.",
+        "correct_answer": "Accessible Design",
+        "wrong_answers": [
+            "Universal Design",
+            "Inclusive Design",
+            "Usability"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

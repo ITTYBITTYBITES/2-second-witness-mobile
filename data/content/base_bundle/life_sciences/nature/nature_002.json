@@ -1,0 +1,27 @@
+{
+    "id": "nature_002",
+    "universe": "life_sciences",
+    "world": "nature",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WEATHER",
+        "legacy_prompt": "Green-tinted sky, large hail, rotating wall cloud.",
+        "correct_answer": "Tornado Forming",
+        "wrong_answers": [
+            "Hurricane",
+            "Thunderstorm",
+            "Dust Storm"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

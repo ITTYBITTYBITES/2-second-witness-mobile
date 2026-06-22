@@ -1,0 +1,27 @@
+{
+    "id": "finance_007",
+    "universe": "society_mind",
+    "world": "finance",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BUBBLE",
+        "legacy_prompt": "Asset prices rising far beyond their real value.",
+        "correct_answer": "Speculative Bubble",
+        "wrong_answers": [
+            "Bull Market",
+            "Inflation",
+            "Growth Cycle"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

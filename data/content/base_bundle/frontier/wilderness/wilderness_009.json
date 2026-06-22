@@ -1,0 +1,27 @@
+{
+    "id": "wilderness_009",
+    "universe": "frontier",
+    "world": "wilderness",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WEATHER",
+        "legacy_prompt": "Red sky at morning indicating bad weather approaching.",
+        "correct_answer": "Weather Prediction Sign",
+        "wrong_answers": [
+            "Superstition",
+            "Coincidence",
+            "Myth"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

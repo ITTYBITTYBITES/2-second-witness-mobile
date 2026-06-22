@@ -1,0 +1,27 @@
+{
+    "id": "art_006",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CANVAS",
+        "legacy_prompt": "Fabric stretched over a wooden frame for oil painting.",
+        "correct_answer": "Canvas",
+        "wrong_answers": [
+            "Panel",
+            "Paper",
+            "Board"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

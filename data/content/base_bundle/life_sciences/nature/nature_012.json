@@ -1,0 +1,27 @@
+{
+    "id": "nature_012",
+    "universe": "life_sciences",
+    "world": "nature",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SWARM",
+        "legacy_prompt": "Thousands of bees leaving the hive together.",
+        "correct_answer": "Swarming",
+        "wrong_answers": [
+            "Migration",
+            "Aggression",
+            "Colony Collapse"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

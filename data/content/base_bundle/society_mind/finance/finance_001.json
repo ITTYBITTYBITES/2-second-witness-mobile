@@ -1,0 +1,27 @@
+{
+    "id": "finance_001",
+    "universe": "society_mind",
+    "world": "finance",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BUBBLE",
+        "legacy_prompt": "Asset prices far exceed intrinsic value, everyone buying on hype.",
+        "correct_answer": "Speculative Bubble",
+        "wrong_answers": [
+            "Bull Market",
+            "Price Discovery",
+            "Inflation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

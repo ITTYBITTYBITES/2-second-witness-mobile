@@ -1,0 +1,27 @@
+{
+    "id": "microbiology_008",
+    "universe": "science_lab",
+    "world": "microbiology",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FUNGUS",
+        "legacy_prompt": "Organism decomposing dead leaves on the forest floor.",
+        "correct_answer": "Saprophytic Fungus",
+        "wrong_answers": [
+            "Bacteria",
+            "Virus",
+            "Parasite"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

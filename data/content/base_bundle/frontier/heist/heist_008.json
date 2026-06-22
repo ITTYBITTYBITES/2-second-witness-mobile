@@ -1,0 +1,27 @@
+{
+    "id": "heist_008",
+    "universe": "frontier",
+    "world": "heist",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GETAWAY",
+        "legacy_prompt": "Multiple vehicle switches during escape route.",
+        "correct_answer": "Layered Escape Plan",
+        "wrong_answers": [
+            "Car Chase",
+            "Foot Pursuit",
+            "Helicopter Pursuit"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

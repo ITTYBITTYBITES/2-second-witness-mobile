@@ -1,0 +1,27 @@
+{
+    "id": "survival_007",
+    "universe": "frontier",
+    "world": "survival",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WATER",
+        "legacy_prompt": "Finding water in a desert by following animal tracks.",
+        "correct_answer": "Animal Trail Navigation",
+        "wrong_answers": [
+            "Dowsing",
+            "Guessing",
+            "Digging Randomly"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

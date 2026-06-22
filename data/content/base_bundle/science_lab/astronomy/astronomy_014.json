@@ -1,0 +1,27 @@
+{
+    "id": "astronomy_014",
+    "universe": "science_lab",
+    "world": "astronomy",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EXPANSION",
+        "legacy_prompt": "Galaxies moving apart from each other at increasing speeds.",
+        "correct_answer": "Cosmic Expansion",
+        "wrong_answers": [
+            "Gravity",
+            "Dark Energy",
+            "Big Bang Echo"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

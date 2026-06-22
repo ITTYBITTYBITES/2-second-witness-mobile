@@ -1,0 +1,27 @@
+{
+    "id": "medical_007",
+    "universe": "life_sciences",
+    "world": "medical",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EMERGENCY",
+        "legacy_prompt": "Unresponsive, no breathing, no pulse detected.",
+        "correct_answer": "Begin CPR",
+        "wrong_answers": [
+            "Recovery Position",
+            "Elevate Legs",
+            "Give Water"
+        ]
+    },
+    "presentation": {
+        "title": "Action:",
+        "visual_theme_override": null
+    }
+}

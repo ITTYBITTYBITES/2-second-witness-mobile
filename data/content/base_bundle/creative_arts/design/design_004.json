@@ -1,0 +1,27 @@
+{
+    "id": "design_004",
+    "universe": "creative_arts",
+    "world": "design",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WHITESPACE",
+        "legacy_prompt": "Empty areas around content that improve readability.",
+        "correct_answer": "Negative Space",
+        "wrong_answers": [
+            "Margin",
+            "Padding",
+            "Gutter"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

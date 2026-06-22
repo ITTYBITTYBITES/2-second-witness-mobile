@@ -1,0 +1,27 @@
+{
+    "id": "hardware_003",
+    "universe": "tech_ops",
+    "world": "hardware",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SHORT",
+        "legacy_prompt": "Wire connecting two terminals that shouldn't be connected.",
+        "correct_answer": "Short Circuit",
+        "wrong_answers": [
+            "Open Circuit",
+            "Ground Fault",
+            "Overload"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

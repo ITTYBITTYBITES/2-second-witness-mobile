@@ -1,0 +1,27 @@
+{
+    "id": "wilderness_011",
+    "universe": "frontier",
+    "world": "wilderness",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SIGNAL",
+        "legacy_prompt": "Three of anything in the wild signals distress.",
+        "correct_answer": "Distress Signal Pattern",
+        "wrong_answers": [
+            "Camp Marker",
+            "Trail Blaze",
+            "Territory Marker"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

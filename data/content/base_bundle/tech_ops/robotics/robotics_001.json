@@ -1,0 +1,27 @@
+{
+    "id": "robotics_001",
+    "universe": "tech_ops",
+    "world": "robotics",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SENSOR",
+        "legacy_prompt": "Robot arm detecting the exact distance to an object with light.",
+        "correct_answer": "LIDAR Sensor",
+        "wrong_answers": [
+            "Ultrasonic",
+            "Infrared",
+            "Radar"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

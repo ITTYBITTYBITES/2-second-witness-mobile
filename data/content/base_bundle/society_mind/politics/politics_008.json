@@ -1,0 +1,27 @@
+{
+    "id": "politics_008",
+    "universe": "society_mind",
+    "world": "politics",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EXECUTIVE",
+        "legacy_prompt": "President issuing a directive without Congressional approval.",
+        "correct_answer": "Executive Order",
+        "wrong_answers": [
+            "Law",
+            "Amendment",
+            "Resolution"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

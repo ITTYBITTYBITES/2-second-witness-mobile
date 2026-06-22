@@ -1,0 +1,27 @@
+{
+    "id": "volcano_004",
+    "universe": "frontier",
+    "world": "volcano",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CALDERA",
+        "legacy_prompt": "Massive crater formed when a volcano collapses inward.",
+        "correct_answer": "Caldera",
+        "wrong_answers": [
+            "Crater",
+            "Vent",
+            "Cone"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

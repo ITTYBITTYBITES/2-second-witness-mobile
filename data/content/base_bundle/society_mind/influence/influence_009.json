@@ -1,0 +1,27 @@
+{
+    "id": "influence_009",
+    "universe": "society_mind",
+    "world": "influence",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PERSUADE",
+        "legacy_prompt": "Limited time offer creating urgency to buy now.",
+        "correct_answer": "Scarcity Principle",
+        "wrong_answers": [
+            "Social Proof",
+            "Anchoring",
+            "Reciprocity"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

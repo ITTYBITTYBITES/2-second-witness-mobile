@@ -1,0 +1,27 @@
+{
+    "id": "psych_007",
+    "universe": "society_mind",
+    "world": "psych",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BIAS",
+        "legacy_prompt": "Remembering only information that supports your belief.",
+        "correct_answer": "Confirmation Bias",
+        "wrong_answers": [
+            "Anchoring",
+            "Hindsight Bias",
+            "Groupthink"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

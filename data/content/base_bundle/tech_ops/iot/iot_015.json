@@ -1,0 +1,27 @@
+{
+    "id": "iot_015",
+    "universe": "tech_ops",
+    "world": "iot",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BEACON",
+        "legacy_prompt": "Small Bluetooth device tracking assets inside a warehouse.",
+        "correct_answer": "BLE Beacon",
+        "wrong_answers": [
+            "RFID Tag",
+            "GPS Tracker",
+            "NFC Tag"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

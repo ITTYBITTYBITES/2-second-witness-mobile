@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_013",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GLUTEN",
+        "legacy_prompt": "Protein in wheat that causes problems for celiac patients.",
+        "correct_answer": "Gluten",
+        "wrong_answers": [
+            "Casein",
+            "Lactose",
+            "Lectin"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

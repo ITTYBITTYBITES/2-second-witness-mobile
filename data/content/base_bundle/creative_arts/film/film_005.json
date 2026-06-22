@@ -1,0 +1,27 @@
+{
+    "id": "film_005",
+    "universe": "creative_arts",
+    "world": "film",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CONTINUITY",
+        "legacy_prompt": "Actor's watch switching wrists between shots.",
+        "correct_answer": "Continuity Error",
+        "wrong_answers": [
+            "Blooper",
+            "Improvisation",
+            "Direction Choice"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

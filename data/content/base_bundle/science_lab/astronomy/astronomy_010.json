@@ -1,0 +1,27 @@
+{
+    "id": "astronomy_010",
+    "universe": "science_lab",
+    "world": "astronomy",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "NEBULA",
+        "legacy_prompt": "Glowing cloud of gas expelled by a dying star.",
+        "correct_answer": "Planetary Nebula",
+        "wrong_answers": [
+            "Emission Nebula",
+            "Reflection Nebula",
+            "Dark Nebula"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

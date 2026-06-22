@@ -1,0 +1,27 @@
+{
+    "id": "webdev_006",
+    "universe": "tech_ops",
+    "world": "webdev",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "XSS",
+        "legacy_prompt": "Malicious script injected into a trusted website's content.",
+        "correct_answer": "Cross-Site Scripting",
+        "wrong_answers": [
+            "SQL Injection",
+            "CSRF",
+            "Clickjacking"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

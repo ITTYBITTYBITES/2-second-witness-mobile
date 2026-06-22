@@ -1,0 +1,27 @@
+{
+    "id": "geography_001",
+    "universe": "creative_arts",
+    "world": "geography",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CAPITAL",
+        "legacy_prompt": "City serving as the seat of government for a country.",
+        "correct_answer": "Capital City",
+        "wrong_answers": [
+            "Largest City",
+            "Financial Center",
+            "Cultural Capital"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

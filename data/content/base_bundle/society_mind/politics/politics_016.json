@@ -1,0 +1,27 @@
+{
+    "id": "politics_016",
+    "universe": "society_mind",
+    "world": "politics",
+    "type": "stroop_test",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TERM",
+        "legacy_prompt": "Maximum time a US president can serve in office.",
+        "correct_answer": "Two Term Limit",
+        "wrong_answers": [
+            "One Term",
+            "Three Terms",
+            "Unlimited"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

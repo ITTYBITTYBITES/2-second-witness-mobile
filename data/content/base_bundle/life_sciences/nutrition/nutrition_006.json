@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_006",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SUGAR",
+        "legacy_prompt": "Blood sugar spiking quickly after eating white bread.",
+        "correct_answer": "High Glycemic Index",
+        "wrong_answers": [
+            "Low Glycemic",
+            "Complex Carb",
+            "Fiber Effect"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

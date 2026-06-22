@@ -1,0 +1,27 @@
+{
+    "id": "gamedev_012",
+    "universe": "tech_ops",
+    "world": "gamedev",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PARTICLE",
+        "legacy_prompt": "Hundreds of tiny images creating a fire or explosion effect.",
+        "correct_answer": "Particle System",
+        "wrong_answers": [
+            "Sprite Sheet",
+            "Animation",
+            "Shader Effect"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

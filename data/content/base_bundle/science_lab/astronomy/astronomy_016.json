@@ -1,0 +1,27 @@
+{
+    "id": "astronomy_016",
+    "universe": "science_lab",
+    "world": "astronomy",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DARK",
+        "legacy_prompt": "Invisible matter detected only by its gravitational effects.",
+        "correct_answer": "Dark Matter",
+        "wrong_answers": [
+            "Dark Energy",
+            "Antimatter",
+            "Neutrinos"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

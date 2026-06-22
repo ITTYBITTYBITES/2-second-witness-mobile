@@ -1,0 +1,27 @@
+{
+    "id": "disaster_007",
+    "universe": "frontier",
+    "world": "disaster",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EVACUATION",
+        "legacy_prompt": "Following designated routes away from the danger zone.",
+        "correct_answer": "Evacuation Route",
+        "wrong_answers": [
+            "Shelter in Place",
+            "Bug Out",
+            "Rally Point"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

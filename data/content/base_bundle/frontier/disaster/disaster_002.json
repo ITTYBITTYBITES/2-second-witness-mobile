@@ -1,0 +1,27 @@
+{
+    "id": "disaster_002",
+    "universe": "frontier",
+    "world": "disaster",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "HURRICANE",
+        "legacy_prompt": "Boarding up windows before a Category 4 storm.",
+        "correct_answer": "Hurricane Preparation",
+        "wrong_answers": [
+            "Tornado Prep",
+            "Flood Prep",
+            "Blizzard Prep"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

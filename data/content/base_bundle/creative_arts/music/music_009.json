@@ -1,0 +1,27 @@
+{
+    "id": "music_009",
+    "universe": "creative_arts",
+    "world": "music",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SYNCOPATION",
+        "legacy_prompt": "Accenting beats that are normally unaccented.",
+        "correct_answer": "Syncopation",
+        "wrong_answers": [
+            "Polyrhythm",
+            "Cross Rhythm",
+            "Hemiola"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

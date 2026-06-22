@@ -1,0 +1,27 @@
+{
+    "id": "art_016",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PATINA",
+        "legacy_prompt": "Green coating forming on bronze sculpture over time.",
+        "correct_answer": "Patina",
+        "wrong_answers": [
+            "Corrosion",
+            "Tarnish",
+            "Oxidation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

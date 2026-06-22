@@ -1,0 +1,27 @@
+{
+    "id": "microbiology_007",
+    "universe": "science_lab",
+    "world": "microbiology",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SPORE",
+        "legacy_prompt": "Dormant bacterial structure surviving extreme conditions.",
+        "correct_answer": "Endospore",
+        "wrong_answers": [
+            "Cyst",
+            "Seed",
+            "Capsule"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

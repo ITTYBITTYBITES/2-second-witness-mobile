@@ -1,0 +1,27 @@
+{
+    "id": "ai_006",
+    "universe": "tech_ops",
+    "world": "ai",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "OVERFIT",
+        "legacy_prompt": "Model performing perfectly on training data but failing on new data.",
+        "correct_answer": "Overfitting",
+        "wrong_answers": [
+            "Underfitting",
+            "Bias",
+            "Variance"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

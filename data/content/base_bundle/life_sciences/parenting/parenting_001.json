@@ -1,0 +1,27 @@
+{
+    "id": "parenting_001",
+    "universe": "life_sciences",
+    "world": "parenting",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MILESTONE",
+        "legacy_prompt": "Baby pulling up to standing position at furniture.",
+        "correct_answer": "Motor Milestone",
+        "wrong_answers": [
+            "Cognitive Milestone",
+            "Social Milestone",
+            "Language Milestone"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

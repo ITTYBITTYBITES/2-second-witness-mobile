@@ -1,0 +1,27 @@
+{
+    "id": "politics_015",
+    "universe": "society_mind",
+    "world": "politics",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PARTISAN",
+        "legacy_prompt": "Making decisions based on party loyalty rather than merit.",
+        "correct_answer": "Partisanship",
+        "wrong_answers": [
+            "Bipartisanship",
+            "Nonpartisan",
+            "Independent"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

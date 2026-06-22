@@ -1,0 +1,27 @@
+{
+    "id": "sociology_009",
+    "universe": "society_mind",
+    "world": "sociology",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CULTURE",
+        "legacy_prompt": "Values, beliefs, and practices shared by a group of people.",
+        "correct_answer": "Culture",
+        "wrong_answers": [
+            "Civilization",
+            "Society",
+            "Community"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

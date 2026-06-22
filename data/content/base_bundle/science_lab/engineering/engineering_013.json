@@ -1,0 +1,27 @@
+{
+    "id": "engineering_013",
+    "universe": "science_lab",
+    "world": "engineering",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DAM",
+        "legacy_prompt": "Curved concrete wall holding back an entire reservoir.",
+        "correct_answer": "Arch Dam",
+        "wrong_answers": [
+            "Gravity Dam",
+            "Embankment Dam",
+            "Buttress Dam"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

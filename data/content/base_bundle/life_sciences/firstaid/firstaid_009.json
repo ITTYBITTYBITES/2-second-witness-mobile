@@ -1,0 +1,27 @@
+{
+    "id": "firstaid_009",
+    "universe": "life_sciences",
+    "world": "firstaid",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "HEAT",
+        "legacy_prompt": "Person with hot red skin who has stopped sweating.",
+        "correct_answer": "Heat Stroke",
+        "wrong_answers": [
+            "Heat Exhaustion",
+            "Sunburn",
+            "Dehydration"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "aviation_008",
+    "universe": "frontier",
+    "world": "aviation",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CROSSWIND",
+        "legacy_prompt": "Aircraft crabbing sideways during landing approach.",
+        "correct_answer": "Crosswind Landing",
+        "wrong_answers": [
+            "Go-Around",
+            "Missed Approach",
+            "Diversion"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "medical_006",
+    "universe": "life_sciences",
+    "world": "medical",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BONE",
+        "legacy_prompt": "Limb at unnatural angle after fall, severe swelling.",
+        "correct_answer": "Fracture",
+        "wrong_answers": [
+            "Dislocation",
+            "Sprain",
+            "Bruise"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

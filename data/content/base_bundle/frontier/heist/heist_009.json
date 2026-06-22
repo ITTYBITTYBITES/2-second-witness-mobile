@@ -1,0 +1,27 @@
+{
+    "id": "heist_009",
+    "universe": "frontier",
+    "world": "heist",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "VAULT",
+        "legacy_prompt": "Time-locked safe that cannot open until scheduled time.",
+        "correct_answer": "Time Lock Mechanism",
+        "wrong_answers": [
+            "Combination Lock",
+            "Biometric Lock",
+            "Key Lock"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

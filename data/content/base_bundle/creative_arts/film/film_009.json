@@ -1,0 +1,27 @@
+{
+    "id": "film_009",
+    "universe": "creative_arts",
+    "world": "film",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DISSOLVE",
+        "legacy_prompt": "One image gradually fading into another.",
+        "correct_answer": "Dissolve Transition",
+        "wrong_answers": [
+            "Cut",
+            "Fade",
+            "Wipe"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

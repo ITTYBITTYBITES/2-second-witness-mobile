@@ -1,0 +1,27 @@
+{
+    "id": "weather_005",
+    "universe": "science_lab",
+    "world": "weather",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WIND",
+        "legacy_prompt": "Funnel cloud touching down from supercell thunderstorm.",
+        "correct_answer": "Tornado",
+        "wrong_answers": [
+            "Waterspout",
+            "Dust Devil",
+            "Microburst"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

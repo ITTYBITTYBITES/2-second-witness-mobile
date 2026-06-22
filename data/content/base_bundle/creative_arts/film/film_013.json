@@ -1,0 +1,27 @@
+{
+    "id": "film_013",
+    "universe": "creative_arts",
+    "world": "film",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MCGUFFIN",
+        "legacy_prompt": "Object everyone wants but its nature doesn't really matter to the plot.",
+        "correct_answer": "MacGuffin",
+        "wrong_answers": [
+            "Plot Device",
+            "Red Herring",
+            "Chekhov's Gun"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

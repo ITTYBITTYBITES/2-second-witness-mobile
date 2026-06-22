@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_016",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "stroop_test",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SODIUM",
+        "legacy_prompt": "Eating too much salt leading to high blood pressure.",
+        "correct_answer": "Excess Sodium Intake",
+        "wrong_answers": [
+            "Potassium Deficiency",
+            "Dehydration",
+            "Kidney Issue"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

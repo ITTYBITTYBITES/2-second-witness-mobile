@@ -1,0 +1,27 @@
+{
+    "id": "gardening_002",
+    "universe": "life_sciences",
+    "world": "gardening",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PRUNE",
+        "legacy_prompt": "Cutting dead branches to encourage new growth.",
+        "correct_answer": "Pruning",
+        "wrong_answers": [
+            "Trimming",
+            "Topping",
+            "Grafting"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

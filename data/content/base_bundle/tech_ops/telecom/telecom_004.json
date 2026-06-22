@@ -1,0 +1,27 @@
+{
+    "id": "telecom_004",
+    "universe": "tech_ops",
+    "world": "telecom",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FREQUENCY",
+        "legacy_prompt": "Different radio stations using different parts of the spectrum.",
+        "correct_answer": "Frequency Allocation",
+        "wrong_answers": [
+            "Multiplexing",
+            "Modulation",
+            "Encoding"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

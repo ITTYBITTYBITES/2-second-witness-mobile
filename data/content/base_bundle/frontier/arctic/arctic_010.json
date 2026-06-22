@@ -1,0 +1,27 @@
+{
+    "id": "arctic_010",
+    "universe": "frontier",
+    "world": "arctic",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FROSTBITE",
+        "legacy_prompt": "Exposed skin turning white and numb in extreme cold.",
+        "correct_answer": "Frostbite",
+        "wrong_answers": [
+            "Frostnip",
+            "Hypothermia",
+            "Wind Burn"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "volcano_007",
+    "universe": "frontier",
+    "world": "volcano",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SEISMIC",
+        "legacy_prompt": "Increased earthquake activity warning of possible eruption.",
+        "correct_answer": "Volcanic Seismicity",
+        "wrong_answers": [
+            "Tectonic Quake",
+            "Aftershock",
+            "Tremor"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

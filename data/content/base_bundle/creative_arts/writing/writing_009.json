@@ -1,0 +1,27 @@
+{
+    "id": "writing_009",
+    "universe": "creative_arts",
+    "world": "writing",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CONFLICT",
+        "legacy_prompt": "Character struggling against their own fears and doubts.",
+        "correct_answer": "Internal Conflict",
+        "wrong_answers": [
+            "External Conflict",
+            "Man vs Nature",
+            "Man vs Society"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

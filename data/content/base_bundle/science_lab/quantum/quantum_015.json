@@ -1,0 +1,27 @@
+{
+    "id": "quantum_015",
+    "universe": "science_lab",
+    "world": "quantum",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FIELD",
+        "legacy_prompt": "Smallest possible unit of energy in a quantum field.",
+        "correct_answer": "Quantum",
+        "wrong_answers": [
+            "Photon",
+            "Electron",
+            "Boson"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_007",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "HYDRATE",
+        "legacy_prompt": "Needing approximately 8 cups of water per day.",
+        "correct_answer": "Daily Hydration",
+        "wrong_answers": [
+            "Overhydration",
+            "Minimum Intake",
+            "Athletic Need"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

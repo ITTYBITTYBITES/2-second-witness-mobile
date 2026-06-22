@@ -1,0 +1,27 @@
+{
+    "id": "military_014",
+    "universe": "frontier",
+    "world": "military",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DRONE",
+        "legacy_prompt": "Unmanned aircraft providing aerial surveillance of battlefield.",
+        "correct_answer": "UAV Reconnaissance",
+        "wrong_answers": [
+            "Satellite Imaging",
+            "Helicopter Scout",
+            "Radar Sweep"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

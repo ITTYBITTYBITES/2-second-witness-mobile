@@ -1,0 +1,27 @@
+{
+    "id": "history_012",
+    "universe": "society_mind",
+    "world": "history",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TREATY",
+        "legacy_prompt": "Agreement signed in a railway car ending World War I.",
+        "correct_answer": "Treaty of Versailles",
+        "wrong_answers": [
+            "Treaty of Paris",
+            "Geneva Convention",
+            "Armistice"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

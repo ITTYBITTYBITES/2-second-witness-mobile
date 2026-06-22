@@ -1,0 +1,27 @@
+{
+    "id": "auto_008",
+    "universe": "tech_ops",
+    "world": "auto",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "COOLANT",
+        "legacy_prompt": "Temperature gauge climbing rapidly into the red zone.",
+        "correct_answer": "Overheating Engine",
+        "wrong_answers": [
+            "Low Oil",
+            "Bad Thermostat",
+            "Clogged Filter"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

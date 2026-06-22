@@ -1,0 +1,27 @@
+{
+    "id": "nature_006",
+    "universe": "life_sciences",
+    "world": "nature",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SURVIVAL",
+        "legacy_prompt": "Lost in woods. Highest priority for first 3 hours.",
+        "correct_answer": "Shelter",
+        "wrong_answers": [
+            "Water",
+            "Food",
+            "Fire"
+        ]
+    },
+    "presentation": {
+        "title": "Priority:",
+        "visual_theme_override": null
+    }
+}

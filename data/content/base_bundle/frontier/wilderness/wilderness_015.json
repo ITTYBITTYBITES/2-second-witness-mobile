@@ -1,0 +1,27 @@
+{
+    "id": "wilderness_015",
+    "universe": "frontier",
+    "world": "wilderness",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FORD",
+        "legacy_prompt": "Crossing a river at a wide shallow section with good footing.",
+        "correct_answer": "River Ford",
+        "wrong_answers": [
+            "Bridge",
+            "Dam",
+            "Crossing Point"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

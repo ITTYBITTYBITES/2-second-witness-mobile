@@ -1,0 +1,27 @@
+{
+    "id": "science_007",
+    "universe": "science_lab",
+    "world": "science",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "REACTION",
+        "legacy_prompt": "Iron left in rain turns reddish-brown over weeks.",
+        "correct_answer": "Oxidation",
+        "wrong_answers": [
+            "Corrosion",
+            "Erosion",
+            "Decomposition"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

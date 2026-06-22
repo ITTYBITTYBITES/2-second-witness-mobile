@@ -1,0 +1,27 @@
+{
+    "id": "food_013",
+    "universe": "life_sciences",
+    "world": "food",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SMOKE",
+        "legacy_prompt": "Wood chips smoldering at low temperature for hours.",
+        "correct_answer": "Cold Smoking",
+        "wrong_answers": [
+            "Hot Smoking",
+            "Grilling",
+            "Roasting"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

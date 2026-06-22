@@ -1,0 +1,27 @@
+{
+    "id": "ai_002",
+    "universe": "tech_ops",
+    "world": "ai",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "NETWORK",
+        "legacy_prompt": "Layers of artificial neurons processing image data.",
+        "correct_answer": "Neural Network",
+        "wrong_answers": [
+            "Decision Tree",
+            "Random Forest",
+            "Support Vector"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

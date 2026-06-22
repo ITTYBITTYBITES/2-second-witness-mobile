@@ -1,0 +1,27 @@
+{
+    "id": "science_014",
+    "universe": "science_lab",
+    "world": "science",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DENSITY",
+        "legacy_prompt": "Oil floating on top of water in a glass.",
+        "correct_answer": "Lower Density",
+        "wrong_answers": [
+            "Surface Tension",
+            "Viscosity",
+            "Buoyancy"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

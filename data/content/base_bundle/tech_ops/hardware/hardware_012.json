@@ -1,0 +1,27 @@
+{
+    "id": "hardware_012",
+    "universe": "tech_ops",
+    "world": "hardware",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MICROCONTROLLER",
+        "legacy_prompt": "Small computer on a single chip running embedded code.",
+        "correct_answer": "Microcontroller",
+        "wrong_answers": [
+            "Microprocessor",
+            "FPGA",
+            "ASIC"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

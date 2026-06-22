@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_002",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FIBER",
+        "legacy_prompt": "Whole grains helping food move through the digestive system.",
+        "correct_answer": "Dietary Fiber",
+        "wrong_answers": [
+            "Protein",
+            "Fat",
+            "Carbohydrates"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "sociology_003",
+    "universe": "society_mind",
+    "world": "sociology",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CLASS",
+        "legacy_prompt": "Invisible barriers preventing upward economic movement.",
+        "correct_answer": "Social Stratification",
+        "wrong_answers": [
+            "Discrimination",
+            "Poverty",
+            "Inequality"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "law_007",
+    "universe": "society_mind",
+    "world": "law",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WITNESS",
+        "legacy_prompt": "Person lying under oath in a court of law.",
+        "correct_answer": "Perjury",
+        "wrong_answers": [
+            "Contempt",
+            "Obstruction",
+            "Fraud"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

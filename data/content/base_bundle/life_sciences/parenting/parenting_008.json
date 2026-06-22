@@ -1,0 +1,27 @@
+{
+    "id": "parenting_008",
+    "universe": "life_sciences",
+    "world": "parenting",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ALLERGY",
+        "legacy_prompt": "Introducing peanut butter to a baby at 6 months with supervision.",
+        "correct_answer": "Early Allergen Introduction",
+        "wrong_answers": [
+            "Dangerous Practice",
+            "Too Early",
+            "Choking Risk"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

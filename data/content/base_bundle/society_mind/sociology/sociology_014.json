@@ -1,0 +1,27 @@
+{
+    "id": "sociology_014",
+    "universe": "society_mind",
+    "world": "sociology",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CAPITAL",
+        "legacy_prompt": "Network of relationships that provide opportunities.",
+        "correct_answer": "Social Capital",
+        "wrong_answers": [
+            "Human Capital",
+            "Cultural Capital",
+            "Financial Capital"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

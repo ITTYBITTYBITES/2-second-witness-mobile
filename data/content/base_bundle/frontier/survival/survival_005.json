@@ -1,0 +1,27 @@
+{
+    "id": "survival_005",
+    "universe": "frontier",
+    "world": "survival",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SHOCK",
+        "legacy_prompt": "Person pale, rapid weak pulse, confused after blood loss.",
+        "correct_answer": "Hypovolemic Shock",
+        "wrong_answers": [
+            "Cardiac Arrest",
+            "Seizure",
+            "Fainting"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

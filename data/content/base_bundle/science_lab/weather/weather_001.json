@@ -1,0 +1,27 @@
+{
+    "id": "weather_001",
+    "universe": "science_lab",
+    "world": "weather",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ROTATION",
+        "legacy_prompt": "Large-scale rotating storm system with eye.",
+        "correct_answer": "Hurricane",
+        "wrong_answers": [
+            "Tornado",
+            "Typhoon",
+            "Cyclone"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

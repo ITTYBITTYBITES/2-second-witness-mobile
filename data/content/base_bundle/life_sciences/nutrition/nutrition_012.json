@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_012",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "METABOLISM",
+        "legacy_prompt": "Rate at which your body burns calories at rest.",
+        "correct_answer": "Basal Metabolic Rate",
+        "wrong_answers": [
+            "Active Metabolism",
+            "Thermic Effect",
+            "Exercise Rate"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

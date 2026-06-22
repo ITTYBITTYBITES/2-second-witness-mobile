@@ -1,0 +1,27 @@
+{
+    "id": "photography_010",
+    "universe": "creative_arts",
+    "world": "photography",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MACRO",
+        "legacy_prompt": "Extreme close-up showing tiny details of an insect.",
+        "correct_answer": "Macro Photography",
+        "wrong_answers": [
+            "Micro Photography",
+            "Close-Up",
+            "Telephoto"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "arctic_012",
+    "universe": "frontier",
+    "world": "arctic",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GLACIER",
+        "legacy_prompt": "Slow-moving river of ice carving valleys over thousands of years.",
+        "correct_answer": "Glacier",
+        "wrong_answers": [
+            "Ice Sheet",
+            "Ice Shelf",
+            "Iceberg"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

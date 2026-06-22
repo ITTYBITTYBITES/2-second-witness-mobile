@@ -1,0 +1,27 @@
+{
+    "id": "medical_009",
+    "universe": "life_sciences",
+    "world": "medical",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CARDIAC",
+        "legacy_prompt": "Patient hyperventilating, tingling fingers, no chest pain.",
+        "correct_answer": "Panic Attack",
+        "wrong_answers": [
+            "Heart Attack",
+            "Asthma",
+            "Stroke"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

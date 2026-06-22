@@ -1,0 +1,27 @@
+{
+    "id": "crime_004",
+    "universe": "society_mind",
+    "world": "crime",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FORENSIC",
+        "legacy_prompt": "Blood spatter pattern indicates direction of attack.",
+        "correct_answer": "Blood Spatter Analysis",
+        "wrong_answers": [
+            "DNA Analysis",
+            "Ballistics",
+            "Toxicology"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

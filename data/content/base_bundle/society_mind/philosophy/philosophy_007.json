@@ -1,0 +1,27 @@
+{
+    "id": "philosophy_007",
+    "universe": "society_mind",
+    "world": "philosophy",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DOUBT",
+        "legacy_prompt": "I think therefore I am -- the one thing that cannot be doubted.",
+        "correct_answer": "Cogito Ergo Sum",
+        "wrong_answers": [
+            "Tabula Rasa",
+            "Categorical Imperative",
+            "Social Contract"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

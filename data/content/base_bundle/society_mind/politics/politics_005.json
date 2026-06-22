@@ -1,0 +1,27 @@
+{
+    "id": "politics_005",
+    "universe": "society_mind",
+    "world": "politics",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ELECTORAL",
+        "legacy_prompt": "System where states cast votes for president based on population.",
+        "correct_answer": "Electoral College",
+        "wrong_answers": [
+            "Popular Vote",
+            "Caucus",
+            "Primary"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

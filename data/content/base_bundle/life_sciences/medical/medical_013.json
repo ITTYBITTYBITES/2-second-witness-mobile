@@ -1,0 +1,27 @@
+{
+    "id": "medical_013",
+    "universe": "life_sciences",
+    "world": "medical",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BREATH",
+        "legacy_prompt": "Person breathing rapidly with tingling in hands and feet.",
+        "correct_answer": "Hyperventilation",
+        "wrong_answers": [
+            "Asthma",
+            "Heart Attack",
+            "Pneumonia"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

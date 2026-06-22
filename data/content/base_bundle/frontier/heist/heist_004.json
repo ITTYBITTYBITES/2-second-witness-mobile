@@ -1,0 +1,27 @@
+{
+    "id": "heist_004",
+    "universe": "frontier",
+    "world": "heist",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "INSIDER",
+        "legacy_prompt": "Security guard disabling cameras during shift.",
+        "correct_answer": "Inside Job",
+        "wrong_answers": [
+            "Negligence",
+            "System Failure",
+            "Hacking"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

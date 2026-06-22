@@ -1,0 +1,27 @@
+{
+    "id": "psych_010",
+    "universe": "society_mind",
+    "world": "psych",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "LOSS",
+        "legacy_prompt": "Feeling the pain of losing $100 more than the joy of gaining $100.",
+        "correct_answer": "Loss Aversion",
+        "wrong_answers": [
+            "Risk Aversion",
+            "Sunk Cost",
+            "Endowment Effect"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

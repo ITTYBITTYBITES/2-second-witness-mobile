@@ -1,0 +1,27 @@
+{
+    "id": "cyber_010",
+    "universe": "tech_ops",
+    "world": "cyber",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WARNING",
+        "legacy_prompt": "Router firmware replaced with unsigned build overnight.",
+        "correct_answer": "Firmware Rootkit",
+        "wrong_answers": [
+            "Power Surge",
+            "GPS Spoofing",
+            "Echo Residue"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

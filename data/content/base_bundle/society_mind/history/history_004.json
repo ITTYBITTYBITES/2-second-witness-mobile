@@ -1,0 +1,27 @@
+{
+    "id": "history_004",
+    "universe": "society_mind",
+    "world": "history",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PLAGUE",
+        "legacy_prompt": "Disease killing one-third of Europe's population in the 1300s.",
+        "correct_answer": "Black Death",
+        "wrong_answers": [
+            "Spanish Flu",
+            "Smallpox",
+            "Cholera"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

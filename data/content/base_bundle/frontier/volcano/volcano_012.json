@@ -1,0 +1,27 @@
+{
+    "id": "volcano_012",
+    "universe": "frontier",
+    "world": "volcano",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "OBSIDIAN",
+        "legacy_prompt": "Black glassy rock formed from rapidly cooling lava.",
+        "correct_answer": "Obsidian",
+        "wrong_answers": [
+            "Basalt",
+            "Granite",
+            "Pumice"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

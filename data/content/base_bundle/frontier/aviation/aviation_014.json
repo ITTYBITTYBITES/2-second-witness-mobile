@@ -1,0 +1,27 @@
+{
+    "id": "aviation_014",
+    "universe": "frontier",
+    "world": "aviation",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FUEL",
+        "legacy_prompt": "Running engines at lower altitude burns more fuel.",
+        "correct_answer": "Increased Air Resistance",
+        "wrong_answers": [
+            "Engine Efficiency",
+            "Temperature Effect",
+            "Weight Penalty"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

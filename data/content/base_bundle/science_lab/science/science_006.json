@@ -1,0 +1,27 @@
+{
+    "id": "science_006",
+    "universe": "science_lab",
+    "world": "science",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GRAVITY",
+        "legacy_prompt": "Two objects of different mass dropped simultaneously hit ground together.",
+        "correct_answer": "Galileo Principle",
+        "wrong_answers": [
+            "Newton Third Law",
+            "Bernoulli Effect",
+            "Centripetal Force"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

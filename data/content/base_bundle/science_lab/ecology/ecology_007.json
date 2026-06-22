@@ -1,0 +1,27 @@
+{
+    "id": "ecology_007",
+    "universe": "science_lab",
+    "world": "ecology",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SUCCESSION",
+        "legacy_prompt": "Forest slowly regrowing after a wildfire over decades.",
+        "correct_answer": "Ecological Succession",
+        "wrong_answers": [
+            "Evolution",
+            "Migration",
+            "Adaptation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "ocean_014",
+    "universe": "frontier",
+    "world": "ocean",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "REEF",
+        "legacy_prompt": "Tiny animals building massive underwater limestone structures.",
+        "correct_answer": "Coral Polyps",
+        "wrong_answers": [
+            "Algae",
+            "Sponges",
+            "Barnacles"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

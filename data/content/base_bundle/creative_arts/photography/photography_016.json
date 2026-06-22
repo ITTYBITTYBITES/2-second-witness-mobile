@@ -1,0 +1,27 @@
+{
+    "id": "photography_016",
+    "universe": "creative_arts",
+    "world": "photography",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "NOISE",
+        "legacy_prompt": "Grainy speckled appearance in photos taken in low light.",
+        "correct_answer": "Digital Noise",
+        "wrong_answers": [
+            "Film Grain",
+            "Compression Artifact",
+            "Banding"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

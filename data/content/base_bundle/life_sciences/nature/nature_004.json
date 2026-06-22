@@ -1,0 +1,27 @@
+{
+    "id": "nature_004",
+    "universe": "life_sciences",
+    "world": "nature",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PLANT",
+        "legacy_prompt": "Three-leafed plant, red in fall, causes severe rash on contact.",
+        "correct_answer": "Poison Ivy",
+        "wrong_answers": [
+            "Poison Oak",
+            "Sumac",
+            "Virginia Creeper"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

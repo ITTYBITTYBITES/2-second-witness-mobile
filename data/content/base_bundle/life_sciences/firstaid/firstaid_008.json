@@ -1,0 +1,27 @@
+{
+    "id": "firstaid_008",
+    "universe": "life_sciences",
+    "world": "firstaid",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "RECOVERY",
+        "legacy_prompt": "Unconscious breathing person placed on their side.",
+        "correct_answer": "Recovery Position",
+        "wrong_answers": [
+            "Supine Position",
+            "Prone Position",
+            "Shock Position"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

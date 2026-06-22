@@ -1,0 +1,27 @@
+{
+    "id": "cooking_009",
+    "universe": "creative_arts",
+    "world": "cooking",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BASTE",
+        "legacy_prompt": "Spooning pan juices over meat during roasting.",
+        "correct_answer": "Basting",
+        "wrong_answers": [
+            "Glazing",
+            "Marinating",
+            "Drizzling"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

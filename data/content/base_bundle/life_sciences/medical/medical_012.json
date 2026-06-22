@@ -1,0 +1,27 @@
+{
+    "id": "medical_012",
+    "universe": "life_sciences",
+    "world": "medical",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "RASH",
+        "legacy_prompt": "Spreading red rash with bull's-eye pattern after a tick bite.",
+        "correct_answer": "Lyme Disease",
+        "wrong_answers": [
+            "Ringworm",
+            "Eczema",
+            "Cellulitis"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

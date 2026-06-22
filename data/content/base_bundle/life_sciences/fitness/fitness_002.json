@@ -1,0 +1,27 @@
+{
+    "id": "fitness_002",
+    "universe": "life_sciences",
+    "world": "fitness",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CARDIO",
+        "legacy_prompt": "Heart rate elevated to 60-80% of maximum during exercise.",
+        "correct_answer": "Aerobic Zone",
+        "wrong_answers": [
+            "Anaerobic Zone",
+            "Fat Burn Zone",
+            "Peak Zone"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

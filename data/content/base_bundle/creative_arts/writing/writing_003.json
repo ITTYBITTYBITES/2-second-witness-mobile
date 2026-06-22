@@ -1,0 +1,27 @@
+{
+    "id": "writing_003",
+    "universe": "creative_arts",
+    "world": "writing",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "IRONY",
+        "legacy_prompt": "Fire station burning down while firefighters are away.",
+        "correct_answer": "Situational Irony",
+        "wrong_answers": [
+            "Dramatic Irony",
+            "Verbal Irony",
+            "Coincidence"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

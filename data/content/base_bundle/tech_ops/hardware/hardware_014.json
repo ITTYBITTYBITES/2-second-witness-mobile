@@ -1,0 +1,27 @@
+{
+    "id": "hardware_014",
+    "universe": "tech_ops",
+    "world": "hardware",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "OSCILLOSCOPE",
+        "legacy_prompt": "Instrument displaying voltage changes over time as a waveform.",
+        "correct_answer": "Oscilloscope",
+        "wrong_answers": [
+            "Multimeter",
+            "Logic Analyzer",
+            "Spectrum Analyzer"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

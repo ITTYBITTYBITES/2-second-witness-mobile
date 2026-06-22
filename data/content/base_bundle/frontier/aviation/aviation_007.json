@@ -1,0 +1,27 @@
+{
+    "id": "aviation_007",
+    "universe": "frontier",
+    "world": "aviation",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BLACKBOX",
+        "legacy_prompt": "Device recording cockpit audio and flight data.",
+        "correct_answer": "Flight Data Recorder",
+        "wrong_answers": [
+            "GPS Unit",
+            "Transponder",
+            "Radio"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

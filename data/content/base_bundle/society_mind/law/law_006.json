@@ -1,0 +1,27 @@
+{
+    "id": "law_006",
+    "universe": "society_mind",
+    "world": "law",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "NEGLIGENCE",
+        "legacy_prompt": "Doctor operates on wrong leg due to not checking chart.",
+        "correct_answer": "Medical Malpractice",
+        "wrong_answers": [
+            "Criminal Negligence",
+            "Assault",
+            "Fraud"
+        ]
+    },
+    "presentation": {
+        "title": "Classify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "economics_003",
+    "universe": "society_mind",
+    "world": "economics",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GDP",
+        "legacy_prompt": "Total value of all goods and services produced in a country per year.",
+        "correct_answer": "Gross Domestic Product",
+        "wrong_answers": [
+            "GNP",
+            "National Income",
+            "Trade Balance"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

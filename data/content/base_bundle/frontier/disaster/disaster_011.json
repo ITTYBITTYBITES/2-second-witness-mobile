@@ -1,0 +1,27 @@
+{
+    "id": "disaster_011",
+    "universe": "frontier",
+    "world": "disaster",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EAS",
+        "legacy_prompt": "Emergency broadcast interrupting TV and radio programming.",
+        "correct_answer": "Emergency Alert System",
+        "wrong_answers": [
+            "News Bulletin",
+            "Weather Report",
+            "Public Service"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

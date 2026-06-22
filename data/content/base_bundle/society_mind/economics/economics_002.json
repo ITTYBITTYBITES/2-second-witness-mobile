@@ -1,0 +1,27 @@
+{
+    "id": "economics_002",
+    "universe": "society_mind",
+    "world": "economics",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DEMAND",
+        "legacy_prompt": "More people wanting a product than is currently available.",
+        "correct_answer": "Excess Demand",
+        "wrong_answers": [
+            "Supply Surplus",
+            "Market Failure",
+            "Speculation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

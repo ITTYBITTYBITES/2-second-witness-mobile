@@ -1,0 +1,27 @@
+{
+    "id": "microbiology_012",
+    "universe": "science_lab",
+    "world": "microbiology",
+    "type": "rapid_classification",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PHAGE",
+        "legacy_prompt": "Virus that specifically attacks and destroys bacteria.",
+        "correct_answer": "Bacteriophage",
+        "wrong_answers": [
+            "Antibiotic",
+            "Antiviral",
+            "Enzyme"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

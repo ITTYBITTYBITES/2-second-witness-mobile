@@ -1,0 +1,27 @@
+{
+    "id": "law_002",
+    "universe": "society_mind",
+    "world": "law",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CRIME",
+        "legacy_prompt": "Taking something from a store without paying.",
+        "correct_answer": "Theft",
+        "wrong_answers": [
+            "Robbery",
+            "Burglary",
+            "Fraud"
+        ]
+    },
+    "presentation": {
+        "title": "Classify:",
+        "visual_theme_override": null
+    }
+}

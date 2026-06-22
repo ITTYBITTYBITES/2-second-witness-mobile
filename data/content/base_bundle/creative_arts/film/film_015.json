@@ -1,0 +1,27 @@
+{
+    "id": "film_015",
+    "universe": "creative_arts",
+    "world": "film",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ADR",
+        "legacy_prompt": "Actor re-recording dialogue in a studio after filming.",
+        "correct_answer": "Automated Dialogue Replacement",
+        "wrong_answers": [
+            "Voice Over",
+            "Dubbing",
+            "Looping"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

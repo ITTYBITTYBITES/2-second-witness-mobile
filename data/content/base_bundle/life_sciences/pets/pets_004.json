@@ -1,0 +1,27 @@
+{
+    "id": "pets_004",
+    "universe": "life_sciences",
+    "world": "pets",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "APPETITE",
+        "legacy_prompt": "Dog refusing food for more than 24 hours.",
+        "correct_answer": "Possible Illness",
+        "wrong_answers": [
+            "Picky Eating",
+            "New Food Adjustment",
+            "Normal Behavior"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

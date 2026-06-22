@@ -1,0 +1,27 @@
+{
+    "id": "telecom_013",
+    "universe": "tech_ops",
+    "world": "telecom",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SPECTRUM",
+        "legacy_prompt": "Government auctioning rights to use specific radio frequencies.",
+        "correct_answer": "Spectrum Auction",
+        "wrong_answers": [
+            "License Fee",
+            "Frequency Tax",
+            "Band Allocation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

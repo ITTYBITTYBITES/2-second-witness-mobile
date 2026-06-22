@@ -1,0 +1,27 @@
+{
+    "id": "auto_015",
+    "universe": "tech_ops",
+    "world": "auto",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SUSPENSION",
+        "legacy_prompt": "Car bouncing excessively after hitting a bump.",
+        "correct_answer": "Worn Shocks",
+        "wrong_answers": [
+            "Flat Tire",
+            "Broken Spring",
+            "Frame Damage"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

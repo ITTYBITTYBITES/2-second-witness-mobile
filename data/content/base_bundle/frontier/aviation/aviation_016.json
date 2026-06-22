@@ -1,0 +1,27 @@
+{
+    "id": "aviation_016",
+    "universe": "frontier",
+    "world": "aviation",
+    "type": "stroop_test",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BIRD",
+        "legacy_prompt": "Flock of birds getting sucked into jet engine.",
+        "correct_answer": "Bird Strike",
+        "wrong_answers": [
+            "Foreign Object Damage",
+            "Engine Surge",
+            "Compressor Stall"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

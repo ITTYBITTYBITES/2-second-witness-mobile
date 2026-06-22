@@ -1,0 +1,27 @@
+{
+    "id": "art_013",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GOLDEN",
+        "legacy_prompt": "Ratio approximately 1:1.618 found in nature and art.",
+        "correct_answer": "Golden Ratio",
+        "wrong_answers": [
+            "Rule of Thirds",
+            "Fibonacci",
+            "Symmetry"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

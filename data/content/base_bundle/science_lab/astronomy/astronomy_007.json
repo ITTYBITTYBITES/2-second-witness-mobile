@@ -1,0 +1,27 @@
+{
+    "id": "astronomy_007",
+    "universe": "science_lab",
+    "world": "astronomy",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "HABITABLE",
+        "legacy_prompt": "Distance from a star where liquid water could exist on a planet.",
+        "correct_answer": "Habitable Zone",
+        "wrong_answers": [
+            "Frost Line",
+            "Roche Limit",
+            "Hill Sphere"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

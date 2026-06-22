@@ -1,0 +1,27 @@
+{
+    "id": "architecture_002",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GOTHIC",
+        "legacy_prompt": "Pointed arches, flying buttresses, and stained glass windows.",
+        "correct_answer": "Gothic Architecture",
+        "wrong_answers": [
+            "Romanesque",
+            "Baroque",
+            "Renaissance"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

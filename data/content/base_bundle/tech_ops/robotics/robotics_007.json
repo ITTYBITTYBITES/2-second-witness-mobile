@@ -1,0 +1,27 @@
+{
+    "id": "robotics_007",
+    "universe": "tech_ops",
+    "world": "robotics",
+    "type": "rapid_classification",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PID",
+        "legacy_prompt": "Controller continuously adjusting motor speed to match target.",
+        "correct_answer": "PID Controller",
+        "wrong_answers": [
+            "Bang-Bang Control",
+            "Open Loop",
+            "Fuzzy Logic"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

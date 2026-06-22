@@ -1,0 +1,27 @@
+{
+    "id": "music_012",
+    "universe": "creative_arts",
+    "world": "music",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TIMBRE",
+        "legacy_prompt": "Quality that makes a piano sound different from a guitar on the same note.",
+        "correct_answer": "Timbre",
+        "wrong_answers": [
+            "Pitch",
+            "Volume",
+            "Duration"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

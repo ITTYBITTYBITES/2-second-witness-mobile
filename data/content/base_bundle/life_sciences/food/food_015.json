@@ -1,0 +1,27 @@
+{
+    "id": "food_015",
+    "universe": "life_sciences",
+    "world": "food",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WHIP",
+        "legacy_prompt": "Egg whites turning stiff and glossy with sugar.",
+        "correct_answer": "Meringue",
+        "wrong_answers": [
+            "Souffle",
+            "Mousse",
+            "Foam"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

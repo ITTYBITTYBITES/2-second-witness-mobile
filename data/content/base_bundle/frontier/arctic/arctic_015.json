@@ -1,0 +1,27 @@
+{
+    "id": "arctic_015",
+    "universe": "frontier",
+    "world": "arctic",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SEAL",
+        "legacy_prompt": "Marine mammal maintaining breathing holes through thick sea ice.",
+        "correct_answer": "Ringed Seal",
+        "wrong_answers": [
+            "Harbor Seal",
+            "Walrus",
+            "Sea Lion"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

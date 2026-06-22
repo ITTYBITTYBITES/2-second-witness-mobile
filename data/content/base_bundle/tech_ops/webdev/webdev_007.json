@@ -1,0 +1,27 @@
+{
+    "id": "webdev_007",
+    "universe": "tech_ops",
+    "world": "webdev",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CACHE",
+        "legacy_prompt": "Browser storing a copy of a page to load faster next time.",
+        "correct_answer": "Browser Caching",
+        "wrong_answers": [
+            "CDN",
+            "Preloading",
+            "Lazy Loading"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

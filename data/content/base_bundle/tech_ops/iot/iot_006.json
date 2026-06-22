@@ -1,0 +1,27 @@
+{
+    "id": "iot_006",
+    "universe": "tech_ops",
+    "world": "iot",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FIRMWARE",
+        "legacy_prompt": "Updating the software on a smart light bulb remotely.",
+        "correct_answer": "Over-the-Air Update",
+        "wrong_answers": [
+            "Factory Reset",
+            "Manual Flash",
+            "Hardware Swap"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

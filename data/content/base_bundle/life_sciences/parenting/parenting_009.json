@@ -1,0 +1,27 @@
+{
+    "id": "parenting_009",
+    "universe": "life_sciences",
+    "world": "parenting",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SCREEN",
+        "legacy_prompt": "AAP recommending no screen time before 18 months.",
+        "correct_answer": "Screen Time Guidelines",
+        "wrong_answers": [
+            "Outdated Advice",
+            "Suggestion Only",
+            "For TV Only"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

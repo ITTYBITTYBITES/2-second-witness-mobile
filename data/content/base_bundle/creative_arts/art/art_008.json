@@ -1,0 +1,27 @@
+{
+    "id": "art_008",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CUBISM",
+        "legacy_prompt": "Subject shown from multiple viewpoints simultaneously.",
+        "correct_answer": "Cubism",
+        "wrong_answers": [
+            "Surrealism",
+            "Futurism",
+            "Dadaism"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

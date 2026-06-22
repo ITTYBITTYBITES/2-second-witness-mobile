@@ -1,0 +1,27 @@
+{
+    "id": "photography_014",
+    "universe": "creative_arts",
+    "world": "photography",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "LEADING",
+        "legacy_prompt": "Road or fence drawing the viewer's eye into the image.",
+        "correct_answer": "Leading Lines",
+        "wrong_answers": [
+            "Rule of Thirds",
+            "Frame within Frame",
+            "Symmetry"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

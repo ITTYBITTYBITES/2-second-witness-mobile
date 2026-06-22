@@ -1,0 +1,27 @@
+{
+    "id": "volcano_009",
+    "universe": "frontier",
+    "world": "volcano",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PUMICE",
+        "legacy_prompt": "Volcanic rock so full of air pockets that it floats on water.",
+        "correct_answer": "Pumice",
+        "wrong_answers": [
+            "Obsidian",
+            "Basalt",
+            "Granite"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

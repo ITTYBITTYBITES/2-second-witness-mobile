@@ -1,0 +1,27 @@
+{
+    "id": "robotics_009",
+    "universe": "tech_ops",
+    "world": "robotics",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "COBOT",
+        "legacy_prompt": "Robot designed to safely work alongside humans in a factory.",
+        "correct_answer": "Collaborative Robot",
+        "wrong_answers": [
+            "Industrial Robot",
+            "Service Robot",
+            "Humanoid"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

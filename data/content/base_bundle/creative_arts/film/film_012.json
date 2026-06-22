@@ -1,0 +1,27 @@
+{
+    "id": "film_012",
+    "universe": "creative_arts",
+    "world": "film",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "NOIR",
+        "legacy_prompt": "Dark moody film with cynical detective and femme fatale.",
+        "correct_answer": "Film Noir",
+        "wrong_answers": [
+            "Neo-Noir",
+            "Thriller",
+            "Mystery"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "astronomy_008",
+    "universe": "science_lab",
+    "world": "astronomy",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MAIN",
+        "legacy_prompt": "Star fusing hydrogen into helium in its core for billions of years.",
+        "correct_answer": "Main Sequence Star",
+        "wrong_answers": [
+            "Giant Star",
+            "Supergiant",
+            "Protostar"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

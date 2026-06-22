@@ -1,0 +1,27 @@
+{
+    "id": "genetics_009",
+    "universe": "science_lab",
+    "world": "genetics",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GENE",
+        "legacy_prompt": "Child has blue eyes but both parents have brown.",
+        "correct_answer": "Recessive Trait",
+        "wrong_answers": [
+            "Mutation",
+            "Dominant Trait",
+            "Codominance"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "nature_003",
+    "universe": "life_sciences",
+    "world": "nature",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DANGER",
+        "legacy_prompt": "Bright red and yellow frog sitting openly on forest floor.",
+        "correct_answer": "Warning Coloration",
+        "wrong_answers": [
+            "Camouflage",
+            "Mimicry",
+            "Bioluminescence"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

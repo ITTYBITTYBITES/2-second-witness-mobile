@@ -1,0 +1,27 @@
+{
+    "id": "blockchain_005",
+    "universe": "tech_ops",
+    "world": "blockchain",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FORK",
+        "legacy_prompt": "Blockchain splitting into two separate chains after disagreement.",
+        "correct_answer": "Hard Fork",
+        "wrong_answers": [
+            "Soft Fork",
+            "Chain Split",
+            "Rollback"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

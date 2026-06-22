@@ -1,0 +1,27 @@
+{
+    "id": "fitness_004",
+    "universe": "life_sciences",
+    "world": "fitness",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "REST",
+        "legacy_prompt": "Muscles growing stronger during rest days, not during workouts.",
+        "correct_answer": "Recovery Principle",
+        "wrong_answers": [
+            "Overtraining",
+            "Muscle Memory",
+            "Conditioning"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

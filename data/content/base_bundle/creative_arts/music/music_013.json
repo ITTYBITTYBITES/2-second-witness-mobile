@@ -1,0 +1,27 @@
+{
+    "id": "music_013",
+    "universe": "creative_arts",
+    "world": "music",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BLUES",
+        "legacy_prompt": "Scale using flatted third, fifth, and seventh notes.",
+        "correct_answer": "Blues Scale",
+        "wrong_answers": [
+            "Pentatonic Scale",
+            "Dorian Mode",
+            "Mixolydian Mode"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

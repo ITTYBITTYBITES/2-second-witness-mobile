@@ -1,0 +1,27 @@
+{
+    "id": "robotics_016",
+    "universe": "tech_ops",
+    "world": "robotics",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TEACH",
+        "legacy_prompt": "Operator physically moving robot arm through desired path.",
+        "correct_answer": "Teach Pendant Programming",
+        "wrong_answers": [
+            "Offline Programming",
+            "AI Learning",
+            "Voice Control"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

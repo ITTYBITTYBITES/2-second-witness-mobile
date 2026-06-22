@@ -1,0 +1,27 @@
+{
+    "id": "food_012",
+    "universe": "life_sciences",
+    "world": "food",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DEGLAZE",
+        "legacy_prompt": "Adding wine to a hot pan to lift browned bits.",
+        "correct_answer": "Deglazing",
+        "wrong_answers": [
+            "Reducing",
+            "Braising",
+            "Sauteing"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

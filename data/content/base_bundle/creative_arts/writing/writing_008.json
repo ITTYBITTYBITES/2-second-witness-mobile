@@ -1,0 +1,27 @@
+{
+    "id": "writing_008",
+    "universe": "creative_arts",
+    "world": "writing",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "VOICE",
+        "legacy_prompt": "Story told from an all-knowing perspective seeing every character's thoughts.",
+        "correct_answer": "Omniscient Narrator",
+        "wrong_answers": [
+            "First Person",
+            "Limited Third",
+            "Second Person"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

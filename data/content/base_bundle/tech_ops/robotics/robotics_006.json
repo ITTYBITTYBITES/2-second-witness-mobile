@@ -1,0 +1,27 @@
+{
+    "id": "robotics_006",
+    "universe": "tech_ops",
+    "world": "robotics",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SWARM",
+        "legacy_prompt": "Hundreds of small robots coordinating without central control.",
+        "correct_answer": "Swarm Robotics",
+        "wrong_answers": [
+            "Centralized Control",
+            "Master-Slave",
+            "Hierarchical"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

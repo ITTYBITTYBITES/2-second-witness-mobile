@@ -1,0 +1,27 @@
+{
+    "id": "cyber_007",
+    "universe": "tech_ops",
+    "world": "cyber",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SKIM",
+        "legacy_prompt": "Tiny transfers draining dormant accounts.",
+        "correct_answer": "Salami Slicing",
+        "wrong_answers": [
+            "DNS Poisoning",
+            "Badge Clone",
+            "Sensor Drift"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

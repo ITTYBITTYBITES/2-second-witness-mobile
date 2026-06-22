@@ -1,0 +1,27 @@
+{
+    "id": "architecture_004",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BUTTRESS",
+        "legacy_prompt": "External support structure pushing against a wall.",
+        "correct_answer": "Flying Buttress",
+        "wrong_answers": [
+            "Retaining Wall",
+            "Foundation",
+            "Pier"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

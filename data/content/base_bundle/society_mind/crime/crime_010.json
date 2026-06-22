@@ -1,0 +1,27 @@
+{
+    "id": "crime_010",
+    "universe": "society_mind",
+    "world": "crime",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BLOOD",
+        "legacy_prompt": "Pattern of drops indicating direction of movement.",
+        "correct_answer": "Blood Spatter Analysis",
+        "wrong_answers": [
+            "DNA Profiling",
+            "Luminol Test",
+            "Ballistics"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

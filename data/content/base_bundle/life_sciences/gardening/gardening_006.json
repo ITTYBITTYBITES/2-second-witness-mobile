@@ -1,0 +1,27 @@
+{
+    "id": "gardening_006",
+    "universe": "life_sciences",
+    "world": "gardening",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "COMPANION",
+        "legacy_prompt": "Planting basil next to tomatoes to repel pests.",
+        "correct_answer": "Companion Planting",
+        "wrong_answers": [
+            "Crop Rotation",
+            "Intercropping",
+            "Succession Planting"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

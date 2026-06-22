@@ -1,0 +1,27 @@
+{
+    "id": "astronomy_009",
+    "universe": "science_lab",
+    "world": "astronomy",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TRANSIT",
+        "legacy_prompt": "Planet passing in front of its star causing a tiny dip in brightness.",
+        "correct_answer": "Transit Method",
+        "wrong_answers": [
+            "Radial Velocity",
+            "Direct Imaging",
+            "Microlensing"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

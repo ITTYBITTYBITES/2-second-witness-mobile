@@ -1,0 +1,27 @@
+{
+    "id": "architecture_014",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BLUEPRINT",
+        "legacy_prompt": "Technical drawing showing precise dimensions and details.",
+        "correct_answer": "Architectural Blueprint",
+        "wrong_answers": [
+            "Concept Sketch",
+            "Rendering",
+            "Floor Plan"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

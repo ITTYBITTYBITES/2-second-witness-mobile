@@ -1,0 +1,27 @@
+{
+    "id": "politics_007",
+    "universe": "society_mind",
+    "world": "politics",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GERRYMANDER",
+        "legacy_prompt": "Drawing district boundaries to favor one political party.",
+        "correct_answer": "Gerrymandering",
+        "wrong_answers": [
+            "Redistricting",
+            "Reapportionment",
+            "Zoning"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

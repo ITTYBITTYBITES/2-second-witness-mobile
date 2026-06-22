@@ -1,0 +1,27 @@
+{
+    "id": "aviation_005",
+    "universe": "frontier",
+    "world": "aviation",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "HYDRAULIC",
+        "legacy_prompt": "Control surfaces not responding to pilot input.",
+        "correct_answer": "Hydraulic Failure",
+        "wrong_answers": [
+            "Electrical Failure",
+            "Engine Failure",
+            "Structural"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "blockchain_004",
+    "universe": "tech_ops",
+    "world": "blockchain",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SMART",
+        "legacy_prompt": "Self-executing code that runs when conditions are met.",
+        "correct_answer": "Smart Contract",
+        "wrong_answers": [
+            "API Call",
+            "Script",
+            "Macro"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "auto_004",
+    "universe": "tech_ops",
+    "world": "auto",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ELECTRICAL",
+        "legacy_prompt": "Dashboard lights dimming while driving, battery warning light on.",
+        "correct_answer": "Failing Alternator",
+        "wrong_answers": [
+            "Dead Battery",
+            "Starter Motor",
+            "Fuse Blown"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

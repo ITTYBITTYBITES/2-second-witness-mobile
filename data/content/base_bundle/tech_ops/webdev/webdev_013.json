@@ -1,0 +1,27 @@
+{
+    "id": "webdev_013",
+    "universe": "tech_ops",
+    "world": "webdev",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "OAUTH",
+        "legacy_prompt": "Logging into a website using your Google account.",
+        "correct_answer": "OAuth Authentication",
+        "wrong_answers": [
+            "SSO",
+            "LDAP",
+            "SAML"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

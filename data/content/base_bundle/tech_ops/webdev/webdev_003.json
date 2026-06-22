@@ -1,0 +1,27 @@
+{
+    "id": "webdev_003",
+    "universe": "tech_ops",
+    "world": "webdev",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "API",
+        "legacy_prompt": "Server endpoint returning data in JSON format to a mobile app.",
+        "correct_answer": "REST API",
+        "wrong_answers": [
+            "GraphQL",
+            "WebSocket",
+            "RPC"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

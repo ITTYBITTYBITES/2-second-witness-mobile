@@ -1,0 +1,27 @@
+{
+    "id": "gardening_008",
+    "universe": "life_sciences",
+    "world": "gardening",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MULCH",
+        "legacy_prompt": "Layer of material spread around plants to retain moisture.",
+        "correct_answer": "Mulching",
+        "wrong_answers": [
+            "Composting",
+            "Tilling",
+            "Aerating"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

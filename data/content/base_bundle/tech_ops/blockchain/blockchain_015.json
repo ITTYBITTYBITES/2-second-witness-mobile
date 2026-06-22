@@ -1,0 +1,27 @@
+{
+    "id": "blockchain_015",
+    "universe": "tech_ops",
+    "world": "blockchain",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DAO",
+        "legacy_prompt": "Organization governed by token holders voting on proposals.",
+        "correct_answer": "Decentralized Autonomous Org",
+        "wrong_answers": [
+            "Corporation",
+            "Cooperative",
+            "Trust"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

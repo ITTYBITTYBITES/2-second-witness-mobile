@@ -1,0 +1,27 @@
+{
+    "id": "ocean_010",
+    "universe": "frontier",
+    "world": "ocean",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CURRENT",
+        "legacy_prompt": "Massive underwater river moving warm water across the Atlantic.",
+        "correct_answer": "Gulf Stream",
+        "wrong_answers": [
+            "Jet Stream",
+            "Trade Winds",
+            "Tidal Current"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

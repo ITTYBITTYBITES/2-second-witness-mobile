@@ -1,0 +1,27 @@
+{
+    "id": "hardware_005",
+    "universe": "tech_ops",
+    "world": "hardware",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TRANSISTOR",
+        "legacy_prompt": "Tiny switch that amplifies or gates electronic signals.",
+        "correct_answer": "Transistor",
+        "wrong_answers": [
+            "Relay",
+            "Capacitor",
+            "Inductor"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "auto_010",
+    "universe": "tech_ops",
+    "world": "auto",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EXHAUST",
+        "legacy_prompt": "Blue smoke pouring from the tailpipe during acceleration.",
+        "correct_answer": "Burning Oil",
+        "wrong_answers": [
+            "Rich Fuel Mixture",
+            "Coolant Leak",
+            "Catalytic Failure"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

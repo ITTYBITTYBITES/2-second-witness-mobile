@@ -1,0 +1,27 @@
+{
+    "id": "microbiology_002",
+    "universe": "science_lab",
+    "world": "microbiology",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "VIRUS",
+        "legacy_prompt": "Particle that can only reproduce inside a living cell.",
+        "correct_answer": "Virus",
+        "wrong_answers": [
+            "Bacteria",
+            "Fungus",
+            "Parasite"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

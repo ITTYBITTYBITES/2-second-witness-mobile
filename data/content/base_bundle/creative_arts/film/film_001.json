@@ -1,0 +1,27 @@
+{
+    "id": "film_001",
+    "universe": "creative_arts",
+    "world": "film",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CUT",
+        "legacy_prompt": "Switching instantly from one camera angle to another.",
+        "correct_answer": "Hard Cut",
+        "wrong_answers": [
+            "Dissolve",
+            "Fade",
+            "Wipe"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

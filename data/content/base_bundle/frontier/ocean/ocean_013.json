@@ -1,0 +1,27 @@
+{
+    "id": "ocean_013",
+    "universe": "frontier",
+    "world": "ocean",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WHALE",
+        "legacy_prompt": "Massive marine mammal singing complex songs across ocean.",
+        "correct_answer": "Humpback Whale Communication",
+        "wrong_answers": [
+            "Sonar",
+            "Echo Location",
+            "Mating Display"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

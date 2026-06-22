@@ -1,0 +1,27 @@
+{
+    "id": "law_013",
+    "universe": "society_mind",
+    "world": "law",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SEARCH",
+        "legacy_prompt": "Officer finding drugs in plain sight during a legal traffic stop.",
+        "correct_answer": "Plain View Doctrine",
+        "wrong_answers": [
+            "Illegal Search",
+            "Probable Cause",
+            "Warrant"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

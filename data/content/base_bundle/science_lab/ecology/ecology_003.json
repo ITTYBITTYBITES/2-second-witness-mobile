@@ -1,0 +1,27 @@
+{
+    "id": "ecology_003",
+    "universe": "science_lab",
+    "world": "ecology",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "INVASIVE",
+        "legacy_prompt": "Non-native species outcompeting local wildlife for resources.",
+        "correct_answer": "Invasive Species",
+        "wrong_answers": [
+            "Endangered Species",
+            "Keystone Species",
+            "Native Species"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

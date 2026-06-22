@@ -1,0 +1,27 @@
+{
+    "id": "gardening_011",
+    "universe": "life_sciences",
+    "world": "gardening",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "POLLINATE",
+        "legacy_prompt": "Bee transferring pollen from one flower to another.",
+        "correct_answer": "Cross Pollination",
+        "wrong_answers": [
+            "Self Pollination",
+            "Wind Pollination",
+            "Hand Pollination"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

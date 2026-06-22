@@ -1,0 +1,27 @@
+{
+    "id": "blockchain_016",
+    "universe": "tech_ops",
+    "world": "blockchain",
+    "type": "rapid_classification",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BRIDGE",
+        "legacy_prompt": "Moving tokens from one blockchain network to another.",
+        "correct_answer": "Cross-Chain Bridge",
+        "wrong_answers": [
+            "Swap",
+            "Exchange",
+            "Transfer"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

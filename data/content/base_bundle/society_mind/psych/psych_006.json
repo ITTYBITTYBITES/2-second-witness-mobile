@@ -1,0 +1,27 @@
+{
+    "id": "psych_006",
+    "universe": "society_mind",
+    "world": "psych",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "HAPPINESS",
+        "legacy_prompt": "Person keeps gambling despite consistent losses.",
+        "correct_answer": "Sunk Cost Fallacy",
+        "wrong_answers": [
+            "Addiction",
+            "Risk Tolerance",
+            "Optimism Bias"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

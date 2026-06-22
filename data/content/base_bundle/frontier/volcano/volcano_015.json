@@ -1,0 +1,27 @@
+{
+    "id": "volcano_015",
+    "universe": "frontier",
+    "world": "volcano",
+    "type": "rapid_classification",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TSUNAMI",
+        "legacy_prompt": "Underwater volcanic eruption displacing massive amount of ocean water.",
+        "correct_answer": "Volcanic Tsunami",
+        "wrong_answers": [
+            "Tidal Wave",
+            "Storm Surge",
+            "Seiche"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

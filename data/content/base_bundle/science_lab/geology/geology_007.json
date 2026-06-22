@@ -1,0 +1,27 @@
+{
+    "id": "geology_007",
+    "universe": "science_lab",
+    "world": "geology",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EROSION",
+        "legacy_prompt": "Wind carving unusual shapes in desert sandstone.",
+        "correct_answer": "Wind Erosion",
+        "wrong_answers": [
+            "Water Erosion",
+            "Chemical Weathering",
+            "Glaciation"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

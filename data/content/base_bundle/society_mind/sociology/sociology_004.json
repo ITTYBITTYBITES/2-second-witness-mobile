@@ -1,0 +1,27 @@
+{
+    "id": "sociology_004",
+    "universe": "society_mind",
+    "world": "sociology",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DEVIANCE",
+        "legacy_prompt": "Breaking social rules that most people follow.",
+        "correct_answer": "Social Deviance",
+        "wrong_answers": [
+            "Crime",
+            "Rebellion",
+            "Nonconformity"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "microbiology_010",
+    "universe": "science_lab",
+    "world": "microbiology",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BIOFILM",
+        "legacy_prompt": "Bacteria forming a protective slimy layer on a surface.",
+        "correct_answer": "Biofilm",
+        "wrong_answers": [
+            "Colony",
+            "Culture",
+            "Plaque"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

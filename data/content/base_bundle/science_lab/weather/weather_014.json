@@ -1,0 +1,27 @@
+{
+    "id": "weather_014",
+    "universe": "science_lab",
+    "world": "weather",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ROTATE",
+        "legacy_prompt": "Violently rotating column of air touching the ground.",
+        "correct_answer": "Tornado",
+        "wrong_answers": [
+            "Hurricane",
+            "Cyclone",
+            "Dust Devil"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

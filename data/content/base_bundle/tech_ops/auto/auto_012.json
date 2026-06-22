@@ -1,0 +1,27 @@
+{
+    "id": "auto_012",
+    "universe": "tech_ops",
+    "world": "auto",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "NOISE",
+        "legacy_prompt": "Rhythmic thumping sound increasing with vehicle speed.",
+        "correct_answer": "Tire Defect",
+        "wrong_answers": [
+            "Worn Bearings",
+            "Brake Drag",
+            "Loose Exhaust"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "photography_007",
+    "universe": "creative_arts",
+    "world": "photography",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EXPOSURE",
+        "legacy_prompt": "Image too bright with lost detail in highlights.",
+        "correct_answer": "Overexposed",
+        "wrong_answers": [
+            "Underexposed",
+            "High Key",
+            "Blown Out"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

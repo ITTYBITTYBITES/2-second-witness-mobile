@@ -1,0 +1,27 @@
+{
+    "id": "influence_002",
+    "universe": "society_mind",
+    "world": "influence",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "AUTHORITY",
+        "legacy_prompt": "Doctor in white coat recommending a supplement on TV.",
+        "correct_answer": "Authority Bias",
+        "wrong_answers": [
+            "Halo Effect",
+            "Celebrity Endorsement",
+            "Social Proof"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

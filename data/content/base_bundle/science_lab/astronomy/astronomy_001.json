@@ -1,0 +1,27 @@
+{
+    "id": "astronomy_001",
+    "universe": "science_lab",
+    "world": "astronomy",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DWARF",
+        "legacy_prompt": "Small dense star at the end of its life cycle.",
+        "correct_answer": "White Dwarf",
+        "wrong_answers": [
+            "Red Dwarf",
+            "Brown Dwarf",
+            "Neutron Star"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

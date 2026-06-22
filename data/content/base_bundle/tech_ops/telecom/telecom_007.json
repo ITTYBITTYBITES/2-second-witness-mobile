@@ -1,0 +1,27 @@
+{
+    "id": "telecom_007",
+    "universe": "tech_ops",
+    "world": "telecom",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "LATENCY",
+        "legacy_prompt": "Noticeable delay during video call with someone overseas.",
+        "correct_answer": "Network Latency",
+        "wrong_answers": [
+            "Packet Loss",
+            "Jitter",
+            "Buffering"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

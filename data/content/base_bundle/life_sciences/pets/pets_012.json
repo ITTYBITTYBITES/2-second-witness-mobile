@@ -1,0 +1,27 @@
+{
+    "id": "pets_012",
+    "universe": "life_sciences",
+    "world": "pets",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GROOM",
+        "legacy_prompt": "Dog scooting its bottom across the floor.",
+        "correct_answer": "Anal Gland Issue",
+        "wrong_answers": [
+            "Worms",
+            "Skin Irritation",
+            "Behavioral"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

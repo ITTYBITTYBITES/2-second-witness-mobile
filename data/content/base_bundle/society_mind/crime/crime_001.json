@@ -1,0 +1,27 @@
+{
+    "id": "crime_001",
+    "universe": "society_mind",
+    "world": "crime",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "EVIDENCE",
+        "legacy_prompt": "Fingerprints found on weapon match suspect.",
+        "correct_answer": "Physical Evidence",
+        "wrong_answers": [
+            "Circumstantial",
+            "Testimonial",
+            "Digital"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

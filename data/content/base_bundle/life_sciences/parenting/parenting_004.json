@@ -1,0 +1,27 @@
+{
+    "id": "parenting_004",
+    "universe": "life_sciences",
+    "world": "parenting",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SAFETY",
+        "legacy_prompt": "Covering electrical outlets and securing furniture to walls.",
+        "correct_answer": "Childproofing",
+        "wrong_answers": [
+            "Baby Proofing",
+            "Safety Audit",
+            "Home Inspection"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

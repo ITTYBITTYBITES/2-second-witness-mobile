@@ -1,0 +1,27 @@
+{
+    "id": "law_014",
+    "universe": "society_mind",
+    "world": "law",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DOUBLE",
+        "legacy_prompt": "Being tried again for the same crime after acquittal.",
+        "correct_answer": "Double Jeopardy",
+        "wrong_answers": [
+            "Mistrial",
+            "Appeal",
+            "Retrial"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

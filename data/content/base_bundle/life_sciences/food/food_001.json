@@ -1,0 +1,27 @@
+{
+    "id": "food_001",
+    "universe": "life_sciences",
+    "world": "food",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DANGER",
+        "legacy_prompt": "Chicken left on counter at room temperature for 4 hours.",
+        "correct_answer": "Unsafe to Eat",
+        "wrong_answers": [
+            "Still Fine",
+            "Cook Longer",
+            "Smell Test"
+        ]
+    },
+    "presentation": {
+        "title": "Assess:",
+        "visual_theme_override": null
+    }
+}

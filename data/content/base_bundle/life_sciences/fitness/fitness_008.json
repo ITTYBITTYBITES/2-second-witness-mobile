@@ -1,0 +1,27 @@
+{
+    "id": "fitness_008",
+    "universe": "life_sciences",
+    "world": "fitness",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "VO2",
+        "legacy_prompt": "Maximum amount of oxygen your body can use during exercise.",
+        "correct_answer": "VO2 Max",
+        "wrong_answers": [
+            "Heart Rate Max",
+            "Lactate Threshold",
+            "Resting Heart Rate"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

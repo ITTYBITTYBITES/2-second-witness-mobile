@@ -1,0 +1,27 @@
+{
+    "id": "pets_001",
+    "universe": "life_sciences",
+    "world": "pets",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TAIL",
+        "legacy_prompt": "Dog tucking tail between legs and avoiding eye contact.",
+        "correct_answer": "Fear or Anxiety",
+        "wrong_answers": [
+            "Submission",
+            "Illness",
+            "Cold"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

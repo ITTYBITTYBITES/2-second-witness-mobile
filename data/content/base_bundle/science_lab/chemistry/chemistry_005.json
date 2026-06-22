@@ -1,0 +1,27 @@
+{
+    "id": "chemistry_005",
+    "universe": "science_lab",
+    "world": "chemistry",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ELEMENT",
+        "legacy_prompt": "Pure substance made of only one type of atom.",
+        "correct_answer": "Chemical Element",
+        "wrong_answers": [
+            "Compound",
+            "Mixture",
+            "Molecule"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

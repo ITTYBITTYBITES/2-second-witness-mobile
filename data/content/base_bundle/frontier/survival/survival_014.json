@@ -1,0 +1,27 @@
+{
+    "id": "survival_014",
+    "universe": "frontier",
+    "world": "survival",
+    "type": "stroop_test",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PLANTS",
+        "legacy_prompt": "Bright red berries growing on an unfamiliar bush.",
+        "correct_answer": "Potentially Toxic",
+        "wrong_answers": [
+            "Safe to Eat",
+            "Medicinal",
+            "Nutritious"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

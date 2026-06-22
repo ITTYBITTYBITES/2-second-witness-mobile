@@ -1,0 +1,27 @@
+{
+    "id": "telecom_010",
+    "universe": "tech_ops",
+    "world": "telecom",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MULTIPLEX",
+        "legacy_prompt": "Multiple conversations sharing a single fiber optic cable.",
+        "correct_answer": "Multiplexing",
+        "wrong_answers": [
+            "Duplexing",
+            "Switching",
+            "Bridging"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

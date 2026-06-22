@@ -1,0 +1,27 @@
+{
+    "id": "telecom_002",
+    "universe": "tech_ops",
+    "world": "telecom",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FIBER",
+        "legacy_prompt": "Light pulses carrying data through thin glass strands.",
+        "correct_answer": "Fiber Optic Cable",
+        "wrong_answers": [
+            "Coaxial Cable",
+            "Copper Wire",
+            "Wireless"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

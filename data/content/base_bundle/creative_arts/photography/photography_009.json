@@ -1,0 +1,27 @@
+{
+    "id": "photography_009",
+    "universe": "creative_arts",
+    "world": "photography",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WIDE",
+        "legacy_prompt": "Lens making objects appear farther apart and smaller.",
+        "correct_answer": "Wide Angle Lens",
+        "wrong_answers": [
+            "Telephoto",
+            "Macro",
+            "Fisheye"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

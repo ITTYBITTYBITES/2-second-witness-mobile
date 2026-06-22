@@ -1,0 +1,27 @@
+{
+    "id": "chemistry_012",
+    "universe": "science_lab",
+    "world": "chemistry",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "POLYMER",
+        "legacy_prompt": "Long chain molecule made of repeating smaller units.",
+        "correct_answer": "Polymer",
+        "wrong_answers": [
+            "Monomer",
+            "Oligomer",
+            "Crystal"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

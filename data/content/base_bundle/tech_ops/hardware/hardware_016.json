@@ -1,0 +1,27 @@
+{
+    "id": "hardware_016",
+    "universe": "tech_ops",
+    "world": "hardware",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PWM",
+        "legacy_prompt": "Rapidly switching power on and off to control LED brightness.",
+        "correct_answer": "Pulse Width Modulation",
+        "wrong_answers": [
+            "Analog Dimming",
+            "Voltage Division",
+            "Current Limiting"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

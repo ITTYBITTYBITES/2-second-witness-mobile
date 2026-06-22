@@ -1,0 +1,27 @@
+{
+    "id": "cyber_013",
+    "universe": "tech_ops",
+    "world": "cyber",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "MALWARE",
+        "legacy_prompt": "Copied badge grants laboratory access.",
+        "correct_answer": "Badge Cloning",
+        "wrong_answers": [
+            "SQL Injection",
+            "GPS Drift",
+            "Echo Residue"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

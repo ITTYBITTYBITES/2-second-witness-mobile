@@ -1,0 +1,27 @@
+{
+    "id": "influence_001",
+    "universe": "society_mind",
+    "world": "influence",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SCARCITY",
+        "legacy_prompt": "Product advertised as limited edition, only 50 remaining.",
+        "correct_answer": "Scarcity Principle",
+        "wrong_answers": [
+            "Urgency",
+            "FOMO",
+            "Anchoring"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

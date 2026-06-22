@@ -1,0 +1,27 @@
+{
+    "id": "philosophy_013",
+    "universe": "society_mind",
+    "world": "philosophy",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "OCCAM",
+        "legacy_prompt": "Simplest explanation is usually the correct one.",
+        "correct_answer": "Occam's Razor",
+        "wrong_answers": [
+            "Hanlon's Razor",
+            "Hitchens' Razor",
+            "Newton's Flaming Laser"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

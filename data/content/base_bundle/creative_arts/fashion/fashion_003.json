@@ -1,0 +1,27 @@
+{
+    "id": "fashion_003",
+    "universe": "creative_arts",
+    "world": "fashion",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "HAUTE",
+        "legacy_prompt": "Exclusive custom-fitted clothing made for individual clients.",
+        "correct_answer": "Haute Couture",
+        "wrong_answers": [
+            "Ready-to-Wear",
+            "Fast Fashion",
+            "Bespoke"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "weather_012",
+    "universe": "science_lab",
+    "world": "weather",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CLOUD",
+        "legacy_prompt": "Flat gray clouds covering the entire sky uniformly.",
+        "correct_answer": "Stratus Clouds",
+        "wrong_answers": [
+            "Cumulus",
+            "Cirrus",
+            "Nimbus"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

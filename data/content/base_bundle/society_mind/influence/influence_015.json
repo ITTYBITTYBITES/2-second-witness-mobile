@@ -1,0 +1,27 @@
+{
+    "id": "influence_015",
+    "universe": "society_mind",
+    "world": "influence",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "FOOT",
+        "legacy_prompt": "Asking for a small favor first then a bigger one.",
+        "correct_answer": "Foot in the Door",
+        "wrong_answers": [
+            "Door in Face",
+            "Low Ball",
+            "Bait and Switch"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

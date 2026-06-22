@@ -1,0 +1,27 @@
+{
+    "id": "quantum_008",
+    "universe": "science_lab",
+    "world": "quantum",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "COMPUTE",
+        "legacy_prompt": "Computer using qubits instead of classical bits.",
+        "correct_answer": "Quantum Computer",
+        "wrong_answers": [
+            "Supercomputer",
+            "Neural Network",
+            "Analog Computer"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

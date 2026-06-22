@@ -1,0 +1,27 @@
+{
+    "id": "writing_015",
+    "universe": "creative_arts",
+    "world": "writing",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "RED HERRING",
+        "legacy_prompt": "Clue in a mystery designed to mislead the reader.",
+        "correct_answer": "Red Herring",
+        "wrong_answers": [
+            "Plot Twist",
+            "MacGuffin",
+            "Chekhov's Gun"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

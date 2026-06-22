@@ -1,0 +1,27 @@
+{
+    "id": "sociology_013",
+    "universe": "society_mind",
+    "world": "sociology",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ANOMIE",
+        "legacy_prompt": "Feeling of disconnection when social norms break down.",
+        "correct_answer": "Anomie",
+        "wrong_answers": [
+            "Alienation",
+            "Depression",
+            "Apathy"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

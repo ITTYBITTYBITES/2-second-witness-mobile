@@ -1,0 +1,27 @@
+{
+    "id": "space_012",
+    "universe": "frontier",
+    "world": "space",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GRAVITY",
+        "legacy_prompt": "Light bending around a massive galaxy cluster.",
+        "correct_answer": "Gravitational Lensing",
+        "wrong_answers": [
+            "Refraction",
+            "Diffraction",
+            "Redshift"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

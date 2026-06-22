@@ -1,0 +1,27 @@
+{
+    "id": "volcano_016",
+    "universe": "frontier",
+    "world": "volcano",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SUPER",
+        "legacy_prompt": "Eruption thousands of times more powerful than a normal volcano.",
+        "correct_answer": "Supervolcano",
+        "wrong_answers": [
+            "Megavolcano",
+            "Stratovolcano",
+            "Hotspot"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

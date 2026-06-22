@@ -1,0 +1,27 @@
+{
+    "id": "iot_009",
+    "universe": "tech_ops",
+    "world": "iot",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "LATENCY",
+        "legacy_prompt": "Self-driving car needing instant response from nearby cell tower.",
+        "correct_answer": "Ultra-Low Latency",
+        "wrong_answers": [
+            "High Bandwidth",
+            "Edge Computing",
+            "5G Slicing"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "philosophy_001",
+    "universe": "society_mind",
+    "world": "philosophy",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TROLLEY",
+        "legacy_prompt": "Diverting a trolley to save five but kill one.",
+        "correct_answer": "Trolley Problem",
+        "wrong_answers": [
+            "Prisoner's Dilemma",
+            "Ship of Theseus",
+            "Veil of Ignorance"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

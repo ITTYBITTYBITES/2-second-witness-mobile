@@ -1,0 +1,27 @@
+{
+    "id": "psych_009",
+    "universe": "society_mind",
+    "world": "psych",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ANCHOR",
+        "legacy_prompt": "First price you see affecting what you think is fair.",
+        "correct_answer": "Anchoring Effect",
+        "wrong_answers": [
+            "Framing",
+            "Priming",
+            "Decoy Effect"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

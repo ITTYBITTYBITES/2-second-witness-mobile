@@ -1,0 +1,27 @@
+{
+    "id": "chemistry_008",
+    "universe": "science_lab",
+    "world": "chemistry",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ISOTOPE",
+        "legacy_prompt": "Atoms of same element with different numbers of neutrons.",
+        "correct_answer": "Isotopes",
+        "wrong_answers": [
+            "Ions",
+            "Allotropes",
+            "Isomers"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

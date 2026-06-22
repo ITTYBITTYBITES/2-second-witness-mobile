@@ -1,0 +1,27 @@
+{
+    "id": "film_010",
+    "universe": "creative_arts",
+    "world": "film",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BLOCKING",
+        "legacy_prompt": "Planning where actors stand and move during a scene.",
+        "correct_answer": "Blocking",
+        "wrong_answers": [
+            "Staging",
+            "Choreography",
+            "Framing"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

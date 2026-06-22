@@ -1,0 +1,27 @@
+{
+    "id": "space_008",
+    "universe": "frontier",
+    "world": "space",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DEBRIS",
+        "legacy_prompt": "Abandoned satellite fragments threatening space station.",
+        "correct_answer": "Space Debris",
+        "wrong_answers": [
+            "Meteor Shower",
+            "Solar Flare",
+            "Asteroid"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

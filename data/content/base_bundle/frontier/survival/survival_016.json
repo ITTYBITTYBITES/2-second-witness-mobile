@@ -1,0 +1,27 @@
+{
+    "id": "survival_016",
+    "universe": "frontier",
+    "world": "survival",
+    "type": "stroop_test",
+    "difficulty": 3,
+    "rewards": {
+        "xp": 30,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "TRAP",
+        "legacy_prompt": "Setting a snare with a bent sapling and trigger stick.",
+        "correct_answer": "Spring Snare Trap",
+        "wrong_answers": [
+            "Deadfall Trap",
+            "Pitfall Trap",
+            "Net Trap"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

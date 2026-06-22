@@ -1,0 +1,27 @@
+{
+    "id": "chemistry_013",
+    "universe": "science_lab",
+    "world": "chemistry",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "GAS",
+        "legacy_prompt": "Baking soda and vinegar producing bubbles.",
+        "correct_answer": "Gas Evolution Reaction",
+        "wrong_answers": [
+            "Effervescence",
+            "Boiling",
+            "Decomposition"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

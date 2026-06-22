@@ -1,0 +1,27 @@
+{
+    "id": "cyber_009",
+    "universe": "tech_ops",
+    "world": "cyber",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "ANOMALY",
+        "legacy_prompt": "Internal network traffic mirrored to unregistered endpoint.",
+        "correct_answer": "Packet Sniffing",
+        "wrong_answers": [
+            "Thermal Overload",
+            "Badge Clone",
+            "Signal Drift"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "firstaid_005",
+    "universe": "life_sciences",
+    "world": "firstaid",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SHOCK",
+        "legacy_prompt": "Laying person down and elevating their legs 12 inches.",
+        "correct_answer": "Shock Position",
+        "wrong_answers": [
+            "Recovery Position",
+            "CPR Position",
+            "Trendelenburg"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

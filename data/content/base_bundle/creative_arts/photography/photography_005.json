@@ -1,0 +1,27 @@
+{
+    "id": "photography_005",
+    "universe": "creative_arts",
+    "world": "photography",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BOKEH",
+        "legacy_prompt": "Blurred background making the subject stand out sharply.",
+        "correct_answer": "Shallow Depth of Field",
+        "wrong_answers": [
+            "Motion Blur",
+            "Soft Focus",
+            "Lens Flare"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

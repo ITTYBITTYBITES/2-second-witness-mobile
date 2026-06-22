@@ -1,0 +1,27 @@
+{
+    "id": "ocean_009",
+    "universe": "frontier",
+    "world": "ocean",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DEPTH",
+        "legacy_prompt": "Zone of ocean where no sunlight can reach.",
+        "correct_answer": "Aphotic Zone",
+        "wrong_answers": [
+            "Twilight Zone",
+            "Abyssal Plain",
+            "Hadal Zone"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

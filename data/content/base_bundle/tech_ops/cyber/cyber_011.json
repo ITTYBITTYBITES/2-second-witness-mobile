@@ -1,0 +1,27 @@
+{
+    "id": "cyber_011",
+    "universe": "tech_ops",
+    "world": "cyber",
+    "type": "stroop_test",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "BREACH",
+        "legacy_prompt": "Visitor follows staff through secure door.",
+        "correct_answer": "Tailgating",
+        "wrong_answers": [
+            "SQL Injection",
+            "Signal Echo",
+            "Cold Boot"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

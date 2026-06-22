@@ -1,0 +1,27 @@
+{
+    "id": "design_006",
+    "universe": "creative_arts",
+    "world": "design",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "RGB",
+        "legacy_prompt": "Color model using red, green, and blue light for screens.",
+        "correct_answer": "RGB Color Model",
+        "wrong_answers": [
+            "CMYK",
+            "HSL",
+            "Pantone"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

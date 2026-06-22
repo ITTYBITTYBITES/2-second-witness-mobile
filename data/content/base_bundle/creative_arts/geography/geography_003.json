@@ -1,0 +1,27 @@
+{
+    "id": "geography_003",
+    "universe": "creative_arts",
+    "world": "geography",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "DESERT",
+        "legacy_prompt": "Largest hot desert covering much of North Africa.",
+        "correct_answer": "Sahara Desert",
+        "wrong_answers": [
+            "Gobi Desert",
+            "Arabian Desert",
+            "Kalahari Desert"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

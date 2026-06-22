@@ -1,0 +1,27 @@
+{
+    "id": "gamedev_004",
+    "universe": "tech_ops",
+    "world": "gamedev",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "SHADER",
+        "legacy_prompt": "GPU program controlling how a surface appears with light.",
+        "correct_answer": "Fragment Shader",
+        "wrong_answers": [
+            "Vertex Shader",
+            "Compute Shader",
+            "Geometry Shader"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

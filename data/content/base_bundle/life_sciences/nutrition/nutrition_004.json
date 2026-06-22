@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_004",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "IRON",
+        "legacy_prompt": "Fatigue and pale skin from not eating enough red meat or leafy greens.",
+        "correct_answer": "Iron Deficiency Anemia",
+        "wrong_answers": [
+            "Vitamin D Deficiency",
+            "Dehydration",
+            "Low Blood Sugar"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

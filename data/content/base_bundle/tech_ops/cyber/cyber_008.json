@@ -1,0 +1,27 @@
+{
+    "id": "cyber_008",
+    "universe": "tech_ops",
+    "world": "cyber",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "OVERHEAT",
+        "legacy_prompt": "Server crashes after temp exceeds safety limits.",
+        "correct_answer": "Thermal Overload",
+        "wrong_answers": [
+            "SQL Injection",
+            "Tailgating",
+            "Ghost Signal"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

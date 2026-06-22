@@ -1,0 +1,27 @@
+{
+    "id": "wilderness_002",
+    "universe": "frontier",
+    "world": "wilderness",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "STAR",
+        "legacy_prompt": "Finding north by locating the North Star at night.",
+        "correct_answer": "Celestial Navigation",
+        "wrong_answers": [
+            "Compass Reading",
+            "GPS",
+            "Dead Reckoning"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

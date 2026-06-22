@@ -1,0 +1,27 @@
+{
+    "id": "nutrition_008",
+    "universe": "life_sciences",
+    "world": "nutrition",
+    "type": "stroop_test",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PROTEIN",
+        "legacy_prompt": "Essential amino acids that the body cannot produce itself.",
+        "correct_answer": "Essential Amino Acids",
+        "wrong_answers": [
+            "Non-essential",
+            "Conditional",
+            "Branched Chain"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

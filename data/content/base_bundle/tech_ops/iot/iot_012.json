@@ -1,0 +1,27 @@
+{
+    "id": "iot_012",
+    "universe": "tech_ops",
+    "world": "iot",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "WEARABLE",
+        "legacy_prompt": "Watch detecting irregular heartbeat and alerting the user.",
+        "correct_answer": "Health Monitoring",
+        "wrong_answers": [
+            "Fitness Tracking",
+            "Sleep Analysis",
+            "GPS Tracking"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "genetics_013",
+    "universe": "science_lab",
+    "world": "genetics",
+    "type": "rapid_classification",
+    "difficulty": 2,
+    "rewards": {
+        "xp": 20,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "CELL",
+        "legacy_prompt": "Process of cell dividing into two identical copies.",
+        "correct_answer": "Mitosis",
+        "wrong_answers": [
+            "Meiosis",
+            "Fission",
+            "Budding"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "id": "fitness_006",
+    "universe": "life_sciences",
+    "world": "fitness",
+    "type": "rapid_classification",
+    "difficulty": 1,
+    "rewards": {
+        "xp": 10,
+        "currency": 0
+    },
+    "rules": {
+        "time_limit": 5.0,
+        "attempts": 1,
+        "legacy_flash": "PROTEIN",
+        "legacy_prompt": "Consuming protein within 30 minutes after a workout.",
+        "correct_answer": "Recovery Nutrition",
+        "wrong_answers": [
+            "Pre-workout",
+            "Carb Loading",
+            "Fasting"
+        ]
+    },
+    "presentation": {
+        "title": "Identify:",
+        "visual_theme_override": null
+    }
+}
