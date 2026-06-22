@@ -1,0 +1,38 @@
+{
+  "id": "life_sciences",
+  "display_name": "Life Sciences",
+  "visual": {
+    "background_type": "hybrid",
+    "primary_colors": ["#0A1A10", "#1F4229", "#52B788"],
+    "accent_colors": ["#B7E4C7", "#D8F3DC"],
+    "fog_density": 0.45,
+    "lighting_model": "natural",
+    "particle_profile": "organic_flow",
+    "motion_style": "calm_drift"
+  },
+  "ui": {
+    "panel_style": "organic",
+    "blur_strength": 0.3,
+    "corner_radius": 24,
+    "font_theme": "modern_sans",
+    "button_style": "inset"
+  },
+  "tunnel": {
+    "tunnel_palette": ["#0A1A10", "#1B4332", "#2D6A4F"],
+    "flow_type": "branching",
+    "speed_multiplier": 0.8,
+    "density": 0.8,
+    "depth_layers": 6,
+    "interactive_elements": true
+  },
+  "audio": {
+    "ambient_track": "life_sciences_ambient_01",
+    "stinger_style": "organic_bloom",
+    "reverb_type": "cathedral"
+  },
+  "transition": {
+    "entry_effect": "particle_swirl",
+    "exit_effect": "absorption",
+    "duration_ms": 1100
+  }
+}

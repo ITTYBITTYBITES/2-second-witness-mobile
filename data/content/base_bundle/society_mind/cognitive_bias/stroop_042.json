@@ -1,0 +1,20 @@
+{
+  "id": "stroop_042",
+  "universe": "society_mind",
+  "world": "cognitive_bias",
+  "type": "stroop_test",
+  "difficulty": 3,
+  "rewards": {
+    "xp": 50,
+    "currency": 10
+  },
+  "rules": {
+    "time_limit": 2.0,
+    "attempts": 1,
+    "bias_tag": "interference_control"
+  },
+  "presentation": {
+    "title": "Color Conflict Test",
+    "visual_theme_override": null
+  }
+}

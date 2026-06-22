@@ -1,0 +1,38 @@
+{
+  "id": "society_mind",
+  "display_name": "Society & Mind",
+  "visual": {
+    "background_type": "hybrid",
+    "primary_colors": ["#1A120C", "#3C2A21", "#D5B4B4"],
+    "accent_colors": ["#E5E5CB", "#F5F5F5"],
+    "fog_density": 0.25,
+    "lighting_model": "soft_glow",
+    "particle_profile": "neural",
+    "motion_style": "fractal_wave"
+  },
+  "ui": {
+    "panel_style": "glass",
+    "blur_strength": 0.4,
+    "corner_radius": 16,
+    "font_theme": "artistic",
+    "button_style": "glowing"
+  },
+  "tunnel": {
+    "tunnel_palette": ["#1A120C", "#2D201A", "#614941"],
+    "flow_type": "wave",
+    "speed_multiplier": 0.9,
+    "density": 0.5,
+    "depth_layers": 5,
+    "interactive_elements": true
+  },
+  "audio": {
+    "ambient_track": "society_ambient_01",
+    "stinger_style": "organic_bloom",
+    "reverb_type": "small_room"
+  },
+  "transition": {
+    "entry_effect": "dissolve",
+    "exit_effect": "drift_out",
+    "duration_ms": 1000
+  }
+}

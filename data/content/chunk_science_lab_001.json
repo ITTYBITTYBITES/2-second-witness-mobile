@@ -1,0 +1,26 @@
+{
+  "chunk_id": "science_lab_001",
+  "universe": "science_lab",
+  "transform": {
+    "length": 50,
+    "width": 20,
+    "density_scale": 1.0,
+    "flow_offset_z": 0
+  },
+  "visual": {
+    "mesh_profile": "molecular_ring_set",
+    "instance_density": 120,
+    "color_variance": 0.15,
+    "emissive_strength": 0.8
+  },
+  "content_slots": {
+    "portal_slots": 1,
+    "scenario_slots": 3,
+    "decoration_slots": 12
+  },
+  "rules": {
+    "can_spawn_universe_portal": false,
+    "can_spawn_world_gate": true,
+    "can_spawn_scenario": true
+  }
+}

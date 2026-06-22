@@ -1,0 +1,38 @@
+{
+  "id": "frontier",
+  "display_name": "Frontier",
+  "visual": {
+    "background_type": "hybrid",
+    "primary_colors": ["#110B11", "#331832", "#D81159"],
+    "accent_colors": ["#FFBC42", "#8F2D56"],
+    "fog_density": 0.5,
+    "lighting_model": "soft_glow",
+    "particle_profile": "dust",
+    "motion_style": "energetic_flow"
+  },
+  "ui": {
+    "panel_style": "solid",
+    "blur_strength": 0.1,
+    "corner_radius": 8,
+    "font_theme": "modern_sans",
+    "button_style": "flat"
+  },
+  "tunnel": {
+    "tunnel_palette": ["#110B11", "#211021", "#591F41"],
+    "flow_type": "wave",
+    "speed_multiplier": 1.5,
+    "density": 0.4,
+    "depth_layers": 4,
+    "interactive_elements": false
+  },
+  "audio": {
+    "ambient_track": "frontier_ambient_01",
+    "stinger_style": "soft_hit",
+    "reverb_type": "void"
+  },
+  "transition": {
+    "entry_effect": "fade",
+    "exit_effect": "drift_out",
+    "duration_ms": 1200
+  }
+}

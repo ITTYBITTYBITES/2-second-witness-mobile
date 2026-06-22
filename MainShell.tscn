@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://mainshell"]
+
+[ext_resource type="Script" path="res://scripts/MainShell.gd" id="1_shell"]
+[ext_resource type="PackedScene" path="res://scenes/TunnelLayer.tscn" id="2_tunnel"]
+[ext_resource type="Script" path="res://scripts/camera/CameraRig.gd" id="3_cam"]
+[ext_resource type="PackedScene" path="res://tests/harness/TelemetryOverlay.tscn" id="4_debug"]
+
+[node name="MainShell" type="Node"]
+script = ExtResource("1_shell")
+
+[node name="SystemLayer" type="Node" parent="."]
+__meta__ = { "_editor_description_": "BOOT STRAP ONLY. Owns global state wiring." }
+
+[node name="WorldLayer" type="Node3D" parent="."]
+
+[node name="TunnelLayer" parent="WorldLayer" instance=ExtResource("2_tunnel")]
+
+[node name="EnvironmentController" type="Node3D" parent="WorldLayer"]
+
+[node name="CameraRig" type="Node3D" parent="WorldLayer"]
+script = ExtResource("3_cam")
+
+[node name="MotionController" type="Node" parent="WorldLayer/CameraRig"]
+
+[node name="ShakeSystem" type="Node" parent="WorldLayer/CameraRig"]
+
+[node name="TransitionAnimator" type="Node" parent="WorldLayer/CameraRig"]
+
+[node name="Camera3D" type="Camera3D" parent="WorldLayer/CameraRig"]
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="HUDRoot" type="Control" parent="UILayer"]
+layout_mode = 3
+anchors_preset = 15
+
+[node name="NavigationUI" type="Control" parent="UILayer"]
+layout_mode = 3
+anchors_preset = 15
+
+[node name="ScenarioUI" type="Control" parent="UILayer"]
+layout_mode = 3
+anchors_preset = 15
+
+[node name="TransitionOverlay" type="ColorRect" parent="UILayer"]
+anchors_preset = 15
+color = Color(0, 0, 0, 1)
+
+[node name="MonetizationUI" type="Control" parent="UILayer"]
+layout_mode = 3
+anchors_preset = 15
+
+[node name="TelemetryOverlay" parent="UILayer" instance=ExtResource("4_debug")]
+
+[node name="AudioLayer" type="Node" parent="."]
+
+[node name="AmbientController" type="AudioStreamPlayer" parent="AudioLayer"]
+
+[node name="EventAudioBus" type="Node" parent="AudioLayer"]
+
+[node name="TransitionAudioMixer" type="Node" parent="AudioLayer"]

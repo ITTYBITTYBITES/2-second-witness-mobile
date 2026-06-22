@@ -1,0 +1,38 @@
+{
+  "id": "creative_arts",
+  "display_name": "Creative Arts",
+  "visual": {
+    "background_type": "hybrid",
+    "primary_colors": ["#1A0B1C", "#4A1C50", "#F72585"],
+    "accent_colors": ["#4CC9F0", "#F9F871"],
+    "fog_density": 0.3,
+    "lighting_model": "neon",
+    "particle_profile": "abstract_flow",
+    "motion_style": "fractal_wave"
+  },
+  "ui": {
+    "panel_style": "glass",
+    "blur_strength": 0.5,
+    "corner_radius": 32,
+    "font_theme": "artistic",
+    "button_style": "floating"
+  },
+  "tunnel": {
+    "tunnel_palette": ["#1A0B1C", "#2B0F2E", "#5F2161"],
+    "flow_type": "vortex",
+    "speed_multiplier": 1.2,
+    "density": 0.9,
+    "depth_layers": 7,
+    "interactive_elements": true
+  },
+  "audio": {
+    "ambient_track": "creative_ambient_01",
+    "stinger_style": "soft_hit",
+    "reverb_type": "cathedral"
+  },
+  "transition": {
+    "entry_effect": "particle_swirl",
+    "exit_effect": "dissolve",
+    "duration_ms": 1100
+  }
+}

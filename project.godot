@@ -1,0 +1,22 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly.
+
+config_version=5
+
+[application]
+
+config/name="LiquidMemory_V2"
+run/main_scene="res://MainShell.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[autoload]
+
+NavigationEngine="*res://scripts/NavigationEngine.gd"
+
+NavigationRouter="*res://scripts/NavigationRouter.gd"
+ThemeManager="*res://scripts/ThemeManager.gd"
+ContentRegistry="*res://scripts/content/ContentRegistry.gd"
+ContentLoader="*res://scripts/content/ContentLoader.gd"
+SystemHealthMonitor="*res://scripts/system/SystemHealthMonitor.gd"
+ContentSnapshotManager="*res://scripts/system/deployment/ContentSnapshotManager.gd"
+GitHubSyncManager="*res://scripts/content/GitHubSyncManager.gd"
