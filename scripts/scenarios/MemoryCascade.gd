@@ -11,7 +11,10 @@ signal completed
 var sequence = [1, 2, 0] # Center, Right, Left
 var current_step = 0
 
+var _start_ticks_msec: int = 0
+
 func _ready():
+	_start_ticks_msec = Time.get_ticks_msec()
 	print("[MEMORY CASCADE] Entering the Void. Spike Initiated.")
 	
 	# Apply Semantic UI Styling
@@ -32,13 +35,17 @@ func _on_btn_pressed(val: int):
 			print("[MEMORY CASCADE] Sequence Complete. Ejecting!")
 			feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
 			
-			# Delay slightly so user sees success before spatial ejection
+			var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
+			PlayerProfile.record_cognitive_event("recall", "science_lab", true, rt_ms)
 			SessionTracker.record_spike_result("memory_cascade", true)
+			
 			await get_tree().create_timer(0.5).timeout
 			completed.emit()
 			queue_free()
 	else:
 		print("[MEMORY CASCADE] Error. Resetting.")
 		feedback_label.text = "ERROR! Resetting."
+		var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
+		PlayerProfile.record_cognitive_event("recall", "science_lab", false, rt_ms)
 		SessionTracker.record_spike_result("memory_cascade", false)
 		current_step = 0

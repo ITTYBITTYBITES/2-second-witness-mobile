@@ -8,7 +8,10 @@ signal completed
 @onready var btn_b = $HBoxContainer/BtnB
 @onready var feedback_label = $FeedbackLabel
 
+var _start_ticks_msec: int = 0
+
 func _ready():
+	_start_ticks_msec = Time.get_ticks_msec()
 	print("[PATTERN CONTINUATION] Spike Initiated.")
 	sequence_label.text = "⬟  ⬟  ⬢  ⬟  ?"
 	feedback_label.text = "Select the next shape"
@@ -22,6 +25,7 @@ func _ready():
 	btn_b.pressed.connect(func(): _on_answer(false)) # Incorrect
 
 func _on_answer(is_correct: bool):
+	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if is_correct:
 		print("[PATTERN CONTINUATION] Success. Ejecting!")
 		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
@@ -30,6 +34,7 @@ func _on_answer(is_correct: bool):
 		btn_a.disabled = true
 		btn_b.disabled = true
 		
+		PlayerProfile.record_cognitive_event("pattern_recognition", "science_lab", true, rt_ms)
 		SessionTracker.record_spike_result("pattern_continuation", true)
 		
 		await get_tree().create_timer(0.5).timeout
@@ -37,5 +42,6 @@ func _on_answer(is_correct: bool):
 		queue_free()
 	else:
 		print("[PATTERN CONTINUATION] Error. Resetting.")
+		PlayerProfile.record_cognitive_event("pattern_recognition", "science_lab", false, rt_ms)
 		SessionTracker.record_spike_result("pattern_continuation", false)
 		feedback_label.text = "ERROR! Try again."
