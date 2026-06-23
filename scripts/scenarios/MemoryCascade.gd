@@ -13,6 +13,11 @@ var current_step = 0
 
 func _ready():
 	print("[MEMORY CASCADE] Entering the Void. Spike Initiated.")
+	
+	# Apply Semantic UI Styling
+	var resolver = ThemeResolver.new()
+	var style = resolver.resolve_theme({"universe": "science_lab", "type": "memory_cascade", "difficulty": 2})
+	StyleInjector.apply(style, self)
 	feedback_label.text = "Sequence: Center -> Right -> Left"
 	
 	btn_left.pressed.connect(func(): _on_btn_pressed(0))

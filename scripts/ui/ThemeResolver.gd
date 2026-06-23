@@ -53,12 +53,11 @@ func resolve_theme(scenario_data: Dictionary) -> Dictionary:
 	var base_palette = universe_palettes.get(universe, universe_palettes["science_lab"])
 	var task_profile = task_profiles.get(type, task_profiles["rapid_classification"])
 	
-	# Difficulty modulates motion and contrast natively
-	var active_contrast = task_profile["contrast_boost"] * (1.0 + (difficulty * 0.1))
+	var active_contrast = task_profile.get("contrast_boost", 1.0) * (1.0 + (float(difficulty) * 0.1))
 	
 	return {
 		"palette": base_palette,
-		"motion_curve": task_profile["motion"],
-		"layout_density": task_profile["density"],
+		"motion_curve": task_profile.get("motion", MotionProfile.FAST_SNAP),
+		"layout_density": task_profile.get("density", DensityProfile.MINIMAL),
 		"computed_contrast": active_contrast
 	}
