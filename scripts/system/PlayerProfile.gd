@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# THE COGNITIVE MIRROR (WITH DRIFT CONTROL)
+# THE COGNITIVE MIRROR (WITH ADAPTATION MODELING)
 # ---------------------------------------------------------
 
 var lifetime_sessions: int = 0
@@ -28,13 +28,32 @@ var current_week_drift = {
 	"processing_speed": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0}
 }
 
+# The Adaptation Tracker (Isolating Skill Acquisition from Cognition)
+var task_familiarity_index = {
+	"memory_cascade": 0,
+	"spatial_recall": 0,
+	"sequence_reverse": 0,
+	"pattern_continuation": 0,
+	"odd_one_out": 0,
+	"stroop_test": 0,
+	"rapid_classification": 0,
+	"speed_sort": 0,
+	"signal_vs_noise": 0,
+	"math_surprise": 0,
+	"reflex_tap": 0,
+	"risk_selection": 0
+}
+
 func _ready():
 	print("[2 SECOND WITNESS] Cognitive Insight Engine active.")
 	_load_profile()
 
-func record_cognitive_event(trait: String, universe: String, success: bool, reaction_time_ms: float):
+func record_cognitive_event(trait: String, scenario_id: String, universe: String, success: bool, reaction_time_ms: float):
 	lifetime_sessions += 1
 	universe_affinity[universe] = universe_affinity.get(universe, 0) + 1
+	
+	# Increment familiarity (The Adaptation Tracker)
+	task_familiarity_index[scenario_id] = task_familiarity_index.get(scenario_id, 0) + 1
 	
 	# Update slow-moving baseline
 	if cognitive_baseline.has(trait):
@@ -74,11 +93,19 @@ func generate_insights() -> Array[String]:
 		var baseline_rt = pat["total_rt_ms"] / float(pat["successes"]) if pat["successes"] > 0 else 2000.0
 		var weekly_rt = pat_drift["total_rt_ms"] / float(pat_drift["successes"]) if pat_drift["successes"] > 0 else 2000.0
 		
-		if weekly_rt < (baseline_rt * 0.8): # 20% faster this week
-			insights.append("Your pattern recognition speed has sharply increased this week.")
-		elif weekly_rt > (baseline_rt * 1.2): # 20% slower this week
-			insights.append("You are exhibiting unusual hesitation in pattern tasks this week.")
-			
+		# Contextualize with Familiarity Index to prevent false "cognitive improvement" narratives
+		var is_highly_familiar = false
+		for scenario in ["pattern_continuation", "odd_one_out", "math_surprise"]:
+			if task_familiarity_index[scenario] > 20: # User has learned the instrument
+				is_highly_familiar = true
+				break
+		
+		if weekly_rt < (baseline_rt * 0.8): 
+			if is_highly_familiar:
+				insights.append("Your structural familiarity with pattern tasks has optimized your reaction time.")
+			else:
+				insights.append("Your raw pattern recognition speed has sharply increased this week.")
+				
 	if insights.is_empty():
 		insights.append("Awaiting more cognitive data to form a profile...")
 		
