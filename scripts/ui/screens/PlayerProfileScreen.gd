@@ -1,28 +1,44 @@
 extends CanvasLayer
 
-@onready var lifetime_label = $Panel/VBoxContainer/Header/LifetimeLabel
-@onready var insights_container = $Panel/VBoxContainer/InsightsContainer
+@onready var lifetime_label = $PanelContainer/MarginContainer/VBoxContainer/Header/LifetimeLabel
+@onready var insights_container = $PanelContainer/MarginContainer/VBoxContainer/InsightsContainer
 
 func _ready():
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()
 
 func _populate_data():
-	var profile = get_node("/root/PlayerProfile")
+	var profile = get_node_or_null("/root/PlayerProfile")
 	if not profile: return
 	
-	lifetime_label.text = "Lifetime Sessions: " + str(profile.lifetime_sessions)
+	lifetime_label.text = "LIFETIME SESSIONS: " + str(profile.lifetime_sessions)
 	
-	# Clear placeholder insights
 	for child in insights_container.get_children():
 		child.queue_free()
 		
-	# Populate dynamic insights
 	var insights = profile.generate_insights()
 	for insight_text in insights:
-		var lbl = Label.new()
-		lbl.text = "• " + insight_text
-		lbl.add_theme_font_size_override("font_size", 20)
-		lbl.add_theme_color_override("font_color", Color(0.8, 0.8, 0.8))
-		lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		var lbl = RichTextLabel.new()
+		lbl.bbcode_enabled = true
+		
+		# Stylize the insight to highlight keywords
+		var styled_text = insight_text
+		styled_text = styled_text.replace("pattern tasks", "[color=#4CC9F0]pattern tasks[/color]")
+		styled_text = styled_text.replace("recall tasks", "[color=#F72585]recall tasks[/color]")
+		styled_text = styled_text.replace("hesitate", "[color=#D81159]hesitate[/color]")
+		styled_text = styled_text.replace("decisiveness", "[color=#2ECC71]decisiveness[/color]")
+		
+		lbl.text = "[center]" + styled_text + "[/center]"
+		lbl.fit_content = true
+		lbl.add_theme_font_size_override("normal_font_size", 20)
+		lbl.add_theme_color_override("default_color", Color(0.9, 0.9, 0.95))
+		
 		insights_container.add_child(lbl)
+
+	# Enter animation
+	var panel = $PanelContainer
+	panel.modulate.a = 0
+	panel.position.y += 50
+	var tween = get_tree().create_tween().set_parallel(true)
+	tween.tween_property(panel, "modulate:a", 1.0, 0.6).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(panel, "position:y", panel.position.y - 50, 0.6).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)

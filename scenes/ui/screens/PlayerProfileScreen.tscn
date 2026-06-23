@@ -1,58 +1,98 @@
-[gd_scene load_steps=2 format=3 uid="uid://profilescreen"]
+[gd_scene load_steps=5 format=3 uid="uid://profilescreen"]
+
 [ext_resource type="Script" path="res://scripts/ui/screens/PlayerProfileScreen.gd" id="1_prof"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glass"]
+bg_color = Color(0.0431373, 0.0745098, 0.12549, 0.85098)
+border_width_top = 4
+border_color = Color(0.298039, 0.788235, 0.941176, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+shadow_color = Color(0, 0, 0, 0.5)
+shadow_size = 20
+shadow_offset = Vector2(0, 10)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_sep"]
+color = Color(0.298039, 0.788235, 0.941176, 0.3)
+thickness = 2
+grow_begin = -20.0
+grow_end = -20.0
+
+[sub_resource type="Theme" id="Theme_profile"]
+HSeparator/styles/separator = SubResource("StyleBoxLine_sep")
 
 [node name="PlayerProfileScreen" type="CanvasLayer"]
 layer = 50
 script = ExtResource("1_prof")
 
-[node name="Panel" type="ColorRect" parent="."]
+[node name="VoidBG" type="ColorRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.04, 0.04, 0.06, 0.95)
+color = Color(0.02, 0.02, 0.03, 0.9)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
-layout_mode = 1
+[node name="PanelContainer" type="PanelContainer" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -200.0
-offset_right = 300.0
-offset_bottom = 200.0
+offset_left = -350.0
+offset_top = -250.0
+offset_right = 350.0
+offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 40
+theme = SubResource("Theme_profile")
+theme_override_styles/panel = SubResource("StyleBoxFlat_glass")
 
-[node name="Header" type="VBoxContainer" parent="Panel/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
 
-[node name="Title" type="Label" parent="Panel/VBoxContainer/Header"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
-text = "COGNITIVE PROFILE"
+theme_override_constants/separation = 30
+
+[node name="Header" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.95, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.298039, 0.788235, 0.941176, 0.5)
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 36
+text = "COGNITIVE MIRROR"
 horizontal_alignment = 1
+uppercase = true
 
-[node name="LifetimeLabel" type="Label" parent="Panel/VBoxContainer/Header"]
+[node name="LifetimeLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Header"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Lifetime Sessions: 0"
+theme_override_colors/font_color = Color(0.298039, 0.788235, 0.941176, 1)
+theme_override_font_sizes/font_size = 18
+text = "LIFETIME SESSIONS: 0"
 horizontal_alignment = 1
-theme_override_colors/font_color = Color(0.4, 0.4, 0.4, 1)
+uppercase = true
 
-[node name="HSeparator" type="HSeparator" parent="Panel/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="SectionTitle" type="Label" parent="Panel/VBoxContainer"]
+[node name="SectionTitle" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
-text = "Observations:"
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "OBSERVATIONS LOG"
+uppercase = true
 
-[node name="InsightsContainer" type="VBoxContainer" parent="Panel/VBoxContainer"]
+[node name="InsightsContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 15
+theme_override_constants/separation = 20
