@@ -1,26 +1,34 @@
-# LIQUID MEMORY V2: THE ALPHA PLAN
+# 2 SECOND WITNESS: THE VALIDATION ROADMAP
 
-## [COMPLETED] Milestone 1: Ten Scenarios (Depth, Not Quantity)
-## [COMPLETED] Milestone 2: The Real Iris (Salience Polish)
-## [COMPLETED] Milestone 3: Session Tracking (Lightweight Telemetry)
+**The Engine Risk is Retired.**
+The architecture, state transitions, scenario lifecycle, and thematic pipelines are structurally complete. We are no longer testing if the engine works. We are testing if the product matters.
+
+## The Core Product Philosophy
+*2 Second Witness* is not a cognitive testing platform. It is a curiosity platform. The tests exist only to generate moments of self-discovery.
+
+If users say: *"I completed the task."* -> We have an engine.
+If users say: *"I think I'm better at pattern recognition than memory."* -> We have a product.
 
 ---
 
-## [NEXT] Milestone 5: Android Build (Hardware Crucible)
-Export the APK. Not polished, not optimized, just running on real silicon.
-- **Test:** Startup time | Touch accuracy | Screen readability | FPS | Device heat after 15 minutes.
-- **Success:** The experience survives and is playable on actual hardware.
+## Phase Alpha-0: The Validation Build (1-3 Days)
+**Do Not Build:** New universes, complex shaders, new architecture, or monetization.
+**Build ONLY:**
+1. **The Landing:** Play | Weekly Featured | Profile
+2. **The World:** Science Lab (1 Universe)
+3. **The Spikes:** Memory Cascade | Pattern Match | Rapid Classification
+4. **The Mirror:** Profile feedback (Sessions, Most-played universe, Favorite spike)
 
-## [PENDING] Milestone 4: First External User (The Silent Test)
-Put the Godot build in front of a friend, spouse, or coworker.
-- **Instruction:** "Try it." (Then say nothing).
-- **Success:** They independently discover the Iris and complete a cognitive loop.
+## Phase Alpha-1: The Silent Human Test
+Put the Alpha-0 build in front of 5 real humans. Not developers.
+**Observe Silently:**
+- Do they know where to click the Iris?
+- Do they understand the cognitive spike instantly?
+- Do they voluntarily play another loop?
+- Do they check their Profile afterward?
 
-## [PENDING] Milestone 6: Retention Review
-After 5-10 testers, answer the hard product questions:
-1. Which spike is most liked?
-2. Which spike is skipped mentally?
-3. Does the slingshot matter?
-4. Does the tunnel matter?
-5. Is the Iris compelling?
+*If they do not voluntarily repeat the loop, fix the loop before adding content.*
 
+## Phase Alpha-2: The Expansion
+**ONLY AFTER Phase Alpha-1 succeeds:**
+Multiply the validated loop. Add the remaining 5 Universes. Implement the progression and monetization gates. Scale the content. 
