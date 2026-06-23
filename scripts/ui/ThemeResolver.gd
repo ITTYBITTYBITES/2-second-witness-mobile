@@ -53,7 +53,10 @@ func resolve_theme(scenario_data: Dictionary) -> Dictionary:
 	var base_palette = universe_palettes.get(universe, universe_palettes["science_lab"])
 	var task_profile = task_profiles.get(type, task_profiles["rapid_classification"])
 	
-	var active_contrast = task_profile.get("contrast_boost", 1.0) * (1.0 + (float(difficulty) * 0.1))
+		var active_contrast = task_profile.get("contrast_boost", 1.0) * (1.0 + (float(difficulty) * 0.1))
+		
+		# Clamp contrast to ensure it remains legible but never dominates the tunnel backdrop
+		active_contrast = clamp(active_contrast, 0.5, 2.5)
 	
 	return {
 		"palette": base_palette,

@@ -28,18 +28,21 @@ static func _apply_to_children(node: Node, palette: Dictionary, contrast: float)
 static func _style_button(btn: Button, palette: Dictionary, contrast: float):
 	var primary = palette.get("primary", Color(1, 1, 1))
 	
+	# Clamp alpha opacity to prevent massive opaque rectangles at high difficulty
+	var base_alpha = clamp(0.15 * contrast, 0.15, 0.45)
+	
 	var style_box = StyleBoxFlat.new()
 	style_box.bg_color = primary
-	style_box.bg_color.a = 0.2 * contrast # Base opacity modulated by contrast
+	style_box.bg_color.a = base_alpha
 	style_box.border_width_bottom = 2
 	style_box.border_color = primary
 	
 	var style_hover = style_box.duplicate()
-	style_hover.bg_color.a = 0.5 * contrast
+	style_hover.bg_color.a = clamp(0.3 * contrast, 0.3, 0.6)
 	
 	var style_pressed = style_box.duplicate()
-	style_pressed.bg_color.a = 0.8 * contrast
-	style_pressed.bg_color = primary.lightened(0.5) # Warning/Accent simulation
+	style_pressed.bg_color.a = clamp(0.5 * contrast, 0.5, 0.8)
+	style_pressed.bg_color = primary.lightened(0.5) 
 	
 	btn.add_theme_stylebox_override("normal", style_box)
 	btn.add_theme_stylebox_override("hover", style_hover)
