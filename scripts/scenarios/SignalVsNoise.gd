@@ -44,7 +44,7 @@ func _on_answer(chose_match: bool):
 	if chose_match == is_signal:
 		print("[SIGNAL VS NOISE] Success. Ejecting!")
 		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
-		PlayerProfile.record_cognitive_event("rapid_classification", "science_lab", true, rt_ms)
+		PlayerProfile.record_cognitive_event("rapid_classification", "signal_vs_noise", "science_lab", true, rt_ms)
 		SessionTracker.record_spike_result("signal_vs_noise", true)
 		btn_match.disabled = true; btn_ignore.disabled = true
 		await get_tree().create_timer(0.5).timeout
@@ -52,6 +52,6 @@ func _on_answer(chose_match: bool):
 		queue_free()
 	else:
 		print("[SIGNAL VS NOISE] Error. Resetting.")
-		PlayerProfile.record_cognitive_event("rapid_classification", "science_lab", false, rt_ms)
+		PlayerProfile.record_cognitive_event("rapid_classification", "signal_vs_noise", "science_lab", false, rt_ms)
 		SessionTracker.record_spike_result("signal_vs_noise", false)
 		feedback_label.text = "ERROR! Try again."

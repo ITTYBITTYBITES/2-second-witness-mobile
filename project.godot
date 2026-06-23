@@ -25,3 +25,5 @@ ContentSnapshotManager="*res://scripts/system/deployment/ContentSnapshotManager.
 SessionTracker="*res://scripts/system/SessionTracker.gd"
 GitHubSyncManager="*res://scripts/content/GitHubSyncManager.gd"
 FidelityEnforcer="*res://scripts/system/enforcement/FidelityEnforcer.gd"
+SamplingController="*res://scripts/system/SamplingController.gd"
+PlayerProfile="*res://scripts/system/PlayerProfile.gd"
