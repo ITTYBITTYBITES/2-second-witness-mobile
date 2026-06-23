@@ -13,8 +13,8 @@ func handle_navigation_event(event: Dictionary):
 		# Vertical Slice v2: Weighted Scenario Rotation
 		var cascade_scene
 		
-		# 10 Cognitive Spikes (Milestone 1)
-		var roll = randi() % 10
+		# 12 Flagship Cognitive Spikes (Priority 2)
+		var roll = randi() % 12
 		
 		if roll == 0:
 			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
@@ -34,8 +34,12 @@ func handle_navigation_event(event: Dictionary):
 			cascade_scene = preload("res://scenes/scenarios/SpeedSort.tscn")
 		elif roll == 8:
 			cascade_scene = preload("res://scenes/scenarios/MathSurprise.tscn")
-		else:
+		elif roll == 9:
 			cascade_scene = preload("res://scenes/scenarios/ReflexTap.tscn")
+		elif roll == 10:
+			cascade_scene = preload("res://scenes/scenarios/SignalVsNoise.tscn")
+		else:
+			cascade_scene = preload("res://scenes/scenarios/RiskSelection.tscn")
 			
 		var cascade = cascade_scene.instantiate()
 		
