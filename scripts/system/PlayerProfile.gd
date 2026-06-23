@@ -2,13 +2,24 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# THE COGNITIVE MIRROR
+# THE COGNITIVE MIRROR (WITH DRIFT CONTROL)
 # ---------------------------------------------------------
 
 var lifetime_sessions: int = 0
 var universe_affinity: Dictionary = {}
 
-var cognitive_traits = {
+# Baseline Trait Vector (Slow-moving historical average)
+var cognitive_baseline = {
+	"pattern_recognition": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
+	"recall": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
+	"rapid_classification": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
+	"spatial_tracking": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
+	"decision_confidence": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
+	"processing_speed": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0}
+}
+
+# Weekly Delta Vector (Fast-moving session drift)
+var current_week_drift = {
 	"pattern_recognition": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
 	"recall": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
 	"rapid_classification": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
@@ -25,59 +36,48 @@ func record_cognitive_event(trait: String, universe: String, success: bool, reac
 	lifetime_sessions += 1
 	universe_affinity[universe] = universe_affinity.get(universe, 0) + 1
 	
-	if cognitive_traits.has(trait):
-		var t = cognitive_traits[trait]
-		t["attempts"] += 1
+	# Update slow-moving baseline
+	if cognitive_baseline.has(trait):
+		var b = cognitive_baseline[trait]
+		b["attempts"] += 1
 		if success:
-			t["successes"] += 1
-			t["total_rt_ms"] += reaction_time_ms
+			b["successes"] += 1
+			b["total_rt_ms"] += reaction_time_ms
+			
+	# Update fast-moving weekly drift
+	if current_week_drift.has(trait):
+		var d = current_week_drift[trait]
+		d["attempts"] += 1
+		if success:
+			d["successes"] += 1
+			d["total_rt_ms"] += reaction_time_ms
 			
 	save_profile()
 
 func generate_insights() -> Array[String]:
 	var insights: Array[String] = []
 	
-	# 1. Dominant Universe Insight
-	var top_uni = ""
-	var top_count = 0
-	for u in universe_affinity.keys():
-		if universe_affinity[u] > top_count:
-			top_count = universe_affinity[u]
-			top_uni = u
+	var pat = cognitive_baseline["pattern_recognition"]
+	var rec = cognitive_baseline["recall"]
 	
-	if top_count > 0:
-		var readable_uni = top_uni.capitalize().replace("_", " ")
-		insights.append("%s remains your dominant universe." % readable_uni)
-		
-	# 2. Pattern vs Recall Insight
-	var pat = cognitive_traits["pattern_recognition"]
-	var rec = cognitive_traits["recall"]
 	if pat["attempts"] >= 3 and rec["attempts"] >= 3:
 		var pat_acc = float(pat["successes"]) / float(pat["attempts"])
 		var rec_acc = float(rec["successes"]) / float(rec["attempts"])
 		
 		if pat_acc > rec_acc + 0.1:
 			var diff = int((pat_acc - rec_acc) * 100)
-			insights.append("You perform %d%% better on pattern tasks than recall tasks." % diff)
-		elif rec_acc > pat_acc + 0.1:
-			var diff = int((rec_acc - pat_acc) * 100)
-			insights.append("You perform %d%% better on recall tasks than pattern tasks." % diff)
+			insights.append("Historically, you perform %d%% better on pattern tasks than recall tasks." % diff)
 			
-	# 3. Processing Speed / Decision Confidence Insight
-	var spd = cognitive_traits["processing_speed"]
-	var conf = cognitive_traits["decision_confidence"]
-	
-	if conf["attempts"] > 3:
-		var avg_conf_rt = conf["total_rt_ms"] / float(conf["successes"]) if conf["successes"] > 0 else 3000.0
-		if avg_conf_rt > 2000.0:
-			insights.append("You hesitate longer when ambiguity is high.")
-		elif avg_conf_rt < 800.0:
-			insights.append("You demonstrate high decisiveness under uncertainty.")
-
-	if spd["attempts"] > 3:
-		var spd_acc = float(spd["successes"]) / float(spd["attempts"])
-		if spd_acc > 0.8:
-			insights.append("Your accuracy remains stable under time pressure.")
+	# Anomaly Detection: Compare fast-moving drift to slow-moving baseline
+	var pat_drift = current_week_drift["pattern_recognition"]
+	if pat_drift["attempts"] >= 3 and pat["attempts"] >= 10:
+		var baseline_rt = pat["total_rt_ms"] / float(pat["successes"]) if pat["successes"] > 0 else 2000.0
+		var weekly_rt = pat_drift["total_rt_ms"] / float(pat_drift["successes"]) if pat_drift["successes"] > 0 else 2000.0
+		
+		if weekly_rt < (baseline_rt * 0.8): # 20% faster this week
+			insights.append("Your pattern recognition speed has sharply increased this week.")
+		elif weekly_rt > (baseline_rt * 1.2): # 20% slower this week
+			insights.append("You are exhibiting unusual hesitation in pattern tasks this week.")
 			
 	if insights.is_empty():
 		insights.append("Awaiting more cognitive data to form a profile...")

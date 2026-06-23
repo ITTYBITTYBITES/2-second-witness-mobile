@@ -11,35 +11,11 @@ func handle_navigation_event(event: Dictionary):
 		print("[ROUTER] Executing continuous scene shift to Destination: ", dest)
 		
 		# Vertical Slice v2: Weighted Scenario Rotation
-		var cascade_scene
+		var cascade_scene_name = SamplingController.get_next_scenario()
+		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(cascade_scene_name) + ".tscn")
 		
-		# 12 Flagship Cognitive Spikes (Priority 2)
-		var roll = randi() % 12
-		
-		if roll == 0:
+		if cascade_scene == null:
 			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
-		elif roll == 1:
-			cascade_scene = preload("res://scenes/scenarios/SpatialRecall.tscn")
-		elif roll == 2:
-			cascade_scene = preload("res://scenes/scenarios/SequenceReverse.tscn")
-		elif roll == 3:
-			cascade_scene = preload("res://scenes/scenarios/PatternContinuation.tscn")
-		elif roll == 4:
-			cascade_scene = preload("res://scenes/scenarios/OddOneOut.tscn")
-		elif roll == 5:
-			cascade_scene = preload("res://scenes/scenarios/StroopTest.tscn")
-		elif roll == 6:
-			cascade_scene = preload("res://scenes/scenarios/RapidClassification.tscn")
-		elif roll == 7:
-			cascade_scene = preload("res://scenes/scenarios/SpeedSort.tscn")
-		elif roll == 8:
-			cascade_scene = preload("res://scenes/scenarios/MathSurprise.tscn")
-		elif roll == 9:
-			cascade_scene = preload("res://scenes/scenarios/ReflexTap.tscn")
-		elif roll == 10:
-			cascade_scene = preload("res://scenes/scenarios/SignalVsNoise.tscn")
-		else:
-			cascade_scene = preload("res://scenes/scenarios/RiskSelection.tscn")
 			
 		var cascade = cascade_scene.instantiate()
 		
@@ -51,6 +27,13 @@ func handle_navigation_event(event: Dictionary):
 		emit_signal("routed_to", dest)
 	else:
 		print("[ROUTER] Unknown routing event: ", event)
+
+func _snake_to_pascal(snake: String) -> String:
+	var parts = snake.split("_")
+	var result = ""
+	for part in parts:
+		result += part.capitalize()
+	return result
 
 func _on_cascade_completed():
 	print("[ROUTER] Cognitive Spike resolved. Passing control back to Tunnel for Slingshot.")
