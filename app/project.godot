@@ -3,13 +3,7 @@
 
 config_version=5
 
-
 [application]
-boot_splash/image="res://assets/textures/sprites/v1/neural_node_v3.png"
-boot_splash/fullsize=false
-boot_splash/use_filter=true
-boot_splash/bg_color=Color(0.04, 0.04, 0.06, 1)
-
 
 config/name="2 Second Witness"
 run/main_scene="res://MainShell.tscn"
@@ -18,6 +12,8 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
+shader_compiler/shader_cache/enabled=true
+vulkan/rendering/shader_compilation_mode=2
 
 [autoload]
 
@@ -33,13 +29,14 @@ GitHubSyncManager="*res://scripts/content/GitHubSyncManager.gd"
 FidelityEnforcer="*res://scripts/system/enforcement/FidelityEnforcer.gd"
 SamplingController="*res://scripts/system/SamplingController.gd"
 PlayerProfile="*res://scripts/system/PlayerProfile.gd"
+StoreManager="*res://scripts/system/StoreManager.gd"
+AdManager="*res://scripts/system/AdManager.gd"
+DiagnosticAutomator="*res://scripts/system/DiagnosticAutomator.gd"
+IVC0_InstrumentConfig="*res://scripts/system/IVC0_InstrumentConfig.gd"
+StructuredLogger="*res://scripts/system/StructuredLogger.gd"
+LensMorphology="*res://scripts/system/LensMorphology.gd"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-
-[rendering]
-
-shader_compiler/shader_cache/enabled=true
-vulkan/rendering/shader_compilation_mode=2
