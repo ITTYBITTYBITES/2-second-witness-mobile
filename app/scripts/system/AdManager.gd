@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# PRODUCTION ADVERTISEMENT CONTROLLER (AdMob + Adsterra)
+# PRODUCTION ADVERTISEMENT CONTROLLER (AdMob)
 # ---------------------------------------------------------
 
 signal ad_finished
@@ -11,21 +11,32 @@ signal reward_granted
 var ad_frequency: int = 3
 var _loops_since_last_ad: int = 0
 
-# Network Singletons (Injected via Godot Android Plugins)
+# Network Singletons
 var admob_plugin = null
-var adsterra_plugin = null
 
-# --- PRODUCTION IDS (REPLACE THESE IN GODOT BEFORE FINAL EXPORT) ---
-const ADMOB_INTERSTITIAL_ID = "" # You need to create this in AdMob
-const ADMOB_REWARDED_ID = "ca-app-pub-1566091161594729/7748455589" # Updated from screenshot
-const ADMOB_BANNER_ID = "ca-app-pub-1566091161594729/8898589492" # Updated from screenshot
-# -------------------------------------------------------------------
+# --- PRODUCTION IDS (SWAP TO TRUE BEFORE EXPORTING FOR PLAY STORE) ---
+const USE_LIVE_ADS = false 
+
+var ADMOB_INTERSTITIAL_ID: String
+var ADMOB_REWARDED_ID: String
+var ADMOB_BANNER_ID: String
+
+func _init():
+	if USE_LIVE_ADS:
+		# REAL IDS - ONLY FOR PUBLIC GOOGLE PLAY RELEASE
+		ADMOB_INTERSTITIAL_ID = "ca-app-pub-1566091161594729/6094062214" 
+		ADMOB_REWARDED_ID = "ca-app-pub-1566091161594729/7748455589"     
+		ADMOB_BANNER_ID = "ca-app-pub-1566091161594729/8898589492"
+	else:
+		# GOOGLE TEST IDS - SAFE FOR PERSONAL PLAYING & DEVELOPMENT
+		ADMOB_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712"
+		ADMOB_REWARDED_ID = "ca-app-pub-3940256099942544/5224354917"
+		ADMOB_BANNER_ID = "ca-app-pub-3940256099942544/6300978111"
 
 func _ready():
-	print("[AD MANAGER] Online. Initializing Production Ad Networks.")
+	print("[AD MANAGER] Online. Live Ads Enabled: ", USE_LIVE_ADS)
 	NavigationEngine.navigation_event.connect(_on_loop_completed)
 	
-	# Initialize AdMob (Video/Interstitials)
 	if Engine.has_singleton("AdMob"):
 		admob_plugin = Engine.get_singleton("AdMob")
 		print("[AD MANAGER] AdMob Plugin Found.")
@@ -36,20 +47,12 @@ func _ready():
 		admob_plugin.load_rewarded_video(ADMOB_REWARDED_ID)
 	else:
 		print("[AD MANAGER] AdMob Plugin NOT found. Using simulated fallback.")
-		
-	# Initialize Adsterra (Banners)
-	if Engine.has_singleton("Adsterra"):
-		adsterra_plugin = Engine.get_singleton("Adsterra")
-		print("[AD MANAGER] Adsterra Plugin Found.")
-	else:
-		print("[AD MANAGER] Adsterra Plugin NOT found. Using simulated fallback.")
 
 func _on_loop_completed(payload: Dictionary):
 	_loops_since_last_ad += 1
 
 func check_and_show_ad() -> bool:
 	var profile = get_node_or_null("/root/PlayerProfile")
-	
 	if profile and profile.has_directors_pass:
 		return false
 		
@@ -66,27 +69,21 @@ func check_and_show_ad() -> bool:
 		
 	return false
 
-# ---------------------------------------------------------
-# VIDEO ADS (AdMob)
-# ---------------------------------------------------------
 func _show_video_ad(is_rewarded: bool):
 	if admob_plugin:
 		if is_rewarded:
 			admob_plugin.show_rewarded_video()
-			admob_plugin.load_rewarded_video(ADMOB_REWARDED_ID) # Preload next
+			admob_plugin.load_rewarded_video(ADMOB_REWARDED_ID)
 		else:
 			admob_plugin.show_interstitial()
-			admob_plugin.load_interstitial(ADMOB_INTERSTITIAL_ID) # Preload next
+			admob_plugin.load_interstitial(ADMOB_INTERSTITIAL_ID)
 	else:
-		# Fallback for PC testing so the game doesn't break
 		_show_dummy_ad()
 
 func _on_video_closed():
-	print("[AD MANAGER] AdMob Video Closed. Returning to stream.")
 	ad_finished.emit()
 
 func _on_reward_earned(currency: String, amount: int):
-	print("[AD MANAGER] AdMob Reward Granted.")
 	reward_granted.emit()
 
 func _show_dummy_ad():
@@ -97,7 +94,7 @@ func _show_dummy_ad():
 	bg.color = Color(0, 0, 0, 0.9)
 	ad_layer.add_child(bg)
 	var lbl = Label.new()
-	lbl.text = "[ ADMOB/ADSTERRA VIDEO SIMULATION ]\n[ WAITING 3 SECONDS ]"
+	lbl.text = "[ ADMOB VIDEO SIMULATION ]\n[ WAITING 3 SECONDS ]"
 	lbl.add_theme_font_size_override("font_size", 32)
 	lbl.set_anchors_preset(Control.PRESET_CENTER)
 	ad_layer.add_child(lbl)
@@ -106,21 +103,16 @@ func _show_dummy_ad():
 	await get_tree().create_timer(3.0).timeout
 	ad_layer.queue_free()
 	
-	reward_granted.emit() # Simulate reward success
+	reward_granted.emit()
 	_on_video_closed()
 
-# ---------------------------------------------------------
-# BANNER ADS (AdMob)
-# ---------------------------------------------------------
 func show_banner():
 	var profile = get_node_or_null("/root/PlayerProfile")
 	if profile and profile.has_directors_pass:
-		return # VIPs do not see banners
+		return 
 		
 	if admob_plugin:
-		# AdMob plugin syntax for banners. 
-		# Ensure your specific plugin uses this exact method name (e.g., load_banner or show_banner)
-		admob_plugin.load_banner(ADMOB_BANNER_ID, 1) # 1 usually means bottom placement
+		admob_plugin.load_banner(ADMOB_BANNER_ID, 1) 
 		print("[AD MANAGER] AdMob Banner Displayed.")
 	else:
 		print("[AD MANAGER] AdMob Simulation: Showing Banner.")
