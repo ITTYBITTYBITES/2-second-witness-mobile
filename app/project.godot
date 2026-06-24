@@ -17,7 +17,10 @@ vulkan/rendering/shader_compilation_mode=2
 
 [autoload]
 
+AudioManager="*res://scripts/system/AudioManager.gd"
+GoodwillManager="*res://scripts/system/GoodwillManager.gd"
 NavigationEngine="*res://scripts/NavigationEngine.gd"
+
 NavigationRouter="*res://scripts/NavigationRouter.gd"
 ThemeManager="*res://scripts/ThemeManager.gd"
 ContentRegistry="*res://scripts/content/ContentRegistry.gd"
