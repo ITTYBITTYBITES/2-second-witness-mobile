@@ -16,9 +16,9 @@ var admob_plugin = null
 var adsterra_plugin = null
 
 # --- PRODUCTION IDS (REPLACE THESE IN GODOT BEFORE FINAL EXPORT) ---
-const ADMOB_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712" # Test ID
-const ADMOB_REWARDED_ID = "ca-app-pub-3940256099942544/5224354917"     # Test ID
-const ADSTERRA_PLACEMENT_ID = "your_adsterra_banner_id"
+const ADMOB_INTERSTITIAL_ID = "" # You need to create this in AdMob
+const ADMOB_REWARDED_ID = "ca-app-pub-1566091161594729/7748455589" # Updated from screenshot
+const ADMOB_BANNER_ID = "ca-app-pub-1566091161594729/8898589492" # Updated from screenshot
 # -------------------------------------------------------------------
 
 func _ready():
@@ -110,22 +110,24 @@ func _show_dummy_ad():
 	_on_video_closed()
 
 # ---------------------------------------------------------
-# BANNER ADS (Adsterra)
+# BANNER ADS (AdMob)
 # ---------------------------------------------------------
 func show_banner():
 	var profile = get_node_or_null("/root/PlayerProfile")
 	if profile and profile.has_directors_pass:
 		return # VIPs do not see banners
 		
-	if adsterra_plugin:
-		adsterra_plugin.show_banner(ADSTERRA_PLACEMENT_ID, true) # true = anchor bottom
-		print("[AD MANAGER] Adsterra Banner Displayed.")
+	if admob_plugin:
+		# AdMob plugin syntax for banners. 
+		# Ensure your specific plugin uses this exact method name (e.g., load_banner or show_banner)
+		admob_plugin.load_banner(ADMOB_BANNER_ID, 1) # 1 usually means bottom placement
+		print("[AD MANAGER] AdMob Banner Displayed.")
 	else:
-		print("[AD MANAGER] Adsterra Simulation: Showing Banner.")
+		print("[AD MANAGER] AdMob Simulation: Showing Banner.")
 
 func hide_banner():
-	if adsterra_plugin:
-		adsterra_plugin.hide_banner()
-		print("[AD MANAGER] Adsterra Banner Hidden.")
+	if admob_plugin:
+		admob_plugin.hide_banner()
+		print("[AD MANAGER] AdMob Banner Hidden.")
 	else:
-		print("[AD MANAGER] Adsterra Simulation: Hiding Banner.")
+		print("[AD MANAGER] AdMob Simulation: Hiding Banner.")
