@@ -11,9 +11,6 @@ func handle_navigation_event(event: Dictionary):
 		print("[ROUTER] Executing continuous scene shift to Destination: ", dest)
 		
 		var cascade_scene_name = SamplingController.get_next_scenario()
-		
-		# Resolve the payload from the Registry before instantiating
-		# We need a seed string to guarantee determinism
 		var seed_string = str(PlayerProfile.lifetime_sessions) + dest.get("chunk_id", "0")
 		var scenario_payload = ContentRegistry.resolve_scenario(dest.get("universe", "science_lab"), cascade_scene_name, seed_string)
 		
@@ -23,11 +20,9 @@ func handle_navigation_event(event: Dictionary):
 			
 		var cascade = cascade_scene.instantiate()
 		
-		# Inject the data payload if the scenario supports it
 		if cascade.has_method("inject_payload"):
 			cascade.inject_payload(scenario_payload)
 		
-		# Attach to World Layer to visually suppress the tunnel
 		var world_layer = get_tree().root.get_node("MainShell/WorldLayer")
 		if world_layer:
 			world_layer.add_child(cascade)
@@ -44,10 +39,14 @@ func _snake_to_pascal(snake: String) -> String:
 	return result
 
 func _on_cascade_completed():
-	print("[ROUTER] Cognitive Spike resolved. Passing control back to Tunnel for Slingshot.")
+	print("[ROUTER] Cognitive Spike resolved. Checking Ad Gate before Slingshot.")
+	
+	if AdManager.check_and_show_ad():
+		# If an ad triggers, wait for it to finish before slingshotting
+		await AdManager.ad_finished
+	
 	SystemHealthMonitor.pop_context(SystemHealthMonitor.ExecContext.SCENARIO_ACTIVE)
 	SystemHealthMonitor.queue_telemetry_dump("Post-Scenario Return")
 	var tunnel = get_tree().root.get_node("MainShell/WorldLayer/TunnelLayer")
 	if tunnel and tunnel.has_method("trigger_slingshot"):
 		tunnel.trigger_slingshot()
-		AudioManager.play_sfx("slingshot")

@@ -20,8 +20,8 @@ func setup_directors_pass():
 	target_item_id = StoreManager.PRODUCT_DIRECTORS_PASS
 	title_label.text = "The Director's Pass"
 	title_label.add_theme_color_override("font_color", Color(0.968, 0.145, 0.521))
-	subtitle_label.text = "Unlock all Universes instantly. Gain access to the exclusive Golden Astrolabe Cockpit Lens.\n\n$7.99"
-	btn_buy.text = "GET PASS ($7.99)"
+	subtitle_label.text = "Permanently remove all interstitial and forced advertisements from the experience.\n\n$7.99"
+	btn_buy.text = "REMOVE ADS ($7.99)"
 
 func _ready():
 	btn_buy.pressed.connect(_on_buy)
