@@ -13,12 +13,17 @@ func _ready():
 	
 	NavigationEngine.transition_sequence_started.connect(_on_spike_started)
 	
-func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab"):
+func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab", world_id: String = ""):
 	active_universe_id = universe_id
 	var tunnel = theme_data.get("tunnel", {})
+	
+	# Apply World-level Tunnel Modifiers if they exist
+	var modifiers = theme_data.get("tunnel_modifier", {})
+	var flow_str = modifiers.get("flow_type", tunnel.get("flow_type", "linear"))
+	var density_val = modifiers.get("fog_density", tunnel.get("density", 0.6))
+	
 	var palette = theme_data.get("palette", {"primary": Color(1,1,1), "bg": Color(0,0,0)})
 	
-	var flow_str = tunnel.get("flow_type", "linear")
 	var flow_int = 0
 	if flow_str == "vortex": flow_int = 1
 	elif flow_str == "branching": flow_int = 2
@@ -29,16 +34,22 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab"):
 	_material.set_shader_parameter("color_tertiary", palette["primary"])
 
 	_material.set_shader_parameter("flow_speed", tunnel.get("speed_multiplier", 1.0))
-	_material.set_shader_parameter("density", tunnel.get("density", 0.6))
+	_material.set_shader_parameter("density", density_val)
 	_material.set_shader_parameter("flow_type", flow_int)
 	
 	var asset_registry = AssetManifestRegistry.new()
 	var manifest = asset_registry.get_manifest(universe_id)
-	var noise_tex = load(manifest["bg_noise"])
+	
+	# If the World has a specific background noise override, load it
+	var noise_path = manifest["bg_noise"]
+	if world_id != "" and manifest.has("worlds") and manifest["worlds"].has(world_id) and manifest["worlds"][world_id].has("bg_noise"):
+		noise_path = manifest["worlds"][world_id]["bg_noise"]
+		
+	var noise_tex = load(noise_path)
 	if noise_tex:
 		_material.set_shader_parameter("noise_tex", noise_tex)
 		
-	print("[TIER 1 - SHADER] Field environment synchronized with universe: ", universe_id)
+	print("[TIER 1 - SHADER] Field environment synchronized with universe: ", universe_id, " | World: ", world_id)
 
 func _on_spike_started():
 	# Determine the intensity of the incoming cognitive spike

@@ -70,13 +70,19 @@ func _show_discovery():
 	discovery.return_requested.connect(_show_landing)
 	discovery.play_universe_requested.connect(_start_session)
 
-func _start_session(universe_id: String):
+func _start_session(universe_id: String, world_id: String = ""):
 	active_universe = universe_id
 	
 	if active_ui_layer and active_ui_layer.has_method("hide_screen"):
 		active_ui_layer.hide_screen()
 		
-	# Instantly swap the tunnel environment to match the selected universe
+	# Tell the Navigation State Machine what we are focusing on
+	if world_id == "":
+		NavigationState.set_exploration_mode(universe_id)
+	else:
+		NavigationState.set_focus_mode(universe_id, world_id)
+		
+	# Instantly swap the tunnel environment to match the selected universe and world
 	var base_chunks = 5
 	var test_chunks = int(base_chunks * active_test_density)
 	chunk_pool.reset_pool(test_chunks, active_universe)
@@ -86,8 +92,12 @@ func _start_session(universe_id: String):
 	var shader = get_node_or_null("/root/MainShell/WorldLayer/TunnelLayer/Tier1_ShaderField/ShaderRect")
 	if shader:
 		var renderer = UniverseRenderer.new()
+		var world_renderer = WorldRenderer.new()
 		var def = renderer.universe_definitions.get(active_universe, renderer.universe_definitions["science_lab"])
-		shader.apply_theme({"palette": def["palette"]}, active_universe)
+		
+		# Apply World Modifiers to the Universe Base
+		def = world_renderer.get_world_modifiers(world_id, def)
+		shader.apply_theme(def, active_universe, world_id)
 		
 	current_loops = 0
 	
@@ -95,7 +105,7 @@ func _start_session(universe_id: String):
 	if portal_layer:
 		var initial_iris = preload("res://scripts/portals/ScenarioNode.gd").new()
 		initial_iris.position = Vector3(0, 0, -20)
-		initial_iris.setup(2, {"universe": active_universe, "world": "cognitive_bias", "chunk_id": "start"})
+		initial_iris.setup(2, {"universe": active_universe, "world": world_id, "chunk_id": "start"})
 		portal_layer.add_child(initial_iris)
 
 func _show_profile():
