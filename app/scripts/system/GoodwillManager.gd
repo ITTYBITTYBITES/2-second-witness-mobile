@@ -21,21 +21,17 @@ func consume_ad_skip() -> bool:
 		return true
 	return false
 
-func evaluate_random_grace() -> bool:
+func evaluate_boot_grace():
 	var current_time = Time.get_unix_time_from_system()
 	
 	# Prevent it from happening constantly. Must be at least 3 days since the last time.
 	if current_time - last_grace_timestamp < 259200:
-		return false
+		return
 		
-	# Purely random chance when they die (e.g., ~2% chance to trigger instead of an ad)
-	# This ensures it is NEVER predictable. They can never "farm" it.
-	if randf() > 0.98:
-		print("[GOODWILL MANAGER] Random Grace Triggered! Dispensing tokens.")
+	# Evaluate during Boot Sequence. ~5% chance per eligible boot.
+	if randf() > 0.95:
+		print("[GOODWILL MANAGER] Random Grace Triggered on Boot! Dispensing tokens.")
 		_trigger_grace_event()
-		return true
-		
-	return false
 
 func _trigger_grace_event():
 	last_grace_timestamp = Time.get_unix_time_from_system()

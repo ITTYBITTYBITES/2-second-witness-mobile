@@ -25,20 +25,13 @@ func check_and_show_ad() -> bool:
 		
 	if _loops_since_last_ad >= ad_frequency:
 		
-		# 1. Check if the Arcade Operator wants to step in (The Grace Mechanic)
-		if GoodwillManager.evaluate_random_grace():
-			_loops_since_last_ad = 0
-			# Wait for the Operator Intervention UI to finish before returning control
-			await get_tree().create_timer(3.0).timeout 
-			return true
-			
-		# 2. Check if the player already has tokens from a previous Operator visit
+		# 1. Check if the player has tokens from a previous Operator visit
 		if GoodwillManager.consume_ad_skip():
 			print("[AD MANAGER] Override Token used. Bypassing Ad.")
 			_loops_since_last_ad = 0
 			return false
 			
-		# 3. Otherwise, show the Ad
+		# 2. Otherwise, show the Ad
 		print("[AD MANAGER] Triggering Interstitial Ad...")
 		_show_dummy_ad()
 		_loops_since_last_ad = 0

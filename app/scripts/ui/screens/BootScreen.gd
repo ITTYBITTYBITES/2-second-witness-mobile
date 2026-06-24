@@ -11,8 +11,6 @@ func _ready():
 	status_label.text = "INITIALIZING CORTEX..."
 	progress_bar.value = 10
 	
-	# The "Mood Ring" Splash Screen
-	# Randomize the color of the 2 SECOND WITNESS logo every boot to create the illusion of a shifting entity.
 	var moods = [
 		Color("#00D4FF"), # Cyan (Analytical)
 		Color("#2ECC71"), # Green (Organic)
@@ -47,6 +45,9 @@ func _ready():
 		
 	progress_bar.value = 100
 	status_label.text = "SYSTEM READY."
+	
+	# THE OPERATOR'S GRACE CHECK ON BOOT
+	GoodwillManager.evaluate_boot_grace()
 	
 	await get_tree().create_timer(0.5).timeout
 	var tween = get_tree().create_tween()
