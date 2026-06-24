@@ -3,17 +3,19 @@ class_name LensMorphology
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# COCKPIT LENS ACCUMULATION TRACKER
+# COCKPIT LENS ACCUMULATION TRACKER (WORLD LEVEL)
 # ---------------------------------------------------------
 
 enum MasteryTier { BASE, DEVELOPING, COMPLEX, ZENITH }
 
-func get_lens_mastery(universe_id: String) -> int:
+func get_world_mastery(universe_id: String, world_id: String) -> int:
 	var profile = get_node_or_null("/root/PlayerProfile")
 	if not profile: return MasteryTier.BASE
 	
-	# The lens accumulates visual complexity based on the player's lifetime interaction count in this universe
-	var affinity = profile.universe_affinity.get(universe_id, 0)
+	# Mastery is now tracked at the granular World level, not just the Universe level.
+	# Example: You can be a Zenith in Astronomy but a Base novice in Physics.
+	var world_key = universe_id + "_" + world_id
+	var affinity = profile.world_affinity.get(world_key, 0)
 	
 	if affinity > 500:
 		return MasteryTier.ZENITH

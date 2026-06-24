@@ -7,6 +7,7 @@ extends Node
 
 var lifetime_sessions: int = 0
 var universe_affinity: Dictionary = {}
+var world_affinity: Dictionary = {}
 n# Accessibility Cohorts (Prevents false cognitive degradation flags)
 var motor_assist_enabled: bool = false
 var colorblind_mode_enabled: bool = false
@@ -54,6 +55,10 @@ func _ready():
 func record_cognitive_event(trait: String, scenario_id: String, universe: String, success: bool, reaction_time_ms: float):
 	lifetime_sessions += 1
 	universe_affinity[universe] = universe_affinity.get(universe, 0) + 1
+t
+	# Track granular mastery per world
+	var world_key = universe + "_" + world_id
+	world_affinity[world_key] = world_affinity.get(world_key, 0) + 1
 	
 	# Increment familiarity (The Adaptation Tracker)
 	task_familiarity_index[scenario_id] = task_familiarity_index.get(scenario_id, 0) + 1
