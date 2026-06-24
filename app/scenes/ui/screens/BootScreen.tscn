@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://bootscreen"]
+
+[ext_resource type="Script" path="res://scripts/ui/screens/BootScreen.gd" id="1_boot"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_progress"]
+bg_color = Color(0.298039, 0.788235, 0.941176, 1)
+shadow_color = Color(0.298039, 0.788235, 0.941176, 0.5)
+shadow_size = 10
+
+[node name="BootScreen" type="CanvasLayer"]
+layer = 120
+script = ExtResource("1_boot")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.04, 0.06, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -50.0
+offset_right = 300.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="LogoLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.298039, 0.788235, 0.941176, 1)
+theme_override_font_sizes/font_size = 64
+text = "2 SECOND WITNESS"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 4)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/fill = SubResource("StyleBoxFlat_progress")
+value = 10.0
+show_percentage = false
+
+[node name="StatusLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+theme_override_font_sizes/font_size = 14
+text = "INITIALIZING..."
+horizontal_alignment = 1
+uppercase = true

@@ -3,7 +3,13 @@
 
 config_version=5
 
+
 [application]
+boot_splash/image="res://assets/textures/sprites/v1/neural_node_v3.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=true
+boot_splash/bg_color=Color(0.04, 0.04, 0.06, 1)
+
 
 config/name="2 Second Witness"
 run/main_scene="res://MainShell.tscn"

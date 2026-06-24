@@ -38,7 +38,7 @@ func _execute_boot_sequence():
 	
 	# 6. GitHubSyncManager runs (Async, non-blocking)
 	print("[BOOT: 6] GitHubSyncManager async check started.")
-	GitHubSyncManager.sync_cycle()
+	
 	
 	# 7. WorldLayer activates
 	print("[BOOT: 7] WorldLayer activating.")
