@@ -7,37 +7,92 @@ extends Node3D
 var _test_densities = [1.0, 1.25, 1.50, 1.75, 2.00, 2.50]
 var active_test_density: float = 1.0
 
+# Protocol Tracking
+var target_loops = 5
+var current_loops = 0
+
+var landing_screen_scene = preload("res://scenes/ui/screens/LandingScreen.tscn")
+var profile_screen_scene = preload("res://scenes/ui/screens/PlayerProfileScreen.tscn")
+
+var active_ui_layer = null
+
 func _ready():
-	# STEP 2.1: Deterministic Execution (for positioning, not density picking)
 	randomize()
 	active_test_density = _test_densities[randi() % _test_densities.size()]
-	
-	# Re-lock spatial seed so layout is identical per run, regardless of density multiplier
 	seed(12345)
 	
-	# Pass reference to StreamController
 	stream_controller.chunk_pool = chunk_pool
-	
-	# Preallocate chunks based on randomized density multiplier
 	var base_chunks = 5
 	var test_chunks = int(base_chunks * active_test_density)
 	chunk_pool.reset_pool(test_chunks)
 	
-	# Seed initial buffer sequentially
 	for i in range(test_chunks):
 		chunk_pool.spawn_at_offset(i * -50.0)
 	
-	# Start flow
 	stream_controller.set_flow_speed(1.0) 
-	
-	# Inform health monitor
 	health_monitor.push_context(health_monitor.ExecContext.CHUNK_STREAMING, true)
 	
-	print("===========================================")
-	print("[BLIND TEST] Protocol 5 Active. Density randomized.")
-	print("[BLIND TEST] Focus on the Iris. Score clarity after 60s.")
-	print("===========================================")
+	# Hook into loop tracking
+	NavigationEngine.navigation_event.connect(_on_loop_completed)
+	
+	# Show Landing Screen on Boot
+	_show_landing()
 
-func reveal_density():
-	# Called externally AFTER annotation is recorded
-	print("\n[REVEAL] The true density multiplier for this run was: ", active_test_density, "x\n")
+func _show_landing():
+	if active_ui_layer: active_ui_layer.queue_free()
+	var landing = landing_screen_scene.instantiate()
+	add_child(landing)
+	active_ui_layer = landing
+	
+	landing.play_requested.connect(_start_session)
+	landing.profile_requested.connect(_show_profile)
+	
+	# Ensure tunnel is moving but no Iris is spawned yet
+	var portal_layer = get_node_or_null("/root/MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
+	if portal_layer:
+		for child in portal_layer.get_children():
+			child.queue_free()
+
+func _start_session():
+	if active_ui_layer and active_ui_layer.has_method("hide_screen"):
+		active_ui_layer.hide_screen()
+		
+	current_loops = 0
+	print("[SESSION START] Initiating cognitive loop.")
+	
+	# Spawn the first Iris
+	var portal_layer = get_node_or_null("/root/MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
+	if portal_layer:
+		var initial_iris = preload("res://scripts/portals/ScenarioNode.gd").new()
+		initial_iris.position = Vector3(0, 0, -20)
+		initial_iris.setup(2, {"universe": "science_lab", "world": "cognitive_bias", "chunk_id": "start"})
+		portal_layer.add_child(initial_iris)
+
+func _show_profile():
+	if active_ui_layer: active_ui_layer.queue_free()
+	var profile = profile_screen_scene.instantiate()
+	add_child(profile)
+	active_ui_layer = profile
+	
+	# Add a simple exit button back to landing
+	var btn = Button.new()
+	btn.text = "RETURN TO MENU"
+	btn.custom_minimum_size = Vector2(200, 50)
+	btn.position = Vector2(20, 20)
+	btn.pressed.connect(_show_landing)
+	profile.add_child(btn)
+
+func _on_loop_completed(payload: Dictionary):
+	current_loops += 1
+	if current_loops >= target_loops:
+		print("[SESSION COMPLETE] 5 loops finished. Opening Mirror.")
+		# Force a slight delay to let the final slingshot finish before popping the UI
+		await get_tree().create_timer(3.0).timeout 
+		
+		# Clear the portal layer so the Iris doesn't spawn behind the profile
+		var portal_layer = get_node_or_null("/root/MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
+		if portal_layer:
+			for child in portal_layer.get_children():
+				child.queue_free()
+				
+		_show_profile()

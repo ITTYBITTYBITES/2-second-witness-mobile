@@ -22,28 +22,23 @@ func reset_pool(max_chunks: int):
 		var chunk = Node3D.new()
 		chunk.name = "Chunk_" + str(i)
 		
-		# Inner Hexagonal Structural Ring (Torus)
+		# Mount Final 3D Geometry
 		var main_ring = MeshInstance3D.new()
-		var torus = TorusMesh.new()
-		torus.inner_radius = 18.0
-		torus.outer_radius = 20.0
-		torus.rings = 32 # Higher res for rings
-		torus.radial_segments = 6 # Make it hexagonal radially
-		main_ring.mesh = torus
+		var loaded_mesh = load("res://assets/meshes/rib_science_lab.obj")
+		if not loaded_mesh:
+			print("[ERROR] Failed to load rib_science_lab.obj fallback to Box")
+			loaded_mesh = BoxMesh.new()
+		main_ring.mesh = loaded_mesh
 		main_ring.material_override = structure_mat
-		main_ring.rotation_degrees.x = 90 # Orient to fly *through* it
 		chunk.add_child(main_ring)
 		
-		# MultiMesh for floating data nodes inside the ring
+		# MultiMesh for floating data nodes
 		var multi = MultiMeshInstance3D.new()
 		var mm = MultiMesh.new()
 		mm.transform_format = MultiMesh.TRANSFORM_3D
-		var sphere = SphereMesh.new()
-		sphere.radius = 0.2
-		sphere.height = 0.4
-		sphere.radial_segments = 8
-		sphere.rings = 4
-		mm.mesh = sphere
+		var node_mesh = load("res://assets/meshes/data_node.obj")
+		if not node_mesh: node_mesh = SphereMesh.new()
+		mm.mesh = node_mesh
 		mm.instance_count = 15
 		
 		# Scatter the data nodes along the inner perimeter

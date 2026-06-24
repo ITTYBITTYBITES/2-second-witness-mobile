@@ -8,13 +8,12 @@ func _ready():
 	
 	mesh_instance = get_node_or_null("MeshInstance3D")
 	
-	# Fallback visual initialization if spawned via script
+	# Mount the final Crystalline Iris Geometry
 	if mesh_instance == null:
 		mesh_instance = MeshInstance3D.new()
-		var torus = TorusMesh.new()
-		torus.inner_radius = 2.0
-		torus.outer_radius = 3.0
-		mesh_instance.mesh = torus
+		var loaded_mesh = load("res://assets/meshes/iris_crystalline.obj")
+		if not loaded_mesh: loaded_mesh = TorusMesh.new()
+		mesh_instance.mesh = loaded_mesh
 		
 		# Apply the glowing visual material
 		mesh_instance.material_override = load("res://assets/materials/portal_glow.tres")
