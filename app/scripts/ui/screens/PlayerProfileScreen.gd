@@ -4,6 +4,7 @@ extends CanvasLayer
 @onready var insights_container = $PanelContainer/MarginContainer/VBoxContainer/InsightsContainer
 
 func _ready():
+	AdManager.show_banner()
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()
 
@@ -14,6 +15,7 @@ func _populate_data():
 	lifetime_label.text = "LIFETIME SESSIONS: " + str(profile.lifetime_sessions)
 	
 	for child in insights_container.get_children():
+	AdManager.hide_banner()
 		child.queue_free()
 		
 	var insights = profile.generate_insights()

@@ -36,11 +36,13 @@ func _show_directors_pass_gate():
 	)
 
 func hide_screen():
+	AdManager.hide_banner()
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 0.0, 0.5)
 	tween.tween_callback(func(): visible = false)
 
 func show_screen():
+	AdManager.show_banner()
 	visible = true
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 1.0, 0.5)

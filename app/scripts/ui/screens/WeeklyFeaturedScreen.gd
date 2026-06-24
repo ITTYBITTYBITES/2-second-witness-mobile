@@ -10,6 +10,7 @@ var monetization_gate_scene = preload("res://scenes/ui/screens/MonetizationGate.
 var active_gate = null
 
 func _ready():
+	AdManager.show_banner()
 	print("[2 SECOND WITNESS] Weekly Discovery Screen active.")
 	btn_return.pressed.connect(func(): return_requested.emit())
 	_populate_grid()
@@ -90,4 +91,5 @@ func _show_monetization_gate(universe_id: String):
 	)
 
 func hide_screen():
+	AdManager.hide_banner()
 	queue_free()
