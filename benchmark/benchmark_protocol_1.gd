@@ -51,17 +51,43 @@ func _show_landing():
 	add_child(landing)
 	active_ui_layer = landing
 	
-	landing.play_requested.connect(_start_session)
+	landing.play_requested.connect(func(): _start_session("science_lab"))
 	landing.profile_requested.connect(_show_profile)
+	landing.discover_requested.connect(_show_discovery)
 	
 	var portal_layer = get_node_or_null("/root/MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	if portal_layer:
 		for child in portal_layer.get_children():
 			child.queue_free()
 
-func _start_session():
+func _show_discovery():
+	if active_ui_layer: active_ui_layer.queue_free()
+	var discovery_scene = preload("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
+	var discovery = discovery_scene.instantiate()
+	add_child(discovery)
+	active_ui_layer = discovery
+	
+	discovery.return_requested.connect(_show_landing)
+	discovery.play_universe_requested.connect(_start_session)
+
+func _start_session(universe_id: String):
+	active_universe = universe_id
+	
 	if active_ui_layer and active_ui_layer.has_method("hide_screen"):
 		active_ui_layer.hide_screen()
+		
+	# Instantly swap the tunnel environment to match the selected universe
+	var base_chunks = 5
+	var test_chunks = int(base_chunks * active_test_density)
+	chunk_pool.reset_pool(test_chunks, active_universe)
+	for i in range(test_chunks):
+		chunk_pool.spawn_at_offset(i * -50.0)
+		
+	var shader = get_node_or_null("/root/MainShell/WorldLayer/TunnelLayer/Tier1_ShaderField/ShaderRect")
+	if shader:
+		var renderer = UniverseRenderer.new()
+		var def = renderer.universe_definitions.get(active_universe, renderer.universe_definitions["science_lab"])
+		shader.apply_theme({"palette": def["palette"]}, active_universe)
 		
 	current_loops = 0
 	
