@@ -6,34 +6,6 @@ extends CanvasLayer
 func _ready():
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()
-	
-	# PHASE 5: IVC-0 DATA EXTRACTION
-	# We only show the "Export Data" button if the engine is explicitly built as the Clinical Instrument.
-	if IVC0_InstrumentConfig != null:
-		var export_btn = Button.new()
-		export_btn.text = "EXPORT CLINICAL LOGS (IVC-0)"
-		export_btn.custom_minimum_size = Vector2(0, 60)
-		export_btn.add_theme_font_size_override("font_size", 20)
-		export_btn.add_theme_color_override("font_color", Color(1, 0.2, 0.2)) # Red warning text
-		export_btn.pressed.connect(_on_export_pressed)
-		$PanelContainer/MarginContainer/VBoxContainer.add_child(export_btn)
-
-func _on_export_pressed():
-	print("[IVC-0] Export logs requested.")
-	var log_path = "user://ivc0_raw_data.jsonl"
-	if FileAccess.file_exists(log_path):
-		var file = FileAccess.open(log_path, FileAccess.READ)
-		var content = file.get_as_text()
-		file.close()
-		
-		# URL encode the payload and push it to the OS Mail intent
-		# In a real build, you might want to use a Pastebin API or copy to clipboard if the log is huge.
-		var subject = "IVC-0 Clinical Data: " + str(OS.get_unique_id().hash())
-		var body = content.uri_encode()
-		var mailto = "mailto:engineering@ittybittybites.com?subject=" + subject + "&body=" + body
-		OS.shell_open(mailto)
-	else:
-		print("[IVC-0 ERROR] No log file found.")
 
 func _populate_data():
 	var profile = get_node_or_null("/root/PlayerProfile")

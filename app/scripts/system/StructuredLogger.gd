@@ -2,19 +2,29 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# IVC-0 RAW DATA APPEND-ONLY LOGGER
+# COHORT TELEMETRY UPLINK
 # ---------------------------------------------------------
 
-var _device_hash: String = ""
+var _http_request: HTTPRequest
+# In production, replace this with your actual secure endpoint (e.g., AWS API Gateway, Firebase, Supabase)
+const TELEMETRY_ENDPOINT = "https://api.ittybittybites.com/telemetry/ingest"
 
 func _ready():
-	# Generate a unique hash for the device session
-	_device_hash = str(OS.get_unique_id().hash()) + "_" + str(Time.get_unix_time_from_system())
+	# If the device is not part of the silent cohort, don't even instantiate the network node.
+	if IVC0_InstrumentConfig and not IVC0_InstrumentConfig.is_cohort_member:
+		set_process(false)
+		return
+		
+	_http_request = HTTPRequest.new()
+	add_child(_http_request)
 
 func log_trial(scenario_id: String, universe_id: String, raw_rt: float, corrected_rt: float, success: bool, familiarity: int):
+	if IVC0_InstrumentConfig and not IVC0_InstrumentConfig.is_cohort_member:
+		return # Do nothing for normal players
+		
 	var data = {
 		"timestamp": Time.get_unix_time_from_system(),
-		"device_hash": _device_hash,
+		"device_hash": IVC0_InstrumentConfig.device_hash,
 		"scenario_id": scenario_id,
 		"universe_id": universe_id,
 		"success": success,
@@ -23,12 +33,24 @@ func log_trial(scenario_id: String, universe_id: String, raw_rt: float, correcte
 		"familiarity_index": familiarity
 	}
 	
-	# Append-only write to device disk
-	var file = FileAccess.open("user://ivc0_raw_data.jsonl", FileAccess.READ_WRITE)
+	# 1. Local Cache (Fallback if offline)
+	_cache_to_disk(data)
+	
+	# 2. Silent Uplink
+	_uplink_to_server(data)
+
+func _cache_to_disk(data: Dictionary):
+	var file = FileAccess.open("user://cohort_telemetry.jsonl", FileAccess.READ_WRITE)
 	if not file:
-		file = FileAccess.open("user://ivc0_raw_data.jsonl", FileAccess.WRITE)
+		file = FileAccess.open("user://cohort_telemetry.jsonl", FileAccess.WRITE)
 	
 	file.seek_end()
 	file.store_string(JSON.stringify(data) + "\n")
 	file.close()
-	print("[STRUCTURED LOGGER] Trial logged -> ", data)
+
+func _uplink_to_server(data: Dictionary):
+	var headers = ["Content-Type: application/json"]
+	var body = JSON.stringify(data)
+	
+	# Silently fire and forget. 
+	_http_request.request(TELEMETRY_ENDPOINT, headers, HTTPClient.METHOD_POST, body)
