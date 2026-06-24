@@ -15,7 +15,7 @@ var _loops_since_last_ad: int = 0
 var admob_plugin = null
 
 # --- PRODUCTION IDS (SWAP TO TRUE BEFORE EXPORTING FOR PLAY STORE) ---
-const USE_LIVE_ADS = true 
+const USE_LIVE_ADS = false 
 
 var ADMOB_INTERSTITIAL_ID: String
 var ADMOB_REWARDED_ID: String
