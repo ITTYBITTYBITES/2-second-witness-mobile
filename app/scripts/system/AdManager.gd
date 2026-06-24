@@ -52,6 +52,9 @@ func _on_loop_completed(payload: Dictionary):
 	_loops_since_last_ad += 1
 
 func check_and_show_ad() -> bool:
+	if OS.has_feature("web"):
+		return false # The Web Demo is a frictionless teaser. Video ads disabled.
+
 	var profile = get_node_or_null("/root/PlayerProfile")
 	if profile and profile.has_directors_pass:
 		return false
