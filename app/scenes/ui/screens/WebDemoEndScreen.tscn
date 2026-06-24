@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://webdemo_end"]
+
+[ext_resource type="Script" path="res://scripts/ui/screens/WebDemoEndScreen.gd" id="1_webend"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glass"]
+bg_color = Color(0.0431373, 0.0745098, 0.12549, 0.98)
+border_width_top = 4
+border_color = Color(0.298039, 0.788235, 0.941176, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.5)
+shadow_size = 30
+shadow_offset = Vector2(0, 10)
+
+[node name="WebDemoEndScreen" type="CanvasLayer"]
+layer = 120
+script = ExtResource("1_webend")
+
+[node name="Panel" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_glass")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Title" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.298039, 0.788235, 0.941176, 1)
+theme_override_font_sizes/font_size = 36
+text = "COGNITIVE LIMIT REACHED"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_font_sizes/font_size = 18
+text = "You have completed the simulation teaser. 
+Download the full application to unlock the Deep Mirror, 
+save your progress, and access 5 additional Universes."
+horizontal_alignment = 1
+
+[node name="BtnGooglePlay" type="Button" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.298039, 0.788235, 0.941176, 1)
+theme_override_font_sizes/font_size = 20
+text = "GET IT ON GOOGLE PLAY"
+
+[node name="BtnWebsite" type="Button" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 18
+text = "LEARN MORE"
