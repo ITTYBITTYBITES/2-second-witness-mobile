@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://operator_grace"]
+[ext_resource type="Script" path="res://scripts/ui/screens/OperatorIntervention.gd" id="1_op"]
+
+[node name="OperatorIntervention" type="CanvasLayer"]
+layer = 120
+script = ExtResource("1_op")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.02, 0.03, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="MessageLabel" type="Label" parent="ColorRect/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.298, 0.788, 0.941, 1)
+theme_override_font_sizes/font_size = 24
+text = "SYSTEM ANOMALY.
+
+*Click*
+*Click*
+*Click*
+
+Operator overriding protocol.
+Thank you for spending time in the stream today.
+
+[ 3 Override Tokens Granted ]"
+horizontal_alignment = 1
+
+[node name="BtnAccept" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "RESUME"

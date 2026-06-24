@@ -20,11 +20,25 @@ func _on_loop_completed(payload: Dictionary):
 func check_and_show_ad() -> bool:
 	var profile = get_node_or_null("/root/PlayerProfile")
 	
-	# Director's Pass completely disables all ad logic
 	if profile and profile.has_directors_pass:
 		return false
 		
 	if _loops_since_last_ad >= ad_frequency:
+		
+		# 1. Check if the Arcade Operator wants to step in (The Grace Mechanic)
+		if GoodwillManager.evaluate_random_grace():
+			_loops_since_last_ad = 0
+			# Wait for the Operator Intervention UI to finish before returning control
+			await get_tree().create_timer(3.0).timeout 
+			return true
+			
+		# 2. Check if the player already has tokens from a previous Operator visit
+		if GoodwillManager.consume_ad_skip():
+			print("[AD MANAGER] Override Token used. Bypassing Ad.")
+			_loops_since_last_ad = 0
+			return false
+			
+		# 3. Otherwise, show the Ad
 		print("[AD MANAGER] Triggering Interstitial Ad...")
 		_show_dummy_ad()
 		_loops_since_last_ad = 0
@@ -33,24 +47,19 @@ func check_and_show_ad() -> bool:
 	return false
 
 func _show_dummy_ad():
-	# In production, this calls Google AdMob / AppLovin APIs
 	var ad_layer = CanvasLayer.new()
-	ad_layer.layer = 110 # Above everything except BootScreen
-	
+	ad_layer.layer = 110
 	var bg = ColorRect.new()
 	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
 	bg.color = Color(0, 0, 0, 0.9)
 	ad_layer.add_child(bg)
-	
 	var lbl = Label.new()
-	lbl.text = "[ INTERSTITIAL AD PLAYING ]"
+	lbl.text = "[ INCOMING TRANSMISSION INTERCEPTED ]\n[ ESTABLISHING AD LINK ]"
 	lbl.add_theme_font_size_override("font_size", 32)
 	lbl.set_anchors_preset(Control.PRESET_CENTER)
 	ad_layer.add_child(lbl)
-	
 	get_tree().root.add_child(ad_layer)
 	
-	# Simulate 3 second ad duration
 	await get_tree().create_timer(3.0).timeout
 	
 	ad_layer.queue_free()
