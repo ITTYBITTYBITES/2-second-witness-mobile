@@ -6,12 +6,19 @@ extends EditorScript
 # AUTOMATED PLAY STORE EXPORT PREP
 # ---------------------------------------------------------
 
+# --- CONFIGURATION -----------------------------------------
+# If you need to manually jump the version to match your Google Play Console history,
+# set these to the target values and set OVERRIDE_VERSION to true.
+const OVERRIDE_VERSION = false
+const TARGET_VERSION_CODE = 42      # Example: The integer Google Play expects
+const TARGET_VERSION_NAME = "1.2.5" # Example: The string the user sees on the store
+# ---------------------------------------------------------
+
 func _run():
 	print("\n=============================================")
 	print("[EXPORT PREP] Preparing Godot for Google Play Release...")
 	print("=============================================\n")
 	
-	# 1. Force AdManager to LIVE mode
 	var ad_manager_path = "res://scripts/system/AdManager.gd"
 	var file = FileAccess.open(ad_manager_path, FileAccess.READ_WRITE)
 	if file:
@@ -24,36 +31,47 @@ func _run():
 	else:
 		print("❌ FAILED to open AdManager.gd")
 		
-	# 2. Auto-increment the Version Code in export_presets.cfg
 	var preset_path = "res://export_presets.cfg"
 	var p_file = FileAccess.open(preset_path, FileAccess.READ_WRITE)
 	if p_file:
 		var content = p_file.get_as_text()
 		
-		# Find the current version code using regex
-		var regex = RegEx.new()
-		regex.compile("version/code=(\\d+)")
-		var result = regex.search(content)
+		var code_regex = RegEx.new()
+		code_regex.compile("version/code=(\\d+)")
+		var name_regex = RegEx.new()
+		name_regex.compile("version/name=\"([^\"]+)\"")
 		
-		if result:
-			var old_code_str = result.get_string(1)
-			var new_code = old_code_str.to_int() + 1
-			content = content.replace("version/code=" + old_code_str, "version/code=" + str(new_code))
+		var code_result = code_regex.search(content)
+		var name_result = name_regex.search(content)
+		
+		if code_result and name_result:
+			var old_code_str = code_result.get_string(1)
+			var old_name_str = name_result.get_string(1)
 			
-			# Simple version name bump (e.g. 1.0.0 -> 1.0.1)
-			var name_regex = RegEx.new()
-			name_regex.compile("version/name=\"1\\.0\\.(\\d+)\"")
-			var name_result = name_regex.search(content)
-			if name_result:
-				var old_patch = name_result.get_string(1)
-				var new_patch = old_patch.to_int() + 1
-				content = content.replace("version/name=\"1.0." + old_patch + "\"", "version/name=\"1.0." + str(new_patch) + "\"")
+			var new_code = ""
+			var new_name = ""
+			
+			if OVERRIDE_VERSION:
+				new_code = str(TARGET_VERSION_CODE)
+				new_name = TARGET_VERSION_NAME
+				print("⚠️ OVERRIDE ACTIVE: Forcing version to match Play Console constraints.")
+			else:
+				new_code = str(old_code_str.to_int() + 1)
+				# Simple semantic bump assuming format X.Y.Z
+				var parts = old_name_str.split(".")
+				if parts.size() == 3:
+					new_name = "%s.%s.%s" % [parts[0], parts[1], str(parts[2].to_int() + 1)]
+				else:
+					new_name = old_name_str + ".1"
+			
+			content = content.replace("version/code=" + old_code_str, "version/code=" + new_code)
+			content = content.replace("version/name=\"" + old_name_str + "\"", "version/name=\"" + new_name + "\"")
 			
 			p_file.seek(0)
 			p_file.store_string(content)
-			print("✅ export_presets.cfg: Auto-incremented version code to ", new_code)
+			print("✅ export_presets.cfg: Version bumped to Code: ", new_code, " | Name: ", new_name)
 		else:
-			print("❌ FAILED to find version/code in export_presets.cfg")
+			print("❌ FAILED to find version formatting in export_presets.cfg")
 		p_file.close()
 	else:
 		print("❌ FAILED to open export_presets.cfg")
