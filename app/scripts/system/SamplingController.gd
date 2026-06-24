@@ -8,7 +8,9 @@ extends Node
 var current_week_seed: int = 0
 var active_sampling_pool: Array[String] = []
 
-# Trait balancing quotas per week (ensures full psychometric coverage)
+# Featured Universes (The Rotation Layer)
+var featured_universes: Array[String] = []
+
 var target_quotas = {
 	"memory": 2,
 	"pattern": 2,
@@ -16,7 +18,6 @@ var target_quotas = {
 	"decision": 1
 }
 
-# The 12 Flagship Scenarios mapped to primary traits
 var scenario_manifest = {
 	"memory_cascade": "memory",
 	"spatial_recall": "memory",
@@ -37,10 +38,7 @@ func _ready():
 	_initialize_weekly_rotation()
 
 func _initialize_weekly_rotation():
-	# In production, this pulls from a server epoch timestamp (e.g., week of the year)
 	current_week_seed = Time.get_date_dict_from_system()["week"] if Time.get_date_dict_from_system().has("week") else 42
-	
-	# Seed the RNG deterministically for this specific week
 	seed(current_week_seed)
 	
 	active_sampling_pool.clear()
@@ -48,20 +46,22 @@ func _initialize_weekly_rotation():
 	available_scenarios.shuffle()
 	
 	var fulfilled_quotas = {"memory": 0, "pattern": 0, "classification": 0, "decision": 0}
-	
-	# Pass 1: Enforce quotas
 	for s in available_scenarios:
 		var trait = scenario_manifest[s]
 		if fulfilled_quotas[trait] < target_quotas[trait]:
 			active_sampling_pool.append(s)
 			fulfilled_quotas[trait] += 1
 			
-	# Restore random seed for runtime gameplay
+	# Pick 3 Random Featured Universes for the Free Rotation
+	var all_universes = ["science_lab", "tech_ops", "life_sciences", "society_mind", "creative_arts", "frontier"]
+	all_universes.shuffle()
+	featured_universes = [all_universes[0], all_universes[1], all_universes[2]]
+			
 	randomize()
-	print("[SAMPLING CONTROLLER] Weekly Pool Locked: ", active_sampling_pool)
+	print("[SAMPLING CONTROLLER] Weekly Scenario Pool Locked: ", active_sampling_pool)
+	print("[SAMPLING CONTROLLER] Weekly Featured Universes Locked: ", featured_universes)
 
 func get_next_scenario() -> String:
-	# Pulls randomly from the active constrained weekly pool, NOT the global pool
 	if active_sampling_pool.is_empty():
-		return "memory_cascade" # Fallback
+		return "memory_cascade" 
 	return active_sampling_pool[randi() % active_sampling_pool.size()]
