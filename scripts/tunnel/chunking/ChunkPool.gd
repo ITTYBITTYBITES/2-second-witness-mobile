@@ -1,38 +1,43 @@
 extends Node
 
 var pooled_chunks = []
+var active_universe = "science_lab"
 
-func reset_pool(max_chunks: int):
-	print("[CHUNK POOL] Flushing and allocating ", max_chunks, " MultiMesh chunks.")
-	# Destroys old chunks, creates blank Node3Ds with MultiMeshInstance3D children
+func reset_pool(max_chunks: int, universe_id: String = "science_lab"):
+	active_universe = universe_id
+	print("[CHUNK POOL] Flushing and allocating ", max_chunks, " MultiMesh chunks for ", universe_id)
+	
 	for child in get_children():
 		child.queue_free()
 	pooled_chunks.clear()
 
-	# Replace debug boxes with Science Lab structural rings
 	var structure_mat = load("res://assets/materials/lab_structure.tres")
 	var node_mat = load("res://assets/materials/lab_data_node.tres")
 	
-	var approved = FidelityEnforcer.request_allocation(FidelityEnforcer.ResourceType.MULTIMESH_INSTANCE, max_chunks, "ChunkPool")
-	if approved == 0:
-		print("[CHUNK POOL ERROR] Cannot pool chunks. Budget denied.")
-		return
+	var asset_registry = AssetManifestRegistry.new()
+	var manifest = asset_registry.get_manifest(universe_id)
+	var rib_mesh = load(manifest["rib_mesh"])
+	if not rib_mesh:
+		rib_mesh = BoxMesh.new()
+		
+	# Update Material Colors based on Universe
+	var renderer = UniverseRenderer.new()
+	var def = renderer.universe_definitions.get(universe_id, renderer.universe_definitions["science_lab"])
+	var u_mat = structure_mat.duplicate()
+	u_mat.albedo_color = def["palette"]["bg"]
+	u_mat.emission = def["palette"]["primary"]
 	
-	for i in range(approved):
+	for i in range(max_chunks):
 		var chunk = Node3D.new()
 		chunk.name = "Chunk_" + str(i)
 		
-		# Mount Final 3D Geometry
 		var main_ring = MeshInstance3D.new()
-		var loaded_mesh = load("res://assets/meshes/rib_science_lab.obj")
-		if not loaded_mesh:
-			print("[ERROR] Failed to load rib_science_lab.obj fallback to Box")
-			loaded_mesh = BoxMesh.new()
-		main_ring.mesh = loaded_mesh
-		main_ring.material_override = structure_mat
+		main_ring.mesh = rib_mesh
+		main_ring.material_override = u_mat
+		main_ring.rotation_degrees.x = 90
 		chunk.add_child(main_ring)
 		
-		# MultiMesh for floating data nodes
+		# MultiMesh for floating data nodes inside the ring
 		var multi = MultiMeshInstance3D.new()
 		var mm = MultiMesh.new()
 		mm.transform_format = MultiMesh.TRANSFORM_3D
@@ -41,10 +46,8 @@ func reset_pool(max_chunks: int):
 		mm.mesh = node_mesh
 		mm.instance_count = 15
 		
-		# Scatter the data nodes along the inner perimeter
 		for j in range(15):
 			var pos = Transform3D()
-			# Random point in a ring shape
 			var angle = randf() * TAU
 			var radius = randf_range(8.0, 16.0)
 			var z_drift = randf_range(-10.0, 10.0)
@@ -55,19 +58,17 @@ func reset_pool(max_chunks: int):
 		multi.material_override = node_mat
 		chunk.add_child(multi)
 		
-		# Hide it initially
-		chunk.visible = false 
+		chunk.visible = true 
+		chunk.position.y = -1000.0
 		add_child(chunk)
 		pooled_chunks.append(chunk)
 
 func spawn_at_offset(_z_offset: float):
 	for chunk in pooled_chunks:
-		if not chunk.visible:
+		if chunk.position.y == -1000.0: 
+			chunk.position.y = 0.0
 			chunk.position.z = _z_offset
-			chunk.visible = true
-			print("[CHUNK POOL] Activated chunk at Z: ", _z_offset)
 			return
 
 func recycle_chunk(_chunk_node: Node3D):
-	_chunk_node.visible = false
-	print("[CHUNK POOL] Recycled chunk behind camera.")
+	_chunk_node.position.y = -1000.0
