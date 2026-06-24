@@ -67,6 +67,7 @@ func _on_answer(chose_organic: bool):
 		btn_organic.disabled = true
 		btn_mechanical.disabled = true
 		
+		AudioManager.play_sfx("ui_click")
 		SessionTracker.record_spike_result("rapid_classification", true)
 		
 		await get_tree().create_timer(0.5).timeout
@@ -74,5 +75,6 @@ func _on_answer(chose_organic: bool):
 		queue_free()
 	else:
 		print("[RAPID CLASSIFICATION] Error. Resetting.")
+		AudioManager.play_sfx("ui_error")
 		SessionTracker.record_spike_result("rapid_classification", false)
 		feedback_label.text = "ERROR! Try again."

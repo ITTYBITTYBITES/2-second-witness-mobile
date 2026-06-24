@@ -44,6 +44,7 @@ func _ready():
 func _on_answer(idx: int):
 	if idx == target_color_idx:
 		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+		AudioManager.play_sfx("ui_click")
 		SessionTracker.record_spike_result("stroop_test", true)
 		for c in container.get_children(): c.disabled = true
 		await get_tree().create_timer(0.5).timeout
@@ -51,4 +52,5 @@ func _on_answer(idx: int):
 		queue_free()
 	else:
 		feedback_label.text = "ERROR! Try again."
+		AudioManager.play_sfx("ui_error")
 		SessionTracker.record_spike_result("stroop_test", false)

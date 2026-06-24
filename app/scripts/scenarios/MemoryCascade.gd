@@ -37,6 +37,7 @@ func _on_btn_pressed(val: int):
 			
 			var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 			PlayerProfile.record_cognitive_event("recall", "memory_cascade", "science_lab", true, rt_ms)
+			AudioManager.play_sfx("ui_click")
 			SessionTracker.record_spike_result("memory_cascade", true)
 			
 			await get_tree().create_timer(0.5).timeout
@@ -47,5 +48,6 @@ func _on_btn_pressed(val: int):
 		feedback_label.text = "ERROR! Resetting."
 		var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 		PlayerProfile.record_cognitive_event("recall", "memory_cascade", "science_lab", false, rt_ms)
+		AudioManager.play_sfx("ui_error")
 		SessionTracker.record_spike_result("memory_cascade", false)
 		current_step = 0
