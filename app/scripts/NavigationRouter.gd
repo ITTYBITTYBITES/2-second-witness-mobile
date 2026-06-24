@@ -10,14 +10,22 @@ func handle_navigation_event(event: Dictionary):
 		var dest = event.get("destination", {})
 		print("[ROUTER] Executing continuous scene shift to Destination: ", dest)
 		
-		# Vertical Slice v2: Weighted Scenario Rotation
 		var cascade_scene_name = SamplingController.get_next_scenario()
-		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(cascade_scene_name) + ".tscn")
 		
+		# Resolve the payload from the Registry before instantiating
+		# We need a seed string to guarantee determinism
+		var seed_string = str(PlayerProfile.lifetime_sessions) + dest.get("chunk_id", "0")
+		var scenario_payload = ContentRegistry.resolve_scenario(dest.get("universe", "science_lab"), cascade_scene_name, seed_string)
+		
+		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(cascade_scene_name) + ".tscn")
 		if cascade_scene == null:
 			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
 			
 		var cascade = cascade_scene.instantiate()
+		
+		# Inject the data payload if the scenario supports it
+		if cascade.has_method("inject_payload"):
+			cascade.inject_payload(scenario_payload)
 		
 		# Attach to World Layer to visually suppress the tunnel
 		var world_layer = get_tree().root.get_node("MainShell/WorldLayer")

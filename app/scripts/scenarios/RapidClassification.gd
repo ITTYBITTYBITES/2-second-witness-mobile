@@ -9,18 +9,46 @@ signal completed
 @onready var feedback_label = $FeedbackLabel
 
 var target_is_organic: bool = true
+var _scenario_id: String = "rapid_classification"
+
+func inject_payload(payload: Dictionary):
+	if payload.is_empty(): return
+	
+	_scenario_id = payload.get("id", _scenario_id)
+	
+	var rules = payload.get("rules", {})
+	var correct = rules.get("correct_answer", "Organic")
+	var wrong_arr = rules.get("wrong_answers", ["Mechanical"])
+	var wrong = wrong_arr[0] if wrong_arr.size() > 0 else "Mechanical"
+	
+	target_label.text = rules.get("legacy_prompt", "TREE")
+	
+	# Since it's a binary choice, we just assign the correct answer to one button and wrong to the other
+	if randf() > 0.5:
+		btn_organic.text = correct
+		btn_mechanical.text = wrong
+		target_is_organic = true
+	else:
+		btn_organic.text = wrong
+		btn_mechanical.text = correct
+		target_is_organic = false
 
 func _ready():
 	print("[RAPID CLASSIFICATION] Spike Initiated.")
 	feedback_label.text = ""
 	
-	# Randomize target
-	if randf() > 0.5:
-		target_label.text = "TREE"
-		target_is_organic = true
-	else:
-		target_label.text = "GEAR"
-		target_is_organic = false
+	# If no payload was injected, fallback to defaults
+	if target_label.text == "TARGET":
+		if randf() > 0.5:
+			target_label.text = "TREE"
+			btn_organic.text = "Organic"
+			btn_mechanical.text = "Mechanical"
+			target_is_organic = true
+		else:
+			target_label.text = "GEAR"
+			btn_organic.text = "Mechanical"
+			btn_mechanical.text = "Organic"
+			target_is_organic = false
 		
 	btn_organic.pressed.connect(func(): _on_answer(true))
 	btn_mechanical.pressed.connect(func(): _on_answer(false))

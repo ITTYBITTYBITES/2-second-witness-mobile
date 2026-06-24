@@ -1,21 +1,40 @@
 extends Node
 
 @onready var registry = get_node("/root/ContentRegistry")
-@onready var sync_manager = null # Assigned later
 
 const BASE_BUNDLE_PATH = "res://data/content/base_bundle/"
-const GITHUB_CACHE_PATH = "user://github_cache/"
+const USER_CACHE_PATH = "user://live_content/"
 
 func _ready():
-	print("ContentLoader initialized. Executing Offline-First build strategy.")
-	_ingest_base_bundle()
+	print("[CONTENT LOADER] Initialized. Crawling Base Bundle...")
+	_crawl_directory(BASE_BUNDLE_PATH)
 	
-	# Future: Trigger GitHubSyncManager check here.
+	# Future: Crawl USER_CACHE_PATH here to overwrite base bundle with OTA patches
 
-func _ingest_base_bundle():
-	# In a real Godot project this recursively walks BASE_BUNDLE_PATH
-	# Here we simulate finding the specific mock file
-	_load_and_register_file(BASE_BUNDLE_PATH + "society_mind/cognitive_bias/stroop_042.json")
+func _crawl_directory(path: String):
+	var dir = DirAccess.open(path)
+	if not dir:
+		print("[CONTENT ERROR] Cannot open directory: ", path)
+		return
+		
+	dir.list_dir_begin()
+	var file_name = dir.get_next()
+	while file_name != "":
+		if file_name == "." or file_name == "..":
+			file_name = dir.get_next()
+			continue
+			
+		var full_path = path + "/" + file_name
+		# If it's a directory, clean up the pathing (avoid //)
+		full_path = full_path.replace("//", "/")
+		full_path = full_path.replace("res:/", "res://")
+		
+		if dir.current_is_dir():
+			_crawl_directory(full_path) 
+		elif file_name.ends_with(".json"):
+			_load_and_register_file(full_path)
+			
+		file_name = dir.get_next()
 
 func _load_and_register_file(path: String):
 	var file = FileAccess.open(path, FileAccess.READ)
@@ -24,13 +43,12 @@ func _load_and_register_file(path: String):
 		var error = json.parse(file.get_as_text())
 		if error == OK:
 			var data = json.data
-			if _validate_schema(data):
+			if typeof(data) == TYPE_DICTIONARY and _validate_schema(data):
 				registry.register_scenario(data)
-				print("[CONTENT LOADER] Ingested Scenario: ", data.get("id"))
 			else:
 				print("[CONTENT ERROR] Schema invalid: ", path)
 		else:
 			print("[CONTENT ERROR] JSON parse failed: ", path)
 
 func _validate_schema(data: Dictionary) -> bool:
-	return data.has("id") and data.has("universe") and data.has("world") and data.has("type")
+	return data.has("id") and data.has("universe") and data.has("type")

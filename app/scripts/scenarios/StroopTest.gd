@@ -8,7 +8,19 @@ signal completed
 var colors = [Color(1, 0, 0), Color(0, 1, 0), Color(0, 0, 1), Color(1, 1, 0)]
 var color_names = ["RED", "GREEN", "BLUE", "YELLOW"]
 var target_color_idx = 0
+var _scenario_id: String = "stroop_test"
 
+func inject_payload(payload: Dictionary):
+	if payload.is_empty(): return
+	
+	_scenario_id = payload.get("id", _scenario_id)
+	
+	var rules = payload.get("rules", {})
+	var prompt = rules.get("legacy_prompt", "")
+	if prompt != "":
+		# Override the default color names if the JSON has specific text
+		color_names = [prompt, rules.get("correct_answer", "GREEN"), "BLUE", "YELLOW"]
+		
 func _ready():
 	feedback_label.text = "Select the TEXT COLOR, not the word."
 	
