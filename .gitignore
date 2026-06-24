@@ -1,1 +1,17 @@
-Legacy_Project/
+# Godot 4+ specific ignores
+.godot/
+*.translation
+export_presets.cfg
+build/
+user/
+*.apk
+*.aab
+*.keystore
+
+# Mac/Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Live Content Staging
+live_content/temp/
