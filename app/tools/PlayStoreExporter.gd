@@ -9,9 +9,9 @@ extends EditorScript
 # --- CONFIGURATION -----------------------------------------
 # If you need to manually jump the version to match your Google Play Console history,
 # set these to the target values and set OVERRIDE_VERSION to true.
-const OVERRIDE_VERSION = false
-const TARGET_VERSION_CODE = 42      # Example: The integer Google Play expects
-const TARGET_VERSION_NAME = "1.2.5" # Example: The string the user sees on the store
+const OVERRIDE_VERSION = true
+const TARGET_VERSION_CODE = 31      # Example: The integer Google Play expects
+const TARGET_VERSION_NAME = "3.1.0" # Example: The string the user sees on the store
 # ---------------------------------------------------------
 
 func _run():
