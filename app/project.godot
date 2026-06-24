@@ -27,3 +27,13 @@ GitHubSyncManager="*res://scripts/content/GitHubSyncManager.gd"
 FidelityEnforcer="*res://scripts/system/enforcement/FidelityEnforcer.gd"
 SamplingController="*res://scripts/system/SamplingController.gd"
 PlayerProfile="*res://scripts/system/PlayerProfile.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+shader_compiler/shader_cache/enabled=true
+vulkan/rendering/shader_compilation_mode=2

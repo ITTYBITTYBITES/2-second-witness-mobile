@@ -7,6 +7,9 @@ extends Node
 
 var lifetime_sessions: int = 0
 var universe_affinity: Dictionary = {}
+n# Accessibility Cohorts (Prevents false cognitive degradation flags)
+var motor_assist_enabled: bool = false
+var colorblind_mode_enabled: bool = false
 
 # Baseline Trait Vector (Slow-moving historical average)
 var cognitive_baseline = {
