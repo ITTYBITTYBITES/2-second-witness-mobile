@@ -3,6 +3,9 @@ extends ColorRect
 var _material: ShaderMaterial
 var active_universe_id: String = ""
 
+# The 4 Tiers of Tunnel Intensity
+enum TunnelIntensity { AMBIENT, FOCUS, CHALLENGE, PEAK }
+
 func _ready():
 	_material = ShaderMaterial.new()
 	_material.shader = load("res://assets/shaders/tunnel_core.gdshader")
@@ -10,13 +13,6 @@ func _ready():
 	
 	NavigationEngine.transition_sequence_started.connect(_on_spike_started)
 	
-	# We also need a way to know when the spike ends to reverse the effect
-	var router = get_node_or_null("/root/NavigationRouter")
-	if router:
-		# Since router dynamically creates scenes, we'll hook into a custom signal later if needed,
-		# but for now we can listen to the health monitor context change
-		pass
-
 func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab"):
 	active_universe_id = universe_id
 	var tunnel = theme_data.get("tunnel", {})
@@ -45,20 +41,39 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab"):
 	print("[TIER 1 - SHADER] Field environment synchronized with universe: ", universe_id)
 
 func _on_spike_started():
-	# The Psychedelic Shift
-	# When a scenario starts, the tunnel environment becomes part of the psychological pressure.
-	print("[TIER 1 - SHADER] Spike Initiated. Morphing tunnel into hostile test environment.")
+	# Determine the intensity of the incoming cognitive spike
+	# In production, this reads the 'difficulty' or 'stakes' from the ContentRegistry payload.
+	var spike_intensity = TunnelIntensity.FOCUS # Defaulting to Level 1
 	
+	# Simulate a rare Level 3 Peak state roughly 5% of the time
+	if randf() > 0.95:
+		spike_intensity = TunnelIntensity.PEAK
+	elif randf() > 0.70:
+		spike_intensity = TunnelIntensity.CHALLENGE
+	
+	_apply_intensity_shift(spike_intensity)
+
+func _apply_intensity_shift(intensity: int):
 	var tween = get_tree().create_tween().set_parallel(true)
-	
 	var renderer = UniverseRenderer.new()
 	var def = renderer.universe_definitions.get(active_universe_id, renderer.universe_definitions["science_lab"])
+	var base_density = 0.6
 	
-	# The tunnel walls morph aggressively to the primary accent color
-	tween.tween_property(_material, "shader_parameter/color_primary", def["palette"]["primary"].darkened(0.8), 0.5)
-	
-	# The density of the fog drops to reveal the harsh geometry
-	tween.tween_property(_material, "shader_parameter/density", 0.1, 0.5)
-	
-	# The flow warps to increase cognitive load
-	_material.set_shader_parameter("flow_type", 1) # Vortex
+	match intensity:
+		TunnelIntensity.FOCUS:
+			# Level 1: Narrows slightly, 10% color shift. Player feels "Something is happening."
+			tween.tween_property(_material, "shader_parameter/color_primary", def["palette"]["bg"].lightened(0.1), 0.5)
+			tween.tween_property(_material, "shader_parameter/density", base_density * 1.1, 0.5)
+			
+		TunnelIntensity.CHALLENGE:
+			# Level 2: Fog changes, rotation begins. The environment is actively participating.
+			tween.tween_property(_material, "shader_parameter/color_primary", def["palette"]["primary"].darkened(0.6), 0.5)
+			tween.tween_property(_material, "shader_parameter/density", base_density * 1.5, 0.5)
+			_material.set_shader_parameter("flow_type", 3) # Wave
+			
+		TunnelIntensity.PEAK:
+			# Level 3: Rare. Vortex effects, major color inversion. Absolute reality distortion.
+			print("[TIER 1 - SHADER] PEAK INTENSITY REACHED. Distorting reality.")
+			tween.tween_property(_material, "shader_parameter/color_primary", def["palette"]["primary"], 0.5)
+			tween.tween_property(_material, "shader_parameter/density", 0.1, 0.5)
+			_material.set_shader_parameter("flow_type", 1) # Vortex
