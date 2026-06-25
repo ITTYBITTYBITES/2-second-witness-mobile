@@ -153,6 +153,7 @@ func _on_play_universe_requested(universe_id: String):
 	print("STEP 1: PLAY REQUEST RECEIVED")
 	print("[ROUTER] Play Universe requested: ", universe_id)
 	print("UNIVERSE BOOT START")
+	print("→ WORLD LIST RESOLVED: ", universe_id)
 	
 	if ModalWindowManager: ModalWindowManager.pop_all_modals()
 	if active_secondary_screen:
@@ -171,11 +172,13 @@ func _on_play_universe_requested(universe_id: String):
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 			if ui_layer: ui_layer.add_child(active_secondary_screen)
 			
+		print("→ WORLD SELECT SCREEN PUSHED")
 		active_secondary_screen.return_requested.connect(_on_discover_requested) # Back to Discovery
 		active_secondary_screen.world_selected.connect(_on_world_selected)
 
 func _on_world_selected(universe_id: String, world_id: String):
 	print("[ROUTER] World Selected: ", universe_id, " -> ", world_id)
+	print("→ world_selected event emitted: ", world_id)
 	if ModalWindowManager: ModalWindowManager.pop_all_modals()
 	if active_secondary_screen:
 		active_secondary_screen.queue_free()
