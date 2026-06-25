@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# DEFERRED STATE RECONCILIATION & CENTRAL COMMAND BUS
+# GOVERNED MUTATION SUBSTRATE (TRACEABILITY OF MUTATION)
 # ---------------------------------------------------------
 
 signal epoch_resolved(epoch: int)
@@ -10,17 +10,19 @@ signal epoch_resolved(epoch: int)
 var current_epoch: int = 0
 var _intent_buffer: Array[Dictionary] = []
 var _is_committing_side_effects: bool = false
+var _mutation_trace_log: Array[Dictionary] = []
 
 func _ready():
 	BootTracer.log_init("InteractionLedger")
-	print("[INTERACTION LEDGER] Online. Enforcing Command Buffer Semantics and strict engine-wide side-effect governance.")
+	print("[INTERACTION LEDGER] Online. Operating as a governed mutation substrate over intentional project-level mutations.")
 
 func commit_intent(intent: Dictionary):
 	if _is_committing_side_effects:
-		print("[INTERACTION LEDGER WARNING] Suppressed re-entrant signal during active commit execution: ", intent.get("type", "UNKNOWN"))
+		print("[INTERACTION LEDGER WARNING] 0.0ms Tolerance Enforced. Suppressed re-entrant signal during active commit execution: ", intent.get("type", "UNKNOWN"))
 		return
 		
 	intent["epoch"] = current_epoch
+	intent["timestamp_usec"] = Time.get_ticks_usec()
 	_intent_buffer.append(intent)
 	print("[INTERACTION LEDGER] Intent buffered for Epoch ", current_epoch, ": ", intent.get("type", "UNKNOWN"))
 
@@ -37,9 +39,24 @@ func _drain_command_buffer():
 	var current_commands = _intent_buffer.duplicate()
 	_intent_buffer.clear()
 	
+	var start_commit_usec = Time.get_ticks_usec()
 	print("[INTERACTION LEDGER] Draining Command Buffer for Epoch ", current_epoch, " (Commands: ", current_commands.size(), ")")
+	
 	for command in current_commands:
+		var incoherence_lag_ms = (start_commit_usec - command["timestamp_usec"]) / 1000.0
+		if incoherence_lag_ms > 33.3:
+			print("[INTERACTION LEDGER WARNING] Subsystem incoherence lag exceeded 33.3ms threshold: ", incoherence_lag_ms, " ms")
+			
 		_execute_serialized_command(command)
+		
+		_mutation_trace_log.append({
+			"epoch": current_epoch,
+			"type": command.get("type", "unknown"),
+			"incoherence_lag_ms": incoherence_lag_ms,
+			"resolved_usec": Time.get_ticks_usec()
+		})
+		
+	if _mutation_trace_log.size() > 1000: _mutation_trace_log.pop_front()
 		
 	_is_committing_side_effects = false
 	epoch_resolved.emit(current_epoch)
@@ -77,3 +94,6 @@ func _execute_serialized_command(command: Dictionary):
 
 func is_epoch_locked() -> bool:
 	return _is_committing_side_effects
+
+func get_mutation_trace_log() -> Array[Dictionary]:
+	return _mutation_trace_log
