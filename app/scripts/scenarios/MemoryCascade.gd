@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends BaseScenario
 
 signal completed
 
@@ -8,46 +8,57 @@ signal completed
 @onready var btn_right = $HBoxContainer/BtnRight
 @onready var feedback_label = $FeedbackLabel
 
-var sequence = [1, 2, 0] # Center, Right, Left
+var sequence = [] 
 var current_step = 0
-
+var _scenario_id: String = "memory_cascade"
 var _start_ticks_msec: int = 0
 
+func _apply_specific_rules(rules: Dictionary):
+	_scenario_id = _scenario_payload["id"]
+	var length = rules.get("sequence_length", 3)
+	
+	# REPLACED HARDCODED ARRAY WITH DETERMINISTIC GENERATION
+	for i in range(length):
+		sequence.append(_deterministic_rng.randi() % 3)
+		
+	var seq_str = ""
+	for val in sequence:
+		if val == 0: seq_str += "Left -> "
+		elif val == 1: seq_str += "Center -> "
+		elif val == 2: seq_str += "Right -> "
+	
+	seq_str = seq_str.strip_edges().trim_suffix("->")
+	feedback_label.text = "Sequence: " + seq_str
+
 func _ready():
+	if _scenario_payload.is_empty():
+		push_error("[SCENARIO FATAL] Scene loaded without payload injection.")
+		queue_free()
+		return
+		
 	_start_ticks_msec = Time.get_ticks_msec()
 	print("[MEMORY CASCADE] Entering the Void. Spike Initiated.")
-	
-	# Apply Semantic UI Styling
-	var resolver = ThemeResolver.new()
-	var style = resolver.resolve_theme({"universe": "science_lab", "type": "memory_cascade", "difficulty": 2})
-	StyleInjector.apply(style, self)
-	feedback_label.text = "Sequence: Center -> Right -> Left"
 	
 	btn_left.pressed.connect(func(): _on_btn_pressed(0))
 	btn_center.pressed.connect(func(): _on_btn_pressed(1))
 	btn_right.pressed.connect(func(): _on_btn_pressed(2))
+	
+	execute_render_pipeline()
 
 func _on_btn_pressed(val: int):
+	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if sequence[current_step] == val:
 		current_step += 1
-		feedback_label.text = "Hit: " + str(current_step) + "/3"
+		feedback_label.text = "Hit: " + str(current_step) + "/" + str(sequence.size())
 		if current_step >= sequence.size():
-			print("[MEMORY CASCADE] Sequence Complete. Ejecting!")
 			feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
-			
-			var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
-			PlayerProfile.record_cognitive_event("recall", "memory_cascade", "science_lab", true, rt_ms)
-			AudioManager.play_sfx("ui_click")
+			PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload["universe"], true, rt_ms)
 			SessionTracker.record_spike_result("memory_cascade", true)
-			
 			await get_tree().create_timer(0.5).timeout
 			completed.emit()
 			queue_free()
 	else:
-		print("[MEMORY CASCADE] Error. Resetting.")
 		feedback_label.text = "ERROR! Resetting."
-		var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
-		PlayerProfile.record_cognitive_event("recall", "memory_cascade", "science_lab", false, rt_ms)
-		AudioManager.play_sfx("ui_error")
+		PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload["universe"], false, rt_ms)
 		SessionTracker.record_spike_result("memory_cascade", false)
 		current_step = 0
