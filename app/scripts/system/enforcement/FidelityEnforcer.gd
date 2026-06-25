@@ -28,6 +28,7 @@ var current_usage = {
 }
 
 func _ready():
+	BootTracer.log_init("FidelityEnforcer")
 	print("[FIDELITY ENFORCER] Online. Enforcing hard budget constraints.")
 
 var violation_count: int = 0

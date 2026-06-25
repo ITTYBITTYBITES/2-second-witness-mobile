@@ -34,6 +34,7 @@ var scenario_manifest = {
 }
 
 func _ready():
+	BootTracer.log_init("SamplingController")
 	print("[SAMPLING CONTROLLER] Online. Enforcing trait exposure quotas.")
 	_initialize_weekly_rotation()
 

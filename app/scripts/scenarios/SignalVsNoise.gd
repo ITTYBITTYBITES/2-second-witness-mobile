@@ -56,13 +56,13 @@ func _on_answer(chose_match: bool):
 	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if chose_match == is_signal:
 		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
-		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], true, rt_ms)
+		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload.get("universe", "science_lab"), _scenario_payload.get("world", "default"), true, rt_ms)
 		SessionTracker.record_spike_result("signal_vs_noise", true)
 		btn_match.disabled = true; btn_ignore.disabled = true
 		await get_tree().create_timer(0.5).timeout
 		completed.emit()
 		queue_free()
 	else:
-		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], false, rt_ms)
+		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload.get("universe", "science_lab"), _scenario_payload.get("world", "default"), false, rt_ms)
 		SessionTracker.record_spike_result("signal_vs_noise", false)
 		feedback_label.text = "ERROR! Try again."
