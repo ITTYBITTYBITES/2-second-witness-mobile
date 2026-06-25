@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://scripts/MainShell.gd" id="1_shell"]
 [ext_resource type="PackedScene" path="res://scenes/TunnelLayer.tscn" id="2_tunnel"]
 [ext_resource type="Script" path="res://scripts/camera/CameraRig.gd" id="3_cam"]
-[ext_resource type="PackedScene" path="res://tests/harness/TelemetryOverlay.tscn" id="4_debug"]
 
 [node name="MainShell" type="Node"]
 script = ExtResource("1_shell")
@@ -56,7 +55,6 @@ color = Color(0, 0, 0, 1)
 layout_mode = 3
 anchors_preset = 15
 
-[node name="TelemetryOverlay" parent="UILayer" instance=ExtResource("4_debug")]
 
 [node name="AudioLayer" type="Node" parent="."]
 
