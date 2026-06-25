@@ -66,4 +66,7 @@ func execute_render_pipeline():
 	var asset_resolver = AssetResolver.new()
 	asset_resolver.substitute_assets(self, _scenario_payload["universe"])
 	
+	if Engine.get_main_loop().root.has_node("RuntimeMeasurementIsolation"):
+		Engine.get_main_loop().root.get_node("RuntimeMeasurementIsolation").anchor_stimulus_spawn()
+	
 	print("[SYSTEM] Canonical UI pipeline execution complete.")

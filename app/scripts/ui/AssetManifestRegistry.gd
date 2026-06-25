@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# VERSION-LOCKED ASSET MANIFESTS (STRICT BINDING)
+# VERSION-LOCKED ASSET MANIFESTS & WORLD COMPILER PROXY
 # ---------------------------------------------------------
 
 const CURRENT_ASSET_VERSION = "v1.0.0"
@@ -74,13 +74,28 @@ func get_manifest(universe_id: String, version: String = CURRENT_ASSET_VERSION) 
 		
 	return manifests[version][universe_id]
 
+func get_world_bundle(universe_id: String, world_id: String, modifiers: Dictionary = {}) -> Dictionary:
+	return WorldAssetCompiler.get_or_compile_world(universe_id, world_id, modifiers)
+
+func get_bundle_by_hash(world_hash: int) -> Dictionary:
+	return WorldAssetCompiler.get_bundle(world_hash)
+
 func resolve_asset(manifest: Dictionary, key: String) -> String:
+	if manifest.has("hash"):
+		if key == "bg_noise" and manifest.has("textures") and manifest["textures"].has("bg_noise_path"):
+			return manifest["textures"]["bg_noise_path"]
+		if key.begins_with("iris_") or key.contains("tier_") or key.contains("lens"):
+			if manifest.has("meshes") and manifest["meshes"].has("iris_accent_path"):
+				return manifest["meshes"]["iris_accent_path"]
+		if key == "audio_overlay" and manifest.has("audio") and manifest["audio"].has("audio_overlay_path"):
+			return manifest["audio"]["audio_overlay_path"]
+
 	if not manifest.has(key):
 		push_error("[ASSET REGISTRY ERROR] Asset Key missing from manifest: " + key)
 		return DEGRADED_MESH_PATH
 	
 	var path = manifest[key]
-	if not ResourceLoader.exists(path):
+	if not ResourceLoader.exists(path) and not FileAccess.file_exists(path):
 		push_error("[ASSET REGISTRY ERROR] Asset File physically missing at path: " + path)
 		return DEGRADED_MESH_PATH
 		

@@ -41,7 +41,7 @@ func _init():
 		print("✅ Asset Registry PASS. Resolved path: ", bg)
 		
 	print("\n--- 4. Validating Persistence Layer ---")
-	profile.record_cognitive_event("pattern_recognition", "rapid_classification", "science_lab", true, 850.0)
+	profile.record_cognitive_event("pattern_recognition", "rapid_classification", "science_lab", "ai", true, 850.0)
 	profile.free()
 	
 	var p2 = load("res://app/scripts/system/PlayerProfile.gd").new()

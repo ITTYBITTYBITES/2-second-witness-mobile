@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# COHORT TELEMETRY UPLINK
+# COHORT TELEMETRY UPLINK (PROBABILISTIC ORDERING INFERENCE)
 # ---------------------------------------------------------
 
 var _http_request: HTTPRequest
@@ -17,23 +17,35 @@ func _ready():
 	_http_request = HTTPRequest.new()
 	add_child(_http_request)
 
-func log_trial(scenario_id: String, universe_id: String, raw_rt: float, corrected_rt: float, success: bool, familiarity: int):
+func log_trial(scenario_id: String, universe_id: String, raw_rt: float, _corrected_rt: float, success: bool, familiarity: int):
 	if IVC0_InstrumentConfig and not IVC0_InstrumentConfig.is_cohort_member:
 		return 
 		
-	# INJECT DETERMINISTIC VERSION PINNING
 	var content_version = GitHubSyncManager.get_active_content_version() if GitHubSyncManager else "unknown"
+	
+	# Platform Observation Channel (Piecewise Monotonic Stochastic Kernel)
+	var platform_distortion_proxies = {}
+	if Engine.get_main_loop().root.has_node("RuntimeMeasurementIsolation"):
+		platform_distortion_proxies = Engine.get_main_loop().root.get_node("RuntimeMeasurementIsolation").close_trial_window()
+		
+	# Primary Output: Posterior over Permutations of Response Order under Stochastic Delay Kernel
+	var probabilistic_ordering_inference = PlayerProfile.last_recorded_metrics if PlayerProfile else {}
 	
 	var data = {
 		"timestamp": Time.get_unix_time_from_system(),
 		"device_hash": IVC0_InstrumentConfig.device_hash,
-		"content_version": content_version, # Critical for scientific validity
+		"content_version": content_version,
 		"scenario_id": scenario_id,
 		"universe_id": universe_id,
 		"success": success,
-		"raw_rt_ms": raw_rt,
-		"corrected_rt_ms": corrected_rt,
-		"familiarity_index": familiarity
+		"familiarity_index": familiarity,
+		"core_measurement": {
+			"probabilistic_ordering_inference": probabilistic_ordering_inference
+		},
+		"observation_channel": {
+			"device_distorted_raw_ms": raw_rt,
+			"platform_distortion_proxies": platform_distortion_proxies
+		}
 	}
 	
 	_cache_to_disk(data)
@@ -52,5 +64,4 @@ func _uplink_to_server(data: Dictionary):
 	var headers = ["Content-Type: application/json"]
 	var body = JSON.stringify(data)
 	
-	# Silently fire and forget. 
 	_http_request.request(TELEMETRY_ENDPOINT, headers, HTTPClient.METHOD_POST, body)

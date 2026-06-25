@@ -40,14 +40,19 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab", wo
 	var asset_registry = AssetManifestRegistry.new()
 	var manifest = asset_registry.get_manifest(universe_id)
 	
-	# If the World has a specific background noise override, load it
-	var noise_key = "bg_noise"
-	if world_id != "" and manifest.has("worlds") and manifest["worlds"].has(world_id) and manifest["worlds"][world_id].has("bg_noise"):
-		# In a full expansion, Worlds would have their own nested keys
-		pass 
+	var noise_tex = null
+	if world_id != "":
+		# Deterministic World Compiler Pipeline (replaces static manifest["worlds"][world_id])
+		var world_bundle = asset_registry.get_world_bundle(universe_id, world_id, modifiers)
+		if world_bundle.has("hash"):
+			var cached_bundle = WorldAssetCompiler.get_bundle(world_bundle["hash"])
+			if cached_bundle.has("textures") and cached_bundle["textures"].has("bg_noise"):
+				noise_tex = cached_bundle["textures"]["bg_noise"]
+				
+	if noise_tex == null:
+		var resolved_noise_path = asset_registry.resolve_asset(manifest, "bg_noise")
+		noise_tex = load(resolved_noise_path)
 		
-	var resolved_noise_path = asset_registry.resolve_asset(manifest, noise_key)
-	var noise_tex = load(resolved_noise_path)
 	if noise_tex:
 		_material.set_shader_parameter("noise_tex", noise_tex)
 		

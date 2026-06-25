@@ -10,9 +10,9 @@ func _init():
 	profile._ready()
 	
 	print("\n--- SIMULATING COGNITIVE EVENTS ---")
-	profile.record_cognitive_event("pattern_recognition", "rapid_classification", "science_lab", true, 850.0)
-	profile.record_cognitive_event("pattern_recognition", "rapid_classification", "science_lab", false, 1200.0)
-	profile.record_cognitive_event("recall", "memory_cascade", "tech_ops", true, 600.0)
+	profile.record_cognitive_event("pattern_recognition", "rapid_classification", "science_lab", "ai", true, 850.0)
+	profile.record_cognitive_event("pattern_recognition", "rapid_classification", "science_lab", "ai", false, 1200.0)
+	profile.record_cognitive_event("recall", "memory_cascade", "tech_ops", "default", true, 600.0)
 	
 	print("\n--- SIMULATING APP KILL & REBOOT ---")
 	profile.free()
