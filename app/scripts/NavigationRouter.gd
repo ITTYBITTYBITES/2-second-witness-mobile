@@ -153,6 +153,29 @@ func _on_play_universe_requested(universe_id: String):
 	print("STEP 1: PLAY REQUEST RECEIVED")
 	print("[ROUTER] Play Universe requested: ", universe_id)
 	print("UNIVERSE BOOT START")
+	
+	if ModalWindowManager: ModalWindowManager.pop_all_modals()
+	if active_secondary_screen:
+		active_secondary_screen.queue_free()
+		active_secondary_screen = null
+		
+	var world_scene = load("res://scenes/ui/screens/WorldSelectScreen.tscn")
+	if world_scene:
+		active_secondary_screen = world_scene.instantiate()
+		active_secondary_screen.setup(universe_id)
+		
+		if ModalWindowManager:
+			ModalWindowManager.push_modal(active_secondary_screen, true)
+		else:
+			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+			if ui_layer: ui_layer.add_child(active_secondary_screen)
+			
+		active_secondary_screen.return_requested.connect(_on_discover_requested) # Back to Discovery
+		active_secondary_screen.world_selected.connect(_on_world_selected)
+
+func _on_world_selected(universe_id: String, world_id: String):
+	print("[ROUTER] World Selected: ", universe_id, " -> ", world_id)
 	if ModalWindowManager: ModalWindowManager.pop_all_modals()
 	if active_secondary_screen:
 		active_secondary_screen.queue_free()
@@ -167,6 +190,10 @@ func _on_play_universe_requested(universe_id: String):
 	if portal_mgr == null:
 		push_error("PORTAL MANAGER NULL")
 		return
+		
+	# Apply specific world overlay parameters
+	if portal_mgr.has_method("apply_theme"):
+		portal_mgr.apply_theme(ThemeManager.get_active_theme(), universe_id, world_id)
 		
 	print("STEP 3: CALLING SPAWN")
 	portal_mgr.spawn_lens_portal("0")
