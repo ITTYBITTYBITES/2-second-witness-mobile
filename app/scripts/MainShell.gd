@@ -15,7 +15,6 @@ func _ready():
 	world_layer.process_mode = Node.PROCESS_MODE_DISABLED
 	ui_layer.process_mode = Node.PROCESS_MODE_DISABLED
 	
-	# Guarantee 100% unbreakable 3D picking & raycasting across all OS viewports
 	get_viewport().physics_object_picking = true
 	
 	_execute_boot_sequence()
@@ -56,3 +55,36 @@ func _execute_boot_sequence():
 	print("========================================")
 	
 	NavigationRouter.show_landing_screen()
+
+func _unhandled_input(event):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		print("[RAYCAST TRACE] Left mouse click registered in MainShell._unhandled_input.")
+		var camera = get_viewport().get_camera_3d()
+		if not camera:
+			print("[RAYCAST TRACE] Failure: No active Camera3D found in viewport.")
+			return
+			
+		var from = camera.project_ray_origin(event.position)
+		var to = from + camera.project_ray_normal(event.position) * 1000.0
+		
+		var space_state = camera.get_world_3d().direct_space_state
+		var query = PhysicsRayQueryParameters3D.create(from, to)
+		query.collide_with_areas = true
+		query.collide_with_bodies = true
+		
+		var result = space_state.intersect_ray(query)
+		if not result.is_empty():
+			var collider = result["collider"]
+			print("========================================")
+			print("[DEFINITIVE RAYCAST HIT LOG]")
+			print("  Node Name: ", collider.name)
+			print("  Class:     ", collider.get_class())
+			print("  Layer:     ", collider.collision_layer)
+			print("  Parent:    ", collider.get_parent().get_path() if collider.get_parent() else "None")
+			print("========================================")
+			
+			if collider.get_parent() and collider.get_parent().has_method("select_portal"):
+				print("[RAYCAST TRACE] Direct fallback jumpstart: Invoking select_portal() on parent.")
+				collider.get_parent().select_portal()
+		else:
+			print("[RAYCAST TRACE] Raycast hit NOTHING in 3D world space (GUI consumed click or empty space).")

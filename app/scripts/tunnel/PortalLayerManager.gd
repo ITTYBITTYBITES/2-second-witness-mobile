@@ -21,6 +21,11 @@ func _process(_delta):
 
 func spawn_lens_portal(chunk_id: String):
 	print("STEP 5: PORTAL SPAWN ENTERED")
+	
+	# Purge old ScenarioNodes to prevent overlapping Area3D picking confusion
+	for child in get_children():
+		child.queue_free()
+		
 	var renderer = UniverseRenderer.new()
 	var def = renderer.universe_definitions.get(active_universe_id, renderer.universe_definitions["science_lab"])
 	
