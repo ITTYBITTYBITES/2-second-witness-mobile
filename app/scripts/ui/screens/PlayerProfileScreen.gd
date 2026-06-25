@@ -6,6 +6,11 @@ signal return_requested
 @onready var insights_container = $PanelContainer/MarginContainer/VBoxContainer/InsightsContainer
 
 func _ready():
+	print("PROFILE SCREEN READY")
+	print("Visible: ", visible)
+	print("Size: ", $PanelContainer.size)
+	print("Children: ", get_child_count())
+	
 	AdManager.show_banner()
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()

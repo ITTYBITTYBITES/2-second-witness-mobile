@@ -12,17 +12,16 @@ func _ready():
 func _input(_event):
 	if InteractionKernel and InteractionKernel.is_ui_blocking():
 		return
-	# Navigation router global input handling permitted here
 
 func show_landing_screen():
 	if active_secondary_screen and is_instance_valid(active_secondary_screen):
-		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
+		if InteractionKernel: InteractionKernel.pop_modal(active_secondary_screen)
 		else: active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
 	if active_landing_screen and is_instance_valid(active_landing_screen):
 		active_landing_screen.show_screen()
-		if ModalWindowManager: ModalWindowManager.push_modal(active_landing_screen, false)
+		if InteractionKernel: InteractionKernel.push_modal(active_landing_screen, false)
 		return
 		
 	var landing_scene = load("res://scenes/ui/screens/LandingScreen.tscn")
@@ -32,8 +31,8 @@ func show_landing_screen():
 		
 	active_landing_screen = landing_scene.instantiate()
 	
-	if ModalWindowManager:
-		ModalWindowManager.push_modal(active_landing_screen, false)
+	if InteractionKernel:
+		InteractionKernel.push_modal(active_landing_screen, false)
 	else:
 		var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
@@ -47,11 +46,12 @@ func show_landing_screen():
 
 func _on_play_requested():
 	print("[ROUTER] Play requested. Hiding menu and entering the stream.")
+	print("UNIVERSE BOOT START")
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
-		if ModalWindowManager: ModalWindowManager.pop_modal(active_landing_screen)
+		if InteractionKernel: InteractionKernel.pop_modal(active_landing_screen)
 		
-	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_InteractivePortals/PortalLayerManager")
+	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
 		portal_mgr.spawn_lens_portal("0")
 
@@ -63,8 +63,8 @@ func _on_profile_requested():
 	var profile_scene = load("res://scenes/ui/screens/PlayerProfileScreen.tscn")
 	if profile_scene:
 		active_secondary_screen = profile_scene.instantiate()
-		if ModalWindowManager:
-			ModalWindowManager.push_modal(active_secondary_screen, true)
+		if InteractionKernel:
+			InteractionKernel.push_modal(active_secondary_screen, true)
 		else:
 			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
@@ -81,8 +81,8 @@ func _on_discover_requested():
 	var discover_scene = load("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
 	if discover_scene:
 		active_secondary_screen = discover_scene.instantiate()
-		if ModalWindowManager:
-			ModalWindowManager.push_modal(active_secondary_screen, true)
+		if InteractionKernel:
+			InteractionKernel.push_modal(active_secondary_screen, true)
 		else:
 			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
@@ -93,13 +93,14 @@ func _on_discover_requested():
 
 func _on_play_universe_requested(universe_id: String):
 	print("[ROUTER] Play Universe requested: ", universe_id)
+	print("UNIVERSE BOOT START")
 	if active_secondary_screen:
-		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
+		if InteractionKernel: InteractionKernel.pop_modal(active_secondary_screen)
 		else: active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
 	ThemeManager.apply_theme(universe_id)
-	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_InteractivePortals/PortalLayerManager")
+	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
 		portal_mgr.spawn_lens_portal("0")
 
@@ -125,6 +126,7 @@ func handle_navigation_event(event: Dictionary):
 		var world_layer = get_tree().root.get_node("MainShell/WorldLayer")
 		if world_layer:
 			world_layer.add_child(cascade)
+			print("SCENARIO SPAWNED")
 			cascade.completed.connect(_on_cascade_completed)
 		emit_signal("routed_to", dest)
 	else:
@@ -149,6 +151,6 @@ func _on_cascade_completed():
 	if tunnel and tunnel.has_method("trigger_slingshot"):
 		tunnel.trigger_slingshot()
 		
-	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_InteractivePortals/PortalLayerManager")
+	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
 		portal_mgr.spawn_lens_portal("0")

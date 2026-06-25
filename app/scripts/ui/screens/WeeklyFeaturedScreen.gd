@@ -10,6 +10,11 @@ var monetization_gate_scene = preload("res://scenes/ui/screens/MonetizationGate.
 var active_gate = null
 
 func _ready():
+	print("WEEKLY SCREEN READY")
+	print("Size: ", $PanelContainer.size)
+	for child in get_children():
+		print("Child: ", child.name)
+		
 	AdManager.show_banner()
 	print("[2 SECOND WITNESS] Weekly Discovery Screen active.")
 	btn_return.pressed.connect(func(): return_requested.emit())
@@ -52,7 +57,7 @@ func _populate_grid():
 		var style = StyleBoxFlat.new()
 		style.bg_color = def["palette"]["bg"]
 		if not can_play:
-			style.bg_color = style.bg_color.darkened(0.5) # Dim locked universes
+			style.bg_color = style.bg_color.darkened(0.5)
 			
 		style.border_width_bottom = 4
 		style.border_color = def["palette"]["primary"] if can_play else Color(0.3, 0.3, 0.3)
@@ -87,7 +92,7 @@ func _show_monetization_gate(universe_id: String):
 		if profile and not profile.unlocked_universes.has(universe_id):
 			profile.unlocked_universes.append(universe_id)
 			profile.save_profile()
-		_populate_grid() # Refresh grid to show as OWNED
+		_populate_grid()
 	)
 
 func hide_screen():
