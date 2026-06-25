@@ -34,7 +34,7 @@ func _on_profile_pressed():
 	print("SIGNAL PRESSED: BtnProfile")
 	print("BUTTON PRESSED: BtnProfile")
 	if InteractionKernel and not InteractionKernel.consume_provenance("BtnProfile", null): return
-	if InteractionKernel: InteractionKernel.commit_intent({"type": "scene_shift", "target": "PlayerProfileScreen"})
+	if InteractionKernel: InteractionKernel.commit_intent({"type": "toggle_utility", "utility_id": "mirror"})
 	else: profile_requested.emit()
 
 func _on_discover_pressed():

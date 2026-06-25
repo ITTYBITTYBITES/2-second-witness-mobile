@@ -4,8 +4,6 @@ extends Node
 # PRODUCT: 2 Second Witness
 # SINGLE MINIMAL INTERACTION KERNEL (PROVENANCE-CONSISTENT)
 # ---------------------------------------------------------
-# Compresses Arbiter, Ledger, Epoch, and Idempotency into a single 
-# deterministic reduction system for non-deterministic event emission graphs.
 
 enum UIState { HIDDEN, PASSIVE_VISIBLE, MODAL_ACTIVE, TRANSITIONAL_LOCK }
 enum InputModality { POINTER, FOCUS }
@@ -13,7 +11,6 @@ enum InputModality { POINTER, FOCUS }
 signal ui_lock_state_changed(is_blocking: bool)
 signal epoch_resolved(epoch: int)
 
-# --- 1. ARBITER DOMAIN (Input Filtering & Modality Locks) ---
 var _registered_panels: Dictionary = {}
 var _active_pointer_domains: Dictionary = {}
 var _active_focus_domains: Dictionary = {}
@@ -22,13 +19,11 @@ var _transitional_suppression_lock: bool = false
 var _active_transitions_count: int = 0
 var _mutation_scheduled: bool = false
 
-# --- 2. LEDGER DOMAIN (Mutation Serialization) ---
 var current_epoch: int = 0
 var _intent_buffer: Array[Dictionary] = []
 var _is_committing_side_effects: bool = false
 var _mutation_trace_log: Array[Dictionary] = []
 
-# --- 3. IDEMPOTENCY DOMAIN (Event Provenance Binding) ---
 var _last_pointer_event_hash: int = 0
 var _consumed_provenance_tokens: Dictionary = {}
 
@@ -36,9 +31,6 @@ func _ready():
 	BootTracer.log_init("InteractionKernel")
 	print("[INTERACTION KERNEL] Online. Enforcing event-origin consistency (1 physical input -> 1 consumable token).")
 
-# =========================================================
-# IDEMPOTENCY LAYER (Input Provenance Binding)
-# =========================================================
 func consume_provenance(event_id: String, event: InputEvent = null) -> bool:
 	if event != null:
 		_last_pointer_event_hash = hash(event.get_instance_id()) if event.has_method("get_instance_id") else event.hash()
@@ -52,9 +44,6 @@ func consume_provenance(event_id: String, event: InputEvent = null) -> bool:
 	if _consumed_provenance_tokens.size() > 500: _consumed_provenance_tokens.clear()
 	return true
 
-# =========================================================
-# ARBITER LAYER (Modality Exclusivity & Transition Locks)
-# =========================================================
 func register_panel(panel: Control, domain: String = "default", initial_state: int = UIState.HIDDEN, block_focus: bool = true):
 	if not is_instance_valid(panel): return
 	_registered_panels[panel] = {"domain": domain, "state": initial_state, "block_focus": block_focus}
@@ -145,9 +134,6 @@ func _apply_batched_mutations():
 func is_ui_blocking() -> bool:
 	return _transitional_suppression_lock or not _active_pointer_domains.is_empty() or not _active_focus_domains.is_empty()
 
-# =========================================================
-# LEDGER LAYER (Deferred Command Bus & Re-entrancy Guard)
-# =========================================================
 func commit_intent(intent: Dictionary):
 	if _is_committing_side_effects:
 		print("[KERNEL WARNING] 0.0ms Tolerance Enforced. Suppressed re-entrant signal during active commit execution: ", intent.get("type", "UNKNOWN"))
@@ -175,7 +161,6 @@ func _drain_command_buffer():
 	var start_commit_usec = Time.get_ticks_usec()
 	print("[KERNEL LEDGER] Draining Command Buffer for Epoch ", current_epoch, " (Commands: ", current_commands.size(), ")")
 	
-	# Guarantee no orphaned transition locks persist across command boundaries
 	_active_transitions_count = 0
 	_transitional_suppression_lock = false
 	
@@ -204,7 +189,8 @@ func _execute_serialized_command(command: Dictionary):
 			var target = command.get("target", "")
 			if target == "LandingScreen": NavigationRouter.show_landing_screen()
 			elif target == "WeeklyFeaturedScreen": NavigationRouter._on_discover_requested()
-			elif target == "PlayerProfileScreen": NavigationRouter._on_profile_requested()
+		"toggle_utility":
+			if ModalWindowManager: ModalWindowManager.toggle_utility(command.get("utility_id", "mirror"))
 		"enter_stream": NavigationRouter._on_play_requested()
 		"play_universe": NavigationRouter._on_play_universe_requested(command.get("universe_id", "science_lab"))
 		"ad_resolved": if AdManager: AdManager.ad_finished.emit()

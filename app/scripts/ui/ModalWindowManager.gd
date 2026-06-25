@@ -2,12 +2,13 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# UNIFIED MODAL WINDOW MANAGER (STACK OWNERSHIP GRAPH ONLY)
+# UNIFIED MODAL WINDOW MANAGER (UTILITY GRAPH CUSTODIAN)
 # ---------------------------------------------------------
 
 signal modal_stack_changed(active_modal: CanvasLayer)
 
 var _modal_stack: Array[CanvasLayer] = []
+var _instanced_modals: Dictionary = {}
 var _input_blocker: Control
 
 func _ready():
@@ -26,6 +27,36 @@ func _mount_blocker():
 	if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 	if ui_layer:
 		ui_layer.add_child(_input_blocker)
+
+func toggle_utility(utility_id: String):
+	if _instanced_modals.has(utility_id) and is_instance_valid(_instanced_modals[utility_id]):
+		var screen = _instanced_modals[utility_id]
+		if _modal_stack.has(screen):
+			pop_modal(screen)
+		else:
+			push_modal(screen, true)
+		return
+		
+	var scene_path = ""
+	if utility_id == "mirror": scene_path = "res://scenes/ui/screens/PlayerProfileScreen.tscn"
+	elif utility_id == "store": scene_path = "res://scenes/ui/screens/MonetizationGate.tscn"
+	
+	if scene_path == "": return
+	
+	var scene = load(scene_path)
+	if not scene: return
+	
+	var screen = scene.instantiate()
+	_instanced_modals[utility_id] = screen
+	
+	var hud_root = get_tree().root.get_node_or_null("MainShell/UILayer/HUDRoot")
+	if not hud_root: hud_root = get_tree().root.get_node_or_null("MainShell/UILayer")
+	if hud_root: hud_root.add_child(screen)
+	
+	if screen.has_signal("return_requested"):
+		screen.return_requested.connect(func(): pop_modal(screen))
+		
+	push_modal(screen, true)
 
 func push_modal(screen: CanvasLayer, is_modal: bool = true):
 	if _modal_stack.has(screen): return
@@ -59,7 +90,10 @@ func pop_modal(screen: CanvasLayer = null):
 			if not panel: panel = target.get_node_or_null("PanelContainer")
 			if panel: InteractionKernel.unregister_panel(panel)
 			
-		if is_instance_valid(target) and target.is_inside_tree():
+		# Do not free persistent HUDRoot utilities like Mirror; toggle visible instead
+		if _instanced_modals.values().has(target):
+			target.visible = false
+		elif is_instance_valid(target) and target.is_inside_tree():
 			target.queue_free()
 			
 	_arbitrate_input_zoning(_modal_stack.size() > 0)

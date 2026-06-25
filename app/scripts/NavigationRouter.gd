@@ -99,8 +99,8 @@ func _show_gameplay_hud():
 	
 	btn_mirror.pressed.connect(func():
 		AudioManager.play_sfx("ui_click")
-		if InteractionKernel: InteractionKernel.commit_intent({"type": "scene_shift", "target": "PlayerProfileScreen"})
-		else: _on_profile_requested()
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "toggle_utility", "utility_id": "mirror"})
+		else: if ModalWindowManager: ModalWindowManager.toggle_utility("mirror")
 	)
 	
 	active_gameplay_hud.add_child(btn_leave)
@@ -129,23 +129,7 @@ func _on_play_requested():
 	print("STEP 4: SPAWN CALL COMPLETED")
 
 func _on_profile_requested():
-	print("[ROUTER] Profile requested. Opening Cognitive Mirror.")
-	if active_landing_screen:
-		active_landing_screen.hide_screen()
-	if ModalWindowManager: ModalWindowManager.pop_all_modals()
-		
-	var profile_scene = load("res://scenes/ui/screens/PlayerProfileScreen.tscn")
-	if profile_scene:
-		active_secondary_screen = profile_scene.instantiate()
-		if ModalWindowManager:
-			ModalWindowManager.push_modal(active_secondary_screen, true)
-		else:
-			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
-			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
-			if ui_layer: ui_layer.add_child(active_secondary_screen)
-		
-		if active_secondary_screen.has_signal("return_requested"):
-			active_secondary_screen.return_requested.connect(show_landing_screen)
+	if ModalWindowManager: ModalWindowManager.toggle_utility("mirror")
 
 func _on_discover_requested():
 	print("[ROUTER] Discovery requested. Opening Weekly Featured Screen.")
@@ -231,7 +215,7 @@ func handle_navigation_event(event: Dictionary):
 		
 		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(cascade_scene_name) + ".tscn")
 		if cascade_scene == null:
-			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
+			cascade_scene = legacy_cascade_scene
 			
 		var cascade = cascade_scene.instantiate()
 		
@@ -246,6 +230,8 @@ func handle_navigation_event(event: Dictionary):
 		emit_signal("routed_to", dest)
 	else:
 		print("[ROUTER] Unknown routing event: ", event)
+
+var legacy_cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
 
 func _snake_to_pascal(snake: String) -> String:
 	var parts = snake.split("_")
