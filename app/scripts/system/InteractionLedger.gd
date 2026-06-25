@@ -2,46 +2,54 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# FRAME-SYNCED EVENT LEDGER (DETERMINISTIC INTERACTION RUNTIME)
+# DEFERRED STATE RECONCILIATION & COMMAND EXECUTION SANDBOX
 # ---------------------------------------------------------
 
 signal epoch_resolved(epoch: int)
 
 var current_epoch: int = 0
-var _intent_ledger: Array[Dictionary] = []
-var _is_flushing: bool = false
+var _intent_buffer: Array[Dictionary] = []
+var _is_committing_side_effects: bool = false
 
 func _ready():
 	BootTracer.log_init("InteractionLedger")
-	print("[INTERACTION LEDGER] Online. Enforcing 4-Phase Event Ledger (Input -> Intent -> Resolution -> Commit).")
+	print("[INTERACTION LEDGER] Online. Enforcing Command Buffer Semantics and strict non-reentrant sandbox.")
 
 func commit_intent(intent: Dictionary):
-	intent["epoch"] = current_epoch
-	_intent_ledger.append(intent)
-	print("[INTERACTION LEDGER] Intent recorded for Epoch ", current_epoch, ": ", intent.get("type", "UNKNOWN"))
-
-func _process(_delta):
-	if _intent_ledger.is_empty(): 
-		current_epoch += 1
+	if _is_committing_side_effects:
+		print("[INTERACTION LEDGER WARNING] Suppressed re-entrant signal during active commit execution: ", intent.get("type", "UNKNOWN"))
 		return
 		
-	_is_flushing = true
-	var current_intents = _intent_ledger.duplicate()
-	_intent_ledger.clear()
+	intent["epoch"] = current_epoch
+	_intent_buffer.append(intent)
+	print("[INTERACTION LEDGER] Intent buffered for Epoch ", current_epoch, ": ", intent.get("type", "UNKNOWN"))
+
+func _process(_delta):
+	if not _intent_buffer.is_empty() and not _is_committing_side_effects:
+		call_deferred("_drain_command_buffer")
+	else:
+		current_epoch += 1
+
+func _drain_command_buffer():
+	if _intent_buffer.is_empty() or _is_committing_side_effects: return
 	
-	print("[INTERACTION LEDGER] Resolving Epoch ", current_epoch, " (Intents: ", current_intents.size(), ")")
-	for intent in current_intents:
-		_execute_commit(intent)
+	_is_committing_side_effects = true
+	var current_commands = _intent_buffer.duplicate()
+	_intent_buffer.clear()
+	
+	print("[INTERACTION LEDGER] Draining Command Buffer for Epoch ", current_epoch, " (Commands: ", current_commands.size(), ")")
+	for command in current_commands:
+		_execute_serialized_command(command)
 		
-	_is_flushing = false
+	_is_committing_side_effects = false
 	epoch_resolved.emit(current_epoch)
 	current_epoch += 1
 
-func _execute_commit(intent: Dictionary):
-	var intent_type = intent.get("type", "")
-	match intent_type:
+func _execute_serialized_command(command: Dictionary):
+	var command_type = command.get("type", "")
+	match command_type:
 		"scene_shift":
-			var target = intent.get("target", "")
+			var target = command.get("target", "")
 			if target == "LandingScreen":
 				NavigationRouter.show_landing_screen()
 			elif target == "WeeklyFeaturedScreen":
@@ -53,10 +61,10 @@ func _execute_commit(intent: Dictionary):
 			NavigationRouter._on_play_requested()
 			
 		"play_universe":
-			NavigationRouter._on_play_universe_requested(intent.get("universe_id", "science_lab"))
+			NavigationRouter._on_play_universe_requested(command.get("universe_id", "science_lab"))
 			
 		_:
-			print("[INTERACTION LEDGER] Unknown commit intent: ", intent_type)
+			print("[INTERACTION LEDGER] Unknown serialized command: ", command_type)
 
 func is_epoch_locked() -> bool:
-	return _is_flushing
+	return _is_committing_side_effects
