@@ -47,10 +47,10 @@ func _initialize_weekly_rotation():
 	
 	var fulfilled_quotas = {"memory": 0, "pattern": 0, "classification": 0, "decision": 0}
 	for s in available_scenarios:
-		var trait = scenario_manifest[s]
-		if fulfilled_quotas[trait] < target_quotas[trait]:
+		var t_trait = scenario_manifest[s]
+		if fulfilled_quotas[t_trait] < target_quotas[t_trait]:
 			active_sampling_pool.append(s)
-			fulfilled_quotas[trait] += 1
+			fulfilled_quotas[t_trait] += 1
 			
 	# Pick 3 Random Featured Universes for the Free Rotation
 	var all_universes = ["science_lab", "tech_ops", "life_sciences", "society_mind", "creative_arts", "frontier"]

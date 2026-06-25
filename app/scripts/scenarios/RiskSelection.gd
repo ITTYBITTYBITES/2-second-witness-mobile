@@ -26,18 +26,18 @@ func _on_answer(chose_risk: bool):
 	if not chose_risk:
 		# Safe choice always ejects immediately but records low confidence
 		feedback_label.text = "SAFE EJECTION INITIATED."
-		PlayerProfile.record_cognitive_event("decision_confidence", "risk_selection", "science_lab", true, rt_ms) # True because it wasn't a "failure"
+		PlayerProfile.record_cognitive_event("decision_confidence", "risk_selection", "science_lab", "default", true, rt_ms) # True because it wasn't a "failure"
 		SessionTracker.record_spike_result("risk_selection_safe", true)
 		_eject()
 	else:
 		if risk_succeeds:
 			feedback_label.text = "RISK REWARDED! SLINGSHOT INITIATED!"
-			PlayerProfile.record_cognitive_event("decision_confidence", "risk_selection", "science_lab", true, rt_ms)
+			PlayerProfile.record_cognitive_event("decision_confidence", "risk_selection", "science_lab", "default", true, rt_ms)
 			SessionTracker.record_spike_result("risk_selection_risk", true)
 			_eject()
 		else:
 			print("[RISK SELECTION] Error. Resetting.")
-			PlayerProfile.record_cognitive_event("decision_confidence", "risk_selection", "science_lab", false, rt_ms)
+			PlayerProfile.record_cognitive_event("decision_confidence", "risk_selection", "science_lab", "default", false, rt_ms)
 			SessionTracker.record_spike_result("risk_selection_risk", false)
 			feedback_label.text = "RISK FAILED! Try again."
 

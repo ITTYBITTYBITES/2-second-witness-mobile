@@ -50,24 +50,24 @@ func _ready():
 	print("[2 SECOND WITNESS] Cognitive Insight Engine active.")
 	_load_profile()
 
-func record_cognitive_event(trait: String, scenario_id: String, universe: String, success: bool, reaction_time_ms: float):
+func record_cognitive_event(c_trait: String, scenario_id: String, universe_id: String, world_id: String, success: bool, reaction_time_ms: float):
 	lifetime_sessions += 1
-	universe_affinity[universe] = universe_affinity.get(universe, 0) + 1
+	universe_affinity[universe_id] = universe_affinity.get(universe_id, 0) + 1
 	
-	var world_key = universe + "_default" # Fallback if specific world isn't passed
+	var world_key = universe_id + "_" + world_id
 	world_affinity[world_key] = world_affinity.get(world_key, 0) + 1
 	
 	task_familiarity_index[scenario_id] = task_familiarity_index.get(scenario_id, 0) + 1
 	
-	if cognitive_baseline.has(trait):
-		var b = cognitive_baseline[trait]
+	if cognitive_baseline.has(c_trait):
+		var b = cognitive_baseline[c_trait]
 		b["attempts"] += 1
 		if success:
 			b["successes"] += 1
 			b["total_rt_ms"] += reaction_time_ms
 			
-	if current_week_drift.has(trait):
-		var d = current_week_drift[trait]
+	if current_week_drift.has(c_trait):
+		var d = current_week_drift[c_trait]
 		d["attempts"] += 1
 		if success:
 			d["successes"] += 1

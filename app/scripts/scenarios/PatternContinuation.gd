@@ -34,7 +34,7 @@ func _on_answer(is_correct: bool):
 		btn_a.disabled = true
 		btn_b.disabled = true
 		
-		PlayerProfile.record_cognitive_event("pattern_recognition", "pattern_continuation", "science_lab", true, rt_ms)
+		PlayerProfile.record_cognitive_event("pattern_recognition", "pattern_continuation", "science_lab", "default", true, rt_ms)
 		SessionTracker.record_spike_result("pattern_continuation", true)
 		
 		await get_tree().create_timer(0.5).timeout
@@ -42,6 +42,6 @@ func _on_answer(is_correct: bool):
 		queue_free()
 	else:
 		print("[PATTERN CONTINUATION] Error. Resetting.")
-		PlayerProfile.record_cognitive_event("pattern_recognition", "pattern_continuation", "science_lab", false, rt_ms)
+		PlayerProfile.record_cognitive_event("pattern_recognition", "pattern_continuation", "science_lab", "default", false, rt_ms)
 		SessionTracker.record_spike_result("pattern_continuation", false)
 		feedback_label.text = "ERROR! Try again."

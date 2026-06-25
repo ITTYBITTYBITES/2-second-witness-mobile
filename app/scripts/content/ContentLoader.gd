@@ -46,7 +46,11 @@ func _load_and_register_file(path: String):
 		if error == OK:
 			var data = json.data
 			if typeof(data) == TYPE_DICTIONARY and _validate_schema(data):
-				registry.register_scenario(data)
+				# Robust fallback to find the global ContentRegistry regardless of tree status
+				if registry == null: 
+					registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
+				if registry != null: 
+					registry.register_scenario(data)
 			else:
 				print("[CONTENT ERROR] Schema invalid: ", path)
 		else:

@@ -58,7 +58,7 @@ func _on_answer(chose_organic: bool):
 		btn_organic.disabled = true
 		btn_mechanical.disabled = true
 		
-		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], true, rt_ms)
+		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", true, rt_ms)
 		SessionTracker.record_spike_result("rapid_classification", true)
 		
 		await get_tree().create_timer(0.5).timeout
@@ -66,6 +66,6 @@ func _on_answer(chose_organic: bool):
 		queue_free()
 	else:
 		print("[RAPID CLASSIFICATION] Error. Resetting.")
-		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], false, rt_ms)
+		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", false, rt_ms)
 		SessionTracker.record_spike_result("rapid_classification", false)
 		feedback_label.text = "ERROR! Try again."
