@@ -1,5 +1,4 @@
 extends Node
-class_name LensMorphology
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
