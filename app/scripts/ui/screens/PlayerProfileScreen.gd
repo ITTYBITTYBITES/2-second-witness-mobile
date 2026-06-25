@@ -15,7 +15,6 @@ func _populate_data():
 	lifetime_label.text = "LIFETIME SESSIONS: " + str(profile.lifetime_sessions)
 	
 	for child in insights_container.get_children():
-	AdManager.hide_banner()
 		child.queue_free()
 		
 	var insights = profile.generate_insights()

@@ -11,13 +11,13 @@ var active_sampling_pool: Array[String] = []
 # Featured Universes (The Rotation Layer)
 var featured_universes: Array[String] = []
 
+
 var target_quotas = {
 	"memory": 2,
 	"pattern": 2,
 	"classification": 1,
 	"decision": 1
 }
-
 var scenario_manifest = {
 	"memory_cascade": "memory",
 	"spatial_recall": "memory",

@@ -47,14 +47,15 @@ var colorblind_mode_enabled: bool = false
 var device_hardware_offset_ms: float = 0.0
 
 func _ready():
+	BootTracer.log_init("PlayerProfile")
 	print("[2 SECOND WITNESS] Cognitive Insight Engine active.")
 	_load_profile()
 
-func record_cognitive_event(trait: String, scenario_id: String, universe: String, success: bool, reaction_time_ms: float):
+func record_cognitive_event(trait: String, scenario_id: String, universe_id: String, world_id: String, success: bool, reaction_time_ms: float):
 	lifetime_sessions += 1
-	universe_affinity[universe] = universe_affinity.get(universe, 0) + 1
+	universe_affinity[universe_id] = universe_affinity.get(universe_id, 0) + 1
 	
-	var world_key = universe + "_default" # Fallback if specific world isn't passed
+	var world_key = universe_id + "_" + world_id
 	world_affinity[world_key] = world_affinity.get(world_key, 0) + 1
 	
 	task_familiarity_index[scenario_id] = task_familiarity_index.get(scenario_id, 0) + 1
