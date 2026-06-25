@@ -4,12 +4,12 @@
 **Goal:** Drive the "Stub Count" to 0.
 
 ## 1. PERSISTENCE LAYER (Local I/O)
-- [ ] `PlayerProfile.save_profile()`: Replace `pass` with FileAccess JSON write to `user://profile.save`.
-- [ ] `PlayerProfile._load_profile()`: Replace `pass` with FileAccess JSON read.
-- [ ] `GoodwillManager._save_goodwill_state()`: Replace `pass` with FileAccess JSON write to `user://grace.save`.
-- [ ] `GoodwillManager._load_goodwill_state()`: Replace `pass` with FileAccess JSON read.
-- [ ] `DiagnosticAutomator._save_diagnostic_state()`: Replace `pass` with FileAccess JSON write.
-- [ ] `DiagnosticAutomator._load_diagnostic_state()`: Replace `pass` with FileAccess JSON read.
+- [x] `PlayerProfile.save_profile()`: Replace `pass` with FileAccess JSON write to `user://profile.save`.
+- [x] `PlayerProfile._load_profile()`: Replace `pass` with FileAccess JSON read.
+- [x] `GoodwillManager._save_goodwill_state()`: Replace `pass` with FileAccess JSON write to `user://grace.save`.
+- [x] `GoodwillManager._load_goodwill_state()`: Replace `pass` with FileAccess JSON read.
+- [x] `DiagnosticAutomator._save_diagnostic_state()`: Replace `pass` with FileAccess JSON write.
+- [x] `DiagnosticAutomator._load_diagnostic_state()`: Replace `pass` with FileAccess JSON read.
 
 ## 2. CONTENT INJECTION (Scenario Data Binding)
 *Wire `inject_payload(payload: Dictionary)` to replace hardcoded `randi()` logic.*
