@@ -92,7 +92,7 @@ func _execute_dump(event_trigger: String):
 	
 	# Evaluate Resource Leak Attribution by Intent
 	var active_tags = {}
-	var alive_resources = []
+	var alive_resources: Array[Dictionary] = []
 	for item in _tracked_resources:
 		if item["ref"].get_ref():
 			alive_resources.append(item)

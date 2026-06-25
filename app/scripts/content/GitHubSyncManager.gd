@@ -45,7 +45,7 @@ func sync_cycle():
 		_is_syncing = false
 		sync_completed.emit("failed_connection")
 
-func _on_manifest_downloaded(result, response_code, headers, body):
+func _on_manifest_downloaded(result, response_code, _headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
 		print("[GITHUB SYNC ERROR] Failed to fetch manifest. Offline-First integrity preserved.")
 		_is_syncing = false
@@ -98,7 +98,7 @@ func _download_next_patch():
 		_is_syncing = false
 		sync_completed.emit("failed_patch_download")
 
-func _on_patch_downloaded(result, response_code, headers, body):
+func _on_patch_downloaded(result, response_code, _headers, _body):
 	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
 		print("[GITHUB SYNC FATAL] Patch download failed. Code: ", response_code, ". Aborting OTA update.")
 		_is_syncing = false
