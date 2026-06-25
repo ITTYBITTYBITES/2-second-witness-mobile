@@ -1,33 +1,58 @@
 # ASSET CONTRACT SPECIFICATION (PRIORITY 5)
+*The Tri-Layer Integration Hierarchy*
 
 **The Paradigm:**
 Artists do not "add assets to the game." Artists submit asset candidates to a constrained measurement instrument. The interaction geometry is mathematically locked. Art is a perceptual substitution layer only.
 
-## 1. The Invariant Boundary
-- **Functional Layer (Immutable):** Hitboxes, Control bounds, Layout containers, Stimulus anchor positions. *These are owned by the code.*
-- **Perceptual Layer (Variable):** Textures, Shaders, Color grading. *These are owned by the art team.*
-- **The Rule:** Perceptual assets must *never* redefine functional geometry. A button's clickable area is defined by the engine, not the PNG's alpha channel.
+To prevent perceptual drift from corrupting the cognitive measurement, all assets must be explicitly classified and validated against one of three structural tiers.
 
-## 2. Canonical Asset Definitions & Constraints
-All incoming visual assets must strictly adhere to the following classes. Deviations will be rejected by the Pre-Import Validator.
+---
 
-### Class: StimulusSprite (e.g., Cognitive Targets, Memory Nodes)
-- **Dimensions:** Exactly `128x128` pixels.
-- **Anchor:** Centered origin only.
-- **Padding Rule:** No transparent padding allowed. The visible pixels must touch the edge of the bounding box (or remain within a mathematically uniform circle).
-- **Shadows:** No baked drop-shadows that extend the bounding box.
+## LAYER 1: UNIVERSE BASE ASSETS
+*The Structural Identity. These assets define the foundational geometry and physics of the environment. They are global to all Worlds within a Universe.*
 
-### Class: UIButtonFrame (e.g., Scenario Answers, Safe/Risk Decisions)
-- **Dimensions:** Exactly `256x96` pixels.
-- **Design Rule:** Border-only or solid fills. No interior spacing illusions that make the button "look" smaller than its physical hitbox.
-- **Format:** Lossless PNG only.
+**Allowed Assets:**
+- `rib_mesh` (`.obj`): The core tunnel streaming geometry (e.g., Hexagonal ribs). Max 500 polys.
+- `base_iris_mesh` (`.obj`): The foundational 3D structure of the Lens (e.g., A simple brass ring).
+- `ambient_base_audio` (`.wav`): The root low-frequency drone for the Universe.
 
-### Class: BackgroundTile (e.g., Void Grids, Liquid Noise)
-- **Dimensions:** `512x512` or `1024x1024`.
-- **Design Rule:** Seamless tile only. No baked perspective distortion (perspective is handled by the 3D spatial stream or Shader math).
+**Constraints:**
+- Must contain zero semantic meaning or textual data.
+- Must be geometrically stable (no erratic runtime deformation).
 
-## 3. The Production Pipeline
+---
+
+## LAYER 2: WORLD OVERLAY ASSETS
+*The Perceptual Modulation Layer. These assets change how the Universe "feels" without altering its physical boundaries.*
+
+**Allowed Assets:**
+- `bg_noise_texture` (`.png`): 512x512 or 1024x1024 seamless noise for the tunnel shader (e.g., Sandstorm vs Plasma).
+- `iris_accent_geometry` (`.obj`): Non-colliding decorative meshes attached to the Iris to denote mastery (e.g., Extra clockwork gears).
+- `particle_textures` (`.png`): 64x64 sprites for non-interactive atmospheric dust.
+- `audio_overlay` (`.wav`): Secondary SFX layers (e.g., wind, digital static).
+
+**Constraints (The Hard Boundary):**
+- **NO FUNCTIONAL MODIFICATION:** World overlays are strictly forbidden from altering the bounds, hitboxes, or timing of any object in Layer 3. 
+- Overlays must be purely aesthetic (Colors, Shaders, Particles).
+
+---
+
+## LAYER 3: TASK KERNEL ASSETS (STRICT INVARIANT)
+*The Cognitive Measurement Core. These assets ARE the test. They must remain absolute constants across all Universes and Worlds.*
+
+**Allowed Assets:**
+- `UIButtonFrame` (`.png`): Exactly `256x96` pixels. Lossless. Border-only designs. No internal spacing illusions.
+- `StimulusSprite` (`.png`): Exactly `128x128` pixels. Centered origin. No transparent padding. No baked shadows.
+
+**Constraints (The Measurement Lock):**
+- **ZERO MOTION:** Stimulus sprites and buttons must be completely locked in position the millisecond the 2-second timer begins.
+- **ZERO OBFUSCATION:** You cannot use "alien" fonts or lower the opacity of a button to make a World "harder." 
+- **STATIC LAYOUT:** The spatial distance between `[Button A]` and `[Button B]` must remain identical, ensuring Fitts's Law traversal time is a constant across all Worlds.
+
+---
+
+## THE PRODUCTION PIPELINE
 1. Artist exports asset to `res://assets_incoming/`.
 2. Developer runs `PreImportAssetValidator.gd`.
 3. If FAIL: Asset is rejected and deleted.
-4. If PASS: Asset is moved to `res://assets/` and registered in `AssetResolver.gd`.
+4. If PASS: Asset is moved to `res://assets/` and registered in `AssetManifestRegistry.gd` under its specific Layer category.
