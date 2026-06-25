@@ -19,14 +19,13 @@ func _process(_delta):
 	pass
 
 func spawn_lens_portal(chunk_id: String):
+	print("STEP 5: PORTAL SPAWN ENTERED")
 	var renderer = UniverseRenderer.new()
 	var def = renderer.universe_definitions.get(active_universe_id, renderer.universe_definitions["science_lab"])
 	
 	var lens = preload("res://scripts/portals/ScenarioNode.gd").new()
 	lens.position = Vector3(0, 0, -20)
 	
-	# The Lens Morphology Engine determines the visual complexity tier of the lens
-	# based on the player's lifetime mastery of this SPECIFIC WORLD.
 	var mastery_engine = LensMorphology
 	var mastery_tier = mastery_engine.get_world_mastery(active_universe_id, active_world_id)
 	

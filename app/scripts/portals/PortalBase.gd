@@ -1,7 +1,7 @@
 extends Node3D
 class_name PortalBase
 
-var current_state: int = 0 # NavigationEngine.PortalState.LOCKED
+var current_state: int = 0
 var destination_data: Dictionary = {}
 
 func _ready():
@@ -13,11 +13,9 @@ func setup(state: int, dest: Dictionary):
 	_update_visual_state()
 
 func _on_theme_applied(_theme_data: Dictionary):
-	# Driven purely by ThemeManager. Subclasses implement visual morphing.
 	pass
 
 func _update_visual_state():
-	# 0 = LOCKED, 1 = VISIBLE, 2 = AVAILABLE, 3 = ACTIVE
 	if current_state == 0:
 		print("[PORTAL] ", name, " -> Visual State: LOCKED (Dim / Fractured)")
 	elif current_state == 2:
@@ -26,6 +24,7 @@ func _update_visual_state():
 func select_portal():
 	if current_state == 2: # AVAILABLE
 		current_state = 3 # ACTIVE
+		print("STEP 7: PORTAL SELECTED")
 		print("[PORTAL] Selection triggered. Handing off to NavigationEngine.")
 		NavigationEngine.process_selection(self, _get_portal_type(), destination_data)
 	else:

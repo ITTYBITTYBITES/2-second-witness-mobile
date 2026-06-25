@@ -45,15 +45,22 @@ func show_landing_screen():
 	print("[ROUTER] Landing Screen instantiated and active.")
 
 func _on_play_requested():
-	print("[ROUTER] Play requested. Hiding menu and entering the stream.")
+	print("STEP 1: PLAY REQUEST RECEIVED")
 	print("UNIVERSE BOOT START")
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
 		if InteractionKernel: InteractionKernel.pop_modal(active_landing_screen)
 		
 	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
-	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
-		portal_mgr.spawn_lens_portal("0")
+	print("STEP 2: PORTAL LOOKUP = ", portal_mgr)
+	
+	if portal_mgr == null:
+		push_error("PORTAL MANAGER NULL")
+		return
+		
+	print("STEP 3: CALLING SPAWN")
+	portal_mgr.spawn_lens_portal("0")
+	print("STEP 4: SPAWN CALL COMPLETED")
 
 func _on_profile_requested():
 	print("[ROUTER] Profile requested. Opening Cognitive Mirror.")
@@ -92,6 +99,7 @@ func _on_discover_requested():
 		active_secondary_screen.play_universe_requested.connect(_on_play_universe_requested)
 
 func _on_play_universe_requested(universe_id: String):
+	print("STEP 1: PLAY REQUEST RECEIVED")
 	print("[ROUTER] Play Universe requested: ", universe_id)
 	print("UNIVERSE BOOT START")
 	if active_secondary_screen:
@@ -101,12 +109,20 @@ func _on_play_universe_requested(universe_id: String):
 		
 	ThemeManager.apply_theme(universe_id)
 	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
-	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
-		portal_mgr.spawn_lens_portal("0")
+	print("STEP 2: PORTAL LOOKUP = ", portal_mgr)
+	
+	if portal_mgr == null:
+		push_error("PORTAL MANAGER NULL")
+		return
+		
+	print("STEP 3: CALLING SPAWN")
+	portal_mgr.spawn_lens_portal("0")
+	print("STEP 4: SPAWN CALL COMPLETED")
 
 func handle_navigation_event(event: Dictionary):
 	if event.get("type") == "portal_selected":
 		var dest = event.get("destination", {})
+		print("STEP 8: LOADING SCENARIO")
 		print("[ROUTER] Executing continuous scene shift to Destination: ", dest)
 		
 		var cascade_scene_name = SamplingController.get_next_scenario()

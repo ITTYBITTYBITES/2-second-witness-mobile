@@ -4,11 +4,11 @@ var mesh_instance: MeshInstance3D
 var area: Area3D
 
 func _ready():
+	print("STEP 6: PORTAL INSTANCE READY")
 	super._ready()
 	
 	mesh_instance = get_node_or_null("MeshInstance3D")
 	
-	# Mount the final Crystalline Iris Geometry
 	if mesh_instance == null:
 		mesh_instance = MeshInstance3D.new()
 		
@@ -34,11 +34,9 @@ func _ready():
 			
 		mesh_instance.mesh = mesh_res
 		
-		# Apply the glowing visual material
 		mesh_instance.material_override = load("res://assets/materials/portal_glow.tres")
 		add_child(mesh_instance)
 		
-		# Add Area3D for actual mouse clicking / touch
 		area = Area3D.new()
 		var collision = CollisionShape3D.new()
 		var shape = SphereShape3D.new()
@@ -59,10 +57,11 @@ func check_monetization_gate() -> bool:
 	return true
 
 func _on_input_event(_camera, event, _position, _normal, _shape_idx):
-	# Handle both Mouse Clicks (PC) and Touch Screen taps (Android)
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		print("[IRIS] Mouse Clicked! Initiating transition.")
+		print("STEP 7: PORTAL SELECTED")
 		select_portal()
 	elif event is InputEventScreenTouch and event.pressed:
 		print("[IRIS] Screen Touched! Initiating transition.")
+		print("STEP 7: PORTAL SELECTED")
 		select_portal()
