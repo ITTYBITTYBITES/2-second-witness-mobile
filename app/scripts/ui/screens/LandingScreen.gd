@@ -7,7 +7,7 @@ signal discover_requested
 func _ready():
 	print("BUTTON READY: BtnPlay")
 	
-	if UIInputArbiter: UIInputArbiter.register_panel($Panel, "main_menu", UIInputArbiter.UIState.MODAL_ACTIVE)
+	if InteractionKernel: InteractionKernel.register_panel($Panel, "main_menu", InteractionKernel.UIState.MODAL_ACTIVE)
 	
 	$Panel/VBoxContainer/BtnPlay.pressed.connect(_on_play_pressed)
 	$Panel/VBoxContainer/BtnProfile.pressed.connect(_on_profile_pressed)
@@ -16,8 +16,8 @@ func _ready():
 	$Panel/VBoxContainer/BtnPlay.gui_input.connect(func(event):
 		if event is InputEventMouseButton and event.pressed:
 			print("GUI INPUT CLICK: BtnPlay")
-			if InteractionLedger and not InteractionLedger.consume_event("BtnPlay"): return
-			if InteractionLedger: InteractionLedger.commit_intent({"type": "enter_stream"})
+			if InteractionKernel and not InteractionKernel.consume_provenance("BtnPlay", event): return
+			if InteractionKernel: InteractionKernel.commit_intent({"type": "enter_stream"})
 			else: play_requested.emit()
 	)
 	
@@ -26,22 +26,22 @@ func _ready():
 func _on_play_pressed():
 	print("SIGNAL PRESSED: BtnPlay")
 	print("BUTTON PRESSED: BtnPlay")
-	if InteractionLedger and not InteractionLedger.consume_event("BtnPlay"): return
-	if InteractionLedger: InteractionLedger.commit_intent({"type": "enter_stream"})
+	if InteractionKernel and not InteractionKernel.consume_provenance("BtnPlay", null): return
+	if InteractionKernel: InteractionKernel.commit_intent({"type": "enter_stream"})
 	else: play_requested.emit()
 
 func _on_profile_pressed():
 	print("SIGNAL PRESSED: BtnProfile")
 	print("BUTTON PRESSED: BtnProfile")
-	if InteractionLedger and not InteractionLedger.consume_event("BtnProfile"): return
-	if InteractionLedger: InteractionLedger.commit_intent({"type": "scene_shift", "target": "PlayerProfileScreen"})
+	if InteractionKernel and not InteractionKernel.consume_provenance("BtnProfile", null): return
+	if InteractionKernel: InteractionKernel.commit_intent({"type": "scene_shift", "target": "PlayerProfileScreen"})
 	else: profile_requested.emit()
 
 func _on_discover_pressed():
 	print("SIGNAL PRESSED: BtnDiscover")
 	print("BUTTON PRESSED: BtnDiscover")
-	if InteractionLedger and not InteractionLedger.consume_event("BtnDiscover"): return
-	if InteractionLedger: InteractionLedger.commit_intent({"type": "scene_shift", "target": "WeeklyFeaturedScreen"})
+	if InteractionKernel and not InteractionKernel.consume_provenance("BtnDiscover", null): return
+	if InteractionKernel: InteractionKernel.commit_intent({"type": "scene_shift", "target": "WeeklyFeaturedScreen"})
 	else: discover_requested.emit()
 
 func _check_directors_pass_status():
@@ -56,7 +56,7 @@ func _check_directors_pass_status():
 		$Panel/VBoxContainer.add_child(btn_dpass)
 
 func _show_directors_pass_gate():
-	if InteractionLedger and not InteractionLedger.consume_event("BtnDirectorsPass"): return
+	if InteractionKernel and not InteractionKernel.consume_provenance("BtnDirectorsPass", null): return
 	var gate_scene = preload("res://scenes/ui/screens/MonetizationGate.tscn")
 	var gate = gate_scene.instantiate()
 	if ModalWindowManager: ModalWindowManager.push_modal(gate, true)
@@ -73,19 +73,19 @@ func _show_directors_pass_gate():
 func hide_screen():
 	AdManager.hide_banner()
 	print("[INTERACTION DESIGN] Initiating 500ms Transitional Alpha Masking window. Hitboxes visually present but input suppressed.")
-	if UIInputArbiter: UIInputArbiter.begin_transition($Panel, "main_menu")
+	if InteractionKernel: InteractionKernel.begin_transition($Panel, "main_menu")
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 0.0, 0.5)
 	tween.tween_callback(func():
-		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.HIDDEN, "main_menu")
+		if InteractionKernel: InteractionKernel.end_transition($Panel, InteractionKernel.UIState.HIDDEN, "main_menu")
 		print("[INTERACTION DESIGN] Alpha Masking complete. Visual incoherence window closed.")
 	)
 
 func show_screen():
 	AdManager.show_banner()
-	if UIInputArbiter: UIInputArbiter.begin_transition($Panel, "main_menu")
+	if InteractionKernel: InteractionKernel.begin_transition($Panel, "main_menu")
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 1.0, 0.5)
 	tween.tween_callback(func():
-		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.MODAL_ACTIVE, "main_menu")
+		if InteractionKernel: InteractionKernel.end_transition($Panel, InteractionKernel.UIState.MODAL_ACTIVE, "main_menu")
 	)

@@ -43,14 +43,14 @@ func sync_cycle():
 	if error != OK:
 		print("[GITHUB SYNC ERROR] HTTP Request failed to initiate. Offline-First integrity preserved.")
 		_is_syncing = false
-		if InteractionLedger: InteractionLedger.commit_intent({"type": "sync_completed", "status": "failed_connection"})
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "sync_completed", "status": "failed_connection"})
 		else: sync_completed.emit("failed_connection")
 
 func _on_manifest_downloaded(result, response_code, _headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
 		print("[GITHUB SYNC ERROR] Failed to fetch manifest. Offline-First integrity preserved.")
 		_is_syncing = false
-		if InteractionLedger: InteractionLedger.commit_intent({"type": "sync_completed", "status": "failed_download"})
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "sync_completed", "status": "failed_download"})
 		else: sync_completed.emit("failed_download")
 		return
 		
@@ -59,7 +59,7 @@ func _on_manifest_downloaded(result, response_code, _headers, body):
 	if err != OK:
 		print("[GITHUB SYNC FATAL] Remote manifest is corrupted JSON. Rejecting payload.")
 		_is_syncing = false
-		if InteractionLedger: InteractionLedger.commit_intent({"type": "sync_completed", "status": "failed_parse"})
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "sync_completed", "status": "failed_parse"})
 		else: sync_completed.emit("failed_parse")
 		return
 		
@@ -78,7 +78,7 @@ func _on_manifest_downloaded(result, response_code, _headers, body):
 	else:
 		print("[GITHUB SYNC] Local cache is up-to-date. Content version: ", _active_manifest_version)
 		_is_syncing = false
-		if InteractionLedger: InteractionLedger.commit_intent({"type": "sync_completed", "status": "success"})
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "sync_completed", "status": "success"})
 		else: sync_completed.emit("success")
 
 func _download_next_patch():
@@ -97,14 +97,14 @@ func _download_next_patch():
 	if error != OK:
 		print("[GITHUB SYNC FATAL] Patch download failed to initiate. Aborting OTA update.")
 		_is_syncing = false
-		if InteractionLedger: InteractionLedger.commit_intent({"type": "sync_completed", "status": "failed_patch_download"})
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "sync_completed", "status": "failed_patch_download"})
 		else: sync_completed.emit("failed_patch_download")
 
 func _on_patch_downloaded(result, response_code, _headers, _body):
 	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
 		print("[GITHUB SYNC FATAL] Patch download failed. Code: ", response_code, ". Aborting OTA update.")
 		_is_syncing = false
-		if InteractionLedger: InteractionLedger.commit_intent({"type": "sync_completed", "status": "failed_patch_download"})
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "sync_completed", "status": "failed_patch_download"})
 		else: sync_completed.emit("failed_patch_download")
 		return
 		
@@ -118,12 +118,12 @@ func _apply_patches_and_lock_version(manifest_data: Dictionary):
 		_active_manifest_version = manifest_data.get("version", "1.0.0")
 		print("[GITHUB SYNC] Immutable Cache Updated. System locked to version: ", _active_manifest_version)
 		_is_syncing = false
-		if InteractionLedger: InteractionLedger.commit_intent({"type": "sync_completed", "status": "success"})
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "sync_completed", "status": "success"})
 		else: sync_completed.emit("success")
 	else:
 		print("[GITHUB SYNC FATAL] Failed to write manifest to disk.")
 		_is_syncing = false
-		if InteractionLedger: InteractionLedger.commit_intent({"type": "sync_completed", "status": "failed_write"})
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "sync_completed", "status": "failed_write"})
 		else: sync_completed.emit("failed_write")
 
 func _load_local_manifest_version():

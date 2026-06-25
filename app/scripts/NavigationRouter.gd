@@ -10,7 +10,7 @@ func _ready():
 	print("NavigationRouter initialized. Awaiting structured events.")
 
 func _input(_event):
-	if UIInputArbiter and UIInputArbiter.is_ui_blocking():
+	if InteractionKernel and InteractionKernel.is_ui_blocking():
 		return
 	# Navigation router global input handling permitted here
 

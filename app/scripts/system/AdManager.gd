@@ -78,11 +78,11 @@ func _show_video_ad(is_rewarded: bool):
 		_show_dummy_ad()
 
 func _on_video_closed():
-	if InteractionLedger: InteractionLedger.commit_intent({"type": "ad_resolved"})
+	if InteractionKernel: InteractionKernel.commit_intent({"type": "ad_resolved"})
 	else: ad_finished.emit()
 
 func _on_reward_earned(_currency: String, _amount: int):
-	if InteractionLedger: InteractionLedger.commit_intent({"type": "ad_rewarded"})
+	if InteractionKernel: InteractionKernel.commit_intent({"type": "ad_rewarded"})
 	else: reward_granted.emit()
 
 func _show_dummy_ad():

@@ -24,10 +24,10 @@ func push_modal(screen: CanvasLayer, is_modal: bool = true):
 		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 		if ui_layer: ui_layer.add_child(screen)
 		
-	if UIInputArbiter and is_modal:
+	if InteractionKernel and is_modal:
 		var panel = screen.get_node_or_null("Panel")
 		if not panel: panel = screen.get_node_or_null("PanelContainer")
-		if panel: UIInputArbiter.register_panel(panel, screen.name, UIInputArbiter.UIState.MODAL_ACTIVE)
+		if panel: InteractionKernel.register_panel(panel, screen.name, InteractionKernel.UIState.MODAL_ACTIVE)
 		
 	modal_stack_changed.emit(screen)
 
@@ -39,10 +39,10 @@ func pop_modal(screen: CanvasLayer = null):
 		_modal_stack.erase(target)
 		print("[MODAL MANAGER] Popped modal from stack: ", target.name)
 		
-		if UIInputArbiter:
+		if InteractionKernel:
 			var panel = target.get_node_or_null("Panel")
 			if not panel: panel = target.get_node_or_null("PanelContainer")
-			if panel: UIInputArbiter.unregister_panel(panel)
+			if panel: InteractionKernel.unregister_panel(panel)
 			
 		if is_instance_valid(target) and target.is_inside_tree():
 			target.queue_free()
