@@ -16,6 +16,9 @@ func _ready():
 	$Panel/VBoxContainer/BtnPlay.gui_input.connect(func(event):
 		if event is InputEventMouseButton and event.pressed:
 			print("GUI INPUT CLICK: BtnPlay")
+			if InteractionLedger and not InteractionLedger.consume_event("BtnPlay"): return
+			if InteractionLedger: InteractionLedger.commit_intent({"type": "enter_stream"})
+			else: play_requested.emit()
 	)
 	
 	_check_directors_pass_status()
@@ -23,18 +26,21 @@ func _ready():
 func _on_play_pressed():
 	print("SIGNAL PRESSED: BtnPlay")
 	print("BUTTON PRESSED: BtnPlay")
+	if InteractionLedger and not InteractionLedger.consume_event("BtnPlay"): return
 	if InteractionLedger: InteractionLedger.commit_intent({"type": "enter_stream"})
 	else: play_requested.emit()
 
 func _on_profile_pressed():
 	print("SIGNAL PRESSED: BtnProfile")
 	print("BUTTON PRESSED: BtnProfile")
+	if InteractionLedger and not InteractionLedger.consume_event("BtnProfile"): return
 	if InteractionLedger: InteractionLedger.commit_intent({"type": "scene_shift", "target": "PlayerProfileScreen"})
 	else: profile_requested.emit()
 
 func _on_discover_pressed():
 	print("SIGNAL PRESSED: BtnDiscover")
 	print("BUTTON PRESSED: BtnDiscover")
+	if InteractionLedger and not InteractionLedger.consume_event("BtnDiscover"): return
 	if InteractionLedger: InteractionLedger.commit_intent({"type": "scene_shift", "target": "WeeklyFeaturedScreen"})
 	else: discover_requested.emit()
 
@@ -50,6 +56,7 @@ func _check_directors_pass_status():
 		$Panel/VBoxContainer.add_child(btn_dpass)
 
 func _show_directors_pass_gate():
+	if InteractionLedger and not InteractionLedger.consume_event("BtnDirectorsPass"): return
 	var gate_scene = preload("res://scenes/ui/screens/MonetizationGate.tscn")
 	var gate = gate_scene.instantiate()
 	if ModalWindowManager: ModalWindowManager.push_modal(gate, true)

@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# GOVERNED MUTATION SUBSTRATE (TRACEABILITY OF MUTATION)
+# GOVERNED MUTATION SUBSTRATE & EVENT IDEMPOTENCY BOUNDARY
 # ---------------------------------------------------------
 
 signal epoch_resolved(epoch: int)
@@ -11,10 +11,18 @@ var current_epoch: int = 0
 var _intent_buffer: Array[Dictionary] = []
 var _is_committing_side_effects: bool = false
 var _mutation_trace_log: Array[Dictionary] = []
+var _consumed_events_this_epoch: Dictionary = {}
 
 func _ready():
 	BootTracer.log_init("InteractionLedger")
-	print("[INTERACTION LEDGER] Online. Operating as a governed mutation substrate over intentional project-level mutations.")
+	print("[INTERACTION LEDGER] Online. Enforcing per-epoch event idempotency and single-consumption semantics.")
+
+func consume_event(event_id: String) -> bool:
+	if _consumed_events_this_epoch.has(event_id):
+		print("[INTERACTION LEDGER] Idempotency Guard: Suppressed duplicate activation for '", event_id, "' in Epoch ", current_epoch)
+		return false
+	_consumed_events_this_epoch[event_id] = true
+	return true
 
 func commit_intent(intent: Dictionary):
 	if _is_committing_side_effects:
@@ -31,6 +39,7 @@ func _process(_delta):
 		call_deferred("_drain_command_buffer")
 	else:
 		current_epoch += 1
+		_consumed_events_this_epoch.clear()
 
 func _drain_command_buffer():
 	if _intent_buffer.is_empty() or _is_committing_side_effects: return
@@ -61,6 +70,7 @@ func _drain_command_buffer():
 	_is_committing_side_effects = false
 	epoch_resolved.emit(current_epoch)
 	current_epoch += 1
+	_consumed_events_this_epoch.clear()
 
 func _execute_serialized_command(command: Dictionary):
 	var command_type = command.get("type", "")
