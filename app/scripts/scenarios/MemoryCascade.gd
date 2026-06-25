@@ -31,8 +31,9 @@ func _apply_specific_rules(rules: Dictionary):
 	feedback_label.text = "Sequence: " + seq_str
 
 func _ready():
+	print("SCENARIO READY")
 	if _scenario_payload.is_empty():
-		push_error("[SCENARIO FATAL] Scene loaded without payload injection.")
+		push_error("SCENARIO PAYLOAD EMPTY")
 		queue_free()
 		return
 		
