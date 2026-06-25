@@ -9,13 +9,19 @@ func _ready():
 	BootTracer.log_init("NavigationRouter")
 	print("NavigationRouter initialized. Awaiting structured events.")
 
+func _input(_event):
+	if get_tree().is_input_handled():
+		return
+
 func show_landing_screen():
 	if active_secondary_screen and is_instance_valid(active_secondary_screen):
-		active_secondary_screen.queue_free()
+		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
+		else: active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
 	if active_landing_screen and is_instance_valid(active_landing_screen):
 		active_landing_screen.show_screen()
+		if ModalWindowManager: ModalWindowManager.push_modal(active_landing_screen, false)
 		return
 		
 	var landing_scene = load("res://scenes/ui/screens/LandingScreen.tscn")
@@ -24,12 +30,13 @@ func show_landing_screen():
 		return
 		
 	active_landing_screen = landing_scene.instantiate()
-	var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
-	if not ui_layer:
-		ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
-		
-	if ui_layer:
-		ui_layer.add_child(active_landing_screen)
+	
+	if ModalWindowManager:
+		ModalWindowManager.push_modal(active_landing_screen, false)
+	else:
+		var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+		if ui_layer: ui_layer.add_child(active_landing_screen)
 		
 	active_landing_screen.play_requested.connect(_on_play_requested)
 	active_landing_screen.profile_requested.connect(_on_profile_requested)
@@ -41,6 +48,7 @@ func _on_play_requested():
 	print("[ROUTER] Play requested. Hiding menu and entering the stream.")
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
+		if ModalWindowManager: ModalWindowManager.pop_modal(active_landing_screen)
 		
 	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_InteractivePortals/PortalLayerManager")
 	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
@@ -54,9 +62,12 @@ func _on_profile_requested():
 	var profile_scene = load("res://scenes/ui/screens/PlayerProfileScreen.tscn")
 	if profile_scene:
 		active_secondary_screen = profile_scene.instantiate()
-		var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
-		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
-		if ui_layer: ui_layer.add_child(active_secondary_screen)
+		if ModalWindowManager:
+			ModalWindowManager.push_modal(active_secondary_screen, true)
+		else:
+			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+			if ui_layer: ui_layer.add_child(active_secondary_screen)
 		
 		if active_secondary_screen.has_signal("return_requested"):
 			active_secondary_screen.return_requested.connect(show_landing_screen)
@@ -69,9 +80,12 @@ func _on_discover_requested():
 	var discover_scene = load("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
 	if discover_scene:
 		active_secondary_screen = discover_scene.instantiate()
-		var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
-		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
-		if ui_layer: ui_layer.add_child(active_secondary_screen)
+		if ModalWindowManager:
+			ModalWindowManager.push_modal(active_secondary_screen, true)
+		else:
+			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+			if ui_layer: ui_layer.add_child(active_secondary_screen)
 		
 		active_secondary_screen.return_requested.connect(show_landing_screen)
 		active_secondary_screen.play_universe_requested.connect(_on_play_universe_requested)
@@ -79,7 +93,8 @@ func _on_discover_requested():
 func _on_play_universe_requested(universe_id: String):
 	print("[ROUTER] Play Universe requested: ", universe_id)
 	if active_secondary_screen:
-		active_secondary_screen.queue_free()
+		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
+		else: active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
 	ThemeManager.apply_theme(universe_id)

@@ -7,8 +7,8 @@ signal discover_requested
 func _ready():
 	print("BUTTON READY: BtnPlay")
 	
-	# Ensure root panel actively catches input and is not bypassed
-	$Panel.mouse_filter = Control.MOUSE_FILTER_STOP
+	# Full-screen input absorption delegated entirely to ModalWindowManager (Rule 2)
+	$Panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	
 	$Panel/VBoxContainer/BtnPlay.pressed.connect(_on_play_pressed)
 	$Panel/VBoxContainer/BtnProfile.pressed.connect(_on_profile_pressed)
@@ -50,9 +50,12 @@ func _check_directors_pass_status():
 func _show_directors_pass_gate():
 	var gate_scene = preload("res://scenes/ui/screens/MonetizationGate.tscn")
 	var gate = gate_scene.instantiate()
-	add_child(gate)
+	if ModalWindowManager: ModalWindowManager.push_modal(gate, true)
+	else: add_child(gate)
+	
 	gate.setup_directors_pass()
 	gate.purchase_completed.connect(func():
+		if ModalWindowManager: ModalWindowManager.pop_modal(gate)
 		for child in $Panel/VBoxContainer.get_children():
 			if child is Button and child.text == "★ DIRECTOR'S PASS":
 				child.queue_free()
