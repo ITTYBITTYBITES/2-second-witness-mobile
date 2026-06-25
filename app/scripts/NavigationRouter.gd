@@ -15,7 +15,7 @@ func _input(_event):
 		return
 
 func show_landing_screen():
-	if ModalWindowManager: ModalWindowManager.pop_all_modals(active_landing_screen)
+	if ModalWindowManager: ModalWindowManager.pop_all_modals(active_landing_screen if is_instance_valid(active_landing_screen) else null)
 	if active_secondary_screen and is_instance_valid(active_secondary_screen):
 		active_secondary_screen.queue_free()
 		active_secondary_screen = null
