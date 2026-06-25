@@ -1,73 +1,82 @@
 # PRODUCT: 2 Second Witness
-# DEFINITIVE STRATEGIC ROADMAP & TWO-PHASE PRODUCT LIFECYCLE
+# DEFINITIVE STRATEGIC ROADMAP & EXPERIENCE MATURITY PIPELINE
 
 ## Executive Summary
-This document establishes the definitive product roadmap for *2 Second Witness*. By separating infrastructure validation from spatial presentation, the project adopts a pragmatic, two-phase product lifecycle. This strategy ensures that the core psychometric value proposition (`Play -> Insight -> Progress -> Repeat`) is fully validated in a shipment-ready binary before transitioning to an immersive spatial interaction model.
+This document establishes the definitive product roadmap for *2 Second Witness*. By framing development around **experience maturity** rather than implementation details ("buttons vs. holograms"), the project adopts a pragmatic, low-risk product lifecycle. This strategy ensures that the core psychometric value proposition is fully validated with real users in a polished release before executing a comprehensive spatial interaction expansion.
 
 ---
 
-## 1. The Two-Phase Product Lifecycle
+## 1. The Experience Maturity Roadmap
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                     TWO-PHASE PRODUCT LIFECYCLE                         │
-├───────────────────────────────────┬─────────────────────────────────────┤
-│   VERSION 1.x (BUILD THE PRODUCT) │   VERSION 2.x (IMMERSION UPDATE)    │
-├───────────────────────────────────┼─────────────────────────────────────┤
-│ • Proves cognitive engine works   │ • 2D CanvasLayer UI disappears      │
-│ • Conventional 2D button menus    │ • Menu buttons become 3D constructs │
-│ • Complete 12-scenario matrix     │ • Discovery grid becomes orbiting   │
-│ • Production monetization wiring  │   3D universe map                   │
-│ • Flawless 60FPS Android lock     │ • Profile becomes living 3D Mirror  │
-└───────────────────────────────────┴─────────────────────────────────────┘
+│                     EXPERIENCE MATURITY PIPELINE                        │
+├──────────────────────────┬──────────────────────────┬───────────────────┤
+│          PHASE           │          GOAL            │   SUCCESS METRIC  │
+├──────────────────────────┼──────────────────────────┼───────────────────┤
+│ • Milestone 1            │ • Complete Product       │ • Every navigation│
+│   (Foundation & Gameplay)│                          │   path works,     │
+│                          │                          │   every scenario  │
+│                          │                          │   launches, every │
+│                          │                          │   feature function│
+├──────────────────────────┼──────────────────────────┼───────────────────┤
+│ • Milestone 2            │ • Polish Product         │ • Refined visuals,│
+│   (Polished Release)     │                          │   animation,      │
+│                          │                          │   performance,    │
+│                          │                          │   accessibility,  │
+│                          │                          │   onboarding      │
+├──────────────────────────┼──────────────────────────┼───────────────────┤
+│ • Milestone 3            │ • Experience Validation  │ • Do users enjoy  │
+│   (Human Validation)     │                          │   and benefit from│
+│                          │                          │   the experience? │
+├──────────────────────────┼──────────────────────────┼───────────────────┤
+│ • Milestone 4            │ • Spatial Experience     │ • Replace conven- │
+│   (Immersion Expansion)  │                          │   tional UI with  │
+│                          │                          │   diegetic/spatial│
+│                          │                          │   interaction     │
+└──────────────────────────┴──────────────────────────┴───────────────────┘
 ```
 
-### Version 1.x (Build the Product)
-The primary objective of Version 1.x is proving that the cognitive engine works. The application utilizes a clean, conventional 2D button interface (`CanvasLayer`) that acts as an uncompromised gateway to the psychometric engine. 
-*   `Core Value Loop:` Open App $\rightarrow$ Play $\rightarrow$ Complete Scenario $\rightarrow$ Receive Insight $\rightarrow$ Progress $\rightarrow$ Unlock $\rightarrow$ Repeat.
-*   `Success Criteria:` Stable navigation, complete gameplay loop, all 12 scenarios fully implemented, persistent player profile saving/loading, weekly discovery rotations, production monetization wiring (`AdMob` / `Google Play Billing`), and visual polish.
-
-### Version 2.x (The Immersion Update)
-Version 2.x represents a monumental feature update where the 2D user interface disappears entirely, transitioning the application into a true immersive spatial cognitive simulation.
-*   `Spatial Menu:` `[Play]`, `[Discover]`, and `[Profile]` buttons become three floating holographic constructs suspended in the 3D tunnel void.
-*   `Orbiting Discovery:` The `WeeklyFeaturedScreen` grid dissolves as the tunnel blossoms into six floating 3D universe portals orbiting around the player.
-*   `Living Cognitive Mirror:` The `PlayerProfileScreen` text panel is replaced by a 3D "Cognitive Mirror" where psychological traits orbit like constellations and statistics become living visualizations.
-*   `Continuous Traversal:` `Return` buttons vanish; the camera actively navigates world space to transition between game states.
+### The Definitive Product Journey
+$$\text{Foundation} \longrightarrow \text{Complete Gameplay} \longrightarrow \text{Polished Release} \longrightarrow \text{Validate with Users} \longrightarrow \text{Immersion Expansion} \longrightarrow \text{Spatial Cognitive Universe}$$
 
 ---
 
-## 2. The 3-Milestone Execution Strategy
+## 2. Milestone Definitions & Success Metrics
 
-### Milestone 1 – Functional Beta
-**Goal:** Complete the core value loop and eliminate all technical debt.
-*   Complete every navigation path across `NavigationRouter`.
-*   Ensure every button hitbox functions flawlessly with zero input swallowing.
-*   Verify every universe launches cleanly via `PortalLayerManager`.
-*   Finish the data binding and payload injection for all 12 flagship scenarios.
-*   Enforce local I/O persistence (`user://profile.save`).
-*   Fix all remaining 2D Control alignment and layout issues.
-*   Eliminate dead ends, empty containers, and placeholder screens.
+### Milestone 1 – Complete Product (Foundation & Gameplay)
+**Goal:** Prove that the complete gameplay loop functions flawlessly.
+*   `Navigation Routing:` Every button, portal, and menu transition connects cleanly with zero input swallowing.
+*   `Universe Launching:` Every base universe instantiates its respective shaders, tunnel buffers, and world gates.
+*   `Scenario Execution:` All 12 flagship cognitive tasks load, inject payloads, execute scoring, and trigger slingshot re-entry.
+*   `Persistence:` Seamless saving and loading of the `PlayerProfile` baseline and Goodwill tokens (`user://profile.save`).
+*   `Monetization:` Active wiring for AdMob production callbacks and Google Play Billing modals.
 
-### Milestone 2 – Public Release
-**Goal:** Polish the vertical slice and ship to the Google Play Store.
-*   Improve UI tween animations and ubershader transitions.
-*   Refine the visual glass styleboxes and typography.
-*   Optimize multi-mesh buffer pooling to guarantee a flawless 60FPS lock on Android hardware.
-*   Mount production AdMob keys and Google Play Billing bridges.
+### Milestone 2 – Polish Product (Polished Release)
+**Goal:** Deliver an elegant, highly polished vertical slice ready for public installation.
+*   `Visual Refinement:` Upgrade UI glass styleboxes, typography, and ubershader flow materials.
+*   `Visceral Animation:` Smooth out slingshot momentum decay curves and menu tween transitions.
+*   `Performance Lock:` Guarantee a flawless, uncompromised 60FPS lock on Android hardware.
+*   `Onboarding:` Ensure immediate clarity for first-time users upon launching the application.
 *   **Ship Version 1.0.0.**
 
-### Milestone 3 – "Immersion Update" (Version 2.x)
-**Goal:** Transform the application into an immersive spatial simulation.
-*   Replace 2D buttons with 3D spatial interaction hitboxes (`Area3D`).
-*   Replace 2D CanvasLayer menus with floating world portals.
-*   Replace profile screens with the 3D Cognitive Mirror.
-*   Replace discovery screens with the living universe map.
-*   Replace dialogs with diegetic holographic overlays.
-*   Replace scene swapping with continuous world traversal.
+### Milestone 3 – Experience Validation (Human Validation)
+**Goal:** Validate the core value proposition with real humans before expanding presentation.
+*   `Core Question:` **Do users actually enjoy and benefit from the cognitive experience?**
+*   `Strategic Action:` If users voluntarily repeat the loop and engage with their generated profile insights, proceed to Milestone 4. If they do not, iterate strictly on gameplay mechanics, feedback clarity, progression curves, and insight depth.
+
+### Milestone 4 – Spatial Experience (Immersion Expansion)
+**Goal:** Transition the application into a true immersive spatial cognitive simulation.
+*   `Diegetic Navigation:` Replace conventional UI menus with floating holographic constructs and world portals.
+*   `Living Cognitive Mirror:` Replace text panels with an immersive 3D mirror reflecting orbiting psychological vectors.
+*   `Orbiting Discovery:` Replace the 2D grid screen with a living 3D universe map suspended in the tunnel void.
+*   `Continuous Traversal:` Eliminate scene swapping in favor of continuous camera flight through world space.
 
 ---
 
-## 3. Architectural Readiness for V2
-The backend architecture (`InteractionKernel`, `WorldAssetCompiler`, `RuntimeMeasurementIsolation`, `NavigationRouter`, `ModalWindowManager`) is fully decoupled from the presentation layer. 
+## 3. The Definitive Definition of "Done"
+The project formally retires the technical milestone of `Architecture Complete`. True completion is defined exclusively by the first-time user experience flow:
 
-Because the singletons operate on explicit intent dictionaries (`commit_intent({"type": "enter_stream"})`) and maintain separate modal locks per input modality, transitioning from 2D `Button` nodes to 3D `Area3D` RayCasts in Version 2.x requires zero modifications to the underlying control flow or telemetry singletons. The foundation is 100% complete and fully scalable.
+$$\text{Install App} \longrightarrow \text{Understand It} \longrightarrow \text{Play in 10s} \longrightarrow \text{Complete Scenario} \longrightarrow \text{Receive Insight} \longrightarrow \text{Want to Play Another}$$
+
+If this sequence executes consistently, we have a product.
