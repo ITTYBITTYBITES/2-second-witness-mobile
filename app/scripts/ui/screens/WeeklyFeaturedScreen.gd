@@ -75,6 +75,7 @@ func _populate_grid():
 		grid.add_child(btn)
 
 func _on_universe_clicked(universe_id: String, can_play: bool):
+	print("CARD CLICKED:", universe_id)
 	AudioManager.play_sfx("ui_click")
 	if can_play:
 		play_universe_requested.emit(universe_id)
