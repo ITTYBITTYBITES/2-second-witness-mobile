@@ -6,11 +6,9 @@ extends Node
 # ---------------------------------------------------------
 
 var _http_request: HTTPRequest
-# In production, replace this with your actual secure endpoint (e.g., AWS API Gateway, Firebase, Supabase)
 const TELEMETRY_ENDPOINT = "https://api.ittybittybites.com/telemetry/ingest"
 
 func _ready():
-	# If the device is not part of the silent cohort, don't even instantiate the network node.
 	if IVC0_InstrumentConfig and not IVC0_InstrumentConfig.is_cohort_member:
 		set_process(false)
 		return
@@ -20,11 +18,15 @@ func _ready():
 
 func log_trial(scenario_id: String, universe_id: String, raw_rt: float, corrected_rt: float, success: bool, familiarity: int):
 	if IVC0_InstrumentConfig and not IVC0_InstrumentConfig.is_cohort_member:
-		return # Do nothing for normal players
+		return 
 		
+	# INJECT DETERMINISTIC VERSION PINNING
+	var content_version = GitHubSyncManager.get_active_content_version() if GitHubSyncManager else "unknown"
+	
 	var data = {
 		"timestamp": Time.get_unix_time_from_system(),
 		"device_hash": IVC0_InstrumentConfig.device_hash,
+		"content_version": content_version, # Critical for scientific validity
 		"scenario_id": scenario_id,
 		"universe_id": universe_id,
 		"success": success,
@@ -33,10 +35,7 @@ func log_trial(scenario_id: String, universe_id: String, raw_rt: float, correcte
 		"familiarity_index": familiarity
 	}
 	
-	# 1. Local Cache (Fallback if offline)
 	_cache_to_disk(data)
-	
-	# 2. Silent Uplink
 	_uplink_to_server(data)
 
 func _cache_to_disk(data: Dictionary):

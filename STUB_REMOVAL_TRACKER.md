@@ -25,9 +25,9 @@
 - [ ] `ReflexTap.gd`: Replace random spawn coordinates with payload-driven bounds.
 
 ## 3. NETWORK & INTEGRATION (External APIs)
-- [ ] `GitHubSyncManager.gd`: Replace `# Download files` comment with actual HTTPRequest loops to download patches to `user://`.
+- [x] `GitHubSyncManager.gd`: Replace `# Download files` comment with actual HTTPRequest loops to download patches to `user://`.
 - [ ] `StoreManager.gd`: Replace `await get_tree().create_timer(1.0).timeout` with Google Play Billing API integration.
-- [ ] `StructuredLogger.gd`: Verify the telemetry endpoint or keep it strictly local-cache for IVC-0.
+- [x] `StructuredLogger.gd`: Verify the telemetry endpoint or keep it strictly local-cache for IVC-0.
 - [ ] `DiagnosticAutomator._uplink_failure_signature()`: Replace `pass` with actual HTTP POST to GitHub/Server.
 
 ## 4. ASSET MOUNTING (Art Fallback Removal)
