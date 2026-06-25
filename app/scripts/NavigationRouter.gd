@@ -15,13 +15,13 @@ func _input(_event):
 
 func show_landing_screen():
 	if active_secondary_screen and is_instance_valid(active_secondary_screen):
-		if InteractionKernel: InteractionKernel.pop_modal(active_secondary_screen)
+		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
 		else: active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
 	if active_landing_screen and is_instance_valid(active_landing_screen):
 		active_landing_screen.show_screen()
-		if InteractionKernel: InteractionKernel.push_modal(active_landing_screen, false)
+		if ModalWindowManager: ModalWindowManager.push_modal(active_landing_screen, false)
 		return
 		
 	var landing_scene = load("res://scenes/ui/screens/LandingScreen.tscn")
@@ -31,8 +31,8 @@ func show_landing_screen():
 		
 	active_landing_screen = landing_scene.instantiate()
 	
-	if InteractionKernel:
-		InteractionKernel.push_modal(active_landing_screen, false)
+	if ModalWindowManager:
+		ModalWindowManager.push_modal(active_landing_screen, false)
 	else:
 		var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
@@ -49,7 +49,7 @@ func _on_play_requested():
 	print("UNIVERSE BOOT START")
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
-		if InteractionKernel: InteractionKernel.pop_modal(active_landing_screen)
+		if ModalWindowManager: ModalWindowManager.pop_modal(active_landing_screen)
 		
 	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	print("STEP 2: PORTAL LOOKUP = ", portal_mgr)
@@ -70,8 +70,8 @@ func _on_profile_requested():
 	var profile_scene = load("res://scenes/ui/screens/PlayerProfileScreen.tscn")
 	if profile_scene:
 		active_secondary_screen = profile_scene.instantiate()
-		if InteractionKernel:
-			InteractionKernel.push_modal(active_secondary_screen, true)
+		if ModalWindowManager:
+			ModalWindowManager.push_modal(active_secondary_screen, true)
 		else:
 			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
@@ -88,8 +88,8 @@ func _on_discover_requested():
 	var discover_scene = load("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
 	if discover_scene:
 		active_secondary_screen = discover_scene.instantiate()
-		if InteractionKernel:
-			InteractionKernel.push_modal(active_secondary_screen, true)
+		if ModalWindowManager:
+			ModalWindowManager.push_modal(active_secondary_screen, true)
 		else:
 			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
@@ -103,7 +103,7 @@ func _on_play_universe_requested(universe_id: String):
 	print("[ROUTER] Play Universe requested: ", universe_id)
 	print("UNIVERSE BOOT START")
 	if active_secondary_screen:
-		if InteractionKernel: InteractionKernel.pop_modal(active_secondary_screen)
+		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
 		else: active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
