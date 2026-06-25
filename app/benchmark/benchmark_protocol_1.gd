@@ -99,6 +99,9 @@ func _start_session(universe_id: String, world_id: String = ""):
 		def = world_renderer.get_world_modifiers(world_id, def)
 		shader.apply_theme(def, active_universe, world_id)
 		
+		# Propagate Audio Identity based on the exact same World Modifiers
+		AudioManager.apply_audio_profile(active_universe, world_id, def)
+		
 	current_loops = 0
 	
 	var portal_layer = get_node_or_null("/root/MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
