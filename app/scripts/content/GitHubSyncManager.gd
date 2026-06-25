@@ -12,14 +12,21 @@ const USER_CACHE_DIR = "user://live_content/"
 const LOCAL_MANIFEST_PATH = "user://live_content/manifest.json"
 
 var _http_request: HTTPRequest
+var _patch_request: HTTPRequest
 var _is_syncing: bool = false
 var _active_manifest_version: String = "1.0.0"
+var _pending_patches: Array = []
+var _current_manifest_payload: Dictionary = {}
 
 func _ready():
 	print("[GITHUB SYNC] Online. Guarding deterministic boundaries.")
 	_http_request = HTTPRequest.new()
 	add_child(_http_request)
 	_http_request.request_completed.connect(_on_manifest_downloaded)
+	
+	_patch_request = HTTPRequest.new()
+	add_child(_patch_request)
+	_patch_request.request_completed.connect(_on_patch_downloaded)
 	
 	_load_local_manifest_version()
 
@@ -57,20 +64,50 @@ func _on_manifest_downloaded(result, response_code, headers, body):
 	
 	if _is_version_greater(remote_version, _active_manifest_version):
 		print("[GITHUB SYNC] New Content Version detected: ", remote_version)
-		# Future: Iterate remote_data["patches"], download sequentially, validate schemas.
-		# For now, we simulate the patch application to close the stub.
-		_apply_patches_and_lock_version(remote_data)
+		
+		# Begin OTA Download Pipeline
+		_current_manifest_payload = remote_data
+		_pending_patches = remote_data.get("patches", [])
+		
+		# Create local directory if it doesn't exist
+		if not DirAccess.dir_exists_absolute(USER_CACHE_DIR + "patches/"):
+			DirAccess.make_dir_recursive_absolute(USER_CACHE_DIR + "patches/")
+			
+		_download_next_patch()
 	else:
 		print("[GITHUB SYNC] Local cache is up-to-date. Content version: ", _active_manifest_version)
 		_is_syncing = false
 		sync_completed.emit("success")
 
-func _apply_patches_and_lock_version(manifest_data: Dictionary):
-	# 1. Ensure directory exists
-	if not DirAccess.dir_exists_absolute(USER_CACHE_DIR):
-		DirAccess.make_dir_recursive_absolute(USER_CACHE_DIR)
+func _download_next_patch():
+	if _pending_patches.is_empty():
+		_apply_patches_and_lock_version(_current_manifest_payload)
+		return
 		
-	# 2. Write the new manifest to disk atomically
+	var patch = _pending_patches.pop_front()
+	var url = patch.get("url", "")
+	var target_path = USER_CACHE_DIR + "patches/" + patch.get("id", "unknown.json") + ".json"
+	
+	print("[GITHUB SYNC] Downloading patch: ", url)
+	_patch_request.download_file = target_path
+	var error = _patch_request.request(url)
+	
+	if error != OK:
+		print("[GITHUB SYNC FATAL] Patch download failed to initiate. Aborting OTA update.")
+		_is_syncing = false
+		sync_completed.emit("failed_patch_download")
+
+func _on_patch_downloaded(result, response_code, headers, body):
+	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
+		print("[GITHUB SYNC FATAL] Patch download failed. Code: ", response_code, ". Aborting OTA update.")
+		_is_syncing = false
+		sync_completed.emit("failed_patch_download")
+		return
+		
+	# Loop until the array is empty
+	_download_next_patch()
+
+func _apply_patches_and_lock_version(manifest_data: Dictionary):
 	var file = FileAccess.open(LOCAL_MANIFEST_PATH, FileAccess.WRITE)
 	if file:
 		file.store_string(JSON.stringify(manifest_data, "\t"))
@@ -97,7 +134,6 @@ func _load_local_manifest_version():
 	print("[GITHUB SYNC] Engine bound to Content Version: ", _active_manifest_version)
 
 func _is_version_greater(new_ver: String, old_ver: String) -> bool:
-	# Basic semantic version comparison (e.g., 1.0.1 > 1.0.0)
 	var n = new_ver.split(".")
 	var o = old_ver.split(".")
 	for i in range(min(n.size(), o.size())):

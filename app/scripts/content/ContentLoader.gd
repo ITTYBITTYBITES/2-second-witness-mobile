@@ -9,7 +9,9 @@ func _ready():
 	print("[CONTENT LOADER] Initialized. Crawling Base Bundle...")
 	_crawl_directory(BASE_BUNDLE_PATH)
 	
-	# Future: Crawl USER_CACHE_PATH here to overwrite base bundle with OTA patches
+	if DirAccess.dir_exists_absolute(USER_CACHE_PATH + "patches/"):
+		print("[CONTENT LOADER] OTA Patches detected. Overwriting base registry...")
+		_crawl_directory(USER_CACHE_PATH + "patches/")
 
 func _crawl_directory(path: String):
 	var dir = DirAccess.open(path)
