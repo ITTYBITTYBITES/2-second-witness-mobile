@@ -27,7 +27,7 @@ func spawn_lens_portal(chunk_id: String):
 	
 	# The Lens Morphology Engine determines the visual complexity tier of the lens
 	# based on the player's lifetime mastery of this SPECIFIC WORLD.
-	var mastery_engine = LensMorphology.new()
+	var mastery_engine = LensMorphology
 	var mastery_tier = mastery_engine.get_world_mastery(active_universe_id, active_world_id)
 	
 	var profile = def["lens_profile"] + "_tier_" + str(mastery_tier)

@@ -14,7 +14,7 @@ func reset_pool(max_chunks: int, universe_id: String = "science_lab"):
 	var structure_mat = load("res://assets/materials/lab_structure.tres")
 	var node_mat = load("res://assets/materials/lab_data_node.tres")
 	
-	var asset_registry = AssetManifestRegistry.new()
+	var asset_registry = AssetManifestRegistry
 	var manifest = asset_registry.get_manifest(universe_id)
 	
 	var resolved_mesh_path = asset_registry.resolve_asset(manifest, "rib_mesh")

@@ -17,7 +17,7 @@ func _ready():
 		var lens_profile = destination_data.get("lens_profile", "particle_accelerator_tier_0")
 		var complexity = destination_data.get("complexity", 1)
 		
-		var asset_registry = AssetManifestRegistry.new()
+		var asset_registry = AssetManifestRegistry
 		var mesh_res = null
 		
 		if world_id != "":

@@ -37,7 +37,7 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab", wo
 	_material.set_shader_parameter("density", density_val)
 	_material.set_shader_parameter("flow_type", flow_int)
 	
-	var asset_registry = AssetManifestRegistry.new()
+	var asset_registry = AssetManifestRegistry
 	var manifest = asset_registry.get_manifest(universe_id)
 	
 	var noise_tex = null
