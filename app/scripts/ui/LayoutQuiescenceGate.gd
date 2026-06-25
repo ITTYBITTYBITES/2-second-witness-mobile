@@ -8,7 +8,6 @@ class_name LayoutQuiescenceGate
 
 signal layout_stabilized
 
-var _target_ui: CanvasLayer
 var _is_waiting: bool = false
 var _stable_frames: int = 0
 var _required_stable_frames: int = 3 # Guarantee Godot's internal multi-pass reflow is exhausted

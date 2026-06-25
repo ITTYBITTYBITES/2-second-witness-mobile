@@ -21,7 +21,7 @@ const MEMORY_WARNING_MB = 900.0
 const MEMORY_CRITICAL_MB = 1200.0
 const FPS_MINIMUM = 45.0
 
-var _degrade_timer: float = 0.0
+# var _degrade_timer: float = 0.0
 
 # Ring Buffers for Frame Pacing
 const BUFFER_SIZE = 600
@@ -68,8 +68,8 @@ func _process(delta):
 	_buffer_indices[primary_context] = (idx + 1) % BUFFER_SIZE
 	_buffer_counts[primary_context] = min(_buffer_counts[primary_context] + 1, BUFFER_SIZE)
 
-	var mem_mb = OS.get_static_memory_usage() / 1048576.0
-	var fps = Engine.get_frames_per_second()
+	var _mem_mb = OS.get_static_memory_usage() / 1048576.0
+	var _fps = Engine.get_frames_per_second()
 	
 	# DISABLED FOR PROTOCOL 1 BENCHMARK PURITY
 	# if fps < FPS_MINIMUM or mem_mb > MEMORY_WARNING_MB:

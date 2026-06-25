@@ -122,7 +122,7 @@ static func generate_iris_mesh(descriptor: Dictionary) -> ArrayMesh:
 	var base_shape = iris.get("base_shape", "ring")
 	var complexity = int(iris.get("complexity", 1))
 	var det = descriptor.get("determinism", {})
-	var seed_val = det.get("seed", 12345)
+	var _seed_val = det.get("seed", 12345)
 	
 	var vertices = PackedVector3Array()
 	var uvs = PackedVector2Array()
@@ -133,7 +133,7 @@ static func generate_iris_mesh(descriptor: Dictionary) -> ArrayMesh:
 	var radius_inner = 3.0
 	
 	if base_shape == "gear":
-		var teeth = 8 * complexity
+		var _teeth = 8 * complexity
 		for i in range(segments):
 			var angle1 = (float(i) / segments) * TAU
 			var angle2 = (float(i + 1) / segments) * TAU

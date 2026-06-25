@@ -49,7 +49,7 @@ func _ready():
 	else:
 		print("[AD MANAGER] AdMob Plugin NOT found. Using simulated fallback.")
 
-func _on_loop_completed(payload: Dictionary):
+func _on_loop_completed(_payload: Dictionary):
 	_loops_since_last_ad += 1
 
 func check_and_show_ad() -> bool:
@@ -87,7 +87,7 @@ func _show_video_ad(is_rewarded: bool):
 func _on_video_closed():
 	ad_finished.emit()
 
-func _on_reward_earned(currency: String, amount: int):
+func _on_reward_earned(_currency: String, _amount: int):
 	reward_granted.emit()
 
 func _show_dummy_ad():

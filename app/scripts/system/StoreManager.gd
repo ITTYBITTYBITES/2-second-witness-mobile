@@ -40,3 +40,8 @@ func _on_purchase_success(item_id: String):
 		profile.save_profile()
 		
 	purchase_completed.emit(item_id)
+
+func _on_purchase_failure(reason: String):
+	print("[STORE MANAGER] Purchase Failed: ", reason)
+	purchase_failed.emit(reason)
+
