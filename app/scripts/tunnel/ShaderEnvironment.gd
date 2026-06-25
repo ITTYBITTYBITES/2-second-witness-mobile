@@ -13,7 +13,8 @@ func _ready():
 	
 	NavigationEngine.transition_sequence_started.connect(_on_spike_started)
 	
-func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab", world_id: String = ""):
+func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: String = ""):
+	if universe_id == "": universe_id = theme_data.get("id", "science_lab")
 	active_universe_id = universe_id
 	var tunnel = theme_data.get("tunnel", {})
 	

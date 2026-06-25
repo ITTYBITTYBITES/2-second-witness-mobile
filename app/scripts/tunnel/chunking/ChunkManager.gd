@@ -18,6 +18,7 @@ func _ready():
 	_detect_device_performance()
 
 func apply_theme(theme_data: Dictionary):
+	var universe_id = theme_data.get("id", "science_lab")
 	var tunnel = theme_data.get("tunnel", {})
 	active_speed_multiplier = tunnel.get("speed_multiplier", 1.0)
 	var theme_density = tunnel.get("density", 1.0)
@@ -29,7 +30,7 @@ func apply_theme(theme_data: Dictionary):
 	
 	# Instruct subsystems to purge and recreate for the new Theme
 	instance_registry.assign_mesh_profiles(theme_data)
-	chunk_pool.reset_pool(MAX_VISIBLE_CHUNKS)
+	chunk_pool.reset_pool(MAX_VISIBLE_CHUNKS, universe_id)
 	stream_controller.set_flow_speed(active_speed_multiplier)
 	chunk_spawner.seed_initial_buffer(final_density)
 

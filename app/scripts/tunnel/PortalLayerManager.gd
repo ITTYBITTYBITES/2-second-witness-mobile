@@ -7,7 +7,8 @@ var active_world_id: String = ""
 func _ready():
 	pass
 
-func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab", world_id: String = ""):
+func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: String = ""):
+	if universe_id == "": universe_id = theme_data.get("id", "science_lab")
 	active_universe_id = universe_id
 	active_world_id = world_id
 	var tunnel = theme_data.get("tunnel", {})

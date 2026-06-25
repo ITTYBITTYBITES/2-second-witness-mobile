@@ -23,7 +23,7 @@ func _process(delta):
 			# Spawning the next recurrence hook at baseline stabilization
 			var new_iris = preload("res://scripts/portals/ScenarioNode.gd").new()
 			new_iris.position = Vector3(0, 0, -25)
-			new_iris.setup(2, {"universe": "science_lab", "world": "cognitive_bias", "chunk_id": "next"})
+			new_iris.setup(2, {"universe": ThemeManager.active_theme_id if ThemeManager.active_theme_id != "" else "science_lab", "world": "cognitive_bias", "chunk_id": "next"})
 			portal_layer.add_child(new_iris)
 			
 			print("[TUNNEL CORE] Slingshot stabilized. Next Iris spawned.")
