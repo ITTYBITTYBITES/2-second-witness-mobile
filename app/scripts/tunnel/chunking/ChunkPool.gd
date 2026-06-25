@@ -16,9 +16,9 @@ func reset_pool(max_chunks: int, universe_id: String = "science_lab"):
 	
 	var asset_registry = AssetManifestRegistry.new()
 	var manifest = asset_registry.get_manifest(universe_id)
-	var rib_mesh = load(manifest["rib_mesh"])
-	if not rib_mesh:
-		rib_mesh = BoxMesh.new()
+	
+	var resolved_mesh_path = asset_registry.resolve_asset(manifest, "rib_mesh")
+	var rib_mesh = load(resolved_mesh_path)
 		
 	# Update Material Colors based on Universe
 	var renderer = UniverseRenderer.new()

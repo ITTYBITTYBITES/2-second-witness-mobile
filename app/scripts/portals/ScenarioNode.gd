@@ -11,9 +11,16 @@ func _ready():
 	# Mount the final Crystalline Iris Geometry
 	if mesh_instance == null:
 		mesh_instance = MeshInstance3D.new()
-		var loaded_mesh = load("res://assets/meshes/iris_crystalline.obj")
-		if not loaded_mesh: loaded_mesh = TorusMesh.new()
-		mesh_instance.mesh = loaded_mesh
+		
+		# 1. Ask AssetResolver for the exact mesh based on the setup dictionary
+		var uni = destination_data.get("universe", "science_lab")
+		var lens_profile = destination_data.get("lens_profile", "particle_accelerator_tier_0")
+		
+		var asset_registry = AssetManifestRegistry.new()
+		var manifest = asset_registry.get_manifest(uni)
+		var resolved_mesh_path = asset_registry.resolve_asset(manifest, lens_profile)
+		
+		mesh_instance.mesh = load(resolved_mesh_path)
 		
 		# Apply the glowing visual material
 		mesh_instance.material_override = load("res://assets/materials/portal_glow.tres")

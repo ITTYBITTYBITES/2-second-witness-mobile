@@ -41,11 +41,13 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "science_lab", wo
 	var manifest = asset_registry.get_manifest(universe_id)
 	
 	# If the World has a specific background noise override, load it
-	var noise_path = manifest["bg_noise"]
+	var noise_key = "bg_noise"
 	if world_id != "" and manifest.has("worlds") and manifest["worlds"].has(world_id) and manifest["worlds"][world_id].has("bg_noise"):
-		noise_path = manifest["worlds"][world_id]["bg_noise"]
+		# In a full expansion, Worlds would have their own nested keys
+		pass 
 		
-	var noise_tex = load(noise_path)
+	var resolved_noise_path = asset_registry.resolve_asset(manifest, noise_key)
+	var noise_tex = load(resolved_noise_path)
 	if noise_tex:
 		_material.set_shader_parameter("noise_tex", noise_tex)
 		
