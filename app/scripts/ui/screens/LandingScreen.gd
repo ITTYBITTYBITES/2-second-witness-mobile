@@ -7,8 +7,7 @@ signal discover_requested
 func _ready():
 	print("BUTTON READY: BtnPlay")
 	
-	# Control node treated purely as a render surface driven by central Arbiter state
-	if UIInputArbiter: UIInputArbiter.register_panel($Panel, UIInputArbiter.UIState.MODAL_ACTIVE)
+	if UIInputArbiter: UIInputArbiter.register_panel($Panel, "main_menu", UIInputArbiter.UIState.MODAL_ACTIVE)
 	
 	$Panel/VBoxContainer/BtnPlay.pressed.connect(_on_play_pressed)
 	$Panel/VBoxContainer/BtnProfile.pressed.connect(_on_profile_pressed)
@@ -24,17 +23,20 @@ func _ready():
 func _on_play_pressed():
 	print("SIGNAL PRESSED: BtnPlay")
 	print("BUTTON PRESSED: BtnPlay")
-	play_requested.emit()
+	if InteractionLedger: InteractionLedger.commit_intent({"type": "enter_stream"})
+	else: play_requested.emit()
 
 func _on_profile_pressed():
 	print("SIGNAL PRESSED: BtnProfile")
 	print("BUTTON PRESSED: BtnProfile")
-	profile_requested.emit()
+	if InteractionLedger: InteractionLedger.commit_intent({"type": "scene_shift", "target": "PlayerProfileScreen"})
+	else: profile_requested.emit()
 
 func _on_discover_pressed():
 	print("SIGNAL PRESSED: BtnDiscover")
 	print("BUTTON PRESSED: BtnDiscover")
-	discover_requested.emit()
+	if InteractionLedger: InteractionLedger.commit_intent({"type": "scene_shift", "target": "WeeklyFeaturedScreen"})
+	else: discover_requested.emit()
 
 func _check_directors_pass_status():
 	var profile = get_node_or_null("/root/PlayerProfile")
@@ -63,18 +65,18 @@ func _show_directors_pass_gate():
 
 func hide_screen():
 	AdManager.hide_banner()
-	if UIInputArbiter: UIInputArbiter.begin_transition($Panel)
+	if UIInputArbiter: UIInputArbiter.begin_transition($Panel, "main_menu")
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 0.0, 0.5)
 	tween.tween_callback(func():
-		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.HIDDEN)
+		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.HIDDEN, "main_menu")
 	)
 
 func show_screen():
 	AdManager.show_banner()
-	if UIInputArbiter: UIInputArbiter.begin_transition($Panel)
+	if UIInputArbiter: UIInputArbiter.begin_transition($Panel, "main_menu")
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 1.0, 0.5)
 	tween.tween_callback(func():
-		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.MODAL_ACTIVE)
+		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.MODAL_ACTIVE, "main_menu")
 	)
