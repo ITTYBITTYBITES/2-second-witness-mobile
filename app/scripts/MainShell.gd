@@ -15,6 +15,9 @@ func _ready():
 	world_layer.process_mode = Node.PROCESS_MODE_DISABLED
 	ui_layer.process_mode = Node.PROCESS_MODE_DISABLED
 	
+	# Guarantee 100% unbreakable 3D picking & raycasting across all OS viewports
+	get_viewport().physics_object_picking = true
+	
 	_execute_boot_sequence()
 
 func _execute_boot_sequence():

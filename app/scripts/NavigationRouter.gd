@@ -4,6 +4,7 @@ signal routed_to(destination: Dictionary)
 
 var active_landing_screen = null
 var active_secondary_screen = null
+var active_gameplay_hud = null
 
 func _ready():
 	BootTracer.log_init("NavigationRouter")
@@ -18,6 +19,9 @@ func show_landing_screen():
 		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
 		else: active_secondary_screen.queue_free()
 		active_secondary_screen = null
+		
+	if active_gameplay_hud and is_instance_valid(active_gameplay_hud):
+		active_gameplay_hud.visible = false
 		
 	if active_landing_screen and is_instance_valid(active_landing_screen):
 		active_landing_screen.show_screen()
@@ -44,6 +48,49 @@ func show_landing_screen():
 	active_landing_screen.show_screen()
 	print("[ROUTER] Landing Screen instantiated and active.")
 
+func _show_gameplay_hud():
+	if active_gameplay_hud and is_instance_valid(active_gameplay_hud):
+		active_gameplay_hud.visible = true
+		return
+		
+	var hud_root = get_tree().root.get_node_or_null("MainShell/UILayer/HUDRoot")
+	if not hud_root: return
+	
+	active_gameplay_hud = Control.new()
+	active_gameplay_hud.name = "GameplayHUD"
+	active_gameplay_hud.set_anchors_preset(Control.PRESET_FULL_RECT)
+	active_gameplay_hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	
+	var btn_leave = Button.new()
+	btn_leave.custom_minimum_size = Vector2(180, 60)
+	btn_leave.position = Vector2(40, 40)
+	btn_leave.text = "< LEAVE STREAM"
+	btn_leave.add_theme_font_size_override("font_size", 20)
+	
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color(0.08, 0.08, 0.12, 0.85)
+	style.border_width_bottom = 4
+	style.border_color = Color(0.968, 0.145, 0.521)
+	style.corner_radius_top_left = 8
+	style.corner_radius_top_right = 8
+	style.corner_radius_bottom_left = 8
+	style.corner_radius_bottom_right = 8
+	
+	btn_leave.add_theme_stylebox_override("normal", style)
+	btn_leave.add_theme_stylebox_override("hover", style.duplicate())
+	btn_leave.add_theme_stylebox_override("pressed", style.duplicate())
+	btn_leave.add_theme_color_override("font_color", Color(0.9, 0.9, 0.95))
+	
+	btn_leave.pressed.connect(func():
+		AudioManager.play_sfx("ui_click")
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "scene_shift", "target": "LandingScreen"})
+		else: show_landing_screen()
+	)
+	
+	active_gameplay_hud.add_child(btn_leave)
+	hud_root.add_child(active_gameplay_hud)
+	print("[ROUTER] Gameplay HUD attached. Exit stream path active.")
+
 func _on_play_requested():
 	print("STEP 1: PLAY REQUEST RECEIVED")
 	print("UNIVERSE BOOT START")
@@ -51,6 +98,8 @@ func _on_play_requested():
 		active_landing_screen.hide_screen()
 		if ModalWindowManager: ModalWindowManager.pop_modal(active_landing_screen)
 		
+	_show_gameplay_hud()
+	
 	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	print("STEP 2: PORTAL LOOKUP = ", portal_mgr)
 	
@@ -107,6 +156,8 @@ func _on_play_universe_requested(universe_id: String):
 		else: active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
+	_show_gameplay_hud()
+	
 	ThemeManager.apply_theme(universe_id)
 	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	print("STEP 2: PORTAL LOOKUP = ", portal_mgr)
