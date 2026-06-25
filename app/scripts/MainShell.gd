@@ -45,6 +45,7 @@ func _execute_boot_sequence():
 	tween.tween_callback(func():
 		overlay.visible = false
 		overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		print("[KERNEL] Transition overlay freed. Visual incoherence window closed.")
 	)
 	
 	print("========================================")

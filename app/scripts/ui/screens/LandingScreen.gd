@@ -65,11 +65,13 @@ func _show_directors_pass_gate():
 
 func hide_screen():
 	AdManager.hide_banner()
+	print("[INTERACTION DESIGN] Initiating 500ms Transitional Alpha Masking window. Hitboxes visually present but input suppressed.")
 	if UIInputArbiter: UIInputArbiter.begin_transition($Panel, "main_menu")
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 0.0, 0.5)
 	tween.tween_callback(func():
 		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.HIDDEN, "main_menu")
+		print("[INTERACTION DESIGN] Alpha Masking complete. Visual incoherence window closed.")
 	)
 
 func show_screen():
