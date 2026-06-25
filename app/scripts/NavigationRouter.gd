@@ -87,9 +87,26 @@ func _show_gameplay_hud():
 		else: show_landing_screen()
 	)
 	
+	var btn_mirror = Button.new()
+	btn_mirror.custom_minimum_size = Vector2(180, 60)
+	btn_mirror.position = Vector2(240, 40)
+	btn_mirror.text = "★ THE MIRROR"
+	btn_mirror.add_theme_font_size_override("font_size", 20)
+	btn_mirror.add_theme_stylebox_override("normal", style)
+	btn_mirror.add_theme_stylebox_override("hover", style.duplicate())
+	btn_mirror.add_theme_stylebox_override("pressed", style.duplicate())
+	btn_mirror.add_theme_color_override("font_color", Color(0.298, 0.788, 0.941))
+	
+	btn_mirror.pressed.connect(func():
+		AudioManager.play_sfx("ui_click")
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "scene_shift", "target": "PlayerProfileScreen"})
+		else: _on_profile_requested()
+	)
+	
 	active_gameplay_hud.add_child(btn_leave)
+	active_gameplay_hud.add_child(btn_mirror)
 	hud_root.add_child(active_gameplay_hud)
-	print("[ROUTER] Gameplay HUD attached. Exit stream path active.")
+	print("[ROUTER] Gameplay HUD attached. Persistent 3-Layer UI separation active.")
 
 func _on_play_requested():
 	print("STEP 1: PLAY REQUEST RECEIVED")
@@ -173,7 +190,7 @@ func _on_play_universe_requested(universe_id: String):
 			if ui_layer: ui_layer.add_child(active_secondary_screen)
 			
 		print("→ WORLD SELECT SCREEN PUSHED")
-		active_secondary_screen.return_requested.connect(_on_discover_requested) # Back to Discovery
+		active_secondary_screen.return_requested.connect(_on_discover_requested)
 		active_secondary_screen.world_selected.connect(_on_world_selected)
 
 func _on_world_selected(universe_id: String, world_id: String):
@@ -194,7 +211,6 @@ func _on_world_selected(universe_id: String, world_id: String):
 		push_error("PORTAL MANAGER NULL")
 		return
 		
-	# Apply specific world overlay parameters
 	if portal_mgr.has_method("apply_theme"):
 		portal_mgr.apply_theme(ThemeManager.get_active_theme(), universe_id, world_id)
 		
