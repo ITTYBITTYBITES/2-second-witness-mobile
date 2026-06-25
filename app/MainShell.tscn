@@ -38,22 +38,27 @@ far = 1000.0
 [node name="HUDRoot" type="Control" parent="UILayer"]
 layout_mode = 3
 anchors_preset = 15
+mouse_filter = 2
 
 [node name="NavigationUI" type="Control" parent="UILayer"]
 layout_mode = 3
 anchors_preset = 15
+mouse_filter = 2
 
 [node name="ScenarioUI" type="Control" parent="UILayer"]
 layout_mode = 3
 anchors_preset = 15
+mouse_filter = 2
 
 [node name="TransitionOverlay" type="ColorRect" parent="UILayer"]
 anchors_preset = 15
 color = Color(0, 0, 0, 1)
+mouse_filter = 2
 
 [node name="MonetizationUI" type="Control" parent="UILayer"]
 layout_mode = 3
 anchors_preset = 15
+mouse_filter = 2
 
 
 [node name="AudioLayer" type="Node" parent="."]

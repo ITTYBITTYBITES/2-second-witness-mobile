@@ -39,12 +39,16 @@ func _execute_boot_sequence():
 	print("[BOOT: 10] UILayer attaching. Presentation ready.")
 	ui_layer.process_mode = Node.PROCESS_MODE_INHERIT
 	
+	var overlay = $UILayer/TransitionOverlay
 	var tween = get_tree().create_tween()
-	tween.tween_property($UILayer/TransitionOverlay, "color:a", 0.0, 1.0)
+	tween.tween_property(overlay, "color:a", 0.0, 1.0)
+	tween.tween_callback(func():
+		overlay.visible = false
+		overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	)
 	
 	print("========================================")
 	print("[KERNEL] System Stable. Handoff to Navigation Engine.")
 	print("========================================")
 	
-	# THE CRITICAL HANDOFF: Instantiate and display the Landing Screen UI
 	NavigationRouter.show_landing_screen()

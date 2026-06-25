@@ -5,12 +5,36 @@ signal profile_requested
 signal discover_requested
 
 func _ready():
-	$Panel/VBoxContainer/BtnPlay.pressed.connect(func(): play_requested.emit())
-	$Panel/VBoxContainer/BtnProfile.pressed.connect(func(): profile_requested.emit())
-	$Panel/VBoxContainer/BtnDiscover.pressed.connect(func(): discover_requested.emit())
+	print("BUTTON READY: BtnPlay")
 	
-	# Add the Director's Pass Upsell to the main menu if they don't own it
+	# Ensure root panel actively catches input and is not bypassed
+	$Panel.mouse_filter = Control.MOUSE_FILTER_STOP
+	
+	$Panel/VBoxContainer/BtnPlay.pressed.connect(_on_play_pressed)
+	$Panel/VBoxContainer/BtnProfile.pressed.connect(_on_profile_pressed)
+	$Panel/VBoxContainer/BtnDiscover.pressed.connect(_on_discover_pressed)
+	
+	$Panel/VBoxContainer/BtnPlay.gui_input.connect(func(event):
+		if event is InputEventMouseButton and event.pressed:
+			print("GUI INPUT CLICK: BtnPlay")
+	)
+	
 	_check_directors_pass_status()
+
+func _on_play_pressed():
+	print("SIGNAL PRESSED: BtnPlay")
+	print("BUTTON PRESSED: BtnPlay")
+	play_requested.emit()
+
+func _on_profile_pressed():
+	print("SIGNAL PRESSED: BtnProfile")
+	print("BUTTON PRESSED: BtnProfile")
+	profile_requested.emit()
+
+func _on_discover_pressed():
+	print("SIGNAL PRESSED: BtnDiscover")
+	print("BUTTON PRESSED: BtnDiscover")
+	discover_requested.emit()
 
 func _check_directors_pass_status():
 	var profile = get_node_or_null("/root/PlayerProfile")
@@ -29,7 +53,6 @@ func _show_directors_pass_gate():
 	add_child(gate)
 	gate.setup_directors_pass()
 	gate.purchase_completed.connect(func():
-		# Refresh UI so the button disappears
 		for child in $Panel/VBoxContainer.get_children():
 			if child is Button and child.text == "★ DIRECTOR'S PASS":
 				child.queue_free()
