@@ -1,5 +1,4 @@
 extends Node
-class_name GoodwillManager
 
 const SAVE_PATH = "user://grace.save"
 const SAVE_SCHEMA_VERSION = 1

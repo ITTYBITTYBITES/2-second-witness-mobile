@@ -12,7 +12,8 @@ func handle_navigation_event(event: Dictionary):
 		
 		var cascade_scene_name = SamplingController.get_next_scenario()
 		var seed_string = str(PlayerProfile.lifetime_sessions) + dest.get("chunk_id", "0")
-		var scenario_payload = ContentRegistry.resolve_scenario(dest.get("universe", "science_lab"), cascade_scene_name, seed_string)
+		var world_id = dest.get("world", "")
+		var scenario_payload = ContentRegistry.resolve_scenario(dest.get("universe", "science_lab"), world_id, cascade_scene_name, seed_string)
 		
 		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(cascade_scene_name) + ".tscn")
 		if cascade_scene == null:

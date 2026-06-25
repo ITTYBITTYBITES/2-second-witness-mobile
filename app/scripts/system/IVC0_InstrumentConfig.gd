@@ -1,5 +1,4 @@
 extends Node
-class_name IVC0_InstrumentConfig
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
