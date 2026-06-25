@@ -3,6 +3,7 @@ extends Node
 var runtime_index = {} # Structure: [universe_id][world_id][type_id] = Array[Dictionary]
 
 func _ready():
+	BootTracer.log_init("ContentRegistry")
 	print("ContentRegistry initialized. Awaiting content ingestion...")
 
 func register_scenario(data: Dictionary):

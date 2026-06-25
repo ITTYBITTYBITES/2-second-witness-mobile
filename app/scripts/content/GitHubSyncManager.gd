@@ -19,6 +19,7 @@ var _pending_patches: Array = []
 var _current_manifest_payload: Dictionary = {}
 
 func _ready():
+	BootTracer.log_init("GitHubSyncManager")
 	print("[GITHUB SYNC] Online. Guarding deterministic boundaries.")
 	_http_request = HTTPRequest.new()
 	add_child(_http_request)

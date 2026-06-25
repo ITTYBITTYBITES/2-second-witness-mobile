@@ -25,6 +25,7 @@ var audio_assets = {
 }
 
 func _ready():
+	BootTracer.log_init("AudioManager")
 	print("[AUDIO MANAGER] Online. Initializing Audio Buses.")
 	
 	_ambient_player = AudioStreamPlayer.new()

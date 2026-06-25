@@ -6,6 +6,7 @@ const BASE_BUNDLE_PATH = "res://data/content/base_bundle/"
 const USER_CACHE_PATH = "user://live_content/"
 
 func _ready():
+	BootTracer.log_init("ContentLoader")
 	print("[CONTENT LOADER] Initialized. Crawling Base Bundle...")
 	_crawl_directory(BASE_BUNDLE_PATH)
 	

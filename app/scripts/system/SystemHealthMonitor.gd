@@ -33,6 +33,7 @@ var _buffer_counts: Dictionary = {}
 var _tracked_resources: Array[Dictionary] = [] # Array of {"tag": String, "ref": WeakRef, "intent": int}
 
 func _ready():
+	BootTracer.log_init("SystemHealthMonitor")
 	print("[HEALTH MONITOR] Online. Enforcing Android Budget Constraints.")
 	for ctx in [1, 2, 4, 8]:
 		var arr = PackedFloat64Array()

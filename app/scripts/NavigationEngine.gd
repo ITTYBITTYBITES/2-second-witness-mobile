@@ -11,6 +11,7 @@ enum PortalState {
 }
 
 func _ready():
+	BootTracer.log_init("NavigationEngine")
 	print("NavigationEngine initialized. Serving as Navigation Layer truth source.")
 	# Late connection to Router to handle load order
 	call_deferred("_connect_to_router")

@@ -8,6 +8,7 @@ var _active_registry_snapshot: Dictionary = {}
 var _last_stable_version: String = "1.0.0"
 
 func _ready():
+	BootTracer.log_init("ContentSnapshotManager")
 	print("[SNAPSHOT MANAGER] Active. Monitoring Content Integrity.")
 
 func create_snapshot(version: String, registry_state: Dictionary):

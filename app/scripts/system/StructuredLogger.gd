@@ -9,6 +9,7 @@ var _http_request: HTTPRequest
 const TELEMETRY_ENDPOINT = "https://api.ittybittybites.com/telemetry/ingest"
 
 func _ready():
+	BootTracer.log_init("StructuredLogger")
 	if IVC0_InstrumentConfig and not IVC0_InstrumentConfig.is_cohort_member:
 		set_process(false)
 		return

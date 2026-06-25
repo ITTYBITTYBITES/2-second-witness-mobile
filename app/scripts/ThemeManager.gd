@@ -7,6 +7,7 @@ var active_theme_data: Dictionary = {}
 var _theme_registry: Dictionary = {}
 
 func _ready():
+	BootTracer.log_init("ThemeManager")
 	print("ThemeManager initialized. Compiling visual identities...")
 	_load_all_themes()
 	

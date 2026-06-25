@@ -13,6 +13,7 @@ const PRODUCT_DIRECTORS_PASS = "directors_pass" # $7.99
 const PRODUCT_UNIVERSE_UNLOCK = "universe_unlock_" # $2.99 per universe
 
 func _ready():
+	BootTracer.log_init("StoreManager")
 	print("[STORE MANAGER] Online. Mocking App Store APIs.")
 
 func initiate_purchase(item_id: String):

@@ -7,6 +7,7 @@ var ad_skips_inventory: int = 0
 var last_grace_timestamp: int = 0
 
 func _ready():
+	BootTracer.log_init("GoodwillManager")
 	print("[GOODWILL MANAGER] Online. Watching the floor.")
 	_load_goodwill_state()
 
