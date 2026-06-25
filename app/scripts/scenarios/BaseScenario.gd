@@ -9,7 +9,7 @@ class_name BaseScenario
 var _scenario_payload: Dictionary = {}
 var _deterministic_rng: RandomNumberGenerator
 
-func inject_payload(payload: Dictionary, seed_val: int):
+func inject_payload(payload: Dictionary, seed_val: int = 12345):
 	if payload.is_empty():
 		push_error("[SCENARIO FATAL] Injection failed. Payload is empty. Terminating.")
 		queue_free()

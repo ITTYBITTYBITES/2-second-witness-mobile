@@ -137,7 +137,7 @@ func handle_navigation_event(event: Dictionary):
 		var cascade = cascade_scene.instantiate()
 		
 		if cascade.has_method("inject_payload"):
-			cascade.inject_payload(scenario_payload)
+			cascade.inject_payload(scenario_payload, seed_string.hash())
 		
 		var world_layer = get_tree().root.get_node("MainShell/WorldLayer")
 		if world_layer:
