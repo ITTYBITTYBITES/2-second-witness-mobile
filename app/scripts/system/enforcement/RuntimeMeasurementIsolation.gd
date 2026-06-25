@@ -34,7 +34,7 @@ func _capture_hardware_signature():
 		"is_android": OS.has_feature("android"),
 		"static_memory_base_mb": OS.get_static_memory_usage() / 1048576.0
 	}
-	gpu_pipeline_state_version = str(hardware_profile["adapter_name"]).hash() + "_" + str(ProjectSettings.get_setting("vulkan/rendering/shader_compilation_mode", 2))
+	gpu_pipeline_state_version = str(str(hardware_profile["adapter_name"]).hash()) + "_" + str(ProjectSettings.get_setting("vulkan/rendering/shader_compilation_mode", 2))
 	print("[MEASUREMENT ISOLATION] Hardware Signature Vector captured: ", hardware_profile["adapter_name"])
 
 func _execute_residency_warmup():
