@@ -13,6 +13,7 @@ var failure_vectors = {
 }
 
 func _ready():
+	BootTracer.log_init("DiagnosticAutomator")
 	current_device_model = OS.get_model_name()
 	_load_diagnostic_state()
 	print("[DIAGNOSTIC] Monitoring device: ", current_device_model)

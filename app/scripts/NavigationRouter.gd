@@ -3,6 +3,7 @@ extends Node
 signal routed_to(destination: Dictionary)
 
 func _ready():
+	BootTracer.log_init("NavigationRouter")
 	print("NavigationRouter initialized. Awaiting structured events.")
 
 func handle_navigation_event(event: Dictionary):

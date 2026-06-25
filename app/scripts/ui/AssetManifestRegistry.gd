@@ -1,13 +1,6 @@
 extends Node
 
-# ---------------------------------------------------------
-# PRODUCT: 2 Second Witness
-# VERSION-LOCKED ASSET MANIFESTS (STRICT BINDING)
-# ---------------------------------------------------------
-
 const CURRENT_ASSET_VERSION = "v1.0.0"
-
-# Missing assets must fail loudly. We define a specific DEGRADED asset, not a silent primitive.
 const DEGRADED_MESH_PATH = "res://assets/meshes/degraded_fallback.obj"
 
 var manifests = {
@@ -62,6 +55,9 @@ var manifests = {
 		}
 	}
 }
+
+func _ready():
+	BootTracer.log_init("AssetManifestRegistry")
 
 func get_manifest(universe_id: String, version: String = CURRENT_ASSET_VERSION) -> Dictionary:
 	if not manifests.has(version):

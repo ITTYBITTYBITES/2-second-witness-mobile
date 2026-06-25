@@ -7,6 +7,7 @@ var spikes_failed: int = 0
 var spike_stats: Dictionary = {} # { "stroop_042": { "attempts": 2, "successes": 1 } }
 
 func _ready():
+	BootTracer.log_init("SessionTracker")
 	session_start_time = Time.get_unix_time_from_system()
 	print("[SESSION TRACKER] Session started at timestamp: ", session_start_time)
 	

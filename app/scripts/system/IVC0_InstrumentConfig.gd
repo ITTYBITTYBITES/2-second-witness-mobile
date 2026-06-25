@@ -13,6 +13,7 @@ var device_hash: String = ""
 const FORCE_IVC0_CLINICAL_MODE = false
 
 func _ready():
+	BootTracer.log_init("IVC0_InstrumentConfig")
 	device_hash = str(OS.get_unique_id().hash())
 	
 	if FORCE_IVC0_CLINICAL_MODE:

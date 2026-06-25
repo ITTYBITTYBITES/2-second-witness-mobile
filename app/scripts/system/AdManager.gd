@@ -34,6 +34,7 @@ func _init():
 		ADMOB_BANNER_ID = "ca-app-pub-3940256099942544/6300978111"
 
 func _ready():
+	BootTracer.log_init("AdManager")
 	print("[AD MANAGER] Online. Live Ads Enabled: ", USE_LIVE_ADS)
 	NavigationEngine.navigation_event.connect(_on_loop_completed)
 	
