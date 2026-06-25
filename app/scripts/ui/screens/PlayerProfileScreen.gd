@@ -11,6 +11,17 @@ func _ready():
 	print("Size: ", $PanelContainer.size)
 	print("Children: ", get_child_count())
 	
+	$PanelContainer.mouse_filter = Control.MOUSE_FILTER_PASS
+	$VoidBG.mouse_filter = Control.MOUSE_FILTER_STOP
+	
+	$VoidBG.gui_input.connect(func(event):
+		if event is InputEventMouseButton and event.pressed:
+			print("[COGNITIVE MIRROR] Background clicked. Exiting mirror.")
+			AudioManager.play_sfx("ui_click")
+			AdManager.hide_banner()
+			return_requested.emit()
+	)
+	
 	AdManager.show_banner()
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()
@@ -45,7 +56,9 @@ func _populate_data():
 	var btn_return = Button.new()
 	btn_return.custom_minimum_size = Vector2(0, 50)
 	btn_return.text = "RETURN TO MENU"
+	btn_return.mouse_filter = Control.MOUSE_FILTER_STOP
 	btn_return.add_theme_font_size_override("font_size", 20)
+	
 	var style = StyleBoxFlat.new()
 	style.bg_color = Color(0.1, 0.2, 0.3)
 	style.corner_radius_top_left = 12
@@ -54,8 +67,11 @@ func _populate_data():
 	style.corner_radius_bottom_right = 12
 	btn_return.add_theme_stylebox_override("normal", style)
 	btn_return.add_theme_stylebox_override("hover", style.duplicate())
+	btn_leave = style.duplicate() # Keep reference
 	btn_return.add_theme_stylebox_override("pressed", style.duplicate())
+	
 	btn_return.pressed.connect(func():
+		print("[COGNITIVE MIRROR] Return button clicked. Exiting mirror.")
 		AudioManager.play_sfx("ui_click")
 		AdManager.hide_banner()
 		return_requested.emit()
@@ -68,3 +84,5 @@ func _populate_data():
 	var tween = get_tree().create_tween().set_parallel(true)
 	tween.tween_property(panel, "modulate:a", 1.0, 0.6).set_trans(Tween.TRANS_SINE)
 	tween.tween_property(panel, "position:y", panel.position.y - 50, 0.6).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
+
+var btn_leave
