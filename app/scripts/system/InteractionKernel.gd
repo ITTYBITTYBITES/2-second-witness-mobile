@@ -163,6 +163,7 @@ func _process(_delta):
 		call_deferred("_drain_command_buffer")
 	else:
 		current_epoch += 1
+		_consumed_provenance_tokens.clear()
 
 func _drain_command_buffer():
 	if _intent_buffer.is_empty() or _is_committing_side_effects: return
@@ -173,6 +174,10 @@ func _drain_command_buffer():
 	
 	var start_commit_usec = Time.get_ticks_usec()
 	print("[KERNEL LEDGER] Draining Command Buffer for Epoch ", current_epoch, " (Commands: ", current_commands.size(), ")")
+	
+	# Guarantee no orphaned transition locks persist across command boundaries
+	_active_transitions_count = 0
+	_transitional_suppression_lock = false
 	
 	for command in current_commands:
 		var incoherence_lag_ms = (start_commit_usec - command["timestamp_usec"]) / 1000.0
@@ -190,6 +195,7 @@ func _drain_command_buffer():
 	_is_committing_side_effects = false
 	epoch_resolved.emit(current_epoch)
 	current_epoch += 1
+	_consumed_provenance_tokens.clear()
 
 func _execute_serialized_command(command: Dictionary):
 	var command_type = command.get("type", "")
