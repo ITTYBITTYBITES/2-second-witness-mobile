@@ -1,26 +1,40 @@
 # PROTOCOL 8: CROSS-UNIVERSE CALIBRATION TESTING
+*Validating the Invariance of the Cognitive Mirror*
 
 **Objective:**
-Prove that the underlying psychometric instrument (The Cognitive Mirror) remains statistically invariant under systematic perceptual perturbation (Universe Rendering Manifolds). 
+Falsify the assumption that the `WitnessEngine` measures cognition equally across all perceptual manifolds. We actively attempt to prove that World rendering (Colors, Fog, Audio, Geometry) biases the reaction time (RT) or error distribution of a fixed Cognitive Task.
 
-**The Hypothesis:**
-The canonical output of a scenario (RT distributions, Error Types) is driven entirely by the user's cognitive state and the scenario's logical constraints, NOT by the aesthetic framing or luminance contrast of the Universe it is rendered within.
+## 1. THE CALIBRATION UNIT (THE ANCHOR)
+A `CalibrationTrial` is an immutable, paired-sample experiment execution.
+- **Task Kernel:** `signal_vs_noise` (Visual Search) & `stroop_test` (Interference).
+- **Invariant State:** Fixed Seed `88888`. Fixed Target Distribution. Fixed 5.0s Timing Envelope.
+- **The Variable:** Rendered sequentially in Universe A (Science Lab) and Universe B (Tech Ops).
 
-**The Calibration Unit (The Invariant Anchor):**
-We define a `CalibrationTrial`. This is an immutable experiment execution:
-- Fixed Scenario: `signal_vs_noise_001`
-- Fixed Seed: `88888` (Forces identical spatial distribution of the 15 noise labels and 1 target)
-- Fixed Timing: `5.0s` envelope.
-- Executed as a paired-sample across Universe A (Science Lab) and Universe B (Tech Ops).
+## 2. REQUIRED SAMPLE SIZES
+To achieve statistical significance (avoiding Type II errors) in RT distributions:
+- **Minimum N:** 30 unique human subjects (IVC-0 cohort scaling).
+- **Trials Per Subject:** 50 paired iterations (100 trials total per subject, alternating Universes).
+- **Outlier Scrubbing:** Discard any RT sample where the Godot P99 frame-time > 17.0ms in the 1 second prior to the tap (filters device latency). Discard RTs > 2.5s (filters distraction).
 
-**The Dependent Variables (Invariance Dimensions):**
-1. **Behavioral Invariance:** P50 and P95 Reaction Time (RT). We are looking for distribution shifts, not just mean shifts.
-2. **Error Type Distribution:** Ratio of False Positives (clicked 'Present' when absent) vs False Negatives (time expired or clicked 'Absent' when present). 
-3. **Salience Bias Index:** A derived residual measuring the pre-attentive pull of the manifold. If Universe B consistently produces RTs 50ms faster than Universe A on the exact same spatial seed, Universe B has a Salience Bias that must be mathematically neutralized before logging to the `PlayerProfile`.
+## 3. STATISTICAL METHODOLOGY & DRIFT METRICS
+We do not compare means (Averages lie). We compare distributions using within-subject paired testing.
+- **The Primary Test:** *Wilcoxon signed-rank test* on paired RT distributions (Universe A vs Universe B).
+- **The Secondary Test:** *McNemar's test* on paired Error Typology (False Positive vs False Negative ratios).
 
-**Execution Constraints:**
-- Must use within-subject paired testing (same human runs the exact same seed on both universes).
-- The `UniverseRenderer` is the *only* allowed variable. The `AssetResolver` mounts the respective textures.
+**Drift Detection Metrics:**
+1. **Δ P50 RT:** The median reaction time drift between Universe A and Universe B.
+2. **Δ P95 RT:** The tail-latency drift (Does Tech Ops cause more hesitation?).
+3. **Salience Bias Index (SBI):** The raw millisecond deviation from the baseline Universe.
 
-**Falsification:**
-If the Instrument Stability Index drops (i.e., RT distributions diverge by > 5% between Universe A and Universe B for the exact same seed), the hypothesis is falsified. The perceptual manifold is contaminating the cognitive measurement, and the Universe aesthetics must be re-calibrated.
+## 4. PASS / FAIL CRITERIA
+The Perceptual Manifold is **FAILED** and must be re-art-directed if any of the following occur:
+- **Bias Threshold 1:** The Δ P50 RT between Universe A and Universe B exceeds **± 25ms** (Statistical significance *p < 0.05*).
+- **Bias Threshold 2:** The Error Typology shifts by more than **5%** (e.g., Players make 5% more False Negative errors in Life Sciences because the organic shapes camouflage the target).
+- **Bias Threshold 3:** The Δ P95 RT exceeds **± 50ms**.
+
+## 5. CORRECTION MECHANISMS
+If a Universe FAILS the calibration protocol, it is mathematically proven to be a corrupted instrument. 
+**We DO NOT adjust the data to fit the Universe. We adjust the Universe to fit the data.**
+1. **Luminance Adjustment:** If RT is systematically slower in *Roman Empire*, the ambient lighting is too dark or the background contrast is competing with the Task Kernel. Raise `computed_contrast` in the `ThemeResolver`.
+2. **Motion Dampening:** If P95 hesitation is higher, the background tunnel flow (`speed_multiplier`) or particle count is inducing motion sickness/distraction. Clamp the `TunnelIntensity` to a lower max state.
+3. **Re-Test:** Execute Protocol 8 again until the SBI falls below the ± 25ms threshold.
