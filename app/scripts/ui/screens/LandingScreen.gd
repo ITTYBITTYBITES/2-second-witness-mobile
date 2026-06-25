@@ -7,8 +7,8 @@ signal discover_requested
 func _ready():
 	print("BUTTON READY: BtnPlay")
 	
-	# Full-screen input absorption delegated entirely to ModalWindowManager (Rule 2)
-	$Panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# Control node treated purely as a render surface driven by central Arbiter state
+	if UIInputArbiter: UIInputArbiter.register_panel($Panel, UIInputArbiter.UIState.MODAL_ACTIVE)
 	
 	$Panel/VBoxContainer/BtnPlay.pressed.connect(_on_play_pressed)
 	$Panel/VBoxContainer/BtnProfile.pressed.connect(_on_profile_pressed)
@@ -63,12 +63,18 @@ func _show_directors_pass_gate():
 
 func hide_screen():
 	AdManager.hide_banner()
+	if UIInputArbiter: UIInputArbiter.begin_transition($Panel)
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 0.0, 0.5)
-	tween.tween_callback(func(): visible = false)
+	tween.tween_callback(func():
+		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.HIDDEN)
+	)
 
 func show_screen():
 	AdManager.show_banner()
-	visible = true
+	if UIInputArbiter: UIInputArbiter.begin_transition($Panel)
 	var tween = get_tree().create_tween()
 	tween.tween_property($Panel, "modulate:a", 1.0, 0.5)
+	tween.tween_callback(func():
+		if UIInputArbiter: UIInputArbiter.end_transition($Panel, UIInputArbiter.UIState.MODAL_ACTIVE)
+	)

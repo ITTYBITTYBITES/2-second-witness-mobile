@@ -10,8 +10,9 @@ func _ready():
 	print("NavigationRouter initialized. Awaiting structured events.")
 
 func _input(_event):
-	if get_tree().is_input_handled():
+	if UIInputArbiter and UIInputArbiter.is_ui_blocking():
 		return
+	# Navigation router global input handling permitted here
 
 func show_landing_screen():
 	if active_secondary_screen and is_instance_valid(active_secondary_screen):
