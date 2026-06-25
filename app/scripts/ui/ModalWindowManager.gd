@@ -66,6 +66,12 @@ func pop_modal(screen: CanvasLayer = null):
 	var active = _modal_stack[-1] if _modal_stack.size() > 0 else null
 	modal_stack_changed.emit(active)
 
+func pop_all_modals(except_screen: CanvasLayer = null):
+	var modals_to_pop = _modal_stack.duplicate()
+	for modal in modals_to_pop:
+		if modal != except_screen:
+			pop_modal(modal)
+
 func _arbitrate_input_zoning(has_active_modal: bool):
 	if not is_instance_valid(_input_blocker): return
 	

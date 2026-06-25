@@ -15,9 +15,9 @@ func _input(_event):
 		return
 
 func show_landing_screen():
+	if ModalWindowManager: ModalWindowManager.pop_all_modals(active_landing_screen)
 	if active_secondary_screen and is_instance_valid(active_secondary_screen):
-		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
-		else: active_secondary_screen.queue_free()
+		active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
 	if active_gameplay_hud and is_instance_valid(active_gameplay_hud):
@@ -96,7 +96,7 @@ func _on_play_requested():
 	print("UNIVERSE BOOT START")
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
-		if ModalWindowManager: ModalWindowManager.pop_modal(active_landing_screen)
+	if ModalWindowManager: ModalWindowManager.pop_all_modals()
 		
 	_show_gameplay_hud()
 	
@@ -115,6 +115,7 @@ func _on_profile_requested():
 	print("[ROUTER] Profile requested. Opening Cognitive Mirror.")
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
+	if ModalWindowManager: ModalWindowManager.pop_all_modals()
 		
 	var profile_scene = load("res://scenes/ui/screens/PlayerProfileScreen.tscn")
 	if profile_scene:
@@ -133,6 +134,7 @@ func _on_discover_requested():
 	print("[ROUTER] Discovery requested. Opening Weekly Featured Screen.")
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
+	if ModalWindowManager: ModalWindowManager.pop_all_modals()
 		
 	var discover_scene = load("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
 	if discover_scene:
@@ -151,9 +153,9 @@ func _on_play_universe_requested(universe_id: String):
 	print("STEP 1: PLAY REQUEST RECEIVED")
 	print("[ROUTER] Play Universe requested: ", universe_id)
 	print("UNIVERSE BOOT START")
+	if ModalWindowManager: ModalWindowManager.pop_all_modals()
 	if active_secondary_screen:
-		if ModalWindowManager: ModalWindowManager.pop_modal(active_secondary_screen)
-		else: active_secondary_screen.queue_free()
+		active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
 	_show_gameplay_hud()

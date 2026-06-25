@@ -25,7 +25,18 @@ func setup_directors_pass():
 
 func _ready():
 	btn_buy.pressed.connect(_on_buy)
-	btn_cancel.pressed.connect(func(): queue_free())
+	btn_cancel.pressed.connect(func():
+		if ModalWindowManager: ModalWindowManager.pop_modal(self)
+		queue_free()
+	)
+	
+	$ColorRect.gui_input.connect(func(event):
+		if event is InputEventMouseButton and event.pressed:
+			print("[MONETIZATION GATE] Background clicked. Closing gate.")
+			AudioManager.play_sfx("ui_click")
+			if ModalWindowManager: ModalWindowManager.pop_modal(self)
+			queue_free()
+	)
 
 func _on_buy():
 	btn_buy.disabled = true
@@ -36,4 +47,5 @@ func _on_buy():
 	
 	AudioManager.play_sfx("ui_click")
 	purchase_completed.emit()
+	if ModalWindowManager: ModalWindowManager.pop_modal(self)
 	queue_free()
