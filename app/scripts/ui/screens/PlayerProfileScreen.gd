@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+signal return_requested
+
 @onready var lifetime_label = $PanelContainer/MarginContainer/VBoxContainer/Header/LifetimeLabel
 @onready var insights_container = $PanelContainer/MarginContainer/VBoxContainer/InsightsContainer
 
@@ -34,6 +36,26 @@ func _populate_data():
 		lbl.add_theme_color_override("default_color", Color(0.9, 0.9, 0.95))
 		
 		insights_container.add_child(lbl)
+
+	var btn_return = Button.new()
+	btn_return.custom_minimum_size = Vector2(0, 50)
+	btn_return.text = "RETURN TO MENU"
+	btn_return.add_theme_font_size_override("font_size", 20)
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color(0.1, 0.2, 0.3)
+	style.corner_radius_top_left = 12
+	style.corner_radius_top_right = 12
+	style.corner_radius_bottom_left = 12
+	style.corner_radius_bottom_right = 12
+	btn_return.add_theme_stylebox_override("normal", style)
+	btn_return.add_theme_stylebox_override("hover", style.duplicate())
+	btn_return.add_theme_stylebox_override("pressed", style.duplicate())
+	btn_return.pressed.connect(func():
+		AudioManager.play_sfx("ui_click")
+		AdManager.hide_banner()
+		return_requested.emit()
+	)
+	insights_container.add_child(btn_return)
 
 	var panel = $PanelContainer
 	panel.modulate.a = 0

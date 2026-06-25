@@ -2,9 +2,90 @@ extends Node
 
 signal routed_to(destination: Dictionary)
 
+var active_landing_screen = null
+var active_secondary_screen = null
+
 func _ready():
 	BootTracer.log_init("NavigationRouter")
 	print("NavigationRouter initialized. Awaiting structured events.")
+
+func show_landing_screen():
+	if active_secondary_screen and is_instance_valid(active_secondary_screen):
+		active_secondary_screen.queue_free()
+		active_secondary_screen = null
+		
+	if active_landing_screen and is_instance_valid(active_landing_screen):
+		active_landing_screen.show_screen()
+		return
+		
+	var landing_scene = load("res://scenes/ui/screens/LandingScreen.tscn")
+	if not landing_scene:
+		push_error("[ROUTER FATAL] LandingScreen.tscn failed to load.")
+		return
+		
+	active_landing_screen = landing_scene.instantiate()
+	var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+	if not ui_layer:
+		ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+		
+	if ui_layer:
+		ui_layer.add_child(active_landing_screen)
+		
+	active_landing_screen.play_requested.connect(_on_play_requested)
+	active_landing_screen.profile_requested.connect(_on_profile_requested)
+	active_landing_screen.discover_requested.connect(_on_discover_requested)
+	active_landing_screen.show_screen()
+	print("[ROUTER] Landing Screen instantiated and active.")
+
+func _on_play_requested():
+	print("[ROUTER] Play requested. Hiding menu and entering the stream.")
+	if active_landing_screen:
+		active_landing_screen.hide_screen()
+		
+	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_InteractivePortals/PortalLayerManager")
+	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
+		portal_mgr.spawn_lens_portal("0")
+
+func _on_profile_requested():
+	print("[ROUTER] Profile requested. Opening Cognitive Mirror.")
+	if active_landing_screen:
+		active_landing_screen.hide_screen()
+		
+	var profile_scene = load("res://scenes/ui/screens/PlayerProfileScreen.tscn")
+	if profile_scene:
+		active_secondary_screen = profile_scene.instantiate()
+		var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+		if ui_layer: ui_layer.add_child(active_secondary_screen)
+		
+		if active_secondary_screen.has_signal("return_requested"):
+			active_secondary_screen.return_requested.connect(show_landing_screen)
+
+func _on_discover_requested():
+	print("[ROUTER] Discovery requested. Opening Weekly Featured Screen.")
+	if active_landing_screen:
+		active_landing_screen.hide_screen()
+		
+	var discover_scene = load("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
+	if discover_scene:
+		active_secondary_screen = discover_scene.instantiate()
+		var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+		if ui_layer: ui_layer.add_child(active_secondary_screen)
+		
+		active_secondary_screen.return_requested.connect(show_landing_screen)
+		active_secondary_screen.play_universe_requested.connect(_on_play_universe_requested)
+
+func _on_play_universe_requested(universe_id: String):
+	print("[ROUTER] Play Universe requested: ", universe_id)
+	if active_secondary_screen:
+		active_secondary_screen.queue_free()
+		active_secondary_screen = null
+		
+	ThemeManager.apply_theme(universe_id)
+	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_InteractivePortals/PortalLayerManager")
+	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
+		portal_mgr.spawn_lens_portal("0")
 
 func handle_navigation_event(event: Dictionary):
 	if event.get("type") == "portal_selected":
@@ -44,11 +125,14 @@ func _on_cascade_completed():
 	print("[ROUTER] Cognitive Spike resolved. Checking Ad Gate before Slingshot.")
 	
 	if AdManager.check_and_show_ad():
-		# If an ad triggers, wait for it to finish before slingshotting
 		await AdManager.ad_finished
 	
 	SystemHealthMonitor.pop_context(SystemHealthMonitor.ExecContext.SCENARIO_ACTIVE)
 	SystemHealthMonitor.queue_telemetry_dump("Post-Scenario Return")
-	var tunnel = get_tree().root.get_node("MainShell/WorldLayer/TunnelLayer")
+	var tunnel = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer")
 	if tunnel and tunnel.has_method("trigger_slingshot"):
 		tunnel.trigger_slingshot()
+		
+	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_InteractivePortals/PortalLayerManager")
+	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
+		portal_mgr.spawn_lens_portal("0")
