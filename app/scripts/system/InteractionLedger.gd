@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# DEFERRED STATE RECONCILIATION & COMMAND EXECUTION SANDBOX
+# DEFERRED STATE RECONCILIATION & CENTRAL COMMAND BUS
 # ---------------------------------------------------------
 
 signal epoch_resolved(epoch: int)
@@ -13,7 +13,7 @@ var _is_committing_side_effects: bool = false
 
 func _ready():
 	BootTracer.log_init("InteractionLedger")
-	print("[INTERACTION LEDGER] Online. Enforcing Command Buffer Semantics and strict non-reentrant sandbox.")
+	print("[INTERACTION LEDGER] Online. Enforcing Command Buffer Semantics and strict engine-wide side-effect governance.")
 
 func commit_intent(intent: Dictionary):
 	if _is_committing_side_effects:
@@ -62,6 +62,15 @@ func _execute_serialized_command(command: Dictionary):
 			
 		"play_universe":
 			NavigationRouter._on_play_universe_requested(command.get("universe_id", "science_lab"))
+			
+		"ad_resolved":
+			if AdManager: AdManager.ad_finished.emit()
+			
+		"ad_rewarded":
+			if AdManager: AdManager.reward_granted.emit()
+			
+		"sync_completed":
+			if GitHubSyncManager: GitHubSyncManager.sync_completed.emit(command.get("status", "success"))
 			
 		_:
 			print("[INTERACTION LEDGER] Unknown serialized command: ", command_type)

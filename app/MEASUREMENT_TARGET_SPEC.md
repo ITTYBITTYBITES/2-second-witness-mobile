@@ -4,10 +4,13 @@
 ## 1. System Classification
 **Classification:** `A Bayesian ordering inference system over event sequences observed through a non-stationary, partially ordered time distortion channel.`
 
+**Execution Topology:** `A command-buffered interaction layer enforcing single-entry mutation discipline over a retained-mode scene graph with partially ordered event delivery.`
+
 * `Stimulus Generator:` Deterministic ✔
 * `Observation Channel:` Piecewise Monotonic Stochastic Kernel ✔
 * `Inverse Model:` Set-Valued Equivalence Class (Non-Identifiable) ✔
 * `Primary Output:` Posterior over Permutations of Response Order ✔
+* `Execution Reality:` Controlled Side-Effect Serialization (Corralled Nondeterminism) ✔
 
 ---
 
@@ -39,10 +42,9 @@ The primary object produced by *2 Second Witness* is the **posterior over permut
 
 ---
 
-## 5. Statistical Implication for Longitudinal Inference
-As a direct consequence of this formulation, the system rejects the claim of deterministic per-user cognitive drift curves. Instead, longitudinal analysis evaluates:
-1. **Posterior stability of ordering under repeated observation.**
-2. **Entropy reduction across sessions.**
-3. **Convergence of the distribution over permutations.**
+## 5. Engine-Wide Execution Governance (Corralled Nondeterminism)
+The system acknowledges that Godot does not offer a fully isolated execution phase boundary. `_process()` order is scene-tree dependent, and `call_deferred()` operates relative to engine loop phases rather than acting as a global transaction barrier. 
 
-*2 Second Witness* operates definitively as a **probabilistic inference engine over noisy temporal orderings with a structured observation kernel**.
+To achieve maximum stability, the architecture operates as a **controlled side-effect serialization layer over a partially ordered event system**. Nondeterminism is not eliminated; it is corralled into a single controlled execution funnel. 
+
+By enforcing strict system-wide side-effect ownership (**zero mutation anywhere in the project outside the command bus**), external engine-driven emissions (AdMob callbacks, HTTP resource loaders, animation tracks) are explicitly wrapped at source. This represents the definitive boundary between standard engine architecture and a **deterministic simulation kernel over a game engine**.
