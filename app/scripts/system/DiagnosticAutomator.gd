@@ -36,7 +36,7 @@ func _apply_self_healing_patches():
 			if pool and pool.has_method("reset_pool"):
 				pool.reset_pool(2) 
 
-func _uplink_failure_signature(vector: String):
+func _uplink_failure_signature(_vector: String):
 	pass
 
 func _load_diagnostic_state():
