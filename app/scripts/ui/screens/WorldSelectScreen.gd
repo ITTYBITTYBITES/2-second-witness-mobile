@@ -12,8 +12,8 @@ var _is_setup_ready: bool = false
 
 var world_meta = {
 	"ancient_egypt": {"name": "Ancient Egypt", "scenarios": "12 scenarios", "completion": "34%", "rec": "Recommended Today"},
-	"ancient_rome": {"name": "Ancient Rome", "scenarios": "10 scenarios", "completion": "0%", "rec": "Optimal Alignment"},
-	"medieval_europe": {"name": "Medieval Europe", "scenarios": "15 scenarios", "completion": "52%", "rec": "Moderate Alignment"},
+	"pyramids": {"name": "Pyramids", "scenarios": "10 scenarios", "completion": "0%", "rec": "Optimal Alignment"},
+	"nile_delta": {"name": "Nile Delta", "scenarios": "15 scenarios", "completion": "52%", "rec": "Moderate Alignment"},
 	"renaissance": {"name": "Renaissance", "scenarios": "8 scenarios", "completion": "100%", "rec": "Mastered"},
 	"industrial_revolution": {"name": "Industrial Revolution", "scenarios": "14 scenarios", "completion": "15%", "rec": "High Potential"}
 }
@@ -41,21 +41,21 @@ func _populate_grid():
 	
 	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
 	if worlds.is_empty() or active_universe_id == "history":
-		if active_universe_id == "history": worlds = ["ancient_egypt", "ancient_rome", "medieval_europe", "renaissance", "industrial_revolution"]
+		if active_universe_id == "history": worlds = ["ancient_egypt", "pyramids", "nile_delta", "renaissance", "industrial_revolution"]
 		elif active_universe_id == "science_lab": worlds = ["cognitive_bias", "neural_mapping", "ai"]
 		elif active_universe_id == "life_sciences": worlds = ["genetics", "cellular_biology", "virology"]
 		elif active_universe_id == "tech_ops": worlds = ["cyber_matrix", "subliminal_code", "protocols"]
 		else: worlds = ["foundations", "advanced_concepts", "synthesis"]
 		
 	print("Universe:", active_universe_id)
-	print("World count:", worlds.size())
+	print("Loaded ", worlds.size(), " worlds")
 	print(worlds)
 		
 	for child in grid.get_children():
 		child.queue_free()
 		
 	for w_id in worlds:
-		print("Creating world card:", w_id)
+		print("Created card: ", w_id)
 		var btn = Button.new()
 		btn.custom_minimum_size = Vector2(320, 180)
 		btn.mouse_filter = Control.MOUSE_FILTER_STOP

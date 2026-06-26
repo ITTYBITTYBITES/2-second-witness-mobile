@@ -205,34 +205,8 @@ func toggle_mirror_modal():
 
 func _on_play_requested():
 	print("STEP 1: PLAY REQUEST RECEIVED")
-	print("UNIVERSE BOOT START")
-	_is_transitioning_to_landing = false
-	if active_landing_screen: active_landing_screen.hide_screen()
-	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
-		
-	_show_gameplay_hud()
-	
-	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
-	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-	var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
-	var u_id = vector.get("universe", "history")
-	var w_id = vector.get("world", "ancient_egypt")
-	
-	if ThemeManager: ThemeManager.apply_theme(u_id)
-	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
-	print("STEP 2: PORTAL LOOKUP = ", portal_mgr)
-	
-	if portal_mgr == null:
-		print("[ROUTER] Portal Manager not found in scene tree (Standalone/Benchmark mode). Skipping 3D portal spawn.")
-		return
-		
-	if portal_mgr.has_method("apply_theme"):
-		portal_mgr.apply_theme(ThemeManager.get_active_theme() if ThemeManager else {}, u_id, w_id)
-		
-	print("STEP 3: CALLING SPAWN")
-	portal_mgr.spawn_lens_portal("0")
-	print("STEP 4: SPAWN CALL COMPLETED")
+	print("[ROUTER] Tapping Play -> Opening Universe List (WeeklyFeaturedScreen)")
+	_on_discover_requested()
 
 func _on_profile_requested():
 	print("[ROUTER] Profile requested from menu. Invoking HUD utility modal.")
@@ -280,7 +254,7 @@ func _on_play_universe_requested(universe_id: String):
 		active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
-	print("[ROUTER TRACE] Before NavigationRouter.show_world_select(", universe_id, ")")
+	print("[ROUTER] Opening WorldSelectScreen")
 	var world_scene = load("res://scenes/ui/screens/WorldSelectScreen.tscn")
 	if world_scene:
 		active_secondary_screen = world_scene.instantiate()
@@ -295,7 +269,6 @@ func _on_play_universe_requested(universe_id: String):
 			
 		active_secondary_screen.setup(universe_id)
 		print("→ WORLD SELECT SCREEN PUSHED")
-		print("[ROUTER TRACE] After NavigationRouter.show_world_select(", universe_id, ")")
 		
 		_update_nav_log("WorldSelectScreen", false)
 		active_secondary_screen.return_requested.connect(_on_discover_requested)
