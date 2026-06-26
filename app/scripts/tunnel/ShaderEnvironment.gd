@@ -18,12 +18,14 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: Str
 	active_universe_id = universe_id
 	var tunnel = theme_data.get("tunnel", {})
 	
-	# Apply World-level Tunnel Modifiers if they exist
-	var modifiers = theme_data.get("tunnel_modifier", {})
-	var flow_str = modifiers.get("flow_type", tunnel.get("flow_type", "linear"))
-	var density_val = modifiers.get("fog_density", tunnel.get("density", 0.6))
+	var world_prof = WorldProfileCustodian.get_profile(world_id) if world_id != "" and Engine.get_main_loop().root.has_node("WorldProfileCustodian") else {}
+	var tunnel_prof = world_prof.get("tunnel", {})
 	
-	var palette = theme_data.get("palette", {"primary": Color(1,1,1), "bg": Color(0,0,0)})
+	var modifiers = theme_data.get("tunnel_modifier", {})
+	var flow_str = tunnel_prof.get("flow_type", modifiers.get("flow_type", tunnel.get("flow_type", "linear")))
+	var density_val = tunnel_prof.get("density", modifiers.get("fog_density", tunnel.get("density", 0.6)))
+	
+	var palette = world_prof.get("lens", {}).get("colors", theme_data.get("palette", {"primary": Color(1,1,1), "bg": Color(0,0,0)}))
 	
 	var flow_int = 0
 	if flow_str == "vortex": flow_int = 1

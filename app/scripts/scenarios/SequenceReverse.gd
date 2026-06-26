@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends BaseScenario
 signal completed
 
 @onready var feedback_label = $FeedbackLabel
@@ -8,13 +8,24 @@ signal completed
 @onready var btn_3 = $HBoxContainer/Btn3
 
 var correct_idx = 0
+var _scenario_id: String = "sequence_reverse"
+var _start_ticks_msec: int = 0
+
+func _apply_specific_rules(rules: Dictionary):
+	_scenario_id = _scenario_payload["id"]
 
 func _ready():
+	if _scenario_payload.is_empty():
+		push_error("[SCENARIO FATAL] Scene loaded without payload injection.")
+		queue_free()
+		return
+		
+	_start_ticks_msec = Time.get_ticks_msec()
 	feedback_label.text = "Memorize..."
-	# Generate 3 random numbers
-	var n1 = randi() % 9 + 1
-	var n2 = randi() % 9 + 1
-	var n3 = randi() % 9 + 1
+	
+	var n1 = _deterministic_rng.randi() % 9 + 1
+	var n2 = _deterministic_rng.randi() % 9 + 1
+	var n3 = _deterministic_rng.randi() % 9 + 1
 	var original = str(n1) + "  " + str(n2) + "  " + str(n3)
 	var reversed_str = str(n3) + "  " + str(n2) + "  " + str(n1)
 	var fake1 = str(n1) + "  " + str(n3) + "  " + str(n2)
@@ -41,10 +52,14 @@ func _ready():
 		sequence_label.text = "WHAT WAS THE REVERSE?"
 		btn_1.disabled = false; btn_2.disabled = false; btn_3.disabled = false
 	)
+	
+	execute_render_pipeline()
 
 func _on_answer(idx: int):
+	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if idx == correct_idx:
 		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+		PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
 		SessionTracker.record_spike_result("sequence_reverse", true)
 		btn_1.disabled = true; btn_2.disabled = true; btn_3.disabled = true
 		await get_tree().create_timer(0.5).timeout
@@ -52,4 +67,5 @@ func _on_answer(idx: int):
 		queue_free()
 	else:
 		feedback_label.text = "ERROR! Try again."
+		PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), false, rt_ms)
 		SessionTracker.record_spike_result("sequence_reverse", false)

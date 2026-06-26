@@ -17,11 +17,12 @@ var device_performance_factor: float = 1.0 # 0.5 for low-end, 1.0 for high-end
 func _ready():
 	_detect_device_performance()
 
-func apply_theme(theme_data: Dictionary):
-	var universe_id = theme_data.get("id", "science_lab")
+func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: String = ""):
+	if universe_id == "": universe_id = theme_data.get("id", "science_lab")
 	var tunnel = theme_data.get("tunnel", {})
-	active_speed_multiplier = tunnel.get("speed_multiplier", 1.0)
-	var theme_density = tunnel.get("density", 1.0)
+	var world_prof = WorldProfileCustodian.get_profile(world_id) if world_id != "" and Engine.get_main_loop().root.has_node("WorldProfileCustodian") else {}
+	active_speed_multiplier = world_prof.get("tunnel", {}).get("speed_multiplier", tunnel.get("speed_multiplier", 1.0))
+	var theme_density = world_prof.get("tunnel", {}).get("density", tunnel.get("density", 1.0))
 	
 	# Density calculation
 	var final_density = theme_density * device_performance_factor

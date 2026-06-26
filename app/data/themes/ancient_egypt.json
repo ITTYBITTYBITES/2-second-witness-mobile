@@ -1,0 +1,35 @@
+{
+	"world": "ancient_egypt",
+	"lens": {
+		"mesh": "eye_of_horus",
+		"fog_density": 0.8,
+		"colors": {
+			"primary": "#E6B800",
+			"bg": "#1A1400"
+		}
+	},
+	"tunnel": {
+		"density": 0.8,
+		"speed_multiplier": 1.2,
+		"flow_type": "linear"
+	},
+	"audio": {
+		"ambience": "desert_winds",
+		"ui_stem": "stone_click"
+	},
+	"typography": {
+		"font": "hieroglyphic",
+		"spacing": 2.0
+	},
+	"animation": {
+		"camera_sway": 1.5,
+		"transition_ms": 900
+	},
+	"ui": {
+		"glass_opacity": 0.9,
+		"border_color": "#E6B800"
+	},
+	"feedback": {
+		"style": "archaeological"
+	}
+}

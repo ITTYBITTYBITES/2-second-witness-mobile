@@ -12,7 +12,8 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: Str
 	active_universe_id = universe_id
 	active_world_id = world_id
 	var tunnel = theme_data.get("tunnel", {})
-	active_speed_multiplier = tunnel.get("speed_multiplier", 1.0)
+	var world_prof = WorldProfileCustodian.get_profile(world_id) if world_id != "" and Engine.get_main_loop().root.has_node("WorldProfileCustodian") else {}
+	active_speed_multiplier = world_prof.get("tunnel", {}).get("speed_multiplier", tunnel.get("speed_multiplier", 1.0))
 	
 	print("[TIER 3 - PORTALS] Interaction layer synchronized. Lens Identity updated to: ", universe_id, " | ", world_id)
 

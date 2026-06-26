@@ -12,11 +12,10 @@ var lifetime_sessions: int = 0
 var universe_affinity: Dictionary = {}
 var world_affinity: Dictionary = {}
 
-var unlocked_universes: Array = ["science_lab"]
-var unlocked_worlds: Array = ["cognitive_bias"]
+var unlocked_universes: Array = ["science_lab", "history"]
+var unlocked_worlds: Array = ["cognitive_bias", "ancient_egypt"]
 var has_directors_pass: bool = false
 
-# Maintained strictly as historical observation vectors (un-inverted)
 var cognitive_baseline = {
 	"pattern_recognition": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
 	"recall": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
@@ -42,12 +41,12 @@ var task_familiarity_index = {
 	"math_surprise": 0, "reflex_tap": 0, "risk_selection": 0
 }
 
-# Bayesian Posterior Tracking over Permutations
 var rank_order_history = {
 	"pattern_recognition": [], "recall": [], "rapid_classification": [],
 	"spatial_tracking": [], "decision_confidence": [], "processing_speed": []
 }
 
+var session_summaries: Array = []
 var last_recorded_metrics = {}
 
 # Accessibility & Hardware
@@ -105,17 +104,40 @@ func record_cognitive_event(c_trait: String, scenario_id: String, universe_id: S
 			d["successes"] += 1
 			d["total_rt_ms"] += reaction_time_ms
 			
-	# CORE MEASUREMENT OUTPUT: BAYESIAN ORDERING INFERENCE
-	# Rejects absolute reaction time and single scalar rankings.
-	# Records the equivalence class posterior over permutations under a stochastic delay kernel.
 	last_recorded_metrics = {
 		"marginal_rank_percentile": marginal_percentile,
 		"ordering_confidence_interval": ordering_confidence,
 		"permutation_entropy": permutation_entropy,
 		"posterior_stability_score": posterior_stability
 	}
+	
+	session_summaries.append({
+		"timestamp": Time.get_unix_time_from_system(), "trait": c_trait,
+		"scenario": scenario_id, "success": success, "rt_ms": reaction_time_ms
+	})
+	if session_summaries.size() > 50: session_summaries.pop_front()
 			
 	save_profile()
+
+func get_adaptive_recommendation() -> Dictionary:
+	var rec = {"universe": "history", "world": "ancient_egypt", "reason": "Expanding historical knowledge base."}
+	var highest_hesitation_trait = ""
+	var max_rt = 0.0
+	
+	for t in current_week_drift.keys():
+		var d = current_week_drift[t]
+		if d["successes"] > 0:
+			var avg = d["total_rt_ms"] / float(d["successes"])
+			if avg > max_rt:
+				max_rt = avg
+				highest_hesitation_trait = t
+				
+	if highest_hesitation_trait == "rapid_classification":
+		rec = {"universe": "history", "world": "ancient_egypt", "reason": "High hesitation in rapid classification detected. Recommending History -> Ancient Egypt -> Stroop."}
+	elif highest_hesitation_trait == "recall":
+		rec = {"universe": "science_lab", "world": "neural_mapping", "reason": "Recall latency elevating. Recommending Science Lab -> Neural Mapping."}
+		
+	return rec
 
 func _load_profile():
 	if not FileAccess.file_exists(SAVE_PATH):
@@ -142,14 +164,15 @@ func _apply_loaded_data(data: Dictionary):
 		lifetime_sessions = data.get("lifetime_sessions", 0)
 		universe_affinity = data.get("universe_affinity", {})
 		world_affinity = data.get("world_affinity", {})
-		unlocked_universes = data.get("unlocked_universes", ["science_lab"])
-		unlocked_worlds = data.get("unlocked_worlds", ["cognitive_bias"])
+		unlocked_universes = data.get("unlocked_universes", ["science_lab", "history"])
+		unlocked_worlds = data.get("unlocked_worlds", ["cognitive_bias", "ancient_egypt"])
 		has_directors_pass = data.get("has_directors_pass", false)
 		
 		_merge_dict(cognitive_baseline, data.get("cognitive_baseline", {}))
 		_merge_dict(current_week_drift, data.get("current_week_drift", {}))
 		_merge_dict(task_familiarity_index, data.get("task_familiarity_index", {}))
 		_merge_dict(rank_order_history, data.get("rank_order_history", {}))
+		session_summaries = data.get("session_summaries", [])
 		
 		motor_assist_enabled = data.get("motor_assist_enabled", false)
 		colorblind_mode_enabled = data.get("colorblind_mode_enabled", false)
@@ -173,6 +196,7 @@ func save_profile():
 		"current_week_drift": current_week_drift,
 		"task_familiarity_index": task_familiarity_index,
 		"rank_order_history": rank_order_history,
+		"session_summaries": session_summaries,
 		"motor_assist_enabled": motor_assist_enabled,
 		"colorblind_mode_enabled": colorblind_mode_enabled,
 		"device_hardware_offset_ms": device_hardware_offset_ms
@@ -196,6 +220,9 @@ func generate_insights() -> Array[String]:
 		var readable_uni = top_uni.capitalize().replace("_", " ")
 		insights.append("%s remains your dominant universe." % readable_uni)
 		
+	var rec = get_adaptive_recommendation()
+	insights.append("Recommendation: " + rec.get("reason", ""))
+	
 	if insights.is_empty():
 		insights.append("Awaiting more cognitive data to form a profile...")
 	return insights

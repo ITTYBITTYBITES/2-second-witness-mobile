@@ -45,6 +45,7 @@ func _populate_data():
 		styled_text = styled_text.replace("recall tasks", "[color=#F72585]recall tasks[/color]")
 		styled_text = styled_text.replace("hesitate", "[color=#D81159]hesitate[/color]")
 		styled_text = styled_text.replace("decisiveness", "[color=#2ECC71]decisiveness[/color]")
+		styled_text = styled_text.replace("Recommendation:", "[color=#E6B800]Recommendation:[/color]")
 		
 		lbl.text = "[center]" + styled_text + "[/center]"
 		lbl.fit_content = true
@@ -67,7 +68,7 @@ func _populate_data():
 	style.corner_radius_bottom_right = 12
 	btn_return.add_theme_stylebox_override("normal", style)
 	btn_return.add_theme_stylebox_override("hover", style.duplicate())
-	btn_leave = style.duplicate() # Keep reference
+	btn_leave = style.duplicate()
 	btn_return.add_theme_stylebox_override("pressed", style.duplicate())
 	
 	btn_return.pressed.connect(func():
