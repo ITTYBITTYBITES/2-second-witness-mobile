@@ -17,6 +17,9 @@ var previous_screen_name: String = ""
 var active_universe_selection: String = "science_lab"
 var current_scenario_chain_index: int = 1
 
+func normalize_id(id: Variant) -> String:
+	return str(id)
+
 func _enter_tree():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "_enter_tree", "NavigationRouter singleton mounting.")
@@ -255,15 +258,16 @@ func _on_discover_requested():
 		active_secondary_screen.return_requested.connect(show_landing_screen)
 		active_secondary_screen.play_universe_requested.connect(_on_play_universe_requested)
 
-func _on_play_universe_requested(universe_id: String):
+func _on_play_universe_requested(universe_id: Variant):
+	var u_id = normalize_id(universe_id)
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
-		StructuredLogger.log_event_trace(self, "external_call", "_on_play_universe_requested(" + universe_id + ")")
+		StructuredLogger.log_event_trace(self, "external_call", "_on_play_universe_requested(" + u_id + ")")
 	print("STEP 1: PLAY REQUEST RECEIVED")
-	print("[ROUTER] Play Universe requested: ", universe_id)
+	print("[ROUTER] Play Universe requested: ", u_id)
 	print("UNIVERSE BOOT START")
-	print("→ WORLD LIST RESOLVED: ", universe_id)
+	print("→ WORLD LIST RESOLVED: ", u_id)
 	_is_transitioning_to_landing = false
-	active_universe_selection = universe_id
+	active_universe_selection = u_id
 	
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
@@ -284,18 +288,20 @@ func _on_play_universe_requested(universe_id: String):
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 			if ui_layer: ui_layer.add_child(active_secondary_screen)
 			
-		active_secondary_screen.setup(universe_id)
+		active_secondary_screen.setup(u_id)
 		print("→ WORLD SELECT SCREEN PUSHED")
 		
 		_update_nav_log("WorldSelectScreen", false)
 		active_secondary_screen.return_requested.connect(_on_discover_requested)
 		active_secondary_screen.world_selected.connect(_on_world_selected)
 
-func _on_world_selected(universe_id: String, world_id: String):
+func _on_world_selected(universe_id: Variant, world_id: Variant):
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
-		StructuredLogger.log_event_trace(self, "external_call", "_on_world_selected(" + universe_id + ", " + world_id + ")")
-	print("[ROUTER] World Selected: ", universe_id, " -> ", world_id)
-	print("→ world_selected event emitted: ", world_id)
+		StructuredLogger.log_event_trace(self, "external_call", "_on_world_selected(" + u_id + ", " + w_id + ")")
+	print("[ROUTER] World Selected: ", u_id, " -> ", w_id)
+	print("→ world_selected event emitted: ", w_id)
 	_is_transitioning_to_landing = false
 	current_scenario_chain_index = 1
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
@@ -306,14 +312,14 @@ func _on_world_selected(universe_id: String, world_id: String):
 		
 	_show_gameplay_hud()
 	
-	if ThemeManager: ThemeManager.apply_theme(universe_id)
+	if ThemeManager: ThemeManager.apply_theme(u_id)
 	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	print("STEP 2: PORTAL LOOKUP = ", portal_mgr)
 	
 	if portal_mgr == null:
 		print("[ROUTER] Portal Manager not found in scene tree (Standalone/Benchmark mode). Skipping 3D portal spawn.")
 	elif portal_mgr.has_method("apply_theme"):
-		portal_mgr.apply_theme(ThemeManager.get_active_theme() if ThemeManager else {}, universe_id, world_id)
+		portal_mgr.apply_theme(ThemeManager.get_active_theme() if ThemeManager else {}, u_id, w_id)
 		print("STEP 3: CALLING SPAWN")
 		portal_mgr.spawn_lens_portal("0")
 		print("STEP 4: SPAWN CALL COMPLETED")
@@ -327,10 +333,10 @@ func _on_world_selected(universe_id: String, world_id: String):
 	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
-	var next_spike = vector.get("spike", "memory_cascade")
+	var next_spike = normalize_id(vector.get("spike", "memory_cascade"))
 	
 	print("[SCENARIO ENGINE] Scenario 1 Ready: ", next_spike.capitalize().replace("_", " "))
-	handle_navigation_event({"type": "portal_selected", "destination": {"universe": universe_id, "world": world_id, "chunk_id": "0"}})
+	handle_navigation_event({"type": "portal_selected", "destination": {"universe": u_id, "world": w_id, "chunk_id": "0"}})
 
 func handle_navigation_event(event: Dictionary):
 	if event.get("type") == "portal_selected":
@@ -341,9 +347,9 @@ func handle_navigation_event(event: Dictionary):
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 		var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
-		var cascade_scene_name = vector.get("spike", "memory_cascade")
+		var cascade_scene_name = normalize_id(vector.get("spike", "memory_cascade"))
 		var scenario_payload = vector.get("knowledge_item", {})
-		var seed_string = str(profile.lifetime_sessions if profile else 0) + dest.get("chunk_id", "0")
+		var seed_string = str(profile.lifetime_sessions if profile else 0) + normalize_id(dest.get("chunk_id", "0"))
 		
 		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(cascade_scene_name) + ".tscn")
 		if cascade_scene == null:
@@ -398,7 +404,7 @@ func _on_cascade_completed():
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 		var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
-		var next_spike = vector.get("spike", "rapid_classification")
+		var next_spike = normalize_id(vector.get("spike", "rapid_classification"))
 		print("[SCENARIO ENGINE] Scenario ", current_scenario_chain_index, " Ready: ", next_spike.capitalize().replace("_", " "))
 		
 		handle_navigation_event({"type": "portal_selected", "destination": {"universe": active_universe_selection, "world": "active_world", "chunk_id": str(current_scenario_chain_index)}})

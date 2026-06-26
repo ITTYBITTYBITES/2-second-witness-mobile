@@ -18,7 +18,7 @@ func _enter_tree():
 	super._enter_tree()
 
 func _apply_specific_rules(rules: Dictionary):
-	_scenario_id = _scenario_payload["id"]
+	_scenario_id = normalize_id(_scenario_payload.get("id", "memory_cascade"))
 	var length = rules.get("sequence_length", 3)
 	
 	for i in range(length):
@@ -62,7 +62,9 @@ func _on_btn_pressed(val: int):
 		feedback_label.text = "Hit: " + str(current_step) + "/" + str(sequence.size())
 		if current_step >= sequence.size():
 			feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
-			PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload.get("universe", "science_lab"), _scenario_payload.get("world", "default"), true, rt_ms)
+			var u_id = normalize_id(_scenario_payload.get("universe", "science_lab"))
+			var w_id = normalize_id(_scenario_payload.get("world", "default"))
+			PlayerProfile.record_cognitive_event("recall", _scenario_id, u_id, w_id, true, rt_ms)
 			SessionTracker.record_spike_result("memory_cascade", true)
 			await get_tree().create_timer(0.5).timeout
 			if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
@@ -71,6 +73,8 @@ func _on_btn_pressed(val: int):
 			queue_free()
 	else:
 		feedback_label.text = "ERROR! Resetting."
-		PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload.get("universe", "science_lab"), _scenario_payload.get("world", "default"), false, rt_ms)
+		var u_id = normalize_id(_scenario_payload.get("universe", "science_lab"))
+		var w_id = normalize_id(_scenario_payload.get("world", "default"))
+		PlayerProfile.record_cognitive_event("recall", _scenario_id, u_id, w_id, false, rt_ms)
 		SessionTracker.record_spike_result("memory_cascade", false)
 		current_step = 0

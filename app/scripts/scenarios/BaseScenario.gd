@@ -9,6 +9,9 @@ class_name BaseScenario
 var _scenario_payload: Dictionary = {}
 var _deterministic_rng: RandomNumberGenerator
 
+func normalize_id(id: Variant) -> String:
+	return str(id)
+
 func _enter_tree():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "_enter_tree", "Node entering active scene tree.")
@@ -18,8 +21,9 @@ func _ready():
 		StructuredLogger.log_event_trace(self, "_ready", "Node ready and fully mounted.")
 
 func inject_payload(payload: Dictionary, seed_val: int = 12345):
+	var s_id = normalize_id(payload.get("id", "UNKNOWN"))
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
-		StructuredLogger.log_event_trace(self, "inject_payload", "External method call (scenario_id: " + payload.get("id", "UNKNOWN") + ")")
+		StructuredLogger.log_event_trace(self, "inject_payload", "External method call (scenario_id: " + s_id + ")")
 	print("INJECT PAYLOAD:", payload.size())
 	if payload.is_empty():
 		push_error("[SCENARIO FATAL] Injection failed. Payload is empty. Terminating.")
@@ -27,13 +31,17 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 		return
 		
 	_scenario_payload = payload
+	_scenario_payload["id"] = s_id
+	_scenario_payload["universe"] = normalize_id(payload.get("universe", "unknown"))
+	_scenario_payload["world"] = normalize_id(payload.get("world", "unknown"))
+	_scenario_payload["type"] = normalize_id(payload.get("type", "unknown"))
 	
 	_deterministic_rng = RandomNumberGenerator.new()
 	_deterministic_rng.seed = seed_val
 	
-	print("[INJECTION TRACE] scenario_id: ", payload.get("id", "UNKNOWN"))
+	print("[INJECTION TRACE] scenario_id: ", s_id)
 	print("[INJECTION TRACE] resolved_from_registry: true")
-	print("[INJECTION TRACE] world_id: ", payload.get("world", "UNKNOWN"))
+	print("[INJECTION TRACE] world_id: ", _scenario_payload["world"])
 	print("[INJECTION TRACE] deterministic_seed: ", seed_val)
 	
 	_validate_and_apply_payload()

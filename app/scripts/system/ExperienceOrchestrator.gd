@@ -17,6 +17,9 @@ var current_difficulty: int = 1
 var current_mission: Dictionary = {}
 var current_exposure_index: int = 0
 
+func normalize_id(id: Variant) -> String:
+	return str(id)
+
 func _ready():
 	if BootTracer: BootTracer.log_init("ExperienceOrchestrator")
 	print("[ORCHESTRATOR] Online. Enforcing centralized progression decision tree.")
@@ -36,12 +39,15 @@ func determine_next_experience(player_profile: Node) -> Dictionary:
 	else:
 		var recommended = player_profile.get_adaptive_recommendation()
 		if recommended.has("universe"):
-			active_universe = recommended["universe"]
-			active_world = recommended.get("world", "ancient_egypt")
+			active_universe = normalize_id(recommended["universe"])
+			active_world = normalize_id(recommended.get("world", "ancient_egypt"))
 			
 	# 3. Knowledge Item & Mission Exposure Selection
 	var registry = get_node_or_null("/root/ContentRegistry")
 	var sampling = get_node_or_null("/root/SamplingController")
+	
+	active_universe = normalize_id(active_universe)
+	active_world = normalize_id(active_world)
 	
 	var mission_key = active_universe + "_" + active_world
 	var missions = registry.curated_missions.get(mission_key, []) if registry and registry.get("curated_missions") != null else []
@@ -51,10 +57,10 @@ func determine_next_experience(player_profile: Node) -> Dictionary:
 		current_mission = missions[mission_idx]
 		var chain = current_mission.get("mechanics_chain", ["memory_cascade"])
 		current_exposure_index = total_sessions % chain.size()
-		active_spike = chain[current_exposure_index]
+		active_spike = normalize_id(chain[current_exposure_index])
 		print("[ORCHESTRATOR] Curated Mission Active: ", current_mission.get("title", ""), " | Exposure ", current_exposure_index + 1, " / ", chain.size(), " (Mechanic: ", active_spike, ")")
 	else:
-		active_spike = sampling.get_next_scenario() if sampling else "memory_cascade"
+		active_spike = normalize_id(sampling.get_next_scenario() if sampling else "memory_cascade")
 		print("[ORCHESTRATOR] Fallback Sampling Mode Active (Mechanic: ", active_spike, ")")
 	
 	var seed_str = str(total_sessions) + active_universe + active_world
