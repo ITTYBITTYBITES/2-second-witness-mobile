@@ -20,6 +20,14 @@ var manifests = {
 			"particle_accelerator_tier_2": "res://assets/meshes/iris_crystalline.obj",
 			"particle_accelerator_tier_3": "res://assets/meshes/iris_crystalline.obj"
 		},
+		"history": {
+			"bg_noise": "res://assets/textures/env/v1/bg_society_mind.png",
+			"rib_mesh": "res://assets/meshes/rib_society_mind.obj",
+			"eye_of_horus_tier_0": "res://assets/meshes/iris_crystalline.obj",
+			"eye_of_horus_tier_1": "res://assets/meshes/iris_crystalline.obj",
+			"eye_of_horus_tier_2": "res://assets/meshes/iris_crystalline.obj",
+			"eye_of_horus_tier_3": "res://assets/meshes/iris_crystalline.obj"
+		},
 		"tech_ops": {
 			"bg_noise": "res://assets/textures/env/v1/plasma_static.png",
 			"rib_mesh": "res://assets/meshes/rib_tech_ops.obj",
@@ -70,7 +78,7 @@ func get_manifest(universe_id: String, version: String = CURRENT_ASSET_VERSION) 
 	
 	if not manifests[version].has(universe_id):
 		push_error("[ASSET REGISTRY FATAL] Requested Universe ID does not exist in manifest: " + universe_id)
-		return {}
+		return manifests[version].get("science_lab", {})
 		
 	return manifests[version][universe_id]
 
