@@ -14,8 +14,11 @@ var active_world: String = "ancient_egypt"
 var active_spike: String = "memory_cascade"
 var current_difficulty: int = 1
 
+var current_mission: Dictionary = {}
+var current_exposure_index: int = 0
+
 func _ready():
-	BootTracer.log_init("ExperienceOrchestrator")
+	if BootTracer: BootTracer.log_init("ExperienceOrchestrator")
 	print("[ORCHESTRATOR] Online. Enforcing centralized progression decision tree.")
 
 func determine_next_experience(player_profile: Node) -> Dictionary:
@@ -31,17 +34,28 @@ func determine_next_experience(player_profile: Node) -> Dictionary:
 		active_universe = "history"
 		active_world = "ancient_egypt"
 	else:
-		# Inspect affinity and adaptive recommendations from Mirror Engine
 		var recommended = player_profile.get_adaptive_recommendation()
 		if recommended.has("universe"):
 			active_universe = recommended["universe"]
 			active_world = recommended.get("world", "ancient_egypt")
 			
-	# 3. Knowledge Item & Spike Selection
+	# 3. Knowledge Item & Mission Exposure Selection
 	var registry = get_node_or_null("/root/ContentRegistry")
 	var sampling = get_node_or_null("/root/SamplingController")
 	
-	active_spike = sampling.get_next_scenario() if sampling else "memory_cascade"
+	var mission_key = active_universe + "_" + active_world
+	var missions = registry.curated_missions.get(mission_key, []) if registry and registry.get("curated_missions") != null else []
+	
+	if not missions.is_empty():
+		var mission_idx = (total_sessions / 4) % missions.size()
+		current_mission = missions[mission_idx]
+		var chain = current_mission.get("mechanics_chain", ["memory_cascade"])
+		current_exposure_index = total_sessions % chain.size()
+		active_spike = chain[current_exposure_index]
+		print("[ORCHESTRATOR] Curated Mission Active: ", current_mission.get("title", ""), " | Exposure ", current_exposure_index + 1, " / ", chain.size(), " (Mechanic: ", active_spike, ")")
+	else:
+		active_spike = sampling.get_next_scenario() if sampling else "memory_cascade"
+		print("[ORCHESTRATOR] Fallback Sampling Mode Active (Mechanic: ", active_spike, ")")
 	
 	var seed_str = str(total_sessions) + active_universe + active_world
 	var knowledge_payload = registry.resolve_scenario(active_universe, active_world, active_spike, seed_str) if registry else {}
@@ -63,7 +77,9 @@ func determine_next_experience(player_profile: Node) -> Dictionary:
 		"knowledge_item": knowledge_payload,
 		"spike": active_spike,
 		"difficulty": current_difficulty,
-		"presentation": presentation_profile
+		"presentation": presentation_profile,
+		"mission": current_mission,
+		"exposure_index": current_exposure_index
 	}
 	
 	session_personalized.emit(vector)
@@ -73,5 +89,6 @@ func _fallback_vector() -> Dictionary:
 	return {
 		"mode": "discovery", "universe": "history", "world": "ancient_egypt",
 		"knowledge_item": {"id": "memory_cascade", "universe": "history", "world": "ancient_egypt", "type": "memory_cascade", "rules": {}},
-		"spike": "memory_cascade", "difficulty": 1, "presentation": {}
+		"spike": "memory_cascade", "difficulty": 1, "presentation": {},
+		"mission": {}, "exposure_index": 0
 	}

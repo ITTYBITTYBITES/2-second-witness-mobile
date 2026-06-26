@@ -2,8 +2,37 @@ extends Node
 
 var runtime_index = {} # Structure: [universe_id][world_id][type_id] = Array[Dictionary]
 
+var curated_missions = {
+	"history_ancient_egypt": [
+		{
+			"mission_id": "life_along_nile",
+			"title": "Life Along the Nile",
+			"description": "Examine the ecological and agricultural cycles of the Nile river basin.",
+			"mechanics_chain": ["memory_cascade", "stroop_test", "signal_vs_noise", "spatial_recall"]
+		},
+		{
+			"mission_id": "pharaohs_court",
+			"title": "Pharaoh's Court",
+			"description": "Process political hierarchies, royal decrees, and dynastic lineage under time pressure.",
+			"mechanics_chain": ["rapid_classification", "pattern_continuation", "memory_cascade", "reflex_tap"]
+		},
+		{
+			"mission_id": "building_pyramids",
+			"title": "Building the Pyramids",
+			"description": "Analyze monumental architectural trade-offs, labor logistics, and geometry.",
+			"mechanics_chain": ["sequence_reverse", "speed_sort", "signal_vs_noise", "stroop_test"]
+		},
+		{
+			"mission_id": "the_tomb_builder",
+			"title": "The Tomb Builder",
+			"description": "Navigate funerary texts, sacred geometry, and subterranean traps.",
+			"mechanics_chain": ["spatial_recall", "rapid_classification", "memory_cascade", "speed_sort"]
+		}
+	]
+}
+
 func _ready():
-	BootTracer.log_init("ContentRegistry")
+	if BootTracer: BootTracer.log_init("ContentRegistry")
 	print("ContentRegistry initialized. Awaiting content ingestion...")
 
 func register_scenario(data: Dictionary):
@@ -21,25 +50,21 @@ func register_scenario(data: Dictionary):
 	runtime_index[u_id][w_id][t_id].append(data)
 
 func resolve_scenario(universe_id: String, world_id: String, type_id: String, seed_string: String) -> Dictionary:
-	# Fallback if the universe or type doesn't exist at all
 	if not runtime_index.has(universe_id): return {}
 	
 	var pool = []
 	
 	if world_id == "" or world_id == "all":
-		# UNIVERSE EXPLORATION MODE: Aggregate all worlds inside the universe for this type
 		for w_key in runtime_index[universe_id].keys():
 			if runtime_index[universe_id][w_key].has(type_id):
 				pool.append_array(runtime_index[universe_id][w_key][type_id])
 	else:
-		# WORLD FOCUS MODE: Pull strictly from the targeted world
 		if runtime_index[universe_id].has(world_id) and runtime_index[universe_id][world_id].has(type_id):
 			pool = runtime_index[universe_id][world_id][type_id]
 			
 	if pool.size() == 0:
 		return {}
 		
-	# Deterministic Selection Rule
 	var hash_val = seed_string.hash()
 	var selected_index = hash_val % pool.size()
 	
