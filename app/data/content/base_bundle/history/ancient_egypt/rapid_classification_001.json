@@ -1,0 +1,15 @@
+{
+	"id": "rapid_classification",
+	"universe": "history",
+	"world": "ancient_egypt",
+	"type": "rapid_classification",
+	"rules": {
+		"correct_answer": "Deity",
+		"wrong_answers": ["Structure"],
+		"legacy_prompt": "OSIRIS"
+	},
+	"presentation": {
+		"title": "Divine Pantheon Classification",
+		"visual_theme_override": "ancient_egypt"
+	}
+}
