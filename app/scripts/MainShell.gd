@@ -7,7 +7,13 @@ class_name MainShell
 @onready var ui_layer = $UILayer
 @onready var audio_layer = $AudioLayer
 
+func _enter_tree():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "_enter_tree", "MainShell cold boot scene mounting.")
+
 func _ready():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "_ready", "MainShell ready. Invoking boot sequence.")
 	print("========================================")
 	print("[KERNEL] MainShell Initialized. Executing Boot Sequence...")
 	print("========================================")

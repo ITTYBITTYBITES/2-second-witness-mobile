@@ -17,7 +17,13 @@ var previous_screen_name: String = ""
 var active_universe_selection: String = "science_lab"
 var current_scenario_chain_index: int = 1
 
+func _enter_tree():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "_enter_tree", "NavigationRouter singleton mounting.")
+
 func _ready():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "_ready", "NavigationRouter online.")
 	if BootTracer: BootTracer.log_init("NavigationRouter")
 	print("NavigationRouter initialized. Awaiting structured events.")
 
@@ -52,6 +58,8 @@ func goto_landing():
 	show_landing_screen()
 
 func show_landing_screen():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "external_call", "show_landing_screen()")
 	router_scene_shift_count += 1
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	
@@ -107,6 +115,8 @@ func show_landing_screen():
 	_is_transitioning_to_landing = false
 
 func _show_gameplay_hud():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "external_call", "_show_gameplay_hud()")
 	_update_nav_log("GameplayHUD", false)
 	if active_gameplay_hud and is_instance_valid(active_gameplay_hud):
 		active_gameplay_hud.visible = true
@@ -174,6 +184,8 @@ func _show_gameplay_hud():
 	print("[ROUTER] Gameplay HUD attached. Persistent 3-Layer UI separation active.")
 
 func toggle_mirror_modal():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "external_call", "toggle_mirror_modal()")
 	print("[HUD UTILITY] Toggling Cognitive Mirror modal instance under HUDRoot.")
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if persistent_mirror_instance and is_instance_valid(persistent_mirror_instance):
@@ -219,6 +231,8 @@ func _on_profile_requested():
 	toggle_mirror_modal()
 
 func _on_discover_requested():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "external_call", "_on_discover_requested()")
 	print("[ROUTER] Discovery requested. Opening Weekly Featured Screen.")
 	_is_transitioning_to_landing = false
 	if active_landing_screen:
@@ -242,6 +256,8 @@ func _on_discover_requested():
 		active_secondary_screen.play_universe_requested.connect(_on_play_universe_requested)
 
 func _on_play_universe_requested(universe_id: String):
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "external_call", "_on_play_universe_requested(" + universe_id + ")")
 	print("STEP 1: PLAY REQUEST RECEIVED")
 	print("[ROUTER] Play Universe requested: ", universe_id)
 	print("UNIVERSE BOOT START")
@@ -276,6 +292,8 @@ func _on_play_universe_requested(universe_id: String):
 		active_secondary_screen.world_selected.connect(_on_world_selected)
 
 func _on_world_selected(universe_id: String, world_id: String):
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "external_call", "_on_world_selected(" + universe_id + ", " + world_id + ")")
 	print("[ROUTER] World Selected: ", universe_id, " -> ", world_id)
 	print("→ world_selected event emitted: ", world_id)
 	_is_transitioning_to_landing = false
@@ -358,6 +376,8 @@ func _snake_to_pascal(snake: String) -> String:
 	return result
 
 func _on_cascade_completed():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "external_call", "_on_cascade_completed()")
 	print("[ROUTER] Cognitive Spike resolved (Answer submitted). Checking Ad Gate before Slingshot.")
 	
 	if AdManager and AdManager.check_and_show_ad():

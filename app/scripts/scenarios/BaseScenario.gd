@@ -9,7 +9,17 @@ class_name BaseScenario
 var _scenario_payload: Dictionary = {}
 var _deterministic_rng: RandomNumberGenerator
 
+func _enter_tree():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "_enter_tree", "Node entering active scene tree.")
+
+func _ready():
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "_ready", "Node ready and fully mounted.")
+
 func inject_payload(payload: Dictionary, seed_val: int = 12345):
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "inject_payload", "External method call (scenario_id: " + payload.get("id", "UNKNOWN") + ")")
 	print("INJECT PAYLOAD:", payload.size())
 	if payload.is_empty():
 		push_error("[SCENARIO FATAL] Injection failed. Payload is empty. Terminating.")
@@ -18,11 +28,9 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 		
 	_scenario_payload = payload
 	
-	# Establish Deterministic RNG for this specific task execution
 	_deterministic_rng = RandomNumberGenerator.new()
 	_deterministic_rng.seed = seed_val
 	
-	# Trace Logging (Auditable Truth)
 	print("[INJECTION TRACE] scenario_id: ", payload.get("id", "UNKNOWN"))
 	print("[INJECTION TRACE] resolved_from_registry: true")
 	print("[INJECTION TRACE] world_id: ", payload.get("world", "UNKNOWN"))
@@ -31,7 +39,6 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 	_validate_and_apply_payload()
 
 func _validate_and_apply_payload():
-	# 1. Structural Validation
 	var req_keys = ["id", "universe", "world", "type", "rules"]
 	for k in req_keys:
 		if not _scenario_payload.has(k):
@@ -39,16 +46,13 @@ func _validate_and_apply_payload():
 			queue_free()
 			return
 			
-	# 2. Handoff to specific child scenario implementation
 	_apply_specific_rules(_scenario_payload["rules"])
 
 func _apply_specific_rules(_rules: Dictionary):
-	# Child classes must override this
 	pass
 
-# Canonical Workflow Execution
 func execute_render_pipeline():
-	if _scenario_payload.is_empty(): return # Prevent rendering if injection failed
+	if _scenario_payload.is_empty(): return 
 	
 	var resolver = ThemeResolver.new()
 	var style = resolver.resolve_theme({"universe": _scenario_payload["universe"], "type": _scenario_payload["type"], "difficulty": _scenario_payload.get("difficulty", 1)})

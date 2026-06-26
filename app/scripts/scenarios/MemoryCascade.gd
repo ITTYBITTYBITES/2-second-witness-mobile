@@ -14,6 +14,9 @@ var _scenario_id: String = "memory_cascade"
 var _start_ticks_msec: int = 0
 var _initial_feedback_text: String = ""
 
+func _enter_tree():
+	super._enter_tree()
+
 func _apply_specific_rules(rules: Dictionary):
 	_scenario_id = _scenario_payload["id"]
 	var length = rules.get("sequence_length", 3)
@@ -33,6 +36,7 @@ func _apply_specific_rules(rules: Dictionary):
 		feedback_label.text = _initial_feedback_text
 
 func _ready():
+	super._ready()
 	print("SCENARIO READY")
 	if _scenario_payload.is_empty():
 		push_error("SCENARIO PAYLOAD EMPTY")
@@ -61,6 +65,8 @@ func _on_btn_pressed(val: int):
 			PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload.get("universe", "science_lab"), _scenario_payload.get("world", "default"), true, rt_ms)
 			SessionTracker.record_spike_result("memory_cascade", true)
 			await get_tree().create_timer(0.5).timeout
+			if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+				StructuredLogger.log_event_trace(self, "signal_dispatch", "Emitting 'completed' signal.")
 			completed.emit()
 			queue_free()
 	else:
