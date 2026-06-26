@@ -38,9 +38,23 @@ func _unhandled_input(event):
 			print("[MODAL MANAGER] Escape/Back intercepted. Popping top modal.")
 			pop_modal()
 
-func toggle_utility(utility_id: int):
-	if _instanced_modals.has(utility_id) and is_instance_valid(_instanced_modals[utility_id]):
-		var existing_screen = _instanced_modals[utility_id]
+func toggle_utility(utility_id: Variant):
+	var u_id: int = UtilityID.MIRROR
+	if typeof(utility_id) == TYPE_STRING:
+		match str(utility_id).to_lower():
+			"mirror": u_id = UtilityID.MIRROR
+			"store": u_id = UtilityID.STORE
+			"settings": u_id = UtilityID.SETTINGS
+			"inventory": u_id = UtilityID.INVENTORY
+			"achievements": u_id = UtilityID.ACHIEVEMENTS
+			_: u_id = UtilityID.MIRROR
+	elif typeof(utility_id) == TYPE_INT or typeof(utility_id) == TYPE_FLOAT:
+		u_id = int(utility_id)
+	else:
+		return
+
+	if _instanced_modals.has(u_id) and is_instance_valid(_instanced_modals[u_id]):
+		var existing_screen = _instanced_modals[u_id]
 		if _modal_stack.has(existing_screen):
 			pop_modal(existing_screen)
 		else:
@@ -48,7 +62,7 @@ func toggle_utility(utility_id: int):
 		return
 		
 	var scene_path = ""
-	match utility_id:
+	match u_id:
 		UtilityID.MIRROR: scene_path = "res://scenes/ui/screens/PlayerProfileScreen.tscn"
 		UtilityID.STORE: scene_path = "res://scenes/ui/screens/MonetizationGate.tscn"
 		UtilityID.SETTINGS: scene_path = "res://scenes/ui/screens/SettingsScreen.tscn"
@@ -59,7 +73,7 @@ func toggle_utility(utility_id: int):
 	if not scene: return
 	
 	var screen = scene.instantiate()
-	_instanced_modals[utility_id] = screen
+	_instanced_modals[u_id] = screen
 	
 	var hud_root = get_tree().root.get_node_or_null("MainShell/UILayer/HUDRoot")
 	if not hud_root: hud_root = get_tree().root.get_node_or_null("MainShell/UILayer")
