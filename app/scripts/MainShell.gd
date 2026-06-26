@@ -21,10 +21,17 @@ func _ready():
 
 func _execute_boot_sequence():
 	print("[BOOT: 1] SystemLayer initialized.")
-	
 	print("[BOOT: 2] ThemeManager compiling base themes.")
-	var active_theme = ThemeManager.get_active_theme()
-	if active_theme.is_empty():
+	
+	var orch = get_node_or_null("/root/ExperienceOrchestrator")
+	var profile = get_node_or_null("/root/PlayerProfile")
+	var initial_uni = "history"
+	if orch and profile:
+		var vector = orch.determine_next_experience(profile)
+		initial_uni = vector.get("universe", "history")
+		
+	ThemeManager.apply_theme(initial_uni)
+	if ThemeManager.get_active_theme().is_empty():
 		await ThemeManager.theme_applied
 	
 	print("[BOOT: 3] ContentLoader loading base bundle.")

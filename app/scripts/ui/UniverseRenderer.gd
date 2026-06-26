@@ -16,7 +16,15 @@ var universe_definitions = {
 		"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")},
 		"feedback_tone": "diagnostic",
 		"motion_scale": 1.0,
-		"lens_profile": "particle_accelerator" # The Iris Identity
+		"lens_profile": "particle_accelerator"
+	},
+	"history": {
+		"emotion": EmotionProfile.WARM,
+		"typography": TypographicDensity.HEAVY,
+		"palette": {"bg": Color("#1A1400"), "primary": Color("#E6B800")},
+		"feedback_tone": "archaeological",
+		"motion_scale": 1.2,
+		"lens_profile": "eye_of_horus" 
 	},
 	"tech_ops": {
 		"emotion": EmotionProfile.UNCANNY,
@@ -66,10 +74,8 @@ func apply_manifold(target_ui: CanvasLayer, universe_id: String):
 
 func _recursively_style_nodes(node: Node, def: Dictionary):
 	for child in node.get_children():
-		# WE NO LONGER RENDER THE BLACK VOID.
-		# The cockpit windshield must remain transparent during the cognitive spike.
 		if child is ColorRect and child.name == "VoidBG":
-			child.color = Color(0,0,0,0) # Fully transparent
+			child.color = Color(0,0,0,0) 
 		elif child is Button:
 			_apply_button_aesthetics(child, def)
 		elif child is Label:
@@ -80,7 +86,7 @@ func _recursively_style_nodes(node: Node, def: Dictionary):
 func _apply_button_aesthetics(btn: Button, def: Dictionary):
 	var style = StyleBoxFlat.new()
 	style.bg_color = def["palette"]["bg"]
-	style.bg_color.a = 0.85 # Translucent glass, not opaque
+	style.bg_color.a = 0.85 
 	style.border_width_bottom = 2
 	style.border_color = def["palette"]["primary"]
 	btn.add_theme_stylebox_override("normal", style)

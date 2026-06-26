@@ -10,9 +10,6 @@ func _ready():
 	BootTracer.log_init("ThemeManager")
 	print("ThemeManager initialized. Compiling visual identities...")
 	_load_all_themes()
-	
-	# Apply the default baseline theme to start the runtime compiler
-	call_deferred("apply_theme", "science_lab")
 
 func _load_all_themes():
 	var dir = DirAccess.open("res://data/themes")
@@ -53,13 +50,11 @@ func apply_theme(theme_id: String):
 		print("[THEME] Applying Theme Identity: ", active_theme_data["display_name"])
 		emit_signal("theme_applied", active_theme_data)
 		
-		# Lock state based on transition duration
 		var duration = active_theme_data.get("transition", {}).get("duration_ms", 900)
 		await get_tree().create_timer(duration / 1000.0).timeout
 		_is_transitioning = false
 	else:
 		print("[THEME ERROR] Theme not found in registry: ", theme_id)
 
-# Pure utility for other systems to fetch the raw data contract
 func get_active_theme() -> Dictionary:
 	return active_theme_data
