@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bootscreen"]
+[gd_scene load_steps=4 format=3 uid="uid://bootscreen"]
 
 [ext_resource type="Script" path="res://scripts/ui/screens/BootScreen.gd" id="1_boot"]
+[ext_resource type="Texture2D" uid="uid://appicon" path="res://assets/brand/app_icon_1024.png" id="2_icon"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_progress"]
 bg_color = Color(0.298039, 0.788235, 0.941176, 1)
@@ -26,18 +27,34 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -300.0
-offset_top = -50.0
+offset_top = -250.0
 offset_right = 300.0
-offset_bottom = 50.0
+offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
 alignment = 1
 
+[node name="LogoImage" type="TextureRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BrandLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.90196, 0.721569, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "ITTY BITTY BITES GAMES"
+horizontal_alignment = 1
+uppercase = true
+
 [node name="LogoLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.298039, 0.788235, 0.941176, 1)
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 54
 text = "2 SECOND WITNESS"
 horizontal_alignment = 1
 uppercase = true
