@@ -193,6 +193,7 @@ func _execute_serialized_command(command: Dictionary):
 			if ModalWindowManager: ModalWindowManager.toggle_utility(command.get("utility_id", "mirror"))
 		"enter_stream": NavigationRouter._on_play_requested()
 		"play_universe": NavigationRouter._on_play_universe_requested(command.get("universe_id", "science_lab"))
+		"toggle_mirror_modal": NavigationRouter.toggle_mirror_modal()
 		"ad_resolved": if AdManager: AdManager.ad_finished.emit()
 		"ad_rewarded": if AdManager: AdManager.reward_granted.emit()
 		"sync_completed": if GitHubSyncManager: GitHubSyncManager.sync_completed.emit(command.get("status", "success"))

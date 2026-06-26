@@ -100,7 +100,7 @@ func _show_gameplay_hud():
 	btn_mirror.pressed.connect(func():
 		AudioManager.play_sfx("ui_click")
 		if InteractionKernel: InteractionKernel.commit_intent({"type": "toggle_utility", "utility_id": "mirror"})
-		else: if ModalWindowManager: ModalWindowManager.toggle_utility("mirror")
+		elif ModalWindowManager: ModalWindowManager.toggle_utility("mirror")
 	)
 	
 	active_gameplay_hud.add_child(btn_leave)
@@ -129,6 +129,10 @@ func _on_play_requested():
 	print("STEP 4: SPAWN CALL COMPLETED")
 
 func _on_profile_requested():
+	print("[ROUTER] Profile requested from menu. Invoking HUD utility modal.")
+	if active_landing_screen:
+		active_landing_screen.hide_screen()
+	if ModalWindowManager: ModalWindowManager.pop_all_modals()
 	if ModalWindowManager: ModalWindowManager.toggle_utility("mirror")
 
 func _on_discover_requested():
@@ -215,7 +219,7 @@ func handle_navigation_event(event: Dictionary):
 		
 		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(cascade_scene_name) + ".tscn")
 		if cascade_scene == null:
-			cascade_scene = legacy_cascade_scene
+			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
 			
 		var cascade = cascade_scene.instantiate()
 		
@@ -230,8 +234,6 @@ func handle_navigation_event(event: Dictionary):
 		emit_signal("routed_to", dest)
 	else:
 		print("[ROUTER] Unknown routing event: ", event)
-
-var legacy_cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
 
 func _snake_to_pascal(snake: String) -> String:
 	var parts = snake.split("_")

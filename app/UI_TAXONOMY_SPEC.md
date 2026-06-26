@@ -1,12 +1,12 @@
 # PRODUCT: 2 Second Witness
-# DEFINITIVE UI TAXONOMY & 3-LAYER SEPARATION SPECIFICATION
+# DEFINITIVE UI TAXONOMY & 3-LAYER SEPARATION DOCUMENTATION
 
-## Executive Summary
-This document establishes the definitive user interface taxonomy and architectural separation for *2 Second Witness*. By formalizing the boundary between persistent global utilities and simulation state routing, the project enforces a clean **3-Layer Separation (HUD / Navigation / Simulation)**. This structure resolves all cognitive ambiguity regarding the placement of the Cognitive Mirror and establishes the exact structural ownership of `WorldSelectScreen`.
+## 1. Architectural Documentation (Not Runtime Governance)
+This document provides a definitive mental model and architectural documentation for the user interface taxonomy of *2 Second Witness*. In accordance with Godot's underlying scene tree physics, nothing in this specification possesses runtime authority unless explicitly parsed and enforced by active scene instancing rules and singleton scripts. This file serves strictly as documentation, not governance.
 
 ---
 
-## 1. The Three UI Classes & Structural Ownership
+## 2. The Three-Layer Separation Hierarchy
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -30,22 +30,23 @@ This document establishes the definitive user interface taxonomy and architectur
 
 ---
 
-## 2. The Orthogonality of the Two Graphs
-The system explicitly rejects the assumption that the Cognitive Mirror (`PlayerProfileScreen`) is part of the state progression flow. The architecture enforces two completely orthogonal graphs that intersect exclusively through `ModalWindowManager` stack control:
-
-### A. The Navigation Graph (State Progression)
-$$\text{LandingScreen} \longrightarrow \text{WeeklyFeaturedScreen (Universe)} \longrightarrow \textbf{WorldSelectScreen (World)} \longrightarrow \text{ScenarioNode (Spike)}$$
-*   `Router Authority:` Governed exclusively by `NavigationRouter`.
-*   `Core Principle:` Every transition mutates the active simulation state. These screens never sit floating at the top layer unless contextually active.
-
-### B. The Utility Graph (Persistent Global Modals)
-$$\text{HUDRoot Buttons} \longrightarrow \text{PlayerProfileScreen (Mirror)} \quad \big| \quad \text{MonetizationGate (Store)}$$
-*   `Modal Authority:` Governed exclusively by `ModalWindowManager`.
-*   `Core Principle:` The Cognitive Mirror is deliberately global. It must be accessible from multiple states, does not depend on universe or world context, and does not mutate the active navigation state graph.
+## 3. The Mandatory Constraints of HUD Utility Classification
+The Cognitive Mirror (`PlayerProfileScreen`) is classified as a pure HUD utility. This classification is valid only because `Mirror` satisfies three strict runtime constraints simultaneously:
+1. **Zero Navigation Dependency:** It does not depend on navigation state (world or world-select context).
+2. **Zero Simulation Mutation:** It does not mutate simulation state directly (zero gameplay-altering writes).
+3. **Zero Uninvoked Blocking:** It does not block HUD interaction flow (no persistent modal lock unless explicitly invoked by the player).
 
 ---
 
-## 3. Resolving the "Missing Middle" Ambiguity
-The historical perception that the Cognitive Mirror button was misplaced or "too high" in the menu hierarchy was an optical illusion caused by the missing `WorldSelectScreen`. 
+## 4. The Orthogonality of the Two Graphs (Eliminating Stack Ambiguity)
+The architecture formally rejects the practice of calling `scene_shift` to invoke HUD utility actions. Calling `scene_shift` for the Cognitive Mirror represents a scene transition that silently collapses the 3-layer model into a 2-layer navigation system with overlays. 
 
-By establishing `WorldSelectScreen` as the mandatory intermediate abstraction layer within `NavigationUI`, the navigation hierarchy is fully restored. The Cognitive Mirror is formally confirmed as a persistent global modal utility operating perfectly in the topmost HUD layer.
+To maintain absolute long-term stability, the system enforces two completely orthogonal graphs that intersect **exclusively via `ModalWindowManager`**:
+
+### A. The Navigation Graph (Reachable & Linear)
+$$\text{LandingScreen} \longrightarrow \text{WeeklyFeaturedScreen} \longrightarrow \text{WorldSelectScreen} \longrightarrow \text{ScenarioNode}$$
+*   `Routing Mechanism:` Governed exclusively by `NavigationRouter` via `scene_shift` intents.
+
+### B. The HUD Utility Graph (Orthogonal Quick Access)
+$$\text{HUDRoot Buttons (Mirror, Leave, Store, Profile)} \longrightarrow \text{ModalWindowManager.push("mirror")}$$
+*   `Instancing Rule:` The Cognitive Mirror is instanced once under `HUDRoot` and toggled via `visible` or `ModalWindowManager.push("mirror")`. Zero overlap, zero routing crossover.
