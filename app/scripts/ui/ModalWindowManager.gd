@@ -15,7 +15,7 @@ var _previous_focus_owners: Dictionary = {}
 var _input_blocker: Control
 
 func _ready():
-	BootTracer.log_init("ModalWindowManager")
+	if BootTracer: BootTracer.log_init("ModalWindowManager")
 	print("[MODAL MANAGER] Online. Operating as authoritative owner of modal state and focus invariants.")
 	
 	_input_blocker = Control.new()
@@ -71,7 +71,9 @@ func toggle_utility(utility_id: int):
 	push_modal(screen, true)
 
 func push_modal(screen: CanvasLayer, is_modal: bool = true):
-	if _modal_stack.has(screen): return
+	if _modal_stack.has(screen):
+		print("[MODAL MANAGER] Suppressed duplicate push for modal already in stack: ", screen.name)
+		return
 	
 	var current_focus = get_viewport().gui_get_focus_owner()
 	if current_focus: _previous_focus_owners[screen] = current_focus
@@ -84,10 +86,11 @@ func push_modal(screen: CanvasLayer, is_modal: bool = true):
 		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 		if ui_layer: ui_layer.add_child(screen)
 		
-	if InteractionKernel and is_modal:
+	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
+	if kernel and is_modal:
 		var panel = screen.get_node_or_null("Panel")
 		if not panel: panel = screen.get_node_or_null("PanelContainer")
-		if panel: InteractionKernel.register_panel(panel, screen.name, InteractionKernel.UIState.MODAL_ACTIVE)
+		if panel: kernel.register_panel(panel, screen.name, kernel.UIState.MODAL_ACTIVE)
 		
 	_arbitrate_input_zoning(is_modal)
 	modal_stack_changed.emit(screen)
@@ -100,10 +103,11 @@ func pop_modal(screen: CanvasLayer = null):
 		_modal_stack.erase(target)
 		print("[MODAL MANAGER] Popped modal from stack: ", target.name)
 		
-		if InteractionKernel:
+		var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
+		if kernel:
 			var panel = target.get_node_or_null("Panel")
 			if not panel: panel = target.get_node_or_null("PanelContainer")
-			if panel: InteractionKernel.unregister_panel(panel)
+			if panel: kernel.unregister_panel(panel)
 			
 		if _previous_focus_owners.has(target):
 			var prev_focus = _previous_focus_owners[target]
@@ -111,7 +115,8 @@ func pop_modal(screen: CanvasLayer = null):
 				prev_focus.grab_focus()
 			_previous_focus_owners.erase(target)
 			
-		if _instanced_modals.values().has(target):
+		var router = NavigationRouter if NavigationRouter else get_tree().root.get_node_or_null("NavigationRouter")
+		if _instanced_modals.values().has(target) or (router and target == router.active_landing_screen):
 			target.visible = false
 		elif is_instance_valid(target) and target.is_inside_tree():
 			target.queue_free()
@@ -142,3 +147,9 @@ func _arbitrate_input_zoning(has_active_modal: bool):
 	else:
 		_input_blocker.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		print("[MODAL MANAGER] Input Blocker IGNORE. Restoring global input tree.")
+
+func has_modal(screen: CanvasLayer) -> bool:
+	return _modal_stack.has(screen)
+
+func get_modal_stack() -> Array[CanvasLayer]:
+	return _modal_stack
