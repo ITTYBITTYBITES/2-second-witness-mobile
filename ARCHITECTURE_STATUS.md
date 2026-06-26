@@ -4,7 +4,7 @@
 ## Executive Summary
 This document serves as the authoritative, living architecture ledger for *2 Second Witness* (Liquid Memory V2). To maintain an uncompromised, accurate inventory of system progress free of narrative inflation, every major subsystem is tracked across four explicit, independent engineering states: `Designed`, `Implemented`, `Integrated`, and `Validated`. 
 
-**Definitive System Classification:** The system is not a closed-loop production release. It is a **hybrid prototype with simulated subsystems** where the core loop is functional, peripheral systems are partially simulated, and external dependencies remain unresolved.
+**Definitive System Classification:** The system is not a closed-loop production release. It is a **hybrid prototype with simulated subsystems** where the core loop is functional, peripheral systems (billing adapter layer, simulated ads, local disk buffers) are fully prepared, and external dependencies remain unlinked.
 
 ---
 
@@ -39,9 +39,9 @@ The project strictly defines what it means for a subsystem to be `Validated`. A 
 
 ### 1. Platform Engine (Status: Runtime Tested 🟡)
 *   **Designed (✅):** Frozen service boundaries established across `MainShell`, `NavigationRouter`, `ModalWindowManager`, `HUDRoot`, and `InteractionKernel`. Zero content logic permitted in platform singletons.
-*   **Implemented (✅):** Singletons fully realized in GDScript with strict type hints, 4-phase event ledgers (`Input -> Intent -> Resolution -> Commit`), and per-modality exclusive locks.
-*   **Integrated (✅):** 3-layer UI separation (`HUD / Navigation / Simulation`). `MainShell` successfully mounts `HUDRoot` and `NavigationUI` while enforcing `physics_object_picking = true`. Peripheral systems (`StoreManager`, `AdManager`) remain mocked.
-*   **Validated (🟡):** Code Validation and Runtime Validation achieved via automated test harnesses (`verify_ui_authority_arbitration.gd`). Pending physical human test cohort User Validation.
+*   **Implemented (✅):** Singletons fully realized in GDScript with strict type hints, 4-phase event ledgers (`Input -> Intent -> Resolution -> Commit`), and per-modality exclusive locks. `StoreManager` fully implements the Google Play Billing adapter layer with native signal bindings (`GodotGooglePlayBilling`).
+*   **Integrated (✅):** 3-layer UI separation (`HUD / Navigation / Simulation`). `MainShell` successfully mounts `HUDRoot` and `NavigationUI` while enforcing `physics_object_picking = true`. `ModalWindowManager` enforces watchdog empty stack cleanups.
+*   **Validated (🟡):** Code Validation and Runtime Validation achieved via automated test harnesses (`verify_ui_authority_arbitration.gd`, `verify_input_release_contract.gd`). Pending physical human test cohort User Validation.
 
 ### 2. Cognitive Engine (Status: Runtime Tested 🟡)
 *   **Designed (✅):** Reusable cognitive mechanics defined as pure manifolds (`MemoryCascade`, `RapidClassification`, `SignalVsNoise`, `StroopTest`, etc.). Zero universe-specific code permitted in mechanics.

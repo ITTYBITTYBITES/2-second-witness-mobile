@@ -179,6 +179,21 @@
     "res://ARCHITECTURE_STATUS.md": [
         "benchmark/verify_ground_truth_audit.gd:41"
     ],
+    "res://ASSET_AUDIT.md": [
+        "benchmark/verify_asset_audit_reports.gd:9"
+    ],
+    "res://missing_assets.json": [
+        "benchmark/verify_asset_audit_reports.gd:10"
+    ],
+    "res://asset_creation_queue.json": [
+        "benchmark/verify_asset_audit_reports.gd:11"
+    ],
+    "res://unused_assets.json": [
+        "benchmark/verify_asset_audit_reports.gd:12"
+    ],
+    "res://PRODUCTION_READINESS_REPORT.md": [
+        "benchmark/verify_production_readiness_report.gd:9"
+    ],
     "res://Legacy_Project/godot/data/universes.json": [
         "tools/DataMigrationTool.gd:5"
     ],
