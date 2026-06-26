@@ -2,9 +2,11 @@ extends Node
 
 const SAVE_PATH = "user://diagnostics.save"
 const SAVE_SCHEMA_VERSION = 1
+const CRASH_UPLINK_ENDPOINT = "https://api.ittybittybites.com/telemetry/crash_uplink"
 
 var crash_count: int = 0
 var current_device_model: String = ""
+var _http_request: HTTPRequest
 
 var failure_vectors = {
 	"gpu_timeout": 0,
@@ -18,6 +20,9 @@ func _ready():
 	_load_diagnostic_state()
 	print("[DIAGNOSTIC] Monitoring device: ", current_device_model)
 	_apply_self_healing_patches()
+	
+	_http_request = HTTPRequest.new()
+	add_child(_http_request)
 
 func log_critical_failure(vector: String):
 	crash_count += 1
@@ -36,8 +41,21 @@ func _apply_self_healing_patches():
 			if pool and pool.has_method("reset_pool"):
 				pool.reset_pool(2) 
 
-func _uplink_failure_signature(_vector: String):
-	pass
+func _uplink_failure_signature(vector: String):
+	if not is_instance_valid(_http_request): return
+	
+	var data = {
+		"timestamp": Time.get_unix_time_from_system(),
+		"device_model": current_device_model,
+		"failure_vector": vector,
+		"crash_count": crash_count,
+		"active_content_version": GitHubSyncManager.get_active_content_version() if GitHubSyncManager else "unknown"
+	}
+	
+	var headers = ["Content-Type: application/json"]
+	var body = JSON.stringify(data)
+	_http_request.request(CRASH_UPLINK_ENDPOINT, headers, HTTPClient.METHOD_POST, body)
+	print("[DIAGNOSTIC] Transmitted crash failure signature to server: ", vector)
 
 func _load_diagnostic_state():
 	if not FileAccess.file_exists(SAVE_PATH): return
