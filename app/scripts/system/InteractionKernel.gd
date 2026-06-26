@@ -28,7 +28,7 @@ var _last_pointer_event_hash: int = 0
 var _consumed_provenance_tokens: Dictionary = {}
 
 func _ready():
-	BootTracer.log_init("InteractionKernel")
+	if BootTracer: BootTracer.log_init("InteractionKernel")
 	print("[INTERACTION KERNEL] Online. Enforcing event-origin consistency (1 physical input -> 1 consumable token).")
 
 func consume_provenance(event_id: String, event: InputEvent = null) -> bool:
@@ -190,7 +190,12 @@ func _execute_serialized_command(command: Dictionary):
 			if target == "LandingScreen": NavigationRouter.show_landing_screen()
 			elif target == "WeeklyFeaturedScreen": NavigationRouter._on_discover_requested()
 		"toggle_utility":
-			if ModalWindowManager: ModalWindowManager.toggle_utility(command.get("utility_id", ModalWindowManager.UtilityID.MIRROR))
+			var u_id = command.get("utility_id", ModalWindowManager.UtilityID.MIRROR if ModalWindowManager else 0)
+			if str(u_id).to_lower() == "mirror" or (ModalWindowManager and u_id == ModalWindowManager.UtilityID.MIRROR):
+				if NavigationRouter: NavigationRouter._on_profile_requested()
+				elif ModalWindowManager: ModalWindowManager.toggle_utility(u_id)
+			else:
+				if ModalWindowManager: ModalWindowManager.toggle_utility(u_id)
 		"enter_stream": NavigationRouter._on_play_requested()
 		"play_universe": NavigationRouter._on_play_universe_requested(command.get("universe_id", "science_lab"))
 		"ad_resolved": if AdManager: AdManager.ad_finished.emit()

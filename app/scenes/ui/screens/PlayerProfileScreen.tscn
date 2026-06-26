@@ -24,7 +24,7 @@ grow_end = -20.0
 HSeparator/styles/separator = SubResource("StyleBoxLine_sep")
 
 [node name="PlayerProfileScreen" type="CanvasLayer"]
-layer = 50
+layer = 110
 script = ExtResource("1_prof")
 
 [node name="VoidBG" type="ColorRect" parent="."]
