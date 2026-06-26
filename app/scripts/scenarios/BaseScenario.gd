@@ -66,6 +66,8 @@ func execute_render_pipeline():
 	var style = resolver.resolve_theme({"universe": _scenario_payload["universe"], "type": _scenario_payload["type"], "difficulty": _scenario_payload.get("difficulty", 1)})
 	StyleInjector.apply(style, self)
 	
+	LayoutFreezer.enforce_freeze(self)
+	
 	var gate = LayoutQuiescenceGate.new()
 	add_child(gate)
 	gate.begin_quiescence_wait(self)
@@ -73,7 +75,6 @@ func execute_render_pipeline():
 	await gate.layout_stabilized
 	gate.queue_free()
 	
-	LayoutFreezer.enforce_freeze(self)
 	RuntimeInvarianceMonitor.capture_canonical_geometry(self)
 	
 	var asset_resolver = AssetResolver.new()
@@ -82,8 +83,26 @@ func execute_render_pipeline():
 	if Engine.get_main_loop().root.has_node("RuntimeMeasurementIsolation"):
 		Engine.get_main_loop().root.get_node("RuntimeMeasurementIsolation").anchor_stimulus_spawn()
 		
+	LayoutFreezer.unfreeze()
+	
 	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 	if orch and orch.has_method("finalize_scenario_mounting"):
 		orch.finalize_scenario_mounting(_scenario_payload.get("id", "memory_cascade"))
 	
-	print("[SYSTEM] Canonical UI pipeline execution complete.")
+	print("[SYSTEM] Canonical UI pipeline execution complete. Executing runtime assertions...")
+	
+	var is_f = LayoutFreezer.is_frozen
+	var is_b = InteractionKernel.is_ui_blocking() if InteractionKernel else false
+	var is_m_empty = ModalWindowManager.get_modal_stack().is_empty() if ModalWindowManager else true
+	var cur_screen = NavigationRouter.current_screen_name if NavigationRouter else "GameplayHUD"
+	
+	print("  Assertion 1: !LayoutFreezer.is_frozen = ", not is_f)
+	print("  Assertion 2: !InteractionKernel.is_ui_blocking() = ", not is_b)
+	print("  Assertion 3: ModalWindowManager.modal_stack.is_empty() = ", is_m_empty)
+	print("  Assertion 4: current_screen == GameplayHUD = ", cur_screen == "GameplayHUD")
+	
+	assert(not is_f, "Fatal: LayoutFreezer remained frozen before gameplay began.")
+	assert(not is_b, "Fatal: InteractionKernel remained blocking before gameplay began.")
+	assert(is_m_empty, "Fatal: Modal stack was not empty when gameplay started.")
+	assert(cur_screen == "GameplayHUD", "Fatal: Current screen != GameplayHUD after transition completed.")
+	print("✅ ALL 4 RUNTIME ASSERTIONS SATISFIED. Gameplay state machine unlocked and active.")

@@ -10,6 +10,7 @@ var persistent_mirror_instance = null
 var landing_screen_instantiation_count: int = 0
 var router_scene_shift_count: int = 0
 var _is_transitioning_to_landing: bool = false
+var _is_transition_completed: bool = false
 
 var navigation_stack: Array[String] = []
 var current_screen_name: String = ""
@@ -36,6 +37,19 @@ func _input(_event):
 		return
 
 func _update_nav_log(new_screen: String, is_pop: bool = false):
+	if new_screen == "PlayerProfileScreen" or new_screen == "SettingsScreen":
+		print("\n[ROUTER] Utility modal active: ", new_screen, ". Retaining clean navigation stack history.")
+		var m_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+		var m_stk = []
+		if m_mgr:
+			for m in m_mgr.get_modal_stack():
+				if is_instance_valid(m): m_stk.append(m.name)
+		print("Current Screen: ", current_screen_name)
+		print("Previous Screen: ", previous_screen_name)
+		print("Navigation Stack:\n[\n    ", ", \n    ".join(navigation_stack), "\n]")
+		print("Modal Stack:\n[\n    ", ", \n    ".join(m_stk), "\n]\n")
+		return
+
 	previous_screen_name = current_screen_name
 	current_screen_name = new_screen
 	
@@ -58,12 +72,14 @@ func _update_nav_log(new_screen: String, is_pop: bool = false):
 	print("Modal Stack:\n[\n    ", ", \n    ".join(m_stack), "\n]\n")
 
 func on_scene_transition_complete():
+	if _is_transition_completed:
+		print("[ROUTER GUARD] Suppressed duplicate execution of on_scene_transition_complete(). Terminal completion callback executed exactly once.")
+		return
+		
+	_is_transition_completed = true
 	print("[ROUTER] Executing single authoritative completion hook: on_scene_transition_complete()...")
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
-	
-	var is_hud_valid = active_gameplay_hud and is_instance_valid(active_gameplay_hud) and active_gameplay_hud.is_inside_tree()
-	var is_stack_empty = modal_mgr and modal_mgr.get_modal_stack().is_empty()
 	
 	LayoutFreezer.unfreeze()
 	if kernel and kernel.has_method("release_all_locks"):
@@ -140,7 +156,6 @@ func _show_gameplay_hud():
 	_update_nav_log("GameplayHUD", false)
 	if active_gameplay_hud and is_instance_valid(active_gameplay_hud):
 		active_gameplay_hud.visible = true
-		call_deferred("on_scene_transition_complete")
 		return
 		
 	var hud_root = get_tree().root.get_node_or_null("MainShell/UILayer/HUDRoot")
@@ -203,7 +218,6 @@ func _show_gameplay_hud():
 	active_gameplay_hud.add_child(btn_mirror)
 	hud_root.add_child(active_gameplay_hud)
 	print("[ROUTER] Gameplay HUD attached. Persistent 3-Layer UI separation active.")
-	call_deferred("on_scene_transition_complete")
 
 func toggle_mirror_modal():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
@@ -322,6 +336,7 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 	print("[ROUTER] World Selected: ", u_id, " -> ", w_id)
 	print("→ world_selected event emitted: ", w_id)
 	_is_transitioning_to_landing = false
+	_is_transition_completed = false
 	current_scenario_chain_index = 1
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
