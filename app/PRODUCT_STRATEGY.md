@@ -3,11 +3,16 @@
 **Product Name:** 2 Second Witness
 **Underlying Engine:** Liquid Memory V2
 
-## The Core Paradigm
-*2 Second Witness* is not a "game with levels." It is a cognitive exploration platform built on the Liquid Memory V2 engine.
+## The Definitive Platform Classification
+*2 Second Witness* is not a "game with levels" or an "ambitious trivia game with cognitive mechanics." 
 
-## The Shift in Optimization Target (Release Engineering)
-The project has officially concluded its infrastructure phase. The AI agents are no longer optimizing for architecture (`Is the ledger deterministic?`, `Is the router isolated?`, `Is mutation serialized?`). 
+It is definitively classified as:
+**`An adaptive cognitive experience platform where knowledge domains provide the content, reusable cognitive challenges provide the measurement, the Iris Engine provides the perceptual context, and the Mirror Engine synthesizes player performance into personalized insights that shape future sessions.`**
+
+---
+
+## The Product-First Optimization Target
+The project explicitly evaluates development as a product, not just a codebase. A codebase can have clean routing and still have major unknowns in persistence, performance, memory usage, Android lifecycles, scene loading, save migrations, telemetry correctness, balancing, and user experience.
 
 The definitive optimization target for all active agents and developers is:
 **`Can a first-time user complete the entire gameplay loop without confusion?`**

@@ -1,33 +1,33 @@
 # PRODUCT: 2 Second Witness
-# DEFINITIVE STRATEGIC ROADMAP & ENTERPRISE PRIORITIZATION PIPELINE
+# DEFINITIVE STRATEGIC ROADMAP & PRODUCT-FIRST EXECUTION PIPELINE
 
 ## Executive Summary
-This document establishes the definitive long-term development roadmap for *2 Second Witness*. By enforcing a strict 5-stage prioritization order, the project ensures that platform stability, vertical slice validation, and insight engine depth are fully established before executing horizontal content expansion or LiveOps scaling.
+This document establishes the definitive development roadmap for *2 Second Witness*, evaluating the project as a product rather than just a codebase. By reordering priorities around experience maturity, the project ensures that the core retention loop (`Play -> Mirror -> Insight -> Want to play another`) is fully proven before investing in commercial integration or horizontal art expansion.
 
 ---
 
-## 1. The 5-Stage Long-Term Prioritization Roadmap
+## 1. The Product-First Prioritization Roadmap
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                    LONG-TERM PRIORITIZATION ROADMAP                     │
+│                   PRODUCT-FIRST PRIORITIZATION ROADMAP                  │
 ├──────────────────────────┬──────────────────────────────────────────────┤
-│     DEVELOPMENT STAGE    │              STRATEGIC GOAL                  │
+│       DEVELOPMENT PHASE  │               STRATEGIC GOAL                 │
 ├──────────────────────────┼──────────────────────────────────────────────┤
-│ 1. Platform Stability    │ Finish routing, HUD, modal management, save  │
-│                          │ system, and service boundaries.              │
+│ 1. Complete Vertical Slic│ History -> Ancient Egypt -> 3 spikes ->      │
+│                          │ Mirror -> Insights -> Adaptive recommendation│
 ├──────────────────────────┼──────────────────────────────────────────────┤
-│ 2. One Vertical Slice    │ Build a single Universe (History), 2-3 Worlds│
-│                          │ 3-4 spikes, one Iris theme, full Mirror loop.│
+│ 2. Mirror Refinement     │ Enhance interpretation depth. This is where  │
+│                          │ differentiation lives (not more questions).  │
 ├──────────────────────────┼──────────────────────────────────────────────┤
-│ 3. Mirror Refinement     │ Invest in insight engine to provide genuinely│
-│                          │ useful observations and recommendations.     │
+│ 3. Content Pipeline      │ Enable adding Universe -> World -> Knowledge │
+│                          │ without touching code.                       │
 ├──────────────────────────┼──────────────────────────────────────────────┤
-│ 4. Content Expansion     │ Add Universes and Worlds through data rather │
-│                          │ than new code.                               │
+│ 4. Visual Expansion      │ Expand into Physics, Astronomy, Medicine,    │
+│                          │ Programming, etc.                            │
 ├──────────────────────────┼──────────────────────────────────────────────┤
-│ 5. LiveOps               │ Introduce rotating worlds and new datasets   │
-│                          │ only after core loop is demonstrably engaging│
+│ 5. Billing Integration   │ Mount billing APIs only after the retention  │
+│                          │ loop is proven.                              │
 └──────────────────────────┴──────────────────────────────────────────────┘
 ```
 
@@ -38,32 +38,27 @@ Players return because the system continuously adapts to them and reflects meani
 
 ## 2. Milestone Definitions & Success Metrics
 
-### Stage 1 – Platform Stability (The Foundation)
-**Goal:** Guarantee uncompromised software architecture and service boundaries.
-*   `Navigation Routing:` Flawless 3-layer separation across `NavigationRouter` and `HUDRoot`.
-*   `Modal Management:` `ModalWindowManager` enforces strict LIFO focus invariants and background input blocking.
-*   `Save System:` Immutable JSON I/O for `PlayerProfile` and Goodwill tokens (`user://profile.save`).
-*   `Intent Bus:` `InteractionKernel` acts as a pure UI-agnostic Intent Bus, completely isolating input from execution.
-
-### Stage 2 – One Complete Vertical Slice (The Core Product)
-**Goal:** Build a single, perfectly executed universe to prove the core loop.
-*   `Universe & Worlds:` Build out a single Universe (e.g., `History` / `Science Lab`) with 2 to 3 distinct Worlds (`ancient_egypt`, `ai`).
-*   `Cognitive Spikes:` Implement 3 to 4 fully bound cognitive tasks (`Memory Cascade`, `Rapid Classification`, `Signal vs Noise`).
-*   `Perceptual Themes:` Mount one custom Iris theme per world using the `WorldProfile.json` data contract.
+### Stage 1 – Complete Vertical Slice (The Foundation)
+**Goal:** Build a single, perfectly executed universe to prove the core loop end-to-end.
+*   `Universe & Worlds:` Build out a single Universe (`History`) with 1 to 2 distinct Worlds (`ancient_egypt`).
+*   `Cognitive Spikes:` Implement 3 fully bound cognitive tasks (`Memory Cascade`, `Rapid Classification`, `Signal vs Noise`).
+*   `Perceptual Themes:` Mount one custom Iris theme per world using the `WorldProfile` data contract.
 *   `The Feedback Loop:` Connect the complete Mirror feedback loop to prove value delivery.
 
-### Stage 3 – Mirror Refinement (Experience Depth)
+### Stage 2 – Mirror Refinement (Experience Depth)
 **Goal:** Transition from reporting arbitrary scores to providing genuine psychological reflection.
 *   `Insight Engine:` Expand `PlayerProfile.gd` to generate actionable observations and recommendations based on hesitation, error deltas, and load indices.
 *   `The Mirror UI:` Polish `PlayerProfileScreen.tscn` to render beautifully formatted, color-coded BBCode insights that players actively seek out after every loop.
 
-### Stage 4 – Content Expansion (Horizontal Scaling)
-**Goal:** Multiply the validated loop through pure data injection.
-*   `Data-Driven Expansion:` Populate the remaining 5 universes (`Life Sciences`, `Tech Ops`, `Creative Arts`, `Society Mind`, `Frontier`) entirely through JSON descriptor vectors (`WorldProfile.json`, `stroop_042.json`).
+### Stage 3 – Content Pipeline (The Horizon)
+**Goal:** Enable adding `Universe -> World -> Knowledge` without touching code.
+*   `Data-Driven Ingestion:` Build out the complete content pipeline (Knowledge validation, difficulty calibration, content tagging, distractor generation, localization readiness, duplicate prevention, versioning, LiveOps publishing, metadata).
 *   `Zero New Code:` Guarantee that new content streams cleanly through the existing 12 flagship cognitive rendering manifolds without altering any C++ or GDScript code.
 
-### Stage 5 – LiveOps (The Horizon)
-**Goal:** Introduce continuous dynamic content rotation and community updates.
-*   `Discovery Rotation:` Activate `SamplingController` and `WeeklyFeaturedScreen` to rotate free featured universes based on server seeds.
-*   `OTA Ingestion:` Wire `GitHubSyncManager` to automatically download patch manifests and new knowledge datasets to `user://live_content/`.
-*   `Longitudinal Telemetry:` Maintain silent cohort logging (`StructuredLogger`) to verify ongoing psychometric validity across global installations.
+### Stage 4 – Visual Expansion (Horizontal Scaling)
+**Goal:** Multiply the validated loop through pure visual injection.
+*   `Data-Driven Expansion:` Populate the remaining universes (`Physics`, `Astronomy`, `Medicine`, `Programming`, `Tech Ops`) entirely through JSON descriptor vectors (`WorldProfile.json`, `stroop_042.json`).
+
+### Stage 5 – Billing Integration (Commercialization)
+**Goal:** Mount commercial APIs only after the retention loop is proven.
+*   `Live Billing Integration:` Replace the mock async timer in `StoreManager.gd` with the official `GodotGooglePlayBilling` plugin.
