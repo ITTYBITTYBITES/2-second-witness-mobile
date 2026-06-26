@@ -14,6 +14,10 @@ var _instanced_modals: Dictionary = {}
 var _previous_focus_owners: Dictionary = {}
 var _input_blocker: Control
 
+var modal_write_owner: String = ""
+var _last_write_frame: int = -1
+var _is_blocker_active: bool = false
+
 func _ready():
 	if BootTracer: BootTracer.log_init("ModalWindowManager")
 	print("[MODAL MANAGER] Online. Operating as authoritative owner of modal state and focus invariants.")
@@ -36,9 +40,21 @@ func _unhandled_input(event):
 		if not _modal_stack.is_empty():
 			get_viewport().set_input_as_handled()
 			print("[MODAL MANAGER] Escape/Back intercepted. Popping top modal.")
-			pop_modal()
+			pop_modal(null, "ModalWindowManager")
 
-func toggle_utility(utility_id: Variant):
+func _arbitrate_write_owner(caller: String) -> bool:
+	var current_frame = Engine.get_frames_drawn() if Engine else 0
+	if _last_write_frame == current_frame:
+		if modal_write_owner != caller and modal_write_owner != "":
+			print("[MODAL MANAGER GUARD] Suppressed multi-authority collision in same frame. Active owner: ", modal_write_owner, ", Blocked caller: ", caller)
+			return false
+	else:
+		_last_write_frame = current_frame
+		modal_write_owner = caller
+		print("modal_write_owner = ", modal_write_owner)
+	return true
+
+func toggle_utility(utility_id: Variant, caller: String = "ModalWindowManager"):
 	var u_id: int = UtilityID.MIRROR
 	if typeof(utility_id) == TYPE_STRING:
 		match str(utility_id).to_lower():
@@ -56,9 +72,9 @@ func toggle_utility(utility_id: Variant):
 	if _instanced_modals.has(u_id) and is_instance_valid(_instanced_modals[u_id]):
 		var existing_screen = _instanced_modals[u_id]
 		if _modal_stack.has(existing_screen):
-			pop_modal(existing_screen)
+			pop_modal(existing_screen, caller)
 		else:
-			push_modal(existing_screen, true)
+			push_modal(existing_screen, true, caller)
 		return
 		
 	var scene_path = ""
@@ -80,11 +96,13 @@ func toggle_utility(utility_id: Variant):
 	if hud_root: hud_root.add_child(screen)
 	
 	if screen.has_signal("return_requested"):
-		screen.return_requested.connect(func(): pop_modal(screen))
+		screen.return_requested.connect(func(): pop_modal(screen, caller))
 		
-	push_modal(screen, true)
+	push_modal(screen, true, caller)
 
-func push_modal(screen: CanvasLayer, is_modal: bool = true):
+func push_modal(screen: CanvasLayer, is_modal: bool = true, caller: String = "ModalWindowManager"):
+	if not _arbitrate_write_owner(caller): return
+	
 	if _modal_stack.has(screen):
 		print("[MODAL MANAGER] Suppressed duplicate push for modal already in stack: ", screen.name)
 		return
@@ -109,7 +127,8 @@ func push_modal(screen: CanvasLayer, is_modal: bool = true):
 	_arbitrate_input_zoning(is_modal)
 	modal_stack_changed.emit(screen)
 
-func pop_modal(screen: CanvasLayer = null):
+func pop_modal(screen: CanvasLayer = null, caller: String = "ModalWindowManager"):
+	if not _arbitrate_write_owner(caller): return
 	if _modal_stack.is_empty(): return
 	
 	var target = screen if screen != null else _modal_stack[-1]
@@ -139,18 +158,24 @@ func pop_modal(screen: CanvasLayer = null):
 	var active = _modal_stack[-1] if _modal_stack.size() > 0 else null
 	modal_stack_changed.emit(active)
 
-func pop_all_modals(except_screen: CanvasLayer = null):
+func pop_all_modals(except_screen: CanvasLayer = null, caller: String = "ModalWindowManager"):
 	var modals_to_pop = _modal_stack.duplicate()
 	for modal in modals_to_pop:
 		if is_instance_valid(modal) and modal != except_screen:
-			pop_modal(modal)
+			pop_modal(modal, caller)
 		elif not is_instance_valid(modal):
 			_modal_stack.erase(modal)
 
 func _arbitrate_input_zoning(has_active_modal: bool):
 	if not is_instance_valid(_input_blocker): return
 	
-	if has_active_modal and _modal_stack.size() > 0:
+	var should_be_active = (has_active_modal and _modal_stack.size() > 0)
+	if _is_blocker_active == should_be_active:
+		return # Idempotent suppression of redundant state writes
+		
+	_is_blocker_active = should_be_active
+	
+	if should_be_active:
 		var top_modal = _modal_stack[-1]
 		var parent = _input_blocker.get_parent()
 		if parent and top_modal.get_parent() == parent:
