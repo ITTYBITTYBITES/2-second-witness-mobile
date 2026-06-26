@@ -12,10 +12,14 @@ var _is_setup_ready: bool = false
 
 var world_meta = {
 	"ancient_egypt": {"name": "Ancient Egypt", "scenarios": "12 scenarios", "completion": "34%", "rec": "Recommended Today"},
-	"pyramids": {"name": "Pyramids", "scenarios": "10 scenarios", "completion": "0%", "rec": "Optimal Alignment"},
-	"nile_delta": {"name": "Nile Delta", "scenarios": "15 scenarios", "completion": "52%", "rec": "Moderate Alignment"},
+	"ancient_rome": {"name": "Ancient Rome", "scenarios": "10 scenarios", "completion": "0%", "rec": "Optimal Alignment"},
+	"medieval_europe": {"name": "Medieval Europe", "scenarios": "15 scenarios", "completion": "52%", "rec": "Moderate Alignment"},
 	"renaissance": {"name": "Renaissance", "scenarios": "8 scenarios", "completion": "100%", "rec": "Mastered"},
-	"industrial_revolution": {"name": "Industrial Revolution", "scenarios": "14 scenarios", "completion": "15%", "rec": "High Potential"}
+	"industrial_revolution": {"name": "Industrial Revolution", "scenarios": "14 scenarios", "completion": "15%", "rec": "High Potential"},
+	"arctic": {"name": "Arctic", "scenarios": "10 scenarios", "completion": "40%", "rec": "Recommended Today"},
+	"aviation": {"name": "Aviation", "scenarios": "12 scenarios", "completion": "10%", "rec": "High Potential"},
+	"disaster": {"name": "Disaster Response", "scenarios": "15 scenarios", "completion": "80%", "rec": "Advanced Alignment"},
+	"wilderness": {"name": "Wilderness", "scenarios": "14 scenarios", "completion": "25%", "rec": "Recommended Today"}
 }
 
 func setup(universe_id: String):
@@ -40,11 +44,14 @@ func _populate_grid():
 	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	
 	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
-	if worlds.is_empty() or active_universe_id == "history":
-		if active_universe_id == "history": worlds = ["ancient_egypt", "pyramids", "nile_delta", "renaissance", "industrial_revolution"]
-		elif active_universe_id == "science_lab": worlds = ["cognitive_bias", "neural_mapping", "ai"]
-		elif active_universe_id == "life_sciences": worlds = ["genetics", "cellular_biology", "virology"]
-		elif active_universe_id == "tech_ops": worlds = ["cyber_matrix", "subliminal_code", "protocols"]
+	if worlds.is_empty() or active_universe_id == "history" or active_universe_id == "frontier":
+		if active_universe_id == "history": worlds = ["ancient_egypt", "ancient_rome", "medieval_europe", "renaissance", "industrial_revolution"]
+		elif active_universe_id == "science_lab": worlds = ["cognitive_bias", "neural_mapping", "ai", "quantum_mechanics", "optics"]
+		elif active_universe_id == "life_sciences": worlds = ["genetics", "cellular_biology", "virology", "botany", "neuroscience"]
+		elif active_universe_id == "tech_ops": worlds = ["cyber_matrix", "subliminal_code", "protocols", "encryption", "firewalls"]
+		elif active_universe_id == "creative_arts": worlds = ["color_theory", "composition", "harmony", "sculpture", "architecture"]
+		elif active_universe_id == "society_mind": worlds = ["behavioral_economics", "sociology", "psychology", "linguistics", "group_dynamics"]
+		elif active_universe_id == "frontier": worlds = ["arctic", "aviation", "disaster", "wilderness", "space_exploration", "deep_sea", "mountain_summit", "desert_crossing", "subterranean", "jungle_canopy"]
 		else: worlds = ["foundations", "advanced_concepts", "synthesis"]
 		
 	print("Universe:", active_universe_id)
