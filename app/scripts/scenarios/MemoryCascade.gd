@@ -12,12 +12,12 @@ var sequence = []
 var current_step = 0
 var _scenario_id: String = "memory_cascade"
 var _start_ticks_msec: int = 0
+var _initial_feedback_text: String = ""
 
 func _apply_specific_rules(rules: Dictionary):
 	_scenario_id = _scenario_payload["id"]
 	var length = rules.get("sequence_length", 3)
 	
-	# REPLACED HARDCODED ARRAY WITH DETERMINISTIC GENERATION
 	for i in range(length):
 		sequence.append(_deterministic_rng.randi() % 3)
 		
@@ -28,7 +28,9 @@ func _apply_specific_rules(rules: Dictionary):
 		elif val == 2: seq_str += "Right -> "
 	
 	seq_str = seq_str.strip_edges().trim_suffix("->")
-	feedback_label.text = "Sequence: " + seq_str
+	_initial_feedback_text = "Sequence: " + seq_str
+	if feedback_label:
+		feedback_label.text = _initial_feedback_text
 
 func _ready():
 	print("SCENARIO READY")
@@ -39,6 +41,9 @@ func _ready():
 		
 	_start_ticks_msec = Time.get_ticks_msec()
 	print("[MEMORY CASCADE] Entering the Void. Spike Initiated.")
+	
+	if feedback_label and _initial_feedback_text != "":
+		feedback_label.text = _initial_feedback_text
 	
 	btn_left.pressed.connect(func(): _on_btn_pressed(0))
 	btn_center.pressed.connect(func(): _on_btn_pressed(1))

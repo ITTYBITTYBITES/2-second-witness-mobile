@@ -41,7 +41,7 @@ func _ready():
 
 func _populate_grid():
 	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
-	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
+	var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	
 	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
 	if worlds.is_empty() or active_universe_id == "history" or active_universe_id == "frontier":

@@ -85,7 +85,7 @@ func _populate_data():
 		}
 		
 		for k in trait_keys.keys():
-			var name = trait_keys[k]
+			var t_name = trait_keys[k]
 			var data = baseline.get(k, {"attempts": 1, "successes": 1, "total_rt_ms": 850.0})
 			var attempts = data["attempts"]
 			var succ = data["successes"]
@@ -93,7 +93,7 @@ func _populate_data():
 			
 			var lbl = RichTextLabel.new()
 			lbl.bbcode_enabled = true
-			lbl.text = "[color=#2ECC71]" + name + "[/color]\nAttempts: " + str(attempts) + " | Success: " + str(succ) + " | Avg RT: " + str(snapped(avg_rt, 0.1)) + "ms"
+			lbl.text = "[color=#2ECC71]" + t_name + "[/color]\nAttempts: " + str(attempts) + " | Success: " + str(succ) + " | Avg RT: " + str(snapped(avg_rt, 0.1)) + "ms"
 			lbl.fit_content = true
 			lbl.custom_minimum_size = Vector2(400, 60)
 			lbl.add_theme_font_size_override("normal_font_size", 16)
