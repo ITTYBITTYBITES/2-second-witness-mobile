@@ -2,8 +2,12 @@ extends CanvasLayer
 
 signal return_requested
 
-@onready var lifetime_label = $PanelContainer/MarginContainer/VBoxContainer/Header/LifetimeLabel
-@onready var insights_container = $PanelContainer/MarginContainer/VBoxContainer/InsightsContainer
+@onready var lifetime_label = $PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/Header/LifetimeLabel
+@onready var welcome_label = $PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/Header/WelcomeLabel
+@onready var traits_container = $PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/TraitsContainer
+@onready var insights_container = $PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/InsightsContainer
+@onready var rec_container = $PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/RecContainer
+@onready var nav_container = $PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/NavigationContainer
 
 var btn_leave
 
@@ -30,33 +34,34 @@ func _ready():
 
 func _populate_data():
 	var profile = get_node_or_null("/root/PlayerProfile")
-	
 	var lifetime = profile.lifetime_sessions if profile else 0
+	
 	if lifetime_label: lifetime_label.text = "LIFETIME SESSIONS: " + str(lifetime)
 	
-	for child in insights_container.get_children():
-		child.queue_free()
-		
-	var header_lbl = RichTextLabel.new()
-	header_lbl.bbcode_enabled = true
-	header_lbl.text = "[center][color=#2ECC71]★ THE COGNITIVE MIRROR[/color][/center]"
-	header_lbl.fit_content = true
-	header_lbl.add_theme_font_size_override("normal_font_size", 26)
-	insights_container.add_child(header_lbl)
+	for child in traits_container.get_children(): child.queue_free()
+	for child in insights_container.get_children(): child.queue_free()
+	for child in rec_container.get_children(): child.queue_free()
+	for child in nav_container.get_children(): child.queue_free()
 	
 	if lifetime == 0:
-		var welcome_text = "[center][color=#E6B800]Welcome to the Mirror[/color]\n\n\"Your cognitive profile develops as you complete scenarios. Complete your first world to begin generating observations.\"\n\n[color=#8595FF]Progress:[/color]\n- Universes explored: 0\n- Worlds completed: 0\n- Scenarios completed: 0\n\n[color=#8595FF]Insights:[/color]\n- No observations yet.\n\n[color=#E6B800]Recommended next step:[/color]\n- Start your first world.[/center]"
-		var welcome_lbl = RichTextLabel.new()
-		welcome_lbl.bbcode_enabled = true
-		welcome_lbl.text = welcome_text
-		welcome_lbl.fit_content = true
-		welcome_lbl.add_theme_font_size_override("normal_font_size", 18)
-		welcome_lbl.add_theme_color_override("default_color", Color(0.9, 0.9, 0.95))
-		insights_container.add_child(welcome_lbl)
+		if welcome_label: welcome_label.text = "Your cognitive profile develops as you complete scenarios. Complete your first world to begin generating observations."
+		
+		var zero_traits = ["Pattern Recognition", "Recall", "Rapid Classification", "Spatial Tracking", "Decision Confidence", "Processing Speed"]
+		for t in zero_traits:
+			var lbl = Label.new()
+			lbl.text = t + ": [color=#555555]0 attempts (No observations yet)[/color]"
+			lbl.add_theme_font_size_override("font_size", 16)
+			traits_container.add_child(lbl)
+			
+		var no_obs = RichTextLabel.new()
+		no_obs.bbcode_enabled = true
+		no_obs.text = "[center][color=#8595FF]Progress:[/color]\n- Universes explored: 0\n- Worlds completed: 0\n- Scenarios completed: 0\n\n[color=#8595FF]Insights:[/color]\n- No observations yet.\n\n[color=#E6B800]Recommended next step:[/color]\n- Start your first world.[/center]"
+		no_obs.fit_content = true
+		no_obs.add_theme_font_size_override("normal_font_size", 18)
+		insights_container.add_child(no_obs)
 		
 		var btn_begin = Button.new()
 		btn_begin.custom_minimum_size = Vector2(240, 50)
-		btn_begin.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 		btn_begin.text = "BEGIN JOURNEY"
 		btn_begin.add_theme_font_size_override("font_size", 20)
 		btn_begin.pressed.connect(func():
@@ -68,8 +73,32 @@ func _populate_data():
 				router._on_discover_requested()
 			return_requested.emit()
 		)
-		insights_container.add_child(btn_begin)
+		nav_container.add_child(btn_begin)
 	else:
+		if welcome_label: welcome_label.text = "Observe carefully. There are no right personalities— only patterns."
+		
+		var baseline = profile.cognitive_baseline if profile else {}
+		var trait_keys = {
+			"pattern_recognition": "Pattern Recognition", "recall": "Recall",
+			"rapid_classification": "Rapid Classification", "spatial_tracking": "Spatial Tracking",
+			"decision_confidence": "Decision Confidence", "processing_speed": "Processing Speed"
+		}
+		
+		for k in trait_keys.keys():
+			var name = trait_keys[k]
+			var data = baseline.get(k, {"attempts": 1, "successes": 1, "total_rt_ms": 850.0})
+			var attempts = data["attempts"]
+			var succ = data["successes"]
+			var avg_rt = (data["total_rt_ms"] / float(succ)) if succ > 0 else 0.0
+			
+			var lbl = RichTextLabel.new()
+			lbl.bbcode_enabled = true
+			lbl.text = "[color=#2ECC71]" + name + "[/color]\nAttempts: " + str(attempts) + " | Success: " + str(succ) + " | Avg RT: " + str(snapped(avg_rt, 0.1)) + "ms"
+			lbl.fit_content = true
+			lbl.custom_minimum_size = Vector2(400, 60)
+			lbl.add_theme_font_size_override("normal_font_size", 16)
+			traits_container.add_child(lbl)
+			
 		var trends_text = "[center]Working Memory: [color=#2ECC71]↑ Stable[/color] | Rapid Classification: [color=#2ECC71]↑ Improving[/color] | Cognitive Flexibility: [color=#E6B800]→ No significant change[/color][/center]"
 		var trends_lbl = RichTextLabel.new()
 		trends_lbl.bbcode_enabled = true
@@ -77,23 +106,6 @@ func _populate_data():
 		trends_lbl.fit_content = true
 		trends_lbl.add_theme_font_size_override("normal_font_size", 18)
 		insights_container.add_child(trends_lbl)
-		
-		var rec: Dictionary = {}
-		if profile and profile.has_method("get_adaptive_recommendation"):
-			rec = profile.get_adaptive_recommendation()
-		else:
-			rec = {"universe": "frontier", "reason": "Your recent decisions suggest strong spatial reasoning."}
-			
-		var target_uni = rec.get("universe", "frontier")
-		var reason_text = rec.get("reason", "Your recent decisions suggest strong spatial reasoning.")
-		var rec_text = "\n[center][color=#E6B800]Suggested Exploration: " + target_uni.capitalize() + "[/color]\nReason: [color=#8595FF]\"" + reason_text + "\"[/color][/center]\n"
-		
-		var rec_lbl = RichTextLabel.new()
-		rec_lbl.bbcode_enabled = true
-		rec_lbl.text = rec_text
-		rec_lbl.fit_content = true
-		rec_lbl.add_theme_font_size_override("normal_font_size", 18)
-		insights_container.add_child(rec_lbl)
 		
 		var insights: Array = []
 		if profile and profile.has_method("generate_insights"):
@@ -115,10 +127,24 @@ func _populate_data():
 			lbl.add_theme_font_size_override("normal_font_size", 18)
 			lbl.add_theme_color_override("default_color", Color(0.9, 0.9, 0.95))
 			insights_container.add_child(lbl)
-
-		var hbox = HBoxContainer.new()
-		hbox.alignment = HBoxContainer.ALIGN_CENTER
-		hbox.add_theme_constant_override("separation", 30)
+			
+		var rec: Dictionary = {}
+		if profile and profile.has_method("get_adaptive_recommendation"):
+			rec = profile.get_adaptive_recommendation()
+		else:
+			rec = {"universe": "history", "world": "ancient_egypt", "reason": "High hesitation in rapid classification detected. Recommending History -> Ancient Egypt."}
+			
+		var target_uni = rec.get("universe", "history")
+		var target_world = rec.get("world", "ancient_egypt")
+		var reason_text = rec.get("reason", "Your recent decisions suggest strong sequential reasoning.")
+		
+		var rec_text = "[center][color=#E6B800]Recommended Next: " + target_uni.capitalize() + " -> " + target_world.capitalize().replace("_", " ") + "[/color]\nReason: [color=#8595FF]\"" + reason_text + "\"[/color][/center]"
+		var rec_lbl = RichTextLabel.new()
+		rec_lbl.bbcode_enabled = true
+		rec_lbl.text = rec_text
+		rec_lbl.fit_content = true
+		rec_lbl.add_theme_font_size_override("normal_font_size", 18)
+		rec_container.add_child(rec_lbl)
 		
 		var btn_continue = Button.new()
 		btn_continue.custom_minimum_size = Vector2(220, 50)
@@ -130,7 +156,7 @@ func _populate_data():
 			if AdManager: AdManager.hide_banner()
 			return_requested.emit()
 		)
-		hbox.add_child(btn_continue)
+		nav_container.add_child(btn_continue)
 		
 		var btn_rec = Button.new()
 		btn_rec.custom_minimum_size = Vector2(260, 50)
@@ -145,7 +171,7 @@ func _populate_data():
 				router._on_play_universe_requested(target_uni)
 			return_requested.emit()
 		)
-		hbox.add_child(btn_rec)
+		nav_container.add_child(btn_rec)
 		
 		var btn_return = Button.new()
 		btn_return.custom_minimum_size = Vector2(200, 50)
@@ -160,9 +186,7 @@ func _populate_data():
 				router.show_landing_screen()
 			return_requested.emit()
 		)
-		hbox.add_child(btn_return)
-		
-		insights_container.add_child(hbox)
+		nav_container.add_child(btn_return)
 
 	var panel = $PanelContainer
 	panel.modulate.a = 0
