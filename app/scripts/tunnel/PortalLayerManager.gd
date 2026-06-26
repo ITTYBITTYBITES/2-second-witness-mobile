@@ -4,9 +4,6 @@ var active_speed_multiplier: float = 1.0
 var active_universe_id: String = "science_lab"
 var active_world_id: String = ""
 
-func _ready():
-	pass
-
 func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: String = ""):
 	if universe_id == "": universe_id = theme_data.get("id", "science_lab")
 	active_universe_id = universe_id
@@ -16,9 +13,6 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: Str
 	active_speed_multiplier = world_prof.get("tunnel", {}).get("speed_multiplier", tunnel.get("speed_multiplier", 1.0))
 	
 	print("[TIER 3 - PORTALS] Interaction layer synchronized. Lens Identity updated to: ", universe_id, " | ", world_id)
-
-func _process(_delta):
-	pass
 
 func spawn_lens_portal(chunk_id: String):
 	print("STEP 5: PORTAL SPAWN ENTERED")
