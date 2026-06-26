@@ -30,113 +30,139 @@ func _ready():
 
 func _populate_data():
 	var profile = get_node_or_null("/root/PlayerProfile")
-	if not profile: return
 	
-	if lifetime_label: lifetime_label.text = "LIFETIME SESSIONS: " + str(profile.lifetime_sessions)
+	var lifetime = profile.lifetime_sessions if profile else 0
+	if lifetime_label: lifetime_label.text = "LIFETIME SESSIONS: " + str(lifetime)
 	
 	for child in insights_container.get_children():
 		child.queue_free()
 		
 	var header_lbl = RichTextLabel.new()
 	header_lbl.bbcode_enabled = true
-	header_lbl.text = "[center][color=#2ECC71]★ TODAY'S OBSERVATIONS & TRENDS[/color][/center]"
+	header_lbl.text = "[center][color=#2ECC71]★ THE COGNITIVE MIRROR[/color][/center]"
 	header_lbl.fit_content = true
-	header_lbl.add_theme_font_size_override("normal_font_size", 24)
+	header_lbl.add_theme_font_size_override("normal_font_size", 26)
 	insights_container.add_child(header_lbl)
 	
-	var trends_text = "[center]Working Memory: [color=#2ECC71]↑ Stable[/color] | Rapid Classification: [color=#2ECC71]↑ Improving[/color] | Cognitive Flexibility: [color=#E6B800]→ No significant change[/color][/center]"
-	var trends_lbl = RichTextLabel.new()
-	trends_lbl.bbcode_enabled = true
-	trends_lbl.text = trends_text
-	trends_lbl.fit_content = true
-	trends_lbl.add_theme_font_size_override("normal_font_size", 18)
-	insights_container.add_child(trends_lbl)
-	
-	var rec: Dictionary = {}
-	if profile.has_method("get_adaptive_recommendation"):
-		rec = profile.get_adaptive_recommendation()
+	if lifetime == 0:
+		var welcome_text = "[center][color=#E6B800]Welcome to the Mirror[/color]\n\n\"Your cognitive profile develops as you complete scenarios. Complete your first world to begin generating observations.\"\n\n[color=#8595FF]Progress:[/color]\n- Universes explored: 0\n- Worlds completed: 0\n- Scenarios completed: 0\n\n[color=#8595FF]Insights:[/color]\n- No observations yet.\n\n[color=#E6B800]Recommended next step:[/color]\n- Start your first world.[/center]"
+		var welcome_lbl = RichTextLabel.new()
+		welcome_lbl.bbcode_enabled = true
+		welcome_lbl.text = welcome_text
+		welcome_lbl.fit_content = true
+		welcome_lbl.add_theme_font_size_override("normal_font_size", 18)
+		welcome_lbl.add_theme_color_override("default_color", Color(0.9, 0.9, 0.95))
+		insights_container.add_child(welcome_lbl)
+		
+		var btn_begin = Button.new()
+		btn_begin.custom_minimum_size = Vector2(240, 50)
+		btn_begin.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+		btn_begin.text = "BEGIN JOURNEY"
+		btn_begin.add_theme_font_size_override("font_size", 20)
+		btn_begin.pressed.connect(func():
+			print("[COGNITIVE MIRROR] Begin Journey clicked.")
+			if AudioManager: AudioManager.play_sfx("ui_click")
+			if AdManager: AdManager.hide_banner()
+			var router = get_node_or_null("/root/NavigationRouter")
+			if router and router.has_method("_on_discover_requested"):
+				router._on_discover_requested()
+			return_requested.emit()
+		)
+		insights_container.add_child(btn_begin)
 	else:
-		rec = {"universe": "frontier", "reason": "Your recent decisions suggest strong spatial reasoning."}
+		var trends_text = "[center]Working Memory: [color=#2ECC71]↑ Stable[/color] | Rapid Classification: [color=#2ECC71]↑ Improving[/color] | Cognitive Flexibility: [color=#E6B800]→ No significant change[/color][/center]"
+		var trends_lbl = RichTextLabel.new()
+		trends_lbl.bbcode_enabled = true
+		trends_lbl.text = trends_text
+		trends_lbl.fit_content = true
+		trends_lbl.add_theme_font_size_override("normal_font_size", 18)
+		insights_container.add_child(trends_lbl)
 		
-	var target_uni = rec.get("universe", "frontier")
-	var reason_text = rec.get("reason", "Your recent decisions suggest strong spatial reasoning.")
-	var rec_text = "\n[center][color=#E6B800]Suggested Exploration: " + target_uni.capitalize() + "[/color]\nReason: [color=#8595FF]\"" + reason_text + "\"[/color][/center]\n"
-	
-	var rec_lbl = RichTextLabel.new()
-	rec_lbl.bbcode_enabled = true
-	rec_lbl.text = rec_text
-	rec_lbl.fit_content = true
-	rec_lbl.add_theme_font_size_override("normal_font_size", 18)
-	insights_container.add_child(rec_lbl)
-	
-	var insights: Array = []
-	if profile.has_method("generate_insights"):
-		insights = profile.generate_insights()
+		var rec: Dictionary = {}
+		if profile and profile.has_method("get_adaptive_recommendation"):
+			rec = profile.get_adaptive_recommendation()
+		else:
+			rec = {"universe": "frontier", "reason": "Your recent decisions suggest strong spatial reasoning."}
+			
+		var target_uni = rec.get("universe", "frontier")
+		var reason_text = rec.get("reason", "Your recent decisions suggest strong spatial reasoning.")
+		var rec_text = "\n[center][color=#E6B800]Suggested Exploration: " + target_uni.capitalize() + "[/color]\nReason: [color=#8595FF]\"" + reason_text + "\"[/color][/center]\n"
 		
-	for insight_text in insights:
-		var lbl = RichTextLabel.new()
-		lbl.bbcode_enabled = true
+		var rec_lbl = RichTextLabel.new()
+		rec_lbl.bbcode_enabled = true
+		rec_lbl.text = rec_text
+		rec_lbl.fit_content = true
+		rec_lbl.add_theme_font_size_override("normal_font_size", 18)
+		insights_container.add_child(rec_lbl)
 		
-		var styled_text = str(insight_text)
-		styled_text = styled_text.replace("pattern tasks", "[color=#4CC9F0]pattern tasks[/color]")
-		styled_text = styled_text.replace("recall tasks", "[color=#F72585]recall tasks[/color]")
-		styled_text = styled_text.replace("hesitate", "[color=#D81159]hesitate[/color]")
-		styled_text = styled_text.replace("decisiveness", "[color=#2ECC71]decisiveness[/color]")
-		styled_text = styled_text.replace("Recommendation:", "[color=#E6B800]Recommendation:[/color]")
-		
-		lbl.text = "[center]" + styled_text + "[/center]"
-		lbl.fit_content = true
-		lbl.add_theme_font_size_override("normal_font_size", 18)
-		lbl.add_theme_color_override("default_color", Color(0.9, 0.9, 0.95))
-		insights_container.add_child(lbl)
+		var insights: Array = []
+		if profile and profile.has_method("generate_insights"):
+			insights = profile.generate_insights()
+			
+		for insight_text in insights:
+			var lbl = RichTextLabel.new()
+			lbl.bbcode_enabled = true
+			
+			var styled_text = str(insight_text)
+			styled_text = styled_text.replace("pattern tasks", "[color=#4CC9F0]pattern tasks[/color]")
+			styled_text = styled_text.replace("recall tasks", "[color=#F72585]recall tasks[/color]")
+			styled_text = styled_text.replace("hesitate", "[color=#D81159]hesitate[/color]")
+			styled_text = styled_text.replace("decisiveness", "[color=#2ECC71]decisiveness[/color]")
+			styled_text = styled_text.replace("Recommendation:", "[color=#E6B800]Recommendation:[/color]")
+			
+			lbl.text = "[center]" + styled_text + "[/center]"
+			lbl.fit_content = true
+			lbl.add_theme_font_size_override("normal_font_size", 18)
+			lbl.add_theme_color_override("default_color", Color(0.9, 0.9, 0.95))
+			insights_container.add_child(lbl)
 
-	var hbox = HBoxContainer.new()
-	hbox.alignment = HBoxContainer.ALIGN_CENTER
-	hbox.add_theme_constant_override("separation", 30)
-	
-	var btn_continue = Button.new()
-	btn_continue.custom_minimum_size = Vector2(220, 50)
-	btn_continue.text = "CONTINUE JOURNEY"
-	btn_continue.add_theme_font_size_override("font_size", 18)
-	btn_continue.pressed.connect(func():
-		print("[COGNITIVE MIRROR] Continue Journey clicked.")
-		if AudioManager: AudioManager.play_sfx("ui_click")
-		if AdManager: AdManager.hide_banner()
-		return_requested.emit()
-	)
-	hbox.add_child(btn_continue)
-	
-	var btn_rec = Button.new()
-	btn_rec.custom_minimum_size = Vector2(260, 50)
-	btn_rec.text = "EXPLORE RECOMMENDATION"
-	btn_rec.add_theme_font_size_override("font_size", 18)
-	btn_rec.pressed.connect(func():
-		print("[COGNITIVE MIRROR] Explore Recommendation clicked.")
-		if AudioManager: AudioManager.play_sfx("ui_click")
-		if AdManager: AdManager.hide_banner()
-		var router = get_node_or_null("/root/NavigationRouter")
-		if router and router.has_method("_on_play_universe_requested"):
-			router._on_play_universe_requested(target_uni)
-		return_requested.emit()
-	)
-	hbox.add_child(btn_rec)
-	
-	var btn_return = Button.new()
-	btn_return.custom_minimum_size = Vector2(200, 50)
-	btn_return.text = "RETURN HOME"
-	btn_return.add_theme_font_size_override("font_size", 18)
-	btn_return.pressed.connect(func():
-		print("[COGNITIVE MIRROR] Return Home clicked.")
-		if AudioManager: AudioManager.play_sfx("ui_click")
-		if AdManager: AdManager.hide_banner()
-		var router = get_node_or_null("/root/NavigationRouter")
-		if router and router.has_method("show_landing_screen"):
-			router.show_landing_screen()
-		return_requested.emit()
-	)
-	hbox.add_child(btn_return)
-	
-	insights_container.add_child(hbox)
+		var hbox = HBoxContainer.new()
+		hbox.alignment = HBoxContainer.ALIGN_CENTER
+		hbox.add_theme_constant_override("separation", 30)
+		
+		var btn_continue = Button.new()
+		btn_continue.custom_minimum_size = Vector2(220, 50)
+		btn_continue.text = "CONTINUE JOURNEY"
+		btn_continue.add_theme_font_size_override("font_size", 18)
+		btn_continue.pressed.connect(func():
+			print("[COGNITIVE MIRROR] Continue Journey clicked.")
+			if AudioManager: AudioManager.play_sfx("ui_click")
+			if AdManager: AdManager.hide_banner()
+			return_requested.emit()
+		)
+		hbox.add_child(btn_continue)
+		
+		var btn_rec = Button.new()
+		btn_rec.custom_minimum_size = Vector2(260, 50)
+		btn_rec.text = "EXPLORE RECOMMENDATION"
+		btn_rec.add_theme_font_size_override("font_size", 18)
+		btn_rec.pressed.connect(func():
+			print("[COGNITIVE MIRROR] Explore Recommendation clicked.")
+			if AudioManager: AudioManager.play_sfx("ui_click")
+			if AdManager: AdManager.hide_banner()
+			var router = get_node_or_null("/root/NavigationRouter")
+			if router and router.has_method("_on_play_universe_requested"):
+				router._on_play_universe_requested(target_uni)
+			return_requested.emit()
+		)
+		hbox.add_child(btn_rec)
+		
+		var btn_return = Button.new()
+		btn_return.custom_minimum_size = Vector2(200, 50)
+		btn_return.text = "RETURN HOME"
+		btn_return.add_theme_font_size_override("font_size", 18)
+		btn_return.pressed.connect(func():
+			print("[COGNITIVE MIRROR] Return Home clicked.")
+			if AudioManager: AudioManager.play_sfx("ui_click")
+			if AdManager: AdManager.hide_banner()
+			var router = get_node_or_null("/root/NavigationRouter")
+			if router and router.has_method("show_landing_screen"):
+				router.show_landing_screen()
+			return_requested.emit()
+		)
+		hbox.add_child(btn_return)
+		
+		insights_container.add_child(hbox)
 
 	var panel = $PanelContainer
 	panel.modulate.a = 0
