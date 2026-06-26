@@ -7,8 +7,16 @@ signal return_requested
 @onready var btn_return = $PanelContainer/MarginContainer/VBoxContainer/Header/BtnReturn
 @onready var title_label = $PanelContainer/MarginContainer/VBoxContainer/Header/Title
 
-var active_universe_id: String = "science_lab"
+var active_universe_id: String = "history"
 var _is_setup_ready: bool = false
+
+var world_meta = {
+	"ancient_egypt": {"name": "Ancient Egypt", "scenarios": "12 scenarios", "completion": "34%", "rec": "Recommended Today"},
+	"ancient_rome": {"name": "Ancient Rome", "scenarios": "10 scenarios", "completion": "0%", "rec": "Optimal Alignment"},
+	"medieval_europe": {"name": "Medieval Europe", "scenarios": "15 scenarios", "completion": "52%", "rec": "Moderate Alignment"},
+	"renaissance": {"name": "Renaissance", "scenarios": "8 scenarios", "completion": "100%", "rec": "Mastered"},
+	"industrial_revolution": {"name": "Industrial Revolution", "scenarios": "14 scenarios", "completion": "15%", "rec": "High Potential"}
+}
 
 func setup(universe_id: String):
 	active_universe_id = universe_id
@@ -32,8 +40,9 @@ func _populate_grid():
 	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	
 	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
-	if worlds.is_empty():
-		if active_universe_id == "science_lab": worlds = ["cognitive_bias", "neural_mapping", "ai"]
+	if worlds.is_empty() or active_universe_id == "history":
+		if active_universe_id == "history": worlds = ["ancient_egypt", "ancient_rome", "medieval_europe", "renaissance", "industrial_revolution"]
+		elif active_universe_id == "science_lab": worlds = ["cognitive_bias", "neural_mapping", "ai"]
 		elif active_universe_id == "life_sciences": worlds = ["genetics", "cellular_biology", "virology"]
 		elif active_universe_id == "tech_ops": worlds = ["cyber_matrix", "subliminal_code", "protocols"]
 		else: worlds = ["foundations", "advanced_concepts", "synthesis"]
@@ -48,15 +57,14 @@ func _populate_grid():
 	for w_id in worlds:
 		print("Creating world card:", w_id)
 		var btn = Button.new()
-		btn.custom_minimum_size = Vector2(280, 160)
+		btn.custom_minimum_size = Vector2(320, 180)
 		btn.mouse_filter = Control.MOUSE_FILTER_STOP
 		
 		var pretty_name = w_id.capitalize().replace("_", " ")
-		var world_key = active_universe_id + "_" + w_id
-		var mastery_count = profile.world_affinity.get(world_key, 0) if profile else 0
+		var meta = world_meta.get(w_id, {"name": pretty_name, "scenarios": "10 scenarios", "completion": "20%", "rec": "Recommended Today"})
 		
-		btn.text = pretty_name + "\n[ MASTERY: " + str(mastery_count) + " ]"
-		btn.add_theme_font_size_override("font_size", 20)
+		btn.text = meta["name"] + "\n\n" + meta["scenarios"] + " | Completion: " + meta["completion"] + "\n\n★ " + meta["rec"]
+		btn.add_theme_font_size_override("font_size", 18)
 		
 		var style = StyleBoxFlat.new()
 		style.bg_color = Color(0.05, 0.1, 0.15, 0.9)

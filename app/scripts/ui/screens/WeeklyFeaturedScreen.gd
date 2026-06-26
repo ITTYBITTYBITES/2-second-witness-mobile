@@ -9,6 +9,37 @@ signal return_requested
 var monetization_gate_scene = preload("res://scenes/ui/screens/MonetizationGate.tscn")
 var active_gate = null
 
+var universe_meta = {
+	"history": {
+		"title": "History", "desc": "Explore civilizations and human decision making.",
+		"completion": "18%", "traits": "Pattern Recognition, Memory, Reasoning"
+	},
+	"science_lab": {
+		"title": "Science Lab", "desc": "Empirical deduction and probabilistic estimation.",
+		"completion": "32%", "traits": "Hypothesis Testing, Abstraction, Calculation"
+	},
+	"creative_arts": {
+		"title": "Creative Arts", "desc": "Divergent thinking and compositional harmony.",
+		"completion": "45%", "traits": "Divergence, Aesthetic Judgment, Intuition"
+	},
+	"frontier": {
+		"title": "Frontier", "desc": "Deep space navigation and high-stakes trade-offs.",
+		"completion": "12%", "traits": "Spatial Reasoning, Risk Assessment, Navigation"
+	},
+	"society_mind": {
+		"title": "Society & Mind", "desc": "Behavioral dynamics and societal evolution.",
+		"completion": "27%", "traits": "Social Dynamics, Empathy, Systemic Thinking"
+	},
+	"tech_ops": {
+		"title": "Technology", "desc": "Cybernetic protocols and algorithmic efficiency.",
+		"completion": "61%", "traits": "Algorithmic Speed, Precision, Code Parse"
+	},
+	"life_sciences": {
+		"title": "Life Sciences", "desc": "Cellular mechanics and ecological equilibrium.",
+		"completion": "24%", "traits": "Taxonomy, Biological Scaling, Equilibria"
+	}
+}
+
 func _ready():
 	print("WEEKLY SCREEN READY")
 	print("Size: ", $PanelContainer.size)
@@ -26,8 +57,8 @@ func _populate_grid():
 	if not controller or not profile: return
 	
 	var all_universes = [
-		"science_lab", "tech_ops", "life_sciences", 
-		"society_mind", "creative_arts", "frontier"
+		"history", "science_lab", "creative_arts", 
+		"frontier", "society_mind", "tech_ops", "life_sciences"
 	]
 	
 	var renderer = UniverseRenderer.new()
@@ -37,22 +68,18 @@ func _populate_grid():
 	
 	for uni in all_universes:
 		var is_featured = controller.featured_universes.has(uni)
-		var is_owned = profile.unlocked_universes.has(uni)
+		var is_owned = profile.unlocked_universes.has(uni) or uni == "history"
 		var can_play = is_featured or is_owned
 		
 		var def = renderer.universe_definitions.get(uni, renderer.universe_definitions["science_lab"])
-		var btn = Button.new()
-		btn.custom_minimum_size = Vector2(250, 150)
+		var meta = universe_meta.get(uni, universe_meta["science_lab"])
 		
-		var title = uni.capitalize().replace("_", " ")
-		if is_owned:
-			btn.text = title + "\n(OWNED)"
-		elif is_featured:
-			btn.text = title + "\n(FEATURED)"
-		else:
-			btn.text = title + "\n[LOCKED]"
-			
-		btn.add_theme_font_size_override("font_size", 20)
+		var btn = Button.new()
+		btn.custom_minimum_size = Vector2(340, 220)
+		
+		var status_text = "(OWNED)" if is_owned else ("(FEATURED)" if is_featured else "[LOCKED - $2.99]")
+		btn.text = meta["title"] + " " + status_text + "\n\n" + meta["desc"] + "\n\nCompletion: " + meta["completion"] + "\nTraits: " + meta["traits"]
+		btn.add_theme_font_size_override("font_size", 16)
 		
 		var style = StyleBoxFlat.new()
 		style.bg_color = def["palette"]["bg"]
