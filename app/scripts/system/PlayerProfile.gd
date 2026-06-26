@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# THE COGNITIVE MIRROR (BAYESIAN ORDERING INFERENCE ENGINE)
+# THE COGNITIVE MIRROR (EVENT-SOURCED ENTITLEMENTS)
 # ---------------------------------------------------------
 
 const SAVE_PATH = "user://profile.save"
@@ -15,6 +15,7 @@ var world_affinity: Dictionary = {}
 var unlocked_universes: Array = ["science_lab", "history"]
 var unlocked_worlds: Array = ["cognitive_bias", "ancient_egypt"]
 var has_directors_pass: bool = false
+var purchase_receipt_log: Array = [] # Append-only event log
 
 var cognitive_baseline = {
 	"pattern_recognition": {"attempts": 0, "successes": 0, "total_rt_ms": 0.0},
@@ -57,6 +58,37 @@ var device_hardware_offset_ms: float = 0.0
 func _ready():
 	print("[2 SECOND WITNESS] Bayesian Ordering Inference Engine active.")
 	_load_profile()
+	evaluate_entitlements()
+
+# =========================================================
+# EVENT-SOURCED ENTITLEMENT REDUCER
+# =========================================================
+func record_purchase_receipt(receipt: Dictionary):
+	purchase_receipt_log.append(receipt)
+	evaluate_entitlements()
+	save_profile()
+
+func evaluate_entitlements():
+	unlocked_universes = ["science_lab", "history"]
+	unlocked_worlds = ["cognitive_bias", "ancient_egypt"]
+	has_directors_pass = false
+	
+	var sorted_log = purchase_receipt_log.duplicate()
+	sorted_log.sort_custom(func(a, b): return a.get("timestamp", 0) < b.get("timestamp", 0))
+	
+	var processed_tx = {}
+	for receipt in sorted_log:
+		var tx_id = receipt.get("transaction_id", "")
+		if processed_tx.has(tx_id): continue 
+		processed_tx[tx_id] = true
+		
+		var item_id = receipt.get("item_id", "")
+		if item_id == "directors_pass":
+			has_directors_pass = true
+		elif item_id.begins_with("universe_unlock_"):
+			var uni = item_id.replace("universe_unlock_", "")
+			if not unlocked_universes.has(uni):
+				unlocked_universes.append(uni)
 
 func record_cognitive_event(c_trait: String, scenario_id: String, universe_id: String, world_id: String, success: bool, reaction_time_ms: float):
 	lifetime_sessions += 1
@@ -167,6 +199,7 @@ func _apply_loaded_data(data: Dictionary):
 		unlocked_universes = data.get("unlocked_universes", ["science_lab", "history"])
 		unlocked_worlds = data.get("unlocked_worlds", ["cognitive_bias", "ancient_egypt"])
 		has_directors_pass = data.get("has_directors_pass", false)
+		purchase_receipt_log = data.get("purchase_receipt_log", [])
 		
 		_merge_dict(cognitive_baseline, data.get("cognitive_baseline", {}))
 		_merge_dict(current_week_drift, data.get("current_week_drift", {}))
@@ -192,6 +225,7 @@ func save_profile():
 		"unlocked_universes": unlocked_universes,
 		"unlocked_worlds": unlocked_worlds,
 		"has_directors_pass": has_directors_pass,
+		"purchase_receipt_log": purchase_receipt_log,
 		"cognitive_baseline": cognitive_baseline,
 		"current_week_drift": current_week_drift,
 		"task_familiarity_index": task_familiarity_index,
