@@ -40,11 +40,11 @@ func _unhandled_input(event):
 
 func toggle_utility(utility_id: int):
 	if _instanced_modals.has(utility_id) and is_instance_valid(_instanced_modals[utility_id]):
-		var screen = _instanced_modals[utility_id]
-		if _modal_stack.has(screen):
-			pop_modal(screen)
+		var existing_screen = _instanced_modals[utility_id]
+		if _modal_stack.has(existing_screen):
+			pop_modal(existing_screen)
 		else:
-			push_modal(screen, true)
+			push_modal(existing_screen, true)
 		return
 		
 	var scene_path = ""
