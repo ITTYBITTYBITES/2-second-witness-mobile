@@ -15,6 +15,7 @@ var navigation_stack: Array[String] = []
 var current_screen_name: String = ""
 var previous_screen_name: String = ""
 var active_universe_selection: String = "science_lab"
+var current_scenario_chain_index: int = 1
 
 func _ready():
 	if BootTracer: BootTracer.log_init("NavigationRouter")
@@ -278,6 +279,7 @@ func _on_world_selected(universe_id: String, world_id: String):
 	print("[ROUTER] World Selected: ", universe_id, " -> ", world_id)
 	print("→ world_selected event emitted: ", world_id)
 	_is_transitioning_to_landing = false
+	current_scenario_chain_index = 1
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 	if active_secondary_screen:
@@ -292,14 +294,25 @@ func _on_world_selected(universe_id: String, world_id: String):
 	
 	if portal_mgr == null:
 		print("[ROUTER] Portal Manager not found in scene tree (Standalone/Benchmark mode). Skipping 3D portal spawn.")
-		return
-		
-	if portal_mgr.has_method("apply_theme"):
+	elif portal_mgr.has_method("apply_theme"):
 		portal_mgr.apply_theme(ThemeManager.get_active_theme() if ThemeManager else {}, universe_id, world_id)
+		print("STEP 3: CALLING SPAWN")
+		portal_mgr.spawn_lens_portal("0")
+		print("STEP 4: SPAWN CALL COMPLETED")
 		
-	print("STEP 3: CALLING SPAWN")
-	portal_mgr.spawn_lens_portal("0")
-	print("STEP 4: SPAWN CALL COMPLETED")
+	print("STEP 1: PLAY REQUEST RECEIVED")
+	print("UNIVERSE BOOT START")
+	print("[SCENARIO ENGINE] Initiating ScenarioManager lifecycle...")
+	print("[SCENARIO ENGINE] Accessing SamplingController & ContentRegistry...")
+	print("[SCENARIO ENGINE] Loading Scenario...")
+	
+	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
+	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
+	var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
+	var next_spike = vector.get("spike", "memory_cascade")
+	
+	print("[SCENARIO ENGINE] Scenario 1 Ready: ", next_spike.capitalize().replace("_", " "))
+	handle_navigation_event({"type": "portal_selected", "destination": {"universe": universe_id, "world": world_id, "chunk_id": "0"}})
 
 func handle_navigation_event(event: Dictionary):
 	if event.get("type") == "portal_selected":
@@ -323,9 +336,14 @@ func handle_navigation_event(event: Dictionary):
 		if cascade.has_method("inject_payload"):
 			cascade.inject_payload(scenario_payload, seed_string.hash())
 		
-		var world_layer = get_tree().root.get_node("MainShell/WorldLayer")
+		var world_layer = get_tree().root.get_node_or_null("MainShell/WorldLayer")
 		if world_layer:
 			world_layer.add_child(cascade)
+			print("SCENARIO SPAWNED")
+			cascade.completed.connect(_on_cascade_completed)
+		else:
+			print("[ROUTER] WorldLayer not found (Standalone/Benchmark mode). Mounting scenario directly to root.")
+			get_tree().root.add_child(cascade)
 			print("SCENARIO SPAWNED")
 			cascade.completed.connect(_on_cascade_completed)
 		emit_signal("routed_to", dest)
@@ -340,7 +358,7 @@ func _snake_to_pascal(snake: String) -> String:
 	return result
 
 func _on_cascade_completed():
-	print("[ROUTER] Cognitive Spike resolved. Checking Ad Gate before Slingshot.")
+	print("[ROUTER] Cognitive Spike resolved (Answer submitted). Checking Ad Gate before Slingshot.")
 	
 	if AdManager and AdManager.check_and_show_ad():
 		await AdManager.ad_finished
@@ -348,10 +366,23 @@ func _on_cascade_completed():
 	if SystemHealthMonitor:
 		SystemHealthMonitor.pop_context(SystemHealthMonitor.ExecContext.SCENARIO_ACTIVE)
 		SystemHealthMonitor.queue_telemetry_dump("Post-Scenario Return")
+		
 	var tunnel = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer")
 	if tunnel and tunnel.has_method("trigger_slingshot"):
 		tunnel.trigger_slingshot()
 		
-	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
-	if portal_mgr and portal_mgr.has_method("spawn_lens_portal"):
-		portal_mgr.spawn_lens_portal("0")
+	if current_scenario_chain_index < 3:
+		current_scenario_chain_index += 1
+		print("[SCENARIO ENGINE] Advancing to Next Scenario (Index: ", current_scenario_chain_index, " / 3)...")
+		print("[SCENARIO ENGINE] Loading Scenario...")
+		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
+		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
+		var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
+		var next_spike = vector.get("spike", "rapid_classification")
+		print("[SCENARIO ENGINE] Scenario ", current_scenario_chain_index, " Ready: ", next_spike.capitalize().replace("_", " "))
+		
+		handle_navigation_event({"type": "portal_selected", "destination": {"universe": active_universe_selection, "world": "active_world", "chunk_id": str(current_scenario_chain_index)}})
+	else:
+		print("[SCENARIO ENGINE] 3-Scenario progression chain complete. Invoking Mirror Update...")
+		current_scenario_chain_index = 1
+		toggle_mirror_modal()
