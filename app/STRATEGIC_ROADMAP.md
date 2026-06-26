@@ -1,82 +1,69 @@
 # PRODUCT: 2 Second Witness
-# DEFINITIVE STRATEGIC ROADMAP & EXPERIENCE MATURITY PIPELINE
+# DEFINITIVE STRATEGIC ROADMAP & ENTERPRISE PRIORITIZATION PIPELINE
 
 ## Executive Summary
-This document establishes the definitive product roadmap for *2 Second Witness*. By framing development around **experience maturity** rather than implementation details ("buttons vs. holograms"), the project adopts a pragmatic, low-risk product lifecycle. This strategy ensures that the core psychometric value proposition is fully validated with real users in a polished release before executing a comprehensive spatial interaction expansion.
+This document establishes the definitive long-term development roadmap for *2 Second Witness*. By enforcing a strict 5-stage prioritization order, the project ensures that platform stability, vertical slice validation, and insight engine depth are fully established before executing horizontal content expansion or LiveOps scaling.
 
 ---
 
-## 1. The Experience Maturity Roadmap
+## 1. The 5-Stage Long-Term Prioritization Roadmap
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                     EXPERIENCE MATURITY PIPELINE                        │
-├──────────────────────────┬──────────────────────────┬───────────────────┤
-│          PHASE           │          GOAL            │   SUCCESS METRIC  │
-├──────────────────────────┼──────────────────────────┼───────────────────┤
-│ • Milestone 1            │ • Complete Product       │ • Every navigation│
-│   (Foundation & Gameplay)│                          │   path works,     │
-│                          │                          │   every scenario  │
-│                          │                          │   launches, every │
-│                          │                          │   feature function│
-├──────────────────────────┼──────────────────────────┼───────────────────┤
-│ • Milestone 2            │ • Polish Product         │ • Refined visuals,│
-│   (Polished Release)     │                          │   animation,      │
-│                          │                          │   performance,    │
-│                          │                          │   accessibility,  │
-│                          │                          │   onboarding      │
-├──────────────────────────┼──────────────────────────┼───────────────────┤
-│ • Milestone 3            │ • Experience Validation  │ • Do users enjoy  │
-│   (Human Validation)     │                          │   and benefit from│
-│                          │                          │   the experience? │
-├──────────────────────────┼──────────────────────────┼───────────────────┤
-│ • Milestone 4            │ • Spatial Experience     │ • Replace conven- │
-│   (Immersion Expansion)  │                          │   tional UI with  │
-│                          │                          │   diegetic/spatial│
-│                          │                          │   interaction     │
-└──────────────────────────┴──────────────────────────┴───────────────────┘
+│                    LONG-TERM PRIORITIZATION ROADMAP                     │
+├──────────────────────────┬──────────────────────────────────────────────┤
+│     DEVELOPMENT STAGE    │              STRATEGIC GOAL                  │
+├──────────────────────────┼──────────────────────────────────────────────┤
+│ 1. Platform Stability    │ Finish routing, HUD, modal management, save  │
+│                          │ system, and service boundaries.              │
+├──────────────────────────┼──────────────────────────────────────────────┤
+│ 2. One Vertical Slice    │ Build a single Universe (History), 2-3 Worlds│
+│                          │ 3-4 spikes, one Iris theme, full Mirror loop.│
+├──────────────────────────┼──────────────────────────────────────────────┤
+│ 3. Mirror Refinement     │ Invest in insight engine to provide genuinely│
+│                          │ useful observations and recommendations.     │
+├──────────────────────────┼──────────────────────────────────────────────┤
+│ 4. Content Expansion     │ Add Universes and Worlds through data rather │
+│                          │ than new code.                               │
+├──────────────────────────┼──────────────────────────────────────────────┤
+│ 5. LiveOps               │ Introduce rotating worlds and new datasets   │
+│                          │ only after core loop is demonstrably engaging│
+└──────────────────────────┴──────────────────────────────────────────────┘
 ```
 
-### The Definitive Product Journey
-$$\text{Foundation} \longrightarrow \text{Complete Gameplay} \longrightarrow \text{Polished Release} \longrightarrow \text{Validate with Users} \longrightarrow \text{Immersion Expansion} \longrightarrow \text{Spatial Cognitive Universe}$$
+### The Definitive Central Hypothesis
+Players return because the system continuously adapts to them and reflects meaningful patterns in their performance, not because it has the largest question bank. Once that loop works, additional content and presentation themes become multipliers rather than prerequisites.
 
 ---
 
 ## 2. Milestone Definitions & Success Metrics
 
-### Milestone 1 – Complete Product (Foundation & Gameplay)
-**Goal:** Prove that the complete gameplay loop functions flawlessly.
-*   `Navigation Routing:` Every button, portal, and menu transition connects cleanly with zero input swallowing.
-*   `Universe Launching:` Every base universe instantiates its respective shaders, tunnel buffers, and world gates.
-*   `Scenario Execution:` All 12 flagship cognitive tasks load, inject payloads, execute scoring, and trigger slingshot re-entry.
-*   `Persistence:` Seamless saving and loading of the `PlayerProfile` baseline and Goodwill tokens (`user://profile.save`).
-*   `Monetization:` Active wiring for AdMob production callbacks and Google Play Billing modals.
+### Stage 1 – Platform Stability (The Foundation)
+**Goal:** Guarantee uncompromised software architecture and service boundaries.
+*   `Navigation Routing:` Flawless 3-layer separation across `NavigationRouter` and `HUDRoot`.
+*   `Modal Management:` `ModalWindowManager` enforces strict LIFO focus invariants and background input blocking.
+*   `Save System:` Immutable JSON I/O for `PlayerProfile` and Goodwill tokens (`user://profile.save`).
+*   `Intent Bus:` `InteractionKernel` acts as a pure UI-agnostic Intent Bus, completely isolating input from execution.
 
-### Milestone 2 – Polish Product (Polished Release)
-**Goal:** Deliver an elegant, highly polished vertical slice ready for public installation.
-*   `Visual Refinement:` Upgrade UI glass styleboxes, typography, and ubershader flow materials.
-*   `Visceral Animation:` Smooth out slingshot momentum decay curves and menu tween transitions.
-*   `Performance Lock:` Guarantee a flawless, uncompromised 60FPS lock on Android hardware.
-*   `Onboarding:` Ensure immediate clarity for first-time users upon launching the application.
-*   **Ship Version 1.0.0.**
+### Stage 2 – One Complete Vertical Slice (The Core Product)
+**Goal:** Build a single, perfectly executed universe to prove the core loop.
+*   `Universe & Worlds:` Build out a single Universe (e.g., `History` / `Science Lab`) with 2 to 3 distinct Worlds (`ancient_egypt`, `ai`).
+*   `Cognitive Spikes:` Implement 3 to 4 fully bound cognitive tasks (`Memory Cascade`, `Rapid Classification`, `Signal vs Noise`).
+*   `Perceptual Themes:` Mount one custom Iris theme per world using the `WorldProfile.json` data contract.
+*   `The Feedback Loop:` Connect the complete Mirror feedback loop to prove value delivery.
 
-### Milestone 3 – Experience Validation (Human Validation)
-**Goal:** Validate the core value proposition with real humans before expanding presentation.
-*   `Core Question:` **Do users actually enjoy and benefit from the cognitive experience?**
-*   `Strategic Action:` If users voluntarily repeat the loop and engage with their generated profile insights, proceed to Milestone 4. If they do not, iterate strictly on gameplay mechanics, feedback clarity, progression curves, and insight depth.
+### Stage 3 – Mirror Refinement (Experience Depth)
+**Goal:** Transition from reporting arbitrary scores to providing genuine psychological reflection.
+*   `Insight Engine:` Expand `PlayerProfile.gd` to generate actionable observations and recommendations based on hesitation, error deltas, and load indices.
+*   `The Mirror UI:` Polish `PlayerProfileScreen.tscn` to render beautifully formatted, color-coded BBCode insights that players actively seek out after every loop.
 
-### Milestone 4 – Spatial Experience (Immersion Expansion)
-**Goal:** Transition the application into a true immersive spatial cognitive simulation.
-*   `Diegetic Navigation:` Replace conventional UI menus with floating holographic constructs and world portals.
-*   `Living Cognitive Mirror:` Replace text panels with an immersive 3D mirror reflecting orbiting psychological vectors.
-*   `Orbiting Discovery:` Replace the 2D grid screen with a living 3D universe map suspended in the tunnel void.
-*   `Continuous Traversal:` Eliminate scene swapping in favor of continuous camera flight through world space.
+### Stage 4 – Content Expansion (Horizontal Scaling)
+**Goal:** Multiply the validated loop through pure data injection.
+*   `Data-Driven Expansion:` Populate the remaining 5 universes (`Life Sciences`, `Tech Ops`, `Creative Arts`, `Society Mind`, `Frontier`) entirely through JSON descriptor vectors (`WorldProfile.json`, `stroop_042.json`).
+*   `Zero New Code:` Guarantee that new content streams cleanly through the existing 12 flagship cognitive rendering manifolds without altering any C++ or GDScript code.
 
----
-
-## 3. The Definitive Definition of "Done"
-The project formally retires the technical milestone of `Architecture Complete`. True completion is defined exclusively by the first-time user experience flow:
-
-$$\text{Install App} \longrightarrow \text{Understand It} \longrightarrow \text{Play in 10s} \longrightarrow \text{Complete Scenario} \longrightarrow \text{Receive Insight} \longrightarrow \text{Want to Play Another}$$
-
-If this sequence executes consistently, we have a product.
+### Stage 5 – LiveOps (The Horizon)
+**Goal:** Introduce continuous dynamic content rotation and community updates.
+*   `Discovery Rotation:` Activate `SamplingController` and `WeeklyFeaturedScreen` to rotate free featured universes based on server seeds.
+*   `OTA Ingestion:` Wire `GitHubSyncManager` to automatically download patch manifests and new knowledge datasets to `user://live_content/`.
+*   `Longitudinal Telemetry:` Maintain silent cohort logging (`StructuredLogger`) to verify ongoing psychometric validity across global installations.
