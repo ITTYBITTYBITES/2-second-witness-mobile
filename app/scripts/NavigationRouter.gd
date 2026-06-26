@@ -187,6 +187,7 @@ func _show_gameplay_hud():
 	btn_leave.add_theme_color_override("font_color", Color(0.9, 0.9, 0.95))
 	
 	btn_leave.pressed.connect(func():
+		print("[ROUTER] Back button pressed (< LEAVE STREAM)")
 		if AudioManager: AudioManager.play_sfx("ui_click")
 		if navigation_stack.has("WorldSelectScreen"):
 			_on_play_universe_requested(active_universe_selection)
@@ -366,7 +367,7 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 	
 	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-	var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
+	var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile) else {}
 	var next_spike = normalize_id(vector.get("spike", "memory_cascade"))
 	
 	print("[SCENARIO ENGINE] Scenario 1 Ready: ", next_spike.capitalize().replace("_", " "))
@@ -381,7 +382,9 @@ func handle_navigation_event(event: Dictionary):
 		
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-		var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
+		var u_id = normalize_id(dest.get("universe", active_universe_selection))
+		var w_id = normalize_id(dest.get("world", "ancient_egypt"))
+		var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile) else {}
 		var cascade_scene_name = normalize_id(vector.get("spike", "memory_cascade"))
 		var scenario_payload = vector.get("knowledge_item", {})
 		var seed_string = str(profile.lifetime_sessions if profile else 0) + normalize_id(dest.get("chunk_id", "0"))
@@ -438,11 +441,11 @@ func _on_cascade_completed():
 		print("[SCENARIO ENGINE] Loading Scenario...")
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-		var vector = orch.determine_next_experience(profile) if (orch and profile) else {}
+		var vector = orch.determine_next_experience(profile, active_universe_selection, "firstaid") if (orch and profile) else {}
 		var next_spike = normalize_id(vector.get("spike", "rapid_classification"))
 		print("[SCENARIO ENGINE] Scenario ", current_scenario_chain_index, " Ready: ", next_spike.capitalize().replace("_", " "))
 		
-		handle_navigation_event({"type": "portal_selected", "destination": {"universe": active_universe_selection, "world": "active_world", "chunk_id": str(current_scenario_chain_index)}})
+		handle_navigation_event({"type": "portal_selected", "destination": {"universe": active_universe_selection, "world": "firstaid", "chunk_id": str(current_scenario_chain_index)}})
 	else:
 		print("[SCENARIO ENGINE] 3-Scenario progression chain complete. Invoking Mirror Update...")
 		current_scenario_chain_index = 1

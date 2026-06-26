@@ -24,7 +24,7 @@ func _ready():
 	if BootTracer: BootTracer.log_init("ExperienceOrchestrator")
 	print("[ORCHESTRATOR] Online. Enforcing centralized progression decision tree.")
 
-func determine_next_experience(player_profile: Node) -> Dictionary:
+func determine_next_experience(player_profile: Node, target_universe: String = "", target_world: String = "") -> Dictionary:
 	if not is_instance_valid(player_profile):
 		return _fallback_vector()
 		
@@ -33,7 +33,11 @@ func determine_next_experience(player_profile: Node) -> Dictionary:
 	current_mode = "continuity" if total_sessions > 10 else "discovery"
 	
 	# 2. Universe & World Decision
-	if current_mode == "discovery":
+	if target_universe != "" and target_world != "":
+		active_universe = normalize_id(target_universe)
+		active_world = normalize_id(target_world)
+		current_mode = "targeted_exploration"
+	elif current_mode == "discovery":
 		active_universe = "history"
 		active_world = "ancient_egypt"
 	else:
