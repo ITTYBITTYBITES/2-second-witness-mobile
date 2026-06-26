@@ -99,8 +99,8 @@ func _show_gameplay_hud():
 	
 	btn_mirror.pressed.connect(func():
 		AudioManager.play_sfx("ui_click")
-		if InteractionKernel: InteractionKernel.commit_intent({"type": "toggle_utility", "utility_id": "mirror"})
-		elif ModalWindowManager: ModalWindowManager.toggle_utility("mirror")
+		if InteractionKernel: InteractionKernel.commit_intent({"type": "toggle_utility", "utility_id": ModalWindowManager.UtilityID.MIRROR})
+		elif ModalWindowManager: ModalWindowManager.toggle_utility(ModalWindowManager.UtilityID.MIRROR)
 	)
 	
 	active_gameplay_hud.add_child(btn_leave)
@@ -133,7 +133,7 @@ func _on_profile_requested():
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
 	if ModalWindowManager: ModalWindowManager.pop_all_modals()
-	if ModalWindowManager: ModalWindowManager.toggle_utility("mirror")
+	if ModalWindowManager: ModalWindowManager.toggle_utility(ModalWindowManager.UtilityID.MIRROR)
 
 func _on_discover_requested():
 	print("[ROUTER] Discovery requested. Opening Weekly Featured Screen.")

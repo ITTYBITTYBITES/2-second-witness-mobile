@@ -2,18 +2,21 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# UNIFIED MODAL WINDOW MANAGER (UTILITY GRAPH CUSTODIAN)
+# UNIFIED MODAL WINDOW MANAGER (SERVICE-ORIENTED UTILITY CUSTODIAN)
 # ---------------------------------------------------------
+
+enum UtilityID { MIRROR, STORE, SETTINGS, INVENTORY, ACHIEVEMENTS }
 
 signal modal_stack_changed(active_modal: CanvasLayer)
 
 var _modal_stack: Array[CanvasLayer] = []
 var _instanced_modals: Dictionary = {}
+var _previous_focus_owners: Dictionary = {}
 var _input_blocker: Control
 
 func _ready():
 	BootTracer.log_init("ModalWindowManager")
-	print("[MODAL MANAGER] Online. Operating strictly as stack ownership graph. Input eligibility delegated to InteractionKernel.")
+	print("[MODAL MANAGER] Online. Operating as authoritative owner of modal state and focus invariants.")
 	
 	_input_blocker = Control.new()
 	_input_blocker.name = "AuthoritativeInputBlocker"
@@ -28,7 +31,14 @@ func _mount_blocker():
 	if ui_layer:
 		ui_layer.add_child(_input_blocker)
 
-func toggle_utility(utility_id: String):
+func _unhandled_input(event):
+	if event is InputEventKey and event.pressed and (event.keycode == KEY_ESCAPE or event.keycode == KEY_BACK):
+		if not _modal_stack.is_empty():
+			get_viewport().set_input_as_handled()
+			print("[MODAL MANAGER] Escape/Back intercepted. Popping top modal.")
+			pop_modal()
+
+func toggle_utility(utility_id: int):
 	if _instanced_modals.has(utility_id) and is_instance_valid(_instanced_modals[utility_id]):
 		var screen = _instanced_modals[utility_id]
 		if _modal_stack.has(screen):
@@ -38,9 +48,11 @@ func toggle_utility(utility_id: String):
 		return
 		
 	var scene_path = ""
-	if utility_id == "mirror": scene_path = "res://scenes/ui/screens/PlayerProfileScreen.tscn"
-	elif utility_id == "store": scene_path = "res://scenes/ui/screens/MonetizationGate.tscn"
-	
+	match utility_id:
+		UtilityID.MIRROR: scene_path = "res://scenes/ui/screens/PlayerProfileScreen.tscn"
+		UtilityID.STORE: scene_path = "res://scenes/ui/screens/MonetizationGate.tscn"
+		UtilityID.SETTINGS: scene_path = "res://scenes/ui/screens/SettingsScreen.tscn"
+		
 	if scene_path == "": return
 	
 	var scene = load(scene_path)
@@ -60,6 +72,9 @@ func toggle_utility(utility_id: String):
 
 func push_modal(screen: CanvasLayer, is_modal: bool = true):
 	if _modal_stack.has(screen): return
+	
+	var current_focus = get_viewport().gui_get_focus_owner()
+	if current_focus: _previous_focus_owners[screen] = current_focus
 	
 	_modal_stack.append(screen)
 	print("[MODAL MANAGER] Pushed modal to stack: ", screen.name)
@@ -90,7 +105,12 @@ func pop_modal(screen: CanvasLayer = null):
 			if not panel: panel = target.get_node_or_null("PanelContainer")
 			if panel: InteractionKernel.unregister_panel(panel)
 			
-		# Do not free persistent HUDRoot utilities like Mirror; toggle visible instead
+		if _previous_focus_owners.has(target):
+			var prev_focus = _previous_focus_owners[target]
+			if is_instance_valid(prev_focus) and prev_focus.is_inside_tree():
+				prev_focus.grab_focus()
+			_previous_focus_owners.erase(target)
+			
 		if _instanced_modals.values().has(target):
 			target.visible = false
 		elif is_instance_valid(target) and target.is_inside_tree():
