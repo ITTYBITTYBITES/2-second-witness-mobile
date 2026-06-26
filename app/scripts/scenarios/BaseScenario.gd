@@ -24,7 +24,7 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 	var s_id = normalize_id(payload.get("id", "UNKNOWN"))
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "inject_payload", "External method call (scenario_id: " + s_id + ")")
-	print("INJECT PAYLOAD:", payload.size())
+	print("INJECT PAYLOAD:", s_id)
 	if payload.is_empty():
 		push_error("[SCENARIO FATAL] Injection failed. Payload is empty. Terminating.")
 		queue_free()
@@ -81,5 +81,9 @@ func execute_render_pipeline():
 	
 	if Engine.get_main_loop().root.has_node("RuntimeMeasurementIsolation"):
 		Engine.get_main_loop().root.get_node("RuntimeMeasurementIsolation").anchor_stimulus_spawn()
+		
+	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
+	if orch and orch.has_method("finalize_scenario_mounting"):
+		orch.finalize_scenario_mounting(_scenario_payload.get("id", "memory_cascade"))
 	
 	print("[SYSTEM] Canonical UI pipeline execution complete.")

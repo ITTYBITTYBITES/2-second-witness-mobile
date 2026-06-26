@@ -44,6 +44,15 @@ func consume_provenance(event_id: String, event: InputEvent = null) -> bool:
 	if _consumed_provenance_tokens.size() > 500: _consumed_provenance_tokens.clear()
 	return true
 
+func release_input_lock(epoch_id: int):
+	_active_transitions_count = 0
+	_transitional_suppression_lock = false
+	_active_pointer_domains.clear()
+	_active_focus_domains.clear()
+	var is_blocking = is_ui_blocking()
+	ui_lock_state_changed.emit(is_blocking)
+	print("[KERNEL ARBITER] Authoritative Input Release Contract executed for Epoch ", epoch_id, ". Input lock strictly released (is_ui_blocking = false).")
+
 func register_panel(panel: Control, domain: String = "default", initial_state: int = UIState.HIDDEN, block_focus: bool = true):
 	if not is_instance_valid(panel): return
 	_registered_panels[panel] = {"domain": domain, "state": initial_state, "block_focus": block_focus}

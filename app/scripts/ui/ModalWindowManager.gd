@@ -129,7 +129,9 @@ func push_modal(screen: CanvasLayer, is_modal: bool = true, caller: String = "Mo
 
 func pop_modal(screen: CanvasLayer = null, caller: String = "ModalWindowManager"):
 	if not _arbitrate_write_owner(caller): return
-	if _modal_stack.is_empty(): return
+	if _modal_stack.is_empty():
+		_arbitrate_input_zoning(false)
+		return
 	
 	var target = screen if screen != null else _modal_stack[-1]
 	if _modal_stack.has(target):
@@ -165,6 +167,8 @@ func pop_all_modals(except_screen: CanvasLayer = null, caller: String = "ModalWi
 			pop_modal(modal, caller)
 		elif not is_instance_valid(modal):
 			_modal_stack.erase(modal)
+	if _modal_stack.is_empty():
+		_arbitrate_input_zoning(false)
 
 func _arbitrate_input_zoning(has_active_modal: bool):
 	if not is_instance_valid(_input_blocker): return

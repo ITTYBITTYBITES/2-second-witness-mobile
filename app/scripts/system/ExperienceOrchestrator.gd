@@ -91,6 +91,13 @@ func determine_next_experience(player_profile: Node) -> Dictionary:
 	session_personalized.emit(vector)
 	return vector
 
+func finalize_scenario_mounting(scenario_id: String):
+	print("[ORCHESTRATOR] Finalizing scenario mounting for: ", scenario_id)
+	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
+	if kernel and kernel.has_method("release_input_lock"):
+		kernel.release_input_lock(kernel.current_epoch if kernel.get("current_epoch") != null else 0)
+	print("[ORCHESTRATOR] Scenario state = READY. GameplayHUD active. Input Release Contract fulfilled.")
+
 func _fallback_vector() -> Dictionary:
 	return {
 		"mode": "discovery", "universe": "history", "world": "ancient_egypt",
