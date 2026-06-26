@@ -11,6 +11,11 @@ var landing_screen_instantiation_count: int = 0
 var router_scene_shift_count: int = 0
 var _is_transitioning_to_landing: bool = false
 
+var navigation_stack: Array[String] = []
+var current_screen_name: String = ""
+var previous_screen_name: String = ""
+var active_universe_selection: String = "science_lab"
+
 func _ready():
 	if BootTracer: BootTracer.log_init("NavigationRouter")
 	print("NavigationRouter initialized. Awaiting structured events.")
@@ -19,6 +24,28 @@ func _input(_event):
 	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
 	if kernel and kernel.is_ui_blocking():
 		return
+
+func _update_nav_log(new_screen: String, is_pop: bool = false):
+	previous_screen_name = current_screen_name
+	current_screen_name = new_screen
+	
+	if not is_pop:
+		if not navigation_stack.has(new_screen):
+			navigation_stack.append(new_screen)
+	else:
+		if navigation_stack.size() > 0 and navigation_stack[-1] != new_screen:
+			navigation_stack.pop_back()
+			
+	print("\nCurrent Screen: ", current_screen_name)
+	print("Previous Screen: ", previous_screen_name)
+	print("Navigation Stack:\n[\n    ", ", \n    ".join(navigation_stack), "\n]")
+	
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	var m_stack = []
+	if modal_mgr:
+		for m in modal_mgr.get_modal_stack():
+			if is_instance_valid(m): m_stack.append(m.name)
+	print("Modal Stack:\n[\n    ", ", \n    ".join(m_stack), "\n]\n")
 
 func goto_landing():
 	show_landing_screen()
@@ -37,7 +64,7 @@ func show_landing_screen():
 		
 	_is_transitioning_to_landing = true
 	
-	if modal_mgr: modal_mgr.pop_all_modals(active_landing_screen if is_instance_valid(active_landing_screen) else null)
+	if modal_mgr: modal_mgr.pop_all_modals(active_landing_screen if is_instance_valid(active_landing_screen) else null, "NavigationRouter")
 	if active_secondary_screen and is_instance_valid(active_secondary_screen):
 		active_secondary_screen.queue_free()
 		active_secondary_screen = null
@@ -47,8 +74,9 @@ func show_landing_screen():
 		
 	if active_landing_screen and is_instance_valid(active_landing_screen):
 		active_landing_screen.show_screen()
-		if modal_mgr: modal_mgr.push_modal(active_landing_screen, false)
+		if modal_mgr: modal_mgr.push_modal(active_landing_screen, false, "NavigationRouter")
 		_is_transitioning_to_landing = false
+		_update_nav_log("LandingScreen", navigation_stack.size() > 1)
 		print("[ROUTER] Landing Screen restored from persistent singleton cache. (Instantiation count: ", landing_screen_instantiation_count, ", Scene shift count: ", router_scene_shift_count, ")")
 		return
 		
@@ -59,10 +87,11 @@ func show_landing_screen():
 		return
 		
 	active_landing_screen = landing_scene.instantiate()
+	active_landing_screen.name = "LandingScreen"
 	landing_screen_instantiation_count += 1
 	
 	if modal_mgr:
-		modal_mgr.push_modal(active_landing_screen, false)
+		modal_mgr.push_modal(active_landing_screen, false, "NavigationRouter")
 	else:
 		var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 		if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
@@ -72,10 +101,12 @@ func show_landing_screen():
 	active_landing_screen.profile_requested.connect(_on_profile_requested)
 	active_landing_screen.discover_requested.connect(_on_discover_requested)
 	active_landing_screen.show_screen()
+	_update_nav_log("LandingScreen", false)
 	print("[ROUTER] Landing Screen instantiated and active. (Instantiation count: ", landing_screen_instantiation_count, ", Scene shift count: ", router_scene_shift_count, ")")
 	_is_transitioning_to_landing = false
 
 func _show_gameplay_hud():
+	_update_nav_log("GameplayHUD", false)
 	if active_gameplay_hud and is_instance_valid(active_gameplay_hud):
 		active_gameplay_hud.visible = true
 		return
@@ -110,9 +141,12 @@ func _show_gameplay_hud():
 	
 	btn_leave.pressed.connect(func():
 		if AudioManager: AudioManager.play_sfx("ui_click")
-		var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
-		if kernel: kernel.commit_intent({"type": "scene_shift", "target": "LandingScreen"})
-		else: show_landing_screen()
+		if navigation_stack.has("WorldSelectScreen"):
+			_on_play_universe_requested(active_universe_selection)
+		else:
+			var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
+			if kernel: kernel.commit_intent({"type": "scene_shift", "target": "LandingScreen"})
+			else: show_landing_screen()
 	)
 	
 	var btn_mirror = Button.new()
@@ -144,24 +178,29 @@ func toggle_mirror_modal():
 	if persistent_mirror_instance and is_instance_valid(persistent_mirror_instance):
 		if persistent_mirror_instance.visible:
 			persistent_mirror_instance.visible = false
-			if modal_mgr: modal_mgr.pop_modal(persistent_mirror_instance)
+			if modal_mgr: modal_mgr.pop_modal(persistent_mirror_instance, "NavigationRouter")
+			_update_nav_log(previous_screen_name, true)
 		else:
 			persistent_mirror_instance.visible = true
-			if modal_mgr: modal_mgr.push_modal(persistent_mirror_instance, true)
+			if modal_mgr: modal_mgr.push_modal(persistent_mirror_instance, true, "NavigationRouter")
+			_update_nav_log("PlayerProfileScreen", false)
 		return
 		
 	var profile_scene = load("res://scenes/ui/screens/PlayerProfileScreen.tscn")
 	if profile_scene:
 		persistent_mirror_instance = profile_scene.instantiate()
+		persistent_mirror_instance.name = "PlayerProfileScreen"
 		var hud_root = get_tree().root.get_node_or_null("MainShell/UILayer/HUDRoot")
 		if not hud_root: hud_root = get_tree().root.get_node_or_null("MainShell/UILayer")
 		if hud_root: hud_root.add_child(persistent_mirror_instance)
 		
-		if modal_mgr: modal_mgr.push_modal(persistent_mirror_instance, true)
+		if modal_mgr: modal_mgr.push_modal(persistent_mirror_instance, true, "NavigationRouter")
+		_update_nav_log("PlayerProfileScreen", false)
 		if persistent_mirror_instance.has_signal("return_requested"):
 			persistent_mirror_instance.return_requested.connect(func():
 				persistent_mirror_instance.visible = false
-				if modal_mgr: modal_mgr.pop_modal(persistent_mirror_instance)
+				if modal_mgr: modal_mgr.pop_modal(persistent_mirror_instance, "NavigationRouter")
+				_update_nav_log(previous_screen_name, true)
 			)
 
 func _on_play_requested():
@@ -170,7 +209,7 @@ func _on_play_requested():
 	_is_transitioning_to_landing = false
 	if active_landing_screen: active_landing_screen.hide_screen()
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-	if modal_mgr: modal_mgr.pop_all_modals()
+	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 		
 	_show_gameplay_hud()
 	
@@ -201,7 +240,7 @@ func _on_profile_requested():
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-	if modal_mgr: modal_mgr.pop_all_modals()
+	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 	toggle_mirror_modal()
 
 func _on_discover_requested():
@@ -210,18 +249,20 @@ func _on_discover_requested():
 	if active_landing_screen:
 		active_landing_screen.hide_screen()
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-	if modal_mgr: modal_mgr.pop_all_modals()
+	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 		
 	var discover_scene = load("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
 	if discover_scene:
 		active_secondary_screen = discover_scene.instantiate()
+		active_secondary_screen.name = "WeeklyFeaturedScreen"
 		if modal_mgr:
-			modal_mgr.push_modal(active_secondary_screen, true)
+			modal_mgr.push_modal(active_secondary_screen, true, "NavigationRouter")
 		else:
 			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 			if ui_layer: ui_layer.add_child(active_secondary_screen)
 		
+		_update_nav_log("WeeklyFeaturedScreen", false)
 		active_secondary_screen.return_requested.connect(show_landing_screen)
 		active_secondary_screen.play_universe_requested.connect(_on_play_universe_requested)
 
@@ -231,26 +272,32 @@ func _on_play_universe_requested(universe_id: String):
 	print("UNIVERSE BOOT START")
 	print("→ WORLD LIST RESOLVED: ", universe_id)
 	_is_transitioning_to_landing = false
+	active_universe_selection = universe_id
 	
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-	if modal_mgr: modal_mgr.pop_all_modals()
+	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 	if active_secondary_screen:
 		active_secondary_screen.queue_free()
 		active_secondary_screen = null
 		
+	print("[ROUTER TRACE] Before NavigationRouter.show_world_select(", universe_id, ")")
 	var world_scene = load("res://scenes/ui/screens/WorldSelectScreen.tscn")
 	if world_scene:
 		active_secondary_screen = world_scene.instantiate()
-		active_secondary_screen.setup(universe_id)
+		active_secondary_screen.name = "WorldSelectScreen"
 		
 		if modal_mgr:
-			modal_mgr.push_modal(active_secondary_screen, true)
+			modal_mgr.push_modal(active_secondary_screen, true, "NavigationRouter")
 		else:
 			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 			if ui_layer: ui_layer.add_child(active_secondary_screen)
 			
+		active_secondary_screen.setup(universe_id)
 		print("→ WORLD SELECT SCREEN PUSHED")
+		print("[ROUTER TRACE] After NavigationRouter.show_world_select(", universe_id, ")")
+		
+		_update_nav_log("WorldSelectScreen", false)
 		active_secondary_screen.return_requested.connect(_on_discover_requested)
 		active_secondary_screen.world_selected.connect(_on_world_selected)
 
@@ -259,7 +306,7 @@ func _on_world_selected(universe_id: String, world_id: String):
 	print("→ world_selected event emitted: ", world_id)
 	_is_transitioning_to_landing = false
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-	if modal_mgr: modal_mgr.pop_all_modals()
+	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 	if active_secondary_screen:
 		active_secondary_screen.queue_free()
 		active_secondary_screen = null

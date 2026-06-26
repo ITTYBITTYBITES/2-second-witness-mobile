@@ -15,14 +15,14 @@ func _ready():
 	for child in get_children():
 		print("Child: ", child.name)
 		
-	AdManager.show_banner()
+	if AdManager: AdManager.show_banner()
 	print("[2 SECOND WITNESS] Weekly Discovery Screen active.")
 	btn_return.pressed.connect(func(): return_requested.emit())
 	_populate_grid()
 
 func _populate_grid():
-	var controller = get_node_or_null("/root/SamplingController")
-	var profile = get_node_or_null("/root/PlayerProfile")
+	var controller = SamplingController if SamplingController else get_tree().root.get_node_or_null("SamplingController")
+	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	if not controller or not profile: return
 	
 	var all_universes = [
@@ -76,7 +76,7 @@ func _populate_grid():
 
 func _on_universe_clicked(universe_id: String, can_play: bool):
 	print("CARD CLICKED:", universe_id)
-	AudioManager.play_sfx("ui_click")
+	if AudioManager: AudioManager.play_sfx("ui_click")
 	if can_play:
 		play_universe_requested.emit(universe_id)
 	else:
@@ -85,11 +85,20 @@ func _on_universe_clicked(universe_id: String, can_play: bool):
 func _show_monetization_gate(universe_id: String):
 	if active_gate: active_gate.queue_free()
 	active_gate = monetization_gate_scene.instantiate()
-	active_gate.setup(universe_id)
-	add_child(active_gate)
+	active_gate.name = "MonetizationGate"
+	if active_gate.has_method("setup_universe_unlock"):
+		active_gate.setup_universe_unlock(universe_id)
+	elif active_gate.has_method("setup"):
+		active_gate.setup(universe_id)
+		
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	if modal_mgr:
+		modal_mgr.push_modal(active_gate, true, "WeeklyFeaturedScreen")
+	else:
+		add_child(active_gate)
 	
 	active_gate.purchase_completed.connect(func():
-		var profile = get_node_or_null("/root/PlayerProfile")
+		var profile = PlayerProfile if PlayerProfile else get_node_or_null("/root/PlayerProfile")
 		if profile and not profile.unlocked_universes.has(universe_id):
 			profile.unlocked_universes.append(universe_id)
 			profile.save_profile()
@@ -97,5 +106,5 @@ func _show_monetization_gate(universe_id: String):
 	)
 
 func hide_screen():
-	AdManager.hide_banner()
+	if AdManager: AdManager.hide_banner()
 	queue_free()
