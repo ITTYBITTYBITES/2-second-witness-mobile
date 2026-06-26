@@ -29,7 +29,7 @@ func _ready():
 	_populate_data()
 
 func _populate_data():
-	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
+	var profile = get_node_or_null("/root/PlayerProfile")
 	if not profile: return
 	
 	if lifetime_label: lifetime_label.text = "LIFETIME SESSIONS: " + str(profile.lifetime_sessions)
@@ -52,8 +52,16 @@ func _populate_data():
 	trends_lbl.add_theme_font_size_override("normal_font_size", 18)
 	insights_container.add_child(trends_lbl)
 	
-	var rec = profile.get_adaptive_recommendation() if profile.has_method("get_adaptive_recommendation") else {"target_universe": "frontier", "reason": "Your recent decisions suggest strong spatial reasoning."}
-	var rec_text = "\n[center][color=#E6B800]Suggested Exploration: " + rec.get("target_universe", "frontier").capitalize() + "[/color]\nReason: [color=#8595FF]\"" + rec.get("reason", "Your recent decisions suggest strong spatial reasoning.") + "\"[/color][/center]\n"
+	var rec: Dictionary = {}
+	if profile.has_method("get_adaptive_recommendation"):
+		rec = profile.get_adaptive_recommendation()
+	else:
+		rec = {"universe": "frontier", "reason": "Your recent decisions suggest strong spatial reasoning."}
+		
+	var target_uni = rec.get("universe", "frontier")
+	var reason_text = rec.get("reason", "Your recent decisions suggest strong spatial reasoning.")
+	var rec_text = "\n[center][color=#E6B800]Suggested Exploration: " + target_uni.capitalize() + "[/color]\nReason: [color=#8595FF]\"" + reason_text + "\"[/color][/center]\n"
+	
 	var rec_lbl = RichTextLabel.new()
 	rec_lbl.bbcode_enabled = true
 	rec_lbl.text = rec_text
@@ -61,12 +69,15 @@ func _populate_data():
 	rec_lbl.add_theme_font_size_override("normal_font_size", 18)
 	insights_container.add_child(rec_lbl)
 	
-	var insights = profile.generate_insights() if profile.has_method("generate_insights") else []
+	var insights: Array = []
+	if profile.has_method("generate_insights"):
+		insights = profile.generate_insights()
+		
 	for insight_text in insights:
 		var lbl = RichTextLabel.new()
 		lbl.bbcode_enabled = true
 		
-		var styled_text = insight_text
+		var styled_text = str(insight_text)
 		styled_text = styled_text.replace("pattern tasks", "[color=#4CC9F0]pattern tasks[/color]")
 		styled_text = styled_text.replace("recall tasks", "[color=#F72585]recall tasks[/color]")
 		styled_text = styled_text.replace("hesitate", "[color=#D81159]hesitate[/color]")
@@ -103,9 +114,9 @@ func _populate_data():
 		print("[COGNITIVE MIRROR] Explore Recommendation clicked.")
 		if AudioManager: AudioManager.play_sfx("ui_click")
 		if AdManager: AdManager.hide_banner()
-		var router = NavigationRouter if NavigationRouter else get_tree().root.get_node_or_null("NavigationRouter")
+		var router = get_node_or_null("/root/NavigationRouter")
 		if router and router.has_method("_on_play_universe_requested"):
-			router._on_play_universe_requested(rec.get("target_universe", "frontier"))
+			router._on_play_universe_requested(target_uni)
 		return_requested.emit()
 	)
 	hbox.add_child(btn_rec)
@@ -118,7 +129,7 @@ func _populate_data():
 		print("[COGNITIVE MIRROR] Return Home clicked.")
 		if AudioManager: AudioManager.play_sfx("ui_click")
 		if AdManager: AdManager.hide_banner()
-		var router = NavigationRouter if NavigationRouter else get_tree().root.get_node_or_null("NavigationRouter")
+		var router = get_node_or_null("/root/NavigationRouter")
 		if router and router.has_method("show_landing_screen"):
 			router.show_landing_screen()
 		return_requested.emit()
