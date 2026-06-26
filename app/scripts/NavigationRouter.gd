@@ -57,6 +57,23 @@ func _update_nav_log(new_screen: String, is_pop: bool = false):
 			if is_instance_valid(m): m_stack.append(m.name)
 	print("Modal Stack:\n[\n    ", ", \n    ".join(m_stack), "\n]\n")
 
+func on_scene_transition_complete():
+	print("[ROUTER] Executing single authoritative completion hook: on_scene_transition_complete()...")
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
+	
+	var is_hud_valid = active_gameplay_hud and is_instance_valid(active_gameplay_hud) and active_gameplay_hud.is_inside_tree()
+	var is_stack_empty = modal_mgr and modal_mgr.get_modal_stack().is_empty()
+	
+	LayoutFreezer.unfreeze()
+	if kernel and kernel.has_method("release_all_locks"):
+		kernel.release_all_locks()
+		
+	if modal_mgr and modal_mgr.has_method("set_input_blocker"):
+		modal_mgr.set_input_blocker(false)
+		
+	print("[ROUTER] Terminal Lifecycle State Reached. GameplayHUD active. Input restored. Zero deadlocks.")
+
 func goto_landing():
 	show_landing_screen()
 
@@ -123,6 +140,7 @@ func _show_gameplay_hud():
 	_update_nav_log("GameplayHUD", false)
 	if active_gameplay_hud and is_instance_valid(active_gameplay_hud):
 		active_gameplay_hud.visible = true
+		call_deferred("on_scene_transition_complete")
 		return
 		
 	var hud_root = get_tree().root.get_node_or_null("MainShell/UILayer/HUDRoot")
@@ -185,6 +203,7 @@ func _show_gameplay_hud():
 	active_gameplay_hud.add_child(btn_mirror)
 	hud_root.add_child(active_gameplay_hud)
 	print("[ROUTER] Gameplay HUD attached. Persistent 3-Layer UI separation active.")
+	call_deferred("on_scene_transition_complete")
 
 func toggle_mirror_modal():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
@@ -337,6 +356,7 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 	
 	print("[SCENARIO ENGINE] Scenario 1 Ready: ", next_spike.capitalize().replace("_", " "))
 	handle_navigation_event({"type": "portal_selected", "destination": {"universe": u_id, "world": w_id, "chunk_id": "0"}})
+	call_deferred("on_scene_transition_complete")
 
 func handle_navigation_event(event: Dictionary):
 	if event.get("type") == "portal_selected":

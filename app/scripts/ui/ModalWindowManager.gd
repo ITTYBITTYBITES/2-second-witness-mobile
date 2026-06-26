@@ -21,6 +21,7 @@ var _is_blocker_active: bool = false
 func _ready():
 	if BootTracer: BootTracer.log_init("ModalWindowManager")
 	print("[MODAL MANAGER] Online. Operating as authoritative owner of modal state and focus invariants.")
+	set_process(true)
 	
 	_input_blocker = Control.new()
 	_input_blocker.name = "AuthoritativeInputBlocker"
@@ -34,6 +35,21 @@ func _mount_blocker():
 	if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 	if ui_layer:
 		ui_layer.add_child(_input_blocker)
+
+func _process(_delta):
+	if _modal_stack.is_empty() and _is_blocker_active:
+		print("[MODAL WATCHDOG] Safety rule enforced: modal stack == empty but blocker was active. Auto-clearing deadlock.")
+		set_input_blocker(false)
+
+func set_input_blocker(active: bool):
+	_is_blocker_active = active
+	if is_instance_valid(_input_blocker):
+		if active:
+			_input_blocker.mouse_filter = Control.MOUSE_FILTER_STOP
+			print("[MODAL MANAGER] Input Blocker ACTIVE. Isolating underlying layers.")
+		else:
+			_input_blocker.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			print("[MODAL MANAGER] Input Blocker IGNORE. Restoring global input tree.")
 
 func _unhandled_input(event):
 	if event is InputEventKey and event.pressed and (event.keycode == KEY_ESCAPE or event.keycode == KEY_BACK):
@@ -130,7 +146,7 @@ func push_modal(screen: CanvasLayer, is_modal: bool = true, caller: String = "Mo
 func pop_modal(screen: CanvasLayer = null, caller: String = "ModalWindowManager"):
 	if not _arbitrate_write_owner(caller): return
 	if _modal_stack.is_empty():
-		_arbitrate_input_zoning(false)
+		set_input_blocker(false)
 		return
 	
 	var target = screen if screen != null else _modal_stack[-1]
@@ -168,28 +184,22 @@ func pop_all_modals(except_screen: CanvasLayer = null, caller: String = "ModalWi
 		elif not is_instance_valid(modal):
 			_modal_stack.erase(modal)
 	if _modal_stack.is_empty():
-		_arbitrate_input_zoning(false)
+		set_input_blocker(false)
 
 func _arbitrate_input_zoning(has_active_modal: bool):
 	if not is_instance_valid(_input_blocker): return
 	
 	var should_be_active = (has_active_modal and _modal_stack.size() > 0)
-	if _is_blocker_active == should_be_active:
-		return # Idempotent suppression of redundant state writes
-		
-	_is_blocker_active = should_be_active
+	if _is_blocker_active == should_be_active: return
 	
 	if should_be_active:
 		var top_modal = _modal_stack[-1]
 		var parent = _input_blocker.get_parent()
 		if parent and top_modal.get_parent() == parent:
 			parent.move_child(_input_blocker, max(0, top_modal.get_index() - 1))
-			
-		_input_blocker.mouse_filter = Control.MOUSE_FILTER_STOP
-		print("[MODAL MANAGER] Input Blocker ACTIVE. Isolating underlying layers.")
+		set_input_blocker(true)
 	else:
-		_input_blocker.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		print("[MODAL MANAGER] Input Blocker IGNORE. Restoring global input tree.")
+		set_input_blocker(false)
 
 func has_modal(screen: CanvasLayer) -> bool:
 	return _modal_stack.has(screen)

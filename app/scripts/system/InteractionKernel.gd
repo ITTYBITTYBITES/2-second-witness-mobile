@@ -26,12 +26,38 @@ var _mutation_trace_log: Array[Dictionary] = []
 
 var _last_pointer_event_hash: int = 0
 var _consumed_provenance_tokens: Dictionary = {}
+var _is_input_enabled: bool = true
 
 func _ready():
 	if BootTracer: BootTracer.log_init("InteractionKernel")
 	print("[INTERACTION KERNEL] Online. Enforcing event-origin consistency (1 physical input -> 1 consumable token).")
 
+func set_input_enabled(enabled: bool):
+	_is_input_enabled = enabled
+	if enabled:
+		print("[INPUT STATE] UNLOCKED")
+	else:
+		print("[INPUT STATE] LOCKED")
+
+func release_all_locks():
+	_active_transitions_count = 0
+	_transitional_suppression_lock = false
+	_active_pointer_domains.clear()
+	_active_focus_domains.clear()
+	_consumed_provenance_tokens.clear()
+	set_input_enabled(true)
+	var is_blocking = is_ui_blocking()
+	ui_lock_state_changed.emit(is_blocking)
+	print("[KERNEL ARBITER] Authoritative release_all_locks executed. All locks balanced.")
+
+func release_input_lock(epoch_id: int):
+	release_all_locks()
+
 func consume_provenance(event_id: String, event: InputEvent = null) -> bool:
+	if not _is_input_enabled:
+		print("[KERNEL IDEMPOTENCY] Input currently locked. Rejecting provenance for: ", event_id)
+		return false
+		
 	if event != null:
 		_last_pointer_event_hash = hash(event.get_instance_id()) if event.has_method("get_instance_id") else event.hash()
 		
@@ -43,15 +69,6 @@ func consume_provenance(event_id: String, event: InputEvent = null) -> bool:
 	_consumed_provenance_tokens[provenance_token] = true
 	if _consumed_provenance_tokens.size() > 500: _consumed_provenance_tokens.clear()
 	return true
-
-func release_input_lock(epoch_id: int):
-	_active_transitions_count = 0
-	_transitional_suppression_lock = false
-	_active_pointer_domains.clear()
-	_active_focus_domains.clear()
-	var is_blocking = is_ui_blocking()
-	ui_lock_state_changed.emit(is_blocking)
-	print("[KERNEL ARBITER] Authoritative Input Release Contract executed for Epoch ", epoch_id, ". Input lock strictly released (is_ui_blocking = false).")
 
 func register_panel(panel: Control, domain: String = "default", initial_state: int = UIState.HIDDEN, block_focus: bool = true):
 	if not is_instance_valid(panel): return
@@ -80,6 +97,7 @@ func set_panel_state(panel: Control, state: int, domain: String = "default", blo
 
 func begin_transition(panel: Control, domain: String = "default"):
 	_active_transitions_count += 1
+	set_input_enabled(false)
 	set_panel_state(panel, UIState.TRANSITIONAL_LOCK, domain)
 	print("[KERNEL ARBITER] Transitional Lock INTENT declared. Suppressing input race conditions.")
 
@@ -87,6 +105,8 @@ func end_transition(panel: Control, final_state: int, domain: String = "default"
 	_active_transitions_count = max(0, _active_transitions_count - 1)
 	set_panel_state(panel, final_state, domain)
 	print("[KERNEL ARBITER] Transition resolution INTENT declared. Remaining active locks: ", _active_transitions_count)
+	if _active_transitions_count == 0:
+		set_input_enabled(true)
 
 func _schedule_mutation():
 	if not _mutation_scheduled:
@@ -141,7 +161,7 @@ func _apply_batched_mutations():
 	ui_lock_state_changed.emit(is_blocking)
 
 func is_ui_blocking() -> bool:
-	return _transitional_suppression_lock or not _active_pointer_domains.is_empty() or not _active_focus_domains.is_empty()
+	return _transitional_suppression_lock or not _active_pointer_domains.is_empty() or not _active_focus_domains.is_empty() or not _is_input_enabled
 
 func commit_intent(intent: Dictionary):
 	if _is_committing_side_effects:
