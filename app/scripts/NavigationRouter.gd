@@ -370,34 +370,51 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 	var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile) else {}
 	var next_spike = normalize_id(vector.get("spike", "memory_cascade"))
 	
+	var nav_state = NavigationState if NavigationState else get_tree().root.get_node_or_null("NavigationState")
+	var s_seed = str(profile.lifetime_sessions if profile else 0).hash()
+	if nav_state and nav_state.has_method("lock_transition_context"):
+		nav_state.lock_transition_context(u_id, w_id, next_spike, "0", s_seed)
+		
 	print("[SCENARIO ENGINE] Scenario 1 Ready: ", next_spike.capitalize().replace("_", " "))
-	handle_navigation_event({"type": "portal_selected", "destination": {"universe": u_id, "world": w_id, "chunk_id": "0"}})
+	handle_navigation_event({"type": "portal_selected"})
 	call_deferred("on_scene_transition_complete")
 
 func handle_navigation_event(event: Dictionary):
 	if event.get("type") == "portal_selected":
-		var dest = event.get("destination", {})
+		var nav_state = NavigationState if NavigationState else get_tree().root.get_node_or_null("NavigationState")
+		var ctx = nav_state.get_transition_context() if (nav_state and nav_state.has_method("get_transition_context")) else {}
+		
+		var u_id = ctx.get("universe_id", "history")
+		var w_id = ctx.get("world_id", "ancient_egypt")
+		var s_id = ctx.get("scenario_id", "memory_cascade")
+		var c_id = ctx.get("chunk_id", "0")
+		var d_seed = ctx.get("deterministic_seed", 12345)
+		
 		print("STEP 8: LOADING SCENARIO")
-		print("[ROUTER] Executing continuous scene shift to Destination: ", dest)
+		print("[ROUTER] Executing continuous scene shift to Destination: { \"universe\": \"" + u_id + "\", \"world\": \"" + w_id + "\", \"chunk_id\": \"" + c_id + "\" }")
 		
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-		var u_id = normalize_id(dest.get("universe", active_universe_selection))
-		var w_id = normalize_id(dest.get("world", "ancient_egypt"))
-		var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile) else {}
-		var cascade_scene_name = normalize_id(vector.get("spike", "memory_cascade"))
-		var scenario_payload = vector.get("knowledge_item", {})
-		var seed_string = str(profile.lifetime_sessions if profile else 0) + normalize_id(dest.get("chunk_id", "0"))
+		var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 		
-		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(cascade_scene_name) + ".tscn")
+		var seed_str = str(d_seed) + u_id + w_id
+		var scenario_payload = registry.resolve_scenario(u_id, w_id, s_id, seed_str) if registry else {}
+		
+		if scenario_payload.is_empty():
+			scenario_payload = {
+				"id": s_id, "universe": u_id, "world": w_id, "type": s_id,
+				"rules": {"sequence_length": 3, "correct_answer": "Eye of Horus", "wrong_answers": ["Ankh", "Scarab", "Djed"], "legacy_prompt": "DEITY SYMBOL"}
+			}
+			
+		var cascade_scene = load("res://scenes/scenarios/" + _snake_to_pascal(s_id) + ".tscn")
 		if cascade_scene == null:
 			cascade_scene = preload("res://scenes/scenarios/MemoryCascade.tscn")
 			
 		var cascade = cascade_scene.instantiate()
 		
 		if cascade.has_method("inject_payload"):
-			cascade.inject_payload(scenario_payload, seed_string.hash())
-		
+			cascade.inject_payload(scenario_payload, d_seed)
+			
 		var world_layer = get_tree().root.get_node_or_null("MainShell/WorldLayer")
 		if world_layer:
 			world_layer.add_child(cascade)
@@ -408,7 +425,7 @@ func handle_navigation_event(event: Dictionary):
 			get_tree().root.add_child(cascade)
 			print("SCENARIO SPAWNED")
 			cascade.completed.connect(_on_cascade_completed)
-		emit_signal("routed_to", dest)
+		emit_signal("routed_to", ctx)
 	else:
 		print("[ROUTER] Unknown routing event: ", event)
 
@@ -439,13 +456,23 @@ func _on_cascade_completed():
 		current_scenario_chain_index += 1
 		print("[SCENARIO ENGINE] Advancing to Next Scenario (Index: ", current_scenario_chain_index, " / 3)...")
 		print("[SCENARIO ENGINE] Loading Scenario...")
+		
+		var nav_state = NavigationState if NavigationState else get_tree().root.get_node_or_null("NavigationState")
+		var old_ctx = nav_state.get_transition_context() if (nav_state and nav_state.has_method("get_transition_context")) else {}
+		var u_id = old_ctx.get("universe_id", active_universe_selection)
+		var w_id = old_ctx.get("world_id", "ancient_egypt")
+		
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-		var vector = orch.determine_next_experience(profile, active_universe_selection, "firstaid") if (orch and profile) else {}
+		var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile) else {}
 		var next_spike = normalize_id(vector.get("spike", "rapid_classification"))
-		print("[SCENARIO ENGINE] Scenario ", current_scenario_chain_index, " Ready: ", next_spike.capitalize().replace("_", " "))
 		
-		handle_navigation_event({"type": "portal_selected", "destination": {"universe": active_universe_selection, "world": "firstaid", "chunk_id": str(current_scenario_chain_index)}})
+		var s_seed = str(profile.lifetime_sessions if profile else 0).hash() + current_scenario_chain_index
+		if nav_state and nav_state.has_method("lock_transition_context"):
+			nav_state.lock_transition_context(u_id, w_id, next_spike, str(current_scenario_chain_index), s_seed)
+			
+		print("[SCENARIO ENGINE] Scenario ", current_scenario_chain_index, " Ready: ", next_spike.capitalize().replace("_", " "))
+		handle_navigation_event({"type": "portal_selected"})
 	else:
 		print("[SCENARIO ENGINE] 3-Scenario progression chain complete. Invoking Mirror Update...")
 		current_scenario_chain_index = 1
