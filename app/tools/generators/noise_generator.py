@@ -3,15 +3,26 @@ import os
 import hashlib
 import math
 import random
+import json
 from PIL import Image
+
+def load_contract():
+    contracts_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../meta/asset_contracts.json'))
+    with open(contracts_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        return data['contracts']['noise_texture']
 
 def generate_noise_texture(universe_id: str, asset_id: str, output_path: str):
     seed_str = f"{universe_id}{asset_id}"
     seed = int(hashlib.md5(seed_str.encode()).hexdigest(), 16)
     random.seed(seed)
     
-    width, height = 256, 256
-    img = Image.new("L", (width, height), 0)
+    contract = load_contract()
+    width, height = contract['dimensions']
+    color_space = contract['color_space']
+    format_type = contract['format']
+    
+    img = Image.new(color_space, (width, height), 0)
     pixels = img.load()
     
     freq1 = random.uniform(0.02, 0.05)
@@ -28,8 +39,8 @@ def generate_noise_texture(universe_id: str, asset_id: str, output_path: str):
             pixels[x, y] = max(0, min(255, norm_val))
             
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    img.save(output_path, "PNG")
-    print(f"[NOISE GENERATOR] Synthesized noise texture: {output_path} (Seed: {seed_str})")
+    img.save(output_path, format_type, dpi=(contract.get('dpi', 72), contract.get('dpi', 72)))
+    print(f"[NOISE GENERATOR] Synthesized noise texture: {output_path} (Contract: {contract['dimensions']} | Seed: {seed_str})")
 
 if __name__ == '__main__':
     generate_noise_texture("science_lab", "noise_science_lab", "temp_noise.png")

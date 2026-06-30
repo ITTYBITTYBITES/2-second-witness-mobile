@@ -2,14 +2,31 @@
 import os
 import hashlib
 import random
+import json
 from PIL import Image, ImageDraw
+
+def load_contract(asset_id: str):
+    contracts_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../meta/asset_contracts.json'))
+    with open(contracts_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        contracts = data['contracts']
+        if "banner" in asset_id or "hero" in asset_id: return contracts['universe_banner']
+        elif "thumb" in asset_id: return contracts['world_thumbnail']
+        elif "loading" in asset_id: return contracts['loading_background']
+        elif "app_icon" in asset_id: return contracts['app_icon']
+        elif "promo" in asset_id: return contracts['feature_graphic']
+        return contracts['universe_banner'] # Default fallback contract
 
 def generate_gradient_banner(universe_id: str, asset_id: str, output_path: str):
     seed_str = f"{universe_id}{asset_id}"
     seed = int(hashlib.md5(seed_str.encode()).hexdigest(), 16)
     random.seed(seed)
     
-    width, height = 1024, 512
+    contract = load_contract(asset_id)
+    width, height = contract['dimensions']
+    color_space = contract['color_space']
+    format_type = contract['format']
+    
     img = Image.new("RGBA", (width, height), (0, 0, 0, 255))
     draw = ImageDraw.Draw(img)
     
@@ -43,9 +60,12 @@ def generate_gradient_banner(universe_id: str, asset_id: str, output_path: str):
         intensity = int(120 * (1.0 - abs(glow_y - mid_y) / 20.0))
         draw.line([(0, glow_y), (width, glow_y)], fill=(r_accent, g_accent, b_accent, intensity))
         
+    if color_space == "RGB":
+        img = img.convert("RGB")
+        
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    img.save(output_path, "PNG")
-    print(f"[GRADIENT GENERATOR] Synthesized banner: {output_path} (Seed: {seed_str})")
+    img.save(output_path, format_type, dpi=(contract.get('dpi', 72), contract.get('dpi', 72)))
+    print(f"[GRADIENT GENERATOR] Synthesized banner: {output_path} (Contract: {contract['dimensions']} | Seed: {seed_str})")
 
 if __name__ == '__main__':
     generate_gradient_banner("science_lab", "banner_science_lab", "temp_banner.png")

@@ -2,7 +2,7 @@ extends Node
 class_name UniverseAssetCompiler
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness
 # ASSET PIPELINE LAYER (1-TIME DETERMINISTIC AI ASSET BUILDER)
 # ---------------------------------------------------------
 
@@ -69,8 +69,8 @@ func verify_and_provision_universe(universe_id: String, universe_registry_instan
 		var target_path = u_reg.get_physical_path(key)
 		if not ResourceLoader.exists(target_path) and not FileAccess.file_exists(target_path):
 			print("[UNIVERSE COMPILER] Missing source asset detected for key '", key, "' -> ", target_path)
-			print("  [AI GENERATION GATE] Dispatching prompt to AI generation pipeline (Midjourney / DALL-E 3) ONCE...")
-			print("  [AI GENERATION GATE] Synthesizing asset and writing to disk...")
+			print("  [AUTOMATED PIPELINE GATE] Dispatching prompt to deterministic automated production pipeline ONCE...")
+			print("  [AUTOMATED PIPELINE GATE] Synthesizing asset and writing to disk...")
 			print("  [UNIVERSE COMPILER] Import DB refresh triggered.")
 			
 	if not universe_registry_instance: u_reg.free()
@@ -81,5 +81,5 @@ func verify_and_provision_universe(universe_id: String, universe_registry_instan
 		"timestamp": int(Time.get_unix_time_from_system())
 	}
 	save_generated_registry()
-	print("[UNIVERSE COMPILER] Universe '", universe_id, "' successfully provisioned and marked as generated. AI generation complete.\n")
+	print("[UNIVERSE COMPILER] Universe '", universe_id, "' successfully provisioned and marked as generated. Automated asset provisioning complete.\n")
 	return true

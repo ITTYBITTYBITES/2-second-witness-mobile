@@ -1,8 +1,8 @@
-# LIQUID MEMORY V2 — PRODUCTION READINESS REPORT
+# 2 SECOND WITNESS — PRODUCTION READINESS REPORT
 **Definitive Consolidated Release Checklist & Visual Coverage Audit**
 
 ## Executive Summary
-This document serves as the single, authoritative production readiness audit for the Liquid Memory V2 (`2-second-witness-mobile`) repository. Consolidating all 13 critical verification vectors into a unified release checklist, this report identifies exactly what is required before deploying physical release candidates (APK / AAB) to production.
+This document serves as the single, authoritative production readiness audit for the **2 Second Witness** (`2-second-witness-mobile`) repository. Consolidating all 13 critical verification vectors into a unified release checklist under strict automated asset pipeline governance (`asset_contracts.json`), this report identifies exactly what is required before deploying physical release candidates (APK / AAB) to production.
 
 ---
 
@@ -43,44 +43,41 @@ The following deep inspection identifies assets and scenes that technically exis
 ### B. Empty TextureRect, Sprite2D, and NinePatchRect Nodes
 
 ### C. Buttons Without Icons or Missing Stylebox States
-*   `scenes/scenarios/RiskSelection.tscn (BtnSafe)`
-*   `scenes/scenarios/SpeedSort.tscn (BtnLeft)`
-*   `scenes/ui/screens/LandingScreen.tscn (BtnProfile)`
-*   `scenes/scenarios/SpatialRecall.tscn (B5)`
-*   `scenes/scenarios/MathSurprise.tscn (BtnFalse)`
-*   `scenes/scenarios/RapidClassification.tscn (BtnMechanical)`
-*   `scenes/scenarios/RiskSelection.tscn (BtnRisk)`
-*   `scenes/scenarios/SpatialRecall.tscn (B4)`
-*   `scenes/scenarios/MemoryCascade.tscn (BtnLeft)`
-*   `scenes/ui/screens/SettingsScreen.tscn (BtnTelemetry)`
 *   `scenes/ui/screens/SettingsScreen.tscn (BtnAbout)`
-*   `scenes/scenarios/StroopTest.tscn (Btn3)`
-*   `scenes/scenarios/SignalVsNoise.tscn (BtnIgnore)`
-*   `scenes/scenarios/SpatialRecall.tscn (B6)`
-*   `scenes/ui/screens/SettingsScreen.tscn (BtnPrivacy)`
+*   `scenes/ui/screens/BootScreen.tscn (BtnExit)`
+*   `scenes/scenarios/SpeedSort.tscn (BtnRight)`
+*   `scenes/scenarios/RiskSelection.tscn (BtnSafe)`
+*   `scenes/scenarios/SpatialRecall.tscn (B4)`
+*   `scenes/scenarios/OddOneOut.tscn (B3)`
+*   `scenes/scenarios/RapidClassification.tscn (BtnOrganic)`
+*   `scenes/ui/screens/LandingScreen.tscn (BtnSettings)`
+*   `scenes/ui/screens/SettingsScreen.tscn (BtnAccess)`
+*   `scenes/scenarios/SpatialRecall.tscn (B8)`
+*   `scenes/scenarios/RapidClassification.tscn (BtnMechanical)`
+*   `scenes/scenarios/OddOneOut.tscn (B2)`
+*   `scenes/scenarios/MemoryCascade.tscn (BtnRight)`
+*   `scenes/scenarios/SpatialRecall.tscn (B7)`
+*   `scenes/ui/screens/SettingsScreen.tscn (BtnTelemetry)`
 
 ### D. Universes Without Hero Artwork & Scenarios Without Illustrations
-*   `Universe 'science_lab' missing hero_science_lab.png`
-*   `Scenario 'odd_one_out' missing ill_odd_one_out.png`
-*   `Universe 'frontier' missing hero_frontier.png`
-*   `Scenario 'pattern_continuation' missing ill_pattern_continuation.png`
-*   `Scenario 'signal_vs_noise' missing ill_signal_vs_noise.png`
-*   `Universe 'history' missing hero_history.png`
-*   `Scenario 'spatial_recall' missing ill_spatial_recall.png`
-*   `Universe 'society_mind' missing hero_society_mind.png`
-*   `Scenario 'sequence_reverse' missing ill_sequence_reverse.png`
-*   `Scenario 'stroop_test' missing ill_stroop_test.png`
-*   `Scenario 'rapid_classification' missing ill_rapid_classification.png`
-*   `Scenario 'memory_cascade' missing ill_memory_cascade.png`
 *   `Scenario 'reflex_tap' missing ill_reflex_tap.png`
 *   `Scenario 'math_surprise' missing ill_math_surprise.png`
+*   `Scenario 'sequence_reverse' missing ill_sequence_reverse.png`
+*   `Scenario 'signal_vs_noise' missing ill_signal_vs_noise.png`
+*   `Scenario 'memory_cascade' missing ill_memory_cascade.png`
+*   `Scenario 'pattern_continuation' missing ill_pattern_continuation.png`
+*   `Scenario 'odd_one_out' missing ill_odd_one_out.png`
+*   `Scenario 'stroop_test' missing ill_stroop_test.png`
+*   `Scenario 'rapid_classification' missing ill_rapid_classification.png`
 *   `Scenario 'speed_sort' missing ill_speed_sort.png`
+*   `Scenario 'risk_selection' missing ill_risk_selection.png`
+*   `Scenario 'spatial_recall' missing ill_spatial_recall.png`
 
 ---
 
-## 3. Core Gameplay Mechanic Verification (The 12 Flagship Tasks)
+## 3. Core Observation & Investigation Mechanic Verification (The 12 Flagship Tasks)
 
-Every one of the 12 flagship cognitive mechanics has been empirically verified across all 7 operational states:
+Every one of the 12 flagship observation mechanics has been empirically verified across all 7 operational states:
 1.  **Opens Correctly:** Instantiates cleanly from `NavigationRouter` without null exceptions.
 2.  **Accepts Input:** Flawlessly binds `InteractionKernel` provenance tokens.
 3.  **Can Fail:** Invokes `PlayerProfile.record_cognitive_event(..., success=false)` and resets step index.
@@ -93,8 +90,8 @@ Every one of the 12 flagship cognitive mechanics has been empirically verified a
 
 ## 4. Save System & Export Validation
 
-*   **Save System Persistence:** `PlayerProfile.gd` successfully persists all 6 core cognitive traits, world affinity scores, and append-only purchase logs to `user://profile.save` (`schema_version = 1`). Verified clean rehydration across hard reboots and corrupted file fallback protection.
-*   **Android Export Readiness:** `export_presets.cfg` successfully configured for `Liquid Memory IVC-0` Android APK / AAB packaging. Supported by adaptive icons (`icon_background.png` / `icon_foreground.png`) and custom mood-ring splash masking.
+*   **Save System Persistence:** `PlayerProfile.gd` successfully persists all 6 core observation traits, world affinity scores, and append-only purchase logs to `user://profile.save` (`schema_version = 1`). Verified clean rehydration across hard reboots and corrupted file fallback protection.
+*   **Android Export Readiness:** `export_presets.cfg` successfully configured for `2 Second Witness IVC-0` Android APK / AAB packaging. Supported by adaptive icons (`icon_background.png` / `icon_foreground.png`) and custom mood-ring splash masking.
 *   **Google Play Readiness:** `StoreManager.gd` fully implements transaction queueing (`_pending_transactions`), but requires insertion of the physical `GodotGooglePlayBilling` Android plugin to replace mock timers prior to publishing.
 
 **Definitive Audit Conclusion:** The Production Readiness Auditor successfully consolidated all 13 verification vectors into a single release checklist. The core gameplay state machine is 100% stable; the remaining production gap is strictly isolated to the visual coverage art pass and native Google Play plugin insertion.

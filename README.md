@@ -1,9 +1,9 @@
-# 2 Second Witness (Liquid Memory V2 Engine)
+# 2 Second Witness
 
-This is the production repository for **2 Second Witness**, running on the Liquid Memory V2 Godot 4.6 Engine. 
+This is the production repository for **2 Second Witness**, built on the Godot 4.6 Engine. 
 
 ## 1. Definitive System Classification
-The application operates as a **hybrid prototype with simulated subsystems** where the core loop is functional, peripheral systems (billing adapter layer, simulated ads, local disk buffers, and Android platform lifecycle hooks) are fully prepared, and external dependencies remain unlinked. It is explicitly positioned as an interactive observation discovery platform, not a trivia game.
+The application operates as a **hybrid prototype with simulated subsystems** where the core loop is functional, peripheral systems (billing adapter layer, simulated ads, local disk buffers, and Android platform lifecycle hooks) are fully prepared, and external dependencies remain unlinked. It is explicitly positioned as an interactive observation discovery platform, not a trivia game or clinical testing suite.
 
 ## 2. Repository Structure
 The repository is split into two distinct operational domains to support Over-The-Air (OTA) updates:
@@ -51,6 +51,7 @@ godot --headless -s app/benchmark/verify_input_release_contract.gd
 godot --headless -s app/benchmark/verify_android_readiness.gd
 godot --headless -s app/benchmark/verify_initial_boot_experience.gd
 godot --headless -s app/benchmark/verify_phase_8a_navigation.gd
+godot --headless -s app/benchmark/verify_asset_pipeline_runtime.gd
 ```
 
 ### B. CI Linters & Asset Auditing Tools
@@ -60,14 +61,16 @@ python3 app/tools/asset_auditor.py
 python3 app/tools/production_readiness_auditor.py
 python3 app/tools/json_validator.py
 python3 app/tools/reachability_audit.py
+python3 app/tools/universe_compiler.py
 ```
 
 ---
 
-## 5. Asset Pipeline & Visual Coverage
-All media assets must adhere to the `ASSET_CONTRACT_SPEC.md`. 
+## 5. Automated Asset Production Pipeline
+All media assets are governed by the authoritative single source of truth in `app/meta/asset_contracts.json`.
 - **100% Concretization Rule:** No missing textures, missing fonts, or broken audio stems are permitted.
-- **The AI Asset Queue:** Check `asset_creation_queue.json` for formatted prompts engineered for Midjourney / DALL-E 3 to generate missing universe hero banners and portal textures matching the Liquid Memory V2 aesthetic.
+- **The Automated Production Pipeline:** Adding a new Universe, World, or Scenario requires no manual asset management for the project to build and run correctly. The default workflow is the automated pipeline (`python3 app/tools/universe_compiler.py`) which automatically synthesizes, validates, OCR-verifies, and registers assets.
+- **Optional Manual Artwork Guidance:** Check `asset_creation_queue.json` for optional replacement artwork guidance and prompts engineered for AI image generators (Midjourney / DALL-E 3) matching the exact **2 Second Witness** visual identity.
 - **Visual Coverage:** Check `PRODUCTION_READINESS_REPORT.md` for deep inspection logs isolating empty `TextureRect` nodes and missing button stylebox states.
 
 ---
@@ -75,7 +78,7 @@ All media assets must adhere to the `ASSET_CONTRACT_SPEC.md`.
 ## 6. Deployment Notes & Known Blockers
 
 ### A. Deployment Notes
-*   **Target Packaging:** Build using `export_presets.cfg` (`Liquid Memory IVC-0` profile) for Android APK / AAB generation.
+*   **Target Packaging:** Build using `export_presets.cfg` (`2 Second Witness IVC-0` profile) for Android APK / AAB generation.
 *   **Splash Masking:** `BootScreen.tscn` perfectly overlays the default Godot splash screen, using dynamic mood-ring color shifting, lightweight scan line animations, and explicit brand highlighting (`ITTY BITTY BITES GAMES`).
 
 ### B. Known Blockers (Requiring Human Intervention)

@@ -95,7 +95,7 @@ def crawl_assets():
                 "asset_id": f"{uni}_banner",
                 "target_path": banner_path,
                 "dimensions": "1024x512",
-                "prompt": f"A rich, highly polished thematic banner illustration for the '{uni}' universe in a sci-fi cognitive testing application. Style: Liquid Memory V2, clean UI vector header, high contrast, vibrant accents, dark void background, masterpiece."
+                "prompt": f"A highly polished thematic hero illustration for the '{uni}' universe in an investigative world exploration and observation application. Theme: 2 Second Witness, deep atmosphere, clear focal observation structures, rich cinematic lighting, clean composition, masterpiece."
             })
             priority_num += 1
 
@@ -108,11 +108,11 @@ def crawl_assets():
     with open(os.path.join(root_dir, 'asset_creation_queue.json'), 'w', encoding='utf-8') as f:
         json.dump(ai_queue, f, indent=4)
 
-    md_content = f"""# LIQUID MEMORY V2 — ASSET HEALTH REPORT
+    md_content = f"""# 2 SECOND WITNESS — ASSET HEALTH REPORT
 **Definitive Asset Verification & Production Inventory**
 
 ## Executive Summary
-This document provides an uncompromised, automated inventory of all physical media assets within the Liquid Memory V2 (`2-second-witness-mobile`) repository. Operating strictly under engine-wide execution governance, this audit parses every scene, resource, script, and JSON manifest to guarantee zero unlinked media references.
+This document provides an uncompromised, automated inventory of all physical media assets within the **2 Second Witness** (`2-second-witness-mobile`) repository. Operating strictly under engine-wide execution governance and automated asset contract enforcement (`asset_contracts.json`), this audit parses every scene, resource, script, and JSON manifest to guarantee zero unlinked media references and absolute brand integrity.
 
 ---
 
@@ -147,9 +147,9 @@ The following assets were referenced in code or JSON schemas but do not physical
     md_content += f"""
 ---
 
-## 3. AI Asset Creation Queue (`asset_creation_queue.json`)
+## 3. Automated Asset Creation Queue (`asset_creation_queue.json`)
 
-The following prompt manifest is engineered to generate missing universe assets via AI image generation pipelines (Midjourney / DALL-E 3) matching the exact Liquid Memory V2 visual identity:
+The following prompt manifest is engineered to generate missing universe assets via the automated deterministic production pipeline matching the exact **2 Second Witness** visual identity (with optional manual AI generator guidance):
 
 """
     for item in ai_queue["queue"]:
@@ -168,7 +168,7 @@ The following physical files exist in the repository but are never referenced by
     for u in list(unused_assets)[:15]:
         md_content += f"*   `{u}`\n"
         
-    md_content += "\n**Definitive Audit Conclusion:** The Asset Auditor successfully crawled the repository, establishing a verifiable, continuous inventory of all media files. All missing paths are fully isolated into the AI asset queue.\n"
+    md_content += "\n**Definitive Audit Conclusion:** The Asset Auditor successfully crawled the repository, establishing a verifiable, continuous inventory of all media files. All missing paths are fully isolated into the automated asset queue.\n"
     
     with open(os.path.join(root_dir, 'ASSET_AUDIT.md'), 'w', encoding='utf-8') as f:
         f.write(md_content)

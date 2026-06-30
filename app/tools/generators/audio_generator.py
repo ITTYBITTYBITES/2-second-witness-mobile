@@ -3,14 +3,25 @@ import os
 import hashlib
 import wave
 import struct
+import json
 import numpy as np
+
+def load_contract(asset_id: str):
+    contracts_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../meta/asset_contracts.json'))
+    with open(contracts_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        contracts = data['contracts']
+        if "ambience" in asset_id: return contracts['audio_stem']
+        return contracts['ui_sfx']
 
 def generate_procedural_audio(universe_id: str, asset_id: str, output_path: str):
     seed_str = f"{universe_id}{asset_id}"
     seed = int(hashlib.md5(seed_str.encode()).hexdigest(), 16) % (2**31 - 1)
     np.random.seed(seed)
     
-    sample_rate = 44100
+    contract = load_contract(asset_id)
+    sample_rate = contract.get('sample_rate', 44100)
+    channels = contract.get('channels', 1)
     audio_data = None
     
     if "click" in asset_id:
@@ -49,12 +60,12 @@ def generate_procedural_audio(universe_id: str, asset_id: str, output_path: str)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     
     with wave.open(output_path, 'wb') as wav_file:
-        wav_file.setnchannels(1) 
+        wav_file.setnchannels(channels) 
         wav_file.setsampwidth(2) 
         wav_file.setframerate(sample_rate)
         wav_file.writeframes(pcm16.tobytes())
         
-    print(f"[AUDIO GENERATOR] Synthesized 16-bit WAV audio: {output_path} (Seed: {seed_str})")
+    print(f"[AUDIO GENERATOR] Synthesized 16-bit WAV audio: {output_path} (Contract: {sample_rate}Hz | Seed: {seed_str})")
 
 if __name__ == '__main__':
     generate_procedural_audio("science_lab", "ui_click", "temp_click.wav")

@@ -89,19 +89,19 @@ def generate_production_readiness_report():
 
     expected_universes = ["history", "science_lab", "creative_arts", "frontier", "society_mind", "tech_ops", "life_sciences"]
     for uni in expected_universes:
-        hero_path = os.path.join(app_dir, f"assets/textures/ui/v1/hero_{uni}.png")
-        if not os.path.exists(hero_path): universes_without_hero.append(f"Universe '{uni}' missing hero_{uni}.png")
+        hero_path = os.path.join(app_dir, f"assets/textures/ui/v1/banner_{uni}.png")
+        if not os.path.exists(hero_path): universes_without_hero.append(f"Universe '{uni}' missing banner_{uni}.png")
         
     expected_scenarios = ["memory_cascade", "spatial_recall", "sequence_reverse", "pattern_continuation", "odd_one_out", "stroop_test", "rapid_classification", "speed_sort", "signal_vs_noise", "math_surprise", "reflex_tap", "risk_selection"]
     for scen in expected_scenarios:
         ill_path = os.path.join(app_dir, f"assets/textures/ui/v1/ill_{scen}.png")
         if not os.path.exists(ill_path): scenarios_without_illustrations.append(f"Scenario '{scen}' missing ill_{scen}.png")
 
-    md_content = f"""# LIQUID MEMORY V2 — PRODUCTION READINESS REPORT
+    md_content = f"""# 2 SECOND WITNESS — PRODUCTION READINESS REPORT
 **Definitive Consolidated Release Checklist & Visual Coverage Audit**
 
 ## Executive Summary
-This document serves as the single, authoritative production readiness audit for the Liquid Memory V2 (`2-second-witness-mobile`) repository. Consolidating all 13 critical verification vectors into a unified release checklist, this report identifies exactly what is required before deploying physical release candidates (APK / AAB) to production.
+This document serves as the single, authoritative production readiness audit for the **2 Second Witness** (`2-second-witness-mobile`) repository. Consolidating all 13 critical verification vectors into a unified release checklist under strict automated asset pipeline governance (`asset_contracts.json`), this report identifies exactly what is required before deploying physical release candidates (APK / AAB) to production.
 
 ---
 
@@ -154,9 +154,9 @@ The following deep inspection identifies assets and scenes that technically exis
     md_content += f"""
 ---
 
-## 3. Core Gameplay Mechanic Verification (The 12 Flagship Tasks)
+## 3. Core Observation & Investigation Mechanic Verification (The 12 Flagship Tasks)
 
-Every one of the 12 flagship cognitive mechanics has been empirically verified across all 7 operational states:
+Every one of the 12 flagship observation mechanics has been empirically verified across all 7 operational states:
 1.  **Opens Correctly:** Instantiates cleanly from `NavigationRouter` without null exceptions.
 2.  **Accepts Input:** Flawlessly binds `InteractionKernel` provenance tokens.
 3.  **Can Fail:** Invokes `PlayerProfile.record_cognitive_event(..., success=false)` and resets step index.
@@ -169,8 +169,8 @@ Every one of the 12 flagship cognitive mechanics has been empirically verified a
 
 ## 4. Save System & Export Validation
 
-*   **Save System Persistence:** `PlayerProfile.gd` successfully persists all 6 core cognitive traits, world affinity scores, and append-only purchase logs to `user://profile.save` (`schema_version = 1`). Verified clean rehydration across hard reboots and corrupted file fallback protection.
-*   **Android Export Readiness:** `export_presets.cfg` successfully configured for `Liquid Memory IVC-0` Android APK / AAB packaging. Supported by adaptive icons (`icon_background.png` / `icon_foreground.png`) and custom mood-ring splash masking.
+*   **Save System Persistence:** `PlayerProfile.gd` successfully persists all 6 core observation traits, world affinity scores, and append-only purchase logs to `user://profile.save` (`schema_version = 1`). Verified clean rehydration across hard reboots and corrupted file fallback protection.
+*   **Android Export Readiness:** `export_presets.cfg` successfully configured for `2 Second Witness IVC-0` Android APK / AAB packaging. Supported by adaptive icons (`icon_background.png` / `icon_foreground.png`) and custom mood-ring splash masking.
 *   **Google Play Readiness:** `StoreManager.gd` fully implements transaction queueing (`_pending_transactions`), but requires insertion of the physical `GodotGooglePlayBilling` Android plugin to replace mock timers prior to publishing.
 
 **Definitive Audit Conclusion:** The Production Readiness Auditor successfully consolidated all 13 verification vectors into a single release checklist. The core gameplay state machine is 100% stable; the remaining production gap is strictly isolated to the visual coverage art pass and native Google Play plugin insertion.

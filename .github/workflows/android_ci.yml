@@ -57,10 +57,10 @@ jobs:
       - name: Export Android Debug
         run: |
           mkdir -p build/android
-          godot --headless --export-debug "Android" build/android/LiquidMemory_Debug.apk
+          godot --headless --export-debug "Android" build/android/2SecondWitness_Debug.apk
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: LiquidMemory-Android
-          path: build/android/LiquidMemory_Debug.apk
+          name: 2SecondWitness-Android
+          path: build/android/2SecondWitness_Debug.apk

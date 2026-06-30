@@ -1,8 +1,8 @@
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness
 # LIVING ARCHITECTURE LEDGER (`ARCHITECTURE_STATUS.md`)
 
 ## Executive Summary
-This document serves as the authoritative, living architecture ledger for *2 Second Witness* (Liquid Memory V2). To maintain an uncompromised, accurate inventory of system progress free of narrative inflation, every major subsystem is tracked across four explicit, independent engineering states: `Designed`, `Implemented`, `Integrated`, and `Validated`. 
+This document serves as the authoritative, living architecture ledger for **2 Second Witness**. To maintain an uncompromised, accurate inventory of system progress free of narrative inflation, every major subsystem is tracked across four explicit, independent engineering states: `Designed`, `Implemented`, `Integrated`, and `Validated`. 
 
 **Definitive System Classification:** The system is not a closed-loop production release. It is a **hybrid prototype with simulated subsystems** where the core loop is functional, peripheral systems (billing adapter layer, simulated ads, local disk buffers, and Android platform lifecycle hooks) are fully prepared, and external dependencies remain unlinked.
 
@@ -25,11 +25,11 @@ The project strictly defines what it means for a subsystem to be `Validated`. A 
 │   MAJOR SUBSYSTEM    │  DESIGNED  │IMPLEMENTED │ INTEGRATED │  VALIDATED  │
 ├──────────────────────┼────────────┼────────────┼────────────┼─────────────┤
 │ Platform Engine      │     ✅     │     ✅     │     ✅     │Pending User │
-│ Cognitive Engine     │     ✅     │     ✅     │     ✅     │Pending User │
+│ Observation Engine   │     ✅     │     ✅     │     ✅     │Pending User │
 │ Knowledge Engine     │     ✅     │     ✅     │     ✅     │Pending User │
 │ Iris Engine          │     ✅     │     ✅     │     ✅     │Pending User │
 │ Mirror Engine        │     ✅     │     ✅     │     ✅     │Pending User │
-│ Experience Orchestrat│     ✅     │     ✅     │     ✅     │Pending User │
+│ Experience Orchestrat│     ✅     │     ✅     │     ✅     │Pending ভুট User │
 └──────────────────────┴────────────┴────────────┴────────────┴─────────────┘
 ```
 
@@ -43,16 +43,16 @@ The project strictly defines what it means for a subsystem to be `Validated`. A 
 *   **Integrated (✅):** 3-layer UI separation (`HUD / Navigation / Simulation`). `MainShell` successfully mounts `HUDRoot` and `NavigationUI` while enforcing `physics_object_picking = true`. `ModalWindowManager` enforces watchdog empty stack cleanups.
 *   **Validated (🟡):** Code Validation and Runtime Validation achieved via automated test harnesses (`verify_ui_authority_arbitration.gd`, `verify_input_release_contract.gd`, `verify_phase_8a_navigation.gd`, `verify_android_readiness.gd`). Pending physical human test cohort User Validation.
 
-### 2. Cognitive Engine (Status: Runtime Tested 🟡)
-*   **Designed (✅):** Reusable cognitive mechanics defined as pure manifolds (`MemoryCascade`, `RapidClassification`, `SignalVsNoise`, `StroopTest`, etc.). Zero universe-specific code permitted in mechanics.
-*   **Implemented (✅):** All 12 flagship cognitive tasks fully realized in code, inheriting `BaseScenario` and utilizing `_deterministic_rng`.
+### 2. Observation Engine (Status: Runtime Tested 🟡)
+*   **Designed (✅):** Reusable observation mechanics defined as pure manifolds (`MemoryCascade`, `RapidClassification`, `SignalVsNoise`, `StroopTest`, etc.). Zero universe-specific code permitted in mechanics.
+*   **Implemented (✅):** All 12 flagship observation tasks fully realized in code, inheriting `BaseScenario` and utilizing `_deterministic_rng`.
 *   **Integrated (✅):** All 12 scenarios successfully wired to accept `inject_payload(payload, seed_hash)` from `NavigationRouter` and publish results to `PlayerProfile` and `SessionTracker`.
 *   **Validated (🟡):** Code Validation and Runtime Validation achieved in automated test harnesses. Pending physical human test cohort User Validation.
 
 ### 3. Knowledge Engine (Status: Runtime Tested 🟡)
 *   **Designed (✅):** Strict semantic ontology established (`Universe -> World -> Knowledge Item`). Factual content exists exclusively as schema-validated data (`spikes_catalog_250.json`).
 *   **Implemented (✅):** `ContentRegistry.gd` and `ContentLoader.gd` fully functional, crawling local base bundles and dynamic user cache directories (`user://live_content/`).
-*   **Integrated (✅):** `ExperienceOrchestrator` actively resolves knowledge payloads from `ContentRegistry` and injects them into the Cognitive Engine during `NavigationRouter` scene shifts. Remote automated content generators remain external and unverified locally.
+*   **Integrated (✅):** `ExperienceOrchestrator` actively resolves knowledge payloads from `ContentRegistry` and injects them into the Observation Engine during `NavigationRouter` scene shifts. Remote automated content generators remain external and unverified locally.
 *   **Validated (🟡):** Code Validation and Runtime Validation achieved via automated Content CI pipeline (`json_validator.py`). Pending physical human test cohort User Validation.
 
 ### 4. Iris Engine (Status: Runtime Tested 🟡)
@@ -63,7 +63,7 @@ The project strictly defines what it means for a subsystem to be `Validated`. A 
 
 ### 5. Mirror Engine (Status: Runtime Tested 🟡)
 *   **Designed (✅):** The definitive product differentiator. Responsible for silent telemetry gathering, Bayesian ordering percentiles, relative load indices, and within-device deltas.
-*   **Implemented (✅):** `PlayerProfile.gd` fully refactored to maintain `session_summaries`, compute `cognitive_trait_calculations`, track `longitudinal_trends`, and generate `adaptive_recommendations`.
+*   **Implemented (✅):** `PlayerProfile.gd` fully refactored to maintain `session_summaries`, compute `observation_trait_calculations`, track `longitudinal_trends`, and generate `adaptive_recommendations`.
 *   **Integrated (✅):** `PlayerProfileScreen.gd` fully integrated as a persistent HUD utility modal under `HUDRoot`, rendering formatted BBCode psychological insights, active recommendations, and 3-way navigation.
 *   **Validated (🟡):** Code Validation and Runtime Validation achieved for local persistence (`user://profile.save`) and UI toggling in automated test harnesses. Pending physical human test cohort User Validation.
 

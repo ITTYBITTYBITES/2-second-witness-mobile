@@ -197,6 +197,75 @@
     "res://PRODUCTION_READINESS_REPORT.md": [
         "benchmark/verify_production_readiness_report.gd:9"
     ],
+    "res://banner_{id}.png": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/textures/ui/v1/banner_{id}.png": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://thumb_{id}.png": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/textures/ui/v1/thumb_{id}.png": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://loading_{id}.jpg": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/textures/ui/v1/loading_{id}.jpg": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://assets/app_icon_1024.png": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/assets/brand/app_icon_1024.png": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://assets/icon_background.png": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/assets/brand/android/icon_background.png": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://assets/icon_foreground.png": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/assets/brand/android/icon_foreground.png": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://promo_header_1920.png": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://splash_{id}.png": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/brand/splash_{id}.png": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://noise_{id}.png": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/textures/env/v1/noise_{id}.png": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://ambience_{id}.wav": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/audio/ambience_{id}.wav": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://{id}.wav": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/audio/{id}.wav": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
+    "res://{id}.obj": [
+        "meta/asset_contracts.json:json_key_naming_pattern"
+    ],
+    "res://assets/meshes/{id}.obj": [
+        "meta/asset_contracts.json:json_key_target_path_pattern"
+    ],
     "res://Legacy_Project/godot/data/universes.json": [
         "tools/DataMigrationTool.gd:5"
     ],
