@@ -26,7 +26,7 @@ func _ready():
 	
 	$VoidBG.gui_input.connect(func(event):
 		if event is InputEventMouseButton and event.pressed:
-			print("[COGNITIVE MIRROR] Background clicked. Exiting mirror.")
+			print("[MEMORY MIRROR] Background clicked. Exiting mirror.")
 			if AudioManager: AudioManager.play_sfx("ui_click")
 			if AdManager: AdManager.hide_banner()
 			return_requested.emit()
@@ -77,7 +77,7 @@ func _populate_data():
 	for child in nav_container.get_children(): child.queue_free()
 	
 	if lifetime == 0:
-		if welcome_label: welcome_label.text = "Your cognitive profile develops as you complete scenarios. Complete your first world to begin generating observations."
+		if welcome_label: welcome_label.text = "Your player profile develops as you complete scenarios. Complete your first world to begin generating observations."
 		
 		var zero_traits = ["Pattern Recognition", "Recall", "Rapid Classification", "Spatial Tracking", "Decision Confidence", "Processing Speed"]
 		for t in zero_traits:
@@ -98,7 +98,7 @@ func _populate_data():
 		btn_begin.text = "BEGIN JOURNEY"
 		btn_begin.add_theme_font_size_override("font_size", 20)
 		btn_begin.pressed.connect(func():
-			print("[COGNITIVE MIRROR] Begin Journey clicked.")
+			print("[MEMORY MIRROR] Begin Journey clicked.")
 			if AudioManager: AudioManager.play_sfx("ui_click")
 			if AdManager: AdManager.hide_banner()
 			var router = get_node_or_null("/root/NavigationRouter")
@@ -132,7 +132,7 @@ func _populate_data():
 			lbl.add_theme_font_size_override("normal_font_size", 16)
 			traits_container.add_child(lbl)
 			
-		var trends_text = "[center]Working Memory: [color=#2ECC71]↑ Stable[/color] | Rapid Classification: [color=#2ECC71]↑ Improving[/color] | Cognitive Flexibility: [color=#E6B800]→ No significant change[/color][/center]"
+		var trends_text = "[center]Pattern Recognition: [color=#2ECC71]↑ Stable[/color] | Rapid Classification: [color=#2ECC71]↑ Improving[/color] | Observation Flexibility: [color=#E6B800]→ No significant change[/color][/center]"
 		var trends_lbl = RichTextLabel.new()
 		trends_lbl.bbcode_enabled = true
 		trends_lbl.text = trends_text
@@ -184,7 +184,7 @@ func _populate_data():
 		btn_continue.text = "CONTINUE JOURNEY"
 		btn_continue.add_theme_font_size_override("font_size", 18)
 		btn_continue.pressed.connect(func():
-			print("[COGNITIVE MIRROR] Continue Journey clicked.")
+			print("[MEMORY MIRROR] Continue Journey clicked.")
 			if AudioManager: AudioManager.play_sfx("ui_click")
 			if AdManager: AdManager.hide_banner()
 			return_requested.emit()
@@ -196,7 +196,7 @@ func _populate_data():
 		btn_rec.text = "EXPLORE RECOMMENDATION"
 		btn_rec.add_theme_font_size_override("font_size", 18)
 		btn_rec.pressed.connect(func():
-			print("[COGNITIVE MIRROR] Explore Recommendation clicked.")
+			print("[MEMORY MIRROR] Explore Recommendation clicked.")
 			if AudioManager: AudioManager.play_sfx("ui_click")
 			if AdManager: AdManager.hide_banner()
 			var router = get_node_or_null("/root/NavigationRouter")
@@ -211,7 +211,7 @@ func _populate_data():
 		btn_return.text = "RETURN HOME"
 		btn_return.add_theme_font_size_override("font_size", 18)
 		btn_return.pressed.connect(func():
-			print("[COGNITIVE MIRROR] Return Home clicked.")
+			print("[MEMORY MIRROR] Return Home clicked.")
 			if AudioManager: AudioManager.play_sfx("ui_click")
 			if AdManager: AdManager.hide_banner()
 			var router = get_node_or_null("/root/NavigationRouter")

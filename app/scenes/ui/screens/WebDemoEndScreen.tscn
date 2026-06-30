@@ -1,70 +1,69 @@
-[gd_scene load_steps=3 format=3 uid="uid://webdemo_end"]
-
-[ext_resource type="Script" path="res://scripts/ui/screens/WebDemoEndScreen.gd" id="1_webend"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glass"]
-bg_color = Color(0.0431373, 0.0745098, 0.12549, 0.98)
-border_width_top = 4
-border_color = Color(0.298039, 0.788235, 0.941176, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0, 0, 0, 0.5)
-shadow_size = 30
-shadow_offset = Vector2(0, 10)
+[gd_scene load_steps=2 format=3 uid="uid://webdemoend"]
+[ext_resource type="Script" path="res://scripts/ui/screens/WebDemoEndScreen.gd" id="1_web"]
 
 [node name="WebDemoEndScreen" type="CanvasLayer"]
-layer = 120
-script = ExtResource("1_webend")
+layer = 100
+script = ExtResource("1_web")
 
-[node name="Panel" type="PanelContainer" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.04, 0.06, 0.95)
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -200.0
-offset_right = 300.0
-offset_bottom = 200.0
+offset_left = -350.0
+offset_top = -250.0
+offset_right = 350.0
+offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_glass")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 40
 alignment = 1
 
-[node name="Title" type="Label" parent="Panel/VBoxContainer"]
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.298039, 0.788235, 0.941176, 1)
-theme_override_font_sizes/font_size = 36
-text = "COGNITIVE LIMIT REACHED"
+theme_override_colors/font_color = Color(0.968, 0.145, 0.521, 1)
+theme_override_font_sizes/font_size = 32
+text = "OBSERVATION LIMIT REACHED"
 horizontal_alignment = 1
 
-[node name="Subtitle" type="Label" parent="Panel/VBoxContainer"]
+[node name="Subtitle" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
-theme_override_font_sizes/font_size = 18
-text = "You have completed the simulation teaser. 
-Download the full application to unlock the Deep Mirror, 
-save your progress, and access 5 additional Universes."
-horizontal_alignment = 1
-
-[node name="BtnGooglePlay" type="Button" parent="Panel/VBoxContainer"]
-custom_minimum_size = Vector2(300, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.298039, 0.788235, 0.941176, 1)
+theme_override_colors/font_color = Color(0.85, 0.95, 1.0, 1)
 theme_override_font_sizes/font_size = 20
-text = "GET IT ON GOOGLE PLAY"
+text = "You have completed the Web Exploration Demo.\n\nTo unlock all 7 Universes, 50+ Worlds, and your permanent Memory Mirror, download the full mobile application."
+horizontal_alignment = 1
+autowrap_mode = 2
 
-[node name="BtnWebsite" type="Button" parent="Panel/VBoxContainer"]
-custom_minimum_size = Vector2(300, 60)
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 18
-text = "LEARN MORE"
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="BtnGooglePlay" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "GET ON GOOGLE PLAY"
+
+[node name="BtnWebsite" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "VISIT WEBSITE"

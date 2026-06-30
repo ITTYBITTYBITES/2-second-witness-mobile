@@ -13,7 +13,7 @@ func setup_universe_unlock(universe_id: String):
 	target_item_id = StoreManager.PRODUCT_UNIVERSE_UNLOCK + universe_id if StoreManager else "universe_unlock_" + universe_id
 	var pretty_name = universe_id.capitalize().replace("_", " ")
 	if title_label: title_label.text = "Unlock " + pretty_name
-	if subtitle_label: subtitle_label.text = "Universe Preview: Explore advanced cognitive mechanics, 12+ dedicated worlds, and rich Bayesian profiling.\n\nIncludes permanent access to all existing and future scenarios in this universe."
+	if subtitle_label: subtitle_label.text = "Universe Preview: Explore advanced observation mechanics, 12+ dedicated worlds, and rich pattern profiling.\n\nIncludes permanent access to all existing and future scenarios in this universe."
 	if btn_buy: btn_buy.text = "PURCHASE ($2.99)"
 	if btn_cancel: btn_cancel.text = "CONTINUE FREE"
 	_apply_universe_manifest(universe_id)

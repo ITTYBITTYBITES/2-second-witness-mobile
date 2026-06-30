@@ -223,7 +223,7 @@ func _show_gameplay_hud():
 func toggle_mirror_modal():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "external_call", "toggle_mirror_modal()")
-	print("[HUD UTILITY] Toggling Cognitive Mirror modal instance under HUDRoot.")
+	print("[HUD UTILITY] Toggling Memory Mirror modal instance under HUDRoot.")
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if persistent_mirror_instance and is_instance_valid(persistent_mirror_instance):
 		if persistent_mirror_instance.visible:
@@ -439,7 +439,7 @@ func _snake_to_pascal(snake: String) -> String:
 func _on_cascade_completed():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "external_call", "_on_cascade_completed()")
-	print("[ROUTER] Cognitive Spike resolved (Answer submitted). Checking Ad Gate before Slingshot.")
+	print("[ROUTER] Observation Spike resolved (Answer submitted). Checking Ad Gate before Slingshot.")
 	
 	if AdManager and AdManager.check_and_show_ad():
 		await AdManager.ad_finished

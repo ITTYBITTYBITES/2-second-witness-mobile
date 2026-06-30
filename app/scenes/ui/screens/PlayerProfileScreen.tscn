@@ -76,7 +76,7 @@ theme_override_colors/font_color = Color(0.8, 0.95, 1, 1)
 theme_override_colors/font_shadow_color = Color(0.298039, 0.788235, 0.941176, 0.5)
 theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 36
-text = "COGNITIVE MIRROR"
+text = "MEMORY MIRROR"
 horizontal_alignment = 1
 uppercase = true
 
@@ -102,7 +102,7 @@ layout_mode = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
 theme_override_font_sizes/font_size = 16
-text = "COGNITIVE TRAITS (OBSERVATION METRICS)"
+text = "OBSERVATION METRICS (PATTERN SKILLS)"
 uppercase = true
 
 [node name="TraitsContainer" type="GridContainer" parent="PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
