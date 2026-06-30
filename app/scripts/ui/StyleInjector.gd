@@ -51,6 +51,7 @@ static func _style_button(btn: Button, palette: Dictionary, contrast: float):
 
 static func _style_background(rect: ColorRect, palette: Dictionary):
 	var bg = palette.get("bg", Color(0, 0, 0))
+	bg.a = 0.15 # Ensure persistent animated TunnelLayer remains visible as outermost frame
 	rect.color = bg
 
 static func _style_label(lbl: Label, palette: Dictionary):

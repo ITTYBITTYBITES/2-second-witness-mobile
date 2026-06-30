@@ -61,7 +61,15 @@ func _apply_universe_manifest(universe_id: String):
 				var bg = get_node_or_null("ColorRect")
 				if bg and bg is ColorRect:
 					bg.color = def["palette"]["bg"]
+					bg.color.a = 0.15 # Preserve persistent animated TunnelLayer outer frame visibility
 					print("[THEME INTEGRATION] Applied universe background color to SettingsScreen: ", bg.color)
+					
+				var panel = get_node_or_null("PanelContainer")
+				if panel and panel.has_theme_stylebox_override("panel"):
+					var sb = panel.get_theme_stylebox("panel").duplicate()
+					sb.bg_color = def["palette"]["bg"]
+					sb.bg_color.a = 0.95
+					panel.add_theme_stylebox_override("panel", sb)
 					
 				var title_label = get_node_or_null("PanelContainer/MarginContainer/VBoxContainer/Title")
 				if title_label:

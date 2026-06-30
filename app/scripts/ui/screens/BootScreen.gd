@@ -23,6 +23,10 @@ func _ready():
 	if status_label: status_label.text = "Preparing Observation..."
 	if progress_bar: progress_bar.value = 10
 	
+	var bg = get_node_or_null("ColorRect")
+	if bg and bg is ColorRect:
+		bg.color.a = 0.15 # Ensure persistent animated TunnelLayer remains visible as outermost frame behind boot sequence
+	
 	var moods = [
 		Color("#00D4FF"), # Cyan (Analytical)
 		Color("#2ECC71"), # Green (Organic)
