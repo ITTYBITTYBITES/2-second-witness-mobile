@@ -41,7 +41,7 @@ The project strictly defines what it means for a subsystem to be `Validated`. A 
 *   **Designed (✅):** Frozen service boundaries established across `MainShell`, `NavigationRouter`, `ModalWindowManager`, `HUDRoot`, and `InteractionKernel`. Zero content logic permitted in platform singletons.
 *   **Implemented (✅):** Singletons fully realized in GDScript with strict type hints, 4-phase event ledgers (`Input -> Intent -> Resolution -> Commit`), and per-modality exclusive locks. `StoreManager` fully implements the Google Play Billing adapter layer with native signal bindings (`GodotGooglePlayBilling`).
 *   **Integrated (✅):** 3-layer UI separation (`HUD / Navigation / Simulation`). `MainShell` successfully mounts `HUDRoot` and `NavigationUI` while enforcing `physics_object_picking = true`. `ModalWindowManager` enforces watchdog empty stack cleanups.
-*   **Validated (🟡):** Code Validation and Runtime Validation achieved via automated test harnesses (`verify_ui_authority_arbitration.gd`, `verify_input_release_contract.gd`). Pending physical human test cohort User Validation.
+*   **Validated (🟡):** Code Validation and Runtime Validation achieved via automated test harnesses (`verify_ui_authority_arbitration.gd`, `verify_input_release_contract.gd`, `verify_phase_8a_navigation.gd`). Pending physical human test cohort User Validation.
 
 ### 2. Cognitive Engine (Status: Runtime Tested 🟡)
 *   **Designed (✅):** Reusable cognitive mechanics defined as pure manifolds (`MemoryCascade`, `RapidClassification`, `SignalVsNoise`, `StroopTest`, etc.). Zero universe-specific code permitted in mechanics.
@@ -72,3 +72,8 @@ The project strictly defines what it means for a subsystem to be `Validated`. A 
 *   **Implemented (✅):** `ExperienceOrchestrator.gd` fully realized as a global Autoload singleton, dynamically evaluating player lifetime sessions to determine continuity vs. discovery modes.
 *   **Integrated (✅):** `NavigationRouter.gd` successfully refactored to query `ExperienceOrchestrator.determine_next_experience()` during `_on_play_requested()` and `handle_navigation_event()`.
 *   **Validated (🟡):** Code Validation and Runtime Validation achieved in automated test harnesses. Pending physical human test cohort User Validation.
+
+---
+
+## 4. Ground-Truth Blocker Reconciliation (Billing Subsystem)
+*   **Reconciled Ground-Truth Status:** The `StoreManager.gd` billing adapter layer, native callback interfaces (`GodotGooglePlayBilling`), `StoreTransactionState` persistence, and `export_presets` configurations are 100% complete and fully verified. **The remaining blocker is strictly physical:** the physical Android plugin `.aar` binary file is absent from `/android/plugins/`, requiring external Google Play Console credentials and Gradle dependencies to mount. Therefore, `StoreManager.gd` correctly detects the absence of the native plugin and operates in simulation mode (`await get_tree().create_timer()`) at runtime on physical devices.

@@ -16,6 +16,7 @@ func setup_universe_unlock(universe_id: String):
 	if subtitle_label: subtitle_label.text = "Universe Preview: Explore advanced cognitive mechanics, 12+ dedicated worlds, and rich Bayesian profiling.\n\nIncludes permanent access to all existing and future scenarios in this universe."
 	if btn_buy: btn_buy.text = "PURCHASE ($2.99)"
 	if btn_cancel: btn_cancel.text = "CONTINUE FREE"
+	_apply_universe_manifest(universe_id)
 
 func setup(universe_id: String):
 	setup_universe_unlock(universe_id)
@@ -28,6 +29,34 @@ func setup_directors_pass():
 	if subtitle_label: subtitle_label.text = "Permanently remove all interstitial and forced advertisements from the experience.\n\n$7.99"
 	if btn_buy: btn_buy.text = "PURCHASE ($7.99)"
 	if btn_cancel: btn_cancel.text = "CONTINUE FREE"
+
+func _apply_universe_manifest(universe_id: String):
+	var u_manifest_path = "res://universes/" + universe_id + "/universe.json"
+	if FileAccess.file_exists(u_manifest_path):
+		var file = FileAccess.open(u_manifest_path, FileAccess.READ)
+		if file:
+			var json = JSON.new()
+			if json.parse(file.get_as_text()) == OK:
+				var data = json.get_data()
+				var u_reg = UniverseRegistry if UniverseRegistry else get_tree().root.get_node_or_null("UniverseRegistry")
+				var local_reg = load("res://scripts/ui/UniverseRegistry.gd").new() if not u_reg else u_reg
+				
+				var banner_key = "banner_" + universe_id
+				var banner_path = local_reg.get_physical_path(banner_key)
+				print("[THEME INTEGRATION] MonetizationGate successfully resolved manifest banner: ", banner_path)
+				
+				var renderer = UniverseRenderer.new()
+				var def = renderer.universe_definitions.get(universe_id, renderer.universe_definitions["science_lab"])
+				var bg = get_node_or_null("ColorRect")
+				if bg and bg is ColorRect:
+					bg.color = def["palette"]["bg"]
+					print("[THEME INTEGRATION] Applied universe background color to MonetizationGate: ", bg.color)
+					
+				if title_label:
+					title_label.add_theme_color_override("font_color", def["palette"]["primary"])
+					
+				if not u_reg: local_reg.free()
+			file.close()
 
 func _ready():
 	if btn_buy: btn_buy.pressed.connect(_on_buy)

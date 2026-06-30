@@ -17,6 +17,10 @@ func _ready():
 	print("Size: ", $PanelContainer.size)
 	print("Children: ", get_child_count())
 	
+	var nav = get_node_or_null("/root/NavigationRouter")
+	var uni = nav.active_universe_selection if nav else "history"
+	_apply_universe_manifest(uni)
+	
 	$PanelContainer.mouse_filter = Control.MOUSE_FILTER_PASS
 	$VoidBG.mouse_filter = Control.MOUSE_FILTER_STOP
 	
@@ -31,6 +35,35 @@ func _ready():
 	if AdManager: AdManager.show_banner()
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()
+
+func _apply_universe_manifest(universe_id: String):
+	var u_manifest_path = "res://universes/" + universe_id + "/universe.json"
+	if FileAccess.file_exists(u_manifest_path):
+		var file = FileAccess.open(u_manifest_path, FileAccess.READ)
+		if file:
+			var json = JSON.new()
+			if json.parse(file.get_as_text()) == OK:
+				var data = json.get_data()
+				var u_reg = UniverseRegistry if UniverseRegistry else get_tree().root.get_node_or_null("UniverseRegistry")
+				var local_reg = load("res://scripts/ui/UniverseRegistry.gd").new() if not u_reg else u_reg
+				
+				var banner_key = "banner_" + universe_id
+				var banner_path = local_reg.get_physical_path(banner_key)
+				print("[THEME INTEGRATION] PlayerProfileScreen successfully resolved manifest banner: ", banner_path)
+				
+				var renderer = UniverseRenderer.new()
+				var def = renderer.universe_definitions.get(universe_id, renderer.universe_definitions["science_lab"])
+				var bg = get_node_or_null("VoidBG")
+				if bg and bg is ColorRect:
+					bg.color = def["palette"]["bg"]
+					print("[THEME INTEGRATION] Applied universe background color to PlayerProfileScreen: ", bg.color)
+					
+				var title_label = get_node_or_null("PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/Header/Title")
+				if title_label:
+					title_label.add_theme_color_override("font_color", def["palette"]["primary"])
+					
+				if not u_reg: local_reg.free()
+			file.close()
 
 func _populate_data():
 	var profile = get_node_or_null("/root/PlayerProfile")
