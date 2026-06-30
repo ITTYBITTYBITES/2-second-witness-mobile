@@ -25,6 +25,7 @@ var world_meta = {
 func setup(universe_id: String):
 	active_universe_id = universe_id
 	if title_label: title_label.text = universe_id.capitalize().replace("_", " ") + " - WORLDS"
+	_apply_universe_manifest(universe_id)
 	if is_inside_tree():
 		_populate_grid()
 	else:
@@ -36,8 +37,37 @@ func _ready():
 	if title_label: title_label.text = active_universe_id.capitalize().replace("_", " ") + " - WORLDS"
 	if AdManager: AdManager.show_banner()
 	btn_return.pressed.connect(func(): return_requested.emit())
+	_apply_universe_manifest(active_universe_id)
 	if _is_setup_ready:
 		_populate_grid()
+
+func _apply_universe_manifest(universe_id: String):
+	var u_manifest_path = "res://universes/" + universe_id + "/universe.json"
+	if FileAccess.file_exists(u_manifest_path):
+		var file = FileAccess.open(u_manifest_path, FileAccess.READ)
+		if file:
+			var json = JSON.new()
+			if json.parse(file.get_as_text()) == OK:
+				var data = json.get_data()
+				var u_reg = UniverseRegistry if UniverseRegistry else get_tree().root.get_node_or_null("UniverseRegistry")
+				var local_reg = load("res://scripts/ui/UniverseRegistry.gd").new() if not u_reg else u_reg
+				
+				var banner_key = "banner_" + universe_id
+				var banner_path = local_reg.get_physical_path(banner_key)
+				print("[THEME INTEGRATION] Successfully resolved manifest banner: ", banner_path)
+				
+				var renderer = UniverseRenderer.new()
+				var def = renderer.universe_definitions.get(universe_id, renderer.universe_definitions["science_lab"])
+				var bg = get_node_or_null("ColorRect") if get_node_or_null("ColorRect") else get_node_or_null("VoidBG")
+				if bg and bg is ColorRect:
+					bg.color = def["palette"]["bg"]
+					print("[THEME INTEGRATION] Applied universe background color: ", bg.color)
+					
+				if title_label:
+					title_label.add_theme_color_override("font_color", def["palette"]["primary"])
+					
+				if not u_reg: local_reg.free()
+			file.close()
 
 func _populate_grid():
 	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
