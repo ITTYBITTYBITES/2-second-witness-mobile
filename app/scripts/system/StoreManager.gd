@@ -43,6 +43,7 @@ func _connect_native_billing_signals():
 
 func _on_billing_connected():
 	print("[STORE MANAGER] Native Google Play Billing connection established.")
+	print("Billing subsystem alive")
 	_is_billing_connected = true
 
 func _on_billing_disconnected():
@@ -61,14 +62,23 @@ func initiate_purchase(item_id: String):
 	_payment_flow_active = true
 	print("[STORE MANAGER] Initiating purchase flow for: ", item_id)
 	
+	var tx_state = StoreTransactionState if StoreTransactionState else get_tree().root.get_node_or_null("StoreTransactionState")
+	var order_id = tx_state.request_purchase(item_id) if tx_state else "GPA.3312-7798-2510-99999"
+	
 	if billing_plugin and _is_billing_connected:
 		print("[STORE MANAGER] Dispatching native payment flow to Google Play Console...")
+		if tx_state: tx_state.on_purchase_dispatched(order_id)
 		billing_plugin.purchase(item_id)
 	else:
-		print("[STORE MANAGER] Simulating native purchase flow resolution...")
-		await get_tree().create_timer(1.0).timeout
-		var mock_tx = "GPA.3312-7798-2510-" + str(Time.get_ticks_usec()).substr(0, 5)
-		_on_purchase_success(item_id, mock_tx)
+		print("[STORE MANAGER] Simulating native purchase flow dispatch...")
+		if tx_state: tx_state.on_purchase_dispatched(order_id)
+		await get_tree().create_timer(1.0).timeout 
+		if tx_state:
+			tx_state.on_callback_received(order_id, item_id)
+			purchase_completed.emit(item_id)
+			_payment_flow_active = false
+		else:
+			_on_purchase_success(item_id, order_id)
 
 func restore_purchases():
 	print("[STORE MANAGER] Initiating purchase restoration request...")
@@ -85,6 +95,7 @@ func restore_purchases():
 
 func _on_purchases_updated(purchases: Array):
 	print("[STORE MANAGER] Native purchases updated callback received (Items: ", purchases.size(), ")")
+	var tx_state = StoreTransactionState if StoreTransactionState else get_tree().root.get_node_or_null("StoreTransactionState")
 	for p in purchases:
 		var p_dict = p as Dictionary
 		if p_dict and p_dict.has("original_json"):
@@ -98,7 +109,10 @@ func _on_purchases_updated(purchases: Array):
 				print("[STORE MANAGER] Acknowledging native purchase token: ", purchase_token)
 				billing_plugin.acknowledgePurchase(purchase_token)
 				
-			_on_purchase_success(item_id, tx_id)
+			if tx_state:
+				tx_state.on_callback_received(tx_id, item_id, purchase_token)
+			else:
+				_on_purchase_success(item_id, tx_id)
 	_payment_flow_active = false
 
 func _on_query_purchases_response(status: Dictionary, purchases: Array):
