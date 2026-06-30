@@ -1,5 +1,4 @@
 extends Node
-class_name StoreTransactionState
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness (Liquid Memory V2)

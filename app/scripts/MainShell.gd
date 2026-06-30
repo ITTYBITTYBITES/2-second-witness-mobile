@@ -29,19 +29,19 @@ func _ready():
 	system_layer.add_child(boot_loader)
 
 func _apply_display_cutout_safe_area():
-	if DisplayServer.has_method("get_display_cutout"):
-		var cutout = DisplayServer.get_display_cutout()
-		print("[ANDROID PLATFORM] Inspected display cutout safe area: ", cutout)
+	if DisplayServer.has_method("get_display_safe_area"):
+		var safe_area = DisplayServer.get_display_safe_area()
+		print("[ANDROID PLATFORM] Inspected display safe area: ", safe_area)
 		var hud_root = get_node_or_null("UILayer/HUDRoot")
 		if hud_root and hud_root is Control:
-			hud_root.position.x = max(hud_root.position.x, cutout.position.x)
-			hud_root.position.y = max(hud_root.position.y, cutout.position.y)
+			hud_root.position.x = max(hud_root.position.x, safe_area.position.x)
+			hud_root.position.y = max(hud_root.position.y, safe_area.position.y)
 
 func _notification(what):
-	if what == NOTIFICATION_WM_WINDOW_FOCUS_IN or what == NOTIFICATION_APPLICATION_RESUMED:
+	if what == Node.NOTIFICATION_WM_WINDOW_FOCUS_IN or what == Node.NOTIFICATION_APPLICATION_RESUMED:
 		print("[ANDROID LIFECYCLE] App brought to foreground / resumed. Restoring audio stems and 3D stream buffers.")
 		if world_layer: world_layer.process_mode = Node.PROCESS_MODE_INHERIT
-	elif what == NOTIFICATION_WM_WINDOW_FOCUS_OUT or what == NOTIFICATION_APPLICATION_PAUSED:
+	elif what == Node.NOTIFICATION_WM_WINDOW_FOCUS_OUT or what == Node.NOTIFICATION_APPLICATION_PAUSED:
 		print("[ANDROID LIFECYCLE] App moved to background / paused. Pausing simulation to preserve Android battery budget.")
 		if world_layer: world_layer.process_mode = Node.PROCESS_MODE_DISABLED
 

@@ -13,7 +13,7 @@ func _init():
 	
 	print("--- STAGE 2: ASSERTING ANDROID APP BACKGROUND / FOREGROUND LIFECYCLE ---")
 	print("\n  [Lifecycle Target] Simulating NOTIFICATION_WM_WINDOW_FOCUS_OUT (App Paused)...")
-	main_shell._notification(NOTIFICATION_WM_WINDOW_FOCUS_OUT)
+	main_shell._notification(Node.NOTIFICATION_WM_WINDOW_FOCUS_OUT)
 	print("    WorldLayer Process Mode: ", main_shell.world_layer.process_mode)
 	if main_shell.world_layer.process_mode != Node.PROCESS_MODE_DISABLED:
 		push_error("LIFECYCLE FAIL: WorldLayer failed to disable processing on app pause.")
@@ -21,7 +21,7 @@ func _init():
 	print("✅ STAGE 2 PASS: WorldLayer successfully paused on background notification, preserving Android battery budget.")
 	
 	print("\n  [Lifecycle Target] Simulating NOTIFICATION_WM_WINDOW_FOCUS_IN (App Resumed)...")
-	main_shell._notification(NOTIFICATION_WM_WINDOW_FOCUS_IN)
+	main_shell._notification(Node.NOTIFICATION_WM_WINDOW_FOCUS_IN)
 	print("    WorldLayer Process Mode: ", main_shell.world_layer.process_mode)
 	if main_shell.world_layer.process_mode != Node.PROCESS_MODE_INHERIT:
 		push_error("LIFECYCLE FAIL: WorldLayer failed to restore processing on app resume.")
@@ -30,10 +30,10 @@ func _init():
 	
 	print("--- STAGE 3: ASSERTING DISPLAY CUTOUT SAFE AREA PADDING ---")
 	main_shell._apply_display_cutout_safe_area()
-	print("✅ STAGE 3 PASS: Display cutout safe area successfully applied to UILayer root controls.\n")
+	print("✅ STAGE 3 PASS: Display safe area successfully applied to UILayer root controls.\n")
 	
 	print("--- STAGE 4: ASSERTING TOUCH TARGET SIZES (>= 48dp) ---")
-	var router = NavigationRouter if NavigationRouter else get_tree().root.get_node_or_null("NavigationRouter")
+	var router = NavigationRouter if NavigationRouter else root.get_node_or_null("NavigationRouter")
 	if router:
 		router.show_landing_screen()
 		var btn_play = router.active_landing_screen.get_node_or_null("Panel/VBoxContainer/BtnPlay")
