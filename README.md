@@ -3,15 +3,15 @@
 This is the production repository for **2 Second Witness**, running on the Liquid Memory V2 Godot 4.6 Engine. 
 
 ## 1. Definitive System Classification
-The application operates as a **hybrid prototype with simulated subsystems** where the core loop is functional, peripheral systems (billing, ads, crash uplinks) are partially simulated, and external dependencies remain unlinked. It is explicitly positioned as an interactive cognitive discovery platform, not a trivia game.
+The application operates as a **hybrid prototype with simulated subsystems** where the core loop is functional, peripheral systems (billing adapter layer, simulated ads, local disk buffers, and Android platform lifecycle hooks) are fully prepared, and external dependencies remain unlinked. It is explicitly positioned as an interactive observation discovery platform, not a trivia game.
 
 ## 2. Repository Structure
 The repository is split into two distinct operational domains to support Over-The-Air (OTA) updates:
 
 ### `/app/` (The Engine)
-This directory contains the Godot 4.6 project. It handles all rendering, state management, cognitive measurement logic, and the offline fallback bundle.
+This directory contains the Godot 4.6 project. It handles all rendering, state management, observation measurement logic, and the offline fallback bundle.
 - **Do NOT** update content here if you want it to push to live users. This requires a full App Store update.
-- Contains the `FidelityEnforcer`, `SystemHealthMonitor`, `InteractionKernel`, `ModalWindowManager`, `NavigationRouter`, `PlayerProfile` (Mirror Engine), and `UniverseRenderer` manifolds.
+- Contains the `FidelityEnforcer`, `SystemHealthMonitor`, `InteractionKernel`, `ModalWindowManager`, `NavigationRouter`, `PlayerProfile` (Memory Mirror Engine), and `UniverseRenderer` manifolds.
 
 ### `/live_content/` (The OTA Pipeline)
 This directory is the live production database. 
@@ -48,6 +48,9 @@ godot --headless -s app/benchmark/verify_scenario_execution_chain.gd
 godot --headless -s app/benchmark/verify_core_gameplay_assertions.gd
 godot --headless -s app/benchmark/verify_gameplay_lifecycle.gd
 godot --headless -s app/benchmark/verify_input_release_contract.gd
+godot --headless -s app/benchmark/verify_android_readiness.gd
+godot --headless -s app/benchmark/verify_initial_boot_experience.gd
+godot --headless -s app/benchmark/verify_phase_8a_navigation.gd
 ```
 
 ### B. CI Linters & Asset Auditing Tools
@@ -73,7 +76,7 @@ All media assets must adhere to the `ASSET_CONTRACT_SPEC.md`.
 
 ### A. Deployment Notes
 *   **Target Packaging:** Build using `export_presets.cfg` (`Liquid Memory IVC-0` profile) for Android APK / AAB generation.
-*   **Splash Masking:** `BootScreen.tscn` perfectly overlays the default Godot splash screen, using dynamic mood-ring color shifting and explicit brand highlighting (`ITTY BITTY BITES GAMES`).
+*   **Splash Masking:** `BootScreen.tscn` perfectly overlays the default Godot splash screen, using dynamic mood-ring color shifting, lightweight scan line animations, and explicit brand highlighting (`ITTY BITTY BITES GAMES`).
 
 ### B. Known Blockers (Requiring Human Intervention)
 The repository has reached the point where no further engineering work can be completed locally. The remaining blockers require external credentials, physical hardware, or business decisions:
@@ -87,7 +90,7 @@ The repository has reached the point where no further engineering work can be co
 ## 7. Architecture Documentation
 Please read the following documents in the root directory before modifying the codebase:
 - `LIQUID_MEMORY_V2_PRODUCT_BIBLE.md` (Canonical Product Specification)
-- `GROUND_TRUTH_ARCHITECTURE_AUDIT.md` (Anti-Hallucination Execution Map)
+- `GROUND_TRUTH_RECONCILIATION_AUDIT.md` (Definitive Software Audit & Anti-Hallucination Inventory)
 - `PRODUCTION_READINESS_REPORT.md` (Consolidated Release Checklist)
 - `ASSET_AUDIT.md` (Asset Health Report)
 - `ARCHITECTURE_STATUS.md` (Living Architecture Ledger)
