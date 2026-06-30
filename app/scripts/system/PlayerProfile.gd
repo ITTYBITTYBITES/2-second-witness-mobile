@@ -126,7 +126,7 @@ func record_cognitive_event(c_trait: String, scenario_id: String, universe_id: S
 	
 	var xp_gained = (150 if success else 50) + int(max(0, 1000.0 - reaction_time_ms) / 10.0)
 	experience += xp_gained
-	current_level = 1 + int(experience / 1000)
+	current_level = 1 + int(float(experience) / 1000.0)
 	
 	var titles = ["Observer", "Pattern Explorer", "Focus Specialist", "Speed Architect", "Pattern Witness", "Liquid Master"]
 	player_title = titles[clampi(current_level - 1, 0, titles.size() - 1)]

@@ -393,8 +393,8 @@ func handle_navigation_event(event: Dictionary):
 		print("STEP 8: LOADING SCENARIO")
 		print("[ROUTER] Executing continuous scene shift to Destination: { \"universe\": \"" + u_id + "\", \"world\": \"" + w_id + "\", \"chunk_id\": \"" + c_id + "\" }")
 		
-		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
-		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
+		var _orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
+		var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 		var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 		
 		var seed_str = str(d_seed) + u_id + w_id

@@ -50,7 +50,7 @@ func release_all_locks():
 	ui_lock_state_changed.emit(is_blocking)
 	print("[KERNEL ARBITER] Authoritative release_all_locks executed. All locks balanced.")
 
-func release_input_lock(epoch_id: int):
+func release_input_lock(_epoch_id: int):
 	release_all_locks()
 
 func consume_provenance(event_id: String, event: InputEvent = null) -> bool:
