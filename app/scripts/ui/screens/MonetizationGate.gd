@@ -37,9 +37,13 @@ func _apply_universe_manifest(universe_id: String):
 		if file:
 			var json = JSON.new()
 			if json.parse(file.get_as_text()) == OK:
-				var data = json.get_data()
-				var u_reg = UniverseRegistry if UniverseRegistry else get_tree().root.get_node_or_null("UniverseRegistry")
-				var local_reg = load("res://scripts/ui/UniverseRegistry.gd").new() if not u_reg else u_reg
+				var _data = json.get_data()
+				var u_reg = get_tree().root.get_node_or_null("UniverseRegistry")
+				var local_reg: Object = null
+				if u_reg:
+					local_reg = u_reg
+				else:
+					local_reg = load("res://scripts/ui/UniverseRegistry.gd").new()
 				
 				var banner_key = "banner_" + universe_id
 				var banner_path = local_reg.get_physical_path(banner_key)

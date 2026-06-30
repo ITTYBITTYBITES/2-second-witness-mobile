@@ -43,35 +43,35 @@ The following deep inspection identifies assets and scenes that technically exis
 ### B. Empty TextureRect, Sprite2D, and NinePatchRect Nodes
 
 ### C. Buttons Without Icons or Missing Stylebox States
-*   `scenes/scenarios/SpatialRecall.tscn (B5)`
-*   `scenes/scenarios/SpeedSort.tscn (BtnLeft)`
-*   `scenes/ui/screens/LandingScreen.tscn (BtnVersion)`
-*   `scenes/scenarios/SequenceReverse.tscn (Btn1)`
-*   `scenes/scenarios/MathSurprise.tscn (BtnFalse)`
-*   `scenes/scenarios/OddOneOut.tscn (B1)`
-*   `scenes/scenarios/RapidClassification.tscn (BtnOrganic)`
-*   `scenes/scenarios/SignalVsNoise.tscn (BtnMatch)`
-*   `scenes/ui/screens/MonetizationGate.tscn (BtnBuy)`
-*   `scenes/scenarios/SpatialRecall.tscn (B8)`
-*   `scenes/ui/screens/SettingsScreen.tscn (BtnPrivacy)`
-*   `scenes/ui/screens/SettingsScreen.tscn (BtnSupport)`
-*   `scenes/ui/screens/SettingsScreen.tscn (BtnAccess)`
-*   `scenes/scenarios/SpatialRecall.tscn (B3)`
+*   `scenes/ui/screens/BootScreen.tscn (BtnReset)`
+*   `scenes/ui/screens/OperatorIntervention.tscn (BtnAccept)`
 *   `scenes/scenarios/OddOneOut.tscn (B0)`
+*   `scenes/scenarios/SpatialRecall.tscn (B5)`
+*   `scenes/scenarios/SpeedSort.tscn (BtnRight)`
+*   `scenes/scenarios/StroopTest.tscn (Btn2)`
+*   `scenes/ui/screens/SettingsScreen.tscn (BtnSupport)`
+*   `scenes/scenarios/RiskSelection.tscn (BtnRisk)`
+*   `scenes/scenarios/StroopTest.tscn (Btn1)`
+*   `scenes/ui/screens/BootScreen.tscn (BtnRetry)`
+*   `scenes/ui/screens/MonetizationGate.tscn (BtnBuy)`
+*   `scenes/scenarios/SpatialRecall.tscn (B4)`
+*   `scenes/ui/screens/WorldSelectScreen.tscn (BtnReturn)`
+*   `scenes/ui/screens/LandingScreen.tscn (BtnRestore)`
+*   `scenes/ui/screens/LandingScreen.tscn (BtnSettings)`
 
 ### D. Universes Without Hero Artwork & Scenarios Without Illustrations
-*   `Scenario 'rapid_classification' missing ill_rapid_classification.png`
-*   `Scenario 'stroop_test' missing ill_stroop_test.png`
-*   `Scenario 'odd_one_out' missing ill_odd_one_out.png`
-*   `Scenario 'risk_selection' missing ill_risk_selection.png`
-*   `Scenario 'pattern_continuation' missing ill_pattern_continuation.png`
-*   `Scenario 'memory_cascade' missing ill_memory_cascade.png`
 *   `Scenario 'spatial_recall' missing ill_spatial_recall.png`
 *   `Scenario 'signal_vs_noise' missing ill_signal_vs_noise.png`
+*   `Scenario 'risk_selection' missing ill_risk_selection.png`
+*   `Scenario 'pattern_continuation' missing ill_pattern_continuation.png`
 *   `Scenario 'sequence_reverse' missing ill_sequence_reverse.png`
-*   `Scenario 'math_surprise' missing ill_math_surprise.png`
-*   `Scenario 'speed_sort' missing ill_speed_sort.png`
+*   `Scenario 'stroop_test' missing ill_stroop_test.png`
 *   `Scenario 'reflex_tap' missing ill_reflex_tap.png`
+*   `Scenario 'rapid_classification' missing ill_rapid_classification.png`
+*   `Scenario 'speed_sort' missing ill_speed_sort.png`
+*   `Scenario 'memory_cascade' missing ill_memory_cascade.png`
+*   `Scenario 'odd_one_out' missing ill_odd_one_out.png`
+*   `Scenario 'math_surprise' missing ill_math_surprise.png`
 
 ---
 

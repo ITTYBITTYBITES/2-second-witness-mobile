@@ -6,7 +6,6 @@ signal boot_completed
 @onready var progress_bar = $VBoxContainer/ProgressBar
 @onready var logo_label = $VBoxContainer/LogoLabel
 @onready var brand_label = $VBoxContainer/BrandLabel
-@onready var logo_image = $VBoxContainer/LogoImage
 @onready var scan_line = $ColorRect/ScanLine
 @onready var failure_panel = $FailurePanel
 @onready var btn_retry = $FailurePanel/VBoxContainer/HBoxContainer/BtnRetry
@@ -83,4 +82,4 @@ func _start_scan_line_animation():
 	var viewport_height = get_viewport().get_visible_rect().size.y
 	scan_line.position.y = 0
 	var tween = get_tree().create_tween().set_loops()
-	tween.tween_property(scan_line, "position:y", viewport_height, 2.0).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(scan_line, "position:y", viewport_height, 2.0).set_trans(Tween.TRANS_SINE).from(0.0)

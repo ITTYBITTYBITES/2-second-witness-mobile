@@ -2,7 +2,7 @@ extends Node
 class_name BootLoader
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness
 # THE BOOT CONTROLLER (1-TIME COLD LAUNCH MANAGER)
 # ---------------------------------------------------------
 
@@ -87,10 +87,13 @@ func _execute_fast_boot():
 			world_layer.process_mode = Node.PROCESS_MODE_INHERIT
 			print("[BOOT LOADER] WorldLayer process mode restored to PROCESS_MODE_INHERIT. 3D simulation active.")
 	
-	var tween = get_tree().create_tween()
+	var tween = get_tree().create_tween().set_parallel(true)
 	if tween and is_instance_valid(boot_screen):
-		tween.tween_property(boot_screen, "modulate:a", 0.0, 0.4)
-		tween.tween_callback(func():
+		var bg = boot_screen.get_node_or_null("ColorRect")
+		var vbox = boot_screen.get_node_or_null("VBoxContainer")
+		if bg: tween.tween_property(bg, "modulate:a", 0.0, 0.4)
+		if vbox: tween.tween_property(vbox, "modulate:a", 0.0, 0.4)
+		tween.chain().tween_callback(func():
 			if is_instance_valid(boot_screen): boot_screen.queue_free()
 			boot_finished.emit()
 			var router = get_node_or_null("/root/NavigationRouter")
