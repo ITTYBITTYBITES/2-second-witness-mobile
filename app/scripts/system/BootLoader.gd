@@ -76,6 +76,17 @@ func _execute_fast_boot():
 	
 	state_machine.advance_state(BootStateMachine.BootState.TRANSITION_TO_LANDING)
 	
+	var main_shell = get_tree().root.get_node_or_null("MainShell")
+	if main_shell:
+		var ui_layer = main_shell.get_node_or_null("UILayer")
+		var world_layer = main_shell.get_node_or_null("WorldLayer")
+		if ui_layer:
+			ui_layer.process_mode = Node.PROCESS_MODE_INHERIT
+			print("[BOOT LOADER] UILayer process mode restored to PROCESS_MODE_INHERIT. UI interaction enabled.")
+		if world_layer:
+			world_layer.process_mode = Node.PROCESS_MODE_INHERIT
+			print("[BOOT LOADER] WorldLayer process mode restored to PROCESS_MODE_INHERIT. 3D simulation active.")
+	
 	var tween = get_tree().create_tween()
 	if tween and is_instance_valid(boot_screen):
 		tween.tween_property(boot_screen, "modulate:a", 0.0, 0.4)
