@@ -84,6 +84,16 @@ def validate_asset(asset_id: str, phys_path: str) -> tuple:
         
     if contract.get('asset_type') == 'image':
         try:
+            # Pre-validate and automatically resize AI-generated images to match strict contract dimensions
+            expected_w, expected_h = contract['dimensions']
+            with Image.open(phys_path) as img:
+                if img.size != (expected_w, expected_h):
+                    print(f"  [AUTOMATIC PIPELINE] Resizing AI image {img.size} -> contract ({expected_w}x{expected_h})")
+                    resized = img.resize((expected_w, expected_h), Image.Resampling.LANCZOS)
+                    if contract.get('color_space') == 'RGB' and resized.mode != 'RGB':
+                        resized = resized.convert('RGB')
+                    resized.save(phys_path, contract.get('format', 'PNG'), dpi=(contract.get('dpi', 72), contract.get('dpi', 72)))
+                    
             with Image.open(phys_path) as img:
                 # Validate image properties
                 valid, reason = validate_image_quality(img, contract)

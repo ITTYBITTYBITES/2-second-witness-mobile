@@ -14,7 +14,7 @@ This document provides an uncompromised, automated inventory of all physical med
 ├──────────────────────┬─────────────┬─────────────┬─────────────┬────────────┤
 │      ASSET TYPE      │  REQUIRED   │   PRESENT   │   MISSING   │   UNUSED   │
 ├──────────────────────┼─────────────┼─────────────┼─────────────┼────────────┤
-│ Textures & Sprites   │     284     │     281     │      3      │     0      │
+│ Textures & Sprites   │     284     │     281     │      3      │     1      │
 │ Audio Stems (.wav)   │      86     │      84     │      2      │     0      │
 │ Typography & Fonts   │       6     │       6     │      0      │     0      │
 │ Ubershaders          │      14     │      14     │      0      │     0      │
@@ -73,5 +73,6 @@ The following prompt manifest is engineered to generate missing universe assets 
 
 The following physical files exist in the repository but are never referenced by any script, scene, resource, or JSON manifest. They are safe candidates for archival or deletion to optimize APK binary size:
 
+*   `res://assets/textures/ui/v1/contact_sheet_universe_banners.png`
 
 **Definitive Audit Conclusion:** The Asset Auditor successfully crawled the repository, establishing a verifiable, continuous inventory of all media files. All missing paths are fully isolated into the automated asset queue.
