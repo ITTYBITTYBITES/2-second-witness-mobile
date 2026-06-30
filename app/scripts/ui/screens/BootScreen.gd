@@ -7,14 +7,21 @@ signal boot_completed
 @onready var logo_label = $VBoxContainer/LogoLabel
 @onready var brand_label = $VBoxContainer/BrandLabel
 @onready var logo_image = $VBoxContainer/LogoImage
+@onready var scan_line = $ColorRect/ScanLine
+@onready var failure_panel = $FailurePanel
+@onready var btn_retry = $FailurePanel/VBoxContainer/HBoxContainer/BtnRetry
+@onready var btn_reset = $FailurePanel/VBoxContainer/HBoxContainer/BtnReset
+@onready var btn_exit = $FailurePanel/VBoxContainer/HBoxContainer/BtnExit
+
+var _state_machine: BootStateMachine = null
 
 func _ready():
 	print("========================================")
 	print("[BRAND SPLASH] ITTY BITTY BITES GAMES")
 	print("[BOOT] Boot Screen Active. Masking Engine Initialization.")
 	print("========================================")
-	status_label.text = "INITIALIZING CORTEX..."
-	progress_bar.value = 10
+	if status_label: status_label.text = "Preparing Observation..."
+	if progress_bar: progress_bar.value = 10
 	
 	var moods = [
 		Color("#00D4FF"), # Cyan (Analytical)
@@ -28,39 +35,48 @@ func _ready():
 	if logo_label: logo_label.add_theme_color_override("font_color", today_mood)
 	if progress_bar: progress_bar.modulate = today_mood
 	
-	await get_tree().process_frame
+	_start_scan_line_animation()
 	
-	var sync_mgr = GitHubSyncManager if GitHubSyncManager else get_tree().root.get_node_or_null("GitHubSyncManager")
-	if sync_mgr:
-		status_label.text = "SYNCHRONIZING MANIFEST..."
-		progress_bar.value = 40
-		sync_mgr.sync_cycle()
-		var sync_status = await sync_mgr.sync_completed
-		if sync_status == "success":
-			status_label.text = "PATCH APPLIED."
-		else:
-			status_label.text = "OFFLINE MODE ACTIVE."
-	else:
-		status_label.text = "SYNC MANAGER OFFLINE."
-	
-	progress_bar.value = 80
-	
-	var loader = ContentLoader if ContentLoader else get_tree().root.get_node_or_null("ContentLoader")
-	if loader:
-		status_label.text = "INDEXING NEURAL PATHWAYS..."
-		await get_tree().create_timer(0.5).timeout
-		
-	progress_bar.value = 100
-	status_label.text = "SYSTEM READY."
-	
-	var goodwill = GoodwillManager if GoodwillManager else get_tree().root.get_node_or_null("GoodwillManager")
-	if goodwill: goodwill.evaluate_boot_grace()
-	
-	await get_tree().create_timer(0.5).timeout
-	var tween = get_tree().create_tween()
-	if tween:
-		tween.tween_property(self, "modulate:a", 0.0, 0.5)
-		tween.tween_callback(func():
-			boot_completed.emit()
-			queue_free()
-		)
+	if btn_retry: btn_retry.pressed.connect(_on_retry_pressed)
+	if btn_reset: btn_reset.pressed.connect(_on_reset_pressed)
+	if btn_exit: btn_exit.pressed.connect(_on_exit_pressed)
+
+func bind_state_machine(sm: BootStateMachine):
+	_state_machine = sm
+	_state_machine.state_changed.connect(_on_boot_state_changed)
+
+func _on_boot_state_changed(_state: int, progress: float, message: String):
+	if status_label: status_label.text = message
+	if progress_bar: progress_bar.value = progress
+
+func show_failure_dialog(reason: String):
+	if failure_panel:
+		failure_panel.visible = true
+		var msg = failure_panel.get_node_or_null("VBoxContainer/Message")
+		if msg: msg.text = "We encountered a brief interruption while preparing your session: " + reason + ".\n\nChoose an action below to continue."
+
+func _on_retry_pressed():
+	if AudioManager: AudioManager.play_sfx("ui_click")
+	if failure_panel: failure_panel.visible = false
+	if _state_machine and _state_machine.get_parent() and _state_machine.get_parent().has_method("_execute_fast_boot"):
+		_state_machine.get_parent()._execute_fast_boot()
+
+func _on_reset_pressed():
+	if AudioManager: AudioManager.play_sfx("ui_click")
+	print("[BOOT RECOVERY] Resetting local cache...")
+	var dir = DirAccess.open("user://live_content/")
+	if dir:
+		dir.remove("manifest.json")
+		print("[BOOT RECOVERY] Local manifest cache cleared.")
+	_on_retry_pressed()
+
+func _on_exit_pressed():
+	if AudioManager: AudioManager.play_sfx("ui_click")
+	get_tree().quit()
+
+func _start_scan_line_animation():
+	if not is_instance_valid(scan_line): return
+	var viewport_height = get_viewport().get_visible_rect().size.y
+	scan_line.position.y = 0
+	var tween = get_tree().create_tween().set_loops()
+	tween.tween_property(scan_line, "position:y", viewport_height, 2.0).set_trans(Tween.TRANS_SINE)

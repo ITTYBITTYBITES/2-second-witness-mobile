@@ -20,54 +20,11 @@ func _ready():
 	
 	world_layer.process_mode = Node.PROCESS_MODE_DISABLED
 	ui_layer.process_mode = Node.PROCESS_MODE_DISABLED
-	
 	get_viewport().physics_object_picking = true
 	
-	_execute_boot_sequence()
-
-func _execute_boot_sequence():
-	print("[BOOT: 1] SystemLayer initialized.")
-	print("[BOOT: 2] ThemeManager compiling base themes.")
-	
-	var orch = get_node_or_null("/root/ExperienceOrchestrator")
-	var profile = get_node_or_null("/root/PlayerProfile")
-	var initial_uni = "history"
-	if orch and profile:
-		var vector = orch.determine_next_experience(profile)
-		initial_uni = vector.get("universe", "history")
-		
-	ThemeManager.apply_theme(initial_uni)
-	if ThemeManager.get_active_theme().is_empty():
-		await ThemeManager.theme_applied
-	
-	print("[BOOT: 3] ContentLoader loading base bundle.")
-	print("[BOOT: 4] ContentRegistry index confirmed.")
-	print("[BOOT: 5] NavigationRouter active.")
-	print("[BOOT: 6] GitHubSyncManager async check started.")
-	
-	print("[BOOT: 7] WorldLayer activating.")
-	world_layer.process_mode = Node.PROCESS_MODE_INHERIT
-	
-	print("[BOOT: 8] TunnelLayer spawning chunks.")
-	print("[BOOT: 9] PortalLayer streaming initialized.")
-	
-	print("[BOOT: 10] UILayer attaching. Presentation ready.")
-	ui_layer.process_mode = Node.PROCESS_MODE_INHERIT
-	
-	var overlay = $UILayer/TransitionOverlay
-	var tween = get_tree().create_tween()
-	tween.tween_property(overlay, "color:a", 0.0, 1.0)
-	tween.tween_callback(func():
-		overlay.visible = false
-		overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		print("[KERNEL] Transition overlay freed. Visual incoherence window closed.")
-	)
-	
-	print("========================================")
-	print("[KERNEL] System Stable. Handoff to Navigation Engine.")
-	print("========================================")
-	
-	NavigationRouter.show_landing_screen()
+	var boot_loader = BootLoader.new()
+	boot_loader.name = "BootLoader"
+	system_layer.add_child(boot_loader)
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
