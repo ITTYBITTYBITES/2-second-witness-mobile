@@ -31,7 +31,7 @@ This document provides an uncompromised, automated inventory of all physical med
 The following assets were referenced in code or JSON schemas but do not physically exist in the filesystem:
 
 *   **Missing Asset:** `res://release.keystore`
-    *   *Referenced By:* `export_presets.cfg:56`
+    *   *Referenced By:* `export_presets.cfg:58`
 *   **Missing Asset:** `res://.godot/imported/ambience_science_lab.wav-bb22600200ba6c5f5a6eb1ddddcc5b49.sample`
     *   *Referenced By:* `assets/audio/ambience_science_lab.wav.import:6`
 *   **Missing Asset:** `res://.godot/imported/iris_heartbeat.wav-cfb00c51f0526d7210803134e4e285f7.sample`
@@ -66,41 +66,6 @@ The following assets were referenced in code or JSON schemas but do not physical
 ## 3. AI Asset Creation Queue (`asset_creation_queue.json`)
 
 The following prompt manifest is engineered to generate missing universe assets via AI image generation pipelines (Midjourney / DALL-E 3) matching the exact Liquid Memory V2 visual identity:
-
-### Priority 1: History Banner
-*   **Target Path:** `res://assets/textures/ui/v1/banner_history.png`
-*   **Dimensions:** `1024x512`
-*   **Engineered Prompt:** > A rich, highly polished thematic banner illustration for the 'history' universe in a sci-fi cognitive testing application. Style: Liquid Memory V2, clean UI vector header, high contrast, vibrant accents, dark void background, masterpiece.
-
-### Priority 2: Science Lab Banner
-*   **Target Path:** `res://assets/textures/ui/v1/banner_science_lab.png`
-*   **Dimensions:** `1024x512`
-*   **Engineered Prompt:** > A rich, highly polished thematic banner illustration for the 'science_lab' universe in a sci-fi cognitive testing application. Style: Liquid Memory V2, clean UI vector header, high contrast, vibrant accents, dark void background, masterpiece.
-
-### Priority 3: Creative Arts Banner
-*   **Target Path:** `res://assets/textures/ui/v1/banner_creative_arts.png`
-*   **Dimensions:** `1024x512`
-*   **Engineered Prompt:** > A rich, highly polished thematic banner illustration for the 'creative_arts' universe in a sci-fi cognitive testing application. Style: Liquid Memory V2, clean UI vector header, high contrast, vibrant accents, dark void background, masterpiece.
-
-### Priority 4: Frontier Banner
-*   **Target Path:** `res://assets/textures/ui/v1/banner_frontier.png`
-*   **Dimensions:** `1024x512`
-*   **Engineered Prompt:** > A rich, highly polished thematic banner illustration for the 'frontier' universe in a sci-fi cognitive testing application. Style: Liquid Memory V2, clean UI vector header, high contrast, vibrant accents, dark void background, masterpiece.
-
-### Priority 5: Society Mind Banner
-*   **Target Path:** `res://assets/textures/ui/v1/banner_society_mind.png`
-*   **Dimensions:** `1024x512`
-*   **Engineered Prompt:** > A rich, highly polished thematic banner illustration for the 'society_mind' universe in a sci-fi cognitive testing application. Style: Liquid Memory V2, clean UI vector header, high contrast, vibrant accents, dark void background, masterpiece.
-
-### Priority 6: Tech Ops Banner
-*   **Target Path:** `res://assets/textures/ui/v1/banner_tech_ops.png`
-*   **Dimensions:** `1024x512`
-*   **Engineered Prompt:** > A rich, highly polished thematic banner illustration for the 'tech_ops' universe in a sci-fi cognitive testing application. Style: Liquid Memory V2, clean UI vector header, high contrast, vibrant accents, dark void background, masterpiece.
-
-### Priority 7: Life Sciences Banner
-*   **Target Path:** `res://assets/textures/ui/v1/banner_life_sciences.png`
-*   **Dimensions:** `1024x512`
-*   **Engineered Prompt:** > A rich, highly polished thematic banner illustration for the 'life_sciences' universe in a sci-fi cognitive testing application. Style: Liquid Memory V2, clean UI vector header, high contrast, vibrant accents, dark void background, masterpiece.
 
 ---
 

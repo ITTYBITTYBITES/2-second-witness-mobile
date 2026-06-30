@@ -1,6 +1,6 @@
 {
     "res://release.keystore": [
-        "export_presets.cfg:56"
+        "export_presets.cfg:58"
     ],
     "res://.godot/imported/ambience_science_lab.wav-bb22600200ba6c5f5a6eb1ddddcc5b49.sample": [
         "assets/audio/ambience_science_lab.wav.import:6",
@@ -176,9 +176,6 @@
         "assets/textures/ui/v1/btn_frame_tech.png.import:6",
         "assets/textures/ui/v1/btn_frame_tech.png.import:14"
     ],
-    "res://ARCHITECTURE_STATUS.md": [
-        "benchmark/verify_ground_truth_audit.gd:41"
-    ],
     "res://ASSET_AUDIT.md": [
         "benchmark/verify_asset_audit_reports.gd:9"
     ],
@@ -190,6 +187,12 @@
     ],
     "res://unused_assets.json": [
         "benchmark/verify_asset_audit_reports.gd:12"
+    ],
+    "res://ARCHITECTURE_STATUS.md": [
+        "benchmark/verify_ground_truth_audit.gd:41"
+    ],
+    "res://.github/workflows/universe-assets.yml": [
+        "benchmark/verify_procedural_asset_pipeline.gd:34"
     ],
     "res://PRODUCTION_READINESS_REPORT.md": [
         "benchmark/verify_production_readiness_report.gd:9"
