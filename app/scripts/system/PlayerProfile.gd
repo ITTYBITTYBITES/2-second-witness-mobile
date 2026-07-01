@@ -304,6 +304,65 @@ func generate_insights() -> Array[String]:
 	insights.append("[color=#4CC9F0]Active Streak:[/color] " + str(current_streak) + " days | [color=#F72585]Favorite Mechanic:[/color] " + favorite_mechanic.capitalize().replace("_", " "))
 	insights.append("[color=#E6B800]Achievements Unlocked:[/color] " + str(unlocked_achievements.size()) + " (" + ", ".join(unlocked_achievements) + ")")
 	
+	# 1. Emerging Cognitive Profile & Strengths Analysis
+	var best_trait = ""
+	var best_acc = -1.0
+	var best_rt = 999999.0
+	var worst_trait = ""
+	var worst_acc = 2.0
+	var worst_rt = 0.0
+	
+	for t_key in cognitive_baseline.keys():
+		var data = cognitive_baseline[t_key]
+		var att = data.get("attempts", 0)
+		if att > 0:
+			var succ = data.get("successes", 0)
+			var acc = float(succ) / float(att)
+			var avg_rt = data.get("total_rt_ms", 0.0) / float(att)
+			if acc > best_acc or (acc == best_acc and avg_rt < best_rt):
+				best_acc = acc
+				best_rt = avg_rt
+				best_trait = t_key
+			if acc < worst_acc or (acc == worst_acc and avg_rt > worst_rt):
+				worst_acc = acc
+				worst_rt = avg_rt
+				worst_trait = t_key
+				
+	if best_trait != "":
+		var pretty_best = best_trait.capitalize().replace("_", " ")
+		var acc_pct = int(best_acc * 100.0)
+		insights.append("[color=#2ECC71]Core Strength:[/color] You excel at %s (%d%% accuracy, %d ms avg reaction time)." % [pretty_best, acc_pct, int(best_rt)])
+		if best_acc >= 0.8:
+			insights.append("[color=#4CC9F0]Emerging Profile:[/color] High-Speed Analyst — exceptional precision under rapid visual presentation.")
+		else:
+			insights.append("[color=#4CC9F0]Emerging Profile:[/color] Steady Observer — developing pattern tracking resilience.")
+			
+	if worst_trait != "" and worst_trait != best_trait:
+		var pretty_worst = worst_trait.capitalize().replace("_", " ")
+		insights.append("[color=#F72585]Focus Area:[/color] You tend to hesitate on %s (%d ms avg). Practice recommended to build speed." % [pretty_worst, int(worst_rt)])
+	
+	# 2. Performance Change Over Time (Trend Analysis)
+	var total_base_att = 0
+	var total_base_rt = 0.0
+	var total_week_att = 0
+	var total_week_rt = 0.0
+	for t_key in cognitive_baseline.keys():
+		total_base_att += cognitive_baseline[t_key].get("attempts", 0)
+		total_base_rt += cognitive_baseline[t_key].get("total_rt_ms", 0.0)
+		total_week_att += current_week_drift[t_key].get("attempts", 0)
+		total_week_rt += current_week_drift[t_key].get("total_rt_ms", 0.0)
+		
+	if total_base_att > 0 and total_week_att > 0:
+		var base_avg = total_base_rt / float(total_base_att)
+		var week_avg = total_week_rt / float(total_week_att)
+		if week_avg < base_avg and base_avg > 0:
+			var imp_pct = int(((base_avg - week_avg) / base_avg) * 100.0)
+			if imp_pct > 0:
+				insights.append("[color=#2ECC71]Performance Trend:[/color] Reaction time improved by %d%% this week compared to all-time baseline." % imp_pct)
+		elif week_avg > base_avg and base_avg > 0:
+			insights.append("[color=#E6B800]Performance Trend:[/color] Reaction time is slightly higher this week; focus on rapid decision confidence.")
+
+	# 3. Universe Match & Affinity
 	var top_uni = ""
 	var top_count = 0
 	for u in universe_affinity.keys():
@@ -313,11 +372,11 @@ func generate_insights() -> Array[String]:
 	
 	if top_count > 0:
 		var readable_uni = top_uni.capitalize().replace("_", " ")
-		insights.append("%s remains your dominant universe." % readable_uni)
+		insights.append("[color=#E6B800]Universe Match:[/color] Your observation profile aligns most strongly with %s." % readable_uni)
 		
 	var rec = get_adaptive_recommendation()
-	insights.append("Recommendation: " + rec.get("reason", ""))
+	insights.append("[color=#E6B800]Recommendation:[/color] " + rec.get("reason", "Continue exploring featured universes."))
 	
-	if insights.is_empty():
-		insights.append("Awaiting more observation data to form a profile...")
+	if insights.size() <= 3:
+		insights.append("Awaiting more observation data to generate advanced psychometric trends...")
 	return insights
