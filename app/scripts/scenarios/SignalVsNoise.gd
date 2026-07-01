@@ -9,6 +9,7 @@ signal completed
 
 var _start_ticks_msec: int = 0
 var target_symbol: String = "◆"
+var noise_symbols: Array = ["⬢", "⬟", "▲", "■", "●", "★", "✖", "✦"]
 var is_signal: bool = false
 var _scenario_id: String = "signal_vs_noise"
 
@@ -16,7 +17,7 @@ func _apply_specific_rules(rules: Dictionary):
 	_scenario_id = _scenario_payload["id"]
 	# The JSON schema determines the target symbol and the pool of noise symbols
 	target_symbol = rules.get("correct_answer", "◆")
-	var noise_symbols = rules.get("wrong_answers", ["⬢", "⬟", "▲", "■", "●", "★", "✖", "✦"])
+	noise_symbols = rules.get("wrong_answers", ["⬢", "⬟", "▲", "■", "●", "★", "✖", "✦"])
 	
 	btn_match.pressed.connect(func(): _on_answer(true))
 	btn_ignore.pressed.connect(func(): _on_answer(false))

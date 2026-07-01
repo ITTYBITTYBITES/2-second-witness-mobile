@@ -60,6 +60,7 @@ func request_navigation_transition(target_screen: String, payload: Dictionary = 
 			"WeeklyFeaturedScreen": if router.has_method("_on_discover_requested"): router._on_discover_requested()
 			"WorldSelectScreen": if router.has_method("_on_play_universe_requested"): router._on_play_universe_requested(payload.get("universe_id", active_state.current_universe))
 			"PlayerProfileScreen": if router.has_method("_on_profile_requested"): router._on_profile_requested()
+			"GameplayHUD": if router.has_method("_on_world_selected"): router._on_world_selected(payload.get("universe_id", active_state.current_universe), payload.get("world_id", active_state.current_world))
 			
 	experience_state_changed.emit(active_state)
 
@@ -101,9 +102,7 @@ func request_world_selection(universe_id: String, world_id: String):
 	active_state.current_scenario = s_id
 	active_spike = s_id
 	
-	var router = Engine.get_main_loop().root.get_node_or_null("NavigationRouter")
-	if router and router.has_method("handle_navigation_event"):
-		router.handle_navigation_event({"type": "portal_selected", "destination": {"universe_id": u_id, "world_id": w_id, "scenario_id": s_id}})
+	request_navigation_transition("GameplayHUD", {"universe_id": u_id, "world_id": w_id})
 	
 	experience_state_changed.emit(active_state)
 
