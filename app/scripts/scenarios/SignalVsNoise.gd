@@ -18,9 +18,16 @@ func _apply_specific_rules(rules: Dictionary):
 	target_symbol = rules.get("correct_answer", "◆")
 	var noise_symbols = rules.get("wrong_answers", ["⬢", "⬟", "▲", "■", "●", "★", "✖", "✦"])
 	
-	# REPLACED randf() WITH DETERMINISTIC RNG
+	btn_match.pressed.connect(func(): _on_answer(true))
+	btn_ignore.pressed.connect(func(): _on_answer(false))
+	_setup_round()
+	execute_render_pipeline()
+
+func _setup_round():
+	for c in noise_container.get_children(): c.queue_free()
+	feedback_label.text = "Find: " + target_symbol
+	btn_match.disabled = false; btn_ignore.disabled = false
 	is_signal = _deterministic_rng.randf() > 0.5
-	
 	for i in range(15):
 		var lbl = Label.new()
 		lbl.add_theme_font_size_override("font_size", _deterministic_rng.randi_range(24, 64))
@@ -28,33 +35,19 @@ func _apply_specific_rules(rules: Dictionary):
 		lbl.modulate = Color(_deterministic_rng.randf_range(0.3, 0.7), _deterministic_rng.randf_range(0.3, 0.7), _deterministic_rng.randf_range(0.3, 0.7))
 		lbl.position = Vector2(_deterministic_rng.randf_range(100, 800), _deterministic_rng.randf_range(100, 500))
 		noise_container.add_child(lbl)
-		
 	if is_signal:
 		var lbl = Label.new()
 		lbl.add_theme_font_size_override("font_size", 48)
 		lbl.text = target_symbol
-		lbl.modulate = Color(1, 1, 1) 
+		lbl.modulate = Color(1, 1, 1)
 		lbl.position = Vector2(_deterministic_rng.randf_range(200, 700), _deterministic_rng.randf_range(200, 400))
 		noise_container.add_child(lbl)
-
-func _ready():
-	if _scenario_payload.is_empty():
-		push_error("[SCENARIO FATAL] Scene loaded without payload injection.")
-		queue_free()
-		return
-		
 	_start_ticks_msec = Time.get_ticks_msec()
-	print("[SIGNAL VS NOISE] Spike Initiated.")
-	feedback_label.text = "Find: " + target_symbol
-	
-	btn_match.pressed.connect(func(): _on_answer(true))
-	btn_ignore.pressed.connect(func(): _on_answer(false))
-	
-	execute_render_pipeline()
 
 func _on_answer(chose_match: bool):
 	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if chose_match == is_signal:
+		if AudioManager: AudioManager.play_sfx("ui_click")
 		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
 		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", true, rt_ms)
 		SessionTracker.record_spike_result("signal_vs_noise", true)
@@ -63,6 +56,10 @@ func _on_answer(chose_match: bool):
 		completed.emit()
 		queue_free()
 	else:
+		if AudioManager: AudioManager.play_sfx("ui_error")
 		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", false, rt_ms)
 		SessionTracker.record_spike_result("signal_vs_noise", false)
-		feedback_label.text = "ERROR! Try again."
+		feedback_label.text = "ERROR! Resetting..."
+		btn_match.disabled = true; btn_ignore.disabled = true
+		await get_tree().create_timer(0.5).timeout
+		if is_inside_tree(): _setup_round()

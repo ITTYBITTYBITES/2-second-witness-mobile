@@ -20,22 +20,28 @@ func _ready():
 		queue_free()
 		return
 		
-	_start_ticks_msec = Time.get_ticks_msec()
-	print("[PATTERN CONTINUATION] Spike Initiated.")
-	feedback_label.text = "Select the next shape"
-	
-	btn_a.text = "⬟"
-	btn_b.text = "⬢"
-	
-	btn_a.pressed.connect(func(): _on_answer(true))
-	btn_b.pressed.connect(func(): _on_answer(false))
-	
+	btn_a.pressed.connect(func(): _on_answer(btn_a.text == "⬟"))
+	btn_b.pressed.connect(func(): _on_answer(btn_b.text == "⬟"))
+	_generate_pattern()
 	execute_render_pipeline()
+
+func _generate_pattern():
+	feedback_label.text = "Select the next shape"
+	btn_a.disabled = false
+	btn_b.disabled = false
+	if _deterministic_rng.randf() > 0.5:
+		btn_a.text = "⬟"
+		btn_b.text = "⬢"
+	else:
+		btn_a.text = "⬢"
+		btn_b.text = "⬟"
+	_start_ticks_msec = Time.get_ticks_msec()
 
 func _on_answer(is_correct: bool):
 	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if is_correct:
 		print("[PATTERN CONTINUATION] Success. Ejecting!")
+		if AudioManager: AudioManager.play_sfx("ui_click")
 		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
 		sequence_label.text = "⬟  ⬟  ⬢  ⬟  ⬟"
 		
@@ -50,6 +56,11 @@ func _on_answer(is_correct: bool):
 		queue_free()
 	else:
 		print("[PATTERN CONTINUATION] Error. Resetting.")
+		if AudioManager: AudioManager.play_sfx("ui_error")
+		feedback_label.text = "ERROR! Resetting..."
 		PlayerProfile.record_cognitive_event("pattern_recognition", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), false, rt_ms)
 		SessionTracker.record_spike_result("pattern_continuation", false)
-		feedback_label.text = "ERROR! Try again."
+		btn_a.disabled = true
+		btn_b.disabled = true
+		await get_tree().create_timer(0.5).timeout
+		if is_inside_tree(): _generate_pattern()

@@ -20,9 +20,15 @@ func _ready():
 		queue_free()
 		return
 		
-	_start_ticks_msec = Time.get_ticks_msec()
+	btn_1.pressed.connect(func(): _on_answer(0))
+	btn_2.pressed.connect(func(): _on_answer(1))
+	btn_3.pressed.connect(func(): _on_answer(2))
+	_setup_round()
+	execute_render_pipeline()
+
+func _setup_round():
 	feedback_label.text = "Memorize..."
-	
+	btn_1.disabled = true; btn_2.disabled = true; btn_3.disabled = true
 	var n1 = _deterministic_rng.randi() % 9 + 1
 	var n2 = _deterministic_rng.randi() % 9 + 1
 	var n3 = _deterministic_rng.randi() % 9 + 1
@@ -41,23 +47,19 @@ func _ready():
 	btn_2.text = options[1]
 	btn_3.text = options[2]
 	
-	btn_1.disabled = true; btn_2.disabled = true; btn_3.disabled = true
-	btn_1.pressed.connect(func(): _on_answer(0))
-	btn_2.pressed.connect(func(): _on_answer(1))
-	btn_3.pressed.connect(func(): _on_answer(2))
-	
+	_start_ticks_msec = Time.get_ticks_msec()
 	var tween = get_tree().create_tween()
 	tween.tween_interval(1.0)
 	tween.tween_callback(func():
-		sequence_label.text = "WHAT WAS THE REVERSE?"
-		btn_1.disabled = false; btn_2.disabled = false; btn_3.disabled = false
+		if is_inside_tree():
+			sequence_label.text = "WHAT WAS THE REVERSE?"
+			btn_1.disabled = false; btn_2.disabled = false; btn_3.disabled = false
 	)
-	
-	execute_render_pipeline()
 
 func _on_answer(idx: int):
 	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if idx == correct_idx:
+		if AudioManager: AudioManager.play_sfx("ui_click")
 		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
 		PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
 		SessionTracker.record_spike_result("sequence_reverse", true)
@@ -66,6 +68,10 @@ func _on_answer(idx: int):
 		completed.emit()
 		queue_free()
 	else:
-		feedback_label.text = "ERROR! Try again."
+		if AudioManager: AudioManager.play_sfx("ui_error")
+		feedback_label.text = "ERROR! Resetting..."
 		PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), false, rt_ms)
 		SessionTracker.record_spike_result("sequence_reverse", false)
+		btn_1.disabled = true; btn_2.disabled = true; btn_3.disabled = true
+		await get_tree().create_timer(0.5).timeout
+		if is_inside_tree(): _setup_round()

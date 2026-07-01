@@ -47,6 +47,7 @@ func _play_sequence():
 	tween.tween_callback(func(): 
 		feedback_label.text = "Repeat the sequence."
 		for b in buttons: b.disabled = false
+		_start_ticks_msec = Time.get_ticks_msec()
 	)
 
 func _on_btn_pressed(idx: int):
