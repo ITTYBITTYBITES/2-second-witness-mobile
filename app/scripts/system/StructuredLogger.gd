@@ -24,7 +24,11 @@ func log_event_trace(node: Node, event_type: String, details: String = ""):
 	var instance_id: int = 0
 	if node != null and node.has_method("get_instance_id"):
 		instance_id = node.get_instance_id()
-	var n_name = node.name if node else "UnknownNode"
+	var n_name: String = ""
+	if node:
+		n_name = str(node.name)
+	else:
+		n_name = "UnknownNode"
 	
 	var entry = {
 		"timestamp_usec": usec,

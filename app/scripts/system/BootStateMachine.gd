@@ -2,7 +2,7 @@ extends Node
 class_name BootStateMachine
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness
 # THE INITIAL BOOT STATE MACHINE (DETERMINISTIC 1-TIME BOOT)
 # ---------------------------------------------------------
 
@@ -59,3 +59,6 @@ func advance_state(new_state: int):
 			
 	print("[BOOT STATE] Advanced to State: ", BootState.keys()[new_state], " | Progress: ", prog, " | Message: ", msg)
 	state_changed.emit(new_state, prog * 100.0, msg)
+
+func trigger_boot_failure(reason: String):
+	boot_failed.emit(reason)

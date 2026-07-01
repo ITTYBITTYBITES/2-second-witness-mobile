@@ -1,7 +1,7 @@
 extends Node
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness
 # STORE TRANSACTION STATE MACHINE & ENTITLEMENT RECONCILIATION
 # ---------------------------------------------------------
 
@@ -35,7 +35,7 @@ func on_purchase_dispatched(order_id: String):
 		print("[TRANSACTION STATE] State transition: REQUESTING_PURCHASE -> PURCHASE_PENDING_GOOGLE for Order: ", order_id)
 		_transition_state(order_id, pending_transactions[order_id]["product_id"], TxState.PURCHASE_PENDING_GOOGLE)
 
-func on_callback_received(order_id: String, product_id: String, purchase_token: String = ""):
+func on_callback_received(order_id: String, product_id: String, _purchase_token: String = ""):
 	print("[TRANSACTION STATE] State transition: PURCHASE_PENDING_GOOGLE -> PURCHASE_RECEIVED_CALLBACK for Order: ", order_id)
 	_transition_state(order_id, product_id, TxState.PURCHASE_RECEIVED_CALLBACK)
 	

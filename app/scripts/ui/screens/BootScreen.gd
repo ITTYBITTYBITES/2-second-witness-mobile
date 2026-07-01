@@ -83,3 +83,6 @@ func _start_scan_line_animation():
 	scan_line.position.y = 0
 	var tween = get_tree().create_tween().set_loops()
 	tween.tween_property(scan_line, "position:y", viewport_height, 2.0).set_trans(Tween.TRANS_SINE).from(0.0)
+
+func complete_boot():
+	boot_completed.emit()
