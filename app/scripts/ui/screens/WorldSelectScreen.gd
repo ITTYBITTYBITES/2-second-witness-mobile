@@ -42,45 +42,18 @@ func _ready():
 		_populate_grid()
 
 func _apply_universe_manifest(universe_id: String):
-	var u_manifest_path = "res://universes/" + universe_id + "/universe.json"
-	if FileAccess.file_exists(u_manifest_path):
-		var file = FileAccess.open(u_manifest_path, FileAccess.READ)
-		if file:
-			var json = JSON.new()
-			if json.parse(file.get_as_text()) == OK:
-				var _data = json.get_data()
-				var local_reg = UniverseRegistry.new()
-				
-				var banner_key = "banner_" + universe_id
-				var banner_path = local_reg.get_physical_path(banner_key)
-				print("[THEME INTEGRATION] Successfully resolved manifest banner: ", banner_path)
-				
-				var renderer = UniverseRenderer.new()
-				var def = renderer.universe_definitions.get(universe_id, renderer.universe_definitions["science_lab"])
-				var bg = get_node_or_null("ColorRect") if get_node_or_null("ColorRect") else get_node_or_null("VoidBG")
-				if bg and bg is ColorRect:
-					bg.color = def["palette"]["bg"]
-					bg.color.a = 0.15 # Preserve persistent animated TunnelLayer outer frame visibility
-					print("[THEME INTEGRATION] Applied universe background color: ", bg.color)
-					
-				var panel = get_node_or_null("PanelContainer")
-				if panel and panel.has_theme_stylebox_override("panel"):
-					var sb = panel.get_theme_stylebox("panel").duplicate()
-					sb.bg_color = def["palette"]["bg"]
-					sb.bg_color.a = 0.95
-					panel.add_theme_stylebox_override("panel", sb)
-					
-				if title_label:
-					title_label.add_theme_color_override("font_color", def["palette"]["primary"])
-					
-				if not u_reg: local_reg.free()
-			file.close()
+	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
+	if vim and vim.has_method("apply_screen_identity"):
+		vim.apply_screen_identity(self, universe_id, "", true)
+	else:
+		var bg = get_node_or_null("ColorRect") if get_node_or_null("ColorRect") else get_node_or_null("VoidBG")
+		if bg and bg is ColorRect: bg.color = Color(0.04, 0.07, 0.12, 0.15)
 
 func _populate_grid():
 	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 	var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-	var renderer = UniverseRenderer.new()
-	var def = renderer.universe_definitions.get(active_universe_id, renderer.universe_definitions["science_lab"])
+	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
+	var def = vim.get_universe_identity(active_universe_id) if vim else {"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")}}
 	
 	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
 	if worlds.is_empty() or active_universe_id == "history" or active_universe_id == "frontier":
@@ -106,6 +79,7 @@ func _populate_grid():
 		btn.custom_minimum_size = Vector2(320, 180)
 		btn.mouse_filter = Control.MOUSE_FILTER_STOP
 		
+		var w_def = vim.get_world_identity(active_universe_id, w_id) if vim else def
 		var pretty_name = w_id.capitalize().replace("_", " ")
 		var meta = world_meta.get(w_id, {"name": pretty_name, "scenarios": "10 scenarios", "completion": "20%", "rec": "Recommended Today"})
 		
@@ -113,9 +87,9 @@ func _populate_grid():
 		btn.add_theme_font_size_override("font_size", 18)
 		
 		var style = StyleBoxFlat.new()
-		style.bg_color = def["palette"]["bg"]
+		style.bg_color = w_def["palette"]["bg"]
 		style.border_width_bottom = 4
-		style.border_color = def["palette"]["primary"]
+		style.border_color = w_def["palette"]["primary"]
 		style.corner_radius_top_left = 12
 		style.corner_radius_top_right = 12
 		style.corner_radius_bottom_left = 12
@@ -124,7 +98,7 @@ func _populate_grid():
 		btn.add_theme_stylebox_override("normal", style)
 		btn.add_theme_stylebox_override("hover", style.duplicate())
 		btn.add_theme_stylebox_override("pressed", style.duplicate())
-		btn.add_theme_color_override("font_color", def["palette"]["primary"].lightened(0.6))
+		btn.add_theme_color_override("font_color", w_def["palette"]["primary"].lightened(0.6))
 		
 		btn.pressed.connect(func():
 			print("WORLD CARD CLICKED:", w_id)

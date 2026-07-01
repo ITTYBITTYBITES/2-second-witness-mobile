@@ -53,36 +53,12 @@ func _ready():
 	_populate_grid()
 
 func _apply_universe_manifest(universe_id: String):
-	var u_manifest_path = "res://universes/" + universe_id + "/universe.json"
-	if FileAccess.file_exists(u_manifest_path):
-		var file = FileAccess.open(u_manifest_path, FileAccess.READ)
-		if file:
-			var json = JSON.new()
-			if json.parse(file.get_as_text()) == OK:
-				var _data = json.get_data()
-				var local_reg = UniverseRegistry.new()
-				
-				var banner_key = "banner_" + universe_id
-				var banner_path = local_reg.get_physical_path(banner_key)
-				print("[THEME INTEGRATION] Successfully resolved manifest banner: ", banner_path)
-				
-				var renderer = UniverseRenderer.new()
-				var def = renderer.universe_definitions.get(universe_id, renderer.universe_definitions["science_lab"])
-				var bg = get_node_or_null("ColorRect") if get_node_or_null("ColorRect") else get_node_or_null("VoidBG")
-				if bg and bg is ColorRect:
-					bg.color = def["palette"]["bg"]
-					bg.color.a = 0.15 # Preserve persistent animated TunnelLayer outer frame visibility
-					print("[THEME INTEGRATION] Applied universe background color: ", bg.color)
-					
-				var panel = get_node_or_null("PanelContainer")
-				if panel and panel.has_theme_stylebox_override("panel"):
-					var sb = panel.get_theme_stylebox("panel").duplicate()
-					sb.bg_color = def["palette"]["bg"]
-					sb.bg_color.a = 0.95
-					panel.add_theme_stylebox_override("panel", sb)
-					
-				if not u_reg: local_reg.free()
-			file.close()
+	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
+	if vim and vim.has_method("apply_screen_identity"):
+		vim.apply_screen_identity(self, universe_id, "", true)
+	else:
+		var bg = get_node_or_null("ColorRect") if get_node_or_null("ColorRect") else get_node_or_null("VoidBG")
+		if bg and bg is ColorRect: bg.color = Color(0.04, 0.07, 0.12, 0.15)
 
 func _populate_grid():
 	var controller = SamplingController if SamplingController else get_tree().root.get_node_or_null("SamplingController")
@@ -94,7 +70,7 @@ func _populate_grid():
 		"frontier", "society_mind", "tech_ops", "life_sciences"
 	]
 	
-	var renderer = UniverseRenderer.new()
+	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	
 	for child in grid.get_children():
 		child.queue_free()
@@ -104,7 +80,7 @@ func _populate_grid():
 		var is_owned = profile.unlocked_universes.has(uni) or uni == "history"
 		var can_play = is_featured or is_owned
 		
-		var def = renderer.universe_definitions.get(uni, renderer.universe_definitions["science_lab"])
+		var def = vim.get_universe_identity(uni) if vim else {"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")}}
 		var meta = universe_meta.get(uni, universe_meta["science_lab"])
 		
 		var btn = Button.new()
@@ -118,7 +94,7 @@ func _populate_grid():
 		style.bg_color = def["palette"]["bg"]
 		if not can_play:
 			style.bg_color = style.bg_color.darkened(0.5)
-			
+		
 		style.border_width_bottom = 4
 		style.border_color = def["palette"]["primary"] if can_play else Color(0.3, 0.3, 0.3)
 		style.corner_radius_top_left = 12

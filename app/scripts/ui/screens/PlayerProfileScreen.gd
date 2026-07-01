@@ -38,40 +38,12 @@ func _ready():
 	_populate_data()
 
 func _apply_universe_manifest(universe_id: String):
-	var u_manifest_path = "res://universes/" + universe_id + "/universe.json"
-	if FileAccess.file_exists(u_manifest_path):
-		var file = FileAccess.open(u_manifest_path, FileAccess.READ)
-		if file:
-			var json = JSON.new()
-			if json.parse(file.get_as_text()) == OK:
-				var _data = json.get_data()
-				var local_reg = UniverseRegistry.new()
-				
-				var banner_key = "banner_" + universe_id
-				var banner_path = local_reg.get_physical_path(banner_key)
-				print("[THEME INTEGRATION] PlayerProfileScreen successfully resolved manifest banner: ", banner_path)
-				
-				var renderer = UniverseRenderer.new()
-				var def = renderer.universe_definitions.get(universe_id, renderer.universe_definitions["science_lab"])
-				var bg = get_node_or_null("VoidBG")
-				if bg and bg is ColorRect:
-					bg.color = def["palette"]["bg"]
-					bg.color.a = 0.15 # Preserve persistent animated TunnelLayer outer frame visibility
-					print("[THEME INTEGRATION] Applied universe background color to PlayerProfileScreen: ", bg.color)
-					
-				var panel = get_node_or_null("PanelContainer")
-				if panel and panel.has_theme_stylebox_override("panel"):
-					var sb = panel.get_theme_stylebox("panel").duplicate()
-					sb.bg_color = def["palette"]["bg"]
-					sb.bg_color.a = 0.95
-					panel.add_theme_stylebox_override("panel", sb)
-					
-				var title_label = get_node_or_null("PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/Header/Title")
-				if title_label:
-					title_label.add_theme_color_override("font_color", def["palette"]["primary"])
-					
-				if not u_reg: local_reg.free()
-			file.close()
+	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
+	if vim and vim.has_method("apply_screen_identity"):
+		vim.apply_screen_identity(self, universe_id, "", true)
+	else:
+		var bg = get_node_or_null("VoidBG")
+		if bg and bg is ColorRect: bg.color = Color(0.04, 0.07, 0.12, 0.15)
 
 func _populate_data():
 	var profile = get_node_or_null("/root/PlayerProfile")
