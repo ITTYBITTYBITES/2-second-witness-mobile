@@ -49,7 +49,7 @@ func _on_answer(chose_true: bool):
 	if chose_true == is_correct_equation:
 		print("[MATH SURPRISE] Success. Ejecting!")
 		if AudioManager: AudioManager.play_sfx("ui_click")
-		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 		PlayerProfile.record_cognitive_event("processing_speed", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
 		SessionTracker.record_spike_result("math_surprise", true)
 		

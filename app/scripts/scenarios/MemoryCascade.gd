@@ -109,7 +109,7 @@ func evaluate_answer(val: int):
 
 func scenario_complete(rt_ms: float):
 	print("[MEMORY CASCADE] scenario_complete(): Success path executing...")
-	if feedback_label: feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+	if feedback_label: feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 	var u_id = normalize_id(_scenario_payload.get("universe", "science_lab"))
 	var w_id = normalize_id(_scenario_payload.get("world", "default"))
 	PlayerProfile.record_cognitive_event("recall", _scenario_id, u_id, w_id, true, rt_ms)

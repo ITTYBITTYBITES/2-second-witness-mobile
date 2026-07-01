@@ -42,7 +42,7 @@ func _on_answer(is_correct: bool):
 	if is_correct:
 		print("[PATTERN CONTINUATION] Success. Ejecting!")
 		if AudioManager: AudioManager.play_sfx("ui_click")
-		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 		sequence_label.text = "⬟  ⬟  ⬢  ⬟  ⬟"
 		
 		btn_a.disabled = true

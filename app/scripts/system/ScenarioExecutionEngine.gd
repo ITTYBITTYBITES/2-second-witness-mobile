@@ -2,7 +2,7 @@ extends Node
 class_name ScenarioExecutionEngineNode
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness 
 # SCENARIO EXECUTION ENGINE (AUTHORITATIVE RUNTIME GOVERNANCE)
 # ---------------------------------------------------------
 

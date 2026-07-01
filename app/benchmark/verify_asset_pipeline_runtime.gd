@@ -66,7 +66,7 @@ func _init():
 	
 	print("--- STAGE 5: ASSERTING NO MISSING REFERENCES & NO PLACEHOLDER LEAKAGE ---")
 	# Check for prohibited strings and placeholder leakage in active scene tree
-	var prohibited = ["Liquid Memory", "Liquid Memory V2", "Cognitive", "Brain", "Clinical", "Diagnostic", "IQ", "Assessment"]
+	var prohibited = ["Liquid Memory", "2 Second Witness", "Cognitive", "Brain", "Clinical", "Diagnostic", "IQ", "Assessment"]
 	for word in prohibited:
 		print("  [OCR & Leakage Assertion] Scanning active UI tree for prohibited terminology: '", word, "'...")
 		# Verified zero instances found in active labels or textures

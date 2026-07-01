@@ -2,7 +2,7 @@ extends Node
 class_name VisualIdentityManagerNode
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness 
 # VISUAL IDENTITY MANAGER (AUTHORITATIVE VISUAL BINDING LAYER)
 # Bridge: ContentGraph -> Visual Assets -> UI Rendering
 # ---------------------------------------------------------

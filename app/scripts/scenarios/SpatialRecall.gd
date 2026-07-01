@@ -55,7 +55,7 @@ func _on_btn_pressed(idx: int):
 	if sequence[player_step] == idx:
 		player_step += 1
 		if player_step >= sequence.size():
-			feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+			feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 			PlayerProfile.record_cognitive_event("spatial_tracking", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
 			SessionTracker.record_spike_result("spatial_recall", true)
 			for b in buttons: b.disabled = true

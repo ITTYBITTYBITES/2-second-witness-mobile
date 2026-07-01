@@ -1,7 +1,7 @@
 extends SceneTree
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness 
 # PHASE 9 RUNTIME VALIDATION, MEMORY STABILITY & ANDROID BEHAVIOR HARNESS
 # ---------------------------------------------------------
 

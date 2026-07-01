@@ -1,7 +1,7 @@
 extends Node
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness 
 # THE NAVIGATION STATE MACHINE & IMMUTABLE TRANSITION CONTEXT
 # ---------------------------------------------------------
 

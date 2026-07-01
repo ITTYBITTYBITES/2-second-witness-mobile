@@ -2,7 +2,7 @@ extends RefCounted
 class_name UniverseRegistry
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness (Liquid Memory V2)
+# PRODUCT: 2 Second Witness 
 # ASSET REGISTRY LAYER (STABLE LOGICAL KEY TO PHYSICAL PATH MAP)
 # ---------------------------------------------------------
 

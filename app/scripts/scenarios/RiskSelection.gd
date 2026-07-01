@@ -40,7 +40,7 @@ func _on_answer(chose_risk: bool):
 		_eject()
 	else:
 		if risk_succeeds:
-			feedback_label.text = "RISK REWARDED! SLINGSHOT INITIATED!"
+			feedback_label.text = "RISK REWARDED! OBSERVATION VERIFIED!"
 			PlayerProfile.record_cognitive_event("decision_confidence", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
 			SessionTracker.record_spike_result("risk_selection_risk", true)
 			_eject()

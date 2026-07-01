@@ -48,7 +48,7 @@ func _on_answer(chose_match: bool):
 	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if chose_match == is_signal:
 		if AudioManager: AudioManager.play_sfx("ui_click")
-		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", true, rt_ms)
 		SessionTracker.record_spike_result("signal_vs_noise", true)
 		btn_match.disabled = true; btn_ignore.disabled = true

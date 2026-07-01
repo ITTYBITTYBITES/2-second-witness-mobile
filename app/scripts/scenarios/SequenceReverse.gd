@@ -60,7 +60,7 @@ func _on_answer(idx: int):
 	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	if idx == correct_idx:
 		if AudioManager: AudioManager.play_sfx("ui_click")
-		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 		PlayerProfile.record_cognitive_event("recall", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
 		SessionTracker.record_spike_result("sequence_reverse", true)
 		btn_1.disabled = true; btn_2.disabled = true; btn_3.disabled = true

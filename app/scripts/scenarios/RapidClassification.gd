@@ -59,7 +59,7 @@ func _on_answer(chose_organic: bool):
 	if chose_organic == target_is_organic:
 		print("[RAPID CLASSIFICATION] Success. Ejecting!")
 		if AudioManager: AudioManager.play_sfx("ui_click")
-		feedback_label.text = "SUCCESS! SLINGSHOT INITIATED!"
+		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 		btn_organic.disabled = true
 		btn_mechanical.disabled = true
 		
