@@ -42,7 +42,7 @@ func _ready():
 		var btn_version = footer.get_node_or_null("BtnVersion")
 		var btn_restore = footer.get_node_or_null("BtnRestore")
 		if btn_privacy: btn_privacy.pressed.connect(func(): print("[PRIVACY] 2 Second Witness gathers observations strictly on device. Zero external tracking."))
-		if btn_version: btn_version.pressed.connect(func(): print("[VERSION] Version 1.0.0 (Godot 4.6.3 Engine Governing Substrate)"))
+		if btn_version: btn_version.pressed.connect(func(): print("[VERSION] Version 1.0.0-RC1 (Godot 4.6.3 Engine Governing Substrate)"))
 		if btn_restore: btn_restore.pressed.connect(func():
 			print("[RESTORE PURCHASES] Querying event-sourced transaction ledger...")
 			var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")

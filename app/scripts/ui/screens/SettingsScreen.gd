@@ -84,8 +84,8 @@ func _ready():
 							child.text = "Exported to user://"
 							print("[SETTINGS] Profile data successfully exported to user://exported_profile_data.json")
 				elif txt.begins_with("About"):
-					print("[SETTINGS ABOUT] 2 Second Witness v2.0.0 — 2 Second Witness Engine.")
-					child.text = "v2.0.0 Verified"
+					print("[SETTINGS ABOUT] 2 Second Witness v1.0.0-RC1 — 2 Second Witness Engine.")
+					child.text = "v1.0.0-RC1 Verified"
 				elif txt.begins_with("Restore Purchases"):
 					var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 					if profile and profile.has_method("evaluate_entitlements"):
