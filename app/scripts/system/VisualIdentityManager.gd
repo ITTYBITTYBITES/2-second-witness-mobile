@@ -104,9 +104,15 @@ func _ready():
 
 func get_universe_identity(universe_id: String) -> Dictionary:
 	var u_id = str(universe_id).to_lower()
-	if not universe_identities.has(u_id):
-		u_id = "science_lab"
-	return universe_identities[u_id].duplicate(true)
+	if universe_identities.has(u_id):
+		return universe_identities[u_id].duplicate(true)
+	var base = universe_identities["science_lab"].duplicate(true)
+	base["display_name"] = u_id.capitalize().replace("_", " ")
+	if FileAccess.file_exists("res://assets/textures/ui/v1/banner_" + u_id + ".png"):
+		base["banner"] = "res://assets/textures/ui/v1/banner_" + u_id + ".png"
+	if FileAccess.file_exists("res://assets/textures/env/bg_" + u_id + ".png"):
+		base["background"] = "res://assets/textures/env/bg_" + u_id + ".png"
+	return base
 
 func get_world_identity(universe_id: String, world_id: String) -> Dictionary:
 	var base_id = get_universe_identity(universe_id)
