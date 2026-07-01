@@ -7,6 +7,7 @@ signal return_requested
 
 func _ready():
 	print("[SETTINGS] Settings modal active. Applying non-game platform preferences.")
+	StyleInjector.apply_menu_style(self)
 	
 	var nav = get_node_or_null("/root/NavigationRouter")
 	var uni = nav.active_universe_selection if nav else "history"

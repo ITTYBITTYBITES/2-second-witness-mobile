@@ -13,6 +13,7 @@ var btn_leave
 
 func _ready():
 	print("PROFILE SCREEN READY")
+	StyleInjector.apply_menu_style(self)
 	print("Visible: ", visible)
 	print("Size: ", $PanelContainer.size)
 	print("Children: ", get_child_count())

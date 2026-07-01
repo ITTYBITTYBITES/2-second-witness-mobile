@@ -83,3 +83,28 @@ static func _apply_entry_motion(ui: CanvasLayer, motion: int):
 				tween.tween_property(child, "scale", original_scale, duration).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 			else:
 				tween.tween_property(child, "scale", original_scale, duration).set_trans(Tween.TRANS_LINEAR)
+
+static func apply_menu_style(node: Node, primary_color: Color = Color(0.298, 0.788, 0.941), bg_color: Color = Color(0.04, 0.07, 0.12, 0.95)):
+	for child in node.get_children():
+		if child is Button:
+			var style = StyleBoxFlat.new()
+			style.bg_color = bg_color
+			style.border_width_bottom = 4
+			style.border_color = primary_color
+			style.corner_radius_top_left = 12
+			style.corner_radius_top_right = 12
+			style.corner_radius_bottom_left = 12
+			style.corner_radius_bottom_right = 12
+			
+			var hover = style.duplicate()
+			hover.bg_color = bg_color.lightened(0.15)
+			
+			var pressed = style.duplicate()
+			pressed.bg_color = primary_color.darkened(0.5)
+			
+			child.add_theme_stylebox_override("normal", style)
+			child.add_theme_stylebox_override("hover", hover)
+			child.add_theme_stylebox_override("pressed", pressed)
+			child.add_theme_color_override("font_color", primary_color.lightened(0.6))
+		elif child is Control:
+			apply_menu_style(child, primary_color, bg_color)

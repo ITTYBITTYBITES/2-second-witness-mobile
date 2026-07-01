@@ -4,6 +4,7 @@ extends CanvasLayer
 @onready var btn_accept = $ColorRect/CenterContainer/VBoxContainer/BtnAccept
 
 func _ready():
+	StyleInjector.apply_menu_style(self)
 	# Start invisible
 	$ColorRect.modulate.a = 0
 	btn_accept.disabled = true

@@ -7,6 +7,7 @@ signal settings_requested
 
 func _ready():
 	print("BUTTON READY: BtnPlay")
+	StyleInjector.apply_menu_style(self)
 	
 	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
 	if kernel: kernel.register_panel($Panel, "main_menu", kernel.UIState.MODAL_ACTIVE)

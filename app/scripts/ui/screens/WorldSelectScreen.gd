@@ -79,6 +79,8 @@ func _apply_universe_manifest(universe_id: String):
 func _populate_grid():
 	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 	var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
+	var renderer = UniverseRenderer.new()
+	var def = renderer.universe_definitions.get(active_universe_id, renderer.universe_definitions["science_lab"])
 	
 	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
 	if worlds.is_empty() or active_universe_id == "history" or active_universe_id == "frontier":
@@ -111,9 +113,9 @@ func _populate_grid():
 		btn.add_theme_font_size_override("font_size", 18)
 		
 		var style = StyleBoxFlat.new()
-		style.bg_color = Color(0.05, 0.1, 0.15, 0.9)
+		style.bg_color = def["palette"]["bg"]
 		style.border_width_bottom = 4
-		style.border_color = Color(0.298, 0.788, 0.941)
+		style.border_color = def["palette"]["primary"]
 		style.corner_radius_top_left = 12
 		style.corner_radius_top_right = 12
 		style.corner_radius_bottom_left = 12
@@ -122,7 +124,7 @@ func _populate_grid():
 		btn.add_theme_stylebox_override("normal", style)
 		btn.add_theme_stylebox_override("hover", style.duplicate())
 		btn.add_theme_stylebox_override("pressed", style.duplicate())
-		btn.add_theme_color_override("font_color", Color(0.85, 0.95, 1.0))
+		btn.add_theme_color_override("font_color", def["palette"]["primary"].lightened(0.6))
 		
 		btn.pressed.connect(func():
 			print("WORLD CARD CLICKED:", w_id)

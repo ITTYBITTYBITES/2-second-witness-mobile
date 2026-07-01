@@ -66,6 +66,7 @@ func _apply_universe_manifest(universe_id: String):
 			file.close()
 
 func _ready():
+	StyleInjector.apply_menu_style(self)
 	if btn_buy: btn_buy.pressed.connect(_on_buy)
 	if btn_cancel:
 		btn_cancel.text = "CONTINUE FREE"
