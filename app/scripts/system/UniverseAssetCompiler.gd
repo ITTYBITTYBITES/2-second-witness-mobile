@@ -56,7 +56,7 @@ func verify_and_provision_universe(universe_id: String, universe_registry_instan
 	m_file.close()
 	
 	var manifest = m_json.get_data()
-	var u_reg = universe_registry_instance if universe_registry_instance else load("res://scripts/ui/UniverseRegistry.gd").new()
+	var u_reg = universe_registry_instance if universe_registry_instance else UniverseRegistry.new()
 	
 	var all_keys = []
 	if manifest.has("banners"): all_keys.append_array(manifest["banners"])

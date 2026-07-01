@@ -178,6 +178,8 @@ Every one of the 12 flagship observation mechanics has been empirically verified
     
     with open(os.path.join(root_dir, 'PRODUCTION_READINESS_REPORT.md'), 'w', encoding='utf-8') as f:
         f.write(md_content)
+    with open(os.path.join(app_dir, 'PRODUCTION_READINESS_REPORT.md'), 'w', encoding='utf-8') as f:
+        f.write(md_content)
         
     print("========================================")
     print("[PRODUCTION READINESS AUDITOR] Production Crawl Complete.")

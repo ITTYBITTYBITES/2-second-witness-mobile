@@ -1,0 +1,66 @@
+name: Android CI / Content Validation
+
+on:
+  push:
+    branches: [ "main", "release" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate-content:
+    name: JSON Schema & Asset Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Validate Scenario JSON Schema
+        run: |
+          echo "Scanning data/content/base_bundle for valid JSON and required keys..."
+          # Pseudo-script checking schema: 'id', 'universe', 'type'
+          find data/content/base_bundle -type f -name "*.json" | while read -r file; do
+            jq -e '. | has("id") and has("universe") and has("type")' "$file" > /dev/null
+            if [ $? -ne 0 ]; then
+              echo "Validation Failed: $file is missing required schema keys or is malformed."
+              exit 1
+            fi
+          done
+          echo "All Scenario JSON files validated successfully."
+
+      - name: Check Theme Integrity
+        run: |
+          echo "Validating Theme JSON strict formatting..."
+          find data/themes -type f -name "*.json" | while read -r file; do
+            jq -e '. | has("id") and has("visual") and has("tunnel")' "$file" > /dev/null
+            if [ $? -ne 0 ]; then
+              echo "Validation Failed: $file is missing critical theme contracts."
+              exit 1
+            fi
+          done
+          echo "All Theme configurations validated successfully."
+
+  build-android:
+    name: Build Android APK
+    needs: validate-content
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Godot Engine (4.3)
+        uses: chickensoft-games/setup-godot@v1
+        with:
+          version: 4.3.0
+          use-dotnet: false
+
+      - name: Export Android Debug
+        run: |
+          mkdir -p build/android
+          godot --headless --export-debug "Android" build/android/2SecondWitness_Debug.apk
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: 2SecondWitness-Android
+          path: build/android/2SecondWitness_Debug.apk

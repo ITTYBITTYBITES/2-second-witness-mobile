@@ -47,7 +47,6 @@ StoreManager="*res://scripts/system/StoreManager.gd"
 GoodwillManager="*res://scripts/system/GoodwillManager.gd"
 AdManager="*res://scripts/system/AdManager.gd"
 GitHubSyncManager="*res://scripts/content/GitHubSyncManager.gd"
-ContentSnapshotManager="*res://scripts/system/deployment/ContentSnapshotManager.gd"
 
 [display]
 window/stretch/mode="canvas_items"

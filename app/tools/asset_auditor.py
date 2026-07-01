@@ -101,11 +101,17 @@ def crawl_assets():
 
     with open(os.path.join(root_dir, 'missing_assets.json'), 'w', encoding='utf-8') as f:
         json.dump(missing_assets, f, indent=4)
+    with open(os.path.join(app_dir, 'missing_assets.json'), 'w', encoding='utf-8') as f:
+        json.dump(missing_assets, f, indent=4)
         
     with open(os.path.join(root_dir, 'unused_assets.json'), 'w', encoding='utf-8') as f:
         json.dump(list(unused_assets), f, indent=4)
+    with open(os.path.join(app_dir, 'unused_assets.json'), 'w', encoding='utf-8') as f:
+        json.dump(list(unused_assets), f, indent=4)
         
     with open(os.path.join(root_dir, 'asset_creation_queue.json'), 'w', encoding='utf-8') as f:
+        json.dump(ai_queue, f, indent=4)
+    with open(os.path.join(app_dir, 'asset_creation_queue.json'), 'w', encoding='utf-8') as f:
         json.dump(ai_queue, f, indent=4)
 
     md_content = f"""# 2 SECOND WITNESS — ASSET HEALTH REPORT
@@ -171,6 +177,8 @@ The following physical files exist in the repository but are never referenced by
     md_content += "\n**Definitive Audit Conclusion:** The Asset Auditor successfully crawled the repository, establishing a verifiable, continuous inventory of all media files. All missing paths are fully isolated into the automated asset queue.\n"
     
     with open(os.path.join(root_dir, 'ASSET_AUDIT.md'), 'w', encoding='utf-8') as f:
+        f.write(md_content)
+    with open(os.path.join(app_dir, 'ASSET_AUDIT.md'), 'w', encoding='utf-8') as f:
         f.write(md_content)
         
     print("========================================")

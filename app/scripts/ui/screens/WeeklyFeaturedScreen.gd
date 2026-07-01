@@ -60,12 +60,7 @@ func _apply_universe_manifest(universe_id: String):
 			var json = JSON.new()
 			if json.parse(file.get_as_text()) == OK:
 				var _data = json.get_data()
-				var u_reg = get_tree().root.get_node_or_null("UniverseRegistry")
-				var local_reg: Object = null
-				if u_reg:
-					local_reg = u_reg
-				else:
-					local_reg = load("res://scripts/ui/UniverseRegistry.gd").new()
+				var local_reg = UniverseRegistry.new()
 				
 				var banner_key = "banner_" + universe_id
 				var banner_path = local_reg.get_physical_path(banner_key)
