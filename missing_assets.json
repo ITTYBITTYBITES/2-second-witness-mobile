@@ -1,6 +1,6 @@
 {
     "res://release.keystore": [
-        "export_presets.cfg:58",
+        "export_presets.cfg:57",
         "missing_assets.json:2"
     ],
     "res://.godot/imported/ambience_science_lab.wav-bb22600200ba6c5f5a6eb1ddddcc5b49.sample": [
@@ -318,6 +318,18 @@
         "missing_assets.json:317"
     ],
     "res://VISUAL_COMPLETENESS_PASS.md": [
+        "missing_assets.json:320",
         "benchmark/verify_visual_completeness_pass.gd:9"
+    ],
+    "res://data/content/test_temp_universe_omega.json": [
+        "benchmark/verify_phase_11_comprehensive_proof.gd:32"
+    ],
+    "res://assets/textures/ui/v1/banner_": [
+        "scripts/system/VisualIdentityManager.gd:111",
+        "scripts/system/VisualIdentityManager.gd:112"
+    ],
+    "res://assets/textures/env/bg_": [
+        "scripts/system/VisualIdentityManager.gd:113",
+        "scripts/system/VisualIdentityManager.gd:114"
     ]
 }

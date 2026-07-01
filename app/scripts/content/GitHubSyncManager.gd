@@ -7,7 +7,7 @@ extends Node
 
 signal sync_completed(status: String)
 
-const REPO_MANIFEST_URL = "https://raw.githubusercontent.com/ITTYBITTYBITES/2-second-witness-mobile/master/live_content/manifest.json"
+const REPO_MANIFEST_URL = "https://raw.githubusercontent.com/ITTYBITTYBITES/2-second-witness-mobile/main/live_content/manifest.json"
 const USER_CACHE_DIR = "user://live_content/"
 const LOCAL_MANIFEST_PATH = "user://live_content/manifest.json"
 
