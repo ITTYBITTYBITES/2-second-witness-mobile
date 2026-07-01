@@ -80,9 +80,11 @@ func _on_exit_pressed():
 func _start_scan_line_animation():
 	if not is_instance_valid(scan_line): return
 	var viewport_height = get_viewport().get_visible_rect().size.y
-	scan_line.position.y = 0
+	if viewport_height <= 0: viewport_height = 648.0
+	scan_line.position.y = 0.0
 	var tween = get_tree().create_tween().set_loops()
-	tween.tween_property(scan_line, "position:y", viewport_height, 2.0).set_trans(Tween.TRANS_SINE).from(0.0)
+	tween.tween_property(scan_line, "position:y", viewport_height, 2.0).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(scan_line, "position:y", 0.0, 0.01) # Explicit non-zero duration reset step
 
 func complete_boot():
 	boot_completed.emit()
