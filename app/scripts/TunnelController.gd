@@ -17,12 +17,18 @@ func _ready():
 
 func _initialize_independent_tunnel_animation():
 	print("[TUNNEL CORE] Initializing independent global tunnel animation loop.")
+	if not is_inside_tree(): return
 	if _base_animation_tween and _base_animation_tween.is_valid():
 		_base_animation_tween.kill()
-	_base_animation_tween = create_tween().set_loops()
+	_base_animation_tween = create_tween()
 	geometry_pool.position.z = 0.0
 	_base_animation_tween.tween_property(geometry_pool, "position:z", -2.0, 4.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	_base_animation_tween.tween_property(geometry_pool, "position:z", 0.0, 4.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	_base_animation_tween.tween_callback(_on_tunnel_loop_finished)
+
+func _on_tunnel_loop_finished():
+	if not is_inside_tree(): return
+	_initialize_independent_tunnel_animation()
 
 func _process(delta):
 	_persistent_flow_time += delta
