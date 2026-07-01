@@ -60,7 +60,8 @@ func _initialize_weekly_rotation():
 			featured_universes.append(all_universes[i])
 	
 	active_sampling_pool.clear()
-	var available_scenarios = scenario_manifest.keys()
+	var reg = Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
+	var available_scenarios = reg.get_all_scenario_ids() if (reg and reg.has_method("get_all_scenario_ids") and not reg.get_all_scenario_ids().is_empty()) else scenario_manifest.keys().duplicate()
 	var rng = RandomNumberGenerator.new()
 	rng.seed = current_week_seed
 	for i in range(available_scenarios.size() - 1, 0, -1):
@@ -71,7 +72,8 @@ func _initialize_weekly_rotation():
 	
 	var fulfilled_quotas = {"memory": 0, "pattern": 0, "classification": 0, "decision": 0}
 	for s in available_scenarios:
-		var t_trait = scenario_manifest[s]
+		var t_trait = scenario_manifest.get(s, "pattern")
+		if not target_quotas.has(t_trait): t_trait = "pattern"
 		if fulfilled_quotas[t_trait] < target_quotas[t_trait]:
 			active_sampling_pool.append(s)
 			fulfilled_quotas[t_trait] += 1

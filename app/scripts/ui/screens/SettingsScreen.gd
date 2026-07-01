@@ -41,7 +41,9 @@ func _ready():
 				var txt = child.text
 				print("[SETTINGS ACTION] Interacted with: ", txt)
 				if txt.begins_with("Theme:"):
-					var themes = ["science_lab", "history", "tech_ops", "life_sciences", "creative_arts", "society_mind", "frontier"]
+					var rot_mgr = WeeklyRotationManager if WeeklyRotationManager else get_tree().root.get_node_or_null("WeeklyRotationManager")
+					var reg = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+					var themes = rot_mgr.get_full_universe_library() if (rot_mgr and rot_mgr.has_method("get_full_universe_library")) else (reg.get_all_universes() if (reg and reg.has_method("get_all_universes") and not reg.get_all_universes().is_empty()) else ["science_lab", "history", "tech_ops", "life_sciences", "creative_arts", "society_mind", "frontier"])
 					var cur = ThemeManager.active_theme_id if ThemeManager and ThemeManager.active_theme_id != "" else "science_lab"
 					var idx = (themes.find(cur) + 1) % themes.size()
 					var next_theme = themes[idx]

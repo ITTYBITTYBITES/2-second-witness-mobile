@@ -111,3 +111,13 @@ func get_scenario_count(universe_id: Variant = "all") -> int:
 			for t_key in runtime_index[u_key][w_key].keys():
 				count += runtime_index[u_key][w_key][t_key].size()
 	return count
+
+func get_all_scenario_ids() -> Array:
+	var ids = []
+	for u in runtime_index.keys():
+		for w in runtime_index[u].keys():
+			for t in runtime_index[u][w].keys():
+				for item in runtime_index[u][w][t]:
+					var sid = item.get("id", "")
+					if sid != "" and not ids.has(sid): ids.append(sid)
+	return ids

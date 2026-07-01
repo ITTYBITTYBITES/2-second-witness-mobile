@@ -37,6 +37,14 @@ func get_current_seed() -> int:
 	_check_cycle_boundary()
 	return current_week_seed
 
+func get_full_universe_library() -> Array:
+	var reg = Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
+	if reg and reg.has_method("get_all_universes"):
+		var u_list = reg.get_all_universes()
+		if not u_list.is_empty():
+			return u_list
+	return FULL_UNIVERSE_LIBRARY.duplicate()
+
 func refresh_weekly_rotation(force_refresh: bool = false):
 	var week_id = _compute_current_week_id()
 	if week_id == _last_checked_week_id and not force_refresh and not active_universes.is_empty():
@@ -47,7 +55,7 @@ func refresh_weekly_rotation(force_refresh: bool = false):
 	
 	print("[WEEKLY ROTATION] Cycle boundary reached or initialized. Computing active subset for Week ID: ", week_id, " (Seed: ", current_week_seed, ")")
 	
-	var pool = FULL_UNIVERSE_LIBRARY.duplicate()
+	var pool = get_full_universe_library()
 	
 	# Deterministic selection without mutating global RNG
 	var rng = RandomNumberGenerator.new()

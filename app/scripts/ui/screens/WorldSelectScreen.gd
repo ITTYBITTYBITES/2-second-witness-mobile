@@ -56,15 +56,18 @@ func _populate_grid():
 	var def = vim.get_universe_identity(active_universe_id) if vim else {"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")}}
 	
 	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
-	if worlds.is_empty() or active_universe_id == "history" or active_universe_id == "frontier":
-		if active_universe_id == "history": worlds = ["ancient_egypt", "ancient_rome", "medieval_europe", "renaissance", "industrial_revolution"]
-		elif active_universe_id == "science_lab": worlds = ["cognitive_bias", "neural_mapping", "ai", "quantum_mechanics", "optics"]
-		elif active_universe_id == "life_sciences": worlds = ["genetics", "cellular_biology", "virology", "botany", "neuroscience"]
-		elif active_universe_id == "tech_ops": worlds = ["cyber_matrix", "subliminal_code", "protocols", "encryption", "firewalls"]
-		elif active_universe_id == "creative_arts": worlds = ["color_theory", "composition", "harmony", "sculpture", "architecture"]
-		elif active_universe_id == "society_mind": worlds = ["behavioral_economics", "sociology", "psychology", "linguistics", "group_dynamics"]
-		elif active_universe_id == "frontier": worlds = ["arctic", "aviation", "disaster", "wilderness", "space_exploration", "deep_sea", "mountain_summit", "desert_crossing", "subterranean", "jungle_canopy"]
-		else: worlds = ["foundations", "advanced_concepts", "synthesis"]
+	var fallback_worlds = []
+	match active_universe_id:
+		"history": fallback_worlds = ["ancient_egypt", "ancient_rome", "medieval_europe", "renaissance", "industrial_revolution"]
+		"science_lab": fallback_worlds = ["cognitive_bias", "neural_mapping", "ai", "quantum_mechanics", "optics"]
+		"life_sciences": fallback_worlds = ["genetics", "cellular_biology", "virology", "botany", "neuroscience"]
+		"tech_ops": fallback_worlds = ["cyber_matrix", "subliminal_code", "protocols", "encryption", "firewalls"]
+		"creative_arts": fallback_worlds = ["color_theory", "composition", "harmony", "sculpture", "architecture"]
+		"society_mind": fallback_worlds = ["behavioral_economics", "sociology", "psychology", "linguistics", "group_dynamics"]
+		"frontier": fallback_worlds = ["arctic", "aviation", "disaster", "wilderness", "space_exploration", "deep_sea", "mountain_summit", "desert_crossing", "subterranean", "jungle_canopy"]
+		_: fallback_worlds = ["foundations", "advanced_concepts", "synthesis"]
+	for fw in fallback_worlds:
+		if not worlds.has(fw): worlds.append(fw)
 		
 	print("Universe:", active_universe_id)
 	print("Loaded ", worlds.size(), " worlds")
