@@ -114,7 +114,11 @@ func _on_universe_clicked(universe_id: String, can_play: bool):
 	print("CARD CLICKED:", universe_id)
 	if AudioManager: AudioManager.play_sfx("ui_click")
 	if can_play:
-		play_universe_requested.emit(universe_id)
+		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
+		if orch and orch.has_method("request_universe_selection"):
+			orch.request_universe_selection(universe_id)
+		else:
+			play_universe_requested.emit(universe_id)
 	else:
 		_show_monetization_gate(universe_id)
 

@@ -2,12 +2,22 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# EXPERIENCE ORCHESTRATOR (CENTRALIZED DECISION SERVICE)
+# EXPERIENCE ORCHESTRATOR (AUTHORITATIVE RUNTIME GOVERNANCE)
+# Single Source of Truth for: ContentGraph + ExecutionEngine + VisualIdentity + Navigation
 # ---------------------------------------------------------
-# Responsibilities: Player -> Mode -> Universe -> World -> Knowledge Item -> Spike -> Difficulty -> Presentation
 
+signal experience_state_changed(active_state: Object)
 signal session_personalized(orchestration_vector: Dictionary)
 
+class ActiveExperienceState extends RefCounted:
+	var current_universe: String = "science_lab"
+	var current_world: String = ""
+	var current_scenario: String = ""
+	var visual_identity: Dictionary = {}
+	var execution_state: int = 0
+	var navigation_state: String = "LandingScreen"
+
+var active_state: ActiveExperienceState = ActiveExperienceState.new()
 var current_mode: String = "discovery"
 var active_universe: String = "history"
 var active_world: String = "ancient_egypt"
@@ -22,7 +32,109 @@ func normalize_id(id: Variant) -> String:
 
 func _ready():
 	if BootTracer: BootTracer.log_init("ExperienceOrchestrator")
-	print("[ORCHESTRATOR] Online. Enforcing centralized progression decision tree.")
+	print("[ORCHESTRATOR] Online. Single source of truth for runtime experience loop.")
+	_bind_subsystems()
+
+func _bind_subsystems():
+	var exec_engine = Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
+	if exec_engine:
+		if exec_engine.has_signal("scenario_registered") and not exec_engine.scenario_registered.is_connected(_on_scenario_registered):
+			exec_engine.scenario_registered.connect(_on_scenario_registered)
+		if exec_engine.has_signal("state_changed") and not exec_engine.state_changed.is_connected(_on_execution_state_changed):
+			exec_engine.state_changed.connect(_on_execution_state_changed)
+		if exec_engine.has_signal("scenario_resolved") and not exec_engine.scenario_resolved.is_connected(_on_scenario_resolved):
+			exec_engine.scenario_resolved.connect(_on_scenario_resolved)
+
+func get_authoritative_state() -> ActiveExperienceState:
+	return active_state
+
+func request_navigation_transition(target_screen: String, payload: Dictionary = {}):
+	print("[ORCHESTRATOR] Authoritative Navigation Transition -> ", target_screen)
+	_cleanup_active_gameplay_if_needed(target_screen)
+	active_state.navigation_state = target_screen
+	
+	var router = Engine.get_main_loop().root.get_node_or_null("NavigationRouter")
+	if router:
+		match target_screen:
+			"LandingScreen": if router.has_method("show_landing_screen"): router.show_landing_screen()
+			"WeeklyFeaturedScreen": if router.has_method("_on_discover_requested"): router._on_discover_requested()
+			"WorldSelectScreen": if router.has_method("_on_play_universe_requested"): router._on_play_universe_requested(payload.get("universe_id", active_state.current_universe))
+			"PlayerProfileScreen": if router.has_method("_on_profile_requested"): router._on_profile_requested()
+			
+	experience_state_changed.emit(active_state)
+
+func _cleanup_active_gameplay_if_needed(new_screen: String):
+	if new_screen != "GameplayHUD":
+		var exec_engine = Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
+		if exec_engine and exec_engine.get("active_scenario") != null:
+			var sc = exec_engine.active_scenario
+			if is_instance_valid(sc): sc.queue_free()
+			exec_engine.active_scenario = null
+			if exec_engine.has_method("_transition_to_state"):
+				exec_engine._transition_to_state(0) # IDLE
+
+func request_universe_selection(universe_id: String):
+	var u_id = normalize_id(universe_id)
+	print("[ORCHESTRATOR] Authoritative Universe Selection -> ", u_id)
+	active_state.current_universe = u_id
+	active_state.current_world = ""
+	active_state.current_scenario = ""
+	active_universe = u_id
+	active_world = ""
+	
+	_update_visual_identity(u_id, "")
+	request_navigation_transition("WorldSelectScreen", {"universe_id": u_id})
+
+func request_world_selection(universe_id: String, world_id: String):
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	print("[ORCHESTRATOR] Authoritative World Selection -> ", u_id, " / ", w_id)
+	active_state.current_universe = u_id
+	active_state.current_world = w_id
+	active_universe = u_id
+	active_world = w_id
+	
+	_update_visual_identity(u_id, w_id)
+	
+	var vector = determine_next_experience(Engine.get_main_loop().root.get_node_or_null("PlayerProfile"), u_id, w_id)
+	var s_id = vector.get("spike", "memory_cascade")
+	active_state.current_scenario = s_id
+	active_spike = s_id
+	
+	var router = Engine.get_main_loop().root.get_node_or_null("NavigationRouter")
+	if router and router.has_method("handle_navigation_event"):
+		router.handle_navigation_event({"type": "portal_selected", "destination": {"universe_id": u_id, "world_id": w_id, "scenario_id": s_id}})
+	
+	experience_state_changed.emit(active_state)
+
+func _update_visual_identity(u_id: String, w_id: String):
+	var vim = Engine.get_main_loop().root.get_node_or_null("VisualIdentityManager")
+	if vim and vim.has_method("resolve_and_apply_identity"):
+		active_state.visual_identity = vim.resolve_and_apply_identity(u_id, w_id)
+	experience_state_changed.emit(active_state)
+
+func _on_scenario_registered(s_id: String, u_id: String, w_id: String):
+	active_state.current_scenario = s_id
+	active_state.current_universe = u_id
+	active_state.current_world = w_id
+	active_spike = s_id
+	active_universe = u_id
+	active_world = w_id
+	active_state.navigation_state = "GameplayHUD"
+	_update_visual_identity(u_id, w_id)
+	print("[ORCHESTRATOR] Synchronized active experience state to scenario mounting: ", s_id)
+
+func _on_execution_state_changed(new_state: int, _state_name: String):
+	active_state.execution_state = new_state
+	experience_state_changed.emit(active_state)
+
+func _on_scenario_resolved(s_id: String, success: bool, rt_ms: float):
+	print("[ORCHESTRATOR] Scenario resolved under orchestrator governance: ", s_id, " (Success: ", success, ", RT: ", rt_ms, " ms)")
+
+func reset_session_state():
+	print("[ORCHESTRATOR] Full Session State Reset Initiated.")
+	active_state = ActiveExperienceState.new()
+	request_navigation_transition("LandingScreen")
 
 func determine_next_experience(player_profile: Node, target_universe: String = "", target_world: String = "") -> Dictionary:
 	if not is_instance_valid(player_profile):
@@ -91,6 +203,11 @@ func determine_next_experience(player_profile: Node, target_universe: String = "
 		"mission": current_mission,
 		"exposure_index": current_exposure_index
 	}
+	
+	active_state.current_universe = active_universe
+	active_state.current_world = active_world
+	active_state.current_scenario = active_spike
+	_update_visual_identity(active_universe, active_world)
 	
 	session_personalized.emit(vector)
 	return vector

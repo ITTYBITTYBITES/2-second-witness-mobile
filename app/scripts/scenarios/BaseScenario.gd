@@ -62,10 +62,6 @@ func _apply_specific_rules(_rules: Dictionary):
 func execute_render_pipeline():
 	if _scenario_payload.is_empty(): return 
 	
-	var vim = VisualIdentityManager if VisualIdentityManager else Engine.get_main_loop().root.get_node_or_null("VisualIdentityManager")
-	if vim and vim.has_method("resolve_and_apply_identity"):
-		vim.resolve_and_apply_identity(_scenario_payload.get("universe", "science_lab"), _scenario_payload.get("world", ""))
-	
 	var resolver = ThemeResolver.new()
 	var style = resolver.resolve_theme({"universe": _scenario_payload["universe"], "type": _scenario_payload["type"], "difficulty": _scenario_payload.get("difficulty", 1)})
 	StyleInjector.apply(style, self)

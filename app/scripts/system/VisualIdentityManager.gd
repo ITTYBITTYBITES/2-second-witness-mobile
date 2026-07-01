@@ -101,15 +101,6 @@ var active_identity_payload: Dictionary = {}
 func _ready():
 	if BootTracer: BootTracer.log_init("VisualIdentityManager")
 	print("[VISUAL IDENTITY] Online. Binding content graph to visual identity layer.")
-	_bind_to_runtime_engines()
-
-func _bind_to_runtime_engines():
-	var exec_engine = Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
-	if exec_engine and exec_engine.has_signal("scenario_registered"):
-		exec_engine.scenario_registered.connect(_on_scenario_registered)
-
-func _on_scenario_registered(_scenario_id: String, universe_id: String, world_id: String):
-	resolve_and_apply_identity(universe_id, world_id)
 
 func get_universe_identity(universe_id: String) -> Dictionary:
 	var u_id = str(universe_id).to_lower()

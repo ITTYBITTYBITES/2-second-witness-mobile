@@ -103,7 +103,11 @@ func _populate_grid():
 		btn.pressed.connect(func():
 			print("WORLD CARD CLICKED:", w_id)
 			if AudioManager: AudioManager.play_sfx("ui_click")
-			world_selected.emit(active_universe_id, w_id)
+			var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
+			if orch and orch.has_method("request_world_selection"):
+				orch.request_world_selection(active_universe_id, w_id)
+			else:
+				world_selected.emit(active_universe_id, w_id)
 		)
 		grid.add_child(btn)
 

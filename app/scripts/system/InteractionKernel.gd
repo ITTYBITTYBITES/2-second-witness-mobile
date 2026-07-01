@@ -216,8 +216,11 @@ func _execute_serialized_command(command: Dictionary):
 	match command_type:
 		"scene_shift":
 			var target = command.get("target", "")
-			if target == "LandingScreen": NavigationRouter.show_landing_screen()
-			elif target == "WeeklyFeaturedScreen": NavigationRouter._on_discover_requested()
+			var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator")
+			if orch and orch.has_method("request_navigation_transition"):
+				orch.request_navigation_transition(target)
+			elif target == "LandingScreen": if NavigationRouter: NavigationRouter.show_landing_screen()
+			elif target == "WeeklyFeaturedScreen": if NavigationRouter: NavigationRouter._on_discover_requested()
 		"toggle_utility":
 			var u_id = command.get("utility_id", ModalWindowManager.UtilityID.MIRROR if ModalWindowManager else 0)
 			var is_mirror = false
@@ -227,12 +230,24 @@ func _execute_serialized_command(command: Dictionary):
 				is_mirror = true
 				
 			if is_mirror:
-				if NavigationRouter: NavigationRouter._on_profile_requested()
+				var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator")
+				if orch and orch.has_method("request_navigation_transition"):
+					orch.request_navigation_transition("PlayerProfileScreen")
+				elif NavigationRouter: NavigationRouter._on_profile_requested()
 				elif ModalWindowManager: ModalWindowManager.toggle_utility(u_id)
 			else:
 				if ModalWindowManager: ModalWindowManager.toggle_utility(u_id)
-		"enter_stream": NavigationRouter._on_play_requested()
-		"play_universe": NavigationRouter._on_play_universe_requested(command.get("universe_id", "science_lab"))
+		"enter_stream":
+			var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator")
+			if orch and orch.has_method("request_navigation_transition"):
+				orch.request_navigation_transition("WeeklyFeaturedScreen")
+			elif NavigationRouter: NavigationRouter._on_play_requested()
+		"play_universe":
+			var u_id = command.get("universe_id", "science_lab")
+			var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator")
+			if orch and orch.has_method("request_universe_selection"):
+				orch.request_universe_selection(u_id)
+			elif NavigationRouter: NavigationRouter._on_play_universe_requested(u_id)
 		"ad_resolved": if AdManager: AdManager.ad_finished.emit()
 		"ad_rewarded": if AdManager: AdManager.reward_granted.emit()
 		"sync_completed": if GitHubSyncManager: GitHubSyncManager.sync_completed.emit(command.get("status", "success"))
