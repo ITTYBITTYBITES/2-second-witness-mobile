@@ -89,3 +89,25 @@ func get_all_worlds_in_universe(universe_id: Variant) -> Array:
 	if runtime_index.has(u_id):
 		return runtime_index[u_id].keys()
 	return []
+
+func get_all_universes() -> Array:
+	return runtime_index.keys()
+
+func get_all_scenarios_in_world(universe_id: Variant, world_id: Variant) -> Array:
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	var result = []
+	if runtime_index.has(u_id) and runtime_index[u_id].has(w_id):
+		for t_key in runtime_index[u_id][w_id].keys():
+			result.append_array(runtime_index[u_id][w_id][t_key])
+	return result
+
+func get_scenario_count(universe_id: Variant = "all") -> int:
+	var count = 0
+	for u_key in runtime_index.keys():
+		if universe_id != "all" and normalize_id(universe_id) != u_key:
+			continue
+		for w_key in runtime_index[u_key].keys():
+			for t_key in runtime_index[u_key][w_key].keys():
+				count += runtime_index[u_key][w_key][t_key].size()
+	return count

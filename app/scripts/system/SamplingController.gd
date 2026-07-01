@@ -39,12 +39,35 @@ func _ready():
 	_initialize_weekly_rotation()
 
 func _initialize_weekly_rotation():
-	current_week_seed = Time.get_date_dict_from_system()["week"] if Time.get_date_dict_from_system().has("week") else 42
-	seed(current_week_seed)
+	var rot_mgr = WeeklyRotationManager if WeeklyRotationManager else Engine.get_main_loop().root.get_node_or_null("WeeklyRotationManager")
+	if rot_mgr:
+		current_week_seed = rot_mgr.get_current_seed()
+		featured_universes = rot_mgr.get_active_universes().duplicate()
+	else:
+		var now_sec = int(Time.get_unix_time_from_system())
+		var week_id = int(now_sec / 604800)
+		current_week_seed = week_id * 77777 + 2026
+		var all_universes = ["science_lab", "history", "tech_ops", "life_sciences", "society_mind", "creative_arts", "frontier"]
+		var rng_fallback = RandomNumberGenerator.new()
+		rng_fallback.seed = current_week_seed
+		for i in range(all_universes.size() - 1, 0, -1):
+			var j = rng_fallback.randi() % (i + 1)
+			var tmp = all_universes[i]
+			all_universes[i] = all_universes[j]
+			all_universes[j] = tmp
+		featured_universes = []
+		for i in range(min(6, all_universes.size())):
+			featured_universes.append(all_universes[i])
 	
 	active_sampling_pool.clear()
 	var available_scenarios = scenario_manifest.keys()
-	available_scenarios.shuffle()
+	var rng = RandomNumberGenerator.new()
+	rng.seed = current_week_seed
+	for i in range(available_scenarios.size() - 1, 0, -1):
+		var j = rng.randi() % (i + 1)
+		var tmp = available_scenarios[i]
+		available_scenarios[i] = available_scenarios[j]
+		available_scenarios[j] = tmp
 	
 	var fulfilled_quotas = {"memory": 0, "pattern": 0, "classification": 0, "decision": 0}
 	for s in available_scenarios:
@@ -53,14 +76,8 @@ func _initialize_weekly_rotation():
 			active_sampling_pool.append(s)
 			fulfilled_quotas[t_trait] += 1
 			
-	# Pick 3 Random Featured Universes for the Free Rotation
-	var all_universes = ["science_lab", "tech_ops", "life_sciences", "society_mind", "creative_arts", "frontier"]
-	all_universes.shuffle()
-	featured_universes = [all_universes[0], all_universes[1], all_universes[2]]
-			
-	randomize()
 	print("[SAMPLING CONTROLLER] Weekly Scenario Pool Locked: ", active_sampling_pool)
-	print("[SAMPLING CONTROLLER] Weekly Featured Universes Locked: ", featured_universes)
+	print("[SAMPLING CONTROLLER] Weekly Active Universes Locked (Exactly 6): ", featured_universes)
 
 func get_next_scenario() -> String:
 	if active_sampling_pool.is_empty():
