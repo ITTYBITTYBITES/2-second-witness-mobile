@@ -220,7 +220,13 @@ func _execute_serialized_command(command: Dictionary):
 			elif target == "WeeklyFeaturedScreen": NavigationRouter._on_discover_requested()
 		"toggle_utility":
 			var u_id = command.get("utility_id", ModalWindowManager.UtilityID.MIRROR if ModalWindowManager else 0)
-			if str(u_id).to_lower() == "mirror" or (ModalWindowManager and u_id == ModalWindowManager.UtilityID.MIRROR):
+			var is_mirror = false
+			if typeof(u_id) == TYPE_STRING and str(u_id).to_lower() == "mirror":
+				is_mirror = true
+			elif ModalWindowManager and typeof(u_id) == TYPE_INT and u_id == ModalWindowManager.UtilityID.MIRROR:
+				is_mirror = true
+				
+			if is_mirror:
 				if NavigationRouter: NavigationRouter._on_profile_requested()
 				elif ModalWindowManager: ModalWindowManager.toggle_utility(u_id)
 			else:

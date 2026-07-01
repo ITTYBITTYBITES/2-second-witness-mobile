@@ -19,6 +19,8 @@ enum BootState {
 }
 
 signal state_changed(state: int, progress: float, message: String)
+
+# @warning_ignore("unused_signal")
 signal boot_failed(reason: String)
 
 var current_state: int = BootState.BOOT_START

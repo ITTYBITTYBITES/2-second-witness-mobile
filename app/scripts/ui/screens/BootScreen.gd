@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+# @warning_ignore("unused_signal")
 signal boot_completed
 
 @onready var status_label = $VBoxContainer/StatusLabel
