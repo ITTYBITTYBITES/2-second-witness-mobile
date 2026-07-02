@@ -66,7 +66,11 @@ func _transition_to_state(new_state: int):
 			_disable_scenario_inputs()
 			if is_instance_valid(active_scenario) and active_scenario.has_method("engine_present_hook"):
 				active_scenario.engine_present_hook()
-			_transition_to_state(LifecycleState.INPUT_WINDOW)
+			var diff = active_payload.get("difficulty", 1)
+			var invariance_ms = clampi(350 - (int(diff) * 40), 150, 350)
+			await get_tree().create_timer(invariance_ms / 1000.0).timeout
+			if is_instance_valid(active_scenario) and current_state == LifecycleState.PRESENT:
+				_transition_to_state(LifecycleState.INPUT_WINDOW)
 		LifecycleState.INPUT_WINDOW:
 			is_input_enabled = true
 			_enable_scenario_inputs()

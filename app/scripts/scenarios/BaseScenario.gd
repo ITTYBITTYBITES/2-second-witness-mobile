@@ -83,6 +83,7 @@ func execute_render_pipeline():
 	if Engine.get_main_loop().root.has_node("RuntimeMeasurementIsolation"):
 		Engine.get_main_loop().root.get_node("RuntimeMeasurementIsolation").anchor_stimulus_spawn()
 		
+	enforce_attentional_strata()
 	LayoutFreezer.unfreeze()
 	
 	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
@@ -297,3 +298,54 @@ func report_scenario_result(is_success: bool, rt_ms: float = -1.0):
 		else:
 			if has_method("engine_reset_hook"): engine_reset_hook()
 			if has_method("engine_generate_hook"): engine_generate_hook()
+
+func enforce_attentional_strata():
+	var pal = {}
+	var vim = Engine.get_main_loop().root.get_node_or_null("VisualIdentityManager") if Engine.get_main_loop() else null
+	if vim and vim.has_method("get_universe_identity"):
+		pal = vim.get_universe_identity(_scenario_payload.get("universe", "science_lab")).get("palette", {})
+	var primary_c = pal.get("primary", Color("#00D4FF"))
+	var accent_c = pal.get("accent", Color("#80E5FF"))
+	var dark_outline = Color(0.02, 0.04, 0.08, 0.95)
+	
+	_apply_stratum_recursive(self, primary_c, accent_c, dark_outline)
+
+func _apply_stratum_recursive(node: Node, primary_c: Color, accent_c: Color, dark_outline: Color):
+	for child in node.get_children():
+		if child.name == "CockpitHeader" or child.name == "CockpitFooter" or child.name == "VoidBG":
+			continue
+			
+		if child is Label or child is RichTextLabel:
+			var n = child.name.to_lower()
+			if "feedback" in n or "prompt" in n or "title" in n or "instruction" in n:
+				if child is Label:
+					child.add_theme_font_size_override("font_size", 24)
+					child.add_theme_color_override("font_color", primary_c)
+					child.add_theme_color_override("font_outline_color", dark_outline)
+					child.add_theme_constant_override("outline_size", 6)
+					child.add_theme_constant_override("shadow_offset_x", 0)
+					child.add_theme_constant_override("shadow_offset_y", 3)
+					child.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.8))
+				elif child is RichTextLabel:
+					child.add_theme_font_size_override("normal_font_size", 22)
+					child.add_theme_color_override("default_color", primary_c)
+					child.add_theme_color_override("font_outline_color", dark_outline)
+					child.add_theme_constant_override("outline_size", 5)
+			elif "target" in n or "equation" in n or "sequence" in n or "number" in n:
+				if child is Label:
+					child.add_theme_font_size_override("font_size", 36)
+					child.add_theme_color_override("font_color", Color(0.98, 0.98, 1.0))
+					child.add_theme_color_override("font_outline_color", dark_outline)
+					child.add_theme_constant_override("outline_size", 3)
+				elif child is RichTextLabel:
+					child.add_theme_font_size_override("normal_font_size", 32)
+					child.add_theme_color_override("default_color", Color(0.98, 0.98, 1.0))
+					child.add_theme_color_override("font_outline_color", dark_outline)
+					child.add_theme_constant_override("outline_size", 3)
+		elif child is Button:
+			child.add_theme_font_size_override("font_size", 18)
+			child.add_theme_color_override("font_color", Color(0.92, 0.96, 1.0))
+			child.add_theme_color_override("font_outline_color", dark_outline)
+			child.add_theme_constant_override("outline_size", 2)
+			
+		_apply_stratum_recursive(child, primary_c, accent_c, dark_outline)
