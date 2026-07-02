@@ -77,8 +77,18 @@ func get_manifest(universe_id: String, version: String = CURRENT_ASSET_VERSION) 
 		return {}
 	
 	if not manifests[version].has(universe_id):
-		push_error("[ASSET REGISTRY FATAL] Requested Universe ID does not exist in manifest: " + universe_id)
-		return manifests[version].get("science_lab", {})
+		var clean_name = universe_id.capitalize().replace("_", " ")
+		var fallback_bg = "res://assets/textures/env/v1/grid_noise_soft.png"
+		var u_manifest = {
+			"id": universe_id,
+			"display_name": clean_name,
+			"version": version,
+			"textures": {"bg_noise": fallback_bg},
+			"meshes": {"iris_accent": "res://assets/models/v1/iris_ring_base.obj"},
+			"audio": {"ambience_loop": "res://assets/audio/ambience/v1/ambient_stream_01.ogg"}
+		}
+		manifests[version][universe_id] = u_manifest
+		return u_manifest
 		
 	return manifests[version][universe_id]
 

@@ -1,0 +1,50 @@
+{
+  "id": "science_discovery",
+  "display_name": "Science & Discovery",
+  "visual": {
+    "background_type": "hybrid",
+    "primary_colors": [
+      "#050010",
+      "#FF007F",
+      "#00F0FF"
+    ],
+    "accent_colors": [
+      "#00F0FF",
+      "#FFFFFF"
+    ],
+    "fog_density": 0.8,
+    "lighting_model": "volumetric",
+    "particle_profile": "science_discovery_particles",
+    "motion_style": "linear"
+  },
+  "ui": {
+    "panel_style": "glass",
+    "blur_strength": 0.25,
+    "corner_radius": 16,
+    "font_theme": "instrument",
+    "button_style": "floating",
+    "border_color": "#FF007F"
+  },
+  "tunnel": {
+    "tunnel_palette": [
+      "#050010",
+      "#FF007F",
+      "#00F0FF"
+    ],
+    "flow_type": "linear",
+    "speed_multiplier": 1.4,
+    "density": 0.8,
+    "depth_layers": 6,
+    "interactive_elements": true
+  },
+  "audio": {
+    "ambient_track": "cosmic_radiation",
+    "stinger_style": "warp_zap",
+    "reverb_type": "hall"
+  },
+  "transition": {
+    "entry_effect": "slingshot_warp",
+    "exit_effect": "collapse",
+    "duration_ms": 900
+  }
+}

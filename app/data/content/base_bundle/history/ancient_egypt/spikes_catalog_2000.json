@@ -18,6 +18,24 @@
     }
   },
   {
+    "id": "rapid_classification",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Deity",
+      "wrong_answers": [
+        "Structure"
+      ],
+      "legacy_prompt": "OSIRIS",
+      "prompt": "OSIRIS"
+    },
+    "presentation": {
+      "title": "Divine Pantheon Classification",
+      "difficulty_tier": 1
+    }
+  },
+  {
     "id": "history_ancient_egypt_s01_q002",
     "universe": "history",
     "world": "ancient_egypt",
@@ -1978,24 +1996,23 @@
     }
   },
   {
-    "id": "history_ancient_egypt_s01_q100",
+    "id": "memory_cascade",
     "universe": "history",
     "world": "ancient_egypt",
-    "type": "rapid_classification",
+    "type": "memory_cascade",
     "rules": {
-      "correct_answer": "Verified Observation #100",
+      "correct_answer": "Eye of Horus",
       "wrong_answers": [
-        "Anomaly A#100",
-        "Distractor B#100",
-        "Error C#100",
-        "Noise D#100"
+        "Ankh",
+        "Scarab",
+        "Djed"
       ],
-      "legacy_prompt": "ANALYZE ANCIENT_EGYPT PROTOCOL SEQUENCE #100"
+      "legacy_prompt": "DEITY SYMBOL",
+      "prompt": "DEITY SYMBOL"
     },
     "presentation": {
-      "title": "Divine pantheon classification",
-      "scenario_id": "Divine Pantheon Classification",
-      "difficulty_tier": 5
+      "title": "Divine Symbol Memory",
+      "difficulty_tier": 1
     }
   },
   {
@@ -3979,24 +3996,28 @@
     }
   },
   {
-    "id": "history_ancient_egypt_s02_q100",
+    "id": "signal_vs_noise",
     "universe": "history",
     "world": "ancient_egypt",
     "type": "signal_vs_noise",
     "rules": {
-      "correct_answer": "Verified Observation #100",
+      "correct_answer": "𓂀",
       "wrong_answers": [
-        "Anomaly A#100",
-        "Distractor B#100",
-        "Error C#100",
-        "Noise D#100"
+        "𓋹",
+        "𓎛",
+        "𓆣",
+        "𓊽",
+        "𓅓",
+        "𓃻",
+        "𓀭",
+        "𓉐"
       ],
-      "legacy_prompt": "ANALYZE ANCIENT_EGYPT PROTOCOL SEQUENCE #100"
+      "legacy_prompt": "FIND EYE OF HORUS",
+      "prompt": "FIND EYE OF HORUS"
     },
     "presentation": {
-      "title": "Divine symbol memory",
-      "scenario_id": "Divine Symbol Memory",
-      "difficulty_tier": 5
+      "title": "Hieroglyphic Noise Search",
+      "difficulty_tier": 1
     }
   },
   {
@@ -5981,2027 +6002,6 @@
     "presentation": {
       "title": "Hieroglyphic noise search",
       "scenario_id": "Hieroglyphic Noise Search",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "history_ancient_egypt_s03_q100",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Verified Observation #100",
-      "wrong_answers": [
-        "Anomaly A#100",
-        "Distractor B#100",
-        "Error C#100",
-        "Noise D#100"
-      ],
-      "legacy_prompt": "ANALYZE ANCIENT_EGYPT PROTOCOL SEQUENCE #100"
-    },
-    "presentation": {
-      "title": "Hieroglyphic noise search",
-      "scenario_id": "Hieroglyphic Noise Search",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_001",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Osiris",
-      "wrong_answers": [
-        "Structure",
-        "City",
-        "Battle"
-      ],
-      "legacy_prompt": "OSIRIS",
-      "prompt": "OSIRIS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #1",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_002",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Deity",
-      "wrong_answers": [
-        "Pharaoh",
-        "Artifact",
-        "Structure"
-      ],
-      "legacy_prompt": "GODDESS OF MAGIC, MOTHERHOOD, AND HEALING",
-      "prompt": "GODDESS OF MAGIC, MOTHERHOOD, AND HEALING"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #2",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_003",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Horus",
-      "wrong_answers": [
-        "Battle",
-        "Artifact",
-        "City"
-      ],
-      "legacy_prompt": "HORUS",
-      "prompt": "HORUS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #3",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_004",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Anubis",
-      "wrong_answers": [
-        "Medical",
-        "Structure",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "JACKAL-HEADED GOD OF EMBALMING AND FUNERARY RITES",
-      "prompt": "JACKAL-HEADED GOD OF EMBALMING AND FUNERARY RITES"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #4",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_005",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Ra",
-      "wrong_answers": [
-        "City",
-        "Artifact",
-        "Battle"
-      ],
-      "legacy_prompt": "RA",
-      "prompt": "RA"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #5",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_006",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Thoth",
-      "wrong_answers": [
-        "Structure",
-        "Medical",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "THOTH",
-      "prompt": "THOTH"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #6",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_007",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Deity",
-      "wrong_answers": [
-        "Artifact",
-        "City",
-        "Structure"
-      ],
-      "legacy_prompt": "LIONESS GODDESS OF WAR, SOLAR FIRE, AND HEALING",
-      "prompt": "LIONESS GODDESS OF WAR, SOLAR FIRE, AND HEALING"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #7",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_008",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Hathor",
-      "wrong_answers": [
-        "Battle",
-        "Pharaoh",
-        "Medical"
-      ],
-      "legacy_prompt": "HATHOR",
-      "prompt": "HATHOR"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #8",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_009",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Ptah",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Structure"
-      ],
-      "legacy_prompt": "PATRON GOD OF CRAFTSMEN AND ARCHITECTS",
-      "prompt": "PATRON GOD OF CRAFTSMEN AND ARCHITECTS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #9",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_010",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Sobek",
-      "wrong_answers": [
-        "Artifact",
-        "Pharaoh",
-        "Medical"
-      ],
-      "legacy_prompt": "SOBEK",
-      "prompt": "SOBEK"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #10",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_011",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Hatshepsut",
-      "wrong_answers": [
-        "Deity",
-        "City",
-        "Artifact"
-      ],
-      "legacy_prompt": "HATSHEPSUT",
-      "prompt": "HATSHEPSUT"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #11",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_012",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Pharaoh",
-      "wrong_answers": [
-        "Structure",
-        "Deity",
-        "Medical"
-      ],
-      "legacy_prompt": "FOUGHT BATTLE OF KADESH; BUILT ABU SIMBEL",
-      "prompt": "FOUGHT BATTLE OF KADESH; BUILT ABU SIMBEL"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #12",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_013",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Akhenaten",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Structure"
-      ],
-      "legacy_prompt": "AKHENATEN",
-      "prompt": "AKHENATEN"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #13",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_014",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Tutankhamun",
-      "wrong_answers": [
-        "Deity",
-        "Artifact",
-        "Medical"
-      ],
-      "legacy_prompt": "RESTORED TRADITIONAL PANTHEON; TOMB KV62 INTACT",
-      "prompt": "RESTORED TRADITIONAL PANTHEON; TOMB KV62 INTACT"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #14",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_015",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Thutmose III",
-      "wrong_answers": [
-        "Structure",
-        "City",
-        "Artifact"
-      ],
-      "legacy_prompt": "THUTMOSE III",
-      "prompt": "THUTMOSE III"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #15",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_016",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Narmer",
-      "wrong_answers": [
-        "Deity",
-        "Medical",
-        "Battle"
-      ],
-      "legacy_prompt": "NARMER",
-      "prompt": "NARMER"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #16",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_017",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Pharaoh",
-      "wrong_answers": [
-        "Artifact",
-        "City",
-        "Deity"
-      ],
-      "legacy_prompt": "COMMISSIONED THE GREAT PYRAMID OF GIZA",
-      "prompt": "COMMISSIONED THE GREAT PYRAMID OF GIZA"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #17",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_018",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Amenhotep III",
-      "wrong_answers": [
-        "Battle",
-        "Structure",
-        "Medical"
-      ],
-      "legacy_prompt": "AMENHOTEP III",
-      "prompt": "AMENHOTEP III"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #18",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_019",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Cleopatra VII",
-      "wrong_answers": [
-        "Deity",
-        "City",
-        "Artifact"
-      ],
-      "legacy_prompt": "FINAL ACTIVE RULER OF THE PTOLEMAIC KINGDOM",
-      "prompt": "FINAL ACTIVE RULER OF THE PTOLEMAIC KINGDOM"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #19",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_020",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Sneferu",
-      "wrong_answers": [
-        "Battle",
-        "Deity",
-        "Medical"
-      ],
-      "legacy_prompt": "SNEFERU",
-      "prompt": "SNEFERU"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #20",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_021",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Great Pyramid of Giza",
-      "wrong_answers": [
-        "Deity",
-        "Pharaoh",
-        "Artifact"
-      ],
-      "legacy_prompt": "GREAT PYRAMID OF GIZA",
-      "prompt": "GREAT PYRAMID OF GIZA"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #21",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_022",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Structure",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Medical"
-      ],
-      "legacy_prompt": "IMMENSE RELIGIOUS COMPLEX DEDICATED TO AMUN-RA AT THEBES",
-      "prompt": "IMMENSE RELIGIOUS COMPLEX DEDICATED TO AMUN-RA AT THEBES"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #22",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_023",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Abu Simbel",
-      "wrong_answers": [
-        "Pharaoh",
-        "Deity",
-        "Artifact"
-      ],
-      "legacy_prompt": "ABU SIMBEL",
-      "prompt": "ABU SIMBEL"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #23",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_024",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Valley of the Kings",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Medical"
-      ],
-      "legacy_prompt": "ROYAL NECROPOLIS HOUSING ROCK-CUT TOMBS OF THE NEW KINGDOM",
-      "prompt": "ROYAL NECROPOLIS HOUSING ROCK-CUT TOMBS OF THE NEW KINGDOM"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #24",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_025",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Djoser Step Pyramid",
-      "wrong_answers": [
-        "Deity",
-        "Artifact",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "DJOSER STEP PYRAMID",
-      "prompt": "DJOSER STEP PYRAMID"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #25",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_026",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Luxor Temple",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Medical"
-      ],
-      "legacy_prompt": "LUXOR TEMPLE",
-      "prompt": "LUXOR TEMPLE"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #26",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_027",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Structure",
-      "wrong_answers": [
-        "Deity",
-        "Pharaoh",
-        "Artifact"
-      ],
-      "legacy_prompt": "COLONNADED TERRACED MONUMENT AT DEIR EL-BAHARI",
-      "prompt": "COLONNADED TERRACED MONUMENT AT DEIR EL-BAHARI"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #27",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_028",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Temple of Horus at Edfu",
-      "wrong_answers": [
-        "Medical",
-        "City",
-        "Battle"
-      ],
-      "legacy_prompt": "TEMPLE OF HORUS AT EDFU",
-      "prompt": "TEMPLE OF HORUS AT EDFU"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #28",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_029",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Sphinx of Giza",
-      "wrong_answers": [
-        "Deity",
-        "Artifact",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "LIMESTONE STATUE WITH LION BODY AND PHARAOH HEAD",
-      "prompt": "LIMESTONE STATUE WITH LION BODY AND PHARAOH HEAD"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #29",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_030",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Philae Temple",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Medical"
-      ],
-      "legacy_prompt": "PHILAE TEMPLE",
-      "prompt": "PHILAE TEMPLE"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #30",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_031",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Narmer Palette",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "NARMER PALETTE",
-      "prompt": "NARMER PALETTE"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #31",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_032",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Artifact",
-      "wrong_answers": [
-        "City",
-        "Medical",
-        "Battle"
-      ],
-      "legacy_prompt": "GRANITE STELE PROVIDING THE KEY TO DECIPHERING HIEROGLYPHICS",
-      "prompt": "GRANITE STELE PROVIDING THE KEY TO DECIPHERING HIEROGLYPHICS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #32",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_033",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Bust of Nefertiti",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "BUST OF NEFERTITI",
-      "prompt": "BUST OF NEFERTITI"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #33",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_034",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Mask of Tutankhamun",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Medical"
-      ],
-      "legacy_prompt": "GOLD DEATH MASK INLAID WITH LAPIS LAZULI AND SEMI-PRECIOUS STONES",
-      "prompt": "GOLD DEATH MASK INLAID WITH LAPIS LAZULI AND SEMI-PRECIOUS STONES"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #34",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_035",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Khafre Enthroned",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Medical"
-      ],
-      "legacy_prompt": "KHAFRE ENTHRONED",
-      "prompt": "KHAFRE ENTHRONED"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #35",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_036",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Dendera Zodiac",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "DENDERA ZODIAC",
-      "prompt": "DENDERA ZODIAC"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #36",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_037",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Artifact",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Medical"
-      ],
-      "legacy_prompt": "DEPICTION OF THE POLYMATH ARCHITECT, PHYSICIAN, AND HIGH PRIEST",
-      "prompt": "DEPICTION OF THE POLYMATH ARCHITECT, PHYSICIAN, AND HIGH PRIEST"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #37",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_038",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "The Edwin Smith Papyrus",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "THE EDWIN SMITH PAPYRUS",
-      "prompt": "THE EDWIN SMITH PAPYRUS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #38",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_039",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Geese of Meidum",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Medical"
-      ],
-      "legacy_prompt": "HIGHLY DETAILED PAINTED STUCCO RELIEF FROM NEFERMAAT'S MASTABA",
-      "prompt": "HIGHLY DETAILED PAINTED STUCCO RELIEF FROM NEFERMAAT'S MASTABA"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #39",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_040",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Solar Barque of Khufu",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "SOLAR BARQUE OF KHUFU",
-      "prompt": "SOLAR BARQUE OF KHUFU"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #40",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_041",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "𓂀",
-      "wrong_answers": [
-        "Structure",
-        "Deity",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "𓂀",
-      "prompt": "𓂀"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #41",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_042",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Hieroglyphic",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Medical"
-      ],
-      "legacy_prompt": "ANKH; SYMBOL REPRESENTING 'LIFE' AND BREATH OF ETERNITY",
-      "prompt": "ANKH; SYMBOL REPRESENTING 'LIFE' AND BREATH OF ETERNITY"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #42",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_043",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "𓆣",
-      "wrong_answers": [
-        "Structure",
-        "Pharaoh",
-        "Artifact"
-      ],
-      "legacy_prompt": "𓆣",
-      "prompt": "𓆣"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #43",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_044",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "𓊽",
-      "wrong_answers": [
-        "Deity",
-        "Battle",
-        "City"
-      ],
-      "legacy_prompt": "DJED PILLAR; SYMBOL OF STABILITY, BACKBONE OF OSIRIS",
-      "prompt": "DJED PILLAR; SYMBOL OF STABILITY, BACKBONE OF OSIRIS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #44",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_045",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "𓎛",
-      "wrong_answers": [
-        "Medical",
-        "Structure",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "𓎛",
-      "prompt": "𓎛"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #45",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_046",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "𓅓",
-      "wrong_answers": [
-        "City",
-        "Artifact",
-        "Battle"
-      ],
-      "legacy_prompt": "𓅓",
-      "prompt": "𓅓"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #46",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_047",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Hieroglyphic",
-      "wrong_answers": [
-        "Structure",
-        "Pharaoh",
-        "Deity"
-      ],
-      "legacy_prompt": "JACKAL GLYPH; SYMBOL OF ANUBIS, GUARDIANSHIP OF THE NECROPOLIS",
-      "prompt": "JACKAL GLYPH; SYMBOL OF ANUBIS, GUARDIANSHIP OF THE NECROPOLIS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #47",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_048",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "𓀭",
-      "wrong_answers": [
-        "Battle",
-        "Medical",
-        "City"
-      ],
-      "legacy_prompt": "𓀭",
-      "prompt": "𓀭"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #48",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_049",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "𓉐",
-      "wrong_answers": [
-        "Deity",
-        "Artifact",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "PR GLYPH; REPRESENTING 'HOUSE' OR ESTATE, ORIGIN OF 'PHARAOH'",
-      "prompt": "PR GLYPH; REPRESENTING 'HOUSE' OR ESTATE, ORIGIN OF 'PHARAOH'"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #49",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_050",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "𓋴",
-      "wrong_answers": [
-        "Structure",
-        "City",
-        "Battle"
-      ],
-      "legacy_prompt": "𓋴",
-      "prompt": "𓋴"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #50",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_051",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Osiris",
-      "wrong_answers": [
-        "Structure",
-        "City",
-        "Battle"
-      ],
-      "legacy_prompt": "OSIRIS",
-      "prompt": "OSIRIS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #51",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_052",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Deity",
-      "wrong_answers": [
-        "Pharaoh",
-        "Artifact",
-        "Structure"
-      ],
-      "legacy_prompt": "GODDESS OF MAGIC, MOTHERHOOD, AND HEALING",
-      "prompt": "GODDESS OF MAGIC, MOTHERHOOD, AND HEALING"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #52",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_053",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Horus",
-      "wrong_answers": [
-        "Battle",
-        "Artifact",
-        "City"
-      ],
-      "legacy_prompt": "HORUS",
-      "prompt": "HORUS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #53",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_054",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Anubis",
-      "wrong_answers": [
-        "Medical",
-        "Structure",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "JACKAL-HEADED GOD OF EMBALMING AND FUNERARY RITES",
-      "prompt": "JACKAL-HEADED GOD OF EMBALMING AND FUNERARY RITES"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #54",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_055",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Ra",
-      "wrong_answers": [
-        "City",
-        "Artifact",
-        "Battle"
-      ],
-      "legacy_prompt": "RA",
-      "prompt": "RA"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #55",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_056",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Thoth",
-      "wrong_answers": [
-        "Structure",
-        "Medical",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "THOTH",
-      "prompt": "THOTH"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #56",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_057",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Deity",
-      "wrong_answers": [
-        "Artifact",
-        "City",
-        "Structure"
-      ],
-      "legacy_prompt": "LIONESS GODDESS OF WAR, SOLAR FIRE, AND HEALING",
-      "prompt": "LIONESS GODDESS OF WAR, SOLAR FIRE, AND HEALING"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #57",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_058",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Hathor",
-      "wrong_answers": [
-        "Battle",
-        "Pharaoh",
-        "Medical"
-      ],
-      "legacy_prompt": "HATHOR",
-      "prompt": "HATHOR"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #58",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_059",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Ptah",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Structure"
-      ],
-      "legacy_prompt": "PATRON GOD OF CRAFTSMEN AND ARCHITECTS",
-      "prompt": "PATRON GOD OF CRAFTSMEN AND ARCHITECTS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #59",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_060",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Sobek",
-      "wrong_answers": [
-        "Artifact",
-        "Pharaoh",
-        "Medical"
-      ],
-      "legacy_prompt": "SOBEK",
-      "prompt": "SOBEK"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #60",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_061",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Hatshepsut",
-      "wrong_answers": [
-        "Deity",
-        "City",
-        "Artifact"
-      ],
-      "legacy_prompt": "HATSHEPSUT",
-      "prompt": "HATSHEPSUT"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #61",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_062",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Pharaoh",
-      "wrong_answers": [
-        "Structure",
-        "Deity",
-        "Medical"
-      ],
-      "legacy_prompt": "FOUGHT BATTLE OF KADESH; BUILT ABU SIMBEL",
-      "prompt": "FOUGHT BATTLE OF KADESH; BUILT ABU SIMBEL"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #62",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_063",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Akhenaten",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Structure"
-      ],
-      "legacy_prompt": "AKHENATEN",
-      "prompt": "AKHENATEN"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #63",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_064",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Tutankhamun",
-      "wrong_answers": [
-        "Deity",
-        "Artifact",
-        "Medical"
-      ],
-      "legacy_prompt": "RESTORED TRADITIONAL PANTHEON; TOMB KV62 INTACT",
-      "prompt": "RESTORED TRADITIONAL PANTHEON; TOMB KV62 INTACT"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #64",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_065",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Thutmose III",
-      "wrong_answers": [
-        "Structure",
-        "City",
-        "Artifact"
-      ],
-      "legacy_prompt": "THUTMOSE III",
-      "prompt": "THUTMOSE III"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #65",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_066",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Narmer",
-      "wrong_answers": [
-        "Deity",
-        "Medical",
-        "Battle"
-      ],
-      "legacy_prompt": "NARMER",
-      "prompt": "NARMER"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #66",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_067",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Pharaoh",
-      "wrong_answers": [
-        "Artifact",
-        "City",
-        "Deity"
-      ],
-      "legacy_prompt": "COMMISSIONED THE GREAT PYRAMID OF GIZA",
-      "prompt": "COMMISSIONED THE GREAT PYRAMID OF GIZA"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #67",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_068",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Amenhotep III",
-      "wrong_answers": [
-        "Battle",
-        "Structure",
-        "Medical"
-      ],
-      "legacy_prompt": "AMENHOTEP III",
-      "prompt": "AMENHOTEP III"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #68",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_069",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Cleopatra VII",
-      "wrong_answers": [
-        "Deity",
-        "City",
-        "Artifact"
-      ],
-      "legacy_prompt": "FINAL ACTIVE RULER OF THE PTOLEMAIC KINGDOM",
-      "prompt": "FINAL ACTIVE RULER OF THE PTOLEMAIC KINGDOM"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #69",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_070",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Sneferu",
-      "wrong_answers": [
-        "Battle",
-        "Deity",
-        "Medical"
-      ],
-      "legacy_prompt": "SNEFERU",
-      "prompt": "SNEFERU"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #70",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_071",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Great Pyramid of Giza",
-      "wrong_answers": [
-        "Deity",
-        "Pharaoh",
-        "Artifact"
-      ],
-      "legacy_prompt": "GREAT PYRAMID OF GIZA",
-      "prompt": "GREAT PYRAMID OF GIZA"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #71",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_072",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Structure",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Medical"
-      ],
-      "legacy_prompt": "IMMENSE RELIGIOUS COMPLEX DEDICATED TO AMUN-RA AT THEBES",
-      "prompt": "IMMENSE RELIGIOUS COMPLEX DEDICATED TO AMUN-RA AT THEBES"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #72",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_073",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Abu Simbel",
-      "wrong_answers": [
-        "Pharaoh",
-        "Deity",
-        "Artifact"
-      ],
-      "legacy_prompt": "ABU SIMBEL",
-      "prompt": "ABU SIMBEL"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #73",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_074",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Valley of the Kings",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Medical"
-      ],
-      "legacy_prompt": "ROYAL NECROPOLIS HOUSING ROCK-CUT TOMBS OF THE NEW KINGDOM",
-      "prompt": "ROYAL NECROPOLIS HOUSING ROCK-CUT TOMBS OF THE NEW KINGDOM"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #74",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_075",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Djoser Step Pyramid",
-      "wrong_answers": [
-        "Deity",
-        "Artifact",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "DJOSER STEP PYRAMID",
-      "prompt": "DJOSER STEP PYRAMID"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #75",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_076",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Luxor Temple",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Medical"
-      ],
-      "legacy_prompt": "LUXOR TEMPLE",
-      "prompt": "LUXOR TEMPLE"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #76",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_077",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Structure",
-      "wrong_answers": [
-        "Deity",
-        "Pharaoh",
-        "Artifact"
-      ],
-      "legacy_prompt": "COLONNADED TERRACED MONUMENT AT DEIR EL-BAHARI",
-      "prompt": "COLONNADED TERRACED MONUMENT AT DEIR EL-BAHARI"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #77",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_078",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Temple of Horus at Edfu",
-      "wrong_answers": [
-        "Medical",
-        "City",
-        "Battle"
-      ],
-      "legacy_prompt": "TEMPLE OF HORUS AT EDFU",
-      "prompt": "TEMPLE OF HORUS AT EDFU"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #78",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_079",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Sphinx of Giza",
-      "wrong_answers": [
-        "Deity",
-        "Artifact",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "LIMESTONE STATUE WITH LION BODY AND PHARAOH HEAD",
-      "prompt": "LIMESTONE STATUE WITH LION BODY AND PHARAOH HEAD"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #79",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_080",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Philae Temple",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Medical"
-      ],
-      "legacy_prompt": "PHILAE TEMPLE",
-      "prompt": "PHILAE TEMPLE"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #80",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_081",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Narmer Palette",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "NARMER PALETTE",
-      "prompt": "NARMER PALETTE"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #81",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_082",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Artifact",
-      "wrong_answers": [
-        "City",
-        "Medical",
-        "Battle"
-      ],
-      "legacy_prompt": "GRANITE STELE PROVIDING THE KEY TO DECIPHERING HIEROGLYPHICS",
-      "prompt": "GRANITE STELE PROVIDING THE KEY TO DECIPHERING HIEROGLYPHICS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #82",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_083",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Bust of Nefertiti",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "BUST OF NEFERTITI",
-      "prompt": "BUST OF NEFERTITI"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #83",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_084",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Mask of Tutankhamun",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Medical"
-      ],
-      "legacy_prompt": "GOLD DEATH MASK INLAID WITH LAPIS LAZULI AND SEMI-PRECIOUS STONES",
-      "prompt": "GOLD DEATH MASK INLAID WITH LAPIS LAZULI AND SEMI-PRECIOUS STONES"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #84",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_085",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Khafre Enthroned",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Medical"
-      ],
-      "legacy_prompt": "KHAFRE ENTHRONED",
-      "prompt": "KHAFRE ENTHRONED"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #85",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_086",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "Dendera Zodiac",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "DENDERA ZODIAC",
-      "prompt": "DENDERA ZODIAC"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #86",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_087",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Artifact",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Medical"
-      ],
-      "legacy_prompt": "DEPICTION OF THE POLYMATH ARCHITECT, PHYSICIAN, AND HIGH PRIEST",
-      "prompt": "DEPICTION OF THE POLYMATH ARCHITECT, PHYSICIAN, AND HIGH PRIEST"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #87",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_088",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "The Edwin Smith Papyrus",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "THE EDWIN SMITH PAPYRUS",
-      "prompt": "THE EDWIN SMITH PAPYRUS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #88",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_089",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "Geese of Meidum",
-      "wrong_answers": [
-        "Deity",
-        "Structure",
-        "Medical"
-      ],
-      "legacy_prompt": "HIGHLY DETAILED PAINTED STUCCO RELIEF FROM NEFERMAAT'S MASTABA",
-      "prompt": "HIGHLY DETAILED PAINTED STUCCO RELIEF FROM NEFERMAAT'S MASTABA"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #89",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_090",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "Solar Barque of Khufu",
-      "wrong_answers": [
-        "Battle",
-        "City",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "SOLAR BARQUE OF KHUFU",
-      "prompt": "SOLAR BARQUE OF KHUFU"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #90",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_091",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "𓂀",
-      "wrong_answers": [
-        "Structure",
-        "Deity",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "𓂀",
-      "prompt": "𓂀"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #91",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_092",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Hieroglyphic",
-      "wrong_answers": [
-        "City",
-        "Battle",
-        "Medical"
-      ],
-      "legacy_prompt": "ANKH; SYMBOL REPRESENTING 'LIFE' AND BREATH OF ETERNITY",
-      "prompt": "ANKH; SYMBOL REPRESENTING 'LIFE' AND BREATH OF ETERNITY"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #92",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_093",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "𓆣",
-      "wrong_answers": [
-        "Structure",
-        "Pharaoh",
-        "Artifact"
-      ],
-      "legacy_prompt": "𓆣",
-      "prompt": "𓆣"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #93",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_094",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "𓊽",
-      "wrong_answers": [
-        "Deity",
-        "Battle",
-        "City"
-      ],
-      "legacy_prompt": "DJED PILLAR; SYMBOL OF STABILITY, BACKBONE OF OSIRIS",
-      "prompt": "DJED PILLAR; SYMBOL OF STABILITY, BACKBONE OF OSIRIS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #94",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_095",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "𓎛",
-      "wrong_answers": [
-        "Medical",
-        "Structure",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "𓎛",
-      "prompt": "𓎛"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #95",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "egypt_memory_cascade_096",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "memory_cascade",
-    "rules": {
-      "correct_answer": "𓅓",
-      "wrong_answers": [
-        "City",
-        "Artifact",
-        "Battle"
-      ],
-      "legacy_prompt": "𓅓",
-      "prompt": "𓅓"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #96",
-      "difficulty_tier": 1
-    }
-  },
-  {
-    "id": "egypt_rapid_classification_097",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "rapid_classification",
-    "rules": {
-      "correct_answer": "Hieroglyphic",
-      "wrong_answers": [
-        "Structure",
-        "Pharaoh",
-        "Deity"
-      ],
-      "legacy_prompt": "JACKAL GLYPH; SYMBOL OF ANUBIS, GUARDIANSHIP OF THE NECROPOLIS",
-      "prompt": "JACKAL GLYPH; SYMBOL OF ANUBIS, GUARDIANSHIP OF THE NECROPOLIS"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #97",
-      "difficulty_tier": 2
-    }
-  },
-  {
-    "id": "egypt_signal_vs_noise_098",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "𓀭",
-      "wrong_answers": [
-        "Battle",
-        "Medical",
-        "City"
-      ],
-      "legacy_prompt": "𓀭",
-      "prompt": "𓀭"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #98",
-      "difficulty_tier": 3
-    }
-  },
-  {
-    "id": "egypt_stroop_test_099",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "stroop_test",
-    "rules": {
-      "correct_answer": "𓉐",
-      "wrong_answers": [
-        "Deity",
-        "Artifact",
-        "Pharaoh"
-      ],
-      "legacy_prompt": "PR GLYPH; REPRESENTING 'HOUSE' OR ESTATE, ORIGIN OF 'PHARAOH'",
-      "prompt": "PR GLYPH; REPRESENTING 'HOUSE' OR ESTATE, ORIGIN OF 'PHARAOH'"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #99",
-      "difficulty_tier": 4
-    }
-  },
-  {
-    "id": "egypt_spatial_recall_100",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "spatial_recall",
-    "rules": {
-      "correct_answer": "𓋴",
-      "wrong_answers": [
-        "Structure",
-        "City",
-        "Battle"
-      ],
-      "legacy_prompt": "𓋴",
-      "prompt": "𓋴"
-    },
-    "presentation": {
-      "title": "Ancient Egypt - Knowledge Spike #100",
       "difficulty_tier": 5
     }
   },
@@ -40002,6 +38002,2006 @@
     "presentation": {
       "title": "Ancient egypt scenario 20",
       "scenario_id": "ancient_egypt_scenario_20",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_001",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Osiris",
+      "wrong_answers": [
+        "Structure",
+        "City",
+        "Battle"
+      ],
+      "legacy_prompt": "OSIRIS",
+      "prompt": "OSIRIS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #1",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_002",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Deity",
+      "wrong_answers": [
+        "Pharaoh",
+        "Artifact",
+        "Structure"
+      ],
+      "legacy_prompt": "GODDESS OF MAGIC, MOTHERHOOD, AND HEALING",
+      "prompt": "GODDESS OF MAGIC, MOTHERHOOD, AND HEALING"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #2",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_003",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Horus",
+      "wrong_answers": [
+        "Battle",
+        "Artifact",
+        "City"
+      ],
+      "legacy_prompt": "HORUS",
+      "prompt": "HORUS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #3",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_004",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Anubis",
+      "wrong_answers": [
+        "Medical",
+        "Structure",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "JACKAL-HEADED GOD OF EMBALMING AND FUNERARY RITES",
+      "prompt": "JACKAL-HEADED GOD OF EMBALMING AND FUNERARY RITES"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #4",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_005",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Ra",
+      "wrong_answers": [
+        "City",
+        "Artifact",
+        "Battle"
+      ],
+      "legacy_prompt": "RA",
+      "prompt": "RA"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #5",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_006",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Thoth",
+      "wrong_answers": [
+        "Structure",
+        "Medical",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "THOTH",
+      "prompt": "THOTH"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #6",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_007",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Deity",
+      "wrong_answers": [
+        "Artifact",
+        "City",
+        "Structure"
+      ],
+      "legacy_prompt": "LIONESS GODDESS OF WAR, SOLAR FIRE, AND HEALING",
+      "prompt": "LIONESS GODDESS OF WAR, SOLAR FIRE, AND HEALING"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #7",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_008",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Hathor",
+      "wrong_answers": [
+        "Battle",
+        "Pharaoh",
+        "Medical"
+      ],
+      "legacy_prompt": "HATHOR",
+      "prompt": "HATHOR"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #8",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_009",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Ptah",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Structure"
+      ],
+      "legacy_prompt": "PATRON GOD OF CRAFTSMEN AND ARCHITECTS",
+      "prompt": "PATRON GOD OF CRAFTSMEN AND ARCHITECTS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #9",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_010",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Sobek",
+      "wrong_answers": [
+        "Artifact",
+        "Pharaoh",
+        "Medical"
+      ],
+      "legacy_prompt": "SOBEK",
+      "prompt": "SOBEK"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #10",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_011",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Hatshepsut",
+      "wrong_answers": [
+        "Deity",
+        "City",
+        "Artifact"
+      ],
+      "legacy_prompt": "HATSHEPSUT",
+      "prompt": "HATSHEPSUT"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #11",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_012",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Pharaoh",
+      "wrong_answers": [
+        "Structure",
+        "Deity",
+        "Medical"
+      ],
+      "legacy_prompt": "FOUGHT BATTLE OF KADESH; BUILT ABU SIMBEL",
+      "prompt": "FOUGHT BATTLE OF KADESH; BUILT ABU SIMBEL"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #12",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_013",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Akhenaten",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Structure"
+      ],
+      "legacy_prompt": "AKHENATEN",
+      "prompt": "AKHENATEN"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #13",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_014",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Tutankhamun",
+      "wrong_answers": [
+        "Deity",
+        "Artifact",
+        "Medical"
+      ],
+      "legacy_prompt": "RESTORED TRADITIONAL PANTHEON; TOMB KV62 INTACT",
+      "prompt": "RESTORED TRADITIONAL PANTHEON; TOMB KV62 INTACT"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #14",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_015",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Thutmose III",
+      "wrong_answers": [
+        "Structure",
+        "City",
+        "Artifact"
+      ],
+      "legacy_prompt": "THUTMOSE III",
+      "prompt": "THUTMOSE III"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #15",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_016",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Narmer",
+      "wrong_answers": [
+        "Deity",
+        "Medical",
+        "Battle"
+      ],
+      "legacy_prompt": "NARMER",
+      "prompt": "NARMER"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #16",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_017",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Pharaoh",
+      "wrong_answers": [
+        "Artifact",
+        "City",
+        "Deity"
+      ],
+      "legacy_prompt": "COMMISSIONED THE GREAT PYRAMID OF GIZA",
+      "prompt": "COMMISSIONED THE GREAT PYRAMID OF GIZA"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #17",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_018",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Amenhotep III",
+      "wrong_answers": [
+        "Battle",
+        "Structure",
+        "Medical"
+      ],
+      "legacy_prompt": "AMENHOTEP III",
+      "prompt": "AMENHOTEP III"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #18",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_019",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Cleopatra VII",
+      "wrong_answers": [
+        "Deity",
+        "City",
+        "Artifact"
+      ],
+      "legacy_prompt": "FINAL ACTIVE RULER OF THE PTOLEMAIC KINGDOM",
+      "prompt": "FINAL ACTIVE RULER OF THE PTOLEMAIC KINGDOM"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #19",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_020",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Sneferu",
+      "wrong_answers": [
+        "Battle",
+        "Deity",
+        "Medical"
+      ],
+      "legacy_prompt": "SNEFERU",
+      "prompt": "SNEFERU"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #20",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_021",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Great Pyramid of Giza",
+      "wrong_answers": [
+        "Deity",
+        "Pharaoh",
+        "Artifact"
+      ],
+      "legacy_prompt": "GREAT PYRAMID OF GIZA",
+      "prompt": "GREAT PYRAMID OF GIZA"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #21",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_022",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Structure",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Medical"
+      ],
+      "legacy_prompt": "IMMENSE RELIGIOUS COMPLEX DEDICATED TO AMUN-RA AT THEBES",
+      "prompt": "IMMENSE RELIGIOUS COMPLEX DEDICATED TO AMUN-RA AT THEBES"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #22",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_023",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Abu Simbel",
+      "wrong_answers": [
+        "Pharaoh",
+        "Deity",
+        "Artifact"
+      ],
+      "legacy_prompt": "ABU SIMBEL",
+      "prompt": "ABU SIMBEL"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #23",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_024",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Valley of the Kings",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Medical"
+      ],
+      "legacy_prompt": "ROYAL NECROPOLIS HOUSING ROCK-CUT TOMBS OF THE NEW KINGDOM",
+      "prompt": "ROYAL NECROPOLIS HOUSING ROCK-CUT TOMBS OF THE NEW KINGDOM"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #24",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_025",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Djoser Step Pyramid",
+      "wrong_answers": [
+        "Deity",
+        "Artifact",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "DJOSER STEP PYRAMID",
+      "prompt": "DJOSER STEP PYRAMID"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #25",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_026",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Luxor Temple",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Medical"
+      ],
+      "legacy_prompt": "LUXOR TEMPLE",
+      "prompt": "LUXOR TEMPLE"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #26",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_027",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Structure",
+      "wrong_answers": [
+        "Deity",
+        "Pharaoh",
+        "Artifact"
+      ],
+      "legacy_prompt": "COLONNADED TERRACED MONUMENT AT DEIR EL-BAHARI",
+      "prompt": "COLONNADED TERRACED MONUMENT AT DEIR EL-BAHARI"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #27",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_028",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Temple of Horus at Edfu",
+      "wrong_answers": [
+        "Medical",
+        "City",
+        "Battle"
+      ],
+      "legacy_prompt": "TEMPLE OF HORUS AT EDFU",
+      "prompt": "TEMPLE OF HORUS AT EDFU"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #28",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_029",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Sphinx of Giza",
+      "wrong_answers": [
+        "Deity",
+        "Artifact",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "LIMESTONE STATUE WITH LION BODY AND PHARAOH HEAD",
+      "prompt": "LIMESTONE STATUE WITH LION BODY AND PHARAOH HEAD"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #29",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_030",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Philae Temple",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Medical"
+      ],
+      "legacy_prompt": "PHILAE TEMPLE",
+      "prompt": "PHILAE TEMPLE"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #30",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_031",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Narmer Palette",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "NARMER PALETTE",
+      "prompt": "NARMER PALETTE"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #31",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_032",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Artifact",
+      "wrong_answers": [
+        "City",
+        "Medical",
+        "Battle"
+      ],
+      "legacy_prompt": "GRANITE STELE PROVIDING THE KEY TO DECIPHERING HIEROGLYPHICS",
+      "prompt": "GRANITE STELE PROVIDING THE KEY TO DECIPHERING HIEROGLYPHICS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #32",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_033",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Bust of Nefertiti",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "BUST OF NEFERTITI",
+      "prompt": "BUST OF NEFERTITI"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #33",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_034",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Mask of Tutankhamun",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Medical"
+      ],
+      "legacy_prompt": "GOLD DEATH MASK INLAID WITH LAPIS LAZULI AND SEMI-PRECIOUS STONES",
+      "prompt": "GOLD DEATH MASK INLAID WITH LAPIS LAZULI AND SEMI-PRECIOUS STONES"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #34",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_035",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Khafre Enthroned",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Medical"
+      ],
+      "legacy_prompt": "KHAFRE ENTHRONED",
+      "prompt": "KHAFRE ENTHRONED"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #35",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_036",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Dendera Zodiac",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "DENDERA ZODIAC",
+      "prompt": "DENDERA ZODIAC"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #36",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_037",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Artifact",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Medical"
+      ],
+      "legacy_prompt": "DEPICTION OF THE POLYMATH ARCHITECT, PHYSICIAN, AND HIGH PRIEST",
+      "prompt": "DEPICTION OF THE POLYMATH ARCHITECT, PHYSICIAN, AND HIGH PRIEST"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #37",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_038",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "The Edwin Smith Papyrus",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "THE EDWIN SMITH PAPYRUS",
+      "prompt": "THE EDWIN SMITH PAPYRUS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #38",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_039",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Geese of Meidum",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Medical"
+      ],
+      "legacy_prompt": "HIGHLY DETAILED PAINTED STUCCO RELIEF FROM NEFERMAAT'S MASTABA",
+      "prompt": "HIGHLY DETAILED PAINTED STUCCO RELIEF FROM NEFERMAAT'S MASTABA"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #39",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_040",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Solar Barque of Khufu",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "SOLAR BARQUE OF KHUFU",
+      "prompt": "SOLAR BARQUE OF KHUFU"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #40",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_041",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "𓂀",
+      "wrong_answers": [
+        "Structure",
+        "Deity",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "𓂀",
+      "prompt": "𓂀"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #41",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_042",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Hieroglyphic",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Medical"
+      ],
+      "legacy_prompt": "ANKH; SYMBOL REPRESENTING 'LIFE' AND BREATH OF ETERNITY",
+      "prompt": "ANKH; SYMBOL REPRESENTING 'LIFE' AND BREATH OF ETERNITY"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #42",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_043",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "𓆣",
+      "wrong_answers": [
+        "Structure",
+        "Pharaoh",
+        "Artifact"
+      ],
+      "legacy_prompt": "𓆣",
+      "prompt": "𓆣"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #43",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_044",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "𓊽",
+      "wrong_answers": [
+        "Deity",
+        "Battle",
+        "City"
+      ],
+      "legacy_prompt": "DJED PILLAR; SYMBOL OF STABILITY, BACKBONE OF OSIRIS",
+      "prompt": "DJED PILLAR; SYMBOL OF STABILITY, BACKBONE OF OSIRIS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #44",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_045",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "𓎛",
+      "wrong_answers": [
+        "Medical",
+        "Structure",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "𓎛",
+      "prompt": "𓎛"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #45",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_046",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "𓅓",
+      "wrong_answers": [
+        "City",
+        "Artifact",
+        "Battle"
+      ],
+      "legacy_prompt": "𓅓",
+      "prompt": "𓅓"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #46",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_047",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Hieroglyphic",
+      "wrong_answers": [
+        "Structure",
+        "Pharaoh",
+        "Deity"
+      ],
+      "legacy_prompt": "JACKAL GLYPH; SYMBOL OF ANUBIS, GUARDIANSHIP OF THE NECROPOLIS",
+      "prompt": "JACKAL GLYPH; SYMBOL OF ANUBIS, GUARDIANSHIP OF THE NECROPOLIS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #47",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_048",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "𓀭",
+      "wrong_answers": [
+        "Battle",
+        "Medical",
+        "City"
+      ],
+      "legacy_prompt": "𓀭",
+      "prompt": "𓀭"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #48",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_049",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "𓉐",
+      "wrong_answers": [
+        "Deity",
+        "Artifact",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "PR GLYPH; REPRESENTING 'HOUSE' OR ESTATE, ORIGIN OF 'PHARAOH'",
+      "prompt": "PR GLYPH; REPRESENTING 'HOUSE' OR ESTATE, ORIGIN OF 'PHARAOH'"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #49",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_050",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "𓋴",
+      "wrong_answers": [
+        "Structure",
+        "City",
+        "Battle"
+      ],
+      "legacy_prompt": "𓋴",
+      "prompt": "𓋴"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #50",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_051",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Osiris",
+      "wrong_answers": [
+        "Structure",
+        "City",
+        "Battle"
+      ],
+      "legacy_prompt": "OSIRIS",
+      "prompt": "OSIRIS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #51",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_052",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Deity",
+      "wrong_answers": [
+        "Pharaoh",
+        "Artifact",
+        "Structure"
+      ],
+      "legacy_prompt": "GODDESS OF MAGIC, MOTHERHOOD, AND HEALING",
+      "prompt": "GODDESS OF MAGIC, MOTHERHOOD, AND HEALING"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #52",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_053",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Horus",
+      "wrong_answers": [
+        "Battle",
+        "Artifact",
+        "City"
+      ],
+      "legacy_prompt": "HORUS",
+      "prompt": "HORUS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #53",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_054",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Anubis",
+      "wrong_answers": [
+        "Medical",
+        "Structure",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "JACKAL-HEADED GOD OF EMBALMING AND FUNERARY RITES",
+      "prompt": "JACKAL-HEADED GOD OF EMBALMING AND FUNERARY RITES"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #54",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_055",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Ra",
+      "wrong_answers": [
+        "City",
+        "Artifact",
+        "Battle"
+      ],
+      "legacy_prompt": "RA",
+      "prompt": "RA"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #55",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_056",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Thoth",
+      "wrong_answers": [
+        "Structure",
+        "Medical",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "THOTH",
+      "prompt": "THOTH"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #56",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_057",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Deity",
+      "wrong_answers": [
+        "Artifact",
+        "City",
+        "Structure"
+      ],
+      "legacy_prompt": "LIONESS GODDESS OF WAR, SOLAR FIRE, AND HEALING",
+      "prompt": "LIONESS GODDESS OF WAR, SOLAR FIRE, AND HEALING"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #57",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_058",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Hathor",
+      "wrong_answers": [
+        "Battle",
+        "Pharaoh",
+        "Medical"
+      ],
+      "legacy_prompt": "HATHOR",
+      "prompt": "HATHOR"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #58",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_059",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Ptah",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Structure"
+      ],
+      "legacy_prompt": "PATRON GOD OF CRAFTSMEN AND ARCHITECTS",
+      "prompt": "PATRON GOD OF CRAFTSMEN AND ARCHITECTS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #59",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_060",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Sobek",
+      "wrong_answers": [
+        "Artifact",
+        "Pharaoh",
+        "Medical"
+      ],
+      "legacy_prompt": "SOBEK",
+      "prompt": "SOBEK"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #60",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_061",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Hatshepsut",
+      "wrong_answers": [
+        "Deity",
+        "City",
+        "Artifact"
+      ],
+      "legacy_prompt": "HATSHEPSUT",
+      "prompt": "HATSHEPSUT"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #61",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_062",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Pharaoh",
+      "wrong_answers": [
+        "Structure",
+        "Deity",
+        "Medical"
+      ],
+      "legacy_prompt": "FOUGHT BATTLE OF KADESH; BUILT ABU SIMBEL",
+      "prompt": "FOUGHT BATTLE OF KADESH; BUILT ABU SIMBEL"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #62",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_063",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Akhenaten",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Structure"
+      ],
+      "legacy_prompt": "AKHENATEN",
+      "prompt": "AKHENATEN"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #63",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_064",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Tutankhamun",
+      "wrong_answers": [
+        "Deity",
+        "Artifact",
+        "Medical"
+      ],
+      "legacy_prompt": "RESTORED TRADITIONAL PANTHEON; TOMB KV62 INTACT",
+      "prompt": "RESTORED TRADITIONAL PANTHEON; TOMB KV62 INTACT"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #64",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_065",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Thutmose III",
+      "wrong_answers": [
+        "Structure",
+        "City",
+        "Artifact"
+      ],
+      "legacy_prompt": "THUTMOSE III",
+      "prompt": "THUTMOSE III"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #65",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_066",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Narmer",
+      "wrong_answers": [
+        "Deity",
+        "Medical",
+        "Battle"
+      ],
+      "legacy_prompt": "NARMER",
+      "prompt": "NARMER"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #66",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_067",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Pharaoh",
+      "wrong_answers": [
+        "Artifact",
+        "City",
+        "Deity"
+      ],
+      "legacy_prompt": "COMMISSIONED THE GREAT PYRAMID OF GIZA",
+      "prompt": "COMMISSIONED THE GREAT PYRAMID OF GIZA"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #67",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_068",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Amenhotep III",
+      "wrong_answers": [
+        "Battle",
+        "Structure",
+        "Medical"
+      ],
+      "legacy_prompt": "AMENHOTEP III",
+      "prompt": "AMENHOTEP III"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #68",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_069",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Cleopatra VII",
+      "wrong_answers": [
+        "Deity",
+        "City",
+        "Artifact"
+      ],
+      "legacy_prompt": "FINAL ACTIVE RULER OF THE PTOLEMAIC KINGDOM",
+      "prompt": "FINAL ACTIVE RULER OF THE PTOLEMAIC KINGDOM"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #69",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_070",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Sneferu",
+      "wrong_answers": [
+        "Battle",
+        "Deity",
+        "Medical"
+      ],
+      "legacy_prompt": "SNEFERU",
+      "prompt": "SNEFERU"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #70",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_071",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Great Pyramid of Giza",
+      "wrong_answers": [
+        "Deity",
+        "Pharaoh",
+        "Artifact"
+      ],
+      "legacy_prompt": "GREAT PYRAMID OF GIZA",
+      "prompt": "GREAT PYRAMID OF GIZA"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #71",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_072",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Structure",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Medical"
+      ],
+      "legacy_prompt": "IMMENSE RELIGIOUS COMPLEX DEDICATED TO AMUN-RA AT THEBES",
+      "prompt": "IMMENSE RELIGIOUS COMPLEX DEDICATED TO AMUN-RA AT THEBES"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #72",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_073",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Abu Simbel",
+      "wrong_answers": [
+        "Pharaoh",
+        "Deity",
+        "Artifact"
+      ],
+      "legacy_prompt": "ABU SIMBEL",
+      "prompt": "ABU SIMBEL"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #73",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_074",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Valley of the Kings",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Medical"
+      ],
+      "legacy_prompt": "ROYAL NECROPOLIS HOUSING ROCK-CUT TOMBS OF THE NEW KINGDOM",
+      "prompt": "ROYAL NECROPOLIS HOUSING ROCK-CUT TOMBS OF THE NEW KINGDOM"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #74",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_075",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Djoser Step Pyramid",
+      "wrong_answers": [
+        "Deity",
+        "Artifact",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "DJOSER STEP PYRAMID",
+      "prompt": "DJOSER STEP PYRAMID"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #75",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_076",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Luxor Temple",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Medical"
+      ],
+      "legacy_prompt": "LUXOR TEMPLE",
+      "prompt": "LUXOR TEMPLE"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #76",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_077",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Structure",
+      "wrong_answers": [
+        "Deity",
+        "Pharaoh",
+        "Artifact"
+      ],
+      "legacy_prompt": "COLONNADED TERRACED MONUMENT AT DEIR EL-BAHARI",
+      "prompt": "COLONNADED TERRACED MONUMENT AT DEIR EL-BAHARI"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #77",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_078",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Temple of Horus at Edfu",
+      "wrong_answers": [
+        "Medical",
+        "City",
+        "Battle"
+      ],
+      "legacy_prompt": "TEMPLE OF HORUS AT EDFU",
+      "prompt": "TEMPLE OF HORUS AT EDFU"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #78",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_079",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Sphinx of Giza",
+      "wrong_answers": [
+        "Deity",
+        "Artifact",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "LIMESTONE STATUE WITH LION BODY AND PHARAOH HEAD",
+      "prompt": "LIMESTONE STATUE WITH LION BODY AND PHARAOH HEAD"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #79",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_080",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Philae Temple",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Medical"
+      ],
+      "legacy_prompt": "PHILAE TEMPLE",
+      "prompt": "PHILAE TEMPLE"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #80",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_081",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Narmer Palette",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "NARMER PALETTE",
+      "prompt": "NARMER PALETTE"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #81",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_082",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Artifact",
+      "wrong_answers": [
+        "City",
+        "Medical",
+        "Battle"
+      ],
+      "legacy_prompt": "GRANITE STELE PROVIDING THE KEY TO DECIPHERING HIEROGLYPHICS",
+      "prompt": "GRANITE STELE PROVIDING THE KEY TO DECIPHERING HIEROGLYPHICS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #82",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_083",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "Bust of Nefertiti",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "BUST OF NEFERTITI",
+      "prompt": "BUST OF NEFERTITI"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #83",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_084",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Mask of Tutankhamun",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Medical"
+      ],
+      "legacy_prompt": "GOLD DEATH MASK INLAID WITH LAPIS LAZULI AND SEMI-PRECIOUS STONES",
+      "prompt": "GOLD DEATH MASK INLAID WITH LAPIS LAZULI AND SEMI-PRECIOUS STONES"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #84",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_085",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Khafre Enthroned",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Medical"
+      ],
+      "legacy_prompt": "KHAFRE ENTHRONED",
+      "prompt": "KHAFRE ENTHRONED"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #85",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_086",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "Dendera Zodiac",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "DENDERA ZODIAC",
+      "prompt": "DENDERA ZODIAC"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #86",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_087",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Artifact",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Medical"
+      ],
+      "legacy_prompt": "DEPICTION OF THE POLYMATH ARCHITECT, PHYSICIAN, AND HIGH PRIEST",
+      "prompt": "DEPICTION OF THE POLYMATH ARCHITECT, PHYSICIAN, AND HIGH PRIEST"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #87",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_088",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "The Edwin Smith Papyrus",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "THE EDWIN SMITH PAPYRUS",
+      "prompt": "THE EDWIN SMITH PAPYRUS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #88",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_089",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "Geese of Meidum",
+      "wrong_answers": [
+        "Deity",
+        "Structure",
+        "Medical"
+      ],
+      "legacy_prompt": "HIGHLY DETAILED PAINTED STUCCO RELIEF FROM NEFERMAAT'S MASTABA",
+      "prompt": "HIGHLY DETAILED PAINTED STUCCO RELIEF FROM NEFERMAAT'S MASTABA"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #89",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_090",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "Solar Barque of Khufu",
+      "wrong_answers": [
+        "Battle",
+        "City",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "SOLAR BARQUE OF KHUFU",
+      "prompt": "SOLAR BARQUE OF KHUFU"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #90",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_091",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "𓂀",
+      "wrong_answers": [
+        "Structure",
+        "Deity",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "𓂀",
+      "prompt": "𓂀"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #91",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_092",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Hieroglyphic",
+      "wrong_answers": [
+        "City",
+        "Battle",
+        "Medical"
+      ],
+      "legacy_prompt": "ANKH; SYMBOL REPRESENTING 'LIFE' AND BREATH OF ETERNITY",
+      "prompt": "ANKH; SYMBOL REPRESENTING 'LIFE' AND BREATH OF ETERNITY"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #92",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_093",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "𓆣",
+      "wrong_answers": [
+        "Structure",
+        "Pharaoh",
+        "Artifact"
+      ],
+      "legacy_prompt": "𓆣",
+      "prompt": "𓆣"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #93",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_094",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "𓊽",
+      "wrong_answers": [
+        "Deity",
+        "Battle",
+        "City"
+      ],
+      "legacy_prompt": "DJED PILLAR; SYMBOL OF STABILITY, BACKBONE OF OSIRIS",
+      "prompt": "DJED PILLAR; SYMBOL OF STABILITY, BACKBONE OF OSIRIS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #94",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_095",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "𓎛",
+      "wrong_answers": [
+        "Medical",
+        "Structure",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "𓎛",
+      "prompt": "𓎛"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #95",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "egypt_memory_cascade_096",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "memory_cascade",
+    "rules": {
+      "correct_answer": "𓅓",
+      "wrong_answers": [
+        "City",
+        "Artifact",
+        "Battle"
+      ],
+      "legacy_prompt": "𓅓",
+      "prompt": "𓅓"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #96",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "egypt_rapid_classification_097",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Hieroglyphic",
+      "wrong_answers": [
+        "Structure",
+        "Pharaoh",
+        "Deity"
+      ],
+      "legacy_prompt": "JACKAL GLYPH; SYMBOL OF ANUBIS, GUARDIANSHIP OF THE NECROPOLIS",
+      "prompt": "JACKAL GLYPH; SYMBOL OF ANUBIS, GUARDIANSHIP OF THE NECROPOLIS"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #97",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "egypt_signal_vs_noise_098",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "signal_vs_noise",
+    "rules": {
+      "correct_answer": "𓀭",
+      "wrong_answers": [
+        "Battle",
+        "Medical",
+        "City"
+      ],
+      "legacy_prompt": "𓀭",
+      "prompt": "𓀭"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #98",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "egypt_stroop_test_099",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "stroop_test",
+    "rules": {
+      "correct_answer": "𓉐",
+      "wrong_answers": [
+        "Deity",
+        "Artifact",
+        "Pharaoh"
+      ],
+      "legacy_prompt": "PR GLYPH; REPRESENTING 'HOUSE' OR ESTATE, ORIGIN OF 'PHARAOH'",
+      "prompt": "PR GLYPH; REPRESENTING 'HOUSE' OR ESTATE, ORIGIN OF 'PHARAOH'"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #99",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "egypt_spatial_recall_100",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "spatial_recall",
+    "rules": {
+      "correct_answer": "𓋴",
+      "wrong_answers": [
+        "Structure",
+        "City",
+        "Battle"
+      ],
+      "legacy_prompt": "𓋴",
+      "prompt": "𓋴"
+    },
+    "presentation": {
+      "title": "Ancient Egypt - Knowledge Spike #100",
       "difficulty_tier": 5
     }
   }
