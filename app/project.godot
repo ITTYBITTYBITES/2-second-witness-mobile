@@ -41,6 +41,7 @@ RuntimeInvarianceMonitor="*res://scripts/system/enforcement/RuntimeInvarianceMon
 ModalWindowManager="*res://scripts/ui/ModalWindowManager.gd"
 InteractionKernel="*res://scripts/system/InteractionKernel.gd"
 ExperienceOrchestrator="*res://scripts/system/ExperienceOrchestrator.gd"
+ProgressionInterpreter="*res://scripts/system/ProgressionInterpreter.gd"
 WorldProfileCustodian="*res://scripts/ui/WorldProfileCustodian.gd"
 WeeklyRotationManager="*res://scripts/system/WeeklyRotationManager.gd"
 SamplingController="*res://scripts/system/SamplingController.gd"

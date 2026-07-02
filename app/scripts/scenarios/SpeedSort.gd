@@ -37,17 +37,10 @@ func _on_answer(chose_even: bool):
 	if chose_even == is_even:
 		if AudioManager: AudioManager.play_sfx("ui_click")
 		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
-		PlayerProfile.record_cognitive_event("processing_speed", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
-		SessionTracker.record_spike_result("speed_sort", true)
 		btn_left.disabled = true; btn_right.disabled = true
-		await get_tree().create_timer(0.5).timeout
-		completed.emit()
-		queue_free()
+		execute_progression_event(true, rt_ms, "processing_speed")
 	else:
 		if AudioManager: AudioManager.play_sfx("ui_error")
-		PlayerProfile.record_cognitive_event("processing_speed", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), false, rt_ms)
 		feedback_label.text = "ERROR! Resetting..."
-		SessionTracker.record_spike_result("speed_sort", false)
 		btn_left.disabled = true; btn_right.disabled = true
-		await get_tree().create_timer(0.5).timeout
-		if is_inside_tree(): _generate_number()
+		execute_progression_event(false, rt_ms, "processing_speed")

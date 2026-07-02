@@ -243,6 +243,11 @@ func _mount_cockpit_instrument_overlay():
 	lbl_lat.add_theme_font_size_override("normal_font_size", 14)
 	f_box.add_child(lbl_lat)
 	
+	var plates_script = load("res://scripts/ui/ProgressionHUDPlates.gd")
+	if plates_script:
+		var plates_node = plates_script.new()
+		plates_node.setup(u_id, w_id)
+		add_child(plates_node)
 	add_child(f_panel)
 	print("[COCKPIT] Persistent Observation Instrument HUD successfully mounted.")
 
@@ -278,7 +283,12 @@ func _set_all_buttons_disabled(node: Node, disable_flag: bool):
 		elif child is Control:
 			_set_all_buttons_disabled(child, disable_flag)
 
-func report_scenario_result(is_success: bool, rt_ms: float = -1.0):
+func execute_progression_event(is_success: bool, rt_ms: float, trait_id: String = ""):
+	var s_id = _scenario_payload.get("id", "unknown")
+	var u_id = _scenario_payload.get("universe", "history")
+	var w_id = _scenario_payload.get("world", "ancient_egypt")
+	var t_id = trait_id if trait_id != "" else _scenario_payload.get("type", "general")
+	
 	if is_success:
 		if is_instance_valid(_cockpit_footer_status):
 			_cockpit_footer_status.text = "[center][color=#2ECC71][b]STATUS: OBSERVATION VERIFIED — RECORDING PATTERN DATA (%d ms)[/b][/color][/center]" % int(rt_ms)
@@ -287,17 +297,41 @@ func report_scenario_result(is_success: bool, rt_ms: float = -1.0):
 			if sb is StyleBoxFlat:
 				sb.border_color = Color("#E6B800")
 				_cockpit_header_panel.add_theme_stylebox_override("panel", sb)
+				
 	var engine = ScenarioExecutionEngine if ScenarioExecutionEngine else Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
 	if engine and engine.has_method("submit_answer"):
 		engine.submit_answer(is_success, rt_ms)
 	else:
-		if is_success:
-			if has_user_signal("completed") or has_signal("completed"):
-				emit_signal("completed")
-			queue_free()
+		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter")
+		if interp and interp.has_method("process_progression_event"):
+			interp.process_progression_event(interp.ProgressionEventType.SESSION_COMPLETE, 1 if is_success else 0, {
+				"scenario_id": s_id,
+				"universe_id": u_id,
+				"world_id": w_id,
+				"success": is_success,
+				"reaction_time_ms": rt_ms,
+				"trait": t_id
+			})
 		else:
-			if has_method("engine_reset_hook"): engine_reset_hook()
-			if has_method("engine_generate_hook"): engine_generate_hook()
+			var profile = Engine.get_main_loop().root.get_node_or_null("PlayerProfile") if Engine.get_main_loop() else null
+			var tracker = Engine.get_main_loop().root.get_node_or_null("SessionTracker") if Engine.get_main_loop() else null
+			if profile and profile.has_method("record_cognitive_event"): profile.record_cognitive_event(t_id, s_id, u_id, w_id, is_success, rt_ms)
+			if tracker and tracker.has_method("record_spike_result"): tracker.record_spike_result(s_id, is_success)
+			
+		if is_success:
+			await get_tree().create_timer(0.5).timeout
+			if is_inside_tree():
+				if has_user_signal("completed") or has_signal("completed"):
+					emit_signal("completed")
+				queue_free()
+		else:
+			await get_tree().create_timer(0.5).timeout
+			if is_inside_tree():
+				if has_method("engine_reset_hook"): engine_reset_hook()
+				if has_method("engine_generate_hook"): engine_generate_hook()
+
+func report_scenario_result(is_success: bool, rt_ms: float = -1.0):
+	execute_progression_event(is_success, rt_ms)
 
 func enforce_attentional_strata():
 	var pal = {}
@@ -312,7 +346,7 @@ func enforce_attentional_strata():
 
 func _apply_stratum_recursive(node: Node, primary_c: Color, accent_c: Color, dark_outline: Color):
 	for child in node.get_children():
-		if child.name == "CockpitHeader" or child.name == "CockpitFooter" or child.name == "VoidBG":
+		if child.name == "CockpitHeader" or child.name == "CockpitFooter" or child.name == "VoidBG" or child.name == "ProgressionHUDPlates":
 			continue
 			
 		if child is Label or child is RichTextLabel:

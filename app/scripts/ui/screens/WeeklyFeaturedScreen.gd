@@ -86,7 +86,13 @@ func _populate_grid():
 		btn.custom_minimum_size = Vector2(340, 220)
 		
 		var status_text = "(OWNED)" if is_owned else ("(FEATURED)" if is_featured else "[LOCKED - $2.99]")
-		btn.text = meta["title"] + " " + status_text + "\n\n" + meta["desc"] + "\n\nCompletion: " + meta["completion"] + "\nTraits: " + meta["traits"]
+		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter") if Engine.get_main_loop() else null
+		var prog_ctx = interp.get_universe_progression_context(uni) if (interp and interp.has_method("get_universe_progression_context")) else {}
+		var m_str = prog_ctx.get("global_mastery_trend", "GLOBAL MASTERY: " + meta["completion"])
+		var c_str = prog_ctx.get("continuity", "TOTAL OBSERVATIONS: 0")
+		var p_str = prog_ctx.get("profile_overview", "TRAITS: " + meta["traits"])
+		
+		btn.text = meta["title"] + " " + status_text + "\n\n" + meta["desc"] + "\n\n" + m_str + " | " + c_str + "\n" + p_str
 		btn.add_theme_font_size_override("font_size", 16)
 		
 		var style = StyleBoxFlat.new()

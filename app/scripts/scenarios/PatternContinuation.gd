@@ -47,20 +47,11 @@ func _on_answer(is_correct: bool):
 		
 		btn_a.disabled = true
 		btn_b.disabled = true
-		
-		PlayerProfile.record_cognitive_event("pattern_recognition", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
-		SessionTracker.record_spike_result("pattern_continuation", true)
-		
-		await get_tree().create_timer(0.5).timeout
-		completed.emit()
-		queue_free()
+		execute_progression_event(true, rt_ms, "pattern_recognition")
 	else:
 		print("[PATTERN CONTINUATION] Error. Resetting.")
 		if AudioManager: AudioManager.play_sfx("ui_error")
 		feedback_label.text = "ERROR! Resetting..."
-		PlayerProfile.record_cognitive_event("pattern_recognition", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), false, rt_ms)
-		SessionTracker.record_spike_result("pattern_continuation", false)
 		btn_a.disabled = true
 		btn_b.disabled = true
-		await get_tree().create_timer(0.5).timeout
-		if is_inside_tree(): _generate_pattern()
+		execute_progression_event(false, rt_ms, "pattern_recognition")

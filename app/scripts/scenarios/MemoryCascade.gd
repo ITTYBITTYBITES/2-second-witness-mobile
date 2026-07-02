@@ -110,24 +110,15 @@ func evaluate_answer(val: int):
 func scenario_complete(rt_ms: float):
 	print("[MEMORY CASCADE] scenario_complete(): Success path executing...")
 	if feedback_label: feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
-	var u_id = normalize_id(_scenario_payload.get("universe", "science_lab"))
-	var w_id = normalize_id(_scenario_payload.get("world", "default"))
-	PlayerProfile.record_cognitive_event("recall", _scenario_id, u_id, w_id, true, rt_ms)
-	SessionTracker.record_spike_result("memory_cascade", true)
-	await get_tree().create_timer(0.5).timeout
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "signal_dispatch", "Emitting 'completed' signal.")
-	completed.emit()
-	queue_free()
+	execute_progression_event(true, rt_ms, "recall")
 
 func scenario_failed(rt_ms: float):
 	print("[MEMORY CASCADE] scenario_failed(): Failure path executing...")
 	if feedback_label: feedback_label.text = "ERROR! Resetting."
-	var u_id = normalize_id(_scenario_payload.get("universe", "science_lab"))
-	var w_id = normalize_id(_scenario_payload.get("world", "default"))
-	PlayerProfile.record_cognitive_event("recall", _scenario_id, u_id, w_id, false, rt_ms)
-	SessionTracker.record_spike_result("memory_cascade", false)
 	current_step = 0
+	execute_progression_event(false, rt_ms, "recall")
 
 func timeout():
 	print("[MEMORY CASCADE] Timer expired")

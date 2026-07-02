@@ -62,20 +62,11 @@ func _on_answer(chose_organic: bool):
 		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 		btn_organic.disabled = true
 		btn_mechanical.disabled = true
-		
-		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", true, rt_ms)
-		SessionTracker.record_spike_result("rapid_classification", true)
-		
-		await get_tree().create_timer(0.5).timeout
-		completed.emit()
-		queue_free()
+		execute_progression_event(true, rt_ms, "rapid_classification")
 	else:
 		print("[RAPID CLASSIFICATION] Error. Resetting.")
 		if AudioManager: AudioManager.play_sfx("ui_error")
 		feedback_label.text = "ERROR! Resetting..."
-		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", false, rt_ms)
-		SessionTracker.record_spike_result("rapid_classification", false)
 		btn_organic.disabled = true
 		btn_mechanical.disabled = true
-		await get_tree().create_timer(0.5).timeout
-		if is_inside_tree(): _setup_round()
+		execute_progression_event(false, rt_ms, "rapid_classification")

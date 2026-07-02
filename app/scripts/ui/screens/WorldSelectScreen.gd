@@ -86,7 +86,17 @@ func _populate_grid():
 		var pretty_name = w_id.capitalize().replace("_", " ")
 		var meta = world_meta.get(w_id, {"name": pretty_name, "scenarios": "10 scenarios", "completion": "20%", "rec": "Recommended Today"})
 		
-		btn.text = meta["name"] + "\n\n" + meta["scenarios"] + " | Completion: " + meta["completion"] + "\n\n★ " + meta["rec"]
+		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter") if Engine.get_main_loop() else null
+		var w_ctx = interp.get_world_progression_context(active_universe_id, w_id) if (interp and interp.has_method("get_world_progression_context")) else {}
+		var s_ctx = interp.get_scenario_progression_context("rapid_classification") if (interp and interp.has_method("get_scenario_progression_context")) else {}
+		
+		var wm_str = w_ctx.get("world_mastery", "WORLD MASTERY: " + meta["completion"])
+		var wt_str = w_ctx.get("recent_trend", "RECENT TREND: STABLE")
+		var wr_str = w_ctx.get("recency", meta["scenarios"])
+		var sr_str = s_ctx.get("readiness", "PROTOCOL READINESS: OPTIMAL")
+		var sp_str = s_ctx.get("recent_perf", "★ " + meta["rec"])
+		
+		btn.text = meta["name"] + " // " + wr_str + "\n\n" + wm_str + " | " + wt_str + "\n" + sr_str + " | " + sp_str
 		btn.add_theme_font_size_override("font_size", 18)
 		
 		var style = StyleBoxFlat.new()

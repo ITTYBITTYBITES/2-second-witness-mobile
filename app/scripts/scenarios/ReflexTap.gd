@@ -38,8 +38,4 @@ func _on_tap():
 	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
 	target_btn.visible = false
 	feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
-	PlayerProfile.record_cognitive_event("processing_speed", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
-	SessionTracker.record_spike_result("reflex_tap", true)
-	await get_tree().create_timer(0.5).timeout
-	completed.emit()
-	queue_free()
+	execute_progression_event(true, rt_ms, "processing_speed")

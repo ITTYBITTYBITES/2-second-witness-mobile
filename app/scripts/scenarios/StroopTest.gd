@@ -50,17 +50,10 @@ func _on_answer(idx: int):
 	if idx == target_color_idx:
 		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
 		AudioManager.play_sfx("ui_click")
-		PlayerProfile.record_cognitive_event("pattern_recognition", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
-		SessionTracker.record_spike_result("stroop_test", true)
 		for c in container.get_children(): c.disabled = true
-		await get_tree().create_timer(0.5).timeout
-		completed.emit()
-		queue_free()
+		execute_progression_event(true, rt_ms, "pattern_recognition")
 	else:
 		feedback_label.text = "ERROR! Resetting..."
 		AudioManager.play_sfx("ui_error")
-		PlayerProfile.record_cognitive_event("pattern_recognition", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), false, rt_ms)
-		SessionTracker.record_spike_result("stroop_test", false)
 		for c in container.get_children(): c.disabled = true
-		await get_tree().create_timer(0.5).timeout
-		if is_inside_tree(): _generate_stroop()
+		execute_progression_event(false, rt_ms, "pattern_recognition")

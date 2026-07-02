@@ -50,17 +50,10 @@ func _on_answer(chose_match: bool):
 	if chose_match == is_signal:
 		if AudioManager: AudioManager.play_sfx("ui_click")
 		feedback_label.text = "SUCCESS! OBSERVATION VERIFIED!"
-		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", true, rt_ms)
-		SessionTracker.record_spike_result("signal_vs_noise", true)
 		btn_match.disabled = true; btn_ignore.disabled = true
-		await get_tree().create_timer(0.5).timeout
-		completed.emit()
-		queue_free()
+		execute_progression_event(true, rt_ms, "rapid_classification")
 	else:
 		if AudioManager: AudioManager.play_sfx("ui_error")
-		PlayerProfile.record_cognitive_event("rapid_classification", _scenario_id, _scenario_payload["universe"], "default", false, rt_ms)
-		SessionTracker.record_spike_result("signal_vs_noise", false)
 		feedback_label.text = "ERROR! Resetting..."
 		btn_match.disabled = true; btn_ignore.disabled = true
-		await get_tree().create_timer(0.5).timeout
-		if is_inside_tree(): _setup_round()
+		execute_progression_event(false, rt_ms, "rapid_classification")

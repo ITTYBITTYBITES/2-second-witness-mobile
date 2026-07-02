@@ -35,28 +35,19 @@ func _on_answer(chose_risk: bool):
 	
 	if not chose_risk:
 		feedback_label.text = "SAFE EJECTION INITIATED."
-		PlayerProfile.record_cognitive_event("decision_confidence", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
-		SessionTracker.record_spike_result("risk_selection_safe", true)
-		_eject()
+		btn_safe.disabled = true; btn_risk.disabled = true
+		execute_progression_event(true, rt_ms, "decision_confidence")
 	else:
 		if risk_succeeds:
 			feedback_label.text = "RISK REWARDED! OBSERVATION VERIFIED!"
-			PlayerProfile.record_cognitive_event("decision_confidence", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), true, rt_ms)
-			SessionTracker.record_spike_result("risk_selection_risk", true)
-			_eject()
+			btn_safe.disabled = true; btn_risk.disabled = true
+			execute_progression_event(true, rt_ms, "decision_confidence")
 		else:
 			print("[RISK SELECTION] Error. Resetting.")
 			if AudioManager: AudioManager.play_sfx("ui_error")
-			PlayerProfile.record_cognitive_event("decision_confidence", _scenario_id, _scenario_payload.get("universe", "history"), _scenario_payload.get("world", "ancient_egypt"), false, rt_ms)
-			SessionTracker.record_spike_result("risk_selection_risk", false)
 			feedback_label.text = "RISK FAILED! Resetting..."
 			btn_safe.disabled = true; btn_risk.disabled = true
-			await get_tree().create_timer(0.5).timeout
-			if is_inside_tree():
-				btn_safe.disabled = false; btn_risk.disabled = false
-				feedback_label.text = "Choose your path."
-				risk_succeeds = _deterministic_rng.randf() > 0.3
-				_start_ticks_msec = Time.get_ticks_msec()
+			execute_progression_event(false, rt_ms, "decision_confidence")
 
 func _eject():
 	btn_safe.disabled = true; btn_risk.disabled = true

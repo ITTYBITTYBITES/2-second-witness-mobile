@@ -107,8 +107,14 @@ func submit_answer(is_success: bool, custom_rt: float = -1.0):
 	scenario_resolved.emit(s_id, is_success, rt_ms)
 	
 	if is_success:
-		if PlayerProfile: PlayerProfile.record_cognitive_event("general", s_id, u_id, w_id, true, rt_ms)
-		if SessionTracker: SessionTracker.record_spike_result(s_id, true)
+		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter")
+		if interp and interp.has_method("process_progression_event"):
+			interp.process_progression_event(interp.ProgressionEventType.SESSION_COMPLETE, 1, {
+				"scenario_id": s_id, "universe_id": u_id, "world_id": w_id, "success": true, "reaction_time_ms": rt_ms, "trait": active_payload.get("type", "general")
+			})
+		else:
+			if PlayerProfile: PlayerProfile.record_cognitive_event("general", s_id, u_id, w_id, true, rt_ms)
+			if SessionTracker: SessionTracker.record_spike_result(s_id, true)
 		await get_tree().create_timer(0.5).timeout
 		if is_instance_valid(active_scenario):
 			scenario_completed.emit(s_id, rt_ms)
@@ -118,8 +124,14 @@ func submit_answer(is_success: bool, custom_rt: float = -1.0):
 			active_scenario = null
 			current_state = LifecycleState.IDLE
 	else:
-		if PlayerProfile: PlayerProfile.record_cognitive_event("general", s_id, u_id, w_id, false, rt_ms)
-		if SessionTracker: SessionTracker.record_spike_result(s_id, false)
+		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter")
+		if interp and interp.has_method("process_progression_event"):
+			interp.process_progression_event(interp.ProgressionEventType.SESSION_COMPLETE, 0, {
+				"scenario_id": s_id, "universe_id": u_id, "world_id": w_id, "success": false, "reaction_time_ms": rt_ms, "trait": active_payload.get("type", "general")
+			})
+		else:
+			if PlayerProfile: PlayerProfile.record_cognitive_event("general", s_id, u_id, w_id, false, rt_ms)
+			if SessionTracker: SessionTracker.record_spike_result(s_id, false)
 		_transition_to_state(LifecycleState.RESET)
 
 func _disable_scenario_inputs():
