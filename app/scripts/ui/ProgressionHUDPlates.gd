@@ -141,9 +141,16 @@ func _refresh_plates():
 	if is_instance_valid(_lbl_mastery):
 		var u_name = active_universe_id.capitalize().replace("_", " ").to_upper()
 		var w_name = active_world_id.capitalize().replace("_", " ").to_upper()
-		_lbl_mastery.text = "[color=#667799]%s // %s:[/color] [b][color=#00D4FF]%d%%[/color][/b]" % [u_name, w_name, mastery_val]
+		var tier_name = "BASE"
+		if interp and interp.has_method("get_mastery_tier_name"):
+			tier_name = interp.get_mastery_tier_name(active_universe_id, active_world_id)
+		var obs_count = 0
+		var profile = Engine.get_main_loop().root.get_node_or_null("PlayerProfile") if Engine.get_main_loop() else null
+		if profile and "world_affinity" in profile:
+			obs_count = profile.world_affinity.get(active_universe_id + "_" + active_world_id, 0)
+		_lbl_mastery.text = "[color=#667799]%s // %s:[/color] [b][color=#00D4FF]%s (%d OBS)[/color][/b]" % [u_name, w_name, tier_name, obs_count]
 		
 	if is_instance_valid(_lbl_streak):
-		_lbl_streak.text = "[color=#667799]STREAK:[/color] [b][color=#E6B800]%d[/color][/b]" % [streak_val]
+		_lbl_streak.text = "[color=#667799]STREAK:[/color] [b][color=#E6B800]%d DAYS[/color][/b]" % [streak_val]
 		
 	call_deferred("_update_streak_position")

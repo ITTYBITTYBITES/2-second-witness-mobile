@@ -129,11 +129,31 @@ func submit_answer(is_success: bool, custom_rt: float = -1.0):
 				else:
 					_transition_to_state(LifecycleState.RESET)
 			else:
-				print("[SCENARIO ENGINE] All trials in scenario completed! Concluding scenario.")
+				print("[SCENARIO ENGINE] All trials in scenario completed! Executing milestone verification...")
+				if is_instance_valid(active_scenario):
+					if active_scenario.has_method("_set_all_buttons_disabled"):
+						active_scenario._set_all_buttons_disabled(active_scenario, true)
+					var f_lbl = active_scenario.get_node_or_null("FeedbackLabel") if active_scenario.get_node_or_null("FeedbackLabel") else active_scenario.get_node_or_null("feedback_label")
+					if f_lbl and f_lbl is Label:
+						f_lbl.text = "STREAM VERIFIED (%d TRIALS)" % [int(tot_t)]
+						f_lbl.modulate = Color("#00FF66")
+					var footer = active_scenario.get_node_or_null("CockpitFooter")
+					if footer:
+						for child in footer.find_children("*", "RichTextLabel", true, false):
+							if "STATUS:" in child.text:
+								child.text = "[center][color=#00FF66][b]STATUS: OBSERVATION STREAM VERIFIED — RECORDING COMPLETE[/b][/color][/center]"
+				
+				var audio = Engine.get_main_loop().root.get_node_or_null("AudioManager") if Engine.get_main_loop() else null
+				if audio and audio.has_method("play_sfx"):
+					audio.play_sfx("ui_click")
+					
+				await get_tree().create_timer(1.0).timeout
+				print("[SCENARIO ENGINE] Concluding scenario and returning to menu/Mirror.")
 				scenario_completed.emit(s_id, rt_ms)
-				if active_scenario.has_user_signal("completed") or active_scenario.has_signal("completed"):
-					active_scenario.emit_signal("completed")
-				active_scenario.queue_free()
+				if is_instance_valid(active_scenario):
+					if active_scenario.has_user_signal("completed") or active_scenario.has_signal("completed"):
+						active_scenario.emit_signal("completed")
+					active_scenario.queue_free()
 				active_scenario = null
 				current_state = LifecycleState.IDLE
 	else:
