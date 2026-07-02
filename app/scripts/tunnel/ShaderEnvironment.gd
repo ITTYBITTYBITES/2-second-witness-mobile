@@ -72,11 +72,15 @@ func _on_spike_started():
 	
 	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
 	if orch and "active_state" in orch and orch.active_state and "current_scenario" in orch.active_state:
-		modulate_for_scenario(str(orch.active_state.current_scenario))
+		var s_type = str(orch.active_state.current_scenario)
+		var s_payload = orch.get("active_payload", {}) if "active_payload" in orch else {}
+		if s_payload.is_empty() and "current_mission" in orch:
+			s_payload = orch.current_mission
+		modulate_for_scenario(s_type, s_payload)
 
-func modulate_for_scenario(scenario_type: String):
+func modulate_for_scenario(scenario_type: String, scenario_payload: Dictionary = {}):
 	if not _material: return
-	print("[TIER 1 - SHADER] Modulating tunnel flow for scenario mechanic: ", scenario_type)
+	print("[TIER 1 - SHADER] Modulating tunnel flow and subject colors for scenario: ", scenario_type)
 	var tween = get_tree().create_tween().set_parallel(true)
 	match scenario_type.to_lower():
 		"rapid_classification", "reflex_tap", "speed_sort":
@@ -87,6 +91,28 @@ func modulate_for_scenario(scenario_type: String):
 			tween.tween_property(_material, "shader_parameter/flow_speed", 1.0, 0.6)
 		_:
 			tween.tween_property(_material, "shader_parameter/flow_speed", 1.0, 0.6)
+			
+	var pres = scenario_payload.get("presentation", {})
+	var subject_colors = pres.get("tunnel_colors", {})
+	var s_id = str(scenario_payload.get("id", scenario_type)).to_lower()
+	var s_title = str(scenario_payload.get("title", scenario_payload.get("mission_title", ""))).to_lower()
+	if subject_colors.is_empty():
+		if "nile" in s_id or "nile" in s_title or "river" in s_id:
+			subject_colors = {"primary": Color("#0088FF"), "secondary": Color("#003366"), "tertiary": Color("#00FF88")}
+		elif "god" in s_id or "god" in s_title or "myth" in s_id or "divine" in s_id or "pantheon" in s_title or "pharaoh" in s_title:
+			subject_colors = {"primary": Color("#FFD700"), "secondary": Color("#1C39BB"), "tertiary": Color("#00D4FF")}
+		elif "pyramid" in s_id or "pyramid" in s_title or "build" in s_id or "arch" in s_id:
+			subject_colors = {"primary": Color("#E68000"), "secondary": Color("#552200"), "tertiary": Color("#FFCC00")}
+		elif "tomb" in s_id or "tomb" in s_title or "funerary" in s_id:
+			subject_colors = {"primary": Color("#8000FF"), "secondary": Color("#1A0033"), "tertiary": Color("#D400FF")}
+
+	if not subject_colors.is_empty():
+		if subject_colors.has("secondary"):
+			tween.tween_property(_material, "shader_parameter/color_primary", subject_colors["secondary"], 0.8)
+		if subject_colors.has("primary"):
+			tween.tween_property(_material, "shader_parameter/color_secondary", subject_colors["primary"].darkened(0.4), 0.8)
+			tween.tween_property(_material, "shader_parameter/color_tertiary", subject_colors["primary"], 0.8)
+		print("[TIER 1 - SHADER] Applied subject tunnel coloring: ", subject_colors)
 
 func _apply_intensity_shift(intensity: int):
 	var tween = get_tree().create_tween().set_parallel(true)

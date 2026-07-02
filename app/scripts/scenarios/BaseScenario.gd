@@ -258,6 +258,9 @@ func _mount_cockpit_instrument_overlay():
 		var plates_node = plates_script.new()
 		plates_node.setup(u_id, w_id)
 		add_child(plates_node)
+	var tunnel_shader = Engine.get_main_loop().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier1_ShaderField/ShaderRect") if Engine.get_main_loop() else null
+	if tunnel_shader and tunnel_shader.has_method("modulate_for_scenario"):
+		tunnel_shader.modulate_for_scenario(str(_scenario_payload.get("type", "general")), _scenario_payload)
 	add_child(f_panel)
 	print("[COCKPIT] Persistent Observation Instrument HUD successfully mounted.")
 
