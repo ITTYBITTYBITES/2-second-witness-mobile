@@ -8,6 +8,8 @@ class_name BaseScenario
 
 var _scenario_payload: Dictionary = {}
 var _deterministic_rng: RandomNumberGenerator
+var current_trial: int = 1
+var target_trials: int = 5
 
 func normalize_id(id: Variant) -> String:
 	return str(id)
@@ -35,6 +37,13 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 	_scenario_payload["universe"] = normalize_id(payload.get("universe", "unknown"))
 	_scenario_payload["world"] = normalize_id(payload.get("world", "unknown"))
 	_scenario_payload["type"] = normalize_id(payload.get("type", "unknown"))
+	
+	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
+	if orch and "current_exposure_index" in orch and "current_mission" in orch and orch.current_mission.has("mechanics_chain"):
+		current_trial = orch.current_exposure_index + 1
+		target_trials = max(1, orch.current_mission["mechanics_chain"].size())
+	elif payload.has("target_trials"):
+		target_trials = int(payload["target_trials"])
 	
 	_deterministic_rng = RandomNumberGenerator.new()
 	_deterministic_rng.seed = seed_val
@@ -145,15 +154,7 @@ func _mount_cockpit_instrument_overlay():
 	if scenario_title == "":
 		scenario_title = pretty_proto
 		
-	var trial_idx = 1
-	var total_trials = 8
-	if orch and "current_exposure_index" in orch and "current_mission" in orch and orch.current_mission.has("mechanics_chain"):
-		trial_idx = orch.current_exposure_index + 1
-		total_trials = max(1, orch.current_mission["mechanics_chain"].size())
-	elif _scenario_payload.has("target_trials"):
-		total_trials = int(_scenario_payload["target_trials"])
-		
-	var progress_str = "TRIAL %d OF %d" % [trial_idx, total_trials]
+	var progress_str = "TRIAL %d OF %d" % [current_trial, target_trials]
 	
 	_cockpit_header_panel = PanelContainer.new()
 	_cockpit_header_panel.name = "CockpitHeader"
@@ -330,14 +331,40 @@ func execute_progression_event(is_success: bool, rt_ms: float, trait_id: String 
 		if is_success:
 			await get_tree().create_timer(0.5).timeout
 			if is_inside_tree():
-				if has_user_signal("completed") or has_signal("completed"):
-					emit_signal("completed")
-				queue_free()
+				if current_trial < target_trials:
+					print("[BASE SCENARIO STANDALONE] Trial %d / %d completed. Advancing..." % [current_trial, target_trials])
+					current_trial += 1
+					update_progress_display()
+					advance_to_next_trial()
+				else:
+					print("[BASE SCENARIO STANDALONE] All trials completed! Concluding scenario.")
+					if has_user_signal("completed") or has_signal("completed"):
+						emit_signal("completed")
+					queue_free()
 		else:
 			await get_tree().create_timer(0.5).timeout
 			if is_inside_tree():
 				if has_method("engine_reset_hook"): engine_reset_hook()
 				if has_method("engine_generate_hook"): engine_generate_hook()
+
+func update_progress_display():
+	var progress_str = "TRIAL %d OF %d" % [current_trial, target_trials]
+	if get_node_or_null("CockpitHeader"):
+		for child in get_node("CockpitHeader").find_children("*", "RichTextLabel", true, false):
+			if "PROGRESS:" in child.text or "CHAIN:" in child.text or "TRIAL " in child.text:
+				child.text = "[right][color=#8595FF]PROGRESS:[/color] [color=#00D4FF]%s[/color][/right]" % progress_str
+
+func advance_to_next_trial():
+	print("[BASE SCENARIO] Advancing scenario to Trial %d / %d" % [current_trial, target_trials])
+	if get_node_or_null("FeedbackLabel"):
+		get_node("FeedbackLabel").text = ""
+	elif get_node_or_null("feedback_label"):
+		get_node("feedback_label").text = ""
+	engine_reset_hook()
+	engine_generate_hook()
+	var engine = ScenarioExecutionEngine if ScenarioExecutionEngine else Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
+	if engine and engine.has_method("_transition_to_state"):
+		engine._transition_to_state(engine.LifecycleState.INPUT_WINDOW)
 
 func report_scenario_result(is_success: bool, rt_ms: float = -1.0):
 	execute_progression_event(is_success, rt_ms)

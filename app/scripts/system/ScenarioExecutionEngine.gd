@@ -117,12 +117,25 @@ func submit_answer(is_success: bool, custom_rt: float = -1.0):
 			if SessionTracker: SessionTracker.record_spike_result(s_id, true)
 		await get_tree().create_timer(0.5).timeout
 		if is_instance_valid(active_scenario):
-			scenario_completed.emit(s_id, rt_ms)
-			if active_scenario.has_user_signal("completed") or active_scenario.has_signal("completed"):
-				active_scenario.emit_signal("completed")
-			active_scenario.queue_free()
-			active_scenario = null
-			current_state = LifecycleState.IDLE
+			var cur_t = active_scenario.get("current_trial")
+			var tot_t = active_scenario.get("target_trials")
+			if cur_t != null and tot_t != null and int(cur_t) < int(tot_t):
+				print("[SCENARIO ENGINE] Trial %d / %d completed. Advancing stream..." % [int(cur_t), int(tot_t)])
+				active_scenario.current_trial = int(cur_t) + 1
+				if active_scenario.has_method("update_progress_display"):
+					active_scenario.update_progress_display()
+				if active_scenario.has_method("advance_to_next_trial"):
+					active_scenario.advance_to_next_trial()
+				else:
+					_transition_to_state(LifecycleState.RESET)
+			else:
+				print("[SCENARIO ENGINE] All trials in scenario completed! Concluding scenario.")
+				scenario_completed.emit(s_id, rt_ms)
+				if active_scenario.has_user_signal("completed") or active_scenario.has_signal("completed"):
+					active_scenario.emit_signal("completed")
+				active_scenario.queue_free()
+				active_scenario = null
+				current_state = LifecycleState.IDLE
 	else:
 		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter")
 		if interp and interp.has_method("process_progression_event"):
