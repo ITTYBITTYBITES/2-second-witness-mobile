@@ -138,14 +138,22 @@ func _mount_cockpit_instrument_overlay():
 	elif pretty_trait == "Classification": pretty_trait = "RAPID CLASSIFICATION"
 	elif pretty_trait == "Decision": pretty_trait = "DECISION CONFIDENCE"
 	
-	var chain_idx = 1
-	var router = Engine.get_main_loop().root.get_node_or_null("NavigationRouter") if Engine.get_main_loop() else null
-	if router and "current_scenario_chain_index" in router:
-		chain_idx = router.current_scenario_chain_index
+	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
+	var scenario_title = str(_scenario_payload.get("title", _scenario_payload.get("mission_title", "")))
+	if scenario_title == "" and orch and "current_mission" in orch and orch.current_mission.has("title") and orch.current_mission["title"] != "":
+		scenario_title = str(orch.current_mission["title"])
+	if scenario_title == "":
+		scenario_title = pretty_proto
 		
-	var chain_str = "[color=#00D4FF]●[/color] [color=#444444]○ ○[/color]"
-	if chain_idx == 2: chain_str = "[color=#00D4FF]● ●[/color] [color=#444444]○[/color]"
-	elif chain_idx >= 3: chain_str = "[color=#00D4FF]● ● ●[/color]"
+	var trial_idx = 1
+	var total_trials = 8
+	if orch and "current_exposure_index" in orch and "current_mission" in orch and orch.current_mission.has("mechanics_chain"):
+		trial_idx = orch.current_exposure_index + 1
+		total_trials = max(1, orch.current_mission["mechanics_chain"].size())
+	elif _scenario_payload.has("target_trials"):
+		total_trials = int(_scenario_payload["target_trials"])
+		
+	var progress_str = "TRIAL %d OF %d" % [trial_idx, total_trials]
 	
 	_cockpit_header_panel = PanelContainer.new()
 	_cockpit_header_panel.name = "CockpitHeader"
@@ -181,7 +189,7 @@ func _mount_cockpit_instrument_overlay():
 	
 	var lbl_proto = RichTextLabel.new()
 	lbl_proto.bbcode_enabled = true
-	lbl_proto.text = "[center][b][color=#8595FF]%s[/color][/b] [color=#445566]▶[/color] [b][color=#E6B800]%s[/color][/b] [color=#667799]// PROTOCOL:[/color] [b][color=#FFFFFF]%s[/color][/b][/center]" % [pretty_uni.to_upper(), pretty_world.to_upper(), pretty_proto.to_upper()]
+	lbl_proto.text = "[center][b][color=#8595FF]%s[/color][/b] [color=#445566]▶[/color] [b][color=#E6B800]%s[/color][/b] [color=#667799]// SCENARIO:[/color] [b][color=#FFFFFF]%s[/color][/b][/center]" % [pretty_uni.to_upper(), pretty_world.to_upper(), scenario_title.to_upper()]
 	lbl_proto.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	lbl_proto.fit_content = true
 	lbl_proto.add_theme_font_size_override("normal_font_size", 16)
@@ -189,7 +197,7 @@ func _mount_cockpit_instrument_overlay():
 	
 	var lbl_chain = RichTextLabel.new()
 	lbl_chain.bbcode_enabled = true
-	lbl_chain.text = "[right][color=#8595FF]CHAIN:[/color] %s[/right]" % chain_str
+	lbl_chain.text = "[right][color=#8595FF]PROGRESS:[/color] [color=#00D4FF]%s[/color][/right]" % progress_str
 	lbl_chain.fit_content = true
 	lbl_chain.custom_minimum_size = Vector2(180, 30)
 	lbl_chain.add_theme_font_size_override("normal_font_size", 16)
