@@ -22,7 +22,7 @@ jobs:
           if [ "${{ github.event.client_payload.failure_vector }}" == "shader_compile_fail" ]; then
             echo "Patching manifest.json to force LOW profile for this device..."
             # Simple jq manipulation to add device to fallback array
-            jq '. + {force_low_profile_devices: (.[].force_low_profile_devices? // [] + ["${{ github.event.client_payload.device_model }}"])}' live_content/manifest.json > tmp.json && mv temp.json live_content/manifest.json
+            jq '. + {force_low_profile_devices: (.[].force_low_profile_devices? // [] + ["${{ github.event.client_payload.device_model }}"])}' live_content/manifest.json > tmp.json && mv tmp.json live_content/manifest.json
           fi
 
       - name: Commit Automated Patch
