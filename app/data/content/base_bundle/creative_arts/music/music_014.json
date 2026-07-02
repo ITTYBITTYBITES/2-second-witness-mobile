@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "music",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "COUNTERPOINT",
-        "legacy_prompt": "Two independent melodies playing simultaneously and harmonizing.",
         "correct_answer": "Counterpoint",
         "wrong_answers": [
             "Harmony",
             "Unison",
             "Canon"
-        ]
+        ],
+        "legacy_prompt": "Two independent melodies playing simultaneously and harmonizing.",
+        "prompt": "Two independent melodies playing simultaneously and harmonizing."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

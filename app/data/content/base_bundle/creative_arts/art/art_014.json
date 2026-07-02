@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "art",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "POP",
-        "legacy_prompt": "Art movement using imagery from mass media and advertising.",
         "correct_answer": "Pop Art",
         "wrong_answers": [
             "Commercial Art",
             "Graphic Design",
             "Illustration"
-        ]
+        ],
+        "legacy_prompt": "Art movement using imagery from mass media and advertising.",
+        "prompt": "Art movement using imagery from mass media and advertising."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

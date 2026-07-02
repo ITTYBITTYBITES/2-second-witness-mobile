@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "homerepair",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PAINT",
-        "legacy_prompt": "Applying painter's tape along edges before painting a wall.",
         "correct_answer": "Masking",
         "wrong_answers": [
             "Priming",
             "Cutting In",
             "Edging"
-        ]
+        ],
+        "legacy_prompt": "Applying painter's tape along edges before painting a wall.",
+        "prompt": "Applying painter's tape along edges before painting a wall."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

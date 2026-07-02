@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "parenting",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "COLIC",
-        "legacy_prompt": "Baby crying intensely for 3+ hours daily with no apparent cause.",
         "correct_answer": "Colic",
         "wrong_answers": [
             "Hunger",
             "Pain",
             "Gas"
-        ]
+        ],
+        "legacy_prompt": "Baby crying intensely for 3+ hours daily with no apparent cause.",
+        "prompt": "Baby crying intensely for 3+ hours daily with no apparent cause."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

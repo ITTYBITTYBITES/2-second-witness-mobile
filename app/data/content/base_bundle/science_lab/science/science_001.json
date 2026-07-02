@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "science",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "REACTION",
-        "legacy_prompt": "Metal fizzes violently when dropped in water, produces gas.",
         "correct_answer": "Alkali Metal Reaction",
         "wrong_answers": [
             "Acid Dissolving",
             "Electrolysis",
             "Combustion"
-        ]
+        ],
+        "legacy_prompt": "Metal fizzes violently when dropped in water, produces gas.",
+        "prompt": "Metal fizzes violently when dropped in water, produces gas."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

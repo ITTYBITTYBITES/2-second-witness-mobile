@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "food",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CURE",
-        "legacy_prompt": "Fish buried in salt and sugar mixture for 48 hours.",
         "correct_answer": "Curing",
         "wrong_answers": [
             "Brining",
             "Pickling",
             "Marinating"
-        ]
+        ],
+        "legacy_prompt": "Fish buried in salt and sugar mixture for 48 hours.",
+        "prompt": "Fish buried in salt and sugar mixture for 48 hours."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

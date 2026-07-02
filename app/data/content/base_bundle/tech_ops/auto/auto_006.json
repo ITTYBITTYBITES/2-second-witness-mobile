@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "auto",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FUEL",
-        "legacy_prompt": "Engine stalls at idle but runs fine at higher RPM.",
         "correct_answer": "Idle Air Control",
         "wrong_answers": [
             "Fuel Pump",
             "Clogged Filter",
             "Bad Gas"
-        ]
+        ],
+        "legacy_prompt": "Engine stalls at idle but runs fine at higher RPM.",
+        "prompt": "Engine stalls at idle but runs fine at higher RPM."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

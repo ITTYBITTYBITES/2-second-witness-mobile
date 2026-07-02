@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "gardening",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "GRAFT",
-        "legacy_prompt": "Joining a branch from one tree onto the trunk of another.",
         "correct_answer": "Grafting",
         "wrong_answers": [
             "Budding",
             "Layering",
             "Division"
-        ]
+        ],
+        "legacy_prompt": "Joining a branch from one tree onto the trunk of another.",
+        "prompt": "Joining a branch from one tree onto the trunk of another."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

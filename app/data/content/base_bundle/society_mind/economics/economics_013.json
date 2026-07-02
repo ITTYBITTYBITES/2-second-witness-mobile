@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "economics",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TRADE",
-        "legacy_prompt": "Both countries benefiting by specializing in what they do best.",
         "correct_answer": "Comparative Advantage",
         "wrong_answers": [
             "Absolute Advantage",
             "Trade Surplus",
             "Free Trade"
-        ]
+        ],
+        "legacy_prompt": "Both countries benefiting by specializing in what they do best.",
+        "prompt": "Both countries benefiting by specializing in what they do best."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

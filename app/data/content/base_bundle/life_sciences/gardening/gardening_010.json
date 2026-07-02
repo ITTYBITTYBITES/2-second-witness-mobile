@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "gardening",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DRAINAGE",
-        "legacy_prompt": "Water pooling on soil surface and not soaking in.",
         "correct_answer": "Poor Drainage",
         "wrong_answers": [
             "Overwatering",
             "Clay Soil",
             "Compaction"
-        ]
+        ],
+        "legacy_prompt": "Water pooling on soil surface and not soaking in.",
+        "prompt": "Water pooling on soil surface and not soaking in."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

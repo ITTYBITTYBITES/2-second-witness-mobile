@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "telecom",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TOWER",
-        "legacy_prompt": "Triangulating a phone's position using three cell towers.",
         "correct_answer": "Cell Tower Triangulation",
         "wrong_answers": [
             "GPS Tracking",
             "Wi-Fi Positioning",
             "Bluetooth Beacon"
-        ]
+        ],
+        "legacy_prompt": "Triangulating a phone's position using three cell towers.",
+        "prompt": "Triangulating a phone's position using three cell towers."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "microbiology",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "AMOEBA",
-        "legacy_prompt": "Single-celled organism moving by extending its cell membrane.",
         "correct_answer": "Pseudopod Movement",
         "wrong_answers": [
             "Flagella",
             "Cilia",
             "Jet Propulsion"
-        ]
+        ],
+        "legacy_prompt": "Single-celled organism moving by extending its cell membrane.",
+        "prompt": "Single-celled organism moving by extending its cell membrane."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

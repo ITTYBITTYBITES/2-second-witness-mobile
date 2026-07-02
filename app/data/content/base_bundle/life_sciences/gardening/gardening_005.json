@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "gardening",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SEED",
-        "legacy_prompt": "Soaking seeds in water overnight before planting.",
         "correct_answer": "Scarification",
         "wrong_answers": [
             "Stratification",
             "Germination",
             "Propagation"
-        ]
+        ],
+        "legacy_prompt": "Soaking seeds in water overnight before planting.",
+        "prompt": "Soaking seeds in water overnight before planting."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

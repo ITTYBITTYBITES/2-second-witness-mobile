@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "ocean",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PRESSURE",
-        "legacy_prompt": "Submarine hull groaning at extreme depth.",
         "correct_answer": "Structural Stress",
         "wrong_answers": [
             "Engine Failure",
             "Leak",
             "Navigation Error"
-        ]
+        ],
+        "legacy_prompt": "Submarine hull groaning at extreme depth.",
+        "prompt": "Submarine hull groaning at extreme depth."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

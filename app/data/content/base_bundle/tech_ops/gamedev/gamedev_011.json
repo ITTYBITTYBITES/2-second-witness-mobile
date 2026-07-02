@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "gamedev",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TWEEN",
-        "legacy_prompt": "Value smoothly changing from one number to another over time.",
         "correct_answer": "Tweening",
         "wrong_answers": [
             "Lerping",
             "Easing",
             "Interpolation"
-        ]
+        ],
+        "legacy_prompt": "Value smoothly changing from one number to another over time.",
+        "prompt": "Value smoothly changing from one number to another over time."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

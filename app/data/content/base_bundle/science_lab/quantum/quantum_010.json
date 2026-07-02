@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "quantum",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SPIN",
-        "legacy_prompt": "Spooky action at a distance connecting paired quantum wave functions.",
         "correct_answer": "Quantum Entanglement",
         "wrong_answers": [
             "Superposition",
             "Tunneling",
             "Interference"
-        ]
+        ],
+        "legacy_prompt": "Spooky action at a distance connecting paired quantum wave functions.",
+        "prompt": "Spooky action at a distance connecting paired quantum wave functions."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "quantum",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CAT",
-        "legacy_prompt": "Thought experiment where cat is alive and dead simultaneously.",
         "correct_answer": "Schrodinger Cat",
         "wrong_answers": [
             "Maxwell Demon",
             "Einstein Box",
             "Wigner Friend"
-        ]
+        ],
+        "legacy_prompt": "Thought experiment where cat is alive and dead simultaneously.",
+        "prompt": "Thought experiment where cat is alive and dead simultaneously."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

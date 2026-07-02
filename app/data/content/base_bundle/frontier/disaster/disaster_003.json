@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "disaster",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TSUNAMI",
-        "legacy_prompt": "Ocean water suddenly receding far from shore.",
         "correct_answer": "Tsunami Warning Sign",
         "wrong_answers": [
             "Low Tide",
             "Current Change",
             "Storm Surge"
-        ]
+        ],
+        "legacy_prompt": "Ocean water suddenly receding far from shore.",
+        "prompt": "Ocean water suddenly receding far from shore."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

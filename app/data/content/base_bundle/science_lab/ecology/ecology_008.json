@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "ecology",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SYMBIOSIS",
-        "legacy_prompt": "Clownfish living safely among poisonous anemone tentacles.",
         "correct_answer": "Mutualism",
         "wrong_answers": [
             "Parasitism",
             "Commensalism",
             "Competition"
-        ]
+        ],
+        "legacy_prompt": "Clownfish living safely among poisonous anemone tentacles.",
+        "prompt": "Clownfish living safely among poisonous anemone tentacles."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "finance",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PONZI",
-        "legacy_prompt": "Returns paid to old investors using money from new investors.",
         "correct_answer": "Ponzi Scheme",
         "wrong_answers": [
             "Pyramid Scheme",
             "Insider Trading",
             "Market Making"
-        ]
+        ],
+        "legacy_prompt": "Returns paid to old investors using money from new investors.",
+        "prompt": "Returns paid to old investors using money from new investors."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

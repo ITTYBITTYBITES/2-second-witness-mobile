@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "gamedev",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "POOL",
-        "legacy_prompt": "Reusing bullet objects instead of creating and destroying them.",
         "correct_answer": "Object Pooling",
         "wrong_answers": [
             "Garbage Collection",
             "Memory Management",
             "Caching"
-        ]
+        ],
+        "legacy_prompt": "Reusing bullet objects instead of creating and destroying them.",
+        "prompt": "Reusing bullet objects instead of creating and destroying them."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

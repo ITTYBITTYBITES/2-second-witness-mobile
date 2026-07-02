@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "pets",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MICROCHIP",
-        "legacy_prompt": "Tiny device implanted under skin for permanent identification.",
         "correct_answer": "Pet Microchip",
         "wrong_answers": [
             "GPS Tracker",
             "Health Monitor",
             "Vaccine Record"
-        ]
+        ],
+        "legacy_prompt": "Tiny device implanted under skin for permanent identification.",
+        "prompt": "Tiny device implanted under skin for permanent identification."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

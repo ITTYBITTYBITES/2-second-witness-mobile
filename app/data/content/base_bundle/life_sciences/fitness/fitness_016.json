@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "fitness",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "OVERTRAINING",
-        "legacy_prompt": "Persistent fatigue, insomnia, and decreased performance.",
         "correct_answer": "Overtraining Syndrome",
         "wrong_answers": [
             "Depression",
             "Illness",
             "Poor Diet"
-        ]
+        ],
+        "legacy_prompt": "Persistent fatigue, insomnia, and decreased performance.",
+        "prompt": "Persistent fatigue, insomnia, and decreased performance."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

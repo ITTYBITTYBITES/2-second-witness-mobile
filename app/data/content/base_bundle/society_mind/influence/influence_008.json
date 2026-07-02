@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "influence",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LIKE",
-        "legacy_prompt": "Sales person mirrors your body language and interests.",
         "correct_answer": "Liking Principle",
         "wrong_answers": [
             "Rapport Building",
             "Mirroring",
             "Ingratiation"
-        ]
+        ],
+        "legacy_prompt": "Sales person mirrors your body language and interests.",
+        "prompt": "Sales person mirrors your body language and interests."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

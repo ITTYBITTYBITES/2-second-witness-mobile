@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "economics",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SUBSIDY",
-        "legacy_prompt": "Government paying farmers to grow certain crops.",
         "correct_answer": "Agricultural Subsidy",
         "wrong_answers": [
             "Tariff",
             "Tax Break",
             "Grant"
-        ]
+        ],
+        "legacy_prompt": "Government paying farmers to grow certain crops.",
+        "prompt": "Government paying farmers to grow certain crops."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

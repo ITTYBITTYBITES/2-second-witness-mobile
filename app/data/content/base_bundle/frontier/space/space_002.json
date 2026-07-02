@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "space",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ORBIT",
-        "legacy_prompt": "Spacecraft uses planet gravity to change direction and speed.",
         "correct_answer": "Gravity Assist",
         "wrong_answers": [
             "Orbital Insertion",
             "Aerobraking",
             "Thrust Vectoring"
-        ]
+        ],
+        "legacy_prompt": "Spacecraft uses planet gravity to change direction and speed.",
+        "prompt": "Spacecraft uses planet gravity to change direction and speed."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

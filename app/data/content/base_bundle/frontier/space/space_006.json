@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "space",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SIGNAL",
-        "legacy_prompt": "Repeating radio burst from deep space, origin unknown.",
         "correct_answer": "Fast Radio Burst",
         "wrong_answers": [
             "Pulsar",
             "Quasar",
             "Satellite Noise"
-        ]
+        ],
+        "legacy_prompt": "Repeating radio burst from deep space, origin unknown.",
+        "prompt": "Repeating radio burst from deep space, origin unknown."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

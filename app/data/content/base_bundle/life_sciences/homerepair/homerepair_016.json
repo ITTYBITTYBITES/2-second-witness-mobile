@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "homerepair",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TRAP",
-        "legacy_prompt": "U-shaped pipe under the sink preventing sewer gas.",
         "correct_answer": "P-Trap",
         "wrong_answers": [
             "S-Trap",
             "Drain Pipe",
             "Vent Pipe"
-        ]
+        ],
+        "legacy_prompt": "U-shaped pipe under the sink preventing sewer gas.",
+        "prompt": "U-shaped pipe under the sink preventing sewer gas."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

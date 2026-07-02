@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "firstaid",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BURN",
-        "legacy_prompt": "Red painful skin after touching a hot stove.",
         "correct_answer": "First Degree Burn",
         "wrong_answers": [
             "Second Degree",
             "Third Degree",
             "Chemical Burn"
-        ]
+        ],
+        "legacy_prompt": "Red painful skin after touching a hot stove.",
+        "prompt": "Red painful skin after touching a hot stove."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

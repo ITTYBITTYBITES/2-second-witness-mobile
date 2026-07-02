@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "survival",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DEHYDRATE",
-        "legacy_prompt": "Dark yellow urine and dizziness in hot weather.",
         "correct_answer": "Severe Dehydration",
         "wrong_answers": [
             "Heat Exhaustion",
             "Sunstroke",
             "Low Blood Sugar"
-        ]
+        ],
+        "legacy_prompt": "Dark yellow urine and dizziness in hot weather.",
+        "prompt": "Dark yellow urine and dizziness in hot weather."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

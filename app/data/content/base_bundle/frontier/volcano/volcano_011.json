@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "volcano",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "GEYSER",
-        "legacy_prompt": "Hot water erupting periodically from underground heat source.",
         "correct_answer": "Geyser",
         "wrong_answers": [
             "Hot Spring",
             "Fumarole",
             "Mud Pot"
-        ]
+        ],
+        "legacy_prompt": "Hot water erupting periodically from underground heat source.",
+        "prompt": "Hot water erupting periodically from underground heat source."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

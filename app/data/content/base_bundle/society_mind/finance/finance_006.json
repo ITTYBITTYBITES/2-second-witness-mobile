@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "finance",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SAFE",
-        "legacy_prompt": "Bank charges you for holding your money during negative rates.",
         "correct_answer": "Negative Interest Rate",
         "wrong_answers": [
             "Overdraft Fee",
             "Service Charge",
             "Inflation Tax"
-        ]
+        ],
+        "legacy_prompt": "Bank charges you for holding your money during negative rates.",
+        "prompt": "Bank charges you for holding your money during negative rates."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

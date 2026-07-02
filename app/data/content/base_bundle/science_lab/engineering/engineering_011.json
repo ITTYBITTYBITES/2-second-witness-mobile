@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "engineering",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FATIGUE",
-        "legacy_prompt": "Metal cracking after millions of repeated stress cycles.",
         "correct_answer": "Metal Fatigue",
         "wrong_answers": [
             "Corrosion",
             "Creep",
             "Fracture"
-        ]
+        ],
+        "legacy_prompt": "Metal cracking after millions of repeated stress cycles.",
+        "prompt": "Metal cracking after millions of repeated stress cycles."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

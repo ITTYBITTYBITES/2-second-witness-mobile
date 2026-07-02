@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "quantum",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "UNCERTAIN",
-        "legacy_prompt": "Cannot know both position and momentum precisely.",
         "correct_answer": "Heisenberg Uncertainty",
         "wrong_answers": [
             "Schrodinger Equation",
             "Planck Constant",
             "Born Rule"
-        ]
+        ],
+        "legacy_prompt": "Cannot know both position and momentum precisely.",
+        "prompt": "Cannot know both position and momentum precisely."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "auto",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ENGINE",
-        "legacy_prompt": "Car shaking, check engine light, rough idle, misfiring.",
         "correct_answer": "Spark Plug Failure",
         "wrong_answers": [
             "Flat Tire",
             "Low Oil",
             "Bad Battery"
-        ]
+        ],
+        "legacy_prompt": "Car shaking, check engine light, rough idle, misfiring.",
+        "prompt": "Car shaking, check engine light, rough idle, misfiring."
     },
     "presentation": {
         "title": "Likely Issue:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

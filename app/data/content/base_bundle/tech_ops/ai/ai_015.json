@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "EPOCH",
-        "legacy_prompt": "Running through the entire training dataset one complete time.",
         "correct_answer": "Training Epoch",
         "wrong_answers": [
             "Batch",
             "Iteration",
             "Cycle"
-        ]
+        ],
+        "legacy_prompt": "Running through the entire training dataset one complete time.",
+        "prompt": "Running through the entire training dataset one complete time."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "arctic",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "IGLOO",
-        "legacy_prompt": "Dome-shaped shelter built from compacted snow blocks.",
         "correct_answer": "Igloo",
         "wrong_answers": [
             "Quinzhee",
             "Snow Cave",
             "Lean-To"
-        ]
+        ],
+        "legacy_prompt": "Dome-shaped shelter built from compacted snow blocks.",
+        "prompt": "Dome-shaped shelter built from compacted snow blocks."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

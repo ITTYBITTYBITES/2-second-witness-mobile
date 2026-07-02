@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "disaster",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "WILDFIRE",
-        "legacy_prompt": "Creating a firebreak by removing vegetation in a strip.",
         "correct_answer": "Firebreak",
         "wrong_answers": [
             "Backfire",
             "Controlled Burn",
             "Fire Line"
-        ]
+        ],
+        "legacy_prompt": "Creating a firebreak by removing vegetation in a strip.",
+        "prompt": "Creating a firebreak by removing vegetation in a strip."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

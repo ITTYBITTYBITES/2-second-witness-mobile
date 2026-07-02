@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "fashion",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BIAS",
-        "legacy_prompt": "Cutting fabric diagonally across the grain for stretch.",
         "correct_answer": "Bias Cut",
         "wrong_answers": [
             "Cross Grain",
             "Selvage Cut",
             "Straight Cut"
-        ]
+        ],
+        "legacy_prompt": "Cutting fabric diagonally across the grain for stretch.",
+        "prompt": "Cutting fabric diagonally across the grain for stretch."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

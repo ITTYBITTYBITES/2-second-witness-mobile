@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "engineering",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "EFFICIENCY",
-        "legacy_prompt": "Engine converting only 25% of fuel energy into motion.",
         "correct_answer": "Thermal Efficiency",
         "wrong_answers": [
             "Mechanical Efficiency",
             "Volumetric Efficiency",
             "Power Output"
-        ]
+        ],
+        "legacy_prompt": "Engine converting only 25% of fuel energy into motion.",
+        "prompt": "Engine converting only 25% of fuel energy into motion."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

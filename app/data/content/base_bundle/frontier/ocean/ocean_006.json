@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "ocean",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "VOLCANIC",
-        "legacy_prompt": "Superheated water venting from seafloor cracks.",
         "correct_answer": "Hydrothermal Vent",
         "wrong_answers": [
             "Volcanic Eruption",
             "Oil Leak",
             "Chemical Spill"
-        ]
+        ],
+        "legacy_prompt": "Superheated water venting from seafloor cracks.",
+        "prompt": "Superheated water venting from seafloor cracks."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

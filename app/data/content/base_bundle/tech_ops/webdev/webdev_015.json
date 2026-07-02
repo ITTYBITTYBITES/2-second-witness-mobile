@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "webdev",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SPA",
-        "legacy_prompt": "Web app loading once and updating content without page refreshes.",
         "correct_answer": "Single Page Application",
         "wrong_answers": [
             "Static Site",
             "Server Rendered",
             "Progressive Web App"
-        ]
+        ],
+        "legacy_prompt": "Web app loading once and updating content without page refreshes.",
+        "prompt": "Web app loading once and updating content without page refreshes."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

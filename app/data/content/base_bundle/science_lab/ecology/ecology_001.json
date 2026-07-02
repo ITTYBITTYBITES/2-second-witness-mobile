@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "ecology",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FOOD",
-        "legacy_prompt": "Arrows showing energy flow from grass to rabbit to fox.",
         "correct_answer": "Food Chain",
         "wrong_answers": [
             "Food Web",
             "Energy Pyramid",
             "Trophic Level"
-        ]
+        ],
+        "legacy_prompt": "Arrows showing energy flow from grass to rabbit to fox.",
+        "prompt": "Arrows showing energy flow from grass to rabbit to fox."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

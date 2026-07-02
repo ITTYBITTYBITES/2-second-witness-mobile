@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "wilderness",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CORDAGE",
-        "legacy_prompt": "Twisting plant fibers together to make strong rope.",
         "correct_answer": "Natural Cordage",
         "wrong_answers": [
             "Weaving",
             "Braiding",
             "Knitting"
-        ]
+        ],
+        "legacy_prompt": "Twisting plant fibers together to make strong rope.",
+        "prompt": "Twisting plant fibers together to make strong rope."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

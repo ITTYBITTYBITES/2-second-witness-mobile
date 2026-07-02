@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BIAS",
-        "legacy_prompt": "AI hiring tool rejecting qualified candidates based on gender.",
         "correct_answer": "Algorithmic Bias",
         "wrong_answers": [
             "Overfitting",
             "Underfitting",
             "Data Leakage"
-        ]
+        ],
+        "legacy_prompt": "AI hiring tool rejecting qualified candidates based on gender.",
+        "prompt": "AI hiring tool rejecting qualified candidates based on gender."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

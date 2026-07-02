@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "film",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MONTAGE",
-        "legacy_prompt": "Series of quick shots showing passage of time.",
         "correct_answer": "Montage Sequence",
         "wrong_answers": [
             "Flashback",
             "Dream Sequence",
             "Parallel Editing"
-        ]
+        ],
+        "legacy_prompt": "Series of quick shots showing passage of time.",
+        "prompt": "Series of quick shots showing passage of time."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

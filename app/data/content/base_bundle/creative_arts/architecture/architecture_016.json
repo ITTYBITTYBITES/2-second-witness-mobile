@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "architecture",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DECONSTRUCTIVISM",
-        "legacy_prompt": "Building with fragmented, unpredictable shapes and angles.",
         "correct_answer": "Deconstructivism",
         "wrong_answers": [
             "Brutalism",
             "Modernism",
             "Postmodernism"
-        ]
+        ],
+        "legacy_prompt": "Building with fragmented, unpredictable shapes and angles.",
+        "prompt": "Building with fragmented, unpredictable shapes and angles."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

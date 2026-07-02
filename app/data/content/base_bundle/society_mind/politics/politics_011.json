@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "politics",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CAUCUS",
-        "legacy_prompt": "Small group meeting to select candidates within a party.",
         "correct_answer": "Political Caucus",
         "wrong_answers": [
             "Primary Election",
             "Convention",
             "Town Hall"
-        ]
+        ],
+        "legacy_prompt": "Small group meeting to select candidates within a party.",
+        "prompt": "Small group meeting to select candidates within a party."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

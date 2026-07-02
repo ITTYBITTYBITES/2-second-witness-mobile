@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "gamedev",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "STATE",
-        "legacy_prompt": "Character switching between idle, walking, jumping, and attacking.",
         "correct_answer": "State Machine",
         "wrong_answers": [
             "Behavior Tree",
             "Event System",
             "Command Pattern"
-        ]
+        ],
+        "legacy_prompt": "Character switching between idle, walking, jumping, and attacking.",
+        "prompt": "Character switching between idle, walking, jumping, and attacking."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

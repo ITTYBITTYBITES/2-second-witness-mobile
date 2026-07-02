@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "genetics",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "HELIX",
-        "legacy_prompt": "Molecule that carries genetic instructions for life.",
         "correct_answer": "DNA",
         "wrong_answers": [
             "RNA",
             "Protein",
             "Enzyme"
-        ]
+        ],
+        "legacy_prompt": "Molecule that carries genetic instructions for life.",
+        "prompt": "Molecule that carries genetic instructions for life."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

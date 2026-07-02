@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "webdev",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FRAMEWORK",
-        "legacy_prompt": "Pre-built structure providing routing, templates, and database tools.",
         "correct_answer": "Web Framework",
         "wrong_answers": [
             "Library",
             "SDK",
             "IDE"
-        ]
+        ],
+        "legacy_prompt": "Pre-built structure providing routing, templates, and database tools.",
+        "prompt": "Pre-built structure providing routing, templates, and database tools."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

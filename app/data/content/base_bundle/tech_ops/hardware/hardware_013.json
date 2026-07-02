@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "hardware",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FUSE",
-        "legacy_prompt": "Component that melts to break a circuit during overload.",
         "correct_answer": "Fuse",
         "wrong_answers": [
             "Circuit Breaker",
             "Relay",
             "Switch"
-        ]
+        ],
+        "legacy_prompt": "Component that melts to break a circuit during overload.",
+        "prompt": "Component that melts to break a circuit during overload."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

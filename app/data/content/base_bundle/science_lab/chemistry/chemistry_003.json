@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "chemistry",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CATALYST",
-        "legacy_prompt": "Substance speeding up a reaction without being consumed.",
         "correct_answer": "Catalyst",
         "wrong_answers": [
             "Reactant",
             "Product",
             "Solvent"
-        ]
+        ],
+        "legacy_prompt": "Substance speeding up a reaction without being consumed.",
+        "prompt": "Substance speeding up a reaction without being consumed."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

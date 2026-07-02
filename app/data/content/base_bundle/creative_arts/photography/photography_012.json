@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "photography",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LONG",
-        "legacy_prompt": "Car headlights appearing as streaks of light in a night photo.",
         "correct_answer": "Long Exposure",
         "wrong_answers": [
             "Motion Blur",
             "Light Painting",
             "Slow Sync"
-        ]
+        ],
+        "legacy_prompt": "Car headlights appearing as streaks of light in a night photo.",
+        "prompt": "Car headlights appearing as streaks of light in a night photo."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

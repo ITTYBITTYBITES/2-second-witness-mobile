@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "heist",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TUNNEL",
-        "legacy_prompt": "Digging from a nearby building basement to reach the vault.",
         "correct_answer": "Underground Entry",
         "wrong_answers": [
             "Sewer Access",
             "Subway Tunnel",
             "Utility Access"
-        ]
+        ],
+        "legacy_prompt": "Digging from a nearby building basement to reach the vault.",
+        "prompt": "Digging from a nearby building basement to reach the vault."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

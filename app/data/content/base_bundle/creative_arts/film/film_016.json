@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "film",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DUTCH",
-        "legacy_prompt": "Camera tilted at an angle to create unease or tension.",
         "correct_answer": "Dutch Angle",
         "wrong_answers": [
             "Canted Frame",
             "Skewed Shot",
             "Oblique Angle"
-        ]
+        ],
+        "legacy_prompt": "Camera tilted at an angle to create unease or tension.",
+        "prompt": "Camera tilted at an angle to create unease or tension."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

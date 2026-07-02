@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "military",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FORMATION",
-        "legacy_prompt": "Soldiers arranged in a V-shape while moving through open terrain.",
         "correct_answer": "Wedge Formation",
         "wrong_answers": [
             "Line Formation",
             "Column",
             "Diamond"
-        ]
+        ],
+        "legacy_prompt": "Soldiers arranged in a V-shape while moving through open terrain.",
+        "prompt": "Soldiers arranged in a V-shape while moving through open terrain."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

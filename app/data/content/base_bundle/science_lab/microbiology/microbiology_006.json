@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "microbiology",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "RESISTANT",
-        "legacy_prompt": "Bacteria surviving despite exposure to multiple antibiotics.",
         "correct_answer": "Antibiotic Resistance",
         "wrong_answers": [
             "Immunity",
             "Mutation",
             "Dormancy"
-        ]
+        ],
+        "legacy_prompt": "Bacteria surviving despite exposure to multiple antibiotics.",
+        "prompt": "Bacteria surviving despite exposure to multiple antibiotics."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "photography",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SHUTTER",
-        "legacy_prompt": "Length of time the camera sensor is exposed to light.",
         "correct_answer": "Shutter Speed",
         "wrong_answers": [
             "Aperture",
             "ISO",
             "Frame Rate"
-        ]
+        ],
+        "legacy_prompt": "Length of time the camera sensor is exposed to light.",
+        "prompt": "Length of time the camera sensor is exposed to light."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

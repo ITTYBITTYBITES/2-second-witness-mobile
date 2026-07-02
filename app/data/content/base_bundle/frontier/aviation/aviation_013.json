@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "aviation",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CEILING",
-        "legacy_prompt": "Lowest altitude of cloud layer covering the sky.",
         "correct_answer": "Cloud Ceiling",
         "wrong_answers": [
             "Visibility",
             "Flight Level",
             "Pressure Altitude"
-        ]
+        ],
+        "legacy_prompt": "Lowest altitude of cloud layer covering the sky.",
+        "prompt": "Lowest altitude of cloud layer covering the sky."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "architecture",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SUSTAINABLE",
-        "legacy_prompt": "Building designed to minimize environmental impact.",
         "correct_answer": "Green Architecture",
         "wrong_answers": [
             "Modern Architecture",
             "Smart Building",
             "Passive House"
-        ]
+        ],
+        "legacy_prompt": "Building designed to minimize environmental impact.",
+        "prompt": "Building designed to minimize environmental impact."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

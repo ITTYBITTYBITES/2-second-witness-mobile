@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "ocean",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "OXYGEN",
-        "legacy_prompt": "Air supply depleting faster than calculated.",
         "correct_answer": "CO2 Scrubber Failure",
         "wrong_answers": [
             "Leak",
             "Crew Panic",
             "Altitude"
-        ]
+        ],
+        "legacy_prompt": "Air supply depleting faster than calculated.",
+        "prompt": "Air supply depleting faster than calculated."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

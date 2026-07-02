@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "iot",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ZIGBEE",
-        "legacy_prompt": "Low-power protocol designed for short-range device communication.",
         "correct_answer": "Zigbee",
         "wrong_answers": [
             "Bluetooth",
             "Wi-Fi",
             "NFC"
-        ]
+        ],
+        "legacy_prompt": "Low-power protocol designed for short-range device communication.",
+        "prompt": "Low-power protocol designed for short-range device communication."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

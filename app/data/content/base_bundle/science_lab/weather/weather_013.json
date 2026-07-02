@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "weather",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "HEAT",
-        "legacy_prompt": "Extended period of abnormally high temperatures.",
         "correct_answer": "Heat Wave",
         "wrong_answers": [
             "Drought",
             "El Nino",
             "Climate Change"
-        ]
+        ],
+        "legacy_prompt": "Extended period of abnormally high temperatures.",
+        "prompt": "Extended period of abnormally high temperatures."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

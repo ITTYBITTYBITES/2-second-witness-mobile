@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "geology",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CRYSTAL",
-        "legacy_prompt": "Mineral forming geometric shapes as it cools slowly.",
         "correct_answer": "Crystallization",
         "wrong_answers": [
             "Erosion",
             "Weathering",
             "Deposition"
-        ]
+        ],
+        "legacy_prompt": "Mineral forming geometric shapes as it cools slowly.",
+        "prompt": "Mineral forming geometric shapes as it cools slowly."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

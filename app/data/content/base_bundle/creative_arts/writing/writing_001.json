@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "writing",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "METAPHOR",
-        "legacy_prompt": "Life is a journey with many unexpected turns.",
         "correct_answer": "Metaphor",
         "wrong_answers": [
             "Simile",
             "Analogy",
             "Personification"
-        ]
+        ],
+        "legacy_prompt": "Life is a journey with many unexpected turns.",
+        "prompt": "Life is a journey with many unexpected turns."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

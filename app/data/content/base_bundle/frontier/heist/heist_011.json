@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "heist",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DISGUISE",
-        "legacy_prompt": "Entering a building dressed as maintenance workers.",
         "correct_answer": "Social Engineering",
         "wrong_answers": [
             "Trespassing",
             "Breaking and Entering",
             "Impersonation"
-        ]
+        ],
+        "legacy_prompt": "Entering a building dressed as maintenance workers.",
+        "prompt": "Entering a building dressed as maintenance workers."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

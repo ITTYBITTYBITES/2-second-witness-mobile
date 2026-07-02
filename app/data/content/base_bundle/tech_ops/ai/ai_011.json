@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "VISION",
-        "legacy_prompt": "Self-driving car identifying a stop sign in rain.",
         "correct_answer": "Computer Vision",
         "wrong_answers": [
             "LIDAR",
             "Radar",
             "GPS Navigation"
-        ]
+        ],
+        "legacy_prompt": "Self-driving car identifying a stop sign in rain.",
+        "prompt": "Self-driving car identifying a stop sign in rain."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "military",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "INTEL",
-        "legacy_prompt": "Intercepting and decoding enemy communications.",
         "correct_answer": "Signals Intelligence",
         "wrong_answers": [
             "Human Intelligence",
             "Imagery Intel",
             "Open Source Intel"
-        ]
+        ],
+        "legacy_prompt": "Intercepting and decoding enemy communications.",
+        "prompt": "Intercepting and decoding enemy communications."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

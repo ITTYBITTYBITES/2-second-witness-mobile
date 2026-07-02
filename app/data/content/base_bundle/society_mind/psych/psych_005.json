@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "psych",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SELF",
-        "legacy_prompt": "Incompetent person vastly overestimates their own ability.",
         "correct_answer": "Dunning-Kruger Effect",
         "wrong_answers": [
             "Imposter Syndrome",
             "Narcissism",
             "Halo Effect"
-        ]
+        ],
+        "legacy_prompt": "Incompetent person vastly overestimates their own ability.",
+        "prompt": "Incompetent person vastly overestimates their own ability."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

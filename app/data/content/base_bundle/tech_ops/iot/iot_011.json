@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "iot",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TWIN",
-        "legacy_prompt": "Digital replica of a factory floor updated in real-time.",
         "correct_answer": "Digital Twin",
         "wrong_answers": [
             "Simulation",
             "3D Model",
             "Virtual Reality"
-        ]
+        ],
+        "legacy_prompt": "Digital replica of a factory floor updated in real-time.",
+        "prompt": "Digital replica of a factory floor updated in real-time."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

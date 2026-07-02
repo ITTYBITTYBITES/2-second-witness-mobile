@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "food",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FERMENT",
-        "legacy_prompt": "Milk left with bacteria cultures thickening into yogurt.",
         "correct_answer": "Fermentation",
         "wrong_answers": [
             "Curdling",
             "Pasteurization",
             "Spoiling"
-        ]
+        ],
+        "legacy_prompt": "Milk left with bacteria cultures thickening into yogurt.",
+        "prompt": "Milk left with bacteria cultures thickening into yogurt."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

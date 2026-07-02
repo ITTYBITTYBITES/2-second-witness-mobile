@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "firstaid",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "AED",
-        "legacy_prompt": "Device analyzing heart rhythm and delivering electric shock.",
         "correct_answer": "Automated External Defibrillator",
         "wrong_answers": [
             "Heart Monitor",
             "Pacemaker",
             "Oxygen Mask"
-        ]
+        ],
+        "legacy_prompt": "Device analyzing heart rhythm and delivering electric shock.",
+        "prompt": "Device analyzing heart rhythm and delivering electric shock."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

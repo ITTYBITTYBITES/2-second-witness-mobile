@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "psych",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "REWARD",
-        "legacy_prompt": "Checking your phone constantly hoping for a notification.",
         "correct_answer": "Variable Reward Schedule",
         "wrong_answers": [
             "Addiction",
             "Habit Loop",
             "FOMO"
-        ]
+        ],
+        "legacy_prompt": "Checking your phone constantly hoping for a notification.",
+        "prompt": "Checking your phone constantly hoping for a notification."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

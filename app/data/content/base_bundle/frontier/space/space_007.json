@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "space",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MARS",
-        "legacy_prompt": "Rover detecting methane spikes in Martian atmosphere.",
         "correct_answer": "Possible Biological Activity",
         "wrong_answers": [
             "Volcanic Venting",
             "Instrument Error",
             "Solar Wind"
-        ]
+        ],
+        "legacy_prompt": "Rover detecting methane spikes in Martian atmosphere.",
+        "prompt": "Rover detecting methane spikes in Martian atmosphere."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

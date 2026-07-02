@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "telecom",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PACKET",
-        "legacy_prompt": "Data broken into small pieces taking different routes to destination.",
         "correct_answer": "Packet Switching",
         "wrong_answers": [
             "Circuit Switching",
             "Message Switching",
             "Routing"
-        ]
+        ],
+        "legacy_prompt": "Data broken into small pieces taking different routes to destination.",
+        "prompt": "Data broken into small pieces taking different routes to destination."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

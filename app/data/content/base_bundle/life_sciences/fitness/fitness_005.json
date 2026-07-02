@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "fitness",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "STRETCH",
-        "legacy_prompt": "Holding a stretch for 30 seconds without bouncing.",
         "correct_answer": "Static Stretching",
         "wrong_answers": [
             "Dynamic Stretching",
             "Ballistic Stretching",
             "PNF"
-        ]
+        ],
+        "legacy_prompt": "Holding a stretch for 30 seconds without bouncing.",
+        "prompt": "Holding a stretch for 30 seconds without bouncing."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

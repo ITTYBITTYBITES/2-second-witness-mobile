@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "cyber",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ALERT",
-        "legacy_prompt": "Memory remains accessible after force-shutdown.",
         "correct_answer": "Cold Boot Attack",
         "wrong_answers": [
             "DDoS Attack",
             "Satellite Drift",
             "Badge Theft"
-        ]
+        ],
+        "legacy_prompt": "Memory remains accessible after force-shutdown.",
+        "prompt": "Memory remains accessible after force-shutdown."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

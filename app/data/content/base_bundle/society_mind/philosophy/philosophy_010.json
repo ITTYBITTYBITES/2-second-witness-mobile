@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "philosophy",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SOCIAL",
-        "legacy_prompt": "People agreeing to give up some freedom for collective security.",
         "correct_answer": "Social Contract",
         "wrong_answers": [
             "Natural Law",
             "Divine Right",
             "Anarchy"
-        ]
+        ],
+        "legacy_prompt": "People agreeing to give up some freedom for collective security.",
+        "prompt": "People agreeing to give up some freedom for collective security."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

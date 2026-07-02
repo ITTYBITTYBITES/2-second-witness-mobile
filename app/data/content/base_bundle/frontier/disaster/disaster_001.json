@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "disaster",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "QUAKE",
-        "legacy_prompt": "Drop, cover, and hold on during shaking.",
         "correct_answer": "Earthquake Protocol",
         "wrong_answers": [
             "Evacuate",
             "Stand in Doorway",
             "Run Outside"
-        ]
+        ],
+        "legacy_prompt": "Drop, cover, and hold on during shaking.",
+        "prompt": "Drop, cover, and hold on during shaking."
     },
     "presentation": {
         "title": "Action:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

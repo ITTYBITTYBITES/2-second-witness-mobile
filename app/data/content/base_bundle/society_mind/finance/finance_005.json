@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "finance",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "GROWTH",
-        "legacy_prompt": "Economy producing less, prices rising, unemployment increasing.",
         "correct_answer": "Stagflation",
         "wrong_answers": [
             "Recession",
             "Depression",
             "Boom"
-        ]
+        ],
+        "legacy_prompt": "Economy producing less, prices rising, unemployment increasing.",
+        "prompt": "Economy producing less, prices rising, unemployment increasing."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

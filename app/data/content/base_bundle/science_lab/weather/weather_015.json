@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "weather",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PRESSURE",
-        "legacy_prompt": "Barometer reading dropping rapidly before a storm.",
         "correct_answer": "Low Pressure System",
         "wrong_answers": [
             "High Pressure",
             "Cold Front",
             "Warm Front"
-        ]
+        ],
+        "legacy_prompt": "Barometer reading dropping rapidly before a storm.",
+        "prompt": "Barometer reading dropping rapidly before a storm."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

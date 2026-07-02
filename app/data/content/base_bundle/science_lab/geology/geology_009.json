@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "geology",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "VOLCANO",
-        "legacy_prompt": "Shield-shaped volcano producing flowing lava rather than explosions.",
         "correct_answer": "Shield Volcano",
         "wrong_answers": [
             "Stratovolcano",
             "Cinder Cone",
             "Caldera"
-        ]
+        ],
+        "legacy_prompt": "Shield-shaped volcano producing flowing lava rather than explosions.",
+        "prompt": "Shield-shaped volcano producing flowing lava rather than explosions."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

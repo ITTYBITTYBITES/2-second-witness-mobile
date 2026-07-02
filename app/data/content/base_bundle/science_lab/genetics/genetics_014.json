@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "genetics",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PROTEIN",
-        "legacy_prompt": "Three-letter sequence on mRNA coding for one amino acid.",
         "correct_answer": "Codon",
         "wrong_answers": [
             "Gene",
             "Allele",
             "Chromosome"
-        ]
+        ],
+        "legacy_prompt": "Three-letter sequence on mRNA coding for one amino acid.",
+        "prompt": "Three-letter sequence on mRNA coding for one amino acid."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

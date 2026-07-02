@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "space",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TIME",
-        "legacy_prompt": "Clock on satellite runs slightly faster than identical clock on Earth.",
         "correct_answer": "Time Dilation",
         "wrong_answers": [
             "Clock Malfunction",
             "Signal Delay",
             "Leap Second"
-        ]
+        ],
+        "legacy_prompt": "Clock on satellite runs slightly faster than identical clock on Earth.",
+        "prompt": "Clock on satellite runs slightly faster than identical clock on Earth."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

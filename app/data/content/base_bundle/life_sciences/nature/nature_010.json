@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "nature",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "NEST",
-        "legacy_prompt": "Small mammal hoarding food in underground burrow.",
         "correct_answer": "Hibernation Preparation",
         "wrong_answers": [
             "Nesting",
             "Foraging",
             "Territory Marking"
-        ]
+        ],
+        "legacy_prompt": "Small mammal hoarding food in underground burrow.",
+        "prompt": "Small mammal hoarding food in underground burrow."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "survival",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ALTITUDE",
-        "legacy_prompt": "Headache and nausea after rapid climb to high elevation.",
         "correct_answer": "Altitude Sickness",
         "wrong_answers": [
             "Dehydration",
             "Exhaustion",
             "Food Poisoning"
-        ]
+        ],
+        "legacy_prompt": "Headache and nausea after rapid climb to high elevation.",
+        "prompt": "Headache and nausea after rapid climb to high elevation."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

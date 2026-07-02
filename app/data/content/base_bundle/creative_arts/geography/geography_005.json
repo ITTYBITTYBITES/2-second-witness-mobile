@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "geography",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MOUNTAIN",
-        "legacy_prompt": "Tallest mountain in the world on the Nepal-Tibet border.",
         "correct_answer": "Mount Everest",
         "wrong_answers": [
             "K2",
             "Kangchenjunga",
             "Lhotse"
-        ]
+        ],
+        "legacy_prompt": "Tallest mountain in the world on the Nepal-Tibet border.",
+        "prompt": "Tallest mountain in the world on the Nepal-Tibet border."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

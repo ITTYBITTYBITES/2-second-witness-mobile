@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "science",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "HEAT",
-        "legacy_prompt": "Metal spoon getting hot in a pot of boiling water.",
         "correct_answer": "Conduction",
         "wrong_answers": [
             "Convection",
             "Radiation",
             "Evaporation"
-        ]
+        ],
+        "legacy_prompt": "Metal spoon getting hot in a pot of boiling water.",
+        "prompt": "Metal spoon getting hot in a pot of boiling water."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

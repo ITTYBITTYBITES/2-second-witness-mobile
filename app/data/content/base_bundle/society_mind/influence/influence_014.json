@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "influence",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "REPEAT",
-        "legacy_prompt": "Hearing a false claim so often you start to believe it.",
         "correct_answer": "Illusory Truth Effect",
         "wrong_answers": [
             "Propaganda",
             "Brainwashing",
             "Gaslighting"
-        ]
+        ],
+        "legacy_prompt": "Hearing a false claim so often you start to believe it.",
+        "prompt": "Hearing a false claim so often you start to believe it."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

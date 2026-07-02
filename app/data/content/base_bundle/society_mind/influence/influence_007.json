@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "influence",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FRAME",
-        "legacy_prompt": "Describing surgery as 90% survival vs 10% mortality.",
         "correct_answer": "Framing Effect",
         "wrong_answers": [
             "Anchoring",
             "Priming",
             "Contrast"
-        ]
+        ],
+        "legacy_prompt": "Describing surgery as 90% survival vs 10% mortality.",
+        "prompt": "Describing surgery as 90% survival vs 10% mortality."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

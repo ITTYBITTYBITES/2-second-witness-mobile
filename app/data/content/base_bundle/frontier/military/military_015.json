@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "military",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MORALE",
-        "legacy_prompt": "Maintaining fighting spirit through leadership and purpose.",
         "correct_answer": "Troop Morale",
         "wrong_answers": [
             "Discipline",
             "Loyalty",
             "Patriotism"
-        ]
+        ],
+        "legacy_prompt": "Maintaining fighting spirit through leadership and purpose.",
+        "prompt": "Maintaining fighting spirit through leadership and purpose."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

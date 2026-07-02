@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "homerepair",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PILOT",
-        "legacy_prompt": "Gas furnace not igniting due to small flame being out.",
         "correct_answer": "Pilot Light Out",
         "wrong_answers": [
             "Gas Leak",
             "Thermostat Failure",
             "Ignitor Broken"
-        ]
+        ],
+        "legacy_prompt": "Gas furnace not igniting due to small flame being out.",
+        "prompt": "Gas furnace not igniting due to small flame being out."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

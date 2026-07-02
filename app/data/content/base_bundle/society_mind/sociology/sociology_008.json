@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "sociology",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MOBILITY",
-        "legacy_prompt": "Child of factory workers becoming a doctor.",
         "correct_answer": "Upward Social Mobility",
         "wrong_answers": [
             "Horizontal Mobility",
             "Downward Mobility",
             "Structural Mobility"
-        ]
+        ],
+        "legacy_prompt": "Child of factory workers becoming a doctor.",
+        "prompt": "Child of factory workers becoming a doctor."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

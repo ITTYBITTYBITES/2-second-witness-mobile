@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "auto",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "STEERING",
-        "legacy_prompt": "Grinding noise when turning the steering wheel fully.",
         "correct_answer": "Low Power Steering Fluid",
         "wrong_answers": [
             "Worn Brakes",
             "Bad CV Joint",
             "Flat Tire"
-        ]
+        ],
+        "legacy_prompt": "Grinding noise when turning the steering wheel fully.",
+        "prompt": "Grinding noise when turning the steering wheel fully."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "finance",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SHORT",
-        "legacy_prompt": "Betting that a stock price will go down.",
         "correct_answer": "Short Selling",
         "wrong_answers": [
             "Put Option",
             "Stop Loss",
             "Margin Call"
-        ]
+        ],
+        "legacy_prompt": "Betting that a stock price will go down.",
+        "prompt": "Betting that a stock price will go down."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

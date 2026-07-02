@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "heist",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CAMERA",
-        "legacy_prompt": "Security camera with a blind spot in the corner.",
         "correct_answer": "Surveillance Gap",
         "wrong_answers": [
             "Camera Malfunction",
             "Maintenance Window",
             "Power Outage"
-        ]
+        ],
+        "legacy_prompt": "Security camera with a blind spot in the corner.",
+        "prompt": "Security camera with a blind spot in the corner."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "art",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ABSTRACT",
-        "legacy_prompt": "Painting using shapes and colors without representing real objects.",
         "correct_answer": "Abstract Art",
         "wrong_answers": [
             "Surrealism",
             "Minimalism",
             "Expressionism"
-        ]
+        ],
+        "legacy_prompt": "Painting using shapes and colors without representing real objects.",
+        "prompt": "Painting using shapes and colors without representing real objects."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

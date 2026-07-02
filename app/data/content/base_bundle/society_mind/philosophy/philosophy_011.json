@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "philosophy",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "STRAW",
-        "legacy_prompt": "Misrepresenting someone's argument to make it easier to attack.",
         "correct_answer": "Straw Man Fallacy",
         "wrong_answers": [
             "Ad Hominem",
             "False Dilemma",
             "Slippery Slope"
-        ]
+        ],
+        "legacy_prompt": "Misrepresenting someone's argument to make it easier to attack.",
+        "prompt": "Misrepresenting someone's argument to make it easier to attack."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

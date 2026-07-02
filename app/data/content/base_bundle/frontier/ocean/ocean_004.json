@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "ocean",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CREATURE",
-        "legacy_prompt": "Massive tentacles visible on sonar, moving toward vessel.",
         "correct_answer": "Giant Squid",
         "wrong_answers": [
             "Whale",
             "Submarine",
             "Debris"
-        ]
+        ],
+        "legacy_prompt": "Massive tentacles visible on sonar, moving toward vessel.",
+        "prompt": "Massive tentacles visible on sonar, moving toward vessel."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

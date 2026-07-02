@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "philosophy",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CAVE",
-        "legacy_prompt": "Prisoners seeing only shadows and believing them to be reality.",
         "correct_answer": "Plato's Cave Allegory",
         "wrong_answers": [
             "Descartes' Demon",
             "Brain in a Vat",
             "Matrix Hypothesis"
-        ]
+        ],
+        "legacy_prompt": "Prisoners seeing only shadows and believing them to be reality.",
+        "prompt": "Prisoners seeing only shadows and believing them to be reality."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

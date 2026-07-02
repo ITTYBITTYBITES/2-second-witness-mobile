@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "survival",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "WATER",
-        "legacy_prompt": "Finding water in a desert by following animal tracks.",
         "correct_answer": "Animal Trail Navigation",
         "wrong_answers": [
             "Dowsing",
             "Guessing",
             "Digging Randomly"
-        ]
+        ],
+        "legacy_prompt": "Finding water in a desert by following animal tracks.",
+        "prompt": "Finding water in a desert by following animal tracks."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

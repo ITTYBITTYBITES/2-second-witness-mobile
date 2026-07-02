@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "homerepair",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CAULK",
-        "legacy_prompt": "Applying flexible sealant around bathtub edges.",
         "correct_answer": "Caulking",
         "wrong_answers": [
             "Grouting",
             "Spackling",
             "Putty"
-        ]
+        ],
+        "legacy_prompt": "Applying flexible sealant around bathtub edges.",
+        "prompt": "Applying flexible sealant around bathtub edges."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

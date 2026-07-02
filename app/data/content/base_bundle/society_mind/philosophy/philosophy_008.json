@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "philosophy",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DUTY",
-        "legacy_prompt": "Acting from moral duty regardless of consequences.",
         "correct_answer": "Deontological Ethics",
         "wrong_answers": [
             "Consequentialism",
             "Virtue Ethics",
             "Pragmatism"
-        ]
+        ],
+        "legacy_prompt": "Acting from moral duty regardless of consequences.",
+        "prompt": "Acting from moral duty regardless of consequences."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

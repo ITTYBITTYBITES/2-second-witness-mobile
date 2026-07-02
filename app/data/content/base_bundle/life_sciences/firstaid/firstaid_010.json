@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "firstaid",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SPRAIN",
-        "legacy_prompt": "Ankle swelling after twisting it on uneven ground.",
         "correct_answer": "Apply RICE Protocol",
         "wrong_answers": [
             "Walk It Off",
             "Heat Pack",
             "Massage"
-        ]
+        ],
+        "legacy_prompt": "Ankle swelling after twisting it on uneven ground.",
+        "prompt": "Ankle swelling after twisting it on uneven ground."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

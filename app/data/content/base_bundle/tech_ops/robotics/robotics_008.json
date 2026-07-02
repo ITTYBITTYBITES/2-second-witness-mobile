@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "robotics",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DOF",
-        "legacy_prompt": "Number of independent directions a robot arm can move.",
         "correct_answer": "Degrees of Freedom",
         "wrong_answers": [
             "Axes",
             "Joints",
             "Links"
-        ]
+        ],
+        "legacy_prompt": "Number of independent directions a robot arm can move.",
+        "prompt": "Number of independent directions a robot arm can move."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

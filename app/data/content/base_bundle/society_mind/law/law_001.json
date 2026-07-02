@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "law",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "RIGHTS",
-        "legacy_prompt": "Police search your car without a warrant or consent.",
         "correct_answer": "4th Amendment Violation",
         "wrong_answers": [
             "Legal Search",
             "Probable Cause",
             "Terry Stop"
-        ]
+        ],
+        "legacy_prompt": "Police search your car without a warrant or consent.",
+        "prompt": "Police search your car without a warrant or consent."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

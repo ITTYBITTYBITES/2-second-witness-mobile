@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "chemistry",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "REDOX",
-        "legacy_prompt": "One substance gaining electrons while another loses them.",
         "correct_answer": "Redox Reaction",
         "wrong_answers": [
             "Acid-Base",
             "Decomposition",
             "Synthesis"
-        ]
+        ],
+        "legacy_prompt": "One substance gaining electrons while another loses them.",
+        "prompt": "One substance gaining electrons while another loses them."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "psych",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PLACEBO",
-        "legacy_prompt": "Patient improving after taking a sugar pill they believe is medicine.",
         "correct_answer": "Placebo Effect",
         "wrong_answers": [
             "Conditioning",
             "Suggestion",
             "Regression"
-        ]
+        ],
+        "legacy_prompt": "Patient improving after taking a sugar pill they believe is medicine.",
+        "prompt": "Patient improving after taking a sugar pill they believe is medicine."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

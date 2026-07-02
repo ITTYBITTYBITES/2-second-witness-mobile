@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "crime",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ALIBI",
-        "legacy_prompt": "Suspect can prove they were elsewhere during the crime.",
         "correct_answer": "Verified Alibi",
         "wrong_answers": [
             "False Alibi",
             "Testimony",
             "Circumstantial"
-        ]
+        ],
+        "legacy_prompt": "Suspect can prove they were elsewhere during the crime.",
+        "prompt": "Suspect can prove they were elsewhere during the crime."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

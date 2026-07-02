@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "genetics",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MUTATION",
-        "legacy_prompt": "Change in DNA sequence due to UV radiation exposure.",
         "correct_answer": "Point Mutation",
         "wrong_answers": [
             "Deletion",
             "Insertion",
             "Translocation"
-        ]
+        ],
+        "legacy_prompt": "Change in DNA sequence due to UV radiation exposure.",
+        "prompt": "Change in DNA sequence due to UV radiation exposure."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

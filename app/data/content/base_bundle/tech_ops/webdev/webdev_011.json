@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "webdev",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CORS",
-        "legacy_prompt": "Browser blocking a request from one domain to another.",
         "correct_answer": "Cross-Origin Block",
         "wrong_answers": [
             "Firewall",
             "Rate Limit",
             "Authentication"
-        ]
+        ],
+        "legacy_prompt": "Browser blocking a request from one domain to another.",
+        "prompt": "Browser blocking a request from one domain to another."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

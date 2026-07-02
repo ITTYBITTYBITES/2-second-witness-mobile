@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "engineering",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "WELD",
-        "legacy_prompt": "Joining two metal pieces by melting them together with heat.",
         "correct_answer": "Welding",
         "wrong_answers": [
             "Soldering",
             "Brazing",
             "Riveting"
-        ]
+        ],
+        "legacy_prompt": "Joining two metal pieces by melting them together with heat.",
+        "prompt": "Joining two metal pieces by melting them together with heat."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

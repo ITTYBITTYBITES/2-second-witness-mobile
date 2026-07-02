@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "law",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "EVIDENCE",
-        "legacy_prompt": "Judge ruling certain evidence cannot be shown to jury.",
         "correct_answer": "Suppression of Evidence",
         "wrong_answers": [
             "Mistrial",
             "Objection",
             "Dismissal"
-        ]
+        ],
+        "legacy_prompt": "Judge ruling certain evidence cannot be shown to jury.",
+        "prompt": "Judge ruling certain evidence cannot be shown to jury."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

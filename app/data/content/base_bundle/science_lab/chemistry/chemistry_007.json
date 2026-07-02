@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "chemistry",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PRECIPITATE",
-        "legacy_prompt": "Solid forming and sinking when two clear solutions are mixed.",
         "correct_answer": "Precipitation Reaction",
         "wrong_answers": [
             "Crystallization",
             "Filtration",
             "Sedimentation"
-        ]
+        ],
+        "legacy_prompt": "Solid forming and sinking when two clear solutions are mixed.",
+        "prompt": "Solid forming and sinking when two clear solutions are mixed."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

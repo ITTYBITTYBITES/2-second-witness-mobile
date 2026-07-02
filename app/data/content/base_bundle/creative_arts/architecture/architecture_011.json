@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "architecture",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MINIMALIST",
-        "legacy_prompt": "Building stripped to essential elements with clean lines.",
         "correct_answer": "Minimalist Architecture",
         "wrong_answers": [
             "Brutalist",
             "Modernist",
             "Deconstructivist"
-        ]
+        ],
+        "legacy_prompt": "Building stripped to essential elements with clean lines.",
+        "prompt": "Building stripped to essential elements with clean lines."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

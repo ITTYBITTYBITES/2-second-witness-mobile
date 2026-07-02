@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "microbiology",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CULTURE",
-        "legacy_prompt": "Bacteria growing in a dish of nutrient agar gel.",
         "correct_answer": "Bacterial Culture",
         "wrong_answers": [
             "Virus Culture",
             "Tissue Sample",
             "Blood Test"
-        ]
+        ],
+        "legacy_prompt": "Bacteria growing in a dish of nutrient agar gel.",
+        "prompt": "Bacteria growing in a dish of nutrient agar gel."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

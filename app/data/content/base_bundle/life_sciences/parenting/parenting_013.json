@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "parenting",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "VACCINE",
-        "legacy_prompt": "Mild fever and fussiness after routine childhood shots.",
         "correct_answer": "Normal Vaccine Response",
         "wrong_answers": [
             "Allergic Reaction",
             "Infection",
             "Side Effect"
-        ]
+        ],
+        "legacy_prompt": "Mild fever and fussiness after routine childhood shots.",
+        "prompt": "Mild fever and fussiness after routine childhood shots."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

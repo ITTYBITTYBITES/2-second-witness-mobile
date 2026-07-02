@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "homerepair",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "STUD",
-        "legacy_prompt": "Knocking on drywall to find the solid wood behind it.",
         "correct_answer": "Stud Finding",
         "wrong_answers": [
             "Insulation Check",
             "Pipe Locating",
             "Wire Testing"
-        ]
+        ],
+        "legacy_prompt": "Knocking on drywall to find the solid wood behind it.",
+        "prompt": "Knocking on drywall to find the solid wood behind it."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

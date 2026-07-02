@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "volcano",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SHIELD",
-        "legacy_prompt": "Wide flat volcano built by layers of flowing lava.",
         "correct_answer": "Shield Volcano",
         "wrong_answers": [
             "Stratovolcano",
             "Cinder Cone",
             "Lava Dome"
-        ]
+        ],
+        "legacy_prompt": "Wide flat volcano built by layers of flowing lava.",
+        "prompt": "Wide flat volcano built by layers of flowing lava."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

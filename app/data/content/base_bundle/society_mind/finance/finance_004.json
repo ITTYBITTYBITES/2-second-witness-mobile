@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "finance",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CRASH",
-        "legacy_prompt": "Stock drops 80% after company reveals fake revenue numbers.",
         "correct_answer": "Accounting Fraud",
         "wrong_answers": [
             "Market Correction",
             "Short Squeeze",
             "Profit Taking"
-        ]
+        ],
+        "legacy_prompt": "Stock drops 80% after company reveals fake revenue numbers.",
+        "prompt": "Stock drops 80% after company reveals fake revenue numbers."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

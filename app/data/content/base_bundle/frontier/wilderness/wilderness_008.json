@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "wilderness",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "KNOT",
-        "legacy_prompt": "Tying a bowline loop that won't slip under tension.",
         "correct_answer": "Bowline Knot",
         "wrong_answers": [
             "Clove Hitch",
             "Figure Eight",
             "Sheet Bend"
-        ]
+        ],
+        "legacy_prompt": "Tying a bowline loop that won't slip under tension.",
+        "prompt": "Tying a bowline loop that won't slip under tension."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

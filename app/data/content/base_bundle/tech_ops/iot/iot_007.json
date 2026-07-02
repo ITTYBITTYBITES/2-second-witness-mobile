@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "iot",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SENSOR",
-        "legacy_prompt": "Soil moisture sensor triggering automatic garden sprinklers.",
         "correct_answer": "Automated Irrigation",
         "wrong_answers": [
             "Timer System",
             "Manual Watering",
             "Rain Sensor"
-        ]
+        ],
+        "legacy_prompt": "Soil moisture sensor triggering automatic garden sprinklers.",
+        "prompt": "Soil moisture sensor triggering automatic garden sprinklers."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

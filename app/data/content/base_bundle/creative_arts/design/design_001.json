@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "design",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "COMPLEMENT",
-        "legacy_prompt": "Orange and blue placed next to each other for maximum contrast.",
         "correct_answer": "Complementary Colors",
         "wrong_answers": [
             "Analogous",
             "Triadic",
             "Split-Complementary"
-        ]
+        ],
+        "legacy_prompt": "Orange and blue placed next to each other for maximum contrast.",
+        "prompt": "Orange and blue placed next to each other for maximum contrast."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

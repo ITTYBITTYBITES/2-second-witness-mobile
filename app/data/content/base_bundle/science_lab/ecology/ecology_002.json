@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "ecology",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "NICHE",
-        "legacy_prompt": "Specific role an organism plays in its ecosystem.",
         "correct_answer": "Ecological Niche",
         "wrong_answers": [
             "Habitat",
             "Biome",
             "Community"
-        ]
+        ],
+        "legacy_prompt": "Specific role an organism plays in its ecosystem.",
+        "prompt": "Specific role an organism plays in its ecosystem."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

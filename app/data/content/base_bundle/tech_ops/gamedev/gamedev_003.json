@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "gamedev",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PHYSICS",
-        "legacy_prompt": "Objects falling and bouncing realistically without manual coding.",
         "correct_answer": "Physics Engine",
         "wrong_answers": [
             "Animation",
             "Scripting",
             "Rendering"
-        ]
+        ],
+        "legacy_prompt": "Objects falling and bouncing realistically without manual coding.",
+        "prompt": "Objects falling and bouncing realistically without manual coding."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

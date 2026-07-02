@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "cyber",
     "type": "stroop_test",
-    "difficulty": 4,
-    "rewards": {
-        "xp": 40,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "HARDWARE",
-        "legacy_prompt": "Scanner accepting molded fingerprint replica.",
         "correct_answer": "Spoofed Biometrics",
         "wrong_answers": [
             "Packet Flood",
             "GPS Drift",
             "Drive Failure"
-        ]
+        ],
+        "legacy_prompt": "Scanner accepting molded fingerprint replica.",
+        "prompt": "Scanner accepting molded fingerprint replica."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 4
     }
 }

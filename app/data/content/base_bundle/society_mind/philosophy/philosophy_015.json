@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "philosophy",
     "type": "rapid_classification",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ABSURD",
-        "legacy_prompt": "Life has no inherent meaning but we must create our own.",
         "correct_answer": "Absurdism",
         "wrong_answers": [
             "Nihilism",
             "Existentialism",
             "Stoicism"
-        ]
+        ],
+        "legacy_prompt": "Life has no inherent meaning but we must create our own.",
+        "prompt": "Life has no inherent meaning but we must create our own."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

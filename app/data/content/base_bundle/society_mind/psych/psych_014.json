@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "psych",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "HALO",
-        "legacy_prompt": "Assuming an attractive person is also smart and kind.",
         "correct_answer": "Halo Effect",
         "wrong_answers": [
             "Stereotyping",
             "Attribution Error",
             "Projection"
-        ]
+        ],
+        "legacy_prompt": "Assuming an attractive person is also smart and kind.",
+        "prompt": "Assuming an attractive person is also smart and kind."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

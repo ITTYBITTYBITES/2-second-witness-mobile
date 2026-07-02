@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "volcano",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ASH",
-        "legacy_prompt": "Massive cloud of particles shooting miles into the atmosphere.",
         "correct_answer": "Ash Plume",
         "wrong_answers": [
             "Smoke Column",
             "Steam Vent",
             "Gas Cloud"
-        ]
+        ],
+        "legacy_prompt": "Massive cloud of particles shooting miles into the atmosphere.",
+        "prompt": "Massive cloud of particles shooting miles into the atmosphere."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

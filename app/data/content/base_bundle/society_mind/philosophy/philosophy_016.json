@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "philosophy",
     "type": "stroop_test",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SHIP",
-        "legacy_prompt": "If every plank of a ship is replaced, is it still the same ship?",
         "correct_answer": "Ship of Theseus",
         "wrong_answers": [
             "Trolley Problem",
             "Sorites Paradox",
             "Grandfather Paradox"
-        ]
+        ],
+        "legacy_prompt": "If every plank of a ship is replaced, is it still the same ship?",
+        "prompt": "If every plank of a ship is replaced, is it still the same ship?"
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

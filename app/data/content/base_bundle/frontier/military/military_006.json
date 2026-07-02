@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "military",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SUPPLY",
-        "legacy_prompt": "Chain of resources flowing from rear areas to front lines.",
         "correct_answer": "Supply Line",
         "wrong_answers": [
             "Front Line",
             "Rear Guard",
             "Reserve"
-        ]
+        ],
+        "legacy_prompt": "Chain of resources flowing from rear areas to front lines.",
+        "prompt": "Chain of resources flowing from rear areas to front lines."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

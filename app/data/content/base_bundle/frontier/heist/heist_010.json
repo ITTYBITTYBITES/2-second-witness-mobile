@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "heist",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LASER",
-        "legacy_prompt": "Invisible beams criss-crossing a museum hallway.",
         "correct_answer": "Laser Grid Security",
         "wrong_answers": [
             "Motion Sensors",
             "Infrared Camera",
             "Pressure Plates"
-        ]
+        ],
+        "legacy_prompt": "Invisible beams criss-crossing a museum hallway.",
+        "prompt": "Invisible beams criss-crossing a museum hallway."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

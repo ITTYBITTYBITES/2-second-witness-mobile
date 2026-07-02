@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "heist",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SAFE",
-        "legacy_prompt": "Combination cracked by listening to tumbler clicks.",
         "correct_answer": "Safe Cracking",
         "wrong_answers": [
             "Brute Force",
             "Thermal Lance",
             "Explosive Entry"
-        ]
+        ],
+        "legacy_prompt": "Combination cracked by listening to tumbler clicks.",
+        "prompt": "Combination cracked by listening to tumbler clicks."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

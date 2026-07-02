@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "arctic",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PERMAFROST",
-        "legacy_prompt": "Permanently frozen ground thawing and releasing methane.",
         "correct_answer": "Permafrost Melt",
         "wrong_answers": [
             "Glacier Retreat",
             "Ice Melt",
             "Erosion"
-        ]
+        ],
+        "legacy_prompt": "Permanently frozen ground thawing and releasing methane.",
+        "prompt": "Permanently frozen ground thawing and releasing methane."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

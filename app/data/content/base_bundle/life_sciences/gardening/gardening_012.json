@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "gardening",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FROST",
-        "legacy_prompt": "Covering plants with cloth before a cold night.",
         "correct_answer": "Frost Protection",
         "wrong_answers": [
             "Shade Cover",
             "Wind Break",
             "Rain Shield"
-        ]
+        ],
+        "legacy_prompt": "Covering plants with cloth before a cold night.",
+        "prompt": "Covering plants with cloth before a cold night."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

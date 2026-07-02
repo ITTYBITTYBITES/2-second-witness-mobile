@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "history",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "EMPIRE",
-        "legacy_prompt": "Vast Roman road network connecting Europe and North Africa.",
         "correct_answer": "Roman Empire Infrastructure",
         "wrong_answers": [
             "Greek Roads",
             "Persian Routes",
             "Silk Road"
-        ]
+        ],
+        "legacy_prompt": "Vast Roman road network connecting Europe and North Africa.",
+        "prompt": "Vast Roman road network connecting Europe and North Africa."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

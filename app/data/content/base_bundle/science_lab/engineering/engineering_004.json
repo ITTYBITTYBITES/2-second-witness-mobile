@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "engineering",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CONCRETE",
-        "legacy_prompt": "Steel bars embedded inside concrete for added strength.",
         "correct_answer": "Reinforced Concrete",
         "wrong_answers": [
             "Pre-stressed",
             "Post-tensioned",
             "Plain Concrete"
-        ]
+        ],
+        "legacy_prompt": "Steel bars embedded inside concrete for added strength.",
+        "prompt": "Steel bars embedded inside concrete for added strength."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

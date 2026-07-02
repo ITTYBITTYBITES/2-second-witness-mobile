@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "fitness",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "REPS",
-        "legacy_prompt": "Performing 12-15 repetitions per set for muscle endurance.",
         "correct_answer": "Endurance Training",
         "wrong_answers": [
             "Strength Training",
             "Power Training",
             "Hypertrophy"
-        ]
+        ],
+        "legacy_prompt": "Performing 12-15 repetitions per set for muscle endurance.",
+        "prompt": "Performing 12-15 repetitions per set for muscle endurance."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

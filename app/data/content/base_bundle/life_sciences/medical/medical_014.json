@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "medical",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "JOINT",
-        "legacy_prompt": "Sudden severe joint pain, redness, and swelling in big toe.",
         "correct_answer": "Gout",
         "wrong_answers": [
             "Arthritis",
             "Fracture",
             "Sprain"
-        ]
+        ],
+        "legacy_prompt": "Sudden severe joint pain, redness, and swelling in big toe.",
+        "prompt": "Sudden severe joint pain, redness, and swelling in big toe."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

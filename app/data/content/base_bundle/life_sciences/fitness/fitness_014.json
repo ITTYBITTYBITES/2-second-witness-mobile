@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "fitness",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BMI",
-        "legacy_prompt": "Weight divided by height squared to estimate body composition.",
         "correct_answer": "Body Mass Index",
         "wrong_answers": [
             "Body Fat Percentage",
             "Lean Mass",
             "Basal Rate"
-        ]
+        ],
+        "legacy_prompt": "Weight divided by height squared to estimate body composition.",
+        "prompt": "Weight divided by height squared to estimate body composition."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

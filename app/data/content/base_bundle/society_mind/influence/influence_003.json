@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "influence",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "RECIPROCITY",
-        "legacy_prompt": "Free sample given before asking for purchase.",
         "correct_answer": "Reciprocity",
         "wrong_answers": [
             "Anchoring",
             "Foot in Door",
             "Contrast Effect"
-        ]
+        ],
+        "legacy_prompt": "Free sample given before asking for purchase.",
+        "prompt": "Free sample given before asking for purchase."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

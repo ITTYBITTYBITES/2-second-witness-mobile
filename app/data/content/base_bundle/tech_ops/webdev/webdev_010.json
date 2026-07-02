@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "webdev",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DEPLOY",
-        "legacy_prompt": "Pushing code changes from development to the live server.",
         "correct_answer": "Deployment",
         "wrong_answers": [
             "Staging",
             "Testing",
             "Compiling"
-        ]
+        ],
+        "legacy_prompt": "Pushing code changes from development to the live server.",
+        "prompt": "Pushing code changes from development to the live server."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

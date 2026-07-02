@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "nature",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PREDATOR",
-        "legacy_prompt": "Animal with forward-facing eyes, sharp teeth, silent movement.",
         "correct_answer": "Predator",
         "wrong_answers": [
             "Prey",
             "Scavenger",
             "Herbivore"
-        ]
+        ],
+        "legacy_prompt": "Animal with forward-facing eyes, sharp teeth, silent movement.",
+        "prompt": "Animal with forward-facing eyes, sharp teeth, silent movement."
     },
     "presentation": {
         "title": "Classify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

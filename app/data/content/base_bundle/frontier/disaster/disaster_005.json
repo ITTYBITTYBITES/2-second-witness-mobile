@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "disaster",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FLOOD",
-        "legacy_prompt": "Never driving through standing water of unknown depth.",
         "correct_answer": "Turn Around Don't Drown",
         "wrong_answers": [
             "Drive Slowly",
             "Use 4WD",
             "Follow Other Cars"
-        ]
+        ],
+        "legacy_prompt": "Never driving through standing water of unknown depth.",
+        "prompt": "Never driving through standing water of unknown depth."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

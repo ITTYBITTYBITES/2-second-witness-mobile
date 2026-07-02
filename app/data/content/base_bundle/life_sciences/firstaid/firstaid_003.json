@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "firstaid",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CHOKE",
-        "legacy_prompt": "Performing abdominal thrusts on a choking adult.",
         "correct_answer": "Heimlich Maneuver",
         "wrong_answers": [
             "Back Blows",
             "CPR",
             "Finger Sweep"
-        ]
+        ],
+        "legacy_prompt": "Performing abdominal thrusts on a choking adult.",
+        "prompt": "Performing abdominal thrusts on a choking adult."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

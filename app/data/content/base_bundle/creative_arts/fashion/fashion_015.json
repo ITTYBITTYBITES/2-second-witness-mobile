@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "fashion",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "WARP",
-        "legacy_prompt": "Vertical threads on a loom that create the fabric's structure.",
         "correct_answer": "Warp Threads",
         "wrong_answers": [
             "Weft Threads",
             "Selvage",
             "Grain Line"
-        ]
+        ],
+        "legacy_prompt": "Vertical threads on a loom that create the fabric's structure.",
+        "prompt": "Vertical threads on a loom that create the fabric's structure."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

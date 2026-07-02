@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "science",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "WAVE",
-        "legacy_prompt": "Sound cannot travel through the vacuum of space.",
         "correct_answer": "No Medium for Sound",
         "wrong_answers": [
             "Too Cold",
             "No Gravity",
             "No Atmosphere"
-        ]
+        ],
+        "legacy_prompt": "Sound cannot travel through the vacuum of space.",
+        "prompt": "Sound cannot travel through the vacuum of space."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

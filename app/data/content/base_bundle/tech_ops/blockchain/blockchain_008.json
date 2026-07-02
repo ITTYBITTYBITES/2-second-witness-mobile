@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "blockchain",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "NFT",
-        "legacy_prompt": "Unique digital token proving ownership of a specific item.",
         "correct_answer": "Non-Fungible Token",
         "wrong_answers": [
             "Cryptocurrency",
             "Stablecoin",
             "Utility Token"
-        ]
+        ],
+        "legacy_prompt": "Unique digital token proving ownership of a specific item.",
+        "prompt": "Unique digital token proving ownership of a specific item."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

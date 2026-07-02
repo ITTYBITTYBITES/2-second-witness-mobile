@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "ocean",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "VENT",
-        "legacy_prompt": "Superheated water erupting from cracks in the ocean floor.",
         "correct_answer": "Hydrothermal Vent",
         "wrong_answers": [
             "Underwater Volcano",
             "Geyser",
             "Hot Spring"
-        ]
+        ],
+        "legacy_prompt": "Superheated water erupting from cracks in the ocean floor.",
+        "prompt": "Superheated water erupting from cracks in the ocean floor."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

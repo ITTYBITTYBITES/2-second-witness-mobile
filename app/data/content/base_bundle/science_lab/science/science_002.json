@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "science",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LIGHT",
-        "legacy_prompt": "White light splits into spectrum passing through prism.",
         "correct_answer": "Refraction",
         "wrong_answers": [
             "Reflection",
             "Diffraction",
             "Absorption"
-        ]
+        ],
+        "legacy_prompt": "White light splits into spectrum passing through prism.",
+        "prompt": "White light splits into spectrum passing through prism."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

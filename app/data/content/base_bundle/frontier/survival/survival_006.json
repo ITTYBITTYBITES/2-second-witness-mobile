@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "survival",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BEAR",
-        "legacy_prompt": "You encounter a grizzly bear on a hiking trail. It sees you.",
         "correct_answer": "Back Away Slowly",
         "wrong_answers": [
             "Run Away",
             "Climb Tree",
             "Play Dead"
-        ]
+        ],
+        "legacy_prompt": "You encounter a grizzly bear on a hiking trail. It sees you.",
+        "prompt": "You encounter a grizzly bear on a hiking trail. It sees you."
     },
     "presentation": {
         "title": "Action:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "robotics",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LOCOMOTION",
-        "legacy_prompt": "Four-legged robot dynamically balancing while walking on rough terrain.",
         "correct_answer": "Dynamic Walking",
         "wrong_answers": [
             "Static Walking",
             "Wheeled Motion",
             "Crawling"
-        ]
+        ],
+        "legacy_prompt": "Four-legged robot dynamically balancing while walking on rough terrain.",
+        "prompt": "Four-legged robot dynamically balancing while walking on rough terrain."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

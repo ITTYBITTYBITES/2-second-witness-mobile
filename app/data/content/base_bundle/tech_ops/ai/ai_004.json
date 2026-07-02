@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DEEP",
-        "legacy_prompt": "AI generating realistic photos of people who don't exist.",
         "correct_answer": "Generative Adversarial Network",
         "wrong_answers": [
             "Neural Style Transfer",
             "Image Recognition",
             "Deepfake"
-        ]
+        ],
+        "legacy_prompt": "AI generating realistic photos of people who don't exist.",
+        "prompt": "AI generating realistic photos of people who don't exist."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

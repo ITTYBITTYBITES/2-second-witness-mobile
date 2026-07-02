@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "food",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SEAR",
-        "legacy_prompt": "Steak developing a brown crust in a very hot pan.",
         "correct_answer": "Maillard Reaction",
         "wrong_answers": [
             "Caramelization",
             "Charring",
             "Burning"
-        ]
+        ],
+        "legacy_prompt": "Steak developing a brown crust in a very hot pan.",
+        "prompt": "Steak developing a brown crust in a very hot pan."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

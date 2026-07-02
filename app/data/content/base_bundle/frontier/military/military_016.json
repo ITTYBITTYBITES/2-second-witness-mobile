@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "military",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DECEPTION",
-        "legacy_prompt": "Inflatable tanks and fake radio traffic to mislead the enemy.",
         "correct_answer": "Military Deception",
         "wrong_answers": [
             "Camouflage",
             "Propaganda",
             "Disinformation"
-        ]
+        ],
+        "legacy_prompt": "Inflatable tanks and fake radio traffic to mislead the enemy.",
+        "prompt": "Inflatable tanks and fake radio traffic to mislead the enemy."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

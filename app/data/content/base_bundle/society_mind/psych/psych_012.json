@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "psych",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "GROUP",
-        "legacy_prompt": "Going along with a clearly wrong answer because everyone else did.",
         "correct_answer": "Conformity",
         "wrong_answers": [
             "Groupthink",
             "Obedience",
             "Social Loafing"
-        ]
+        ],
+        "legacy_prompt": "Going along with a clearly wrong answer because everyone else did.",
+        "prompt": "Going along with a clearly wrong answer because everyone else did."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

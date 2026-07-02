@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "geography",
     "type": "stroop_test",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "REEF",
-        "legacy_prompt": "Largest living structure visible from space, off Australia's coast.",
         "correct_answer": "Great Barrier Reef",
         "wrong_answers": [
             "Belize Barrier Reef",
             "Red Sea Coral",
             "Maldives Reef"
-        ]
+        ],
+        "legacy_prompt": "Largest living structure visible from space, off Australia's coast.",
+        "prompt": "Largest living structure visible from space, off Australia's coast."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

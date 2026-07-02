@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "wilderness",
     "type": "rapid_classification",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "EDIBLE",
-        "legacy_prompt": "Crushing a leaf and rubbing it on inner wrist to test for reaction.",
         "correct_answer": "Universal Edibility Test",
         "wrong_answers": [
             "Taste Test",
             "Smell Test",
             "Visual Check"
-        ]
+        ],
+        "legacy_prompt": "Crushing a leaf and rubbing it on inner wrist to test for reaction.",
+        "prompt": "Crushing a leaf and rubbing it on inner wrist to test for reaction."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

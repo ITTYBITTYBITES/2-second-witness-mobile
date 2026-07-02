@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "science",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PRESSURE",
-        "legacy_prompt": "Ears popping during airplane ascent.",
         "correct_answer": "Air Pressure Change",
         "wrong_answers": [
             "Ear Infection",
             "Altitude Sickness",
             "Dehydration"
-        ]
+        ],
+        "legacy_prompt": "Ears popping during airplane ascent.",
+        "prompt": "Ears popping during airplane ascent."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

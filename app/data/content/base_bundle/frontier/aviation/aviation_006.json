@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "aviation",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BIRDSTRIKE",
-        "legacy_prompt": "Engine ingests wildlife during takeoff.",
         "correct_answer": "Bird Strike",
         "wrong_answers": [
             "FOD",
             "Engine Stall",
             "Compressor Surge"
-        ]
+        ],
+        "legacy_prompt": "Engine ingests wildlife during takeoff.",
+        "prompt": "Engine ingests wildlife during takeoff."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

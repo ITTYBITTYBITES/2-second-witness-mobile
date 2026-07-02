@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "history",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "REVOLUTION",
-        "legacy_prompt": "Citizens storming a prison fortress in Paris in 1789.",
         "correct_answer": "French Revolution",
         "wrong_answers": [
             "American Revolution",
             "Russian Revolution",
             "Industrial Revolution"
-        ]
+        ],
+        "legacy_prompt": "Citizens storming a prison fortress in Paris in 1789.",
+        "prompt": "Citizens storming a prison fortress in Paris in 1789."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

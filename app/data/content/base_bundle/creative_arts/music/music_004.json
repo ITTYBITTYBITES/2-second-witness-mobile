@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "music",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BASS",
-        "legacy_prompt": "Lowest voice or instrument providing the harmonic foundation.",
         "correct_answer": "Bass Line",
         "wrong_answers": [
             "Melody",
             "Harmony",
             "Counterpoint"
-        ]
+        ],
+        "legacy_prompt": "Lowest voice or instrument providing the harmonic foundation.",
+        "prompt": "Lowest voice or instrument providing the harmonic foundation."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

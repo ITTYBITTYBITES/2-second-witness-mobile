@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "crime",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MOTIVE",
-        "legacy_prompt": "Suspect recently discovered victim changed their will.",
         "correct_answer": "Financial Motive",
         "wrong_answers": [
             "Revenge",
             "Passion",
             "Opportunity"
-        ]
+        ],
+        "legacy_prompt": "Suspect recently discovered victim changed their will.",
+        "prompt": "Suspect recently discovered victim changed their will."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

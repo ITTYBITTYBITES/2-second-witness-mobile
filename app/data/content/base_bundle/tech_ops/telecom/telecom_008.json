@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "telecom",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "5G",
-        "legacy_prompt": "Millimeter wave frequencies enabling ultra-fast short-range data.",
         "correct_answer": "5G mmWave",
         "wrong_answers": [
             "5G Sub-6",
             "4G LTE",
             "Wi-Fi 6"
-        ]
+        ],
+        "legacy_prompt": "Millimeter wave frequencies enabling ultra-fast short-range data.",
+        "prompt": "Millimeter wave frequencies enabling ultra-fast short-range data."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

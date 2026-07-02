@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "military",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "GUERRILLA",
-        "legacy_prompt": "Small irregular forces using hit-and-run tactics.",
         "correct_answer": "Guerrilla Warfare",
         "wrong_answers": [
             "Conventional Warfare",
             "Trench Warfare",
             "Siege Warfare"
-        ]
+        ],
+        "legacy_prompt": "Small irregular forces using hit-and-run tactics.",
+        "prompt": "Small irregular forces using hit-and-run tactics."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "psych",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MEMORY",
-        "legacy_prompt": "Confidently remembering an event that never actually happened.",
         "correct_answer": "False Memory",
         "wrong_answers": [
             "Confabulation",
             "Deja Vu",
             "Repression"
-        ]
+        ],
+        "legacy_prompt": "Confidently remembering an event that never actually happened.",
+        "prompt": "Confidently remembering an event that never actually happened."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

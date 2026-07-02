@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "writing",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PROTAGONIST",
-        "legacy_prompt": "Main character driving the story's action forward.",
         "correct_answer": "Protagonist",
         "wrong_answers": [
             "Antagonist",
             "Anti-hero",
             "Narrator"
-        ]
+        ],
+        "legacy_prompt": "Main character driving the story's action forward.",
+        "prompt": "Main character driving the story's action forward."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

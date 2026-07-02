@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "fashion",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DENIM",
-        "legacy_prompt": "Durable cotton twill fabric originally from Nimes, France.",
         "correct_answer": "Denim",
         "wrong_answers": [
             "Canvas",
             "Chambray",
             "Twill"
-        ]
+        ],
+        "legacy_prompt": "Durable cotton twill fabric originally from Nimes, France.",
+        "prompt": "Durable cotton twill fabric originally from Nimes, France."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

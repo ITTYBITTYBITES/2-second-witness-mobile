@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "parenting",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PLAY",
-        "legacy_prompt": "Children playing side by side but not together at age 2.",
         "correct_answer": "Parallel Play",
         "wrong_answers": [
             "Cooperative Play",
             "Solitary Play",
             "Onlooker Play"
-        ]
+        ],
+        "legacy_prompt": "Children playing side by side but not together at age 2.",
+        "prompt": "Children playing side by side but not together at age 2."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

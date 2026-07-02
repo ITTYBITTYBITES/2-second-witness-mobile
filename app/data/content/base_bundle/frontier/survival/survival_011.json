@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "survival",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CURRENT",
-        "legacy_prompt": "Being pulled out to sea by strong water flow at beach.",
         "correct_answer": "Rip Current",
         "wrong_answers": [
             "Undertow",
             "Riptide",
             "Wave Action"
-        ]
+        ],
+        "legacy_prompt": "Being pulled out to sea by strong water flow at beach.",
+        "prompt": "Being pulled out to sea by strong water flow at beach."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

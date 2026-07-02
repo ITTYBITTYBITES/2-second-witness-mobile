@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "pets",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SOCIALIZE",
-        "legacy_prompt": "Exposing puppy to various people and environments before 16 weeks.",
         "correct_answer": "Socialization Window",
         "wrong_answers": [
             "Training Period",
             "Bonding Phase",
             "Weaning Period"
-        ]
+        ],
+        "legacy_prompt": "Exposing puppy to various people and environments before 16 weeks.",
+        "prompt": "Exposing puppy to various people and environments before 16 weeks."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

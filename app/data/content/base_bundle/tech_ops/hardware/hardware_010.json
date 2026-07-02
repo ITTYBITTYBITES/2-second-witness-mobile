@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "hardware",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BUS",
-        "legacy_prompt": "Parallel wires carrying data between CPU and memory.",
         "correct_answer": "Data Bus",
         "wrong_answers": [
             "Address Bus",
             "Control Bus",
             "Power Rail"
-        ]
+        ],
+        "legacy_prompt": "Parallel wires carrying data between CPU and memory.",
+        "prompt": "Parallel wires carrying data between CPU and memory."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

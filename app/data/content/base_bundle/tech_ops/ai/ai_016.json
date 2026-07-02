@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "stroop_test",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PROMPT",
-        "legacy_prompt": "Carefully worded instruction to get the best AI response.",
         "correct_answer": "Prompt Engineering",
         "wrong_answers": [
             "Fine Tuning",
             "Training",
             "Programming"
-        ]
+        ],
+        "legacy_prompt": "Carefully worded instruction to get the best AI response.",
+        "prompt": "Carefully worded instruction to get the best AI response."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

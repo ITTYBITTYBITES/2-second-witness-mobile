@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "volcano",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LAHAR",
-        "legacy_prompt": "Volcanic debris mixing with water creating deadly mudflow.",
         "correct_answer": "Lahar",
         "wrong_answers": [
             "Mudslide",
             "Debris Flow",
             "Flash Flood"
-        ]
+        ],
+        "legacy_prompt": "Volcanic debris mixing with water creating deadly mudflow.",
+        "prompt": "Volcanic debris mixing with water creating deadly mudflow."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

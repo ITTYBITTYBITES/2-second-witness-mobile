@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "auto",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "WARNING",
-        "legacy_prompt": "Check engine light flashing while driving uphill.",
         "correct_answer": "Engine Misfire",
         "wrong_answers": [
             "Low Fuel",
             "Overheating",
             "Sensor Glitch"
-        ]
+        ],
+        "legacy_prompt": "Check engine light flashing while driving uphill.",
+        "prompt": "Check engine light flashing while driving uphill."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

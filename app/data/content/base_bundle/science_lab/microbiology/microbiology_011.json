@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "microbiology",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PRION",
-        "legacy_prompt": "Misfolded protein causing fatal brain disease without DNA or RNA.",
         "correct_answer": "Prion",
         "wrong_answers": [
             "Virus",
             "Bacteria",
             "Toxin"
-        ]
+        ],
+        "legacy_prompt": "Misfolded protein causing fatal brain disease without DNA or RNA.",
+        "prompt": "Misfolded protein causing fatal brain disease without DNA or RNA."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

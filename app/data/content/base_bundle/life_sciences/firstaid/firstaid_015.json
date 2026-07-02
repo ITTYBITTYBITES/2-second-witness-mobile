@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "firstaid",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TOURNIQUET",
-        "legacy_prompt": "Last resort to stop life-threatening limb bleeding.",
         "correct_answer": "Tourniquet Application",
         "wrong_answers": [
             "Pressure Bandage",
             "Elevation",
             "Direct Pressure"
-        ]
+        ],
+        "legacy_prompt": "Last resort to stop life-threatening limb bleeding.",
+        "prompt": "Last resort to stop life-threatening limb bleeding."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "law",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CUSTODY",
-        "legacy_prompt": "Parent given sole decision-making authority over a child.",
         "correct_answer": "Sole Custody",
         "wrong_answers": [
             "Joint Custody",
             "Guardianship",
             "Adoption"
-        ]
+        ],
+        "legacy_prompt": "Parent given sole decision-making authority over a child.",
+        "prompt": "Parent given sole decision-making authority over a child."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

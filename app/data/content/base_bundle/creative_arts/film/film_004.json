@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "film",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ANGLE",
-        "legacy_prompt": "Camera looking up at a character to make them appear powerful.",
         "correct_answer": "Low Angle Shot",
         "wrong_answers": [
             "High Angle",
             "Dutch Angle",
             "Eye Level"
-        ]
+        ],
+        "legacy_prompt": "Camera looking up at a character to make them appear powerful.",
+        "prompt": "Camera looking up at a character to make them appear powerful."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

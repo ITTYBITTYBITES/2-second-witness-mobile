@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "cyber",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FLOOD",
-        "legacy_prompt": "Identical requests overwhelming satellite gateway.",
         "correct_answer": "DDoS Attack",
         "wrong_answers": [
             "Key Reuse",
             "Badge Clone",
             "Signal Echo"
-        ]
+        ],
+        "legacy_prompt": "Identical requests overwhelming satellite gateway.",
+        "prompt": "Identical requests overwhelming satellite gateway."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

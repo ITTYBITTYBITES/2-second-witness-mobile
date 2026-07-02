@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "influence",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CONSENSUS",
-        "legacy_prompt": "Review page showing 10,000 five-star ratings.",
         "correct_answer": "Social Proof",
         "wrong_answers": [
             "Bandwagon Effect",
             "Authority Bias",
             "Herd Mentality"
-        ]
+        ],
+        "legacy_prompt": "Review page showing 10,000 five-star ratings.",
+        "prompt": "Review page showing 10,000 five-star ratings."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

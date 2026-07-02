@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "aviation",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "STALL",
-        "legacy_prompt": "Aircraft nose too high, wings losing lift.",
         "correct_answer": "Aerodynamic Stall",
         "wrong_answers": [
             "Engine Failure",
             "Turbulence",
             "Wind Shear"
-        ]
+        ],
+        "legacy_prompt": "Aircraft nose too high, wings losing lift.",
+        "prompt": "Aircraft nose too high, wings losing lift."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

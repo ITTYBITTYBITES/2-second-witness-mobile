@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "aviation",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TURBULENCE",
-        "legacy_prompt": "Sudden altitude changes in clear sky, no clouds visible.",
         "correct_answer": "Clear Air Turbulence",
         "wrong_answers": [
             "Mountain Wave",
             "Jet Stream",
             "Thunderstorm"
-        ]
+        ],
+        "legacy_prompt": "Sudden altitude changes in clear sky, no clouds visible.",
+        "prompt": "Sudden altitude changes in clear sky, no clouds visible."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

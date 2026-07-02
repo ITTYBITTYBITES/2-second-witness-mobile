@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "history",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PYRAMID",
-        "legacy_prompt": "Massive stone structures built as tombs for Egyptian rulers.",
         "correct_answer": "Egyptian Pyramids",
         "wrong_answers": [
             "Ziggurats",
             "Temples",
             "Monuments"
-        ]
+        ],
+        "legacy_prompt": "Massive stone structures built as tombs for Egyptian rulers.",
+        "prompt": "Massive stone structures built as tombs for Egyptian rulers."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

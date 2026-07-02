@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "fashion",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DART",
-        "legacy_prompt": "Triangular fold sewn into fabric to create shape at bust or waist.",
         "correct_answer": "Dart",
         "wrong_answers": [
             "Pleat",
             "Tuck",
             "Seam"
-        ]
+        ],
+        "legacy_prompt": "Triangular fold sewn into fabric to create shape at bust or waist.",
+        "prompt": "Triangular fold sewn into fabric to create shape at bust or waist."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

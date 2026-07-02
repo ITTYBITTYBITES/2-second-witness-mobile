@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "engineering",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "INSULATION",
-        "legacy_prompt": "Material preventing heat from escaping through walls.",
         "correct_answer": "Thermal Insulation",
         "wrong_answers": [
             "Soundproofing",
             "Waterproofing",
             "Fireproofing"
-        ]
+        ],
+        "legacy_prompt": "Material preventing heat from escaping through walls.",
+        "prompt": "Material preventing heat from escaping through walls."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "iot",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "POWER",
-        "legacy_prompt": "Sensor harvesting energy from vibrations to power itself.",
         "correct_answer": "Energy Harvesting",
         "wrong_answers": [
             "Battery Power",
             "Solar Power",
             "Wired Power"
-        ]
+        ],
+        "legacy_prompt": "Sensor harvesting energy from vibrations to power itself.",
+        "prompt": "Sensor harvesting energy from vibrations to power itself."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

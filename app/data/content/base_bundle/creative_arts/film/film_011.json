@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "film",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DEPTH",
-        "legacy_prompt": "Foreground, middle ground, and background all in sharp focus.",
         "correct_answer": "Deep Focus",
         "wrong_answers": [
             "Shallow Focus",
             "Rack Focus",
             "Soft Focus"
-        ]
+        ],
+        "legacy_prompt": "Foreground, middle ground, and background all in sharp focus.",
+        "prompt": "Foreground, middle ground, and background all in sharp focus."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

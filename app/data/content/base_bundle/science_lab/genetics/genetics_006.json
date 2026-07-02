@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "genetics",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "HEREDITY",
-        "legacy_prompt": "Child inherits mother's blood type but father's eye color.",
         "correct_answer": "Independent Assortment",
         "wrong_answers": [
             "Linked Genes",
             "Codominance",
             "Pleiotropy"
-        ]
+        ],
+        "legacy_prompt": "Child inherits mother's blood type but father's eye color.",
+        "prompt": "Child inherits mother's blood type but father's eye color."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

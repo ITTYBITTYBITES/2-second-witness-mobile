@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "hardware",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "GROUND",
-        "legacy_prompt": "Connection providing a safe return path for electrical current.",
         "correct_answer": "Ground Connection",
         "wrong_answers": [
             "Neutral Wire",
             "Hot Wire",
             "Phase"
-        ]
+        ],
+        "legacy_prompt": "Connection providing a safe return path for electrical current.",
+        "prompt": "Connection providing a safe return path for electrical current."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

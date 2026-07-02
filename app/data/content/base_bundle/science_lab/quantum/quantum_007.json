@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "quantum",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SPIN",
-        "legacy_prompt": "Intrinsic angular momentum of subatomic particles.",
         "correct_answer": "Quantum Spin",
         "wrong_answers": [
             "Orbital Angular Momentum",
             "Magnetic Moment",
             "Isospin"
-        ]
+        ],
+        "legacy_prompt": "Intrinsic angular momentum of subatomic particles.",
+        "prompt": "Intrinsic angular momentum of subatomic particles."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

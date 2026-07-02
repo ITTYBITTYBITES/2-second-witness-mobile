@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "finance",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LEVERAGE",
-        "legacy_prompt": "Borrowing money to increase the size of an investment.",
         "correct_answer": "Leveraging",
         "wrong_answers": [
             "Hedging",
             "Shorting",
             "Diversifying"
-        ]
+        ],
+        "legacy_prompt": "Borrowing money to increase the size of an investment.",
+        "prompt": "Borrowing money to increase the size of an investment."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

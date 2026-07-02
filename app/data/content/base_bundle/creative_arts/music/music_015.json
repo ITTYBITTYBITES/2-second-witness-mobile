@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "music",
     "type": "rapid_classification",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MODULATION",
-        "legacy_prompt": "Song changing from one key to another mid-piece.",
         "correct_answer": "Key Modulation",
         "wrong_answers": [
             "Transposition",
             "Inversion",
             "Retrograde"
-        ]
+        ],
+        "legacy_prompt": "Song changing from one key to another mid-piece.",
+        "prompt": "Song changing from one key to another mid-piece."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

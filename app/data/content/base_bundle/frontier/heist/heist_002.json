@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "heist",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ALARM",
-        "legacy_prompt": "Motion sensor triggered but no visible intruder.",
         "correct_answer": "False Alarm",
         "wrong_answers": [
             "Ghost Intruder",
             "System Malfunction",
             "Animal Trigger"
-        ]
+        ],
+        "legacy_prompt": "Motion sensor triggered but no visible intruder.",
+        "prompt": "Motion sensor triggered but no visible intruder."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

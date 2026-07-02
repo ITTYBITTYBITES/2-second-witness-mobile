@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "medical",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "POISON",
-        "legacy_prompt": "Rash spreading from tick bite over days, bullseye pattern.",
         "correct_answer": "Lyme Disease",
         "wrong_answers": [
             "Poison Ivy",
             "Cellulitis",
             "Ringworm"
-        ]
+        ],
+        "legacy_prompt": "Rash spreading from tick bite over days, bullseye pattern.",
+        "prompt": "Rash spreading from tick bite over days, bullseye pattern."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

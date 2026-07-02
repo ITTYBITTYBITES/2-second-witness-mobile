@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "quantum",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CAT",
-        "legacy_prompt": "Thought experiment where a cat is both alive and dead.",
         "correct_answer": "Schrodinger's Cat",
         "wrong_answers": [
             "Heisenberg Principle",
             "EPR Paradox",
             "Double Slit"
-        ]
+        ],
+        "legacy_prompt": "Thought experiment where a cat is both alive and dead.",
+        "prompt": "Thought experiment where a cat is both alive and dead."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

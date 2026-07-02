@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "homerepair",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LEVEL",
-        "legacy_prompt": "Tool with a bubble used to check if a shelf is straight.",
         "correct_answer": "Spirit Level",
         "wrong_answers": [
             "Square",
             "Plumb Bob",
             "Ruler"
-        ]
+        ],
+        "legacy_prompt": "Tool with a bubble used to check if a shelf is straight.",
+        "prompt": "Tool with a bubble used to check if a shelf is straight."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

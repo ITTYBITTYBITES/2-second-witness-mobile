@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "sociology",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "RITUAL",
-        "legacy_prompt": "Repeated ceremonial activity that reinforces group bonds.",
         "correct_answer": "Social Ritual",
         "wrong_answers": [
             "Tradition",
             "Custom",
             "Habit"
-        ]
+        ],
+        "legacy_prompt": "Repeated ceremonial activity that reinforces group bonds.",
+        "prompt": "Repeated ceremonial activity that reinforces group bonds."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

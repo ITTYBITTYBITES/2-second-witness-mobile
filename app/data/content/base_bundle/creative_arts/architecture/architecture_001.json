@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "architecture",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ARCH",
-        "legacy_prompt": "Curved structure distributing weight around an opening.",
         "correct_answer": "Arch",
         "wrong_answers": [
             "Beam",
             "Lintel",
             "Column"
-        ]
+        ],
+        "legacy_prompt": "Curved structure distributing weight around an opening.",
+        "prompt": "Curved structure distributing weight around an opening."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

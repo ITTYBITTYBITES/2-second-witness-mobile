@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "cyber",
     "type": "stroop_test",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "BREACH",
-        "legacy_prompt": "Visitor follows staff through secure door.",
         "correct_answer": "Tailgating",
         "wrong_answers": [
             "SQL Injection",
             "Signal Echo",
             "Cold Boot"
-        ]
+        ],
+        "legacy_prompt": "Visitor follows staff through secure door.",
+        "prompt": "Visitor follows staff through secure door."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

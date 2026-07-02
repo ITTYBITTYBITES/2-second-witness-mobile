@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "blockchain",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "WALLET",
-        "legacy_prompt": "Private key that controls access to digital assets.",
         "correct_answer": "Crypto Wallet",
         "wrong_answers": [
             "Bank Account",
             "Password Manager",
             "Digital Vault"
-        ]
+        ],
+        "legacy_prompt": "Private key that controls access to digital assets.",
+        "prompt": "Private key that controls access to digital assets."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

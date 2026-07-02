@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "astronomy",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PARALLAX",
-        "legacy_prompt": "Nearby star appearing to shift position as Earth orbits the Sun.",
         "correct_answer": "Stellar Parallax",
         "wrong_answers": [
             "Proper Motion",
             "Aberration",
             "Precession"
-        ]
+        ],
+        "legacy_prompt": "Nearby star appearing to shift position as Earth orbits the Sun.",
+        "prompt": "Nearby star appearing to shift position as Earth orbits the Sun."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

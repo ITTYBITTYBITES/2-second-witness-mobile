@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "weather",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SNOW",
-        "legacy_prompt": "Winds above 35mph with heavy snow reducing visibility.",
         "correct_answer": "Blizzard",
         "wrong_answers": [
             "Nor'easter",
             "Ice Storm",
             "Whiteout"
-        ]
+        ],
+        "legacy_prompt": "Winds above 35mph with heavy snow reducing visibility.",
+        "prompt": "Winds above 35mph with heavy snow reducing visibility."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "genetics",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MUTATION",
-        "legacy_prompt": "Random change in DNA sequence during replication.",
         "correct_answer": "Point Mutation",
         "wrong_answers": [
             "Deletion",
             "Insertion",
             "Translocation"
-        ]
+        ],
+        "legacy_prompt": "Random change in DNA sequence during replication.",
+        "prompt": "Random change in DNA sequence during replication."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

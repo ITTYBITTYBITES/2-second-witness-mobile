@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "geology",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "STRATA",
-        "legacy_prompt": "Exposed cliff showing horizontal bands of different colored rock.",
         "correct_answer": "Rock Strata",
         "wrong_answers": [
             "Fault Line",
             "Fold",
             "Unconformity"
-        ]
+        ],
+        "legacy_prompt": "Exposed cliff showing horizontal bands of different colored rock.",
+        "prompt": "Exposed cliff showing horizontal bands of different colored rock."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

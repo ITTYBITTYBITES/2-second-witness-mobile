@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "politics",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DIPLOMAT",
-        "legacy_prompt": "Representing one country's interests in another country.",
         "correct_answer": "Diplomacy",
         "wrong_answers": [
             "Espionage",
             "Trade",
             "Immigration"
-        ]
+        ],
+        "legacy_prompt": "Representing one country's interests in another country.",
+        "prompt": "Representing one country's interests in another country."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

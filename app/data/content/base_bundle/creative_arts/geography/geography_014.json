@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "geography",
     "type": "stroop_test",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TUNDRA",
-        "legacy_prompt": "Treeless biome with frozen ground near the Arctic.",
         "correct_answer": "Tundra",
         "wrong_answers": [
             "Taiga",
             "Steppe",
             "Prairie"
-        ]
+        ],
+        "legacy_prompt": "Treeless biome with frozen ground near the Arctic.",
+        "prompt": "Treeless biome with frozen ground near the Arctic."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

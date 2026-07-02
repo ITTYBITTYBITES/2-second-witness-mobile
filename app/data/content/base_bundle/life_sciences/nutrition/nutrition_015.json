@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "nutrition",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DEFICIT",
-        "legacy_prompt": "Consuming fewer calories than your body burns daily.",
         "correct_answer": "Caloric Deficit",
         "wrong_answers": [
             "Malnutrition",
             "Starvation Mode",
             "Fasting"
-        ]
+        ],
+        "legacy_prompt": "Consuming fewer calories than your body burns daily.",
+        "prompt": "Consuming fewer calories than your body burns daily."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

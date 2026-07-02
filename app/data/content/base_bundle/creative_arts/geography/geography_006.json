@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "geography",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "OCEAN",
-        "legacy_prompt": "Largest and deepest ocean covering more than all land combined.",
         "correct_answer": "Pacific Ocean",
         "wrong_answers": [
             "Atlantic Ocean",
             "Indian Ocean",
             "Arctic Ocean"
-        ]
+        ],
+        "legacy_prompt": "Largest and deepest ocean covering more than all land combined.",
+        "prompt": "Largest and deepest ocean covering more than all land combined."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

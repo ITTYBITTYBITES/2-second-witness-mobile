@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "quantum",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TUNNEL",
-        "legacy_prompt": "Particle passing through a barrier it shouldn't be able to.",
         "correct_answer": "Quantum Tunneling",
         "wrong_answers": [
             "Entanglement",
             "Superposition",
             "Teleportation"
-        ]
+        ],
+        "legacy_prompt": "Particle passing through a barrier it shouldn't be able to.",
+        "prompt": "Particle passing through a barrier it shouldn't be able to."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

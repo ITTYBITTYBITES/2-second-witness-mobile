@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "firstaid",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "POISON",
-        "legacy_prompt": "Calling poison control before attempting any treatment.",
         "correct_answer": "Correct First Step",
         "wrong_answers": [
             "Induce Vomiting",
             "Give Milk",
             "Activated Charcoal"
-        ]
+        ],
+        "legacy_prompt": "Calling poison control before attempting any treatment.",
+        "prompt": "Calling poison control before attempting any treatment."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "arctic",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "OZONE",
-        "legacy_prompt": "Thin layer of atmosphere over Antarctica letting more UV through.",
         "correct_answer": "Ozone Hole",
         "wrong_answers": [
             "Greenhouse Effect",
             "Acid Rain",
             "UV Index"
-        ]
+        ],
+        "legacy_prompt": "Thin layer of atmosphere over Antarctica letting more UV through.",
+        "prompt": "Thin layer of atmosphere over Antarctica letting more UV through."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

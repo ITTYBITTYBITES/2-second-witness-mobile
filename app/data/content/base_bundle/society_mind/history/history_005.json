@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "history",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DISCOVERY",
-        "legacy_prompt": "Ships crossing the Atlantic and reaching the Americas in 1492.",
         "correct_answer": "Columbus Voyage",
         "wrong_answers": [
             "Viking Exploration",
             "Magellan Voyage",
             "Cook Expedition"
-        ]
+        ],
+        "legacy_prompt": "Ships crossing the Atlantic and reaching the Americas in 1492.",
+        "prompt": "Ships crossing the Atlantic and reaching the Americas in 1492."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

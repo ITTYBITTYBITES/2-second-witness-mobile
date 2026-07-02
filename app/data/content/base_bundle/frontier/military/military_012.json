@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "military",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "RETREAT",
-        "legacy_prompt": "Organized withdrawal to a more defensible position.",
         "correct_answer": "Tactical Retreat",
         "wrong_answers": [
             "Rout",
             "Surrender",
             "Desertion"
-        ]
+        ],
+        "legacy_prompt": "Organized withdrawal to a more defensible position.",
+        "prompt": "Organized withdrawal to a more defensible position."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

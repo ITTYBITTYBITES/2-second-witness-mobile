@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "medical",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "AIRWAY",
-        "legacy_prompt": "Child suddenly silent, hands at throat, turning blue.",
         "correct_answer": "Choking",
         "wrong_answers": [
             "Asthma",
             "Croup",
             "Seizure"
-        ]
+        ],
+        "legacy_prompt": "Child suddenly silent, hands at throat, turning blue.",
+        "prompt": "Child suddenly silent, hands at throat, turning blue."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

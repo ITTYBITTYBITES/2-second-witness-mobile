@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "gamedev",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LOOP",
-        "legacy_prompt": "Code that runs every frame to update game state.",
         "correct_answer": "Game Loop",
         "wrong_answers": [
             "Event Handler",
             "Callback",
             "Thread"
-        ]
+        ],
+        "legacy_prompt": "Code that runs every frame to update game state.",
+        "prompt": "Code that runs every frame to update game state."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

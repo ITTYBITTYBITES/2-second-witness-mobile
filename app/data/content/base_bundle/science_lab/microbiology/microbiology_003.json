@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "microbiology",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ANTIBIOTIC",
-        "legacy_prompt": "Medicine killing bacteria but not effective against viruses.",
         "correct_answer": "Antibiotic",
         "wrong_answers": [
             "Antiviral",
             "Antifungal",
             "Vaccine"
-        ]
+        ],
+        "legacy_prompt": "Medicine killing bacteria but not effective against viruses.",
+        "prompt": "Medicine killing bacteria but not effective against viruses."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

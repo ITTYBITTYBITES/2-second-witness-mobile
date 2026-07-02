@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "medical",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PULSE",
-        "legacy_prompt": "Irregular heartbeat with dizziness and shortness of breath.",
         "correct_answer": "Arrhythmia",
         "wrong_answers": [
             "Heart Attack",
             "Panic Attack",
             "Anemia"
-        ]
+        ],
+        "legacy_prompt": "Irregular heartbeat with dizziness and shortness of breath.",
+        "prompt": "Irregular heartbeat with dizziness and shortness of breath."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

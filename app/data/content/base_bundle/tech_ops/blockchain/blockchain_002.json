@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "blockchain",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MINE",
-        "legacy_prompt": "Computers competing to solve a complex math puzzle for reward.",
         "correct_answer": "Proof of Work Mining",
         "wrong_answers": [
             "Staking",
             "Validating",
             "Hashing"
-        ]
+        ],
+        "legacy_prompt": "Computers competing to solve a complex math puzzle for reward.",
+        "prompt": "Computers competing to solve a complex math puzzle for reward."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

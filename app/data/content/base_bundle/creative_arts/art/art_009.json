@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "art",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SCULPTURE",
-        "legacy_prompt": "Three-dimensional art created by carving marble.",
         "correct_answer": "Subtractive Sculpture",
         "wrong_answers": [
             "Additive Sculpture",
             "Casting",
             "Assemblage"
-        ]
+        ],
+        "legacy_prompt": "Three-dimensional art created by carving marble.",
+        "prompt": "Three-dimensional art created by carving marble."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

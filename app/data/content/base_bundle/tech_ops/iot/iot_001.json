@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "iot",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CONNECT",
-        "legacy_prompt": "Thermostat adjusting temperature based on your phone's location.",
         "correct_answer": "Geofencing",
         "wrong_answers": [
             "Scheduling",
             "Manual Control",
             "Motion Sensor"
-        ]
+        ],
+        "legacy_prompt": "Thermostat adjusting temperature based on your phone's location.",
+        "prompt": "Thermostat adjusting temperature based on your phone's location."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

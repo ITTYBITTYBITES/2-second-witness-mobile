@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "art",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "PERSPECTIVE",
-        "legacy_prompt": "Parallel lines appearing to converge at a distant point.",
         "correct_answer": "Linear Perspective",
         "wrong_answers": [
             "Aerial Perspective",
             "Isometric View",
             "Orthographic"
-        ]
+        ],
+        "legacy_prompt": "Parallel lines appearing to converge at a distant point.",
+        "prompt": "Parallel lines appearing to converge at a distant point."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

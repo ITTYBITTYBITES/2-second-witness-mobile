@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CLUSTER",
-        "legacy_prompt": "Algorithm grouping customers by purchasing behavior without labels.",
         "correct_answer": "Unsupervised Learning",
         "wrong_answers": [
             "Supervised Learning",
             "Classification",
             "Regression"
-        ]
+        ],
+        "legacy_prompt": "Algorithm grouping customers by purchasing behavior without labels.",
+        "prompt": "Algorithm grouping customers by purchasing behavior without labels."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "survival",
     "type": "stroop_test",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "LIGHTNING",
-        "legacy_prompt": "Open field, thunderstorm approaching, no shelter.",
         "correct_answer": "Crouch Low",
         "wrong_answers": [
             "Lie Flat",
             "Stand Still",
             "Run to Tree"
-        ]
+        ],
+        "legacy_prompt": "Open field, thunderstorm approaching, no shelter.",
+        "prompt": "Open field, thunderstorm approaching, no shelter."
     },
     "presentation": {
         "title": "Action:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

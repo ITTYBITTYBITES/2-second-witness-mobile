@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "parenting",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CRAWL",
-        "legacy_prompt": "Baby moving backward before figuring out forward crawling.",
         "correct_answer": "Normal Development",
         "wrong_answers": [
             "Delay",
             "Motor Issue",
             "Weakness"
-        ]
+        ],
+        "legacy_prompt": "Baby moving backward before figuring out forward crawling.",
+        "prompt": "Baby moving backward before figuring out forward crawling."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

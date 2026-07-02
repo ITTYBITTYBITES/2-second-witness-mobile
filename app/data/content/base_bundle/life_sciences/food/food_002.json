@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "food",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TECHNIQUE",
-        "legacy_prompt": "Rapidly boiling vegetables then plunging into ice water.",
         "correct_answer": "Blanching",
         "wrong_answers": [
             "Braising",
             "Poaching",
             "Steaming"
-        ]
+        ],
+        "legacy_prompt": "Rapidly boiling vegetables then plunging into ice water.",
+        "prompt": "Rapidly boiling vegetables then plunging into ice water."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

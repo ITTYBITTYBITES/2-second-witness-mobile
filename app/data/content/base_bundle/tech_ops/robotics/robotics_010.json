@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "robotics",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SLAM",
-        "legacy_prompt": "Robot building a map while simultaneously tracking its own position.",
         "correct_answer": "SLAM Algorithm",
         "wrong_answers": [
             "GPS Tracking",
             "Dead Reckoning",
             "Beacon Navigation"
-        ]
+        ],
+        "legacy_prompt": "Robot building a map while simultaneously tracking its own position.",
+        "prompt": "Robot building a map while simultaneously tracking its own position."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

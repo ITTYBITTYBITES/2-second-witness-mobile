@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "fitness",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SUPERSET",
-        "legacy_prompt": "Performing two different exercises back to back with no rest.",
         "correct_answer": "Superset",
         "wrong_answers": [
             "Drop Set",
             "Circuit",
             "Pyramid Set"
-        ]
+        ],
+        "legacy_prompt": "Performing two different exercises back to back with no rest.",
+        "prompt": "Performing two different exercises back to back with no rest."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

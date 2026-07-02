@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "finance",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DEFLATION",
-        "legacy_prompt": "Prices falling across the economy for months.",
         "correct_answer": "Deflation",
         "wrong_answers": [
             "Recession",
             "Depression",
             "Disinflation"
-        ]
+        ],
+        "legacy_prompt": "Prices falling across the economy for months.",
+        "prompt": "Prices falling across the economy for months."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

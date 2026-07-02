@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "ecology",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "KEYSTONE",
-        "legacy_prompt": "Removing one species causes collapse of entire ecosystem.",
         "correct_answer": "Keystone Species",
         "wrong_answers": [
             "Apex Predator",
             "Invasive Species",
             "Endemic Species"
-        ]
+        ],
+        "legacy_prompt": "Removing one species causes collapse of entire ecosystem.",
+        "prompt": "Removing one species causes collapse of entire ecosystem."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "chemistry",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "ENDOTHERMIC",
-        "legacy_prompt": "Ice pack getting cold when chemicals inside are mixed.",
         "correct_answer": "Endothermic Reaction",
         "wrong_answers": [
             "Exothermic",
             "Phase Change",
             "Sublimation"
-        ]
+        ],
+        "legacy_prompt": "Ice pack getting cold when chemicals inside are mixed.",
+        "prompt": "Ice pack getting cold when chemicals inside are mixed."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

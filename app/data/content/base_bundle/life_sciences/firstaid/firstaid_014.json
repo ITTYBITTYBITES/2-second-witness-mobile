@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "firstaid",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FROSTBITE",
-        "legacy_prompt": "White waxy skin on fingertips after cold exposure.",
         "correct_answer": "Frostbite",
         "wrong_answers": [
             "Frostnip",
             "Raynaud's",
             "Chilblains"
-        ]
+        ],
+        "legacy_prompt": "White waxy skin on fingertips after cold exposure.",
+        "prompt": "White waxy skin on fingertips after cold exposure."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

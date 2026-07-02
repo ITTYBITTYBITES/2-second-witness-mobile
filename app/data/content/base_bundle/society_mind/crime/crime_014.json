@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "crime",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DIGITAL",
-        "legacy_prompt": "Deleted files recovered from suspect's hard drive.",
         "correct_answer": "Digital Forensics",
         "wrong_answers": [
             "Surveillance",
             "Wiretapping",
             "Hacking"
-        ]
+        ],
+        "legacy_prompt": "Deleted files recovered from suspect's hard drive.",
+        "prompt": "Deleted files recovered from suspect's hard drive."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

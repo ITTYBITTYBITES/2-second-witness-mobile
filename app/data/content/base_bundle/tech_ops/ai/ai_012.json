@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TRANSFER",
-        "legacy_prompt": "Model trained on cats being adapted to identify dogs.",
         "correct_answer": "Transfer Learning",
         "wrong_answers": [
             "Fine Tuning",
             "Retraining",
             "Data Augmentation"
-        ]
+        ],
+        "legacy_prompt": "Model trained on cats being adapted to identify dogs.",
+        "prompt": "Model trained on cats being adapted to identify dogs."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

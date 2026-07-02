@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "geology",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MAGMA",
-        "legacy_prompt": "Molten rock beneath Earth's surface under extreme pressure.",
         "correct_answer": "Magma",
         "wrong_answers": [
             "Lava",
             "Mantle",
             "Core Material"
-        ]
+        ],
+        "legacy_prompt": "Molten rock beneath Earth's surface under extreme pressure.",
+        "prompt": "Molten rock beneath Earth's surface under extreme pressure."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

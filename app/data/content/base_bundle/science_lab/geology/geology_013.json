@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "geology",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CORE",
-        "legacy_prompt": "Earth's inner core made of solid iron and nickel.",
         "correct_answer": "Inner Core",
         "wrong_answers": [
             "Outer Core",
             "Lower Mantle",
             "Upper Mantle"
-        ]
+        ],
+        "legacy_prompt": "Earth's inner core made of solid iron and nickel.",
+        "prompt": "Earth's inner core made of solid iron and nickel."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

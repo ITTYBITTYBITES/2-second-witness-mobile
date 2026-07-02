@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "gamedev",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DELTA",
-        "legacy_prompt": "Multiplying movement speed by time between frames.",
         "correct_answer": "Delta Time",
         "wrong_answers": [
             "Fixed Time",
             "Frame Rate",
             "Tick Rate"
-        ]
+        ],
+        "legacy_prompt": "Multiplying movement speed by time between frames.",
+        "prompt": "Multiplying movement speed by time between frames."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

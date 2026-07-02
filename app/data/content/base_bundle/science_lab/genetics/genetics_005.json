@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "genetics",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "SELECTION",
-        "legacy_prompt": "Farmers breeding only the largest cattle each generation.",
         "correct_answer": "Artificial Selection",
         "wrong_answers": [
             "Natural Selection",
             "Genetic Drift",
             "Gene Flow"
-        ]
+        ],
+        "legacy_prompt": "Farmers breeding only the largest cattle each generation.",
+        "prompt": "Farmers breeding only the largest cattle each generation."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

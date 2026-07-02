@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "music",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FERMATA",
-        "legacy_prompt": "Symbol indicating a note should be held longer than its written value.",
         "correct_answer": "Fermata",
         "wrong_answers": [
             "Tie",
             "Slur",
             "Accent"
-        ]
+        ],
+        "legacy_prompt": "Symbol indicating a note should be held longer than its written value.",
+        "prompt": "Symbol indicating a note should be held longer than its written value."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

@@ -3,25 +3,18 @@
     "universe": "life_sciences",
     "world": "firstaid",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "NOSEBLEED",
-        "legacy_prompt": "Pinching the soft part of the nose and leaning forward.",
         "correct_answer": "Proper Nosebleed Care",
         "wrong_answers": [
             "Tilt Head Back",
             "Stuff with Cotton",
             "Apply Ice to Forehead"
-        ]
+        ],
+        "legacy_prompt": "Pinching the soft part of the nose and leaning forward.",
+        "prompt": "Pinching the soft part of the nose and leaning forward."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

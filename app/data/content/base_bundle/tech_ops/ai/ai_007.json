@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "NLP",
-        "legacy_prompt": "Computer understanding the meaning of a sentence.",
         "correct_answer": "Natural Language Processing",
         "wrong_answers": [
             "Speech Recognition",
             "Text Mining",
             "Sentiment Analysis"
-        ]
+        ],
+        "legacy_prompt": "Computer understanding the meaning of a sentence.",
+        "prompt": "Computer understanding the meaning of a sentence."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

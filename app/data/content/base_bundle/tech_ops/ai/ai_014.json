@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "ai",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "REWARD",
-        "legacy_prompt": "AI agent learning to maximize points in a video game.",
         "correct_answer": "Reward Function",
         "wrong_answers": [
             "Loss Function",
             "Cost Function",
             "Objective Function"
-        ]
+        ],
+        "legacy_prompt": "AI agent learning to maximize points in a video game.",
+        "prompt": "AI agent learning to maximize points in a video game."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

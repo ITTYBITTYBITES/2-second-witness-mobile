@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "ocean",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "TRENCH",
-        "legacy_prompt": "Deepest known point in the world's oceans.",
         "correct_answer": "Mariana Trench",
         "wrong_answers": [
             "Puerto Rico Trench",
             "Java Trench",
             "Tonga Trench"
-        ]
+        ],
+        "legacy_prompt": "Deepest known point in the world's oceans.",
+        "prompt": "Deepest known point in the world's oceans."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

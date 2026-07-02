@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "influence",
     "type": "stroop_test",
-    "difficulty": 3,
-    "rewards": {
-        "xp": 30,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DECOY",
-        "legacy_prompt": "Third option added to make the expensive one look reasonable.",
         "correct_answer": "Decoy Effect",
         "wrong_answers": [
             "Anchoring",
             "Framing",
             "Bundling"
-        ]
+        ],
+        "legacy_prompt": "Third option added to make the expensive one look reasonable.",
+        "prompt": "Third option added to make the expensive one look reasonable."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 3
     }
 }

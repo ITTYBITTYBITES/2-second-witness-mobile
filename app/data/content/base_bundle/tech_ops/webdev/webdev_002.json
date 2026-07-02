@@ -3,25 +3,18 @@
     "universe": "tech_ops",
     "world": "webdev",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "CSS",
-        "legacy_prompt": "Code controlling colors, fonts, and layout of a website.",
         "correct_answer": "CSS",
         "wrong_answers": [
             "HTML",
             "JavaScript",
             "SASS"
-        ]
+        ],
+        "legacy_prompt": "Code controlling colors, fonts, and layout of a website.",
+        "prompt": "Code controlling colors, fonts, and layout of a website."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

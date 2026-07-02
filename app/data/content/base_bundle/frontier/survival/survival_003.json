@@ -3,25 +3,18 @@
     "universe": "frontier",
     "world": "survival",
     "type": "rapid_classification",
-    "difficulty": 1,
-    "rewards": {
-        "xp": 10,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "FLOOD",
-        "legacy_prompt": "Water rising in your vehicle on a flooded road.",
         "correct_answer": "Exit Immediately",
         "wrong_answers": [
             "Drive Faster",
             "Wait it Out",
             "Reverse Slowly"
-        ]
+        ],
+        "legacy_prompt": "Water rising in your vehicle on a flooded road.",
+        "prompt": "Water rising in your vehicle on a flooded road."
     },
     "presentation": {
         "title": "Action:",
-        "visual_theme_override": null
+        "difficulty_tier": 1
     }
 }

@@ -3,25 +3,18 @@
     "universe": "science_lab",
     "world": "geology",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "MINERAL",
-        "legacy_prompt": "Scratching glass to test the hardness of a rock sample.",
         "correct_answer": "Mohs Hardness Test",
         "wrong_answers": [
             "Acid Test",
             "Streak Test",
             "Luster Test"
-        ]
+        ],
+        "legacy_prompt": "Scratching glass to test the hardness of a rock sample.",
+        "prompt": "Scratching glass to test the hardness of a rock sample."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

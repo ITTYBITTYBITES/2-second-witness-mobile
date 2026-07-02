@@ -3,25 +3,18 @@
     "universe": "creative_arts",
     "world": "fashion",
     "type": "rapid_classification",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "DRAPE",
-        "legacy_prompt": "How fabric falls and hangs on the body.",
         "correct_answer": "Drape",
         "wrong_answers": [
             "Fit",
             "Silhouette",
             "Structure"
-        ]
+        ],
+        "legacy_prompt": "How fabric falls and hangs on the body.",
+        "prompt": "How fabric falls and hangs on the body."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }

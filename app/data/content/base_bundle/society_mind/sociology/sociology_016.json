@@ -3,25 +3,18 @@
     "universe": "society_mind",
     "world": "sociology",
     "type": "stroop_test",
-    "difficulty": 2,
-    "rewards": {
-        "xp": 20,
-        "currency": 0
-    },
     "rules": {
-        "time_limit": 5.0,
-        "attempts": 1,
-        "legacy_flash": "POWER",
-        "legacy_prompt": "Ability to influence others' behavior even against their will.",
         "correct_answer": "Social Power",
         "wrong_answers": [
             "Authority",
             "Influence",
             "Control"
-        ]
+        ],
+        "legacy_prompt": "Ability to influence others' behavior even against their will.",
+        "prompt": "Ability to influence others' behavior even against their will."
     },
     "presentation": {
         "title": "Identify:",
-        "visual_theme_override": null
+        "difficulty_tier": 2
     }
 }
