@@ -59,56 +59,31 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
-columns = 3
+columns = 2
 alignment = 1
 
-[node name="BtnTheme" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-text = "Theme: History"
-
-[node name="BtnAccess" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-text = "Accessibility: ON"
-
 [node name="BtnAudio" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
+custom_minimum_size = Vector2(280, 60)
 layout_mode = 2
 text = "Audio: Master 100%"
 
+[node name="BtnAccess" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(280, 60)
+layout_mode = 2
+text = "Accessibility: ON"
+
 [node name="BtnPrivacy" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
+custom_minimum_size = Vector2(280, 60)
 layout_mode = 2
 text = "Privacy: Local Only"
 
-[node name="BtnExport" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-text = "Export Data"
-
-[node name="BtnTelemetry" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-text = "Telemetry: OFF"
-
 [node name="BtnAbout" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
+custom_minimum_size = Vector2(280, 60)
 layout_mode = 2
 text = "About 2SW"
 
-[node name="BtnRestore" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-text = "Restore Purchases"
-
-[node name="BtnSupport" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-text = "Support"
-
 [node name="BtnClose" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 50)
+custom_minimum_size = Vector2(240, 50)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "CLOSE SETTINGS"
