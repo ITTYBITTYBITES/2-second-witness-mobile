@@ -117,7 +117,19 @@ func get_universe_identity(universe_id: String) -> Dictionary:
 func get_world_identity(universe_id: String, world_id: String) -> Dictionary:
 	var base_id = get_universe_identity(universe_id)
 	var w_id = str(world_id).to_lower()
-	if world_overrides.has(w_id):
+	var custodian = Engine.get_main_loop().root.get_node_or_null("WorldProfileCustodian") if Engine.get_main_loop() else null
+	var cust_profile = custodian.get_profile(w_id) if (custodian and custodian.has_method("get_profile")) else {}
+	
+	if not cust_profile.is_empty() and cust_profile.get("world", "") == w_id:
+		if cust_profile.has("ui") and cust_profile["ui"].has("border_color"):
+			base_id["palette"]["primary"] = cust_profile["ui"]["border_color"]
+		if cust_profile.has("lens") and cust_profile["lens"].has("colors"):
+			var c = cust_profile["lens"]["colors"]
+			if c.has("primary"): base_id["palette"]["accent"] = c["primary"]
+			if c.has("bg"): base_id["palette"]["bg"] = c["bg"]
+		base_id["world_sub_identity"] = w_id.capitalize().replace("_", " ")
+		base_id["world_tint_alpha"] = cust_profile.get("ui", {}).get("glass_opacity", 0.18)
+	elif world_overrides.has(w_id):
 		var over = world_overrides[w_id]
 		if over.has("accent_override"):
 			base_id["palette"]["accent"] = over["accent_override"]

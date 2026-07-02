@@ -8,9 +8,26 @@ extends Node
 var _profiles: Dictionary = {}
 
 func _ready():
-	BootTracer.log_init("WorldProfileCustodian")
+	if BootTracer: BootTracer.log_init("WorldProfileCustodian")
 	print("[WORLD PROFILE CUSTODIAN] Online. Compiling unified presentation contracts.")
-	_load_profile_file("res://data/themes/ancient_egypt.json")
+	_crawl_profiles("res://data/themes")
+
+func _crawl_profiles(path: String):
+	var dir = DirAccess.open(path)
+	if not dir: return
+	dir.list_dir_begin()
+	var file_name = dir.get_next()
+	while file_name != "":
+		if file_name == "." or file_name == "..":
+			file_name = dir.get_next()
+			continue
+		var full_path = path + "/" + file_name
+		full_path = full_path.replace("//", "/").replace("res:/", "res://")
+		if dir.current_is_dir():
+			_crawl_profiles(full_path)
+		elif file_name.ends_with(".json"):
+			_load_profile_file(full_path)
+		file_name = dir.get_next()
 
 func _load_profile_file(path: String):
 	var file = FileAccess.open(path, FileAccess.READ)
@@ -18,9 +35,13 @@ func _load_profile_file(path: String):
 		var json = JSON.new()
 		if json.parse(file.get_as_text()) == OK:
 			var data = json.get_data()
-			if typeof(data) == TYPE_DICTIONARY and data.has("world"):
-				_profiles[data["world"]] = data
-				print("[WORLD PROFILE] Loaded presentation asset: ", data["world"])
+			if typeof(data) == TYPE_DICTIONARY:
+				if data.has("world"):
+					_profiles[data["world"]] = data
+					print("[WORLD PROFILE] Loaded presentation asset: ", data["world"])
+				if data.has("id"):
+					_profiles[data["id"]] = data
+					print("[WORLD PROFILE] Loaded presentation asset ID: ", data["id"])
 		file.close()
 
 func get_profile(world_id: String) -> Dictionary:
