@@ -62,17 +62,31 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: Str
 	print("[TIER 1 - SHADER] Field environment synchronized with universe: ", universe_id, " | World: ", world_id)
 
 func _on_spike_started():
-	# Determine the intensity of the incoming cognitive spike
-	# In production, this reads the 'difficulty' or 'stakes' from the ContentRegistry payload.
-	var spike_intensity = TunnelIntensity.FOCUS # Defaulting to Level 1
-	
-	# Simulate a rare Level 3 Peak state roughly 5% of the time
+	var spike_intensity = TunnelIntensity.FOCUS
 	if randf() > 0.95:
 		spike_intensity = TunnelIntensity.PEAK
 	elif randf() > 0.70:
 		spike_intensity = TunnelIntensity.CHALLENGE
 	
 	_apply_intensity_shift(spike_intensity)
+	
+	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
+	if orch and "active_state" in orch and orch.active_state and "current_scenario" in orch.active_state:
+		modulate_for_scenario(str(orch.active_state.current_scenario))
+
+func modulate_for_scenario(scenario_type: String):
+	if not _material: return
+	print("[TIER 1 - SHADER] Modulating tunnel flow for scenario mechanic: ", scenario_type)
+	var tween = get_tree().create_tween().set_parallel(true)
+	match scenario_type.to_lower():
+		"rapid_classification", "reflex_tap", "speed_sort":
+			tween.tween_property(_material, "shader_parameter/flow_speed", 1.35, 0.6)
+		"memory_cascade", "spatial_recall", "sequence_reverse":
+			tween.tween_property(_material, "shader_parameter/flow_speed", 0.70, 0.6)
+		"signal_vs_noise", "stroop_test", "odd_one_out", "pattern_continuation":
+			tween.tween_property(_material, "shader_parameter/flow_speed", 1.0, 0.6)
+		_:
+			tween.tween_property(_material, "shader_parameter/flow_speed", 1.0, 0.6)
 
 func _apply_intensity_shift(intensity: int):
 	var tween = get_tree().create_tween().set_parallel(true)

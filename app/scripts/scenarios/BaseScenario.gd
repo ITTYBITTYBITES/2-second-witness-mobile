@@ -343,6 +343,10 @@ func report_scenario_result(is_success: bool, rt_ms: float = -1.0):
 	execute_progression_event(is_success, rt_ms)
 
 func enforce_attentional_strata():
+	var bg = get_node_or_null("VoidBG") if get_node_or_null("VoidBG") else get_node_or_null("ColorRect")
+	if bg and bg is ColorRect:
+		bg.color = Color(0.04, 0.07, 0.12, 0.35) # Ensure persistent animated TunnelLayer remains visible behind scenario
+		
 	var pal = {}
 	var vim = Engine.get_main_loop().root.get_node_or_null("VisualIdentityManager") if Engine.get_main_loop() else null
 	if vim and vim.has_method("get_universe_identity"):
