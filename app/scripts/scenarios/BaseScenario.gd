@@ -171,7 +171,7 @@ func _mount_cockpit_instrument_overlay():
 	
 	var lbl_title = RichTextLabel.new()
 	lbl_title.bbcode_enabled = true
-	lbl_title.text = "[color=#00D4FF]●[/color] [b]2 SECOND WITNESS[/b] [color=#667799]\| COCKPIT INSTANCE[/color]"
+	lbl_title.text = "[color=#00D4FF]●[/color] [b]2 SECOND WITNESS[/b] [color=#667799]\| ACTIVE OBSERVATION[/color]"
 	lbl_title.fit_content = true
 	lbl_title.custom_minimum_size = Vector2(300, 30)
 	lbl_title.add_theme_font_size_override("normal_font_size", 16)
@@ -228,7 +228,7 @@ func _mount_cockpit_instrument_overlay():
 	
 	_cockpit_footer_status = RichTextLabel.new()
 	_cockpit_footer_status.bbcode_enabled = true
-	_cockpit_footer_status.text = "[center][color=#00D4FF]STATUS: OBSERVING STREAM — AWAITING WITNESS INPUT...[/color][/center]"
+	_cockpit_footer_status.text = "[center][color=#00D4FF]STATUS: OBSERVING STREAM — AWAITING WITNESS RESPONSE...[/color][/center]"
 	_cockpit_footer_status.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_cockpit_footer_status.fit_content = true
 	_cockpit_footer_status.add_theme_font_size_override("normal_font_size", 14)
@@ -236,7 +236,7 @@ func _mount_cockpit_instrument_overlay():
 	
 	var lbl_lat = RichTextLabel.new()
 	lbl_lat.bbcode_enabled = true
-	lbl_lat.text = "[right][color=#667799]INSTRUMENT CLOCK:[/color] [color=#E6B800]60 FPS LOCKED[/color][/right]"
+	lbl_lat.text = "[right][color=#667799]OBSERVATION STREAM:[/color] [color=#E6B800]SYNCHRONIZED[/color][/right]"
 	lbl_lat.fit_content = true
 	lbl_lat.custom_minimum_size = Vector2(200, 24)
 	lbl_lat.add_theme_font_size_override("normal_font_size", 14)
@@ -280,7 +280,7 @@ func _set_all_buttons_disabled(node: Node, disable_flag: bool):
 func report_scenario_result(is_success: bool, rt_ms: float = -1.0):
 	if is_success:
 		if is_instance_valid(_cockpit_footer_status):
-			_cockpit_footer_status.text = "[center][color=#2ECC71][b]STATUS: OBSERVATION VERIFIED — LOCKING TELEMETRY (RT: %d ms)[/b][/color][/center]" % int(rt_ms)
+			_cockpit_footer_status.text = "[center][color=#2ECC71][b]STATUS: OBSERVATION VERIFIED — RECORDING PATTERN DATA (%d ms)[/b][/color][/center]" % int(rt_ms)
 		if is_instance_valid(_cockpit_header_panel) and _cockpit_header_panel.has_theme_stylebox_override("panel"):
 			var sb = _cockpit_header_panel.get_theme_stylebox("panel").duplicate()
 			if sb is StyleBoxFlat:
