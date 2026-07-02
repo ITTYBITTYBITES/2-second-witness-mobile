@@ -24,6 +24,7 @@ jobs:
         run: |
           echo "Scanning app/data/content/base_bundle for valid JSON and required keys..."
           find app/data/content/base_bundle -type f -name "*.json" | while read -r file; do
+            # Handle both JSON objects and JSON arrays
             jq -e '
               if type == "array" then
                 (map(has("id") and has("universe") and has("type")) | all)
@@ -44,7 +45,8 @@ jobs:
         run: |
           echo "Validating Theme JSON strict formatting..."
           find app/data/themes -type f -name "*.json" | while read -r file; do
-            jq -e '. | has("id") and has("visual") and has("tunnel")' "$file" > /dev/null
+            # Accept both "visual" and "lens" as valid visual configuration keys
+            jq -e '. | has("id") and (has("visual") or has("lens")) and has("tunnel")' "$file" > /dev/null
             if [ $? -ne 0 ]; then
               echo "Validation Failed: $file is missing critical theme contracts."
               exit 1
