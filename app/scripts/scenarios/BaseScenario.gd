@@ -129,6 +129,7 @@ func _mount_cockpit_instrument_overlay():
 	var s_id = _scenario_payload.get("id", "memory_cascade")
 	var t_id = _scenario_payload.get("type", "memory")
 	
+	var pretty_uni = str(u_id).capitalize().replace("_", " ")
 	var pretty_world = str(w_id).capitalize().replace("_", " ")
 	var pretty_proto = str(s_id).capitalize().replace("_", " ")
 	var pretty_trait = str(t_id).capitalize().replace("_", " ")
@@ -180,7 +181,7 @@ func _mount_cockpit_instrument_overlay():
 	
 	var lbl_proto = RichTextLabel.new()
 	lbl_proto.bbcode_enabled = true
-	lbl_proto.text = "[center][color=#8595FF]PROTOCOL:[/color] [b][color=#FFFFFF]%s[/color][/b] [color=#445566]//[/color] [b][color=#E6B800]%s[/color][/b][/center]" % [pretty_proto.to_upper(), pretty_world.to_upper()]
+	lbl_proto.text = "[center][b][color=#8595FF]%s[/color][/b] [color=#445566]▶[/color] [b][color=#E6B800]%s[/color][/b] [color=#667799]// PROTOCOL:[/color] [b][color=#FFFFFF]%s[/color][/b][/center]" % [pretty_uni.to_upper(), pretty_world.to_upper(), pretty_proto.to_upper()]
 	lbl_proto.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	lbl_proto.fit_content = true
 	lbl_proto.add_theme_font_size_override("normal_font_size", 16)
