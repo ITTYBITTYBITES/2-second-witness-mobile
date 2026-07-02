@@ -108,12 +108,142 @@ func execute_render_pipeline():
 	print("✅ ALL 4 RUNTIME ASSERTIONS SATISFIED. Gameplay state machine unlocked and active.")
 	_register_with_execution_engine()
 
+var _cockpit_header_panel: PanelContainer = null
+var _cockpit_footer_status: RichTextLabel = null
+
 func _register_with_execution_engine():
 	var engine = ScenarioExecutionEngine if ScenarioExecutionEngine else Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
 	if not engine:
 		print("[BASE SCENARIO] ScenarioExecutionEngine not found in root. Running in standalone benchmark mode.")
+		_mount_cockpit_instrument_overlay()
 		return
 	engine.register_scenario_instance(self, _scenario_payload, _deterministic_rng.seed if _deterministic_rng else 12345)
+	_mount_cockpit_instrument_overlay()
+
+func _mount_cockpit_instrument_overlay():
+	if get_node_or_null("CockpitHeader") != null: return
+	
+	var u_id = _scenario_payload.get("universe", "science_lab")
+	var w_id = _scenario_payload.get("world", "cognitive_bias")
+	var s_id = _scenario_payload.get("id", "memory_cascade")
+	var t_id = _scenario_payload.get("type", "memory")
+	
+	var pretty_world = str(w_id).capitalize().replace("_", " ")
+	var pretty_proto = str(s_id).capitalize().replace("_", " ")
+	var pretty_trait = str(t_id).capitalize().replace("_", " ")
+	if pretty_trait == "Memory": pretty_trait = "RECALL & WORKING MEMORY"
+	elif pretty_trait == "Pattern": pretty_trait = "PATTERN RECOGNITION"
+	elif pretty_trait == "Classification": pretty_trait = "RAPID CLASSIFICATION"
+	elif pretty_trait == "Decision": pretty_trait = "DECISION CONFIDENCE"
+	
+	var chain_idx = 1
+	var router = Engine.get_main_loop().root.get_node_or_null("NavigationRouter") if Engine.get_main_loop() else null
+	if router and "current_scenario_chain_index" in router:
+		chain_idx = router.current_scenario_chain_index
+		
+	var chain_str = "[color=#00D4FF]●[/color] [color=#444444]○ ○[/color]"
+	if chain_idx == 2: chain_str = "[color=#00D4FF]● ●[/color] [color=#444444]○[/color]"
+	elif chain_idx >= 3: chain_str = "[color=#00D4FF]● ● ●[/color]"
+	
+	_cockpit_header_panel = PanelContainer.new()
+	_cockpit_header_panel.name = "CockpitHeader"
+	_cockpit_header_panel.set_anchors_preset(Control.PRESET_TOP_WIDE)
+	_cockpit_header_panel.custom_minimum_size = Vector2(0, 54)
+	_cockpit_header_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	
+	var h_style = StyleBoxFlat.new()
+	h_style.bg_color = Color("#080D16")
+	h_style.bg_color.a = 0.95
+	h_style.border_width_bottom = 2
+	h_style.border_color = Color("#00D4FF")
+	_cockpit_header_panel.add_theme_stylebox_override("panel", h_style)
+	
+	var h_margin = MarginContainer.new()
+	h_margin.add_theme_constant_override("margin_left", 24)
+	h_margin.add_theme_constant_override("margin_right", 24)
+	h_margin.add_theme_constant_override("margin_top", 8)
+	h_margin.add_theme_constant_override("margin_bottom", 8)
+	_cockpit_header_panel.add_child(h_margin)
+	
+	var h_box = HBoxContainer.new()
+	h_box.add_theme_constant_override("separation", 20)
+	h_margin.add_child(h_box)
+	
+	var lbl_title = RichTextLabel.new()
+	lbl_title.bbcode_enabled = true
+	lbl_title.text = "[color=#00D4FF]●[/color] [b]2 SECOND WITNESS[/b] [color=#667799]\| COCKPIT INSTANCE[/color]"
+	lbl_title.fit_content = true
+	lbl_title.custom_minimum_size = Vector2(300, 30)
+	lbl_title.add_theme_font_size_override("normal_font_size", 16)
+	h_box.add_child(lbl_title)
+	
+	var lbl_proto = RichTextLabel.new()
+	lbl_proto.bbcode_enabled = true
+	lbl_proto.text = "[center][color=#8595FF]PROTOCOL:[/color] [b][color=#FFFFFF]%s[/color][/b] [color=#445566]//[/color] [b][color=#E6B800]%s[/color][/b][/center]" % [pretty_proto.to_upper(), pretty_world.to_upper()]
+	lbl_proto.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	lbl_proto.fit_content = true
+	lbl_proto.add_theme_font_size_override("normal_font_size", 16)
+	h_box.add_child(lbl_proto)
+	
+	var lbl_chain = RichTextLabel.new()
+	lbl_chain.bbcode_enabled = true
+	lbl_chain.text = "[right][color=#8595FF]CHAIN:[/color] %s[/right]" % chain_str
+	lbl_chain.fit_content = true
+	lbl_chain.custom_minimum_size = Vector2(180, 30)
+	lbl_chain.add_theme_font_size_override("normal_font_size", 16)
+	h_box.add_child(lbl_chain)
+	
+	add_child(_cockpit_header_panel)
+	
+	var f_panel = PanelContainer.new()
+	f_panel.name = "CockpitFooter"
+	f_panel.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
+	f_panel.custom_minimum_size = Vector2(0, 40)
+	f_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	
+	var f_style = StyleBoxFlat.new()
+	f_style.bg_color = Color("#05080E")
+	f_style.bg_color.a = 0.90
+	f_style.border_width_top = 1
+	f_style.border_color = Color("#223344")
+	f_panel.add_theme_stylebox_override("panel", f_style)
+	
+	var f_margin = MarginContainer.new()
+	f_margin.add_theme_constant_override("margin_left", 24)
+	f_margin.add_theme_constant_override("margin_right", 24)
+	f_margin.add_theme_constant_override("margin_top", 6)
+	f_margin.add_theme_constant_override("margin_bottom", 6)
+	f_panel.add_child(f_margin)
+	
+	var f_box = HBoxContainer.new()
+	f_margin.add_child(f_box)
+	
+	var lbl_target = RichTextLabel.new()
+	lbl_target.bbcode_enabled = true
+	lbl_target.text = "[color=#667799]TARGET DOMAIN:[/color] [b][color=#2ECC71]%s[/color][/b]" % pretty_trait.to_upper()
+	lbl_target.fit_content = true
+	lbl_target.custom_minimum_size = Vector2(300, 24)
+	lbl_target.add_theme_font_size_override("normal_font_size", 14)
+	f_box.add_child(lbl_target)
+	
+	_cockpit_footer_status = RichTextLabel.new()
+	_cockpit_footer_status.bbcode_enabled = true
+	_cockpit_footer_status.text = "[center][color=#00D4FF]STATUS: OBSERVING STREAM — AWAITING WITNESS INPUT...[/color][/center]"
+	_cockpit_footer_status.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_cockpit_footer_status.fit_content = true
+	_cockpit_footer_status.add_theme_font_size_override("normal_font_size", 14)
+	f_box.add_child(_cockpit_footer_status)
+	
+	var lbl_lat = RichTextLabel.new()
+	lbl_lat.bbcode_enabled = true
+	lbl_lat.text = "[right][color=#667799]INSTRUMENT CLOCK:[/color] [color=#E6B800]60 FPS LOCKED[/color][/right]"
+	lbl_lat.fit_content = true
+	lbl_lat.custom_minimum_size = Vector2(200, 24)
+	lbl_lat.add_theme_font_size_override("normal_font_size", 14)
+	f_box.add_child(lbl_lat)
+	
+	add_child(f_panel)
+	print("[COCKPIT] Persistent Observation Instrument HUD successfully mounted.")
 
 func engine_generate_hook():
 	if has_method("_setup_round"): call("_setup_round")
@@ -148,6 +278,14 @@ func _set_all_buttons_disabled(node: Node, disable_flag: bool):
 			_set_all_buttons_disabled(child, disable_flag)
 
 func report_scenario_result(is_success: bool, rt_ms: float = -1.0):
+	if is_success:
+		if is_instance_valid(_cockpit_footer_status):
+			_cockpit_footer_status.text = "[center][color=#2ECC71][b]STATUS: OBSERVATION VERIFIED — LOCKING TELEMETRY (RT: %d ms)[/b][/color][/center]" % int(rt_ms)
+		if is_instance_valid(_cockpit_header_panel) and _cockpit_header_panel.has_theme_stylebox_override("panel"):
+			var sb = _cockpit_header_panel.get_theme_stylebox("panel").duplicate()
+			if sb is StyleBoxFlat:
+				sb.border_color = Color("#E6B800")
+				_cockpit_header_panel.add_theme_stylebox_override("panel", sb)
 	var engine = ScenarioExecutionEngine if ScenarioExecutionEngine else Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
 	if engine and engine.has_method("submit_answer"):
 		engine.submit_answer(is_success, rt_ms)
