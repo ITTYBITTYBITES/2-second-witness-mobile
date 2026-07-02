@@ -1,0 +1,50 @@
+{
+  "id": "space_astronomy",
+  "display_name": "Space & Astronomy",
+  "visual": {
+    "background_type": "hybrid",
+    "primary_colors": [
+      "#061108",
+      "#27AE60",
+      "#F1C40F"
+    ],
+    "accent_colors": [
+      "#F1C40F",
+      "#FFFFFF"
+    ],
+    "fog_density": 0.65,
+    "lighting_model": "volumetric",
+    "particle_profile": "space_astronomy_particles",
+    "motion_style": "branching"
+  },
+  "ui": {
+    "panel_style": "glass",
+    "blur_strength": 0.25,
+    "corner_radius": 16,
+    "font_theme": "instrument",
+    "button_style": "floating",
+    "border_color": "#27AE60"
+  },
+  "tunnel": {
+    "tunnel_palette": [
+      "#061108",
+      "#27AE60",
+      "#F1C40F"
+    ],
+    "flow_type": "branching",
+    "speed_multiplier": 0.9,
+    "density": 0.65,
+    "depth_layers": 6,
+    "interactive_elements": true
+  },
+  "audio": {
+    "ambient_track": "forest_breeze",
+    "stinger_style": "wood_tap",
+    "reverb_type": "hall"
+  },
+  "transition": {
+    "entry_effect": "slingshot_warp",
+    "exit_effect": "collapse",
+    "duration_ms": 900
+  }
+}
