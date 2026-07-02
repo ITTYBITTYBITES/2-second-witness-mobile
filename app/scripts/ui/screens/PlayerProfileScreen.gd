@@ -47,6 +47,7 @@ func _apply_universe_manifest(universe_id: String):
 
 func _populate_data():
 	var profile = get_node_or_null("/root/PlayerProfile")
+	var narrator = get_node_or_null("/root/MirrorNarrator")
 	var lifetime = profile.lifetime_sessions if profile else 0
 	
 	if lifetime_label: lifetime_label.text = "LIFETIME SESSIONS: " + str(lifetime)
@@ -56,29 +57,21 @@ func _populate_data():
 	for child in rec_container.get_children(): child.queue_free()
 	for child in nav_container.get_children(): child.queue_free()
 	
-	if lifetime == 0:
-		if welcome_label: welcome_label.text = "Your player profile develops as you complete scenarios. Complete your first world to begin generating observations."
-		
-		var zero_traits = ["Pattern Recognition", "Recall", "Rapid Classification", "Spatial Tracking", "Decision Confidence", "Processing Speed"]
-		for t in zero_traits:
+	if lifetime <= 1 or not narrator:
+		if lifetime_label: lifetime_label.text = "OBSERVATION JOURNEY INITIATED"
+		if welcome_label: welcome_label.text = "Your reflection is still forming. Complete observation sessions to reveal patterns."
+		var summary = narrator.get_last_session_summary(profile) if narrator else ["Your observation journey is just beginning."]
+		for s in summary:
 			var lbl = Label.new()
-			lbl.text = t + ": [color=#555555]0 attempts (No observations yet)[/color]"
+			lbl.text = "• " + s
 			lbl.add_theme_font_size_override("font_size", 16)
 			traits_container.add_child(lbl)
 			
-		var no_obs = RichTextLabel.new()
-		no_obs.bbcode_enabled = true
-		no_obs.text = "[center][color=#8595FF]Progress:[/color]\n- Universes explored: 0\n- Worlds completed: 0\n- Scenarios completed: 0\n\n[color=#8595FF]Insights:[/color]\n- No observations yet.\n\n[color=#E6B800]Recommended next step:[/color]\n- Start your first world.[/center]"
-		no_obs.fit_content = true
-		no_obs.add_theme_font_size_override("normal_font_size", 18)
-		insights_container.add_child(no_obs)
-		
 		var btn_begin = Button.new()
-		btn_begin.custom_minimum_size = Vector2(240, 50)
-		btn_begin.text = "BEGIN JOURNEY"
+		btn_begin.custom_minimum_size = Vector2(260, 50)
+		btn_begin.text = "BEGIN OBSERVATION"
 		btn_begin.add_theme_font_size_override("font_size", 20)
 		btn_begin.pressed.connect(func():
-			print("[MEMORY MIRROR] Begin Journey clicked.")
 			if AudioManager: AudioManager.play_sfx("ui_click")
 			if AdManager: AdManager.hide_banner()
 			var router = get_node_or_null("/root/NavigationRouter")
@@ -87,111 +80,12 @@ func _populate_data():
 			return_requested.emit()
 		)
 		nav_container.add_child(btn_begin)
-	else:
-		if welcome_label: welcome_label.text = "Observe carefully. There are no right personalities— only patterns."
 		
-		var baseline = profile.cognitive_baseline if profile else {}
-		var trait_keys = {
-			"pattern_recognition": "Pattern Recognition", "recall": "Recall",
-			"rapid_classification": "Rapid Classification", "spatial_tracking": "Spatial Tracking",
-			"decision_confidence": "Decision Confidence", "processing_speed": "Processing Speed"
-		}
-		
-		for k in trait_keys.keys():
-			var t_name = trait_keys[k]
-			var data = baseline.get(k, {"attempts": 1, "successes": 1, "total_rt_ms": 850.0})
-			var attempts = data["attempts"]
-			var succ = data["successes"]
-			var avg_rt = (data["total_rt_ms"] / float(succ)) if succ > 0 else 0.0
-			
-			var lbl = RichTextLabel.new()
-			lbl.bbcode_enabled = true
-			lbl.text = "[color=#2ECC71]" + t_name + "[/color]\nAttempts: " + str(attempts) + " | Success: " + str(succ) + " | Avg RT: " + str(snapped(avg_rt, 0.1)) + "ms"
-			lbl.fit_content = true
-			lbl.custom_minimum_size = Vector2(400, 60)
-			lbl.add_theme_font_size_override("normal_font_size", 16)
-			traits_container.add_child(lbl)
-			
-		var trends_text = "[center]Pattern Recognition: [color=#2ECC71]↑ Stable[/color] | Rapid Classification: [color=#2ECC71]↑ Improving[/color] | Observation Flexibility: [color=#E6B800]→ No significant change[/color][/center]"
-		var trends_lbl = RichTextLabel.new()
-		trends_lbl.bbcode_enabled = true
-		trends_lbl.text = trends_text
-		trends_lbl.fit_content = true
-		trends_lbl.add_theme_font_size_override("normal_font_size", 18)
-		insights_container.add_child(trends_lbl)
-		
-		var insights: Array = []
-		if profile and profile.has_method("generate_insights"):
-			insights = profile.generate_insights()
-			
-		for insight_text in insights:
-			var lbl = RichTextLabel.new()
-			lbl.bbcode_enabled = true
-			
-			var styled_text = str(insight_text)
-			styled_text = styled_text.replace("pattern tasks", "[color=#4CC9F0]pattern tasks[/color]")
-			styled_text = styled_text.replace("recall tasks", "[color=#F72585]recall tasks[/color]")
-			styled_text = styled_text.replace("hesitate", "[color=#D81159]hesitate[/color]")
-			styled_text = styled_text.replace("decisiveness", "[color=#2ECC71]decisiveness[/color]")
-			styled_text = styled_text.replace("Recommendation:", "[color=#E6B800]Recommendation:[/color]")
-			
-			lbl.text = "[center]" + styled_text + "[/center]"
-			lbl.fit_content = true
-			lbl.add_theme_font_size_override("normal_font_size", 18)
-			lbl.add_theme_color_override("default_color", Color(0.9, 0.9, 0.95))
-			insights_container.add_child(lbl)
-			
-		var rec: Dictionary = {}
-		if profile and profile.has_method("get_adaptive_recommendation"):
-			rec = profile.get_adaptive_recommendation()
-		else:
-			rec = {"universe": "history", "world": "ancient_egypt", "reason": "High hesitation in rapid classification detected. Recommending History -> Ancient Egypt."}
-			
-		var target_uni = rec.get("universe", "history")
-		var target_world = rec.get("world", "ancient_egypt")
-		var reason_text = rec.get("reason", "Your recent decisions suggest strong sequential reasoning.")
-		
-		var rec_text = "[center][color=#E6B800]Recommended Next: " + target_uni.capitalize() + " -> " + target_world.capitalize().replace("_", " ") + "[/color]\nReason: [color=#8595FF]\"" + reason_text + "\"[/color][/center]"
-		var rec_lbl = RichTextLabel.new()
-		rec_lbl.bbcode_enabled = true
-		rec_lbl.text = rec_text
-		rec_lbl.fit_content = true
-		rec_lbl.add_theme_font_size_override("normal_font_size", 18)
-		rec_container.add_child(rec_lbl)
-		
-		var btn_continue = Button.new()
-		btn_continue.custom_minimum_size = Vector2(220, 50)
-		btn_continue.text = "CONTINUE JOURNEY"
-		btn_continue.add_theme_font_size_override("font_size", 18)
-		btn_continue.pressed.connect(func():
-			print("[MEMORY MIRROR] Continue Journey clicked.")
-			if AudioManager: AudioManager.play_sfx("ui_click")
-			if AdManager: AdManager.hide_banner()
-			return_requested.emit()
-		)
-		nav_container.add_child(btn_continue)
-		
-		var btn_rec = Button.new()
-		btn_rec.custom_minimum_size = Vector2(260, 50)
-		btn_rec.text = "EXPLORE RECOMMENDATION"
-		btn_rec.add_theme_font_size_override("font_size", 18)
-		btn_rec.pressed.connect(func():
-			print("[MEMORY MIRROR] Explore Recommendation clicked.")
-			if AudioManager: AudioManager.play_sfx("ui_click")
-			if AdManager: AdManager.hide_banner()
-			var router = get_node_or_null("/root/NavigationRouter")
-			if router and router.has_method("_on_play_universe_requested"):
-				router._on_play_universe_requested(target_uni)
-			return_requested.emit()
-		)
-		nav_container.add_child(btn_rec)
-		
-		var btn_return = Button.new()
-		btn_return.custom_minimum_size = Vector2(200, 50)
-		btn_return.text = "RETURN HOME"
-		btn_return.add_theme_font_size_override("font_size", 18)
-		btn_return.pressed.connect(func():
-			print("[MEMORY MIRROR] Return Home clicked.")
+		var btn_return_home = Button.new()
+		btn_return_home.custom_minimum_size = Vector2(200, 50)
+		btn_return_home.text = "RETURN HOME"
+		btn_return_home.add_theme_font_size_override("font_size", 16)
+		btn_return_home.pressed.connect(func():
 			if AudioManager: AudioManager.play_sfx("ui_click")
 			if AdManager: AdManager.hide_banner()
 			var router = get_node_or_null("/root/NavigationRouter")
@@ -199,7 +93,121 @@ func _populate_data():
 				router.show_landing_screen()
 			return_requested.emit()
 		)
-		nav_container.add_child(btn_return)
+		nav_container.add_child(btn_return_home)
+		return
+
+	# Stage 2: Who Am I Becoming? (Hero Section)
+	var journey = narrator.get_journey_narration(profile)
+	if lifetime_label:
+		lifetime_label.text = "LEVEL %d | XP %d | SESSIONS: %d | STREAK: %d DAYS" % [journey["level"], journey["xp"], journey["sessions"], journey["streak"]]
+	if welcome_label:
+		welcome_label.text = "[color=#2ECC71]" + journey["confidence_title"].to_upper() + "[/color]\n" + journey["confidence_narration"] + "\n\n" + journey["style_narration"]
+
+	# Stage 1: Since Your Last Session
+	var summary_lines = narrator.get_last_session_summary(profile)
+	var sum_text = "[center][color=#4CC9F0]SINCE YOUR LAST SESSION:[/color]\n"
+	for s in summary_lines:
+		sum_text += "• " + s + "\n"
+	sum_text += "[/center]"
+	var sum_lbl = RichTextLabel.new()
+	sum_lbl.bbcode_enabled = true
+	sum_lbl.text = sum_text
+	sum_lbl.fit_content = true
+	sum_lbl.add_theme_font_size_override("normal_font_size", 18)
+	traits_container.add_child(sum_lbl)
+
+	# Surprise Narration
+	var surprise = narrator.get_surprise_narration(profile)
+	if surprise != "":
+		var sur_lbl = RichTextLabel.new()
+		sur_lbl.bbcode_enabled = true
+		sur_lbl.text = "[center][color=#F72585]" + surprise + "[/color][/center]"
+		sur_lbl.fit_content = true
+		sur_lbl.add_theme_font_size_override("normal_font_size", 18)
+		traits_container.add_child(sur_lbl)
+
+	# Stage 3: What The Mirror Sees (Visual Strength Groupings & Expandable Details)
+	var cards = narrator.get_strength_cards(profile)
+	_build_strength_group("STRENGTH", cards["strength"], Color("#2ECC71"))
+	_build_strength_group("IMPROVING", cards["improving"], Color("#4CC9F0"))
+	_build_strength_group("NEEDS PRACTICE", cards["needs_practice"], Color("#E6B800"))
+
+	# Stage 4: Insights (Coaching Guidance)
+	var insights = narrator.get_insights(profile)
+	for insight_text in insights:
+		var lbl = RichTextLabel.new()
+		lbl.bbcode_enabled = true
+		var styled = "[center][color=#99AAFF]" + insight_text + "[/color][/center]"
+		lbl.text = styled
+		lbl.fit_content = true
+		lbl.add_theme_font_size_override("normal_font_size", 18)
+		insights_container.add_child(lbl)
+
+	# Stage 5: Continue Your Journey
+	var rec = narrator.get_next_recommendation(profile)
+	var rec_text = "[center][color=#E6B800]CONTINUE YOUR JOURNEY: " + rec["display_title"].to_upper() + "[/color]\n\"" + rec["narrative_reason"] + "\"[/center]"
+	var rec_lbl = RichTextLabel.new()
+	rec_lbl.bbcode_enabled = true
+	rec_lbl.text = rec_text
+	rec_lbl.fit_content = true
+	rec_lbl.add_theme_font_size_override("normal_font_size", 18)
+	rec_container.add_child(rec_lbl)
+
+	var btn_cta = Button.new()
+	btn_cta.custom_minimum_size = Vector2(300, 60)
+	btn_cta.text = rec["cta_text"]
+	btn_cta.add_theme_font_size_override("font_size", 20)
+	btn_cta.pressed.connect(func():
+		if AudioManager: AudioManager.play_sfx("ui_click")
+		if AdManager: AdManager.hide_banner()
+		var orch = get_tree().root.get_node_or_null("ExperienceOrchestrator")
+		if orch and orch.has_method("request_world_selection"):
+			orch.request_world_selection(rec["universe"], rec["world"])
+		return_requested.emit()
+	)
+	nav_container.add_child(btn_cta)
+
+	var btn_return = Button.new()
+	btn_return.custom_minimum_size = Vector2(200, 50)
+	btn_return.text = "RETURN HOME"
+	btn_return.add_theme_font_size_override("font_size", 16)
+	btn_return.pressed.connect(func():
+		if AudioManager: AudioManager.play_sfx("ui_click")
+		if AdManager: AdManager.hide_banner()
+		var router = get_node_or_null("/root/NavigationRouter")
+		if router and router.has_method("show_landing_screen"):
+			router.show_landing_screen()
+		return_requested.emit()
+	)
+	nav_container.add_child(btn_return)
+
+func _build_strength_group(header_title: String, items: Array, header_color: Color):
+	if items.is_empty(): return
+	var header = RichTextLabel.new()
+	header.bbcode_enabled = true
+	header.text = "[center][color=" + header_color.to_html(false) + "]" + header_title + "[/color][/center]"
+	header.fit_content = true
+	header.add_theme_font_size_override("normal_font_size", 18)
+	traits_container.add_child(header)
+	
+	for item in items:
+		var btn = Button.new()
+		btn.custom_minimum_size = Vector2(380, 50)
+		btn.text = item["title"] + "  " + item["stars"] + "   [Tap for Details]"
+		btn.add_theme_font_size_override("font_size", 16)
+		traits_container.add_child(btn)
+		
+		var details = RichTextLabel.new()
+		details.bbcode_enabled = true
+		details.text = "[center][color=#AAAAAA]Attempts: " + str(item["attempts"]) + " | Success Rate: " + item["success_rate"] + " | Avg RT: " + item["avg_rt"] + "\n" + item["trend"] + "[/color][/center]"
+		details.fit_content = true
+		details.visible = false
+		traits_container.add_child(details)
+		
+		btn.pressed.connect(func():
+			if AudioManager: AudioManager.play_sfx("ui_click")
+			details.visible = not details.visible
+		)
 
 	var panel = $PanelContainer
 	panel.modulate.a = 0
