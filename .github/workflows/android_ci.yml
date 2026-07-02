@@ -3,6 +3,12 @@ name: Android CI / Content Validation
 on:
   push:
     branches: [ "main", "release" ]
+    paths-ignore:
+      - 'ASSET_AUDIT.md'
+      - 'PRODUCTION_READINESS_REPORT.md'
+      - 'asset_creation_queue.json'
+      - 'missing_assets.json'
+      - 'unused_assets.json'
   pull_request:
     branches: [ "main" ]
 
@@ -18,7 +24,15 @@ jobs:
         run: |
           echo "Scanning app/data/content/base_bundle for valid JSON and required keys..."
           find app/data/content/base_bundle -type f -name "*.json" | while read -r file; do
-            jq -e '. | has("id") and has("universe") and has("type")' "$file" > /dev/null
+            jq -e '
+              if type == "array" then
+                (map(has("id") and has("universe") and has("type")) | all)
+              elif type == "object" then
+                (has("id") and has("universe") and has("type"))
+              else
+                false
+              end
+            ' "$file" > /dev/null
             if [ $? -ne 0 ]; then
               echo "Validation Failed: $file is missing required schema keys or is malformed."
               exit 1
