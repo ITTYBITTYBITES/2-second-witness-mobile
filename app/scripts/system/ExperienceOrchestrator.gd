@@ -188,7 +188,7 @@ func determine_next_experience(player_profile: Node, target_universe: String = "
 		}
 		
 	# 4. Difficulty & Presentation Calibration
-	current_difficulty = clampi(1 + int(total_sessions / 10), 1, 5)
+	current_difficulty = clamp(1 + int(total_sessions / 10), 1, 5)
 	var presentation_profile = WorldProfileCustodian.get_profile(active_world) if Engine.get_main_loop().root.has_node("WorldProfileCustodian") else {}
 	
 	var vector = {
