@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://patterncont"]
 
-[ext_resource type="Script" path="res://scripts/scenarios/PatternContinuation.gd" id="1_pattern"]
+[ext_resource type="Script" path="res://app/scripts/scenarios/PatternContinuation.gd" id="1_pattern"]
 
 [node name="PatternContinuation" type="CanvasLayer"]
 layer = 10
