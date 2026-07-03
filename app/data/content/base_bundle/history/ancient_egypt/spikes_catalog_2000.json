@@ -36,6 +36,24 @@
     }
   },
   {
+    "id": "rapid_classification",
+    "universe": "history",
+    "world": "ancient_egypt",
+    "type": "rapid_classification",
+    "rules": {
+      "correct_answer": "Deity",
+      "wrong_answers": [
+        "Structure"
+      ],
+      "legacy_prompt": "OSIRIS",
+      "prompt": "OSIRIS"
+    },
+    "presentation": {
+      "title": "Divine Pantheon Classification",
+      "difficulty_tier": 1
+    }
+  },
+  {
     "id": "history_ancient_egypt_s01_q002",
     "universe": "history",
     "world": "ancient_egypt",
@@ -1975,24 +1993,23 @@
     }
   },
   {
-    "id": "history_ancient_egypt_s01_q099",
+    "id": "memory_cascade",
     "universe": "history",
     "world": "ancient_egypt",
-    "type": "spatial_recall",
+    "type": "memory_cascade",
     "rules": {
-      "correct_answer": "Verified Observation #99",
+      "correct_answer": "Eye of Horus",
       "wrong_answers": [
-        "Anomaly A#99",
-        "Distractor B#99",
-        "Error C#99",
-        "Noise D#99"
+        "Ankh",
+        "Scarab",
+        "Djed"
       ],
-      "legacy_prompt": "ANALYZE ANCIENT_EGYPT PROTOCOL SEQUENCE #99"
+      "legacy_prompt": "DEITY SYMBOL",
+      "prompt": "DEITY SYMBOL"
     },
     "presentation": {
-      "title": "Divine pantheon classification",
-      "scenario_id": "Divine Pantheon Classification",
-      "difficulty_tier": 5
+      "title": "Divine Symbol Memory",
+      "difficulty_tier": 1
     }
   },
   {
@@ -3975,24 +3992,28 @@
     }
   },
   {
-    "id": "history_ancient_egypt_s02_q099",
+    "id": "signal_vs_noise",
     "universe": "history",
     "world": "ancient_egypt",
-    "type": "rapid_classification",
+    "type": "signal_vs_noise",
     "rules": {
-      "correct_answer": "Verified Observation #99",
+      "correct_answer": "𓂀",
       "wrong_answers": [
-        "Anomaly A#99",
-        "Distractor B#99",
-        "Error C#99",
-        "Noise D#99"
+        "𓋹",
+        "𓎛",
+        "𓆣",
+        "𓊽",
+        "𓅓",
+        "𓃻",
+        "𓀭",
+        "𓉐"
       ],
-      "legacy_prompt": "ANALYZE ANCIENT_EGYPT PROTOCOL SEQUENCE #99"
+      "legacy_prompt": "FIND EYE OF HORUS",
+      "prompt": "FIND EYE OF HORUS"
     },
     "presentation": {
-      "title": "Divine symbol memory",
-      "scenario_id": "Divine Symbol Memory",
-      "difficulty_tier": 5
+      "title": "Hieroglyphic Noise Search",
+      "difficulty_tier": 1
     }
   },
   {
@@ -5977,27 +5998,6 @@
         "Noise D#98"
       ],
       "legacy_prompt": "ANALYZE ANCIENT_EGYPT PROTOCOL SEQUENCE #98"
-    },
-    "presentation": {
-      "title": "Hieroglyphic noise search",
-      "scenario_id": "Hieroglyphic Noise Search",
-      "difficulty_tier": 5
-    }
-  },
-  {
-    "id": "history_ancient_egypt_s03_q099",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-      "correct_answer": "Verified Observation #99",
-      "wrong_answers": [
-        "Anomaly A#99",
-        "Distractor B#99",
-        "Error C#99",
-        "Noise D#99"
-      ],
-      "legacy_prompt": "ANALYZE ANCIENT_EGYPT PROTOCOL SEQUENCE #99"
     },
     "presentation": {
       "title": "Hieroglyphic noise search",
