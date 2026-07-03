@@ -1,5 +1,5 @@
 [gd_scene load_steps=3 format=3 uid="uid://settings"]
-[ext_resource type="Script" path="res://scripts/ui/screens/SettingsScreen.gd" id="1_set"]
+[ext_resource type="Script" path="res://app/scripts/ui/screens/SettingsScreen.gd" id="1_set"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glass"]
 bg_color = Color(0.0431373, 0.0745098, 0.12549, 0.98)
