@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bootscreen"]
 
-[ext_resource type="Script" path="res://app/scripts/ui/screens/BootScreen.gd" id="1_boot"]
+[ext_resource type="Script" path="res://scripts/ui/screens/BootScreen.gd" id="1_boot"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_progress"]
 bg_color = Color(0.298039, 0.788235, 0.941176, 1)
