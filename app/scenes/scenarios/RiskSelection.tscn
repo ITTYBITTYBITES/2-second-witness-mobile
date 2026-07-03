@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://riskselect"]
 
-[ext_resource type="Script" path="res://app/scripts/scenarios/RiskSelection.gd" id="1_risk"]
+[ext_resource type="Script" path="res://scripts/scenarios/RiskSelection.gd" id="1_risk"]
 
 [node name="RiskSelection" type="CanvasLayer"]
 layer = 10
