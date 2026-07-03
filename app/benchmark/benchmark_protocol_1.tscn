@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bench1"]
 
-[ext_resource type="Script" path="res://benchmark/benchmark_protocol_1.gd" id="1_bench"]
-[ext_resource type="Script" path="res://scripts/tunnel/chunking/ChunkPool.gd" id="2_pool"]
-[ext_resource type="Script" path="res://scripts/tunnel/chunking/StreamController.gd" id="3_stream"]
-[ext_resource type="Script" path="res://scripts/system/SystemHealthMonitor.gd" id="4_health"]
+[ext_resource type="Script" path="res://app/benchmark/benchmark_protocol_1.gd" id="1_bench"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/chunking/ChunkPool.gd" id="2_pool"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/chunking/StreamController.gd" id="3_stream"]
+[ext_resource type="Script" path="res://app/scripts/system/SystemHealthMonitor.gd" id="4_health"]
 
 [node name="BenchmarkProtocol1" type="Node3D"]
 script = ExtResource("1_bench")
