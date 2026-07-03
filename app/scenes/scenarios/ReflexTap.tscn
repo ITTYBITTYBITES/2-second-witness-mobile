@@ -1,5 +1,5 @@
 [gd_scene load_steps=2 format=3 uid="uid://reflex"]
-[ext_resource type="Script" path="res://scripts/scenarios/ReflexTap.gd" id="1_ref"]
+[ext_resource type="Script" path="res://app/scripts/scenarios/ReflexTap.gd" id="1_ref"]
 [node name="ReflexTap" type="CanvasLayer"]
 layer = 10
 script = ExtResource("1_ref")
