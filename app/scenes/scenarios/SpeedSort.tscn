@@ -1,5 +1,5 @@
 [gd_scene load_steps=2 format=3 uid="uid://speedsort"]
-[ext_resource type="Script" path="res://scripts/scenarios/SpeedSort.gd" id="1_spd"]
+[ext_resource type="Script" path="res://app/scripts/scenarios/SpeedSort.gd" id="1_spd"]
 [node name="SpeedSort" type="CanvasLayer"]
 layer = 10
 script = ExtResource("1_spd")
