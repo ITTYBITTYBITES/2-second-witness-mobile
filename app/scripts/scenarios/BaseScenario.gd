@@ -95,7 +95,7 @@ func execute_render_pipeline():
 	enforce_attentional_strata()
 	LayoutFreezer.unfreeze()
 	
-	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
+	var orch = get_node_or_null("/root/ExperienceOrchestrator")
 	if orch and orch.has_method("finalize_scenario_mounting"):
 		orch.finalize_scenario_mounting(_scenario_payload.get("id", "memory_cascade"))
 	
@@ -122,7 +122,7 @@ var _cockpit_header_panel: PanelContainer = null
 var _cockpit_footer_status: RichTextLabel = null
 
 func _register_with_execution_engine():
-	var engine = ScenarioExecutionEngine if ScenarioExecutionEngine else Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
+	var engine = get_node_or_null("/root/ScenarioExecutionEngine")
 	if not engine:
 		print("[BASE SCENARIO] ScenarioExecutionEngine not found in root. Running in standalone benchmark mode.")
 		_mount_cockpit_instrument_overlay()
@@ -311,7 +311,7 @@ func execute_progression_event(is_success: bool, rt_ms: float, trait_id: String 
 				sb.border_color = Color("#E6B800")
 				_cockpit_header_panel.add_theme_stylebox_override("panel", sb)
 				
-	var engine = ScenarioExecutionEngine if ScenarioExecutionEngine else Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
+	var engine = get_node_or_null("/root/ScenarioExecutionEngine")
 	if engine and engine.has_method("submit_answer"):
 		engine.submit_answer(is_success, rt_ms)
 	else:
@@ -365,7 +365,7 @@ func advance_to_next_trial():
 		get_node("feedback_label").text = ""
 	engine_reset_hook()
 	engine_generate_hook()
-	var engine = ScenarioExecutionEngine if ScenarioExecutionEngine else Engine.get_main_loop().root.get_node_or_null("ScenarioExecutionEngine")
+	var engine = get_node_or_null("/root/ScenarioExecutionEngine")
 	if engine and engine.has_method("_transition_to_state"):
 		engine._transition_to_state(engine.LifecycleState.INPUT_WINDOW)
 
