@@ -182,7 +182,7 @@ func _mount_cockpit_instrument_overlay():
 	
 	var lbl_title = RichTextLabel.new()
 	lbl_title.bbcode_enabled = true
-	lbl_title.text = "[color=#00D4FF]●[/color] [b]2 SECOND WITNESS[/b] [color=#667799]\| ACTIVE OBSERVATION[/color]"
+	lbl_title.text = "[color=#00D4FF]●[/color] [b]2 SECOND WITNESS[/b] [color=#667799]| ACTIVE OBSERVATION[/color]"
 	lbl_title.fit_content = true
 	lbl_title.custom_minimum_size = Vector2(300, 30)
 	lbl_title.add_theme_font_size_override("normal_font_size", 16)
