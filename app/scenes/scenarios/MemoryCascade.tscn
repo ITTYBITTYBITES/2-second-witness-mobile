@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://memorycascade"]
 
-[ext_resource type="Script" path="res://app/scripts/scenarios/MemoryCascade.gd" id="1_cascade"]
+[ext_resource type="Script" path="res://scripts/scenarios/MemoryCascade.gd" id="1_cascade"]
 
 [node name="MemoryCascade" type="CanvasLayer"]
 layer = 10
