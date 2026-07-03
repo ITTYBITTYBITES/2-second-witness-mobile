@@ -1,5 +1,5 @@
 [gd_scene load_steps=2 format=3 uid="uid://landing"]
-[ext_resource type="Script" path="res://scripts/ui/screens/LandingScreen.gd" id="1_land"]
+[ext_resource type="Script" path="res://app/scripts/ui/screens/LandingScreen.gd" id="1_land"]
 
 [node name="LandingScreen" type="CanvasLayer"]
 layer = 60
