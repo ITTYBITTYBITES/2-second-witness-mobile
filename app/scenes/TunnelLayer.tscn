@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/TunnelController.gd" id="1_controller"]
-[ext_resource type="Script" path="res://scripts/tunnel/ShaderEnvironment.gd" id="2_shader"]
-[ext_resource type="Script" path="res://scripts/tunnel/chunking/ChunkManager.gd" id="3_geom"]
-[ext_resource type="Script" path="res://scripts/tunnel/PortalLayerManager.gd" id="4_art"]
-[ext_resource type="Script" path="res://scripts/tunnel/chunking/ChunkSpawner.gd" id="5_spawn"]
-[ext_resource type="Script" path="res://scripts/tunnel/chunking/ChunkPool.gd" id="6_pool"]
-[ext_resource type="Script" path="res://scripts/tunnel/chunking/InstanceRegistry.gd" id="7_reg"]
-[ext_resource type="Script" path="res://scripts/tunnel/chunking/StreamController.gd" id="8_stream"]
+[ext_resource type="Script" path="res://app/scripts/TunnelController.gd" id="1_controller"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/ShaderEnvironment.gd" id="2_shader"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/chunking/ChunkManager.gd" id="3_geom"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/PortalLayerManager.gd" id="4_art"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/chunking/ChunkSpawner.gd" id="5_spawn"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/chunking/ChunkPool.gd" id="6_pool"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/chunking/InstanceRegistry.gd" id="7_reg"]
+[ext_resource type="Script" path="res://app/scripts/tunnel/chunking/StreamController.gd" id="8_stream"]
 
 [node name="TunnelLayer" type="Node3D"]
 script = ExtResource("1_controller")
