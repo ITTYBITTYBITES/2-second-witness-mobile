@@ -1,5 +1,5 @@
 [gd_scene load_steps=3 format=3 uid="uid://weeklyfeatured"]
-[ext_resource type="Script" path="res://scripts/ui/screens/WeeklyFeaturedScreen.gd" id="1_week"]
+[ext_resource type="Script" path="res://app/scripts/ui/screens/WeeklyFeaturedScreen.gd" id="1_week"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glass"]
 bg_color = Color(0.0431373, 0.0745098, 0.12549, 0.95)
