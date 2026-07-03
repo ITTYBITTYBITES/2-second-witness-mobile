@@ -60,10 +60,10 @@ func _validate_scene_invariants(scene: Node, scene_name: String) -> bool:
 	
 	return is_valid
 
-func _find_nodes_of_class(root: Node, class_name: String) -> Array:
+func _find_nodes_of_class(root: Node, target_class: String) -> Array:
 	var result = []
 	for child in root.get_children():
-		if child.get_class() == class_name:
+		if child.get_class() == target_class:
 			result.append(child)
 		result.append_array(_find_nodes_of_class(child, class_name))
 	return result
