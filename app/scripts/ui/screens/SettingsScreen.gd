@@ -7,6 +7,15 @@ signal return_requested
 
 var _audio_level: int = 2
 
+func _request_close():
+	if AudioManager: AudioManager.play_sfx("ui_click")
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	if modal_mgr:
+		modal_mgr.pop_modal(self, "SettingsScreen")
+	else:
+		return_requested.emit()
+
+
 func _ready():
 	print("[SETTINGS] Settings modal active. Applying non-game platform preferences.")
 	StyleInjector.apply_menu_style(self)
@@ -15,21 +24,13 @@ func _ready():
 	var uni = orch.active_state.current_universe if (orch and orch.get("active_state") != null) else "history"
 	_apply_universe_manifest(uni)
 	
-	btn_close.pressed.connect(func():
-		if AudioManager: AudioManager.play_sfx("ui_click")
-		var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-		if modal_mgr: modal_mgr.pop_modal(self, "SettingsScreen")
-		return_requested.emit()
-	)
+	btn_close.pressed.connect(_request_close)
 	
 	var bg = get_node_or_null("ColorRect")
 	if bg: bg.gui_input.connect(func(event):
 		if event is InputEventMouseButton and event.pressed:
 			print("[SETTINGS] Background clicked. Closing settings.")
-			if AudioManager: AudioManager.play_sfx("ui_click")
-			var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-			if modal_mgr: modal_mgr.pop_modal(self, "SettingsScreen")
-			return_requested.emit()
+			_request_close()
 	)
 	
 	for child in grid.get_children():
@@ -53,12 +54,7 @@ func _ready():
 						profile.save_profile()
 						child.text = "Accessibility: " + ("Motor & Color Assist ON" if profile.motor_assist_enabled else "Standard Profile")
 						print("[SETTINGS] Accessibility profile updated: ", child.text)
-				elif txt.begins_with("Privacy:"):
-					child.text = "Privacy: Local Device Storage Only"
-					print("[SETTINGS PRIVACY] 2 Second Witness gathers observations strictly on device. Zero external tracking or advertising profiling.")
-				elif txt.begins_with("About"):
-					child.text = "2SW v1.0.0-RC1 (MIT/Apache)"
-					print("[SETTINGS ABOUT] 2 Second Witness v1.0.0-RC1 | Core Engine: Godot 4.6.3 | License: Apache 2.0 / MIT | Privacy: Offline First")
+
 			)
 
 func _apply_universe_manifest(universe_id: String):

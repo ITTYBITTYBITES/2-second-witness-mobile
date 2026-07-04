@@ -29,10 +29,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -350.0
-offset_top = -250.0
-offset_right = 350.0
-offset_bottom = 250.0
+offset_left = -300.0
+offset_top = -210.0
+offset_right = 300.0
+offset_bottom = 210.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_glass")
@@ -46,7 +46,7 @@ theme_override_constants/margin_bottom = 30
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 40
+theme_override_constants/separation = 28
 alignment = 1
 
 [node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
@@ -59,31 +59,21 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
-columns = 2
+columns = 1
 alignment = 1
 
 [node name="BtnAudio" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(280, 60)
+custom_minimum_size = Vector2(380, 58)
 layout_mode = 2
 text = "Audio: Master 100%"
 
 [node name="BtnAccess" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(280, 60)
+custom_minimum_size = Vector2(380, 58)
 layout_mode = 2
-text = "Accessibility: ON"
-
-[node name="BtnPrivacy" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(280, 60)
-layout_mode = 2
-text = "Privacy: Local Only"
-
-[node name="BtnAbout" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(280, 60)
-layout_mode = 2
-text = "About 2SW"
+text = "Accessibility: Standard Profile"
 
 [node name="BtnClose" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(240, 50)
+custom_minimum_size = Vector2(240, 52)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "CLOSE SETTINGS"

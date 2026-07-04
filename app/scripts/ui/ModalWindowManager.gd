@@ -127,6 +127,7 @@ func push_modal(screen: CanvasLayer, is_modal: bool = true, caller: String = "Mo
 	if current_focus: _previous_focus_owners[screen] = current_focus
 	
 	_modal_stack.append(screen)
+	screen.visible = true
 	print("[MODAL MANAGER] Pushed modal to stack: ", screen.name)
 	
 	if not screen.is_inside_tree():
