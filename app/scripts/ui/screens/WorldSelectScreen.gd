@@ -3,7 +3,7 @@ extends CanvasLayer
 signal world_selected(universe_id: String, world_id: String)
 signal return_requested
 
-@onready var grid = $PanelContainer/MarginContainer/VBoxContainer/GridContainer
+@onready var grid = $PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/GridContainer
 @onready var btn_return = $PanelContainer/MarginContainer/VBoxContainer/Header/BtnReturn
 @onready var title_label = $PanelContainer/MarginContainer/VBoxContainer/Header/Title
 
@@ -37,6 +37,9 @@ func _ready():
 	if title_label: title_label.text = active_universe_id.capitalize().replace("_", " ") + " - WORLDS"
 	if AdManager: AdManager.show_banner()
 	btn_return.pressed.connect(func(): return_requested.emit())
+	if get_viewport() and not get_viewport().size_changed.is_connected(_apply_responsive_layout):
+		get_viewport().size_changed.connect(_apply_responsive_layout)
+	_apply_responsive_layout()
 	_apply_universe_manifest(active_universe_id)
 	if _is_setup_ready:
 		_populate_grid()
@@ -44,12 +47,28 @@ func _ready():
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	if vim and vim.has_method("apply_screen_identity"):
-		vim.apply_screen_identity(self, universe_id, "", true)
+		vim.apply_screen_identity(self, universe_id, "", false)
 	else:
 		var bg = get_node_or_null("ColorRect") if get_node_or_null("ColorRect") else get_node_or_null("VoidBG")
 		if bg and bg is ColorRect: bg.color = Color(0.04, 0.07, 0.12, 0.15)
 
+func _apply_responsive_layout():
+	var panel = get_node_or_null("PanelContainer")
+	if panel and panel is Control:
+		var viewport_size = get_viewport().get_visible_rect().size if get_viewport() else Vector2(1280, 720)
+		var inset_x = clamp(viewport_size.x * 0.035, 24.0, 64.0)
+		var inset_y = clamp(viewport_size.y * 0.04, 20.0, 48.0)
+		panel.offset_left = inset_x
+		panel.offset_top = inset_y
+		panel.offset_right = -inset_x
+		panel.offset_bottom = -inset_y
+	if grid:
+		var panel_width = panel.size.x if panel and panel is Control else get_viewport().get_visible_rect().size.x
+		var usable_width = max(260.0, panel_width - 80.0)
+		grid.columns = clamp(int(usable_width / 286.0), 1, 4)
+
 func _populate_grid():
+	_apply_responsive_layout()
 	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 	var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
@@ -79,7 +98,7 @@ func _populate_grid():
 	for w_id in worlds:
 		print("Created card: ", w_id)
 		var btn = Button.new()
-		btn.custom_minimum_size = Vector2(320, 180)
+		btn.custom_minimum_size = Vector2(270, 124)
 		btn.mouse_filter = Control.MOUSE_FILTER_STOP
 		
 		var w_def = vim.get_world_identity(active_universe_id, w_id) if vim else def
@@ -91,13 +110,12 @@ func _populate_grid():
 		var s_ctx = interp.get_scenario_progression_context("rapid_classification") if (interp and interp.has_method("get_scenario_progression_context")) else {}
 		
 		var wm_str = w_ctx.get("world_mastery", "WORLD MASTERY: " + meta["completion"])
-		var wt_str = w_ctx.get("recent_trend", "RECENT TREND: STABLE")
 		var wr_str = w_ctx.get("recency", meta["scenarios"])
-		var sr_str = s_ctx.get("readiness", "PROTOCOL READINESS: OPTIMAL")
 		var sp_str = s_ctx.get("recent_perf", "★ " + meta["rec"])
 		
-		btn.text = meta["name"] + " // " + wr_str + "\n\n" + wm_str + " | " + wt_str + "\n" + sr_str + " | " + sp_str
-		btn.add_theme_font_size_override("font_size", 18)
+		btn.text = meta["name"].to_upper() + "\n" + wr_str + " | " + wm_str + "\n" + sp_str
+		btn.add_theme_font_size_override("font_size", 14)
+		btn.clip_text = true
 		
 		var style = StyleBoxFlat.new()
 		style.bg_color = w_def["palette"]["bg"]

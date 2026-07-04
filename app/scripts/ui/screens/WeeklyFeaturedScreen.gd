@@ -3,7 +3,7 @@ extends CanvasLayer
 signal play_universe_requested(universe_id: String)
 signal return_requested
 
-@onready var grid = $PanelContainer/MarginContainer/VBoxContainer/GridContainer
+@onready var grid = $PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/GridContainer
 @onready var btn_return = $PanelContainer/MarginContainer/VBoxContainer/Header/BtnReturn
 
 var monetization_gate_scene = preload("res://scenes/ui/screens/MonetizationGate.tscn")
@@ -49,18 +49,37 @@ func _ready():
 	if AdManager: AdManager.show_banner()
 	print("[2 SECOND WITNESS] Weekly Discovery Screen active.")
 	btn_return.pressed.connect(func(): return_requested.emit())
+	if get_viewport() and not get_viewport().size_changed.is_connected(_apply_responsive_layout):
+		get_viewport().size_changed.connect(_apply_responsive_layout)
+	_apply_responsive_layout()
 	_apply_universe_manifest("science_lab")
 	_populate_grid()
 
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	if vim and vim.has_method("apply_screen_identity"):
-		vim.apply_screen_identity(self, universe_id, "", true)
+		vim.apply_screen_identity(self, universe_id, "", false)
 	else:
 		var bg = get_node_or_null("ColorRect") if get_node_or_null("ColorRect") else get_node_or_null("VoidBG")
 		if bg and bg is ColorRect: bg.color = Color(0.04, 0.07, 0.12, 0.15)
 
+func _apply_responsive_layout():
+	var panel = get_node_or_null("PanelContainer")
+	if panel and panel is Control:
+		var viewport_size = get_viewport().get_visible_rect().size if get_viewport() else Vector2(1280, 720)
+		var inset_x = clamp(viewport_size.x * 0.035, 24.0, 64.0)
+		var inset_y = clamp(viewport_size.y * 0.04, 20.0, 48.0)
+		panel.offset_left = inset_x
+		panel.offset_top = inset_y
+		panel.offset_right = -inset_x
+		panel.offset_bottom = -inset_y
+	if grid:
+		var panel_width = panel.size.x if panel and panel is Control else get_viewport().get_visible_rect().size.x
+		var usable_width = max(260.0, panel_width - 80.0)
+		grid.columns = clamp(int(usable_width / 296.0), 1, 4)
+
 func _populate_grid():
+	_apply_responsive_layout()
 	var controller = SamplingController if SamplingController else get_tree().root.get_node_or_null("SamplingController")
 	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	if not controller or not profile: return
@@ -83,17 +102,17 @@ func _populate_grid():
 		var meta = universe_meta.get(uni, universe_meta["science_lab"])
 		
 		var btn = Button.new()
-		btn.custom_minimum_size = Vector2(340, 220)
+		btn.custom_minimum_size = Vector2(280, 138)
 		
 		var status_text = "(OWNED)" if is_owned else ("(FEATURED)" if is_featured else "[LOCKED - $2.99]")
 		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter") if Engine.get_main_loop() else null
 		var prog_ctx = interp.get_universe_progression_context(uni) if (interp and interp.has_method("get_universe_progression_context")) else {}
 		var m_str = prog_ctx.get("global_mastery_trend", "GLOBAL MASTERY: " + meta["completion"])
 		var c_str = prog_ctx.get("continuity", "TOTAL OBSERVATIONS: 0")
-		var p_str = prog_ctx.get("profile_overview", "TRAITS: " + meta["traits"])
 		
-		btn.text = meta["title"] + " " + status_text + "\n\n" + meta["desc"] + "\n\n" + m_str + " | " + c_str + "\n" + p_str
-		btn.add_theme_font_size_override("font_size", 16)
+		btn.text = meta["title"].to_upper() + " " + status_text + "\n" + meta["desc"] + "\n" + m_str + " | " + c_str
+		btn.add_theme_font_size_override("font_size", 14)
+		btn.clip_text = true
 		
 		var style = StyleBoxFlat.new()
 		style.bg_color = def["palette"]["bg"]
