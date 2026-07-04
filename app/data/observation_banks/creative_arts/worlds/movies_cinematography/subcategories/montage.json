@@ -4,26 +4,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 1",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 1",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -31,26 +32,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 2",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 2",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -58,26 +60,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 3",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 3",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -85,26 +88,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 4",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 4",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -112,26 +116,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 5",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 5",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -139,26 +144,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 6",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 6",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -166,26 +172,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 7",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 7",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -193,26 +200,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 8",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 8",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -220,26 +228,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 9",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 9",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -247,26 +256,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 10",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 10",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -274,26 +284,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 11",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 11",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -301,26 +312,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 12",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 12",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -328,26 +340,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 13",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 13",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -355,26 +368,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 14",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 14",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -382,26 +396,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 15",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 15",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -409,26 +424,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 16",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 16",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -436,26 +452,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 17",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 17",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -463,26 +480,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 18",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 18",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -490,26 +508,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 19",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 19",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -517,26 +536,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 20",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 20",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -544,26 +564,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 21",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 21",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -571,26 +592,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 22",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 22",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -598,26 +620,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 23",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 23",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -625,26 +648,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 24",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 24",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -652,26 +676,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 25",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 25",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -679,26 +704,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 26",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 26",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -706,26 +732,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 27",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 27",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -733,26 +760,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 28",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 28",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -760,26 +788,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 29",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 29",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -787,26 +816,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 30",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 30",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -814,26 +844,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 31",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 31",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -841,26 +872,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 32",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 32",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -868,26 +900,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 33",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 33",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -895,26 +928,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 34",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 34",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -922,26 +956,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 35",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 35",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -949,26 +984,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 36",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 36",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -976,26 +1012,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 37",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 37",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1003,26 +1040,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 38",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 38",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1030,26 +1068,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 39",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 39",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1057,26 +1096,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 40",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 40",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1084,26 +1124,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 41",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 41",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1111,26 +1152,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 42",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 42",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1138,26 +1180,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 43",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 43",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1165,26 +1208,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 44",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 44",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1192,26 +1236,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 45",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 45",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1219,26 +1264,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 46",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 46",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1246,26 +1292,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 47",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 47",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1273,26 +1320,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 48",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 48",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1300,26 +1348,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 49",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 49",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1327,26 +1376,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 50",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 50",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1354,26 +1404,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 51",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 51",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1381,26 +1432,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 52",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 52",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1408,26 +1460,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 53",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 53",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1435,26 +1488,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 54",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 54",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1462,26 +1516,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 55",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 55",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1489,26 +1544,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 56",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 56",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1516,26 +1572,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 57",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 57",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1543,26 +1600,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 58",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 58",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1570,26 +1628,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 59",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 59",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1597,26 +1656,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 60",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 60",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1624,26 +1684,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 61",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 61",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1651,26 +1712,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 62",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 62",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1678,26 +1740,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 63",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 63",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1705,26 +1768,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 64",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 64",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1732,26 +1796,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 65",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 65",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1759,26 +1824,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 66",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 66",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1786,26 +1852,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 67",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 67",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1813,26 +1880,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 68",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 68",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1840,26 +1908,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 69",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 69",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1867,26 +1936,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 70",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 70",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1894,26 +1964,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 71",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 71",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1921,26 +1992,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 72",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 72",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1948,26 +2020,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 73",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 73",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -1975,26 +2048,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 74",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 74",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2002,26 +2076,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 75",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 75",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2029,26 +2104,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 76",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 76",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2056,26 +2132,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 77",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 77",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2083,26 +2160,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 78",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 78",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2110,26 +2188,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 79",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 79",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2137,26 +2216,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 80",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 80",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2164,26 +2244,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 81",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 81",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2191,26 +2272,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 82",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 82",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2218,26 +2300,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 83",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 83",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2245,26 +2328,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 84",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 84",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2272,26 +2356,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 85",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 85",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2299,26 +2384,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 86",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 86",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2326,26 +2412,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 87",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 87",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2353,26 +2440,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 88",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 88",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2380,26 +2468,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 89",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 89",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2407,26 +2496,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 90",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 90",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2434,26 +2524,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 91",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 91",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2461,26 +2552,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 92",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 92",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2488,26 +2580,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 93",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 93",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2515,26 +2608,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 94",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 94",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2542,26 +2636,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 95",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 95",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2569,26 +2664,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 96",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 96",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2596,26 +2692,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 97",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 97",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2623,26 +2720,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 98",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 98",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2650,26 +2748,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 99",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 99",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   },
   {
@@ -2677,26 +2776,27 @@
     "universe": "creative_arts",
     "world": "movies_cinematography",
     "subcategory": "montage",
-    "entity": "Montage Concept 100",
-    "entity_type": "Concept",
+    "entity": "Montage Technique 100",
+    "entity_type": "Cinematic Rule",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "depth_of_field": "Spatial Cue"
       },
       "semantic": {
-        "context": "Domain Knowledge"
+        "tone": "Emotional Impact"
       }
     },
     "dimensions": {
-      "Category": "Movies Cinematography",
-      "Signature": "Primary Fingerprint"
+      "Category": "Film",
+      "Signature": "Optical Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Alternate lensing",
+      "Lighting error"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "depth_of_field": "High"
     }
   }
 ]
