@@ -165,12 +165,19 @@ func _show_gameplay_hud():
 	active_gameplay_hud.name = "GameplayHUD"
 	active_gameplay_hud.set_anchors_preset(Control.PRESET_FULL_RECT)
 	active_gameplay_hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	active_gameplay_hud.z_index = 900
 	
 	var btn_leave = Button.new()
-	btn_leave.custom_minimum_size = Vector2(180, 60)
-	btn_leave.position = Vector2(40, 40)
-	btn_leave.text = "< LEAVE STREAM"
-	btn_leave.add_theme_font_size_override("font_size", 20)
+	btn_leave.custom_minimum_size = Vector2(154, 44)
+	btn_leave.anchor_left = 1.0
+	btn_leave.anchor_right = 1.0
+	btn_leave.offset_left = -342.0
+	btn_leave.offset_top = 64.0
+	btn_leave.offset_right = -188.0
+	btn_leave.offset_bottom = 108.0
+	btn_leave.z_index = 1000
+	btn_leave.text = "< LEAVE"
+	btn_leave.add_theme_font_size_override("font_size", 15)
 	
 	var style = StyleBoxFlat.new()
 	style.bg_color = Color(0.08, 0.08, 0.12, 0.85)
@@ -198,10 +205,16 @@ func _show_gameplay_hud():
 	)
 	
 	var btn_mirror = Button.new()
-	btn_mirror.custom_minimum_size = Vector2(180, 60)
-	btn_mirror.position = Vector2(240, 40)
-	btn_mirror.text = "★ THE MIRROR"
-	btn_mirror.add_theme_font_size_override("font_size", 20)
+	btn_mirror.custom_minimum_size = Vector2(154, 44)
+	btn_mirror.anchor_left = 1.0
+	btn_mirror.anchor_right = 1.0
+	btn_mirror.offset_left = -176.0
+	btn_mirror.offset_top = 64.0
+	btn_mirror.offset_right = -22.0
+	btn_mirror.offset_bottom = 108.0
+	btn_mirror.z_index = 1000
+	btn_mirror.text = "★ MIRROR"
+	btn_mirror.add_theme_font_size_override("font_size", 15)
 	btn_mirror.add_theme_stylebox_override("normal", style)
 	btn_mirror.add_theme_stylebox_override("hover", style.duplicate())
 	btn_mirror.add_theme_stylebox_override("pressed", style.duplicate())

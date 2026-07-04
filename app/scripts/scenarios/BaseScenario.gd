@@ -73,6 +73,23 @@ func _refresh_payload_for_current_trial():
 		engine.active_payload = _scenario_payload
 	print("[BASE SCENARIO] Refreshed trial content: ", _scenario_payload["id"])
 
+func _cap_target_trials_to_available_content():
+	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	if not registry or not registry.has_method("get_all_scenarios_in_world"):
+		return
+	var u_id = normalize_id(_scenario_payload.get("universe", ""))
+	var w_id = normalize_id(_scenario_payload.get("world", ""))
+	var t_id = normalize_id(_scenario_payload.get("type", ""))
+	var count = 0
+	for item in registry.get_all_scenarios_in_world(u_id, w_id):
+		if item is Dictionary and normalize_id(item.get("type", "")) == t_id:
+			count += 1
+	if count > 0 and target_trials > count:
+		target_trials = count
+		if current_trial > target_trials:
+			current_trial = 1
+		print("[BASE SCENARIO] Trial count capped to available unique content: ", target_trials)
+
 func _style_question_label(lbl: Label, font_size: int = 30):
 	if lbl == null:
 		return
@@ -118,6 +135,7 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 		target_trials = max(1, orch.current_mission["mechanics_chain"].size())
 	elif payload.has("target_trials"):
 		target_trials = int(payload["target_trials"])
+	_cap_target_trials_to_available_content()
 	_last_payload_refresh_trial = current_trial
 
 	_deterministic_rng = RandomNumberGenerator.new()
