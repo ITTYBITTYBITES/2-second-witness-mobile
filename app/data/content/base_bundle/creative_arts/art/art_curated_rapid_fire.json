@@ -1,0 +1,1966 @@
+[
+  {
+    "id": "creative_arts_art_rapid_classification_0001",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Visible brushwork and shifting outdoor light.",
+      "legacy_prompt": "Visible brushwork and shifting outdoor light.",
+      "correct_answer": "Impressionism",
+      "wrong_answers": [
+        "Realism",
+        "Cubism",
+        "Baroque"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0002",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Subject broken into geometric viewpoints.",
+      "legacy_prompt": "Subject broken into geometric viewpoints.",
+      "correct_answer": "Cubism",
+      "wrong_answers": [
+        "Surrealism",
+        "Fauvism",
+        "Rococo"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0003",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Dreamlike scenes with impossible object pairings.",
+      "legacy_prompt": "Dreamlike scenes with impossible object pairings.",
+      "correct_answer": "Surrealism",
+      "wrong_answers": [
+        "Realism",
+        "Minimalism",
+        "Pointillism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0004",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Bold colors and flat mass-media imagery.",
+      "legacy_prompt": "Bold colors and flat mass-media imagery.",
+      "correct_answer": "Pop Art",
+      "wrong_answers": [
+        "Art Deco",
+        "Futurism",
+        "Dada"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0005",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Tiny dots of color blend in the viewer's eye.",
+      "legacy_prompt": "Tiny dots of color blend in the viewer's eye.",
+      "correct_answer": "Pointillism",
+      "wrong_answers": [
+        "Impasto",
+        "Fresco",
+        "Collage"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0006",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Wild intense color used over realistic color.",
+      "legacy_prompt": "Wild intense color used over realistic color.",
+      "correct_answer": "Fauvism",
+      "wrong_answers": [
+        "Realism",
+        "Neoclassicism",
+        "Baroque"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0007",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Chance, nonsense, and anti-art protest.",
+      "legacy_prompt": "Chance, nonsense, and anti-art protest.",
+      "correct_answer": "Dada",
+      "wrong_answers": [
+        "Rococo",
+        "Mannerism",
+        "Realism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0008",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Simple forms with reduced visual clutter.",
+      "legacy_prompt": "Simple forms with reduced visual clutter.",
+      "correct_answer": "Minimalism",
+      "wrong_answers": [
+        "Surrealism",
+        "Romanticism",
+        "Baroque"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0009",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Optical illusions and vibrating patterns.",
+      "legacy_prompt": "Optical illusions and vibrating patterns.",
+      "correct_answer": "Op Art",
+      "wrong_answers": [
+        "Pop Art",
+        "Land Art",
+        "Folk Art"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0010",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Curved plant-like decorative lines.",
+      "legacy_prompt": "Curved plant-like decorative lines.",
+      "correct_answer": "Art Nouveau",
+      "wrong_answers": [
+        "Art Deco",
+        "Bauhaus",
+        "Rococo"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0011",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Streamlined machine-age geometry.",
+      "legacy_prompt": "Streamlined machine-age geometry.",
+      "correct_answer": "Art Deco",
+      "wrong_answers": [
+        "Art Nouveau",
+        "Dada",
+        "Realism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0012",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Classical balance revived after Baroque drama.",
+      "legacy_prompt": "Classical balance revived after Baroque drama.",
+      "correct_answer": "Neoclassicism",
+      "wrong_answers": [
+        "Romanticism",
+        "Rococo",
+        "Impressionism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0013",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Emotion, nature, and heroic imagination.",
+      "legacy_prompt": "Emotion, nature, and heroic imagination.",
+      "correct_answer": "Romanticism",
+      "wrong_answers": [
+        "Realism",
+        "Minimalism",
+        "Cubism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0014",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Everyday subjects without idealizing them.",
+      "legacy_prompt": "Everyday subjects without idealizing them.",
+      "correct_answer": "Realism",
+      "wrong_answers": [
+        "Surrealism",
+        "Fauvism",
+        "Rococo"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0015",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Theatrical movement and dramatic light.",
+      "legacy_prompt": "Theatrical movement and dramatic light.",
+      "correct_answer": "Baroque",
+      "wrong_answers": [
+        "Renaissance",
+        "Minimalism",
+        "Impressionism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0016",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Soft pastel colors and playful ornament.",
+      "legacy_prompt": "Soft pastel colors and playful ornament.",
+      "correct_answer": "Rococo",
+      "wrong_answers": [
+        "Dada",
+        "Cubism",
+        "Op Art"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0017",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Harmony, proportion, and classical learning.",
+      "legacy_prompt": "Harmony, proportion, and classical learning.",
+      "correct_answer": "Renaissance",
+      "wrong_answers": [
+        "Dada",
+        "Pop Art",
+        "Fauvism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0018",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Clean functional design school.",
+      "legacy_prompt": "Clean functional design school.",
+      "correct_answer": "Bauhaus",
+      "wrong_answers": [
+        "Rococo",
+        "Surrealism",
+        "Mannerism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0019",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Large gestural paint marks and abstraction.",
+      "legacy_prompt": "Large gestural paint marks and abstraction.",
+      "correct_answer": "Abstract Expressionism",
+      "wrong_answers": [
+        "Pointillism",
+        "Rococo",
+        "Realism"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0020",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Idea matters more than the object.",
+      "legacy_prompt": "Idea matters more than the object.",
+      "correct_answer": "Conceptual Art",
+      "wrong_answers": [
+        "Still Life",
+        "Portraiture",
+        "Fresco"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0021",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Paint applied to wet plaster.",
+      "legacy_prompt": "Paint applied to wet plaster.",
+      "correct_answer": "Fresco",
+      "wrong_answers": [
+        "Mosaic",
+        "Tempera",
+        "Collage"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0022",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Image made from small colored stone or glass.",
+      "legacy_prompt": "Image made from small colored stone or glass.",
+      "correct_answer": "Mosaic",
+      "wrong_answers": [
+        "Fresco",
+        "Etching",
+        "Pastel"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0023",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Egg-based paint used before oil dominated.",
+      "legacy_prompt": "Egg-based paint used before oil dominated.",
+      "correct_answer": "Tempera",
+      "wrong_answers": [
+        "Acrylic",
+        "Watercolor",
+        "Charcoal"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0024",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Slow-drying paint mixed with oil.",
+      "legacy_prompt": "Slow-drying paint mixed with oil.",
+      "correct_answer": "Oil Paint",
+      "wrong_answers": [
+        "Watercolor",
+        "Ink",
+        "Pastel"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0025",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Transparent paint diluted with water.",
+      "legacy_prompt": "Transparent paint diluted with water.",
+      "correct_answer": "Watercolor",
+      "wrong_answers": [
+        "Oil Paint",
+        "Charcoal",
+        "Clay"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0026",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Fast-drying synthetic water-based paint.",
+      "legacy_prompt": "Fast-drying synthetic water-based paint.",
+      "correct_answer": "Acrylic",
+      "wrong_answers": [
+        "Tempera",
+        "Encaustic",
+        "Graphite"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0027",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Powdery color stick for soft blended marks.",
+      "legacy_prompt": "Powdery color stick for soft blended marks.",
+      "correct_answer": "Pastel",
+      "wrong_answers": [
+        "Ink",
+        "Bronze",
+        "Plaster"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0028",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Black drawing medium from burned wood.",
+      "legacy_prompt": "Black drawing medium from burned wood.",
+      "correct_answer": "Charcoal",
+      "wrong_answers": [
+        "Watercolor",
+        "Marble",
+        "Canvas"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0029",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Wax-based paint applied with heat.",
+      "legacy_prompt": "Wax-based paint applied with heat.",
+      "correct_answer": "Encaustic",
+      "wrong_answers": [
+        "Acrylic",
+        "Fresco",
+        "Graphite"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0030",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Print made by cutting a wood surface.",
+      "legacy_prompt": "Print made by cutting a wood surface.",
+      "correct_answer": "Woodcut",
+      "wrong_answers": [
+        "Lithograph",
+        "Etching",
+        "Monotype"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0031",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Print made from treated stone or plate.",
+      "legacy_prompt": "Print made from treated stone or plate.",
+      "correct_answer": "Lithograph",
+      "wrong_answers": [
+        "Woodcut",
+        "Fresco",
+        "Mosaic"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0032",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Print made by acid biting metal lines.",
+      "legacy_prompt": "Print made by acid biting metal lines.",
+      "correct_answer": "Etching",
+      "wrong_answers": [
+        "Collage",
+        "Tempera",
+        "Pastel"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0033",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Artwork made by gluing materials together.",
+      "legacy_prompt": "Artwork made by gluing materials together.",
+      "correct_answer": "Collage",
+      "wrong_answers": [
+        "Fresco",
+        "Etching",
+        "Sfumato"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0034",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "3D art assembled from found objects.",
+      "legacy_prompt": "3D art assembled from found objects.",
+      "correct_answer": "Assemblage",
+      "wrong_answers": [
+        "Watercolor",
+        "Portrait",
+        "Glazing"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0035",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Art built to transform a space.",
+      "legacy_prompt": "Art built to transform a space.",
+      "correct_answer": "Installation",
+      "wrong_answers": [
+        "Still Life",
+        "Etching",
+        "Monotype"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0036",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Live action presented as the artwork.",
+      "legacy_prompt": "Live action presented as the artwork.",
+      "correct_answer": "Performance Art",
+      "wrong_answers": [
+        "Landscape",
+        "Mosaic",
+        "Tempera"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0037",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Carving material away to form sculpture.",
+      "legacy_prompt": "Carving material away to form sculpture.",
+      "correct_answer": "Subtractive Sculpture",
+      "wrong_answers": [
+        "Casting",
+        "Modeling",
+        "Assemblage"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0038",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Pouring material into a mold.",
+      "legacy_prompt": "Pouring material into a mold.",
+      "correct_answer": "Casting",
+      "wrong_answers": [
+        "Carving",
+        "Etching",
+        "Glazing"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0039",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Building sculpture by adding soft material.",
+      "legacy_prompt": "Building sculpture by adding soft material.",
+      "correct_answer": "Modeling",
+      "wrong_answers": [
+        "Carving",
+        "Lithography",
+        "Fresco"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0040",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Sculpture projecting from a flat surface.",
+      "legacy_prompt": "Sculpture projecting from a flat surface.",
+      "correct_answer": "Relief",
+      "wrong_answers": [
+        "Canvas",
+        "Still Life",
+        "Horizon Line"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0041",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Dramatic contrast of light and dark.",
+      "legacy_prompt": "Dramatic contrast of light and dark.",
+      "correct_answer": "Chiaroscuro",
+      "wrong_answers": [
+        "Sfumato",
+        "Impasto",
+        "Collage"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0042",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Soft smoky transitions without hard outlines.",
+      "legacy_prompt": "Soft smoky transitions without hard outlines.",
+      "correct_answer": "Sfumato",
+      "wrong_answers": [
+        "Tenebrism",
+        "Pointillism",
+        "Fresco"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0043",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Extreme darkness with a spotlight effect.",
+      "legacy_prompt": "Extreme darkness with a spotlight effect.",
+      "correct_answer": "Tenebrism",
+      "wrong_answers": [
+        "Sfumato",
+        "Pastel",
+        "Mosaic"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0044",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Thick paint that keeps raised texture.",
+      "legacy_prompt": "Thick paint that keeps raised texture.",
+      "correct_answer": "Impasto",
+      "wrong_answers": [
+        "Glazing",
+        "Wash",
+        "Fresco"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0045",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Thin transparent paint over dry paint.",
+      "legacy_prompt": "Thin transparent paint over dry paint.",
+      "correct_answer": "Glazing",
+      "wrong_answers": [
+        "Impasto",
+        "Carving",
+        "Collage"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0046",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Loose first paint layer establishing values.",
+      "legacy_prompt": "Loose first paint layer establishing values.",
+      "correct_answer": "Underpainting",
+      "wrong_answers": [
+        "Varnish",
+        "Frame",
+        "Signature"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0047",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Parallel lines meet in the distance.",
+      "legacy_prompt": "Parallel lines meet in the distance.",
+      "correct_answer": "Linear Perspective",
+      "wrong_answers": [
+        "Color Theory",
+        "Symmetry",
+        "Texture"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0048",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Depth from hazier bluer distant objects.",
+      "legacy_prompt": "Depth from hazier bluer distant objects.",
+      "correct_answer": "Atmospheric Perspective",
+      "wrong_answers": [
+        "Linear Perspective",
+        "Foreshortening",
+        "Relief"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0049",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Object shortened to suggest depth.",
+      "legacy_prompt": "Object shortened to suggest depth.",
+      "correct_answer": "Foreshortening",
+      "wrong_answers": [
+        "Symmetry",
+        "Glazing",
+        "Mosaic"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0050",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Point where receding lines converge.",
+      "legacy_prompt": "Point where receding lines converge.",
+      "correct_answer": "Vanishing Point",
+      "wrong_answers": [
+        "Horizon Line",
+        "Focal Point",
+        "Contour"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0051",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Eye-level line in perspective drawing.",
+      "legacy_prompt": "Eye-level line in perspective drawing.",
+      "correct_answer": "Horizon Line",
+      "wrong_answers": [
+        "Contour Line",
+        "Gesture Line",
+        "Value Scale"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0052",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Arrangement of visual elements.",
+      "legacy_prompt": "Arrangement of visual elements.",
+      "correct_answer": "Composition",
+      "wrong_answers": [
+        "Medium",
+        "Patina",
+        "Varnish"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0053",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Empty area around and between subjects.",
+      "legacy_prompt": "Empty area around and between subjects.",
+      "correct_answer": "Negative Space",
+      "wrong_answers": [
+        "Focal Point",
+        "Texture",
+        "Hue"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0054",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Area designed to attract the viewer first.",
+      "legacy_prompt": "Area designed to attract the viewer first.",
+      "correct_answer": "Focal Point",
+      "wrong_answers": [
+        "Horizon Line",
+        "Palette",
+        "Ground"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0055",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Lightness or darkness of a color.",
+      "legacy_prompt": "Lightness or darkness of a color.",
+      "correct_answer": "Value",
+      "wrong_answers": [
+        "Hue",
+        "Saturation",
+        "Texture"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0056",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "The color family, such as red or blue.",
+      "legacy_prompt": "The color family, such as red or blue.",
+      "correct_answer": "Hue",
+      "wrong_answers": [
+        "Value",
+        "Scale",
+        "Balance"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0057",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Intensity or purity of a color.",
+      "legacy_prompt": "Intensity or purity of a color.",
+      "correct_answer": "Saturation",
+      "wrong_answers": [
+        "Value",
+        "Line",
+        "Form"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0058",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Surface quality: rough, smooth, soft, hard.",
+      "legacy_prompt": "Surface quality: rough, smooth, soft, hard.",
+      "correct_answer": "Texture",
+      "wrong_answers": [
+        "Hue",
+        "Balance",
+        "Scale"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0059",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Equal visual weight in a composition.",
+      "legacy_prompt": "Equal visual weight in a composition.",
+      "correct_answer": "Balance",
+      "wrong_answers": [
+        "Contrast",
+        "Pattern",
+        "Contour"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0060",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Difference between elements.",
+      "legacy_prompt": "Difference between elements.",
+      "correct_answer": "Contrast",
+      "wrong_answers": [
+        "Rhythm",
+        "Unity",
+        "Medium"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0061",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Repeated elements creating visual movement.",
+      "legacy_prompt": "Repeated elements creating visual movement.",
+      "correct_answer": "Rhythm",
+      "wrong_answers": [
+        "Symmetry",
+        "Varnish",
+        "Patina"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0062",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Repeated shapes, colors, or marks.",
+      "legacy_prompt": "Repeated shapes, colors, or marks.",
+      "correct_answer": "Pattern",
+      "wrong_answers": [
+        "Focal Point",
+        "Canvas",
+        "Genre"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0063",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Opposite colors on the color wheel.",
+      "legacy_prompt": "Opposite colors on the color wheel.",
+      "correct_answer": "Complementary Colors",
+      "wrong_answers": [
+        "Analogous Colors",
+        "Warm Colors",
+        "Neutral Colors"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0064",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Neighboring colors on the color wheel.",
+      "legacy_prompt": "Neighboring colors on the color wheel.",
+      "correct_answer": "Analogous Colors",
+      "wrong_answers": [
+        "Primary Colors",
+        "Complementary Colors",
+        "Cool Colors"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0065",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Red, yellow, and blue in traditional theory.",
+      "legacy_prompt": "Red, yellow, and blue in traditional theory.",
+      "correct_answer": "Primary Colors",
+      "wrong_answers": [
+        "Secondary Colors",
+        "Warm Colors",
+        "Analogous Colors"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0066",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Orange, green, and violet in traditional theory.",
+      "legacy_prompt": "Orange, green, and violet in traditional theory.",
+      "correct_answer": "Secondary Colors",
+      "wrong_answers": [
+        "Primary Colors",
+        "Neutral Colors",
+        "Cool Colors"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0067",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Artwork using one main color family.",
+      "legacy_prompt": "Artwork using one main color family.",
+      "correct_answer": "Monochrome",
+      "wrong_answers": [
+        "Polychrome",
+        "Complementary",
+        "Analogous"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0068",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Artwork divided into three panels.",
+      "legacy_prompt": "Artwork divided into three panels.",
+      "correct_answer": "Triptych",
+      "wrong_answers": [
+        "Diptych",
+        "Mosaic",
+        "Relief"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0069",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Artwork divided into two panels.",
+      "legacy_prompt": "Artwork divided into two panels.",
+      "correct_answer": "Diptych",
+      "wrong_answers": [
+        "Triptych",
+        "Fresco",
+        "Etching"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0070",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Artwork focused on a person's likeness.",
+      "legacy_prompt": "Artwork focused on a person's likeness.",
+      "correct_answer": "Portrait",
+      "wrong_answers": [
+        "Landscape",
+        "Still Life",
+        "Genre Scene"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0071",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Artwork focused on outdoor scenery.",
+      "legacy_prompt": "Artwork focused on outdoor scenery.",
+      "correct_answer": "Landscape",
+      "wrong_answers": [
+        "Portrait",
+        "Still Life",
+        "Icon"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0072",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Arranged objects like fruit or vases.",
+      "legacy_prompt": "Arranged objects like fruit or vases.",
+      "correct_answer": "Still Life",
+      "wrong_answers": [
+        "Landscape",
+        "Portrait",
+        "History Painting"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0073",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Scene of ordinary daily life.",
+      "legacy_prompt": "Scene of ordinary daily life.",
+      "correct_answer": "Genre Painting",
+      "wrong_answers": [
+        "Portrait",
+        "Icon",
+        "Triptych"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0074",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Image of the artist by the artist.",
+      "legacy_prompt": "Image of the artist by the artist.",
+      "correct_answer": "Self-Portrait",
+      "wrong_answers": [
+        "Still Life",
+        "Landscape",
+        "Mural"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0075",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Clear protective coating after painting.",
+      "legacy_prompt": "Clear protective coating after painting.",
+      "correct_answer": "Varnish",
+      "wrong_answers": [
+        "Gesso",
+        "Glaze",
+        "Primer"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0076",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "White ground layer for a painting surface.",
+      "legacy_prompt": "White ground layer for a painting surface.",
+      "correct_answer": "Gesso",
+      "wrong_answers": [
+        "Varnish",
+        "Patina",
+        "Pigment"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0077",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Colored powder mixed with binder.",
+      "legacy_prompt": "Colored powder mixed with binder.",
+      "correct_answer": "Pigment",
+      "wrong_answers": [
+        "Canvas",
+        "Easel",
+        "Varnish"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0078",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Stand that holds a canvas upright.",
+      "legacy_prompt": "Stand that holds a canvas upright.",
+      "correct_answer": "Easel",
+      "wrong_answers": [
+        "Palette",
+        "Frame",
+        "Panel"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "creative_arts_art_rapid_classification_0079",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "rapid_classification",
+    "rules": {
+      "prompt": "Green surface layer on aged bronze.",
+      "legacy_prompt": "Green surface layer on aged bronze.",
+      "correct_answer": "Patina",
+      "wrong_answers": [
+        "Varnish",
+        "Gesso",
+        "Impasto"
+      ]
+    },
+    "presentation": {
+      "title": "Art Rapid Recognition",
+      "difficulty_tier": 5
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0001",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "CANVAS",
+      "legacy_prompt": "CANVAS",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0002",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "BRUSH",
+      "legacy_prompt": "BRUSH",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0003",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "VALUE",
+      "legacy_prompt": "VALUE",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0004",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "HUE",
+      "legacy_prompt": "HUE",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0005",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "LINE",
+      "legacy_prompt": "LINE",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0006",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "FORM",
+      "legacy_prompt": "FORM",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 1
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0007",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "SPACE",
+      "legacy_prompt": "SPACE",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0008",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "TEXTURE",
+      "legacy_prompt": "TEXTURE",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0009",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "BALANCE",
+      "legacy_prompt": "BALANCE",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0010",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "CONTRAST",
+      "legacy_prompt": "CONTRAST",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0011",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "RHYTHM",
+      "legacy_prompt": "RHYTHM",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0012",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "PATTERN",
+      "legacy_prompt": "PATTERN",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 2
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0013",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "FRESCO",
+      "legacy_prompt": "FRESCO",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0014",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "CUBISM",
+      "legacy_prompt": "CUBISM",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0015",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "SURREAL",
+      "legacy_prompt": "SURREAL",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0016",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "POP ART",
+      "legacy_prompt": "POP ART",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0017",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "MOSAIC",
+      "legacy_prompt": "MOSAIC",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0018",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "PASTEL",
+      "legacy_prompt": "PASTEL",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 3
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0019",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "CHARCOAL",
+      "legacy_prompt": "CHARCOAL",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0020",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "GLAZE",
+      "legacy_prompt": "GLAZE",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0021",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "PORTRAIT",
+      "legacy_prompt": "PORTRAIT",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0022",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "LANDSCAPE",
+      "legacy_prompt": "LANDSCAPE",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0023",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "VARNISH",
+      "legacy_prompt": "VARNISH",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 4
+    }
+  },
+  {
+    "id": "creative_arts_art_stroop_test_0024",
+    "universe": "creative_arts",
+    "world": "art",
+    "type": "stroop_test",
+    "rules": {
+      "prompt": "PIGMENT",
+      "legacy_prompt": "PIGMENT",
+      "correct_answer": "COLOR_TASK",
+      "wrong_answers": []
+    },
+    "presentation": {
+      "title": "Art Color Interference",
+      "difficulty_tier": 4
+    }
+  }
+]
