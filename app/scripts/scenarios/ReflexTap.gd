@@ -16,6 +16,13 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.make_prompt_banner(feedback_label, "PREPARE FOR SIGNAL")
+	
+	# Transform the target button into a high-visibility Response Card
+	# Since this button moves, we use a specific accent to ensure it's visible over the background
+	PresentationToolkit.make_response_card(target_btn, "TAP NOW!")
+	
 	_start_ticks_msec = Time.get_ticks_msec()
 	feedback_label.text = "Get ready..."
 	target_btn.visible = false

@@ -21,8 +21,16 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))
+	PresentationToolkit.make_prompt_banner(target_label, "CLASSIFY TARGET")
+	
 	btn_organic.pressed.connect(func(): _on_answer(true))
 	btn_mechanical.pressed.connect(func(): _on_answer(false))
+	
+	# Transform buttons into response cards
+	PresentationToolkit.make_response_card(btn_organic, "ORGANIC")
+	PresentationToolkit.make_response_card(btn_mechanical, "MECHANICAL")
 	
 	_setup_round()
 	execute_render_pipeline()

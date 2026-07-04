@@ -23,10 +23,15 @@ func _ready():
 		queue_free()
 		return
 		
+	# Apply Gold Standard UI
+	PresentationToolkit.apply_glass_style(container)
+	PresentationToolkit.make_prompt_banner(feedback_label, "IDENTIFY TEXT COLOR")
+	
 	_generate_stroop()
 	execute_render_pipeline()
 
 func _generate_stroop():
+	# Use toolkit for a cleaner feedback label
 	feedback_label.text = "Select the TEXT COLOR, not the word."
 	var word_idx = _deterministic_rng.randi() % 4
 	target_color_idx = _deterministic_rng.randi() % 4
@@ -41,6 +46,10 @@ func _generate_stroop():
 		var btn = container.get_child(i)
 		btn.disabled = false
 		btn.text = color_names[options[i]]
+		
+		# Transform into response card
+		PresentationToolkit.make_response_card(btn, btn.text)
+		
 		if not btn.pressed.is_connected(_on_answer.bind(options[i])):
 			btn.pressed.connect(_on_answer.bind(options[i]))
 	_start_ticks_msec = Time.get_ticks_msec()

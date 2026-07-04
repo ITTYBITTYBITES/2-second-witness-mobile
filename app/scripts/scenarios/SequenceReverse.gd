@@ -20,6 +20,10 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))
+	PresentationToolkit.make_prompt_banner(feedback_label, "REVERSE SEQUENCE RECALL")
+	
 	btn_1.pressed.connect(func(): _on_answer(0))
 	btn_2.pressed.connect(func(): _on_answer(1))
 	btn_3.pressed.connect(func(): _on_answer(2))
@@ -43,9 +47,10 @@ func _setup_round():
 	options.shuffle()
 	correct_idx = options.find(reversed_str)
 	
-	btn_1.text = options[0]
-	btn_2.text = options[1]
-	btn_3.text = options[2]
+	# Transform buttons into response cards
+	PresentationToolkit.make_response_card(btn_1, options[0])
+	PresentationToolkit.make_response_card(btn_2, options[1])
+	PresentationToolkit.make_response_card(btn_3, options[2])
 	
 	_start_ticks_msec = Time.get_ticks_msec()
 	var tween = get_tree().create_tween()

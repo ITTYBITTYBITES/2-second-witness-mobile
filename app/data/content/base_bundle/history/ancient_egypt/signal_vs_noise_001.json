@@ -1,25 +1,25 @@
 {
-    "id": "signal_vs_noise",
-    "universe": "history",
-    "world": "ancient_egypt",
-    "type": "signal_vs_noise",
-    "rules": {
-        "correct_answer": "𓂀",
-        "wrong_answers": [
-            "𓋹",
-            "𓎛",
-            "𓆣",
-            "𓊽",
-            "𓅓",
-            "𓃻",
-            "𓀭",
-            "𓉐"
-        ],
-        "legacy_prompt": "FIND EYE OF HORUS",
-        "prompt": "FIND EYE OF HORUS"
-    },
-    "presentation": {
-        "title": "Hieroglyphic Noise Search",
-        "difficulty_tier": 1
-    }
+  "id": "history_ancient_egypt_signal_vs_noise_0000",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "type": "signal_vs_noise",
+  "rules": {
+    "correct_answer": "𓂀",
+    "wrong_answers": [
+      "𓋹",
+      "𓎛",
+      "𓆣",
+      "𓊽",
+      "𓅓",
+      "𓃻",
+      "𓀭",
+      "𓉐"
+    ],
+    "legacy_prompt": "FIND EYE OF HORUS",
+    "prompt": "FIND EYE OF HORUS"
+  },
+  "presentation": {
+    "title": "Hieroglyphic Noise Search",
+    "difficulty_tier": 1
+  }
 }

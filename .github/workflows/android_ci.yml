@@ -22,24 +22,26 @@ jobs:
 
       - name: Validate Scenario JSON Schema
         run: |
-          echo "Scanning app/data/content/base_bundle for valid JSON and required keys..."
-          find app/data/content/base_bundle -type f -name "*.json" | while read -r file; do
-            # Handle both JSON objects and JSON arrays
-            jq -e '
-              if type == "array" then
-                (map(has("id") and has("universe") and has("type")) | all)
-              elif type == "object" then
-                (has("id") and has("universe") and has("type"))
-              else
-                false
-              end
-            ' "$file" > /dev/null
+          echo "Running Comprehensive JSON Validation Pipeline..."
+          python3 app/tools/json_validator.py
+          if [ $? -ne 0 ]; then
+            echo "Validation Failed: Schema violations or duplicate content detected."
+            exit 1
+          fi
+          echo "All Scenario JSON files validated successfully."
+
+      - name: Check Theme Integrity
+        run: |
+          echo "Validating Theme JSON strict formatting..."
+          find app/data/themes -type f -name "*.json" | while read -r file; do
+            jq -e '. | has("id") and (has("visual") or has("lens")) and has("tunnel")' "$file" > /dev/null
             if [ $? -ne 0 ]; then
-              echo "Validation Failed: $file is missing required schema keys or is malformed."
+              echo "Validation Failed: $file is missing critical theme contracts."
               exit 1
             fi
           done
-          echo "All Scenario JSON files validated successfully."
+          echo "All Theme configurations validated successfully."
+
 
       - name: Check Theme Integrity
         run: |

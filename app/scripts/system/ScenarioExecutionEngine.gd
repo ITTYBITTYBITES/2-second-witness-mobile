@@ -67,7 +67,7 @@ func _transition_to_state(new_state: int):
 			if is_instance_valid(active_scenario) and active_scenario.has_method("engine_present_hook"):
 				active_scenario.engine_present_hook()
 			var diff = active_payload.get("difficulty", 1)
-			var invariance_ms = clampi(350 - (int(diff) * 40), 150, 350)
+			var invariance_ms = clamp(350 - (int(diff) * 40), 150, 350)
 			await get_tree().create_timer(invariance_ms / 1000.0).timeout
 			if is_instance_valid(active_scenario) and current_state == LifecycleState.PRESENT:
 				_transition_to_state(LifecycleState.INPUT_WINDOW)

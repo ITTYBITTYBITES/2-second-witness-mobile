@@ -19,14 +19,22 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))
+	PresentationToolkit.make_prompt_banner(feedback_label, "EVALUATE RISK LEVEL")
+	
+	btn_safe.pressed.connect(func(): _on_answer(false))
+	btn_risk.pressed.connect(func(): _on_answer(true))
+	
+	# Transform buttons into response cards
+	PresentationToolkit.make_response_card(btn_safe, "SECURE")
+	PresentationToolkit.make_response_card(btn_risk, "RISK")
+	
 	_start_ticks_msec = Time.get_ticks_msec()
 	print("[RISK SELECTION] Spike Initiated.")
 	feedback_label.text = "Choose your path."
 	
 	risk_succeeds = _deterministic_rng.randf() > 0.3 
-	
-	btn_safe.pressed.connect(func(): _on_answer(false))
-	btn_risk.pressed.connect(func(): _on_answer(true))
 	
 	execute_render_pipeline()
 

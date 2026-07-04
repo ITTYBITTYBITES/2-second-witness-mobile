@@ -19,6 +19,10 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.apply_glass_style(grid_container)
+	PresentationToolkit.make_prompt_banner(feedback_label, "SPATIAL MEMORY RECALL")
+	
 	_start_ticks_msec = Time.get_ticks_msec()
 	print("[SPATIAL RECALL] Spike Initiated.")
 	feedback_label.text = "Memorize the flash!"
@@ -26,6 +30,8 @@ func _ready():
 	for child in grid_container.get_children():
 		if child is Button:
 			buttons.append(child)
+			# Transform buttons into response cards (adapted for grid size)
+			PresentationToolkit.make_response_card(child, "")
 			child.pressed.connect(_on_btn_pressed.bind(buttons.find(child)))
 			child.disabled = true 
 			

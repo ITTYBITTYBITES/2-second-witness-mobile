@@ -19,12 +19,21 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))
+	PresentationToolkit.make_prompt_banner(feedback_label, "VERIFY EQUATION")
+	
+	btn_true.pressed.connect(func(): _on_answer(true))
+	btn_false.pressed.connect(func(): _on_answer(false))
+	
+	# Transform buttons into response cards
+	PresentationToolkit.make_response_card(btn_true, "TRUE")
+	PresentationToolkit.make_response_card(btn_false, "FALSE")
+	
 	_start_ticks_msec = Time.get_ticks_msec()
 	print("[MATH SURPRISE] Spike Initiated.")
 	feedback_label.text = ""
 	
-	btn_true.pressed.connect(func(): _on_answer(true))
-	btn_false.pressed.connect(func(): _on_answer(false))
 	_generate_problem()
 	execute_render_pipeline()
 

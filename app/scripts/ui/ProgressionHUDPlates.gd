@@ -135,7 +135,7 @@ func _refresh_plates():
 		if profile and "world_affinity" in profile:
 			var world_key = active_universe_id + "_" + active_world_id
 			var aff = profile.world_affinity.get(world_key, 0)
-			mastery_val = clampi(int((float(aff) / 500.0) * 100.0), 0, 100)
+			mastery_val = clamp(int((float(aff) / 500.0) * 100.0), 0, 100)
 			streak_val = profile.current_streak
 			
 	if is_instance_valid(_lbl_mastery):

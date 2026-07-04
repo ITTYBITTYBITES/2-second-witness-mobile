@@ -18,6 +18,8 @@ shader_compiler/shader_cache/enabled=true
 vulkan/rendering/shader_compilation_mode=2
 
 [autoload]
+FeedbackManager="*res://scripts/system/FeedbackManager.gd"
+PresentationToolkit="*res://scripts/system/PresentationToolkit.gd"
 BootTracer="*res://scripts/system/BootTracer.gd"
 PlayerProfile="*res://scripts/system/PlayerProfile.gd"
 MirrorNarrator="*res://scripts/system/MirrorNarrator.gd"

@@ -129,7 +129,7 @@ func record_cognitive_event(c_trait: String, scenario_id: String, universe_id: S
 	current_level = 1 + int(float(experience) / 1000.0)
 	
 	var titles = ["Observer", "Pattern Explorer", "Focus Specialist", "Speed Architect", "Pattern Witness", "Liquid Master"]
-	player_title = titles[clampi(current_level - 1, 0, titles.size() - 1)]
+	player_title = titles[clamp(current_level - 1, 0, titles.size() - 1)]
 	
 	if not unlocked_achievements.has("FIRST_STEP") and lifetime_sessions >= 1: unlocked_achievements.append("FIRST_STEP")
 	if not unlocked_achievements.has("TEN_SPIKES") and lifetime_sessions >= 10: unlocked_achievements.append("TEN_SPIKES")

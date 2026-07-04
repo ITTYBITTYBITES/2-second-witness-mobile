@@ -19,8 +19,16 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.make_prompt_banner(feedback_label, "SPEED SORTING")
+	
 	btn_left.pressed.connect(func(): _on_answer(true)) 
 	btn_right.pressed.connect(func(): _on_answer(false)) 
+	
+	# Transform buttons into response cards
+	PresentationToolkit.make_response_card(btn_left, "EVEN")
+	PresentationToolkit.make_response_card(btn_right, "ODD")
+	
 	_generate_number()
 	execute_render_pipeline()
 

@@ -28,7 +28,7 @@ static func validate_descriptor(descriptor: Dictionary) -> bool:
 	
 	var iris = descriptor.get("iris_profile", {})
 	if iris.has("complexity"):
-		iris["complexity"] = clampi(int(iris["complexity"]), 1, 5)
+		iris["complexity"] = clamp(int(iris["complexity"]), 1, 5)
 	descriptor["iris_profile"] = iris
 	
 	return true

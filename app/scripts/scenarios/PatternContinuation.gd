@@ -20,8 +20,17 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))
+	PresentationToolkit.make_prompt_banner(feedback_label, "CONTINUE THE PATTERN")
+	
 	btn_a.pressed.connect(func(): _on_answer(btn_a.text == "⬟"))
 	btn_b.pressed.connect(func(): _on_answer(btn_b.text == "⬟"))
+	
+	# Transform buttons into response cards
+	PresentationToolkit.make_response_card(btn_a, btn_a.text)
+	PresentationToolkit.make_response_card(btn_b, btn_b.text)
+	
 	_generate_pattern()
 	execute_render_pipeline()
 
@@ -35,6 +44,11 @@ func _generate_pattern():
 	else:
 		btn_a.text = "⬢"
 		btn_b.text = "⬟"
+		
+	# Refresh card labels
+	PresentationToolkit.make_response_card(btn_a, btn_a.text)
+	PresentationToolkit.make_response_card(btn_b, btn_b.text)
+	
 	_start_ticks_msec = Time.get_ticks_msec()
 
 func _on_answer(is_correct: bool):

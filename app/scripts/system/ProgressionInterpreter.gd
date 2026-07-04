@@ -98,7 +98,7 @@ func get_world_mastery_percentage(universe_id: String, world_id: String) -> int:
 	if not profile: return 0
 	var world_key = universe_id + "_" + world_id
 	var affinity = profile.world_affinity.get(world_key, 0) if "world_affinity" in profile else 0
-	return clampi(int((float(affinity) / 500.0) * 100.0), 0, 100)
+	return clamp(int((float(affinity) / 500.0) * 100.0), 0, 100)
 
 func get_current_streak() -> int:
 	var profile = Engine.get_main_loop().root.get_node_or_null("PlayerProfile") if Engine.get_main_loop() else null
@@ -126,7 +126,7 @@ func get_universe_progression_context(universe_id: String) -> Dictionary:
 	var fav_trait = profile.favorite_mechanic.capitalize().replace("_", " ") if (profile and "favorite_mechanic" in profile and profile.favorite_mechanic != "") else "Pattern Recognition"
 	
 	var u_affinity = profile.universe_affinity.get(universe_id, 0) if (profile and "universe_affinity" in profile) else 0
-	var u_mastery_pct = clampi(int((float(u_affinity) / 1000.0) * 100.0), 0, 100)
+	var u_mastery_pct = clamp(int((float(u_affinity) / 1000.0) * 100.0), 0, 100)
 	var tier_str = "DEVELOPING" if u_mastery_pct > 20 else ("COMPLEX" if u_mastery_pct > 50 else ("ZENITH" if u_mastery_pct == 100 else "BASE"))
 	
 	return {
@@ -165,7 +165,7 @@ func get_scenario_progression_context(scenario_id: String) -> Dictionary:
 		
 	var rate = int((float(successes) / float(max(1, attempts))) * 100.0) if attempts > 0 else 100
 	var readiness = "OPTIMAL" if (attempts > 5 and rate >= 70) else ("CALIBRATING" if attempts > 0 else "PRIMED")
-	var streak_est = clampi(successes % 5 + (1 if successes > 0 else 0), 0, 10)
+	var streak_est = clamp(successes % 5 + (1 if successes > 0 else 0), 0, 10)
 	
 	return {
 		"readiness": "PROTOCOL READINESS: %s" % readiness,

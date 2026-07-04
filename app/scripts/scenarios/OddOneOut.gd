@@ -17,6 +17,10 @@ func _ready():
 		queue_free()
 		return
 		
+	# Standardize UI via Toolkit
+	PresentationToolkit.apply_glass_style(grid)
+	PresentationToolkit.make_prompt_banner(feedback_label, "ANOMALY DETECTION")
+	
 	_generate_grid()
 	execute_render_pipeline()
 
@@ -30,6 +34,10 @@ func _generate_grid():
 	for i in range(4):
 		var btn = grid.get_child(i)
 		btn.disabled = false
+		
+		# Transform into response cards
+		PresentationToolkit.make_response_card(btn, "")
+		
 		if i == correct_idx: btn.text = odd
 		else: btn.text = majority
 		if not btn.pressed.is_connected(_on_answer.bind(i)):

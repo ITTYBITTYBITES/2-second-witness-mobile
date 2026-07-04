@@ -19,8 +19,17 @@ func _apply_specific_rules(rules: Dictionary):
 	target_symbol = rules.get("correct_answer", "◆")
 	noise_symbols = rules.get("wrong_answers", ["⬢", "⬟", "▲", "■", "●", "★", "✖", "✦"])
 	
+	# Standardize UI via Toolkit
+	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))
+	PresentationToolkit.make_prompt_banner(feedback_label, "ISOLATE THE SIGNAL")
+	
 	btn_match.pressed.connect(func(): _on_answer(true))
 	btn_ignore.pressed.connect(func(): _on_answer(false))
+	
+	# Transform buttons into response cards
+	PresentationToolkit.make_response_card(btn_match, "MATCH")
+	PresentationToolkit.make_response_card(btn_ignore, "IGNORE")
+	
 	_setup_round()
 	execute_render_pipeline()
 

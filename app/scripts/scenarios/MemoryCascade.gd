@@ -55,33 +55,38 @@ func _ready():
 	execute_render_pipeline()
 
 func build_ui():
-	print("[MEMORY CASCADE] build_ui(): Initiating UI construction...")
+	print("[MEMORY CASCADE] build_ui(): Initiating Gold Standard UI construction...")
+	
+	# Apply glass style to the main container
+	PresentationToolkit.apply_glass_style(container)
+	
+	# Standardize the prompt/feedback label
+	PresentationToolkit.make_prompt_banner(feedback_label, _initial_feedback_text)
+	
 	spawn_choices()
 
 func spawn_choices():
-	print("[MEMORY CASCADE] spawn_choices(): Instantiating answer buttons...")
+	print("[MEMORY CASCADE] spawn_choices(): Instantiating response cards...")
 	answer_buttons = [btn_left, btn_center, btn_right]
-	print("[MEMORY CASCADE] answer_buttons.size(): ", answer_buttons.size())
 	
+	# Use the toolkit to create "Response Cards" instead of standard buttons
 	for i in range(answer_buttons.size()):
 		var button = answer_buttons[i]
+		var label = "Option " + str(i+1)
+		if i == 0: label = "LEFT"
+		elif i == 1: label = "CENTER"
+		elif i == 2: label = "RIGHT"
+		
+		PresentationToolkit.make_response_card(button, label)
+		
 		button.mouse_filter = Control.MOUSE_FILTER_STOP
 		button.disabled = false
 		button.visible = true
-		button.process_mode = Node.PROCESS_MODE_INHERIT
-		
-		print("[MEMORY CASCADE] Button Text: ", button.text)
-		print("  visible == ", button.visible)
-		print("  disabled == ", button.disabled)
-		print("  mouse_filter == ", button.mouse_filter)
-		print("  process_mode == ", button.process_mode)
-		print("  size == ", button.size)
-		print("  global_position == ", button.global_position)
 		
 		if not button.pressed.is_connected(_on_btn_pressed.bind(i)):
 			button.pressed.connect(_on_btn_pressed.bind(i))
 			
-	print("[MEMORY CASCADE] All interactive controls are visible and enabled. Input signals connected.")
+	print("[MEMORY CASCADE] All interaction cards are now Gold Standard compliant.")
 
 func _on_btn_pressed(val: int):
 	print("[MEMORY CASCADE] Answer button pressed: ", val)
