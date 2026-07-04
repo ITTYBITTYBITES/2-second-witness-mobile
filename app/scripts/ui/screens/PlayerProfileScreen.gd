@@ -101,13 +101,14 @@ func _populate_data():
 	if lifetime_label:
 		lifetime_label.text = "LEVEL %d | XP %d | SESSIONS: %d | STREAK: %d DAYS" % [journey["level"], journey["xp"], journey["sessions"], journey["streak"]]
 	if welcome_label:
-		welcome_label.text = "[color=#2ECC71]" + journey["confidence_title"].to_upper() + "[/color]\n" + journey["confidence_narration"] + "\n\n" + journey["style_narration"]
+		welcome_label.text = journey["confidence_title"].to_upper() + "\n" + journey["confidence_narration"] + "\n\n" + journey["style_narration"]
+		welcome_label.add_theme_color_override("font_color", Color("#2ECC71"))
 
 	# Stage 1: Since Your Last Session
 	var summary_lines = narrator.get_last_session_summary(profile)
 	var sum_text = "[center][color=#4CC9F0]SINCE YOUR LAST SESSION:[/color]\n"
 	for s in summary_lines:
-		sum_text += "• " + s + "\n"
+		sum_text += "• " + str(s).escape_bbcode() + "\n"
 	sum_text += "[/center]"
 	var sum_lbl = RichTextLabel.new()
 	sum_lbl.bbcode_enabled = true
@@ -121,7 +122,7 @@ func _populate_data():
 	if surprise != "":
 		var sur_lbl = RichTextLabel.new()
 		sur_lbl.bbcode_enabled = true
-		sur_lbl.text = "[center][color=#F72585]" + surprise + "[/color][/center]"
+		sur_lbl.text = "[center][color=#F72585]" + str(surprise).escape_bbcode() + "[/color][/center]"
 		sur_lbl.fit_content = true
 		sur_lbl.add_theme_font_size_override("normal_font_size", 18)
 		traits_container.add_child(sur_lbl)
@@ -137,7 +138,7 @@ func _populate_data():
 	for insight_text in insights:
 		var lbl = RichTextLabel.new()
 		lbl.bbcode_enabled = true
-		var styled = "[center][color=#99AAFF]" + insight_text + "[/color][/center]"
+		var styled = "[center][color=#99AAFF]" + str(insight_text).escape_bbcode() + "[/color][/center]"
 		lbl.text = styled
 		lbl.fit_content = true
 		lbl.add_theme_font_size_override("normal_font_size", 18)
@@ -145,7 +146,9 @@ func _populate_data():
 
 	# Stage 5: Continue Your Journey
 	var rec = narrator.get_next_recommendation(profile)
-	var rec_text = "[center][color=#E6B800]CONTINUE YOUR JOURNEY: " + rec["display_title"].to_upper() + "[/color]\n\"" + rec["narrative_reason"] + "\"[/center]"
+	var rec_title = str(rec["display_title"]).to_upper().escape_bbcode()
+	var rec_reason = str(rec["narrative_reason"]).escape_bbcode()
+	var rec_text = "[center][color=#E6B800]CONTINUE YOUR JOURNEY: " + rec_title + "[/color]\n\"" + rec_reason + "\"[/center]"
 	var rec_lbl = RichTextLabel.new()
 	rec_lbl.bbcode_enabled = true
 	rec_lbl.text = rec_text
@@ -185,7 +188,7 @@ func _build_strength_group(header_title: String, items: Array, header_color: Col
 	if items.is_empty(): return
 	var header = RichTextLabel.new()
 	header.bbcode_enabled = true
-	header.text = "[center][color=" + header_color.to_html(false) + "]" + header_title + "[/color][/center]"
+	header.text = "[center][color=#" + header_color.to_html(false) + "]" + str(header_title).escape_bbcode() + "[/color][/center]"
 	header.fit_content = true
 	header.add_theme_font_size_override("normal_font_size", 18)
 	traits_container.add_child(header)
@@ -199,7 +202,8 @@ func _build_strength_group(header_title: String, items: Array, header_color: Col
 		
 		var details = RichTextLabel.new()
 		details.bbcode_enabled = true
-		details.text = "[center][color=#AAAAAA]Attempts: " + str(item["attempts"]) + " | Success Rate: " + item["success_rate"] + " | Avg RT: " + item["avg_rt"] + "\n" + item["trend"] + "[/color][/center]"
+		var details_text = "Attempts: " + str(item["attempts"]) + " | Success Rate: " + str(item["success_rate"]) + " | Avg RT: " + str(item["avg_rt"]) + "\n" + str(item["trend"])
+		details.text = "[center][color=#AAAAAA]" + details_text.escape_bbcode() + "[/color][/center]"
 		details.fit_content = true
 		details.visible = false
 		traits_container.add_child(details)
