@@ -23,6 +23,7 @@ func _ready():
 		return
 		
 	# Standardize UI via Toolkit
+	_style_question_label(sequence_label, 30)
 	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))
 	PresentationToolkit.make_prompt_banner(feedback_label, "CONTINUE THE PATTERN")
 	
@@ -32,6 +33,8 @@ func _ready():
 	# Transform buttons into response cards
 	PresentationToolkit.make_response_card(btn_a, btn_a.text)
 	PresentationToolkit.make_response_card(btn_b, btn_b.text)
+	btn_a.add_theme_font_size_override("font_size", 18)
+	btn_b.add_theme_font_size_override("font_size", 18)
 	
 	_generate_pattern()
 	execute_render_pipeline()
@@ -41,6 +44,7 @@ func _generate_pattern():
 	btn_a.disabled = false
 	btn_b.disabled = false
 	var rules = _scenario_payload.get("rules", {})
+	sequence_label.text = _get_prompt_text(rules, "⬟  ⬟  ⬢  ⬟  ?")
 	var wrong_arr = rules.get("wrong_answers", [])
 	if rules.has("correct_answer") and wrong_arr is Array and wrong_arr.size() > 0:
 		correct_choice = _clean_payload_text(rules.get("correct_answer", "VERIFIED"))
@@ -61,6 +65,8 @@ func _generate_pattern():
 	# Refresh card labels
 	PresentationToolkit.make_response_card(btn_a, btn_a.text)
 	PresentationToolkit.make_response_card(btn_b, btn_b.text)
+	btn_a.add_theme_font_size_override("font_size", 18)
+	btn_b.add_theme_font_size_override("font_size", 18)
 	
 	_start_ticks_msec = Time.get_ticks_msec()
 

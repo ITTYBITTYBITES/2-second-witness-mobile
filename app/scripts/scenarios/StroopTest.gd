@@ -25,6 +25,7 @@ func _ready():
 		return
 
 	# Apply Gold Standard UI
+	_style_question_label(target_label, 30)
 	PresentationToolkit.apply_glass_style(container)
 	PresentationToolkit.make_prompt_banner(feedback_label, "IDENTIFY TEXT COLOR")
 	for i in range(container.get_child_count()):
@@ -37,6 +38,8 @@ func _ready():
 
 func _generate_stroop():
 	# Use toolkit for a cleaner feedback label
+	var rules = _scenario_payload.get("rules", {})
+	prompt_word = _get_prompt_text(rules, "COLOR")
 	feedback_label.text = "Select the TEXT COLOR, not the word."
 	var word_idx = _deterministic_rng.randi() % 4
 	target_color_idx = _deterministic_rng.randi() % 4

@@ -37,6 +37,11 @@ func _apply_specific_rules(rules: Dictionary):
 	execute_render_pipeline()
 
 func _setup_round():
+	var rules = _scenario_payload.get("rules", {})
+	target_symbol = _clean_payload_text(rules.get("correct_answer", target_symbol))
+	noise_symbols = rules.get("wrong_answers", noise_symbols)
+	for i in range(noise_symbols.size()):
+		noise_symbols[i] = _clean_payload_text(noise_symbols[i])
 	for c in noise_container.get_children(): c.queue_free()
 	feedback_label.text = "Find: " + target_symbol
 	btn_match.disabled = false; btn_ignore.disabled = false

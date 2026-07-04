@@ -23,6 +23,7 @@ func _ready():
 		return
 		
 	# Standardize UI via Toolkit
+	_style_question_label(target_label, 30)
 	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))
 	PresentationToolkit.make_prompt_banner(target_label, "CLASSIFY TARGET")
 	
@@ -55,6 +56,10 @@ func _setup_round():
 		btn_organic.text = wrong
 		btn_mechanical.text = correct
 		target_is_organic = false
+	PresentationToolkit.make_response_card(btn_organic, btn_organic.text)
+	PresentationToolkit.make_response_card(btn_mechanical, btn_mechanical.text)
+	btn_organic.add_theme_font_size_override("font_size", 18)
+	btn_mechanical.add_theme_font_size_override("font_size", 18)
 		
 	_start_ticks_msec = Time.get_ticks_msec()
 	target_label.modulate.a = 1.0

@@ -10,6 +10,7 @@ var _scenario_payload: Dictionary = {}
 var _deterministic_rng: RandomNumberGenerator
 var current_trial: int = 1
 var target_trials: int = 5
+var _used_content_ids: Dictionary = {}
 
 func normalize_id(id: Variant) -> String:
 	return str(id)
@@ -27,6 +28,59 @@ func _get_prompt_text(rules: Dictionary, fallback: String = "OBSERVE") -> String
 		prompt = rules.get("legacy_prompt", fallback)
 	var clean = _clean_payload_text(prompt)
 	return clean if clean != "" else fallback
+
+func _remember_current_content_id():
+	var sid = normalize_id(_scenario_payload.get("id", ""))
+	if sid != "":
+		_used_content_ids[sid] = true
+
+func _refresh_payload_for_current_trial():
+	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	if not registry or not registry.has_method("get_all_scenarios_in_world"):
+		return
+	var u_id = normalize_id(_scenario_payload.get("universe", ""))
+	var w_id = normalize_id(_scenario_payload.get("world", ""))
+	var t_id = normalize_id(_scenario_payload.get("type", ""))
+	if u_id == "" or w_id == "" or t_id == "":
+		return
+	var all_items = registry.get_all_scenarios_in_world(u_id, w_id)
+	var pool: Array = []
+	for item in all_items:
+		if item is Dictionary and normalize_id(item.get("type", "")) == t_id:
+			pool.append(item)
+	if pool.size() <= 1:
+		return
+	var start_idx = abs((normalize_id(_deterministic_rng.seed if _deterministic_rng else 0) + ":" + t_id + ":" + str(current_trial)).hash()) % pool.size()
+	var selected: Dictionary = {}
+	for offset in range(pool.size()):
+		var candidate = pool[(start_idx + offset) % pool.size()]
+		var c_id = normalize_id(candidate.get("id", ""))
+		if not _used_content_ids.has(c_id):
+			selected = candidate
+			break
+	if selected.is_empty():
+		selected = pool[start_idx]
+	_scenario_payload = selected.duplicate(true)
+	_scenario_payload["id"] = normalize_id(_scenario_payload.get("id", t_id))
+	_scenario_payload["universe"] = u_id
+	_scenario_payload["world"] = w_id
+	_scenario_payload["type"] = t_id
+	_remember_current_content_id()
+	print("[BASE SCENARIO] Refreshed trial content: ", _scenario_payload["id"])
+
+func _style_question_label(lbl: Label, font_size: int = 30):
+	if lbl == null:
+		return
+	lbl.set_anchors_preset(Control.PRESET_TOP_WIDE)
+	lbl.offset_left = 96
+	lbl.offset_top = 96
+	lbl.offset_right = -96
+	lbl.offset_bottom = 236
+	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	lbl.clip_text = false
+	lbl.add_theme_font_size_override("font_size", font_size)
 
 func _enter_tree():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
@@ -51,6 +105,7 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 	_scenario_payload["universe"] = normalize_id(payload.get("universe", "unknown"))
 	_scenario_payload["world"] = normalize_id(payload.get("world", "unknown"))
 	_scenario_payload["type"] = normalize_id(payload.get("type", "unknown"))
+	_remember_current_content_id()
 
 	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
 	if orch and "current_exposure_index" in orch and "current_mission" in orch and orch.current_mission.has("mechanics_chain"):
@@ -355,6 +410,7 @@ func update_progress_display():
 
 func advance_to_next_trial():
 	print("[BASE SCENARIO] Advancing scenario to Trial %d / %d" % [current_trial, target_trials])
+	_refresh_payload_for_current_trial()
 	if is_instance_valid(_cockpit_footer_status):
 		_cockpit_footer_status.text = "[center][color=#00D4FF]STATUS: OBSERVING STREAM — AWAITING WITNESS RESPONSE...[/color][/center]"
 	if is_instance_valid(_cockpit_header_panel):
