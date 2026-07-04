@@ -102,17 +102,36 @@ func _ready():
 	if BootTracer: BootTracer.log_init("VisualIdentityManager")
 	print("[VISUAL IDENTITY] Online. Binding content graph to visual identity layer.")
 
+func _coerce_color(value: Variant, fallback: Color) -> Color:
+	if value is Color:
+		return value
+	if typeof(value) == TYPE_STRING:
+		var text = str(value).strip_edges()
+		if text != "":
+			return Color(text)
+	return fallback
+
+func _normalize_palette(identity: Dictionary) -> Dictionary:
+	if not identity.has("palette") or not (identity["palette"] is Dictionary):
+		identity["palette"] = {}
+	var palette: Dictionary = identity["palette"]
+	palette["bg"] = _coerce_color(palette.get("bg", Color("#0B1320")), Color("#0B1320"))
+	palette["primary"] = _coerce_color(palette.get("primary", Color("#00D4FF")), Color("#00D4FF"))
+	palette["accent"] = _coerce_color(palette.get("accent", Color("#80E5FF")), Color("#80E5FF"))
+	identity["palette"] = palette
+	return identity
+
 func get_universe_identity(universe_id: String) -> Dictionary:
 	var u_id = str(universe_id).to_lower()
 	if universe_identities.has(u_id):
-		return universe_identities[u_id].duplicate(true)
+		return _normalize_palette(universe_identities[u_id].duplicate(true))
 	var base = universe_identities["science_lab"].duplicate(true)
 	base["display_name"] = u_id.capitalize().replace("_", " ")
 	if FileAccess.file_exists("res://assets/textures/ui/v1/banner_" + u_id + ".png"):
 		base["banner"] = "res://assets/textures/ui/v1/banner_" + u_id + ".png"
 	if FileAccess.file_exists("res://assets/textures/env/bg_" + u_id + ".png"):
 		base["background"] = "res://assets/textures/env/bg_" + u_id + ".png"
-	return base
+	return _normalize_palette(base)
 
 func get_world_identity(universe_id: String, world_id: String) -> Dictionary:
 	var base_id = get_universe_identity(universe_id)
@@ -122,11 +141,11 @@ func get_world_identity(universe_id: String, world_id: String) -> Dictionary:
 	
 	if not cust_profile.is_empty() and cust_profile.get("world", "") == w_id:
 		if cust_profile.has("ui") and cust_profile["ui"].has("border_color"):
-			base_id["palette"]["primary"] = cust_profile["ui"]["border_color"]
+			base_id["palette"]["primary"] = _coerce_color(cust_profile["ui"]["border_color"], base_id["palette"].get("primary", Color("#00D4FF")))
 		if cust_profile.has("lens") and cust_profile["lens"].has("colors"):
 			var c = cust_profile["lens"]["colors"]
-			if c.has("primary"): base_id["palette"]["accent"] = c["primary"]
-			if c.has("bg"): base_id["palette"]["bg"] = c["bg"]
+			if c.has("primary"): base_id["palette"]["accent"] = _coerce_color(c["primary"], base_id["palette"].get("accent", Color("#80E5FF")))
+			if c.has("bg"): base_id["palette"]["bg"] = _coerce_color(c["bg"], base_id["palette"].get("bg", Color("#0B1320")))
 		base_id["world_sub_identity"] = w_id.capitalize().replace("_", " ")
 		base_id["world_tint_alpha"] = cust_profile.get("ui", {}).get("glass_opacity", 0.18)
 	elif world_overrides.has(w_id):
@@ -139,7 +158,7 @@ func get_world_identity(universe_id: String, world_id: String) -> Dictionary:
 	else:
 		base_id["world_sub_identity"] = w_id.capitalize().replace("_", " ")
 		base_id["world_tint_alpha"] = 0.15
-	return base_id
+	return _normalize_palette(base_id)
 
 func resolve_and_apply_identity(universe_id: String, world_id: String = "") -> Dictionary:
 	active_universe_id = universe_id
