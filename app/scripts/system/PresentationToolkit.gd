@@ -8,8 +8,6 @@ extends Node
 # while maintaining high performance on Android.
 # ---------------------------------------------------------
 
-class_name PresentationToolkit
-
 # DESIGN TOKENS (Centralized for easy global adjustment)
 const GLASS_BG_COLOR = Color(0.05, 0.05, 0.10, 0.70)
 const GLASS_BORDER_COLOR = Color(0.80, 0.80, 1.00, 0.40)
@@ -24,7 +22,7 @@ const COCKPIT_SECONDARY_BORDER = Color(0.18, 0.28, 0.42, 0.55)
 const CORNER_RADIUS = 12
 
 ## Creates a reusable glass StyleBoxFlat from the canonical design tokens.
-static func make_glass_style(
+func make_glass_style(
 	bg_color: Color = GLASS_BG_COLOR,
 	accent_color: Color = GLASS_BORDER_COLOR,
 	border_width: int = 2,
@@ -43,7 +41,7 @@ static func make_glass_style(
 	return style
 
 ## Creates or reuses a sibling background panel for Controls that do not draw StyleBox panels.
-static func _ensure_background_panel(node: Control) -> Panel:
+func _ensure_background_panel(node: Control) -> Panel:
 	if node == null:
 		return null
 	var parent = node.get_parent()
@@ -85,7 +83,7 @@ static func _ensure_background_panel(node: Control) -> Panel:
 
 ## Applies the canonical glass panel treatment to a Panel/PanelContainer.
 ## For generic Controls, a non-interactive sibling backdrop is created behind the control.
-static func apply_glass_style(
+func apply_glass_style(
 	node: Control,
 	accent_color: Color = GLASS_BORDER_COLOR,
 	bg_color: Color = GLASS_BG_COLOR,
@@ -106,7 +104,7 @@ static func apply_glass_style(
 	return target
 
 ## Applies the full-width cockpit/HUD bar treatment used by BaseScenario.
-static func apply_cockpit_bar_style(panel: PanelContainer, edge: String = "bottom", accent_color: Color = ACCENT_GLOW_COLOR) -> void:
+func apply_cockpit_bar_style(panel: PanelContainer, edge: String = "bottom", accent_color: Color = ACCENT_GLOW_COLOR) -> void:
 	if panel == null:
 		return
 	var style = make_glass_style(COCKPIT_GLASS_BG, COCKPIT_SECONDARY_BORDER, 1, 0, 0)
@@ -126,7 +124,7 @@ static func apply_cockpit_bar_style(panel: PanelContainer, edge: String = "botto
 	panel.add_theme_stylebox_override("panel", style)
 
 ## Sets cockpit bar accent state without leaking StyleBox details into scenario code.
-static func set_cockpit_bar_state(panel: PanelContainer, edge: String = "bottom", state: String = "neutral") -> void:
+func set_cockpit_bar_state(panel: PanelContainer, edge: String = "bottom", state: String = "neutral") -> void:
 	var accent = ACCENT_GLOW_COLOR
 	if state == "success":
 		accent = SUCCESS_COLOR
@@ -135,7 +133,7 @@ static func set_cockpit_bar_state(panel: PanelContainer, edge: String = "bottom"
 	apply_cockpit_bar_style(panel, edge, accent)
 
 ## Standard typography for RichTextLabel telemetry and cockpit text.
-static func style_rich_text_label(lbl: RichTextLabel, font_size: int = 14, min_width: float = 0.0, expand: bool = false) -> void:
+func style_rich_text_label(lbl: RichTextLabel, font_size: int = 14, min_width: float = 0.0, expand: bool = false) -> void:
 	if lbl == null:
 		return
 	lbl.bbcode_enabled = true
@@ -152,7 +150,7 @@ static func style_rich_text_label(lbl: RichTextLabel, font_size: int = 14, min_w
 		lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 
 ## Transforms a standard Button into a "Response Card".
-static func make_response_card(btn: Button, label_text: String, accent_color: Color = ACCENT_GLOW_COLOR) -> void:
+func make_response_card(btn: Button, label_text: String, accent_color: Color = ACCENT_GLOW_COLOR) -> void:
 	if btn == null:
 		return
 	btn.text = label_text
@@ -177,7 +175,7 @@ static func make_response_card(btn: Button, label_text: String, accent_color: Co
 	btn.add_theme_font_size_override("font_size", 22)
 
 ## Standardizes the "Prompt Banner" for scenario instructions without reparenting scene nodes.
-static func make_prompt_banner(lbl: Label, text: String) -> Control:
+func make_prompt_banner(lbl: Label, text: String) -> Control:
 	if lbl == null:
 		return null
 	lbl.text = text
@@ -190,7 +188,7 @@ static func make_prompt_banner(lbl: Label, text: String) -> Control:
 	return apply_glass_style(lbl, Color(0.40, 0.40, 0.60, 0.50), Color(GLASS_BG_COLOR.r, GLASS_BG_COLOR.g, GLASS_BG_COLOR.b, 0.45), 1, CORNER_RADIUS)
 
 ## Creates a "Telemetry" label for RT, Consistency, etc.
-static func make_telemetry_label(lbl: Label, prefix: String, value: String) -> void:
+func make_telemetry_label(lbl: Label, prefix: String, value: String) -> void:
 	if lbl == null:
 		return
 	lbl.text = "%s : %s" % [prefix.to_upper(), value]

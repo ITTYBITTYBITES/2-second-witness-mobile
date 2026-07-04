@@ -65,5 +65,5 @@ func _find_nodes_of_class(root: Node, target_class: String) -> Array:
 	for child in root.get_children():
 		if child.get_class() == target_class:
 			result.append(child)
-		result.append_array(_find_nodes_of_class(child, class_name))
+		result.append_array(_find_nodes_of_class(child, target_class))
 	return result

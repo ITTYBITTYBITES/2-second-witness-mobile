@@ -60,8 +60,8 @@ func _trigger_screen_shake():
 		camera.v_offset = 0
 
 func _trigger_haptic(type: String):
-	# Implementation for Android Haptics via Input.vibrate()
-	if type == "light":
-		Input.vibrate_duration(50)
-	elif type == "heavy":
-		Input.vibrate_duration(150)
+	# Godot 4 exposes handheld vibration as Input.vibrate_handheld().
+	# Use call() so desktop/editor runs and older platform exports fail safely.
+	var duration_ms = 50 if type == "light" else 150
+	if Input.has_method("vibrate_handheld"):
+		Input.call("vibrate_handheld", duration_ms)
