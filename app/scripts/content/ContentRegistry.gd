@@ -130,6 +130,14 @@ func get_all_scenarios_in_world(universe_id: Variant, world_id: Variant) -> Arra
 			result.append_array(runtime_index[u_id][w_id][t_key])
 	return result
 
+func get_available_types_in_world(universe_id: Variant, world_id: Variant) -> Array:
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	_ensure_content_loaded_for(u_id, w_id)
+	if runtime_index.has(u_id) and runtime_index[u_id].has(w_id):
+		return runtime_index[u_id][w_id].keys()
+	return []
+
 func get_scenario_count(universe_id: Variant = "all") -> int:
 	var count = 0
 	for u_key in runtime_index.keys():
