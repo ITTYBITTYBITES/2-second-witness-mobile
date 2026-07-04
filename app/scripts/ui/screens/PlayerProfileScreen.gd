@@ -37,6 +37,13 @@ func _ready():
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()
 
+func _escape_bbcode(value: Variant) -> String:
+	var text = str(value)
+	text = text.replace("[", "__BB_LB__")
+	text = text.replace("]", "__BB_RB__")
+	text = text.replace("__BB_LB__", "[lb]")
+	return text.replace("__BB_RB__", "[rb]")
+
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	if vim and vim.has_method("apply_screen_identity"):
@@ -108,7 +115,7 @@ func _populate_data():
 	var summary_lines = narrator.get_last_session_summary(profile)
 	var sum_text = "[center][color=#4CC9F0]SINCE YOUR LAST SESSION:[/color]\n"
 	for s in summary_lines:
-		sum_text += "• " + str(s).escape_bbcode() + "\n"
+		sum_text += "• " + _escape_bbcode(s) + "\n"
 	sum_text += "[/center]"
 	var sum_lbl = RichTextLabel.new()
 	sum_lbl.bbcode_enabled = true
@@ -122,7 +129,7 @@ func _populate_data():
 	if surprise != "":
 		var sur_lbl = RichTextLabel.new()
 		sur_lbl.bbcode_enabled = true
-		sur_lbl.text = "[center][color=#F72585]" + str(surprise).escape_bbcode() + "[/color][/center]"
+		sur_lbl.text = "[center][color=#F72585]" + _escape_bbcode(surprise) + "[/color][/center]"
 		sur_lbl.fit_content = true
 		sur_lbl.add_theme_font_size_override("normal_font_size", 18)
 		traits_container.add_child(sur_lbl)
@@ -138,7 +145,7 @@ func _populate_data():
 	for insight_text in insights:
 		var lbl = RichTextLabel.new()
 		lbl.bbcode_enabled = true
-		var styled = "[center][color=#99AAFF]" + str(insight_text).escape_bbcode() + "[/color][/center]"
+		var styled = "[center][color=#99AAFF]" + _escape_bbcode(insight_text) + "[/color][/center]"
 		lbl.text = styled
 		lbl.fit_content = true
 		lbl.add_theme_font_size_override("normal_font_size", 18)
@@ -146,8 +153,8 @@ func _populate_data():
 
 	# Stage 5: Continue Your Journey
 	var rec = narrator.get_next_recommendation(profile)
-	var rec_title = str(rec["display_title"]).to_upper().escape_bbcode()
-	var rec_reason = str(rec["narrative_reason"]).escape_bbcode()
+	var rec_title = _escape_bbcode(str(rec["display_title"]).to_upper())
+	var rec_reason = _escape_bbcode(rec["narrative_reason"])
 	var rec_text = "[center][color=#E6B800]CONTINUE YOUR JOURNEY: " + rec_title + "[/color]\n\"" + rec_reason + "\"[/center]"
 	var rec_lbl = RichTextLabel.new()
 	rec_lbl.bbcode_enabled = true
@@ -188,7 +195,7 @@ func _build_strength_group(header_title: String, items: Array, header_color: Col
 	if items.is_empty(): return
 	var header = RichTextLabel.new()
 	header.bbcode_enabled = true
-	header.text = "[center][color=#" + header_color.to_html(false) + "]" + str(header_title).escape_bbcode() + "[/color][/center]"
+	header.text = "[center][color=#" + header_color.to_html(false) + "]" + _escape_bbcode(header_title) + "[/color][/center]"
 	header.fit_content = true
 	header.add_theme_font_size_override("normal_font_size", 18)
 	traits_container.add_child(header)
@@ -203,7 +210,7 @@ func _build_strength_group(header_title: String, items: Array, header_color: Col
 		var details = RichTextLabel.new()
 		details.bbcode_enabled = true
 		var details_text = "Attempts: " + str(item["attempts"]) + " | Success Rate: " + str(item["success_rate"]) + " | Avg RT: " + str(item["avg_rt"]) + "\n" + str(item["trend"])
-		details.text = "[center][color=#AAAAAA]" + details_text.escape_bbcode() + "[/color][/center]"
+		details.text = "[center][color=#AAAAAA]" + _escape_bbcode(details_text) + "[/color][/center]"
 		details.fit_content = true
 		details.visible = false
 		traits_container.add_child(details)
