@@ -4,28 +4,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Blueprint",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 1",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Blueprint"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Blueprint"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -35,28 +35,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Drafting Table",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 2",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Drafting Table"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Drafting Table"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -66,28 +66,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "T-Square",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 3",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for T-Square"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of T-Square"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -97,28 +97,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Set Square",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 4",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Set Square"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Set Square"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -128,28 +128,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Compass",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 5",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Compass"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Compass"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -159,28 +159,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Divider",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 6",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Divider"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Divider"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -190,28 +190,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Scale Ruler",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 7",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Scale Ruler"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Scale Ruler"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -221,28 +221,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Parallel Bar",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 8",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Parallel Bar"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Parallel Bar"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -252,28 +252,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Tracing Paper",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 9",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Tracing Paper"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Tracing Paper"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -283,28 +283,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Technical Pen",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 10",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Technical Pen"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Technical Pen"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -314,28 +314,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Ink Bottle",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 11",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Ink Bottle"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Ink Bottle"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -345,28 +345,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Eraser Shield",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 12",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Eraser Shield"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Eraser Shield"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -376,28 +376,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Drafting Brush",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 13",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Drafting Brush"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Drafting Brush"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -407,28 +407,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Pantograph",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 14",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Pantograph"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Pantograph"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -438,28 +438,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Theodolite",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 15",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Theodolite"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Theodolite"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -469,28 +469,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Transit",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 16",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Transit"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Transit"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -500,28 +500,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Level",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 17",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Level"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Level"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -531,28 +531,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Plumb Bob",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 18",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plumb Bob"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plumb Bob"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -562,28 +562,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Tape Measure",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 19",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Tape Measure"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Tape Measure"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -593,28 +593,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Laser Rangefinder",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 20",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Laser Rangefinder"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Laser Rangefinder"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -624,28 +624,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "3D Scanner",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 21",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for 3D Scanner"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of 3D Scanner"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -655,28 +655,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "GPS Receiver",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 22",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for GPS Receiver"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of GPS Receiver"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -686,28 +686,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "CAD Software",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 23",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for CAD Software"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of CAD Software"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -717,28 +717,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "BIM Model",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 24",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for BIM Model"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of BIM Model"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -748,28 +748,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Rendering Engine",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 25",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Rendering Engine"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Rendering Engine"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -779,28 +779,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "VR Goggles",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 26",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for VR Goggles"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of VR Goggles"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -810,28 +810,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "3D Printer",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 27",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for 3D Printer"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of 3D Printer"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -841,28 +841,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "CNC Router",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 28",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for CNC Router"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of CNC Router"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -872,28 +872,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Plotter",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 29",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plotter"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plotter"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -903,28 +903,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Light Box",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 30",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Light Box"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Light Box"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -934,28 +934,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Stencil",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 31",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Stencil"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Stencil"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -965,28 +965,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "French Curve",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 32",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for French Curve"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of French Curve"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -996,28 +996,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Flexicurve",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 33",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Flexicurve"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Flexicurve"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1027,28 +1027,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Calculator",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 34",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Calculator"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Calculator"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1058,28 +1058,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Slide Rule",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 35",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Slide Rule"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Slide Rule"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1089,28 +1089,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Protractor",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 36",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Protractor"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Protractor"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1120,28 +1120,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Triangular Scale",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 37",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Triangular Scale"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Triangular Scale"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1151,28 +1151,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Lettering Guide",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 38",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Lettering Guide"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Lettering Guide"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1182,28 +1182,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Model Board",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 39",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Model Board"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Model Board"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1213,28 +1213,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Foam Core",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 40",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Foam Core"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Foam Core"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1244,28 +1244,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "X-Acto Knife",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 41",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for X-Acto Knife"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of X-Acto Knife"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1275,28 +1275,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Glue Gun",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 42",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Glue Gun"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Glue Gun"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1306,28 +1306,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Acrylic Sheet",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 43",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Acrylic Sheet"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Acrylic Sheet"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1337,28 +1337,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Wire Armature",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 44",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Wire Armature"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Wire Armature"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1368,28 +1368,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Wood Block",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 45",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Wood Block"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Wood Block"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1399,28 +1399,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Clay Model",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 46",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Clay Model"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Clay Model"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1430,28 +1430,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Plaster Cast",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 47",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plaster Cast"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plaster Cast"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1461,28 +1461,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Photography Arch",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 48",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Photography Arch"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Photography Arch"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1492,28 +1492,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Survey Stake",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 49",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Survey Stake"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Survey Stake"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1523,28 +1523,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Site Map",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Architectural Tools Entity 50",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Site Map"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Site Map"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar architectural_tools form",
-      "Related architectural_tools structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1554,23 +1554,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 51",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 51",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1578,23 +1585,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 52",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 52",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1602,23 +1616,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 53",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 53",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1626,23 +1647,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 54",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 54",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1650,23 +1678,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 55",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 55",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1674,23 +1709,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 56",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 56",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1698,23 +1740,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 57",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 57",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1722,23 +1771,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 58",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 58",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1746,23 +1802,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 59",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 59",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1770,23 +1833,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 60",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 60",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1794,23 +1864,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 61",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 61",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1818,23 +1895,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 62",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 62",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1842,23 +1926,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 63",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 63",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1866,23 +1957,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 64",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 64",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1890,23 +1988,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 65",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 65",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1914,23 +2019,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 66",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 66",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1938,23 +2050,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 67",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 67",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1962,23 +2081,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 68",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 68",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1986,23 +2112,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 69",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 69",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2010,23 +2143,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 70",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 70",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,23 +2174,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 71",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 71",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2058,23 +2205,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 72",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 72",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2082,23 +2236,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 73",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 73",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2106,23 +2267,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 74",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 74",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2130,23 +2298,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 75",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 75",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2154,23 +2329,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 76",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 76",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2178,23 +2360,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 77",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 77",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2202,23 +2391,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 78",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 78",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2226,23 +2422,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 79",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 79",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2250,23 +2453,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 80",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 80",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2274,23 +2484,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 81",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 81",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2298,23 +2515,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 82",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 82",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2322,23 +2546,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 83",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 83",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2346,23 +2577,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 84",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 84",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2370,23 +2608,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 85",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 85",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2394,23 +2639,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 86",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 86",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2418,23 +2670,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 87",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 87",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2442,23 +2701,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 88",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 88",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2466,23 +2732,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 89",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 89",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2490,23 +2763,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 90",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 90",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2514,23 +2794,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 91",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 91",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2538,23 +2825,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 92",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 92",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2562,23 +2856,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 93",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 93",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2586,23 +2887,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 94",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 94",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2610,23 +2918,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 95",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 95",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2634,23 +2949,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 96",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 96",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2658,23 +2980,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 97",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 97",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2682,23 +3011,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 98",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 98",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2706,23 +3042,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 99",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 99",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,23 +3073,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "architectural_tools",
-    "entity": "Architectural Tools Concept 100",
-    "entity_type": "Concept",
+    "entity": "Architectural Tools Entity 100",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   }
 ]

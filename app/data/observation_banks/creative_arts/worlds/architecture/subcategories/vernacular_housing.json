@@ -4,28 +4,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Adobe",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 1",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Adobe"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Adobe"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -35,28 +35,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Wattle and Daub",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 2",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Wattle and Daub"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Wattle and Daub"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -66,28 +66,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Thatch",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 3",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Thatch"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Thatch"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -97,28 +97,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Cob",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 4",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cob"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cob"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -128,28 +128,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Rammed Earth",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 5",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Rammed Earth"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Rammed Earth"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -159,28 +159,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Log Cabin",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 6",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Log Cabin"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Log Cabin"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -190,28 +190,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Igloo",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 7",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Igloo"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Igloo"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -221,28 +221,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Teepee",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 8",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Teepee"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Teepee"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -252,28 +252,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Yurt",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 9",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Yurt"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Yurt"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -283,28 +283,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Longhouse",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 10",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Longhouse"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Longhouse"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -314,28 +314,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Pueblo",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 11",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Pueblo"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Pueblo"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -345,28 +345,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Cliff Dwelling",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 12",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cliff Dwelling"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cliff Dwelling"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -376,28 +376,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Stilt House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 13",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Stilt House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Stilt House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -407,28 +407,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Houseboat",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 14",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Houseboat"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Houseboat"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -438,28 +438,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Cave Dwelling",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 15",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cave Dwelling"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cave Dwelling"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -469,28 +469,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Turf House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 16",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Turf House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Turf House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -500,28 +500,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Stone Croft",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 17",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Stone Croft"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Stone Croft"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -531,28 +531,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Brick Masonry",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 18",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Brick Masonry"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Brick Masonry"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -562,28 +562,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Half-Timbering",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 19",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Half-Timbering"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Half-Timbering"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -593,28 +593,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Shingle Cladding",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 20",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Shingle Cladding"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Shingle Cladding"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -624,28 +624,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Clapboard",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 21",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Clapboard"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Clapboard"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -655,28 +655,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Stucco",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 22",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Stucco"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Stucco"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -686,28 +686,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Terracotta Tile",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 23",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Terracotta Tile"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Terracotta Tile"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -717,28 +717,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Slate Roof",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 24",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Slate Roof"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Slate Roof"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -748,28 +748,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Corrugated Iron",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 25",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Corrugated Iron"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Corrugated Iron"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -779,28 +779,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Courtyard House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 26",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Courtyard House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Courtyard House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -810,28 +810,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Compound",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 27",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Compound"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Compound"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -841,28 +841,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Terrace House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 28",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Terrace House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Terrace House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -872,28 +872,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Row House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 29",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Row House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Row House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -903,28 +903,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Shotgun House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 30",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Shotgun House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Shotgun House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -934,28 +934,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Bungalow",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 31",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Bungalow"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Bungalow"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -965,28 +965,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Cape Cod",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 32",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cape Cod"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cape Cod"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -996,28 +996,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Saltbox",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 33",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Saltbox"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Saltbox"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1027,28 +1027,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Tudor Revival",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 34",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Tudor Revival"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Tudor Revival"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1058,28 +1058,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Victorian",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 35",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Victorian"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Victorian"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1089,28 +1089,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Edwardian",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 36",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Edwardian"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Edwardian"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1120,28 +1120,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Art Deco House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 37",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Art Deco House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Art Deco House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1151,28 +1151,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Mid-Century Modern",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 38",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Mid-Century Modern"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Mid-Century Modern"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1182,28 +1182,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Ranch Style",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 39",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Ranch Style"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Ranch Style"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1213,28 +1213,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Split Level",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 40",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Split Level"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Split Level"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1244,28 +1244,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Loft",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 41",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Loft"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Loft"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1275,28 +1275,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Penthouse",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 42",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Penthouse"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Penthouse"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1306,28 +1306,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Studio",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 43",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Studio"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Studio"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1337,28 +1337,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Duplex",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 44",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Duplex"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Duplex"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1368,28 +1368,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Townhome",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 45",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Townhome"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Townhome"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1399,28 +1399,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Social Housing",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 46",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Social Housing"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Social Housing"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1430,28 +1430,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Tiny House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 47",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Tiny House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Tiny House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1461,28 +1461,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Container Home",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 48",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Container Home"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Container Home"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1492,28 +1492,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Earthship",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 49",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Earthship"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Earthship"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1523,28 +1523,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Passive House",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Vernacular Housing Entity 50",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Passive House"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Passive House"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar vernacular_housing form",
-      "Related vernacular_housing structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1554,23 +1554,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 51",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 51",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1578,23 +1585,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 52",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 52",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1602,23 +1616,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 53",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 53",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1626,23 +1647,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 54",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 54",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1650,23 +1678,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 55",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 55",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1674,23 +1709,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 56",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 56",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1698,23 +1740,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 57",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 57",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1722,23 +1771,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 58",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 58",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1746,23 +1802,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 59",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 59",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1770,23 +1833,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 60",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 60",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1794,23 +1864,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 61",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 61",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1818,23 +1895,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 62",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 62",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1842,23 +1926,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 63",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 63",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1866,23 +1957,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 64",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 64",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1890,23 +1988,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 65",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 65",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1914,23 +2019,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 66",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 66",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1938,23 +2050,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 67",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 67",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1962,23 +2081,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 68",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 68",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1986,23 +2112,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 69",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 69",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2010,23 +2143,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 70",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 70",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,23 +2174,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 71",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 71",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2058,23 +2205,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 72",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 72",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2082,23 +2236,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 73",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 73",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2106,23 +2267,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 74",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 74",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2130,23 +2298,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 75",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 75",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2154,23 +2329,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 76",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 76",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2178,23 +2360,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 77",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 77",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2202,23 +2391,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 78",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 78",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2226,23 +2422,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 79",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 79",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2250,23 +2453,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 80",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 80",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2274,23 +2484,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 81",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 81",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2298,23 +2515,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 82",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 82",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2322,23 +2546,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 83",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 83",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2346,23 +2577,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 84",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 84",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2370,23 +2608,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 85",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 85",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2394,23 +2639,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 86",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 86",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2418,23 +2670,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 87",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 87",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2442,23 +2701,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 88",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 88",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2466,23 +2732,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 89",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 89",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2490,23 +2763,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 90",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 90",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2514,23 +2794,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 91",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 91",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2538,23 +2825,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 92",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 92",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2562,23 +2856,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 93",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 93",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2586,23 +2887,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 94",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 94",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2610,23 +2918,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 95",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 95",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2634,23 +2949,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 96",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 96",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2658,23 +2980,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 97",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 97",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2682,23 +3011,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 98",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 98",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2706,23 +3042,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 99",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 99",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,23 +3073,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "vernacular_housing",
-    "entity": "Vernacular Housing Concept 100",
-    "entity_type": "Concept",
+    "entity": "Vernacular Housing Entity 100",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   }
 ]

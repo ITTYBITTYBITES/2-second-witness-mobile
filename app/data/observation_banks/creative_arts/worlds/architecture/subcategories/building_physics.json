@@ -4,28 +4,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Gravity",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 1",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Gravity"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Gravity"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -35,28 +35,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Compression",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 2",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Compression"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Compression"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -66,28 +66,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Tension",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 3",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Tension"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Tension"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -97,28 +97,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Shear",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 4",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Shear"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Shear"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -128,28 +128,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Torsion",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 5",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Torsion"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Torsion"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -159,28 +159,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Bending",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 6",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Bending"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Bending"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -190,28 +190,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Stress",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 7",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Stress"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Stress"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -221,28 +221,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Strain",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 8",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Strain"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Strain"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -252,28 +252,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Elasticity",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 9",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Elasticity"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Elasticity"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -283,28 +283,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Plasticity",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 10",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plasticity"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plasticity"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -314,28 +314,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Ductility",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 11",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Ductility"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Ductility"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -345,28 +345,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Brittleness",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 12",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Brittleness"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Brittleness"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -376,28 +376,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Load Bearing",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 13",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Load Bearing"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Load Bearing"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -407,28 +407,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Dead Load",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 14",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Dead Load"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Dead Load"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -438,28 +438,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Live Load",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 15",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Live Load"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Live Load"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -469,28 +469,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Wind Load",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 16",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Wind Load"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Wind Load"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -500,28 +500,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Snow Load",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 17",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Snow Load"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Snow Load"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -531,28 +531,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Seismic Load",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 18",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Seismic Load"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Seismic Load"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -562,28 +562,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Thermal Expansion",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 19",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Thermal Expansion"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Thermal Expansion"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -593,28 +593,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Thermal Conductivity",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 20",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Thermal Conductivity"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Thermal Conductivity"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -624,28 +624,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Insulation",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 21",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Insulation"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Insulation"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -655,28 +655,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "R-Value",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 22",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for R-Value"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of R-Value"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -686,28 +686,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "U-Value",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 23",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for U-Value"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of U-Value"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -717,28 +717,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Vapor Barrier",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 24",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Vapor Barrier"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Vapor Barrier"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -748,28 +748,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Air Sealing",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 25",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Air Sealing"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Air Sealing"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -779,28 +779,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Acoustics",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 26",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Acoustics"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Acoustics"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -810,28 +810,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Sound Absorption",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 27",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Sound Absorption"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Sound Absorption"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -841,28 +841,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Reverberation",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 28",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Reverberation"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Reverberation"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -872,28 +872,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Illumination",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 29",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Illumination"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Illumination"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -903,28 +903,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Daylighting",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 30",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Daylighting"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Daylighting"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -934,28 +934,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Glow",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 31",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Glow"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Glow"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -965,28 +965,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Glare",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 32",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Glare"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Glare"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -996,28 +996,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Ventilation",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 33",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Ventilation"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Ventilation"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1027,28 +1027,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Stack Effect",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 34",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Stack Effect"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Stack Effect"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1058,28 +1058,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Cross Ventilation",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 35",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cross Ventilation"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cross Ventilation"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1089,28 +1089,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Humidity Control",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 36",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Humidity Control"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Humidity Control"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1120,28 +1120,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Condensation",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 37",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Condensation"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Condensation"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1151,28 +1151,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Drainage",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 38",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Drainage"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Drainage"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1182,28 +1182,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Capillary Action",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 39",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Capillary Action"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Capillary Action"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1213,28 +1213,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Foundation Settlement",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 40",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Foundation Settlement"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Foundation Settlement"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1244,28 +1244,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Differential Settlement",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 41",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Differential Settlement"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Differential Settlement"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1275,28 +1275,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Structural Integrity",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 42",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Structural Integrity"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Structural Integrity"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1306,28 +1306,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Factor of Safety",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 43",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Factor of Safety"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Factor of Safety"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1337,28 +1337,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Resonance",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 44",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Resonance"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Resonance"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1368,28 +1368,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Frequency",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 45",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Frequency"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Frequency"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1399,28 +1399,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Vibration Control",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 46",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Vibration Control"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Vibration Control"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1430,28 +1430,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Fire Resistance",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 47",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Fire Resistance"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Fire Resistance"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1461,28 +1461,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Combustibility",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 48",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Combustibility"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Combustibility"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1492,28 +1492,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Durability",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 49",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Durability"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Durability"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1523,28 +1523,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Service Life",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Building Physics Entity 50",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Service Life"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Service Life"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar building_physics form",
-      "Related building_physics structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1554,23 +1554,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 51",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 51",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1578,23 +1585,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 52",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 52",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1602,23 +1616,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 53",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 53",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1626,23 +1647,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 54",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 54",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1650,23 +1678,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 55",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 55",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1674,23 +1709,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 56",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 56",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1698,23 +1740,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 57",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 57",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1722,23 +1771,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 58",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 58",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1746,23 +1802,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 59",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 59",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1770,23 +1833,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 60",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 60",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1794,23 +1864,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 61",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 61",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1818,23 +1895,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 62",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 62",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1842,23 +1926,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 63",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 63",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1866,23 +1957,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 64",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 64",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1890,23 +1988,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 65",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 65",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1914,23 +2019,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 66",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 66",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1938,23 +2050,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 67",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 67",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1962,23 +2081,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 68",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 68",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1986,23 +2112,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 69",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 69",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2010,23 +2143,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 70",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 70",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,23 +2174,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 71",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 71",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2058,23 +2205,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 72",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 72",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2082,23 +2236,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 73",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 73",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2106,23 +2267,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 74",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 74",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2130,23 +2298,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 75",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 75",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2154,23 +2329,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 76",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 76",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2178,23 +2360,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 77",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 77",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2202,23 +2391,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 78",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 78",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2226,23 +2422,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 79",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 79",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2250,23 +2453,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 80",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 80",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2274,23 +2484,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 81",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 81",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2298,23 +2515,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 82",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 82",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2322,23 +2546,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 83",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 83",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2346,23 +2577,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 84",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 84",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2370,23 +2608,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 85",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 85",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2394,23 +2639,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 86",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 86",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2418,23 +2670,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 87",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 87",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2442,23 +2701,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 88",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 88",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2466,23 +2732,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 89",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 89",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2490,23 +2763,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 90",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 90",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2514,23 +2794,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 91",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 91",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2538,23 +2825,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 92",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 92",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2562,23 +2856,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 93",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 93",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2586,23 +2887,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 94",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 94",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2610,23 +2918,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 95",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 95",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2634,23 +2949,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 96",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 96",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2658,23 +2980,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 97",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 97",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2682,23 +3011,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 98",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 98",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2706,23 +3042,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 99",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 99",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,23 +3073,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "building_physics",
-    "entity": "Building Physics Concept 100",
-    "entity_type": "Concept",
+    "entity": "Building Physics Entity 100",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   }
 ]

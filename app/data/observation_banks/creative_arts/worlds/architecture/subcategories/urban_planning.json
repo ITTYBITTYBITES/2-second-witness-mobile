@@ -4,28 +4,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Grid System",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 1",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Grid System"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Grid System"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -35,28 +35,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Radial Plan",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 2",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Radial Plan"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Radial Plan"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -66,28 +66,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Concentric Zone",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 3",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Concentric Zone"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Concentric Zone"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -97,28 +97,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Sector Model",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 4",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Sector Model"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Sector Model"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -128,28 +128,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Linear City",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 5",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Linear City"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Linear City"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -159,28 +159,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Garden City",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 6",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Garden City"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Garden City"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -190,28 +190,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Zoning",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 7",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Zoning"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Zoning"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -221,28 +221,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Land Use",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 8",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Land Use"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Land Use"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -252,28 +252,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Density",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 9",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Density"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Density"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -283,28 +283,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Sprawl",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 10",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Sprawl"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Sprawl"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -314,28 +314,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Core",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 11",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Urban Core"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Urban Core"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -345,28 +345,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Suburb",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 12",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Suburb"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Suburb"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -376,28 +376,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Exurb",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 13",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Exurb"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Exurb"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -407,28 +407,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Satellite Town",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 14",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Satellite Town"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Satellite Town"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -438,28 +438,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Metropolis",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 15",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Metropolis"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Metropolis"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -469,28 +469,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Megalopolis",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 16",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Megalopolis"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Megalopolis"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -500,28 +500,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Conurbation",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 17",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Conurbation"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Conurbation"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -531,28 +531,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Central Business District",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 18",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Central Business District"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Central Business District"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -562,28 +562,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Mixed Use",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 19",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Mixed Use"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Mixed Use"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -593,28 +593,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Public Square",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 20",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Public Square"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Public Square"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -624,28 +624,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Plaza",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 21",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plaza"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plaza"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -655,28 +655,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Park",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 22",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Park"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Park"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -686,28 +686,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Greenbelt",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 23",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Greenbelt"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Greenbelt"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -717,28 +717,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Boulevard",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 24",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Boulevard"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Boulevard"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -748,28 +748,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Avenue",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 25",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Avenue"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Avenue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -779,28 +779,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Alleyway",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 26",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Alleyway"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Alleyway"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -810,28 +810,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Cul-de-sac",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 27",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cul-de-sac"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cul-de-sac"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -841,28 +841,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Pedestrian Zone",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 28",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Pedestrian Zone"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Pedestrian Zone"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -872,28 +872,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Transit Oriented Development",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 29",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Transit Oriented Development"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Transit Oriented Development"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -903,28 +903,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Gentrification",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 30",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Gentrification"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Gentrification"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -934,28 +934,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Renewal",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 31",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Urban Renewal"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Urban Renewal"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -965,28 +965,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Redevelopment",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 32",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Redevelopment"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Redevelopment"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -996,28 +996,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Brownfield",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 33",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Brownfield"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Brownfield"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1027,28 +1027,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Greenfield",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 34",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Greenfield"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Greenfield"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1058,28 +1058,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Infrastructure",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 35",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Infrastructure"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Infrastructure"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1089,28 +1089,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Utilities",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 36",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Utilities"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Utilities"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1120,28 +1120,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Sewage System",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 37",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Sewage System"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Sewage System"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1151,28 +1151,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Water Supply",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 38",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Water Supply"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Water Supply"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1182,28 +1182,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Power Grid",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 39",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Power Grid"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Power Grid"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1213,28 +1213,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Telecommunications",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 40",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Telecommunications"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Telecommunications"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1244,28 +1244,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Transportation Network",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 41",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Transportation Network"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Transportation Network"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1275,28 +1275,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Public Transit",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 42",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Public Transit"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Public Transit"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1306,28 +1306,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "High-Speed Rail",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 43",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for High-Speed Rail"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of High-Speed Rail"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1337,28 +1337,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Airport",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 44",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Airport"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Airport"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1368,28 +1368,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Seaport",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 45",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Seaport"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Seaport"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1399,28 +1399,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Bridge",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 46",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Bridge"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Bridge"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1430,28 +1430,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Tunnel",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 47",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Tunnel"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Tunnel"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1461,28 +1461,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Skyline",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 48",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Skyline"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Skyline"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1492,28 +1492,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Landmark",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 49",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Landmark"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Landmark"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1523,28 +1523,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Streetscape",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Urban Planning Entity 50",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Streetscape"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Streetscape"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar urban_planning form",
-      "Related urban_planning structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1554,23 +1554,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 51",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 51",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1578,23 +1585,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 52",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 52",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1602,23 +1616,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 53",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 53",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1626,23 +1647,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 54",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 54",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1650,23 +1678,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 55",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 55",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1674,23 +1709,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 56",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 56",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1698,23 +1740,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 57",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 57",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1722,23 +1771,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 58",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 58",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1746,23 +1802,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 59",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 59",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1770,23 +1833,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 60",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 60",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1794,23 +1864,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 61",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 61",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1818,23 +1895,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 62",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 62",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1842,23 +1926,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 63",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 63",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1866,23 +1957,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 64",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 64",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1890,23 +1988,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 65",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 65",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1914,23 +2019,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 66",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 66",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1938,23 +2050,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 67",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 67",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1962,23 +2081,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 68",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 68",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1986,23 +2112,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 69",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 69",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2010,23 +2143,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 70",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 70",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,23 +2174,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 71",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 71",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2058,23 +2205,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 72",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 72",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2082,23 +2236,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 73",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 73",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2106,23 +2267,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 74",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 74",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2130,23 +2298,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 75",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 75",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2154,23 +2329,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 76",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 76",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2178,23 +2360,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 77",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 77",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2202,23 +2391,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 78",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 78",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2226,23 +2422,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 79",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 79",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2250,23 +2453,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 80",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 80",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2274,23 +2484,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 81",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 81",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2298,23 +2515,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 82",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 82",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2322,23 +2546,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 83",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 83",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2346,23 +2577,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 84",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 84",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2370,23 +2608,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 85",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 85",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2394,23 +2639,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 86",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 86",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2418,23 +2670,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 87",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 87",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2442,23 +2701,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 88",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 88",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2466,23 +2732,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 89",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 89",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2490,23 +2763,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 90",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 90",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2514,23 +2794,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 91",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 91",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2538,23 +2825,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 92",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 92",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2562,23 +2856,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 93",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 93",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2586,23 +2887,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 94",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 94",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2610,23 +2918,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 95",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 95",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2634,23 +2949,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 96",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 96",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2658,23 +2980,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 97",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 97",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2682,23 +3011,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 98",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 98",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2706,23 +3042,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 99",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 99",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,23 +3073,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "urban_planning",
-    "entity": "Urban Planning Concept 100",
-    "entity_type": "Concept",
+    "entity": "Urban Planning Entity 100",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   }
 ]

@@ -4,28 +4,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Reinforced Concrete",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 1",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Reinforced Concrete"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Reinforced Concrete"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -35,28 +35,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Steel Frame",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 2",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Steel Frame"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Steel Frame"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -66,28 +66,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Plate Glass",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 3",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plate Glass"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plate Glass"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -97,28 +97,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Curtain Wall",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 4",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Curtain Wall"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Curtain Wall"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -128,28 +128,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "I-Beam",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 5",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for I-Beam"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of I-Beam"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -159,28 +159,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Cantilever",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 6",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cantilever"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cantilever"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -190,28 +190,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Pilotis",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 7",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Pilotis"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Pilotis"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -221,28 +221,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Open Plan",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 8",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Open Plan"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Open Plan"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -252,28 +252,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Free Facade",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 9",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Free Facade"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Free Facade"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -283,28 +283,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Horizontal Window",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 10",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Horizontal Window"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Horizontal Window"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -314,28 +314,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Roof Garden",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 11",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Roof Garden"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Roof Garden"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -345,28 +345,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Brutalism",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 12",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Brutalism"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Brutalism"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -376,28 +376,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Exposed Structure",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 13",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Exposed Structure"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Exposed Structure"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -407,28 +407,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modular Unit",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 14",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Modular Unit"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Modular Unit"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -438,28 +438,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Prefabricated Panel",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 15",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Prefabricated Panel"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Prefabricated Panel"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -469,28 +469,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Plywood",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 16",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plywood"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plywood"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -500,28 +500,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Aluminum",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 17",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Aluminum"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Aluminum"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -531,28 +531,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Titanium Cladding",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 18",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Titanium Cladding"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Titanium Cladding"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -562,28 +562,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Composite Resin",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 19",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Composite Resin"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Composite Resin"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -593,28 +593,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Polycarbonate",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 20",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Polycarbonate"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Polycarbonate"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -624,28 +624,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Low-E Glass",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 21",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Low-E Glass"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Low-E Glass"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -655,28 +655,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Structural Silicone",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 22",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Structural Silicone"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Structural Silicone"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -686,28 +686,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Tensile Membrane",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 23",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Tensile Membrane"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Tensile Membrane"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -717,28 +717,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Pneumatic Structure",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 24",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Pneumatic Structure"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Pneumatic Structure"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -748,28 +748,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Geodesic Dome",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 25",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Geodesic Dome"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Geodesic Dome"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -779,28 +779,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Tensegrity",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 26",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Tensegrity"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Tensegrity"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -810,28 +810,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Ferrocement",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 27",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Ferrocement"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Ferrocement"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -841,28 +841,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Cast Iron",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 28",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cast Iron"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cast Iron"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -872,28 +872,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Wrought Iron",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 29",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Wrought Iron"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Wrought Iron"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -903,28 +903,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Plate Steel",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 30",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plate Steel"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plate Steel"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -934,28 +934,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Riveted Joint",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 31",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Riveted Joint"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Riveted Joint"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -965,28 +965,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Welded Seam",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 32",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Welded Seam"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Welded Seam"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -996,28 +996,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Asbestos (Legacy)",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 33",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Asbestos (Legacy)"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Asbestos (Legacy)"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1027,28 +1027,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Drywall",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 34",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Drywall"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Drywall"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1058,28 +1058,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Fiberglass",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 35",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Fiberglass"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Fiberglass"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1089,28 +1089,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Plastic Laminate",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 36",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Plastic Laminate"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Plastic Laminate"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1120,28 +1120,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Vinyl",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 37",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Vinyl"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Vinyl"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1151,28 +1151,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Linoleum",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 38",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Linoleum"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Linoleum"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1182,28 +1182,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Cork Tile",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 39",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cork Tile"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cork Tile"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1213,28 +1213,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Acoustic Panel",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 40",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Acoustic Panel"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Acoustic Panel"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1244,28 +1244,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Sustainable Timber",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 41",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Sustainable Timber"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Sustainable Timber"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1275,28 +1275,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Cross-Laminated Timber",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 42",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Cross-Laminated Timber"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Cross-Laminated Timber"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1306,28 +1306,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Bamboo",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 43",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Bamboo"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Bamboo"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1337,28 +1337,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Carbon Fiber",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 44",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Carbon Fiber"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Carbon Fiber"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1368,28 +1368,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Smart Glass",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 45",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Smart Glass"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Smart Glass"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1399,28 +1399,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Photovoltaic Panel",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 46",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Photovoltaic Panel"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Photovoltaic Panel"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
       "signature": "High"
     }
@@ -1430,28 +1430,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Self-Healing Concrete",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 47",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Self-Healing Concrete"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Self-Healing Concrete"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
       "signature": "High"
     }
@@ -1461,28 +1461,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "3D Printed Wall",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 48",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for 3D Printed Wall"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of 3D Printed Wall"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
       "signature": "High"
     }
@@ -1492,28 +1492,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Aerogel",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 49",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Aerogel"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Aerogel"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
       "signature": "High"
     }
@@ -1523,28 +1523,28 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Recycled Steel",
-    "entity_type": "Core Architectural Concept",
+    "entity": "Modernist Materials Entity 50",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "signature": "Identification Cue for Recycled Steel"
+        "signature": "Geometric Pattern"
       },
       "physical": {
-        "property": "Material/Force Property"
+        "force": "Compression/Tension"
       },
       "semantic": {
-        "context": "Building Tradition"
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Visual fingerprint of Recycled Steel"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Similar modernist_materials form",
-      "Related modernist_materials structure"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
       "signature": "High"
     }
@@ -1554,23 +1554,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 51",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 51",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1578,23 +1585,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 52",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 52",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1602,23 +1616,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 53",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 53",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1626,23 +1647,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 54",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 54",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1650,23 +1678,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 55",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 55",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1674,23 +1709,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 56",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 56",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1698,23 +1740,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 57",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 57",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1722,23 +1771,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 58",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 58",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1746,23 +1802,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 59",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 59",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1770,23 +1833,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 60",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 60",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1794,23 +1864,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 61",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 61",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1818,23 +1895,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 62",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 62",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1842,23 +1926,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 63",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 63",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1866,23 +1957,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 64",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 64",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1890,23 +1988,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 65",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 65",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1914,23 +2019,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 66",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 66",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1938,23 +2050,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 67",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 67",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1962,23 +2081,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 68",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 68",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1986,23 +2112,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 69",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 69",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2010,23 +2143,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 70",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 70",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,23 +2174,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 71",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 71",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2058,23 +2205,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 72",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 72",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2082,23 +2236,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 73",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 73",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2106,23 +2267,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 74",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 74",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2130,23 +2298,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 75",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 75",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2154,23 +2329,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 76",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 76",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2178,23 +2360,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 77",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 77",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2202,23 +2391,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 78",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 78",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2226,23 +2422,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 79",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 79",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2250,23 +2453,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 80",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 80",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2274,23 +2484,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 81",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 81",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2298,23 +2515,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 82",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 82",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2322,23 +2546,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 83",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 83",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2346,23 +2577,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 84",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 84",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2370,23 +2608,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 85",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 85",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2394,23 +2639,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 86",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 86",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2418,23 +2670,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 87",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 87",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2442,23 +2701,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 88",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 88",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2466,23 +2732,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 89",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 89",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2490,23 +2763,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 90",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 90",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2514,23 +2794,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 91",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 91",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2538,23 +2825,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 92",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 92",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2562,23 +2856,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 93",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 93",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2586,23 +2887,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 94",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 94",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2610,23 +2918,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 95",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 95",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2634,23 +2949,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 96",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 96",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2658,23 +2980,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 97",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 97",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2682,23 +3011,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 98",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 98",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 3,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2706,23 +3042,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 99",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 99",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 4,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,23 +3073,30 @@
     "universe": "creative_arts",
     "world": "architecture",
     "subcategory": "modernist_materials",
-    "entity": "Modernist Materials Concept 100",
-    "entity_type": "Concept",
+    "entity": "Modernist Materials Entity 100",
+    "entity_type": "Structural Element",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Geometric Pattern"
+      },
+      "physical": {
+        "force": "Compression/Tension"
+      },
+      "semantic": {
+        "context": "Engineering Tradition"
       }
     },
     "dimensions": {
       "Category": "Architecture",
-      "Signature": "Primary Cue"
+      "Signature": "Structural Logic"
     },
     "confusions": [
-      "Neighboring form"
+      "Neighboring element",
+      "Alternative structural form"
     ],
-    "difficulty": 5,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   }
 ]
