@@ -17,8 +17,10 @@ var _scenario_id: String = "signal_vs_noise"
 func _apply_specific_rules(rules: Dictionary):
 	_scenario_id = _scenario_payload["id"]
 	# The JSON schema determines the target symbol and the pool of noise symbols
-	target_symbol = rules.get("correct_answer", "◆")
+	target_symbol = _clean_payload_text(rules.get("correct_answer", "◆"))
 	noise_symbols = rules.get("wrong_answers", ["⬢", "⬟", "▲", "■", "●", "★", "✖", "✦"])
+	for i in range(noise_symbols.size()):
+		noise_symbols[i] = _clean_payload_text(noise_symbols[i])
 	
 	# Standardize UI via Toolkit
 	PresentationToolkit.apply_glass_style(get_node_or_null("HBoxContainer"))

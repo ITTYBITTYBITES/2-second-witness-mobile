@@ -54,16 +54,26 @@ func _mount_close_button():
 		return
 	var btn_close = Button.new()
 	btn_close.name = "CloseMirrorButton"
-	btn_close.text = "CLOSE MIRROR"
-	btn_close.custom_minimum_size = Vector2(150, 44)
+	btn_close.text = "×"
+	btn_close.tooltip_text = "Close Mirror"
+	btn_close.custom_minimum_size = Vector2(44, 44)
 	btn_close.size = btn_close.custom_minimum_size
 	btn_close.mouse_filter = Control.MOUSE_FILTER_STOP
 	btn_close.z_index = 200
-	btn_close.add_theme_font_size_override("font_size", 15)
-	if PresentationToolkit and PresentationToolkit.has_method("make_response_card"):
-		PresentationToolkit.make_response_card(btn_close, "CLOSE MIRROR", Color("#F72585"))
-		btn_close.custom_minimum_size = Vector2(150, 44)
-		btn_close.size = btn_close.custom_minimum_size
+	btn_close.add_theme_font_size_override("font_size", 26)
+	btn_close.add_theme_color_override("font_color", Color(1.0, 0.92, 0.98))
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color(0.08, 0.04, 0.08, 0.92)
+	style.border_color = Color("#F72585")
+	style.set_border_width_all(2)
+	style.set_corner_radius_all(22)
+	var hover = style.duplicate()
+	hover.bg_color = Color(0.16, 0.05, 0.12, 0.96)
+	var pressed = style.duplicate()
+	pressed.bg_color = Color("#F72585")
+	btn_close.add_theme_stylebox_override("normal", style)
+	btn_close.add_theme_stylebox_override("hover", hover)
+	btn_close.add_theme_stylebox_override("pressed", pressed)
 	btn_close.pressed.connect(_request_close)
 	add_child(btn_close)
 	if get_viewport() and not get_viewport().size_changed.is_connected(_position_close_button):
@@ -77,7 +87,7 @@ func _position_close_button():
 		return
 	var btn_size = btn_close.custom_minimum_size
 	btn_close.size = btn_size
-	btn_close.position = panel.global_position + Vector2(max(16.0, panel.size.x - btn_size.x - 18.0), 18.0)
+	btn_close.position = panel.global_position + Vector2(max(12.0, panel.size.x - btn_size.x - 14.0), 14.0)
 
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")

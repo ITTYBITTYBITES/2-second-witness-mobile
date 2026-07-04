@@ -14,6 +14,20 @@ var target_trials: int = 5
 func normalize_id(id: Variant) -> String:
 	return str(id)
 
+func _clean_payload_text(value: Variant) -> String:
+	var text = str(value).strip_edges()
+	var trace_idx = text.find(" // TRACE")
+	if trace_idx >= 0:
+		text = text.substr(0, trace_idx).strip_edges()
+	return text
+
+func _get_prompt_text(rules: Dictionary, fallback: String = "OBSERVE") -> String:
+	var prompt = rules.get("prompt", "")
+	if str(prompt).strip_edges() == "":
+		prompt = rules.get("legacy_prompt", fallback)
+	var clean = _clean_payload_text(prompt)
+	return clean if clean != "" else fallback
+
 func _enter_tree():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "_enter_tree", "Node entering active scene tree.")

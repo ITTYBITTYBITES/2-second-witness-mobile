@@ -41,11 +41,11 @@ func _setup_round():
 	btn_organic.disabled = false
 	btn_mechanical.disabled = false
 	var rules = _scenario_payload.get("rules", {})
-	var correct = rules.get("correct_answer", "Organic")
+	var correct = _clean_payload_text(rules.get("correct_answer", "Organic"))
 	var wrong_arr = rules.get("wrong_answers", ["Mechanical"])
-	var wrong = wrong_arr[0] if wrong_arr.size() > 0 else "Mechanical"
+	var wrong = _clean_payload_text(wrong_arr[0]) if wrong_arr.size() > 0 else "Mechanical"
 	
-	target_label.text = rules.get("legacy_prompt", "TREE")
+	target_label.text = _get_prompt_text(rules, str(correct))
 	
 	if _deterministic_rng.randf() > 0.5:
 		btn_organic.text = correct
@@ -57,11 +57,7 @@ func _setup_round():
 		target_is_organic = false
 		
 	_start_ticks_msec = Time.get_ticks_msec()
-	target_label.modulate.a = 0.0
-	var tween = get_tree().create_tween()
-	tween.tween_property(target_label, "modulate:a", 1.0, 0.1)
-	tween.tween_interval(0.5) 
-	tween.tween_property(target_label, "modulate:a", 0.0, 0.1)
+	target_label.modulate.a = 1.0
 
 func _on_answer(chose_organic: bool):
 	var rt_ms = Time.get_ticks_msec() - _start_ticks_msec
