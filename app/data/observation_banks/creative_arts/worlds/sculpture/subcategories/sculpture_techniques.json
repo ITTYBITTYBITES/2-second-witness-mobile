@@ -4,28 +4,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 1",
-    "entity_type": "Concept",
+    "entity": "Subtractive Carving",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Subtractive Carving"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Subtractive Carving"
     },
     "confusions": [
-      "Confuser A 1",
-      "Confuser B 1",
-      "Confuser C 1"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -33,28 +35,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 2",
-    "entity_type": "Concept",
+    "entity": "Additive Modeling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Additive Modeling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Additive Modeling"
     },
     "confusions": [
-      "Confuser A 2",
-      "Confuser B 2",
-      "Confuser C 2"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -62,28 +66,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 3",
-    "entity_type": "Concept",
+    "entity": "Indirect Lost Wax",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Indirect Lost Wax"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Indirect Lost Wax"
     },
     "confusions": [
-      "Confuser A 3",
-      "Confuser B 3",
-      "Confuser C 3"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -91,28 +97,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 4",
-    "entity_type": "Concept",
+    "entity": "Chasing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Chasing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Chasing"
     },
     "confusions": [
-      "Confuser A 4",
-      "Confuser B 4",
-      "Confuser C 4"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -120,28 +128,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 5",
-    "entity_type": "Concept",
+    "entity": "Point Copying",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Point Copying"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Point Copying"
     },
     "confusions": [
-      "Confuser A 5",
-      "Confuser B 5",
-      "Confuser C 5"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -149,28 +159,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 6",
-    "entity_type": "Concept",
+    "entity": "Assemblage",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Assemblage"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Assemblage"
     },
     "confusions": [
-      "Confuser A 6",
-      "Confuser B 6",
-      "Confuser C 6"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -178,28 +190,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 7",
-    "entity_type": "Concept",
+    "entity": "Patination",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Patination"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Patination"
     },
     "confusions": [
-      "Confuser A 7",
-      "Confuser B 7",
-      "Confuser C 7"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -207,28 +221,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 8",
-    "entity_type": "Concept",
+    "entity": "Vitrification",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Vitrification"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Vitrification"
     },
     "confusions": [
-      "Confuser A 8",
-      "Confuser B 8",
-      "Confuser C 8"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -236,28 +252,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 9",
-    "entity_type": "Concept",
+    "entity": "Under-cutting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Under-cutting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Under-cutting"
     },
     "confusions": [
-      "Confuser A 9",
-      "Confuser B 9",
-      "Confuser C 9"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -265,28 +283,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 10",
-    "entity_type": "Concept",
+    "entity": "Form vs Mass",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Form vs Mass"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Form vs Mass"
     },
     "confusions": [
-      "Confuser A 10",
-      "Confuser B 10",
-      "Confuser C 10"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -294,28 +314,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 11",
-    "entity_type": "Concept",
+    "entity": "Roughing Out",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Roughing Out"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Roughing Out"
     },
     "confusions": [
-      "Confuser A 11",
-      "Confuser B 11",
-      "Confuser C 11"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -323,28 +345,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 12",
-    "entity_type": "Concept",
+    "entity": "Smoothing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Smoothing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Smoothing"
     },
     "confusions": [
-      "Confuser A 12",
-      "Confuser B 12",
-      "Confuser C 12"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -352,28 +376,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 13",
-    "entity_type": "Concept",
+    "entity": "Polishing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Polishing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Polishing"
     },
     "confusions": [
-      "Confuser A 13",
-      "Confuser B 13",
-      "Confuser C 13"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -381,28 +407,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 14",
-    "entity_type": "Concept",
+    "entity": "Burnishing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Burnishing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Burnishing"
     },
     "confusions": [
-      "Confuser A 14",
-      "Confuser B 14",
-      "Confuser C 14"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -410,28 +438,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 15",
-    "entity_type": "Concept",
+    "entity": "Inlaying",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Inlaying"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Inlaying"
     },
     "confusions": [
-      "Confuser A 15",
-      "Confuser B 15",
-      "Confuser C 15"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -439,28 +469,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 16",
-    "entity_type": "Concept",
+    "entity": "Gilding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gilding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gilding"
     },
     "confusions": [
-      "Confuser A 16",
-      "Confuser B 16",
-      "Confuser C 16"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -468,28 +500,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 17",
-    "entity_type": "Concept",
+    "entity": "Polychromy",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Polychromy"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Polychromy"
     },
     "confusions": [
-      "Confuser A 17",
-      "Confuser B 17",
-      "Confuser C 17"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -497,28 +531,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 18",
-    "entity_type": "Concept",
+    "entity": "Lamination",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Lamination"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Lamination"
     },
     "confusions": [
-      "Confuser A 18",
-      "Confuser B 18",
-      "Confuser C 18"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -526,28 +562,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 19",
-    "entity_type": "Concept",
+    "entity": "Bending",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bending"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bending"
     },
     "confusions": [
-      "Confuser A 19",
-      "Confuser B 19",
-      "Confuser C 19"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -555,28 +593,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 20",
-    "entity_type": "Concept",
+    "entity": "Turning",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Turning"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Turning"
     },
     "confusions": [
-      "Confuser A 20",
-      "Confuser B 20",
-      "Confuser C 20"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -584,28 +624,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 21",
-    "entity_type": "Concept",
+    "entity": "Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Casting"
     },
     "confusions": [
-      "Confuser A 21",
-      "Confuser B 21",
-      "Confuser C 21"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -613,28 +655,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 22",
-    "entity_type": "Concept",
+    "entity": "Forging",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Forging"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Forging"
     },
     "confusions": [
-      "Confuser A 22",
-      "Confuser B 22",
-      "Confuser C 22"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -642,28 +686,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 23",
-    "entity_type": "Concept",
+    "entity": "Welding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Welding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Welding"
     },
     "confusions": [
-      "Confuser A 23",
-      "Confuser B 23",
-      "Confuser C 23"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -671,28 +717,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 24",
-    "entity_type": "Concept",
+    "entity": "Soldering",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Soldering"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Soldering"
     },
     "confusions": [
-      "Confuser A 24",
-      "Confuser B 24",
-      "Confuser C 24"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -700,28 +748,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 25",
-    "entity_type": "Concept",
+    "entity": "Brazing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Brazing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Brazing"
     },
     "confusions": [
-      "Confuser A 25",
-      "Confuser B 25",
-      "Confuser C 25"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -729,28 +779,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 26",
-    "entity_type": "Concept",
+    "entity": "Riveting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Riveting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Riveting"
     },
     "confusions": [
-      "Confuser A 26",
-      "Confuser B 26",
-      "Confuser C 26"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -758,28 +810,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 27",
-    "entity_type": "Concept",
+    "entity": "Mechanical Fastening",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Mechanical Fastening"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Mechanical Fastening"
     },
     "confusions": [
-      "Confuser A 27",
-      "Confuser B 27",
-      "Confuser C 27"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -787,28 +841,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 28",
-    "entity_type": "Concept",
+    "entity": "Adhesive Joining",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Adhesive Joining"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Adhesive Joining"
     },
     "confusions": [
-      "Confuser A 28",
-      "Confuser B 28",
-      "Confuser C 28"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -816,28 +872,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 29",
-    "entity_type": "Concept",
+    "entity": "Mortise and Tenon",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Mortise and Tenon"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Mortise and Tenon"
     },
     "confusions": [
-      "Confuser A 29",
-      "Confuser B 29",
-      "Confuser C 29"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -845,28 +903,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 30",
-    "entity_type": "Concept",
+    "entity": "Dovetailing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Dovetailing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Dovetailing"
     },
     "confusions": [
-      "Confuser A 30",
-      "Confuser B 30",
-      "Confuser C 30"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -874,28 +934,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 31",
-    "entity_type": "Concept",
+    "entity": "Scarfing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scarfing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scarfing"
     },
     "confusions": [
-      "Confuser A 31",
-      "Confuser B 31",
-      "Confuser C 31"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -903,28 +965,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 32",
-    "entity_type": "Concept",
+    "entity": "Scribing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scribing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scribing"
     },
     "confusions": [
-      "Confuser A 32",
-      "Confuser B 32",
-      "Confuser C 32"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -932,28 +996,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 33",
-    "entity_type": "Concept",
+    "entity": "Scoring",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scoring"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scoring"
     },
     "confusions": [
-      "Confuser A 33",
-      "Confuser B 33",
-      "Confuser C 33"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -961,28 +1027,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 34",
-    "entity_type": "Concept",
+    "entity": "Etching",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Etching"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Etching"
     },
     "confusions": [
-      "Confuser A 34",
-      "Confuser B 34",
-      "Confuser C 34"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -990,28 +1058,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 35",
-    "entity_type": "Concept",
+    "entity": "Engraving",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Engraving"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Engraving"
     },
     "confusions": [
-      "Confuser A 35",
-      "Confuser B 35",
-      "Confuser C 35"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1019,28 +1089,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 36",
-    "entity_type": "Concept",
+    "entity": "Stamping",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Stamping"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Stamping"
     },
     "confusions": [
-      "Confuser A 36",
-      "Confuser B 36",
-      "Confuser C 36"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1048,28 +1120,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 37",
-    "entity_type": "Concept",
+    "entity": "Embossing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Embossing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Embossing"
     },
     "confusions": [
-      "Confuser A 37",
-      "Confuser B 37",
-      "Confuser C 37"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1077,28 +1151,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 38",
-    "entity_type": "Concept",
+    "entity": "Punching",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Punching"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Punching"
     },
     "confusions": [
-      "Confuser A 38",
-      "Confuser B 38",
-      "Confuser C 38"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1106,28 +1182,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 39",
-    "entity_type": "Concept",
+    "entity": "Filing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Filing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Filing"
     },
     "confusions": [
-      "Confuser A 39",
-      "Confuser B 39",
-      "Confuser C 39"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1135,28 +1213,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 40",
-    "entity_type": "Concept",
+    "entity": "Sanding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sanding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sanding"
     },
     "confusions": [
-      "Confuser A 40",
-      "Confuser B 40",
-      "Confuser C 40"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1164,28 +1244,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 41",
-    "entity_type": "Concept",
+    "entity": "Abrasive Scrubbing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Abrasive Scrubbing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Abrasive Scrubbing"
     },
     "confusions": [
-      "Confuser A 41",
-      "Confuser B 41",
-      "Confuser C 41"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1193,28 +1275,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 42",
-    "entity_type": "Concept",
+    "entity": "Acid Washing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Acid Washing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Acid Washing"
     },
     "confusions": [
-      "Confuser A 42",
-      "Confuser B 42",
-      "Confuser C 42"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1222,28 +1306,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 43",
-    "entity_type": "Concept",
+    "entity": "Flame Finishing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Flame Finishing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Flame Finishing"
     },
     "confusions": [
-      "Confuser A 43",
-      "Confuser B 43",
-      "Confuser C 43"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1251,28 +1337,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 44",
-    "entity_type": "Concept",
+    "entity": "Shot Peening",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Shot Peening"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Shot Peening"
     },
     "confusions": [
-      "Confuser A 44",
-      "Confuser B 44",
-      "Confuser C 44"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1280,28 +1368,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 45",
-    "entity_type": "Concept",
+    "entity": "Sandblasting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sandblasting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sandblasting"
     },
     "confusions": [
-      "Confuser A 45",
-      "Confuser B 45",
-      "Confuser C 45"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1309,28 +1399,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 46",
-    "entity_type": "Concept",
+    "entity": "Electroplating",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Electroplating"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Electroplating"
     },
     "confusions": [
-      "Confuser A 46",
-      "Confuser B 46",
-      "Confuser C 46"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1338,28 +1430,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 47",
-    "entity_type": "Concept",
+    "entity": "Anodizing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Anodizing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Anodizing"
     },
     "confusions": [
-      "Confuser A 47",
-      "Confuser B 47",
-      "Confuser C 47"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1367,28 +1461,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 48",
-    "entity_type": "Concept",
+    "entity": "Galvanizing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Galvanizing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Galvanizing"
     },
     "confusions": [
-      "Confuser A 48",
-      "Confuser B 48",
-      "Confuser C 48"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1396,28 +1492,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 49",
-    "entity_type": "Concept",
+    "entity": "Powder Coating",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Powder Coating"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Powder Coating"
     },
     "confusions": [
-      "Confuser A 49",
-      "Confuser B 49",
-      "Confuser C 49"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1425,28 +1523,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 50",
-    "entity_type": "Concept",
+    "entity": "Lacquering",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Lacquering"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Lacquering"
     },
     "confusions": [
-      "Confuser A 50",
-      "Confuser B 50",
-      "Confuser C 50"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1454,28 +1554,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 51",
-    "entity_type": "Concept",
+    "entity": "Varnishing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Varnishing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Varnishing"
     },
     "confusions": [
-      "Confuser A 51",
-      "Confuser B 51",
-      "Confuser C 51"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1483,28 +1585,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 52",
-    "entity_type": "Concept",
+    "entity": "Waxing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Waxing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Waxing"
     },
     "confusions": [
-      "Confuser A 52",
-      "Confuser B 52",
-      "Confuser C 52"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1512,28 +1616,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 53",
-    "entity_type": "Concept",
+    "entity": "Oiling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Oiling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Oiling"
     },
     "confusions": [
-      "Confuser A 53",
-      "Confuser B 53",
-      "Confuser C 53"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1541,28 +1647,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 54",
-    "entity_type": "Concept",
+    "entity": "Enameling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Enameling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Enameling"
     },
     "confusions": [
-      "Confuser A 54",
-      "Confuser B 54",
-      "Confuser C 54"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1570,28 +1678,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 55",
-    "entity_type": "Concept",
+    "entity": "Glazing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Glazing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Glazing"
     },
     "confusions": [
-      "Confuser A 55",
-      "Confuser B 55",
-      "Confuser C 55"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1599,28 +1709,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 56",
-    "entity_type": "Concept",
+    "entity": "Slip Trailing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Slip Trailing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Slip Trailing"
     },
     "confusions": [
-      "Confuser A 56",
-      "Confuser B 56",
-      "Confuser C 56"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1628,28 +1740,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 57",
-    "entity_type": "Concept",
+    "entity": "Mishima",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Mishima"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Mishima"
     },
     "confusions": [
-      "Confuser A 57",
-      "Confuser B 57",
-      "Confuser C 57"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1657,28 +1771,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 58",
-    "entity_type": "Concept",
+    "entity": "Sgraffito",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sgraffito"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sgraffito"
     },
     "confusions": [
-      "Confuser A 58",
-      "Confuser B 58",
-      "Confuser C 58"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1686,28 +1802,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 59",
-    "entity_type": "Concept",
+    "entity": "Terra Sigillata",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Terra Sigillata"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Terra Sigillata"
     },
     "confusions": [
-      "Confuser A 59",
-      "Confuser B 59",
-      "Confuser C 59"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1715,28 +1833,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 60",
-    "entity_type": "Concept",
+    "entity": "Raku",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Raku"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Raku"
     },
     "confusions": [
-      "Confuser A 60",
-      "Confuser B 60",
-      "Confuser C 60"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1744,28 +1864,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 61",
-    "entity_type": "Concept",
+    "entity": "Salt Firing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Salt Firing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Salt Firing"
     },
     "confusions": [
-      "Confuser A 61",
-      "Confuser B 61",
-      "Confuser C 61"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1773,28 +1895,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 62",
-    "entity_type": "Concept",
+    "entity": "Soda Firing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Soda Firing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Soda Firing"
     },
     "confusions": [
-      "Confuser A 62",
-      "Confuser B 62",
-      "Confuser C 62"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1802,28 +1926,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 63",
-    "entity_type": "Concept",
+    "entity": "Reduction Firing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Reduction Firing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Reduction Firing"
     },
     "confusions": [
-      "Confuser A 63",
-      "Confuser B 63",
-      "Confuser C 63"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1831,28 +1957,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 64",
-    "entity_type": "Concept",
+    "entity": "Oxidation Firing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Oxidation Firing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Oxidation Firing"
     },
     "confusions": [
-      "Confuser A 64",
-      "Confuser B 64",
-      "Confuser C 64"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1860,28 +1988,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 65",
-    "entity_type": "Concept",
+    "entity": "Pit Firing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pit Firing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pit Firing"
     },
     "confusions": [
-      "Confuser A 65",
-      "Confuser B 65",
-      "Confuser C 65"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1889,28 +2019,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 66",
-    "entity_type": "Concept",
+    "entity": "Wood Firing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Firing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Firing"
     },
     "confusions": [
-      "Confuser A 66",
-      "Confuser B 66",
-      "Confuser C 66"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1918,28 +2050,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 67",
-    "entity_type": "Concept",
+    "entity": "Sawdust Firing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sawdust Firing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sawdust Firing"
     },
     "confusions": [
-      "Confuser A 67",
-      "Confuser B 67",
-      "Confuser C 67"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1947,28 +2081,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 68",
-    "entity_type": "Concept",
+    "entity": "Hollow-Backing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Hollow-Backing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Hollow-Backing"
     },
     "confusions": [
-      "Confuser A 68",
-      "Confuser B 68",
-      "Confuser C 68"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1976,28 +2112,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 69",
-    "entity_type": "Concept",
+    "entity": "Internal Hollowing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Internal Hollowing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Internal Hollowing"
     },
     "confusions": [
-      "Confuser A 69",
-      "Confuser B 69",
-      "Confuser C 69"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2005,28 +2143,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 70",
-    "entity_type": "Concept",
+    "entity": "Venting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Venting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Venting"
     },
     "confusions": [
-      "Confuser A 70",
-      "Confuser B 70",
-      "Confuser C 70"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,28 +2174,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 71",
-    "entity_type": "Concept",
+    "entity": "Core Pinning",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Core Pinning"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Core Pinning"
     },
     "confusions": [
-      "Confuser A 71",
-      "Confuser B 71",
-      "Confuser C 71"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2063,28 +2205,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 72",
-    "entity_type": "Concept",
+    "entity": "Spruing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Spruing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Spruing"
     },
     "confusions": [
-      "Confuser A 72",
-      "Confuser B 72",
-      "Confuser C 72"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2092,28 +2236,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 73",
-    "entity_type": "Concept",
+    "entity": "Gating",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gating"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gating"
     },
     "confusions": [
-      "Confuser A 73",
-      "Confuser B 73",
-      "Confuser C 73"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2121,28 +2267,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 74",
-    "entity_type": "Concept",
+    "entity": "Risering",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Risering"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Risering"
     },
     "confusions": [
-      "Confuser A 74",
-      "Confuser B 74",
-      "Confuser C 74"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2150,28 +2298,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 75",
-    "entity_type": "Concept",
+    "entity": "Investment Building",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Investment Building"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Investment Building"
     },
     "confusions": [
-      "Confuser A 75",
-      "Confuser B 75",
-      "Confuser C 75"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2179,28 +2329,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 76",
-    "entity_type": "Concept",
+    "entity": "Shell Building",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Shell Building"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Shell Building"
     },
     "confusions": [
-      "Confuser A 76",
-      "Confuser B 76",
-      "Confuser C 76"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2208,28 +2360,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 77",
-    "entity_type": "Concept",
+    "entity": "Degassing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Degassing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Degassing"
     },
     "confusions": [
-      "Confuser A 77",
-      "Confuser B 77",
-      "Confuser C 77"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2237,28 +2391,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 78",
-    "entity_type": "Concept",
+    "entity": "Slag Removal",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Slag Removal"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Slag Removal"
     },
     "confusions": [
-      "Confuser A 78",
-      "Confuser B 78",
-      "Confuser C 78"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2266,28 +2422,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 79",
-    "entity_type": "Concept",
+    "entity": "Fettling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Fettling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Fettling"
     },
     "confusions": [
-      "Confuser A 79",
-      "Confuser B 79",
-      "Confuser C 79"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2295,28 +2453,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 80",
-    "entity_type": "Concept",
+    "entity": "Planishing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Planishing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Planishing"
     },
     "confusions": [
-      "Confuser A 80",
-      "Confuser B 80",
-      "Confuser C 80"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2324,28 +2484,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 81",
-    "entity_type": "Concept",
+    "entity": "Repousse",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Repousse"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Repousse"
     },
     "confusions": [
-      "Confuser A 81",
-      "Confuser B 81",
-      "Confuser C 81"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2353,28 +2515,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 82",
-    "entity_type": "Concept",
+    "entity": "Direct Lost Wax",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Direct Lost Wax"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Direct Lost Wax"
     },
     "confusions": [
-      "Confuser A 82",
-      "Confuser B 82",
-      "Confuser C 82"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2382,28 +2546,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 83",
-    "entity_type": "Concept",
+    "entity": "Sand Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sand Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sand Casting"
     },
     "confusions": [
-      "Confuser A 83",
-      "Confuser B 83",
-      "Confuser C 83"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2411,28 +2577,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 84",
-    "entity_type": "Concept",
+    "entity": "Die Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Die Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Die Casting"
     },
     "confusions": [
-      "Confuser A 84",
-      "Confuser B 84",
-      "Confuser C 84"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2440,28 +2608,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 85",
-    "entity_type": "Concept",
+    "entity": "Centrifugal Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Centrifugal Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Centrifugal Casting"
     },
     "confusions": [
-      "Confuser A 85",
-      "Confuser B 85",
-      "Confuser C 85"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2469,28 +2639,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 86",
-    "entity_type": "Concept",
+    "entity": "Continuous Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Continuous Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Continuous Casting"
     },
     "confusions": [
-      "Confuser A 86",
-      "Confuser B 86",
-      "Confuser C 86"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2498,28 +2670,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 87",
-    "entity_type": "Concept",
+    "entity": "Vacuum Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Vacuum Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Vacuum Casting"
     },
     "confusions": [
-      "Confuser A 87",
-      "Confuser B 87",
-      "Confuser C 87"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2527,28 +2701,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 88",
-    "entity_type": "Concept",
+    "entity": "Plaster Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Plaster Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Plaster Casting"
     },
     "confusions": [
-      "Confuser A 88",
-      "Confuser B 88",
-      "Confuser C 88"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2556,28 +2732,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 89",
-    "entity_type": "Concept",
+    "entity": "Resin Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Resin Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Resin Casting"
     },
     "confusions": [
-      "Confuser A 89",
-      "Confuser B 89",
-      "Confuser C 89"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2585,28 +2763,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 90",
-    "entity_type": "Concept",
+    "entity": "3D Printing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic 3D Printing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of 3D Printing"
     },
     "confusions": [
-      "Confuser A 90",
-      "Confuser B 90",
-      "Confuser C 90"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2614,28 +2794,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 91",
-    "entity_type": "Concept",
+    "entity": "CNC Milling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic CNC Milling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of CNC Milling"
     },
     "confusions": [
-      "Confuser A 91",
-      "Confuser B 91",
-      "Confuser C 91"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2643,28 +2825,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 92",
-    "entity_type": "Concept",
+    "entity": "Laser Cutting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Laser Cutting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Laser Cutting"
     },
     "confusions": [
-      "Confuser A 92",
-      "Confuser B 92",
-      "Confuser C 92"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2672,28 +2856,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 93",
-    "entity_type": "Concept",
+    "entity": "Waterjet Cutting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Waterjet Cutting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Waterjet Cutting"
     },
     "confusions": [
-      "Confuser A 93",
-      "Confuser B 93",
-      "Confuser C 93"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2701,28 +2887,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 94",
-    "entity_type": "Concept",
+    "entity": "Plasma Cutting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Plasma Cutting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Plasma Cutting"
     },
     "confusions": [
-      "Confuser A 94",
-      "Confuser B 94",
-      "Confuser C 94"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,28 +2918,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 95",
-    "entity_type": "Concept",
+    "entity": "Annealing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Annealing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Annealing"
     },
     "confusions": [
-      "Confuser A 95",
-      "Confuser B 95",
-      "Confuser C 95"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2759,28 +2949,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 96",
-    "entity_type": "Concept",
+    "entity": "Tempering",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Tempering"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Tempering"
     },
     "confusions": [
-      "Confuser A 96",
-      "Confuser B 96",
-      "Confuser C 96"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2788,28 +2980,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 97",
-    "entity_type": "Concept",
+    "entity": "Quenching",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Quenching"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Quenching"
     },
     "confusions": [
-      "Confuser A 97",
-      "Confuser B 97",
-      "Confuser C 97"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2817,28 +3011,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 98",
-    "entity_type": "Concept",
+    "entity": "Work Hardening",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Work Hardening"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Work Hardening"
     },
     "confusions": [
-      "Confuser A 98",
-      "Confuser B 98",
-      "Confuser C 98"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2846,28 +3042,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 99",
-    "entity_type": "Concept",
+    "entity": "Age Hardening",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Age Hardening"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Age Hardening"
     },
     "confusions": [
-      "Confuser A 99",
-      "Confuser B 99",
-      "Confuser C 99"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2875,28 +3073,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "sculpture_techniques",
-    "entity": "Sculpture Techniques Entity 100",
-    "entity_type": "Concept",
+    "entity": "Case Hardening",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Case Hardening"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Case Hardening"
     },
     "confusions": [
-      "Confuser A 100",
-      "Confuser B 100",
-      "Confuser C 100"
+      "Similar sculpture_techniques item",
+      "Related sculpture_techniques concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   }
 ]

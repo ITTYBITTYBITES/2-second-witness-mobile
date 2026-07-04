@@ -1,0 +1,2752 @@
+[
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0001",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Gravity",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Gravity"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Gravity"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0002",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Compression",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Compression"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Compression"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0003",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Tension",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tension"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tension"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0004",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Shear",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Shear"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Shear"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0005",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Torsion",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Torsion"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Torsion"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0006",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Bending",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Bending"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Bending"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0007",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Stress",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stress"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stress"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0008",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Strain",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Strain"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Strain"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0009",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Elasticity",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Elasticity"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Elasticity"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0010",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Plasticity",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Plasticity"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Plasticity"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0011",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Ductility",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Ductility"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Ductility"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0012",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Brittleness",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Brittleness"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Brittleness"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0013",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Load Bearing",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Load Bearing"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Load Bearing"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0014",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Dead Load",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Dead Load"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Dead Load"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0015",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Live Load",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Live Load"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Live Load"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0016",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Wind Load",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Wind Load"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Wind Load"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0017",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Snow Load",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Snow Load"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Snow Load"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0018",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Seismic Load",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Seismic Load"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Seismic Load"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0019",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Thermal Expansion",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Thermal Expansion"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Thermal Expansion"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0020",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Thermal Conductivity",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Thermal Conductivity"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Thermal Conductivity"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0021",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Insulation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Insulation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Insulation"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0022",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "R-Value",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for R-Value"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of R-Value"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0023",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "U-Value",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for U-Value"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of U-Value"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0024",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Vapor Barrier",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Vapor Barrier"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Vapor Barrier"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0025",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Air Sealing",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Air Sealing"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Air Sealing"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0026",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Acoustics",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Acoustics"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Acoustics"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0027",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Sound Absorption",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Sound Absorption"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Sound Absorption"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0028",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Reverberation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Reverberation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Reverberation"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0029",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Illumination",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Illumination"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Illumination"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0030",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Daylighting",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Daylighting"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Daylighting"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0031",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Glow",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Glow"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Glow"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0032",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Glare",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Glare"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Glare"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0033",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Ventilation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Ventilation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Ventilation"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0034",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Stack Effect",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stack Effect"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stack Effect"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0035",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Cross Ventilation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cross Ventilation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cross Ventilation"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0036",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Humidity Control",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Humidity Control"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Humidity Control"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0037",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Condensation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Condensation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Condensation"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0038",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Drainage",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Drainage"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Drainage"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0039",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Capillary Action",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Capillary Action"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Capillary Action"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0040",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Foundation Settlement",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Foundation Settlement"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Foundation Settlement"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0041",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Differential Settlement",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Differential Settlement"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Differential Settlement"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0042",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Structural Integrity",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Structural Integrity"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Structural Integrity"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0043",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Factor of Safety",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Factor of Safety"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Factor of Safety"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0044",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Resonance",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Resonance"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Resonance"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0045",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Frequency",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Frequency"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Frequency"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0046",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Vibration Control",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Vibration Control"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Vibration Control"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0047",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Fire Resistance",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Fire Resistance"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Fire Resistance"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0048",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Combustibility",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Combustibility"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Combustibility"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0049",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Durability",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Durability"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Durability"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0050",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Service Life",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Service Life"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Service Life"
+    },
+    "confusions": [
+      "Similar building_physics form",
+      "Related building_physics structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0051",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 51",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0052",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 52",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0053",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 53",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0054",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 54",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0055",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 55",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0056",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 56",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0057",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 57",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0058",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 58",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0059",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 59",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0060",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 60",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0061",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 61",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0062",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 62",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0063",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 63",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0064",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 64",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0065",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 65",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0066",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 66",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0067",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 67",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0068",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 68",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0069",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 69",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0070",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 70",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0071",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 71",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0072",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 72",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0073",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 73",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0074",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 74",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0075",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 75",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0076",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 76",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0077",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 77",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0078",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 78",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0079",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 79",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0080",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 80",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0081",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 81",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0082",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 82",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0083",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 83",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0084",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 84",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0085",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 85",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0086",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 86",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0087",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 87",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0088",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 88",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0089",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 89",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0090",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 90",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0091",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 91",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0092",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 92",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0093",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 93",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0094",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 94",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0095",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 95",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0096",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 96",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0097",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 97",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0098",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 98",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0099",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 99",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_building_physics_0100",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "building_physics",
+    "entity": "Building Physics Concept 100",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  }
+]

@@ -4,28 +4,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 1",
-    "entity_type": "Concept",
+    "entity": "Carrara",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Carrara"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Carrara"
     },
     "confusions": [
-      "Confuser A 1",
-      "Confuser B 1",
-      "Confuser C 1"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -33,28 +35,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 2",
-    "entity_type": "Concept",
+    "entity": "Pentelic",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pentelic"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pentelic"
     },
     "confusions": [
-      "Confuser A 2",
-      "Confuser B 2",
-      "Confuser C 2"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -62,28 +66,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 3",
-    "entity_type": "Concept",
+    "entity": "Parian",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Parian"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Parian"
     },
     "confusions": [
-      "Confuser A 3",
-      "Confuser B 3",
-      "Confuser C 3"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -91,28 +97,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 4",
-    "entity_type": "Concept",
+    "entity": "Makrana",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Makrana"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Makrana"
     },
     "confusions": [
-      "Confuser A 4",
-      "Confuser B 4",
-      "Confuser C 4"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -120,28 +128,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 5",
-    "entity_type": "Concept",
+    "entity": "Sugaring",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sugaring"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sugaring"
     },
     "confusions": [
-      "Confuser A 5",
-      "Confuser B 5",
-      "Confuser C 5"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -149,28 +159,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 6",
-    "entity_type": "Concept",
+    "entity": "Toothed Chisel",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Toothed Chisel"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Toothed Chisel"
     },
     "confusions": [
-      "Confuser A 6",
-      "Confuser B 6",
-      "Confuser C 6"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -178,28 +190,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 7",
-    "entity_type": "Concept",
+    "entity": "Subsurface Scattering",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Subsurface Scattering"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Subsurface Scattering"
     },
     "confusions": [
-      "Confuser A 7",
-      "Confuser B 7",
-      "Confuser C 7"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -207,28 +221,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 8",
-    "entity_type": "Concept",
+    "entity": "Point Chisel",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Point Chisel"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Point Chisel"
     },
     "confusions": [
-      "Confuser A 8",
-      "Confuser B 8",
-      "Confuser C 8"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -236,28 +252,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 9",
-    "entity_type": "Concept",
+    "entity": "Consolidation",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Consolidation"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Consolidation"
     },
     "confusions": [
-      "Confuser A 9",
-      "Confuser B 9",
-      "Confuser C 9"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -265,28 +283,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 10",
-    "entity_type": "Concept",
+    "entity": "Contrapposto",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Contrapposto"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Contrapposto"
     },
     "confusions": [
-      "Confuser A 10",
-      "Confuser B 10",
-      "Confuser C 10"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -294,28 +314,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 11",
-    "entity_type": "Concept",
+    "entity": "Hellenistic Pathos",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Hellenistic Pathos"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Hellenistic Pathos"
     },
     "confusions": [
-      "Confuser A 11",
-      "Confuser B 11",
-      "Confuser C 11"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -323,28 +345,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 12",
-    "entity_type": "Concept",
+    "entity": "Makrana",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Makrana"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Makrana"
     },
     "confusions": [
-      "Confuser A 12",
-      "Confuser B 12",
-      "Confuser C 12"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -352,28 +376,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 13",
-    "entity_type": "Concept",
+    "entity": "Running Drill",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Running Drill"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Running Drill"
     },
     "confusions": [
-      "Confuser A 13",
-      "Confuser B 13",
-      "Confuser C 13"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -381,28 +407,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 14",
-    "entity_type": "Concept",
+    "entity": "Non Finito",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Non Finito"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Non Finito"
     },
     "confusions": [
-      "Confuser A 14",
-      "Confuser B 14",
-      "Confuser C 14"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -410,28 +438,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 15",
-    "entity_type": "Concept",
+    "entity": "Belgian Black",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Belgian Black"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Belgian Black"
     },
     "confusions": [
-      "Confuser A 15",
-      "Confuser B 15",
-      "Confuser C 15"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -439,28 +469,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 16",
-    "entity_type": "Concept",
+    "entity": "Honed Finish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Honed Finish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Honed Finish"
     },
     "confusions": [
-      "Confuser A 16",
-      "Confuser B 16",
-      "Confuser C 16"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -468,28 +500,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 17",
-    "entity_type": "Concept",
+    "entity": "Rasp Marks",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Rasp Marks"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Rasp Marks"
     },
     "confusions": [
-      "Confuser A 17",
-      "Confuser B 17",
-      "Confuser C 17"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -497,28 +531,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 18",
-    "entity_type": "Concept",
+    "entity": "Cipollino",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cipollino"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cipollino"
     },
     "confusions": [
-      "Confuser A 18",
-      "Confuser B 18",
-      "Confuser C 18"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -526,28 +562,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 19",
-    "entity_type": "Concept",
+    "entity": "Isotopic Signature",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Isotopic Signature"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Isotopic Signature"
     },
     "confusions": [
-      "Confuser A 19",
-      "Confuser B 19",
-      "Confuser C 19"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -555,28 +593,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 20",
-    "entity_type": "Concept",
+    "entity": "Free Standing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Free Standing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Free Standing"
     },
     "confusions": [
-      "Confuser A 20",
-      "Confuser B 20",
-      "Confuser C 20"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -584,28 +624,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 21",
-    "entity_type": "Concept",
+    "entity": "Veiled Illusion",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Veiled Illusion"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Veiled Illusion"
     },
     "confusions": [
-      "Confuser A 21",
-      "Confuser B 21",
-      "Confuser C 21"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -613,28 +655,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 22",
-    "entity_type": "Concept",
+    "entity": "Stress Fracture",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Stress Fracture"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Stress Fracture"
     },
     "confusions": [
-      "Confuser A 22",
-      "Confuser B 22",
-      "Confuser C 22"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -642,28 +686,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 23",
-    "entity_type": "Concept",
+    "entity": "Pentelic Patina",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pentelic Patina"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pentelic Patina"
     },
     "confusions": [
-      "Confuser A 23",
-      "Confuser B 23",
-      "Confuser C 23"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -671,28 +717,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 24",
-    "entity_type": "Concept",
+    "entity": "Flat Chisel",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Flat Chisel"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Flat Chisel"
     },
     "confusions": [
-      "Confuser A 24",
-      "Confuser B 24",
-      "Confuser C 24"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -700,28 +748,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 25",
-    "entity_type": "Concept",
+    "entity": "Bore Hole",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bore Hole"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bore Hole"
     },
     "confusions": [
-      "Confuser A 25",
-      "Confuser B 25",
-      "Confuser C 25"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -729,28 +779,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 26",
-    "entity_type": "Concept",
+    "entity": "Rhombic Cleavage",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Rhombic Cleavage"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Rhombic Cleavage"
     },
     "confusions": [
-      "Confuser A 26",
-      "Confuser B 26",
-      "Confuser C 26"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -758,28 +810,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 27",
-    "entity_type": "Concept",
+    "entity": "Sarcophagus",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sarcophagus"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sarcophagus"
     },
     "confusions": [
-      "Confuser A 27",
-      "Confuser B 27",
-      "Confuser C 27"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -787,28 +841,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 28",
-    "entity_type": "Concept",
+    "entity": "Anathyrosis",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Anathyrosis"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Anathyrosis"
     },
     "confusions": [
-      "Confuser A 28",
-      "Confuser B 28",
-      "Confuser C 28"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -816,28 +872,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 29",
-    "entity_type": "Concept",
+    "entity": "Pointing Machine",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pointing Machine"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pointing Machine"
     },
     "confusions": [
-      "Confuser A 29",
-      "Confuser B 29",
-      "Confuser C 29"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -845,28 +903,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 30",
-    "entity_type": "Concept",
+    "entity": "Rosso Antico",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Rosso Antico"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Rosso Antico"
     },
     "confusions": [
-      "Confuser A 30",
-      "Confuser B 30",
-      "Confuser C 30"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -874,28 +934,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 31",
-    "entity_type": "Concept",
+    "entity": "Abrasive Sanding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Abrasive Sanding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Abrasive Sanding"
     },
     "confusions": [
-      "Confuser A 31",
-      "Confuser B 31",
-      "Confuser C 31"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -903,28 +965,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 32",
-    "entity_type": "Concept",
+    "entity": "Calcite Veining",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Calcite Veining"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Calcite Veining"
     },
     "confusions": [
-      "Confuser A 32",
-      "Confuser B 32",
-      "Confuser C 32"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -932,28 +996,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 33",
-    "entity_type": "Concept",
+    "entity": "Afyon White",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Afyon White"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Afyon White"
     },
     "confusions": [
-      "Confuser A 33",
-      "Confuser B 33",
-      "Confuser C 33"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -961,28 +1027,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 34",
-    "entity_type": "Concept",
+    "entity": "Bush Hammering",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bush Hammering"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bush Hammering"
     },
     "confusions": [
-      "Confuser A 34",
-      "Confuser B 34",
-      "Confuser C 34"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -990,28 +1058,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 35",
-    "entity_type": "Concept",
+    "entity": "Stylolite",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Stylolite"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Stylolite"
     },
     "confusions": [
-      "Confuser A 35",
-      "Confuser B 35",
-      "Confuser C 35"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1019,28 +1089,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 36",
-    "entity_type": "Concept",
+    "entity": "Ganimede",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Ganimede"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Ganimede"
     },
     "confusions": [
-      "Confuser A 36",
-      "Confuser B 36",
-      "Confuser C 36"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1048,28 +1120,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 37",
-    "entity_type": "Concept",
+    "entity": "High Relief",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic High Relief"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of High Relief"
     },
     "confusions": [
-      "Confuser A 37",
-      "Confuser B 37",
-      "Confuser C 37"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1077,28 +1151,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 38",
-    "entity_type": "Concept",
+    "entity": "Bas Relief",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bas Relief"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bas Relief"
     },
     "confusions": [
-      "Confuser A 38",
-      "Confuser B 38",
-      "Confuser C 38"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1106,28 +1182,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 39",
-    "entity_type": "Concept",
+    "entity": "Acid Etching",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Acid Etching"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Acid Etching"
     },
     "confusions": [
-      "Confuser A 39",
-      "Confuser B 39",
-      "Confuser C 39"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1135,28 +1213,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 40",
-    "entity_type": "Concept",
+    "entity": "Pointing Pins",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pointing Pins"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pointing Pins"
     },
     "confusions": [
-      "Confuser A 40",
-      "Confuser B 40",
-      "Confuser C 40"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1164,28 +1244,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 41",
-    "entity_type": "Concept",
+    "entity": "Scribe Line",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scribe Line"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scribe Line"
     },
     "confusions": [
-      "Confuser A 41",
-      "Confuser B 41",
-      "Confuser C 41"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1193,28 +1275,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 42",
-    "entity_type": "Concept",
+    "entity": "Thassos Marble",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Thassos Marble"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Thassos Marble"
     },
     "confusions": [
-      "Confuser A 42",
-      "Confuser B 42",
-      "Confuser C 42"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1222,28 +1306,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 43",
-    "entity_type": "Concept",
+    "entity": "Oxidation Staining",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Oxidation Staining"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Oxidation Staining"
     },
     "confusions": [
-      "Confuser A 43",
-      "Confuser B 43",
-      "Confuser C 43"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1251,28 +1337,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 44",
-    "entity_type": "Concept",
+    "entity": "Boasted Finish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Boasted Finish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Boasted Finish"
     },
     "confusions": [
-      "Confuser A 44",
-      "Confuser B 44",
-      "Confuser C 44"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1280,28 +1368,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 45",
-    "entity_type": "Concept",
+    "entity": "Reference Hole",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Reference Hole"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Reference Hole"
     },
     "confusions": [
-      "Confuser A 45",
-      "Confuser B 45",
-      "Confuser C 45"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1309,28 +1399,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 46",
-    "entity_type": "Concept",
+    "entity": "Dolomitic Marble",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Dolomitic Marble"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Dolomitic Marble"
     },
     "confusions": [
-      "Confuser A 46",
-      "Confuser B 46",
-      "Confuser C 46"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1338,28 +1430,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 47",
-    "entity_type": "Concept",
+    "entity": "Internal Strain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Internal Strain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Internal Strain"
     },
     "confusions": [
-      "Confuser A 47",
-      "Confuser B 47",
-      "Confuser C 47"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1367,28 +1461,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 48",
-    "entity_type": "Concept",
+    "entity": "Pointing Machine Rig",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pointing Machine Rig"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pointing Machine Rig"
     },
     "confusions": [
-      "Confuser A 48",
-      "Confuser B 48",
-      "Confuser C 48"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1396,28 +1492,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 49",
-    "entity_type": "Concept",
+    "entity": "Roughing Out",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Roughing Out"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Roughing Out"
     },
     "confusions": [
-      "Confuser A 49",
-      "Confuser B 49",
-      "Confuser C 49"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1425,28 +1523,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 50",
-    "entity_type": "Concept",
+    "entity": "Scribing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scribing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scribing"
     },
     "confusions": [
-      "Confuser A 50",
-      "Confuser B 50",
-      "Confuser C 50"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1454,28 +1554,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 51",
-    "entity_type": "Concept",
+    "entity": "Polishing Stone",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Polishing Stone"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Polishing Stone"
     },
     "confusions": [
-      "Confuser A 51",
-      "Confuser B 51",
-      "Confuser C 51"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1483,28 +1585,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 52",
-    "entity_type": "Concept",
+    "entity": "Parian Grain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Parian Grain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Parian Grain"
     },
     "confusions": [
-      "Confuser A 52",
-      "Confuser B 52",
-      "Confuser C 52"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1512,28 +1616,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 53",
-    "entity_type": "Concept",
+    "entity": "Anatomical Realism",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Anatomical Realism"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Anatomical Realism"
     },
     "confusions": [
-      "Confuser A 53",
-      "Confuser B 53",
-      "Confuser C 53"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1541,28 +1647,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 54",
-    "entity_type": "Concept",
+    "entity": "Weathering Crust",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Weathering Crust"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Weathering Crust"
     },
     "confusions": [
-      "Confuser A 54",
-      "Confuser B 54",
-      "Confuser C 54"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1570,28 +1678,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 55",
-    "entity_type": "Concept",
+    "entity": "Subtractive Constraint",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Subtractive Constraint"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Subtractive Constraint"
     },
     "confusions": [
-      "Confuser A 55",
-      "Confuser B 55",
-      "Confuser C 55"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1599,28 +1709,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 56",
-    "entity_type": "Concept",
+    "entity": "Bow Drill",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bow Drill"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bow Drill"
     },
     "confusions": [
-      "Confuser A 56",
-      "Confuser B 56",
-      "Confuser C 56"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1628,28 +1740,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 57",
-    "entity_type": "Concept",
+    "entity": "Brecciated Marble",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Brecciated Marble"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Brecciated Marble"
     },
     "confusions": [
-      "Confuser A 57",
-      "Confuser B 57",
-      "Confuser C 57"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1657,28 +1771,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 58",
-    "entity_type": "Concept",
+    "entity": "Stylization",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Stylization"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Stylization"
     },
     "confusions": [
-      "Confuser A 58",
-      "Confuser B 58",
-      "Confuser C 58"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1686,28 +1802,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 59",
-    "entity_type": "Concept",
+    "entity": "Surface Spalling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Surface Spalling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Surface Spalling"
     },
     "confusions": [
-      "Confuser A 59",
-      "Confuser B 59",
-      "Confuser C 59"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1715,28 +1833,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 60",
-    "entity_type": "Concept",
+    "entity": "Carrara Statuario",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Carrara Statuario"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Carrara Statuario"
     },
     "confusions": [
-      "Confuser A 60",
-      "Confuser B 60",
-      "Confuser C 60"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1744,28 +1864,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 61",
-    "entity_type": "Concept",
+    "entity": "Doweling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Doweling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Doweling"
     },
     "confusions": [
-      "Confuser A 61",
-      "Confuser B 61",
-      "Confuser C 61"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1773,28 +1895,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 62",
-    "entity_type": "Concept",
+    "entity": "Calcite Fluorescence",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Calcite Fluorescence"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Calcite Fluorescence"
     },
     "confusions": [
-      "Confuser A 62",
-      "Confuser B 62",
-      "Confuser C 62"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1802,28 +1926,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 63",
-    "entity_type": "Concept",
+    "entity": "Incipient Vein",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Incipient Vein"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Incipient Vein"
     },
     "confusions": [
-      "Confuser A 63",
-      "Confuser B 63",
-      "Confuser C 63"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1831,28 +1957,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 64",
-    "entity_type": "Concept",
+    "entity": "Subtractive Process",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Subtractive Process"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Subtractive Process"
     },
     "confusions": [
-      "Confuser A 64",
-      "Confuser B 64",
-      "Confuser C 64"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1860,28 +1988,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 65",
-    "entity_type": "Concept",
+    "entity": "Pitting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pitting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pitting"
     },
     "confusions": [
-      "Confuser A 65",
-      "Confuser B 65",
-      "Confuser C 65"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1889,28 +2019,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 66",
-    "entity_type": "Concept",
+    "entity": "Desalination",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Desalination"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Desalination"
     },
     "confusions": [
-      "Confuser A 66",
-      "Confuser B 66",
-      "Confuser C 66"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1918,28 +2050,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 67",
-    "entity_type": "Concept",
+    "entity": "Dressed Surface",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Dressed Surface"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Dressed Surface"
     },
     "confusions": [
-      "Confuser A 67",
-      "Confuser B 67",
-      "Confuser C 67"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1947,28 +2081,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 68",
-    "entity_type": "Concept",
+    "entity": "Monolith",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Monolith"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Monolith"
     },
     "confusions": [
-      "Confuser A 68",
-      "Confuser B 68",
-      "Confuser C 68"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1976,28 +2112,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 69",
-    "entity_type": "Concept",
+    "entity": "Carrara Blue",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Carrara Blue"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Carrara Blue"
     },
     "confusions": [
-      "Confuser A 69",
-      "Confuser B 69",
-      "Confuser C 69"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2005,28 +2143,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 70",
-    "entity_type": "Concept",
+    "entity": "Pitching Tool",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pitching Tool"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pitching Tool"
     },
     "confusions": [
-      "Confuser A 70",
-      "Confuser B 70",
-      "Confuser C 70"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,28 +2174,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 71",
-    "entity_type": "Concept",
+    "entity": "Chryselephantine",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Chryselephantine"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Chryselephantine"
     },
     "confusions": [
-      "Confuser A 71",
-      "Confuser B 71",
-      "Confuser C 71"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2063,28 +2205,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 72",
-    "entity_type": "Concept",
+    "entity": "Polychromy",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Polychromy"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Polychromy"
     },
     "confusions": [
-      "Confuser A 72",
-      "Confuser B 72",
-      "Confuser C 72"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2092,28 +2236,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 73",
-    "entity_type": "Concept",
+    "entity": "Subtractive Thinking",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Subtractive Thinking"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Subtractive Thinking"
     },
     "confusions": [
-      "Confuser A 73",
-      "Confuser B 73",
-      "Confuser C 73"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2121,28 +2267,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 74",
-    "entity_type": "Concept",
+    "entity": "Wedge and Shims",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wedge and Shims"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wedge and Shims"
     },
     "confusions": [
-      "Confuser A 74",
-      "Confuser B 74",
-      "Confuser C 74"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2150,28 +2298,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 75",
-    "entity_type": "Concept",
+    "entity": "Marble Slab",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Marble Slab"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Marble Slab"
     },
     "confusions": [
-      "Confuser A 75",
-      "Confuser B 75",
-      "Confuser C 75"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2179,28 +2329,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 76",
-    "entity_type": "Concept",
+    "entity": "Iron Inclusions",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Iron Inclusions"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Iron Inclusions"
     },
     "confusions": [
-      "Confuser A 76",
-      "Confuser B 76",
-      "Confuser C 76"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2208,28 +2360,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 77",
-    "entity_type": "Concept",
+    "entity": "Fine Polished",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Fine Polished"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Fine Polished"
     },
     "confusions": [
-      "Confuser A 77",
-      "Confuser B 77",
-      "Confuser C 77"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2237,28 +2391,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 78",
-    "entity_type": "Concept",
+    "entity": "Gesso Prep",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gesso Prep"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gesso Prep"
     },
     "confusions": [
-      "Confuser A 78",
-      "Confuser B 78",
-      "Confuser C 78"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2266,28 +2422,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 79",
-    "entity_type": "Concept",
+    "entity": "Rough Hawn",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Rough Hawn"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Rough Hawn"
     },
     "confusions": [
-      "Confuser A 79",
-      "Confuser B 79",
-      "Confuser C 79"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2295,28 +2453,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 80",
-    "entity_type": "Concept",
+    "entity": "Carrara C Grade",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Carrara C Grade"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Carrara C Grade"
     },
     "confusions": [
-      "Confuser A 80",
-      "Confuser B 80",
-      "Confuser C 80"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2324,28 +2484,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 81",
-    "entity_type": "Concept",
+    "entity": "Micro-cracking",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Micro-cracking"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Micro-cracking"
     },
     "confusions": [
-      "Confuser A 81",
-      "Confuser B 81",
-      "Confuser C 81"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2353,28 +2515,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 82",
-    "entity_type": "Concept",
+    "entity": "Subsurface Flaw",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Subsurface Flaw"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Subsurface Flaw"
     },
     "confusions": [
-      "Confuser A 82",
-      "Confuser B 82",
-      "Confuser C 82"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2382,28 +2546,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 83",
-    "entity_type": "Concept",
+    "entity": "Pumice Scouring",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pumice Scouring"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pumice Scouring"
     },
     "confusions": [
-      "Confuser A 83",
-      "Confuser B 83",
-      "Confuser C 83"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2411,28 +2577,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 84",
-    "entity_type": "Concept",
+    "entity": "Mallet",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Mallet"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Mallet"
     },
     "confusions": [
-      "Confuser A 84",
-      "Confuser B 84",
-      "Confuser C 84"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2440,28 +2608,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 85",
-    "entity_type": "Concept",
+    "entity": "Bore Hole Residue",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bore Hole Residue"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bore Hole Residue"
     },
     "confusions": [
-      "Confuser A 85",
-      "Confuser B 85",
-      "Confuser C 85"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2469,28 +2639,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 86",
-    "entity_type": "Concept",
+    "entity": "Metamorphic Rock",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Metamorphic Rock"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Metamorphic Rock"
     },
     "confusions": [
-      "Confuser A 86",
-      "Confuser B 86",
-      "Confuser C 86"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2498,28 +2670,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 87",
-    "entity_type": "Concept",
+    "entity": "Acanthus Leaf",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Acanthus Leaf"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Acanthus Leaf"
     },
     "confusions": [
-      "Confuser A 87",
-      "Confuser B 87",
-      "Confuser C 87"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2527,28 +2701,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 88",
-    "entity_type": "Concept",
+    "entity": "Drapery Modeling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Drapery Modeling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Drapery Modeling"
     },
     "confusions": [
-      "Confuser A 88",
-      "Confuser B 88",
-      "Confuser C 88"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2556,28 +2732,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 89",
-    "entity_type": "Concept",
+    "entity": "Pointing Framework",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pointing Framework"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pointing Framework"
     },
     "confusions": [
-      "Confuser A 89",
-      "Confuser B 89",
-      "Confuser C 89"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2585,28 +2763,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 90",
-    "entity_type": "Concept",
+    "entity": "Marble Dust",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Marble Dust"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Marble Dust"
     },
     "confusions": [
-      "Confuser A 90",
-      "Confuser B 90",
-      "Confuser C 90"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2614,28 +2794,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 91",
-    "entity_type": "Concept",
+    "entity": "Veneer Cladding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Veneer Cladding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Veneer Cladding"
     },
     "confusions": [
-      "Confuser A 91",
-      "Confuser B 91",
-      "Confuser C 91"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2643,28 +2825,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 92",
-    "entity_type": "Concept",
+    "entity": "Gouge",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gouge"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gouge"
     },
     "confusions": [
-      "Confuser A 92",
-      "Confuser B 92",
-      "Confuser C 92"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2672,28 +2856,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 93",
-    "entity_type": "Concept",
+    "entity": "Parian Lustre",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Parian Lustre"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Parian Lustre"
     },
     "confusions": [
-      "Confuser A 93",
-      "Confuser B 93",
-      "Confuser C 93"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2701,28 +2887,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 94",
-    "entity_type": "Concept",
+    "entity": "Washed Surface",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Washed Surface"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Washed Surface"
     },
     "confusions": [
-      "Confuser A 94",
-      "Confuser B 94",
-      "Confuser C 94"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,28 +2918,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 95",
-    "entity_type": "Concept",
+    "entity": "Calcite Crystal",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Calcite Crystal"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Calcite Crystal"
     },
     "confusions": [
-      "Confuser A 95",
-      "Confuser B 95",
-      "Confuser C 95"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2759,28 +2949,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 96",
-    "entity_type": "Concept",
+    "entity": "Relief Depth",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Relief Depth"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Relief Depth"
     },
     "confusions": [
-      "Confuser A 96",
-      "Confuser B 96",
-      "Confuser C 96"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2788,28 +2980,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 97",
-    "entity_type": "Concept",
+    "entity": "Incipient Crack",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Incipient Crack"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Incipient Crack"
     },
     "confusions": [
-      "Confuser A 97",
-      "Confuser B 97",
-      "Confuser C 97"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2817,28 +3011,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 98",
-    "entity_type": "Concept",
+    "entity": "Iron Bloom",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Iron Bloom"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Iron Bloom"
     },
     "confusions": [
-      "Confuser A 98",
-      "Confuser B 98",
-      "Confuser C 98"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2846,28 +3042,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 99",
-    "entity_type": "Concept",
+    "entity": "Marble Joint",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Marble Joint"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Marble Joint"
     },
     "confusions": [
-      "Confuser A 99",
-      "Confuser B 99",
-      "Confuser C 99"
+      "Similar marble item",
+      "Related marble concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2875,28 +3073,92 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "marble",
-    "entity": "Marble Entity 100",
-    "entity_type": "Concept",
+    "entity": "Pointing Needle",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pointing Needle"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pointing Needle"
     },
     "confusions": [
-      "Confuser A 100",
-      "Confuser B 100",
-      "Confuser C 100"
+      "Similar marble item",
+      "Related marble concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_marble_0101",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "marble",
+    "entity": "Carrara Veining",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Carrara Veining"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Carrara Veining"
+    },
+    "confusions": [
+      "Similar marble item",
+      "Related marble concept"
     ],
     "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_marble_0102",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "marble",
+    "entity": "Marble Monolith",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Marble Monolith"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Marble Monolith"
+    },
+    "confusions": [
+      "Similar marble item",
+      "Related marble concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
     }
   }
 ]

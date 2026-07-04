@@ -1,0 +1,2752 @@
+[
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0001",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Reinforced Concrete",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Reinforced Concrete"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Reinforced Concrete"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0002",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Steel Frame",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Steel Frame"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Steel Frame"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0003",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Plate Glass",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Plate Glass"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Plate Glass"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0004",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Curtain Wall",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Curtain Wall"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Curtain Wall"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0005",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "I-Beam",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for I-Beam"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of I-Beam"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0006",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Cantilever",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cantilever"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cantilever"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0007",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Pilotis",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pilotis"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pilotis"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0008",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Open Plan",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Open Plan"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Open Plan"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0009",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Free Facade",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Free Facade"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Free Facade"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0010",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Horizontal Window",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Horizontal Window"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Horizontal Window"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0011",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Roof Garden",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Roof Garden"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Roof Garden"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0012",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Brutalism",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Brutalism"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Brutalism"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0013",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Exposed Structure",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Exposed Structure"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Exposed Structure"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0014",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modular Unit",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Modular Unit"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Modular Unit"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0015",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Prefabricated Panel",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Prefabricated Panel"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Prefabricated Panel"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0016",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Plywood",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Plywood"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Plywood"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0017",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Aluminum",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Aluminum"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Aluminum"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0018",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Titanium Cladding",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Titanium Cladding"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Titanium Cladding"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0019",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Composite Resin",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Composite Resin"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Composite Resin"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0020",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Polycarbonate",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Polycarbonate"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Polycarbonate"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0021",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Low-E Glass",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Low-E Glass"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Low-E Glass"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0022",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Structural Silicone",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Structural Silicone"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Structural Silicone"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0023",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Tensile Membrane",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tensile Membrane"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tensile Membrane"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0024",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Pneumatic Structure",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pneumatic Structure"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pneumatic Structure"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0025",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Geodesic Dome",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Geodesic Dome"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Geodesic Dome"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0026",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Tensegrity",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tensegrity"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tensegrity"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0027",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Ferrocement",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Ferrocement"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Ferrocement"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0028",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Cast Iron",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cast Iron"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cast Iron"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0029",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Wrought Iron",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Wrought Iron"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Wrought Iron"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0030",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Plate Steel",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Plate Steel"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Plate Steel"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0031",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Riveted Joint",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Riveted Joint"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Riveted Joint"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0032",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Welded Seam",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Welded Seam"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Welded Seam"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0033",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Asbestos (Legacy)",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Asbestos (Legacy)"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Asbestos (Legacy)"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0034",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Drywall",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Drywall"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Drywall"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0035",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Fiberglass",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Fiberglass"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Fiberglass"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0036",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Plastic Laminate",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Plastic Laminate"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Plastic Laminate"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0037",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Vinyl",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Vinyl"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Vinyl"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0038",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Linoleum",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Linoleum"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Linoleum"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0039",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Cork Tile",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cork Tile"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cork Tile"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0040",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Acoustic Panel",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Acoustic Panel"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Acoustic Panel"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0041",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Sustainable Timber",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Sustainable Timber"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Sustainable Timber"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0042",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Cross-Laminated Timber",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cross-Laminated Timber"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cross-Laminated Timber"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0043",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Bamboo",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Bamboo"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Bamboo"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0044",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Carbon Fiber",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Carbon Fiber"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Carbon Fiber"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0045",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Smart Glass",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Smart Glass"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Smart Glass"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0046",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Photovoltaic Panel",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Photovoltaic Panel"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Photovoltaic Panel"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0047",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Self-Healing Concrete",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Self-Healing Concrete"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Self-Healing Concrete"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0048",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "3D Printed Wall",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for 3D Printed Wall"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of 3D Printed Wall"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0049",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Aerogel",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Aerogel"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Aerogel"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0050",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Recycled Steel",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Recycled Steel"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Recycled Steel"
+    },
+    "confusions": [
+      "Similar modernist_materials form",
+      "Related modernist_materials structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0051",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 51",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0052",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 52",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0053",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 53",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0054",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 54",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0055",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 55",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0056",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 56",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0057",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 57",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0058",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 58",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0059",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 59",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0060",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 60",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0061",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 61",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0062",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 62",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0063",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 63",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0064",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 64",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0065",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 65",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0066",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 66",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0067",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 67",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0068",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 68",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0069",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 69",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0070",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 70",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0071",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 71",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0072",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 72",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0073",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 73",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0074",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 74",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0075",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 75",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0076",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 76",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0077",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 77",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0078",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 78",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0079",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 79",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0080",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 80",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0081",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 81",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0082",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 82",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0083",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 83",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0084",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 84",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0085",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 85",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0086",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 86",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0087",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 87",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0088",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 88",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0089",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 89",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0090",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 90",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0091",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 91",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0092",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 92",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0093",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 93",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0094",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 94",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0095",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 95",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0096",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 96",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0097",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 97",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0098",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 98",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0099",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 99",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_modernist_materials_0100",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "modernist_materials",
+    "entity": "Modernist Materials Concept 100",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  }
+]

@@ -1,0 +1,2752 @@
+[
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0001",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Blueprint",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Blueprint"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Blueprint"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0002",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Drafting Table",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Drafting Table"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Drafting Table"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0003",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "T-Square",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for T-Square"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of T-Square"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0004",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Set Square",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Set Square"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Set Square"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0005",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Compass",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Compass"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Compass"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0006",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Divider",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Divider"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Divider"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0007",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Scale Ruler",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Scale Ruler"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Scale Ruler"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0008",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Parallel Bar",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Parallel Bar"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Parallel Bar"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0009",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Tracing Paper",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tracing Paper"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tracing Paper"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0010",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Technical Pen",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Technical Pen"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Technical Pen"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0011",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Ink Bottle",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Ink Bottle"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Ink Bottle"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0012",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Eraser Shield",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Eraser Shield"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Eraser Shield"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0013",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Drafting Brush",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Drafting Brush"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Drafting Brush"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0014",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Pantograph",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pantograph"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pantograph"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0015",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Theodolite",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Theodolite"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Theodolite"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0016",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Transit",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Transit"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Transit"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0017",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Level",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Level"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Level"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0018",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Plumb Bob",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Plumb Bob"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Plumb Bob"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0019",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Tape Measure",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tape Measure"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tape Measure"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0020",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Laser Rangefinder",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Laser Rangefinder"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Laser Rangefinder"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0021",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "3D Scanner",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for 3D Scanner"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of 3D Scanner"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0022",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "GPS Receiver",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for GPS Receiver"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of GPS Receiver"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0023",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "CAD Software",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for CAD Software"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of CAD Software"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0024",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "BIM Model",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for BIM Model"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of BIM Model"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0025",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Rendering Engine",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Rendering Engine"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Rendering Engine"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0026",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "VR Goggles",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for VR Goggles"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of VR Goggles"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0027",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "3D Printer",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for 3D Printer"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of 3D Printer"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0028",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "CNC Router",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for CNC Router"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of CNC Router"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0029",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Plotter",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Plotter"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Plotter"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0030",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Light Box",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Light Box"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Light Box"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0031",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Stencil",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stencil"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stencil"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0032",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "French Curve",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for French Curve"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of French Curve"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0033",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Flexicurve",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Flexicurve"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Flexicurve"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0034",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Calculator",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Calculator"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Calculator"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0035",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Slide Rule",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Slide Rule"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Slide Rule"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0036",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Protractor",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Protractor"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Protractor"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0037",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Triangular Scale",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Triangular Scale"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Triangular Scale"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0038",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Lettering Guide",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Lettering Guide"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Lettering Guide"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0039",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Model Board",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Model Board"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Model Board"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0040",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Foam Core",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Foam Core"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Foam Core"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0041",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "X-Acto Knife",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for X-Acto Knife"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of X-Acto Knife"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0042",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Glue Gun",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Glue Gun"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Glue Gun"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0043",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Acrylic Sheet",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Acrylic Sheet"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Acrylic Sheet"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0044",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Wire Armature",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Wire Armature"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Wire Armature"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0045",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Wood Block",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Wood Block"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Wood Block"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0046",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Clay Model",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Clay Model"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Clay Model"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0047",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Plaster Cast",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Plaster Cast"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Plaster Cast"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0048",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Photography Arch",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Photography Arch"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Photography Arch"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0049",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Survey Stake",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Survey Stake"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Survey Stake"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0050",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Site Map",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Site Map"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Site Map"
+    },
+    "confusions": [
+      "Similar architectural_tools form",
+      "Related architectural_tools structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0051",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 51",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0052",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 52",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0053",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 53",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0054",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 54",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0055",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 55",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0056",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 56",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0057",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 57",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0058",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 58",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0059",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 59",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0060",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 60",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0061",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 61",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0062",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 62",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0063",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 63",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0064",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 64",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0065",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 65",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0066",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 66",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0067",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 67",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0068",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 68",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0069",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 69",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0070",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 70",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0071",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 71",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0072",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 72",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0073",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 73",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0074",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 74",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0075",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 75",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0076",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 76",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0077",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 77",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0078",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 78",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0079",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 79",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0080",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 80",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0081",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 81",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0082",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 82",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0083",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 83",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0084",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 84",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0085",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 85",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0086",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 86",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0087",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 87",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0088",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 88",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0089",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 89",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0090",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 90",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0091",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 91",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0092",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 92",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0093",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 93",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0094",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 94",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0095",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 95",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0096",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 96",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0097",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 97",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0098",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 98",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0099",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 99",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_architectural_tools_0100",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "architectural_tools",
+    "entity": "Architectural Tools Concept 100",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  }
+]

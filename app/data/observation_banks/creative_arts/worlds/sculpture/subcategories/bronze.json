@@ -4,28 +4,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 1",
-    "entity_type": "Concept",
+    "entity": "Alloy",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Alloy"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Alloy"
     },
     "confusions": [
-      "Confuser A 1",
-      "Confuser B 1",
-      "Confuser C 1"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -33,28 +35,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 2",
-    "entity_type": "Concept",
+    "entity": "Lost Wax",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Lost Wax"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Lost Wax"
     },
     "confusions": [
-      "Confuser A 2",
-      "Confuser B 2",
-      "Confuser C 2"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -62,28 +66,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 3",
-    "entity_type": "Concept",
+    "entity": "Bronze Disease",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bronze Disease"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bronze Disease"
     },
     "confusions": [
-      "Confuser A 3",
-      "Confuser B 3",
-      "Confuser C 3"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -91,28 +97,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 4",
-    "entity_type": "Concept",
+    "entity": "Chasing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Chasing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Chasing"
     },
     "confusions": [
-      "Confuser A 4",
-      "Confuser B 4",
-      "Confuser C 4"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -120,28 +128,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 5",
-    "entity_type": "Concept",
+    "entity": "Noble Patina",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Noble Patina"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Noble Patina"
     },
     "confusions": [
-      "Confuser A 5",
-      "Confuser B 5",
-      "Confuser C 5"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -149,28 +159,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 6",
-    "entity_type": "Concept",
+    "entity": "Indirect Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Indirect Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Indirect Casting"
     },
     "confusions": [
-      "Confuser A 6",
-      "Confuser B 6",
-      "Confuser C 6"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -178,28 +190,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 7",
-    "entity_type": "Concept",
+    "entity": "Spruing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Spruing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Spruing"
     },
     "confusions": [
-      "Confuser A 7",
-      "Confuser B 7",
-      "Confuser C 7"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -207,28 +221,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 8",
-    "entity_type": "Concept",
+    "entity": "Planishing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Planishing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Planishing"
     },
     "confusions": [
-      "Confuser A 8",
-      "Confuser B 8",
-      "Confuser C 8"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -236,28 +252,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 9",
-    "entity_type": "Concept",
+    "entity": "Microcrystalline Wax",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Microcrystalline Wax"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Microcrystalline Wax"
     },
     "confusions": [
-      "Confuser A 9",
-      "Confuser B 9",
-      "Confuser C 9"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -265,28 +283,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 10",
-    "entity_type": "Concept",
+    "entity": "Investment",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Investment"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Investment"
     },
     "confusions": [
-      "Confuser A 10",
-      "Confuser B 10",
-      "Confuser C 10"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -294,28 +314,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 11",
-    "entity_type": "Concept",
+    "entity": "Tensile Strength",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Tensile Strength"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Tensile Strength"
     },
     "confusions": [
-      "Confuser A 11",
-      "Confuser B 11",
-      "Confuser C 11"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -323,28 +345,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 12",
-    "entity_type": "Concept",
+    "entity": "Repousse",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Repousse"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Repousse"
     },
     "confusions": [
-      "Confuser A 12",
-      "Confuser B 12",
-      "Confuser C 12"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -352,28 +376,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 13",
-    "entity_type": "Concept",
+    "entity": "Verdigris",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Verdigris"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Verdigris"
     },
     "confusions": [
-      "Confuser A 13",
-      "Confuser B 13",
-      "Confuser C 13"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -381,28 +407,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 14",
-    "entity_type": "Concept",
+    "entity": "Armature",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Armature"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Armature"
     },
     "confusions": [
-      "Confuser A 14",
-      "Confuser B 14",
-      "Confuser C 14"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -410,28 +438,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 15",
-    "entity_type": "Concept",
+    "entity": "Porosity",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Porosity"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Porosity"
     },
     "confusions": [
-      "Confuser A 15",
-      "Confuser B 15",
-      "Confuser C 15"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -439,28 +469,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 16",
-    "entity_type": "Concept",
+    "entity": "Liver of Sulfur",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Liver of Sulfur"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Liver of Sulfur"
     },
     "confusions": [
-      "Confuser A 16",
-      "Confuser B 16",
-      "Confuser C 16"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -468,28 +500,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 17",
-    "entity_type": "Concept",
+    "entity": "Flash",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Flash"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Flash"
     },
     "confusions": [
-      "Confuser A 17",
-      "Confuser B 17",
-      "Confuser C 17"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -497,28 +531,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 18",
-    "entity_type": "Concept",
+    "entity": "Fettling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Fettling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Fettling"
     },
     "confusions": [
-      "Confuser A 18",
-      "Confuser B 18",
-      "Confuser C 18"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -526,28 +562,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 19",
-    "entity_type": "Concept",
+    "entity": "Core Pins",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Core Pins"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Core Pins"
     },
     "confusions": [
-      "Confuser A 19",
-      "Confuser B 19",
-      "Confuser C 19"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -555,28 +593,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 20",
-    "entity_type": "Concept",
+    "entity": "Silicon Bronze",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Silicon Bronze"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Silicon Bronze"
     },
     "confusions": [
-      "Confuser A 20",
-      "Confuser B 20",
-      "Confuser C 20"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -584,28 +624,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 21",
-    "entity_type": "Concept",
+    "entity": "Cold Work",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cold Work"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cold Work"
     },
     "confusions": [
-      "Confuser A 21",
-      "Confuser B 21",
-      "Confuser C 21"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -613,28 +655,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 22",
-    "entity_type": "Concept",
+    "entity": "Crucible",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Crucible"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Crucible"
     },
     "confusions": [
-      "Confuser A 22",
-      "Confuser B 22",
-      "Confuser C 22"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -642,28 +686,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 23",
-    "entity_type": "Concept",
+    "entity": "Slurry",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Slurry"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Slurry"
     },
     "confusions": [
-      "Confuser A 23",
-      "Confuser B 23",
-      "Confuser C 23"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -671,28 +717,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 24",
-    "entity_type": "Concept",
+    "entity": "Burnishing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Burnishing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Burnishing"
     },
     "confusions": [
-      "Confuser A 24",
-      "Confuser B 24",
-      "Confuser C 24"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -700,28 +748,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 25",
-    "entity_type": "Concept",
+    "entity": "Ladle",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Ladle"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Ladle"
     },
     "confusions": [
-      "Confuser A 25",
-      "Confuser B 25",
-      "Confuser C 25"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -729,28 +779,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 26",
-    "entity_type": "Concept",
+    "entity": "Direct Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Direct Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Direct Casting"
     },
     "confusions": [
-      "Confuser A 26",
-      "Confuser B 26",
-      "Confuser C 26"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -758,28 +810,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 27",
-    "entity_type": "Concept",
+    "entity": "Sand Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sand Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sand Casting"
     },
     "confusions": [
-      "Confuser A 27",
-      "Confuser B 27",
-      "Confuser C 27"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -787,28 +841,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 28",
-    "entity_type": "Concept",
+    "entity": "Vent",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Vent"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Vent"
     },
     "confusions": [
-      "Confuser A 28",
-      "Confuser B 28",
-      "Confuser C 28"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -816,28 +872,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 29",
-    "entity_type": "Concept",
+    "entity": "Gate",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gate"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gate"
     },
     "confusions": [
-      "Confuser A 29",
-      "Confuser B 29",
-      "Confuser C 29"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -845,28 +903,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 30",
-    "entity_type": "Concept",
+    "entity": "Riser",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Riser"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Riser"
     },
     "confusions": [
-      "Confuser A 30",
-      "Confuser B 30",
-      "Confuser C 30"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -874,28 +934,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 31",
-    "entity_type": "Concept",
+    "entity": "Degassing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Degassing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Degassing"
     },
     "confusions": [
-      "Confuser A 31",
-      "Confuser B 31",
-      "Confuser C 31"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -903,28 +965,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 32",
-    "entity_type": "Concept",
+    "entity": "Annealing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Annealing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Annealing"
     },
     "confusions": [
-      "Confuser A 32",
-      "Confuser B 32",
-      "Confuser C 32"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -932,28 +996,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 33",
-    "entity_type": "Concept",
+    "entity": "Work Hardening",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Work Hardening"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Work Hardening"
     },
     "confusions": [
-      "Confuser A 33",
-      "Confuser B 33",
-      "Confuser C 33"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -961,28 +1027,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 34",
-    "entity_type": "Concept",
+    "entity": "Brazing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Brazing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Brazing"
     },
     "confusions": [
-      "Confuser A 34",
-      "Confuser B 34",
-      "Confuser C 34"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -990,28 +1058,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 35",
-    "entity_type": "Concept",
+    "entity": "Welding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Welding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Welding"
     },
     "confusions": [
-      "Confuser A 35",
-      "Confuser B 35",
-      "Confuser C 35"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1019,28 +1089,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 36",
-    "entity_type": "Concept",
+    "entity": "Riveting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Riveting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Riveting"
     },
     "confusions": [
-      "Confuser A 36",
-      "Confuser B 36",
-      "Confuser C 36"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1048,28 +1120,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 37",
-    "entity_type": "Concept",
+    "entity": "Shrinkage",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Shrinkage"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Shrinkage"
     },
     "confusions": [
-      "Confuser A 37",
-      "Confuser B 37",
-      "Confuser C 37"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1077,28 +1151,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 38",
-    "entity_type": "Concept",
+    "entity": "Oxidized Surface",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Oxidized Surface"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Oxidized Surface"
     },
     "confusions": [
-      "Confuser A 38",
-      "Confuser B 38",
-      "Confuser C 38"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1106,28 +1182,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 39",
-    "entity_type": "Concept",
+    "entity": "Cuprous Oxide",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cuprous Oxide"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cuprous Oxide"
     },
     "confusions": [
-      "Confuser A 39",
-      "Confuser B 39",
-      "Confuser C 39"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1135,28 +1213,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 40",
-    "entity_type": "Concept",
+    "entity": "Tin Bronze",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Tin Bronze"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Tin Bronze"
     },
     "confusions": [
-      "Confuser A 40",
-      "Confuser B 40",
-      "Confuser C 40"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1164,28 +1244,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 41",
-    "entity_type": "Concept",
+    "entity": "Arsenical Bronze",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Arsenical Bronze"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Arsenical Bronze"
     },
     "confusions": [
-      "Confuser A 41",
-      "Confuser B 41",
-      "Confuser C 41"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1193,28 +1275,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 42",
-    "entity_type": "Concept",
+    "entity": "Bell Metal",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bell Metal"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bell Metal"
     },
     "confusions": [
-      "Confuser A 42",
-      "Confuser B 42",
-      "Confuser C 42"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1222,28 +1306,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 43",
-    "entity_type": "Concept",
+    "entity": "Core mass",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Core mass"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Core mass"
     },
     "confusions": [
-      "Confuser A 43",
-      "Confuser B 43",
-      "Confuser C 43"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1251,28 +1337,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 44",
-    "entity_type": "Concept",
+    "entity": "Vapor Porosity",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Vapor Porosity"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Vapor Porosity"
     },
     "confusions": [
-      "Confuser A 44",
-      "Confuser B 44",
-      "Confuser C 44"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1280,28 +1368,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 45",
-    "entity_type": "Concept",
+    "entity": "Bronze Fatigue",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bronze Fatigue"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bronze Fatigue"
     },
     "confusions": [
-      "Confuser A 45",
-      "Confuser B 45",
-      "Confuser C 45"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1309,28 +1399,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 46",
-    "entity_type": "Concept",
+    "entity": "Buffed Wax",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Buffed Wax"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Buffed Wax"
     },
     "confusions": [
-      "Confuser A 46",
-      "Confuser B 46",
-      "Confuser C 46"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1338,28 +1430,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 47",
-    "entity_type": "Concept",
+    "entity": "Sandblast",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sandblast"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sandblast"
     },
     "confusions": [
-      "Confuser A 47",
-      "Confuser B 47",
-      "Confuser C 47"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1367,28 +1461,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 48",
-    "entity_type": "Concept",
+    "entity": "Hot Patina",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Hot Patina"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Hot Patina"
     },
     "confusions": [
-      "Confuser A 48",
-      "Confuser B 48",
-      "Confuser C 48"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1396,28 +1492,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 49",
-    "entity_type": "Concept",
+    "entity": "Cold Patination",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cold Patination"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cold Patination"
     },
     "confusions": [
-      "Confuser A 49",
-      "Confuser B 49",
-      "Confuser C 49"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1425,28 +1523,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 50",
-    "entity_type": "Concept",
+    "entity": "Cupric Oxide",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cupric Oxide"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cupric Oxide"
     },
     "confusions": [
-      "Confuser A 50",
-      "Confuser B 50",
-      "Confuser C 50"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1454,28 +1554,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 51",
-    "entity_type": "Concept",
+    "entity": "Green Patina",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Green Patina"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Green Patina"
     },
     "confusions": [
-      "Confuser A 51",
-      "Confuser B 51",
-      "Confuser C 51"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1483,28 +1585,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 52",
-    "entity_type": "Concept",
+    "entity": "Filing Marks",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Filing Marks"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Filing Marks"
     },
     "confusions": [
-      "Confuser A 52",
-      "Confuser B 52",
-      "Confuser C 52"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1512,28 +1616,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 53",
-    "entity_type": "Concept",
+    "entity": "Gas Porosity",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gas Porosity"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gas Porosity"
     },
     "confusions": [
-      "Confuser A 53",
-      "Confuser B 53",
-      "Confuser C 53"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1541,28 +1647,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 54",
-    "entity_type": "Concept",
+    "entity": "Burr",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Burr"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Burr"
     },
     "confusions": [
-      "Confuser A 54",
-      "Confuser B 54",
-      "Confuser C 54"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1570,28 +1678,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 55",
-    "entity_type": "Concept",
+    "entity": "BTA Inhibitor",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic BTA Inhibitor"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of BTA Inhibitor"
     },
     "confusions": [
-      "Confuser A 55",
-      "Confuser B 55",
-      "Confuser C 55"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1599,28 +1709,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 56",
-    "entity_type": "Concept",
+    "entity": "Red Patina",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Red Patina"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Red Patina"
     },
     "confusions": [
-      "Confuser A 56",
-      "Confuser B 56",
-      "Confuser C 56"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1628,28 +1740,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 57",
-    "entity_type": "Concept",
+    "entity": "Sprue Scar",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sprue Scar"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sprue Scar"
     },
     "confusions": [
-      "Confuser A 57",
-      "Confuser B 57",
-      "Confuser C 57"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1657,28 +1771,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 58",
-    "entity_type": "Concept",
+    "entity": "Sand Mold Scar",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sand Mold Scar"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sand Mold Scar"
     },
     "confusions": [
-      "Confuser A 58",
-      "Confuser B 58",
-      "Confuser C 58"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1686,28 +1802,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 59",
-    "entity_type": "Concept",
+    "entity": "Slag Inclusions",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Slag Inclusions"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Slag Inclusions"
     },
     "confusions": [
-      "Confuser A 59",
-      "Confuser B 59",
-      "Confuser C 59"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1715,28 +1833,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 60",
-    "entity_type": "Concept",
+    "entity": "Cold Patination Technique",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cold Patination Technique"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cold Patination Technique"
     },
     "confusions": [
-      "Confuser A 60",
-      "Confuser B 60",
-      "Confuser C 60"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1744,28 +1864,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 61",
-    "entity_type": "Concept",
+    "entity": "Black Patina",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Black Patina"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Black Patina"
     },
     "confusions": [
-      "Confuser A 61",
-      "Confuser B 61",
-      "Confuser C 61"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1773,28 +1895,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 62",
-    "entity_type": "Concept",
+    "entity": "Metal Sanding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Metal Sanding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Metal Sanding"
     },
     "confusions": [
-      "Confuser A 62",
-      "Confuser B 62",
-      "Confuser C 62"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1802,28 +1926,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 63",
-    "entity_type": "Concept",
+    "entity": "Dross",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Dross"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Dross"
     },
     "confusions": [
-      "Confuser A 63",
-      "Confuser B 63",
-      "Confuser C 63"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1831,28 +1957,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 64",
-    "entity_type": "Concept",
+    "entity": "Electroplating",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Electroplating"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Electroplating"
     },
     "confusions": [
-      "Confuser A 64",
-      "Confuser B 64",
-      "Confuser C 64"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1860,28 +1988,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 65",
-    "entity_type": "Concept",
+    "entity": "Shell Inlay",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Shell Inlay"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Shell Inlay"
     },
     "confusions": [
-      "Confuser A 65",
-      "Confuser B 65",
-      "Confuser C 65"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1889,28 +2019,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 66",
-    "entity_type": "Concept",
+    "entity": "Tensile Weakness",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Tensile Weakness"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Tensile Weakness"
     },
     "confusions": [
-      "Confuser A 66",
-      "Confuser B 66",
-      "Confuser C 66"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1918,28 +2050,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 67",
-    "entity_type": "Concept",
+    "entity": "Blue Patina",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Blue Patina"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Blue Patina"
     },
     "confusions": [
-      "Confuser A 67",
-      "Confuser B 67",
-      "Confuser C 67"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1947,28 +2081,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 68",
-    "entity_type": "Concept",
+    "entity": "Core Removal",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Core Removal"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Core Removal"
     },
     "confusions": [
-      "Confuser A 68",
-      "Confuser B 68",
-      "Confuser C 68"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1976,28 +2112,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 69",
-    "entity_type": "Concept",
+    "entity": "Investment Scar",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Investment Scar"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Investment Scar"
     },
     "confusions": [
-      "Confuser A 69",
-      "Confuser B 69",
-      "Confuser C 69"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2005,28 +2143,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 70",
-    "entity_type": "Concept",
+    "entity": "Aluminum Bronze",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Aluminum Bronze"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Aluminum Bronze"
     },
     "confusions": [
-      "Confuser A 70",
-      "Confuser B 70",
-      "Confuser C 70"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,28 +2174,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 71",
-    "entity_type": "Concept",
+    "entity": "Teal Oxidation",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Teal Oxidation"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Teal Oxidation"
     },
     "confusions": [
-      "Confuser A 71",
-      "Confuser B 71",
-      "Confuser C 71"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2063,28 +2205,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 72",
-    "entity_type": "Concept",
+    "entity": "Silicon Scar",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Silicon Scar"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Silicon Scar"
     },
     "confusions": [
-      "Confuser A 72",
-      "Confuser B 72",
-      "Confuser C 72"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2092,28 +2236,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 73",
-    "entity_type": "Concept",
+    "entity": "Wax Pattern",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wax Pattern"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wax Pattern"
     },
     "confusions": [
-      "Confuser A 73",
-      "Confuser B 73",
-      "Confuser C 73"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2121,28 +2267,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 74",
-    "entity_type": "Concept",
+    "entity": "Investment Cracking",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Investment Cracking"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Investment Cracking"
     },
     "confusions": [
-      "Confuser A 74",
-      "Confuser B 74",
-      "Confuser C 74"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2150,28 +2298,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 75",
-    "entity_type": "Concept",
+    "entity": "Burnishing Scar",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Burnishing Scar"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Burnishing Scar"
     },
     "confusions": [
-      "Confuser A 75",
-      "Confuser B 75",
-      "Confuser C 75"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2179,28 +2329,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 76",
-    "entity_type": "Concept",
+    "entity": "Tan Patina",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Tan Patina"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Tan Patina"
     },
     "confusions": [
-      "Confuser A 76",
-      "Confuser B 76",
-      "Confuser C 76"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2208,28 +2360,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 77",
-    "entity_type": "Concept",
+    "entity": "Incomplete Pour",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Incomplete Pour"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Incomplete Pour"
     },
     "confusions": [
-      "Confuser A 77",
-      "Confuser B 77",
-      "Confuser C 77"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2237,28 +2391,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 78",
-    "entity_type": "Concept",
+    "entity": "Gilding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gilding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gilding"
     },
     "confusions": [
-      "Confuser A 78",
-      "Confuser B 78",
-      "Confuser C 78"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2266,28 +2422,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 79",
-    "entity_type": "Concept",
+    "entity": "Bronze Inlay",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bronze Inlay"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bronze Inlay"
     },
     "confusions": [
-      "Confuser A 79",
-      "Confuser B 79",
-      "Confuser C 79"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2295,28 +2453,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 80",
-    "entity_type": "Concept",
+    "entity": "Process Risk",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Process Risk"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Process Risk"
     },
     "confusions": [
-      "Confuser A 80",
-      "Confuser B 80",
-      "Confuser C 80"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2324,28 +2484,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 81",
-    "entity_type": "Concept",
+    "entity": "BTA Coating",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic BTA Coating"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of BTA Coating"
     },
     "confusions": [
-      "Confuser A 81",
-      "Confuser B 81",
-      "Confuser C 81"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2353,28 +2515,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 82",
-    "entity_type": "Concept",
+    "entity": "Copper Scum",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Copper Scum"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Copper Scum"
     },
     "confusions": [
-      "Confuser A 82",
-      "Confuser B 82",
-      "Confuser C 82"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2382,28 +2546,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 83",
-    "entity_type": "Concept",
+    "entity": "Dowel",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Dowel"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Dowel"
     },
     "confusions": [
-      "Confuser A 83",
-      "Confuser B 83",
-      "Confuser C 83"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2411,28 +2577,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 84",
-    "entity_type": "Concept",
+    "entity": "Steel Burnish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Steel Burnish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Steel Burnish"
     },
     "confusions": [
-      "Confuser A 84",
-      "Confuser B 84",
-      "Confuser C 84"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2440,28 +2608,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 85",
-    "entity_type": "Concept",
+    "entity": "Zinc Bronze",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Zinc Bronze"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Zinc Bronze"
     },
     "confusions": [
-      "Confuser A 85",
-      "Confuser B 85",
-      "Confuser C 85"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2469,28 +2639,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 86",
-    "entity_type": "Concept",
+    "entity": "Electro-cleaned",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Electro-cleaned"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Electro-cleaned"
     },
     "confusions": [
-      "Confuser A 86",
-      "Confuser B 86",
-      "Confuser C 86"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2498,28 +2670,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 87",
-    "entity_type": "Concept",
+    "entity": "Joint Line",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Joint Line"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Joint Line"
     },
     "confusions": [
-      "Confuser A 87",
-      "Confuser B 87",
-      "Confuser C 87"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2527,28 +2701,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 88",
-    "entity_type": "Concept",
+    "entity": "Cuprous Chloride",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cuprous Chloride"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cuprous Chloride"
     },
     "confusions": [
-      "Confuser A 88",
-      "Confuser B 88",
-      "Confuser C 88"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2556,28 +2732,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 89",
-    "entity_type": "Concept",
+    "entity": "Foundry Dust",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Foundry Dust"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Foundry Dust"
     },
     "confusions": [
-      "Confuser A 89",
-      "Confuser B 89",
-      "Confuser C 89"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2585,28 +2763,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 90",
-    "entity_type": "Concept",
+    "entity": "Spall",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Spall"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Spall"
     },
     "confusions": [
-      "Confuser A 90",
-      "Confuser B 90",
-      "Confuser C 90"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2614,28 +2794,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 91",
-    "entity_type": "Concept",
+    "entity": "Splatter",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Splatter"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Splatter"
     },
     "confusions": [
-      "Confuser A 91",
-      "Confuser B 91",
-      "Confuser C 91"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2643,28 +2825,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 92",
-    "entity_type": "Concept",
+    "entity": "Patination Brush",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Patination Brush"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Patination Brush"
     },
     "confusions": [
-      "Confuser A 92",
-      "Confuser B 92",
-      "Confuser C 92"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2672,28 +2856,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 93",
-    "entity_type": "Concept",
+    "entity": "Tin Bloom",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Tin Bloom"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Tin Bloom"
     },
     "confusions": [
-      "Confuser A 93",
-      "Confuser B 93",
-      "Confuser C 93"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2701,28 +2887,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 94",
-    "entity_type": "Concept",
+    "entity": "Rivet Head",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Rivet Head"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Rivet Head"
     },
     "confusions": [
-      "Confuser A 94",
-      "Confuser B 94",
-      "Confuser C 94"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,28 +2918,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 95",
-    "entity_type": "Concept",
+    "entity": "Burnt Investment",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Burnt Investment"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Burnt Investment"
     },
     "confusions": [
-      "Confuser A 95",
-      "Confuser B 95",
-      "Confuser C 95"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2759,28 +2949,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 96",
-    "entity_type": "Concept",
+    "entity": "Brazing Seam",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Brazing Seam"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Brazing Seam"
     },
     "confusions": [
-      "Confuser A 96",
-      "Confuser B 96",
-      "Confuser C 96"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2788,28 +2980,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 97",
-    "entity_type": "Concept",
+    "entity": "Casting Pit",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Casting Pit"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Casting Pit"
     },
     "confusions": [
-      "Confuser A 97",
-      "Confuser B 97",
-      "Confuser C 97"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2817,28 +3011,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 98",
-    "entity_type": "Concept",
+    "entity": "Mirror Polish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Mirror Polish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Mirror Polish"
     },
     "confusions": [
-      "Confuser A 98",
-      "Confuser B 98",
-      "Confuser C 98"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2846,28 +3042,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 99",
-    "entity_type": "Concept",
+    "entity": "Centrifugal Casting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Centrifugal Casting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Centrifugal Casting"
     },
     "confusions": [
-      "Confuser A 99",
-      "Confuser B 99",
-      "Confuser C 99"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2875,28 +3073,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "bronze",
-    "entity": "Bronze Entity 100",
-    "entity_type": "Concept",
+    "entity": "Bronze Monolith",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bronze Monolith"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bronze Monolith"
     },
     "confusions": [
-      "Confuser A 100",
-      "Confuser B 100",
-      "Confuser C 100"
+      "Similar bronze item",
+      "Related bronze concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   }
 ]

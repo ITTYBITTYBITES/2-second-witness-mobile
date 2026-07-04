@@ -4,28 +4,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 1",
-    "entity_type": "Concept",
+    "entity": "Anisotropy",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Anisotropy"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Anisotropy"
     },
     "confusions": [
-      "Confuser A 1",
-      "Confuser B 1",
-      "Confuser C 1"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -33,28 +35,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 2",
-    "entity_type": "Concept",
+    "entity": "Boxwood",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Boxwood"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Boxwood"
     },
     "confusions": [
-      "Confuser A 2",
-      "Confuser B 2",
-      "Confuser C 2"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -62,28 +66,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 3",
-    "entity_type": "Concept",
+    "entity": "V-Tool",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic V-Tool"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of V-Tool"
     },
     "confusions": [
-      "Confuser A 3",
-      "Confuser B 3",
-      "Confuser C 3"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -91,28 +97,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 4",
-    "entity_type": "Concept",
+    "entity": "Checking",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Checking"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Checking"
     },
     "confusions": [
-      "Confuser A 4",
-      "Confuser B 4",
-      "Confuser C 4"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -120,28 +128,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 5",
-    "entity_type": "Concept",
+    "entity": "Limewood",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Limewood"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Limewood"
     },
     "confusions": [
-      "Confuser A 5",
-      "Confuser B 5",
-      "Confuser C 5"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -149,28 +159,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 6",
-    "entity_type": "Concept",
+    "entity": "End Grain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic End Grain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of End Grain"
     },
     "confusions": [
-      "Confuser A 6",
-      "Confuser B 6",
-      "Confuser C 6"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -178,28 +190,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 7",
-    "entity_type": "Concept",
+    "entity": "Adze",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Adze"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Adze"
     },
     "confusions": [
-      "Confuser A 7",
-      "Confuser B 7",
-      "Confuser C 7"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -207,28 +221,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 8",
-    "entity_type": "Concept",
+    "entity": "Gesso Grosser",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gesso Grosser"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gesso Grosser"
     },
     "confusions": [
-      "Confuser A 8",
-      "Confuser B 8",
-      "Confuser C 8"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -236,28 +252,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 9",
-    "entity_type": "Concept",
+    "entity": "Woodworm Holes",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Woodworm Holes"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Woodworm Holes"
     },
     "confusions": [
-      "Confuser A 9",
-      "Confuser B 9",
-      "Confuser C 9"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -265,28 +283,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 10",
-    "entity_type": "Concept",
+    "entity": "Heartwood",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Heartwood"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Heartwood"
     },
     "confusions": [
-      "Confuser A 10",
-      "Confuser B 10",
-      "Confuser C 10"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -294,28 +314,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 11",
-    "entity_type": "Concept",
+    "entity": "Sapwood",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Sapwood"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sapwood"
     },
     "confusions": [
-      "Confuser A 11",
-      "Confuser B 11",
-      "Confuser C 11"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -323,28 +345,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 12",
-    "entity_type": "Concept",
+    "entity": "Deep Undercutting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Deep Undercutting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Deep Undercutting"
     },
     "confusions": [
-      "Confuser A 12",
-      "Confuser B 12",
-      "Confuser C 12"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -352,28 +376,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 13",
-    "entity_type": "Concept",
+    "entity": "Burr Walnut",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Burr Walnut"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Burr Walnut"
     },
     "confusions": [
-      "Confuser A 13",
-      "Confuser B 13",
-      "Confuser C 13"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -381,28 +407,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 14",
-    "entity_type": "Concept",
+    "entity": "Wooden Mallet",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wooden Mallet"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wooden Mallet"
     },
     "confusions": [
-      "Confuser A 14",
-      "Confuser B 14",
-      "Confuser C 14"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -410,28 +438,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 15",
-    "entity_type": "Concept",
+    "entity": "Wood Polychromy",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Polychromy"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Polychromy"
     },
     "confusions": [
-      "Confuser A 15",
-      "Confuser B 15",
-      "Confuser C 15"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -439,28 +469,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 16",
-    "entity_type": "Concept",
+    "entity": "Hygroscopy",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Hygroscopy"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Hygroscopy"
     },
     "confusions": [
-      "Confuser A 16",
-      "Confuser B 16",
-      "Confuser C 16"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -468,28 +500,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 17",
-    "entity_type": "Concept",
+    "entity": "Scarf Joint",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scarf Joint"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scarf Joint"
     },
     "confusions": [
-      "Confuser A 17",
-      "Confuser B 17",
-      "Confuser C 17"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -497,28 +531,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 18",
-    "entity_type": "Concept",
+    "entity": "Hollow-Backing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Hollow-Backing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Hollow-Backing"
     },
     "confusions": [
-      "Confuser A 18",
-      "Confuser B 18",
-      "Confuser C 18"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -526,28 +562,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 19",
-    "entity_type": "Concept",
+    "entity": "Ebony",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Ebony"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Ebony"
     },
     "confusions": [
-      "Confuser A 19",
-      "Confuser B 19",
-      "Confuser C 19"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -555,28 +593,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 20",
-    "entity_type": "Concept",
+    "entity": "Medullary Rays",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Medullary Rays"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Medullary Rays"
     },
     "confusions": [
-      "Confuser A 20",
-      "Confuser B 20",
-      "Confuser C 20"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -584,28 +624,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 21",
-    "entity_type": "Concept",
+    "entity": "Adze Marks",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Adze Marks"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Adze Marks"
     },
     "confusions": [
-      "Confuser A 21",
-      "Confuser B 21",
-      "Confuser C 21"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -613,28 +655,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 22",
-    "entity_type": "Concept",
+    "entity": "Whittling",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Whittling"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Whittling"
     },
     "confusions": [
-      "Confuser A 22",
-      "Confuser B 22",
-      "Confuser C 22"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -642,28 +686,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 23",
-    "entity_type": "Concept",
+    "entity": "Gilding",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Gilding"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Gilding"
     },
     "confusions": [
-      "Confuser A 23",
-      "Confuser B 23",
-      "Confuser C 23"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -671,28 +717,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 24",
-    "entity_type": "Concept",
+    "entity": "Spokeshave",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Spokeshave"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Spokeshave"
     },
     "confusions": [
-      "Confuser A 24",
-      "Confuser B 24",
-      "Confuser C 24"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -700,28 +748,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 25",
-    "entity_type": "Concept",
+    "entity": "Lamination",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Lamination"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Lamination"
     },
     "confusions": [
-      "Confuser A 25",
-      "Confuser B 25",
-      "Confuser C 25"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -729,28 +779,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 26",
-    "entity_type": "Concept",
+    "entity": "Dovetail Joint",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Dovetail Joint"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Dovetail Joint"
     },
     "confusions": [
-      "Confuser A 26",
-      "Confuser B 26",
-      "Confuser C 26"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -758,28 +810,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 27",
-    "entity_type": "Concept",
+    "entity": "Bentwood",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bentwood"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bentwood"
     },
     "confusions": [
-      "Confuser A 27",
-      "Confuser B 27",
-      "Confuser C 27"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -787,28 +841,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 28",
-    "entity_type": "Concept",
+    "entity": "Scorp",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scorp"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scorp"
     },
     "confusions": [
-      "Confuser A 28",
-      "Confuser B 28",
-      "Confuser C 28"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -816,28 +872,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 29",
-    "entity_type": "Concept",
+    "entity": "Pith",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pith"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pith"
     },
     "confusions": [
-      "Confuser A 29",
-      "Confuser B 29",
-      "Confuser C 29"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -845,28 +903,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 30",
-    "entity_type": "Concept",
+    "entity": "Charred Finish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Charred Finish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Charred Finish"
     },
     "confusions": [
-      "Confuser A 30",
-      "Confuser B 30",
-      "Confuser C 30"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -874,28 +934,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 31",
-    "entity_type": "Concept",
+    "entity": "Mortise and Tenon",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Mortise and Tenon"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Mortise and Tenon"
     },
     "confusions": [
-      "Confuser A 31",
-      "Confuser B 31",
-      "Confuser C 31"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -903,28 +965,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 32",
-    "entity_type": "Concept",
+    "entity": "English Oak",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic English Oak"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of English Oak"
     },
     "confusions": [
-      "Confuser A 32",
-      "Confuser B 32",
-      "Confuser C 32"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -932,28 +996,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 33",
-    "entity_type": "Concept",
+    "entity": "Compression Failure",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Compression Failure"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Compression Failure"
     },
     "confusions": [
-      "Confuser A 33",
-      "Confuser B 33",
-      "Confuser C 33"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -961,28 +1027,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 34",
-    "entity_type": "Concept",
+    "entity": "Japanese Cedar",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Japanese Cedar"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Japanese Cedar"
     },
     "confusions": [
-      "Confuser A 34",
-      "Confuser B 34",
-      "Confuser C 34"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -990,28 +1058,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 35",
-    "entity_type": "Concept",
+    "entity": "Fluting",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Fluting"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Fluting"
     },
     "confusions": [
-      "Confuser A 35",
-      "Confuser B 35",
-      "Confuser C 35"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1019,28 +1089,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 36",
-    "entity_type": "Concept",
+    "entity": "Knot Cluster",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Knot Cluster"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Knot Cluster"
     },
     "confusions": [
-      "Confuser A 36",
-      "Confuser B 36",
-      "Confuser C 36"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1048,28 +1120,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 37",
-    "entity_type": "Concept",
+    "entity": "Pierced Carving",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pierced Carving"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pierced Carving"
     },
     "confusions": [
-      "Confuser A 37",
-      "Confuser B 37",
-      "Confuser C 37"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1077,28 +1151,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 38",
-    "entity_type": "Concept",
+    "entity": "Oil Finish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Oil Finish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Oil Finish"
     },
     "confusions": [
-      "Confuser A 38",
-      "Confuser B 38",
-      "Confuser C 38"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1106,28 +1182,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 39",
-    "entity_type": "Concept",
+    "entity": "Varnish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Varnish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Varnish"
     },
     "confusions": [
-      "Confuser A 39",
-      "Confuser B 39",
-      "Confuser C 39"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1135,28 +1213,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 40",
-    "entity_type": "Concept",
+    "entity": "Drawknife",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Drawknife"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Drawknife"
     },
     "confusions": [
-      "Confuser A 40",
-      "Confuser B 40",
-      "Confuser C 40"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1164,28 +1244,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 41",
-    "entity_type": "Concept",
+    "entity": "Growth Ring",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Growth Ring"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Growth Ring"
     },
     "confusions": [
-      "Confuser A 41",
-      "Confuser B 41",
-      "Confuser C 41"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1193,28 +1275,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 42",
-    "entity_type": "Concept",
+    "entity": "Quarter-Sawn",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Quarter-Sawn"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Quarter-Sawn"
     },
     "confusions": [
-      "Confuser A 42",
-      "Confuser B 42",
-      "Confuser C 42"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1222,28 +1306,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 43",
-    "entity_type": "Concept",
+    "entity": "Bentwood Curve",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bentwood Curve"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bentwood Curve"
     },
     "confusions": [
-      "Confuser A 43",
-      "Confuser B 43",
-      "Confuser C 43"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1251,28 +1337,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 44",
-    "entity_type": "Concept",
+    "entity": "Anisotropic Warping",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Anisotropic Warping"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Anisotropic Warping"
     },
     "confusions": [
-      "Confuser A 44",
-      "Confuser B 44",
-      "Confuser C 44"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1280,28 +1368,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 45",
-    "entity_type": "Concept",
+    "entity": "Wood Rasp",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Rasp"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Rasp"
     },
     "confusions": [
-      "Confuser A 45",
-      "Confuser B 45",
-      "Confuser C 45"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1309,28 +1399,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 46",
-    "entity_type": "Concept",
+    "entity": "Heart Rot",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Heart Rot"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Heart Rot"
     },
     "confusions": [
-      "Confuser A 46",
-      "Confuser B 46",
-      "Confuser C 46"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1338,28 +1430,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 47",
-    "entity_type": "Concept",
+    "entity": "Inshave",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Inshave"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Inshave"
     },
     "confusions": [
-      "Confuser A 47",
-      "Confuser B 47",
-      "Confuser C 47"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1367,28 +1461,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 48",
-    "entity_type": "Concept",
+    "entity": "Lamination Seam",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Lamination Seam"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Lamination Seam"
     },
     "confusions": [
-      "Confuser A 48",
-      "Confuser B 48",
-      "Confuser C 48"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1396,28 +1492,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 49",
-    "entity_type": "Concept",
+    "entity": "Shellac",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Shellac"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Shellac"
     },
     "confusions": [
-      "Confuser A 49",
-      "Confuser B 49",
-      "Confuser C 49"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1425,28 +1523,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 50",
-    "entity_type": "Concept",
+    "entity": "Wood Knot",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Knot"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Knot"
     },
     "confusions": [
-      "Confuser A 50",
-      "Confuser B 50",
-      "Confuser C 50"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1454,28 +1554,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 51",
-    "entity_type": "Concept",
+    "entity": "Dovetail Key",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Dovetail Key"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Dovetail Key"
     },
     "confusions": [
-      "Confuser A 51",
-      "Confuser B 51",
-      "Confuser C 51"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1483,28 +1585,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 52",
-    "entity_type": "Concept",
+    "entity": "Scoring",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scoring"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scoring"
     },
     "confusions": [
-      "Confuser A 52",
-      "Confuser B 52",
-      "Confuser C 52"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1512,28 +1616,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 53",
-    "entity_type": "Concept",
+    "entity": "Tear-out",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Tear-out"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Tear-out"
     },
     "confusions": [
-      "Confuser A 53",
-      "Confuser B 53",
-      "Confuser C 53"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1541,28 +1647,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 54",
-    "entity_type": "Concept",
+    "entity": "Basswood",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Basswood"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Basswood"
     },
     "confusions": [
-      "Confuser A 54",
-      "Confuser B 54",
-      "Confuser C 54"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1570,28 +1678,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 55",
-    "entity_type": "Concept",
+    "entity": "Turning",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Turning"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Turning"
     },
     "confusions": [
-      "Confuser A 55",
-      "Confuser B 55",
-      "Confuser C 55"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1599,28 +1709,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 56",
-    "entity_type": "Concept",
+    "entity": "Figured Grain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Figured Grain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Figured Grain"
     },
     "confusions": [
-      "Confuser A 56",
-      "Confuser B 56",
-      "Confuser C 56"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1628,28 +1740,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 57",
-    "entity_type": "Concept",
+    "entity": "Butt Joint",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Butt Joint"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Butt Joint"
     },
     "confusions": [
-      "Confuser A 57",
-      "Confuser B 57",
-      "Confuser C 57"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1657,28 +1771,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 58",
-    "entity_type": "Concept",
+    "entity": "Wax Finish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wax Finish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wax Finish"
     },
     "confusions": [
-      "Confuser A 58",
-      "Confuser B 58",
-      "Confuser C 58"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1686,28 +1802,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 59",
-    "entity_type": "Concept",
+    "entity": "Splice",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Splice"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Splice"
     },
     "confusions": [
-      "Confuser A 59",
-      "Confuser B 59",
-      "Confuser C 59"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1715,28 +1833,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 60",
-    "entity_type": "Concept",
+    "entity": "Differential Warping",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Differential Warping"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Differential Warping"
     },
     "confusions": [
-      "Confuser A 60",
-      "Confuser B 60",
-      "Confuser C 60"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1744,28 +1864,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 61",
-    "entity_type": "Concept",
+    "entity": "Coping Saw",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Coping Saw"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Coping Saw"
     },
     "confusions": [
-      "Confuser A 61",
-      "Confuser B 61",
-      "Confuser C 61"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1773,28 +1895,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 62",
-    "entity_type": "Concept",
+    "entity": "Oak Tannin",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Oak Tannin"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Oak Tannin"
     },
     "confusions": [
-      "Confuser A 62",
-      "Confuser B 62",
-      "Confuser C 62"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1802,28 +1926,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 63",
-    "entity_type": "Concept",
+    "entity": "Quarter-Sawn Fleck",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Quarter-Sawn Fleck"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Quarter-Sawn Fleck"
     },
     "confusions": [
-      "Confuser A 63",
-      "Confuser B 63",
-      "Confuser C 63"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1831,28 +1957,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 64",
-    "entity_type": "Concept",
+    "entity": "African Ebony",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic African Ebony"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of African Ebony"
     },
     "confusions": [
-      "Confuser A 64",
-      "Confuser B 64",
-      "Confuser C 64"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1860,28 +1988,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 65",
-    "entity_type": "Concept",
+    "entity": "Wood Sealant",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Sealant"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Sealant"
     },
     "confusions": [
-      "Confuser A 65",
-      "Confuser B 65",
-      "Confuser C 65"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1889,28 +2019,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 66",
-    "entity_type": "Concept",
+    "entity": "Scorp Marks",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Scorp Marks"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Scorp Marks"
     },
     "confusions": [
-      "Confuser A 66",
-      "Confuser B 66",
-      "Confuser C 66"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1918,28 +2050,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 67",
-    "entity_type": "Concept",
+    "entity": "Cross-Grain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cross-Grain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cross-Grain"
     },
     "confusions": [
-      "Confuser A 67",
-      "Confuser B 67",
-      "Confuser C 67"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1947,28 +2081,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 68",
-    "entity_type": "Concept",
+    "entity": "Intarsia",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Intarsia"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Intarsia"
     },
     "confusions": [
-      "Confuser A 68",
-      "Confuser B 68",
-      "Confuser C 68"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -1976,28 +2112,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 69",
-    "entity_type": "Concept",
+    "entity": "Lebanon Cedar",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Lebanon Cedar"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Lebanon Cedar"
     },
     "confusions": [
-      "Confuser A 69",
-      "Confuser B 69",
-      "Confuser C 69"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2005,28 +2143,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 70",
-    "entity_type": "Concept",
+    "entity": "Hollow Core",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Hollow Core"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Hollow Core"
     },
     "confusions": [
-      "Confuser A 70",
-      "Confuser B 70",
-      "Confuser C 70"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2034,28 +2174,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 71",
-    "entity_type": "Concept",
+    "entity": "Balsa",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Balsa"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Balsa"
     },
     "confusions": [
-      "Confuser A 71",
-      "Confuser B 71",
-      "Confuser C 71"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2063,28 +2205,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 72",
-    "entity_type": "Concept",
+    "entity": "Teak",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Teak"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Teak"
     },
     "confusions": [
-      "Confuser A 72",
-      "Confuser B 72",
-      "Confuser C 72"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2092,28 +2236,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 73",
-    "entity_type": "Concept",
+    "entity": "Mahogany",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Mahogany"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Mahogany"
     },
     "confusions": [
-      "Confuser A 73",
-      "Confuser B 73",
-      "Confuser C 73"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2121,28 +2267,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 74",
-    "entity_type": "Concept",
+    "entity": "Ash",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Ash"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Ash"
     },
     "confusions": [
-      "Confuser A 74",
-      "Confuser B 74",
-      "Confuser C 74"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2150,28 +2298,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 75",
-    "entity_type": "Concept",
+    "entity": "Beech",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Beech"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Beech"
     },
     "confusions": [
-      "Confuser A 75",
-      "Confuser B 75",
-      "Confuser C 75"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2179,28 +2329,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 76",
-    "entity_type": "Concept",
+    "entity": "Spiral Grain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Spiral Grain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Spiral Grain"
     },
     "confusions": [
-      "Confuser A 76",
-      "Confuser B 76",
-      "Confuser C 76"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2208,28 +2360,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 77",
-    "entity_type": "Concept",
+    "entity": "Interlocked Grain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Interlocked Grain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Interlocked Grain"
     },
     "confusions": [
-      "Confuser A 77",
-      "Confuser B 77",
-      "Confuser C 77"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2237,28 +2391,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 78",
-    "entity_type": "Concept",
+    "entity": "Silver Grain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Silver Grain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Silver Grain"
     },
     "confusions": [
-      "Confuser A 78",
-      "Confuser B 78",
-      "Confuser C 78"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2266,28 +2422,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 79",
-    "entity_type": "Concept",
+    "entity": "Wane",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wane"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wane"
     },
     "confusions": [
-      "Confuser A 79",
-      "Confuser B 79",
-      "Confuser C 79"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2295,28 +2453,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 80",
-    "entity_type": "Concept",
+    "entity": "Bark",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Bark"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bark"
     },
     "confusions": [
-      "Confuser A 80",
-      "Confuser B 80",
-      "Confuser C 80"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2324,28 +2484,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 81",
-    "entity_type": "Concept",
+    "entity": "Cambium",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cambium"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cambium"
     },
     "confusions": [
-      "Confuser A 81",
-      "Confuser B 81",
-      "Confuser C 81"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2353,28 +2515,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 82",
-    "entity_type": "Concept",
+    "entity": "Latewood",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Latewood"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Latewood"
     },
     "confusions": [
-      "Confuser A 82",
-      "Confuser B 82",
-      "Confuser C 82"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2382,28 +2546,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 83",
-    "entity_type": "Concept",
+    "entity": "Earlywood",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Earlywood"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Earlywood"
     },
     "confusions": [
-      "Confuser A 83",
-      "Confuser B 83",
-      "Confuser C 83"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2411,28 +2577,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 84",
-    "entity_type": "Concept",
+    "entity": "Cellulose",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Cellulose"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Cellulose"
     },
     "confusions": [
-      "Confuser A 84",
-      "Confuser B 84",
-      "Confuser C 84"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2440,28 +2608,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 85",
-    "entity_type": "Concept",
+    "entity": "Lignin",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Lignin"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Lignin"
     },
     "confusions": [
-      "Confuser A 85",
-      "Confuser B 85",
-      "Confuser C 85"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2469,28 +2639,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 86",
-    "entity_type": "Concept",
+    "entity": "Wood Density",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Density"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Density"
     },
     "confusions": [
-      "Confuser A 86",
-      "Confuser B 86",
-      "Confuser C 86"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2498,28 +2670,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 87",
-    "entity_type": "Concept",
+    "entity": "Wood Porosity",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Porosity"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Porosity"
     },
     "confusions": [
-      "Confuser A 87",
-      "Confuser B 87",
-      "Confuser C 87"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2527,28 +2701,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 88",
-    "entity_type": "Concept",
+    "entity": "Dry Rot",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Dry Rot"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Dry Rot"
     },
     "confusions": [
-      "Confuser A 88",
-      "Confuser B 88",
-      "Confuser C 88"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2556,28 +2732,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 89",
-    "entity_type": "Concept",
+    "entity": "Wet Rot",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wet Rot"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wet Rot"
     },
     "confusions": [
-      "Confuser A 89",
-      "Confuser B 89",
-      "Confuser C 89"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2585,28 +2763,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 90",
-    "entity_type": "Concept",
+    "entity": "Fungal Stain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Fungal Stain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Fungal Stain"
     },
     "confusions": [
-      "Confuser A 90",
-      "Confuser B 90",
-      "Confuser C 90"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2614,28 +2794,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 91",
-    "entity_type": "Concept",
+    "entity": "Iron Stain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Iron Stain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Iron Stain"
     },
     "confusions": [
-      "Confuser A 91",
-      "Confuser B 91",
-      "Confuser C 91"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2643,28 +2825,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 92",
-    "entity_type": "Concept",
+    "entity": "Wood Glue",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Glue"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Glue"
     },
     "confusions": [
-      "Confuser A 92",
-      "Confuser B 92",
-      "Confuser C 92"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2672,28 +2856,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 93",
-    "entity_type": "Concept",
+    "entity": "Hide Glue",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Hide Glue"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Hide Glue"
     },
     "confusions": [
-      "Confuser A 93",
-      "Confuser B 93",
-      "Confuser C 93"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2701,28 +2887,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 94",
-    "entity_type": "Concept",
+    "entity": "Wood Inlay",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Inlay"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Inlay"
     },
     "confusions": [
-      "Confuser A 94",
-      "Confuser B 94",
-      "Confuser C 94"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2730,28 +2918,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 95",
-    "entity_type": "Concept",
+    "entity": "Marquetry",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Marquetry"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Marquetry"
     },
     "confusions": [
-      "Confuser A 95",
-      "Confuser B 95",
-      "Confuser C 95"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2759,28 +2949,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 96",
-    "entity_type": "Concept",
+    "entity": "Pyrography",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Pyrography"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Pyrography"
     },
     "confusions": [
-      "Confuser A 96",
-      "Confuser B 96",
-      "Confuser C 96"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 2,
+    "difficulty": 1,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2788,28 +2980,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 97",
-    "entity_type": "Concept",
+    "entity": "Wood Bleaching",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Wood Bleaching"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Wood Bleaching"
     },
     "confusions": [
-      "Confuser A 97",
-      "Confuser B 97",
-      "Confuser C 97"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2817,28 +3011,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 98",
-    "entity_type": "Concept",
+    "entity": "Ebonizing",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Ebonizing"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Ebonizing"
     },
     "confusions": [
-      "Confuser A 98",
-      "Confuser B 98",
-      "Confuser C 98"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 4,
+    "difficulty": 3,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2846,28 +3042,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 99",
-    "entity_type": "Concept",
+    "entity": "French Polish",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic French Polish"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of French Polish"
     },
     "confusions": [
-      "Confuser A 99",
-      "Confuser B 99",
-      "Confuser C 99"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 5,
+    "difficulty": 4,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   },
   {
@@ -2875,28 +3073,30 @@
     "universe": "creative_arts",
     "world": "sculpture",
     "subcategory": "wood",
-    "entity": "Wood Entity 100",
-    "entity_type": "Concept",
+    "entity": "Universal Grain",
+    "entity_type": "Core Concept",
     "features": {
       "visual": {
-        "clue": "Recognition Signature"
+        "signature": "Characteristic Universal Grain"
       },
       "physical": {
-        "property": "Hard Characteristic"
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
       }
     },
     "dimensions": {
-      "Category": "Sculpture",
-      "Signature": "Primary Cue"
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Universal Grain"
     },
     "confusions": [
-      "Confuser A 100",
-      "Confuser B 100",
-      "Confuser C 100"
+      "Similar wood item",
+      "Related wood concept"
     ],
-    "difficulty": 1,
+    "difficulty": 5,
     "confidence": {
-      "clue": "High"
+      "signature": "High"
     }
   }
 ]

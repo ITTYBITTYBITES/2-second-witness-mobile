@@ -1,0 +1,2752 @@
+[
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0001",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Doric",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Doric"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Doric"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0002",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Ionic",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Ionic"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Ionic"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0003",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Corinthian",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Corinthian"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Corinthian"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0004",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Tuscan",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tuscan"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tuscan"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0005",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Composite",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Composite"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Composite"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0006",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Entablature",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Entablature"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Entablature"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0007",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Architrave",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Architrave"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Architrave"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0008",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Frieze",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Frieze"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Frieze"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0009",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Cornice",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cornice"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cornice"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0010",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Pediment",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pediment"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pediment"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0011",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Triglyph",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Triglyph"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Triglyph"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0012",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Metope",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Metope"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Metope"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0013",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Volute",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Volute"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Volute"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0014",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Acanthus Leaf",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Acanthus Leaf"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Acanthus Leaf"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0015",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Echinus",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Echinus"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Echinus"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0016",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Abacus",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Abacus"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Abacus"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0017",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Stylobate",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stylobate"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stylobate"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0018",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Stereobate",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stereobate"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stereobate"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0019",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Cella",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cella"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cella"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0020",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Pronaos",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pronaos"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pronaos"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0021",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Peristyle",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Peristyle"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Peristyle"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0022",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Portico",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Portico"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Portico"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0023",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Rotunda",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Rotunda"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Rotunda"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0024",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Dome",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Dome"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Dome"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0025",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Oculus",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Oculus"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Oculus"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0026",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Coffer",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Coffer"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Coffer"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0027",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Vault",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Vault"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Vault"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0028",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Keystone",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Keystone"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Keystone"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0029",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Voussoir",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Voussoir"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Voussoir"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0030",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Springing",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Springing"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Springing"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0031",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Impost",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Impost"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Impost"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0032",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Pier",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pier"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pier"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0033",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Pilaster",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pilaster"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pilaster"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0034",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Arcade",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Arcade"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Arcade"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0035",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Loggia",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Loggia"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Loggia"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0036",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Atrium",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Atrium"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Atrium"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0037",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Peristyle Court",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Peristyle Court"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Peristyle Court"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0038",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Caryatid",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Caryatid"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Caryatid"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0039",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Atlantid",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Atlantid"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Atlantid"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0040",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Entasis",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Entasis"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Entasis"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0041",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Intercolumniation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Intercolumniation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Intercolumniation"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0042",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Modillion",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Modillion"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Modillion"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0043",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Dentil",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Dentil"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Dentil"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0044",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Guttae",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Guttae"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Guttae"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0045",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Mutule",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Mutule"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Mutule"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0046",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Sima",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Sima"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Sima"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0047",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Tympanum",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tympanum"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tympanum"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0048",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Acroterion",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Acroterion"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Acroterion"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0049",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Opisthodomos",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Opisthodomos"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Opisthodomos"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0050",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Tholos",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tholos"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tholos"
+    },
+    "confusions": [
+      "Similar classical_orders form",
+      "Related classical_orders structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0051",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 51",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0052",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 52",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0053",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 53",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0054",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 54",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0055",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 55",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0056",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 56",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0057",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 57",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0058",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 58",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0059",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 59",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0060",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 60",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0061",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 61",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0062",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 62",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0063",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 63",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0064",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 64",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0065",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 65",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0066",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 66",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0067",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 67",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0068",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 68",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0069",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 69",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0070",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 70",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0071",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 71",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0072",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 72",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0073",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 73",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0074",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 74",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0075",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 75",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0076",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 76",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0077",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 77",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0078",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 78",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0079",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 79",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0080",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 80",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0081",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 81",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0082",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 82",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0083",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 83",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0084",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 84",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0085",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 85",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0086",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 86",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0087",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 87",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0088",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 88",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0089",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 89",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0090",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 90",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0091",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 91",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0092",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 92",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0093",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 93",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0094",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 94",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0095",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 95",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0096",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 96",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0097",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 97",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0098",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 98",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0099",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 99",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_classical_orders_0100",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "classical_orders",
+    "entity": "Classical Orders Concept 100",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  }
+]

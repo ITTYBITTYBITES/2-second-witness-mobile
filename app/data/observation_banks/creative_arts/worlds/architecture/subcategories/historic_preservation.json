@@ -1,0 +1,2752 @@
+[
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0001",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Restoration",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Restoration"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Restoration"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0002",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Conservation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Conservation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Conservation"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0003",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Renovation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Renovation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Renovation"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0004",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Adaptive Reuse",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Adaptive Reuse"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Adaptive Reuse"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0005",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Preservation Arch",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Preservation Arch"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Preservation Arch"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0006",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Rehabilitation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Rehabilitation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Rehabilitation"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0007",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Reconstruction",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Reconstruction"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Reconstruction"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0008",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Stabilization",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stabilization"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stabilization"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0009",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Maintenance",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Maintenance"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Maintenance"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0010",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Listing",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Listing"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Listing"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0011",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Protection",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Protection"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Protection"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0012",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "National Register",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for National Register"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of National Register"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0013",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "World Heritage",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for World Heritage"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of World Heritage"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0014",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Heritage Site",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Heritage Site"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Heritage Site"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0015",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Buffer Zone",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Buffer Zone"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Buffer Zone"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0016",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Buffer",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Buffer"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Buffer"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0017",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Cultural Landscape",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cultural Landscape"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cultural Landscape"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0018",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Authenticity",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Authenticity"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Authenticity"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0019",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Integrity",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Integrity"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Integrity"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0020",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Significant Fabric",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Significant Fabric"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Significant Fabric"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0021",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Character-Defining Feature",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Character-Defining Feature"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Character-Defining Feature"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0022",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Period of Significance",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Period of Significance"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Period of Significance"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0023",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic District",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Historic District"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Historic District"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0024",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Conservation Area",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Conservation Area"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Conservation Area"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0025",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Building Audit",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Building Audit"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Building Audit"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0026",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Structural Survey",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Structural Survey"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Structural Survey"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0027",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Condition Assessment",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Condition Assessment"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Condition Assessment"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0028",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Material Analysis",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Material Analysis"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Material Analysis"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0029",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Dendrochronology",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Dendrochronology"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Dendrochronology"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0030",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Photogrammetry",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Photogrammetry"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Photogrammetry"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0031",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Laser Scanning",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Laser Scanning"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Laser Scanning"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0032",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Stone Cleaning",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stone Cleaning"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stone Cleaning"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0033",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Repointing",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Repointing"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Repointing"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0034",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Grouting",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Grouting"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Grouting"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0035",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Consolidation Pres",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Consolidation Pres"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Consolidation Pres"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0036",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Desalination Arch",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Desalination Arch"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Desalination Arch"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0037",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Anti-Graffiti",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Anti-Graffiti"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Anti-Graffiti"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0038",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Weatherproofing",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Weatherproofing"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Weatherproofing"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0039",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Seismic Retrofit",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Seismic Retrofit"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Seismic Retrofit"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0040",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Energy Upgrade",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Energy Upgrade"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Energy Upgrade"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0041",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Accessibility Retrofit",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Accessibility Retrofit"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Accessibility Retrofit"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0042",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Legal Protection",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Legal Protection"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Legal Protection"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0043",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Easement",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Easement"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Easement"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0044",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Tax Credit",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tax Credit"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tax Credit"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0045",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Grants",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Grants"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Grants"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0046",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Community Involvement",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Community Involvement"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Community Involvement"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0047",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Oral History",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Oral History"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Oral History"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0048",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Archival Research",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Archival Research"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Archival Research"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0049",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Digital Heritage",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Digital Heritage"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Digital Heritage"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0050",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Sustainable Preservation",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Sustainable Preservation"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Sustainable Preservation"
+    },
+    "confusions": [
+      "Similar historic_preservation form",
+      "Related historic_preservation structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0051",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 51",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0052",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 52",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0053",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 53",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0054",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 54",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0055",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 55",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0056",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 56",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0057",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 57",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0058",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 58",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0059",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 59",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0060",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 60",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0061",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 61",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0062",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 62",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0063",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 63",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0064",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 64",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0065",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 65",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0066",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 66",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0067",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 67",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0068",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 68",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0069",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 69",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0070",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 70",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0071",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 71",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0072",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 72",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0073",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 73",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0074",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 74",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0075",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 75",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0076",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 76",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0077",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 77",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0078",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 78",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0079",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 79",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0080",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 80",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0081",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 81",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0082",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 82",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0083",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 83",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0084",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 84",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0085",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 85",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0086",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 86",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0087",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 87",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0088",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 88",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0089",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 89",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0090",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 90",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0091",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 91",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0092",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 92",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0093",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 93",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0094",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 94",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0095",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 95",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0096",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 96",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0097",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 97",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0098",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 98",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0099",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 99",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_historic_preservation_0100",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "historic_preservation",
+    "entity": "Historic Preservation Concept 100",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  }
+]

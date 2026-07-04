@@ -1,0 +1,2752 @@
+[
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0001",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Altar",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Altar"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Altar"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0002",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sanctuary",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Sanctuary"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Sanctuary"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0003",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Holy of Holies",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Holy of Holies"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Holy of Holies"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0004",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Mihrab",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Mihrab"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Mihrab"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0005",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Minbar",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Minbar"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Minbar"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0006",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Minaret",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Minaret"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Minaret"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0007",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Stupa",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stupa"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stupa"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0008",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Pagoda",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pagoda"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pagoda"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0009",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Torana",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Torana"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Torana"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0010",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Gopuram",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Gopuram"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Gopuram"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0011",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Mandapa",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Mandapa"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Mandapa"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0012",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Vimana",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Vimana"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Vimana"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0013",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Shikhara",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Shikhara"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Shikhara"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0014",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Synagogue",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Synagogue"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Synagogue"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0015",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Bimah",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Bimah"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Bimah"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0016",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Ark",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Ark"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Ark"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0017",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Cathedral",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cathedral"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cathedral"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0018",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Basilica",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Basilica"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Basilica"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0019",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Baptistery",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Baptistery"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Baptistery"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0020",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Campanile",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Campanile"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Campanile"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0021",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Cloister",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cloister"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cloister"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0022",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Abbey",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Abbey"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Abbey"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0023",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Monastery",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Monastery"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Monastery"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0024",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Hermitage",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Hermitage"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Hermitage"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0025",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Shrine",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Shrine"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Shrine"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0026",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Reliquary",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Reliquary"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Reliquary"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0027",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacristy",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Sacristy"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Sacristy"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0028",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Vestry",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Vestry"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Vestry"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0029",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Crypt",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Crypt"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Crypt"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0030",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Catacomb",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Catacomb"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Catacomb"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0031",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Pyramid Tomb",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Pyramid Tomb"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Pyramid Tomb"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0032",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Mastaba",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Mastaba"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Mastaba"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0033",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Ziggurat",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Ziggurat"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Ziggurat"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0034",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Temple Mount",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Temple Mount"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Temple Mount"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0035",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Acropolis",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Acropolis"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Acropolis"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0036",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Grove",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Sacred Grove"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Sacred Grove"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0037",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Stone Circle",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Stone Circle"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Stone Circle"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0038",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Henge",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Henge"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Henge"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0039",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Dolmen",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Dolmen"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Dolmen"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0040",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Cairn",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cairn"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cairn"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0041",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Tumulus",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Tumulus"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Tumulus"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0042",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Cemetery",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Cemetery"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Cemetery"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0043",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Mausoleum Sacred",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Mausoleum Sacred"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Mausoleum Sacred"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0044",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Memorial Chapel",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Memorial Chapel"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Memorial Chapel"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0045",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Crematorium",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Crematorium"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Crematorium"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0046",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Columbarium",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Columbarium"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Columbarium"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0047",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Ossuary",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Ossuary"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Ossuary"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0048",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Prayer Hall",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Prayer Hall"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Prayer Hall"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0049",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Meditation Room",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Meditation Room"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Meditation Room"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0050",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Labyrinth",
+    "entity_type": "Core Architectural Concept",
+    "features": {
+      "visual": {
+        "signature": "Identification Cue for Labyrinth"
+      },
+      "physical": {
+        "property": "Material/Force Property"
+      },
+      "semantic": {
+        "context": "Building Tradition"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Visual fingerprint of Labyrinth"
+    },
+    "confusions": [
+      "Similar sacred_spaces form",
+      "Related sacred_spaces structure"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0051",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 51",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0052",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 52",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0053",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 53",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0054",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 54",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0055",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 55",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0056",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 56",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0057",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 57",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0058",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 58",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0059",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 59",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0060",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 60",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0061",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 61",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0062",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 62",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0063",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 63",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0064",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 64",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0065",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 65",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0066",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 66",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0067",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 67",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0068",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 68",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0069",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 69",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0070",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 70",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0071",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 71",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0072",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 72",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0073",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 73",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0074",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 74",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0075",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 75",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0076",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 76",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0077",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 77",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0078",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 78",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0079",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 79",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0080",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 80",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0081",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 81",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0082",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 82",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0083",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 83",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0084",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 84",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0085",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 85",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0086",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 86",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0087",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 87",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0088",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 88",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0089",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 89",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0090",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 90",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0091",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 91",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0092",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 92",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0093",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 93",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0094",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 94",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0095",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 95",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0096",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 96",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0097",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 97",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0098",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 98",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0099",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 99",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_architecture_sacred_spaces_0100",
+    "universe": "creative_arts",
+    "world": "architecture",
+    "subcategory": "sacred_spaces",
+    "entity": "Sacred Spaces Concept 100",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      }
+    },
+    "dimensions": {
+      "Category": "Architecture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Neighboring form"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  }
+]
