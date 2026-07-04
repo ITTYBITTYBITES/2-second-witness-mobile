@@ -137,7 +137,7 @@ func _create_subcategory_card(sub: Dictionary, bg_color: Color, primary_color: C
 		)
 	grid.add_child(btn)
 
-func _create_pending_card(bg_color: Color, _primary_color: Color):
+func _create_pending_card(_bg_color: Color, _primary_color: Color):
 	var btn = Button.new()
 	btn.custom_minimum_size = Vector2(360, 120)
 	btn.disabled = true

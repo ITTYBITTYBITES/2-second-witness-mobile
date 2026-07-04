@@ -125,17 +125,12 @@ func _on_progression_event(event_type: int, _value: Variant, _context: Dictionar
 func _refresh_plates():
 	var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter") if Engine.get_main_loop() else null
 	
-	var mastery_val = 0
 	var streak_val = 1
-	if interp and interp.has_method("get_world_mastery_percentage"):
-		mastery_val = interp.get_world_mastery_percentage(active_universe_id, active_world_id)
+	if interp and interp.has_method("get_current_streak"):
 		streak_val = interp.get_current_streak()
 	else:
 		var profile = Engine.get_main_loop().root.get_node_or_null("PlayerProfile") if Engine.get_main_loop() else null
-		if profile and "world_affinity" in profile:
-			var world_key = active_universe_id + "_" + active_world_id
-			var aff = profile.world_affinity.get(world_key, 0)
-			mastery_val = clamp(int((float(aff) / 500.0) * 100.0), 0, 100)
+		if profile and "current_streak" in profile:
 			streak_val = profile.current_streak
 			
 	if is_instance_valid(_lbl_mastery):

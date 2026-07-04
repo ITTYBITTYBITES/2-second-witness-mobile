@@ -9,7 +9,7 @@ var correct_idx = 0
 var _scenario_id: String = "odd_one_out"
 var _start_ticks_msec: int = 0
 
-func _apply_specific_rules(rules: Dictionary):
+func _apply_specific_rules(_rules: Dictionary):
 	_scenario_id = _scenario_payload["id"]
 
 func _ready():
