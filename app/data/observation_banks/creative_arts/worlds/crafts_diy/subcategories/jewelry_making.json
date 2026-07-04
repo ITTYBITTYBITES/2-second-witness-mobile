@@ -4,26 +4,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 1",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 1",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -31,26 +32,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 2",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 2",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -58,26 +60,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 3",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 3",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -85,26 +88,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 4",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 4",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -112,26 +116,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 5",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 5",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -139,26 +144,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 6",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 6",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -166,26 +172,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 7",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 7",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -193,26 +200,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 8",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 8",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -220,26 +228,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 9",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 9",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -247,26 +256,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 10",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 10",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -274,26 +284,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 11",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 11",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -301,26 +312,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 12",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 12",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -328,26 +340,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 13",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 13",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -355,26 +368,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 14",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 14",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -382,26 +396,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 15",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 15",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -409,26 +424,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 16",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 16",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -436,26 +452,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 17",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 17",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -463,26 +480,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 18",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 18",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -490,26 +508,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 19",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 19",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -517,26 +536,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 20",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 20",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -544,26 +564,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 21",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 21",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -571,26 +592,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 22",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 22",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -598,26 +620,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 23",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 23",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -625,26 +648,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 24",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 24",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -652,26 +676,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 25",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 25",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -679,26 +704,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 26",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 26",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -706,26 +732,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 27",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 27",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -733,26 +760,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 28",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 28",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -760,26 +788,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 29",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 29",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -787,26 +816,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 30",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 30",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -814,26 +844,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 31",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 31",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -841,26 +872,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 32",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 32",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -868,26 +900,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 33",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 33",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -895,26 +928,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 34",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 34",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -922,26 +956,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 35",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 35",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -949,26 +984,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 36",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 36",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -976,26 +1012,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 37",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 37",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1003,26 +1040,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 38",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 38",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1030,26 +1068,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 39",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 39",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1057,26 +1096,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 40",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 40",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1084,26 +1124,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 41",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 41",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1111,26 +1152,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 42",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 42",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1138,26 +1180,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 43",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 43",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1165,26 +1208,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 44",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 44",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1192,26 +1236,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 45",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 45",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1219,26 +1264,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 46",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 46",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1246,26 +1292,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 47",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 47",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1273,26 +1320,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 48",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 48",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1300,26 +1348,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 49",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 49",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1327,26 +1376,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 50",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 50",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1354,26 +1404,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 51",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 51",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1381,26 +1432,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 52",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 52",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1408,26 +1460,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 53",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 53",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1435,26 +1488,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 54",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 54",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1462,26 +1516,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 55",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 55",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1489,26 +1544,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 56",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 56",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1516,26 +1572,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 57",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 57",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1543,26 +1600,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 58",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 58",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1570,26 +1628,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 59",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 59",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1597,26 +1656,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 60",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 60",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1624,26 +1684,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 61",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 61",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1651,26 +1712,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 62",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 62",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1678,26 +1740,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 63",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 63",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1705,26 +1768,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 64",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 64",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1732,26 +1796,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 65",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 65",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1759,26 +1824,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 66",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 66",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1786,26 +1852,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 67",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 67",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1813,26 +1880,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 68",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 68",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1840,26 +1908,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 69",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 69",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1867,26 +1936,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 70",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 70",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1894,26 +1964,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 71",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 71",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1921,26 +1992,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 72",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 72",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1948,26 +2020,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 73",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 73",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -1975,26 +2048,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 74",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 74",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2002,26 +2076,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 75",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 75",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2029,26 +2104,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 76",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 76",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2056,26 +2132,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 77",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 77",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2083,26 +2160,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 78",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 78",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2110,26 +2188,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 79",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 79",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2137,26 +2216,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 80",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 80",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2164,26 +2244,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 81",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 81",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2191,26 +2272,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 82",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 82",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2218,26 +2300,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 83",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 83",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2245,26 +2328,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 84",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 84",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2272,26 +2356,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 85",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 85",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2299,26 +2384,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 86",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 86",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2326,26 +2412,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 87",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 87",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2353,26 +2440,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 88",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 88",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2380,26 +2468,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 89",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 89",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2407,26 +2496,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 90",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 90",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2434,26 +2524,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 91",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 91",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2461,26 +2552,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 92",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 92",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2488,26 +2580,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 93",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 93",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2515,26 +2608,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 94",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 94",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2542,26 +2636,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 95",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 95",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2569,26 +2664,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 96",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 96",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2596,26 +2692,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 97",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 97",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2623,26 +2720,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 98",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 98",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2650,26 +2748,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 99",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 99",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   },
   {
@@ -2677,26 +2776,27 @@
     "universe": "creative_arts",
     "world": "crafts_diy",
     "subcategory": "jewelry_making",
-    "entity": "Jewelry Making Concept 100",
-    "entity_type": "Concept",
+    "entity": "Jewelry Making Item 100",
+    "entity_type": "Handmade Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "joinery": "Manual Detail"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "material_resistance": "Tactile Data"
       }
     },
     "dimensions": {
-      "Category": "Crafts Diy",
-      "Signature": "Primary Fingerprint"
+      "Category": "Crafts",
+      "Signature": "Artisanal Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Machine made",
+      "Alternative craft"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "joinery": "High"
     }
   }
 ]
