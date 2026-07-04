@@ -5,6 +5,7 @@ signal theme_applied(theme_data: Dictionary)
 var active_theme_id: String = ""
 var active_theme_data: Dictionary = {}
 var _theme_registry: Dictionary = {}
+var _theme_file_count: int = 0
 
 func _ready():
 	BootTracer.log_init("ThemeManager")
@@ -12,6 +13,7 @@ func _ready():
 	_load_all_themes()
 
 func _load_all_themes():
+	_theme_file_count = 0
 	var dir = DirAccess.open("res://data/themes")
 	if dir:
 		dir.list_dir_begin()
@@ -20,6 +22,7 @@ func _load_all_themes():
 			if not dir.current_is_dir() and file_name.ends_with(".json"):
 				_load_theme_file("res://data/themes/" + file_name)
 			file_name = dir.get_next()
+	print("[THEME] Registry compiled: ", _theme_registry.size(), " identities from ", _theme_file_count, " files.")
 
 func _load_theme_file(path: String):
 	var file = FileAccess.open(path, FileAccess.READ)
@@ -30,7 +33,7 @@ func _load_theme_file(path: String):
 			var data = json.data
 			if data.has("id"):
 				_theme_registry[data["id"]] = data
-				print("[THEME] Loaded schema: ", data["id"])
+				_theme_file_count += 1
 			else:
 				print("[THEME ERROR] Missing ID in ", path)
 		else:

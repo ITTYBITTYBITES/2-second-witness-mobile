@@ -6,11 +6,14 @@ extends Node
 # ---------------------------------------------------------
 
 var _profiles: Dictionary = {}
+var _profile_file_count: int = 0
 
 func _ready():
 	if BootTracer: BootTracer.log_init("WorldProfileCustodian")
 	print("[WORLD PROFILE CUSTODIAN] Online. Compiling unified presentation contracts.")
+	_profile_file_count = 0
 	_crawl_profiles("res://data/themes")
+	print("[WORLD PROFILE] Registry compiled: ", _profiles.size(), " profiles from ", _profile_file_count, " files.")
 
 func _crawl_profiles(path: String):
 	var dir = DirAccess.open(path)
@@ -36,12 +39,11 @@ func _load_profile_file(path: String):
 		if json.parse(file.get_as_text()) == OK:
 			var data = json.get_data()
 			if typeof(data) == TYPE_DICTIONARY:
+				_profile_file_count += 1
 				if data.has("world"):
 					_profiles[data["world"]] = data
-					print("[WORLD PROFILE] Loaded presentation asset: ", data["world"])
 				if data.has("id"):
 					_profiles[data["id"]] = data
-					print("[WORLD PROFILE] Loaded presentation asset ID: ", data["id"])
 		file.close()
 
 func get_profile(world_id: String) -> Dictionary:

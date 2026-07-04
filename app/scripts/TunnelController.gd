@@ -8,6 +8,7 @@ var _is_slingshotting: bool = false
 var _slingshot_timer: float = 0.0
 var _base_animation_tween: Tween = null
 var _persistent_flow_time: float = 0.0
+var _tunnel_animation_started: bool = false
 
 func _ready():
 	print("TunnelController initialized. Hybrid Architecture Active.")
@@ -16,7 +17,9 @@ func _ready():
 	_initialize_independent_tunnel_animation()
 
 func _initialize_independent_tunnel_animation():
-	print("[TUNNEL CORE] Initializing independent global tunnel animation loop.")
+	if not _tunnel_animation_started:
+		print("[TUNNEL CORE] Initializing independent global tunnel animation loop.")
+		_tunnel_animation_started = true
 	if not is_inside_tree(): return
 	if _base_animation_tween and _base_animation_tween.is_valid():
 		_base_animation_tween.kill()

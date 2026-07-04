@@ -47,7 +47,7 @@ func _escape_bbcode(value: Variant) -> String:
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	if vim and vim.has_method("apply_screen_identity"):
-		vim.apply_screen_identity(self, universe_id, "", true)
+		vim.apply_screen_identity(self, universe_id, "", false)
 	else:
 		var bg = get_node_or_null("VoidBG")
 		if bg and bg is ColorRect: bg.color = Color(0.04, 0.07, 0.12, 0.15)
