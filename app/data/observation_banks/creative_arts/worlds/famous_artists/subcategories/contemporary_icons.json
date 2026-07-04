@@ -4,1399 +4,2799 @@
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 1",
+    "entity": "Contemporary Icons Artist 1",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0002",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 2",
+    "entity": "Contemporary Icons Artist 2",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0003",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 3",
+    "entity": "Contemporary Icons Artist 3",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0004",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 4",
+    "entity": "Contemporary Icons Artist 4",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0005",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 5",
+    "entity": "Contemporary Icons Artist 5",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0006",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 6",
+    "entity": "Contemporary Icons Artist 6",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0007",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 7",
+    "entity": "Contemporary Icons Artist 7",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0008",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 8",
+    "entity": "Contemporary Icons Artist 8",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0009",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 9",
+    "entity": "Contemporary Icons Artist 9",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0010",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 10",
+    "entity": "Contemporary Icons Artist 10",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0011",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 11",
+    "entity": "Contemporary Icons Artist 11",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0012",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 12",
+    "entity": "Contemporary Icons Artist 12",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0013",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 13",
+    "entity": "Contemporary Icons Artist 13",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0014",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 14",
+    "entity": "Contemporary Icons Artist 14",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0015",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 15",
+    "entity": "Contemporary Icons Artist 15",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0016",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 16",
+    "entity": "Contemporary Icons Artist 16",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0017",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 17",
+    "entity": "Contemporary Icons Artist 17",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0018",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 18",
+    "entity": "Contemporary Icons Artist 18",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0019",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 19",
+    "entity": "Contemporary Icons Artist 19",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0020",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 20",
+    "entity": "Contemporary Icons Artist 20",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0021",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 21",
+    "entity": "Contemporary Icons Artist 21",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0022",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 22",
+    "entity": "Contemporary Icons Artist 22",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0023",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 23",
+    "entity": "Contemporary Icons Artist 23",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0024",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 24",
+    "entity": "Contemporary Icons Artist 24",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0025",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 25",
+    "entity": "Contemporary Icons Artist 25",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0026",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 26",
+    "entity": "Contemporary Icons Artist 26",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0027",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 27",
+    "entity": "Contemporary Icons Artist 27",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0028",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 28",
+    "entity": "Contemporary Icons Artist 28",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0029",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 29",
+    "entity": "Contemporary Icons Artist 29",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0030",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 30",
+    "entity": "Contemporary Icons Artist 30",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0031",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 31",
+    "entity": "Contemporary Icons Artist 31",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0032",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 32",
+    "entity": "Contemporary Icons Artist 32",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0033",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 33",
+    "entity": "Contemporary Icons Artist 33",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0034",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 34",
+    "entity": "Contemporary Icons Artist 34",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0035",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 35",
+    "entity": "Contemporary Icons Artist 35",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0036",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 36",
+    "entity": "Contemporary Icons Artist 36",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0037",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 37",
+    "entity": "Contemporary Icons Artist 37",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0038",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 38",
+    "entity": "Contemporary Icons Artist 38",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0039",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 39",
+    "entity": "Contemporary Icons Artist 39",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0040",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 40",
+    "entity": "Contemporary Icons Artist 40",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0041",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 41",
+    "entity": "Contemporary Icons Artist 41",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0042",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 42",
+    "entity": "Contemporary Icons Artist 42",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0043",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 43",
+    "entity": "Contemporary Icons Artist 43",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0044",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 44",
+    "entity": "Contemporary Icons Artist 44",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0045",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 45",
+    "entity": "Contemporary Icons Artist 45",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0046",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 46",
+    "entity": "Contemporary Icons Artist 46",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0047",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 47",
+    "entity": "Contemporary Icons Artist 47",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0048",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 48",
+    "entity": "Contemporary Icons Artist 48",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0049",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 49",
+    "entity": "Contemporary Icons Artist 49",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0050",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 50",
+    "entity": "Contemporary Icons Artist 50",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0051",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 51",
+    "entity": "Contemporary Icons Artist 51",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0052",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 52",
+    "entity": "Contemporary Icons Artist 52",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0053",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 53",
+    "entity": "Contemporary Icons Artist 53",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0054",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 54",
+    "entity": "Contemporary Icons Artist 54",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0055",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 55",
+    "entity": "Contemporary Icons Artist 55",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0056",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 56",
+    "entity": "Contemporary Icons Artist 56",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0057",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 57",
+    "entity": "Contemporary Icons Artist 57",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0058",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 58",
+    "entity": "Contemporary Icons Artist 58",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0059",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 59",
+    "entity": "Contemporary Icons Artist 59",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0060",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 60",
+    "entity": "Contemporary Icons Artist 60",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0061",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 61",
+    "entity": "Contemporary Icons Artist 61",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0062",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 62",
+    "entity": "Contemporary Icons Artist 62",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0063",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 63",
+    "entity": "Contemporary Icons Artist 63",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0064",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 64",
+    "entity": "Contemporary Icons Artist 64",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0065",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 65",
+    "entity": "Contemporary Icons Artist 65",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0066",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 66",
+    "entity": "Contemporary Icons Artist 66",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0067",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 67",
+    "entity": "Contemporary Icons Artist 67",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0068",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 68",
+    "entity": "Contemporary Icons Artist 68",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0069",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 69",
+    "entity": "Contemporary Icons Artist 69",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0070",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 70",
+    "entity": "Contemporary Icons Artist 70",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0071",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 71",
+    "entity": "Contemporary Icons Artist 71",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0072",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 72",
+    "entity": "Contemporary Icons Artist 72",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0073",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 73",
+    "entity": "Contemporary Icons Artist 73",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0074",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 74",
+    "entity": "Contemporary Icons Artist 74",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0075",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 75",
+    "entity": "Contemporary Icons Artist 75",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0076",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 76",
+    "entity": "Contemporary Icons Artist 76",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0077",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 77",
+    "entity": "Contemporary Icons Artist 77",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0078",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 78",
+    "entity": "Contemporary Icons Artist 78",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0079",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 79",
+    "entity": "Contemporary Icons Artist 79",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0080",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 80",
+    "entity": "Contemporary Icons Artist 80",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0081",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 81",
+    "entity": "Contemporary Icons Artist 81",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0082",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 82",
+    "entity": "Contemporary Icons Artist 82",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0083",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 83",
+    "entity": "Contemporary Icons Artist 83",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0084",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 84",
+    "entity": "Contemporary Icons Artist 84",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0085",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 85",
+    "entity": "Contemporary Icons Artist 85",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0086",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 86",
+    "entity": "Contemporary Icons Artist 86",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0087",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 87",
+    "entity": "Contemporary Icons Artist 87",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0088",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 88",
+    "entity": "Contemporary Icons Artist 88",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0089",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 89",
+    "entity": "Contemporary Icons Artist 89",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0090",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 90",
+    "entity": "Contemporary Icons Artist 90",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0091",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 91",
+    "entity": "Contemporary Icons Artist 91",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0092",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 92",
+    "entity": "Contemporary Icons Artist 92",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0093",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 93",
+    "entity": "Contemporary Icons Artist 93",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0094",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 94",
+    "entity": "Contemporary Icons Artist 94",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0095",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 95",
+    "entity": "Contemporary Icons Artist 95",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0096",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 96",
+    "entity": "Contemporary Icons Artist 96",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0097",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 97",
+    "entity": "Contemporary Icons Artist 97",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0098",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 98",
+    "entity": "Contemporary Icons Artist 98",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0099",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 99",
+    "entity": "Contemporary Icons Artist 99",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_contemporary_icons_0100",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "contemporary_icons",
-    "entity": "contemporary_icons 100",
+    "entity": "Contemporary Icons Artist 100",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   }
 ]

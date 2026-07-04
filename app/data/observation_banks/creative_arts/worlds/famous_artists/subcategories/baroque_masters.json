@@ -4,1399 +4,2799 @@
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 1",
+    "entity": "Baroque Masters Artist 1",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0002",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 2",
+    "entity": "Baroque Masters Artist 2",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0003",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 3",
+    "entity": "Baroque Masters Artist 3",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0004",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 4",
+    "entity": "Baroque Masters Artist 4",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0005",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 5",
+    "entity": "Baroque Masters Artist 5",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0006",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 6",
+    "entity": "Baroque Masters Artist 6",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0007",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 7",
+    "entity": "Baroque Masters Artist 7",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0008",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 8",
+    "entity": "Baroque Masters Artist 8",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0009",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 9",
+    "entity": "Baroque Masters Artist 9",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0010",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 10",
+    "entity": "Baroque Masters Artist 10",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0011",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 11",
+    "entity": "Baroque Masters Artist 11",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0012",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 12",
+    "entity": "Baroque Masters Artist 12",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0013",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 13",
+    "entity": "Baroque Masters Artist 13",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0014",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 14",
+    "entity": "Baroque Masters Artist 14",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0015",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 15",
+    "entity": "Baroque Masters Artist 15",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0016",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 16",
+    "entity": "Baroque Masters Artist 16",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0017",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 17",
+    "entity": "Baroque Masters Artist 17",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0018",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 18",
+    "entity": "Baroque Masters Artist 18",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0019",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 19",
+    "entity": "Baroque Masters Artist 19",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0020",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 20",
+    "entity": "Baroque Masters Artist 20",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0021",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 21",
+    "entity": "Baroque Masters Artist 21",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0022",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 22",
+    "entity": "Baroque Masters Artist 22",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0023",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 23",
+    "entity": "Baroque Masters Artist 23",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0024",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 24",
+    "entity": "Baroque Masters Artist 24",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0025",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 25",
+    "entity": "Baroque Masters Artist 25",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0026",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 26",
+    "entity": "Baroque Masters Artist 26",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0027",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 27",
+    "entity": "Baroque Masters Artist 27",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0028",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 28",
+    "entity": "Baroque Masters Artist 28",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0029",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 29",
+    "entity": "Baroque Masters Artist 29",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0030",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 30",
+    "entity": "Baroque Masters Artist 30",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0031",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 31",
+    "entity": "Baroque Masters Artist 31",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0032",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 32",
+    "entity": "Baroque Masters Artist 32",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0033",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 33",
+    "entity": "Baroque Masters Artist 33",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0034",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 34",
+    "entity": "Baroque Masters Artist 34",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0035",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 35",
+    "entity": "Baroque Masters Artist 35",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0036",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 36",
+    "entity": "Baroque Masters Artist 36",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0037",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 37",
+    "entity": "Baroque Masters Artist 37",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0038",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 38",
+    "entity": "Baroque Masters Artist 38",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0039",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 39",
+    "entity": "Baroque Masters Artist 39",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0040",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 40",
+    "entity": "Baroque Masters Artist 40",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0041",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 41",
+    "entity": "Baroque Masters Artist 41",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0042",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 42",
+    "entity": "Baroque Masters Artist 42",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0043",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 43",
+    "entity": "Baroque Masters Artist 43",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0044",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 44",
+    "entity": "Baroque Masters Artist 44",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0045",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 45",
+    "entity": "Baroque Masters Artist 45",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0046",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 46",
+    "entity": "Baroque Masters Artist 46",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0047",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 47",
+    "entity": "Baroque Masters Artist 47",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0048",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 48",
+    "entity": "Baroque Masters Artist 48",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0049",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 49",
+    "entity": "Baroque Masters Artist 49",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0050",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 50",
+    "entity": "Baroque Masters Artist 50",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0051",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 51",
+    "entity": "Baroque Masters Artist 51",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0052",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 52",
+    "entity": "Baroque Masters Artist 52",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0053",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 53",
+    "entity": "Baroque Masters Artist 53",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0054",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 54",
+    "entity": "Baroque Masters Artist 54",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0055",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 55",
+    "entity": "Baroque Masters Artist 55",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0056",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 56",
+    "entity": "Baroque Masters Artist 56",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0057",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 57",
+    "entity": "Baroque Masters Artist 57",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0058",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 58",
+    "entity": "Baroque Masters Artist 58",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0059",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 59",
+    "entity": "Baroque Masters Artist 59",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0060",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 60",
+    "entity": "Baroque Masters Artist 60",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0061",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 61",
+    "entity": "Baroque Masters Artist 61",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0062",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 62",
+    "entity": "Baroque Masters Artist 62",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0063",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 63",
+    "entity": "Baroque Masters Artist 63",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0064",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 64",
+    "entity": "Baroque Masters Artist 64",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0065",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 65",
+    "entity": "Baroque Masters Artist 65",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0066",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 66",
+    "entity": "Baroque Masters Artist 66",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0067",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 67",
+    "entity": "Baroque Masters Artist 67",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0068",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 68",
+    "entity": "Baroque Masters Artist 68",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0069",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 69",
+    "entity": "Baroque Masters Artist 69",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0070",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 70",
+    "entity": "Baroque Masters Artist 70",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0071",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 71",
+    "entity": "Baroque Masters Artist 71",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0072",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 72",
+    "entity": "Baroque Masters Artist 72",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0073",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 73",
+    "entity": "Baroque Masters Artist 73",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0074",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 74",
+    "entity": "Baroque Masters Artist 74",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0075",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 75",
+    "entity": "Baroque Masters Artist 75",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0076",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 76",
+    "entity": "Baroque Masters Artist 76",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0077",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 77",
+    "entity": "Baroque Masters Artist 77",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0078",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 78",
+    "entity": "Baroque Masters Artist 78",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0079",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 79",
+    "entity": "Baroque Masters Artist 79",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0080",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 80",
+    "entity": "Baroque Masters Artist 80",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0081",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 81",
+    "entity": "Baroque Masters Artist 81",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0082",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 82",
+    "entity": "Baroque Masters Artist 82",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0083",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 83",
+    "entity": "Baroque Masters Artist 83",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0084",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 84",
+    "entity": "Baroque Masters Artist 84",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0085",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 85",
+    "entity": "Baroque Masters Artist 85",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0086",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 86",
+    "entity": "Baroque Masters Artist 86",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0087",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 87",
+    "entity": "Baroque Masters Artist 87",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0088",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 88",
+    "entity": "Baroque Masters Artist 88",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0089",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 89",
+    "entity": "Baroque Masters Artist 89",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0090",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 90",
+    "entity": "Baroque Masters Artist 90",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0091",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 91",
+    "entity": "Baroque Masters Artist 91",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0092",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 92",
+    "entity": "Baroque Masters Artist 92",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0093",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 93",
+    "entity": "Baroque Masters Artist 93",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0094",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 94",
+    "entity": "Baroque Masters Artist 94",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0095",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 95",
+    "entity": "Baroque Masters Artist 95",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0096",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 96",
+    "entity": "Baroque Masters Artist 96",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0097",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 97",
+    "entity": "Baroque Masters Artist 97",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0098",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 98",
+    "entity": "Baroque Masters Artist 98",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0099",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 99",
+    "entity": "Baroque Masters Artist 99",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_baroque_masters_0100",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "baroque_masters",
-    "entity": "baroque_masters 100",
+    "entity": "Baroque Masters Artist 100",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   }
 ]

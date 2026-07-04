@@ -4,1399 +4,2799 @@
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 1",
+    "entity": "Islamic Calligraphers Artist 1",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0002",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 2",
+    "entity": "Islamic Calligraphers Artist 2",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0003",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 3",
+    "entity": "Islamic Calligraphers Artist 3",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0004",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 4",
+    "entity": "Islamic Calligraphers Artist 4",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0005",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 5",
+    "entity": "Islamic Calligraphers Artist 5",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0006",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 6",
+    "entity": "Islamic Calligraphers Artist 6",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0007",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 7",
+    "entity": "Islamic Calligraphers Artist 7",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0008",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 8",
+    "entity": "Islamic Calligraphers Artist 8",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0009",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 9",
+    "entity": "Islamic Calligraphers Artist 9",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0010",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 10",
+    "entity": "Islamic Calligraphers Artist 10",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0011",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 11",
+    "entity": "Islamic Calligraphers Artist 11",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0012",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 12",
+    "entity": "Islamic Calligraphers Artist 12",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0013",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 13",
+    "entity": "Islamic Calligraphers Artist 13",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0014",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 14",
+    "entity": "Islamic Calligraphers Artist 14",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0015",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 15",
+    "entity": "Islamic Calligraphers Artist 15",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0016",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 16",
+    "entity": "Islamic Calligraphers Artist 16",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0017",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 17",
+    "entity": "Islamic Calligraphers Artist 17",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0018",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 18",
+    "entity": "Islamic Calligraphers Artist 18",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0019",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 19",
+    "entity": "Islamic Calligraphers Artist 19",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0020",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 20",
+    "entity": "Islamic Calligraphers Artist 20",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0021",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 21",
+    "entity": "Islamic Calligraphers Artist 21",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0022",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 22",
+    "entity": "Islamic Calligraphers Artist 22",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0023",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 23",
+    "entity": "Islamic Calligraphers Artist 23",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0024",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 24",
+    "entity": "Islamic Calligraphers Artist 24",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0025",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 25",
+    "entity": "Islamic Calligraphers Artist 25",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0026",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 26",
+    "entity": "Islamic Calligraphers Artist 26",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0027",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 27",
+    "entity": "Islamic Calligraphers Artist 27",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0028",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 28",
+    "entity": "Islamic Calligraphers Artist 28",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0029",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 29",
+    "entity": "Islamic Calligraphers Artist 29",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0030",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 30",
+    "entity": "Islamic Calligraphers Artist 30",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0031",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 31",
+    "entity": "Islamic Calligraphers Artist 31",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0032",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 32",
+    "entity": "Islamic Calligraphers Artist 32",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0033",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 33",
+    "entity": "Islamic Calligraphers Artist 33",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0034",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 34",
+    "entity": "Islamic Calligraphers Artist 34",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0035",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 35",
+    "entity": "Islamic Calligraphers Artist 35",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0036",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 36",
+    "entity": "Islamic Calligraphers Artist 36",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0037",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 37",
+    "entity": "Islamic Calligraphers Artist 37",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0038",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 38",
+    "entity": "Islamic Calligraphers Artist 38",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0039",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 39",
+    "entity": "Islamic Calligraphers Artist 39",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0040",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 40",
+    "entity": "Islamic Calligraphers Artist 40",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0041",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 41",
+    "entity": "Islamic Calligraphers Artist 41",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0042",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 42",
+    "entity": "Islamic Calligraphers Artist 42",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0043",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 43",
+    "entity": "Islamic Calligraphers Artist 43",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0044",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 44",
+    "entity": "Islamic Calligraphers Artist 44",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0045",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 45",
+    "entity": "Islamic Calligraphers Artist 45",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0046",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 46",
+    "entity": "Islamic Calligraphers Artist 46",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0047",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 47",
+    "entity": "Islamic Calligraphers Artist 47",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0048",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 48",
+    "entity": "Islamic Calligraphers Artist 48",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0049",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 49",
+    "entity": "Islamic Calligraphers Artist 49",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0050",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 50",
+    "entity": "Islamic Calligraphers Artist 50",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0051",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 51",
+    "entity": "Islamic Calligraphers Artist 51",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0052",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 52",
+    "entity": "Islamic Calligraphers Artist 52",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0053",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 53",
+    "entity": "Islamic Calligraphers Artist 53",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0054",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 54",
+    "entity": "Islamic Calligraphers Artist 54",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0055",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 55",
+    "entity": "Islamic Calligraphers Artist 55",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0056",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 56",
+    "entity": "Islamic Calligraphers Artist 56",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0057",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 57",
+    "entity": "Islamic Calligraphers Artist 57",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0058",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 58",
+    "entity": "Islamic Calligraphers Artist 58",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0059",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 59",
+    "entity": "Islamic Calligraphers Artist 59",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0060",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 60",
+    "entity": "Islamic Calligraphers Artist 60",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0061",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 61",
+    "entity": "Islamic Calligraphers Artist 61",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0062",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 62",
+    "entity": "Islamic Calligraphers Artist 62",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0063",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 63",
+    "entity": "Islamic Calligraphers Artist 63",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0064",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 64",
+    "entity": "Islamic Calligraphers Artist 64",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0065",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 65",
+    "entity": "Islamic Calligraphers Artist 65",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0066",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 66",
+    "entity": "Islamic Calligraphers Artist 66",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0067",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 67",
+    "entity": "Islamic Calligraphers Artist 67",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0068",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 68",
+    "entity": "Islamic Calligraphers Artist 68",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0069",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 69",
+    "entity": "Islamic Calligraphers Artist 69",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0070",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 70",
+    "entity": "Islamic Calligraphers Artist 70",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0071",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 71",
+    "entity": "Islamic Calligraphers Artist 71",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0072",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 72",
+    "entity": "Islamic Calligraphers Artist 72",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0073",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 73",
+    "entity": "Islamic Calligraphers Artist 73",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0074",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 74",
+    "entity": "Islamic Calligraphers Artist 74",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0075",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 75",
+    "entity": "Islamic Calligraphers Artist 75",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0076",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 76",
+    "entity": "Islamic Calligraphers Artist 76",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0077",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 77",
+    "entity": "Islamic Calligraphers Artist 77",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0078",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 78",
+    "entity": "Islamic Calligraphers Artist 78",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0079",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 79",
+    "entity": "Islamic Calligraphers Artist 79",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0080",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 80",
+    "entity": "Islamic Calligraphers Artist 80",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0081",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 81",
+    "entity": "Islamic Calligraphers Artist 81",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0082",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 82",
+    "entity": "Islamic Calligraphers Artist 82",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0083",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 83",
+    "entity": "Islamic Calligraphers Artist 83",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0084",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 84",
+    "entity": "Islamic Calligraphers Artist 84",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0085",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 85",
+    "entity": "Islamic Calligraphers Artist 85",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0086",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 86",
+    "entity": "Islamic Calligraphers Artist 86",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0087",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 87",
+    "entity": "Islamic Calligraphers Artist 87",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0088",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 88",
+    "entity": "Islamic Calligraphers Artist 88",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0089",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 89",
+    "entity": "Islamic Calligraphers Artist 89",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0090",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 90",
+    "entity": "Islamic Calligraphers Artist 90",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0091",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 91",
+    "entity": "Islamic Calligraphers Artist 91",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0092",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 92",
+    "entity": "Islamic Calligraphers Artist 92",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0093",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 93",
+    "entity": "Islamic Calligraphers Artist 93",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0094",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 94",
+    "entity": "Islamic Calligraphers Artist 94",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0095",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 95",
+    "entity": "Islamic Calligraphers Artist 95",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0096",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 96",
+    "entity": "Islamic Calligraphers Artist 96",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0097",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 97",
+    "entity": "Islamic Calligraphers Artist 97",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0098",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 98",
+    "entity": "Islamic Calligraphers Artist 98",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0099",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 99",
+    "entity": "Islamic Calligraphers Artist 99",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "brushwork": "High"
+    }
   },
   {
     "observation_id": "creative_arts_famous_artists_islamic_calligraphers_0100",
     "universe": "creative_arts",
     "world": "famous_artists",
     "subcategory": "islamic_calligraphers",
-    "entity": "islamic_calligraphers 100",
+    "entity": "Islamic Calligraphers Artist 100",
     "entity_type": "Creator",
     "features": {
-      "visual": {}
+      "visual": {
+        "brushwork": "Signature Technique"
+      },
+      "semantic": {
+        "movement": "Stylistic Period"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "Artists",
+      "Signature": "Aesthetic Fingerprint"
+    },
+    "confusions": [
+      "Contemporary Artist",
+      "Stylistic peer"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "brushwork": "High"
+    }
   }
 ]
