@@ -19,7 +19,11 @@ var world_meta = {
 	"arctic": {"name": "Arctic", "scenarios": "10 scenarios", "completion": "40%", "rec": "Recommended Today"},
 	"aviation": {"name": "Aviation", "scenarios": "12 scenarios", "completion": "10%", "rec": "High Potential"},
 	"disaster": {"name": "Disaster Response", "scenarios": "15 scenarios", "completion": "80%", "rec": "Advanced Alignment"},
-	"wilderness": {"name": "Wilderness", "scenarios": "14 scenarios", "completion": "25%", "rec": "Recommended Today"}
+	"wilderness": {"name": "Wilderness", "scenarios": "14 scenarios", "completion": "25%", "rec": "Recommended Today"},
+	"painting": {"name": "Painting", "scenarios": "100 scenarios", "completion": "0%", "rec": "High Creative Potential"},
+	"drawing": {"name": "Drawing", "scenarios": "100 scenarios", "completion": "0%", "rec": "Focus Alignment"},
+	"photography": {"name": "Photography", "scenarios": "100 scenarios", "completion": "0%", "rec": "Optimal Composition"},
+	"digital_art": {"name": "Digital Art", "scenarios": "100 scenarios", "completion": "0%", "rec": "Futurist Alignment"}
 }
 
 func setup(universe_id: String):
@@ -93,7 +97,7 @@ func _populate_grid():
 		"science_lab": fallback_worlds = ["cognitive_bias", "neural_mapping", "ai", "quantum_mechanics", "optics"]
 		"life_sciences": fallback_worlds = ["genetics", "cellular_biology", "virology", "botany", "neuroscience"]
 		"tech_ops": fallback_worlds = ["cyber_matrix", "subliminal_code", "protocols", "encryption", "firewalls"]
-		"creative_arts": fallback_worlds = ["color_theory", "composition", "harmony", "sculpture", "architecture"]
+		"creative_arts": fallback_worlds = ["painting", "drawing", "photography", "digital_art", "sculpture", "architecture", "color_theory", "composition", "harmony"]
 		"society_mind": fallback_worlds = ["behavioral_economics", "sociology", "psychology", "linguistics", "group_dynamics"]
 		"frontier": fallback_worlds = ["arctic", "aviation", "disaster", "wilderness", "space_exploration", "deep_sea", "mountain_summit", "desert_crossing", "subterranean", "jungle_canopy"]
 		_: fallback_worlds = ["foundations", "advanced_concepts", "synthesis"]

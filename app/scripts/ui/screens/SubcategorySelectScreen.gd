@@ -18,6 +18,17 @@ var _btn_activity_mode: Button = null
 func setup(universe_id: String, world_id: String):
 	active_universe_id = universe_id
 	active_world_id = world_id
+	
+	# GOLD STANDARD: Force ContentLoader to index if it hasn't already
+	var loader = Engine.get_main_loop().root.get_node_or_null("ContentLoader")
+	if loader and loader.has_method("ensure_indexed"):
+		loader.ensure_indexed()
+		
+	# FORCE LOAD: Ensure the world content is loaded so subcategories/scenarios are registered
+	var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
+	if registry and registry.has_method("_ensure_content_loaded_for"):
+		registry._ensure_content_loaded_for(universe_id, world_id)
+		
 	if title_label:
 		title_label.text = world_id.capitalize().replace("_", " ") + " - SUBCATEGORIES"
 	if subtitle_label:

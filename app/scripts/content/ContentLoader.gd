@@ -15,6 +15,8 @@ var _indexed_world_count: int = 0
 func _ready():
 	if BootTracer: BootTracer.log_init("ContentLoader")
 	print("[CONTENT LOADER] Online. Heavy JSON ingestion is lazy-loaded after splash / on demand.")
+	# GOLD STANDARD: Ensure path indexing happens early so UI manifests are available
+	ensure_indexed()
 
 func ensure_indexed():
 	if _is_indexed:
@@ -24,15 +26,19 @@ func ensure_indexed():
 	_loaded_worlds.clear()
 	_indexed_file_count = 0
 	_indexed_world_count = 0
+	
+	# Recursive crawl through all base bundle content
 	_crawl_index(BASE_BUNDLE_PATH)
 
 	if DirAccess.dir_exists_absolute(USER_CACHE_PATH + "patches/"):
 		print("[CONTENT LOADER] OTA Patch paths detected. Indexing patch overrides...")
 		_crawl_index(USER_CACHE_PATH + "patches/")
+		
+	# Critically important: Index manifests to populate subcategory metadata for UI
 	_index_observation_bank_manifests(OBSERVATION_BANK_PATH)
 
 	_is_indexed = true
-	print("[CONTENT LOADER] Path index ready: ", _indexed_world_count, " worlds / ", _indexed_file_count, " JSON files. Payloads remain lazy.")
+	print("[CONTENT LOADER] Path index ready: ", _indexed_world_count, " worlds / ", _indexed_file_count, " JSON files indexed.")
 
 func load_world_content(universe_id: Variant, world_id: Variant):
 	ensure_indexed()
