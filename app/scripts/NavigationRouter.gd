@@ -16,6 +16,8 @@ var navigation_stack: Array[String] = []
 var current_screen_name: String = ""
 var previous_screen_name: String = ""
 var active_universe_selection: String = "science_lab"
+var active_world_selection: String = ""
+var active_scenario_selection: String = ""
 var current_scenario_chain_index: int = 1
 
 func normalize_id(id: Variant) -> String:
@@ -263,11 +265,7 @@ func _on_mirror_recommendation_requested(universe_id: String, world_id: String):
 	call_deferred("_start_recommended_world", clean["universe"], clean["world"])
 
 func _start_recommended_world(universe_id: String, world_id: String):
-	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
-	if orch and orch.has_method("request_world_selection"):
-		orch.request_world_selection(universe_id, world_id)
-	else:
-		_on_world_selected(universe_id, world_id)
+	_on_world_selected(universe_id, world_id)
 
 func toggle_mirror_modal():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
@@ -379,23 +377,57 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 	var w_id = normalize_id(world_id)
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "external_call", "_on_world_selected(" + u_id + ", " + w_id + ")")
-	print("[ROUTER] World Selected: ", u_id, " -> ", w_id)
-	print("→ world_selected event emitted: ", w_id)
+	print("[ROUTER] World Selected: ", u_id, " -> ", w_id, ". Opening ScenarioSelectScreen.")
 	_is_transitioning_to_landing = false
-	_is_transition_completed = false
-	current_scenario_chain_index = 1
+	active_universe_selection = u_id
+	active_world_selection = w_id
+	active_scenario_selection = ""
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 	if active_secondary_screen:
 		active_secondary_screen.queue_free()
 		active_secondary_screen = null
-		
+
+	var scenario_scene = load("res://scenes/ui/screens/ScenarioSelectScreen.tscn")
+	if scenario_scene:
+		active_secondary_screen = scenario_scene.instantiate()
+		active_secondary_screen.name = "ScenarioSelectScreen"
+		if modal_mgr:
+			modal_mgr.push_modal(active_secondary_screen, true, "NavigationRouter")
+		else:
+			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+			if ui_layer: ui_layer.add_child(active_secondary_screen)
+		active_secondary_screen.setup(u_id, w_id)
+		_update_nav_log("ScenarioSelectScreen", false)
+		active_secondary_screen.return_requested.connect(func(): _on_play_universe_requested(u_id))
+		active_secondary_screen.scenario_selected.connect(_on_scenario_selected)
+
+func _on_scenario_selected(universe_id: Variant, world_id: Variant, scenario_type: Variant):
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	var s_type = normalize_id(scenario_type)
+	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
+		StructuredLogger.log_event_trace(self, "external_call", "_on_scenario_selected(" + u_id + ", " + w_id + ", " + s_type + ")")
+	print("[ROUTER] Scenario Selected: ", u_id, " -> ", w_id, " -> ", s_type)
+	_is_transitioning_to_landing = false
+	_is_transition_completed = false
+	current_scenario_chain_index = 1
+	active_universe_selection = u_id
+	active_world_selection = w_id
+	active_scenario_selection = s_type
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
+	if active_secondary_screen:
+		active_secondary_screen.queue_free()
+		active_secondary_screen = null
+
 	_show_gameplay_hud()
-	
+
 	if ThemeManager: ThemeManager.apply_theme(u_id)
 	var portal_mgr = get_tree().root.get_node_or_null("MainShell/WorldLayer/TunnelLayer/Tier3_PortalLayer")
 	print("STEP 2: PORTAL LOOKUP = ", portal_mgr)
-	
+
 	if portal_mgr == null:
 		print("[ROUTER] Portal Manager not found in scene tree (Standalone/Benchmark mode). Skipping 3D portal spawn.")
 	elif portal_mgr.has_method("apply_theme"):
@@ -403,24 +435,32 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 		print("STEP 3: CALLING SPAWN")
 		portal_mgr.spawn_lens_portal("0")
 		print("STEP 4: SPAWN CALL COMPLETED")
-		
+
 	print("STEP 1: PLAY REQUEST RECEIVED")
 	print("UNIVERSE BOOT START")
 	print("[SCENARIO ENGINE] Initiating ScenarioManager lifecycle...")
-	print("[SCENARIO ENGINE] Accessing SamplingController & ContentRegistry...")
+	print("[SCENARIO ENGINE] Accessing ContentRegistry...")
 	print("[SCENARIO ENGINE] Loading Scenario...")
-	
+
 	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 	var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-	var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile) else {}
-	var next_spike = normalize_id(vector.get("spike", "memory_cascade"))
-	
+	if orch:
+		orch.active_universe = u_id
+		orch.active_world = w_id
+		orch.active_spike = s_type
+		orch.active_state.current_universe = u_id
+		orch.active_state.current_world = w_id
+		orch.active_state.current_scenario = s_type
+		orch.active_state.navigation_state = "GameplayHUD"
+		if orch.has_method("_update_visual_identity"):
+			orch._update_visual_identity(u_id, w_id)
+
 	var nav_state = NavigationState if NavigationState else get_tree().root.get_node_or_null("NavigationState")
 	var s_seed = str(profile.lifetime_sessions if profile else 0).hash()
 	if nav_state and nav_state.has_method("lock_transition_context"):
-		nav_state.lock_transition_context(u_id, w_id, next_spike, "0", s_seed)
-		
-	print("[SCENARIO ENGINE] Scenario 1 Ready: ", next_spike.capitalize().replace("_", " "))
+		nav_state.lock_transition_context(u_id, w_id, s_type, "0", s_seed)
+
+	print("[SCENARIO ENGINE] Scenario 1 Ready: ", s_type.capitalize().replace("_", " "))
 	handle_navigation_event({"type": "portal_selected"})
 	call_deferred("on_scene_transition_complete")
 
@@ -509,8 +549,8 @@ func _on_cascade_completed():
 		
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-		var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile) else {}
-		var next_spike = normalize_id(vector.get("spike", "rapid_classification"))
+		var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile and active_scenario_selection == "") else {}
+		var next_spike = active_scenario_selection if active_scenario_selection != "" else normalize_id(vector.get("spike", "rapid_classification"))
 		
 		var s_seed = str(profile.lifetime_sessions if profile else 0).hash() + current_scenario_chain_index
 		if nav_state and nav_state.has_method("lock_transition_context"):
