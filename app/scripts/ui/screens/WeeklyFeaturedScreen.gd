@@ -55,6 +55,15 @@ func _ready():
 	_apply_universe_manifest("science_lab")
 	_populate_grid()
 
+func _to_color(value: Variant, fallback: Color) -> Color:
+	if value is Color:
+		return value
+	if typeof(value) == TYPE_STRING:
+		var text = str(value).strip_edges()
+		if text != "":
+			return Color(text)
+	return fallback
+
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	if vim and vim.has_method("apply_screen_identity"):
@@ -99,6 +108,9 @@ func _populate_grid():
 		var can_play = is_featured or is_owned
 		
 		var def = vim.get_universe_identity(uni) if vim else {"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")}}
+		var palette = def.get("palette", {})
+		var bg_color = _to_color(palette.get("bg", Color("#0B1320")), Color("#0B1320"))
+		var primary_color = _to_color(palette.get("primary", Color("#00D4FF")), Color("#00D4FF"))
 		var meta = universe_meta.get(uni, universe_meta["science_lab"])
 		
 		var btn = Button.new()
@@ -115,12 +127,12 @@ func _populate_grid():
 		btn.clip_text = true
 		
 		var style = StyleBoxFlat.new()
-		style.bg_color = def["palette"]["bg"]
+		style.bg_color = bg_color
 		if not can_play:
 			style.bg_color = style.bg_color.darkened(0.5)
 		
 		style.border_width_bottom = 4
-		style.border_color = def["palette"]["primary"] if can_play else Color(0.3, 0.3, 0.3)
+		style.border_color = primary_color if can_play else Color(0.3, 0.3, 0.3)
 		style.corner_radius_top_left = 12
 		style.corner_radius_top_right = 12
 		style.corner_radius_bottom_left = 12
@@ -129,7 +141,7 @@ func _populate_grid():
 		btn.add_theme_stylebox_override("normal", style)
 		btn.add_theme_stylebox_override("hover", style)
 		btn.add_theme_stylebox_override("pressed", style)
-		btn.add_theme_color_override("font_color", def["palette"]["primary"] if can_play else Color(0.5, 0.5, 0.5))
+		btn.add_theme_color_override("font_color", primary_color if can_play else Color(0.5, 0.5, 0.5))
 		
 		btn.pressed.connect(func(): _on_universe_clicked(uni, can_play))
 		grid.add_child(btn)

@@ -6,6 +6,15 @@ var active_universe_id: String = ""
 # The 4 Tiers of Tunnel Intensity
 enum TunnelIntensity { AMBIENT, FOCUS, CHALLENGE, PEAK }
 
+func _to_color(value: Variant, fallback: Color) -> Color:
+	if value is Color:
+		return value
+	if typeof(value) == TYPE_STRING:
+		var text = str(value).strip_edges()
+		if text != "":
+			return Color(text)
+	return fallback
+
 func _ready():
 	_material = ShaderMaterial.new()
 	_material.shader = load("res://assets/shaders/tunnel_core.gdshader")
@@ -26,15 +35,17 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: Str
 	var density_val = tunnel_prof.get("density", modifiers.get("fog_density", tunnel.get("density", 0.6)))
 	
 	var palette = world_prof.get("lens", {}).get("colors", theme_data.get("palette", {"primary": Color(1,1,1), "bg": Color(0,0,0)}))
+	var bg_color = _to_color(palette.get("bg", Color(0, 0, 0)), Color(0, 0, 0))
+	var primary_color = _to_color(palette.get("primary", Color(1, 1, 1)), Color(1, 1, 1))
 	
 	var flow_int = 0
 	if flow_str == "vortex": flow_int = 1
 	elif flow_str == "branching": flow_int = 2
 	elif flow_str == "wave": flow_int = 3
 
-	_material.set_shader_parameter("color_primary", palette["bg"])
-	_material.set_shader_parameter("color_secondary", palette["primary"].darkened(0.5))
-	_material.set_shader_parameter("color_tertiary", palette["primary"])
+	_material.set_shader_parameter("color_primary", bg_color)
+	_material.set_shader_parameter("color_secondary", primary_color.darkened(0.5))
+	_material.set_shader_parameter("color_tertiary", primary_color)
 
 	_material.set_shader_parameter("flow_speed", tunnel.get("speed_multiplier", 1.0))
 	_material.set_shader_parameter("density", density_val)
@@ -108,10 +119,11 @@ func modulate_for_scenario(scenario_type: String, scenario_payload: Dictionary =
 
 	if not subject_colors.is_empty():
 		if subject_colors.has("secondary"):
-			tween.tween_property(_material, "shader_parameter/color_primary", subject_colors["secondary"], 0.8)
+			tween.tween_property(_material, "shader_parameter/color_primary", _to_color(subject_colors["secondary"], Color("#003366")), 0.8)
 		if subject_colors.has("primary"):
-			tween.tween_property(_material, "shader_parameter/color_secondary", subject_colors["primary"].darkened(0.4), 0.8)
-			tween.tween_property(_material, "shader_parameter/color_tertiary", subject_colors["primary"], 0.8)
+			var subject_primary = _to_color(subject_colors["primary"], Color("#00D4FF"))
+			tween.tween_property(_material, "shader_parameter/color_secondary", subject_primary.darkened(0.4), 0.8)
+			tween.tween_property(_material, "shader_parameter/color_tertiary", subject_primary, 0.8)
 		print("[TIER 1 - SHADER] Applied subject tunnel coloring: ", subject_colors)
 
 func _apply_intensity_shift(intensity: int):

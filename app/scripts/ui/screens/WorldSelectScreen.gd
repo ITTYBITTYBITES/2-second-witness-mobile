@@ -44,6 +44,15 @@ func _ready():
 	if _is_setup_ready:
 		_populate_grid()
 
+func _to_color(value: Variant, fallback: Color) -> Color:
+	if value is Color:
+		return value
+	if typeof(value) == TYPE_STRING:
+		var text = str(value).strip_edges()
+		if text != "":
+			return Color(text)
+	return fallback
+
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	if vim and vim.has_method("apply_screen_identity"):
@@ -73,6 +82,9 @@ func _populate_grid():
 	var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	var def = vim.get_universe_identity(active_universe_id) if vim else {"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")}}
+	var default_palette = def.get("palette", {})
+	var default_bg = _to_color(default_palette.get("bg", Color("#0B1320")), Color("#0B1320"))
+	var default_primary = _to_color(default_palette.get("primary", Color("#00D4FF")), Color("#00D4FF"))
 	
 	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
 	var fallback_worlds = []
@@ -102,6 +114,9 @@ func _populate_grid():
 		btn.mouse_filter = Control.MOUSE_FILTER_STOP
 		
 		var w_def = vim.get_world_identity(active_universe_id, w_id) if vim else def
+		var palette = w_def.get("palette", {})
+		var bg_color = _to_color(palette.get("bg", default_bg), default_bg)
+		var primary_color = _to_color(palette.get("primary", default_primary), default_primary)
 		var pretty_name = w_id.capitalize().replace("_", " ")
 		var meta = world_meta.get(w_id, {"name": pretty_name, "scenarios": "10 scenarios", "completion": "20%", "rec": "Recommended Today"})
 		
@@ -118,9 +133,9 @@ func _populate_grid():
 		btn.clip_text = true
 		
 		var style = StyleBoxFlat.new()
-		style.bg_color = w_def["palette"]["bg"]
+		style.bg_color = bg_color
 		style.border_width_bottom = 4
-		style.border_color = w_def["palette"]["primary"]
+		style.border_color = primary_color
 		style.corner_radius_top_left = 12
 		style.corner_radius_top_right = 12
 		style.corner_radius_bottom_left = 12
@@ -129,7 +144,7 @@ func _populate_grid():
 		btn.add_theme_stylebox_override("normal", style)
 		btn.add_theme_stylebox_override("hover", style.duplicate())
 		btn.add_theme_stylebox_override("pressed", style.duplicate())
-		btn.add_theme_color_override("font_color", w_def["palette"]["primary"].lightened(0.6))
+		btn.add_theme_color_override("font_color", primary_color.lightened(0.6))
 		
 		btn.pressed.connect(func():
 			print("WORLD CARD CLICKED:", w_id)
