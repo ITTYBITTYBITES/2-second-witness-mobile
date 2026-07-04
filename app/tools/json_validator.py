@@ -75,7 +75,7 @@ def run_content_ci_pipeline():
                         if not isinstance(obs, dict):
                             schema_violations.append(f"{clean_path}: Observation row is not a dictionary")
                             continue
-                        for rk in ["observation_id", "difficulty", "prompt", "correct_answer", "distractors", "metadata", "localization"]:
+                        for rk in ["observation_id", "difficulty", "prompt", "correct_answer", "distractors", "metadata", "localization", "knowledge"]:
                             if rk not in obs:
                                 schema_violations.append(f"{clean_path}: Observation missing '{rk}'")
                         oid = obs.get("observation_id", "")

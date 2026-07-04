@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Fresco",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "fresco"
+          ],
+          "term": "Fresco",
+          "definition_clue": "painting into wet plaster",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fresco",
+          "distractor_family": [
+            "Glazing",
+            "Impasto",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Fresco",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "fresco"
+        ],
+        "term": "Fresco",
+        "definition_clue": "painting into wet plaster",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fresco",
+        "distractor_family": [
+          "Glazing",
+          "Impasto",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Glazing",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "glazing"
+          ],
+          "term": "Glazing",
+          "definition_clue": "thin transparent paint layers",
+          "difficulty_tier": 1,
+          "recognized_answer": "Glazing",
+          "distractor_family": [
+            "Fresco",
+            "Impasto",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Glazing",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "glazing"
+        ],
+        "term": "Glazing",
+        "definition_clue": "thin transparent paint layers",
+        "difficulty_tier": 1,
+        "recognized_answer": "Glazing",
+        "distractor_family": [
+          "Fresco",
+          "Impasto",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Impasto",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "impasto"
+          ],
+          "term": "Impasto",
+          "definition_clue": "thick raised paint",
+          "difficulty_tier": 1,
+          "recognized_answer": "Impasto",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Impasto",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "impasto"
+        ],
+        "term": "Impasto",
+        "definition_clue": "thick raised paint",
+        "difficulty_tier": 1,
+        "recognized_answer": "Impasto",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Scumbling",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "scumbling"
+          ],
+          "term": "Scumbling",
+          "definition_clue": "dry broken light paint over darker paint",
+          "difficulty_tier": 1,
+          "recognized_answer": "Scumbling",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Scumbling",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "scumbling"
+        ],
+        "term": "Scumbling",
+        "definition_clue": "dry broken light paint over darker paint",
+        "difficulty_tier": 1,
+        "recognized_answer": "Scumbling",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Sfumato",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "sfumato"
+          ],
+          "term": "Sfumato",
+          "definition_clue": "soft smoky transitions",
+          "difficulty_tier": 1,
+          "recognized_answer": "Sfumato",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Sfumato",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "sfumato"
+        ],
+        "term": "Sfumato",
+        "definition_clue": "soft smoky transitions",
+        "difficulty_tier": 1,
+        "recognized_answer": "Sfumato",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Chiaroscuro",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "chiaroscuro"
+          ],
+          "term": "Chiaroscuro",
+          "definition_clue": "light-dark contrast",
+          "difficulty_tier": 1,
+          "recognized_answer": "Chiaroscuro",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Chiaroscuro",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "chiaroscuro"
+        ],
+        "term": "Chiaroscuro",
+        "definition_clue": "light-dark contrast",
+        "difficulty_tier": 1,
+        "recognized_answer": "Chiaroscuro",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Tenebrism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "tenebrism"
+          ],
+          "term": "Tenebrism",
+          "definition_clue": "extreme spotlighted darkness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Tenebrism",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Tenebrism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "tenebrism"
+        ],
+        "term": "Tenebrism",
+        "definition_clue": "extreme spotlighted darkness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Tenebrism",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Underpainting",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "underpainting"
+          ],
+          "term": "Underpainting",
+          "definition_clue": "first value or color layer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Underpainting",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Underpainting",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "underpainting"
+        ],
+        "term": "Underpainting",
+        "definition_clue": "first value or color layer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Underpainting",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Alla Prima",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "alla_prima"
+          ],
+          "term": "Alla Prima",
+          "definition_clue": "wet-on-wet painting in one session",
+          "difficulty_tier": 1,
+          "recognized_answer": "Alla Prima",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Alla Prima",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "alla_prima"
+        ],
+        "term": "Alla Prima",
+        "definition_clue": "wet-on-wet painting in one session",
+        "difficulty_tier": 1,
+        "recognized_answer": "Alla Prima",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Grisaille",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "grisaille"
+          ],
+          "term": "Grisaille",
+          "definition_clue": "painting in gray values",
+          "difficulty_tier": 1,
+          "recognized_answer": "Grisaille",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Grisaille",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "grisaille"
+        ],
+        "term": "Grisaille",
+        "definition_clue": "painting in gray values",
+        "difficulty_tier": 1,
+        "recognized_answer": "Grisaille",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Wash",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "wash"
+          ],
+          "term": "Wash",
+          "definition_clue": "thin diluted paint layer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Wash",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Wash",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "wash"
+        ],
+        "term": "Wash",
+        "definition_clue": "thin diluted paint layer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Wash",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Drybrush",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "drybrush"
+          ],
+          "term": "Drybrush",
+          "definition_clue": "paint dragged with little moisture",
+          "difficulty_tier": 1,
+          "recognized_answer": "Drybrush",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Drybrush",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "drybrush"
+        ],
+        "term": "Drybrush",
+        "definition_clue": "paint dragged with little moisture",
+        "difficulty_tier": 1,
+        "recognized_answer": "Drybrush",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Blending",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "blending"
+          ],
+          "term": "Blending",
+          "definition_clue": "smooth transition between colors",
+          "difficulty_tier": 1,
+          "recognized_answer": "Blending",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Blending",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "blending"
+        ],
+        "term": "Blending",
+        "definition_clue": "smooth transition between colors",
+        "difficulty_tier": 1,
+        "recognized_answer": "Blending",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Stippling",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "stippling"
+          ],
+          "term": "Stippling",
+          "definition_clue": "small dots or marks",
+          "difficulty_tier": 1,
+          "recognized_answer": "Stippling",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Stippling",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "stippling"
+        ],
+        "term": "Stippling",
+        "definition_clue": "small dots or marks",
+        "difficulty_tier": 1,
+        "recognized_answer": "Stippling",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Hatching",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "hatching"
+          ],
+          "term": "Hatching",
+          "definition_clue": "parallel lines for value",
+          "difficulty_tier": 1,
+          "recognized_answer": "Hatching",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Hatching",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "hatching"
+        ],
+        "term": "Hatching",
+        "definition_clue": "parallel lines for value",
+        "difficulty_tier": 1,
+        "recognized_answer": "Hatching",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Cross-Hatching",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "cross_hatching"
+          ],
+          "term": "Cross-Hatching",
+          "definition_clue": "intersecting lines for shadow",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cross-Hatching",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Cross-Hatching",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "cross_hatching"
+        ],
+        "term": "Cross-Hatching",
+        "definition_clue": "intersecting lines for shadow",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cross-Hatching",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Layering",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "layering"
+          ],
+          "term": "Layering",
+          "definition_clue": "building paint in stages",
+          "difficulty_tier": 1,
+          "recognized_answer": "Layering",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Layering",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "layering"
+        ],
+        "term": "Layering",
+        "definition_clue": "building paint in stages",
+        "difficulty_tier": 1,
+        "recognized_answer": "Layering",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Masking",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "masking"
+          ],
+          "term": "Masking",
+          "definition_clue": "protecting areas from paint",
+          "difficulty_tier": 1,
+          "recognized_answer": "Masking",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Masking",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "masking"
+        ],
+        "term": "Masking",
+        "definition_clue": "protecting areas from paint",
+        "difficulty_tier": 1,
+        "recognized_answer": "Masking",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Varnishing",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "varnishing"
+          ],
+          "term": "Varnishing",
+          "definition_clue": "clear protective finish",
+          "difficulty_tier": 1,
+          "recognized_answer": "Varnishing",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Varnishing",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "varnishing"
+        ],
+        "term": "Varnishing",
+        "definition_clue": "clear protective finish",
+        "difficulty_tier": 1,
+        "recognized_answer": "Varnishing",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Palette Knife",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "palette_knife"
+          ],
+          "term": "Palette Knife",
+          "definition_clue": "paint applied with a blade-like tool",
+          "difficulty_tier": 1,
+          "recognized_answer": "Palette Knife",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Palette Knife",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "palette_knife"
+        ],
+        "term": "Palette Knife",
+        "definition_clue": "paint applied with a blade-like tool",
+        "difficulty_tier": 1,
+        "recognized_answer": "Palette Knife",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Fresco",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "fresco"
+          ],
+          "term": "Fresco",
+          "definition_clue": "Identify the art term: painting into wet plaster",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fresco",
+          "distractor_family": [
+            "Glazing",
+            "Impasto",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Fresco",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "fresco"
+        ],
+        "term": "Fresco",
+        "definition_clue": "Identify the art term: painting into wet plaster",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fresco",
+        "distractor_family": [
+          "Glazing",
+          "Impasto",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Glazing",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "glazing"
+          ],
+          "term": "Glazing",
+          "definition_clue": "Identify the art term: thin transparent paint layers",
+          "difficulty_tier": 1,
+          "recognized_answer": "Glazing",
+          "distractor_family": [
+            "Fresco",
+            "Impasto",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Glazing",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "glazing"
+        ],
+        "term": "Glazing",
+        "definition_clue": "Identify the art term: thin transparent paint layers",
+        "difficulty_tier": 1,
+        "recognized_answer": "Glazing",
+        "distractor_family": [
+          "Fresco",
+          "Impasto",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Impasto",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "impasto"
+          ],
+          "term": "Impasto",
+          "definition_clue": "Identify the art term: thick raised paint",
+          "difficulty_tier": 1,
+          "recognized_answer": "Impasto",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Impasto",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "impasto"
+        ],
+        "term": "Impasto",
+        "definition_clue": "Identify the art term: thick raised paint",
+        "difficulty_tier": 1,
+        "recognized_answer": "Impasto",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Scumbling",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "scumbling"
+          ],
+          "term": "Scumbling",
+          "definition_clue": "Identify the art term: dry broken light paint over darker paint",
+          "difficulty_tier": 1,
+          "recognized_answer": "Scumbling",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Scumbling",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "scumbling"
+        ],
+        "term": "Scumbling",
+        "definition_clue": "Identify the art term: dry broken light paint over darker paint",
+        "difficulty_tier": 1,
+        "recognized_answer": "Scumbling",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Sfumato",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "sfumato"
+          ],
+          "term": "Sfumato",
+          "definition_clue": "Identify the art term: soft smoky transitions",
+          "difficulty_tier": 1,
+          "recognized_answer": "Sfumato",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Sfumato",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "sfumato"
+        ],
+        "term": "Sfumato",
+        "definition_clue": "Identify the art term: soft smoky transitions",
+        "difficulty_tier": 1,
+        "recognized_answer": "Sfumato",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1585,7 +2585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Chiaroscuro",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "chiaroscuro"
+          ],
+          "term": "Chiaroscuro",
+          "definition_clue": "Identify the art term: light-dark contrast",
+          "difficulty_tier": 1,
+          "recognized_answer": "Chiaroscuro",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Chiaroscuro",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "chiaroscuro"
+        ],
+        "term": "Chiaroscuro",
+        "definition_clue": "Identify the art term: light-dark contrast",
+        "difficulty_tier": 1,
+        "recognized_answer": "Chiaroscuro",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1645,7 +2685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Tenebrism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "tenebrism"
+          ],
+          "term": "Tenebrism",
+          "definition_clue": "Identify the art term: extreme spotlighted darkness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Tenebrism",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Tenebrism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "tenebrism"
+        ],
+        "term": "Tenebrism",
+        "definition_clue": "Identify the art term: extreme spotlighted darkness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Tenebrism",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1705,7 +2785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Underpainting",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "underpainting"
+          ],
+          "term": "Underpainting",
+          "definition_clue": "Identify the art term: first value or color layer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Underpainting",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Underpainting",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "underpainting"
+        ],
+        "term": "Underpainting",
+        "definition_clue": "Identify the art term: first value or color layer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Underpainting",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1765,7 +2885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Alla Prima",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "alla_prima"
+          ],
+          "term": "Alla Prima",
+          "definition_clue": "Identify the art term: wet-on-wet painting in one session",
+          "difficulty_tier": 1,
+          "recognized_answer": "Alla Prima",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Alla Prima",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "alla_prima"
+        ],
+        "term": "Alla Prima",
+        "definition_clue": "Identify the art term: wet-on-wet painting in one session",
+        "difficulty_tier": 1,
+        "recognized_answer": "Alla Prima",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1825,7 +2985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Grisaille",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "grisaille"
+          ],
+          "term": "Grisaille",
+          "definition_clue": "Identify the art term: painting in gray values",
+          "difficulty_tier": 1,
+          "recognized_answer": "Grisaille",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Grisaille",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "grisaille"
+        ],
+        "term": "Grisaille",
+        "definition_clue": "Identify the art term: painting in gray values",
+        "difficulty_tier": 1,
+        "recognized_answer": "Grisaille",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1885,7 +3085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Wash",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "wash"
+          ],
+          "term": "Wash",
+          "definition_clue": "Identify the art term: thin diluted paint layer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Wash",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Wash",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "wash"
+        ],
+        "term": "Wash",
+        "definition_clue": "Identify the art term: thin diluted paint layer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Wash",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -1945,7 +3185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Drybrush",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "drybrush"
+          ],
+          "term": "Drybrush",
+          "definition_clue": "Identify the art term: paint dragged with little moisture",
+          "difficulty_tier": 1,
+          "recognized_answer": "Drybrush",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Drybrush",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "drybrush"
+        ],
+        "term": "Drybrush",
+        "definition_clue": "Identify the art term: paint dragged with little moisture",
+        "difficulty_tier": 1,
+        "recognized_answer": "Drybrush",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2005,7 +3285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Blending",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "blending"
+          ],
+          "term": "Blending",
+          "definition_clue": "Identify the art term: smooth transition between colors",
+          "difficulty_tier": 1,
+          "recognized_answer": "Blending",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Blending",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "blending"
+        ],
+        "term": "Blending",
+        "definition_clue": "Identify the art term: smooth transition between colors",
+        "difficulty_tier": 1,
+        "recognized_answer": "Blending",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2065,7 +3385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Stippling",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "stippling"
+          ],
+          "term": "Stippling",
+          "definition_clue": "Identify the art term: small dots or marks",
+          "difficulty_tier": 1,
+          "recognized_answer": "Stippling",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Stippling",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "stippling"
+        ],
+        "term": "Stippling",
+        "definition_clue": "Identify the art term: small dots or marks",
+        "difficulty_tier": 1,
+        "recognized_answer": "Stippling",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2125,7 +3485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Hatching",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "hatching"
+          ],
+          "term": "Hatching",
+          "definition_clue": "Identify the art term: parallel lines for value",
+          "difficulty_tier": 1,
+          "recognized_answer": "Hatching",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Hatching",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "hatching"
+        ],
+        "term": "Hatching",
+        "definition_clue": "Identify the art term: parallel lines for value",
+        "difficulty_tier": 1,
+        "recognized_answer": "Hatching",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2185,7 +3585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Cross-Hatching",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "cross_hatching"
+          ],
+          "term": "Cross-Hatching",
+          "definition_clue": "Identify the art term: intersecting lines for shadow",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cross-Hatching",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Cross-Hatching",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "cross_hatching"
+        ],
+        "term": "Cross-Hatching",
+        "definition_clue": "Identify the art term: intersecting lines for shadow",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cross-Hatching",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2245,7 +3685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Layering",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "layering"
+          ],
+          "term": "Layering",
+          "definition_clue": "Identify the art term: building paint in stages",
+          "difficulty_tier": 1,
+          "recognized_answer": "Layering",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Layering",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "layering"
+        ],
+        "term": "Layering",
+        "definition_clue": "Identify the art term: building paint in stages",
+        "difficulty_tier": 1,
+        "recognized_answer": "Layering",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2305,7 +3785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Masking",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "masking"
+          ],
+          "term": "Masking",
+          "definition_clue": "Identify the art term: protecting areas from paint",
+          "difficulty_tier": 1,
+          "recognized_answer": "Masking",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Masking",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "masking"
+        ],
+        "term": "Masking",
+        "definition_clue": "Identify the art term: protecting areas from paint",
+        "difficulty_tier": 1,
+        "recognized_answer": "Masking",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2365,7 +3885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Varnishing",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "varnishing"
+          ],
+          "term": "Varnishing",
+          "definition_clue": "Identify the art term: clear protective finish",
+          "difficulty_tier": 1,
+          "recognized_answer": "Varnishing",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Varnishing",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "varnishing"
+        ],
+        "term": "Varnishing",
+        "definition_clue": "Identify the art term: clear protective finish",
+        "difficulty_tier": 1,
+        "recognized_answer": "Varnishing",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2425,7 +3985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Palette Knife",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "palette_knife"
+          ],
+          "term": "Palette Knife",
+          "definition_clue": "Identify the art term: paint applied with a blade-like tool",
+          "difficulty_tier": 1,
+          "recognized_answer": "Palette Knife",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Palette Knife",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "palette_knife"
+        ],
+        "term": "Palette Knife",
+        "definition_clue": "Identify the art term: paint applied with a blade-like tool",
+        "difficulty_tier": 1,
+        "recognized_answer": "Palette Knife",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2485,7 +4085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Fresco",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "fresco"
+          ],
+          "term": "Fresco",
+          "definition_clue": "Which concept means painting into wet plaster?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Fresco",
+          "distractor_family": [
+            "Glazing",
+            "Impasto",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Fresco",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "fresco"
+        ],
+        "term": "Fresco",
+        "definition_clue": "Which concept means painting into wet plaster?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Fresco",
+        "distractor_family": [
+          "Glazing",
+          "Impasto",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -2545,7 +4185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Glazing",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "glazing"
+          ],
+          "term": "Glazing",
+          "definition_clue": "Which concept means thin transparent paint layers?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Glazing",
+          "distractor_family": [
+            "Fresco",
+            "Impasto",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Glazing",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "glazing"
+        ],
+        "term": "Glazing",
+        "definition_clue": "Which concept means thin transparent paint layers?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Glazing",
+        "distractor_family": [
+          "Fresco",
+          "Impasto",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -2605,7 +4285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Impasto",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "impasto"
+          ],
+          "term": "Impasto",
+          "definition_clue": "Which concept means thick raised paint?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Impasto",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Impasto",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "impasto"
+        ],
+        "term": "Impasto",
+        "definition_clue": "Which concept means thick raised paint?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Impasto",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -2665,7 +4385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Scumbling",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "scumbling"
+          ],
+          "term": "Scumbling",
+          "definition_clue": "Which concept means dry broken light paint over darker paint?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Scumbling",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Scumbling",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "scumbling"
+        ],
+        "term": "Scumbling",
+        "definition_clue": "Which concept means dry broken light paint over darker paint?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Scumbling",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2725,7 +4485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Sfumato",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "sfumato"
+          ],
+          "term": "Sfumato",
+          "definition_clue": "Which concept means soft smoky transitions?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Sfumato",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Sfumato",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "sfumato"
+        ],
+        "term": "Sfumato",
+        "definition_clue": "Which concept means soft smoky transitions?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Sfumato",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2785,7 +4585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Chiaroscuro",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "chiaroscuro"
+          ],
+          "term": "Chiaroscuro",
+          "definition_clue": "Which concept means light-dark contrast?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Chiaroscuro",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Chiaroscuro",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "chiaroscuro"
+        ],
+        "term": "Chiaroscuro",
+        "definition_clue": "Which concept means light-dark contrast?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Chiaroscuro",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2845,7 +4685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Tenebrism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "tenebrism"
+          ],
+          "term": "Tenebrism",
+          "definition_clue": "Which concept means extreme spotlighted darkness?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Tenebrism",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Tenebrism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "tenebrism"
+        ],
+        "term": "Tenebrism",
+        "definition_clue": "Which concept means extreme spotlighted darkness?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Tenebrism",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2905,7 +4785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Underpainting",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "underpainting"
+          ],
+          "term": "Underpainting",
+          "definition_clue": "Which concept means first value or color layer?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Underpainting",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Underpainting",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "underpainting"
+        ],
+        "term": "Underpainting",
+        "definition_clue": "Which concept means first value or color layer?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Underpainting",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -2965,7 +4885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Alla Prima",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "alla_prima"
+          ],
+          "term": "Alla Prima",
+          "definition_clue": "Which concept means wet-on-wet painting in one session?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Alla Prima",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Alla Prima",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "alla_prima"
+        ],
+        "term": "Alla Prima",
+        "definition_clue": "Which concept means wet-on-wet painting in one session?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Alla Prima",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3025,7 +4985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Grisaille",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "grisaille"
+          ],
+          "term": "Grisaille",
+          "definition_clue": "Which concept means painting in gray values?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Grisaille",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Grisaille",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "grisaille"
+        ],
+        "term": "Grisaille",
+        "definition_clue": "Which concept means painting in gray values?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Grisaille",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3085,7 +5085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Wash",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "wash"
+          ],
+          "term": "Wash",
+          "definition_clue": "Which concept means thin diluted paint layer?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Wash",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Wash",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "wash"
+        ],
+        "term": "Wash",
+        "definition_clue": "Which concept means thin diluted paint layer?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Wash",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3145,7 +5185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Drybrush",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "drybrush"
+          ],
+          "term": "Drybrush",
+          "definition_clue": "Which concept means paint dragged with little moisture?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Drybrush",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Drybrush",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "drybrush"
+        ],
+        "term": "Drybrush",
+        "definition_clue": "Which concept means paint dragged with little moisture?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Drybrush",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3205,7 +5285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Blending",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "blending"
+          ],
+          "term": "Blending",
+          "definition_clue": "Which concept means smooth transition between colors?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Blending",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Blending",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "blending"
+        ],
+        "term": "Blending",
+        "definition_clue": "Which concept means smooth transition between colors?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Blending",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3265,7 +5385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Stippling",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "stippling"
+          ],
+          "term": "Stippling",
+          "definition_clue": "Which concept means small dots or marks?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Stippling",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Stippling",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "stippling"
+        ],
+        "term": "Stippling",
+        "definition_clue": "Which concept means small dots or marks?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Stippling",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3325,7 +5485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Hatching",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "hatching"
+          ],
+          "term": "Hatching",
+          "definition_clue": "Which concept means parallel lines for value?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Hatching",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Hatching",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "hatching"
+        ],
+        "term": "Hatching",
+        "definition_clue": "Which concept means parallel lines for value?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Hatching",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3385,7 +5585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Cross-Hatching",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "cross_hatching"
+          ],
+          "term": "Cross-Hatching",
+          "definition_clue": "Which concept means intersecting lines for shadow?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cross-Hatching",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Cross-Hatching",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "cross_hatching"
+        ],
+        "term": "Cross-Hatching",
+        "definition_clue": "Which concept means intersecting lines for shadow?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cross-Hatching",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3445,7 +5685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Layering",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "layering"
+          ],
+          "term": "Layering",
+          "definition_clue": "Which concept means building paint in stages?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Layering",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Layering",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "layering"
+        ],
+        "term": "Layering",
+        "definition_clue": "Which concept means building paint in stages?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Layering",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3505,7 +5785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Masking",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "masking"
+          ],
+          "term": "Masking",
+          "definition_clue": "Which concept means protecting areas from paint?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Masking",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Masking",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "masking"
+        ],
+        "term": "Masking",
+        "definition_clue": "Which concept means protecting areas from paint?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Masking",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3565,7 +5885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Varnishing",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "varnishing"
+          ],
+          "term": "Varnishing",
+          "definition_clue": "Which concept means clear protective finish?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Varnishing",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Varnishing",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "varnishing"
+        ],
+        "term": "Varnishing",
+        "definition_clue": "Which concept means clear protective finish?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Varnishing",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3625,7 +5985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Palette Knife",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "palette_knife"
+          ],
+          "term": "Palette Knife",
+          "definition_clue": "Which concept means paint applied with a blade-like tool?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Palette Knife",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Palette Knife",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "palette_knife"
+        ],
+        "term": "Palette Knife",
+        "definition_clue": "Which concept means paint applied with a blade-like tool?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Palette Knife",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3685,7 +6085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Fresco",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "fresco"
+          ],
+          "term": "Fresco",
+          "definition_clue": "Spot the matching term for: painting into wet plaster",
+          "difficulty_tier": 2,
+          "recognized_answer": "Fresco",
+          "distractor_family": [
+            "Glazing",
+            "Impasto",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Fresco",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "fresco"
+        ],
+        "term": "Fresco",
+        "definition_clue": "Spot the matching term for: painting into wet plaster",
+        "difficulty_tier": 2,
+        "recognized_answer": "Fresco",
+        "distractor_family": [
+          "Glazing",
+          "Impasto",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -3745,7 +6185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Glazing",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "glazing"
+          ],
+          "term": "Glazing",
+          "definition_clue": "Spot the matching term for: thin transparent paint layers",
+          "difficulty_tier": 2,
+          "recognized_answer": "Glazing",
+          "distractor_family": [
+            "Fresco",
+            "Impasto",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Glazing",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "glazing"
+        ],
+        "term": "Glazing",
+        "definition_clue": "Spot the matching term for: thin transparent paint layers",
+        "difficulty_tier": 2,
+        "recognized_answer": "Glazing",
+        "distractor_family": [
+          "Fresco",
+          "Impasto",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -3805,7 +6285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Impasto",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "impasto"
+          ],
+          "term": "Impasto",
+          "definition_clue": "Spot the matching term for: thick raised paint",
+          "difficulty_tier": 2,
+          "recognized_answer": "Impasto",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Scumbling"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Impasto",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "impasto"
+        ],
+        "term": "Impasto",
+        "definition_clue": "Spot the matching term for: thick raised paint",
+        "difficulty_tier": 2,
+        "recognized_answer": "Impasto",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Scumbling"
+        ]
       }
     },
     {
@@ -3865,7 +6385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Scumbling",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "scumbling"
+          ],
+          "term": "Scumbling",
+          "definition_clue": "Spot the matching term for: dry broken light paint over darker paint",
+          "difficulty_tier": 2,
+          "recognized_answer": "Scumbling",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Scumbling",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "scumbling"
+        ],
+        "term": "Scumbling",
+        "definition_clue": "Spot the matching term for: dry broken light paint over darker paint",
+        "difficulty_tier": 2,
+        "recognized_answer": "Scumbling",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3925,7 +6485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Sfumato",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "sfumato"
+          ],
+          "term": "Sfumato",
+          "definition_clue": "Spot the matching term for: soft smoky transitions",
+          "difficulty_tier": 2,
+          "recognized_answer": "Sfumato",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Sfumato",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "sfumato"
+        ],
+        "term": "Sfumato",
+        "definition_clue": "Spot the matching term for: soft smoky transitions",
+        "difficulty_tier": 2,
+        "recognized_answer": "Sfumato",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -3985,7 +6585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Chiaroscuro",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "chiaroscuro"
+          ],
+          "term": "Chiaroscuro",
+          "definition_clue": "Spot the matching term for: light-dark contrast",
+          "difficulty_tier": 2,
+          "recognized_answer": "Chiaroscuro",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Chiaroscuro",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "chiaroscuro"
+        ],
+        "term": "Chiaroscuro",
+        "definition_clue": "Spot the matching term for: light-dark contrast",
+        "difficulty_tier": 2,
+        "recognized_answer": "Chiaroscuro",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4045,7 +6685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Tenebrism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "tenebrism"
+          ],
+          "term": "Tenebrism",
+          "definition_clue": "Spot the matching term for: extreme spotlighted darkness",
+          "difficulty_tier": 2,
+          "recognized_answer": "Tenebrism",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Tenebrism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "tenebrism"
+        ],
+        "term": "Tenebrism",
+        "definition_clue": "Spot the matching term for: extreme spotlighted darkness",
+        "difficulty_tier": 2,
+        "recognized_answer": "Tenebrism",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4105,7 +6785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Underpainting",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "underpainting"
+          ],
+          "term": "Underpainting",
+          "definition_clue": "Spot the matching term for: first value or color layer",
+          "difficulty_tier": 2,
+          "recognized_answer": "Underpainting",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Underpainting",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "underpainting"
+        ],
+        "term": "Underpainting",
+        "definition_clue": "Spot the matching term for: first value or color layer",
+        "difficulty_tier": 2,
+        "recognized_answer": "Underpainting",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4165,7 +6885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Alla Prima",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "alla_prima"
+          ],
+          "term": "Alla Prima",
+          "definition_clue": "Spot the matching term for: wet-on-wet painting in one session",
+          "difficulty_tier": 2,
+          "recognized_answer": "Alla Prima",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Alla Prima",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "alla_prima"
+        ],
+        "term": "Alla Prima",
+        "definition_clue": "Spot the matching term for: wet-on-wet painting in one session",
+        "difficulty_tier": 2,
+        "recognized_answer": "Alla Prima",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4225,7 +6985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Grisaille",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "grisaille"
+          ],
+          "term": "Grisaille",
+          "definition_clue": "Spot the matching term for: painting in gray values",
+          "difficulty_tier": 2,
+          "recognized_answer": "Grisaille",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Grisaille",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "grisaille"
+        ],
+        "term": "Grisaille",
+        "definition_clue": "Spot the matching term for: painting in gray values",
+        "difficulty_tier": 2,
+        "recognized_answer": "Grisaille",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4285,7 +7085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Wash",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "wash"
+          ],
+          "term": "Wash",
+          "definition_clue": "Spot the matching term for: thin diluted paint layer",
+          "difficulty_tier": 3,
+          "recognized_answer": "Wash",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Wash",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "wash"
+        ],
+        "term": "Wash",
+        "definition_clue": "Spot the matching term for: thin diluted paint layer",
+        "difficulty_tier": 3,
+        "recognized_answer": "Wash",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4345,7 +7185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Drybrush",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "drybrush"
+          ],
+          "term": "Drybrush",
+          "definition_clue": "Spot the matching term for: paint dragged with little moisture",
+          "difficulty_tier": 3,
+          "recognized_answer": "Drybrush",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Drybrush",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "drybrush"
+        ],
+        "term": "Drybrush",
+        "definition_clue": "Spot the matching term for: paint dragged with little moisture",
+        "difficulty_tier": 3,
+        "recognized_answer": "Drybrush",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4405,7 +7285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Blending",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "blending"
+          ],
+          "term": "Blending",
+          "definition_clue": "Spot the matching term for: smooth transition between colors",
+          "difficulty_tier": 3,
+          "recognized_answer": "Blending",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Blending",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "blending"
+        ],
+        "term": "Blending",
+        "definition_clue": "Spot the matching term for: smooth transition between colors",
+        "difficulty_tier": 3,
+        "recognized_answer": "Blending",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4465,7 +7385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Stippling",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "stippling"
+          ],
+          "term": "Stippling",
+          "definition_clue": "Spot the matching term for: small dots or marks",
+          "difficulty_tier": 3,
+          "recognized_answer": "Stippling",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Stippling",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "stippling"
+        ],
+        "term": "Stippling",
+        "definition_clue": "Spot the matching term for: small dots or marks",
+        "difficulty_tier": 3,
+        "recognized_answer": "Stippling",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4525,7 +7485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Hatching",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "hatching"
+          ],
+          "term": "Hatching",
+          "definition_clue": "Spot the matching term for: parallel lines for value",
+          "difficulty_tier": 3,
+          "recognized_answer": "Hatching",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Hatching",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "hatching"
+        ],
+        "term": "Hatching",
+        "definition_clue": "Spot the matching term for: parallel lines for value",
+        "difficulty_tier": 3,
+        "recognized_answer": "Hatching",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4585,7 +7585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Cross-Hatching",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "cross_hatching"
+          ],
+          "term": "Cross-Hatching",
+          "definition_clue": "Spot the matching term for: intersecting lines for shadow",
+          "difficulty_tier": 3,
+          "recognized_answer": "Cross-Hatching",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Cross-Hatching",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "cross_hatching"
+        ],
+        "term": "Cross-Hatching",
+        "definition_clue": "Spot the matching term for: intersecting lines for shadow",
+        "difficulty_tier": 3,
+        "recognized_answer": "Cross-Hatching",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4645,7 +7685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Layering",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "layering"
+          ],
+          "term": "Layering",
+          "definition_clue": "Spot the matching term for: building paint in stages",
+          "difficulty_tier": 3,
+          "recognized_answer": "Layering",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Layering",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "layering"
+        ],
+        "term": "Layering",
+        "definition_clue": "Spot the matching term for: building paint in stages",
+        "difficulty_tier": 3,
+        "recognized_answer": "Layering",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4705,7 +7785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Masking",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "masking"
+          ],
+          "term": "Masking",
+          "definition_clue": "Spot the matching term for: protecting areas from paint",
+          "difficulty_tier": 3,
+          "recognized_answer": "Masking",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Masking",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "masking"
+        ],
+        "term": "Masking",
+        "definition_clue": "Spot the matching term for: protecting areas from paint",
+        "difficulty_tier": 3,
+        "recognized_answer": "Masking",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4765,7 +7885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Varnishing",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "varnishing"
+          ],
+          "term": "Varnishing",
+          "definition_clue": "Spot the matching term for: clear protective finish",
+          "difficulty_tier": 3,
+          "recognized_answer": "Varnishing",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Varnishing",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "varnishing"
+        ],
+        "term": "Varnishing",
+        "definition_clue": "Spot the matching term for: clear protective finish",
+        "difficulty_tier": 3,
+        "recognized_answer": "Varnishing",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4825,7 +7985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "Palette Knife",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "palette_knife"
+          ],
+          "term": "Palette Knife",
+          "definition_clue": "Spot the matching term for: paint applied with a blade-like tool",
+          "difficulty_tier": 3,
+          "recognized_answer": "Palette Knife",
+          "distractor_family": [
+            "Fresco",
+            "Glazing",
+            "Impasto"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "Palette Knife",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "palette_knife"
+        ],
+        "term": "Palette Knife",
+        "definition_clue": "Spot the matching term for: paint applied with a blade-like tool",
+        "difficulty_tier": 3,
+        "recognized_answer": "Palette Knife",
+        "distractor_family": [
+          "Fresco",
+          "Glazing",
+          "Impasto"
+        ]
       }
     },
     {
@@ -4885,7 +8085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "painting into wet plaster",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "painting_into_wet_plaster"
+          ],
+          "term": "painting into wet plaster",
+          "definition_clue": "Fresco is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "painting into wet plaster",
+          "distractor_family": [
+            "thin transparent paint layers",
+            "thick raised paint",
+            "dry broken light paint over darker paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "painting into wet plaster",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "painting_into_wet_plaster"
+        ],
+        "term": "painting into wet plaster",
+        "definition_clue": "Fresco is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "painting into wet plaster",
+        "distractor_family": [
+          "thin transparent paint layers",
+          "thick raised paint",
+          "dry broken light paint over darker paint"
+        ]
       }
     },
     {
@@ -4945,7 +8185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "thin transparent paint layers",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "thin_transparent_paint_layers"
+          ],
+          "term": "thin transparent paint layers",
+          "definition_clue": "Glazing is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "thin transparent paint layers",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thick raised paint",
+            "dry broken light paint over darker paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "thin transparent paint layers",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "thin_transparent_paint_layers"
+        ],
+        "term": "thin transparent paint layers",
+        "definition_clue": "Glazing is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "thin transparent paint layers",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thick raised paint",
+          "dry broken light paint over darker paint"
+        ]
       }
     },
     {
@@ -5005,7 +8285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "thick raised paint",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "thick_raised_paint"
+          ],
+          "term": "thick raised paint",
+          "definition_clue": "Impasto is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "thick raised paint",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "dry broken light paint over darker paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "thick raised paint",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "thick_raised_paint"
+        ],
+        "term": "thick raised paint",
+        "definition_clue": "Impasto is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "thick raised paint",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "dry broken light paint over darker paint"
+        ]
       }
     },
     {
@@ -5065,7 +8385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "dry broken light paint over darker paint",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "dry_broken_light_paint_over_darker_paint"
+          ],
+          "term": "dry broken light paint over darker paint",
+          "definition_clue": "Scumbling is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "dry broken light paint over darker paint",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "dry broken light paint over darker paint",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "dry_broken_light_paint_over_darker_paint"
+        ],
+        "term": "dry broken light paint over darker paint",
+        "definition_clue": "Scumbling is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "dry broken light paint over darker paint",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5125,7 +8485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "soft smoky transitions",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "soft_smoky_transitions"
+          ],
+          "term": "soft smoky transitions",
+          "definition_clue": "Sfumato is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "soft smoky transitions",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "soft smoky transitions",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "soft_smoky_transitions"
+        ],
+        "term": "soft smoky transitions",
+        "definition_clue": "Sfumato is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "soft smoky transitions",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5185,7 +8585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "light-dark contrast",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "light_dark_contrast"
+          ],
+          "term": "light-dark contrast",
+          "definition_clue": "Chiaroscuro is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "light-dark contrast",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "light-dark contrast",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "light_dark_contrast"
+        ],
+        "term": "light-dark contrast",
+        "definition_clue": "Chiaroscuro is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "light-dark contrast",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5245,7 +8685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "extreme spotlighted darkness",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "extreme_spotlighted_darkness"
+          ],
+          "term": "extreme spotlighted darkness",
+          "definition_clue": "Tenebrism is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "extreme spotlighted darkness",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "extreme spotlighted darkness",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "extreme_spotlighted_darkness"
+        ],
+        "term": "extreme spotlighted darkness",
+        "definition_clue": "Tenebrism is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "extreme spotlighted darkness",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5305,7 +8785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "first value or color layer",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "first_value_or_color_layer"
+          ],
+          "term": "first value or color layer",
+          "definition_clue": "Underpainting is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "first value or color layer",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "first value or color layer",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "first_value_or_color_layer"
+        ],
+        "term": "first value or color layer",
+        "definition_clue": "Underpainting is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "first value or color layer",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5365,7 +8885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "wet-on-wet painting in one session",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "wet_on_wet_painting_in_one_session"
+          ],
+          "term": "wet-on-wet painting in one session",
+          "definition_clue": "Alla Prima is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "wet-on-wet painting in one session",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "wet-on-wet painting in one session",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "wet_on_wet_painting_in_one_session"
+        ],
+        "term": "wet-on-wet painting in one session",
+        "definition_clue": "Alla Prima is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "wet-on-wet painting in one session",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5425,7 +8985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "painting in gray values",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "painting_in_gray_values"
+          ],
+          "term": "painting in gray values",
+          "definition_clue": "Grisaille is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "painting in gray values",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "painting in gray values",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "painting_in_gray_values"
+        ],
+        "term": "painting in gray values",
+        "definition_clue": "Grisaille is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "painting in gray values",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5485,7 +9085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "thin diluted paint layer",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "thin_diluted_paint_layer"
+          ],
+          "term": "thin diluted paint layer",
+          "definition_clue": "Wash is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "thin diluted paint layer",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "thin diluted paint layer",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "thin_diluted_paint_layer"
+        ],
+        "term": "thin diluted paint layer",
+        "definition_clue": "Wash is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "thin diluted paint layer",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5545,7 +9185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "paint dragged with little moisture",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "paint_dragged_with_little_moisture"
+          ],
+          "term": "paint dragged with little moisture",
+          "definition_clue": "Drybrush is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "paint dragged with little moisture",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "paint dragged with little moisture",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "paint_dragged_with_little_moisture"
+        ],
+        "term": "paint dragged with little moisture",
+        "definition_clue": "Drybrush is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "paint dragged with little moisture",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5605,7 +9285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "smooth transition between colors",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "smooth_transition_between_colors"
+          ],
+          "term": "smooth transition between colors",
+          "definition_clue": "Blending is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "smooth transition between colors",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "smooth transition between colors",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "smooth_transition_between_colors"
+        ],
+        "term": "smooth transition between colors",
+        "definition_clue": "Blending is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "smooth transition between colors",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5665,7 +9385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "small dots or marks",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "small_dots_or_marks"
+          ],
+          "term": "small dots or marks",
+          "definition_clue": "Stippling is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "small dots or marks",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "small dots or marks",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "small_dots_or_marks"
+        ],
+        "term": "small dots or marks",
+        "definition_clue": "Stippling is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "small dots or marks",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5725,7 +9485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "parallel lines for value",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "parallel_lines_for_value"
+          ],
+          "term": "parallel lines for value",
+          "definition_clue": "Hatching is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "parallel lines for value",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "parallel lines for value",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "parallel_lines_for_value"
+        ],
+        "term": "parallel lines for value",
+        "definition_clue": "Hatching is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "parallel lines for value",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5785,7 +9585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "intersecting lines for shadow",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "intersecting_lines_for_shadow"
+          ],
+          "term": "intersecting lines for shadow",
+          "definition_clue": "Cross-Hatching is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "intersecting lines for shadow",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "intersecting lines for shadow",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "intersecting_lines_for_shadow"
+        ],
+        "term": "intersecting lines for shadow",
+        "definition_clue": "Cross-Hatching is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "intersecting lines for shadow",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5845,7 +9685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "building paint in stages",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "building_paint_in_stages"
+          ],
+          "term": "building paint in stages",
+          "definition_clue": "Layering is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "building paint in stages",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "building paint in stages",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "building_paint_in_stages"
+        ],
+        "term": "building paint in stages",
+        "definition_clue": "Layering is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "building paint in stages",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5905,7 +9785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "protecting areas from paint",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "protecting_areas_from_paint"
+          ],
+          "term": "protecting areas from paint",
+          "definition_clue": "Masking is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "protecting areas from paint",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "protecting areas from paint",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "protecting_areas_from_paint"
+        ],
+        "term": "protecting areas from paint",
+        "definition_clue": "Masking is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "protecting areas from paint",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -5965,7 +9885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "clear protective finish",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "clear_protective_finish"
+          ],
+          "term": "clear protective finish",
+          "definition_clue": "Varnishing is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "clear protective finish",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "clear protective finish",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "clear_protective_finish"
+        ],
+        "term": "clear protective finish",
+        "definition_clue": "Varnishing is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "clear protective finish",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     },
     {
@@ -6025,7 +9985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "painting_techniques",
+          "concept": "paint applied with a blade-like tool",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "painting_techniques",
+            "paint_applied_with_a_blade_like_tool"
+          ],
+          "term": "paint applied with a blade-like tool",
+          "definition_clue": "Palette Knife is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "paint applied with a blade-like tool",
+          "distractor_family": [
+            "painting into wet plaster",
+            "thin transparent paint layers",
+            "thick raised paint"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "painting_techniques",
+        "concept": "paint applied with a blade-like tool",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "painting_techniques",
+          "paint_applied_with_a_blade_like_tool"
+        ],
+        "term": "paint applied with a blade-like tool",
+        "definition_clue": "Palette Knife is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "paint applied with a blade-like tool",
+        "distractor_family": [
+          "painting into wet plaster",
+          "thin transparent paint layers",
+          "thick raised paint"
+        ]
       }
     }
   ]

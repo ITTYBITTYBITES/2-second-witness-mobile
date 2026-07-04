@@ -7,7 +7,7 @@ from collections import Counter
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 BANK_ROOT = PROJECT_ROOT / "app" / "data" / "observation_banks"
-REQUIRED_OBS = {"observation_id", "universe", "world", "subcategory", "difficulty", "observation_type", "prompt", "correct_answer", "distractors", "localization", "metadata"}
+REQUIRED_OBS = {"observation_id", "universe", "world", "subcategory", "difficulty", "observation_type", "prompt", "correct_answer", "distractors", "localization", "metadata", "knowledge"}
 REQUIRED_PREF = {"preferred", "secondary", "rare", "disabled"}
 
 

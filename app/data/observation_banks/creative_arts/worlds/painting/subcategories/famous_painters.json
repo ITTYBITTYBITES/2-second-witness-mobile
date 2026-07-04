@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Leonardo da Vinci",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "leonardo_da_vinci"
+          ],
+          "artist": "Leonardo da Vinci",
+          "artwork": "Mona Lisa",
+          "difficulty_tier": 1,
+          "recognized_answer": "Leonardo da Vinci",
+          "distractor_family": [
+            "Michelangelo",
+            "Raphael",
+            "Caravaggio"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Leonardo da Vinci",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "leonardo_da_vinci"
+        ],
+        "artist": "Leonardo da Vinci",
+        "artwork": "Mona Lisa",
+        "difficulty_tier": 1,
+        "recognized_answer": "Leonardo da Vinci",
+        "distractor_family": [
+          "Michelangelo",
+          "Raphael",
+          "Caravaggio"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Michelangelo",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "michelangelo"
+          ],
+          "artist": "Michelangelo",
+          "artwork": "Sistine Chapel ceiling",
+          "difficulty_tier": 1,
+          "recognized_answer": "Michelangelo",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Raphael",
+            "Caravaggio"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Michelangelo",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "michelangelo"
+        ],
+        "artist": "Michelangelo",
+        "artwork": "Sistine Chapel ceiling",
+        "difficulty_tier": 1,
+        "recognized_answer": "Michelangelo",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Raphael",
+          "Caravaggio"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Raphael",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "raphael"
+          ],
+          "artist": "Raphael",
+          "artwork": "The School of Athens",
+          "difficulty_tier": 1,
+          "recognized_answer": "Raphael",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Caravaggio"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Raphael",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "raphael"
+        ],
+        "artist": "Raphael",
+        "artwork": "The School of Athens",
+        "difficulty_tier": 1,
+        "recognized_answer": "Raphael",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Caravaggio"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Caravaggio",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "caravaggio"
+          ],
+          "artist": "Caravaggio",
+          "artwork": "The Calling of Saint Matthew",
+          "difficulty_tier": 1,
+          "recognized_answer": "Caravaggio",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Caravaggio",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "caravaggio"
+        ],
+        "artist": "Caravaggio",
+        "artwork": "The Calling of Saint Matthew",
+        "difficulty_tier": 1,
+        "recognized_answer": "Caravaggio",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Rembrandt",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "rembrandt"
+          ],
+          "artist": "Rembrandt",
+          "artwork": "The Night Watch",
+          "difficulty_tier": 1,
+          "recognized_answer": "Rembrandt",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Rembrandt",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "rembrandt"
+        ],
+        "artist": "Rembrandt",
+        "artwork": "The Night Watch",
+        "difficulty_tier": 1,
+        "recognized_answer": "Rembrandt",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Johannes Vermeer",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "johannes_vermeer"
+          ],
+          "artist": "Johannes Vermeer",
+          "artwork": "Girl with a Pearl Earring",
+          "difficulty_tier": 1,
+          "recognized_answer": "Johannes Vermeer",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Johannes Vermeer",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "johannes_vermeer"
+        ],
+        "artist": "Johannes Vermeer",
+        "artwork": "Girl with a Pearl Earring",
+        "difficulty_tier": 1,
+        "recognized_answer": "Johannes Vermeer",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Claude Monet",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "claude_monet"
+          ],
+          "artist": "Claude Monet",
+          "artwork": "Water Lilies",
+          "difficulty_tier": 1,
+          "recognized_answer": "Claude Monet",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Claude Monet",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "claude_monet"
+        ],
+        "artist": "Claude Monet",
+        "artwork": "Water Lilies",
+        "difficulty_tier": 1,
+        "recognized_answer": "Claude Monet",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Pierre-Auguste Renoir",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "pierre_auguste_renoir"
+          ],
+          "artist": "Pierre-Auguste Renoir",
+          "artwork": "Dance at Le Moulin de la Galette",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pierre-Auguste Renoir",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Pierre-Auguste Renoir",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "pierre_auguste_renoir"
+        ],
+        "artist": "Pierre-Auguste Renoir",
+        "artwork": "Dance at Le Moulin de la Galette",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pierre-Auguste Renoir",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Edgar Degas",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "edgar_degas"
+          ],
+          "artist": "Edgar Degas",
+          "artwork": "ballet dancer paintings",
+          "difficulty_tier": 1,
+          "recognized_answer": "Edgar Degas",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Edgar Degas",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "edgar_degas"
+        ],
+        "artist": "Edgar Degas",
+        "artwork": "ballet dancer paintings",
+        "difficulty_tier": 1,
+        "recognized_answer": "Edgar Degas",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Vincent van Gogh",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "vincent_van_gogh"
+          ],
+          "artist": "Vincent van Gogh",
+          "artwork": "The Starry Night",
+          "difficulty_tier": 1,
+          "recognized_answer": "Vincent van Gogh",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Vincent van Gogh",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "vincent_van_gogh"
+        ],
+        "artist": "Vincent van Gogh",
+        "artwork": "The Starry Night",
+        "difficulty_tier": 1,
+        "recognized_answer": "Vincent van Gogh",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Paul Cézanne",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "paul_c_zanne"
+          ],
+          "artist": "Paul Cézanne",
+          "artwork": "Mont Sainte-Victoire",
+          "difficulty_tier": 1,
+          "recognized_answer": "Paul Cézanne",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Paul Cézanne",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "paul_c_zanne"
+        ],
+        "artist": "Paul Cézanne",
+        "artwork": "Mont Sainte-Victoire",
+        "difficulty_tier": 1,
+        "recognized_answer": "Paul Cézanne",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Georges Seurat",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "georges_seurat"
+          ],
+          "artist": "Georges Seurat",
+          "artwork": "A Sunday on La Grande Jatte",
+          "difficulty_tier": 1,
+          "recognized_answer": "Georges Seurat",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Georges Seurat",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "georges_seurat"
+        ],
+        "artist": "Georges Seurat",
+        "artwork": "A Sunday on La Grande Jatte",
+        "difficulty_tier": 1,
+        "recognized_answer": "Georges Seurat",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Pablo Picasso",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "pablo_picasso"
+          ],
+          "artist": "Pablo Picasso",
+          "artwork": "Guernica",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pablo Picasso",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Pablo Picasso",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "pablo_picasso"
+        ],
+        "artist": "Pablo Picasso",
+        "artwork": "Guernica",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pablo Picasso",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Georges Braque",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "georges_braque"
+          ],
+          "artist": "Georges Braque",
+          "artwork": "Violin and Candlestick",
+          "difficulty_tier": 1,
+          "recognized_answer": "Georges Braque",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Georges Braque",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "georges_braque"
+        ],
+        "artist": "Georges Braque",
+        "artwork": "Violin and Candlestick",
+        "difficulty_tier": 1,
+        "recognized_answer": "Georges Braque",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Henri Matisse",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "henri_matisse"
+          ],
+          "artist": "Henri Matisse",
+          "artwork": "The Red Studio",
+          "difficulty_tier": 1,
+          "recognized_answer": "Henri Matisse",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Henri Matisse",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "henri_matisse"
+        ],
+        "artist": "Henri Matisse",
+        "artwork": "The Red Studio",
+        "difficulty_tier": 1,
+        "recognized_answer": "Henri Matisse",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Wassily Kandinsky",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "wassily_kandinsky"
+          ],
+          "artist": "Wassily Kandinsky",
+          "artwork": "Composition paintings",
+          "difficulty_tier": 1,
+          "recognized_answer": "Wassily Kandinsky",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Wassily Kandinsky",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "wassily_kandinsky"
+        ],
+        "artist": "Wassily Kandinsky",
+        "artwork": "Composition paintings",
+        "difficulty_tier": 1,
+        "recognized_answer": "Wassily Kandinsky",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Salvador Dalí",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "salvador_dal"
+          ],
+          "artist": "Salvador Dalí",
+          "artwork": "The Persistence of Memory",
+          "difficulty_tier": 1,
+          "recognized_answer": "Salvador Dalí",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Salvador Dalí",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "salvador_dal"
+        ],
+        "artist": "Salvador Dalí",
+        "artwork": "The Persistence of Memory",
+        "difficulty_tier": 1,
+        "recognized_answer": "Salvador Dalí",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Frida Kahlo",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "frida_kahlo"
+          ],
+          "artist": "Frida Kahlo",
+          "artwork": "self-portraits",
+          "difficulty_tier": 1,
+          "recognized_answer": "Frida Kahlo",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Frida Kahlo",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "frida_kahlo"
+        ],
+        "artist": "Frida Kahlo",
+        "artwork": "self-portraits",
+        "difficulty_tier": 1,
+        "recognized_answer": "Frida Kahlo",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Georgia O’Keeffe",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "georgia_o_keeffe"
+          ],
+          "artist": "Georgia O’Keeffe",
+          "artwork": "large flower paintings",
+          "difficulty_tier": 1,
+          "recognized_answer": "Georgia O’Keeffe",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Georgia O’Keeffe",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "georgia_o_keeffe"
+        ],
+        "artist": "Georgia O’Keeffe",
+        "artwork": "large flower paintings",
+        "difficulty_tier": 1,
+        "recognized_answer": "Georgia O’Keeffe",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Jackson Pollock",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "jackson_pollock"
+          ],
+          "artist": "Jackson Pollock",
+          "artwork": "drip paintings",
+          "difficulty_tier": 1,
+          "recognized_answer": "Jackson Pollock",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Jackson Pollock",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "jackson_pollock"
+        ],
+        "artist": "Jackson Pollock",
+        "artwork": "drip paintings",
+        "difficulty_tier": 1,
+        "recognized_answer": "Jackson Pollock",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Mark Rothko",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "mark_rothko"
+          ],
+          "artist": "Mark Rothko",
+          "artwork": "large color rectangles",
+          "difficulty_tier": 1,
+          "recognized_answer": "Mark Rothko",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Mark Rothko",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "mark_rothko"
+        ],
+        "artist": "Mark Rothko",
+        "artwork": "large color rectangles",
+        "difficulty_tier": 1,
+        "recognized_answer": "Mark Rothko",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Andy Warhol",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "andy_warhol"
+          ],
+          "artist": "Andy Warhol",
+          "artwork": "Campbell’s Soup Cans",
+          "difficulty_tier": 1,
+          "recognized_answer": "Andy Warhol",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Andy Warhol",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "andy_warhol"
+        ],
+        "artist": "Andy Warhol",
+        "artwork": "Campbell’s Soup Cans",
+        "difficulty_tier": 1,
+        "recognized_answer": "Andy Warhol",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Jean-Michel Basquiat",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "jean_michel_basquiat"
+          ],
+          "artist": "Jean-Michel Basquiat",
+          "artwork": "crown and text paintings",
+          "difficulty_tier": 1,
+          "recognized_answer": "Jean-Michel Basquiat",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Jean-Michel Basquiat",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "jean_michel_basquiat"
+        ],
+        "artist": "Jean-Michel Basquiat",
+        "artwork": "crown and text paintings",
+        "difficulty_tier": 1,
+        "recognized_answer": "Jean-Michel Basquiat",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Yayoi Kusama",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "yayoi_kusama"
+          ],
+          "artist": "Yayoi Kusama",
+          "artwork": "polka dot infinity works",
+          "difficulty_tier": 1,
+          "recognized_answer": "Yayoi Kusama",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Yayoi Kusama",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "yayoi_kusama"
+        ],
+        "artist": "Yayoi Kusama",
+        "artwork": "polka dot infinity works",
+        "difficulty_tier": 1,
+        "recognized_answer": "Yayoi Kusama",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Artemisia Gentileschi",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "artemisia_gentileschi"
+          ],
+          "artist": "Artemisia Gentileschi",
+          "artwork": "Judith paintings",
+          "difficulty_tier": 1,
+          "recognized_answer": "Artemisia Gentileschi",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Artemisia Gentileschi",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "artemisia_gentileschi"
+        ],
+        "artist": "Artemisia Gentileschi",
+        "artwork": "Judith paintings",
+        "difficulty_tier": 1,
+        "recognized_answer": "Artemisia Gentileschi",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -1585,7 +2585,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Renaissance",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "renaissance"
+          ],
+          "movement": "Renaissance",
+          "difficulty_tier": 1,
+          "recognized_answer": "Renaissance",
+          "distractor_family": [
+            "Baroque",
+            "Dutch Golden Age",
+            "Impressionism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Renaissance",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "renaissance"
+        ],
+        "movement": "Renaissance",
+        "difficulty_tier": 1,
+        "recognized_answer": "Renaissance",
+        "distractor_family": [
+          "Baroque",
+          "Dutch Golden Age",
+          "Impressionism"
+        ]
       }
     },
     {
@@ -1645,7 +2683,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Renaissance",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "renaissance"
+          ],
+          "movement": "Renaissance",
+          "difficulty_tier": 1,
+          "recognized_answer": "Renaissance",
+          "distractor_family": [
+            "Baroque",
+            "Dutch Golden Age",
+            "Impressionism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Renaissance",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "renaissance"
+        ],
+        "movement": "Renaissance",
+        "difficulty_tier": 1,
+        "recognized_answer": "Renaissance",
+        "distractor_family": [
+          "Baroque",
+          "Dutch Golden Age",
+          "Impressionism"
+        ]
       }
     },
     {
@@ -1705,7 +2781,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Renaissance",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "renaissance"
+          ],
+          "movement": "Renaissance",
+          "difficulty_tier": 1,
+          "recognized_answer": "Renaissance",
+          "distractor_family": [
+            "Baroque",
+            "Dutch Golden Age",
+            "Impressionism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Renaissance",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "renaissance"
+        ],
+        "movement": "Renaissance",
+        "difficulty_tier": 1,
+        "recognized_answer": "Renaissance",
+        "distractor_family": [
+          "Baroque",
+          "Dutch Golden Age",
+          "Impressionism"
+        ]
       }
     },
     {
@@ -1765,7 +2879,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Baroque",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "baroque"
+          ],
+          "movement": "Baroque",
+          "difficulty_tier": 1,
+          "recognized_answer": "Baroque",
+          "distractor_family": [
+            "Renaissance",
+            "Dutch Golden Age",
+            "Impressionism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Baroque",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "baroque"
+        ],
+        "movement": "Baroque",
+        "difficulty_tier": 1,
+        "recognized_answer": "Baroque",
+        "distractor_family": [
+          "Renaissance",
+          "Dutch Golden Age",
+          "Impressionism"
+        ]
       }
     },
     {
@@ -1825,7 +2977,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Baroque",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "baroque"
+          ],
+          "movement": "Baroque",
+          "difficulty_tier": 1,
+          "recognized_answer": "Baroque",
+          "distractor_family": [
+            "Renaissance",
+            "Dutch Golden Age",
+            "Impressionism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Baroque",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "baroque"
+        ],
+        "movement": "Baroque",
+        "difficulty_tier": 1,
+        "recognized_answer": "Baroque",
+        "distractor_family": [
+          "Renaissance",
+          "Dutch Golden Age",
+          "Impressionism"
+        ]
       }
     },
     {
@@ -1885,7 +3075,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Dutch Golden Age",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "dutch_golden_age"
+          ],
+          "movement": "Dutch Golden Age",
+          "difficulty_tier": 1,
+          "recognized_answer": "Dutch Golden Age",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Impressionism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Dutch Golden Age",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "dutch_golden_age"
+        ],
+        "movement": "Dutch Golden Age",
+        "difficulty_tier": 1,
+        "recognized_answer": "Dutch Golden Age",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Impressionism"
+        ]
       }
     },
     {
@@ -1945,7 +3173,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Impressionism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "impressionism"
+          ],
+          "movement": "Impressionism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Impressionism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "impressionism"
+        ],
+        "movement": "Impressionism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2005,7 +3271,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Impressionism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "impressionism"
+          ],
+          "movement": "Impressionism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Impressionism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "impressionism"
+        ],
+        "movement": "Impressionism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2065,7 +3369,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Impressionism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "impressionism"
+          ],
+          "movement": "Impressionism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Impressionism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "impressionism"
+        ],
+        "movement": "Impressionism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2125,7 +3467,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Post-Impressionism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "post_impressionism"
+          ],
+          "movement": "Post-Impressionism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Post-Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Post-Impressionism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "post_impressionism"
+        ],
+        "movement": "Post-Impressionism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Post-Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2185,7 +3565,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Post-Impressionism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "post_impressionism"
+          ],
+          "movement": "Post-Impressionism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Post-Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Post-Impressionism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "post_impressionism"
+        ],
+        "movement": "Post-Impressionism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Post-Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2245,7 +3663,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Pointillism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "pointillism"
+          ],
+          "movement": "Pointillism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pointillism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Pointillism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "pointillism"
+        ],
+        "movement": "Pointillism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pointillism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2305,7 +3761,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Cubism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "cubism"
+          ],
+          "movement": "Cubism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cubism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Cubism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "cubism"
+        ],
+        "movement": "Cubism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cubism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2365,7 +3859,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Cubism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "cubism"
+          ],
+          "movement": "Cubism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cubism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Cubism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "cubism"
+        ],
+        "movement": "Cubism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cubism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2425,7 +3957,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Fauvism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "fauvism"
+          ],
+          "movement": "Fauvism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fauvism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Fauvism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "fauvism"
+        ],
+        "movement": "Fauvism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fauvism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2485,7 +4055,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Abstract Art",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "abstract_art"
+          ],
+          "movement": "Abstract Art",
+          "difficulty_tier": 2,
+          "recognized_answer": "Abstract Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Abstract Art",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "abstract_art"
+        ],
+        "movement": "Abstract Art",
+        "difficulty_tier": 2,
+        "recognized_answer": "Abstract Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2545,7 +4153,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Surrealism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "surrealism"
+          ],
+          "movement": "Surrealism",
+          "difficulty_tier": 2,
+          "recognized_answer": "Surrealism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Surrealism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "surrealism"
+        ],
+        "movement": "Surrealism",
+        "difficulty_tier": 2,
+        "recognized_answer": "Surrealism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2605,7 +4251,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Modern Art",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "modern_art"
+          ],
+          "movement": "Modern Art",
+          "difficulty_tier": 2,
+          "recognized_answer": "Modern Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Modern Art",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "modern_art"
+        ],
+        "movement": "Modern Art",
+        "difficulty_tier": 2,
+        "recognized_answer": "Modern Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2665,7 +4349,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Modernism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "modernism"
+          ],
+          "movement": "Modernism",
+          "difficulty_tier": 2,
+          "recognized_answer": "Modernism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Modernism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "modernism"
+        ],
+        "movement": "Modernism",
+        "difficulty_tier": 2,
+        "recognized_answer": "Modernism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2725,7 +4447,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Abstract Expressionism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "abstract_expressionism"
+          ],
+          "movement": "Abstract Expressionism",
+          "difficulty_tier": 2,
+          "recognized_answer": "Abstract Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Abstract Expressionism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "abstract_expressionism"
+        ],
+        "movement": "Abstract Expressionism",
+        "difficulty_tier": 2,
+        "recognized_answer": "Abstract Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2785,7 +4545,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Color Field Painting",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "color_field_painting"
+          ],
+          "movement": "Color Field Painting",
+          "difficulty_tier": 2,
+          "recognized_answer": "Color Field Painting",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Color Field Painting",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "color_field_painting"
+        ],
+        "movement": "Color Field Painting",
+        "difficulty_tier": 2,
+        "recognized_answer": "Color Field Painting",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2845,7 +4643,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Pop Art",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "pop_art"
+          ],
+          "movement": "Pop Art",
+          "difficulty_tier": 2,
+          "recognized_answer": "Pop Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Pop Art",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "pop_art"
+        ],
+        "movement": "Pop Art",
+        "difficulty_tier": 2,
+        "recognized_answer": "Pop Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2905,7 +4741,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Neo-Expressionism",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "neo_expressionism"
+          ],
+          "movement": "Neo-Expressionism",
+          "difficulty_tier": 2,
+          "recognized_answer": "Neo-Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Neo-Expressionism",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "neo_expressionism"
+        ],
+        "movement": "Neo-Expressionism",
+        "difficulty_tier": 2,
+        "recognized_answer": "Neo-Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -2965,7 +4839,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Contemporary Art",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "contemporary_art"
+          ],
+          "movement": "Contemporary Art",
+          "difficulty_tier": 2,
+          "recognized_answer": "Contemporary Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Dutch Golden Age"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Contemporary Art",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "contemporary_art"
+        ],
+        "movement": "Contemporary Art",
+        "difficulty_tier": 2,
+        "recognized_answer": "Contemporary Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Dutch Golden Age"
+        ]
       }
     },
     {
@@ -3025,7 +4937,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Baroque",
+          "prompt_pattern": "Style Recognition",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "baroque"
+          ],
+          "movement": "Baroque",
+          "difficulty_tier": 2,
+          "recognized_answer": "Baroque",
+          "distractor_family": [
+            "Renaissance",
+            "Dutch Golden Age",
+            "Impressionism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Baroque",
+        "prompt_pattern": "Style Recognition",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "baroque"
+        ],
+        "movement": "Baroque",
+        "difficulty_tier": 2,
+        "recognized_answer": "Baroque",
+        "distractor_family": [
+          "Renaissance",
+          "Dutch Golden Age",
+          "Impressionism"
+        ]
       }
     },
     {
@@ -3085,7 +5035,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Leonardo da Vinci",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "leonardo_da_vinci"
+          ],
+          "artist": "Leonardo da Vinci",
+          "artwork": "the Mona Lisa",
+          "difficulty_tier": 2,
+          "recognized_answer": "Leonardo da Vinci",
+          "distractor_family": [
+            "Michelangelo",
+            "Raphael",
+            "Caravaggio"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Leonardo da Vinci",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "leonardo_da_vinci"
+        ],
+        "artist": "Leonardo da Vinci",
+        "artwork": "the Mona Lisa",
+        "difficulty_tier": 2,
+        "recognized_answer": "Leonardo da Vinci",
+        "distractor_family": [
+          "Michelangelo",
+          "Raphael",
+          "Caravaggio"
+        ]
       }
     },
     {
@@ -3145,7 +5135,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Michelangelo",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "michelangelo"
+          ],
+          "artist": "Michelangelo",
+          "difficulty_tier": 2,
+          "recognized_answer": "Michelangelo",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Raphael",
+            "Caravaggio"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Michelangelo",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "michelangelo"
+        ],
+        "artist": "Michelangelo",
+        "difficulty_tier": 2,
+        "recognized_answer": "Michelangelo",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Raphael",
+          "Caravaggio"
+        ]
       }
     },
     {
@@ -3205,7 +5233,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Raphael",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "raphael"
+          ],
+          "artist": "Raphael",
+          "difficulty_tier": 2,
+          "recognized_answer": "Raphael",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Caravaggio"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Raphael",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "raphael"
+        ],
+        "artist": "Raphael",
+        "difficulty_tier": 2,
+        "recognized_answer": "Raphael",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Caravaggio"
+        ]
       }
     },
     {
@@ -3265,7 +5331,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Caravaggio",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "caravaggio"
+          ],
+          "artist": "Caravaggio",
+          "difficulty_tier": 2,
+          "recognized_answer": "Caravaggio",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Caravaggio",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "caravaggio"
+        ],
+        "artist": "Caravaggio",
+        "difficulty_tier": 2,
+        "recognized_answer": "Caravaggio",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3325,7 +5429,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Rembrandt",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "rembrandt"
+          ],
+          "artist": "Rembrandt",
+          "difficulty_tier": 2,
+          "recognized_answer": "Rembrandt",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Rembrandt",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "rembrandt"
+        ],
+        "artist": "Rembrandt",
+        "difficulty_tier": 2,
+        "recognized_answer": "Rembrandt",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3385,7 +5527,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Johannes Vermeer",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "johannes_vermeer"
+          ],
+          "artist": "Johannes Vermeer",
+          "difficulty_tier": 2,
+          "recognized_answer": "Johannes Vermeer",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Johannes Vermeer",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "johannes_vermeer"
+        ],
+        "artist": "Johannes Vermeer",
+        "difficulty_tier": 2,
+        "recognized_answer": "Johannes Vermeer",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3445,7 +5625,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Claude Monet",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "claude_monet"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Claude Monet",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Claude Monet",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "claude_monet"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Claude Monet",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3505,7 +5721,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Pierre-Auguste Renoir",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "pierre_auguste_renoir"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Pierre-Auguste Renoir",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Pierre-Auguste Renoir",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "pierre_auguste_renoir"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Pierre-Auguste Renoir",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3565,7 +5817,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Edgar Degas",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "edgar_degas"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Edgar Degas",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Edgar Degas",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "edgar_degas"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Edgar Degas",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3625,7 +5913,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Vincent van Gogh",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "vincent_van_gogh"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Vincent van Gogh",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Vincent van Gogh",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "vincent_van_gogh"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Vincent van Gogh",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3685,7 +6009,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Paul Cézanne",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "paul_c_zanne"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Paul Cézanne",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Paul Cézanne",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "paul_c_zanne"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Paul Cézanne",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3745,7 +6105,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Georges Seurat",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "georges_seurat"
+          ],
+          "artist": "Georges Seurat",
+          "difficulty_tier": 2,
+          "recognized_answer": "Georges Seurat",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Georges Seurat",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "georges_seurat"
+        ],
+        "artist": "Georges Seurat",
+        "difficulty_tier": 2,
+        "recognized_answer": "Georges Seurat",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3805,7 +6203,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Pablo Picasso",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "pablo_picasso"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Pablo Picasso",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Pablo Picasso",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "pablo_picasso"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Pablo Picasso",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3865,7 +6299,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Georges Braque",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "georges_braque"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Georges Braque",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Georges Braque",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "georges_braque"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Georges Braque",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3925,7 +6395,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Henri Matisse",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "henri_matisse"
+          ],
+          "artist": "Henri Matisse",
+          "difficulty_tier": 2,
+          "recognized_answer": "Henri Matisse",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Henri Matisse",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "henri_matisse"
+        ],
+        "artist": "Henri Matisse",
+        "difficulty_tier": 2,
+        "recognized_answer": "Henri Matisse",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -3985,7 +6493,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Wassily Kandinsky",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "wassily_kandinsky"
+          ],
+          "artist": "Wassily Kandinsky",
+          "difficulty_tier": 2,
+          "recognized_answer": "Wassily Kandinsky",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Wassily Kandinsky",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "wassily_kandinsky"
+        ],
+        "artist": "Wassily Kandinsky",
+        "difficulty_tier": 2,
+        "recognized_answer": "Wassily Kandinsky",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4045,7 +6591,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Salvador Dalí",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "salvador_dal"
+          ],
+          "artist": "Salvador Dalí",
+          "difficulty_tier": 2,
+          "recognized_answer": "Salvador Dalí",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Salvador Dalí",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "salvador_dal"
+        ],
+        "artist": "Salvador Dalí",
+        "difficulty_tier": 2,
+        "recognized_answer": "Salvador Dalí",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4105,7 +6689,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Frida Kahlo",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "frida_kahlo"
+          ],
+          "artist": "Frida Kahlo",
+          "difficulty_tier": 2,
+          "recognized_answer": "Frida Kahlo",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Frida Kahlo",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "frida_kahlo"
+        ],
+        "artist": "Frida Kahlo",
+        "difficulty_tier": 2,
+        "recognized_answer": "Frida Kahlo",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4165,7 +6787,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Georgia O’Keeffe",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "georgia_o_keeffe"
+          ],
+          "artist": "Georgia O’Keeffe",
+          "difficulty_tier": 2,
+          "recognized_answer": "Georgia O’Keeffe",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Georgia O’Keeffe",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "georgia_o_keeffe"
+        ],
+        "artist": "Georgia O’Keeffe",
+        "difficulty_tier": 2,
+        "recognized_answer": "Georgia O’Keeffe",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4225,7 +6885,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Jackson Pollock",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "jackson_pollock"
+          ],
+          "artist": "Jackson Pollock",
+          "difficulty_tier": 2,
+          "recognized_answer": "Jackson Pollock",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Jackson Pollock",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "jackson_pollock"
+        ],
+        "artist": "Jackson Pollock",
+        "difficulty_tier": 2,
+        "recognized_answer": "Jackson Pollock",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4285,7 +6983,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Mark Rothko",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "mark_rothko"
+          ],
+          "artist": "Mark Rothko",
+          "difficulty_tier": 3,
+          "recognized_answer": "Mark Rothko",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Mark Rothko",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "mark_rothko"
+        ],
+        "artist": "Mark Rothko",
+        "difficulty_tier": 3,
+        "recognized_answer": "Mark Rothko",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4345,7 +7081,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Andy Warhol",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "andy_warhol"
+          ],
+          "artist": "Andy Warhol",
+          "difficulty_tier": 3,
+          "recognized_answer": "Andy Warhol",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Andy Warhol",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "andy_warhol"
+        ],
+        "artist": "Andy Warhol",
+        "difficulty_tier": 3,
+        "recognized_answer": "Andy Warhol",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4405,7 +7179,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Jean-Michel Basquiat",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "jean_michel_basquiat"
+          ],
+          "artist": "Jean-Michel Basquiat",
+          "difficulty_tier": 3,
+          "recognized_answer": "Jean-Michel Basquiat",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Jean-Michel Basquiat",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "jean_michel_basquiat"
+        ],
+        "artist": "Jean-Michel Basquiat",
+        "difficulty_tier": 3,
+        "recognized_answer": "Jean-Michel Basquiat",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4465,7 +7277,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Yayoi Kusama",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "yayoi_kusama"
+          ],
+          "artist": "Yayoi Kusama",
+          "difficulty_tier": 3,
+          "recognized_answer": "Yayoi Kusama",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Yayoi Kusama",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "yayoi_kusama"
+        ],
+        "artist": "Yayoi Kusama",
+        "difficulty_tier": 3,
+        "recognized_answer": "Yayoi Kusama",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4525,7 +7375,45 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Artemisia Gentileschi",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "artemisia_gentileschi"
+          ],
+          "artist": "Artemisia Gentileschi",
+          "difficulty_tier": 3,
+          "recognized_answer": "Artemisia Gentileschi",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Artemisia Gentileschi",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "artemisia_gentileschi"
+        ],
+        "artist": "Artemisia Gentileschi",
+        "difficulty_tier": 3,
+        "recognized_answer": "Artemisia Gentileschi",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Michelangelo",
+          "Raphael"
+        ]
       }
     },
     {
@@ -4585,7 +7473,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Mona Lisa",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "mona_lisa"
+          ],
+          "artwork": "Leonardo da Vinci",
+          "artist": "Leonardo da Vinci",
+          "difficulty_tier": 3,
+          "recognized_answer": "Mona Lisa",
+          "distractor_family": [
+            "Sistine Chapel ceiling",
+            "The School of Athens",
+            "The Calling of Saint Matthew"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Mona Lisa",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "mona_lisa"
+        ],
+        "artwork": "Leonardo da Vinci",
+        "artist": "Leonardo da Vinci",
+        "difficulty_tier": 3,
+        "recognized_answer": "Mona Lisa",
+        "distractor_family": [
+          "Sistine Chapel ceiling",
+          "The School of Athens",
+          "The Calling of Saint Matthew"
+        ]
       }
     },
     {
@@ -4645,7 +7573,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Sistine Chapel ceiling",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "sistine_chapel_ceiling"
+          ],
+          "artwork": "Michelangelo",
+          "artist": "Michelangelo",
+          "difficulty_tier": 3,
+          "recognized_answer": "Sistine Chapel ceiling",
+          "distractor_family": [
+            "Mona Lisa",
+            "The School of Athens",
+            "The Calling of Saint Matthew"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Sistine Chapel ceiling",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "sistine_chapel_ceiling"
+        ],
+        "artwork": "Michelangelo",
+        "artist": "Michelangelo",
+        "difficulty_tier": 3,
+        "recognized_answer": "Sistine Chapel ceiling",
+        "distractor_family": [
+          "Mona Lisa",
+          "The School of Athens",
+          "The Calling of Saint Matthew"
+        ]
       }
     },
     {
@@ -4705,7 +7673,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "The School of Athens",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "the_school_of_athens"
+          ],
+          "artwork": "Raphael",
+          "artist": "Raphael",
+          "difficulty_tier": 3,
+          "recognized_answer": "The School of Athens",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The Calling of Saint Matthew"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "The School of Athens",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "the_school_of_athens"
+        ],
+        "artwork": "Raphael",
+        "artist": "Raphael",
+        "difficulty_tier": 3,
+        "recognized_answer": "The School of Athens",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The Calling of Saint Matthew"
+        ]
       }
     },
     {
@@ -4765,7 +7773,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "The Calling of Saint Matthew",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "the_calling_of_saint_matthew"
+          ],
+          "artwork": "Caravaggio",
+          "artist": "Caravaggio",
+          "difficulty_tier": 3,
+          "recognized_answer": "The Calling of Saint Matthew",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "The Calling of Saint Matthew",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "the_calling_of_saint_matthew"
+        ],
+        "artwork": "Caravaggio",
+        "artist": "Caravaggio",
+        "difficulty_tier": 3,
+        "recognized_answer": "The Calling of Saint Matthew",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -4825,7 +7873,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "The Night Watch",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "the_night_watch"
+          ],
+          "artwork": "Rembrandt",
+          "artist": "Rembrandt",
+          "difficulty_tier": 3,
+          "recognized_answer": "The Night Watch",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "The Night Watch",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "the_night_watch"
+        ],
+        "artwork": "Rembrandt",
+        "artist": "Rembrandt",
+        "difficulty_tier": 3,
+        "recognized_answer": "The Night Watch",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -4885,7 +7973,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Girl with a Pearl Earring",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "girl_with_a_pearl_earring"
+          ],
+          "artwork": "Johannes Vermeer",
+          "artist": "Johannes Vermeer",
+          "difficulty_tier": 3,
+          "recognized_answer": "Girl with a Pearl Earring",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Girl with a Pearl Earring",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "girl_with_a_pearl_earring"
+        ],
+        "artwork": "Johannes Vermeer",
+        "artist": "Johannes Vermeer",
+        "difficulty_tier": 3,
+        "recognized_answer": "Girl with a Pearl Earring",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -4945,7 +8073,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Water Lilies",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "water_lilies"
+          ],
+          "artwork": "Claude Monet",
+          "artist": "Claude Monet",
+          "difficulty_tier": 3,
+          "recognized_answer": "Water Lilies",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Water Lilies",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "water_lilies"
+        ],
+        "artwork": "Claude Monet",
+        "artist": "Claude Monet",
+        "difficulty_tier": 3,
+        "recognized_answer": "Water Lilies",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5005,7 +8173,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Dance at Le Moulin de la Galette",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "dance_at_le_moulin_de_la_galette"
+          ],
+          "artwork": "Pierre-Auguste Renoir",
+          "artist": "Pierre-Auguste Renoir",
+          "difficulty_tier": 3,
+          "recognized_answer": "Dance at Le Moulin de la Galette",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Dance at Le Moulin de la Galette",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "dance_at_le_moulin_de_la_galette"
+        ],
+        "artwork": "Pierre-Auguste Renoir",
+        "artist": "Pierre-Auguste Renoir",
+        "difficulty_tier": 3,
+        "recognized_answer": "Dance at Le Moulin de la Galette",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5065,7 +8273,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "ballet dancer paintings",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "ballet_dancer_paintings"
+          ],
+          "artwork": "Edgar Degas",
+          "artist": "Edgar Degas",
+          "difficulty_tier": 3,
+          "recognized_answer": "ballet dancer paintings",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "ballet dancer paintings",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "ballet_dancer_paintings"
+        ],
+        "artwork": "Edgar Degas",
+        "artist": "Edgar Degas",
+        "difficulty_tier": 3,
+        "recognized_answer": "ballet dancer paintings",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5125,7 +8373,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "The Starry Night",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "the_starry_night"
+          ],
+          "artwork": "Vincent van Gogh",
+          "artist": "Vincent van Gogh",
+          "difficulty_tier": 3,
+          "recognized_answer": "The Starry Night",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "The Starry Night",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "the_starry_night"
+        ],
+        "artwork": "Vincent van Gogh",
+        "artist": "Vincent van Gogh",
+        "difficulty_tier": 3,
+        "recognized_answer": "The Starry Night",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5185,7 +8473,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Mont Sainte-Victoire",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "mont_sainte_victoire"
+          ],
+          "artwork": "Paul Cézanne",
+          "artist": "Paul Cézanne",
+          "difficulty_tier": 3,
+          "recognized_answer": "Mont Sainte-Victoire",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Mont Sainte-Victoire",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "mont_sainte_victoire"
+        ],
+        "artwork": "Paul Cézanne",
+        "artist": "Paul Cézanne",
+        "difficulty_tier": 3,
+        "recognized_answer": "Mont Sainte-Victoire",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5245,7 +8573,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "A Sunday on La Grande Jatte",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "a_sunday_on_la_grande_jatte"
+          ],
+          "artwork": "Georges Seurat",
+          "artist": "Georges Seurat",
+          "difficulty_tier": 3,
+          "recognized_answer": "A Sunday on La Grande Jatte",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "A Sunday on La Grande Jatte",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "a_sunday_on_la_grande_jatte"
+        ],
+        "artwork": "Georges Seurat",
+        "artist": "Georges Seurat",
+        "difficulty_tier": 3,
+        "recognized_answer": "A Sunday on La Grande Jatte",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5305,7 +8673,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Guernica",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "guernica"
+          ],
+          "artwork": "Pablo Picasso",
+          "artist": "Pablo Picasso",
+          "difficulty_tier": 3,
+          "recognized_answer": "Guernica",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Guernica",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "guernica"
+        ],
+        "artwork": "Pablo Picasso",
+        "artist": "Pablo Picasso",
+        "difficulty_tier": 3,
+        "recognized_answer": "Guernica",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5365,7 +8773,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Violin and Candlestick",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "violin_and_candlestick"
+          ],
+          "artwork": "Georges Braque",
+          "artist": "Georges Braque",
+          "difficulty_tier": 3,
+          "recognized_answer": "Violin and Candlestick",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Violin and Candlestick",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "violin_and_candlestick"
+        ],
+        "artwork": "Georges Braque",
+        "artist": "Georges Braque",
+        "difficulty_tier": 3,
+        "recognized_answer": "Violin and Candlestick",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5425,7 +8873,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "The Red Studio",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "the_red_studio"
+          ],
+          "artwork": "Henri Matisse",
+          "artist": "Henri Matisse",
+          "difficulty_tier": 3,
+          "recognized_answer": "The Red Studio",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "The Red Studio",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "the_red_studio"
+        ],
+        "artwork": "Henri Matisse",
+        "artist": "Henri Matisse",
+        "difficulty_tier": 3,
+        "recognized_answer": "The Red Studio",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5485,7 +8973,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Composition paintings",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "composition_paintings"
+          ],
+          "artwork": "Wassily Kandinsky",
+          "artist": "Wassily Kandinsky",
+          "difficulty_tier": 4,
+          "recognized_answer": "Composition paintings",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Composition paintings",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "composition_paintings"
+        ],
+        "artwork": "Wassily Kandinsky",
+        "artist": "Wassily Kandinsky",
+        "difficulty_tier": 4,
+        "recognized_answer": "Composition paintings",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5545,7 +9073,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "The Persistence of Memory",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "the_persistence_of_memory"
+          ],
+          "artwork": "Salvador Dalí",
+          "artist": "Salvador Dalí",
+          "difficulty_tier": 4,
+          "recognized_answer": "The Persistence of Memory",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "The Persistence of Memory",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "the_persistence_of_memory"
+        ],
+        "artwork": "Salvador Dalí",
+        "artist": "Salvador Dalí",
+        "difficulty_tier": 4,
+        "recognized_answer": "The Persistence of Memory",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5605,7 +9173,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "self-portraits",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "self_portraits"
+          ],
+          "artwork": "Frida Kahlo",
+          "artist": "Frida Kahlo",
+          "difficulty_tier": 4,
+          "recognized_answer": "self-portraits",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "self-portraits",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "self_portraits"
+        ],
+        "artwork": "Frida Kahlo",
+        "artist": "Frida Kahlo",
+        "difficulty_tier": 4,
+        "recognized_answer": "self-portraits",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5665,7 +9273,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "large flower paintings",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "large_flower_paintings"
+          ],
+          "artwork": "Georgia O’Keeffe",
+          "artist": "Georgia O’Keeffe",
+          "difficulty_tier": 4,
+          "recognized_answer": "large flower paintings",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "large flower paintings",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "large_flower_paintings"
+        ],
+        "artwork": "Georgia O’Keeffe",
+        "artist": "Georgia O’Keeffe",
+        "difficulty_tier": 4,
+        "recognized_answer": "large flower paintings",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5725,7 +9373,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "drip paintings",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "drip_paintings"
+          ],
+          "artwork": "Jackson Pollock",
+          "artist": "Jackson Pollock",
+          "difficulty_tier": 4,
+          "recognized_answer": "drip paintings",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "drip paintings",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "drip_paintings"
+        ],
+        "artwork": "Jackson Pollock",
+        "artist": "Jackson Pollock",
+        "difficulty_tier": 4,
+        "recognized_answer": "drip paintings",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5785,7 +9473,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "large color rectangles",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "large_color_rectangles"
+          ],
+          "artwork": "Mark Rothko",
+          "artist": "Mark Rothko",
+          "difficulty_tier": 4,
+          "recognized_answer": "large color rectangles",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "large color rectangles",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "large_color_rectangles"
+        ],
+        "artwork": "Mark Rothko",
+        "artist": "Mark Rothko",
+        "difficulty_tier": 4,
+        "recognized_answer": "large color rectangles",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5845,7 +9573,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Campbell’s Soup Cans",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "campbell_s_soup_cans"
+          ],
+          "artwork": "Andy Warhol",
+          "artist": "Andy Warhol",
+          "difficulty_tier": 4,
+          "recognized_answer": "Campbell’s Soup Cans",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Campbell’s Soup Cans",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "campbell_s_soup_cans"
+        ],
+        "artwork": "Andy Warhol",
+        "artist": "Andy Warhol",
+        "difficulty_tier": 4,
+        "recognized_answer": "Campbell’s Soup Cans",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5905,7 +9673,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "crown and text paintings",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "crown_and_text_paintings"
+          ],
+          "artwork": "Jean-Michel Basquiat",
+          "artist": "Jean-Michel Basquiat",
+          "difficulty_tier": 4,
+          "recognized_answer": "crown and text paintings",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "crown and text paintings",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "crown_and_text_paintings"
+        ],
+        "artwork": "Jean-Michel Basquiat",
+        "artist": "Jean-Michel Basquiat",
+        "difficulty_tier": 4,
+        "recognized_answer": "crown and text paintings",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -5965,7 +9773,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "polka dot infinity works",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "polka_dot_infinity_works"
+          ],
+          "artwork": "Yayoi Kusama",
+          "artist": "Yayoi Kusama",
+          "difficulty_tier": 4,
+          "recognized_answer": "polka dot infinity works",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "polka dot infinity works",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "polka_dot_infinity_works"
+        ],
+        "artwork": "Yayoi Kusama",
+        "artist": "Yayoi Kusama",
+        "difficulty_tier": 4,
+        "recognized_answer": "polka dot infinity works",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     },
     {
@@ -6025,7 +9873,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_painters",
+          "concept": "Judith paintings",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_painters",
+            "judith_paintings"
+          ],
+          "artwork": "Artemisia Gentileschi",
+          "artist": "Artemisia Gentileschi",
+          "difficulty_tier": 4,
+          "recognized_answer": "Judith paintings",
+          "distractor_family": [
+            "Mona Lisa",
+            "Sistine Chapel ceiling",
+            "The School of Athens"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_painters",
+        "concept": "Judith paintings",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_painters",
+          "judith_paintings"
+        ],
+        "artwork": "Artemisia Gentileschi",
+        "artist": "Artemisia Gentileschi",
+        "difficulty_tier": 4,
+        "recognized_answer": "Judith paintings",
+        "distractor_family": [
+          "Mona Lisa",
+          "Sistine Chapel ceiling",
+          "The School of Athens"
+        ]
       }
     }
   ]

@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Leonardo da Vinci",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "leonardo_da_vinci"
+          ],
+          "title": "Mona Lisa",
+          "artist": "Leonardo da Vinci",
+          "difficulty_tier": 1,
+          "recognized_answer": "Leonardo da Vinci",
+          "distractor_family": [
+            "Vincent van Gogh",
+            "Johannes Vermeer",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Leonardo da Vinci",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "leonardo_da_vinci"
+        ],
+        "title": "Mona Lisa",
+        "artist": "Leonardo da Vinci",
+        "difficulty_tier": 1,
+        "recognized_answer": "Leonardo da Vinci",
+        "distractor_family": [
+          "Vincent van Gogh",
+          "Johannes Vermeer",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Leonardo da Vinci",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "leonardo_da_vinci"
+          ],
+          "title": "The Last Supper",
+          "artist": "Leonardo da Vinci",
+          "difficulty_tier": 1,
+          "recognized_answer": "Leonardo da Vinci",
+          "distractor_family": [
+            "Vincent van Gogh",
+            "Johannes Vermeer",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Leonardo da Vinci",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "leonardo_da_vinci"
+        ],
+        "title": "The Last Supper",
+        "artist": "Leonardo da Vinci",
+        "difficulty_tier": 1,
+        "recognized_answer": "Leonardo da Vinci",
+        "distractor_family": [
+          "Vincent van Gogh",
+          "Johannes Vermeer",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Vincent van Gogh",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "vincent_van_gogh"
+          ],
+          "title": "The Starry Night",
+          "artist": "Vincent van Gogh",
+          "difficulty_tier": 1,
+          "recognized_answer": "Vincent van Gogh",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Johannes Vermeer",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Vincent van Gogh",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "vincent_van_gogh"
+        ],
+        "title": "The Starry Night",
+        "artist": "Vincent van Gogh",
+        "difficulty_tier": 1,
+        "recognized_answer": "Vincent van Gogh",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Johannes Vermeer",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Vincent van Gogh",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "vincent_van_gogh"
+          ],
+          "title": "Sunflowers",
+          "artist": "Vincent van Gogh",
+          "difficulty_tier": 1,
+          "recognized_answer": "Vincent van Gogh",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Johannes Vermeer",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Vincent van Gogh",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "vincent_van_gogh"
+        ],
+        "title": "Sunflowers",
+        "artist": "Vincent van Gogh",
+        "difficulty_tier": 1,
+        "recognized_answer": "Vincent van Gogh",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Johannes Vermeer",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Johannes Vermeer",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "johannes_vermeer"
+          ],
+          "title": "Girl with a Pearl Earring",
+          "artist": "Johannes Vermeer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Johannes Vermeer",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Johannes Vermeer",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "johannes_vermeer"
+        ],
+        "title": "Girl with a Pearl Earring",
+        "artist": "Johannes Vermeer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Johannes Vermeer",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Sandro Botticelli",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "sandro_botticelli"
+          ],
+          "title": "The Birth of Venus",
+          "artist": "Sandro Botticelli",
+          "difficulty_tier": 1,
+          "recognized_answer": "Sandro Botticelli",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Sandro Botticelli",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "sandro_botticelli"
+        ],
+        "title": "The Birth of Venus",
+        "artist": "Sandro Botticelli",
+        "difficulty_tier": 1,
+        "recognized_answer": "Sandro Botticelli",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Salvador Dalí",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "salvador_dal"
+          ],
+          "title": "The Persistence of Memory",
+          "artist": "Salvador Dalí",
+          "difficulty_tier": 1,
+          "recognized_answer": "Salvador Dalí",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Salvador Dalí",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "salvador_dal"
+        ],
+        "title": "The Persistence of Memory",
+        "artist": "Salvador Dalí",
+        "difficulty_tier": 1,
+        "recognized_answer": "Salvador Dalí",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Pablo Picasso",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "pablo_picasso"
+          ],
+          "title": "Guernica",
+          "artist": "Pablo Picasso",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pablo Picasso",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Pablo Picasso",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "pablo_picasso"
+        ],
+        "title": "Guernica",
+        "artist": "Pablo Picasso",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pablo Picasso",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Edvard Munch",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "edvard_munch"
+          ],
+          "title": "The Scream",
+          "artist": "Edvard Munch",
+          "difficulty_tier": 1,
+          "recognized_answer": "Edvard Munch",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Edvard Munch",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "edvard_munch"
+        ],
+        "title": "The Scream",
+        "artist": "Edvard Munch",
+        "difficulty_tier": 1,
+        "recognized_answer": "Edvard Munch",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Grant Wood",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "grant_wood"
+          ],
+          "title": "American Gothic",
+          "artist": "Grant Wood",
+          "difficulty_tier": 1,
+          "recognized_answer": "Grant Wood",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Grant Wood",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "grant_wood"
+        ],
+        "title": "American Gothic",
+        "artist": "Grant Wood",
+        "difficulty_tier": 1,
+        "recognized_answer": "Grant Wood",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Diego Velázquez",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "diego_vel_zquez"
+          ],
+          "title": "Las Meninas",
+          "artist": "Diego Velázquez",
+          "difficulty_tier": 1,
+          "recognized_answer": "Diego Velázquez",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Diego Velázquez",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "diego_vel_zquez"
+        ],
+        "title": "Las Meninas",
+        "artist": "Diego Velázquez",
+        "difficulty_tier": 1,
+        "recognized_answer": "Diego Velázquez",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Rembrandt",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "rembrandt"
+          ],
+          "title": "The Night Watch",
+          "artist": "Rembrandt",
+          "difficulty_tier": 1,
+          "recognized_answer": "Rembrandt",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Rembrandt",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "rembrandt"
+        ],
+        "title": "The Night Watch",
+        "artist": "Rembrandt",
+        "difficulty_tier": 1,
+        "recognized_answer": "Rembrandt",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Gustav Klimt",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "gustav_klimt"
+          ],
+          "title": "The Kiss",
+          "artist": "Gustav Klimt",
+          "difficulty_tier": 1,
+          "recognized_answer": "Gustav Klimt",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Gustav Klimt",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "gustav_klimt"
+        ],
+        "title": "The Kiss",
+        "artist": "Gustav Klimt",
+        "difficulty_tier": 1,
+        "recognized_answer": "Gustav Klimt",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Claude Monet",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "claude_monet"
+          ],
+          "title": "Water Lilies",
+          "artist": "Claude Monet",
+          "difficulty_tier": 1,
+          "recognized_answer": "Claude Monet",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Claude Monet",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "claude_monet"
+        ],
+        "title": "Water Lilies",
+        "artist": "Claude Monet",
+        "difficulty_tier": 1,
+        "recognized_answer": "Claude Monet",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Claude Monet",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "claude_monet"
+          ],
+          "title": "Impression, Sunrise",
+          "artist": "Claude Monet",
+          "difficulty_tier": 1,
+          "recognized_answer": "Claude Monet",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Claude Monet",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "claude_monet"
+        ],
+        "title": "Impression, Sunrise",
+        "artist": "Claude Monet",
+        "difficulty_tier": 1,
+        "recognized_answer": "Claude Monet",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Raphael",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "raphael"
+          ],
+          "title": "The School of Athens",
+          "artist": "Raphael",
+          "difficulty_tier": 1,
+          "recognized_answer": "Raphael",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Raphael",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "raphael"
+        ],
+        "title": "The School of Athens",
+        "artist": "Raphael",
+        "difficulty_tier": 1,
+        "recognized_answer": "Raphael",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Michelangelo",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "michelangelo"
+          ],
+          "title": "The Creation of Adam",
+          "artist": "Michelangelo",
+          "difficulty_tier": 1,
+          "recognized_answer": "Michelangelo",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Michelangelo",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "michelangelo"
+        ],
+        "title": "The Creation of Adam",
+        "artist": "Michelangelo",
+        "difficulty_tier": 1,
+        "recognized_answer": "Michelangelo",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Jan van Eyck",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "jan_van_eyck"
+          ],
+          "title": "The Arnolfini Portrait",
+          "artist": "Jan van Eyck",
+          "difficulty_tier": 1,
+          "recognized_answer": "Jan van Eyck",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Jan van Eyck",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "jan_van_eyck"
+        ],
+        "title": "The Arnolfini Portrait",
+        "artist": "Jan van Eyck",
+        "difficulty_tier": 1,
+        "recognized_answer": "Jan van Eyck",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Edward Hopper",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "edward_hopper"
+          ],
+          "title": "Nighthawks",
+          "artist": "Edward Hopper",
+          "difficulty_tier": 1,
+          "recognized_answer": "Edward Hopper",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Edward Hopper",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "edward_hopper"
+        ],
+        "title": "Nighthawks",
+        "artist": "Edward Hopper",
+        "difficulty_tier": 1,
+        "recognized_answer": "Edward Hopper",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Andy Warhol",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "andy_warhol"
+          ],
+          "title": "Campbell’s Soup Cans",
+          "artist": "Andy Warhol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Andy Warhol",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Andy Warhol",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "andy_warhol"
+        ],
+        "title": "Campbell’s Soup Cans",
+        "artist": "Andy Warhol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Andy Warhol",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Hieronymus Bosch",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "hieronymus_bosch"
+          ],
+          "title": "The Garden of Earthly Delights",
+          "artist": "Hieronymus Bosch",
+          "difficulty_tier": 1,
+          "recognized_answer": "Hieronymus Bosch",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Hieronymus Bosch",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "hieronymus_bosch"
+        ],
+        "title": "The Garden of Earthly Delights",
+        "artist": "Hieronymus Bosch",
+        "difficulty_tier": 1,
+        "recognized_answer": "Hieronymus Bosch",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Eugène Delacroix",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "eug_ne_delacroix"
+          ],
+          "title": "Liberty Leading the People",
+          "artist": "Eugène Delacroix",
+          "difficulty_tier": 1,
+          "recognized_answer": "Eugène Delacroix",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Eugène Delacroix",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "eug_ne_delacroix"
+        ],
+        "title": "Liberty Leading the People",
+        "artist": "Eugène Delacroix",
+        "difficulty_tier": 1,
+        "recognized_answer": "Eugène Delacroix",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "John Constable",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "john_constable"
+          ],
+          "title": "The Hay Wain",
+          "artist": "John Constable",
+          "difficulty_tier": 1,
+          "recognized_answer": "John Constable",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "John Constable",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "john_constable"
+        ],
+        "title": "The Hay Wain",
+        "artist": "John Constable",
+        "difficulty_tier": 1,
+        "recognized_answer": "John Constable",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "James McNeill Whistler",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "james_mcneill_whistler"
+          ],
+          "title": "Whistler’s Mother",
+          "artist": "James McNeill Whistler",
+          "difficulty_tier": 1,
+          "recognized_answer": "James McNeill Whistler",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "James McNeill Whistler",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "james_mcneill_whistler"
+        ],
+        "title": "Whistler’s Mother",
+        "artist": "James McNeill Whistler",
+        "difficulty_tier": 1,
+        "recognized_answer": "James McNeill Whistler",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Théodore Géricault",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "th_odore_g_ricault"
+          ],
+          "title": "The Raft of the Medusa",
+          "artist": "Théodore Géricault",
+          "difficulty_tier": 1,
+          "recognized_answer": "Théodore Géricault",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Théodore Géricault",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "th_odore_g_ricault"
+        ],
+        "title": "The Raft of the Medusa",
+        "artist": "Théodore Géricault",
+        "difficulty_tier": 1,
+        "recognized_answer": "Théodore Géricault",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -1585,7 +2585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Mona Lisa",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "mona_lisa"
+          ],
+          "title": "Mona Lisa",
+          "visual_clue": "Leonardo da Vinci portrait with a subtle smile",
+          "difficulty_tier": 1,
+          "recognized_answer": "Mona Lisa",
+          "distractor_family": [
+            "The Last Supper",
+            "The Starry Night",
+            "Sunflowers"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Mona Lisa",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "mona_lisa"
+        ],
+        "title": "Mona Lisa",
+        "visual_clue": "Leonardo da Vinci portrait with a subtle smile",
+        "difficulty_tier": 1,
+        "recognized_answer": "Mona Lisa",
+        "distractor_family": [
+          "The Last Supper",
+          "The Starry Night",
+          "Sunflowers"
+        ]
       }
     },
     {
@@ -1645,7 +2685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Last Supper",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_last_supper"
+          ],
+          "title": "The Last Supper",
+          "visual_clue": "Leonardo da Vinci mural of Christ at a long table",
+          "difficulty_tier": 1,
+          "recognized_answer": "The Last Supper",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Starry Night",
+            "Sunflowers"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Last Supper",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_last_supper"
+        ],
+        "title": "The Last Supper",
+        "visual_clue": "Leonardo da Vinci mural of Christ at a long table",
+        "difficulty_tier": 1,
+        "recognized_answer": "The Last Supper",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Starry Night",
+          "Sunflowers"
+        ]
       }
     },
     {
@@ -1705,7 +2785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Starry Night",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_starry_night"
+          ],
+          "title": "The Starry Night",
+          "visual_clue": "Van Gogh painting with a swirling night sky",
+          "difficulty_tier": 1,
+          "recognized_answer": "The Starry Night",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "Sunflowers"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Starry Night",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_starry_night"
+        ],
+        "title": "The Starry Night",
+        "visual_clue": "Van Gogh painting with a swirling night sky",
+        "difficulty_tier": 1,
+        "recognized_answer": "The Starry Night",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "Sunflowers"
+        ]
       }
     },
     {
@@ -1765,7 +2885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Sunflowers",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "sunflowers"
+          ],
+          "title": "Sunflowers",
+          "visual_clue": "Van Gogh series of yellow flowers in a vase",
+          "difficulty_tier": 1,
+          "recognized_answer": "Sunflowers",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Sunflowers",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "sunflowers"
+        ],
+        "title": "Sunflowers",
+        "visual_clue": "Van Gogh series of yellow flowers in a vase",
+        "difficulty_tier": 1,
+        "recognized_answer": "Sunflowers",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -1825,7 +2985,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Girl with a Pearl Earring",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "girl_with_a_pearl_earring"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "Girl with a Pearl Earring",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Girl with a Pearl Earring",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "girl_with_a_pearl_earring"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "Girl with a Pearl Earring",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -1885,7 +3081,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Birth of Venus",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_birth_of_venus"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "The Birth of Venus",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Birth of Venus",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_birth_of_venus"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "The Birth of Venus",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -1945,7 +3177,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Persistence of Memory",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_persistence_of_memory"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "The Persistence of Memory",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Persistence of Memory",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_persistence_of_memory"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "The Persistence of Memory",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2005,7 +3273,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Guernica",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "guernica"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "Guernica",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Guernica",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "guernica"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "Guernica",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2065,7 +3369,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Scream",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_scream"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "The Scream",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Scream",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_scream"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "The Scream",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2125,7 +3465,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "American Gothic",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "american_gothic"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "American Gothic",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "American Gothic",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "american_gothic"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "American Gothic",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2185,7 +3561,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Las Meninas",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "las_meninas"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "Las Meninas",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Las Meninas",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "las_meninas"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "Las Meninas",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2245,7 +3657,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Night Watch",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_night_watch"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "The Night Watch",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Night Watch",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_night_watch"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "The Night Watch",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2305,7 +3753,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Kiss",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_kiss"
+          ],
+          "difficulty_tier": 1,
+          "recognized_answer": "The Kiss",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Kiss",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_kiss"
+        ],
+        "difficulty_tier": 1,
+        "recognized_answer": "The Kiss",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2365,7 +3849,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Water Lilies",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "water_lilies"
+          ],
+          "title": "Water Lilies",
+          "visual_clue": "Monet pond series with floating flowers",
+          "difficulty_tier": 1,
+          "recognized_answer": "Water Lilies",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Water Lilies",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "water_lilies"
+        ],
+        "title": "Water Lilies",
+        "visual_clue": "Monet pond series with floating flowers",
+        "difficulty_tier": 1,
+        "recognized_answer": "Water Lilies",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2425,7 +3949,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Impression, Sunrise",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "impression_sunrise"
+          ],
+          "title": "Impression, Sunrise",
+          "visual_clue": "Monet harbor sunrise that named Impressionism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Impression, Sunrise",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Impression, Sunrise",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "impression_sunrise"
+        ],
+        "title": "Impression, Sunrise",
+        "visual_clue": "Monet harbor sunrise that named Impressionism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Impression, Sunrise",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2485,7 +4049,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The School of Athens",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_school_of_athens"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "The School of Athens",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The School of Athens",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_school_of_athens"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "The School of Athens",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2545,7 +4145,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Creation of Adam",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_creation_of_adam"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "The Creation of Adam",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Creation of Adam",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_creation_of_adam"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "The Creation of Adam",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2605,7 +4241,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Arnolfini Portrait",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_arnolfini_portrait"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "The Arnolfini Portrait",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Arnolfini Portrait",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_arnolfini_portrait"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "The Arnolfini Portrait",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2665,7 +4337,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Nighthawks",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "nighthawks"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Nighthawks",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Nighthawks",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "nighthawks"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Nighthawks",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2725,7 +4433,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Campbell’s Soup Cans",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "campbell_s_soup_cans"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Campbell’s Soup Cans",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Campbell’s Soup Cans",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "campbell_s_soup_cans"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Campbell’s Soup Cans",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2785,7 +4529,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Garden of Earthly Delights",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_garden_of_earthly_delights"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "The Garden of Earthly Delights",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Garden of Earthly Delights",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_garden_of_earthly_delights"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "The Garden of Earthly Delights",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2845,7 +4625,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Liberty Leading the People",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "liberty_leading_the_people"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Liberty Leading the People",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Liberty Leading the People",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "liberty_leading_the_people"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Liberty Leading the People",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2905,7 +4721,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Hay Wain",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_hay_wain"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "The Hay Wain",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Hay Wain",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_hay_wain"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "The Hay Wain",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -2965,7 +4817,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Whistler’s Mother",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "whistler_s_mother"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "Whistler’s Mother",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Whistler’s Mother",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "whistler_s_mother"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "Whistler’s Mother",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3025,7 +4913,43 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Raft of the Medusa",
+          "prompt_pattern": "Artist → Artwork",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_raft_of_the_medusa"
+          ],
+          "difficulty_tier": 2,
+          "recognized_answer": "The Raft of the Medusa",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Raft of the Medusa",
+        "prompt_pattern": "Artist → Artwork",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_raft_of_the_medusa"
+        ],
+        "difficulty_tier": 2,
+        "recognized_answer": "The Raft of the Medusa",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3085,7 +5009,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Mona Lisa",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "mona_lisa"
+          ],
+          "title": "Mona Lisa",
+          "visual_clue": "enigmatic half-length portrait with a subtle smile",
+          "difficulty_tier": 2,
+          "recognized_answer": "Mona Lisa",
+          "distractor_family": [
+            "The Last Supper",
+            "The Starry Night",
+            "Sunflowers"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Mona Lisa",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "mona_lisa"
+        ],
+        "title": "Mona Lisa",
+        "visual_clue": "enigmatic half-length portrait with a subtle smile",
+        "difficulty_tier": 2,
+        "recognized_answer": "Mona Lisa",
+        "distractor_family": [
+          "The Last Supper",
+          "The Starry Night",
+          "Sunflowers"
+        ]
       }
     },
     {
@@ -3145,7 +5109,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Last Supper",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_last_supper"
+          ],
+          "title": "The Last Supper",
+          "visual_clue": "Christ and apostles seated at a long table",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Last Supper",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Starry Night",
+            "Sunflowers"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Last Supper",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_last_supper"
+        ],
+        "title": "The Last Supper",
+        "visual_clue": "Christ and apostles seated at a long table",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Last Supper",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Starry Night",
+          "Sunflowers"
+        ]
       }
     },
     {
@@ -3205,7 +5209,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Starry Night",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_starry_night"
+          ],
+          "title": "The Starry Night",
+          "visual_clue": "swirling night sky over a village",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Starry Night",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "Sunflowers"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Starry Night",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_starry_night"
+        ],
+        "title": "The Starry Night",
+        "visual_clue": "swirling night sky over a village",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Starry Night",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "Sunflowers"
+        ]
       }
     },
     {
@@ -3265,7 +5309,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Sunflowers",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "sunflowers"
+          ],
+          "title": "Sunflowers",
+          "visual_clue": "bright yellow flowers in a vase",
+          "difficulty_tier": 2,
+          "recognized_answer": "Sunflowers",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Sunflowers",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "sunflowers"
+        ],
+        "title": "Sunflowers",
+        "visual_clue": "bright yellow flowers in a vase",
+        "difficulty_tier": 2,
+        "recognized_answer": "Sunflowers",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3325,7 +5409,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Girl with a Pearl Earring",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "girl_with_a_pearl_earring"
+          ],
+          "title": "Girl with a Pearl Earring",
+          "visual_clue": "girl turning with a pearl earring",
+          "difficulty_tier": 2,
+          "recognized_answer": "Girl with a Pearl Earring",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Girl with a Pearl Earring",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "girl_with_a_pearl_earring"
+        ],
+        "title": "Girl with a Pearl Earring",
+        "visual_clue": "girl turning with a pearl earring",
+        "difficulty_tier": 2,
+        "recognized_answer": "Girl with a Pearl Earring",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3385,7 +5509,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Birth of Venus",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_birth_of_venus"
+          ],
+          "title": "The Birth of Venus",
+          "visual_clue": "Venus standing on a shell",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Birth of Venus",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Birth of Venus",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_birth_of_venus"
+        ],
+        "title": "The Birth of Venus",
+        "visual_clue": "Venus standing on a shell",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Birth of Venus",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3445,7 +5609,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Persistence of Memory",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_persistence_of_memory"
+          ],
+          "title": "The Persistence of Memory",
+          "visual_clue": "melting clocks in a dreamlike landscape",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Persistence of Memory",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Persistence of Memory",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_persistence_of_memory"
+        ],
+        "title": "The Persistence of Memory",
+        "visual_clue": "melting clocks in a dreamlike landscape",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Persistence of Memory",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3505,7 +5709,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Guernica",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "guernica"
+          ],
+          "title": "Guernica",
+          "visual_clue": "large monochrome anti-war scene",
+          "difficulty_tier": 2,
+          "recognized_answer": "Guernica",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Guernica",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "guernica"
+        ],
+        "title": "Guernica",
+        "visual_clue": "large monochrome anti-war scene",
+        "difficulty_tier": 2,
+        "recognized_answer": "Guernica",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3565,7 +5809,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Scream",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_scream"
+          ],
+          "title": "The Scream",
+          "visual_clue": "figure crying beneath a blood-red sky",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Scream",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Scream",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_scream"
+        ],
+        "title": "The Scream",
+        "visual_clue": "figure crying beneath a blood-red sky",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Scream",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3625,7 +5909,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "American Gothic",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "american_gothic"
+          ],
+          "title": "American Gothic",
+          "visual_clue": "stern farmer and woman before a house",
+          "difficulty_tier": 2,
+          "recognized_answer": "American Gothic",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "American Gothic",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "american_gothic"
+        ],
+        "title": "American Gothic",
+        "visual_clue": "stern farmer and woman before a house",
+        "difficulty_tier": 2,
+        "recognized_answer": "American Gothic",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3685,7 +6009,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Las Meninas",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "las_meninas"
+          ],
+          "title": "Las Meninas",
+          "visual_clue": "Spanish court scene with the painter visible",
+          "difficulty_tier": 2,
+          "recognized_answer": "Las Meninas",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Las Meninas",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "las_meninas"
+        ],
+        "title": "Las Meninas",
+        "visual_clue": "Spanish court scene with the painter visible",
+        "difficulty_tier": 2,
+        "recognized_answer": "Las Meninas",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3745,7 +6109,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Night Watch",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_night_watch"
+          ],
+          "title": "The Night Watch",
+          "visual_clue": "dramatic militia company group portrait",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Night Watch",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Night Watch",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_night_watch"
+        ],
+        "title": "The Night Watch",
+        "visual_clue": "dramatic militia company group portrait",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Night Watch",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3805,7 +6209,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Kiss",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_kiss"
+          ],
+          "title": "The Kiss",
+          "visual_clue": "gold-patterned embrace",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Kiss",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Kiss",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_kiss"
+        ],
+        "title": "The Kiss",
+        "visual_clue": "gold-patterned embrace",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Kiss",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3865,7 +6309,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Water Lilies",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "water_lilies"
+          ],
+          "title": "Water Lilies",
+          "visual_clue": "floating flowers on a pond",
+          "difficulty_tier": 2,
+          "recognized_answer": "Water Lilies",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Water Lilies",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "water_lilies"
+        ],
+        "title": "Water Lilies",
+        "visual_clue": "floating flowers on a pond",
+        "difficulty_tier": 2,
+        "recognized_answer": "Water Lilies",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3925,7 +6409,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Impression, Sunrise",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "impression_sunrise"
+          ],
+          "title": "Impression, Sunrise",
+          "visual_clue": "misty harbor sunrise",
+          "difficulty_tier": 2,
+          "recognized_answer": "Impression, Sunrise",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Impression, Sunrise",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "impression_sunrise"
+        ],
+        "title": "Impression, Sunrise",
+        "visual_clue": "misty harbor sunrise",
+        "difficulty_tier": 2,
+        "recognized_answer": "Impression, Sunrise",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -3985,7 +6509,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The School of Athens",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_school_of_athens"
+          ],
+          "title": "The School of Athens",
+          "visual_clue": "classical philosophers in an architectural setting",
+          "difficulty_tier": 2,
+          "recognized_answer": "The School of Athens",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The School of Athens",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_school_of_athens"
+        ],
+        "title": "The School of Athens",
+        "visual_clue": "classical philosophers in an architectural setting",
+        "difficulty_tier": 2,
+        "recognized_answer": "The School of Athens",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4045,7 +6609,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Creation of Adam",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_creation_of_adam"
+          ],
+          "title": "The Creation of Adam",
+          "visual_clue": "two hands reaching on the Sistine ceiling",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Creation of Adam",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Creation of Adam",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_creation_of_adam"
+        ],
+        "title": "The Creation of Adam",
+        "visual_clue": "two hands reaching on the Sistine ceiling",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Creation of Adam",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4105,7 +6709,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Arnolfini Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_arnolfini_portrait"
+          ],
+          "title": "The Arnolfini Portrait",
+          "visual_clue": "couple in a room with convex mirror",
+          "difficulty_tier": 2,
+          "recognized_answer": "The Arnolfini Portrait",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Arnolfini Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_arnolfini_portrait"
+        ],
+        "title": "The Arnolfini Portrait",
+        "visual_clue": "couple in a room with convex mirror",
+        "difficulty_tier": 2,
+        "recognized_answer": "The Arnolfini Portrait",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4165,7 +6809,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Nighthawks",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "nighthawks"
+          ],
+          "title": "Nighthawks",
+          "visual_clue": "late-night diner with isolated figures",
+          "difficulty_tier": 2,
+          "recognized_answer": "Nighthawks",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Nighthawks",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "nighthawks"
+        ],
+        "title": "Nighthawks",
+        "visual_clue": "late-night diner with isolated figures",
+        "difficulty_tier": 2,
+        "recognized_answer": "Nighthawks",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4225,7 +6909,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Campbell’s Soup Cans",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "campbell_s_soup_cans"
+          ],
+          "title": "Campbell’s Soup Cans",
+          "visual_clue": "repeated soup can images",
+          "difficulty_tier": 2,
+          "recognized_answer": "Campbell’s Soup Cans",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Campbell’s Soup Cans",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "campbell_s_soup_cans"
+        ],
+        "title": "Campbell’s Soup Cans",
+        "visual_clue": "repeated soup can images",
+        "difficulty_tier": 2,
+        "recognized_answer": "Campbell’s Soup Cans",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4285,7 +7009,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Garden of Earthly Delights",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_garden_of_earthly_delights"
+          ],
+          "title": "The Garden of Earthly Delights",
+          "visual_clue": "triptych filled with fantastical scenes",
+          "difficulty_tier": 3,
+          "recognized_answer": "The Garden of Earthly Delights",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Garden of Earthly Delights",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_garden_of_earthly_delights"
+        ],
+        "title": "The Garden of Earthly Delights",
+        "visual_clue": "triptych filled with fantastical scenes",
+        "difficulty_tier": 3,
+        "recognized_answer": "The Garden of Earthly Delights",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4345,7 +7109,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Liberty Leading the People",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "liberty_leading_the_people"
+          ],
+          "title": "Liberty Leading the People",
+          "visual_clue": "allegorical woman carrying a flag",
+          "difficulty_tier": 3,
+          "recognized_answer": "Liberty Leading the People",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Liberty Leading the People",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "liberty_leading_the_people"
+        ],
+        "title": "Liberty Leading the People",
+        "visual_clue": "allegorical woman carrying a flag",
+        "difficulty_tier": 3,
+        "recognized_answer": "Liberty Leading the People",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4405,7 +7209,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Hay Wain",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_hay_wain"
+          ],
+          "title": "The Hay Wain",
+          "visual_clue": "rural cart crossing shallow water",
+          "difficulty_tier": 3,
+          "recognized_answer": "The Hay Wain",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Hay Wain",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_hay_wain"
+        ],
+        "title": "The Hay Wain",
+        "visual_clue": "rural cart crossing shallow water",
+        "difficulty_tier": 3,
+        "recognized_answer": "The Hay Wain",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4465,7 +7309,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Whistler’s Mother",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "whistler_s_mother"
+          ],
+          "title": "Whistler’s Mother",
+          "visual_clue": "seated woman in profile",
+          "difficulty_tier": 3,
+          "recognized_answer": "Whistler’s Mother",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Whistler’s Mother",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "whistler_s_mother"
+        ],
+        "title": "Whistler’s Mother",
+        "visual_clue": "seated woman in profile",
+        "difficulty_tier": 3,
+        "recognized_answer": "Whistler’s Mother",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4525,7 +7409,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "The Raft of the Medusa",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "the_raft_of_the_medusa"
+          ],
+          "title": "The Raft of the Medusa",
+          "visual_clue": "shipwreck survivors on a raft",
+          "difficulty_tier": 3,
+          "recognized_answer": "The Raft of the Medusa",
+          "distractor_family": [
+            "Mona Lisa",
+            "The Last Supper",
+            "The Starry Night"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "The Raft of the Medusa",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "the_raft_of_the_medusa"
+        ],
+        "title": "The Raft of the Medusa",
+        "visual_clue": "shipwreck survivors on a raft",
+        "difficulty_tier": 3,
+        "recognized_answer": "The Raft of the Medusa",
+        "distractor_family": [
+          "Mona Lisa",
+          "The Last Supper",
+          "The Starry Night"
+        ]
       }
     },
     {
@@ -4585,7 +7509,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Leonardo da Vinci",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "leonardo_da_vinci"
+          ],
+          "title": "Mona Lisa",
+          "artist": "Leonardo da Vinci",
+          "difficulty_tier": 3,
+          "recognized_answer": "Leonardo da Vinci",
+          "distractor_family": [
+            "Vincent van Gogh",
+            "Johannes Vermeer",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Leonardo da Vinci",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "leonardo_da_vinci"
+        ],
+        "title": "Mona Lisa",
+        "artist": "Leonardo da Vinci",
+        "difficulty_tier": 3,
+        "recognized_answer": "Leonardo da Vinci",
+        "distractor_family": [
+          "Vincent van Gogh",
+          "Johannes Vermeer",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -4645,7 +7609,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Leonardo da Vinci",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "leonardo_da_vinci"
+          ],
+          "title": "The Last Supper",
+          "artist": "Leonardo da Vinci",
+          "difficulty_tier": 3,
+          "recognized_answer": "Leonardo da Vinci",
+          "distractor_family": [
+            "Vincent van Gogh",
+            "Johannes Vermeer",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Leonardo da Vinci",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "leonardo_da_vinci"
+        ],
+        "title": "The Last Supper",
+        "artist": "Leonardo da Vinci",
+        "difficulty_tier": 3,
+        "recognized_answer": "Leonardo da Vinci",
+        "distractor_family": [
+          "Vincent van Gogh",
+          "Johannes Vermeer",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -4705,7 +7709,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Vincent van Gogh",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "vincent_van_gogh"
+          ],
+          "title": "The Starry Night",
+          "artist": "Vincent van Gogh",
+          "difficulty_tier": 3,
+          "recognized_answer": "Vincent van Gogh",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Johannes Vermeer",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Vincent van Gogh",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "vincent_van_gogh"
+        ],
+        "title": "The Starry Night",
+        "artist": "Vincent van Gogh",
+        "difficulty_tier": 3,
+        "recognized_answer": "Vincent van Gogh",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Johannes Vermeer",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -4765,7 +7809,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Vincent van Gogh",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "vincent_van_gogh"
+          ],
+          "title": "Sunflowers",
+          "artist": "Vincent van Gogh",
+          "difficulty_tier": 3,
+          "recognized_answer": "Vincent van Gogh",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Johannes Vermeer",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Vincent van Gogh",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "vincent_van_gogh"
+        ],
+        "title": "Sunflowers",
+        "artist": "Vincent van Gogh",
+        "difficulty_tier": 3,
+        "recognized_answer": "Vincent van Gogh",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Johannes Vermeer",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -4825,7 +7909,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Johannes Vermeer",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "johannes_vermeer"
+          ],
+          "title": "Girl with a Pearl Earring",
+          "artist": "Johannes Vermeer",
+          "difficulty_tier": 3,
+          "recognized_answer": "Johannes Vermeer",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Sandro Botticelli"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Johannes Vermeer",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "johannes_vermeer"
+        ],
+        "title": "Girl with a Pearl Earring",
+        "artist": "Johannes Vermeer",
+        "difficulty_tier": 3,
+        "recognized_answer": "Johannes Vermeer",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Sandro Botticelli"
+        ]
       }
     },
     {
@@ -4885,7 +8009,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Sandro Botticelli",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "sandro_botticelli"
+          ],
+          "title": "The Birth of Venus",
+          "artist": "Sandro Botticelli",
+          "difficulty_tier": 3,
+          "recognized_answer": "Sandro Botticelli",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Sandro Botticelli",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "sandro_botticelli"
+        ],
+        "title": "The Birth of Venus",
+        "artist": "Sandro Botticelli",
+        "difficulty_tier": 3,
+        "recognized_answer": "Sandro Botticelli",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -4945,7 +8109,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Salvador Dalí",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "salvador_dal"
+          ],
+          "title": "The Persistence of Memory",
+          "artist": "Salvador Dalí",
+          "difficulty_tier": 3,
+          "recognized_answer": "Salvador Dalí",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Salvador Dalí",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "salvador_dal"
+        ],
+        "title": "The Persistence of Memory",
+        "artist": "Salvador Dalí",
+        "difficulty_tier": 3,
+        "recognized_answer": "Salvador Dalí",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5005,7 +8209,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Pablo Picasso",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "pablo_picasso"
+          ],
+          "title": "Guernica",
+          "artist": "Pablo Picasso",
+          "difficulty_tier": 3,
+          "recognized_answer": "Pablo Picasso",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Pablo Picasso",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "pablo_picasso"
+        ],
+        "title": "Guernica",
+        "artist": "Pablo Picasso",
+        "difficulty_tier": 3,
+        "recognized_answer": "Pablo Picasso",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5065,7 +8309,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Edvard Munch",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "edvard_munch"
+          ],
+          "title": "The Scream",
+          "artist": "Edvard Munch",
+          "difficulty_tier": 3,
+          "recognized_answer": "Edvard Munch",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Edvard Munch",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "edvard_munch"
+        ],
+        "title": "The Scream",
+        "artist": "Edvard Munch",
+        "difficulty_tier": 3,
+        "recognized_answer": "Edvard Munch",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5125,7 +8409,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Grant Wood",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "grant_wood"
+          ],
+          "title": "American Gothic",
+          "artist": "Grant Wood",
+          "difficulty_tier": 3,
+          "recognized_answer": "Grant Wood",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Grant Wood",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "grant_wood"
+        ],
+        "title": "American Gothic",
+        "artist": "Grant Wood",
+        "difficulty_tier": 3,
+        "recognized_answer": "Grant Wood",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5185,7 +8509,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Diego Velázquez",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "diego_vel_zquez"
+          ],
+          "title": "Las Meninas",
+          "artist": "Diego Velázquez",
+          "difficulty_tier": 3,
+          "recognized_answer": "Diego Velázquez",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Diego Velázquez",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "diego_vel_zquez"
+        ],
+        "title": "Las Meninas",
+        "artist": "Diego Velázquez",
+        "difficulty_tier": 3,
+        "recognized_answer": "Diego Velázquez",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5245,7 +8609,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Rembrandt",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "rembrandt"
+          ],
+          "title": "The Night Watch",
+          "artist": "Rembrandt",
+          "difficulty_tier": 3,
+          "recognized_answer": "Rembrandt",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Rembrandt",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "rembrandt"
+        ],
+        "title": "The Night Watch",
+        "artist": "Rembrandt",
+        "difficulty_tier": 3,
+        "recognized_answer": "Rembrandt",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5305,7 +8709,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Gustav Klimt",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "gustav_klimt"
+          ],
+          "title": "The Kiss",
+          "artist": "Gustav Klimt",
+          "difficulty_tier": 3,
+          "recognized_answer": "Gustav Klimt",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Gustav Klimt",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "gustav_klimt"
+        ],
+        "title": "The Kiss",
+        "artist": "Gustav Klimt",
+        "difficulty_tier": 3,
+        "recognized_answer": "Gustav Klimt",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5365,7 +8809,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Claude Monet",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "claude_monet"
+          ],
+          "title": "Water Lilies",
+          "artist": "Claude Monet",
+          "difficulty_tier": 3,
+          "recognized_answer": "Claude Monet",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Claude Monet",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "claude_monet"
+        ],
+        "title": "Water Lilies",
+        "artist": "Claude Monet",
+        "difficulty_tier": 3,
+        "recognized_answer": "Claude Monet",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5425,7 +8909,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Claude Monet",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "claude_monet"
+          ],
+          "title": "Impression, Sunrise",
+          "artist": "Claude Monet",
+          "difficulty_tier": 3,
+          "recognized_answer": "Claude Monet",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Claude Monet",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "claude_monet"
+        ],
+        "title": "Impression, Sunrise",
+        "artist": "Claude Monet",
+        "difficulty_tier": 3,
+        "recognized_answer": "Claude Monet",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5485,7 +9009,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Raphael",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "raphael"
+          ],
+          "title": "The School of Athens",
+          "artist": "Raphael",
+          "difficulty_tier": 4,
+          "recognized_answer": "Raphael",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Raphael",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "raphael"
+        ],
+        "title": "The School of Athens",
+        "artist": "Raphael",
+        "difficulty_tier": 4,
+        "recognized_answer": "Raphael",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5545,7 +9109,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Michelangelo",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "michelangelo"
+          ],
+          "title": "The Creation of Adam",
+          "artist": "Michelangelo",
+          "difficulty_tier": 4,
+          "recognized_answer": "Michelangelo",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Michelangelo",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "michelangelo"
+        ],
+        "title": "The Creation of Adam",
+        "artist": "Michelangelo",
+        "difficulty_tier": 4,
+        "recognized_answer": "Michelangelo",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5605,7 +9209,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Jan van Eyck",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "jan_van_eyck"
+          ],
+          "title": "The Arnolfini Portrait",
+          "artist": "Jan van Eyck",
+          "difficulty_tier": 4,
+          "recognized_answer": "Jan van Eyck",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Jan van Eyck",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "jan_van_eyck"
+        ],
+        "title": "The Arnolfini Portrait",
+        "artist": "Jan van Eyck",
+        "difficulty_tier": 4,
+        "recognized_answer": "Jan van Eyck",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5665,7 +9309,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Edward Hopper",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "edward_hopper"
+          ],
+          "title": "Nighthawks",
+          "artist": "Edward Hopper",
+          "difficulty_tier": 4,
+          "recognized_answer": "Edward Hopper",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Edward Hopper",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "edward_hopper"
+        ],
+        "title": "Nighthawks",
+        "artist": "Edward Hopper",
+        "difficulty_tier": 4,
+        "recognized_answer": "Edward Hopper",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5725,7 +9409,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Andy Warhol",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "andy_warhol"
+          ],
+          "title": "Campbell’s Soup Cans",
+          "artist": "Andy Warhol",
+          "difficulty_tier": 4,
+          "recognized_answer": "Andy Warhol",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Andy Warhol",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "andy_warhol"
+        ],
+        "title": "Campbell’s Soup Cans",
+        "artist": "Andy Warhol",
+        "difficulty_tier": 4,
+        "recognized_answer": "Andy Warhol",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5785,7 +9509,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Hieronymus Bosch",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "hieronymus_bosch"
+          ],
+          "title": "The Garden of Earthly Delights",
+          "artist": "Hieronymus Bosch",
+          "difficulty_tier": 4,
+          "recognized_answer": "Hieronymus Bosch",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Hieronymus Bosch",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "hieronymus_bosch"
+        ],
+        "title": "The Garden of Earthly Delights",
+        "artist": "Hieronymus Bosch",
+        "difficulty_tier": 4,
+        "recognized_answer": "Hieronymus Bosch",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5845,7 +9609,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Eugène Delacroix",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "eug_ne_delacroix"
+          ],
+          "title": "Liberty Leading the People",
+          "artist": "Eugène Delacroix",
+          "difficulty_tier": 4,
+          "recognized_answer": "Eugène Delacroix",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Eugène Delacroix",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "eug_ne_delacroix"
+        ],
+        "title": "Liberty Leading the People",
+        "artist": "Eugène Delacroix",
+        "difficulty_tier": 4,
+        "recognized_answer": "Eugène Delacroix",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5905,7 +9709,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "John Constable",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "john_constable"
+          ],
+          "title": "The Hay Wain",
+          "artist": "John Constable",
+          "difficulty_tier": 4,
+          "recognized_answer": "John Constable",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "John Constable",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "john_constable"
+        ],
+        "title": "The Hay Wain",
+        "artist": "John Constable",
+        "difficulty_tier": 4,
+        "recognized_answer": "John Constable",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -5965,7 +9809,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "James McNeill Whistler",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "james_mcneill_whistler"
+          ],
+          "title": "Whistler’s Mother",
+          "artist": "James McNeill Whistler",
+          "difficulty_tier": 4,
+          "recognized_answer": "James McNeill Whistler",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "James McNeill Whistler",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "james_mcneill_whistler"
+        ],
+        "title": "Whistler’s Mother",
+        "artist": "James McNeill Whistler",
+        "difficulty_tier": 4,
+        "recognized_answer": "James McNeill Whistler",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     },
     {
@@ -6025,7 +9909,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "famous_paintings",
+          "concept": "Théodore Géricault",
+          "prompt_pattern": "Artwork → Artist",
+          "aliases": [],
+          "keywords": [
+            "famous_paintings",
+            "th_odore_g_ricault"
+          ],
+          "title": "The Raft of the Medusa",
+          "artist": "Théodore Géricault",
+          "difficulty_tier": 4,
+          "recognized_answer": "Théodore Géricault",
+          "distractor_family": [
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Johannes Vermeer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "famous_paintings",
+        "concept": "Théodore Géricault",
+        "prompt_pattern": "Artwork → Artist",
+        "aliases": [],
+        "keywords": [
+          "famous_paintings",
+          "th_odore_g_ricault"
+        ],
+        "title": "The Raft of the Medusa",
+        "artist": "Théodore Géricault",
+        "difficulty_tier": 4,
+        "recognized_answer": "Théodore Géricault",
+        "distractor_family": [
+          "Leonardo da Vinci",
+          "Vincent van Gogh",
+          "Johannes Vermeer"
+        ]
       }
     }
   ]

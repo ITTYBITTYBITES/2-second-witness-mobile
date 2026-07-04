@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Horizon Line",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "horizon_line"
+          ],
+          "term": "Horizon Line",
+          "definition_clue": "eye-level boundary in a scene",
+          "difficulty_tier": 1,
+          "recognized_answer": "Horizon Line",
+          "distractor_family": [
+            "Foreground",
+            "Middle Ground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Horizon Line",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "horizon_line"
+        ],
+        "term": "Horizon Line",
+        "definition_clue": "eye-level boundary in a scene",
+        "difficulty_tier": 1,
+        "recognized_answer": "Horizon Line",
+        "distractor_family": [
+          "Foreground",
+          "Middle Ground",
+          "Background"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Foreground",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "foreground"
+          ],
+          "term": "Foreground",
+          "definition_clue": "nearest part of the landscape",
+          "difficulty_tier": 1,
+          "recognized_answer": "Foreground",
+          "distractor_family": [
+            "Horizon Line",
+            "Middle Ground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Foreground",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "foreground"
+        ],
+        "term": "Foreground",
+        "definition_clue": "nearest part of the landscape",
+        "difficulty_tier": 1,
+        "recognized_answer": "Foreground",
+        "distractor_family": [
+          "Horizon Line",
+          "Middle Ground",
+          "Background"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Middle Ground",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "middle_ground"
+          ],
+          "term": "Middle Ground",
+          "definition_clue": "space between front and distance",
+          "difficulty_tier": 1,
+          "recognized_answer": "Middle Ground",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Middle Ground",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "middle_ground"
+        ],
+        "term": "Middle Ground",
+        "definition_clue": "space between front and distance",
+        "difficulty_tier": 1,
+        "recognized_answer": "Middle Ground",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Background"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Background",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "background"
+          ],
+          "term": "Background",
+          "definition_clue": "distant part of a scene",
+          "difficulty_tier": 1,
+          "recognized_answer": "Background",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Background",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "background"
+        ],
+        "term": "Background",
+        "definition_clue": "distant part of a scene",
+        "difficulty_tier": 1,
+        "recognized_answer": "Background",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Atmospheric Perspective",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "atmospheric_perspective"
+          ],
+          "term": "Atmospheric Perspective",
+          "definition_clue": "distance shown by haze and blue tones",
+          "difficulty_tier": 1,
+          "recognized_answer": "Atmospheric Perspective",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Atmospheric Perspective",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "atmospheric_perspective"
+        ],
+        "term": "Atmospheric Perspective",
+        "definition_clue": "distance shown by haze and blue tones",
+        "difficulty_tier": 1,
+        "recognized_answer": "Atmospheric Perspective",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Linear Perspective",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "linear_perspective"
+          ],
+          "term": "Linear Perspective",
+          "definition_clue": "space organized by receding lines",
+          "difficulty_tier": 1,
+          "recognized_answer": "Linear Perspective",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Linear Perspective",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "linear_perspective"
+        ],
+        "term": "Linear Perspective",
+        "definition_clue": "space organized by receding lines",
+        "difficulty_tier": 1,
+        "recognized_answer": "Linear Perspective",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Seascape",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "seascape"
+          ],
+          "term": "Seascape",
+          "definition_clue": "painting of the sea",
+          "difficulty_tier": 1,
+          "recognized_answer": "Seascape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Seascape",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "seascape"
+        ],
+        "term": "Seascape",
+        "definition_clue": "painting of the sea",
+        "difficulty_tier": 1,
+        "recognized_answer": "Seascape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Cityscape",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "cityscape"
+          ],
+          "term": "Cityscape",
+          "definition_clue": "urban landscape",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cityscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Cityscape",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "cityscape"
+        ],
+        "term": "Cityscape",
+        "definition_clue": "urban landscape",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cityscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Pastoral Landscape",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "pastoral_landscape"
+          ],
+          "term": "Pastoral Landscape",
+          "definition_clue": "idealized countryside",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pastoral Landscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Pastoral Landscape",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "pastoral_landscape"
+        ],
+        "term": "Pastoral Landscape",
+        "definition_clue": "idealized countryside",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pastoral Landscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Sublime Landscape",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "sublime_landscape"
+          ],
+          "term": "Sublime Landscape",
+          "definition_clue": "nature shown as powerful or awe-inspiring",
+          "difficulty_tier": 1,
+          "recognized_answer": "Sublime Landscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Sublime Landscape",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "sublime_landscape"
+        ],
+        "term": "Sublime Landscape",
+        "definition_clue": "nature shown as powerful or awe-inspiring",
+        "difficulty_tier": 1,
+        "recognized_answer": "Sublime Landscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Picturesque",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "picturesque"
+          ],
+          "term": "Picturesque",
+          "definition_clue": "charming varied landscape view",
+          "difficulty_tier": 1,
+          "recognized_answer": "Picturesque",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Picturesque",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "picturesque"
+        ],
+        "term": "Picturesque",
+        "definition_clue": "charming varied landscape view",
+        "difficulty_tier": 1,
+        "recognized_answer": "Picturesque",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Plein Air",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "plein_air"
+          ],
+          "term": "Plein Air",
+          "definition_clue": "painting outdoors",
+          "difficulty_tier": 1,
+          "recognized_answer": "Plein Air",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Plein Air",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "plein_air"
+        ],
+        "term": "Plein Air",
+        "definition_clue": "painting outdoors",
+        "difficulty_tier": 1,
+        "recognized_answer": "Plein Air",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Cloud Study",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "cloud_study"
+          ],
+          "term": "Cloud Study",
+          "definition_clue": "focused observation of clouds",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cloud Study",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Cloud Study",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "cloud_study"
+        ],
+        "term": "Cloud Study",
+        "definition_clue": "focused observation of clouds",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cloud Study",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Nocturne",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "nocturne"
+          ],
+          "term": "Nocturne",
+          "definition_clue": "night landscape mood",
+          "difficulty_tier": 1,
+          "recognized_answer": "Nocturne",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Nocturne",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "nocturne"
+        ],
+        "term": "Nocturne",
+        "definition_clue": "night landscape mood",
+        "difficulty_tier": 1,
+        "recognized_answer": "Nocturne",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Panorama",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "panorama"
+          ],
+          "term": "Panorama",
+          "definition_clue": "wide sweeping view",
+          "difficulty_tier": 1,
+          "recognized_answer": "Panorama",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Panorama",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "panorama"
+        ],
+        "term": "Panorama",
+        "definition_clue": "wide sweeping view",
+        "difficulty_tier": 1,
+        "recognized_answer": "Panorama",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Staffage",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "staffage"
+          ],
+          "term": "Staffage",
+          "definition_clue": "small figures in a landscape",
+          "difficulty_tier": 1,
+          "recognized_answer": "Staffage",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Staffage",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "staffage"
+        ],
+        "term": "Staffage",
+        "definition_clue": "small figures in a landscape",
+        "difficulty_tier": 1,
+        "recognized_answer": "Staffage",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Light Source",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "light_source"
+          ],
+          "term": "Light Source",
+          "definition_clue": "sun or moon direction in the scene",
+          "difficulty_tier": 1,
+          "recognized_answer": "Light Source",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Light Source",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "light_source"
+        ],
+        "term": "Light Source",
+        "definition_clue": "sun or moon direction in the scene",
+        "difficulty_tier": 1,
+        "recognized_answer": "Light Source",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Reflections",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "reflections"
+          ],
+          "term": "Reflections",
+          "definition_clue": "mirrored forms in water",
+          "difficulty_tier": 1,
+          "recognized_answer": "Reflections",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Reflections",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "reflections"
+        ],
+        "term": "Reflections",
+        "definition_clue": "mirrored forms in water",
+        "difficulty_tier": 1,
+        "recognized_answer": "Reflections",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Terrain",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "terrain"
+          ],
+          "term": "Terrain",
+          "definition_clue": "landform such as hills or rocks",
+          "difficulty_tier": 1,
+          "recognized_answer": "Terrain",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Terrain",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "terrain"
+        ],
+        "term": "Terrain",
+        "definition_clue": "landform such as hills or rocks",
+        "difficulty_tier": 1,
+        "recognized_answer": "Terrain",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Weather Effect",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "weather_effect"
+          ],
+          "term": "Weather Effect",
+          "definition_clue": "rain fog snow or storm",
+          "difficulty_tier": 1,
+          "recognized_answer": "Weather Effect",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Weather Effect",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "weather_effect"
+        ],
+        "term": "Weather Effect",
+        "definition_clue": "rain fog snow or storm",
+        "difficulty_tier": 1,
+        "recognized_answer": "Weather Effect",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Horizon Line",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "horizon_line"
+          ],
+          "term": "Horizon Line",
+          "definition_clue": "Identify the art term: eye-level boundary in a scene",
+          "difficulty_tier": 1,
+          "recognized_answer": "Horizon Line",
+          "distractor_family": [
+            "Foreground",
+            "Middle Ground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Horizon Line",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "horizon_line"
+        ],
+        "term": "Horizon Line",
+        "definition_clue": "Identify the art term: eye-level boundary in a scene",
+        "difficulty_tier": 1,
+        "recognized_answer": "Horizon Line",
+        "distractor_family": [
+          "Foreground",
+          "Middle Ground",
+          "Background"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Foreground",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "foreground"
+          ],
+          "term": "Foreground",
+          "definition_clue": "Identify the art term: nearest part of the landscape",
+          "difficulty_tier": 1,
+          "recognized_answer": "Foreground",
+          "distractor_family": [
+            "Horizon Line",
+            "Middle Ground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Foreground",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "foreground"
+        ],
+        "term": "Foreground",
+        "definition_clue": "Identify the art term: nearest part of the landscape",
+        "difficulty_tier": 1,
+        "recognized_answer": "Foreground",
+        "distractor_family": [
+          "Horizon Line",
+          "Middle Ground",
+          "Background"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Middle Ground",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "middle_ground"
+          ],
+          "term": "Middle Ground",
+          "definition_clue": "Identify the art term: space between front and distance",
+          "difficulty_tier": 1,
+          "recognized_answer": "Middle Ground",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Middle Ground",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "middle_ground"
+        ],
+        "term": "Middle Ground",
+        "definition_clue": "Identify the art term: space between front and distance",
+        "difficulty_tier": 1,
+        "recognized_answer": "Middle Ground",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Background"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Background",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "background"
+          ],
+          "term": "Background",
+          "definition_clue": "Identify the art term: distant part of a scene",
+          "difficulty_tier": 1,
+          "recognized_answer": "Background",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Background",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "background"
+        ],
+        "term": "Background",
+        "definition_clue": "Identify the art term: distant part of a scene",
+        "difficulty_tier": 1,
+        "recognized_answer": "Background",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Atmospheric Perspective",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "atmospheric_perspective"
+          ],
+          "term": "Atmospheric Perspective",
+          "definition_clue": "Identify the art term: distance shown by haze and blue tones",
+          "difficulty_tier": 1,
+          "recognized_answer": "Atmospheric Perspective",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Atmospheric Perspective",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "atmospheric_perspective"
+        ],
+        "term": "Atmospheric Perspective",
+        "definition_clue": "Identify the art term: distance shown by haze and blue tones",
+        "difficulty_tier": 1,
+        "recognized_answer": "Atmospheric Perspective",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1585,7 +2585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Linear Perspective",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "linear_perspective"
+          ],
+          "term": "Linear Perspective",
+          "definition_clue": "Identify the art term: space organized by receding lines",
+          "difficulty_tier": 1,
+          "recognized_answer": "Linear Perspective",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Linear Perspective",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "linear_perspective"
+        ],
+        "term": "Linear Perspective",
+        "definition_clue": "Identify the art term: space organized by receding lines",
+        "difficulty_tier": 1,
+        "recognized_answer": "Linear Perspective",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1645,7 +2685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Seascape",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "seascape"
+          ],
+          "term": "Seascape",
+          "definition_clue": "Identify the art term: painting of the sea",
+          "difficulty_tier": 1,
+          "recognized_answer": "Seascape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Seascape",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "seascape"
+        ],
+        "term": "Seascape",
+        "definition_clue": "Identify the art term: painting of the sea",
+        "difficulty_tier": 1,
+        "recognized_answer": "Seascape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1705,7 +2785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Cityscape",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "cityscape"
+          ],
+          "term": "Cityscape",
+          "definition_clue": "Identify the art term: urban landscape",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cityscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Cityscape",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "cityscape"
+        ],
+        "term": "Cityscape",
+        "definition_clue": "Identify the art term: urban landscape",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cityscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1765,7 +2885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Pastoral Landscape",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "pastoral_landscape"
+          ],
+          "term": "Pastoral Landscape",
+          "definition_clue": "Identify the art term: idealized countryside",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pastoral Landscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Pastoral Landscape",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "pastoral_landscape"
+        ],
+        "term": "Pastoral Landscape",
+        "definition_clue": "Identify the art term: idealized countryside",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pastoral Landscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1825,7 +2985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Sublime Landscape",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "sublime_landscape"
+          ],
+          "term": "Sublime Landscape",
+          "definition_clue": "Identify the art term: nature shown as powerful or awe-inspiring",
+          "difficulty_tier": 1,
+          "recognized_answer": "Sublime Landscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Sublime Landscape",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "sublime_landscape"
+        ],
+        "term": "Sublime Landscape",
+        "definition_clue": "Identify the art term: nature shown as powerful or awe-inspiring",
+        "difficulty_tier": 1,
+        "recognized_answer": "Sublime Landscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1885,7 +3085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Picturesque",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "picturesque"
+          ],
+          "term": "Picturesque",
+          "definition_clue": "Identify the art term: charming varied landscape view",
+          "difficulty_tier": 1,
+          "recognized_answer": "Picturesque",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Picturesque",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "picturesque"
+        ],
+        "term": "Picturesque",
+        "definition_clue": "Identify the art term: charming varied landscape view",
+        "difficulty_tier": 1,
+        "recognized_answer": "Picturesque",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -1945,7 +3185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Plein Air",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "plein_air"
+          ],
+          "term": "Plein Air",
+          "definition_clue": "Identify the art term: painting outdoors",
+          "difficulty_tier": 1,
+          "recognized_answer": "Plein Air",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Plein Air",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "plein_air"
+        ],
+        "term": "Plein Air",
+        "definition_clue": "Identify the art term: painting outdoors",
+        "difficulty_tier": 1,
+        "recognized_answer": "Plein Air",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2005,7 +3285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Cloud Study",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "cloud_study"
+          ],
+          "term": "Cloud Study",
+          "definition_clue": "Identify the art term: focused observation of clouds",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cloud Study",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Cloud Study",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "cloud_study"
+        ],
+        "term": "Cloud Study",
+        "definition_clue": "Identify the art term: focused observation of clouds",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cloud Study",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2065,7 +3385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Nocturne",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "nocturne"
+          ],
+          "term": "Nocturne",
+          "definition_clue": "Identify the art term: night landscape mood",
+          "difficulty_tier": 1,
+          "recognized_answer": "Nocturne",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Nocturne",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "nocturne"
+        ],
+        "term": "Nocturne",
+        "definition_clue": "Identify the art term: night landscape mood",
+        "difficulty_tier": 1,
+        "recognized_answer": "Nocturne",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2125,7 +3485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Panorama",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "panorama"
+          ],
+          "term": "Panorama",
+          "definition_clue": "Identify the art term: wide sweeping view",
+          "difficulty_tier": 1,
+          "recognized_answer": "Panorama",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Panorama",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "panorama"
+        ],
+        "term": "Panorama",
+        "definition_clue": "Identify the art term: wide sweeping view",
+        "difficulty_tier": 1,
+        "recognized_answer": "Panorama",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2185,7 +3585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Staffage",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "staffage"
+          ],
+          "term": "Staffage",
+          "definition_clue": "Identify the art term: small figures in a landscape",
+          "difficulty_tier": 1,
+          "recognized_answer": "Staffage",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Staffage",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "staffage"
+        ],
+        "term": "Staffage",
+        "definition_clue": "Identify the art term: small figures in a landscape",
+        "difficulty_tier": 1,
+        "recognized_answer": "Staffage",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2245,7 +3685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Light Source",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "light_source"
+          ],
+          "term": "Light Source",
+          "definition_clue": "Identify the art term: sun or moon direction in the scene",
+          "difficulty_tier": 1,
+          "recognized_answer": "Light Source",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Light Source",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "light_source"
+        ],
+        "term": "Light Source",
+        "definition_clue": "Identify the art term: sun or moon direction in the scene",
+        "difficulty_tier": 1,
+        "recognized_answer": "Light Source",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2305,7 +3785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Reflections",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "reflections"
+          ],
+          "term": "Reflections",
+          "definition_clue": "Identify the art term: mirrored forms in water",
+          "difficulty_tier": 1,
+          "recognized_answer": "Reflections",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Reflections",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "reflections"
+        ],
+        "term": "Reflections",
+        "definition_clue": "Identify the art term: mirrored forms in water",
+        "difficulty_tier": 1,
+        "recognized_answer": "Reflections",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2365,7 +3885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Terrain",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "terrain"
+          ],
+          "term": "Terrain",
+          "definition_clue": "Identify the art term: landform such as hills or rocks",
+          "difficulty_tier": 1,
+          "recognized_answer": "Terrain",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Terrain",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "terrain"
+        ],
+        "term": "Terrain",
+        "definition_clue": "Identify the art term: landform such as hills or rocks",
+        "difficulty_tier": 1,
+        "recognized_answer": "Terrain",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2425,7 +3985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Weather Effect",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "weather_effect"
+          ],
+          "term": "Weather Effect",
+          "definition_clue": "Identify the art term: rain fog snow or storm",
+          "difficulty_tier": 1,
+          "recognized_answer": "Weather Effect",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Weather Effect",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "weather_effect"
+        ],
+        "term": "Weather Effect",
+        "definition_clue": "Identify the art term: rain fog snow or storm",
+        "difficulty_tier": 1,
+        "recognized_answer": "Weather Effect",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2485,7 +4085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Horizon Line",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "horizon_line"
+          ],
+          "term": "Horizon Line",
+          "definition_clue": "Which concept means eye-level boundary in a scene?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Horizon Line",
+          "distractor_family": [
+            "Foreground",
+            "Middle Ground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Horizon Line",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "horizon_line"
+        ],
+        "term": "Horizon Line",
+        "definition_clue": "Which concept means eye-level boundary in a scene?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Horizon Line",
+        "distractor_family": [
+          "Foreground",
+          "Middle Ground",
+          "Background"
+        ]
       }
     },
     {
@@ -2545,7 +4185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Foreground",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "foreground"
+          ],
+          "term": "Foreground",
+          "definition_clue": "Which concept means nearest part of the landscape?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Foreground",
+          "distractor_family": [
+            "Horizon Line",
+            "Middle Ground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Foreground",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "foreground"
+        ],
+        "term": "Foreground",
+        "definition_clue": "Which concept means nearest part of the landscape?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Foreground",
+        "distractor_family": [
+          "Horizon Line",
+          "Middle Ground",
+          "Background"
+        ]
       }
     },
     {
@@ -2605,7 +4285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Middle Ground",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "middle_ground"
+          ],
+          "term": "Middle Ground",
+          "definition_clue": "Which concept means space between front and distance?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Middle Ground",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Middle Ground",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "middle_ground"
+        ],
+        "term": "Middle Ground",
+        "definition_clue": "Which concept means space between front and distance?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Middle Ground",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Background"
+        ]
       }
     },
     {
@@ -2665,7 +4385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Background",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "background"
+          ],
+          "term": "Background",
+          "definition_clue": "Which concept means distant part of a scene?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Background",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Background",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "background"
+        ],
+        "term": "Background",
+        "definition_clue": "Which concept means distant part of a scene?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Background",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2725,7 +4485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Atmospheric Perspective",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "atmospheric_perspective"
+          ],
+          "term": "Atmospheric Perspective",
+          "definition_clue": "Which concept means distance shown by haze and blue tones?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Atmospheric Perspective",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Atmospheric Perspective",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "atmospheric_perspective"
+        ],
+        "term": "Atmospheric Perspective",
+        "definition_clue": "Which concept means distance shown by haze and blue tones?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Atmospheric Perspective",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2785,7 +4585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Linear Perspective",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "linear_perspective"
+          ],
+          "term": "Linear Perspective",
+          "definition_clue": "Which concept means space organized by receding lines?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Linear Perspective",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Linear Perspective",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "linear_perspective"
+        ],
+        "term": "Linear Perspective",
+        "definition_clue": "Which concept means space organized by receding lines?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Linear Perspective",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2845,7 +4685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Seascape",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "seascape"
+          ],
+          "term": "Seascape",
+          "definition_clue": "Which concept means painting of the sea?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Seascape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Seascape",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "seascape"
+        ],
+        "term": "Seascape",
+        "definition_clue": "Which concept means painting of the sea?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Seascape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2905,7 +4785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Cityscape",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "cityscape"
+          ],
+          "term": "Cityscape",
+          "definition_clue": "Which concept means urban landscape?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cityscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Cityscape",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "cityscape"
+        ],
+        "term": "Cityscape",
+        "definition_clue": "Which concept means urban landscape?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cityscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -2965,7 +4885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Pastoral Landscape",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "pastoral_landscape"
+          ],
+          "term": "Pastoral Landscape",
+          "definition_clue": "Which concept means idealized countryside?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Pastoral Landscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Pastoral Landscape",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "pastoral_landscape"
+        ],
+        "term": "Pastoral Landscape",
+        "definition_clue": "Which concept means idealized countryside?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Pastoral Landscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3025,7 +4985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Sublime Landscape",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "sublime_landscape"
+          ],
+          "term": "Sublime Landscape",
+          "definition_clue": "Which concept means nature shown as powerful or awe-inspiring?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Sublime Landscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Sublime Landscape",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "sublime_landscape"
+        ],
+        "term": "Sublime Landscape",
+        "definition_clue": "Which concept means nature shown as powerful or awe-inspiring?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Sublime Landscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3085,7 +5085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Picturesque",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "picturesque"
+          ],
+          "term": "Picturesque",
+          "definition_clue": "Which concept means charming varied landscape view?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Picturesque",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Picturesque",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "picturesque"
+        ],
+        "term": "Picturesque",
+        "definition_clue": "Which concept means charming varied landscape view?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Picturesque",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3145,7 +5185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Plein Air",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "plein_air"
+          ],
+          "term": "Plein Air",
+          "definition_clue": "Which concept means painting outdoors?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Plein Air",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Plein Air",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "plein_air"
+        ],
+        "term": "Plein Air",
+        "definition_clue": "Which concept means painting outdoors?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Plein Air",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3205,7 +5285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Cloud Study",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "cloud_study"
+          ],
+          "term": "Cloud Study",
+          "definition_clue": "Which concept means focused observation of clouds?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cloud Study",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Cloud Study",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "cloud_study"
+        ],
+        "term": "Cloud Study",
+        "definition_clue": "Which concept means focused observation of clouds?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cloud Study",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3265,7 +5385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Nocturne",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "nocturne"
+          ],
+          "term": "Nocturne",
+          "definition_clue": "Which concept means night landscape mood?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Nocturne",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Nocturne",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "nocturne"
+        ],
+        "term": "Nocturne",
+        "definition_clue": "Which concept means night landscape mood?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Nocturne",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3325,7 +5485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Panorama",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "panorama"
+          ],
+          "term": "Panorama",
+          "definition_clue": "Which concept means wide sweeping view?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Panorama",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Panorama",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "panorama"
+        ],
+        "term": "Panorama",
+        "definition_clue": "Which concept means wide sweeping view?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Panorama",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3385,7 +5585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Staffage",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "staffage"
+          ],
+          "term": "Staffage",
+          "definition_clue": "Which concept means small figures in a landscape?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Staffage",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Staffage",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "staffage"
+        ],
+        "term": "Staffage",
+        "definition_clue": "Which concept means small figures in a landscape?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Staffage",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3445,7 +5685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Light Source",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "light_source"
+          ],
+          "term": "Light Source",
+          "definition_clue": "Which concept means sun or moon direction in the scene?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Light Source",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Light Source",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "light_source"
+        ],
+        "term": "Light Source",
+        "definition_clue": "Which concept means sun or moon direction in the scene?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Light Source",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3505,7 +5785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Reflections",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "reflections"
+          ],
+          "term": "Reflections",
+          "definition_clue": "Which concept means mirrored forms in water?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Reflections",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Reflections",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "reflections"
+        ],
+        "term": "Reflections",
+        "definition_clue": "Which concept means mirrored forms in water?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Reflections",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3565,7 +5885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Terrain",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "terrain"
+          ],
+          "term": "Terrain",
+          "definition_clue": "Which concept means landform such as hills or rocks?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Terrain",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Terrain",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "terrain"
+        ],
+        "term": "Terrain",
+        "definition_clue": "Which concept means landform such as hills or rocks?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Terrain",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3625,7 +5985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Weather Effect",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "weather_effect"
+          ],
+          "term": "Weather Effect",
+          "definition_clue": "Which concept means rain fog snow or storm?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Weather Effect",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Weather Effect",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "weather_effect"
+        ],
+        "term": "Weather Effect",
+        "definition_clue": "Which concept means rain fog snow or storm?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Weather Effect",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3685,7 +6085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Horizon Line",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "horizon_line"
+          ],
+          "term": "Horizon Line",
+          "definition_clue": "Spot the matching term for: eye-level boundary in a scene",
+          "difficulty_tier": 2,
+          "recognized_answer": "Horizon Line",
+          "distractor_family": [
+            "Foreground",
+            "Middle Ground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Horizon Line",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "horizon_line"
+        ],
+        "term": "Horizon Line",
+        "definition_clue": "Spot the matching term for: eye-level boundary in a scene",
+        "difficulty_tier": 2,
+        "recognized_answer": "Horizon Line",
+        "distractor_family": [
+          "Foreground",
+          "Middle Ground",
+          "Background"
+        ]
       }
     },
     {
@@ -3745,7 +6185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Foreground",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "foreground"
+          ],
+          "term": "Foreground",
+          "definition_clue": "Spot the matching term for: nearest part of the landscape",
+          "difficulty_tier": 2,
+          "recognized_answer": "Foreground",
+          "distractor_family": [
+            "Horizon Line",
+            "Middle Ground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Foreground",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "foreground"
+        ],
+        "term": "Foreground",
+        "definition_clue": "Spot the matching term for: nearest part of the landscape",
+        "difficulty_tier": 2,
+        "recognized_answer": "Foreground",
+        "distractor_family": [
+          "Horizon Line",
+          "Middle Ground",
+          "Background"
+        ]
       }
     },
     {
@@ -3805,7 +6285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Middle Ground",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "middle_ground"
+          ],
+          "term": "Middle Ground",
+          "definition_clue": "Spot the matching term for: space between front and distance",
+          "difficulty_tier": 2,
+          "recognized_answer": "Middle Ground",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Background"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Middle Ground",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "middle_ground"
+        ],
+        "term": "Middle Ground",
+        "definition_clue": "Spot the matching term for: space between front and distance",
+        "difficulty_tier": 2,
+        "recognized_answer": "Middle Ground",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Background"
+        ]
       }
     },
     {
@@ -3865,7 +6385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Background",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "background"
+          ],
+          "term": "Background",
+          "definition_clue": "Spot the matching term for: distant part of a scene",
+          "difficulty_tier": 2,
+          "recognized_answer": "Background",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Background",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "background"
+        ],
+        "term": "Background",
+        "definition_clue": "Spot the matching term for: distant part of a scene",
+        "difficulty_tier": 2,
+        "recognized_answer": "Background",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3925,7 +6485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Atmospheric Perspective",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "atmospheric_perspective"
+          ],
+          "term": "Atmospheric Perspective",
+          "definition_clue": "Spot the matching term for: distance shown by haze and blue tones",
+          "difficulty_tier": 2,
+          "recognized_answer": "Atmospheric Perspective",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Atmospheric Perspective",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "atmospheric_perspective"
+        ],
+        "term": "Atmospheric Perspective",
+        "definition_clue": "Spot the matching term for: distance shown by haze and blue tones",
+        "difficulty_tier": 2,
+        "recognized_answer": "Atmospheric Perspective",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -3985,7 +6585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Linear Perspective",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "linear_perspective"
+          ],
+          "term": "Linear Perspective",
+          "definition_clue": "Spot the matching term for: space organized by receding lines",
+          "difficulty_tier": 2,
+          "recognized_answer": "Linear Perspective",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Linear Perspective",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "linear_perspective"
+        ],
+        "term": "Linear Perspective",
+        "definition_clue": "Spot the matching term for: space organized by receding lines",
+        "difficulty_tier": 2,
+        "recognized_answer": "Linear Perspective",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4045,7 +6685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Seascape",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "seascape"
+          ],
+          "term": "Seascape",
+          "definition_clue": "Spot the matching term for: painting of the sea",
+          "difficulty_tier": 2,
+          "recognized_answer": "Seascape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Seascape",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "seascape"
+        ],
+        "term": "Seascape",
+        "definition_clue": "Spot the matching term for: painting of the sea",
+        "difficulty_tier": 2,
+        "recognized_answer": "Seascape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4105,7 +6785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Cityscape",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "cityscape"
+          ],
+          "term": "Cityscape",
+          "definition_clue": "Spot the matching term for: urban landscape",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cityscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Cityscape",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "cityscape"
+        ],
+        "term": "Cityscape",
+        "definition_clue": "Spot the matching term for: urban landscape",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cityscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4165,7 +6885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Pastoral Landscape",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "pastoral_landscape"
+          ],
+          "term": "Pastoral Landscape",
+          "definition_clue": "Spot the matching term for: idealized countryside",
+          "difficulty_tier": 2,
+          "recognized_answer": "Pastoral Landscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Pastoral Landscape",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "pastoral_landscape"
+        ],
+        "term": "Pastoral Landscape",
+        "definition_clue": "Spot the matching term for: idealized countryside",
+        "difficulty_tier": 2,
+        "recognized_answer": "Pastoral Landscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4225,7 +6985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Sublime Landscape",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "sublime_landscape"
+          ],
+          "term": "Sublime Landscape",
+          "definition_clue": "Spot the matching term for: nature shown as powerful or awe-inspiring",
+          "difficulty_tier": 2,
+          "recognized_answer": "Sublime Landscape",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Sublime Landscape",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "sublime_landscape"
+        ],
+        "term": "Sublime Landscape",
+        "definition_clue": "Spot the matching term for: nature shown as powerful or awe-inspiring",
+        "difficulty_tier": 2,
+        "recognized_answer": "Sublime Landscape",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4285,7 +7085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Picturesque",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "picturesque"
+          ],
+          "term": "Picturesque",
+          "definition_clue": "Spot the matching term for: charming varied landscape view",
+          "difficulty_tier": 3,
+          "recognized_answer": "Picturesque",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Picturesque",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "picturesque"
+        ],
+        "term": "Picturesque",
+        "definition_clue": "Spot the matching term for: charming varied landscape view",
+        "difficulty_tier": 3,
+        "recognized_answer": "Picturesque",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4345,7 +7185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Plein Air",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "plein_air"
+          ],
+          "term": "Plein Air",
+          "definition_clue": "Spot the matching term for: painting outdoors",
+          "difficulty_tier": 3,
+          "recognized_answer": "Plein Air",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Plein Air",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "plein_air"
+        ],
+        "term": "Plein Air",
+        "definition_clue": "Spot the matching term for: painting outdoors",
+        "difficulty_tier": 3,
+        "recognized_answer": "Plein Air",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4405,7 +7285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Cloud Study",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "cloud_study"
+          ],
+          "term": "Cloud Study",
+          "definition_clue": "Spot the matching term for: focused observation of clouds",
+          "difficulty_tier": 3,
+          "recognized_answer": "Cloud Study",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Cloud Study",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "cloud_study"
+        ],
+        "term": "Cloud Study",
+        "definition_clue": "Spot the matching term for: focused observation of clouds",
+        "difficulty_tier": 3,
+        "recognized_answer": "Cloud Study",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4465,7 +7385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Nocturne",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "nocturne"
+          ],
+          "term": "Nocturne",
+          "definition_clue": "Spot the matching term for: night landscape mood",
+          "difficulty_tier": 3,
+          "recognized_answer": "Nocturne",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Nocturne",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "nocturne"
+        ],
+        "term": "Nocturne",
+        "definition_clue": "Spot the matching term for: night landscape mood",
+        "difficulty_tier": 3,
+        "recognized_answer": "Nocturne",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4525,7 +7485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Panorama",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "panorama"
+          ],
+          "term": "Panorama",
+          "definition_clue": "Spot the matching term for: wide sweeping view",
+          "difficulty_tier": 3,
+          "recognized_answer": "Panorama",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Panorama",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "panorama"
+        ],
+        "term": "Panorama",
+        "definition_clue": "Spot the matching term for: wide sweeping view",
+        "difficulty_tier": 3,
+        "recognized_answer": "Panorama",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4585,7 +7585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Staffage",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "staffage"
+          ],
+          "term": "Staffage",
+          "definition_clue": "Spot the matching term for: small figures in a landscape",
+          "difficulty_tier": 3,
+          "recognized_answer": "Staffage",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Staffage",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "staffage"
+        ],
+        "term": "Staffage",
+        "definition_clue": "Spot the matching term for: small figures in a landscape",
+        "difficulty_tier": 3,
+        "recognized_answer": "Staffage",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4645,7 +7685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Light Source",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "light_source"
+          ],
+          "term": "Light Source",
+          "definition_clue": "Spot the matching term for: sun or moon direction in the scene",
+          "difficulty_tier": 3,
+          "recognized_answer": "Light Source",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Light Source",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "light_source"
+        ],
+        "term": "Light Source",
+        "definition_clue": "Spot the matching term for: sun or moon direction in the scene",
+        "difficulty_tier": 3,
+        "recognized_answer": "Light Source",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4705,7 +7785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Reflections",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "reflections"
+          ],
+          "term": "Reflections",
+          "definition_clue": "Spot the matching term for: mirrored forms in water",
+          "difficulty_tier": 3,
+          "recognized_answer": "Reflections",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Reflections",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "reflections"
+        ],
+        "term": "Reflections",
+        "definition_clue": "Spot the matching term for: mirrored forms in water",
+        "difficulty_tier": 3,
+        "recognized_answer": "Reflections",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4765,7 +7885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Terrain",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "terrain"
+          ],
+          "term": "Terrain",
+          "definition_clue": "Spot the matching term for: landform such as hills or rocks",
+          "difficulty_tier": 3,
+          "recognized_answer": "Terrain",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Terrain",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "terrain"
+        ],
+        "term": "Terrain",
+        "definition_clue": "Spot the matching term for: landform such as hills or rocks",
+        "difficulty_tier": 3,
+        "recognized_answer": "Terrain",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4825,7 +7985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "Weather Effect",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "weather_effect"
+          ],
+          "term": "Weather Effect",
+          "definition_clue": "Spot the matching term for: rain fog snow or storm",
+          "difficulty_tier": 3,
+          "recognized_answer": "Weather Effect",
+          "distractor_family": [
+            "Horizon Line",
+            "Foreground",
+            "Middle Ground"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "Weather Effect",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "weather_effect"
+        ],
+        "term": "Weather Effect",
+        "definition_clue": "Spot the matching term for: rain fog snow or storm",
+        "difficulty_tier": 3,
+        "recognized_answer": "Weather Effect",
+        "distractor_family": [
+          "Horizon Line",
+          "Foreground",
+          "Middle Ground"
+        ]
       }
     },
     {
@@ -4885,7 +8085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "eye-level boundary in a scene",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "eye_level_boundary_in_a_scene"
+          ],
+          "term": "eye-level boundary in a scene",
+          "definition_clue": "Horizon Line is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "eye-level boundary in a scene",
+          "distractor_family": [
+            "nearest part of the landscape",
+            "space between front and distance",
+            "distant part of a scene"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "eye-level boundary in a scene",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "eye_level_boundary_in_a_scene"
+        ],
+        "term": "eye-level boundary in a scene",
+        "definition_clue": "Horizon Line is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "eye-level boundary in a scene",
+        "distractor_family": [
+          "nearest part of the landscape",
+          "space between front and distance",
+          "distant part of a scene"
+        ]
       }
     },
     {
@@ -4945,7 +8185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "nearest part of the landscape",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "nearest_part_of_the_landscape"
+          ],
+          "term": "nearest part of the landscape",
+          "definition_clue": "Foreground is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "nearest part of the landscape",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "space between front and distance",
+            "distant part of a scene"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "nearest part of the landscape",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "nearest_part_of_the_landscape"
+        ],
+        "term": "nearest part of the landscape",
+        "definition_clue": "Foreground is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "nearest part of the landscape",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "space between front and distance",
+          "distant part of a scene"
+        ]
       }
     },
     {
@@ -5005,7 +8285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "space between front and distance",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "space_between_front_and_distance"
+          ],
+          "term": "space between front and distance",
+          "definition_clue": "Middle Ground is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "space between front and distance",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "distant part of a scene"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "space between front and distance",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "space_between_front_and_distance"
+        ],
+        "term": "space between front and distance",
+        "definition_clue": "Middle Ground is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "space between front and distance",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "distant part of a scene"
+        ]
       }
     },
     {
@@ -5065,7 +8385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "distant part of a scene",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "distant_part_of_a_scene"
+          ],
+          "term": "distant part of a scene",
+          "definition_clue": "Background is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "distant part of a scene",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "distant part of a scene",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "distant_part_of_a_scene"
+        ],
+        "term": "distant part of a scene",
+        "definition_clue": "Background is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "distant part of a scene",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5125,7 +8485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "distance shown by haze and blue tones",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "distance_shown_by_haze_and_blue_tones"
+          ],
+          "term": "distance shown by haze and blue tones",
+          "definition_clue": "Atmospheric Perspective is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "distance shown by haze and blue tones",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "distance shown by haze and blue tones",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "distance_shown_by_haze_and_blue_tones"
+        ],
+        "term": "distance shown by haze and blue tones",
+        "definition_clue": "Atmospheric Perspective is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "distance shown by haze and blue tones",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5185,7 +8585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "space organized by receding lines",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "space_organized_by_receding_lines"
+          ],
+          "term": "space organized by receding lines",
+          "definition_clue": "Linear Perspective is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "space organized by receding lines",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "space organized by receding lines",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "space_organized_by_receding_lines"
+        ],
+        "term": "space organized by receding lines",
+        "definition_clue": "Linear Perspective is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "space organized by receding lines",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5245,7 +8685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "painting of the sea",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "painting_of_the_sea"
+          ],
+          "term": "painting of the sea",
+          "definition_clue": "Seascape is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "painting of the sea",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "painting of the sea",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "painting_of_the_sea"
+        ],
+        "term": "painting of the sea",
+        "definition_clue": "Seascape is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "painting of the sea",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5305,7 +8785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "urban landscape",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "urban_landscape"
+          ],
+          "term": "urban landscape",
+          "definition_clue": "Cityscape is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "urban landscape",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "urban landscape",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "urban_landscape"
+        ],
+        "term": "urban landscape",
+        "definition_clue": "Cityscape is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "urban landscape",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5365,7 +8885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "idealized countryside",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "idealized_countryside"
+          ],
+          "term": "idealized countryside",
+          "definition_clue": "Pastoral Landscape is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "idealized countryside",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "idealized countryside",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "idealized_countryside"
+        ],
+        "term": "idealized countryside",
+        "definition_clue": "Pastoral Landscape is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "idealized countryside",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5425,7 +8985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "nature shown as powerful or awe-inspiring",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "nature_shown_as_powerful_or_awe_inspiring"
+          ],
+          "term": "nature shown as powerful or awe-inspiring",
+          "definition_clue": "Sublime Landscape is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "nature shown as powerful or awe-inspiring",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "nature shown as powerful or awe-inspiring",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "nature_shown_as_powerful_or_awe_inspiring"
+        ],
+        "term": "nature shown as powerful or awe-inspiring",
+        "definition_clue": "Sublime Landscape is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "nature shown as powerful or awe-inspiring",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5485,7 +9085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "charming varied landscape view",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "charming_varied_landscape_view"
+          ],
+          "term": "charming varied landscape view",
+          "definition_clue": "Picturesque is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "charming varied landscape view",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "charming varied landscape view",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "charming_varied_landscape_view"
+        ],
+        "term": "charming varied landscape view",
+        "definition_clue": "Picturesque is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "charming varied landscape view",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5545,7 +9185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "painting outdoors",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "painting_outdoors"
+          ],
+          "term": "painting outdoors",
+          "definition_clue": "Plein Air is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "painting outdoors",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "painting outdoors",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "painting_outdoors"
+        ],
+        "term": "painting outdoors",
+        "definition_clue": "Plein Air is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "painting outdoors",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5605,7 +9285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "focused observation of clouds",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "focused_observation_of_clouds"
+          ],
+          "term": "focused observation of clouds",
+          "definition_clue": "Cloud Study is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "focused observation of clouds",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "focused observation of clouds",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "focused_observation_of_clouds"
+        ],
+        "term": "focused observation of clouds",
+        "definition_clue": "Cloud Study is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "focused observation of clouds",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5665,7 +9385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "night landscape mood",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "night_landscape_mood"
+          ],
+          "term": "night landscape mood",
+          "definition_clue": "Nocturne is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "night landscape mood",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "night landscape mood",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "night_landscape_mood"
+        ],
+        "term": "night landscape mood",
+        "definition_clue": "Nocturne is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "night landscape mood",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5725,7 +9485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "wide sweeping view",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "wide_sweeping_view"
+          ],
+          "term": "wide sweeping view",
+          "definition_clue": "Panorama is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "wide sweeping view",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "wide sweeping view",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "wide_sweeping_view"
+        ],
+        "term": "wide sweeping view",
+        "definition_clue": "Panorama is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "wide sweeping view",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5785,7 +9585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "small figures in a landscape",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "small_figures_in_a_landscape"
+          ],
+          "term": "small figures in a landscape",
+          "definition_clue": "Staffage is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "small figures in a landscape",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "small figures in a landscape",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "small_figures_in_a_landscape"
+        ],
+        "term": "small figures in a landscape",
+        "definition_clue": "Staffage is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "small figures in a landscape",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5845,7 +9685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "sun or moon direction in the scene",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "sun_or_moon_direction_in_the_scene"
+          ],
+          "term": "sun or moon direction in the scene",
+          "definition_clue": "Light Source is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "sun or moon direction in the scene",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "sun or moon direction in the scene",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "sun_or_moon_direction_in_the_scene"
+        ],
+        "term": "sun or moon direction in the scene",
+        "definition_clue": "Light Source is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "sun or moon direction in the scene",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5905,7 +9785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "mirrored forms in water",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "mirrored_forms_in_water"
+          ],
+          "term": "mirrored forms in water",
+          "definition_clue": "Reflections is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "mirrored forms in water",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "mirrored forms in water",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "mirrored_forms_in_water"
+        ],
+        "term": "mirrored forms in water",
+        "definition_clue": "Reflections is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "mirrored forms in water",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -5965,7 +9885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "landform such as hills or rocks",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "landform_such_as_hills_or_rocks"
+          ],
+          "term": "landform such as hills or rocks",
+          "definition_clue": "Terrain is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "landform such as hills or rocks",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "landform such as hills or rocks",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "landform_such_as_hills_or_rocks"
+        ],
+        "term": "landform such as hills or rocks",
+        "definition_clue": "Terrain is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "landform such as hills or rocks",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     },
     {
@@ -6025,7 +9985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "landscapes",
+          "concept": "rain fog snow or storm",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "landscapes",
+            "rain_fog_snow_or_storm"
+          ],
+          "term": "rain fog snow or storm",
+          "definition_clue": "Weather Effect is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "rain fog snow or storm",
+          "distractor_family": [
+            "eye-level boundary in a scene",
+            "nearest part of the landscape",
+            "space between front and distance"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "landscapes",
+        "concept": "rain fog snow or storm",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "landscapes",
+          "rain_fog_snow_or_storm"
+        ],
+        "term": "rain fog snow or storm",
+        "definition_clue": "Weather Effect is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "rain fog snow or storm",
+        "distractor_family": [
+          "eye-level boundary in a scene",
+          "nearest part of the landscape",
+          "space between front and distance"
+        ]
       }
     }
   ]

@@ -1,16 +1,19 @@
 extends CanvasLayer
 
-signal subcategory_selected(universe_id: String, world_id: String, subcategory_id: String)
+signal subcategory_selected(universe_id: String, world_id: String, subcategory_id: String, manual_activity: bool)
 signal return_requested
 
 @onready var grid = $PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/GridContainer
 @onready var btn_return = $PanelContainer/MarginContainer/VBoxContainer/Header/BtnReturn
 @onready var title_label = $PanelContainer/MarginContainer/VBoxContainer/Header/Title
+@onready var header = $PanelContainer/MarginContainer/VBoxContainer/Header
 @onready var subtitle_label = $PanelContainer/MarginContainer/VBoxContainer/Subtitle
 
 var active_universe_id: String = "creative_arts"
 var active_world_id: String = "painting"
 var _is_setup_ready: bool = false
+var _manual_activity_mode: bool = false
+var _btn_activity_mode: Button = null
 
 func setup(universe_id: String, world_id: String):
 	active_universe_id = universe_id
@@ -31,10 +34,27 @@ func _ready():
 		btn_return.pressed.connect(_on_return_pressed)
 	if get_viewport() and not get_viewport().size_changed.is_connected(_apply_responsive_layout):
 		get_viewport().size_changed.connect(_apply_responsive_layout)
+	_mount_activity_mode_button()
 	_apply_responsive_layout()
 	_apply_universe_manifest(active_universe_id, active_world_id)
 	if _is_setup_ready:
 		_populate_grid()
+
+
+func _mount_activity_mode_button():
+	if _btn_activity_mode or not header:
+		return
+	_btn_activity_mode = Button.new()
+	_btn_activity_mode.name = "BtnActivityMode"
+	_btn_activity_mode.custom_minimum_size = Vector2(190, 44)
+	_btn_activity_mode.text = "AUTO ACTIVITY"
+	_btn_activity_mode.add_theme_font_size_override("font_size", 14)
+	_btn_activity_mode.pressed.connect(func():
+		_manual_activity_mode = not _manual_activity_mode
+		_btn_activity_mode.text = "CHOOSE ACTIVITY" if _manual_activity_mode else "AUTO ACTIVITY"
+		_populate_grid()
+	)
+	header.add_child(_btn_activity_mode)
 
 func _on_return_pressed():
 	if AudioManager: AudioManager.play_sfx("ui_click")
@@ -93,7 +113,8 @@ func _create_subcategory_card(sub: Dictionary, bg_color: Color, primary_color: C
 	btn.custom_minimum_size = Vector2(280, 138)
 	btn.mouse_filter = Control.MOUSE_FILTER_STOP
 	btn.clip_text = true
-	btn.text = display_name.to_upper() + "\n" + str(implemented) + " / " + str(target) + " observations\nScenario auto-selected"
+	var mode_text = "Choose activity" if _manual_activity_mode else "Begin observation"
+	btn.text = display_name.to_upper() + "\n" + str(implemented) + " / " + str(target) + " observations\n" + mode_text
 	btn.add_theme_font_size_override("font_size", 14)
 	var style = StyleBoxFlat.new()
 	style.bg_color = bg_color
@@ -112,7 +133,7 @@ func _create_subcategory_card(sub: Dictionary, bg_color: Color, primary_color: C
 		btn.pressed.connect(func():
 			print("SUBCATEGORY CARD CLICKED:", sub_id)
 			if AudioManager: AudioManager.play_sfx("ui_click")
-			subcategory_selected.emit(active_universe_id, active_world_id, sub_id)
+			subcategory_selected.emit(active_universe_id, active_world_id, sub_id, _manual_activity_mode)
 		)
 	grid.add_child(btn)
 

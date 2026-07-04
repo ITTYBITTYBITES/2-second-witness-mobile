@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Self-Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "self_portrait"
+          ],
+          "term": "Self-Portrait",
+          "definition_clue": "artist depicts themselves",
+          "difficulty_tier": 1,
+          "recognized_answer": "Self-Portrait",
+          "distractor_family": [
+            "Profile Portrait",
+            "Three-Quarter View",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Self-Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "self_portrait"
+        ],
+        "term": "Self-Portrait",
+        "definition_clue": "artist depicts themselves",
+        "difficulty_tier": 1,
+        "recognized_answer": "Self-Portrait",
+        "distractor_family": [
+          "Profile Portrait",
+          "Three-Quarter View",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Profile Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "profile_portrait"
+          ],
+          "term": "Profile Portrait",
+          "definition_clue": "side view of a face",
+          "difficulty_tier": 1,
+          "recognized_answer": "Profile Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Three-Quarter View",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Profile Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "profile_portrait"
+        ],
+        "term": "Profile Portrait",
+        "definition_clue": "side view of a face",
+        "difficulty_tier": 1,
+        "recognized_answer": "Profile Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Three-Quarter View",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Three-Quarter View",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "three_quarter_view"
+          ],
+          "term": "Three-Quarter View",
+          "definition_clue": "face turned partly toward viewer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Three-Quarter View",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Three-Quarter View",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "three_quarter_view"
+        ],
+        "term": "Three-Quarter View",
+        "definition_clue": "face turned partly toward viewer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Three-Quarter View",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Bust Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "bust_portrait"
+          ],
+          "term": "Bust Portrait",
+          "definition_clue": "head and shoulders portrait",
+          "difficulty_tier": 1,
+          "recognized_answer": "Bust Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Bust Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "bust_portrait"
+        ],
+        "term": "Bust Portrait",
+        "definition_clue": "head and shoulders portrait",
+        "difficulty_tier": 1,
+        "recognized_answer": "Bust Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Full-Length Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "full_length_portrait"
+          ],
+          "term": "Full-Length Portrait",
+          "definition_clue": "whole body portrait",
+          "difficulty_tier": 1,
+          "recognized_answer": "Full-Length Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Full-Length Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "full_length_portrait"
+        ],
+        "term": "Full-Length Portrait",
+        "definition_clue": "whole body portrait",
+        "difficulty_tier": 1,
+        "recognized_answer": "Full-Length Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Group Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "group_portrait"
+          ],
+          "term": "Group Portrait",
+          "definition_clue": "multiple people portrayed together",
+          "difficulty_tier": 1,
+          "recognized_answer": "Group Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Group Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "group_portrait"
+        ],
+        "term": "Group Portrait",
+        "definition_clue": "multiple people portrayed together",
+        "difficulty_tier": 1,
+        "recognized_answer": "Group Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Commissioned Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "commissioned_portrait"
+          ],
+          "term": "Commissioned Portrait",
+          "definition_clue": "portrait made for a patron",
+          "difficulty_tier": 1,
+          "recognized_answer": "Commissioned Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Commissioned Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "commissioned_portrait"
+        ],
+        "term": "Commissioned Portrait",
+        "definition_clue": "portrait made for a patron",
+        "difficulty_tier": 1,
+        "recognized_answer": "Commissioned Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Royal Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "royal_portrait"
+          ],
+          "term": "Royal Portrait",
+          "definition_clue": "image emphasizing monarchy or power",
+          "difficulty_tier": 1,
+          "recognized_answer": "Royal Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Royal Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "royal_portrait"
+        ],
+        "term": "Royal Portrait",
+        "definition_clue": "image emphasizing monarchy or power",
+        "difficulty_tier": 1,
+        "recognized_answer": "Royal Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Psychological Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "psychological_portrait"
+          ],
+          "term": "Psychological Portrait",
+          "definition_clue": "portrait emphasizing inner mood",
+          "difficulty_tier": 1,
+          "recognized_answer": "Psychological Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Psychological Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "psychological_portrait"
+        ],
+        "term": "Psychological Portrait",
+        "definition_clue": "portrait emphasizing inner mood",
+        "difficulty_tier": 1,
+        "recognized_answer": "Psychological Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Idealized Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "idealized_portrait"
+          ],
+          "term": "Idealized Portrait",
+          "definition_clue": "flattering perfected likeness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Idealized Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Idealized Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "idealized_portrait"
+        ],
+        "term": "Idealized Portrait",
+        "definition_clue": "flattering perfected likeness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Idealized Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Realist Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "realist_portrait"
+          ],
+          "term": "Realist Portrait",
+          "definition_clue": "unidealized likeness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Realist Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Realist Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "realist_portrait"
+        ],
+        "term": "Realist Portrait",
+        "definition_clue": "unidealized likeness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Realist Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Formal Pose",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "formal_pose"
+          ],
+          "term": "Formal Pose",
+          "definition_clue": "arranged dignified posture",
+          "difficulty_tier": 1,
+          "recognized_answer": "Formal Pose",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Formal Pose",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "formal_pose"
+        ],
+        "term": "Formal Pose",
+        "definition_clue": "arranged dignified posture",
+        "difficulty_tier": 1,
+        "recognized_answer": "Formal Pose",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Informal Pose",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "informal_pose"
+          ],
+          "term": "Informal Pose",
+          "definition_clue": "relaxed natural posture",
+          "difficulty_tier": 1,
+          "recognized_answer": "Informal Pose",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Informal Pose",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "informal_pose"
+        ],
+        "term": "Informal Pose",
+        "definition_clue": "relaxed natural posture",
+        "difficulty_tier": 1,
+        "recognized_answer": "Informal Pose",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Eye Contact",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "eye_contact"
+          ],
+          "term": "Eye Contact",
+          "definition_clue": "subject looks toward viewer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Eye Contact",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Eye Contact",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "eye_contact"
+        ],
+        "term": "Eye Contact",
+        "definition_clue": "subject looks toward viewer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Eye Contact",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Costume Detail",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "costume_detail"
+          ],
+          "term": "Costume Detail",
+          "definition_clue": "clothing reveals status or identity",
+          "difficulty_tier": 1,
+          "recognized_answer": "Costume Detail",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Costume Detail",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "costume_detail"
+        ],
+        "term": "Costume Detail",
+        "definition_clue": "clothing reveals status or identity",
+        "difficulty_tier": 1,
+        "recognized_answer": "Costume Detail",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Attribute",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "attribute"
+          ],
+          "term": "Attribute",
+          "definition_clue": "object identifying the sitter",
+          "difficulty_tier": 1,
+          "recognized_answer": "Attribute",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Attribute",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "attribute"
+        ],
+        "term": "Attribute",
+        "definition_clue": "object identifying the sitter",
+        "difficulty_tier": 1,
+        "recognized_answer": "Attribute",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Background Symbolism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "background_symbolism"
+          ],
+          "term": "Background Symbolism",
+          "definition_clue": "setting adds meaning",
+          "difficulty_tier": 1,
+          "recognized_answer": "Background Symbolism",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Background Symbolism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "background_symbolism"
+        ],
+        "term": "Background Symbolism",
+        "definition_clue": "setting adds meaning",
+        "difficulty_tier": 1,
+        "recognized_answer": "Background Symbolism",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Facial Expression",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "facial_expression"
+          ],
+          "term": "Facial Expression",
+          "definition_clue": "emotion shown by the face",
+          "difficulty_tier": 1,
+          "recognized_answer": "Facial Expression",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Facial Expression",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "facial_expression"
+        ],
+        "term": "Facial Expression",
+        "definition_clue": "emotion shown by the face",
+        "difficulty_tier": 1,
+        "recognized_answer": "Facial Expression",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Portrait Lighting",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "portrait_lighting"
+          ],
+          "term": "Portrait Lighting",
+          "definition_clue": "light models facial form",
+          "difficulty_tier": 1,
+          "recognized_answer": "Portrait Lighting",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Portrait Lighting",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "portrait_lighting"
+        ],
+        "term": "Portrait Lighting",
+        "definition_clue": "light models facial form",
+        "difficulty_tier": 1,
+        "recognized_answer": "Portrait Lighting",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Miniature Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "miniature_portrait"
+          ],
+          "term": "Miniature Portrait",
+          "definition_clue": "small portable likeness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Miniature Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Miniature Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "miniature_portrait"
+        ],
+        "term": "Miniature Portrait",
+        "definition_clue": "small portable likeness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Miniature Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Self-Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "self_portrait"
+          ],
+          "term": "Self-Portrait",
+          "definition_clue": "Identify the art term: artist depicts themselves",
+          "difficulty_tier": 1,
+          "recognized_answer": "Self-Portrait",
+          "distractor_family": [
+            "Profile Portrait",
+            "Three-Quarter View",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Self-Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "self_portrait"
+        ],
+        "term": "Self-Portrait",
+        "definition_clue": "Identify the art term: artist depicts themselves",
+        "difficulty_tier": 1,
+        "recognized_answer": "Self-Portrait",
+        "distractor_family": [
+          "Profile Portrait",
+          "Three-Quarter View",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Profile Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "profile_portrait"
+          ],
+          "term": "Profile Portrait",
+          "definition_clue": "Identify the art term: side view of a face",
+          "difficulty_tier": 1,
+          "recognized_answer": "Profile Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Three-Quarter View",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Profile Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "profile_portrait"
+        ],
+        "term": "Profile Portrait",
+        "definition_clue": "Identify the art term: side view of a face",
+        "difficulty_tier": 1,
+        "recognized_answer": "Profile Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Three-Quarter View",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Three-Quarter View",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "three_quarter_view"
+          ],
+          "term": "Three-Quarter View",
+          "definition_clue": "Identify the art term: face turned partly toward viewer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Three-Quarter View",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Three-Quarter View",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "three_quarter_view"
+        ],
+        "term": "Three-Quarter View",
+        "definition_clue": "Identify the art term: face turned partly toward viewer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Three-Quarter View",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Bust Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "bust_portrait"
+          ],
+          "term": "Bust Portrait",
+          "definition_clue": "Identify the art term: head and shoulders portrait",
+          "difficulty_tier": 1,
+          "recognized_answer": "Bust Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Bust Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "bust_portrait"
+        ],
+        "term": "Bust Portrait",
+        "definition_clue": "Identify the art term: head and shoulders portrait",
+        "difficulty_tier": 1,
+        "recognized_answer": "Bust Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Full-Length Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "full_length_portrait"
+          ],
+          "term": "Full-Length Portrait",
+          "definition_clue": "Identify the art term: whole body portrait",
+          "difficulty_tier": 1,
+          "recognized_answer": "Full-Length Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Full-Length Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "full_length_portrait"
+        ],
+        "term": "Full-Length Portrait",
+        "definition_clue": "Identify the art term: whole body portrait",
+        "difficulty_tier": 1,
+        "recognized_answer": "Full-Length Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1585,7 +2585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Group Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "group_portrait"
+          ],
+          "term": "Group Portrait",
+          "definition_clue": "Identify the art term: multiple people portrayed together",
+          "difficulty_tier": 1,
+          "recognized_answer": "Group Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Group Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "group_portrait"
+        ],
+        "term": "Group Portrait",
+        "definition_clue": "Identify the art term: multiple people portrayed together",
+        "difficulty_tier": 1,
+        "recognized_answer": "Group Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1645,7 +2685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Commissioned Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "commissioned_portrait"
+          ],
+          "term": "Commissioned Portrait",
+          "definition_clue": "Identify the art term: portrait made for a patron",
+          "difficulty_tier": 1,
+          "recognized_answer": "Commissioned Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Commissioned Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "commissioned_portrait"
+        ],
+        "term": "Commissioned Portrait",
+        "definition_clue": "Identify the art term: portrait made for a patron",
+        "difficulty_tier": 1,
+        "recognized_answer": "Commissioned Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1705,7 +2785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Royal Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "royal_portrait"
+          ],
+          "term": "Royal Portrait",
+          "definition_clue": "Identify the art term: image emphasizing monarchy or power",
+          "difficulty_tier": 1,
+          "recognized_answer": "Royal Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Royal Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "royal_portrait"
+        ],
+        "term": "Royal Portrait",
+        "definition_clue": "Identify the art term: image emphasizing monarchy or power",
+        "difficulty_tier": 1,
+        "recognized_answer": "Royal Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1765,7 +2885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Psychological Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "psychological_portrait"
+          ],
+          "term": "Psychological Portrait",
+          "definition_clue": "Identify the art term: portrait emphasizing inner mood",
+          "difficulty_tier": 1,
+          "recognized_answer": "Psychological Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Psychological Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "psychological_portrait"
+        ],
+        "term": "Psychological Portrait",
+        "definition_clue": "Identify the art term: portrait emphasizing inner mood",
+        "difficulty_tier": 1,
+        "recognized_answer": "Psychological Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1825,7 +2985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Idealized Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "idealized_portrait"
+          ],
+          "term": "Idealized Portrait",
+          "definition_clue": "Identify the art term: flattering perfected likeness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Idealized Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Idealized Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "idealized_portrait"
+        ],
+        "term": "Idealized Portrait",
+        "definition_clue": "Identify the art term: flattering perfected likeness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Idealized Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1885,7 +3085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Realist Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "realist_portrait"
+          ],
+          "term": "Realist Portrait",
+          "definition_clue": "Identify the art term: unidealized likeness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Realist Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Realist Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "realist_portrait"
+        ],
+        "term": "Realist Portrait",
+        "definition_clue": "Identify the art term: unidealized likeness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Realist Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -1945,7 +3185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Formal Pose",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "formal_pose"
+          ],
+          "term": "Formal Pose",
+          "definition_clue": "Identify the art term: arranged dignified posture",
+          "difficulty_tier": 1,
+          "recognized_answer": "Formal Pose",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Formal Pose",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "formal_pose"
+        ],
+        "term": "Formal Pose",
+        "definition_clue": "Identify the art term: arranged dignified posture",
+        "difficulty_tier": 1,
+        "recognized_answer": "Formal Pose",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2005,7 +3285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Informal Pose",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "informal_pose"
+          ],
+          "term": "Informal Pose",
+          "definition_clue": "Identify the art term: relaxed natural posture",
+          "difficulty_tier": 1,
+          "recognized_answer": "Informal Pose",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Informal Pose",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "informal_pose"
+        ],
+        "term": "Informal Pose",
+        "definition_clue": "Identify the art term: relaxed natural posture",
+        "difficulty_tier": 1,
+        "recognized_answer": "Informal Pose",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2065,7 +3385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Eye Contact",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "eye_contact"
+          ],
+          "term": "Eye Contact",
+          "definition_clue": "Identify the art term: subject looks toward viewer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Eye Contact",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Eye Contact",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "eye_contact"
+        ],
+        "term": "Eye Contact",
+        "definition_clue": "Identify the art term: subject looks toward viewer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Eye Contact",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2125,7 +3485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Costume Detail",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "costume_detail"
+          ],
+          "term": "Costume Detail",
+          "definition_clue": "Identify the art term: clothing reveals status or identity",
+          "difficulty_tier": 1,
+          "recognized_answer": "Costume Detail",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Costume Detail",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "costume_detail"
+        ],
+        "term": "Costume Detail",
+        "definition_clue": "Identify the art term: clothing reveals status or identity",
+        "difficulty_tier": 1,
+        "recognized_answer": "Costume Detail",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2185,7 +3585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Attribute",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "attribute"
+          ],
+          "term": "Attribute",
+          "definition_clue": "Identify the art term: object identifying the sitter",
+          "difficulty_tier": 1,
+          "recognized_answer": "Attribute",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Attribute",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "attribute"
+        ],
+        "term": "Attribute",
+        "definition_clue": "Identify the art term: object identifying the sitter",
+        "difficulty_tier": 1,
+        "recognized_answer": "Attribute",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2245,7 +3685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Background Symbolism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "background_symbolism"
+          ],
+          "term": "Background Symbolism",
+          "definition_clue": "Identify the art term: setting adds meaning",
+          "difficulty_tier": 1,
+          "recognized_answer": "Background Symbolism",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Background Symbolism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "background_symbolism"
+        ],
+        "term": "Background Symbolism",
+        "definition_clue": "Identify the art term: setting adds meaning",
+        "difficulty_tier": 1,
+        "recognized_answer": "Background Symbolism",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2305,7 +3785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Facial Expression",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "facial_expression"
+          ],
+          "term": "Facial Expression",
+          "definition_clue": "Identify the art term: emotion shown by the face",
+          "difficulty_tier": 1,
+          "recognized_answer": "Facial Expression",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Facial Expression",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "facial_expression"
+        ],
+        "term": "Facial Expression",
+        "definition_clue": "Identify the art term: emotion shown by the face",
+        "difficulty_tier": 1,
+        "recognized_answer": "Facial Expression",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2365,7 +3885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Portrait Lighting",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "portrait_lighting"
+          ],
+          "term": "Portrait Lighting",
+          "definition_clue": "Identify the art term: light models facial form",
+          "difficulty_tier": 1,
+          "recognized_answer": "Portrait Lighting",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Portrait Lighting",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "portrait_lighting"
+        ],
+        "term": "Portrait Lighting",
+        "definition_clue": "Identify the art term: light models facial form",
+        "difficulty_tier": 1,
+        "recognized_answer": "Portrait Lighting",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2425,7 +3985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Miniature Portrait",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "miniature_portrait"
+          ],
+          "term": "Miniature Portrait",
+          "definition_clue": "Identify the art term: small portable likeness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Miniature Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Miniature Portrait",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "miniature_portrait"
+        ],
+        "term": "Miniature Portrait",
+        "definition_clue": "Identify the art term: small portable likeness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Miniature Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2485,7 +4085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Self-Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "self_portrait"
+          ],
+          "term": "Self-Portrait",
+          "definition_clue": "Which concept means artist depicts themselves?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Self-Portrait",
+          "distractor_family": [
+            "Profile Portrait",
+            "Three-Quarter View",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Self-Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "self_portrait"
+        ],
+        "term": "Self-Portrait",
+        "definition_clue": "Which concept means artist depicts themselves?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Self-Portrait",
+        "distractor_family": [
+          "Profile Portrait",
+          "Three-Quarter View",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -2545,7 +4185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Profile Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "profile_portrait"
+          ],
+          "term": "Profile Portrait",
+          "definition_clue": "Which concept means side view of a face?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Profile Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Three-Quarter View",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Profile Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "profile_portrait"
+        ],
+        "term": "Profile Portrait",
+        "definition_clue": "Which concept means side view of a face?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Profile Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Three-Quarter View",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -2605,7 +4285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Three-Quarter View",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "three_quarter_view"
+          ],
+          "term": "Three-Quarter View",
+          "definition_clue": "Which concept means face turned partly toward viewer?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Three-Quarter View",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Three-Quarter View",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "three_quarter_view"
+        ],
+        "term": "Three-Quarter View",
+        "definition_clue": "Which concept means face turned partly toward viewer?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Three-Quarter View",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -2665,7 +4385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Bust Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "bust_portrait"
+          ],
+          "term": "Bust Portrait",
+          "definition_clue": "Which concept means head and shoulders portrait?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Bust Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Bust Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "bust_portrait"
+        ],
+        "term": "Bust Portrait",
+        "definition_clue": "Which concept means head and shoulders portrait?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Bust Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2725,7 +4485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Full-Length Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "full_length_portrait"
+          ],
+          "term": "Full-Length Portrait",
+          "definition_clue": "Which concept means whole body portrait?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Full-Length Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Full-Length Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "full_length_portrait"
+        ],
+        "term": "Full-Length Portrait",
+        "definition_clue": "Which concept means whole body portrait?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Full-Length Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2785,7 +4585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Group Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "group_portrait"
+          ],
+          "term": "Group Portrait",
+          "definition_clue": "Which concept means multiple people portrayed together?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Group Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Group Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "group_portrait"
+        ],
+        "term": "Group Portrait",
+        "definition_clue": "Which concept means multiple people portrayed together?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Group Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2845,7 +4685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Commissioned Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "commissioned_portrait"
+          ],
+          "term": "Commissioned Portrait",
+          "definition_clue": "Which concept means portrait made for a patron?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Commissioned Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Commissioned Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "commissioned_portrait"
+        ],
+        "term": "Commissioned Portrait",
+        "definition_clue": "Which concept means portrait made for a patron?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Commissioned Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2905,7 +4785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Royal Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "royal_portrait"
+          ],
+          "term": "Royal Portrait",
+          "definition_clue": "Which concept means image emphasizing monarchy or power?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Royal Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Royal Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "royal_portrait"
+        ],
+        "term": "Royal Portrait",
+        "definition_clue": "Which concept means image emphasizing monarchy or power?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Royal Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -2965,7 +4885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Psychological Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "psychological_portrait"
+          ],
+          "term": "Psychological Portrait",
+          "definition_clue": "Which concept means portrait emphasizing inner mood?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Psychological Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Psychological Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "psychological_portrait"
+        ],
+        "term": "Psychological Portrait",
+        "definition_clue": "Which concept means portrait emphasizing inner mood?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Psychological Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3025,7 +4985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Idealized Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "idealized_portrait"
+          ],
+          "term": "Idealized Portrait",
+          "definition_clue": "Which concept means flattering perfected likeness?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Idealized Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Idealized Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "idealized_portrait"
+        ],
+        "term": "Idealized Portrait",
+        "definition_clue": "Which concept means flattering perfected likeness?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Idealized Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3085,7 +5085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Realist Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "realist_portrait"
+          ],
+          "term": "Realist Portrait",
+          "definition_clue": "Which concept means unidealized likeness?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Realist Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Realist Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "realist_portrait"
+        ],
+        "term": "Realist Portrait",
+        "definition_clue": "Which concept means unidealized likeness?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Realist Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3145,7 +5185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Formal Pose",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "formal_pose"
+          ],
+          "term": "Formal Pose",
+          "definition_clue": "Which concept means arranged dignified posture?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Formal Pose",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Formal Pose",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "formal_pose"
+        ],
+        "term": "Formal Pose",
+        "definition_clue": "Which concept means arranged dignified posture?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Formal Pose",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3205,7 +5285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Informal Pose",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "informal_pose"
+          ],
+          "term": "Informal Pose",
+          "definition_clue": "Which concept means relaxed natural posture?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Informal Pose",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Informal Pose",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "informal_pose"
+        ],
+        "term": "Informal Pose",
+        "definition_clue": "Which concept means relaxed natural posture?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Informal Pose",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3265,7 +5385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Eye Contact",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "eye_contact"
+          ],
+          "term": "Eye Contact",
+          "definition_clue": "Which concept means subject looks toward viewer?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Eye Contact",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Eye Contact",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "eye_contact"
+        ],
+        "term": "Eye Contact",
+        "definition_clue": "Which concept means subject looks toward viewer?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Eye Contact",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3325,7 +5485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Costume Detail",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "costume_detail"
+          ],
+          "term": "Costume Detail",
+          "definition_clue": "Which concept means clothing reveals status or identity?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Costume Detail",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Costume Detail",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "costume_detail"
+        ],
+        "term": "Costume Detail",
+        "definition_clue": "Which concept means clothing reveals status or identity?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Costume Detail",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3385,7 +5585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Attribute",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "attribute"
+          ],
+          "term": "Attribute",
+          "definition_clue": "Which concept means object identifying the sitter?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Attribute",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Attribute",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "attribute"
+        ],
+        "term": "Attribute",
+        "definition_clue": "Which concept means object identifying the sitter?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Attribute",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3445,7 +5685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Background Symbolism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "background_symbolism"
+          ],
+          "term": "Background Symbolism",
+          "definition_clue": "Which concept means setting adds meaning?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Background Symbolism",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Background Symbolism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "background_symbolism"
+        ],
+        "term": "Background Symbolism",
+        "definition_clue": "Which concept means setting adds meaning?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Background Symbolism",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3505,7 +5785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Facial Expression",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "facial_expression"
+          ],
+          "term": "Facial Expression",
+          "definition_clue": "Which concept means emotion shown by the face?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Facial Expression",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Facial Expression",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "facial_expression"
+        ],
+        "term": "Facial Expression",
+        "definition_clue": "Which concept means emotion shown by the face?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Facial Expression",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3565,7 +5885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Portrait Lighting",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "portrait_lighting"
+          ],
+          "term": "Portrait Lighting",
+          "definition_clue": "Which concept means light models facial form?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Portrait Lighting",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Portrait Lighting",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "portrait_lighting"
+        ],
+        "term": "Portrait Lighting",
+        "definition_clue": "Which concept means light models facial form?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Portrait Lighting",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3625,7 +5985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Miniature Portrait",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "miniature_portrait"
+          ],
+          "term": "Miniature Portrait",
+          "definition_clue": "Which concept means small portable likeness?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Miniature Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Miniature Portrait",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "miniature_portrait"
+        ],
+        "term": "Miniature Portrait",
+        "definition_clue": "Which concept means small portable likeness?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Miniature Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3685,7 +6085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Self-Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "self_portrait"
+          ],
+          "term": "Self-Portrait",
+          "definition_clue": "Spot the matching term for: artist depicts themselves",
+          "difficulty_tier": 2,
+          "recognized_answer": "Self-Portrait",
+          "distractor_family": [
+            "Profile Portrait",
+            "Three-Quarter View",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Self-Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "self_portrait"
+        ],
+        "term": "Self-Portrait",
+        "definition_clue": "Spot the matching term for: artist depicts themselves",
+        "difficulty_tier": 2,
+        "recognized_answer": "Self-Portrait",
+        "distractor_family": [
+          "Profile Portrait",
+          "Three-Quarter View",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -3745,7 +6185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Profile Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "profile_portrait"
+          ],
+          "term": "Profile Portrait",
+          "definition_clue": "Spot the matching term for: side view of a face",
+          "difficulty_tier": 2,
+          "recognized_answer": "Profile Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Three-Quarter View",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Profile Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "profile_portrait"
+        ],
+        "term": "Profile Portrait",
+        "definition_clue": "Spot the matching term for: side view of a face",
+        "difficulty_tier": 2,
+        "recognized_answer": "Profile Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Three-Quarter View",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -3805,7 +6285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Three-Quarter View",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "three_quarter_view"
+          ],
+          "term": "Three-Quarter View",
+          "definition_clue": "Spot the matching term for: face turned partly toward viewer",
+          "difficulty_tier": 2,
+          "recognized_answer": "Three-Quarter View",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Bust Portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Three-Quarter View",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "three_quarter_view"
+        ],
+        "term": "Three-Quarter View",
+        "definition_clue": "Spot the matching term for: face turned partly toward viewer",
+        "difficulty_tier": 2,
+        "recognized_answer": "Three-Quarter View",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Bust Portrait"
+        ]
       }
     },
     {
@@ -3865,7 +6385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Bust Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "bust_portrait"
+          ],
+          "term": "Bust Portrait",
+          "definition_clue": "Spot the matching term for: head and shoulders portrait",
+          "difficulty_tier": 2,
+          "recognized_answer": "Bust Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Bust Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "bust_portrait"
+        ],
+        "term": "Bust Portrait",
+        "definition_clue": "Spot the matching term for: head and shoulders portrait",
+        "difficulty_tier": 2,
+        "recognized_answer": "Bust Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3925,7 +6485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Full-Length Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "full_length_portrait"
+          ],
+          "term": "Full-Length Portrait",
+          "definition_clue": "Spot the matching term for: whole body portrait",
+          "difficulty_tier": 2,
+          "recognized_answer": "Full-Length Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Full-Length Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "full_length_portrait"
+        ],
+        "term": "Full-Length Portrait",
+        "definition_clue": "Spot the matching term for: whole body portrait",
+        "difficulty_tier": 2,
+        "recognized_answer": "Full-Length Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -3985,7 +6585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Group Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "group_portrait"
+          ],
+          "term": "Group Portrait",
+          "definition_clue": "Spot the matching term for: multiple people portrayed together",
+          "difficulty_tier": 2,
+          "recognized_answer": "Group Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Group Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "group_portrait"
+        ],
+        "term": "Group Portrait",
+        "definition_clue": "Spot the matching term for: multiple people portrayed together",
+        "difficulty_tier": 2,
+        "recognized_answer": "Group Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4045,7 +6685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Commissioned Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "commissioned_portrait"
+          ],
+          "term": "Commissioned Portrait",
+          "definition_clue": "Spot the matching term for: portrait made for a patron",
+          "difficulty_tier": 2,
+          "recognized_answer": "Commissioned Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Commissioned Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "commissioned_portrait"
+        ],
+        "term": "Commissioned Portrait",
+        "definition_clue": "Spot the matching term for: portrait made for a patron",
+        "difficulty_tier": 2,
+        "recognized_answer": "Commissioned Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4105,7 +6785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Royal Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "royal_portrait"
+          ],
+          "term": "Royal Portrait",
+          "definition_clue": "Spot the matching term for: image emphasizing monarchy or power",
+          "difficulty_tier": 2,
+          "recognized_answer": "Royal Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Royal Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "royal_portrait"
+        ],
+        "term": "Royal Portrait",
+        "definition_clue": "Spot the matching term for: image emphasizing monarchy or power",
+        "difficulty_tier": 2,
+        "recognized_answer": "Royal Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4165,7 +6885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Psychological Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "psychological_portrait"
+          ],
+          "term": "Psychological Portrait",
+          "definition_clue": "Spot the matching term for: portrait emphasizing inner mood",
+          "difficulty_tier": 2,
+          "recognized_answer": "Psychological Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Psychological Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "psychological_portrait"
+        ],
+        "term": "Psychological Portrait",
+        "definition_clue": "Spot the matching term for: portrait emphasizing inner mood",
+        "difficulty_tier": 2,
+        "recognized_answer": "Psychological Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4225,7 +6985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Idealized Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "idealized_portrait"
+          ],
+          "term": "Idealized Portrait",
+          "definition_clue": "Spot the matching term for: flattering perfected likeness",
+          "difficulty_tier": 2,
+          "recognized_answer": "Idealized Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Idealized Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "idealized_portrait"
+        ],
+        "term": "Idealized Portrait",
+        "definition_clue": "Spot the matching term for: flattering perfected likeness",
+        "difficulty_tier": 2,
+        "recognized_answer": "Idealized Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4285,7 +7085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Realist Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "realist_portrait"
+          ],
+          "term": "Realist Portrait",
+          "definition_clue": "Spot the matching term for: unidealized likeness",
+          "difficulty_tier": 3,
+          "recognized_answer": "Realist Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Realist Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "realist_portrait"
+        ],
+        "term": "Realist Portrait",
+        "definition_clue": "Spot the matching term for: unidealized likeness",
+        "difficulty_tier": 3,
+        "recognized_answer": "Realist Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4345,7 +7185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Formal Pose",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "formal_pose"
+          ],
+          "term": "Formal Pose",
+          "definition_clue": "Spot the matching term for: arranged dignified posture",
+          "difficulty_tier": 3,
+          "recognized_answer": "Formal Pose",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Formal Pose",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "formal_pose"
+        ],
+        "term": "Formal Pose",
+        "definition_clue": "Spot the matching term for: arranged dignified posture",
+        "difficulty_tier": 3,
+        "recognized_answer": "Formal Pose",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4405,7 +7285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Informal Pose",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "informal_pose"
+          ],
+          "term": "Informal Pose",
+          "definition_clue": "Spot the matching term for: relaxed natural posture",
+          "difficulty_tier": 3,
+          "recognized_answer": "Informal Pose",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Informal Pose",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "informal_pose"
+        ],
+        "term": "Informal Pose",
+        "definition_clue": "Spot the matching term for: relaxed natural posture",
+        "difficulty_tier": 3,
+        "recognized_answer": "Informal Pose",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4465,7 +7385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Eye Contact",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "eye_contact"
+          ],
+          "term": "Eye Contact",
+          "definition_clue": "Spot the matching term for: subject looks toward viewer",
+          "difficulty_tier": 3,
+          "recognized_answer": "Eye Contact",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Eye Contact",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "eye_contact"
+        ],
+        "term": "Eye Contact",
+        "definition_clue": "Spot the matching term for: subject looks toward viewer",
+        "difficulty_tier": 3,
+        "recognized_answer": "Eye Contact",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4525,7 +7485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Costume Detail",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "costume_detail"
+          ],
+          "term": "Costume Detail",
+          "definition_clue": "Spot the matching term for: clothing reveals status or identity",
+          "difficulty_tier": 3,
+          "recognized_answer": "Costume Detail",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Costume Detail",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "costume_detail"
+        ],
+        "term": "Costume Detail",
+        "definition_clue": "Spot the matching term for: clothing reveals status or identity",
+        "difficulty_tier": 3,
+        "recognized_answer": "Costume Detail",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4585,7 +7585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Attribute",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "attribute"
+          ],
+          "term": "Attribute",
+          "definition_clue": "Spot the matching term for: object identifying the sitter",
+          "difficulty_tier": 3,
+          "recognized_answer": "Attribute",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Attribute",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "attribute"
+        ],
+        "term": "Attribute",
+        "definition_clue": "Spot the matching term for: object identifying the sitter",
+        "difficulty_tier": 3,
+        "recognized_answer": "Attribute",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4645,7 +7685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Background Symbolism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "background_symbolism"
+          ],
+          "term": "Background Symbolism",
+          "definition_clue": "Spot the matching term for: setting adds meaning",
+          "difficulty_tier": 3,
+          "recognized_answer": "Background Symbolism",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Background Symbolism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "background_symbolism"
+        ],
+        "term": "Background Symbolism",
+        "definition_clue": "Spot the matching term for: setting adds meaning",
+        "difficulty_tier": 3,
+        "recognized_answer": "Background Symbolism",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4705,7 +7785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Facial Expression",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "facial_expression"
+          ],
+          "term": "Facial Expression",
+          "definition_clue": "Spot the matching term for: emotion shown by the face",
+          "difficulty_tier": 3,
+          "recognized_answer": "Facial Expression",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Facial Expression",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "facial_expression"
+        ],
+        "term": "Facial Expression",
+        "definition_clue": "Spot the matching term for: emotion shown by the face",
+        "difficulty_tier": 3,
+        "recognized_answer": "Facial Expression",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4765,7 +7885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Portrait Lighting",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "portrait_lighting"
+          ],
+          "term": "Portrait Lighting",
+          "definition_clue": "Spot the matching term for: light models facial form",
+          "difficulty_tier": 3,
+          "recognized_answer": "Portrait Lighting",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Portrait Lighting",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "portrait_lighting"
+        ],
+        "term": "Portrait Lighting",
+        "definition_clue": "Spot the matching term for: light models facial form",
+        "difficulty_tier": 3,
+        "recognized_answer": "Portrait Lighting",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4825,7 +7985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "Miniature Portrait",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "miniature_portrait"
+          ],
+          "term": "Miniature Portrait",
+          "definition_clue": "Spot the matching term for: small portable likeness",
+          "difficulty_tier": 3,
+          "recognized_answer": "Miniature Portrait",
+          "distractor_family": [
+            "Self-Portrait",
+            "Profile Portrait",
+            "Three-Quarter View"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "Miniature Portrait",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "miniature_portrait"
+        ],
+        "term": "Miniature Portrait",
+        "definition_clue": "Spot the matching term for: small portable likeness",
+        "difficulty_tier": 3,
+        "recognized_answer": "Miniature Portrait",
+        "distractor_family": [
+          "Self-Portrait",
+          "Profile Portrait",
+          "Three-Quarter View"
+        ]
       }
     },
     {
@@ -4885,7 +8085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "artist depicts themselves",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "artist_depicts_themselves"
+          ],
+          "term": "artist depicts themselves",
+          "definition_clue": "Self-Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "artist depicts themselves",
+          "distractor_family": [
+            "side view of a face",
+            "face turned partly toward viewer",
+            "head and shoulders portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "artist depicts themselves",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "artist_depicts_themselves"
+        ],
+        "term": "artist depicts themselves",
+        "definition_clue": "Self-Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "artist depicts themselves",
+        "distractor_family": [
+          "side view of a face",
+          "face turned partly toward viewer",
+          "head and shoulders portrait"
+        ]
       }
     },
     {
@@ -4945,7 +8185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "side view of a face",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "side_view_of_a_face"
+          ],
+          "term": "side view of a face",
+          "definition_clue": "Profile Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "side view of a face",
+          "distractor_family": [
+            "artist depicts themselves",
+            "face turned partly toward viewer",
+            "head and shoulders portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "side view of a face",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "side_view_of_a_face"
+        ],
+        "term": "side view of a face",
+        "definition_clue": "Profile Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "side view of a face",
+        "distractor_family": [
+          "artist depicts themselves",
+          "face turned partly toward viewer",
+          "head and shoulders portrait"
+        ]
       }
     },
     {
@@ -5005,7 +8285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "face turned partly toward viewer",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "face_turned_partly_toward_viewer"
+          ],
+          "term": "face turned partly toward viewer",
+          "definition_clue": "Three-Quarter View is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "face turned partly toward viewer",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "head and shoulders portrait"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "face turned partly toward viewer",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "face_turned_partly_toward_viewer"
+        ],
+        "term": "face turned partly toward viewer",
+        "definition_clue": "Three-Quarter View is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "face turned partly toward viewer",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "head and shoulders portrait"
+        ]
       }
     },
     {
@@ -5065,7 +8385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "head and shoulders portrait",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "head_and_shoulders_portrait"
+          ],
+          "term": "head and shoulders portrait",
+          "definition_clue": "Bust Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "head and shoulders portrait",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "head and shoulders portrait",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "head_and_shoulders_portrait"
+        ],
+        "term": "head and shoulders portrait",
+        "definition_clue": "Bust Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "head and shoulders portrait",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5125,7 +8485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "whole body portrait",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "whole_body_portrait"
+          ],
+          "term": "whole body portrait",
+          "definition_clue": "Full-Length Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "whole body portrait",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "whole body portrait",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "whole_body_portrait"
+        ],
+        "term": "whole body portrait",
+        "definition_clue": "Full-Length Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "whole body portrait",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5185,7 +8585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "multiple people portrayed together",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "multiple_people_portrayed_together"
+          ],
+          "term": "multiple people portrayed together",
+          "definition_clue": "Group Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "multiple people portrayed together",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "multiple people portrayed together",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "multiple_people_portrayed_together"
+        ],
+        "term": "multiple people portrayed together",
+        "definition_clue": "Group Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "multiple people portrayed together",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5245,7 +8685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "portrait made for a patron",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "portrait_made_for_a_patron"
+          ],
+          "term": "portrait made for a patron",
+          "definition_clue": "Commissioned Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "portrait made for a patron",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "portrait made for a patron",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "portrait_made_for_a_patron"
+        ],
+        "term": "portrait made for a patron",
+        "definition_clue": "Commissioned Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "portrait made for a patron",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5305,7 +8785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "image emphasizing monarchy or power",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "image_emphasizing_monarchy_or_power"
+          ],
+          "term": "image emphasizing monarchy or power",
+          "definition_clue": "Royal Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "image emphasizing monarchy or power",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "image emphasizing monarchy or power",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "image_emphasizing_monarchy_or_power"
+        ],
+        "term": "image emphasizing monarchy or power",
+        "definition_clue": "Royal Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "image emphasizing monarchy or power",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5365,7 +8885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "portrait emphasizing inner mood",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "portrait_emphasizing_inner_mood"
+          ],
+          "term": "portrait emphasizing inner mood",
+          "definition_clue": "Psychological Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "portrait emphasizing inner mood",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "portrait emphasizing inner mood",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "portrait_emphasizing_inner_mood"
+        ],
+        "term": "portrait emphasizing inner mood",
+        "definition_clue": "Psychological Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "portrait emphasizing inner mood",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5425,7 +8985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "flattering perfected likeness",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "flattering_perfected_likeness"
+          ],
+          "term": "flattering perfected likeness",
+          "definition_clue": "Idealized Portrait is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "flattering perfected likeness",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "flattering perfected likeness",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "flattering_perfected_likeness"
+        ],
+        "term": "flattering perfected likeness",
+        "definition_clue": "Idealized Portrait is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "flattering perfected likeness",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5485,7 +9085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "unidealized likeness",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "unidealized_likeness"
+          ],
+          "term": "unidealized likeness",
+          "definition_clue": "Realist Portrait is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "unidealized likeness",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "unidealized likeness",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "unidealized_likeness"
+        ],
+        "term": "unidealized likeness",
+        "definition_clue": "Realist Portrait is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "unidealized likeness",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5545,7 +9185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "arranged dignified posture",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "arranged_dignified_posture"
+          ],
+          "term": "arranged dignified posture",
+          "definition_clue": "Formal Pose is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "arranged dignified posture",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "arranged dignified posture",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "arranged_dignified_posture"
+        ],
+        "term": "arranged dignified posture",
+        "definition_clue": "Formal Pose is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "arranged dignified posture",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5605,7 +9285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "relaxed natural posture",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "relaxed_natural_posture"
+          ],
+          "term": "relaxed natural posture",
+          "definition_clue": "Informal Pose is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "relaxed natural posture",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "relaxed natural posture",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "relaxed_natural_posture"
+        ],
+        "term": "relaxed natural posture",
+        "definition_clue": "Informal Pose is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "relaxed natural posture",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5665,7 +9385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "subject looks toward viewer",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "subject_looks_toward_viewer"
+          ],
+          "term": "subject looks toward viewer",
+          "definition_clue": "Eye Contact is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "subject looks toward viewer",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "subject looks toward viewer",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "subject_looks_toward_viewer"
+        ],
+        "term": "subject looks toward viewer",
+        "definition_clue": "Eye Contact is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "subject looks toward viewer",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5725,7 +9485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "clothing reveals status or identity",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "clothing_reveals_status_or_identity"
+          ],
+          "term": "clothing reveals status or identity",
+          "definition_clue": "Costume Detail is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "clothing reveals status or identity",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "clothing reveals status or identity",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "clothing_reveals_status_or_identity"
+        ],
+        "term": "clothing reveals status or identity",
+        "definition_clue": "Costume Detail is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "clothing reveals status or identity",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5785,7 +9585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "object identifying the sitter",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "object_identifying_the_sitter"
+          ],
+          "term": "object identifying the sitter",
+          "definition_clue": "Attribute is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "object identifying the sitter",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "object identifying the sitter",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "object_identifying_the_sitter"
+        ],
+        "term": "object identifying the sitter",
+        "definition_clue": "Attribute is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "object identifying the sitter",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5845,7 +9685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "setting adds meaning",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "setting_adds_meaning"
+          ],
+          "term": "setting adds meaning",
+          "definition_clue": "Background Symbolism is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "setting adds meaning",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "setting adds meaning",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "setting_adds_meaning"
+        ],
+        "term": "setting adds meaning",
+        "definition_clue": "Background Symbolism is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "setting adds meaning",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5905,7 +9785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "emotion shown by the face",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "emotion_shown_by_the_face"
+          ],
+          "term": "emotion shown by the face",
+          "definition_clue": "Facial Expression is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "emotion shown by the face",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "emotion shown by the face",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "emotion_shown_by_the_face"
+        ],
+        "term": "emotion shown by the face",
+        "definition_clue": "Facial Expression is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "emotion shown by the face",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -5965,7 +9885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "light models facial form",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "light_models_facial_form"
+          ],
+          "term": "light models facial form",
+          "definition_clue": "Portrait Lighting is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "light models facial form",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "light models facial form",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "light_models_facial_form"
+        ],
+        "term": "light models facial form",
+        "definition_clue": "Portrait Lighting is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "light models facial form",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     },
     {
@@ -6025,7 +9985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "portraits",
+          "concept": "small portable likeness",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "portraits",
+            "small_portable_likeness"
+          ],
+          "term": "small portable likeness",
+          "definition_clue": "Miniature Portrait is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "small portable likeness",
+          "distractor_family": [
+            "artist depicts themselves",
+            "side view of a face",
+            "face turned partly toward viewer"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "portraits",
+        "concept": "small portable likeness",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "portraits",
+          "small_portable_likeness"
+        ],
+        "term": "small portable likeness",
+        "definition_clue": "Miniature Portrait is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "small portable likeness",
+        "distractor_family": [
+          "artist depicts themselves",
+          "side view of a face",
+          "face turned partly toward viewer"
+        ]
       }
     }
   ]

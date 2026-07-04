@@ -31,67 +31,40 @@ func _get_prompt_text(rules: Dictionary, fallback: String = "OBSERVE") -> String
 	return clean if clean != "" else fallback
 
 func _remember_current_content_id():
-	var sid = normalize_id(_scenario_payload.get("id", ""))
+	var sid = normalize_id(_scenario_payload.get("observation_id", _scenario_payload.get("id", "")))
 	if sid != "":
 		_used_content_ids[sid] = true
 
 func _refresh_payload_for_current_trial():
-	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
-	if not registry or not registry.has_method("get_all_scenarios_in_world"):
-		return
 	var u_id = normalize_id(_scenario_payload.get("universe", ""))
 	var w_id = normalize_id(_scenario_payload.get("world", ""))
 	var t_id = normalize_id(_scenario_payload.get("type", ""))
 	var sub_id = normalize_id(_scenario_payload.get("subcategory", _scenario_payload.get("presentation", {}).get("subcategory", "")))
-	if u_id == "" or w_id == "" or t_id == "":
+	if u_id == "" or w_id == "" or t_id == "" or not ObservationCollection or not ObservationBuilder:
 		return
-	var all_items = registry.get_all_scenarios_in_world(u_id, w_id)
-	var pool: Array = []
-	for item in all_items:
-		if item is Dictionary and normalize_id(item.get("type", "")) == t_id:
-			var item_sub = normalize_id(item.get("subcategory", item.get("presentation", {}).get("subcategory", "")))
-			if sub_id == "" or item_sub == sub_id:
-				pool.append(item)
-	if pool.size() <= 1:
+	var seed_str = normalize_id(_deterministic_rng.seed if _deterministic_rng else 0) + ":" + t_id + ":" + sub_id + ":" + str(current_trial)
+	var observation = ObservationCollection.next_observation(u_id, w_id, sub_id, t_id, seed_str)
+	if observation.is_empty():
 		return
-	var start_idx = abs((normalize_id(_deterministic_rng.seed if _deterministic_rng else 0) + ":" + t_id + ":" + str(current_trial)).hash()) % pool.size()
-	var selected: Dictionary = {}
-	for offset in range(pool.size()):
-		var candidate = pool[(start_idx + offset) % pool.size()]
-		var c_id = normalize_id(candidate.get("id", ""))
-		if not _used_content_ids.has(c_id):
-			selected = candidate
-			break
-	if selected.is_empty():
-		selected = pool[start_idx]
-	_scenario_payload = selected.duplicate(true)
-	_scenario_payload["id"] = normalize_id(_scenario_payload.get("id", t_id))
-	_scenario_payload["universe"] = u_id
-	_scenario_payload["world"] = w_id
-	_scenario_payload["type"] = t_id
-	if sub_id != "":
-		_scenario_payload["subcategory"] = sub_id
+	var payload = ObservationBuilder.build_payload(observation, t_id, {"universe": u_id, "world": w_id, "subcategory": sub_id})
+	if payload.is_empty():
+		return
+	_scenario_payload = payload
 	_remember_current_content_id()
 	_last_payload_refresh_trial = current_trial
 	var engine = get_node_or_null("/root/ScenarioExecutionEngine")
 	if engine and engine.get("active_scenario") == self:
 		engine.active_payload = _scenario_payload
-	print("[BASE SCENARIO] Refreshed trial content: ", _scenario_payload["id"])
+	print("[BASE SCENARIO] Refreshed trial content: ", _scenario_payload.get("id", ""))
 
 func _cap_target_trials_to_available_content():
-	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
-	if not registry or not registry.has_method("get_all_scenarios_in_world"):
+	if not ObservationCollection:
 		return
 	var u_id = normalize_id(_scenario_payload.get("universe", ""))
 	var w_id = normalize_id(_scenario_payload.get("world", ""))
 	var t_id = normalize_id(_scenario_payload.get("type", ""))
 	var sub_id = normalize_id(_scenario_payload.get("subcategory", _scenario_payload.get("presentation", {}).get("subcategory", "")))
-	var count = 0
-	for item in registry.get_all_scenarios_in_world(u_id, w_id):
-		if item is Dictionary and normalize_id(item.get("type", "")) == t_id:
-			var item_sub = normalize_id(item.get("subcategory", item.get("presentation", {}).get("subcategory", "")))
-			if sub_id == "" or item_sub == sub_id:
-				count += 1
+	var count = ObservationCollection.get_collection(u_id, w_id, sub_id, t_id).size()
 	if count > 0 and target_trials > count:
 		target_trials = count
 		if current_trial > target_trials:

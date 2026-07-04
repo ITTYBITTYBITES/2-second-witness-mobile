@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Hue",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "hue"
+          ],
+          "term": "Hue",
+          "definition_clue": "color family such as red or blue",
+          "difficulty_tier": 1,
+          "recognized_answer": "Hue",
+          "distractor_family": [
+            "Value",
+            "Saturation",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Hue",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "hue"
+        ],
+        "term": "Hue",
+        "definition_clue": "color family such as red or blue",
+        "difficulty_tier": 1,
+        "recognized_answer": "Hue",
+        "distractor_family": [
+          "Value",
+          "Saturation",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Value",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "value"
+          ],
+          "term": "Value",
+          "definition_clue": "lightness or darkness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Value",
+          "distractor_family": [
+            "Hue",
+            "Saturation",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Value",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "value"
+        ],
+        "term": "Value",
+        "definition_clue": "lightness or darkness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Value",
+        "distractor_family": [
+          "Hue",
+          "Saturation",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Saturation",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "saturation"
+          ],
+          "term": "Saturation",
+          "definition_clue": "intensity or purity of color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Saturation",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Saturation",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "saturation"
+        ],
+        "term": "Saturation",
+        "definition_clue": "intensity or purity of color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Saturation",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Complementary Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "complementary_colors"
+          ],
+          "term": "Complementary Colors",
+          "definition_clue": "opposites on the color wheel",
+          "difficulty_tier": 1,
+          "recognized_answer": "Complementary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Complementary Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "complementary_colors"
+        ],
+        "term": "Complementary Colors",
+        "definition_clue": "opposites on the color wheel",
+        "difficulty_tier": 1,
+        "recognized_answer": "Complementary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Analogous Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "analogous_colors"
+          ],
+          "term": "Analogous Colors",
+          "definition_clue": "neighbors on the color wheel",
+          "difficulty_tier": 1,
+          "recognized_answer": "Analogous Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Analogous Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "analogous_colors"
+        ],
+        "term": "Analogous Colors",
+        "definition_clue": "neighbors on the color wheel",
+        "difficulty_tier": 1,
+        "recognized_answer": "Analogous Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Primary Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "primary_colors"
+          ],
+          "term": "Primary Colors",
+          "definition_clue": "red yellow and blue in traditional theory",
+          "difficulty_tier": 1,
+          "recognized_answer": "Primary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Primary Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "primary_colors"
+        ],
+        "term": "Primary Colors",
+        "definition_clue": "red yellow and blue in traditional theory",
+        "difficulty_tier": 1,
+        "recognized_answer": "Primary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Secondary Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "secondary_colors"
+          ],
+          "term": "Secondary Colors",
+          "definition_clue": "orange green and violet",
+          "difficulty_tier": 1,
+          "recognized_answer": "Secondary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Secondary Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "secondary_colors"
+        ],
+        "term": "Secondary Colors",
+        "definition_clue": "orange green and violet",
+        "difficulty_tier": 1,
+        "recognized_answer": "Secondary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Warm Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "warm_colors"
+          ],
+          "term": "Warm Colors",
+          "definition_clue": "reds oranges and yellows",
+          "difficulty_tier": 1,
+          "recognized_answer": "Warm Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Warm Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "warm_colors"
+        ],
+        "term": "Warm Colors",
+        "definition_clue": "reds oranges and yellows",
+        "difficulty_tier": 1,
+        "recognized_answer": "Warm Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Cool Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "cool_colors"
+          ],
+          "term": "Cool Colors",
+          "definition_clue": "blues greens and violets",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cool Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Cool Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "cool_colors"
+        ],
+        "term": "Cool Colors",
+        "definition_clue": "blues greens and violets",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cool Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Tint",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "tint"
+          ],
+          "term": "Tint",
+          "definition_clue": "color mixed with white",
+          "difficulty_tier": 1,
+          "recognized_answer": "Tint",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Tint",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "tint"
+        ],
+        "term": "Tint",
+        "definition_clue": "color mixed with white",
+        "difficulty_tier": 1,
+        "recognized_answer": "Tint",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Shade",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "shade"
+          ],
+          "term": "Shade",
+          "definition_clue": "color mixed with black",
+          "difficulty_tier": 1,
+          "recognized_answer": "Shade",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Shade",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "shade"
+        ],
+        "term": "Shade",
+        "definition_clue": "color mixed with black",
+        "difficulty_tier": 1,
+        "recognized_answer": "Shade",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Tone",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "tone"
+          ],
+          "term": "Tone",
+          "definition_clue": "color mixed with gray",
+          "difficulty_tier": 1,
+          "recognized_answer": "Tone",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Tone",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "tone"
+        ],
+        "term": "Tone",
+        "definition_clue": "color mixed with gray",
+        "difficulty_tier": 1,
+        "recognized_answer": "Tone",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Monochrome",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "monochrome"
+          ],
+          "term": "Monochrome",
+          "definition_clue": "one main color family",
+          "difficulty_tier": 1,
+          "recognized_answer": "Monochrome",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Monochrome",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "monochrome"
+        ],
+        "term": "Monochrome",
+        "definition_clue": "one main color family",
+        "difficulty_tier": 1,
+        "recognized_answer": "Monochrome",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Harmony",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_harmony"
+          ],
+          "term": "Color Harmony",
+          "definition_clue": "pleasing color relationship",
+          "difficulty_tier": 1,
+          "recognized_answer": "Color Harmony",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Harmony",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_harmony"
+        ],
+        "term": "Color Harmony",
+        "definition_clue": "pleasing color relationship",
+        "difficulty_tier": 1,
+        "recognized_answer": "Color Harmony",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Temperature",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_temperature"
+          ],
+          "term": "Color Temperature",
+          "definition_clue": "warm or cool feeling of color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Color Temperature",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Temperature",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_temperature"
+        ],
+        "term": "Color Temperature",
+        "definition_clue": "warm or cool feeling of color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Color Temperature",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Local Color",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "local_color"
+          ],
+          "term": "Local Color",
+          "definition_clue": "natural color of an object",
+          "difficulty_tier": 1,
+          "recognized_answer": "Local Color",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Local Color",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "local_color"
+        ],
+        "term": "Local Color",
+        "definition_clue": "natural color of an object",
+        "difficulty_tier": 1,
+        "recognized_answer": "Local Color",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Optical Mixing",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "optical_mixing"
+          ],
+          "term": "Optical Mixing",
+          "definition_clue": "colors blending in the viewer eye",
+          "difficulty_tier": 1,
+          "recognized_answer": "Optical Mixing",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Optical Mixing",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "optical_mixing"
+        ],
+        "term": "Optical Mixing",
+        "definition_clue": "colors blending in the viewer eye",
+        "difficulty_tier": 1,
+        "recognized_answer": "Optical Mixing",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Limited Palette",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "limited_palette"
+          ],
+          "term": "Limited Palette",
+          "definition_clue": "small controlled set of colors",
+          "difficulty_tier": 1,
+          "recognized_answer": "Limited Palette",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Limited Palette",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "limited_palette"
+        ],
+        "term": "Limited Palette",
+        "definition_clue": "small controlled set of colors",
+        "difficulty_tier": 1,
+        "recognized_answer": "Limited Palette",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Neutral Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "neutral_colors"
+          ],
+          "term": "Neutral Colors",
+          "definition_clue": "black white gray and browns",
+          "difficulty_tier": 1,
+          "recognized_answer": "Neutral Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Neutral Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "neutral_colors"
+        ],
+        "term": "Neutral Colors",
+        "definition_clue": "black white gray and browns",
+        "difficulty_tier": 1,
+        "recognized_answer": "Neutral Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Contrast",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_contrast"
+          ],
+          "term": "Color Contrast",
+          "definition_clue": "difference between colors",
+          "difficulty_tier": 1,
+          "recognized_answer": "Color Contrast",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Contrast",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_contrast"
+        ],
+        "term": "Color Contrast",
+        "definition_clue": "difference between colors",
+        "difficulty_tier": 1,
+        "recognized_answer": "Color Contrast",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Hue",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "hue"
+          ],
+          "term": "Hue",
+          "definition_clue": "Identify the art term: color family such as red or blue",
+          "difficulty_tier": 1,
+          "recognized_answer": "Hue",
+          "distractor_family": [
+            "Value",
+            "Saturation",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Hue",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "hue"
+        ],
+        "term": "Hue",
+        "definition_clue": "Identify the art term: color family such as red or blue",
+        "difficulty_tier": 1,
+        "recognized_answer": "Hue",
+        "distractor_family": [
+          "Value",
+          "Saturation",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Value",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "value"
+          ],
+          "term": "Value",
+          "definition_clue": "Identify the art term: lightness or darkness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Value",
+          "distractor_family": [
+            "Hue",
+            "Saturation",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Value",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "value"
+        ],
+        "term": "Value",
+        "definition_clue": "Identify the art term: lightness or darkness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Value",
+        "distractor_family": [
+          "Hue",
+          "Saturation",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Saturation",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "saturation"
+          ],
+          "term": "Saturation",
+          "definition_clue": "Identify the art term: intensity or purity of color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Saturation",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Saturation",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "saturation"
+        ],
+        "term": "Saturation",
+        "definition_clue": "Identify the art term: intensity or purity of color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Saturation",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Complementary Colors",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "complementary_colors"
+          ],
+          "term": "Complementary Colors",
+          "definition_clue": "Identify the art term: opposites on the color wheel",
+          "difficulty_tier": 1,
+          "recognized_answer": "Complementary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Complementary Colors",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "complementary_colors"
+        ],
+        "term": "Complementary Colors",
+        "definition_clue": "Identify the art term: opposites on the color wheel",
+        "difficulty_tier": 1,
+        "recognized_answer": "Complementary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Analogous Colors",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "analogous_colors"
+          ],
+          "term": "Analogous Colors",
+          "definition_clue": "Identify the art term: neighbors on the color wheel",
+          "difficulty_tier": 1,
+          "recognized_answer": "Analogous Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Analogous Colors",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "analogous_colors"
+        ],
+        "term": "Analogous Colors",
+        "definition_clue": "Identify the art term: neighbors on the color wheel",
+        "difficulty_tier": 1,
+        "recognized_answer": "Analogous Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1585,7 +2585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Primary Colors",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "primary_colors"
+          ],
+          "term": "Primary Colors",
+          "definition_clue": "Identify the art term: red yellow and blue in traditional theory",
+          "difficulty_tier": 1,
+          "recognized_answer": "Primary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Primary Colors",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "primary_colors"
+        ],
+        "term": "Primary Colors",
+        "definition_clue": "Identify the art term: red yellow and blue in traditional theory",
+        "difficulty_tier": 1,
+        "recognized_answer": "Primary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1645,7 +2685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Secondary Colors",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "secondary_colors"
+          ],
+          "term": "Secondary Colors",
+          "definition_clue": "Identify the art term: orange green and violet",
+          "difficulty_tier": 1,
+          "recognized_answer": "Secondary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Secondary Colors",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "secondary_colors"
+        ],
+        "term": "Secondary Colors",
+        "definition_clue": "Identify the art term: orange green and violet",
+        "difficulty_tier": 1,
+        "recognized_answer": "Secondary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1705,7 +2785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Warm Colors",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "warm_colors"
+          ],
+          "term": "Warm Colors",
+          "definition_clue": "Identify the art term: reds oranges and yellows",
+          "difficulty_tier": 1,
+          "recognized_answer": "Warm Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Warm Colors",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "warm_colors"
+        ],
+        "term": "Warm Colors",
+        "definition_clue": "Identify the art term: reds oranges and yellows",
+        "difficulty_tier": 1,
+        "recognized_answer": "Warm Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1765,7 +2885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Cool Colors",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "cool_colors"
+          ],
+          "term": "Cool Colors",
+          "definition_clue": "Identify the art term: blues greens and violets",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cool Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Cool Colors",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "cool_colors"
+        ],
+        "term": "Cool Colors",
+        "definition_clue": "Identify the art term: blues greens and violets",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cool Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1825,7 +2985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Tint",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "tint"
+          ],
+          "term": "Tint",
+          "definition_clue": "Identify the art term: color mixed with white",
+          "difficulty_tier": 1,
+          "recognized_answer": "Tint",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Tint",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "tint"
+        ],
+        "term": "Tint",
+        "definition_clue": "Identify the art term: color mixed with white",
+        "difficulty_tier": 1,
+        "recognized_answer": "Tint",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1885,7 +3085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Shade",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "shade"
+          ],
+          "term": "Shade",
+          "definition_clue": "Identify the art term: color mixed with black",
+          "difficulty_tier": 1,
+          "recognized_answer": "Shade",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Shade",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "shade"
+        ],
+        "term": "Shade",
+        "definition_clue": "Identify the art term: color mixed with black",
+        "difficulty_tier": 1,
+        "recognized_answer": "Shade",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -1945,7 +3185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Tone",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "tone"
+          ],
+          "term": "Tone",
+          "definition_clue": "Identify the art term: color mixed with gray",
+          "difficulty_tier": 1,
+          "recognized_answer": "Tone",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Tone",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "tone"
+        ],
+        "term": "Tone",
+        "definition_clue": "Identify the art term: color mixed with gray",
+        "difficulty_tier": 1,
+        "recognized_answer": "Tone",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2005,7 +3285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Monochrome",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "monochrome"
+          ],
+          "term": "Monochrome",
+          "definition_clue": "Identify the art term: one main color family",
+          "difficulty_tier": 1,
+          "recognized_answer": "Monochrome",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Monochrome",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "monochrome"
+        ],
+        "term": "Monochrome",
+        "definition_clue": "Identify the art term: one main color family",
+        "difficulty_tier": 1,
+        "recognized_answer": "Monochrome",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2065,7 +3385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Harmony",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_harmony"
+          ],
+          "term": "Color Harmony",
+          "definition_clue": "Identify the art term: pleasing color relationship",
+          "difficulty_tier": 1,
+          "recognized_answer": "Color Harmony",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Harmony",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_harmony"
+        ],
+        "term": "Color Harmony",
+        "definition_clue": "Identify the art term: pleasing color relationship",
+        "difficulty_tier": 1,
+        "recognized_answer": "Color Harmony",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2125,7 +3485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Temperature",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_temperature"
+          ],
+          "term": "Color Temperature",
+          "definition_clue": "Identify the art term: warm or cool feeling of color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Color Temperature",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Temperature",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_temperature"
+        ],
+        "term": "Color Temperature",
+        "definition_clue": "Identify the art term: warm or cool feeling of color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Color Temperature",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2185,7 +3585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Local Color",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "local_color"
+          ],
+          "term": "Local Color",
+          "definition_clue": "Identify the art term: natural color of an object",
+          "difficulty_tier": 1,
+          "recognized_answer": "Local Color",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Local Color",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "local_color"
+        ],
+        "term": "Local Color",
+        "definition_clue": "Identify the art term: natural color of an object",
+        "difficulty_tier": 1,
+        "recognized_answer": "Local Color",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2245,7 +3685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Optical Mixing",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "optical_mixing"
+          ],
+          "term": "Optical Mixing",
+          "definition_clue": "Identify the art term: colors blending in the viewer eye",
+          "difficulty_tier": 1,
+          "recognized_answer": "Optical Mixing",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Optical Mixing",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "optical_mixing"
+        ],
+        "term": "Optical Mixing",
+        "definition_clue": "Identify the art term: colors blending in the viewer eye",
+        "difficulty_tier": 1,
+        "recognized_answer": "Optical Mixing",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2305,7 +3785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Limited Palette",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "limited_palette"
+          ],
+          "term": "Limited Palette",
+          "definition_clue": "Identify the art term: small controlled set of colors",
+          "difficulty_tier": 1,
+          "recognized_answer": "Limited Palette",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Limited Palette",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "limited_palette"
+        ],
+        "term": "Limited Palette",
+        "definition_clue": "Identify the art term: small controlled set of colors",
+        "difficulty_tier": 1,
+        "recognized_answer": "Limited Palette",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2365,7 +3885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Neutral Colors",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "neutral_colors"
+          ],
+          "term": "Neutral Colors",
+          "definition_clue": "Identify the art term: black white gray and browns",
+          "difficulty_tier": 1,
+          "recognized_answer": "Neutral Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Neutral Colors",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "neutral_colors"
+        ],
+        "term": "Neutral Colors",
+        "definition_clue": "Identify the art term: black white gray and browns",
+        "difficulty_tier": 1,
+        "recognized_answer": "Neutral Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2425,7 +3985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Contrast",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_contrast"
+          ],
+          "term": "Color Contrast",
+          "definition_clue": "Identify the art term: difference between colors",
+          "difficulty_tier": 1,
+          "recognized_answer": "Color Contrast",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Contrast",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_contrast"
+        ],
+        "term": "Color Contrast",
+        "definition_clue": "Identify the art term: difference between colors",
+        "difficulty_tier": 1,
+        "recognized_answer": "Color Contrast",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2485,7 +4085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Hue",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "hue"
+          ],
+          "term": "Hue",
+          "definition_clue": "Which concept means color family such as red or blue?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Hue",
+          "distractor_family": [
+            "Value",
+            "Saturation",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Hue",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "hue"
+        ],
+        "term": "Hue",
+        "definition_clue": "Which concept means color family such as red or blue?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Hue",
+        "distractor_family": [
+          "Value",
+          "Saturation",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -2545,7 +4185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Value",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "value"
+          ],
+          "term": "Value",
+          "definition_clue": "Which concept means lightness or darkness?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Value",
+          "distractor_family": [
+            "Hue",
+            "Saturation",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Value",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "value"
+        ],
+        "term": "Value",
+        "definition_clue": "Which concept means lightness or darkness?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Value",
+        "distractor_family": [
+          "Hue",
+          "Saturation",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -2605,7 +4285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Saturation",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "saturation"
+          ],
+          "term": "Saturation",
+          "definition_clue": "Which concept means intensity or purity of color?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Saturation",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Saturation",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "saturation"
+        ],
+        "term": "Saturation",
+        "definition_clue": "Which concept means intensity or purity of color?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Saturation",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -2665,7 +4385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Complementary Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "complementary_colors"
+          ],
+          "term": "Complementary Colors",
+          "definition_clue": "Which concept means opposites on the color wheel?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Complementary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Complementary Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "complementary_colors"
+        ],
+        "term": "Complementary Colors",
+        "definition_clue": "Which concept means opposites on the color wheel?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Complementary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2725,7 +4485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Analogous Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "analogous_colors"
+          ],
+          "term": "Analogous Colors",
+          "definition_clue": "Which concept means neighbors on the color wheel?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Analogous Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Analogous Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "analogous_colors"
+        ],
+        "term": "Analogous Colors",
+        "definition_clue": "Which concept means neighbors on the color wheel?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Analogous Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2785,7 +4585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Primary Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "primary_colors"
+          ],
+          "term": "Primary Colors",
+          "definition_clue": "Which concept means red yellow and blue in traditional theory?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Primary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Primary Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "primary_colors"
+        ],
+        "term": "Primary Colors",
+        "definition_clue": "Which concept means red yellow and blue in traditional theory?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Primary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2845,7 +4685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Secondary Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "secondary_colors"
+          ],
+          "term": "Secondary Colors",
+          "definition_clue": "Which concept means orange green and violet?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Secondary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Secondary Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "secondary_colors"
+        ],
+        "term": "Secondary Colors",
+        "definition_clue": "Which concept means orange green and violet?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Secondary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2905,7 +4785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Warm Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "warm_colors"
+          ],
+          "term": "Warm Colors",
+          "definition_clue": "Which concept means reds oranges and yellows?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Warm Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Warm Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "warm_colors"
+        ],
+        "term": "Warm Colors",
+        "definition_clue": "Which concept means reds oranges and yellows?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Warm Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -2965,7 +4885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Cool Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "cool_colors"
+          ],
+          "term": "Cool Colors",
+          "definition_clue": "Which concept means blues greens and violets?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cool Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Cool Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "cool_colors"
+        ],
+        "term": "Cool Colors",
+        "definition_clue": "Which concept means blues greens and violets?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cool Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3025,7 +4985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Tint",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "tint"
+          ],
+          "term": "Tint",
+          "definition_clue": "Which concept means color mixed with white?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Tint",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Tint",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "tint"
+        ],
+        "term": "Tint",
+        "definition_clue": "Which concept means color mixed with white?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Tint",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3085,7 +5085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Shade",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "shade"
+          ],
+          "term": "Shade",
+          "definition_clue": "Which concept means color mixed with black?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Shade",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Shade",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "shade"
+        ],
+        "term": "Shade",
+        "definition_clue": "Which concept means color mixed with black?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Shade",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3145,7 +5185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Tone",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "tone"
+          ],
+          "term": "Tone",
+          "definition_clue": "Which concept means color mixed with gray?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Tone",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Tone",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "tone"
+        ],
+        "term": "Tone",
+        "definition_clue": "Which concept means color mixed with gray?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Tone",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3205,7 +5285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Monochrome",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "monochrome"
+          ],
+          "term": "Monochrome",
+          "definition_clue": "Which concept means one main color family?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Monochrome",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Monochrome",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "monochrome"
+        ],
+        "term": "Monochrome",
+        "definition_clue": "Which concept means one main color family?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Monochrome",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3265,7 +5385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Harmony",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_harmony"
+          ],
+          "term": "Color Harmony",
+          "definition_clue": "Which concept means pleasing color relationship?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Color Harmony",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Harmony",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_harmony"
+        ],
+        "term": "Color Harmony",
+        "definition_clue": "Which concept means pleasing color relationship?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Color Harmony",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3325,7 +5485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Temperature",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_temperature"
+          ],
+          "term": "Color Temperature",
+          "definition_clue": "Which concept means warm or cool feeling of color?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Color Temperature",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Temperature",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_temperature"
+        ],
+        "term": "Color Temperature",
+        "definition_clue": "Which concept means warm or cool feeling of color?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Color Temperature",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3385,7 +5585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Local Color",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "local_color"
+          ],
+          "term": "Local Color",
+          "definition_clue": "Which concept means natural color of an object?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Local Color",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Local Color",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "local_color"
+        ],
+        "term": "Local Color",
+        "definition_clue": "Which concept means natural color of an object?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Local Color",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3445,7 +5685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Optical Mixing",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "optical_mixing"
+          ],
+          "term": "Optical Mixing",
+          "definition_clue": "Which concept means colors blending in the viewer eye?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Optical Mixing",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Optical Mixing",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "optical_mixing"
+        ],
+        "term": "Optical Mixing",
+        "definition_clue": "Which concept means colors blending in the viewer eye?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Optical Mixing",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3505,7 +5785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Limited Palette",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "limited_palette"
+          ],
+          "term": "Limited Palette",
+          "definition_clue": "Which concept means small controlled set of colors?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Limited Palette",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Limited Palette",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "limited_palette"
+        ],
+        "term": "Limited Palette",
+        "definition_clue": "Which concept means small controlled set of colors?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Limited Palette",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3565,7 +5885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Neutral Colors",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "neutral_colors"
+          ],
+          "term": "Neutral Colors",
+          "definition_clue": "Which concept means black white gray and browns?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Neutral Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Neutral Colors",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "neutral_colors"
+        ],
+        "term": "Neutral Colors",
+        "definition_clue": "Which concept means black white gray and browns?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Neutral Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3625,7 +5985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Contrast",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_contrast"
+          ],
+          "term": "Color Contrast",
+          "definition_clue": "Which concept means difference between colors?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Color Contrast",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Contrast",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_contrast"
+        ],
+        "term": "Color Contrast",
+        "definition_clue": "Which concept means difference between colors?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Color Contrast",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3685,7 +6085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Hue",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "hue"
+          ],
+          "term": "Hue",
+          "definition_clue": "Spot the matching term for: color family such as red or blue",
+          "difficulty_tier": 2,
+          "recognized_answer": "Hue",
+          "distractor_family": [
+            "Value",
+            "Saturation",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Hue",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "hue"
+        ],
+        "term": "Hue",
+        "definition_clue": "Spot the matching term for: color family such as red or blue",
+        "difficulty_tier": 2,
+        "recognized_answer": "Hue",
+        "distractor_family": [
+          "Value",
+          "Saturation",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -3745,7 +6185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Value",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "value"
+          ],
+          "term": "Value",
+          "definition_clue": "Spot the matching term for: lightness or darkness",
+          "difficulty_tier": 2,
+          "recognized_answer": "Value",
+          "distractor_family": [
+            "Hue",
+            "Saturation",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Value",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "value"
+        ],
+        "term": "Value",
+        "definition_clue": "Spot the matching term for: lightness or darkness",
+        "difficulty_tier": 2,
+        "recognized_answer": "Value",
+        "distractor_family": [
+          "Hue",
+          "Saturation",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -3805,7 +6285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Saturation",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "saturation"
+          ],
+          "term": "Saturation",
+          "definition_clue": "Spot the matching term for: intensity or purity of color",
+          "difficulty_tier": 2,
+          "recognized_answer": "Saturation",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Complementary Colors"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Saturation",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "saturation"
+        ],
+        "term": "Saturation",
+        "definition_clue": "Spot the matching term for: intensity or purity of color",
+        "difficulty_tier": 2,
+        "recognized_answer": "Saturation",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Complementary Colors"
+        ]
       }
     },
     {
@@ -3865,7 +6385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Complementary Colors",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "complementary_colors"
+          ],
+          "term": "Complementary Colors",
+          "definition_clue": "Spot the matching term for: opposites on the color wheel",
+          "difficulty_tier": 2,
+          "recognized_answer": "Complementary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Complementary Colors",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "complementary_colors"
+        ],
+        "term": "Complementary Colors",
+        "definition_clue": "Spot the matching term for: opposites on the color wheel",
+        "difficulty_tier": 2,
+        "recognized_answer": "Complementary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3925,7 +6485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Analogous Colors",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "analogous_colors"
+          ],
+          "term": "Analogous Colors",
+          "definition_clue": "Spot the matching term for: neighbors on the color wheel",
+          "difficulty_tier": 2,
+          "recognized_answer": "Analogous Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Analogous Colors",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "analogous_colors"
+        ],
+        "term": "Analogous Colors",
+        "definition_clue": "Spot the matching term for: neighbors on the color wheel",
+        "difficulty_tier": 2,
+        "recognized_answer": "Analogous Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -3985,7 +6585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Primary Colors",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "primary_colors"
+          ],
+          "term": "Primary Colors",
+          "definition_clue": "Spot the matching term for: red yellow and blue in traditional theory",
+          "difficulty_tier": 2,
+          "recognized_answer": "Primary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Primary Colors",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "primary_colors"
+        ],
+        "term": "Primary Colors",
+        "definition_clue": "Spot the matching term for: red yellow and blue in traditional theory",
+        "difficulty_tier": 2,
+        "recognized_answer": "Primary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4045,7 +6685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Secondary Colors",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "secondary_colors"
+          ],
+          "term": "Secondary Colors",
+          "definition_clue": "Spot the matching term for: orange green and violet",
+          "difficulty_tier": 2,
+          "recognized_answer": "Secondary Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Secondary Colors",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "secondary_colors"
+        ],
+        "term": "Secondary Colors",
+        "definition_clue": "Spot the matching term for: orange green and violet",
+        "difficulty_tier": 2,
+        "recognized_answer": "Secondary Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4105,7 +6785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Warm Colors",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "warm_colors"
+          ],
+          "term": "Warm Colors",
+          "definition_clue": "Spot the matching term for: reds oranges and yellows",
+          "difficulty_tier": 2,
+          "recognized_answer": "Warm Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Warm Colors",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "warm_colors"
+        ],
+        "term": "Warm Colors",
+        "definition_clue": "Spot the matching term for: reds oranges and yellows",
+        "difficulty_tier": 2,
+        "recognized_answer": "Warm Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4165,7 +6885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Cool Colors",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "cool_colors"
+          ],
+          "term": "Cool Colors",
+          "definition_clue": "Spot the matching term for: blues greens and violets",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cool Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Cool Colors",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "cool_colors"
+        ],
+        "term": "Cool Colors",
+        "definition_clue": "Spot the matching term for: blues greens and violets",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cool Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4225,7 +6985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Tint",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "tint"
+          ],
+          "term": "Tint",
+          "definition_clue": "Spot the matching term for: color mixed with white",
+          "difficulty_tier": 2,
+          "recognized_answer": "Tint",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Tint",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "tint"
+        ],
+        "term": "Tint",
+        "definition_clue": "Spot the matching term for: color mixed with white",
+        "difficulty_tier": 2,
+        "recognized_answer": "Tint",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4285,7 +7085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Shade",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "shade"
+          ],
+          "term": "Shade",
+          "definition_clue": "Spot the matching term for: color mixed with black",
+          "difficulty_tier": 3,
+          "recognized_answer": "Shade",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Shade",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "shade"
+        ],
+        "term": "Shade",
+        "definition_clue": "Spot the matching term for: color mixed with black",
+        "difficulty_tier": 3,
+        "recognized_answer": "Shade",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4345,7 +7185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Tone",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "tone"
+          ],
+          "term": "Tone",
+          "definition_clue": "Spot the matching term for: color mixed with gray",
+          "difficulty_tier": 3,
+          "recognized_answer": "Tone",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Tone",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "tone"
+        ],
+        "term": "Tone",
+        "definition_clue": "Spot the matching term for: color mixed with gray",
+        "difficulty_tier": 3,
+        "recognized_answer": "Tone",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4405,7 +7285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Monochrome",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "monochrome"
+          ],
+          "term": "Monochrome",
+          "definition_clue": "Spot the matching term for: one main color family",
+          "difficulty_tier": 3,
+          "recognized_answer": "Monochrome",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Monochrome",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "monochrome"
+        ],
+        "term": "Monochrome",
+        "definition_clue": "Spot the matching term for: one main color family",
+        "difficulty_tier": 3,
+        "recognized_answer": "Monochrome",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4465,7 +7385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Harmony",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_harmony"
+          ],
+          "term": "Color Harmony",
+          "definition_clue": "Spot the matching term for: pleasing color relationship",
+          "difficulty_tier": 3,
+          "recognized_answer": "Color Harmony",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Harmony",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_harmony"
+        ],
+        "term": "Color Harmony",
+        "definition_clue": "Spot the matching term for: pleasing color relationship",
+        "difficulty_tier": 3,
+        "recognized_answer": "Color Harmony",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4525,7 +7485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Temperature",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_temperature"
+          ],
+          "term": "Color Temperature",
+          "definition_clue": "Spot the matching term for: warm or cool feeling of color",
+          "difficulty_tier": 3,
+          "recognized_answer": "Color Temperature",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Temperature",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_temperature"
+        ],
+        "term": "Color Temperature",
+        "definition_clue": "Spot the matching term for: warm or cool feeling of color",
+        "difficulty_tier": 3,
+        "recognized_answer": "Color Temperature",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4585,7 +7585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Local Color",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "local_color"
+          ],
+          "term": "Local Color",
+          "definition_clue": "Spot the matching term for: natural color of an object",
+          "difficulty_tier": 3,
+          "recognized_answer": "Local Color",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Local Color",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "local_color"
+        ],
+        "term": "Local Color",
+        "definition_clue": "Spot the matching term for: natural color of an object",
+        "difficulty_tier": 3,
+        "recognized_answer": "Local Color",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4645,7 +7685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Optical Mixing",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "optical_mixing"
+          ],
+          "term": "Optical Mixing",
+          "definition_clue": "Spot the matching term for: colors blending in the viewer eye",
+          "difficulty_tier": 3,
+          "recognized_answer": "Optical Mixing",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Optical Mixing",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "optical_mixing"
+        ],
+        "term": "Optical Mixing",
+        "definition_clue": "Spot the matching term for: colors blending in the viewer eye",
+        "difficulty_tier": 3,
+        "recognized_answer": "Optical Mixing",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4705,7 +7785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Limited Palette",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "limited_palette"
+          ],
+          "term": "Limited Palette",
+          "definition_clue": "Spot the matching term for: small controlled set of colors",
+          "difficulty_tier": 3,
+          "recognized_answer": "Limited Palette",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Limited Palette",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "limited_palette"
+        ],
+        "term": "Limited Palette",
+        "definition_clue": "Spot the matching term for: small controlled set of colors",
+        "difficulty_tier": 3,
+        "recognized_answer": "Limited Palette",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4765,7 +7885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Neutral Colors",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "neutral_colors"
+          ],
+          "term": "Neutral Colors",
+          "definition_clue": "Spot the matching term for: black white gray and browns",
+          "difficulty_tier": 3,
+          "recognized_answer": "Neutral Colors",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Neutral Colors",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "neutral_colors"
+        ],
+        "term": "Neutral Colors",
+        "definition_clue": "Spot the matching term for: black white gray and browns",
+        "difficulty_tier": 3,
+        "recognized_answer": "Neutral Colors",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4825,7 +7985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "Color Contrast",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_contrast"
+          ],
+          "term": "Color Contrast",
+          "definition_clue": "Spot the matching term for: difference between colors",
+          "difficulty_tier": 3,
+          "recognized_answer": "Color Contrast",
+          "distractor_family": [
+            "Hue",
+            "Value",
+            "Saturation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "Color Contrast",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_contrast"
+        ],
+        "term": "Color Contrast",
+        "definition_clue": "Spot the matching term for: difference between colors",
+        "difficulty_tier": 3,
+        "recognized_answer": "Color Contrast",
+        "distractor_family": [
+          "Hue",
+          "Value",
+          "Saturation"
+        ]
       }
     },
     {
@@ -4885,7 +8085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "color family such as red or blue",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_family_such_as_red_or_blue"
+          ],
+          "term": "color family such as red or blue",
+          "definition_clue": "Hue is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "color family such as red or blue",
+          "distractor_family": [
+            "lightness or darkness",
+            "intensity or purity of color",
+            "opposites on the color wheel"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "color family such as red or blue",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_family_such_as_red_or_blue"
+        ],
+        "term": "color family such as red or blue",
+        "definition_clue": "Hue is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "color family such as red or blue",
+        "distractor_family": [
+          "lightness or darkness",
+          "intensity or purity of color",
+          "opposites on the color wheel"
+        ]
       }
     },
     {
@@ -4945,7 +8185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "lightness or darkness",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "lightness_or_darkness"
+          ],
+          "term": "lightness or darkness",
+          "definition_clue": "Value is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "lightness or darkness",
+          "distractor_family": [
+            "color family such as red or blue",
+            "intensity or purity of color",
+            "opposites on the color wheel"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "lightness or darkness",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "lightness_or_darkness"
+        ],
+        "term": "lightness or darkness",
+        "definition_clue": "Value is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "lightness or darkness",
+        "distractor_family": [
+          "color family such as red or blue",
+          "intensity or purity of color",
+          "opposites on the color wheel"
+        ]
       }
     },
     {
@@ -5005,7 +8285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "intensity or purity of color",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "intensity_or_purity_of_color"
+          ],
+          "term": "intensity or purity of color",
+          "definition_clue": "Saturation is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "intensity or purity of color",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "opposites on the color wheel"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "intensity or purity of color",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "intensity_or_purity_of_color"
+        ],
+        "term": "intensity or purity of color",
+        "definition_clue": "Saturation is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "intensity or purity of color",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "opposites on the color wheel"
+        ]
       }
     },
     {
@@ -5065,7 +8385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "opposites on the color wheel",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "opposites_on_the_color_wheel"
+          ],
+          "term": "opposites on the color wheel",
+          "definition_clue": "Complementary Colors is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "opposites on the color wheel",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "opposites on the color wheel",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "opposites_on_the_color_wheel"
+        ],
+        "term": "opposites on the color wheel",
+        "definition_clue": "Complementary Colors is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "opposites on the color wheel",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5125,7 +8485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "neighbors on the color wheel",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "neighbors_on_the_color_wheel"
+          ],
+          "term": "neighbors on the color wheel",
+          "definition_clue": "Analogous Colors is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "neighbors on the color wheel",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "neighbors on the color wheel",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "neighbors_on_the_color_wheel"
+        ],
+        "term": "neighbors on the color wheel",
+        "definition_clue": "Analogous Colors is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "neighbors on the color wheel",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5185,7 +8585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "red yellow and blue in traditional theory",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "red_yellow_and_blue_in_traditional_theory"
+          ],
+          "term": "red yellow and blue in traditional theory",
+          "definition_clue": "Primary Colors is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "red yellow and blue in traditional theory",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "red yellow and blue in traditional theory",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "red_yellow_and_blue_in_traditional_theory"
+        ],
+        "term": "red yellow and blue in traditional theory",
+        "definition_clue": "Primary Colors is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "red yellow and blue in traditional theory",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5245,7 +8685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "orange green and violet",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "orange_green_and_violet"
+          ],
+          "term": "orange green and violet",
+          "definition_clue": "Secondary Colors is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "orange green and violet",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "orange green and violet",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "orange_green_and_violet"
+        ],
+        "term": "orange green and violet",
+        "definition_clue": "Secondary Colors is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "orange green and violet",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5305,7 +8785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "reds oranges and yellows",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "reds_oranges_and_yellows"
+          ],
+          "term": "reds oranges and yellows",
+          "definition_clue": "Warm Colors is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "reds oranges and yellows",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "reds oranges and yellows",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "reds_oranges_and_yellows"
+        ],
+        "term": "reds oranges and yellows",
+        "definition_clue": "Warm Colors is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "reds oranges and yellows",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5365,7 +8885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "blues greens and violets",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "blues_greens_and_violets"
+          ],
+          "term": "blues greens and violets",
+          "definition_clue": "Cool Colors is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "blues greens and violets",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "blues greens and violets",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "blues_greens_and_violets"
+        ],
+        "term": "blues greens and violets",
+        "definition_clue": "Cool Colors is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "blues greens and violets",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5425,7 +8985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "color mixed with white",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_mixed_with_white"
+          ],
+          "term": "color mixed with white",
+          "definition_clue": "Tint is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "color mixed with white",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "color mixed with white",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_mixed_with_white"
+        ],
+        "term": "color mixed with white",
+        "definition_clue": "Tint is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "color mixed with white",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5485,7 +9085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "color mixed with black",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_mixed_with_black"
+          ],
+          "term": "color mixed with black",
+          "definition_clue": "Shade is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "color mixed with black",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "color mixed with black",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_mixed_with_black"
+        ],
+        "term": "color mixed with black",
+        "definition_clue": "Shade is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "color mixed with black",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5545,7 +9185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "color mixed with gray",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "color_mixed_with_gray"
+          ],
+          "term": "color mixed with gray",
+          "definition_clue": "Tone is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "color mixed with gray",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "color mixed with gray",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "color_mixed_with_gray"
+        ],
+        "term": "color mixed with gray",
+        "definition_clue": "Tone is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "color mixed with gray",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5605,7 +9285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "one main color family",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "one_main_color_family"
+          ],
+          "term": "one main color family",
+          "definition_clue": "Monochrome is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "one main color family",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "one main color family",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "one_main_color_family"
+        ],
+        "term": "one main color family",
+        "definition_clue": "Monochrome is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "one main color family",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5665,7 +9385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "pleasing color relationship",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "pleasing_color_relationship"
+          ],
+          "term": "pleasing color relationship",
+          "definition_clue": "Color Harmony is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "pleasing color relationship",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "pleasing color relationship",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "pleasing_color_relationship"
+        ],
+        "term": "pleasing color relationship",
+        "definition_clue": "Color Harmony is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "pleasing color relationship",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5725,7 +9485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "warm or cool feeling of color",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "warm_or_cool_feeling_of_color"
+          ],
+          "term": "warm or cool feeling of color",
+          "definition_clue": "Color Temperature is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "warm or cool feeling of color",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "warm or cool feeling of color",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "warm_or_cool_feeling_of_color"
+        ],
+        "term": "warm or cool feeling of color",
+        "definition_clue": "Color Temperature is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "warm or cool feeling of color",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5785,7 +9585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "natural color of an object",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "natural_color_of_an_object"
+          ],
+          "term": "natural color of an object",
+          "definition_clue": "In color theory, what means an object’s natural color?",
+          "difficulty_tier": 4,
+          "recognized_answer": "natural color of an object",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "natural color of an object",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "natural_color_of_an_object"
+        ],
+        "term": "natural color of an object",
+        "definition_clue": "In color theory, what means an object’s natural color?",
+        "difficulty_tier": 4,
+        "recognized_answer": "natural color of an object",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5845,7 +9685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "colors blending in the viewer eye",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "colors_blending_in_the_viewer_eye"
+          ],
+          "term": "colors blending in the viewer eye",
+          "definition_clue": "Optical Mixing is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "colors blending in the viewer eye",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "colors blending in the viewer eye",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "colors_blending_in_the_viewer_eye"
+        ],
+        "term": "colors blending in the viewer eye",
+        "definition_clue": "Optical Mixing is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "colors blending in the viewer eye",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5905,7 +9785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "small controlled set of colors",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "small_controlled_set_of_colors"
+          ],
+          "term": "small controlled set of colors",
+          "definition_clue": "Limited Palette is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "small controlled set of colors",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "small controlled set of colors",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "small_controlled_set_of_colors"
+        ],
+        "term": "small controlled set of colors",
+        "definition_clue": "Limited Palette is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "small controlled set of colors",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -5965,7 +9885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "black white gray and browns",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "black_white_gray_and_browns"
+          ],
+          "term": "black white gray and browns",
+          "definition_clue": "Neutral Colors is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "black white gray and browns",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "black white gray and browns",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "black_white_gray_and_browns"
+        ],
+        "term": "black white gray and browns",
+        "definition_clue": "Neutral Colors is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "black white gray and browns",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     },
     {
@@ -6025,7 +9985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "color_theory",
+          "concept": "difference between colors",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "color_theory",
+            "difference_between_colors"
+          ],
+          "term": "difference between colors",
+          "definition_clue": "Color Contrast is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "difference between colors",
+          "distractor_family": [
+            "color family such as red or blue",
+            "lightness or darkness",
+            "intensity or purity of color"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "color_theory",
+        "concept": "difference between colors",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "color_theory",
+          "difference_between_colors"
+        ],
+        "term": "difference between colors",
+        "definition_clue": "Color Contrast is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "difference between colors",
+        "distractor_family": [
+          "color family such as red or blue",
+          "lightness or darkness",
+          "intensity or purity of color"
+        ]
       }
     }
   ]

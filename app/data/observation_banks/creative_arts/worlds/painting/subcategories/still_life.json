@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Still Life",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "still_life"
+          ],
+          "term": "Still Life",
+          "definition_clue": "arranged objects as subject",
+          "difficulty_tier": 1,
+          "recognized_answer": "Still Life",
+          "distractor_family": [
+            "Vanitas",
+            "Memento Mori",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Still Life",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "still_life"
+        ],
+        "term": "Still Life",
+        "definition_clue": "arranged objects as subject",
+        "difficulty_tier": 1,
+        "recognized_answer": "Still Life",
+        "distractor_family": [
+          "Vanitas",
+          "Memento Mori",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Vanitas",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "vanitas"
+          ],
+          "term": "Vanitas",
+          "definition_clue": "still life about mortality",
+          "difficulty_tier": 1,
+          "recognized_answer": "Vanitas",
+          "distractor_family": [
+            "Still Life",
+            "Memento Mori",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Vanitas",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "vanitas"
+        ],
+        "term": "Vanitas",
+        "definition_clue": "still life about mortality",
+        "difficulty_tier": 1,
+        "recognized_answer": "Vanitas",
+        "distractor_family": [
+          "Still Life",
+          "Memento Mori",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Memento Mori",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "memento_mori"
+          ],
+          "term": "Memento Mori",
+          "definition_clue": "reminder of death",
+          "difficulty_tier": 1,
+          "recognized_answer": "Memento Mori",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Memento Mori",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "memento_mori"
+        ],
+        "term": "Memento Mori",
+        "definition_clue": "reminder of death",
+        "difficulty_tier": 1,
+        "recognized_answer": "Memento Mori",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Fruit Bowl",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "fruit_bowl"
+          ],
+          "term": "Fruit Bowl",
+          "definition_clue": "common still-life subject",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fruit Bowl",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Fruit Bowl",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "fruit_bowl"
+        ],
+        "term": "Fruit Bowl",
+        "definition_clue": "common still-life subject",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fruit Bowl",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Flower Arrangement",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "flower_arrangement"
+          ],
+          "term": "Flower Arrangement",
+          "definition_clue": "flowers arranged for painting",
+          "difficulty_tier": 1,
+          "recognized_answer": "Flower Arrangement",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Flower Arrangement",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "flower_arrangement"
+        ],
+        "term": "Flower Arrangement",
+        "definition_clue": "flowers arranged for painting",
+        "difficulty_tier": 1,
+        "recognized_answer": "Flower Arrangement",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Tabletop Composition",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "tabletop_composition"
+          ],
+          "term": "Tabletop Composition",
+          "definition_clue": "objects arranged on a table",
+          "difficulty_tier": 1,
+          "recognized_answer": "Tabletop Composition",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Tabletop Composition",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "tabletop_composition"
+        ],
+        "term": "Tabletop Composition",
+        "definition_clue": "objects arranged on a table",
+        "difficulty_tier": 1,
+        "recognized_answer": "Tabletop Composition",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Glass Reflection",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "glass_reflection"
+          ],
+          "term": "Glass Reflection",
+          "definition_clue": "light reflected in glass",
+          "difficulty_tier": 1,
+          "recognized_answer": "Glass Reflection",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Glass Reflection",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "glass_reflection"
+        ],
+        "term": "Glass Reflection",
+        "definition_clue": "light reflected in glass",
+        "difficulty_tier": 1,
+        "recognized_answer": "Glass Reflection",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Metal Highlight",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "metal_highlight"
+          ],
+          "term": "Metal Highlight",
+          "definition_clue": "bright reflection on metal",
+          "difficulty_tier": 1,
+          "recognized_answer": "Metal Highlight",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Metal Highlight",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "metal_highlight"
+        ],
+        "term": "Metal Highlight",
+        "definition_clue": "bright reflection on metal",
+        "difficulty_tier": 1,
+        "recognized_answer": "Metal Highlight",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Texture Study",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "texture_study"
+          ],
+          "term": "Texture Study",
+          "definition_clue": "surface quality emphasized",
+          "difficulty_tier": 1,
+          "recognized_answer": "Texture Study",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Texture Study",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "texture_study"
+        ],
+        "term": "Texture Study",
+        "definition_clue": "surface quality emphasized",
+        "difficulty_tier": 1,
+        "recognized_answer": "Texture Study",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Symbolic Object",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "symbolic_object"
+          ],
+          "term": "Symbolic Object",
+          "definition_clue": "object carrying meaning",
+          "difficulty_tier": 1,
+          "recognized_answer": "Symbolic Object",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Symbolic Object",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "symbolic_object"
+        ],
+        "term": "Symbolic Object",
+        "definition_clue": "object carrying meaning",
+        "difficulty_tier": 1,
+        "recognized_answer": "Symbolic Object",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Skull Motif",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "skull_motif"
+          ],
+          "term": "Skull Motif",
+          "definition_clue": "mortality symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Skull Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Skull Motif",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "skull_motif"
+        ],
+        "term": "Skull Motif",
+        "definition_clue": "mortality symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Skull Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Candle Motif",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "candle_motif"
+          ],
+          "term": "Candle Motif",
+          "definition_clue": "passing time symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Candle Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Candle Motif",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "candle_motif"
+        ],
+        "term": "Candle Motif",
+        "definition_clue": "passing time symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Candle Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Book Motif",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "book_motif"
+          ],
+          "term": "Book Motif",
+          "definition_clue": "learning or knowledge symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Book Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Book Motif",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "book_motif"
+        ],
+        "term": "Book Motif",
+        "definition_clue": "learning or knowledge symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Book Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Musical Instrument",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "musical_instrument"
+          ],
+          "term": "Musical Instrument",
+          "definition_clue": "arts and leisure symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Musical Instrument",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Musical Instrument",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "musical_instrument"
+        ],
+        "term": "Musical Instrument",
+        "definition_clue": "arts and leisure symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Musical Instrument",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Game Motif",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "game_motif"
+          ],
+          "term": "Game Motif",
+          "definition_clue": "chance or leisure symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Game Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Game Motif",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "game_motif"
+        ],
+        "term": "Game Motif",
+        "definition_clue": "chance or leisure symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Game Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Trompe-l’œil",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "trompe_l_il"
+          ],
+          "term": "Trompe-l’œil",
+          "definition_clue": "illusion that tricks the eye",
+          "difficulty_tier": 1,
+          "recognized_answer": "Trompe-l’œil",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Trompe-l’œil",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "trompe_l_il"
+        ],
+        "term": "Trompe-l’œil",
+        "definition_clue": "illusion that tricks the eye",
+        "difficulty_tier": 1,
+        "recognized_answer": "Trompe-l’œil",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Overlapping Objects",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "overlapping_objects"
+          ],
+          "term": "Overlapping Objects",
+          "definition_clue": "depth created by overlap",
+          "difficulty_tier": 1,
+          "recognized_answer": "Overlapping Objects",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Overlapping Objects",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "overlapping_objects"
+        ],
+        "term": "Overlapping Objects",
+        "definition_clue": "depth created by overlap",
+        "difficulty_tier": 1,
+        "recognized_answer": "Overlapping Objects",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Cast Shadow",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "cast_shadow"
+          ],
+          "term": "Cast Shadow",
+          "definition_clue": "shadow falling from an object",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cast Shadow",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Cast Shadow",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "cast_shadow"
+        ],
+        "term": "Cast Shadow",
+        "definition_clue": "shadow falling from an object",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cast Shadow",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Local Color",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "local_color"
+          ],
+          "term": "Local Color",
+          "definition_clue": "natural object color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Local Color",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Local Color",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "local_color"
+        ],
+        "term": "Local Color",
+        "definition_clue": "natural object color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Local Color",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Balanced Arrangement",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "balanced_arrangement"
+          ],
+          "term": "Balanced Arrangement",
+          "definition_clue": "stable object composition",
+          "difficulty_tier": 1,
+          "recognized_answer": "Balanced Arrangement",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Balanced Arrangement",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "balanced_arrangement"
+        ],
+        "term": "Balanced Arrangement",
+        "definition_clue": "stable object composition",
+        "difficulty_tier": 1,
+        "recognized_answer": "Balanced Arrangement",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Still Life",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "still_life"
+          ],
+          "term": "Still Life",
+          "definition_clue": "Identify the art term: arranged objects as subject",
+          "difficulty_tier": 1,
+          "recognized_answer": "Still Life",
+          "distractor_family": [
+            "Vanitas",
+            "Memento Mori",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Still Life",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "still_life"
+        ],
+        "term": "Still Life",
+        "definition_clue": "Identify the art term: arranged objects as subject",
+        "difficulty_tier": 1,
+        "recognized_answer": "Still Life",
+        "distractor_family": [
+          "Vanitas",
+          "Memento Mori",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Vanitas",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "vanitas"
+          ],
+          "term": "Vanitas",
+          "definition_clue": "Identify the art term: still life about mortality",
+          "difficulty_tier": 1,
+          "recognized_answer": "Vanitas",
+          "distractor_family": [
+            "Still Life",
+            "Memento Mori",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Vanitas",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "vanitas"
+        ],
+        "term": "Vanitas",
+        "definition_clue": "Identify the art term: still life about mortality",
+        "difficulty_tier": 1,
+        "recognized_answer": "Vanitas",
+        "distractor_family": [
+          "Still Life",
+          "Memento Mori",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Memento Mori",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "memento_mori"
+          ],
+          "term": "Memento Mori",
+          "definition_clue": "Identify the art term: reminder of death",
+          "difficulty_tier": 1,
+          "recognized_answer": "Memento Mori",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Memento Mori",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "memento_mori"
+        ],
+        "term": "Memento Mori",
+        "definition_clue": "Identify the art term: reminder of death",
+        "difficulty_tier": 1,
+        "recognized_answer": "Memento Mori",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Fruit Bowl",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "fruit_bowl"
+          ],
+          "term": "Fruit Bowl",
+          "definition_clue": "Identify the art term: common still-life subject",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fruit Bowl",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Fruit Bowl",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "fruit_bowl"
+        ],
+        "term": "Fruit Bowl",
+        "definition_clue": "Identify the art term: common still-life subject",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fruit Bowl",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Flower Arrangement",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "flower_arrangement"
+          ],
+          "term": "Flower Arrangement",
+          "definition_clue": "Identify the art term: flowers arranged for painting",
+          "difficulty_tier": 1,
+          "recognized_answer": "Flower Arrangement",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Flower Arrangement",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "flower_arrangement"
+        ],
+        "term": "Flower Arrangement",
+        "definition_clue": "Identify the art term: flowers arranged for painting",
+        "difficulty_tier": 1,
+        "recognized_answer": "Flower Arrangement",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1585,7 +2585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Tabletop Composition",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "tabletop_composition"
+          ],
+          "term": "Tabletop Composition",
+          "definition_clue": "Identify the art term: objects arranged on a table",
+          "difficulty_tier": 1,
+          "recognized_answer": "Tabletop Composition",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Tabletop Composition",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "tabletop_composition"
+        ],
+        "term": "Tabletop Composition",
+        "definition_clue": "Identify the art term: objects arranged on a table",
+        "difficulty_tier": 1,
+        "recognized_answer": "Tabletop Composition",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1645,7 +2685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Glass Reflection",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "glass_reflection"
+          ],
+          "term": "Glass Reflection",
+          "definition_clue": "Identify the art term: light reflected in glass",
+          "difficulty_tier": 1,
+          "recognized_answer": "Glass Reflection",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Glass Reflection",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "glass_reflection"
+        ],
+        "term": "Glass Reflection",
+        "definition_clue": "Identify the art term: light reflected in glass",
+        "difficulty_tier": 1,
+        "recognized_answer": "Glass Reflection",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1705,7 +2785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Metal Highlight",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "metal_highlight"
+          ],
+          "term": "Metal Highlight",
+          "definition_clue": "Identify the art term: bright reflection on metal",
+          "difficulty_tier": 1,
+          "recognized_answer": "Metal Highlight",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Metal Highlight",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "metal_highlight"
+        ],
+        "term": "Metal Highlight",
+        "definition_clue": "Identify the art term: bright reflection on metal",
+        "difficulty_tier": 1,
+        "recognized_answer": "Metal Highlight",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1765,7 +2885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Texture Study",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "texture_study"
+          ],
+          "term": "Texture Study",
+          "definition_clue": "Identify the art term: surface quality emphasized",
+          "difficulty_tier": 1,
+          "recognized_answer": "Texture Study",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Texture Study",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "texture_study"
+        ],
+        "term": "Texture Study",
+        "definition_clue": "Identify the art term: surface quality emphasized",
+        "difficulty_tier": 1,
+        "recognized_answer": "Texture Study",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1825,7 +2985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Symbolic Object",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "symbolic_object"
+          ],
+          "term": "Symbolic Object",
+          "definition_clue": "Identify the art term: object carrying meaning",
+          "difficulty_tier": 1,
+          "recognized_answer": "Symbolic Object",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Symbolic Object",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "symbolic_object"
+        ],
+        "term": "Symbolic Object",
+        "definition_clue": "Identify the art term: object carrying meaning",
+        "difficulty_tier": 1,
+        "recognized_answer": "Symbolic Object",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1885,7 +3085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Skull Motif",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "skull_motif"
+          ],
+          "term": "Skull Motif",
+          "definition_clue": "Identify the art term: mortality symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Skull Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Skull Motif",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "skull_motif"
+        ],
+        "term": "Skull Motif",
+        "definition_clue": "Identify the art term: mortality symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Skull Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -1945,7 +3185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Candle Motif",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "candle_motif"
+          ],
+          "term": "Candle Motif",
+          "definition_clue": "Identify the art term: passing time symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Candle Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Candle Motif",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "candle_motif"
+        ],
+        "term": "Candle Motif",
+        "definition_clue": "Identify the art term: passing time symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Candle Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2005,7 +3285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Book Motif",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "book_motif"
+          ],
+          "term": "Book Motif",
+          "definition_clue": "Identify the art term: learning or knowledge symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Book Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Book Motif",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "book_motif"
+        ],
+        "term": "Book Motif",
+        "definition_clue": "Identify the art term: learning or knowledge symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Book Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2065,7 +3385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Musical Instrument",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "musical_instrument"
+          ],
+          "term": "Musical Instrument",
+          "definition_clue": "Identify the art term: arts and leisure symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Musical Instrument",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Musical Instrument",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "musical_instrument"
+        ],
+        "term": "Musical Instrument",
+        "definition_clue": "Identify the art term: arts and leisure symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Musical Instrument",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2125,7 +3485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Game Motif",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "game_motif"
+          ],
+          "term": "Game Motif",
+          "definition_clue": "Identify the art term: chance or leisure symbol",
+          "difficulty_tier": 1,
+          "recognized_answer": "Game Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Game Motif",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "game_motif"
+        ],
+        "term": "Game Motif",
+        "definition_clue": "Identify the art term: chance or leisure symbol",
+        "difficulty_tier": 1,
+        "recognized_answer": "Game Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2185,7 +3585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Trompe-l’œil",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "trompe_l_il"
+          ],
+          "term": "Trompe-l’œil",
+          "definition_clue": "Identify the art term: illusion that tricks the eye",
+          "difficulty_tier": 1,
+          "recognized_answer": "Trompe-l’œil",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Trompe-l’œil",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "trompe_l_il"
+        ],
+        "term": "Trompe-l’œil",
+        "definition_clue": "Identify the art term: illusion that tricks the eye",
+        "difficulty_tier": 1,
+        "recognized_answer": "Trompe-l’œil",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2245,7 +3685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Overlapping Objects",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "overlapping_objects"
+          ],
+          "term": "Overlapping Objects",
+          "definition_clue": "Identify the art term: depth created by overlap",
+          "difficulty_tier": 1,
+          "recognized_answer": "Overlapping Objects",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Overlapping Objects",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "overlapping_objects"
+        ],
+        "term": "Overlapping Objects",
+        "definition_clue": "Identify the art term: depth created by overlap",
+        "difficulty_tier": 1,
+        "recognized_answer": "Overlapping Objects",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2305,7 +3785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Cast Shadow",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "cast_shadow"
+          ],
+          "term": "Cast Shadow",
+          "definition_clue": "Identify the art term: shadow falling from an object",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cast Shadow",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Cast Shadow",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "cast_shadow"
+        ],
+        "term": "Cast Shadow",
+        "definition_clue": "Identify the art term: shadow falling from an object",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cast Shadow",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2365,7 +3885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Local Color",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "local_color"
+          ],
+          "term": "Local Color",
+          "definition_clue": "Identify the art term: natural object color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Local Color",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Local Color",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "local_color"
+        ],
+        "term": "Local Color",
+        "definition_clue": "Identify the art term: natural object color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Local Color",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2425,7 +3985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Balanced Arrangement",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "balanced_arrangement"
+          ],
+          "term": "Balanced Arrangement",
+          "definition_clue": "Identify the art term: stable object composition",
+          "difficulty_tier": 1,
+          "recognized_answer": "Balanced Arrangement",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Balanced Arrangement",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "balanced_arrangement"
+        ],
+        "term": "Balanced Arrangement",
+        "definition_clue": "Identify the art term: stable object composition",
+        "difficulty_tier": 1,
+        "recognized_answer": "Balanced Arrangement",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2485,7 +4085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Still Life",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "still_life"
+          ],
+          "term": "Still Life",
+          "definition_clue": "Which concept means arranged objects as subject?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Still Life",
+          "distractor_family": [
+            "Vanitas",
+            "Memento Mori",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Still Life",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "still_life"
+        ],
+        "term": "Still Life",
+        "definition_clue": "Which concept means arranged objects as subject?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Still Life",
+        "distractor_family": [
+          "Vanitas",
+          "Memento Mori",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -2545,7 +4185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Vanitas",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "vanitas"
+          ],
+          "term": "Vanitas",
+          "definition_clue": "Which concept means still life about mortality?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Vanitas",
+          "distractor_family": [
+            "Still Life",
+            "Memento Mori",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Vanitas",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "vanitas"
+        ],
+        "term": "Vanitas",
+        "definition_clue": "Which concept means still life about mortality?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Vanitas",
+        "distractor_family": [
+          "Still Life",
+          "Memento Mori",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -2605,7 +4285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Memento Mori",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "memento_mori"
+          ],
+          "term": "Memento Mori",
+          "definition_clue": "Which concept means reminder of death?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Memento Mori",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Memento Mori",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "memento_mori"
+        ],
+        "term": "Memento Mori",
+        "definition_clue": "Which concept means reminder of death?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Memento Mori",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -2665,7 +4385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Fruit Bowl",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "fruit_bowl"
+          ],
+          "term": "Fruit Bowl",
+          "definition_clue": "Which concept means common still-life subject?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Fruit Bowl",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Fruit Bowl",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "fruit_bowl"
+        ],
+        "term": "Fruit Bowl",
+        "definition_clue": "Which concept means common still-life subject?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Fruit Bowl",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2725,7 +4485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Flower Arrangement",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "flower_arrangement"
+          ],
+          "term": "Flower Arrangement",
+          "definition_clue": "Which concept means flowers arranged for painting?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Flower Arrangement",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Flower Arrangement",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "flower_arrangement"
+        ],
+        "term": "Flower Arrangement",
+        "definition_clue": "Which concept means flowers arranged for painting?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Flower Arrangement",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2785,7 +4585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Tabletop Composition",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "tabletop_composition"
+          ],
+          "term": "Tabletop Composition",
+          "definition_clue": "Which concept means objects arranged on a table?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Tabletop Composition",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Tabletop Composition",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "tabletop_composition"
+        ],
+        "term": "Tabletop Composition",
+        "definition_clue": "Which concept means objects arranged on a table?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Tabletop Composition",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2845,7 +4685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Glass Reflection",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "glass_reflection"
+          ],
+          "term": "Glass Reflection",
+          "definition_clue": "Which concept means light reflected in glass?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Glass Reflection",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Glass Reflection",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "glass_reflection"
+        ],
+        "term": "Glass Reflection",
+        "definition_clue": "Which concept means light reflected in glass?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Glass Reflection",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2905,7 +4785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Metal Highlight",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "metal_highlight"
+          ],
+          "term": "Metal Highlight",
+          "definition_clue": "Which concept means bright reflection on metal?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Metal Highlight",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Metal Highlight",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "metal_highlight"
+        ],
+        "term": "Metal Highlight",
+        "definition_clue": "Which concept means bright reflection on metal?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Metal Highlight",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -2965,7 +4885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Texture Study",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "texture_study"
+          ],
+          "term": "Texture Study",
+          "definition_clue": "Which concept means surface quality emphasized?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Texture Study",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Texture Study",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "texture_study"
+        ],
+        "term": "Texture Study",
+        "definition_clue": "Which concept means surface quality emphasized?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Texture Study",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3025,7 +4985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Symbolic Object",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "symbolic_object"
+          ],
+          "term": "Symbolic Object",
+          "definition_clue": "Which concept means object carrying meaning?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Symbolic Object",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Symbolic Object",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "symbolic_object"
+        ],
+        "term": "Symbolic Object",
+        "definition_clue": "Which concept means object carrying meaning?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Symbolic Object",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3085,7 +5085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Skull Motif",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "skull_motif"
+          ],
+          "term": "Skull Motif",
+          "definition_clue": "Which concept means mortality symbol?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Skull Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Skull Motif",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "skull_motif"
+        ],
+        "term": "Skull Motif",
+        "definition_clue": "Which concept means mortality symbol?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Skull Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3145,7 +5185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Candle Motif",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "candle_motif"
+          ],
+          "term": "Candle Motif",
+          "definition_clue": "Which concept means passing time symbol?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Candle Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Candle Motif",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "candle_motif"
+        ],
+        "term": "Candle Motif",
+        "definition_clue": "Which concept means passing time symbol?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Candle Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3205,7 +5285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Book Motif",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "book_motif"
+          ],
+          "term": "Book Motif",
+          "definition_clue": "Which concept means learning or knowledge symbol?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Book Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Book Motif",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "book_motif"
+        ],
+        "term": "Book Motif",
+        "definition_clue": "Which concept means learning or knowledge symbol?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Book Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3265,7 +5385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Musical Instrument",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "musical_instrument"
+          ],
+          "term": "Musical Instrument",
+          "definition_clue": "Which concept means arts and leisure symbol?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Musical Instrument",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Musical Instrument",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "musical_instrument"
+        ],
+        "term": "Musical Instrument",
+        "definition_clue": "Which concept means arts and leisure symbol?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Musical Instrument",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3325,7 +5485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Game Motif",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "game_motif"
+          ],
+          "term": "Game Motif",
+          "definition_clue": "Which concept means chance or leisure symbol?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Game Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Game Motif",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "game_motif"
+        ],
+        "term": "Game Motif",
+        "definition_clue": "Which concept means chance or leisure symbol?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Game Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3385,7 +5585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Trompe-l’œil",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "trompe_l_il"
+          ],
+          "term": "Trompe-l’œil",
+          "definition_clue": "Which concept means illusion that tricks the eye?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Trompe-l’œil",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Trompe-l’œil",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "trompe_l_il"
+        ],
+        "term": "Trompe-l’œil",
+        "definition_clue": "Which concept means illusion that tricks the eye?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Trompe-l’œil",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3445,7 +5685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Overlapping Objects",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "overlapping_objects"
+          ],
+          "term": "Overlapping Objects",
+          "definition_clue": "Which concept means depth created by overlap?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Overlapping Objects",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Overlapping Objects",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "overlapping_objects"
+        ],
+        "term": "Overlapping Objects",
+        "definition_clue": "Which concept means depth created by overlap?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Overlapping Objects",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3505,7 +5785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Cast Shadow",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "cast_shadow"
+          ],
+          "term": "Cast Shadow",
+          "definition_clue": "Which concept means shadow falling from an object?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cast Shadow",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Cast Shadow",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "cast_shadow"
+        ],
+        "term": "Cast Shadow",
+        "definition_clue": "Which concept means shadow falling from an object?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cast Shadow",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3565,7 +5885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Local Color",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "local_color"
+          ],
+          "term": "Local Color",
+          "definition_clue": "Which concept means natural object color?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Local Color",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Local Color",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "local_color"
+        ],
+        "term": "Local Color",
+        "definition_clue": "Which concept means natural object color?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Local Color",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3625,7 +5985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Balanced Arrangement",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "balanced_arrangement"
+          ],
+          "term": "Balanced Arrangement",
+          "definition_clue": "Which concept means stable object composition?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Balanced Arrangement",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Balanced Arrangement",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "balanced_arrangement"
+        ],
+        "term": "Balanced Arrangement",
+        "definition_clue": "Which concept means stable object composition?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Balanced Arrangement",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3685,7 +6085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Still Life",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "still_life"
+          ],
+          "term": "Still Life",
+          "definition_clue": "Spot the matching term for: arranged objects as subject",
+          "difficulty_tier": 2,
+          "recognized_answer": "Still Life",
+          "distractor_family": [
+            "Vanitas",
+            "Memento Mori",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Still Life",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "still_life"
+        ],
+        "term": "Still Life",
+        "definition_clue": "Spot the matching term for: arranged objects as subject",
+        "difficulty_tier": 2,
+        "recognized_answer": "Still Life",
+        "distractor_family": [
+          "Vanitas",
+          "Memento Mori",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -3745,7 +6185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Vanitas",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "vanitas"
+          ],
+          "term": "Vanitas",
+          "definition_clue": "Spot the matching term for: still life about mortality",
+          "difficulty_tier": 2,
+          "recognized_answer": "Vanitas",
+          "distractor_family": [
+            "Still Life",
+            "Memento Mori",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Vanitas",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "vanitas"
+        ],
+        "term": "Vanitas",
+        "definition_clue": "Spot the matching term for: still life about mortality",
+        "difficulty_tier": 2,
+        "recognized_answer": "Vanitas",
+        "distractor_family": [
+          "Still Life",
+          "Memento Mori",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -3805,7 +6285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Memento Mori",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "memento_mori"
+          ],
+          "term": "Memento Mori",
+          "definition_clue": "Spot the matching term for: reminder of death",
+          "difficulty_tier": 2,
+          "recognized_answer": "Memento Mori",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Fruit Bowl"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Memento Mori",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "memento_mori"
+        ],
+        "term": "Memento Mori",
+        "definition_clue": "Spot the matching term for: reminder of death",
+        "difficulty_tier": 2,
+        "recognized_answer": "Memento Mori",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Fruit Bowl"
+        ]
       }
     },
     {
@@ -3865,7 +6385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Fruit Bowl",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "fruit_bowl"
+          ],
+          "term": "Fruit Bowl",
+          "definition_clue": "Spot the matching term for: common still-life subject",
+          "difficulty_tier": 2,
+          "recognized_answer": "Fruit Bowl",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Fruit Bowl",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "fruit_bowl"
+        ],
+        "term": "Fruit Bowl",
+        "definition_clue": "Spot the matching term for: common still-life subject",
+        "difficulty_tier": 2,
+        "recognized_answer": "Fruit Bowl",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3925,7 +6485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Flower Arrangement",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "flower_arrangement"
+          ],
+          "term": "Flower Arrangement",
+          "definition_clue": "Spot the matching term for: flowers arranged for painting",
+          "difficulty_tier": 2,
+          "recognized_answer": "Flower Arrangement",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Flower Arrangement",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "flower_arrangement"
+        ],
+        "term": "Flower Arrangement",
+        "definition_clue": "Spot the matching term for: flowers arranged for painting",
+        "difficulty_tier": 2,
+        "recognized_answer": "Flower Arrangement",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -3985,7 +6585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Tabletop Composition",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "tabletop_composition"
+          ],
+          "term": "Tabletop Composition",
+          "definition_clue": "Spot the matching term for: objects arranged on a table",
+          "difficulty_tier": 2,
+          "recognized_answer": "Tabletop Composition",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Tabletop Composition",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "tabletop_composition"
+        ],
+        "term": "Tabletop Composition",
+        "definition_clue": "Spot the matching term for: objects arranged on a table",
+        "difficulty_tier": 2,
+        "recognized_answer": "Tabletop Composition",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4045,7 +6685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Glass Reflection",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "glass_reflection"
+          ],
+          "term": "Glass Reflection",
+          "definition_clue": "Spot the matching term for: light reflected in glass",
+          "difficulty_tier": 2,
+          "recognized_answer": "Glass Reflection",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Glass Reflection",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "glass_reflection"
+        ],
+        "term": "Glass Reflection",
+        "definition_clue": "Spot the matching term for: light reflected in glass",
+        "difficulty_tier": 2,
+        "recognized_answer": "Glass Reflection",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4105,7 +6785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Metal Highlight",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "metal_highlight"
+          ],
+          "term": "Metal Highlight",
+          "definition_clue": "Spot the matching term for: bright reflection on metal",
+          "difficulty_tier": 2,
+          "recognized_answer": "Metal Highlight",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Metal Highlight",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "metal_highlight"
+        ],
+        "term": "Metal Highlight",
+        "definition_clue": "Spot the matching term for: bright reflection on metal",
+        "difficulty_tier": 2,
+        "recognized_answer": "Metal Highlight",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4165,7 +6885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Texture Study",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "texture_study"
+          ],
+          "term": "Texture Study",
+          "definition_clue": "Spot the matching term for: surface quality emphasized",
+          "difficulty_tier": 2,
+          "recognized_answer": "Texture Study",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Texture Study",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "texture_study"
+        ],
+        "term": "Texture Study",
+        "definition_clue": "Spot the matching term for: surface quality emphasized",
+        "difficulty_tier": 2,
+        "recognized_answer": "Texture Study",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4225,7 +6985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Symbolic Object",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "symbolic_object"
+          ],
+          "term": "Symbolic Object",
+          "definition_clue": "Spot the matching term for: object carrying meaning",
+          "difficulty_tier": 2,
+          "recognized_answer": "Symbolic Object",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Symbolic Object",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "symbolic_object"
+        ],
+        "term": "Symbolic Object",
+        "definition_clue": "Spot the matching term for: object carrying meaning",
+        "difficulty_tier": 2,
+        "recognized_answer": "Symbolic Object",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4285,7 +7085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Skull Motif",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "skull_motif"
+          ],
+          "term": "Skull Motif",
+          "definition_clue": "Spot the matching term for: mortality symbol",
+          "difficulty_tier": 3,
+          "recognized_answer": "Skull Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Skull Motif",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "skull_motif"
+        ],
+        "term": "Skull Motif",
+        "definition_clue": "Spot the matching term for: mortality symbol",
+        "difficulty_tier": 3,
+        "recognized_answer": "Skull Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4345,7 +7185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Candle Motif",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "candle_motif"
+          ],
+          "term": "Candle Motif",
+          "definition_clue": "Spot the matching term for: passing time symbol",
+          "difficulty_tier": 3,
+          "recognized_answer": "Candle Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Candle Motif",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "candle_motif"
+        ],
+        "term": "Candle Motif",
+        "definition_clue": "Spot the matching term for: passing time symbol",
+        "difficulty_tier": 3,
+        "recognized_answer": "Candle Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4405,7 +7285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Book Motif",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "book_motif"
+          ],
+          "term": "Book Motif",
+          "definition_clue": "Spot the matching term for: learning or knowledge symbol",
+          "difficulty_tier": 3,
+          "recognized_answer": "Book Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Book Motif",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "book_motif"
+        ],
+        "term": "Book Motif",
+        "definition_clue": "Spot the matching term for: learning or knowledge symbol",
+        "difficulty_tier": 3,
+        "recognized_answer": "Book Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4465,7 +7385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Musical Instrument",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "musical_instrument"
+          ],
+          "term": "Musical Instrument",
+          "definition_clue": "Spot the matching term for: arts and leisure symbol",
+          "difficulty_tier": 3,
+          "recognized_answer": "Musical Instrument",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Musical Instrument",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "musical_instrument"
+        ],
+        "term": "Musical Instrument",
+        "definition_clue": "Spot the matching term for: arts and leisure symbol",
+        "difficulty_tier": 3,
+        "recognized_answer": "Musical Instrument",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4525,7 +7485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Game Motif",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "game_motif"
+          ],
+          "term": "Game Motif",
+          "definition_clue": "Spot the matching term for: chance or leisure symbol",
+          "difficulty_tier": 3,
+          "recognized_answer": "Game Motif",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Game Motif",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "game_motif"
+        ],
+        "term": "Game Motif",
+        "definition_clue": "Spot the matching term for: chance or leisure symbol",
+        "difficulty_tier": 3,
+        "recognized_answer": "Game Motif",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4585,7 +7585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Trompe-l’œil",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "trompe_l_il"
+          ],
+          "term": "Trompe-l’œil",
+          "definition_clue": "Spot the matching term for: illusion that tricks the eye",
+          "difficulty_tier": 3,
+          "recognized_answer": "Trompe-l’œil",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Trompe-l’œil",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "trompe_l_il"
+        ],
+        "term": "Trompe-l’œil",
+        "definition_clue": "Spot the matching term for: illusion that tricks the eye",
+        "difficulty_tier": 3,
+        "recognized_answer": "Trompe-l’œil",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4645,7 +7685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Overlapping Objects",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "overlapping_objects"
+          ],
+          "term": "Overlapping Objects",
+          "definition_clue": "Spot the matching term for: depth created by overlap",
+          "difficulty_tier": 3,
+          "recognized_answer": "Overlapping Objects",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Overlapping Objects",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "overlapping_objects"
+        ],
+        "term": "Overlapping Objects",
+        "definition_clue": "Spot the matching term for: depth created by overlap",
+        "difficulty_tier": 3,
+        "recognized_answer": "Overlapping Objects",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4705,7 +7785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Cast Shadow",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "cast_shadow"
+          ],
+          "term": "Cast Shadow",
+          "definition_clue": "Spot the matching term for: shadow falling from an object",
+          "difficulty_tier": 3,
+          "recognized_answer": "Cast Shadow",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Cast Shadow",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "cast_shadow"
+        ],
+        "term": "Cast Shadow",
+        "definition_clue": "Spot the matching term for: shadow falling from an object",
+        "difficulty_tier": 3,
+        "recognized_answer": "Cast Shadow",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4765,7 +7885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Local Color",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "local_color"
+          ],
+          "term": "Local Color",
+          "definition_clue": "Spot the matching term for: natural object color",
+          "difficulty_tier": 3,
+          "recognized_answer": "Local Color",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Local Color",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "local_color"
+        ],
+        "term": "Local Color",
+        "definition_clue": "Spot the matching term for: natural object color",
+        "difficulty_tier": 3,
+        "recognized_answer": "Local Color",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4825,7 +7985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "Balanced Arrangement",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "balanced_arrangement"
+          ],
+          "term": "Balanced Arrangement",
+          "definition_clue": "Spot the matching term for: stable object composition",
+          "difficulty_tier": 3,
+          "recognized_answer": "Balanced Arrangement",
+          "distractor_family": [
+            "Still Life",
+            "Vanitas",
+            "Memento Mori"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "Balanced Arrangement",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "balanced_arrangement"
+        ],
+        "term": "Balanced Arrangement",
+        "definition_clue": "Spot the matching term for: stable object composition",
+        "difficulty_tier": 3,
+        "recognized_answer": "Balanced Arrangement",
+        "distractor_family": [
+          "Still Life",
+          "Vanitas",
+          "Memento Mori"
+        ]
       }
     },
     {
@@ -4885,7 +8085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "arranged objects as subject",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "arranged_objects_as_subject"
+          ],
+          "term": "arranged objects as subject",
+          "definition_clue": "Still Life is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "arranged objects as subject",
+          "distractor_family": [
+            "still life about mortality",
+            "reminder of death",
+            "common still-life subject"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "arranged objects as subject",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "arranged_objects_as_subject"
+        ],
+        "term": "arranged objects as subject",
+        "definition_clue": "Still Life is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "arranged objects as subject",
+        "distractor_family": [
+          "still life about mortality",
+          "reminder of death",
+          "common still-life subject"
+        ]
       }
     },
     {
@@ -4945,7 +8185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "still life about mortality",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "still_life_about_mortality"
+          ],
+          "term": "still life about mortality",
+          "definition_clue": "Vanitas is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "still life about mortality",
+          "distractor_family": [
+            "arranged objects as subject",
+            "reminder of death",
+            "common still-life subject"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "still life about mortality",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "still_life_about_mortality"
+        ],
+        "term": "still life about mortality",
+        "definition_clue": "Vanitas is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "still life about mortality",
+        "distractor_family": [
+          "arranged objects as subject",
+          "reminder of death",
+          "common still-life subject"
+        ]
       }
     },
     {
@@ -5005,7 +8285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "reminder of death",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "reminder_of_death"
+          ],
+          "term": "reminder of death",
+          "definition_clue": "Memento Mori is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "reminder of death",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "common still-life subject"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "reminder of death",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "reminder_of_death"
+        ],
+        "term": "reminder of death",
+        "definition_clue": "Memento Mori is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "reminder of death",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "common still-life subject"
+        ]
       }
     },
     {
@@ -5065,7 +8385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "common still-life subject",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "common_still_life_subject"
+          ],
+          "term": "common still-life subject",
+          "definition_clue": "Fruit Bowl is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "common still-life subject",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "common still-life subject",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "common_still_life_subject"
+        ],
+        "term": "common still-life subject",
+        "definition_clue": "Fruit Bowl is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "common still-life subject",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5125,7 +8485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "flowers arranged for painting",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "flowers_arranged_for_painting"
+          ],
+          "term": "flowers arranged for painting",
+          "definition_clue": "Flower Arrangement is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "flowers arranged for painting",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "flowers arranged for painting",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "flowers_arranged_for_painting"
+        ],
+        "term": "flowers arranged for painting",
+        "definition_clue": "Flower Arrangement is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "flowers arranged for painting",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5185,7 +8585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "objects arranged on a table",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "objects_arranged_on_a_table"
+          ],
+          "term": "objects arranged on a table",
+          "definition_clue": "Tabletop Composition is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "objects arranged on a table",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "objects arranged on a table",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "objects_arranged_on_a_table"
+        ],
+        "term": "objects arranged on a table",
+        "definition_clue": "Tabletop Composition is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "objects arranged on a table",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5245,7 +8685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "light reflected in glass",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "light_reflected_in_glass"
+          ],
+          "term": "light reflected in glass",
+          "definition_clue": "Glass Reflection is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "light reflected in glass",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "light reflected in glass",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "light_reflected_in_glass"
+        ],
+        "term": "light reflected in glass",
+        "definition_clue": "Glass Reflection is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "light reflected in glass",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5305,7 +8785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "bright reflection on metal",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "bright_reflection_on_metal"
+          ],
+          "term": "bright reflection on metal",
+          "definition_clue": "Metal Highlight is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "bright reflection on metal",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "bright reflection on metal",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "bright_reflection_on_metal"
+        ],
+        "term": "bright reflection on metal",
+        "definition_clue": "Metal Highlight is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "bright reflection on metal",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5365,7 +8885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "surface quality emphasized",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "surface_quality_emphasized"
+          ],
+          "term": "surface quality emphasized",
+          "definition_clue": "Texture Study is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "surface quality emphasized",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "surface quality emphasized",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "surface_quality_emphasized"
+        ],
+        "term": "surface quality emphasized",
+        "definition_clue": "Texture Study is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "surface quality emphasized",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5425,7 +8985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "object carrying meaning",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "object_carrying_meaning"
+          ],
+          "term": "object carrying meaning",
+          "definition_clue": "Symbolic Object is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "object carrying meaning",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "object carrying meaning",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "object_carrying_meaning"
+        ],
+        "term": "object carrying meaning",
+        "definition_clue": "Symbolic Object is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "object carrying meaning",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5485,7 +9085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "mortality symbol",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "mortality_symbol"
+          ],
+          "term": "mortality symbol",
+          "definition_clue": "Skull Motif is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "mortality symbol",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "mortality symbol",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "mortality_symbol"
+        ],
+        "term": "mortality symbol",
+        "definition_clue": "Skull Motif is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "mortality symbol",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5545,7 +9185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "passing time symbol",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "passing_time_symbol"
+          ],
+          "term": "passing time symbol",
+          "definition_clue": "Candle Motif is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "passing time symbol",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "passing time symbol",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "passing_time_symbol"
+        ],
+        "term": "passing time symbol",
+        "definition_clue": "Candle Motif is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "passing time symbol",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5605,7 +9285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "learning or knowledge symbol",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "learning_or_knowledge_symbol"
+          ],
+          "term": "learning or knowledge symbol",
+          "definition_clue": "Book Motif is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "learning or knowledge symbol",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "learning or knowledge symbol",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "learning_or_knowledge_symbol"
+        ],
+        "term": "learning or knowledge symbol",
+        "definition_clue": "Book Motif is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "learning or knowledge symbol",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5665,7 +9385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "arts and leisure symbol",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "arts_and_leisure_symbol"
+          ],
+          "term": "arts and leisure symbol",
+          "definition_clue": "Musical Instrument is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "arts and leisure symbol",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "arts and leisure symbol",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "arts_and_leisure_symbol"
+        ],
+        "term": "arts and leisure symbol",
+        "definition_clue": "Musical Instrument is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "arts and leisure symbol",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5725,7 +9485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "chance or leisure symbol",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "chance_or_leisure_symbol"
+          ],
+          "term": "chance or leisure symbol",
+          "definition_clue": "Game Motif is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "chance or leisure symbol",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "chance or leisure symbol",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "chance_or_leisure_symbol"
+        ],
+        "term": "chance or leisure symbol",
+        "definition_clue": "Game Motif is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "chance or leisure symbol",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5785,7 +9585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "illusion that tricks the eye",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "illusion_that_tricks_the_eye"
+          ],
+          "term": "illusion that tricks the eye",
+          "definition_clue": "Trompe-l’œil is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "illusion that tricks the eye",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "illusion that tricks the eye",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "illusion_that_tricks_the_eye"
+        ],
+        "term": "illusion that tricks the eye",
+        "definition_clue": "Trompe-l’œil is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "illusion that tricks the eye",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5845,7 +9685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "depth created by overlap",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "depth_created_by_overlap"
+          ],
+          "term": "depth created by overlap",
+          "definition_clue": "Overlapping Objects is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "depth created by overlap",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "depth created by overlap",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "depth_created_by_overlap"
+        ],
+        "term": "depth created by overlap",
+        "definition_clue": "Overlapping Objects is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "depth created by overlap",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5905,7 +9785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "shadow falling from an object",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "shadow_falling_from_an_object"
+          ],
+          "term": "shadow falling from an object",
+          "definition_clue": "Cast Shadow is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "shadow falling from an object",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "shadow falling from an object",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "shadow_falling_from_an_object"
+        ],
+        "term": "shadow falling from an object",
+        "definition_clue": "Cast Shadow is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "shadow falling from an object",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -5965,7 +9885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "natural object color",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "natural_object_color"
+          ],
+          "term": "natural object color",
+          "definition_clue": "In still life painting, what describes the object’s natural color?",
+          "difficulty_tier": 4,
+          "recognized_answer": "natural object color",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "natural object color",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "natural_object_color"
+        ],
+        "term": "natural object color",
+        "definition_clue": "In still life painting, what describes the object’s natural color?",
+        "difficulty_tier": 4,
+        "recognized_answer": "natural object color",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     },
     {
@@ -6025,7 +9985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "still_life",
+          "concept": "stable object composition",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "still_life",
+            "stable_object_composition"
+          ],
+          "term": "stable object composition",
+          "definition_clue": "Balanced Arrangement is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "stable object composition",
+          "distractor_family": [
+            "arranged objects as subject",
+            "still life about mortality",
+            "reminder of death"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "still_life",
+        "concept": "stable object composition",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "still_life",
+          "stable_object_composition"
+        ],
+        "term": "stable object composition",
+        "definition_clue": "Balanced Arrangement is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "stable object composition",
+        "distractor_family": [
+          "arranged objects as subject",
+          "still life about mortality",
+          "reminder of death"
+        ]
       }
     }
   ]

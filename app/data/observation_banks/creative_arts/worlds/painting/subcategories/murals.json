@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mural"
+          ],
+          "term": "Mural",
+          "definition_clue": "large painting on a wall",
+          "difficulty_tier": 1,
+          "recognized_answer": "Mural",
+          "distractor_family": [
+            "Fresco Mural",
+            "Public Art",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mural"
+        ],
+        "term": "Mural",
+        "definition_clue": "large painting on a wall",
+        "difficulty_tier": 1,
+        "recognized_answer": "Mural",
+        "distractor_family": [
+          "Fresco Mural",
+          "Public Art",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Fresco Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "fresco_mural"
+          ],
+          "term": "Fresco Mural",
+          "definition_clue": "mural painted into wet plaster",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fresco Mural",
+          "distractor_family": [
+            "Mural",
+            "Public Art",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Fresco Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "fresco_mural"
+        ],
+        "term": "Fresco Mural",
+        "definition_clue": "mural painted into wet plaster",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fresco Mural",
+        "distractor_family": [
+          "Mural",
+          "Public Art",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Public Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "public_art"
+          ],
+          "term": "Public Art",
+          "definition_clue": "art made for shared public space",
+          "difficulty_tier": 1,
+          "recognized_answer": "Public Art",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Public Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "public_art"
+        ],
+        "term": "Public Art",
+        "definition_clue": "art made for shared public space",
+        "difficulty_tier": 1,
+        "recognized_answer": "Public Art",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Community Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "community_mural"
+          ],
+          "term": "Community Mural",
+          "definition_clue": "mural made with local participation",
+          "difficulty_tier": 1,
+          "recognized_answer": "Community Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Community Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "community_mural"
+        ],
+        "term": "Community Mural",
+        "definition_clue": "mural made with local participation",
+        "difficulty_tier": 1,
+        "recognized_answer": "Community Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Street Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "street_mural"
+          ],
+          "term": "Street Mural",
+          "definition_clue": "large exterior urban painting",
+          "difficulty_tier": 1,
+          "recognized_answer": "Street Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Street Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "street_mural"
+        ],
+        "term": "Street Mural",
+        "definition_clue": "large exterior urban painting",
+        "difficulty_tier": 1,
+        "recognized_answer": "Street Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Ceiling Painting",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "ceiling_painting"
+          ],
+          "term": "Ceiling Painting",
+          "definition_clue": "painting made overhead",
+          "difficulty_tier": 1,
+          "recognized_answer": "Ceiling Painting",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Ceiling Painting",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "ceiling_painting"
+        ],
+        "term": "Ceiling Painting",
+        "definition_clue": "painting made overhead",
+        "difficulty_tier": 1,
+        "recognized_answer": "Ceiling Painting",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Trompe-l’œil Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "trompe_l_il_mural"
+          ],
+          "term": "Trompe-l’œil Mural",
+          "definition_clue": "wall illusion that fools the eye",
+          "difficulty_tier": 1,
+          "recognized_answer": "Trompe-l’œil Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Trompe-l’œil Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "trompe_l_il_mural"
+        ],
+        "term": "Trompe-l’œil Mural",
+        "definition_clue": "wall illusion that fools the eye",
+        "difficulty_tier": 1,
+        "recognized_answer": "Trompe-l’œil Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Political Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "political_mural"
+          ],
+          "term": "Political Mural",
+          "definition_clue": "public image with political message",
+          "difficulty_tier": 1,
+          "recognized_answer": "Political Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Political Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "political_mural"
+        ],
+        "term": "Political Mural",
+        "definition_clue": "public image with political message",
+        "difficulty_tier": 1,
+        "recognized_answer": "Political Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Narrative Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "narrative_mural"
+          ],
+          "term": "Narrative Mural",
+          "definition_clue": "mural telling a story",
+          "difficulty_tier": 1,
+          "recognized_answer": "Narrative Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Narrative Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "narrative_mural"
+        ],
+        "term": "Narrative Mural",
+        "definition_clue": "mural telling a story",
+        "difficulty_tier": 1,
+        "recognized_answer": "Narrative Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Restoration",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "restoration"
+          ],
+          "term": "Restoration",
+          "definition_clue": "repairing damaged wall art",
+          "difficulty_tier": 1,
+          "recognized_answer": "Restoration",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Restoration",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "restoration"
+        ],
+        "term": "Restoration",
+        "definition_clue": "repairing damaged wall art",
+        "difficulty_tier": 1,
+        "recognized_answer": "Restoration",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Scale",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "scale"
+          ],
+          "term": "Scale",
+          "definition_clue": "large size relation to viewer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Scale",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Scale",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "scale"
+        ],
+        "term": "Scale",
+        "definition_clue": "large size relation to viewer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Scale",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Cartoon",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "cartoon"
+          ],
+          "term": "Cartoon",
+          "definition_clue": "full-scale preparatory drawing",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cartoon",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Cartoon",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "cartoon"
+        ],
+        "term": "Cartoon",
+        "definition_clue": "full-scale preparatory drawing",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cartoon",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Pouncing",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "pouncing"
+          ],
+          "term": "Pouncing",
+          "definition_clue": "transferring a design through small holes",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pouncing",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Pouncing",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "pouncing"
+        ],
+        "term": "Pouncing",
+        "definition_clue": "transferring a design through small holes",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pouncing",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Scaffold",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "scaffold"
+          ],
+          "term": "Scaffold",
+          "definition_clue": "platform used to reach high walls",
+          "difficulty_tier": 1,
+          "recognized_answer": "Scaffold",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Scaffold",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "scaffold"
+        ],
+        "term": "Scaffold",
+        "definition_clue": "platform used to reach high walls",
+        "difficulty_tier": 1,
+        "recognized_answer": "Scaffold",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Wall Preparation",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "wall_preparation"
+          ],
+          "term": "Wall Preparation",
+          "definition_clue": "cleaning and priming surface",
+          "difficulty_tier": 1,
+          "recognized_answer": "Wall Preparation",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Wall Preparation",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "wall_preparation"
+        ],
+        "term": "Wall Preparation",
+        "definition_clue": "cleaning and priming surface",
+        "difficulty_tier": 1,
+        "recognized_answer": "Wall Preparation",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Underlayer",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "underlayer"
+          ],
+          "term": "Underlayer",
+          "definition_clue": "first mural layer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Underlayer",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Underlayer",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "underlayer"
+        ],
+        "term": "Underlayer",
+        "definition_clue": "first mural layer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Underlayer",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Outdoor Durability",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "outdoor_durability"
+          ],
+          "term": "Outdoor Durability",
+          "definition_clue": "resistance to weather",
+          "difficulty_tier": 1,
+          "recognized_answer": "Outdoor Durability",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Outdoor Durability",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "outdoor_durability"
+        ],
+        "term": "Outdoor Durability",
+        "definition_clue": "resistance to weather",
+        "difficulty_tier": 1,
+        "recognized_answer": "Outdoor Durability",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Site-Specific Design",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "site_specific_design"
+          ],
+          "term": "Site-Specific Design",
+          "definition_clue": "image made for a location",
+          "difficulty_tier": 1,
+          "recognized_answer": "Site-Specific Design",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Site-Specific Design",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "site_specific_design"
+        ],
+        "term": "Site-Specific Design",
+        "definition_clue": "image made for a location",
+        "difficulty_tier": 1,
+        "recognized_answer": "Site-Specific Design",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Diego Rivera",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "diego_rivera"
+          ],
+          "term": "Diego Rivera",
+          "definition_clue": "artist famous for public murals",
+          "difficulty_tier": 1,
+          "recognized_answer": "Diego Rivera",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Diego Rivera",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "diego_rivera"
+        ],
+        "term": "Diego Rivera",
+        "definition_clue": "artist famous for public murals",
+        "difficulty_tier": 1,
+        "recognized_answer": "Diego Rivera",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Mexican Muralism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mexican_muralism"
+          ],
+          "term": "Mexican Muralism",
+          "definition_clue": "movement using public murals",
+          "difficulty_tier": 1,
+          "recognized_answer": "Mexican Muralism",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Mexican Muralism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mexican_muralism"
+        ],
+        "term": "Mexican Muralism",
+        "definition_clue": "movement using public murals",
+        "difficulty_tier": 1,
+        "recognized_answer": "Mexican Muralism",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Mural",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mural"
+          ],
+          "term": "Mural",
+          "definition_clue": "Identify the art term: large painting on a wall",
+          "difficulty_tier": 1,
+          "recognized_answer": "Mural",
+          "distractor_family": [
+            "Fresco Mural",
+            "Public Art",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Mural",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mural"
+        ],
+        "term": "Mural",
+        "definition_clue": "Identify the art term: large painting on a wall",
+        "difficulty_tier": 1,
+        "recognized_answer": "Mural",
+        "distractor_family": [
+          "Fresco Mural",
+          "Public Art",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Fresco Mural",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "fresco_mural"
+          ],
+          "term": "Fresco Mural",
+          "definition_clue": "Identify the art term: mural painted into wet plaster",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fresco Mural",
+          "distractor_family": [
+            "Mural",
+            "Public Art",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Fresco Mural",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "fresco_mural"
+        ],
+        "term": "Fresco Mural",
+        "definition_clue": "Identify the art term: mural painted into wet plaster",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fresco Mural",
+        "distractor_family": [
+          "Mural",
+          "Public Art",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Public Art",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "public_art"
+          ],
+          "term": "Public Art",
+          "definition_clue": "Identify the art term: art made for shared public space",
+          "difficulty_tier": 1,
+          "recognized_answer": "Public Art",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Public Art",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "public_art"
+        ],
+        "term": "Public Art",
+        "definition_clue": "Identify the art term: art made for shared public space",
+        "difficulty_tier": 1,
+        "recognized_answer": "Public Art",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Community Mural",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "community_mural"
+          ],
+          "term": "Community Mural",
+          "definition_clue": "Identify the art term: mural made with local participation",
+          "difficulty_tier": 1,
+          "recognized_answer": "Community Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Community Mural",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "community_mural"
+        ],
+        "term": "Community Mural",
+        "definition_clue": "Identify the art term: mural made with local participation",
+        "difficulty_tier": 1,
+        "recognized_answer": "Community Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Street Mural",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "street_mural"
+          ],
+          "term": "Street Mural",
+          "definition_clue": "Identify the art term: large exterior urban painting",
+          "difficulty_tier": 1,
+          "recognized_answer": "Street Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Street Mural",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "street_mural"
+        ],
+        "term": "Street Mural",
+        "definition_clue": "Identify the art term: large exterior urban painting",
+        "difficulty_tier": 1,
+        "recognized_answer": "Street Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1585,7 +2585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Ceiling Painting",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "ceiling_painting"
+          ],
+          "term": "Ceiling Painting",
+          "definition_clue": "Identify the art term: painting made overhead",
+          "difficulty_tier": 1,
+          "recognized_answer": "Ceiling Painting",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Ceiling Painting",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "ceiling_painting"
+        ],
+        "term": "Ceiling Painting",
+        "definition_clue": "Identify the art term: painting made overhead",
+        "difficulty_tier": 1,
+        "recognized_answer": "Ceiling Painting",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1645,7 +2685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Trompe-l’œil Mural",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "trompe_l_il_mural"
+          ],
+          "term": "Trompe-l’œil Mural",
+          "definition_clue": "Identify the art term: wall illusion that fools the eye",
+          "difficulty_tier": 1,
+          "recognized_answer": "Trompe-l’œil Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Trompe-l’œil Mural",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "trompe_l_il_mural"
+        ],
+        "term": "Trompe-l’œil Mural",
+        "definition_clue": "Identify the art term: wall illusion that fools the eye",
+        "difficulty_tier": 1,
+        "recognized_answer": "Trompe-l’œil Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1705,7 +2785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Political Mural",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "political_mural"
+          ],
+          "term": "Political Mural",
+          "definition_clue": "Identify the art term: public image with political message",
+          "difficulty_tier": 1,
+          "recognized_answer": "Political Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Political Mural",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "political_mural"
+        ],
+        "term": "Political Mural",
+        "definition_clue": "Identify the art term: public image with political message",
+        "difficulty_tier": 1,
+        "recognized_answer": "Political Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1765,7 +2885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Narrative Mural",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "narrative_mural"
+          ],
+          "term": "Narrative Mural",
+          "definition_clue": "Identify the art term: mural telling a story",
+          "difficulty_tier": 1,
+          "recognized_answer": "Narrative Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Narrative Mural",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "narrative_mural"
+        ],
+        "term": "Narrative Mural",
+        "definition_clue": "Identify the art term: mural telling a story",
+        "difficulty_tier": 1,
+        "recognized_answer": "Narrative Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1825,7 +2985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Restoration",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "restoration"
+          ],
+          "term": "Restoration",
+          "definition_clue": "Identify the art term: repairing damaged wall art",
+          "difficulty_tier": 1,
+          "recognized_answer": "Restoration",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Restoration",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "restoration"
+        ],
+        "term": "Restoration",
+        "definition_clue": "Identify the art term: repairing damaged wall art",
+        "difficulty_tier": 1,
+        "recognized_answer": "Restoration",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1885,7 +3085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Scale",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "scale"
+          ],
+          "term": "Scale",
+          "definition_clue": "Identify the art term: large size relation to viewer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Scale",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Scale",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "scale"
+        ],
+        "term": "Scale",
+        "definition_clue": "Identify the art term: large size relation to viewer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Scale",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -1945,7 +3185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Cartoon",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "cartoon"
+          ],
+          "term": "Cartoon",
+          "definition_clue": "Identify the art term: full-scale preparatory drawing",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cartoon",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Cartoon",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "cartoon"
+        ],
+        "term": "Cartoon",
+        "definition_clue": "Identify the art term: full-scale preparatory drawing",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cartoon",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2005,7 +3285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Pouncing",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "pouncing"
+          ],
+          "term": "Pouncing",
+          "definition_clue": "Identify the art term: transferring a design through small holes",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pouncing",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Pouncing",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "pouncing"
+        ],
+        "term": "Pouncing",
+        "definition_clue": "Identify the art term: transferring a design through small holes",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pouncing",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2065,7 +3385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Scaffold",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "scaffold"
+          ],
+          "term": "Scaffold",
+          "definition_clue": "Identify the art term: platform used to reach high walls",
+          "difficulty_tier": 1,
+          "recognized_answer": "Scaffold",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Scaffold",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "scaffold"
+        ],
+        "term": "Scaffold",
+        "definition_clue": "Identify the art term: platform used to reach high walls",
+        "difficulty_tier": 1,
+        "recognized_answer": "Scaffold",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2125,7 +3485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Wall Preparation",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "wall_preparation"
+          ],
+          "term": "Wall Preparation",
+          "definition_clue": "Identify the art term: cleaning and priming surface",
+          "difficulty_tier": 1,
+          "recognized_answer": "Wall Preparation",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Wall Preparation",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "wall_preparation"
+        ],
+        "term": "Wall Preparation",
+        "definition_clue": "Identify the art term: cleaning and priming surface",
+        "difficulty_tier": 1,
+        "recognized_answer": "Wall Preparation",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2185,7 +3585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Underlayer",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "underlayer"
+          ],
+          "term": "Underlayer",
+          "definition_clue": "Identify the art term: first mural layer",
+          "difficulty_tier": 1,
+          "recognized_answer": "Underlayer",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Underlayer",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "underlayer"
+        ],
+        "term": "Underlayer",
+        "definition_clue": "Identify the art term: first mural layer",
+        "difficulty_tier": 1,
+        "recognized_answer": "Underlayer",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2245,7 +3685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Outdoor Durability",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "outdoor_durability"
+          ],
+          "term": "Outdoor Durability",
+          "definition_clue": "Identify the art term: resistance to weather",
+          "difficulty_tier": 1,
+          "recognized_answer": "Outdoor Durability",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Outdoor Durability",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "outdoor_durability"
+        ],
+        "term": "Outdoor Durability",
+        "definition_clue": "Identify the art term: resistance to weather",
+        "difficulty_tier": 1,
+        "recognized_answer": "Outdoor Durability",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2305,7 +3785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Site-Specific Design",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "site_specific_design"
+          ],
+          "term": "Site-Specific Design",
+          "definition_clue": "Identify the art term: image made for a location",
+          "difficulty_tier": 1,
+          "recognized_answer": "Site-Specific Design",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Site-Specific Design",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "site_specific_design"
+        ],
+        "term": "Site-Specific Design",
+        "definition_clue": "Identify the art term: image made for a location",
+        "difficulty_tier": 1,
+        "recognized_answer": "Site-Specific Design",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2365,7 +3885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Diego Rivera",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "diego_rivera"
+          ],
+          "term": "Diego Rivera",
+          "definition_clue": "Identify the art term: artist famous for public murals",
+          "difficulty_tier": 1,
+          "recognized_answer": "Diego Rivera",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Diego Rivera",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "diego_rivera"
+        ],
+        "term": "Diego Rivera",
+        "definition_clue": "Identify the art term: artist famous for public murals",
+        "difficulty_tier": 1,
+        "recognized_answer": "Diego Rivera",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2425,7 +3985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Mexican Muralism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mexican_muralism"
+          ],
+          "term": "Mexican Muralism",
+          "definition_clue": "Identify the art term: movement using public murals",
+          "difficulty_tier": 1,
+          "recognized_answer": "Mexican Muralism",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Mexican Muralism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mexican_muralism"
+        ],
+        "term": "Mexican Muralism",
+        "definition_clue": "Identify the art term: movement using public murals",
+        "difficulty_tier": 1,
+        "recognized_answer": "Mexican Muralism",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2485,7 +4085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mural"
+          ],
+          "term": "Mural",
+          "definition_clue": "Which concept means large painting on a wall?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Mural",
+          "distractor_family": [
+            "Fresco Mural",
+            "Public Art",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mural"
+        ],
+        "term": "Mural",
+        "definition_clue": "Which concept means large painting on a wall?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Mural",
+        "distractor_family": [
+          "Fresco Mural",
+          "Public Art",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -2545,7 +4185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Fresco Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "fresco_mural"
+          ],
+          "term": "Fresco Mural",
+          "definition_clue": "Which concept means mural painted into wet plaster?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Fresco Mural",
+          "distractor_family": [
+            "Mural",
+            "Public Art",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Fresco Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "fresco_mural"
+        ],
+        "term": "Fresco Mural",
+        "definition_clue": "Which concept means mural painted into wet plaster?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Fresco Mural",
+        "distractor_family": [
+          "Mural",
+          "Public Art",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -2605,7 +4285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Public Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "public_art"
+          ],
+          "term": "Public Art",
+          "definition_clue": "Which concept means art made for shared public space?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Public Art",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Public Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "public_art"
+        ],
+        "term": "Public Art",
+        "definition_clue": "Which concept means art made for shared public space?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Public Art",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -2665,7 +4385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Community Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "community_mural"
+          ],
+          "term": "Community Mural",
+          "definition_clue": "Which concept means mural made with local participation?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Community Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Community Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "community_mural"
+        ],
+        "term": "Community Mural",
+        "definition_clue": "Which concept means mural made with local participation?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Community Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2725,7 +4485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Street Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "street_mural"
+          ],
+          "term": "Street Mural",
+          "definition_clue": "Which concept means large exterior urban painting?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Street Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Street Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "street_mural"
+        ],
+        "term": "Street Mural",
+        "definition_clue": "Which concept means large exterior urban painting?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Street Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2785,7 +4585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Ceiling Painting",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "ceiling_painting"
+          ],
+          "term": "Ceiling Painting",
+          "definition_clue": "Which concept means painting made overhead?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Ceiling Painting",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Ceiling Painting",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "ceiling_painting"
+        ],
+        "term": "Ceiling Painting",
+        "definition_clue": "Which concept means painting made overhead?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Ceiling Painting",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2845,7 +4685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Trompe-l’œil Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "trompe_l_il_mural"
+          ],
+          "term": "Trompe-l’œil Mural",
+          "definition_clue": "Which concept means wall illusion that fools the eye?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Trompe-l’œil Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Trompe-l’œil Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "trompe_l_il_mural"
+        ],
+        "term": "Trompe-l’œil Mural",
+        "definition_clue": "Which concept means wall illusion that fools the eye?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Trompe-l’œil Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2905,7 +4785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Political Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "political_mural"
+          ],
+          "term": "Political Mural",
+          "definition_clue": "Which concept means public image with political message?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Political Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Political Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "political_mural"
+        ],
+        "term": "Political Mural",
+        "definition_clue": "Which concept means public image with political message?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Political Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -2965,7 +4885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Narrative Mural",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "narrative_mural"
+          ],
+          "term": "Narrative Mural",
+          "definition_clue": "Which concept means mural telling a story?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Narrative Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Narrative Mural",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "narrative_mural"
+        ],
+        "term": "Narrative Mural",
+        "definition_clue": "Which concept means mural telling a story?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Narrative Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3025,7 +4985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Restoration",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "restoration"
+          ],
+          "term": "Restoration",
+          "definition_clue": "Which concept means repairing damaged wall art?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Restoration",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Restoration",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "restoration"
+        ],
+        "term": "Restoration",
+        "definition_clue": "Which concept means repairing damaged wall art?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Restoration",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3085,7 +5085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Scale",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "scale"
+          ],
+          "term": "Scale",
+          "definition_clue": "Which concept means large size relation to viewer?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Scale",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Scale",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "scale"
+        ],
+        "term": "Scale",
+        "definition_clue": "Which concept means large size relation to viewer?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Scale",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3145,7 +5185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Cartoon",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "cartoon"
+          ],
+          "term": "Cartoon",
+          "definition_clue": "Which concept means full-scale preparatory drawing?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cartoon",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Cartoon",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "cartoon"
+        ],
+        "term": "Cartoon",
+        "definition_clue": "Which concept means full-scale preparatory drawing?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cartoon",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3205,7 +5285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Pouncing",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "pouncing"
+          ],
+          "term": "Pouncing",
+          "definition_clue": "Which concept means transferring a design through small holes?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Pouncing",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Pouncing",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "pouncing"
+        ],
+        "term": "Pouncing",
+        "definition_clue": "Which concept means transferring a design through small holes?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Pouncing",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3265,7 +5385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Scaffold",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "scaffold"
+          ],
+          "term": "Scaffold",
+          "definition_clue": "Which concept means platform used to reach high walls?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Scaffold",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Scaffold",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "scaffold"
+        ],
+        "term": "Scaffold",
+        "definition_clue": "Which concept means platform used to reach high walls?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Scaffold",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3325,7 +5485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Wall Preparation",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "wall_preparation"
+          ],
+          "term": "Wall Preparation",
+          "definition_clue": "Which concept means cleaning and priming surface?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Wall Preparation",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Wall Preparation",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "wall_preparation"
+        ],
+        "term": "Wall Preparation",
+        "definition_clue": "Which concept means cleaning and priming surface?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Wall Preparation",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3385,7 +5585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Underlayer",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "underlayer"
+          ],
+          "term": "Underlayer",
+          "definition_clue": "Which concept means first mural layer?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Underlayer",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Underlayer",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "underlayer"
+        ],
+        "term": "Underlayer",
+        "definition_clue": "Which concept means first mural layer?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Underlayer",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3445,7 +5685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Outdoor Durability",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "outdoor_durability"
+          ],
+          "term": "Outdoor Durability",
+          "definition_clue": "Which concept means resistance to weather?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Outdoor Durability",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Outdoor Durability",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "outdoor_durability"
+        ],
+        "term": "Outdoor Durability",
+        "definition_clue": "Which concept means resistance to weather?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Outdoor Durability",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3505,7 +5785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Site-Specific Design",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "site_specific_design"
+          ],
+          "term": "Site-Specific Design",
+          "definition_clue": "Which concept means image made for a location?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Site-Specific Design",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Site-Specific Design",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "site_specific_design"
+        ],
+        "term": "Site-Specific Design",
+        "definition_clue": "Which concept means image made for a location?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Site-Specific Design",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3565,7 +5885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Diego Rivera",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "diego_rivera"
+          ],
+          "term": "Diego Rivera",
+          "definition_clue": "Which concept means artist famous for public murals?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Diego Rivera",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Diego Rivera",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "diego_rivera"
+        ],
+        "term": "Diego Rivera",
+        "definition_clue": "Which concept means artist famous for public murals?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Diego Rivera",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3625,7 +5985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Mexican Muralism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mexican_muralism"
+          ],
+          "term": "Mexican Muralism",
+          "definition_clue": "Which concept means movement using public murals?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Mexican Muralism",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Mexican Muralism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mexican_muralism"
+        ],
+        "term": "Mexican Muralism",
+        "definition_clue": "Which concept means movement using public murals?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Mexican Muralism",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3685,7 +6085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Mural",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mural"
+          ],
+          "term": "Mural",
+          "definition_clue": "Spot the matching term for: large painting on a wall",
+          "difficulty_tier": 2,
+          "recognized_answer": "Mural",
+          "distractor_family": [
+            "Fresco Mural",
+            "Public Art",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Mural",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mural"
+        ],
+        "term": "Mural",
+        "definition_clue": "Spot the matching term for: large painting on a wall",
+        "difficulty_tier": 2,
+        "recognized_answer": "Mural",
+        "distractor_family": [
+          "Fresco Mural",
+          "Public Art",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -3745,7 +6185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Fresco Mural",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "fresco_mural"
+          ],
+          "term": "Fresco Mural",
+          "definition_clue": "Spot the matching term for: mural painted into wet plaster",
+          "difficulty_tier": 2,
+          "recognized_answer": "Fresco Mural",
+          "distractor_family": [
+            "Mural",
+            "Public Art",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Fresco Mural",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "fresco_mural"
+        ],
+        "term": "Fresco Mural",
+        "definition_clue": "Spot the matching term for: mural painted into wet plaster",
+        "difficulty_tier": 2,
+        "recognized_answer": "Fresco Mural",
+        "distractor_family": [
+          "Mural",
+          "Public Art",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -3805,7 +6285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Public Art",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "public_art"
+          ],
+          "term": "Public Art",
+          "definition_clue": "Spot the matching term for: art made for shared public space",
+          "difficulty_tier": 2,
+          "recognized_answer": "Public Art",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Community Mural"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Public Art",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "public_art"
+        ],
+        "term": "Public Art",
+        "definition_clue": "Spot the matching term for: art made for shared public space",
+        "difficulty_tier": 2,
+        "recognized_answer": "Public Art",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Community Mural"
+        ]
       }
     },
     {
@@ -3865,7 +6385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Community Mural",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "community_mural"
+          ],
+          "term": "Community Mural",
+          "definition_clue": "Spot the matching term for: mural made with local participation",
+          "difficulty_tier": 2,
+          "recognized_answer": "Community Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Community Mural",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "community_mural"
+        ],
+        "term": "Community Mural",
+        "definition_clue": "Spot the matching term for: mural made with local participation",
+        "difficulty_tier": 2,
+        "recognized_answer": "Community Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3925,7 +6485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Street Mural",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "street_mural"
+          ],
+          "term": "Street Mural",
+          "definition_clue": "Spot the matching term for: large exterior urban painting",
+          "difficulty_tier": 2,
+          "recognized_answer": "Street Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Street Mural",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "street_mural"
+        ],
+        "term": "Street Mural",
+        "definition_clue": "Spot the matching term for: large exterior urban painting",
+        "difficulty_tier": 2,
+        "recognized_answer": "Street Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -3985,7 +6585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Ceiling Painting",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "ceiling_painting"
+          ],
+          "term": "Ceiling Painting",
+          "definition_clue": "Spot the matching term for: painting made overhead",
+          "difficulty_tier": 2,
+          "recognized_answer": "Ceiling Painting",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Ceiling Painting",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "ceiling_painting"
+        ],
+        "term": "Ceiling Painting",
+        "definition_clue": "Spot the matching term for: painting made overhead",
+        "difficulty_tier": 2,
+        "recognized_answer": "Ceiling Painting",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4045,7 +6685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Trompe-l’œil Mural",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "trompe_l_il_mural"
+          ],
+          "term": "Trompe-l’œil Mural",
+          "definition_clue": "Spot the matching term for: wall illusion that fools the eye",
+          "difficulty_tier": 2,
+          "recognized_answer": "Trompe-l’œil Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Trompe-l’œil Mural",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "trompe_l_il_mural"
+        ],
+        "term": "Trompe-l’œil Mural",
+        "definition_clue": "Spot the matching term for: wall illusion that fools the eye",
+        "difficulty_tier": 2,
+        "recognized_answer": "Trompe-l’œil Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4105,7 +6785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Political Mural",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "political_mural"
+          ],
+          "term": "Political Mural",
+          "definition_clue": "Spot the matching term for: public image with political message",
+          "difficulty_tier": 2,
+          "recognized_answer": "Political Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Political Mural",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "political_mural"
+        ],
+        "term": "Political Mural",
+        "definition_clue": "Spot the matching term for: public image with political message",
+        "difficulty_tier": 2,
+        "recognized_answer": "Political Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4165,7 +6885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Narrative Mural",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "narrative_mural"
+          ],
+          "term": "Narrative Mural",
+          "definition_clue": "Spot the matching term for: mural telling a story",
+          "difficulty_tier": 2,
+          "recognized_answer": "Narrative Mural",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Narrative Mural",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "narrative_mural"
+        ],
+        "term": "Narrative Mural",
+        "definition_clue": "Spot the matching term for: mural telling a story",
+        "difficulty_tier": 2,
+        "recognized_answer": "Narrative Mural",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4225,7 +6985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Restoration",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "restoration"
+          ],
+          "term": "Restoration",
+          "definition_clue": "Spot the matching term for: repairing damaged wall art",
+          "difficulty_tier": 2,
+          "recognized_answer": "Restoration",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Restoration",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "restoration"
+        ],
+        "term": "Restoration",
+        "definition_clue": "Spot the matching term for: repairing damaged wall art",
+        "difficulty_tier": 2,
+        "recognized_answer": "Restoration",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4285,7 +7085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Scale",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "scale"
+          ],
+          "term": "Scale",
+          "definition_clue": "Spot the matching term for: large size relation to viewer",
+          "difficulty_tier": 3,
+          "recognized_answer": "Scale",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Scale",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "scale"
+        ],
+        "term": "Scale",
+        "definition_clue": "Spot the matching term for: large size relation to viewer",
+        "difficulty_tier": 3,
+        "recognized_answer": "Scale",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4345,7 +7185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Cartoon",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "cartoon"
+          ],
+          "term": "Cartoon",
+          "definition_clue": "Spot the matching term for: full-scale preparatory drawing",
+          "difficulty_tier": 3,
+          "recognized_answer": "Cartoon",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Cartoon",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "cartoon"
+        ],
+        "term": "Cartoon",
+        "definition_clue": "Spot the matching term for: full-scale preparatory drawing",
+        "difficulty_tier": 3,
+        "recognized_answer": "Cartoon",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4405,7 +7285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Pouncing",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "pouncing"
+          ],
+          "term": "Pouncing",
+          "definition_clue": "Spot the matching term for: transferring a design through small holes",
+          "difficulty_tier": 3,
+          "recognized_answer": "Pouncing",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Pouncing",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "pouncing"
+        ],
+        "term": "Pouncing",
+        "definition_clue": "Spot the matching term for: transferring a design through small holes",
+        "difficulty_tier": 3,
+        "recognized_answer": "Pouncing",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4465,7 +7385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Scaffold",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "scaffold"
+          ],
+          "term": "Scaffold",
+          "definition_clue": "Spot the matching term for: platform used to reach high walls",
+          "difficulty_tier": 3,
+          "recognized_answer": "Scaffold",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Scaffold",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "scaffold"
+        ],
+        "term": "Scaffold",
+        "definition_clue": "Spot the matching term for: platform used to reach high walls",
+        "difficulty_tier": 3,
+        "recognized_answer": "Scaffold",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4525,7 +7485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Wall Preparation",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "wall_preparation"
+          ],
+          "term": "Wall Preparation",
+          "definition_clue": "Spot the matching term for: cleaning and priming surface",
+          "difficulty_tier": 3,
+          "recognized_answer": "Wall Preparation",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Wall Preparation",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "wall_preparation"
+        ],
+        "term": "Wall Preparation",
+        "definition_clue": "Spot the matching term for: cleaning and priming surface",
+        "difficulty_tier": 3,
+        "recognized_answer": "Wall Preparation",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4585,7 +7585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Underlayer",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "underlayer"
+          ],
+          "term": "Underlayer",
+          "definition_clue": "Spot the matching term for: first mural layer",
+          "difficulty_tier": 3,
+          "recognized_answer": "Underlayer",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Underlayer",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "underlayer"
+        ],
+        "term": "Underlayer",
+        "definition_clue": "Spot the matching term for: first mural layer",
+        "difficulty_tier": 3,
+        "recognized_answer": "Underlayer",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4645,7 +7685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Outdoor Durability",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "outdoor_durability"
+          ],
+          "term": "Outdoor Durability",
+          "definition_clue": "Spot the matching term for: resistance to weather",
+          "difficulty_tier": 3,
+          "recognized_answer": "Outdoor Durability",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Outdoor Durability",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "outdoor_durability"
+        ],
+        "term": "Outdoor Durability",
+        "definition_clue": "Spot the matching term for: resistance to weather",
+        "difficulty_tier": 3,
+        "recognized_answer": "Outdoor Durability",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4705,7 +7785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Site-Specific Design",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "site_specific_design"
+          ],
+          "term": "Site-Specific Design",
+          "definition_clue": "Spot the matching term for: image made for a location",
+          "difficulty_tier": 3,
+          "recognized_answer": "Site-Specific Design",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Site-Specific Design",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "site_specific_design"
+        ],
+        "term": "Site-Specific Design",
+        "definition_clue": "Spot the matching term for: image made for a location",
+        "difficulty_tier": 3,
+        "recognized_answer": "Site-Specific Design",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4765,7 +7885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Diego Rivera",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "diego_rivera"
+          ],
+          "term": "Diego Rivera",
+          "definition_clue": "Spot the matching term for: artist famous for public murals",
+          "difficulty_tier": 3,
+          "recognized_answer": "Diego Rivera",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Diego Rivera",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "diego_rivera"
+        ],
+        "term": "Diego Rivera",
+        "definition_clue": "Spot the matching term for: artist famous for public murals",
+        "difficulty_tier": 3,
+        "recognized_answer": "Diego Rivera",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4825,7 +7985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "Mexican Muralism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mexican_muralism"
+          ],
+          "term": "Mexican Muralism",
+          "definition_clue": "Spot the matching term for: movement using public murals",
+          "difficulty_tier": 3,
+          "recognized_answer": "Mexican Muralism",
+          "distractor_family": [
+            "Mural",
+            "Fresco Mural",
+            "Public Art"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "Mexican Muralism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mexican_muralism"
+        ],
+        "term": "Mexican Muralism",
+        "definition_clue": "Spot the matching term for: movement using public murals",
+        "difficulty_tier": 3,
+        "recognized_answer": "Mexican Muralism",
+        "distractor_family": [
+          "Mural",
+          "Fresco Mural",
+          "Public Art"
+        ]
       }
     },
     {
@@ -4885,7 +8085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "large painting on a wall",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "large_painting_on_a_wall"
+          ],
+          "term": "large painting on a wall",
+          "definition_clue": "Mural is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "large painting on a wall",
+          "distractor_family": [
+            "mural painted into wet plaster",
+            "art made for shared public space",
+            "mural made with local participation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "large painting on a wall",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "large_painting_on_a_wall"
+        ],
+        "term": "large painting on a wall",
+        "definition_clue": "Mural is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "large painting on a wall",
+        "distractor_family": [
+          "mural painted into wet plaster",
+          "art made for shared public space",
+          "mural made with local participation"
+        ]
       }
     },
     {
@@ -4945,7 +8185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "mural painted into wet plaster",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mural_painted_into_wet_plaster"
+          ],
+          "term": "mural painted into wet plaster",
+          "definition_clue": "Fresco Mural is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "mural painted into wet plaster",
+          "distractor_family": [
+            "large painting on a wall",
+            "art made for shared public space",
+            "mural made with local participation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "mural painted into wet plaster",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mural_painted_into_wet_plaster"
+        ],
+        "term": "mural painted into wet plaster",
+        "definition_clue": "Fresco Mural is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "mural painted into wet plaster",
+        "distractor_family": [
+          "large painting on a wall",
+          "art made for shared public space",
+          "mural made with local participation"
+        ]
       }
     },
     {
@@ -5005,7 +8285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "art made for shared public space",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "art_made_for_shared_public_space"
+          ],
+          "term": "art made for shared public space",
+          "definition_clue": "Public Art is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "art made for shared public space",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "mural made with local participation"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "art made for shared public space",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "art_made_for_shared_public_space"
+        ],
+        "term": "art made for shared public space",
+        "definition_clue": "Public Art is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "art made for shared public space",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "mural made with local participation"
+        ]
       }
     },
     {
@@ -5065,7 +8385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "mural made with local participation",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mural_made_with_local_participation"
+          ],
+          "term": "mural made with local participation",
+          "definition_clue": "Community Mural is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "mural made with local participation",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "mural made with local participation",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mural_made_with_local_participation"
+        ],
+        "term": "mural made with local participation",
+        "definition_clue": "Community Mural is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "mural made with local participation",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5125,7 +8485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "large exterior urban painting",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "large_exterior_urban_painting"
+          ],
+          "term": "large exterior urban painting",
+          "definition_clue": "Street Mural is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "large exterior urban painting",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "large exterior urban painting",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "large_exterior_urban_painting"
+        ],
+        "term": "large exterior urban painting",
+        "definition_clue": "Street Mural is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "large exterior urban painting",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5185,7 +8585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "painting made overhead",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "painting_made_overhead"
+          ],
+          "term": "painting made overhead",
+          "definition_clue": "Ceiling Painting is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "painting made overhead",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "painting made overhead",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "painting_made_overhead"
+        ],
+        "term": "painting made overhead",
+        "definition_clue": "Ceiling Painting is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "painting made overhead",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5245,7 +8685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "wall illusion that fools the eye",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "wall_illusion_that_fools_the_eye"
+          ],
+          "term": "wall illusion that fools the eye",
+          "definition_clue": "Trompe-l’œil Mural is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "wall illusion that fools the eye",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "wall illusion that fools the eye",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "wall_illusion_that_fools_the_eye"
+        ],
+        "term": "wall illusion that fools the eye",
+        "definition_clue": "Trompe-l’œil Mural is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "wall illusion that fools the eye",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5305,7 +8785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "public image with political message",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "public_image_with_political_message"
+          ],
+          "term": "public image with political message",
+          "definition_clue": "Political Mural is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "public image with political message",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "public image with political message",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "public_image_with_political_message"
+        ],
+        "term": "public image with political message",
+        "definition_clue": "Political Mural is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "public image with political message",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5365,7 +8885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "mural telling a story",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "mural_telling_a_story"
+          ],
+          "term": "mural telling a story",
+          "definition_clue": "Narrative Mural is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "mural telling a story",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "mural telling a story",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "mural_telling_a_story"
+        ],
+        "term": "mural telling a story",
+        "definition_clue": "Narrative Mural is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "mural telling a story",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5425,7 +8985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "repairing damaged wall art",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "repairing_damaged_wall_art"
+          ],
+          "term": "repairing damaged wall art",
+          "definition_clue": "Restoration is best described as what?",
+          "difficulty_tier": 3,
+          "recognized_answer": "repairing damaged wall art",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "repairing damaged wall art",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "repairing_damaged_wall_art"
+        ],
+        "term": "repairing damaged wall art",
+        "definition_clue": "Restoration is best described as what?",
+        "difficulty_tier": 3,
+        "recognized_answer": "repairing damaged wall art",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5485,7 +9085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "large size relation to viewer",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "large_size_relation_to_viewer"
+          ],
+          "term": "large size relation to viewer",
+          "definition_clue": "Scale is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "large size relation to viewer",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "large size relation to viewer",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "large_size_relation_to_viewer"
+        ],
+        "term": "large size relation to viewer",
+        "definition_clue": "Scale is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "large size relation to viewer",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5545,7 +9185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "full-scale preparatory drawing",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "full_scale_preparatory_drawing"
+          ],
+          "term": "full-scale preparatory drawing",
+          "definition_clue": "Cartoon is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "full-scale preparatory drawing",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "full-scale preparatory drawing",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "full_scale_preparatory_drawing"
+        ],
+        "term": "full-scale preparatory drawing",
+        "definition_clue": "Cartoon is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "full-scale preparatory drawing",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5605,7 +9285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "transferring a design through small holes",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "transferring_a_design_through_small_holes"
+          ],
+          "term": "transferring a design through small holes",
+          "definition_clue": "Pouncing is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "transferring a design through small holes",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "transferring a design through small holes",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "transferring_a_design_through_small_holes"
+        ],
+        "term": "transferring a design through small holes",
+        "definition_clue": "Pouncing is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "transferring a design through small holes",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5665,7 +9385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "platform used to reach high walls",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "platform_used_to_reach_high_walls"
+          ],
+          "term": "platform used to reach high walls",
+          "definition_clue": "Scaffold is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "platform used to reach high walls",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "platform used to reach high walls",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "platform_used_to_reach_high_walls"
+        ],
+        "term": "platform used to reach high walls",
+        "definition_clue": "Scaffold is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "platform used to reach high walls",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5725,7 +9485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "cleaning and priming surface",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "cleaning_and_priming_surface"
+          ],
+          "term": "cleaning and priming surface",
+          "definition_clue": "Wall Preparation is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "cleaning and priming surface",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "cleaning and priming surface",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "cleaning_and_priming_surface"
+        ],
+        "term": "cleaning and priming surface",
+        "definition_clue": "Wall Preparation is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "cleaning and priming surface",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5785,7 +9585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "first mural layer",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "first_mural_layer"
+          ],
+          "term": "first mural layer",
+          "definition_clue": "Underlayer is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "first mural layer",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "first mural layer",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "first_mural_layer"
+        ],
+        "term": "first mural layer",
+        "definition_clue": "Underlayer is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "first mural layer",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5845,7 +9685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "resistance to weather",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "resistance_to_weather"
+          ],
+          "term": "resistance to weather",
+          "definition_clue": "Outdoor Durability is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "resistance to weather",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "resistance to weather",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "resistance_to_weather"
+        ],
+        "term": "resistance to weather",
+        "definition_clue": "Outdoor Durability is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "resistance to weather",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5905,7 +9785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "image made for a location",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "image_made_for_a_location"
+          ],
+          "term": "image made for a location",
+          "definition_clue": "Site-Specific Design is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "image made for a location",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "image made for a location",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "image_made_for_a_location"
+        ],
+        "term": "image made for a location",
+        "definition_clue": "Site-Specific Design is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "image made for a location",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -5965,7 +9885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "artist famous for public murals",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "artist_famous_for_public_murals"
+          ],
+          "term": "artist famous for public murals",
+          "definition_clue": "Diego Rivera is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "artist famous for public murals",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "artist famous for public murals",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "artist_famous_for_public_murals"
+        ],
+        "term": "artist famous for public murals",
+        "definition_clue": "Diego Rivera is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "artist famous for public murals",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     },
     {
@@ -6025,7 +9985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "murals",
+          "concept": "movement using public murals",
+          "prompt_pattern": "True / Definition",
+          "aliases": [],
+          "keywords": [
+            "murals",
+            "movement_using_public_murals"
+          ],
+          "term": "movement using public murals",
+          "definition_clue": "Mexican Muralism is best described as what?",
+          "difficulty_tier": 4,
+          "recognized_answer": "movement using public murals",
+          "distractor_family": [
+            "large painting on a wall",
+            "mural painted into wet plaster",
+            "art made for shared public space"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "murals",
+        "concept": "movement using public murals",
+        "prompt_pattern": "True / Definition",
+        "aliases": [],
+        "keywords": [
+          "murals",
+          "movement_using_public_murals"
+        ],
+        "term": "movement using public murals",
+        "definition_clue": "Mexican Muralism is best described as what?",
+        "difficulty_tier": 4,
+        "recognized_answer": "movement using public murals",
+        "distractor_family": [
+          "large painting on a wall",
+          "mural painted into wet plaster",
+          "art made for shared public space"
+        ]
       }
     }
   ]

@@ -85,7 +85,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Renaissance",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "renaissance"
+          ],
+          "term": "Renaissance",
+          "definition_clue": "balanced perspective and classical humanism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Renaissance",
+          "distractor_family": [
+            "Baroque",
+            "Rococo",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Renaissance",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "renaissance"
+        ],
+        "term": "Renaissance",
+        "definition_clue": "balanced perspective and classical humanism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Renaissance",
+        "distractor_family": [
+          "Baroque",
+          "Rococo",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -145,7 +185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Baroque",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "baroque"
+          ],
+          "term": "Baroque",
+          "definition_clue": "dramatic light and motion",
+          "difficulty_tier": 1,
+          "recognized_answer": "Baroque",
+          "distractor_family": [
+            "Renaissance",
+            "Rococo",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Baroque",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "baroque"
+        ],
+        "term": "Baroque",
+        "definition_clue": "dramatic light and motion",
+        "difficulty_tier": 1,
+        "recognized_answer": "Baroque",
+        "distractor_family": [
+          "Renaissance",
+          "Rococo",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -205,7 +285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Rococo",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "rococo"
+          ],
+          "term": "Rococo",
+          "definition_clue": "playful pastel ornament",
+          "difficulty_tier": 1,
+          "recognized_answer": "Rococo",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Rococo",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "rococo"
+        ],
+        "term": "Rococo",
+        "definition_clue": "playful pastel ornament",
+        "difficulty_tier": 1,
+        "recognized_answer": "Rococo",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -265,7 +385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Neoclassicism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "neoclassicism"
+          ],
+          "term": "Neoclassicism",
+          "definition_clue": "classical order and moral seriousness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Neoclassicism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Neoclassicism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "neoclassicism"
+        ],
+        "term": "Neoclassicism",
+        "definition_clue": "classical order and moral seriousness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Neoclassicism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -325,7 +485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Romanticism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "romanticism"
+          ],
+          "term": "Romanticism",
+          "definition_clue": "emotion, nature, and drama",
+          "difficulty_tier": 1,
+          "recognized_answer": "Romanticism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Romanticism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "romanticism"
+        ],
+        "term": "Romanticism",
+        "definition_clue": "emotion, nature, and drama",
+        "difficulty_tier": 1,
+        "recognized_answer": "Romanticism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -385,7 +585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Realism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "realism"
+          ],
+          "term": "Realism",
+          "definition_clue": "ordinary life without idealizing",
+          "difficulty_tier": 1,
+          "recognized_answer": "Realism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Realism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "realism"
+        ],
+        "term": "Realism",
+        "definition_clue": "ordinary life without idealizing",
+        "difficulty_tier": 1,
+        "recognized_answer": "Realism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -445,7 +685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Impressionism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "impressionism"
+          ],
+          "term": "Impressionism",
+          "definition_clue": "visible brushwork and changing light",
+          "difficulty_tier": 1,
+          "recognized_answer": "Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Impressionism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "impressionism"
+        ],
+        "term": "Impressionism",
+        "definition_clue": "visible brushwork and changing light",
+        "difficulty_tier": 1,
+        "recognized_answer": "Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -505,7 +785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Post-Impressionism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "post_impressionism"
+          ],
+          "term": "Post-Impressionism",
+          "definition_clue": "expressive color and structure after Impressionism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Post-Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Post-Impressionism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "post_impressionism"
+        ],
+        "term": "Post-Impressionism",
+        "definition_clue": "expressive color and structure after Impressionism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Post-Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -565,7 +885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Pointillism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "pointillism"
+          ],
+          "term": "Pointillism",
+          "definition_clue": "dots of pure color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pointillism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Pointillism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "pointillism"
+        ],
+        "term": "Pointillism",
+        "definition_clue": "dots of pure color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pointillism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -625,7 +985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Fauvism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "fauvism"
+          ],
+          "term": "Fauvism",
+          "definition_clue": "wild expressive color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fauvism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Fauvism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "fauvism"
+        ],
+        "term": "Fauvism",
+        "definition_clue": "wild expressive color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fauvism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -685,7 +1085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Cubism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "cubism"
+          ],
+          "term": "Cubism",
+          "definition_clue": "fragmented geometric viewpoints",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cubism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Cubism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "cubism"
+        ],
+        "term": "Cubism",
+        "definition_clue": "fragmented geometric viewpoints",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cubism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -745,7 +1185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Futurism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "futurism"
+          ],
+          "term": "Futurism",
+          "definition_clue": "speed, machines, and motion",
+          "difficulty_tier": 1,
+          "recognized_answer": "Futurism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Futurism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "futurism"
+        ],
+        "term": "Futurism",
+        "definition_clue": "speed, machines, and motion",
+        "difficulty_tier": 1,
+        "recognized_answer": "Futurism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -805,7 +1285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Dada",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "dada"
+          ],
+          "term": "Dada",
+          "definition_clue": "anti-art protest and absurdity",
+          "difficulty_tier": 1,
+          "recognized_answer": "Dada",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Dada",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "dada"
+        ],
+        "term": "Dada",
+        "definition_clue": "anti-art protest and absurdity",
+        "difficulty_tier": 1,
+        "recognized_answer": "Dada",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -865,7 +1385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Surrealism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "surrealism"
+          ],
+          "term": "Surrealism",
+          "definition_clue": "dream imagery and unexpected juxtapositions",
+          "difficulty_tier": 1,
+          "recognized_answer": "Surrealism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Surrealism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "surrealism"
+        ],
+        "term": "Surrealism",
+        "definition_clue": "dream imagery and unexpected juxtapositions",
+        "difficulty_tier": 1,
+        "recognized_answer": "Surrealism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -925,7 +1485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Abstract Expressionism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "abstract_expressionism"
+          ],
+          "term": "Abstract Expressionism",
+          "definition_clue": "large gestural abstraction",
+          "difficulty_tier": 1,
+          "recognized_answer": "Abstract Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Abstract Expressionism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "abstract_expressionism"
+        ],
+        "term": "Abstract Expressionism",
+        "definition_clue": "large gestural abstraction",
+        "difficulty_tier": 1,
+        "recognized_answer": "Abstract Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -985,7 +1585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Color Field Painting",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "color_field_painting"
+          ],
+          "term": "Color Field Painting",
+          "definition_clue": "broad fields of color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Color Field Painting",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Color Field Painting",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "color_field_painting"
+        ],
+        "term": "Color Field Painting",
+        "definition_clue": "broad fields of color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Color Field Painting",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1045,7 +1685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Pop Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "pop_art"
+          ],
+          "term": "Pop Art",
+          "definition_clue": "mass media and commercial imagery",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pop Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Pop Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "pop_art"
+        ],
+        "term": "Pop Art",
+        "definition_clue": "mass media and commercial imagery",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pop Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1105,7 +1785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Minimalism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "minimalism"
+          ],
+          "term": "Minimalism",
+          "definition_clue": "simple geometric reduction",
+          "difficulty_tier": 1,
+          "recognized_answer": "Minimalism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Minimalism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "minimalism"
+        ],
+        "term": "Minimalism",
+        "definition_clue": "simple geometric reduction",
+        "difficulty_tier": 1,
+        "recognized_answer": "Minimalism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1165,7 +1885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Op Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "op_art"
+          ],
+          "term": "Op Art",
+          "definition_clue": "optical illusions and vibrating patterns",
+          "difficulty_tier": 1,
+          "recognized_answer": "Op Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Op Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "op_art"
+        ],
+        "term": "Op Art",
+        "definition_clue": "optical illusions and vibrating patterns",
+        "difficulty_tier": 1,
+        "recognized_answer": "Op Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1225,7 +1985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Conceptual Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "conceptual_art"
+          ],
+          "term": "Conceptual Art",
+          "definition_clue": "idea over object",
+          "difficulty_tier": 1,
+          "recognized_answer": "Conceptual Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Conceptual Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "conceptual_art"
+        ],
+        "term": "Conceptual Art",
+        "definition_clue": "idea over object",
+        "difficulty_tier": 1,
+        "recognized_answer": "Conceptual Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1285,7 +2085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Art Nouveau",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "art_nouveau"
+          ],
+          "term": "Art Nouveau",
+          "definition_clue": "flowing plant-like lines",
+          "difficulty_tier": 1,
+          "recognized_answer": "Art Nouveau",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Art Nouveau",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "art_nouveau"
+        ],
+        "term": "Art Nouveau",
+        "definition_clue": "flowing plant-like lines",
+        "difficulty_tier": 1,
+        "recognized_answer": "Art Nouveau",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1345,7 +2185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Art Deco",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "art_deco"
+          ],
+          "term": "Art Deco",
+          "definition_clue": "streamlined luxury geometry",
+          "difficulty_tier": 1,
+          "recognized_answer": "Art Deco",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Art Deco",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "art_deco"
+        ],
+        "term": "Art Deco",
+        "definition_clue": "streamlined luxury geometry",
+        "difficulty_tier": 1,
+        "recognized_answer": "Art Deco",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1405,7 +2285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Bauhaus",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "bauhaus"
+          ],
+          "term": "Bauhaus",
+          "definition_clue": "functional modern design",
+          "difficulty_tier": 1,
+          "recognized_answer": "Bauhaus",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Bauhaus",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "bauhaus"
+        ],
+        "term": "Bauhaus",
+        "definition_clue": "functional modern design",
+        "difficulty_tier": 1,
+        "recognized_answer": "Bauhaus",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1465,7 +2385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Expressionism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "expressionism"
+          ],
+          "term": "Expressionism",
+          "definition_clue": "distorted form for emotion",
+          "difficulty_tier": 1,
+          "recognized_answer": "Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Expressionism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "expressionism"
+        ],
+        "term": "Expressionism",
+        "definition_clue": "distorted form for emotion",
+        "difficulty_tier": 1,
+        "recognized_answer": "Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1525,7 +2485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Contemporary Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "contemporary_art"
+          ],
+          "term": "Contemporary Art",
+          "definition_clue": "current diverse global practices",
+          "difficulty_tier": 1,
+          "recognized_answer": "Contemporary Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Contemporary Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "contemporary_art"
+        ],
+        "term": "Contemporary Art",
+        "definition_clue": "current diverse global practices",
+        "difficulty_tier": 1,
+        "recognized_answer": "Contemporary Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1585,7 +2585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Renaissance",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "renaissance"
+          ],
+          "term": "Renaissance",
+          "definition_clue": "Identify the art term: balanced perspective and classical humanism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Renaissance",
+          "distractor_family": [
+            "Baroque",
+            "Rococo",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Renaissance",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "renaissance"
+        ],
+        "term": "Renaissance",
+        "definition_clue": "Identify the art term: balanced perspective and classical humanism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Renaissance",
+        "distractor_family": [
+          "Baroque",
+          "Rococo",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -1645,7 +2685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Baroque",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "baroque"
+          ],
+          "term": "Baroque",
+          "definition_clue": "Identify the art term: dramatic light and motion",
+          "difficulty_tier": 1,
+          "recognized_answer": "Baroque",
+          "distractor_family": [
+            "Renaissance",
+            "Rococo",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Baroque",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "baroque"
+        ],
+        "term": "Baroque",
+        "definition_clue": "Identify the art term: dramatic light and motion",
+        "difficulty_tier": 1,
+        "recognized_answer": "Baroque",
+        "distractor_family": [
+          "Renaissance",
+          "Rococo",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -1705,7 +2785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Rococo",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "rococo"
+          ],
+          "term": "Rococo",
+          "definition_clue": "Identify the art term: playful pastel ornament",
+          "difficulty_tier": 1,
+          "recognized_answer": "Rococo",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Rococo",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "rococo"
+        ],
+        "term": "Rococo",
+        "definition_clue": "Identify the art term: playful pastel ornament",
+        "difficulty_tier": 1,
+        "recognized_answer": "Rococo",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -1765,7 +2885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Neoclassicism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "neoclassicism"
+          ],
+          "term": "Neoclassicism",
+          "definition_clue": "Identify the art term: classical order and moral seriousness",
+          "difficulty_tier": 1,
+          "recognized_answer": "Neoclassicism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Neoclassicism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "neoclassicism"
+        ],
+        "term": "Neoclassicism",
+        "definition_clue": "Identify the art term: classical order and moral seriousness",
+        "difficulty_tier": 1,
+        "recognized_answer": "Neoclassicism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1825,7 +2985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Romanticism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "romanticism"
+          ],
+          "term": "Romanticism",
+          "definition_clue": "Identify the art term: emotion, nature, and drama",
+          "difficulty_tier": 1,
+          "recognized_answer": "Romanticism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Romanticism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "romanticism"
+        ],
+        "term": "Romanticism",
+        "definition_clue": "Identify the art term: emotion, nature, and drama",
+        "difficulty_tier": 1,
+        "recognized_answer": "Romanticism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1885,7 +3085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Realism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "realism"
+          ],
+          "term": "Realism",
+          "definition_clue": "Identify the art term: ordinary life without idealizing",
+          "difficulty_tier": 1,
+          "recognized_answer": "Realism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Realism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "realism"
+        ],
+        "term": "Realism",
+        "definition_clue": "Identify the art term: ordinary life without idealizing",
+        "difficulty_tier": 1,
+        "recognized_answer": "Realism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -1945,7 +3185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Impressionism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "impressionism"
+          ],
+          "term": "Impressionism",
+          "definition_clue": "Identify the art term: visible brushwork and changing light",
+          "difficulty_tier": 1,
+          "recognized_answer": "Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Impressionism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "impressionism"
+        ],
+        "term": "Impressionism",
+        "definition_clue": "Identify the art term: visible brushwork and changing light",
+        "difficulty_tier": 1,
+        "recognized_answer": "Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2005,7 +3285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Post-Impressionism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "post_impressionism"
+          ],
+          "term": "Post-Impressionism",
+          "definition_clue": "Identify the art term: expressive color and structure after Impressionism",
+          "difficulty_tier": 1,
+          "recognized_answer": "Post-Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Post-Impressionism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "post_impressionism"
+        ],
+        "term": "Post-Impressionism",
+        "definition_clue": "Identify the art term: expressive color and structure after Impressionism",
+        "difficulty_tier": 1,
+        "recognized_answer": "Post-Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2065,7 +3385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Pointillism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "pointillism"
+          ],
+          "term": "Pointillism",
+          "definition_clue": "Identify the art term: dots of pure color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Pointillism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Pointillism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "pointillism"
+        ],
+        "term": "Pointillism",
+        "definition_clue": "Identify the art term: dots of pure color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Pointillism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2125,7 +3485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Fauvism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "fauvism"
+          ],
+          "term": "Fauvism",
+          "definition_clue": "Identify the art term: wild expressive color",
+          "difficulty_tier": 1,
+          "recognized_answer": "Fauvism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Fauvism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "fauvism"
+        ],
+        "term": "Fauvism",
+        "definition_clue": "Identify the art term: wild expressive color",
+        "difficulty_tier": 1,
+        "recognized_answer": "Fauvism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2185,7 +3585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Cubism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "cubism"
+          ],
+          "term": "Cubism",
+          "definition_clue": "Identify the art term: fragmented geometric viewpoints",
+          "difficulty_tier": 1,
+          "recognized_answer": "Cubism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Cubism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "cubism"
+        ],
+        "term": "Cubism",
+        "definition_clue": "Identify the art term: fragmented geometric viewpoints",
+        "difficulty_tier": 1,
+        "recognized_answer": "Cubism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2245,7 +3685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Futurism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "futurism"
+          ],
+          "term": "Futurism",
+          "definition_clue": "Identify the art term: speed, machines, and motion",
+          "difficulty_tier": 1,
+          "recognized_answer": "Futurism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Futurism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "futurism"
+        ],
+        "term": "Futurism",
+        "definition_clue": "Identify the art term: speed, machines, and motion",
+        "difficulty_tier": 1,
+        "recognized_answer": "Futurism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2305,7 +3785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Dada",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "dada"
+          ],
+          "term": "Dada",
+          "definition_clue": "Identify the art term: anti-art protest and absurdity",
+          "difficulty_tier": 1,
+          "recognized_answer": "Dada",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Dada",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "dada"
+        ],
+        "term": "Dada",
+        "definition_clue": "Identify the art term: anti-art protest and absurdity",
+        "difficulty_tier": 1,
+        "recognized_answer": "Dada",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2365,7 +3885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Surrealism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "surrealism"
+          ],
+          "term": "Surrealism",
+          "definition_clue": "Identify the art term: dream imagery and unexpected juxtapositions",
+          "difficulty_tier": 1,
+          "recognized_answer": "Surrealism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Surrealism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "surrealism"
+        ],
+        "term": "Surrealism",
+        "definition_clue": "Identify the art term: dream imagery and unexpected juxtapositions",
+        "difficulty_tier": 1,
+        "recognized_answer": "Surrealism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2425,7 +3985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Abstract Expressionism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "abstract_expressionism"
+          ],
+          "term": "Abstract Expressionism",
+          "definition_clue": "Identify the art term: large gestural abstraction",
+          "difficulty_tier": 1,
+          "recognized_answer": "Abstract Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Abstract Expressionism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "abstract_expressionism"
+        ],
+        "term": "Abstract Expressionism",
+        "definition_clue": "Identify the art term: large gestural abstraction",
+        "difficulty_tier": 1,
+        "recognized_answer": "Abstract Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2485,7 +4085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Color Field Painting",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "color_field_painting"
+          ],
+          "term": "Color Field Painting",
+          "definition_clue": "Identify the art term: broad fields of color",
+          "difficulty_tier": 2,
+          "recognized_answer": "Color Field Painting",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Color Field Painting",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "color_field_painting"
+        ],
+        "term": "Color Field Painting",
+        "definition_clue": "Identify the art term: broad fields of color",
+        "difficulty_tier": 2,
+        "recognized_answer": "Color Field Painting",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2545,7 +4185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Pop Art",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "pop_art"
+          ],
+          "term": "Pop Art",
+          "definition_clue": "Identify the art term: mass media and commercial imagery",
+          "difficulty_tier": 2,
+          "recognized_answer": "Pop Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Pop Art",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "pop_art"
+        ],
+        "term": "Pop Art",
+        "definition_clue": "Identify the art term: mass media and commercial imagery",
+        "difficulty_tier": 2,
+        "recognized_answer": "Pop Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2605,7 +4285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Minimalism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "minimalism"
+          ],
+          "term": "Minimalism",
+          "definition_clue": "Identify the art term: simple geometric reduction",
+          "difficulty_tier": 2,
+          "recognized_answer": "Minimalism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Minimalism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "minimalism"
+        ],
+        "term": "Minimalism",
+        "definition_clue": "Identify the art term: simple geometric reduction",
+        "difficulty_tier": 2,
+        "recognized_answer": "Minimalism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2665,7 +4385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Op Art",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "op_art"
+          ],
+          "term": "Op Art",
+          "definition_clue": "Identify the art term: optical illusions and vibrating patterns",
+          "difficulty_tier": 2,
+          "recognized_answer": "Op Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Op Art",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "op_art"
+        ],
+        "term": "Op Art",
+        "definition_clue": "Identify the art term: optical illusions and vibrating patterns",
+        "difficulty_tier": 2,
+        "recognized_answer": "Op Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2725,7 +4485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Conceptual Art",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "conceptual_art"
+          ],
+          "term": "Conceptual Art",
+          "definition_clue": "Identify the art term: idea over object",
+          "difficulty_tier": 2,
+          "recognized_answer": "Conceptual Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Conceptual Art",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "conceptual_art"
+        ],
+        "term": "Conceptual Art",
+        "definition_clue": "Identify the art term: idea over object",
+        "difficulty_tier": 2,
+        "recognized_answer": "Conceptual Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2785,7 +4585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Art Nouveau",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "art_nouveau"
+          ],
+          "term": "Art Nouveau",
+          "definition_clue": "Identify the art term: flowing plant-like lines",
+          "difficulty_tier": 2,
+          "recognized_answer": "Art Nouveau",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Art Nouveau",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "art_nouveau"
+        ],
+        "term": "Art Nouveau",
+        "definition_clue": "Identify the art term: flowing plant-like lines",
+        "difficulty_tier": 2,
+        "recognized_answer": "Art Nouveau",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2845,7 +4685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Art Deco",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "art_deco"
+          ],
+          "term": "Art Deco",
+          "definition_clue": "Identify the art term: streamlined luxury geometry",
+          "difficulty_tier": 2,
+          "recognized_answer": "Art Deco",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Art Deco",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "art_deco"
+        ],
+        "term": "Art Deco",
+        "definition_clue": "Identify the art term: streamlined luxury geometry",
+        "difficulty_tier": 2,
+        "recognized_answer": "Art Deco",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2905,7 +4785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Bauhaus",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "bauhaus"
+          ],
+          "term": "Bauhaus",
+          "definition_clue": "Identify the art term: functional modern design",
+          "difficulty_tier": 2,
+          "recognized_answer": "Bauhaus",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Bauhaus",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "bauhaus"
+        ],
+        "term": "Bauhaus",
+        "definition_clue": "Identify the art term: functional modern design",
+        "difficulty_tier": 2,
+        "recognized_answer": "Bauhaus",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -2965,7 +4885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Expressionism",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "expressionism"
+          ],
+          "term": "Expressionism",
+          "definition_clue": "Identify the art term: distorted form for emotion",
+          "difficulty_tier": 2,
+          "recognized_answer": "Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Expressionism",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "expressionism"
+        ],
+        "term": "Expressionism",
+        "definition_clue": "Identify the art term: distorted form for emotion",
+        "difficulty_tier": 2,
+        "recognized_answer": "Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3025,7 +4985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Contemporary Art",
+          "prompt_pattern": "Tool/Technique Recognition",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "contemporary_art"
+          ],
+          "term": "Contemporary Art",
+          "definition_clue": "Identify the art term: current diverse global practices",
+          "difficulty_tier": 2,
+          "recognized_answer": "Contemporary Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Contemporary Art",
+        "prompt_pattern": "Tool/Technique Recognition",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "contemporary_art"
+        ],
+        "term": "Contemporary Art",
+        "definition_clue": "Identify the art term: current diverse global practices",
+        "difficulty_tier": 2,
+        "recognized_answer": "Contemporary Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3085,7 +5085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Renaissance",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "renaissance"
+          ],
+          "term": "Renaissance",
+          "definition_clue": "Which concept means balanced perspective and classical humanism?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Renaissance",
+          "distractor_family": [
+            "Baroque",
+            "Rococo",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Renaissance",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "renaissance"
+        ],
+        "term": "Renaissance",
+        "definition_clue": "Which concept means balanced perspective and classical humanism?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Renaissance",
+        "distractor_family": [
+          "Baroque",
+          "Rococo",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -3145,7 +5185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Baroque",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "baroque"
+          ],
+          "term": "Baroque",
+          "definition_clue": "Which concept means dramatic light and motion?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Baroque",
+          "distractor_family": [
+            "Renaissance",
+            "Rococo",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Baroque",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "baroque"
+        ],
+        "term": "Baroque",
+        "definition_clue": "Which concept means dramatic light and motion?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Baroque",
+        "distractor_family": [
+          "Renaissance",
+          "Rococo",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -3205,7 +5285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Rococo",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "rococo"
+          ],
+          "term": "Rococo",
+          "definition_clue": "Which concept means playful pastel ornament?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Rococo",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Rococo",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "rococo"
+        ],
+        "term": "Rococo",
+        "definition_clue": "Which concept means playful pastel ornament?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Rococo",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -3265,7 +5385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Neoclassicism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "neoclassicism"
+          ],
+          "term": "Neoclassicism",
+          "definition_clue": "Which concept means classical order and moral seriousness?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Neoclassicism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Neoclassicism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "neoclassicism"
+        ],
+        "term": "Neoclassicism",
+        "definition_clue": "Which concept means classical order and moral seriousness?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Neoclassicism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3325,7 +5485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Romanticism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "romanticism"
+          ],
+          "term": "Romanticism",
+          "definition_clue": "Which concept means emotion, nature, and drama?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Romanticism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Romanticism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "romanticism"
+        ],
+        "term": "Romanticism",
+        "definition_clue": "Which concept means emotion, nature, and drama?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Romanticism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3385,7 +5585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Realism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "realism"
+          ],
+          "term": "Realism",
+          "definition_clue": "Which concept means ordinary life without idealizing?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Realism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Realism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "realism"
+        ],
+        "term": "Realism",
+        "definition_clue": "Which concept means ordinary life without idealizing?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Realism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3445,7 +5685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Impressionism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "impressionism"
+          ],
+          "term": "Impressionism",
+          "definition_clue": "Which concept means visible brushwork and changing light?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Impressionism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "impressionism"
+        ],
+        "term": "Impressionism",
+        "definition_clue": "Which concept means visible brushwork and changing light?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3505,7 +5785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Post-Impressionism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "post_impressionism"
+          ],
+          "term": "Post-Impressionism",
+          "definition_clue": "Which concept means expressive color and structure after Impressionism?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Post-Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Post-Impressionism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "post_impressionism"
+        ],
+        "term": "Post-Impressionism",
+        "definition_clue": "Which concept means expressive color and structure after Impressionism?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Post-Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3565,7 +5885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Pointillism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "pointillism"
+          ],
+          "term": "Pointillism",
+          "definition_clue": "Which concept means dots of pure color?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Pointillism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Pointillism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "pointillism"
+        ],
+        "term": "Pointillism",
+        "definition_clue": "Which concept means dots of pure color?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Pointillism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3625,7 +5985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Fauvism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "fauvism"
+          ],
+          "term": "Fauvism",
+          "definition_clue": "Which concept means wild expressive color?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Fauvism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Fauvism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "fauvism"
+        ],
+        "term": "Fauvism",
+        "definition_clue": "Which concept means wild expressive color?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Fauvism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3685,7 +6085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Cubism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "cubism"
+          ],
+          "term": "Cubism",
+          "definition_clue": "Which concept means fragmented geometric viewpoints?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Cubism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Cubism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "cubism"
+        ],
+        "term": "Cubism",
+        "definition_clue": "Which concept means fragmented geometric viewpoints?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Cubism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3745,7 +6185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Futurism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "futurism"
+          ],
+          "term": "Futurism",
+          "definition_clue": "Which concept means speed, machines, and motion?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Futurism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Futurism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "futurism"
+        ],
+        "term": "Futurism",
+        "definition_clue": "Which concept means speed, machines, and motion?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Futurism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3805,7 +6285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Dada",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "dada"
+          ],
+          "term": "Dada",
+          "definition_clue": "Which concept means anti-art protest and absurdity?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Dada",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Dada",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "dada"
+        ],
+        "term": "Dada",
+        "definition_clue": "Which concept means anti-art protest and absurdity?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Dada",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3865,7 +6385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Surrealism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "surrealism"
+          ],
+          "term": "Surrealism",
+          "definition_clue": "Which concept means dream imagery and unexpected juxtapositions?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Surrealism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Surrealism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "surrealism"
+        ],
+        "term": "Surrealism",
+        "definition_clue": "Which concept means dream imagery and unexpected juxtapositions?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Surrealism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3925,7 +6485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Abstract Expressionism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "abstract_expressionism"
+          ],
+          "term": "Abstract Expressionism",
+          "definition_clue": "Which concept means large gestural abstraction?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Abstract Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Abstract Expressionism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "abstract_expressionism"
+        ],
+        "term": "Abstract Expressionism",
+        "definition_clue": "Which concept means large gestural abstraction?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Abstract Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -3985,7 +6585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Color Field Painting",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "color_field_painting"
+          ],
+          "term": "Color Field Painting",
+          "definition_clue": "Which concept means broad fields of color?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Color Field Painting",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Color Field Painting",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "color_field_painting"
+        ],
+        "term": "Color Field Painting",
+        "definition_clue": "Which concept means broad fields of color?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Color Field Painting",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4045,7 +6685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Pop Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "pop_art"
+          ],
+          "term": "Pop Art",
+          "definition_clue": "Which concept means mass media and commercial imagery?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Pop Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Pop Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "pop_art"
+        ],
+        "term": "Pop Art",
+        "definition_clue": "Which concept means mass media and commercial imagery?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Pop Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4105,7 +6785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Minimalism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "minimalism"
+          ],
+          "term": "Minimalism",
+          "definition_clue": "Which concept means simple geometric reduction?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Minimalism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Minimalism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "minimalism"
+        ],
+        "term": "Minimalism",
+        "definition_clue": "Which concept means simple geometric reduction?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Minimalism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4165,7 +6885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Op Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "op_art"
+          ],
+          "term": "Op Art",
+          "definition_clue": "Which concept means optical illusions and vibrating patterns?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Op Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Op Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "op_art"
+        ],
+        "term": "Op Art",
+        "definition_clue": "Which concept means optical illusions and vibrating patterns?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Op Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4225,7 +6985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Conceptual Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "conceptual_art"
+          ],
+          "term": "Conceptual Art",
+          "definition_clue": "Which concept means idea over object?",
+          "difficulty_tier": 2,
+          "recognized_answer": "Conceptual Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Conceptual Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "conceptual_art"
+        ],
+        "term": "Conceptual Art",
+        "definition_clue": "Which concept means idea over object?",
+        "difficulty_tier": 2,
+        "recognized_answer": "Conceptual Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4285,7 +7085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Art Nouveau",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "art_nouveau"
+          ],
+          "term": "Art Nouveau",
+          "definition_clue": "Which concept means flowing plant-like lines?",
+          "difficulty_tier": 3,
+          "recognized_answer": "Art Nouveau",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Art Nouveau",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "art_nouveau"
+        ],
+        "term": "Art Nouveau",
+        "definition_clue": "Which concept means flowing plant-like lines?",
+        "difficulty_tier": 3,
+        "recognized_answer": "Art Nouveau",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4345,7 +7185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Art Deco",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "art_deco"
+          ],
+          "term": "Art Deco",
+          "definition_clue": "Which concept means streamlined luxury geometry?",
+          "difficulty_tier": 3,
+          "recognized_answer": "Art Deco",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Art Deco",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "art_deco"
+        ],
+        "term": "Art Deco",
+        "definition_clue": "Which concept means streamlined luxury geometry?",
+        "difficulty_tier": 3,
+        "recognized_answer": "Art Deco",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4405,7 +7285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Bauhaus",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "bauhaus"
+          ],
+          "term": "Bauhaus",
+          "definition_clue": "Which concept means functional modern design?",
+          "difficulty_tier": 3,
+          "recognized_answer": "Bauhaus",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Bauhaus",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "bauhaus"
+        ],
+        "term": "Bauhaus",
+        "definition_clue": "Which concept means functional modern design?",
+        "difficulty_tier": 3,
+        "recognized_answer": "Bauhaus",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4465,7 +7385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Expressionism",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "expressionism"
+          ],
+          "term": "Expressionism",
+          "definition_clue": "Which concept means distorted form for emotion?",
+          "difficulty_tier": 3,
+          "recognized_answer": "Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Expressionism",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "expressionism"
+        ],
+        "term": "Expressionism",
+        "definition_clue": "Which concept means distorted form for emotion?",
+        "difficulty_tier": 3,
+        "recognized_answer": "Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4525,7 +7485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Contemporary Art",
+          "prompt_pattern": "Rapid Classification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "contemporary_art"
+          ],
+          "term": "Contemporary Art",
+          "definition_clue": "Which concept means current diverse global practices?",
+          "difficulty_tier": 3,
+          "recognized_answer": "Contemporary Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Contemporary Art",
+        "prompt_pattern": "Rapid Classification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "contemporary_art"
+        ],
+        "term": "Contemporary Art",
+        "definition_clue": "Which concept means current diverse global practices?",
+        "difficulty_tier": 3,
+        "recognized_answer": "Contemporary Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4585,7 +7585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Renaissance",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "renaissance"
+          ],
+          "term": "Renaissance",
+          "definition_clue": "Spot the matching term for: balanced perspective and classical humanism",
+          "difficulty_tier": 3,
+          "recognized_answer": "Renaissance",
+          "distractor_family": [
+            "Baroque",
+            "Rococo",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Renaissance",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "renaissance"
+        ],
+        "term": "Renaissance",
+        "definition_clue": "Spot the matching term for: balanced perspective and classical humanism",
+        "difficulty_tier": 3,
+        "recognized_answer": "Renaissance",
+        "distractor_family": [
+          "Baroque",
+          "Rococo",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -4645,7 +7685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Baroque",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "baroque"
+          ],
+          "term": "Baroque",
+          "definition_clue": "Spot the matching term for: dramatic light and motion",
+          "difficulty_tier": 3,
+          "recognized_answer": "Baroque",
+          "distractor_family": [
+            "Renaissance",
+            "Rococo",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Baroque",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "baroque"
+        ],
+        "term": "Baroque",
+        "definition_clue": "Spot the matching term for: dramatic light and motion",
+        "difficulty_tier": 3,
+        "recognized_answer": "Baroque",
+        "distractor_family": [
+          "Renaissance",
+          "Rococo",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -4705,7 +7785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Rococo",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "rococo"
+          ],
+          "term": "Rococo",
+          "definition_clue": "Spot the matching term for: playful pastel ornament",
+          "difficulty_tier": 3,
+          "recognized_answer": "Rococo",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Neoclassicism"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Rococo",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "rococo"
+        ],
+        "term": "Rococo",
+        "definition_clue": "Spot the matching term for: playful pastel ornament",
+        "difficulty_tier": 3,
+        "recognized_answer": "Rococo",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Neoclassicism"
+        ]
       }
     },
     {
@@ -4765,7 +7885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Neoclassicism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "neoclassicism"
+          ],
+          "term": "Neoclassicism",
+          "definition_clue": "Spot the matching term for: classical order and moral seriousness",
+          "difficulty_tier": 3,
+          "recognized_answer": "Neoclassicism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Neoclassicism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "neoclassicism"
+        ],
+        "term": "Neoclassicism",
+        "definition_clue": "Spot the matching term for: classical order and moral seriousness",
+        "difficulty_tier": 3,
+        "recognized_answer": "Neoclassicism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4825,7 +7985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Romanticism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "romanticism"
+          ],
+          "term": "Romanticism",
+          "definition_clue": "Spot the matching term for: emotion, nature, and drama",
+          "difficulty_tier": 3,
+          "recognized_answer": "Romanticism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Romanticism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "romanticism"
+        ],
+        "term": "Romanticism",
+        "definition_clue": "Spot the matching term for: emotion, nature, and drama",
+        "difficulty_tier": 3,
+        "recognized_answer": "Romanticism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4885,7 +8085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Realism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "realism"
+          ],
+          "term": "Realism",
+          "definition_clue": "Spot the matching term for: ordinary life without idealizing",
+          "difficulty_tier": 3,
+          "recognized_answer": "Realism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Realism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "realism"
+        ],
+        "term": "Realism",
+        "definition_clue": "Spot the matching term for: ordinary life without idealizing",
+        "difficulty_tier": 3,
+        "recognized_answer": "Realism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -4945,7 +8185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Impressionism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "impressionism"
+          ],
+          "term": "Impressionism",
+          "definition_clue": "Spot the matching term for: visible brushwork and changing light",
+          "difficulty_tier": 3,
+          "recognized_answer": "Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Impressionism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "impressionism"
+        ],
+        "term": "Impressionism",
+        "definition_clue": "Spot the matching term for: visible brushwork and changing light",
+        "difficulty_tier": 3,
+        "recognized_answer": "Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5005,7 +8285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Post-Impressionism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "post_impressionism"
+          ],
+          "term": "Post-Impressionism",
+          "definition_clue": "Spot the matching term for: expressive color and structure after Impressionism",
+          "difficulty_tier": 3,
+          "recognized_answer": "Post-Impressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Post-Impressionism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "post_impressionism"
+        ],
+        "term": "Post-Impressionism",
+        "definition_clue": "Spot the matching term for: expressive color and structure after Impressionism",
+        "difficulty_tier": 3,
+        "recognized_answer": "Post-Impressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5065,7 +8385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Pointillism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "pointillism"
+          ],
+          "term": "Pointillism",
+          "definition_clue": "Spot the matching term for: dots of pure color",
+          "difficulty_tier": 3,
+          "recognized_answer": "Pointillism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Pointillism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "pointillism"
+        ],
+        "term": "Pointillism",
+        "definition_clue": "Spot the matching term for: dots of pure color",
+        "difficulty_tier": 3,
+        "recognized_answer": "Pointillism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5125,7 +8485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Fauvism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "fauvism"
+          ],
+          "term": "Fauvism",
+          "definition_clue": "Spot the matching term for: wild expressive color",
+          "difficulty_tier": 3,
+          "recognized_answer": "Fauvism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Fauvism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "fauvism"
+        ],
+        "term": "Fauvism",
+        "definition_clue": "Spot the matching term for: wild expressive color",
+        "difficulty_tier": 3,
+        "recognized_answer": "Fauvism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5185,7 +8585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Cubism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "cubism"
+          ],
+          "term": "Cubism",
+          "definition_clue": "Spot the matching term for: fragmented geometric viewpoints",
+          "difficulty_tier": 3,
+          "recognized_answer": "Cubism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Cubism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "cubism"
+        ],
+        "term": "Cubism",
+        "definition_clue": "Spot the matching term for: fragmented geometric viewpoints",
+        "difficulty_tier": 3,
+        "recognized_answer": "Cubism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5245,7 +8685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Futurism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "futurism"
+          ],
+          "term": "Futurism",
+          "definition_clue": "Spot the matching term for: speed, machines, and motion",
+          "difficulty_tier": 3,
+          "recognized_answer": "Futurism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Futurism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "futurism"
+        ],
+        "term": "Futurism",
+        "definition_clue": "Spot the matching term for: speed, machines, and motion",
+        "difficulty_tier": 3,
+        "recognized_answer": "Futurism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5305,7 +8785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Dada",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "dada"
+          ],
+          "term": "Dada",
+          "definition_clue": "Spot the matching term for: anti-art protest and absurdity",
+          "difficulty_tier": 3,
+          "recognized_answer": "Dada",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Dada",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "dada"
+        ],
+        "term": "Dada",
+        "definition_clue": "Spot the matching term for: anti-art protest and absurdity",
+        "difficulty_tier": 3,
+        "recognized_answer": "Dada",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5365,7 +8885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Surrealism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "surrealism"
+          ],
+          "term": "Surrealism",
+          "definition_clue": "Spot the matching term for: dream imagery and unexpected juxtapositions",
+          "difficulty_tier": 3,
+          "recognized_answer": "Surrealism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Surrealism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "surrealism"
+        ],
+        "term": "Surrealism",
+        "definition_clue": "Spot the matching term for: dream imagery and unexpected juxtapositions",
+        "difficulty_tier": 3,
+        "recognized_answer": "Surrealism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5425,7 +8985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Abstract Expressionism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "abstract_expressionism"
+          ],
+          "term": "Abstract Expressionism",
+          "definition_clue": "Spot the matching term for: large gestural abstraction",
+          "difficulty_tier": 3,
+          "recognized_answer": "Abstract Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Abstract Expressionism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "abstract_expressionism"
+        ],
+        "term": "Abstract Expressionism",
+        "definition_clue": "Spot the matching term for: large gestural abstraction",
+        "difficulty_tier": 3,
+        "recognized_answer": "Abstract Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5485,7 +9085,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Color Field Painting",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "color_field_painting"
+          ],
+          "term": "Color Field Painting",
+          "definition_clue": "Spot the matching term for: broad fields of color",
+          "difficulty_tier": 4,
+          "recognized_answer": "Color Field Painting",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Color Field Painting",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "color_field_painting"
+        ],
+        "term": "Color Field Painting",
+        "definition_clue": "Spot the matching term for: broad fields of color",
+        "difficulty_tier": 4,
+        "recognized_answer": "Color Field Painting",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5545,7 +9185,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Pop Art",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "pop_art"
+          ],
+          "term": "Pop Art",
+          "definition_clue": "Spot the matching term for: mass media and commercial imagery",
+          "difficulty_tier": 4,
+          "recognized_answer": "Pop Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Pop Art",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "pop_art"
+        ],
+        "term": "Pop Art",
+        "definition_clue": "Spot the matching term for: mass media and commercial imagery",
+        "difficulty_tier": 4,
+        "recognized_answer": "Pop Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5605,7 +9285,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Minimalism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "minimalism"
+          ],
+          "term": "Minimalism",
+          "definition_clue": "Spot the matching term for: simple geometric reduction",
+          "difficulty_tier": 4,
+          "recognized_answer": "Minimalism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Minimalism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "minimalism"
+        ],
+        "term": "Minimalism",
+        "definition_clue": "Spot the matching term for: simple geometric reduction",
+        "difficulty_tier": 4,
+        "recognized_answer": "Minimalism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5665,7 +9385,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Op Art",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "op_art"
+          ],
+          "term": "Op Art",
+          "definition_clue": "Spot the matching term for: optical illusions and vibrating patterns",
+          "difficulty_tier": 4,
+          "recognized_answer": "Op Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Op Art",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "op_art"
+        ],
+        "term": "Op Art",
+        "definition_clue": "Spot the matching term for: optical illusions and vibrating patterns",
+        "difficulty_tier": 4,
+        "recognized_answer": "Op Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5725,7 +9485,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Conceptual Art",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "conceptual_art"
+          ],
+          "term": "Conceptual Art",
+          "definition_clue": "Spot the matching term for: idea over object",
+          "difficulty_tier": 4,
+          "recognized_answer": "Conceptual Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Conceptual Art",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "conceptual_art"
+        ],
+        "term": "Conceptual Art",
+        "definition_clue": "Spot the matching term for: idea over object",
+        "difficulty_tier": 4,
+        "recognized_answer": "Conceptual Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5785,7 +9585,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Art Nouveau",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "art_nouveau"
+          ],
+          "term": "Art Nouveau",
+          "definition_clue": "Spot the matching term for: flowing plant-like lines",
+          "difficulty_tier": 4,
+          "recognized_answer": "Art Nouveau",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Art Nouveau",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "art_nouveau"
+        ],
+        "term": "Art Nouveau",
+        "definition_clue": "Spot the matching term for: flowing plant-like lines",
+        "difficulty_tier": 4,
+        "recognized_answer": "Art Nouveau",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5845,7 +9685,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Art Deco",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "art_deco"
+          ],
+          "term": "Art Deco",
+          "definition_clue": "Spot the matching term for: streamlined luxury geometry",
+          "difficulty_tier": 4,
+          "recognized_answer": "Art Deco",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Art Deco",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "art_deco"
+        ],
+        "term": "Art Deco",
+        "definition_clue": "Spot the matching term for: streamlined luxury geometry",
+        "difficulty_tier": 4,
+        "recognized_answer": "Art Deco",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5905,7 +9785,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Bauhaus",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "bauhaus"
+          ],
+          "term": "Bauhaus",
+          "definition_clue": "Spot the matching term for: functional modern design",
+          "difficulty_tier": 4,
+          "recognized_answer": "Bauhaus",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Bauhaus",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "bauhaus"
+        ],
+        "term": "Bauhaus",
+        "definition_clue": "Spot the matching term for: functional modern design",
+        "difficulty_tier": 4,
+        "recognized_answer": "Bauhaus",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -5965,7 +9885,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Expressionism",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "expressionism"
+          ],
+          "term": "Expressionism",
+          "definition_clue": "Spot the matching term for: distorted form for emotion",
+          "difficulty_tier": 4,
+          "recognized_answer": "Expressionism",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Expressionism",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "expressionism"
+        ],
+        "term": "Expressionism",
+        "definition_clue": "Spot the matching term for: distorted form for emotion",
+        "difficulty_tier": 4,
+        "recognized_answer": "Expressionism",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     },
     {
@@ -6025,7 +9985,47 @@
           "educational_value": 5,
           "mobile_readability": 5
         },
-        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references.",
+        "knowledge": {
+          "domain": "painting",
+          "subcategory": "art_styles",
+          "concept": "Contemporary Art",
+          "prompt_pattern": "Visual Identification",
+          "aliases": [],
+          "keywords": [
+            "art_styles",
+            "contemporary_art"
+          ],
+          "term": "Contemporary Art",
+          "definition_clue": "Spot the matching term for: current diverse global practices",
+          "difficulty_tier": 4,
+          "recognized_answer": "Contemporary Art",
+          "distractor_family": [
+            "Renaissance",
+            "Baroque",
+            "Rococo"
+          ]
+        }
+      },
+      "knowledge": {
+        "domain": "painting",
+        "subcategory": "art_styles",
+        "concept": "Contemporary Art",
+        "prompt_pattern": "Visual Identification",
+        "aliases": [],
+        "keywords": [
+          "art_styles",
+          "contemporary_art"
+        ],
+        "term": "Contemporary Art",
+        "definition_clue": "Spot the matching term for: current diverse global practices",
+        "difficulty_tier": 4,
+        "recognized_answer": "Contemporary Art",
+        "distractor_family": [
+          "Renaissance",
+          "Baroque",
+          "Rococo"
+        ]
       }
     }
   ]

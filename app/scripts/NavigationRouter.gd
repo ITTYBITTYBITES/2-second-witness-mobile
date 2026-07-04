@@ -405,41 +405,57 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 		active_secondary_screen.return_requested.connect(func(): _on_play_universe_requested(u_id))
 		active_secondary_screen.subcategory_selected.connect(_on_subcategory_selected)
 
-func _on_subcategory_selected(universe_id: Variant, world_id: Variant, subcategory_id: Variant):
+func _on_subcategory_selected(universe_id: Variant, world_id: Variant, subcategory_id: Variant, manual_activity: bool = false):
 	var u_id = normalize_id(universe_id)
 	var w_id = normalize_id(world_id)
 	var sub_id = normalize_id(subcategory_id)
-	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
-	var sub_meta = registry.get_subcategory_metadata(u_id, w_id, sub_id) if (registry and registry.has_method("get_subcategory_metadata")) else {}
-	var available_types = registry.get_available_types_in_subcategory(u_id, w_id, sub_id) if (registry and registry.has_method("get_available_types_in_subcategory")) else []
-	var preferred = sub_meta.get("scenario_preferences", {}).get("preferred", [])
-	var selected_type = ""
-	for candidate in preferred:
-		if available_types.has(normalize_id(candidate)):
-			selected_type = normalize_id(candidate)
-			break
-	if selected_type == "" and not available_types.is_empty():
-		selected_type = normalize_id(available_types[0])
+	if manual_activity:
+		_open_scenario_select(u_id, w_id, sub_id)
+		return
+	var selected_type = GameplayDirector.choose_mechanic(u_id, w_id, sub_id) if GameplayDirector else ""
 	if selected_type == "":
 		print("[ROUTER] No installed observation bank for subcategory: ", sub_id)
 		return
-	_on_scenario_selected(u_id, w_id, sub_id, selected_type)
+	_on_scenario_selected(u_id, w_id, sub_id, selected_type, false)
 
-func _on_scenario_selected(universe_id: Variant, world_id: Variant, subcategory_id: Variant, scenario_type: Variant):
+func _open_scenario_select(universe_id: String, world_id: String, subcategory_id: String):
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
+	if active_secondary_screen:
+		active_secondary_screen.queue_free()
+		active_secondary_screen = null
+	var scenario_scene = load("res://scenes/ui/screens/ScenarioSelectScreen.tscn")
+	if scenario_scene:
+		active_secondary_screen = scenario_scene.instantiate()
+		active_secondary_screen.name = "ScenarioSelectScreen"
+		if modal_mgr:
+			modal_mgr.push_modal(active_secondary_screen, true, "NavigationRouter")
+		else:
+			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+			if ui_layer: ui_layer.add_child(active_secondary_screen)
+		active_secondary_screen.setup(universe_id, world_id, subcategory_id)
+		_update_nav_log("ScenarioSelectScreen", false)
+		active_secondary_screen.return_requested.connect(func(): _on_world_selected(universe_id, world_id))
+		active_secondary_screen.scenario_selected.connect(func(u, w, sub, mech): _on_scenario_selected(u, w, sub, mech, true))
+
+func _on_scenario_selected(universe_id: Variant, world_id: Variant, subcategory_id: Variant, scenario_type: Variant, manual_override: bool = false):
 	var u_id = normalize_id(universe_id)
 	var w_id = normalize_id(world_id)
 	var sub_id = normalize_id(subcategory_id)
 	var s_type = normalize_id(scenario_type)
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "external_call", "_on_scenario_selected(" + u_id + ", " + w_id + ", " + sub_id + ", " + s_type + ")")
-	print("[ROUTER] Scenario Auto-Selected: ", u_id, " -> ", w_id, " -> ", sub_id, " -> ", s_type)
+	print("[ROUTER] Scenario Selected: ", u_id, " -> ", w_id, " -> ", sub_id, " -> ", s_type, " (manual=", manual_override, ")")
+	if GameplayDirector:
+		GameplayDirector.record_mechanic_used("%s::%s::%s" % [u_id, w_id, sub_id], s_type)
 	_is_transitioning_to_landing = false
 	_is_transition_completed = false
 	current_scenario_chain_index = 1
 	active_universe_selection = u_id
 	active_world_selection = w_id
 	active_subcategory_selection = sub_id
-	active_scenario_selection = s_type
+	active_scenario_selection = s_type if manual_override else ""
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 	if active_secondary_screen:
@@ -505,10 +521,9 @@ func handle_navigation_event(event: Dictionary):
 		
 		var _orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-		var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
-		
-		var seed_str = str(d_seed) + u_id + w_id
-		var scenario_payload = registry.resolve_scenario(u_id, w_id, s_id, seed_str, sub_id) if registry else {}
+		var seed_str = str(d_seed) + u_id + w_id + sub_id + s_id
+		var observation = ObservationCollection.next_observation(u_id, w_id, sub_id, s_id, seed_str) if ObservationCollection else {}
+		var scenario_payload = ObservationBuilder.build_payload(observation, s_id, {"universe": u_id, "world": w_id, "subcategory": sub_id}) if (ObservationBuilder and not observation.is_empty()) else {}
 		
 		if scenario_payload.is_empty():
 			scenario_payload = {
@@ -573,10 +588,12 @@ func _on_cascade_completed():
 		var w_id = old_ctx.get("world_id", "ancient_egypt")
 		var sub_id = old_ctx.get("subcategory_id", active_subcategory_selection)
 		
-		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-		var vector = orch.determine_next_experience(profile, u_id, w_id) if (orch and profile and active_scenario_selection == "") else {}
-		var next_spike = active_scenario_selection if active_scenario_selection != "" else normalize_id(vector.get("spike", "rapid_classification"))
+		var next_spike = active_scenario_selection
+		if next_spike == "":
+			next_spike = GameplayDirector.choose_mechanic(u_id, w_id, sub_id, "", {"chain_index": current_scenario_chain_index}) if GameplayDirector else "rapid_classification"
+		if next_spike == "":
+			next_spike = "rapid_classification"
 		
 		var s_seed = str(profile.lifetime_sessions if profile else 0).hash() + current_scenario_chain_index
 		if nav_state and nav_state.has_method("lock_transition_context"):
