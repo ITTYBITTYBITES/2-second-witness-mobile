@@ -1,6 +1,7 @@
 extends Node
 
 var runtime_index = {} # Structure: [universe_id][world_id][type_id] = Array[Dictionary]
+var _registered_ids: Dictionary = {}
 
 var curated_missions = {
 	"history_ancient_egypt": [
@@ -38,24 +39,33 @@ func _ready():
 	if BootTracer: BootTracer.log_init("ContentRegistry")
 	print("ContentRegistry initialized. Awaiting content ingestion...")
 
+func register_world(universe_id: Variant, world_id: Variant):
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	if not runtime_index.has(u_id):
+		runtime_index[u_id] = {}
+	if not runtime_index[u_id].has(w_id):
+		runtime_index[u_id][w_id] = {}
+
 func register_scenario(data: Dictionary):
 	var u_id = normalize_id(data.get("universe", "unknown"))
 	var w_id = normalize_id(data.get("world", "unknown"))
 	var t_id = normalize_id(data.get("type", "unknown"))
 	var s_id = normalize_id(data.get("id", "unknown"))
-	
+
+	if _registered_ids.has(s_id):
+		return
+	_registered_ids[s_id] = true
+
 	data["universe"] = u_id
 	data["world"] = w_id
 	data["type"] = t_id
 	data["id"] = s_id
-	
-	if not runtime_index.has(u_id):
-		runtime_index[u_id] = {}
-	if not runtime_index[u_id].has(w_id):
-		runtime_index[u_id][w_id] = {}
+
+	register_world(u_id, w_id)
 	if not runtime_index[u_id][w_id].has(t_id):
 		runtime_index[u_id][w_id][t_id] = []
-		
+
 	runtime_index[u_id][w_id][t_id].append(data)
 
 func resolve_scenario(universe_id: Variant, world_id: Variant, type_id: Variant, seed_string: Variant) -> Dictionary:
@@ -63,11 +73,25 @@ func resolve_scenario(universe_id: Variant, world_id: Variant, type_id: Variant,
 	var w_id = normalize_id(world_id)
 	var t_id = normalize_id(type_id)
 	var s_str = normalize_id(seed_string)
-	
-	if not runtime_index.has(u_id): return {}
-	
+
+	var pool = _collect_pool(u_id, w_id, t_id)
+	if pool.size() == 0:
+		_ensure_content_loaded_for(u_id, w_id)
+		pool = _collect_pool(u_id, w_id, t_id)
+
+	if pool.size() == 0:
+		return {}
+
+	var hash_val = abs(s_str.hash())
+	var selected_index = hash_val % pool.size()
+
+	return pool[selected_index]
+
+func _collect_pool(u_id: String, w_id: String, t_id: String) -> Array:
 	var pool = []
-	
+	if not runtime_index.has(u_id):
+		return pool
+
 	if w_id == "" or w_id == "all":
 		for w_key in runtime_index[u_id].keys():
 			if runtime_index[u_id][w_key].has(t_id):
@@ -75,15 +99,18 @@ func resolve_scenario(universe_id: Variant, world_id: Variant, type_id: Variant,
 	else:
 		if runtime_index[u_id].has(w_id) and runtime_index[u_id][w_id].has(t_id):
 			pool = runtime_index[u_id][w_id][t_id]
-			
-	if pool.size() == 0:
-		return {}
-		
-	var hash_val = s_str.hash()
-	var selected_index = hash_val % pool.size()
-	
-	return pool[selected_index]
-	
+	return pool
+
+func _ensure_content_loaded_for(u_id: String, w_id: String):
+	var loader = get_node_or_null("/root/ContentLoader")
+	if not loader:
+		return
+	if w_id == "" or w_id == "all":
+		if loader.has_method("load_universe_content"):
+			loader.load_universe_content(u_id)
+	elif loader.has_method("load_world_content"):
+		loader.load_world_content(u_id, w_id)
+
 func get_all_worlds_in_universe(universe_id: Variant) -> Array:
 	var u_id = normalize_id(universe_id)
 	if runtime_index.has(u_id):
@@ -96,6 +123,7 @@ func get_all_universes() -> Array:
 func get_all_scenarios_in_world(universe_id: Variant, world_id: Variant) -> Array:
 	var u_id = normalize_id(universe_id)
 	var w_id = normalize_id(world_id)
+	_ensure_content_loaded_for(u_id, w_id)
 	var result = []
 	if runtime_index.has(u_id) and runtime_index[u_id].has(w_id):
 		for t_key in runtime_index[u_id][w_id].keys():
