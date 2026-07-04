@@ -23,16 +23,16 @@
         "preferred": [
           "rapid_classification",
           "signal_vs_noise",
-          "stroop_test"
+          "odd_one_out"
         ],
         "secondary": [
-          "odd_one_out",
           "memory_cascade",
-          "sequence_reverse"
+          "sequence_reverse",
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -42,7 +42,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "pixel_art",
@@ -56,11 +57,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -70,7 +71,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "vector_art",
@@ -84,11 +86,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -98,7 +100,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "concept_art",
@@ -112,11 +115,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -126,7 +129,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "3d_art",
@@ -140,11 +144,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -154,7 +158,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "character_art",
@@ -168,11 +173,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -182,7 +187,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "environment_art",
@@ -196,11 +202,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -210,7 +216,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "ui_art",
@@ -224,11 +231,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -238,7 +245,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "game_art",
@@ -252,11 +260,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -266,7 +274,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "ai_art",
@@ -280,11 +289,11 @@
         "secondary": [
           "memory_cascade",
           "sequence_reverse",
-          "stroop_test"
+          "pattern_continuation"
         ],
         "rare": [
-          "pattern_continuation",
-          "spatial_recall"
+          "spatial_recall",
+          "stroop_test"
         ],
         "disabled": [
           "math_surprise",
@@ -294,8 +303,9 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     }
   ],
-  "status": "metadata_only_pending_full_observation_bank"
+  "status": "complete"
 }
