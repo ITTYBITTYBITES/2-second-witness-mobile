@@ -1,24 +1,24 @@
 {
   "id": "animals_wildlife",
-  "display_name": "Animals & Wildlife",
+  "display_name": "Animals Wildlife",
   "world": "birds",
   "lens": {
     "mesh": "mesh_birds",
-    "fog_density": 0.7,
+    "fog_density": 0.8,
     "colors": {
-      "primary": "#9B59B6",
-      "bg": "#080814",
-      "accent": "#00FFFF"
+      "primary": "#FF007F",
+      "bg": "#050010",
+      "accent": "#00F0FF"
     }
   },
   "tunnel": {
-    "density": 0.7,
-    "speed_multiplier": 1.3,
-    "flow_type": "vortex"
+    "density": 0.8,
+    "speed_multiplier": 1.4,
+    "flow_type": "linear"
   },
   "audio": {
-    "ambience": "quantum_hum",
-    "ui_stem": "digital_ping"
+    "ambience": "cosmic_radiation",
+    "ui_stem": "warp_zap"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#9B59B6"
+    "border_color": "#FF007F"
   },
   "feedback": {
     "style": "verified_observation"

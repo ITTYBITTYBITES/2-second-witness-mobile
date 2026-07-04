@@ -1,24 +1,24 @@
 {
   "id": "food_cuisine",
-  "display_name": "Food & Cuisine",
+  "display_name": "Food Cuisine",
   "world": "baking",
   "lens": {
     "mesh": "mesh_baking",
-    "fog_density": 0.7,
+    "fog_density": 0.5,
     "colors": {
-      "primary": "#9B59B6",
-      "bg": "#080814",
-      "accent": "#00FFFF"
+      "primary": "#2ECC71",
+      "bg": "#040C16",
+      "accent": "#3498DB"
     }
   },
   "tunnel": {
-    "density": 0.7,
-    "speed_multiplier": 1.3,
-    "flow_type": "vortex"
+    "density": 0.5,
+    "speed_multiplier": 1.1,
+    "flow_type": "wave"
   },
   "audio": {
-    "ambience": "quantum_hum",
-    "ui_stem": "digital_ping"
+    "ambience": "ocean_waves",
+    "ui_stem": "sonar_ping"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#9B59B6"
+    "border_color": "#2ECC71"
   },
   "feedback": {
     "style": "verified_observation"

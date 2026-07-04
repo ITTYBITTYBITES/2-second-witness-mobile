@@ -3,36 +3,48 @@
   "display_name": "Frontier",
   "visual": {
     "background_type": "hybrid",
-    "primary_colors": ["#110B11", "#331832", "#D81159"],
-    "accent_colors": ["#FFBC42", "#8F2D56"],
-    "fog_density": 0.5,
-    "lighting_model": "soft_glow",
-    "particle_profile": "dust",
-    "motion_style": "energetic_flow"
+    "primary_colors": [
+      "#061108",
+      "#27AE60",
+      "#F1C40F"
+    ],
+    "accent_colors": [
+      "#F1C40F",
+      "#FFFFFF"
+    ],
+    "fog_density": 0.65,
+    "lighting_model": "volumetric",
+    "particle_profile": "frontier_particles",
+    "motion_style": "branching"
   },
   "ui": {
-    "panel_style": "solid",
-    "blur_strength": 0.1,
-    "corner_radius": 8,
-    "font_theme": "modern_sans",
-    "button_style": "flat"
+    "panel_style": "glass",
+    "blur_strength": 0.25,
+    "corner_radius": 16,
+    "font_theme": "instrument",
+    "button_style": "floating",
+    "border_color": "#27AE60"
   },
   "tunnel": {
-    "tunnel_palette": ["#110B11", "#211021", "#591F41"],
-    "flow_type": "wave",
-    "speed_multiplier": 1.5,
-    "density": 0.4,
-    "depth_layers": 4,
-    "interactive_elements": false
+    "tunnel_palette": [
+      "#061108",
+      "#27AE60",
+      "#F1C40F"
+    ],
+    "flow_type": "branching",
+    "speed_multiplier": 0.9,
+    "density": 0.65,
+    "depth_layers": 6,
+    "interactive_elements": true
   },
   "audio": {
-    "ambient_track": "frontier_ambient_01",
-    "stinger_style": "soft_hit",
-    "reverb_type": "void"
+    "ambient_track": "forest_breeze",
+    "stinger_style": "wood_tap",
+    "reverb_type": "hall"
   },
   "transition": {
-    "entry_effect": "fade",
-    "exit_effect": "drift_out",
-    "duration_ms": 1200
+    "entry_effect": "slingshot_warp",
+    "exit_effect": "collapse",
+    "duration_ms": 900
   }
 }

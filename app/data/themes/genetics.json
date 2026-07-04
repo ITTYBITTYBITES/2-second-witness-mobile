@@ -1,24 +1,24 @@
 {
-  "id": "science_discovery",
-  "display_name": "Science & Discovery",
+  "id": "science_lab",
+  "display_name": "Science Lab",
   "world": "genetics",
   "lens": {
     "mesh": "mesh_genetics",
-    "fog_density": 0.8,
+    "fog_density": 0.6,
     "colors": {
-      "primary": "#FF007F",
-      "bg": "#050010",
-      "accent": "#00F0FF"
+      "primary": "#00D4FF",
+      "bg": "#0B1320",
+      "accent": "#E6B800"
     }
   },
   "tunnel": {
-    "density": 0.8,
-    "speed_multiplier": 1.4,
+    "density": 0.6,
+    "speed_multiplier": 1.0,
     "flow_type": "linear"
   },
   "audio": {
-    "ambience": "cosmic_radiation",
-    "ui_stem": "warp_zap"
+    "ambience": "desert_winds",
+    "ui_stem": "stone_click"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#FF007F"
+    "border_color": "#00D4FF"
   },
   "feedback": {
     "style": "verified_observation"

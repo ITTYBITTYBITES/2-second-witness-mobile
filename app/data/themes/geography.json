@@ -1,21 +1,21 @@
 {
   "id": "geography",
-  "display_name": "Geography & World Systems",
+  "display_name": "Geography",
   "visual": {
     "background_type": "hybrid",
     "primary_colors": [
-      "#080814",
-      "#9B59B6",
-      "#00FFFF"
+      "#0B1320",
+      "#00D4FF",
+      "#E6B800"
     ],
     "accent_colors": [
-      "#00FFFF",
+      "#E6B800",
       "#FFFFFF"
     ],
-    "fog_density": 0.7,
+    "fog_density": 0.6,
     "lighting_model": "volumetric",
     "particle_profile": "geography_particles",
-    "motion_style": "vortex"
+    "motion_style": "linear"
   },
   "ui": {
     "panel_style": "glass",
@@ -23,23 +23,23 @@
     "corner_radius": 16,
     "font_theme": "instrument",
     "button_style": "floating",
-    "border_color": "#9B59B6"
+    "border_color": "#00D4FF"
   },
   "tunnel": {
     "tunnel_palette": [
-      "#080814",
-      "#9B59B6",
-      "#00FFFF"
+      "#0B1320",
+      "#00D4FF",
+      "#E6B800"
     ],
-    "flow_type": "vortex",
-    "speed_multiplier": 1.3,
-    "density": 0.7,
+    "flow_type": "linear",
+    "speed_multiplier": 1.0,
+    "density": 0.6,
     "depth_layers": 6,
     "interactive_elements": true
   },
   "audio": {
-    "ambient_track": "quantum_hum",
-    "stinger_style": "digital_ping",
+    "ambient_track": "desert_winds",
+    "stinger_style": "stone_click",
     "reverb_type": "hall"
   },
   "transition": {

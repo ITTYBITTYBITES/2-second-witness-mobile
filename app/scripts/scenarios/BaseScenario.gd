@@ -31,28 +31,28 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 		push_error("[SCENARIO FATAL] Injection failed. Payload is empty. Terminating.")
 		queue_free()
 		return
-		
+
 	_scenario_payload = payload
 	_scenario_payload["id"] = s_id
 	_scenario_payload["universe"] = normalize_id(payload.get("universe", "unknown"))
 	_scenario_payload["world"] = normalize_id(payload.get("world", "unknown"))
 	_scenario_payload["type"] = normalize_id(payload.get("type", "unknown"))
-	
+
 	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
 	if orch and "current_exposure_index" in orch and "current_mission" in orch and orch.current_mission.has("mechanics_chain"):
 		current_trial = orch.current_exposure_index + 1
 		target_trials = max(1, orch.current_mission["mechanics_chain"].size())
 	elif payload.has("target_trials"):
 		target_trials = int(payload["target_trials"])
-	
+
 	_deterministic_rng = RandomNumberGenerator.new()
 	_deterministic_rng.seed = seed_val
-	
+
 	print("[INJECTION TRACE] scenario_id: ", s_id)
 	print("[INJECTION TRACE] resolved_from_registry: true")
 	print("[INJECTION TRACE] world_id: ", _scenario_payload["world"])
 	print("[INJECTION TRACE] deterministic_seed: ", seed_val)
-	
+
 	_validate_and_apply_payload()
 
 func _validate_and_apply_payload():
@@ -62,55 +62,55 @@ func _validate_and_apply_payload():
 			push_error("[SCENARIO FATAL] Schema violation. Missing key: ", k)
 			queue_free()
 			return
-			
+
 	_apply_specific_rules(_scenario_payload["rules"])
 
 func _apply_specific_rules(_rules: Dictionary):
 	pass
 
 func execute_render_pipeline():
-	if _scenario_payload.is_empty(): return 
-	
+	if _scenario_payload.is_empty(): return
+
 	var resolver = ThemeResolver.new()
 	var style = resolver.resolve_theme({"universe": _scenario_payload["universe"], "type": _scenario_payload["type"], "difficulty": _scenario_payload.get("difficulty", 1)})
 	StyleInjector.apply(style, self)
-	
+
 	LayoutFreezer.enforce_freeze(self)
-	
+
 	var gate = LayoutQuiescenceGate.new()
 	add_child(gate)
 	gate.begin_quiescence_wait(self)
-	
+
 	await gate.layout_stabilized
 	gate.queue_free()
-	
+
 	RuntimeInvarianceMonitor.capture_canonical_geometry(self)
-	
+
 	var asset_resolver = AssetResolver.new()
 	asset_resolver.substitute_assets(self, _scenario_payload["universe"])
-	
+
 	if Engine.get_main_loop().root.has_node("RuntimeMeasurementIsolation"):
 		Engine.get_main_loop().root.get_node("RuntimeMeasurementIsolation").anchor_stimulus_spawn()
-		
+
 	enforce_attentional_strata()
 	LayoutFreezer.unfreeze()
-	
+
 	var orch = get_node_or_null("/root/ExperienceOrchestrator")
 	if orch and orch.has_method("finalize_scenario_mounting"):
 		orch.finalize_scenario_mounting(_scenario_payload.get("id", "memory_cascade"))
-	
+
 	print("[SYSTEM] Canonical UI pipeline execution complete. Executing runtime assertions...")
-	
+
 	var is_f = LayoutFreezer.is_frozen
 	var is_b = InteractionKernel.is_ui_blocking() if InteractionKernel else false
 	var is_m_empty = ModalWindowManager.get_modal_stack().is_empty() if ModalWindowManager else true
 	var cur_screen = NavigationRouter.current_screen_name if NavigationRouter else "GameplayHUD"
-	
+
 	print("  Assertion 1: !LayoutFreezer.is_frozen = ", not is_f)
 	print("  Assertion 2: !InteractionKernel.is_ui_blocking() = ", not is_b)
 	print("  Assertion 3: ModalWindowManager.modal_stack.is_empty() = ", is_m_empty)
 	print("  Assertion 4: current_screen == GameplayHUD = ", cur_screen == "GameplayHUD")
-	
+
 	assert(not is_f, "Fatal: LayoutFreezer remained frozen before gameplay began.")
 	assert(not is_b, "Fatal: InteractionKernel remained blocking before gameplay began.")
 	assert(is_m_empty, "Fatal: Modal stack was not empty when gameplay started.")
@@ -132,12 +132,12 @@ func _register_with_execution_engine():
 
 func _mount_cockpit_instrument_overlay():
 	if get_node_or_null("CockpitHeader") != null: return
-	
+
 	var u_id = _scenario_payload.get("universe", "science_lab")
 	var w_id = _scenario_payload.get("world", "cognitive_bias")
 	var s_id = _scenario_payload.get("id", "memory_cascade")
 	var t_id = _scenario_payload.get("type", "memory")
-	
+
 	var pretty_uni = str(u_id).capitalize().replace("_", " ")
 	var pretty_world = str(w_id).capitalize().replace("_", " ")
 	var pretty_proto = str(s_id).capitalize().replace("_", " ")
@@ -146,113 +146,93 @@ func _mount_cockpit_instrument_overlay():
 	elif pretty_trait == "Pattern": pretty_trait = "PATTERN RECOGNITION"
 	elif pretty_trait == "Classification": pretty_trait = "RAPID CLASSIFICATION"
 	elif pretty_trait == "Decision": pretty_trait = "DECISION CONFIDENCE"
-	
+
 	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
 	var scenario_title = str(_scenario_payload.get("title", _scenario_payload.get("mission_title", "")))
 	if scenario_title == "" and orch and "current_mission" in orch and orch.current_mission.has("title") and orch.current_mission["title"] != "":
 		scenario_title = str(orch.current_mission["title"])
 	if scenario_title == "":
 		scenario_title = pretty_proto
-		
+
 	var progress_str = "TRIAL %d OF %d" % [current_trial, target_trials]
-	
+
 	_cockpit_header_panel = PanelContainer.new()
 	_cockpit_header_panel.name = "CockpitHeader"
 	_cockpit_header_panel.set_anchors_preset(Control.PRESET_TOP_WIDE)
+	_cockpit_header_panel.offset_left = 0
+	_cockpit_header_panel.offset_top = 0
+	_cockpit_header_panel.offset_right = 0
+	_cockpit_header_panel.offset_bottom = 54
 	_cockpit_header_panel.custom_minimum_size = Vector2(0, 54)
 	_cockpit_header_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	
-	var h_style = StyleBoxFlat.new()
-	h_style.bg_color = Color("#080D16")
-	h_style.bg_color.a = 0.95
-	h_style.border_width_bottom = 2
-	h_style.border_color = Color("#00D4FF")
-	_cockpit_header_panel.add_theme_stylebox_override("panel", h_style)
-	
+	_cockpit_header_panel.z_index = 100
+	PresentationToolkit.apply_cockpit_bar_style(_cockpit_header_panel, "bottom", Color("#00D4FF"))
+
 	var h_margin = MarginContainer.new()
 	h_margin.add_theme_constant_override("margin_left", 24)
 	h_margin.add_theme_constant_override("margin_right", 24)
 	h_margin.add_theme_constant_override("margin_top", 8)
 	h_margin.add_theme_constant_override("margin_bottom", 8)
 	_cockpit_header_panel.add_child(h_margin)
-	
+
 	var h_box = HBoxContainer.new()
 	h_box.add_theme_constant_override("separation", 20)
 	h_margin.add_child(h_box)
-	
+
 	var lbl_title = RichTextLabel.new()
-	lbl_title.bbcode_enabled = true
 	lbl_title.text = "[color=#00D4FF]●[/color] [b]2 SECOND WITNESS[/b] [color=#667799]| ACTIVE OBSERVATION[/color]"
-	lbl_title.fit_content = true
-	lbl_title.custom_minimum_size = Vector2(300, 30)
-	lbl_title.add_theme_font_size_override("normal_font_size", 16)
+	PresentationToolkit.style_rich_text_label(lbl_title, 16, 300.0)
 	h_box.add_child(lbl_title)
-	
+
 	var lbl_proto = RichTextLabel.new()
-	lbl_proto.bbcode_enabled = true
 	lbl_proto.text = "[center][b][color=#8595FF]%s[/color][/b] [color=#445566]▶[/color] [b][color=#E6B800]%s[/color][/b] [color=#667799]// SCENARIO:[/color] [b][color=#FFFFFF]%s[/color][/b][/center]" % [pretty_uni.to_upper(), pretty_world.to_upper(), scenario_title.to_upper()]
-	lbl_proto.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	lbl_proto.fit_content = true
-	lbl_proto.add_theme_font_size_override("normal_font_size", 16)
+	PresentationToolkit.style_rich_text_label(lbl_proto, 16, 0.0, true)
 	h_box.add_child(lbl_proto)
-	
+
 	var lbl_chain = RichTextLabel.new()
-	lbl_chain.bbcode_enabled = true
 	lbl_chain.text = "[right][color=#8595FF]PROGRESS:[/color] [color=#00D4FF]%s[/color][/right]" % progress_str
-	lbl_chain.fit_content = true
-	lbl_chain.custom_minimum_size = Vector2(180, 30)
-	lbl_chain.add_theme_font_size_override("normal_font_size", 16)
+	PresentationToolkit.style_rich_text_label(lbl_chain, 16, 180.0)
 	h_box.add_child(lbl_chain)
-	
+
 	add_child(_cockpit_header_panel)
-	
+
 	var f_panel = PanelContainer.new()
 	f_panel.name = "CockpitFooter"
 	f_panel.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
+	f_panel.offset_left = 0
+	f_panel.offset_top = -40
+	f_panel.offset_right = 0
+	f_panel.offset_bottom = 0
 	f_panel.custom_minimum_size = Vector2(0, 40)
 	f_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	
-	var f_style = StyleBoxFlat.new()
-	f_style.bg_color = Color("#05080E")
-	f_style.bg_color.a = 0.90
-	f_style.border_width_top = 1
-	f_style.border_color = Color("#223344")
-	f_panel.add_theme_stylebox_override("panel", f_style)
-	
+	f_panel.z_index = 100
+	PresentationToolkit.apply_cockpit_bar_style(f_panel, "top", Color("#00D4FF"))
+
 	var f_margin = MarginContainer.new()
 	f_margin.add_theme_constant_override("margin_left", 24)
 	f_margin.add_theme_constant_override("margin_right", 24)
 	f_margin.add_theme_constant_override("margin_top", 6)
 	f_margin.add_theme_constant_override("margin_bottom", 6)
 	f_panel.add_child(f_margin)
-	
+
 	var f_box = HBoxContainer.new()
 	f_margin.add_child(f_box)
-	
+
 	var lbl_target = RichTextLabel.new()
-	lbl_target.bbcode_enabled = true
 	lbl_target.text = "[color=#667799]TARGET DOMAIN:[/color] [b][color=#2ECC71]%s[/color][/b]" % pretty_trait.to_upper()
-	lbl_target.fit_content = true
-	lbl_target.custom_minimum_size = Vector2(300, 24)
-	lbl_target.add_theme_font_size_override("normal_font_size", 14)
+	PresentationToolkit.style_rich_text_label(lbl_target, 14, 300.0)
 	f_box.add_child(lbl_target)
-	
+
 	_cockpit_footer_status = RichTextLabel.new()
-	_cockpit_footer_status.bbcode_enabled = true
 	_cockpit_footer_status.text = "[center][color=#00D4FF]STATUS: OBSERVING STREAM — AWAITING WITNESS RESPONSE...[/color][/center]"
-	_cockpit_footer_status.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	_cockpit_footer_status.fit_content = true
-	_cockpit_footer_status.add_theme_font_size_override("normal_font_size", 14)
+	PresentationToolkit.style_rich_text_label(_cockpit_footer_status, 14, 0.0, true)
 	f_box.add_child(_cockpit_footer_status)
-	
+
 	var lbl_lat = RichTextLabel.new()
-	lbl_lat.bbcode_enabled = true
 	lbl_lat.text = "[right][color=#667799]OBSERVATION STREAM:[/color] [color=#E6B800]SYNCHRONIZED[/color][/right]"
-	lbl_lat.fit_content = true
-	lbl_lat.custom_minimum_size = Vector2(200, 24)
-	lbl_lat.add_theme_font_size_override("normal_font_size", 14)
+	PresentationToolkit.style_rich_text_label(lbl_lat, 14, 200.0)
 	f_box.add_child(lbl_lat)
-	
+
 	var plates_script = load("res://scripts/ui/ProgressionHUDPlates.gd")
 	if plates_script:
 		var plates_node = plates_script.new()
@@ -262,7 +242,7 @@ func _mount_cockpit_instrument_overlay():
 	if tunnel_shader and tunnel_shader.has_method("modulate_for_scenario"):
 		tunnel_shader.modulate_for_scenario(str(_scenario_payload.get("type", "general")), _scenario_payload)
 	add_child(f_panel)
-	print("[COCKPIT] Persistent Observation Instrument HUD successfully mounted.")
+	print("[COCKPIT] Persistent Observation Instrument HUD successfully mounted with PresentationToolkit glass skin.")
 
 func engine_generate_hook():
 	if has_method("_setup_round"): call("_setup_round")
@@ -301,16 +281,18 @@ func execute_progression_event(is_success: bool, rt_ms: float, trait_id: String 
 	var u_id = _scenario_payload.get("universe", "history")
 	var w_id = _scenario_payload.get("world", "ancient_egypt")
 	var t_id = trait_id if trait_id != "" else _scenario_payload.get("type", "general")
-	
+
 	if is_success:
 		if is_instance_valid(_cockpit_footer_status):
 			_cockpit_footer_status.text = "[center][color=#2ECC71][b]STATUS: OBSERVATION VERIFIED — RECORDING PATTERN DATA (%d ms)[/b][/color][/center]" % int(rt_ms)
-		if is_instance_valid(_cockpit_header_panel) and _cockpit_header_panel.has_theme_stylebox_override("panel"):
-			var sb = _cockpit_header_panel.get_theme_stylebox("panel").duplicate()
-			if sb is StyleBoxFlat:
-				sb.border_color = Color("#E6B800")
-				_cockpit_header_panel.add_theme_stylebox_override("panel", sb)
-				
+		if is_instance_valid(_cockpit_header_panel):
+			PresentationToolkit.set_cockpit_bar_state(_cockpit_header_panel, "bottom", "success")
+	else:
+		if is_instance_valid(_cockpit_footer_status):
+			_cockpit_footer_status.text = "[center][color=#FF5555][b]STATUS: OBSERVATION NOISE DETECTED — RECALIBRATING...[/b][/color][/center]"
+		if is_instance_valid(_cockpit_header_panel):
+			PresentationToolkit.set_cockpit_bar_state(_cockpit_header_panel, "bottom", "failure")
+
 	var engine = get_node_or_null("/root/ScenarioExecutionEngine")
 	if engine and engine.has_method("submit_answer"):
 		engine.submit_answer(is_success, rt_ms)
@@ -330,7 +312,7 @@ func execute_progression_event(is_success: bool, rt_ms: float, trait_id: String 
 			var tracker = Engine.get_main_loop().root.get_node_or_null("SessionTracker") if Engine.get_main_loop() else null
 			if profile and profile.has_method("record_cognitive_event"): profile.record_cognitive_event(t_id, s_id, u_id, w_id, is_success, rt_ms)
 			if tracker and tracker.has_method("record_spike_result"): tracker.record_spike_result(s_id, is_success)
-			
+
 		if is_success:
 			await get_tree().create_timer(0.5).timeout
 			if is_inside_tree():
@@ -359,6 +341,10 @@ func update_progress_display():
 
 func advance_to_next_trial():
 	print("[BASE SCENARIO] Advancing scenario to Trial %d / %d" % [current_trial, target_trials])
+	if is_instance_valid(_cockpit_footer_status):
+		_cockpit_footer_status.text = "[center][color=#00D4FF]STATUS: OBSERVING STREAM — AWAITING WITNESS RESPONSE...[/color][/center]"
+	if is_instance_valid(_cockpit_header_panel):
+		PresentationToolkit.set_cockpit_bar_state(_cockpit_header_panel, "bottom", "neutral")
 	if get_node_or_null("FeedbackLabel"):
 		get_node("FeedbackLabel").text = ""
 	elif get_node_or_null("feedback_label"):
@@ -376,7 +362,7 @@ func enforce_attentional_strata():
 	var bg = get_node_or_null("VoidBG") if get_node_or_null("VoidBG") else get_node_or_null("ColorRect")
 	if bg and bg is ColorRect:
 		bg.color = Color(0.04, 0.07, 0.12, 0.35) # Ensure persistent animated TunnelLayer remains visible behind scenario
-		
+
 	var pal = {}
 	var vim = Engine.get_main_loop().root.get_node_or_null("VisualIdentityManager") if Engine.get_main_loop() else null
 	if vim and vim.has_method("get_universe_identity"):
@@ -384,14 +370,14 @@ func enforce_attentional_strata():
 	var primary_c = pal.get("primary", Color("#00D4FF"))
 	var accent_c = pal.get("accent", Color("#80E5FF"))
 	var dark_outline = Color(0.02, 0.04, 0.08, 0.95)
-	
+
 	_apply_stratum_recursive(self, primary_c, accent_c, dark_outline)
 
 func _apply_stratum_recursive(node: Node, primary_c: Color, accent_c: Color, dark_outline: Color):
 	for child in node.get_children():
 		if child.name == "CockpitHeader" or child.name == "CockpitFooter" or child.name == "VoidBG" or child.name == "ProgressionHUDPlates":
 			continue
-			
+
 		if child is Label or child is RichTextLabel:
 			var n = child.name.to_lower()
 			if "feedback" in n or "prompt" in n or "title" in n or "instruction" in n:
@@ -424,5 +410,5 @@ func _apply_stratum_recursive(node: Node, primary_c: Color, accent_c: Color, dar
 			child.add_theme_color_override("font_color", Color(0.92, 0.96, 1.0))
 			child.add_theme_color_override("font_outline_color", dark_outline)
 			child.add_theme_constant_override("outline_size", 2)
-			
+
 		_apply_stratum_recursive(child, primary_c, accent_c, dark_outline)

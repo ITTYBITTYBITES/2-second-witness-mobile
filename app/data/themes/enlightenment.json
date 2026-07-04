@@ -4,21 +4,21 @@
   "world": "enlightenment",
   "lens": {
     "mesh": "mesh_enlightenment",
-    "fog_density": 0.8,
+    "fog_density": 0.65,
     "colors": {
-      "primary": "#FF007F",
-      "bg": "#050010",
-      "accent": "#00F0FF"
+      "primary": "#27AE60",
+      "bg": "#061108",
+      "accent": "#F1C40F"
     }
   },
   "tunnel": {
-    "density": 0.8,
-    "speed_multiplier": 1.4,
-    "flow_type": "linear"
+    "density": 0.65,
+    "speed_multiplier": 0.9,
+    "flow_type": "branching"
   },
   "audio": {
-    "ambience": "cosmic_radiation",
-    "ui_stem": "warp_zap"
+    "ambience": "forest_breeze",
+    "ui_stem": "wood_tap"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#FF007F"
+    "border_color": "#27AE60"
   },
   "feedback": {
     "style": "verified_observation"

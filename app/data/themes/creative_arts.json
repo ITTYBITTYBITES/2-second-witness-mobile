@@ -3,36 +3,48 @@
   "display_name": "Creative Arts",
   "visual": {
     "background_type": "hybrid",
-    "primary_colors": ["#1A0B1C", "#4A1C50", "#F72585"],
-    "accent_colors": ["#4CC9F0", "#F9F871"],
-    "fog_density": 0.3,
-    "lighting_model": "neon",
-    "particle_profile": "abstract_flow",
-    "motion_style": "fractal_wave"
+    "primary_colors": [
+      "#050010",
+      "#FF007F",
+      "#00F0FF"
+    ],
+    "accent_colors": [
+      "#00F0FF",
+      "#FFFFFF"
+    ],
+    "fog_density": 0.8,
+    "lighting_model": "volumetric",
+    "particle_profile": "creative_arts_particles",
+    "motion_style": "linear"
   },
   "ui": {
     "panel_style": "glass",
-    "blur_strength": 0.5,
-    "corner_radius": 32,
-    "font_theme": "artistic",
-    "button_style": "floating"
+    "blur_strength": 0.25,
+    "corner_radius": 16,
+    "font_theme": "instrument",
+    "button_style": "floating",
+    "border_color": "#FF007F"
   },
   "tunnel": {
-    "tunnel_palette": ["#1A0B1C", "#2B0F2E", "#5F2161"],
-    "flow_type": "vortex",
-    "speed_multiplier": 1.2,
-    "density": 0.9,
-    "depth_layers": 7,
+    "tunnel_palette": [
+      "#050010",
+      "#FF007F",
+      "#00F0FF"
+    ],
+    "flow_type": "linear",
+    "speed_multiplier": 1.4,
+    "density": 0.8,
+    "depth_layers": 6,
     "interactive_elements": true
   },
   "audio": {
-    "ambient_track": "creative_ambient_01",
-    "stinger_style": "soft_hit",
-    "reverb_type": "cathedral"
+    "ambient_track": "cosmic_radiation",
+    "stinger_style": "warp_zap",
+    "reverb_type": "hall"
   },
   "transition": {
-    "entry_effect": "particle_swirl",
-    "exit_effect": "dissolve",
-    "duration_ms": 1100
+    "entry_effect": "slingshot_warp",
+    "exit_effect": "collapse",
+    "duration_ms": 900
   }
 }

@@ -1,24 +1,24 @@
 {
   "id": "animals_wildlife",
-  "display_name": "Animals & Wildlife",
+  "display_name": "Animals Wildlife",
   "world": "amphibians",
   "lens": {
     "mesh": "mesh_amphibians",
-    "fog_density": 0.65,
+    "fog_density": 0.5,
     "colors": {
-      "primary": "#27AE60",
-      "bg": "#061108",
-      "accent": "#F1C40F"
+      "primary": "#2ECC71",
+      "bg": "#040C16",
+      "accent": "#3498DB"
     }
   },
   "tunnel": {
-    "density": 0.65,
-    "speed_multiplier": 0.9,
-    "flow_type": "branching"
+    "density": 0.5,
+    "speed_multiplier": 1.1,
+    "flow_type": "wave"
   },
   "audio": {
-    "ambience": "forest_breeze",
-    "ui_stem": "wood_tap"
+    "ambience": "ocean_waves",
+    "ui_stem": "sonar_ping"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#27AE60"
+    "border_color": "#2ECC71"
   },
   "feedback": {
     "style": "verified_observation"

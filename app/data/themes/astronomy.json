@@ -1,24 +1,24 @@
 {
-  "id": "science_discovery",
-  "display_name": "Science & Discovery",
+  "id": "science_lab",
+  "display_name": "Science Lab",
   "world": "astronomy",
   "lens": {
     "mesh": "mesh_astronomy",
-    "fog_density": 0.8,
+    "fog_density": 0.5,
     "colors": {
-      "primary": "#FF007F",
-      "bg": "#050010",
-      "accent": "#00F0FF"
+      "primary": "#2ECC71",
+      "bg": "#040C16",
+      "accent": "#3498DB"
     }
   },
   "tunnel": {
-    "density": 0.8,
-    "speed_multiplier": 1.4,
-    "flow_type": "linear"
+    "density": 0.5,
+    "speed_multiplier": 1.1,
+    "flow_type": "wave"
   },
   "audio": {
-    "ambience": "cosmic_radiation",
-    "ui_stem": "warp_zap"
+    "ambience": "ocean_waves",
+    "ui_stem": "sonar_ping"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#FF007F"
+    "border_color": "#2ECC71"
   },
   "feedback": {
     "style": "verified_observation"

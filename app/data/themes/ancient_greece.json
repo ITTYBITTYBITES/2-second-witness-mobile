@@ -4,21 +4,21 @@
   "world": "ancient_greece",
   "lens": {
     "mesh": "mesh_ancient_greece",
-    "fog_density": 0.8,
+    "fog_density": 0.7,
     "colors": {
-      "primary": "#FF007F",
-      "bg": "#050010",
-      "accent": "#00F0FF"
+      "primary": "#9B59B6",
+      "bg": "#080814",
+      "accent": "#00FFFF"
     }
   },
   "tunnel": {
-    "density": 0.8,
-    "speed_multiplier": 1.4,
-    "flow_type": "linear"
+    "density": 0.7,
+    "speed_multiplier": 1.3,
+    "flow_type": "vortex"
   },
   "audio": {
-    "ambience": "cosmic_radiation",
-    "ui_stem": "warp_zap"
+    "ambience": "quantum_hum",
+    "ui_stem": "digital_ping"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#FF007F"
+    "border_color": "#9B59B6"
   },
   "feedback": {
     "style": "verified_observation"

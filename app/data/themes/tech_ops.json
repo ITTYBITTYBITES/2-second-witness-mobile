@@ -2,37 +2,49 @@
   "id": "tech_ops",
   "display_name": "Tech Ops",
   "visual": {
-    "background_type": "shader",
-    "primary_colors": ["#050505", "#0F1A15", "#00FF41"],
-    "accent_colors": ["#008F11", "#E0F2E9"],
-    "fog_density": 0.1,
-    "lighting_model": "neon",
-    "particle_profile": "data_flow",
-    "motion_style": "energetic_flow"
+    "background_type": "hybrid",
+    "primary_colors": [
+      "#0B1320",
+      "#00D4FF",
+      "#E6B800"
+    ],
+    "accent_colors": [
+      "#E6B800",
+      "#FFFFFF"
+    ],
+    "fog_density": 0.6,
+    "lighting_model": "volumetric",
+    "particle_profile": "tech_ops_particles",
+    "motion_style": "linear"
   },
   "ui": {
-    "panel_style": "holographic",
-    "blur_strength": 0.1,
-    "corner_radius": 4,
-    "font_theme": "scientific",
-    "button_style": "glowing"
+    "panel_style": "glass",
+    "blur_strength": 0.25,
+    "corner_radius": 16,
+    "font_theme": "instrument",
+    "button_style": "floating",
+    "border_color": "#00D4FF"
   },
   "tunnel": {
-    "tunnel_palette": ["#050505", "#09120C", "#112C1A"],
+    "tunnel_palette": [
+      "#0B1320",
+      "#00D4FF",
+      "#E6B800"
+    ],
     "flow_type": "linear",
-    "speed_multiplier": 2.0,
-    "density": 0.7,
-    "depth_layers": 3,
+    "speed_multiplier": 1.0,
+    "density": 0.6,
+    "depth_layers": 6,
     "interactive_elements": true
   },
   "audio": {
-    "ambient_track": "tech_ambient_01",
-    "stinger_style": "digital_ping",
-    "reverb_type": "digital_space"
+    "ambient_track": "desert_winds",
+    "stinger_style": "stone_click",
+    "reverb_type": "hall"
   },
   "transition": {
-    "entry_effect": "data_rip",
+    "entry_effect": "slingshot_warp",
     "exit_effect": "collapse",
-    "duration_ms": 600
+    "duration_ms": 900
   }
 }

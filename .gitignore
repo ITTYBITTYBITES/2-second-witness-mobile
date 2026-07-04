@@ -13,6 +13,10 @@ user/
 Thumbs.db
 desktop.ini
 
+# Python tooling
+__pycache__/
+*.py[cod]
+
 # Live Content Staging
 live_content/temp/
 godot_headless

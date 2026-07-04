@@ -1,24 +1,24 @@
 {
   "id": "nature_environment",
-  "display_name": "Nature & Environment",
+  "display_name": "Nature Environment",
   "world": "estuaries",
   "lens": {
     "mesh": "mesh_estuaries",
-    "fog_density": 0.65,
+    "fog_density": 0.7,
     "colors": {
-      "primary": "#27AE60",
-      "bg": "#061108",
-      "accent": "#F1C40F"
+      "primary": "#9B59B6",
+      "bg": "#080814",
+      "accent": "#00FFFF"
     }
   },
   "tunnel": {
-    "density": 0.65,
-    "speed_multiplier": 0.9,
-    "flow_type": "branching"
+    "density": 0.7,
+    "speed_multiplier": 1.3,
+    "flow_type": "vortex"
   },
   "audio": {
-    "ambience": "forest_breeze",
-    "ui_stem": "wood_tap"
+    "ambience": "quantum_hum",
+    "ui_stem": "digital_ping"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#27AE60"
+    "border_color": "#9B59B6"
   },
   "feedback": {
     "style": "verified_observation"

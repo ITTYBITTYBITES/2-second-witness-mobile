@@ -3,6 +3,7 @@ import os
 import json
 import subprocess
 import sys
+import hashlib
 
 # Import the theme generation logic from sync_universe
 from sync_universe import generate_theme_profiles, PALETTES
@@ -11,29 +12,30 @@ def sync_local_content():
     print("====================================================")
     print("[LOCAL CONTENT SYNC] Scanning repository for changes...")
     print("====================================================\n")
-    
+
     # Derive paths relative to this script's location
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.abspath(os.path.join(script_dir, "../../"))
     content_root = os.path.join(project_root, "app/data/content/base_bundle")
     themes_dir = os.path.join(project_root, "app/data/themes")
-    
+
     if not os.path.exists(content_root):
         print(f"❌ Error: Content root not found at {content_root}")
         sys.exit(1)
 
     # 1. Scan for Universes and Worlds
     universes = [d for d in os.listdir(content_root) if os.path.isdir(os.path.join(content_root, d))]
-    
+
     for u_id in universes:
         u_path = os.path.join(content_root, u_id)
         worlds = [d for d in os.listdir(u_path) if os.path.isdir(os.path.join(u_path, d))]
-        
+
         print(f"📦 Checking Universe: {u_id}")
-        
-        # We determine a palette index based on the universe ID for consistency
-        palette_idx = hash(u_id) % len(PALETTES)
-        
+
+        # We determine a palette index based on the universe ID for consistency.
+        # Python's built-in hash() is randomized per process, so use a stable digest.
+        palette_idx = int(hashlib.sha256(u_id.encode("utf-8")).hexdigest(), 16) % len(PALETTES)
+
         # Generate/Update themes for this universe and its worlds
         try:
             # Use a friendly name (capitalize and replace underscores)
@@ -48,7 +50,7 @@ def sync_local_content():
     try:
         # Run compiler from the project root - Corrected path to include /app/
         compiler_path = os.path.join(project_root, "app/tools/universe_compiler.py")
-        result = subprocess.run(["python3", compiler_path], 
+        result = subprocess.run(["python3", compiler_path],
                                 capture_output=True, text=True, cwd=project_root)
         if result.returncode == 0:
             print("✅ All physical assets baked and validated.")

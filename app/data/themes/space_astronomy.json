@@ -1,21 +1,21 @@
 {
   "id": "space_astronomy",
-  "display_name": "Space & Astronomy",
+  "display_name": "Space Astronomy",
   "visual": {
     "background_type": "hybrid",
     "primary_colors": [
-      "#061108",
-      "#27AE60",
-      "#F1C40F"
+      "#040C16",
+      "#2ECC71",
+      "#3498DB"
     ],
     "accent_colors": [
-      "#F1C40F",
+      "#3498DB",
       "#FFFFFF"
     ],
-    "fog_density": 0.65,
+    "fog_density": 0.5,
     "lighting_model": "volumetric",
     "particle_profile": "space_astronomy_particles",
-    "motion_style": "branching"
+    "motion_style": "wave"
   },
   "ui": {
     "panel_style": "glass",
@@ -23,23 +23,23 @@
     "corner_radius": 16,
     "font_theme": "instrument",
     "button_style": "floating",
-    "border_color": "#27AE60"
+    "border_color": "#2ECC71"
   },
   "tunnel": {
     "tunnel_palette": [
-      "#061108",
-      "#27AE60",
-      "#F1C40F"
+      "#040C16",
+      "#2ECC71",
+      "#3498DB"
     ],
-    "flow_type": "branching",
-    "speed_multiplier": 0.9,
-    "density": 0.65,
+    "flow_type": "wave",
+    "speed_multiplier": 1.1,
+    "density": 0.5,
     "depth_layers": 6,
     "interactive_elements": true
   },
   "audio": {
-    "ambient_track": "forest_breeze",
-    "stinger_style": "wood_tap",
+    "ambient_track": "ocean_waves",
+    "stinger_style": "sonar_ping",
     "reverb_type": "hall"
   },
   "transition": {

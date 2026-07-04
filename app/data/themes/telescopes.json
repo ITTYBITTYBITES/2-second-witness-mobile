@@ -1,24 +1,24 @@
 {
   "id": "space_astronomy",
-  "display_name": "Space & Astronomy",
+  "display_name": "Space Astronomy",
   "world": "telescopes",
   "lens": {
     "mesh": "mesh_telescopes",
-    "fog_density": 0.7,
+    "fog_density": 0.6,
     "colors": {
-      "primary": "#9B59B6",
-      "bg": "#080814",
-      "accent": "#00FFFF"
+      "primary": "#00D4FF",
+      "bg": "#0B1320",
+      "accent": "#E6B800"
     }
   },
   "tunnel": {
-    "density": 0.7,
-    "speed_multiplier": 1.3,
-    "flow_type": "vortex"
+    "density": 0.6,
+    "speed_multiplier": 1.0,
+    "flow_type": "linear"
   },
   "audio": {
-    "ambience": "quantum_hum",
-    "ui_stem": "digital_ping"
+    "ambience": "desert_winds",
+    "ui_stem": "stone_click"
   },
   "typography": {
     "font": "instrument_bold",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.9,
-    "border_color": "#9B59B6"
+    "border_color": "#00D4FF"
   },
   "feedback": {
     "style": "verified_observation"
