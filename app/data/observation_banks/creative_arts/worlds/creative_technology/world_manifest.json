@@ -1,301 +1,71 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "universe": "creative_arts",
   "world": "creative_technology",
   "display_name": "Creative Technology",
   "subcategory_order": [
-    "3d_printing",
-    "laser_cutting",
-    "cnc_art",
-    "projection_mapping",
-    "interactive_installations",
     "generative_art",
-    "ar_art",
     "vr_art",
+    "projection_mapping",
     "creative_coding",
-    "emerging_media"
+    "electronic_music_hardware",
+    "bio-art",
+    "arduino_in_art",
+    "3d_printing",
+    "nft_ecosystems",
+    "post-internet_art"
   ],
   "subcategories": [
     {
-      "id": "3d_printing",
-      "display_name": "3D Printing",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "laser_cutting",
-      "display_name": "Laser Cutting",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "cnc_art",
-      "display_name": "CNC Art",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "projection_mapping",
-      "display_name": "Projection Mapping",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "interactive_installations",
-      "display_name": "Interactive Installations",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
       "id": "generative_art",
       "display_name": "Generative Art",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "ar_art",
-      "display_name": "AR Art",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100
     },
     {
       "id": "vr_art",
       "display_name": "VR Art",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100
+    },
+    {
+      "id": "projection_mapping",
+      "display_name": "Projection Mapping",
+      "implemented_observations": 100
     },
     {
       "id": "creative_coding",
       "display_name": "Creative Coding",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100
     },
     {
-      "id": "emerging_media",
-      "display_name": "Emerging Media",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "electronic_music_hardware",
+      "display_name": "Electronic Music Hardware",
+      "implemented_observations": 100
+    },
+    {
+      "id": "bio-art",
+      "display_name": "Bio-Art",
+      "implemented_observations": 100
+    },
+    {
+      "id": "arduino_in_art",
+      "display_name": "Arduino in Art",
+      "implemented_observations": 100
+    },
+    {
+      "id": "3d_printing",
+      "display_name": "3D Printing",
+      "implemented_observations": 100
+    },
+    {
+      "id": "nft_ecosystems",
+      "display_name": "NFT Ecosystems",
+      "implemented_observations": 100
+    },
+    {
+      "id": "post-internet_art",
+      "display_name": "Post-Internet Art",
+      "implemented_observations": 100
     }
   ],
-  "status": "metadata_only_pending_full_observation_bank"
+  "status": "complete"
 }

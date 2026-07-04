@@ -1,301 +1,71 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "universe": "creative_arts",
   "world": "tattoos_body_art",
   "display_name": "Tattoos Body Art",
   "subcategory_order": [
-    "tattoo_styles",
-    "traditional_tattoos",
-    "japanese_tattoos",
-    "tribal_designs",
-    "blackwork",
-    "watercolor_tattoos",
-    "piercings",
-    "henna",
-    "body_painting",
-    "famous_tattoo_artists"
+    "traditional",
+    "neo_traditional",
+    "realism",
+    "fine_line",
+    "tribal",
+    "new_school",
+    "japanese_irezumi",
+    "script_and_lettering",
+    "stick_and_poke",
+    "aftercare"
   ],
   "subcategories": [
     {
-      "id": "tattoo_styles",
-      "display_name": "Tattoo Styles",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "stroop_test"
-        ],
-        "secondary": [
-          "odd_one_out",
-          "memory_cascade",
-          "sequence_reverse"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "traditional",
+      "display_name": "Traditional",
+      "implemented_observations": 100
     },
     {
-      "id": "traditional_tattoos",
-      "display_name": "Traditional Tattoos",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "neo_traditional",
+      "display_name": "Neo Traditional",
+      "implemented_observations": 100
     },
     {
-      "id": "japanese_tattoos",
-      "display_name": "Japanese Tattoos",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "realism",
+      "display_name": "Realism",
+      "implemented_observations": 100
     },
     {
-      "id": "tribal_designs",
-      "display_name": "Tribal Designs",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "fine_line",
+      "display_name": "Fine Line",
+      "implemented_observations": 100
     },
     {
-      "id": "blackwork",
-      "display_name": "Blackwork",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "tribal",
+      "display_name": "Tribal",
+      "implemented_observations": 100
     },
     {
-      "id": "watercolor_tattoos",
-      "display_name": "Watercolor Tattoos",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "stroop_test"
-        ],
-        "secondary": [
-          "odd_one_out",
-          "memory_cascade",
-          "sequence_reverse"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "new_school",
+      "display_name": "New School",
+      "implemented_observations": 100
     },
     {
-      "id": "piercings",
-      "display_name": "Piercings",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "japanese_irezumi",
+      "display_name": "Japanese Irezumi",
+      "implemented_observations": 100
     },
     {
-      "id": "henna",
-      "display_name": "Henna",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "script_and_lettering",
+      "display_name": "Script and Lettering",
+      "implemented_observations": 100
     },
     {
-      "id": "body_painting",
-      "display_name": "Body Painting",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "stroop_test"
-        ],
-        "secondary": [
-          "odd_one_out",
-          "memory_cascade",
-          "sequence_reverse"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "stick_and_poke",
+      "display_name": "Stick and Poke",
+      "implemented_observations": 100
     },
     {
-      "id": "famous_tattoo_artists",
-      "display_name": "Famous Tattoo Artists",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "stroop_test"
-        ],
-        "secondary": [
-          "odd_one_out",
-          "memory_cascade",
-          "sequence_reverse"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "aftercare",
+      "display_name": "Aftercare",
+      "implemented_observations": 100
     }
   ],
-  "status": "metadata_only_pending_full_observation_bank"
+  "status": "complete"
 }

@@ -1,301 +1,71 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "universe": "creative_arts",
   "world": "crafts_diy",
   "display_name": "Crafts Diy",
   "subcategory_order": [
+    "woodworking",
+    "knitting",
+    "jewelry_making",
+    "leatherwork",
     "paper_crafts",
-    "origami",
-    "scrapbooking",
+    "glass_blowing",
     "candle_making",
     "soap_making",
-    "resin_art",
-    "wood_crafts",
-    "holiday_crafts",
-    "diy_projects",
-    "handmade_gifts"
+    "upcycling",
+    "tools_of_the_trade"
   ],
   "subcategories": [
     {
+      "id": "woodworking",
+      "display_name": "Woodworking",
+      "implemented_observations": 100
+    },
+    {
+      "id": "knitting",
+      "display_name": "Knitting",
+      "implemented_observations": 100
+    },
+    {
+      "id": "jewelry_making",
+      "display_name": "Jewelry Making",
+      "implemented_observations": 100
+    },
+    {
+      "id": "leatherwork",
+      "display_name": "Leatherwork",
+      "implemented_observations": 100
+    },
+    {
       "id": "paper_crafts",
       "display_name": "Paper Crafts",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100
     },
     {
-      "id": "origami",
-      "display_name": "Origami",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "scrapbooking",
-      "display_name": "Scrapbooking",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "glass_blowing",
+      "display_name": "Glass Blowing",
+      "implemented_observations": 100
     },
     {
       "id": "candle_making",
       "display_name": "Candle Making",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100
     },
     {
       "id": "soap_making",
       "display_name": "Soap Making",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100
     },
     {
-      "id": "resin_art",
-      "display_name": "Resin Art",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "upcycling",
+      "display_name": "Upcycling",
+      "implemented_observations": 100
     },
     {
-      "id": "wood_crafts",
-      "display_name": "Wood Crafts",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "holiday_crafts",
-      "display_name": "Holiday Crafts",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "diy_projects",
-      "display_name": "DIY Projects",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
-    },
-    {
-      "id": "handmade_gifts",
-      "display_name": "Handmade Gifts",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "tools_of_the_trade",
+      "display_name": "Tools of the Trade",
+      "implemented_observations": 100
     }
   ],
-  "status": "metadata_only_pending_full_observation_bank"
+  "status": "complete"
 }
