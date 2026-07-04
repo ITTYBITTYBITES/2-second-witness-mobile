@@ -9,7 +9,7 @@ class_name BaseScenario
 var _scenario_payload: Dictionary = {}
 var _deterministic_rng: RandomNumberGenerator
 var current_trial: int = 1
-var target_trials: int = 5
+var target_trials: int = 10 # GOLD STANDARD: Default to 10 trials per stream
 var _used_content_ids: Dictionary = {}
 var _last_payload_refresh_trial: int = 1
 
@@ -42,20 +42,28 @@ func _refresh_payload_for_current_trial():
 	var sub_id = normalize_id(_scenario_payload.get("subcategory", _scenario_payload.get("presentation", {}).get("subcategory", "")))
 	if u_id == "" or w_id == "" or t_id == "" or not ObservationCollection or not ObservationBuilder:
 		return
+	
+	# Use a unique seed per trial to guarantee variety from spikes_catalog_250.json
 	var seed_str = normalize_id(_deterministic_rng.seed if _deterministic_rng else 0) + ":" + t_id + ":" + sub_id + ":" + str(current_trial)
 	var observation = ObservationCollection.next_observation(u_id, w_id, sub_id, t_id, seed_str)
 	if observation.is_empty():
+		# Fallback if no specific observation found
 		return
+		
 	var payload = ObservationBuilder.build_payload(observation, t_id, {"universe": u_id, "world": w_id, "subcategory": sub_id})
 	if payload.is_empty():
 		return
+		
 	_scenario_payload = payload
 	_remember_current_content_id()
 	_last_payload_refresh_trial = current_trial
+	
+	# Sync the engine with the new payload for the trial
 	var engine = get_node_or_null("/root/ScenarioExecutionEngine")
 	if engine and engine.get("active_scenario") == self:
 		engine.active_payload = _scenario_payload
-	print("[BASE SCENARIO] Refreshed trial content: ", _scenario_payload.get("id", ""))
+	
+	print("[BASE SCENARIO] Refreshed trial content for stream: ", _scenario_payload.get("id", ""))
 
 func _cap_target_trials_to_available_content():
 	if not ObservationCollection:
@@ -113,9 +121,9 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 	_remember_current_content_id()
 
 	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
-	if orch and "current_exposure_index" in orch and "current_mission" in orch and orch.current_mission.has("mechanics_chain"):
-		current_trial = orch.current_exposure_index + 1
-		target_trials = max(1, orch.current_mission["mechanics_chain"].size())
+	if orch and "current_mission" in orch and orch.current_mission.has("mechanics_chain"):
+		# In a mission stream, we perform 10 observations of the selected mechanic
+		target_trials = 10
 	elif payload.has("target_trials"):
 		target_trials = int(payload["target_trials"])
 	_cap_target_trials_to_available_content()

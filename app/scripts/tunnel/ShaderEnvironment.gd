@@ -135,8 +135,9 @@ func modulate_for_scenario(scenario_type: String, scenario_payload: Dictionary =
 	var s_id = str(scenario_payload.get("id", scenario_type)).to_lower()
 	var s_title = str(scenario_payload.get("title", scenario_payload.get("mission_title", ""))).to_lower()
 	if subject_colors.is_empty():
+		# AUTHORITATIVE COLOR SHIFTS (Restoring v2.0 subject identities)
 		if "nile" in s_id or "nile" in s_title or "river" in s_id:
-			subject_colors = {"primary": Color("#0088FF"), "secondary": Color("#003366"), "tertiary": Color("#00FF88")}
+			subject_colors = {"primary": Color("#00FF88"), "secondary": Color("#003366"), "tertiary": Color("#0088FF")}
 		elif "god" in s_id or "god" in s_title or "myth" in s_id or "divine" in s_id or "pantheon" in s_title or "pharaoh" in s_title:
 			subject_colors = {"primary": Color("#FFD700"), "secondary": Color("#1C39BB"), "tertiary": Color("#00D4FF")}
 		elif "pyramid" in s_id or "pyramid" in s_title or "build" in s_id or "arch" in s_id:

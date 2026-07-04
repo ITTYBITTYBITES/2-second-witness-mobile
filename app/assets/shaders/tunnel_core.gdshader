@@ -1,55 +1,56 @@
 shader_type canvas_item;
 
-// Theme Manager Injected Colors
+// Authoritative Wormhole Engine v2.0 - GOLD STANDARD
+// Generates 100% dynamic perspective rings, volumetric fog, and spiral dust.
+
 uniform vec4 color_primary : source_color = vec4(0.04, 0.07, 0.12, 1.0);
 uniform vec4 color_secondary : source_color = vec4(0.07, 0.25, 0.44, 1.0);
 uniform vec4 color_tertiary : source_color = vec4(0.17, 0.45, 0.7, 1.0);
 
-// Dynamics
 uniform float flow_speed = 1.0;
 uniform float density = 0.6;
-uniform int flow_type = 0; // Uniform branching is essentially free on mobile GPUs
-
-// PRODUCTION OPTIMIZATION: Replacing heavy procedural math with texture lookups
-// This removes hundreds of ALU instructions per pixel.
+uniform int flow_type = 0;
 uniform sampler2D noise_tex : repeat_enable, filter_linear_mipmap;
 
 void fragment() {
     vec2 uv = UV;
-    float time = TIME * flow_speed * 0.5;
-    vec2 flow_uv = uv;
-
-    // Uniform branching executes identically across the warp, preventing divergence
-    if (flow_type == 0) { // Linear Stream
-        flow_uv.y -= time;
-    } 
-    else if (flow_type == 1) { // Vortex
-        vec2 center = uv - 0.5;
-        float angle = atan(center.y, center.x) + time;
-        float radius = length(center) - (time * 0.1);
-        flow_uv = vec2(cos(angle), sin(angle)) * radius;
-    } 
-    else if (flow_type == 2) { // Branching
-        // Using texture lookup instead of procedural sin/fract noise
-        flow_uv.x += texture(noise_tex, uv * 0.5 + time * 0.1).r * 0.2;
-        flow_uv.y -= time * 1.5;
-    }
-    else if (flow_type == 3) { // Wave
-        flow_uv.x += sin(uv.y * 10.0 * density + time) * 0.1;
-        flow_uv.y -= time;
-    }
-
-    // Single-pass depth mapping using precomputed noise texture lookups
-    float n1 = texture(noise_tex, flow_uv * density).r;
-    float n2 = texture(noise_tex, flow_uv * density * 2.0 - vec2(time * 0.2)).r;
-
-    // Optimized Linear Interpolation
-    vec4 col = mix(color_primary, color_secondary, n1);
-    col = mix(col, color_tertiary, n2);
+    vec2 center_uv = uv - 0.5;
+    float dist = length(center_uv);
+    float time = TIME * flow_speed;
     
-    // Cheap vignette without length() cost
-    float dist = distance(uv, vec2(0.5));
-    col.rgb *= smoothstep(0.9, 0.1, dist);
+    // 1. DYNAMIC PERSPECTIVE RINGS (y=-1 layer)
+    // Using a logarithmic distance transform to create perspective
+    float log_dist = log(dist + 0.01);
+    float rings = sin(log_dist * 15.0 - time * 8.0);
+    rings = smoothstep(0.8, 1.0, rings);
+    rings *= smoothstep(0.5, 0.1, dist); // Fade center and edges
+    
+    // 2. VOLUMETRIC FOG / DEPTH
+    float fog = pow(dist * 1.5, 2.0);
+    vec3 base_col = mix(color_primary.rgb, color_secondary.rgb, clamp(fog, 0.0, 1.0));
+    
+    // 3. INWARD-SPIRALING PARTICLE DUST
+    float angle = atan(center_uv.y, center_uv.x);
+    // Transform UV to spiraling polar coordinates
+    vec2 polar_uv = vec2(log_dist - time * 0.4, (angle / (2.0 * PI)) + log_dist * 0.5);
+    float dust = texture(noise_tex, polar_uv * 3.0).r;
+    dust = pow(dust, 4.0) * 5.0; // High contrast specks
+    
+    // 4. COMPOSITING
+    vec3 final_rgb = base_col;
+    
+    // Add rings with Tertiary Glow
+    final_rgb += color_tertiary.rgb * rings * 0.4;
+    
+    // Add spiraling dust with Tertiary Highlights
+    final_rgb += color_tertiary.rgb * dust * 0.2;
+    
+    // Apply Vignette for focus
+    float vignette = smoothstep(0.8, 0.2, dist);
+    final_rgb *= vignette;
+    
+    // Bloom approximation for rings/dust
+    final_rgb += color_tertiary.rgb * rings * rings * 0.2;
 
-    COLOR = col;
+    COLOR = vec4(final_rgb, 1.0);
 }
