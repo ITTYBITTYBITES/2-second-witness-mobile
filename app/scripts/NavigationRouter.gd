@@ -220,6 +220,40 @@ func _show_gameplay_hud():
 	hud_root.add_child(active_gameplay_hud)
 	print("[ROUTER] Gameplay HUD attached. Persistent 3-Layer UI separation active.")
 
+func _close_mirror_modal():
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	if persistent_mirror_instance and is_instance_valid(persistent_mirror_instance):
+		persistent_mirror_instance.visible = false
+		if modal_mgr and modal_mgr.has_modal(persistent_mirror_instance):
+			modal_mgr.pop_modal(persistent_mirror_instance, "NavigationRouter")
+	_update_nav_log(previous_screen_name, true)
+	if current_screen_name == "LandingScreen" and active_landing_screen and is_instance_valid(active_landing_screen):
+		show_landing_screen()
+
+func _validate_recommended_world(universe_id: String, world_id: String) -> Dictionary:
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	if registry and registry.has_method("get_all_worlds_in_universe"):
+		var worlds = registry.get_all_worlds_in_universe(u_id)
+		if worlds.is_empty() or not worlds.has(w_id):
+			u_id = "history"
+			w_id = "ancient_egypt"
+	return {"universe": u_id, "world": w_id}
+
+func _on_mirror_recommendation_requested(universe_id: String, world_id: String):
+	print("[ROUTER] Mirror recommendation selected: ", universe_id, " / ", world_id)
+	var clean = _validate_recommended_world(universe_id, world_id)
+	_close_mirror_modal()
+	call_deferred("_start_recommended_world", clean["universe"], clean["world"])
+
+func _start_recommended_world(universe_id: String, world_id: String):
+	var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
+	if orch and orch.has_method("request_world_selection"):
+		orch.request_world_selection(universe_id, world_id)
+	else:
+		_on_world_selected(universe_id, world_id)
+
 func toggle_mirror_modal():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "external_call", "toggle_mirror_modal()")
@@ -227,9 +261,7 @@ func toggle_mirror_modal():
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if persistent_mirror_instance and is_instance_valid(persistent_mirror_instance):
 		if persistent_mirror_instance.visible:
-			persistent_mirror_instance.visible = false
-			if modal_mgr: modal_mgr.pop_modal(persistent_mirror_instance, "NavigationRouter")
-			_update_nav_log(previous_screen_name, true)
+			_close_mirror_modal()
 		else:
 			persistent_mirror_instance.visible = true
 			if modal_mgr: modal_mgr.push_modal(persistent_mirror_instance, true, "NavigationRouter")
@@ -247,11 +279,9 @@ func toggle_mirror_modal():
 		if modal_mgr: modal_mgr.push_modal(persistent_mirror_instance, true, "NavigationRouter")
 		_update_nav_log("PlayerProfileScreen", false)
 		if persistent_mirror_instance.has_signal("return_requested"):
-			persistent_mirror_instance.return_requested.connect(func():
-				persistent_mirror_instance.visible = false
-				if modal_mgr: modal_mgr.pop_modal(persistent_mirror_instance, "NavigationRouter")
-				_update_nav_log(previous_screen_name, true)
-			)
+			persistent_mirror_instance.return_requested.connect(_close_mirror_modal)
+		if persistent_mirror_instance.has_signal("recommendation_requested"):
+			persistent_mirror_instance.recommendation_requested.connect(_on_mirror_recommendation_requested)
 
 func _on_play_requested():
 	print("STEP 1: PLAY REQUEST RECEIVED")

@@ -203,11 +203,11 @@ func get_adaptive_recommendation() -> Dictionary:
 	if highest_hesitation_trait == "rapid_classification":
 		rec = {"universe": "history", "world": "ancient_egypt", "reason": "High hesitation in rapid classification detected. Recommending History -> Ancient Egypt -> Stroop."}
 	elif highest_hesitation_trait == "recall":
-		rec = {"universe": "science_lab", "world": "neural_mapping", "reason": "Recall latency elevating. Recommending Science Lab -> Neural Mapping."}
+		rec = {"universe": "science_lab", "world": "genetics", "reason": "Recall latency elevating. Recommending Science Lab -> Genetics."}
 	elif highest_hesitation_trait == "pattern_recognition":
-		rec = {"universe": "creative_arts", "world": "color_theory", "reason": "You tend to solve structured problems. Creative Arts explores divergent thinking."}
+		rec = {"universe": "history", "world": "ancient_greece", "reason": "Structured pattern work is your next opportunity. Recommending History -> Ancient Greece."}
 	elif highest_hesitation_trait == "spatial_tracking":
-		rec = {"universe": "frontier", "world": "arctic", "reason": "Your recent decisions suggest strong spatial reasoning. Recommend Frontier -> Arctic."}
+		rec = {"universe": "history", "world": "ancient_rome", "reason": "Your recent decisions suggest spatial reasoning practice. Recommending History -> Ancient Rome."}
 		
 	return rec
 

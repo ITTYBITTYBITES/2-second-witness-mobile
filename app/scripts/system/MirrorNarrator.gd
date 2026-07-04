@@ -191,10 +191,10 @@ func get_next_recommendation(profile: Node) -> Dictionary:
 	if is_instance_valid(profile) and profile.has_method("get_adaptive_recommendation"):
 		rec = profile.get_adaptive_recommendation()
 	else:
-		rec = {"universe": "science_lab", "world": "cognitive_bias", "reason": "Your recent sessions suggest this world will strengthen memory while reinforcing your strongest observation skills."}
+		rec = {"universe": "history", "world": "ancient_egypt", "reason": "Your recent sessions suggest this world will strengthen memory while reinforcing your strongest observation skills."}
 		
-	var u_id = rec.get("universe", "science_lab")
-	var w_id = rec.get("world", "cognitive_bias")
+	var u_id = rec.get("universe", "history")
+	var w_id = rec.get("world", "ancient_egypt")
 	var pretty_uni = u_id.capitalize().replace("_", " ")
 	var pretty_world = w_id.capitalize().replace("_", " ")
 	

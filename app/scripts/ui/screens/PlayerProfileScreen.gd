@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 signal return_requested
+signal recommendation_requested(universe_id: String, world_id: String)
 
 @onready var lifetime_label = $PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/Header/LifetimeLabel
 @onready var welcome_label = $PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/Header/WelcomeLabel
@@ -28,12 +29,11 @@ func _ready():
 	$VoidBG.gui_input.connect(func(event):
 		if event is InputEventMouseButton and event.pressed:
 			print("[MEMORY MIRROR] Background clicked. Exiting mirror.")
-			if AudioManager: AudioManager.play_sfx("ui_click")
-			if AdManager: AdManager.hide_banner()
-			return_requested.emit()
+			_request_close()
 	)
 	
 	if AdManager: AdManager.show_banner()
+	_mount_close_button()
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()
 
@@ -43,6 +43,31 @@ func _escape_bbcode(value: Variant) -> String:
 	text = text.replace("]", "__BB_RB__")
 	text = text.replace("__BB_LB__", "[lb]")
 	return text.replace("__BB_RB__", "[rb]")
+
+func _request_close():
+	if AudioManager: AudioManager.play_sfx("ui_click")
+	if AdManager: AdManager.hide_banner()
+	return_requested.emit()
+
+func _mount_close_button():
+	if get_node_or_null("CloseMirrorButton"):
+		return
+	var btn_close = Button.new()
+	btn_close.name = "CloseMirrorButton"
+	btn_close.text = "CLOSE MIRROR"
+	btn_close.custom_minimum_size = Vector2(170, 48)
+	btn_close.anchor_left = 1.0
+	btn_close.anchor_right = 1.0
+	btn_close.offset_left = -198.0
+	btn_close.offset_top = 24.0
+	btn_close.offset_right = -24.0
+	btn_close.offset_bottom = 72.0
+	btn_close.z_index = 200
+	btn_close.add_theme_font_size_override("font_size", 16)
+	if PresentationToolkit and PresentationToolkit.has_method("make_response_card"):
+		PresentationToolkit.make_response_card(btn_close, "CLOSE MIRROR", Color("#F72585"))
+	btn_close.pressed.connect(_request_close)
+	add_child(btn_close)
 
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
@@ -79,12 +104,7 @@ func _populate_data():
 		btn_begin.text = "BEGIN OBSERVATION"
 		btn_begin.add_theme_font_size_override("font_size", 20)
 		btn_begin.pressed.connect(func():
-			if AudioManager: AudioManager.play_sfx("ui_click")
-			if AdManager: AdManager.hide_banner()
-			var router = get_node_or_null("/root/NavigationRouter")
-			if router and router.has_method("_on_discover_requested"):
-				router._on_discover_requested()
-			return_requested.emit()
+			recommendation_requested.emit("history", "ancient_egypt")
 		)
 		nav_container.add_child(btn_begin)
 		
@@ -92,14 +112,7 @@ func _populate_data():
 		btn_return_home.custom_minimum_size = Vector2(200, 50)
 		btn_return_home.text = "RETURN HOME"
 		btn_return_home.add_theme_font_size_override("font_size", 16)
-		btn_return_home.pressed.connect(func():
-			if AudioManager: AudioManager.play_sfx("ui_click")
-			if AdManager: AdManager.hide_banner()
-			var router = get_node_or_null("/root/NavigationRouter")
-			if router and router.has_method("show_landing_screen"):
-				router.show_landing_screen()
-			return_requested.emit()
-		)
+		btn_return_home.pressed.connect(_request_close)
 		nav_container.add_child(btn_return_home)
 		return
 
@@ -168,12 +181,7 @@ func _populate_data():
 	btn_cta.text = rec["cta_text"]
 	btn_cta.add_theme_font_size_override("font_size", 20)
 	btn_cta.pressed.connect(func():
-		if AudioManager: AudioManager.play_sfx("ui_click")
-		if AdManager: AdManager.hide_banner()
-		var orch = get_tree().root.get_node_or_null("ExperienceOrchestrator")
-		if orch and orch.has_method("request_world_selection"):
-			orch.request_world_selection(rec["universe"], rec["world"])
-		return_requested.emit()
+		recommendation_requested.emit(str(rec["universe"]), str(rec["world"]))
 	)
 	nav_container.add_child(btn_cta)
 
@@ -181,14 +189,7 @@ func _populate_data():
 	btn_return.custom_minimum_size = Vector2(200, 50)
 	btn_return.text = "RETURN HOME"
 	btn_return.add_theme_font_size_override("font_size", 16)
-	btn_return.pressed.connect(func():
-		if AudioManager: AudioManager.play_sfx("ui_click")
-		if AdManager: AdManager.hide_banner()
-		var router = get_node_or_null("/root/NavigationRouter")
-		if router and router.has_method("show_landing_screen"):
-			router.show_landing_screen()
-		return_requested.emit()
-	)
+	btn_return.pressed.connect(_request_close)
 	nav_container.add_child(btn_return)
 
 func _build_strength_group(header_title: String, items: Array, header_color: Color):
