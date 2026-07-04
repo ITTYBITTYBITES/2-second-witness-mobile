@@ -5,6 +5,8 @@ signal profile_requested
 signal discover_requested
 signal settings_requested
 
+@onready var subtitle_label = $Panel/Subtitle
+
 func _ready():
 	print("BUTTON READY: BtnPlay")
 	StyleInjector.apply_menu_style(self)
@@ -98,21 +100,17 @@ func _check_directors_pass_status():
 
 func _check_returning_user_welcome():
 	var profile = get_node_or_null("/root/PlayerProfile")
+	if not subtitle_label:
+		return
+	subtitle_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	subtitle_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	subtitle_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	if profile and profile.lifetime_sessions > 1:
-		var welcome_lbl = Label.new()
-		welcome_lbl.text = "Welcome back.\nTwo new History worlds have been added."
-		welcome_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		welcome_lbl.add_theme_color_override("font_color", Color(0.85, 0.95, 1.0))
-		welcome_lbl.add_theme_font_size_override("font_size", 20)
-		$Panel/VBoxContainer.add_child(welcome_lbl)
+		subtitle_label.text = "Welcome back. Your Memory Mirror is ready.\nContinue observing or discover a new world."
+		subtitle_label.add_theme_color_override("font_color", Color(0.85, 0.95, 1.0))
 	else:
-		var onboard_lbl = Label.new()
-		onboard_lbl.text = "WELCOME TO 2 SECOND WITNESS\nTest your cognitive speed and visual recall across 6 weekly featured Universes.\nTap BEGIN to enter the stream or DISCOVER to select a World."
-		onboard_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		onboard_lbl.add_theme_color_override("font_color", Color(0.298, 0.788, 0.941))
-		onboard_lbl.add_theme_font_size_override("font_size", 18)
-		$Panel/VBoxContainer.add_child(onboard_lbl)
-		$Panel/VBoxContainer.move_child(onboard_lbl, 0)
+		subtitle_label.text = "Test your cognitive speed and visual recall across weekly featured universes.\nBegin instantly, or discover a world first."
+		subtitle_label.add_theme_color_override("font_color", Color(0.72, 0.92, 1.0))
 
 func _show_directors_pass_gate():
 	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
