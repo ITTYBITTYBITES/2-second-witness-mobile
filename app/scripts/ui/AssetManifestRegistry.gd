@@ -79,13 +79,18 @@ func get_manifest(universe_id: String, version: String = CURRENT_ASSET_VERSION) 
 	if not manifests[version].has(universe_id):
 		var clean_name = universe_id.capitalize().replace("_", " ")
 		var fallback_bg = "res://assets/textures/env/v1/grid_noise_soft.png"
+		var fallback_mesh = "res://assets/meshes/iris_crystalline.obj"
+		var fallback_audio = "res://assets/audio/ambience_science_lab.wav"
 		var u_manifest = {
 			"id": universe_id,
 			"display_name": clean_name,
 			"version": version,
+			"bg_noise": fallback_bg,
+			"rib_mesh": fallback_mesh,
+			"iris_accent": fallback_mesh,
 			"textures": {"bg_noise": fallback_bg},
-			"meshes": {"iris_accent": "res://assets/models/v1/iris_ring_base.obj"},
-			"audio": {"ambience_loop": "res://assets/audio/ambience/v1/ambient_stream_01.ogg"}
+			"meshes": {"iris_accent": fallback_mesh},
+			"audio": {"ambience_loop": fallback_audio}
 		}
 		manifests[version][universe_id] = u_manifest
 		return u_manifest

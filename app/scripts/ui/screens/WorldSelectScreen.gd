@@ -97,9 +97,10 @@ func _populate_grid():
 		"society_mind": fallback_worlds = ["behavioral_economics", "sociology", "psychology", "linguistics", "group_dynamics"]
 		"frontier": fallback_worlds = ["arctic", "aviation", "disaster", "wilderness", "space_exploration", "deep_sea", "mountain_summit", "desert_crossing", "subterranean", "jungle_canopy"]
 		_: fallback_worlds = ["foundations", "advanced_concepts", "synthesis"]
-	for fw in fallback_worlds:
-		if not worlds.has(fw): worlds.append(fw)
-		
+	if worlds.is_empty():
+		worlds = fallback_worlds
+	worlds.sort()
+
 	print("Universe:", active_universe_id)
 	print("Loaded ", worlds.size(), " worlds")
 	print(worlds)

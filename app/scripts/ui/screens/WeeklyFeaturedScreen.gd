@@ -96,6 +96,7 @@ func _populate_grid():
 	var rot_mgr = WeeklyRotationManager if WeeklyRotationManager else get_tree().root.get_node_or_null("WeeklyRotationManager")
 	var reg = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 	var all_universes = rot_mgr.get_full_universe_library() if (rot_mgr and rot_mgr.has_method("get_full_universe_library")) else (reg.get_all_universes() if (reg and reg.has_method("get_all_universes") and not reg.get_all_universes().is_empty()) else ["history", "science_lab", "creative_arts", "frontier", "society_mind", "tech_ops", "life_sciences"])
+	all_universes.sort()
 	
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	
