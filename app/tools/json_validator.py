@@ -25,6 +25,8 @@ def run_content_ci_pipeline():
     verified_items = 0
     verified_themes = 0
     verified_chunks = 0
+    verified_observation_banks = 0
+    verified_observations = 0
     
     valid_scenario_types = {"memory_cascade", "rapid_classification", "signal_vs_noise", "stroop_test", "spatial_recall", "math_surprise", "odd_one_out", "pattern_continuation", "reflex_tap", "risk_selection", "sequence_reverse", "speed_sort"}
     valid_universes = {"history", "science_lab", "life_sciences", "tech_ops", "creative_arts", "society_mind", "frontier"}
@@ -47,6 +49,43 @@ def run_content_ci_pipeline():
                 schema_violations.append(f"{clean_path}: Root item is not a dictionary")
                 continue
                 
+            # 0. Observation Bank Architecture (Universe > World > Subcategory > Observation Bank)
+            if "app/data/observation_banks/" in clean_path or clean_path.startswith("app/data/observation_banks/"):
+                if "schema/" in clean_path:
+                    verified_observation_banks += 1
+                    continue
+                if item.get("architecture") == "Universe > World > Subcategory > Observation Bank" or ("world_order" in item and "universe" in item):
+                    if "universe" not in item:
+                        schema_violations.append(f"{clean_path}: Observation universe manifest missing 'universe'")
+                    verified_observation_banks += 1
+                    continue
+                if "subcategory_order" in item and "subcategories" in item:
+                    for rk in ["universe", "world", "subcategories"]:
+                        if rk not in item:
+                            schema_violations.append(f"{clean_path}: Observation world manifest missing '{rk}'")
+                    valid_worlds.add(item.get("world", ""))
+                    verified_observation_banks += 1
+                    continue
+                if "observations" in item and "subcategory" in item:
+                    for rk in ["universe", "world", "subcategory", "scenario_preferences", "observations"]:
+                        if rk not in item:
+                            schema_violations.append(f"{clean_path}: Observation bank missing '{rk}'")
+                    seen_obs = set()
+                    for obs in item.get("observations", []):
+                        if not isinstance(obs, dict):
+                            schema_violations.append(f"{clean_path}: Observation row is not a dictionary")
+                            continue
+                        for rk in ["observation_id", "difficulty", "prompt", "correct_answer", "distractors", "metadata", "localization"]:
+                            if rk not in obs:
+                                schema_violations.append(f"{clean_path}: Observation missing '{rk}'")
+                        oid = obs.get("observation_id", "")
+                        if oid in seen_obs:
+                            duplicate_ids.append(f"{clean_path}: Duplicate Observation ID '{oid}'")
+                        seen_obs.add(oid)
+                        verified_observations += 1
+                    verified_observation_banks += 1
+                    continue
+
             # 1. Theme Profiles (WorldProfile or legacy Universe theme)
             if ("world" in item and "lens" in item and "tunnel" in item) or ("id" in item and "display_name" in item and "visual" in item):
                 if "world" in item and "lens" in item:
@@ -125,6 +164,8 @@ def run_content_ci_pipeline():
     print(f"✓ Total Unique Prompts Tracked: {len(unique_prompts)}")
     print(f"✓ Total World/Theme Profiles:   {verified_themes}")
     print(f"✓ Total Stream Chunks Verified: {verified_chunks}")
+    print(f"✓ Observation Bank Files:       {verified_observation_banks}")
+    print(f"✓ Source Observations:          {verified_observations}")
     print(f"✓ Duplicate IDs Detected:       {len(duplicate_ids)}")
     print(f"✓ Duplicate Prompts Detected:   {len(duplicate_prompts)}")
     print(f"✓ Missing Asset References:     {len(missing_assets)}")

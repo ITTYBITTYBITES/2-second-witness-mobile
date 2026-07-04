@@ -1,20 +1,20 @@
 {
   "id": "creative_arts",
   "display_name": "Creative Arts",
-  "world": "photography",
+  "world": "street_art",
   "lens": {
-    "mesh": "mesh_photography",
-    "fog_density": 0.6599999999999999,
+    "mesh": "mesh_street_art",
+    "fog_density": 0.7,
     "colors": {
-      "primary": "#33CCFF",
-      "bg": "#081218",
-      "accent": "#FFBC42"
+      "primary": "#E6B800",
+      "bg": "#1A0B1C",
+      "accent": "#B833FF"
     }
   },
   "tunnel": {
-    "density": 0.65,
+    "density": 0.6000000000000001,
     "speed_multiplier": 1.1,
-    "flow_type": "linear"
+    "flow_type": "branching"
   },
   "audio": {
     "ambience": "ambience_creative_arts",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.86,
-    "border_color": "#33CCFF"
+    "border_color": "#E6B800"
   },
   "feedback": {
     "style": "creative_observation"

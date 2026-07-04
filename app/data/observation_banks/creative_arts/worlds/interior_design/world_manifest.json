@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "universe": "creative_arts",
+  "world": "interior_design",
+  "display_name": "Interior Design",
+  "subcategory_order": [
+    "living_rooms",
+    "kitchens",
+    "bedrooms",
+    "bathrooms",
+    "furniture",
+    "lighting",
+    "decor_styles",
+    "space_planning",
+    "color_schemes",
+    "home_accessories"
+  ],
+  "subcategories": [
+    {
+      "id": "living_rooms",
+      "display_name": "Living Rooms",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "kitchens",
+      "display_name": "Kitchens",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "bedrooms",
+      "display_name": "Bedrooms",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "bathrooms",
+      "display_name": "Bathrooms",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "furniture",
+      "display_name": "Furniture",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "lighting",
+      "display_name": "Lighting",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "decor_styles",
+      "display_name": "Decor Styles",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "stroop_test"
+        ],
+        "secondary": [
+          "odd_one_out",
+          "memory_cascade",
+          "sequence_reverse"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "space_planning",
+      "display_name": "Space Planning",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "color_schemes",
+      "display_name": "Color Schemes",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "stroop_test"
+        ],
+        "secondary": [
+          "odd_one_out",
+          "memory_cascade",
+          "sequence_reverse"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "home_accessories",
+      "display_name": "Home Accessories",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    }
+  ],
+  "status": "metadata_only_pending_full_observation_bank"
+}

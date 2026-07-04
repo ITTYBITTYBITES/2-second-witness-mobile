@@ -2,6 +2,8 @@ extends Node
 
 var runtime_index = {} # Structure: [universe_id][world_id][type_id] = Array[Dictionary]
 var _registered_ids: Dictionary = {}
+var _world_metadata: Dictionary = {}
+var _subcategory_index: Dictionary = {} # [universe_id][world_id][subcategory_id] = metadata
 
 var curated_missions = {
 	"history_ancient_egypt": [
@@ -39,13 +41,27 @@ func _ready():
 	if BootTracer: BootTracer.log_init("ContentRegistry")
 	print("ContentRegistry initialized. Awaiting content ingestion...")
 
-func register_world(universe_id: Variant, world_id: Variant):
+func register_world(universe_id: Variant, world_id: Variant, metadata: Dictionary = {}):
 	var u_id = normalize_id(universe_id)
 	var w_id = normalize_id(world_id)
 	if not runtime_index.has(u_id):
 		runtime_index[u_id] = {}
 	if not runtime_index[u_id].has(w_id):
 		runtime_index[u_id][w_id] = {}
+	if not metadata.is_empty():
+		if not _world_metadata.has(u_id): _world_metadata[u_id] = {}
+		_world_metadata[u_id][w_id] = metadata
+
+func register_subcategory(universe_id: Variant, world_id: Variant, subcategory_id: Variant, metadata: Dictionary = {}):
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	var s_id = normalize_id(subcategory_id)
+	register_world(u_id, w_id)
+	if not _subcategory_index.has(u_id): _subcategory_index[u_id] = {}
+	if not _subcategory_index[u_id].has(w_id): _subcategory_index[u_id][w_id] = {}
+	var sub_meta = metadata.duplicate(true)
+	sub_meta["id"] = s_id
+	_subcategory_index[u_id][w_id][s_id] = sub_meta
 
 func register_scenario(data: Dictionary):
 	var u_id = normalize_id(data.get("universe", "unknown"))
@@ -68,16 +84,17 @@ func register_scenario(data: Dictionary):
 
 	runtime_index[u_id][w_id][t_id].append(data)
 
-func resolve_scenario(universe_id: Variant, world_id: Variant, type_id: Variant, seed_string: Variant) -> Dictionary:
+func resolve_scenario(universe_id: Variant, world_id: Variant, type_id: Variant, seed_string: Variant, subcategory_id: Variant = "") -> Dictionary:
 	var u_id = normalize_id(universe_id)
 	var w_id = normalize_id(world_id)
 	var t_id = normalize_id(type_id)
 	var s_str = normalize_id(seed_string)
+	var sub_id = normalize_id(subcategory_id)
 
-	var pool = _collect_pool(u_id, w_id, t_id)
+	var pool = _collect_pool(u_id, w_id, t_id, sub_id)
 	if pool.size() == 0:
 		_ensure_content_loaded_for(u_id, w_id)
-		pool = _collect_pool(u_id, w_id, t_id)
+		pool = _collect_pool(u_id, w_id, t_id, sub_id)
 
 	if pool.size() == 0:
 		return {}
@@ -87,7 +104,7 @@ func resolve_scenario(universe_id: Variant, world_id: Variant, type_id: Variant,
 
 	return pool[selected_index]
 
-func _collect_pool(u_id: String, w_id: String, t_id: String) -> Array:
+func _collect_pool(u_id: String, w_id: String, t_id: String, sub_id: String = "") -> Array:
 	var pool = []
 	if not runtime_index.has(u_id):
 		return pool
@@ -99,6 +116,12 @@ func _collect_pool(u_id: String, w_id: String, t_id: String) -> Array:
 	else:
 		if runtime_index[u_id].has(w_id) and runtime_index[u_id][w_id].has(t_id):
 			pool = runtime_index[u_id][w_id][t_id]
+	if sub_id != "":
+		var filtered = []
+		for item in pool:
+			if item is Dictionary and normalize_id(item.get("subcategory", item.get("presentation", {}).get("subcategory", ""))) == sub_id:
+				filtered.append(item)
+		pool = filtered
 	return pool
 
 func _ensure_content_loaded_for(u_id: String, w_id: String):
@@ -129,6 +152,41 @@ func get_all_scenarios_in_world(universe_id: Variant, world_id: Variant) -> Arra
 		for t_key in runtime_index[u_id][w_id].keys():
 			result.append_array(runtime_index[u_id][w_id][t_key])
 	return result
+
+func get_subcategories_in_world(universe_id: Variant, world_id: Variant) -> Array:
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	var result = []
+	if _subcategory_index.has(u_id) and _subcategory_index[u_id].has(w_id):
+		for key in _subcategory_index[u_id][w_id].keys():
+			result.append(_subcategory_index[u_id][w_id][key])
+	result.sort_custom(func(a, b): return str(a.get("display_name", a.get("id", ""))) < str(b.get("display_name", b.get("id", ""))))
+	return result
+
+func get_subcategory_metadata(universe_id: Variant, world_id: Variant, subcategory_id: Variant) -> Dictionary:
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	var s_id = normalize_id(subcategory_id)
+	if _subcategory_index.has(u_id) and _subcategory_index[u_id].has(w_id) and _subcategory_index[u_id][w_id].has(s_id):
+		return _subcategory_index[u_id][w_id][s_id]
+	return {}
+
+func get_all_scenarios_in_subcategory(universe_id: Variant, world_id: Variant, subcategory_id: Variant) -> Array:
+	var sub_id = normalize_id(subcategory_id)
+	var result = []
+	for item in get_all_scenarios_in_world(universe_id, world_id):
+		if item is Dictionary and normalize_id(item.get("subcategory", item.get("presentation", {}).get("subcategory", ""))) == sub_id:
+			result.append(item)
+	return result
+
+func get_available_types_in_subcategory(universe_id: Variant, world_id: Variant, subcategory_id: Variant) -> Array:
+	var types = []
+	for item in get_all_scenarios_in_subcategory(universe_id, world_id, subcategory_id):
+		var t = normalize_id(item.get("type", ""))
+		if t != "" and not types.has(t):
+			types.append(t)
+	types.sort()
+	return types
 
 func get_available_types_in_world(universe_id: Variant, world_id: Variant) -> Array:
 	var u_id = normalize_id(universe_id)

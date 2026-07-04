@@ -1,0 +1,6032 @@
+{
+  "schema_version": 1,
+  "observation_bank_version": "creative_arts.v1.painting",
+  "universe": "creative_arts",
+  "world": "painting",
+  "subcategory": "portraits",
+  "display_name": "Portraits",
+  "scenario_preferences": {
+    "preferred": [
+      "rapid_classification",
+      "signal_vs_noise",
+      "odd_one_out"
+    ],
+    "secondary": [
+      "memory_cascade",
+      "sequence_reverse",
+      "stroop_test"
+    ],
+    "rare": [
+      "pattern_continuation",
+      "spatial_recall"
+    ],
+    "disabled": [
+      "math_surprise",
+      "risk_selection",
+      "reflex_tap",
+      "speed_sort"
+    ]
+  },
+  "observations": [
+    {
+      "observation_id": "creative_arts_painting_portraits_0001",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "artist depicts themselves.",
+      "correct_answer": "Self-Portrait",
+      "distractors": [
+        "Profile Portrait",
+        "Three-Quarter View",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0001_prompt",
+        "answer_key": "creative_arts_painting_portraits_0001_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "self_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0001",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0002",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "side view of a face.",
+      "correct_answer": "Profile Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Three-Quarter View",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0002_prompt",
+        "answer_key": "creative_arts_painting_portraits_0002_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "profile_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0002",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0003",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "face turned partly toward viewer.",
+      "correct_answer": "Three-Quarter View",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0003_prompt",
+        "answer_key": "creative_arts_painting_portraits_0003_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "three_quarter_view"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0003",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0004",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "head and shoulders portrait.",
+      "correct_answer": "Bust Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0004_prompt",
+        "answer_key": "creative_arts_painting_portraits_0004_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "bust_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0004",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0005",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "whole body portrait.",
+      "correct_answer": "Full-Length Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0005_prompt",
+        "answer_key": "creative_arts_painting_portraits_0005_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "full_length_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0005",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0006",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "multiple people portrayed together.",
+      "correct_answer": "Group Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0006_prompt",
+        "answer_key": "creative_arts_painting_portraits_0006_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "group_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0006",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0007",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "portrait made for a patron.",
+      "correct_answer": "Commissioned Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0007_prompt",
+        "answer_key": "creative_arts_painting_portraits_0007_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "commissioned_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0007",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0008",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "image emphasizing monarchy or power.",
+      "correct_answer": "Royal Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0008_prompt",
+        "answer_key": "creative_arts_painting_portraits_0008_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "royal_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0008",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0009",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "portrait emphasizing inner mood.",
+      "correct_answer": "Psychological Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0009_prompt",
+        "answer_key": "creative_arts_painting_portraits_0009_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "psychological_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0009",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0010",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "flattering perfected likeness.",
+      "correct_answer": "Idealized Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0010_prompt",
+        "answer_key": "creative_arts_painting_portraits_0010_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "idealized_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0010",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0011",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "unidealized likeness.",
+      "correct_answer": "Realist Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0011_prompt",
+        "answer_key": "creative_arts_painting_portraits_0011_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "realist_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0011",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0012",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "arranged dignified posture.",
+      "correct_answer": "Formal Pose",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0012_prompt",
+        "answer_key": "creative_arts_painting_portraits_0012_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "formal_pose"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0012",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0013",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "relaxed natural posture.",
+      "correct_answer": "Informal Pose",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0013_prompt",
+        "answer_key": "creative_arts_painting_portraits_0013_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "informal_pose"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0013",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0014",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "subject looks toward viewer.",
+      "correct_answer": "Eye Contact",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0014_prompt",
+        "answer_key": "creative_arts_painting_portraits_0014_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "eye_contact"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0014",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0015",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "clothing reveals status or identity.",
+      "correct_answer": "Costume Detail",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0015_prompt",
+        "answer_key": "creative_arts_painting_portraits_0015_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "costume_detail"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0015",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0016",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "object identifying the sitter.",
+      "correct_answer": "Attribute",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0016_prompt",
+        "answer_key": "creative_arts_painting_portraits_0016_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "attribute"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0016",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0017",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "setting adds meaning.",
+      "correct_answer": "Background Symbolism",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0017_prompt",
+        "answer_key": "creative_arts_painting_portraits_0017_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "background_symbolism"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0017",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0018",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "emotion shown by the face.",
+      "correct_answer": "Facial Expression",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0018_prompt",
+        "answer_key": "creative_arts_painting_portraits_0018_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "facial_expression"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0018",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0019",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "light models facial form.",
+      "correct_answer": "Portrait Lighting",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0019_prompt",
+        "answer_key": "creative_arts_painting_portraits_0019_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "portrait_lighting"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0019",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0020",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "small portable likeness.",
+      "correct_answer": "Miniature Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0020_prompt",
+        "answer_key": "creative_arts_painting_portraits_0020_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "miniature_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0020",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0021",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: artist depicts themselves.",
+      "correct_answer": "Self-Portrait",
+      "distractors": [
+        "Profile Portrait",
+        "Three-Quarter View",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0021_prompt",
+        "answer_key": "creative_arts_painting_portraits_0021_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "self_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0021",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0022",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: side view of a face.",
+      "correct_answer": "Profile Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Three-Quarter View",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0022_prompt",
+        "answer_key": "creative_arts_painting_portraits_0022_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "profile_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0022",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0023",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: face turned partly toward viewer.",
+      "correct_answer": "Three-Quarter View",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0023_prompt",
+        "answer_key": "creative_arts_painting_portraits_0023_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "three_quarter_view"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0023",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0024",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: head and shoulders portrait.",
+      "correct_answer": "Bust Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0024_prompt",
+        "answer_key": "creative_arts_painting_portraits_0024_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "bust_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0024",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0025",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: whole body portrait.",
+      "correct_answer": "Full-Length Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0025_prompt",
+        "answer_key": "creative_arts_painting_portraits_0025_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "full_length_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0025",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0026",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: multiple people portrayed together.",
+      "correct_answer": "Group Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0026_prompt",
+        "answer_key": "creative_arts_painting_portraits_0026_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "group_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0026",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0027",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: portrait made for a patron.",
+      "correct_answer": "Commissioned Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0027_prompt",
+        "answer_key": "creative_arts_painting_portraits_0027_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "commissioned_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0027",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0028",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: image emphasizing monarchy or power.",
+      "correct_answer": "Royal Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0028_prompt",
+        "answer_key": "creative_arts_painting_portraits_0028_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "royal_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0028",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0029",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: portrait emphasizing inner mood.",
+      "correct_answer": "Psychological Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0029_prompt",
+        "answer_key": "creative_arts_painting_portraits_0029_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "psychological_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0029",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0030",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: flattering perfected likeness.",
+      "correct_answer": "Idealized Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0030_prompt",
+        "answer_key": "creative_arts_painting_portraits_0030_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "idealized_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0030",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0031",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: unidealized likeness.",
+      "correct_answer": "Realist Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0031_prompt",
+        "answer_key": "creative_arts_painting_portraits_0031_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "realist_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0031",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0032",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: arranged dignified posture.",
+      "correct_answer": "Formal Pose",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0032_prompt",
+        "answer_key": "creative_arts_painting_portraits_0032_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "formal_pose"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0032",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0033",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: relaxed natural posture.",
+      "correct_answer": "Informal Pose",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0033_prompt",
+        "answer_key": "creative_arts_painting_portraits_0033_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "informal_pose"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0033",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0034",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: subject looks toward viewer.",
+      "correct_answer": "Eye Contact",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0034_prompt",
+        "answer_key": "creative_arts_painting_portraits_0034_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "eye_contact"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0034",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0035",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: clothing reveals status or identity.",
+      "correct_answer": "Costume Detail",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0035_prompt",
+        "answer_key": "creative_arts_painting_portraits_0035_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "costume_detail"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0035",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0036",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: object identifying the sitter.",
+      "correct_answer": "Attribute",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0036_prompt",
+        "answer_key": "creative_arts_painting_portraits_0036_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "attribute"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0036",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0037",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: setting adds meaning.",
+      "correct_answer": "Background Symbolism",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0037_prompt",
+        "answer_key": "creative_arts_painting_portraits_0037_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "background_symbolism"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0037",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0038",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: emotion shown by the face.",
+      "correct_answer": "Facial Expression",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0038_prompt",
+        "answer_key": "creative_arts_painting_portraits_0038_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "facial_expression"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0038",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0039",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: light models facial form.",
+      "correct_answer": "Portrait Lighting",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0039_prompt",
+        "answer_key": "creative_arts_painting_portraits_0039_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "portrait_lighting"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0039",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0040",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: small portable likeness.",
+      "correct_answer": "Miniature Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0040_prompt",
+        "answer_key": "creative_arts_painting_portraits_0040_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "miniature_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0040",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0041",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means artist depicts themselves?",
+      "correct_answer": "Self-Portrait",
+      "distractors": [
+        "Profile Portrait",
+        "Three-Quarter View",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0041_prompt",
+        "answer_key": "creative_arts_painting_portraits_0041_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "self_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0041",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0042",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means side view of a face?",
+      "correct_answer": "Profile Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Three-Quarter View",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0042_prompt",
+        "answer_key": "creative_arts_painting_portraits_0042_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "profile_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0042",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0043",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means face turned partly toward viewer?",
+      "correct_answer": "Three-Quarter View",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0043_prompt",
+        "answer_key": "creative_arts_painting_portraits_0043_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "three_quarter_view"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0043",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0044",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means head and shoulders portrait?",
+      "correct_answer": "Bust Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0044_prompt",
+        "answer_key": "creative_arts_painting_portraits_0044_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "bust_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0044",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0045",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means whole body portrait?",
+      "correct_answer": "Full-Length Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0045_prompt",
+        "answer_key": "creative_arts_painting_portraits_0045_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "full_length_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0045",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0046",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means multiple people portrayed together?",
+      "correct_answer": "Group Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0046_prompt",
+        "answer_key": "creative_arts_painting_portraits_0046_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "group_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0046",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0047",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means portrait made for a patron?",
+      "correct_answer": "Commissioned Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0047_prompt",
+        "answer_key": "creative_arts_painting_portraits_0047_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "commissioned_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0047",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0048",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means image emphasizing monarchy or power?",
+      "correct_answer": "Royal Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0048_prompt",
+        "answer_key": "creative_arts_painting_portraits_0048_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "royal_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0048",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0049",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means portrait emphasizing inner mood?",
+      "correct_answer": "Psychological Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0049_prompt",
+        "answer_key": "creative_arts_painting_portraits_0049_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "psychological_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0049",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0050",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means flattering perfected likeness?",
+      "correct_answer": "Idealized Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0050_prompt",
+        "answer_key": "creative_arts_painting_portraits_0050_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "idealized_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0050",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0051",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means unidealized likeness?",
+      "correct_answer": "Realist Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0051_prompt",
+        "answer_key": "creative_arts_painting_portraits_0051_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "realist_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0051",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0052",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means arranged dignified posture?",
+      "correct_answer": "Formal Pose",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0052_prompt",
+        "answer_key": "creative_arts_painting_portraits_0052_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "formal_pose"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0052",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0053",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means relaxed natural posture?",
+      "correct_answer": "Informal Pose",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0053_prompt",
+        "answer_key": "creative_arts_painting_portraits_0053_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "informal_pose"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0053",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0054",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means subject looks toward viewer?",
+      "correct_answer": "Eye Contact",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0054_prompt",
+        "answer_key": "creative_arts_painting_portraits_0054_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "eye_contact"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0054",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0055",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means clothing reveals status or identity?",
+      "correct_answer": "Costume Detail",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0055_prompt",
+        "answer_key": "creative_arts_painting_portraits_0055_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "costume_detail"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0055",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0056",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means object identifying the sitter?",
+      "correct_answer": "Attribute",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0056_prompt",
+        "answer_key": "creative_arts_painting_portraits_0056_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "attribute"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0056",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0057",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means setting adds meaning?",
+      "correct_answer": "Background Symbolism",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0057_prompt",
+        "answer_key": "creative_arts_painting_portraits_0057_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "background_symbolism"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0057",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0058",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means emotion shown by the face?",
+      "correct_answer": "Facial Expression",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0058_prompt",
+        "answer_key": "creative_arts_painting_portraits_0058_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "facial_expression"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0058",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0059",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means light models facial form?",
+      "correct_answer": "Portrait Lighting",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0059_prompt",
+        "answer_key": "creative_arts_painting_portraits_0059_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "portrait_lighting"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0059",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0060",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means small portable likeness?",
+      "correct_answer": "Miniature Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0060_prompt",
+        "answer_key": "creative_arts_painting_portraits_0060_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "miniature_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0060",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0061",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: artist depicts themselves.",
+      "correct_answer": "Self-Portrait",
+      "distractors": [
+        "Profile Portrait",
+        "Three-Quarter View",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0061_prompt",
+        "answer_key": "creative_arts_painting_portraits_0061_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "self_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0061",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0062",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: side view of a face.",
+      "correct_answer": "Profile Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Three-Quarter View",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0062_prompt",
+        "answer_key": "creative_arts_painting_portraits_0062_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "profile_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0062",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0063",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: face turned partly toward viewer.",
+      "correct_answer": "Three-Quarter View",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Bust Portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0063_prompt",
+        "answer_key": "creative_arts_painting_portraits_0063_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "three_quarter_view"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0063",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0064",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: head and shoulders portrait.",
+      "correct_answer": "Bust Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0064_prompt",
+        "answer_key": "creative_arts_painting_portraits_0064_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "bust_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0064",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0065",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: whole body portrait.",
+      "correct_answer": "Full-Length Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0065_prompt",
+        "answer_key": "creative_arts_painting_portraits_0065_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "full_length_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0065",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0066",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: multiple people portrayed together.",
+      "correct_answer": "Group Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0066_prompt",
+        "answer_key": "creative_arts_painting_portraits_0066_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "group_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0066",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0067",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: portrait made for a patron.",
+      "correct_answer": "Commissioned Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0067_prompt",
+        "answer_key": "creative_arts_painting_portraits_0067_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "commissioned_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0067",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0068",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: image emphasizing monarchy or power.",
+      "correct_answer": "Royal Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0068_prompt",
+        "answer_key": "creative_arts_painting_portraits_0068_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "royal_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0068",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0069",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: portrait emphasizing inner mood.",
+      "correct_answer": "Psychological Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0069_prompt",
+        "answer_key": "creative_arts_painting_portraits_0069_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "psychological_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0069",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0070",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: flattering perfected likeness.",
+      "correct_answer": "Idealized Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0070_prompt",
+        "answer_key": "creative_arts_painting_portraits_0070_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "idealized_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0070",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0071",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: unidealized likeness.",
+      "correct_answer": "Realist Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0071_prompt",
+        "answer_key": "creative_arts_painting_portraits_0071_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "realist_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0071",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0072",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: arranged dignified posture.",
+      "correct_answer": "Formal Pose",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0072_prompt",
+        "answer_key": "creative_arts_painting_portraits_0072_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "formal_pose"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0072",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0073",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: relaxed natural posture.",
+      "correct_answer": "Informal Pose",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0073_prompt",
+        "answer_key": "creative_arts_painting_portraits_0073_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "informal_pose"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0073",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0074",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: subject looks toward viewer.",
+      "correct_answer": "Eye Contact",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0074_prompt",
+        "answer_key": "creative_arts_painting_portraits_0074_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "eye_contact"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0074",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0075",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: clothing reveals status or identity.",
+      "correct_answer": "Costume Detail",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0075_prompt",
+        "answer_key": "creative_arts_painting_portraits_0075_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "costume_detail"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0075",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0076",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: object identifying the sitter.",
+      "correct_answer": "Attribute",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0076_prompt",
+        "answer_key": "creative_arts_painting_portraits_0076_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "attribute"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0076",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0077",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: setting adds meaning.",
+      "correct_answer": "Background Symbolism",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0077_prompt",
+        "answer_key": "creative_arts_painting_portraits_0077_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "background_symbolism"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0077",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0078",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: emotion shown by the face.",
+      "correct_answer": "Facial Expression",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0078_prompt",
+        "answer_key": "creative_arts_painting_portraits_0078_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "facial_expression"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0078",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0079",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: light models facial form.",
+      "correct_answer": "Portrait Lighting",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0079_prompt",
+        "answer_key": "creative_arts_painting_portraits_0079_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "portrait_lighting"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0079",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0080",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: small portable likeness.",
+      "correct_answer": "Miniature Portrait",
+      "distractors": [
+        "Self-Portrait",
+        "Profile Portrait",
+        "Three-Quarter View"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0080_prompt",
+        "answer_key": "creative_arts_painting_portraits_0080_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "miniature_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0080",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0081",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Self-Portrait is best described as what?",
+      "correct_answer": "artist depicts themselves",
+      "distractors": [
+        "side view of a face",
+        "face turned partly toward viewer",
+        "head and shoulders portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0081_prompt",
+        "answer_key": "creative_arts_painting_portraits_0081_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "artist_depicts_themselves"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0081",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0082",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Profile Portrait is best described as what?",
+      "correct_answer": "side view of a face",
+      "distractors": [
+        "artist depicts themselves",
+        "face turned partly toward viewer",
+        "head and shoulders portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0082_prompt",
+        "answer_key": "creative_arts_painting_portraits_0082_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "side_view_of_a_face"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0082",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0083",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Three-Quarter View is best described as what?",
+      "correct_answer": "face turned partly toward viewer",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "head and shoulders portrait"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0083_prompt",
+        "answer_key": "creative_arts_painting_portraits_0083_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "face_turned_partly_toward_viewer"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0083",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0084",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Bust Portrait is best described as what?",
+      "correct_answer": "head and shoulders portrait",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0084_prompt",
+        "answer_key": "creative_arts_painting_portraits_0084_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "head_and_shoulders_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0084",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0085",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Full-Length Portrait is best described as what?",
+      "correct_answer": "whole body portrait",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0085_prompt",
+        "answer_key": "creative_arts_painting_portraits_0085_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "whole_body_portrait"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0085",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0086",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Group Portrait is best described as what?",
+      "correct_answer": "multiple people portrayed together",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0086_prompt",
+        "answer_key": "creative_arts_painting_portraits_0086_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "multiple_people_portrayed_together"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0086",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0087",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Commissioned Portrait is best described as what?",
+      "correct_answer": "portrait made for a patron",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0087_prompt",
+        "answer_key": "creative_arts_painting_portraits_0087_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "portrait_made_for_a_patron"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0087",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0088",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Royal Portrait is best described as what?",
+      "correct_answer": "image emphasizing monarchy or power",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0088_prompt",
+        "answer_key": "creative_arts_painting_portraits_0088_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "image_emphasizing_monarchy_or_power"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0088",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0089",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Psychological Portrait is best described as what?",
+      "correct_answer": "portrait emphasizing inner mood",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0089_prompt",
+        "answer_key": "creative_arts_painting_portraits_0089_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "portrait_emphasizing_inner_mood"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0089",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0090",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Idealized Portrait is best described as what?",
+      "correct_answer": "flattering perfected likeness",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0090_prompt",
+        "answer_key": "creative_arts_painting_portraits_0090_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "flattering_perfected_likeness"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0090",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0091",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Realist Portrait is best described as what?",
+      "correct_answer": "unidealized likeness",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0091_prompt",
+        "answer_key": "creative_arts_painting_portraits_0091_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "unidealized_likeness"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0091",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0092",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Formal Pose is best described as what?",
+      "correct_answer": "arranged dignified posture",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0092_prompt",
+        "answer_key": "creative_arts_painting_portraits_0092_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "arranged_dignified_posture"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0092",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0093",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Informal Pose is best described as what?",
+      "correct_answer": "relaxed natural posture",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0093_prompt",
+        "answer_key": "creative_arts_painting_portraits_0093_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "relaxed_natural_posture"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0093",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0094",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Eye Contact is best described as what?",
+      "correct_answer": "subject looks toward viewer",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0094_prompt",
+        "answer_key": "creative_arts_painting_portraits_0094_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "subject_looks_toward_viewer"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0094",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0095",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Costume Detail is best described as what?",
+      "correct_answer": "clothing reveals status or identity",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0095_prompt",
+        "answer_key": "creative_arts_painting_portraits_0095_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "clothing_reveals_status_or_identity"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0095",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0096",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Attribute is best described as what?",
+      "correct_answer": "object identifying the sitter",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0096_prompt",
+        "answer_key": "creative_arts_painting_portraits_0096_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "object_identifying_the_sitter"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0096",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0097",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Background Symbolism is best described as what?",
+      "correct_answer": "setting adds meaning",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0097_prompt",
+        "answer_key": "creative_arts_painting_portraits_0097_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "setting_adds_meaning"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0097",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0098",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Facial Expression is best described as what?",
+      "correct_answer": "emotion shown by the face",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0098_prompt",
+        "answer_key": "creative_arts_painting_portraits_0098_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "emotion_shown_by_the_face"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0098",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0099",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Portrait Lighting is best described as what?",
+      "correct_answer": "light models facial form",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0099_prompt",
+        "answer_key": "creative_arts_painting_portraits_0099_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "light_models_facial_form"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0099",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_portraits_0100",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "portraits",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Miniature Portrait is best described as what?",
+      "correct_answer": "small portable likeness",
+      "distractors": [
+        "artist depicts themselves",
+        "side view of a face",
+        "face turned partly toward viewer"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_portraits_0100_prompt",
+        "answer_key": "creative_arts_painting_portraits_0100_answer"
+      },
+      "metadata": {
+        "tags": [
+          "portraits",
+          "small_portable_likeness"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_portraits_0100",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "universe": "creative_arts",
+  "world": "photography",
+  "display_name": "Photography",
+  "subcategory_order": [
+    "cameras",
+    "lenses",
+    "lighting",
+    "composition",
+    "portrait_photography",
+    "wildlife_photography",
+    "landscape_photography",
+    "street_photography",
+    "famous_photographers",
+    "editing"
+  ],
+  "subcategories": [
+    {
+      "id": "cameras",
+      "display_name": "Cameras",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "lenses",
+      "display_name": "Lenses",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "lighting",
+      "display_name": "Lighting",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "composition",
+      "display_name": "Composition",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "portrait_photography",
+      "display_name": "Portrait Photography",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "wildlife_photography",
+      "display_name": "Wildlife Photography",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "landscape_photography",
+      "display_name": "Landscape Photography",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "street_photography",
+      "display_name": "Street Photography",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "famous_photographers",
+      "display_name": "Famous Photographers",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "editing",
+      "display_name": "Editing",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    }
+  ],
+  "status": "metadata_only_pending_full_observation_bank"
+}

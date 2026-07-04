@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "universe": "creative_arts",
+  "world": "digital_art",
+  "display_name": "Digital Art",
+  "subcategory_order": [
+    "digital_painting",
+    "pixel_art",
+    "vector_art",
+    "concept_art",
+    "3d_art",
+    "character_art",
+    "environment_art",
+    "ui_art",
+    "game_art",
+    "ai_art"
+  ],
+  "subcategories": [
+    {
+      "id": "digital_painting",
+      "display_name": "Digital Painting",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "stroop_test"
+        ],
+        "secondary": [
+          "odd_one_out",
+          "memory_cascade",
+          "sequence_reverse"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "pixel_art",
+      "display_name": "Pixel Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "vector_art",
+      "display_name": "Vector Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "concept_art",
+      "display_name": "Concept Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "3d_art",
+      "display_name": "3D Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "character_art",
+      "display_name": "Character Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "environment_art",
+      "display_name": "Environment Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "ui_art",
+      "display_name": "UI Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "game_art",
+      "display_name": "Game Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "ai_art",
+      "display_name": "AI Art",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    }
+  ],
+  "status": "metadata_only_pending_full_observation_bank"
+}

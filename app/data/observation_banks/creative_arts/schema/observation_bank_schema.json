@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "required_observation_fields": [
+    "observation_id",
+    "universe",
+    "world",
+    "subcategory",
+    "difficulty",
+    "observation_type",
+    "prompt",
+    "correct_answer",
+    "distractors",
+    "localization",
+    "metadata"
+  ],
+  "scenario_preference_fields": [
+    "preferred",
+    "secondary",
+    "rare",
+    "disabled"
+  ]
+}

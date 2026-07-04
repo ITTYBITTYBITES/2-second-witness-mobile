@@ -4,6 +4,7 @@ extends Node
 
 const BASE_BUNDLE_PATH = "res://data/content/base_bundle/"
 const USER_CACHE_PATH = "user://live_content/"
+const OBSERVATION_BANK_PATH = "res://data/observation_banks/"
 
 var _is_indexed: bool = false
 var _indexed_files: Dictionary = {} # [universe_id][world_id] = Array[String]
@@ -28,6 +29,7 @@ func ensure_indexed():
 	if DirAccess.dir_exists_absolute(USER_CACHE_PATH + "patches/"):
 		print("[CONTENT LOADER] OTA Patch paths detected. Indexing patch overrides...")
 		_crawl_index(USER_CACHE_PATH + "patches/")
+	_index_observation_bank_manifests(OBSERVATION_BANK_PATH)
 
 	_is_indexed = true
 	print("[CONTENT LOADER] Path index ready: ", _indexed_world_count, " worlds / ", _indexed_file_count, " JSON files. Payloads remain lazy.")
@@ -113,6 +115,49 @@ func _index_file_path(path: String):
 
 	_indexed_files[u_id][w_id].append(path)
 	_indexed_file_count += 1
+
+func _index_observation_bank_manifests(path: String):
+	var dir = DirAccess.open(path)
+	if not dir:
+		return
+	dir.list_dir_begin()
+	var file_name = dir.get_next()
+	while file_name != "":
+		if file_name == "." or file_name == "..":
+			file_name = dir.get_next()
+			continue
+		var full_path = _normalize_path(path + "/" + file_name)
+		if dir.current_is_dir():
+			_index_observation_bank_manifests(full_path)
+		elif file_name == "world_manifest.json":
+			_load_world_manifest(full_path)
+		file_name = dir.get_next()
+
+func _load_world_manifest(path: String):
+	var file = FileAccess.open(path, FileAccess.READ)
+	if not file:
+		return
+	var json = JSON.new()
+	if json.parse(file.get_as_text()) != OK:
+		file.close()
+		return
+	file.close()
+	var data = json.get_data()
+	if typeof(data) != TYPE_DICTIONARY:
+		return
+	if registry == null: registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
+	if registry == null:
+		return
+	var u_id = data.get("universe", "")
+	var w_id = data.get("world", "")
+	if u_id == "" or w_id == "":
+		return
+	if registry.has_method("register_world"):
+		registry.register_world(u_id, w_id, data)
+	if registry.has_method("register_subcategory"):
+		for sub in data.get("subcategories", []):
+			if sub is Dictionary and sub.has("id"):
+				registry.register_subcategory(u_id, w_id, sub["id"], sub)
 
 func _load_and_register_file(path: String):
 	var file = FileAccess.open(path, FileAccess.READ)

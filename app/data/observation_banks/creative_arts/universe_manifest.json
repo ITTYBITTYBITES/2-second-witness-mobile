@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "universe": "creative_arts",
+  "display_name": "Creative Arts",
+  "world_order": [
+    "painting",
+    "drawing",
+    "photography",
+    "digital_art",
+    "animation",
+    "movies_cinematography",
+    "graphic_design",
+    "fashion",
+    "architecture",
+    "interior_design",
+    "comics_manga",
+    "street_art",
+    "famous_artists",
+    "art_history",
+    "sculpture",
+    "crafts_diy",
+    "pottery_ceramics",
+    "tattoos_body_art",
+    "calligraphy_lettering",
+    "creative_technology"
+  ],
+  "architecture": "Universe > World > Subcategory > Observation Bank",
+  "implementation_status": {
+    "painting": "complete_template",
+    "remaining_worlds": "metadata_scaffold_pending_full_banks"
+  }
+}

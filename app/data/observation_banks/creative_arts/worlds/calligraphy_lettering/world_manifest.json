@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "universe": "creative_arts",
+  "world": "calligraphy_lettering",
+  "display_name": "Calligraphy Lettering",
+  "subcategory_order": [
+    "brush_lettering",
+    "gothic_script",
+    "copperplate",
+    "hand_lettering",
+    "sign_painting",
+    "typography_basics",
+    "ink_tools",
+    "decorative_initials",
+    "world_scripts",
+    "modern_calligraphy"
+  ],
+  "subcategories": [
+    {
+      "id": "brush_lettering",
+      "display_name": "Brush Lettering",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "gothic_script",
+      "display_name": "Gothic Script",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "copperplate",
+      "display_name": "Copperplate",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "hand_lettering",
+      "display_name": "Hand Lettering",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "sign_painting",
+      "display_name": "Sign Painting",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "stroop_test"
+        ],
+        "secondary": [
+          "odd_one_out",
+          "memory_cascade",
+          "sequence_reverse"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "typography_basics",
+      "display_name": "Typography Basics",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "ink_tools",
+      "display_name": "Ink Tools",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "stroop_test"
+        ],
+        "secondary": [
+          "odd_one_out",
+          "memory_cascade",
+          "sequence_reverse"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "decorative_initials",
+      "display_name": "Decorative Initials",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "world_scripts",
+      "display_name": "World Scripts",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "modern_calligraphy",
+      "display_name": "Modern Calligraphy",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    }
+  ],
+  "status": "metadata_only_pending_full_observation_bank"
+}

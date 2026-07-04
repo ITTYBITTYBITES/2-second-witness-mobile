@@ -6,33 +6,33 @@
     "mesh": "mesh_fashion",
     "fog_density": 0.7,
     "colors": {
-      "primary": "#9B59B6",
-      "bg": "#080814",
-      "accent": "#00FFFF"
+      "primary": "#E6B800",
+      "bg": "#1A0B1C",
+      "accent": "#B833FF"
     }
   },
   "tunnel": {
-    "density": 0.7,
-    "speed_multiplier": 1.3,
-    "flow_type": "vortex"
+    "density": 0.65,
+    "speed_multiplier": 1.05,
+    "flow_type": "branching"
   },
   "audio": {
-    "ambience": "quantum_hum",
-    "ui_stem": "digital_ping"
+    "ambience": "ambience_creative_arts",
+    "ui_stem": "ui_click"
   },
   "typography": {
     "font": "instrument_bold",
-    "spacing": 1.5
+    "spacing": 1.35
   },
   "animation": {
-    "camera_sway": 1.2,
+    "camera_sway": 1.1,
     "transition_ms": 850
   },
   "ui": {
-    "glass_opacity": 0.9,
-    "border_color": "#9B59B6"
+    "glass_opacity": 0.86,
+    "border_color": "#E6B800"
   },
   "feedback": {
-    "style": "verified_observation"
+    "style": "creative_observation"
   }
 }

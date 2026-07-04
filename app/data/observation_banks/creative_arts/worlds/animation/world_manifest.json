@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "universe": "creative_arts",
+  "world": "animation",
+  "display_name": "Animation",
+  "subcategory_order": [
+    "disney",
+    "pixar",
+    "anime",
+    "stop_motion",
+    "2d_animation",
+    "3d_animation",
+    "cartoon_characters",
+    "animation_principles",
+    "animation_studios",
+    "visual_effects"
+  ],
+  "subcategories": [
+    {
+      "id": "disney",
+      "display_name": "Disney",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "pixar",
+      "display_name": "Pixar",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "anime",
+      "display_name": "Anime",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "stop_motion",
+      "display_name": "Stop Motion",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "2d_animation",
+      "display_name": "2D Animation",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "3d_animation",
+      "display_name": "3D Animation",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "cartoon_characters",
+      "display_name": "Cartoon Characters",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "animation_principles",
+      "display_name": "Animation Principles",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "animation_studios",
+      "display_name": "Animation Studios",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    },
+    {
+      "id": "visual_effects",
+      "display_name": "Visual Effects",
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
+      },
+      "target_observations": 100,
+      "implemented_observations": 0
+    }
+  ],
+  "status": "metadata_only_pending_full_observation_bank"
+}

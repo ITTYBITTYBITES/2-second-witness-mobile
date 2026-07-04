@@ -36,10 +36,11 @@ func set_adaptive_mode():
 	active_world_id = ""
 	print("[NAVIGATION STATE] Mode set to Adaptive Guided Progression.")
 
-func lock_transition_context(u_id: String, w_id: String, s_id: String, c_id: String, seed_val: int) -> Dictionary:
+func lock_transition_context(u_id: String, w_id: String, s_id: String, c_id: String, seed_val: int, subcategory_id: String = "") -> Dictionary:
 	current_transition_context = {
 		"universe_id": u_id,
 		"world_id": w_id,
+		"subcategory_id": subcategory_id,
 		"scenario_id": s_id,
 		"chunk_id": c_id,
 		"deterministic_seed": seed_val

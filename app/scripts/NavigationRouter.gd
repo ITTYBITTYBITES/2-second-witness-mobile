@@ -17,6 +17,7 @@ var current_screen_name: String = ""
 var previous_screen_name: String = ""
 var active_universe_selection: String = "science_lab"
 var active_world_selection: String = ""
+var active_subcategory_selection: String = ""
 var active_scenario_selection: String = ""
 var current_scenario_chain_index: int = 1
 
@@ -377,10 +378,11 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 	var w_id = normalize_id(world_id)
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "external_call", "_on_world_selected(" + u_id + ", " + w_id + ")")
-	print("[ROUTER] World Selected: ", u_id, " -> ", w_id, ". Opening ScenarioSelectScreen.")
+	print("[ROUTER] World Selected: ", u_id, " -> ", w_id, ". Opening SubcategorySelectScreen.")
 	_is_transitioning_to_landing = false
 	active_universe_selection = u_id
 	active_world_selection = w_id
+	active_subcategory_selection = ""
 	active_scenario_selection = ""
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
@@ -388,10 +390,10 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 		active_secondary_screen.queue_free()
 		active_secondary_screen = null
 
-	var scenario_scene = load("res://scenes/ui/screens/ScenarioSelectScreen.tscn")
+	var scenario_scene = load("res://scenes/ui/screens/SubcategorySelectScreen.tscn")
 	if scenario_scene:
 		active_secondary_screen = scenario_scene.instantiate()
-		active_secondary_screen.name = "ScenarioSelectScreen"
+		active_secondary_screen.name = "SubcategorySelectScreen"
 		if modal_mgr:
 			modal_mgr.push_modal(active_secondary_screen, true, "NavigationRouter")
 		else:
@@ -399,22 +401,44 @@ func _on_world_selected(universe_id: Variant, world_id: Variant):
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 			if ui_layer: ui_layer.add_child(active_secondary_screen)
 		active_secondary_screen.setup(u_id, w_id)
-		_update_nav_log("ScenarioSelectScreen", false)
+		_update_nav_log("SubcategorySelectScreen", false)
 		active_secondary_screen.return_requested.connect(func(): _on_play_universe_requested(u_id))
-		active_secondary_screen.scenario_selected.connect(_on_scenario_selected)
+		active_secondary_screen.subcategory_selected.connect(_on_subcategory_selected)
 
-func _on_scenario_selected(universe_id: Variant, world_id: Variant, scenario_type: Variant):
+func _on_subcategory_selected(universe_id: Variant, world_id: Variant, subcategory_id: Variant):
 	var u_id = normalize_id(universe_id)
 	var w_id = normalize_id(world_id)
+	var sub_id = normalize_id(subcategory_id)
+	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	var sub_meta = registry.get_subcategory_metadata(u_id, w_id, sub_id) if (registry and registry.has_method("get_subcategory_metadata")) else {}
+	var available_types = registry.get_available_types_in_subcategory(u_id, w_id, sub_id) if (registry and registry.has_method("get_available_types_in_subcategory")) else []
+	var preferred = sub_meta.get("scenario_preferences", {}).get("preferred", [])
+	var selected_type = ""
+	for candidate in preferred:
+		if available_types.has(normalize_id(candidate)):
+			selected_type = normalize_id(candidate)
+			break
+	if selected_type == "" and not available_types.is_empty():
+		selected_type = normalize_id(available_types[0])
+	if selected_type == "":
+		print("[ROUTER] No installed observation bank for subcategory: ", sub_id)
+		return
+	_on_scenario_selected(u_id, w_id, sub_id, selected_type)
+
+func _on_scenario_selected(universe_id: Variant, world_id: Variant, subcategory_id: Variant, scenario_type: Variant):
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	var sub_id = normalize_id(subcategory_id)
 	var s_type = normalize_id(scenario_type)
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
-		StructuredLogger.log_event_trace(self, "external_call", "_on_scenario_selected(" + u_id + ", " + w_id + ", " + s_type + ")")
-	print("[ROUTER] Scenario Selected: ", u_id, " -> ", w_id, " -> ", s_type)
+		StructuredLogger.log_event_trace(self, "external_call", "_on_scenario_selected(" + u_id + ", " + w_id + ", " + sub_id + ", " + s_type + ")")
+	print("[ROUTER] Scenario Auto-Selected: ", u_id, " -> ", w_id, " -> ", sub_id, " -> ", s_type)
 	_is_transitioning_to_landing = false
 	_is_transition_completed = false
 	current_scenario_chain_index = 1
 	active_universe_selection = u_id
 	active_world_selection = w_id
+	active_subcategory_selection = sub_id
 	active_scenario_selection = s_type
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
@@ -458,7 +482,7 @@ func _on_scenario_selected(universe_id: Variant, world_id: Variant, scenario_typ
 	var nav_state = NavigationState if NavigationState else get_tree().root.get_node_or_null("NavigationState")
 	var s_seed = str(profile.lifetime_sessions if profile else 0).hash()
 	if nav_state and nav_state.has_method("lock_transition_context"):
-		nav_state.lock_transition_context(u_id, w_id, s_type, "0", s_seed)
+		nav_state.lock_transition_context(u_id, w_id, s_type, "0", s_seed, sub_id)
 
 	print("[SCENARIO ENGINE] Scenario 1 Ready: ", s_type.capitalize().replace("_", " "))
 	handle_navigation_event({"type": "portal_selected"})
@@ -471,6 +495,7 @@ func handle_navigation_event(event: Dictionary):
 		
 		var u_id = ctx.get("universe_id", "history")
 		var w_id = ctx.get("world_id", "ancient_egypt")
+		var sub_id = ctx.get("subcategory_id", "")
 		var s_id = ctx.get("scenario_id", "memory_cascade")
 		var c_id = ctx.get("chunk_id", "0")
 		var d_seed = ctx.get("deterministic_seed", 12345)
@@ -483,11 +508,11 @@ func handle_navigation_event(event: Dictionary):
 		var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 		
 		var seed_str = str(d_seed) + u_id + w_id
-		var scenario_payload = registry.resolve_scenario(u_id, w_id, s_id, seed_str) if registry else {}
+		var scenario_payload = registry.resolve_scenario(u_id, w_id, s_id, seed_str, sub_id) if registry else {}
 		
 		if scenario_payload.is_empty():
 			scenario_payload = {
-				"id": s_id, "universe": u_id, "world": w_id, "type": s_id,
+				"id": s_id, "universe": u_id, "world": w_id, "subcategory": sub_id, "type": s_id,
 				"rules": {"sequence_length": 3, "correct_answer": "Eye of Horus", "wrong_answers": ["Ankh", "Scarab", "Djed"], "legacy_prompt": "DEITY SYMBOL"}
 			}
 			
@@ -546,6 +571,7 @@ func _on_cascade_completed():
 		var old_ctx = nav_state.get_transition_context() if (nav_state and nav_state.has_method("get_transition_context")) else {}
 		var u_id = old_ctx.get("universe_id", active_universe_selection)
 		var w_id = old_ctx.get("world_id", "ancient_egypt")
+		var sub_id = old_ctx.get("subcategory_id", active_subcategory_selection)
 		
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
@@ -554,7 +580,7 @@ func _on_cascade_completed():
 		
 		var s_seed = str(profile.lifetime_sessions if profile else 0).hash() + current_scenario_chain_index
 		if nav_state and nav_state.has_method("lock_transition_context"):
-			nav_state.lock_transition_context(u_id, w_id, next_spike, str(current_scenario_chain_index), s_seed)
+			nav_state.lock_transition_context(u_id, w_id, next_spike, str(current_scenario_chain_index), s_seed, sub_id)
 			
 		print("[SCENARIO ENGINE] Scenario ", current_scenario_chain_index, " Ready: ", next_spike.capitalize().replace("_", " "))
 		handle_navigation_event({"type": "portal_selected"})

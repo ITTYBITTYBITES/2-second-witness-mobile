@@ -4,35 +4,35 @@
   "world": "architecture",
   "lens": {
     "mesh": "mesh_architecture",
-    "fog_density": 0.8,
+    "fog_density": 0.58,
     "colors": {
-      "primary": "#FF007F",
-      "bg": "#050010",
-      "accent": "#00F0FF"
+      "primary": "#B833FF",
+      "bg": "#180A22",
+      "accent": "#D175FF"
     }
   },
   "tunnel": {
-    "density": 0.8,
-    "speed_multiplier": 1.4,
-    "flow_type": "linear"
+    "density": 0.7000000000000001,
+    "speed_multiplier": 1.1,
+    "flow_type": "vortex"
   },
   "audio": {
-    "ambience": "cosmic_radiation",
-    "ui_stem": "warp_zap"
+    "ambience": "ambience_creative_arts",
+    "ui_stem": "ui_click"
   },
   "typography": {
     "font": "instrument_bold",
-    "spacing": 1.5
+    "spacing": 1.35
   },
   "animation": {
-    "camera_sway": 1.2,
+    "camera_sway": 1.1,
     "transition_ms": 850
   },
   "ui": {
-    "glass_opacity": 0.9,
-    "border_color": "#FF007F"
+    "glass_opacity": 0.86,
+    "border_color": "#B833FF"
   },
   "feedback": {
-    "style": "verified_observation"
+    "style": "creative_observation"
   }
 }

@@ -1,9 +1,9 @@
 {
   "id": "creative_arts",
   "display_name": "Creative Arts",
-  "world": "photography",
+  "world": "calligraphy_lettering",
   "lens": {
-    "mesh": "mesh_photography",
+    "mesh": "mesh_calligraphy_lettering",
     "fog_density": 0.6599999999999999,
     "colors": {
       "primary": "#33CCFF",
@@ -12,8 +12,8 @@
     }
   },
   "tunnel": {
-    "density": 0.65,
-    "speed_multiplier": 1.1,
+    "density": 0.7000000000000001,
+    "speed_multiplier": 1.0,
     "flow_type": "linear"
   },
   "audio": {

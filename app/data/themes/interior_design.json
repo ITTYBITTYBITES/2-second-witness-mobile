@@ -1,20 +1,20 @@
 {
   "id": "creative_arts",
   "display_name": "Creative Arts",
-  "world": "photography",
+  "world": "interior_design",
   "lens": {
-    "mesh": "mesh_photography",
-    "fog_density": 0.6599999999999999,
+    "mesh": "mesh_interior_design",
+    "fog_density": 0.62,
     "colors": {
-      "primary": "#33CCFF",
-      "bg": "#081218",
-      "accent": "#FFBC42"
+      "primary": "#F72585",
+      "bg": "#120818",
+      "accent": "#4CC9F0"
     }
   },
   "tunnel": {
-    "density": 0.65,
-    "speed_multiplier": 1.1,
-    "flow_type": "linear"
+    "density": 0.75,
+    "speed_multiplier": 1.0,
+    "flow_type": "wave"
   },
   "audio": {
     "ambience": "ambience_creative_arts",
@@ -30,7 +30,7 @@
   },
   "ui": {
     "glass_opacity": 0.86,
-    "border_color": "#33CCFF"
+    "border_color": "#F72585"
   },
   "feedback": {
     "style": "creative_observation"

@@ -42,13 +42,16 @@ func _refresh_payload_for_current_trial():
 	var u_id = normalize_id(_scenario_payload.get("universe", ""))
 	var w_id = normalize_id(_scenario_payload.get("world", ""))
 	var t_id = normalize_id(_scenario_payload.get("type", ""))
+	var sub_id = normalize_id(_scenario_payload.get("subcategory", _scenario_payload.get("presentation", {}).get("subcategory", "")))
 	if u_id == "" or w_id == "" or t_id == "":
 		return
 	var all_items = registry.get_all_scenarios_in_world(u_id, w_id)
 	var pool: Array = []
 	for item in all_items:
 		if item is Dictionary and normalize_id(item.get("type", "")) == t_id:
-			pool.append(item)
+			var item_sub = normalize_id(item.get("subcategory", item.get("presentation", {}).get("subcategory", "")))
+			if sub_id == "" or item_sub == sub_id:
+				pool.append(item)
 	if pool.size() <= 1:
 		return
 	var start_idx = abs((normalize_id(_deterministic_rng.seed if _deterministic_rng else 0) + ":" + t_id + ":" + str(current_trial)).hash()) % pool.size()
@@ -66,6 +69,8 @@ func _refresh_payload_for_current_trial():
 	_scenario_payload["universe"] = u_id
 	_scenario_payload["world"] = w_id
 	_scenario_payload["type"] = t_id
+	if sub_id != "":
+		_scenario_payload["subcategory"] = sub_id
 	_remember_current_content_id()
 	_last_payload_refresh_trial = current_trial
 	var engine = get_node_or_null("/root/ScenarioExecutionEngine")
@@ -80,10 +85,13 @@ func _cap_target_trials_to_available_content():
 	var u_id = normalize_id(_scenario_payload.get("universe", ""))
 	var w_id = normalize_id(_scenario_payload.get("world", ""))
 	var t_id = normalize_id(_scenario_payload.get("type", ""))
+	var sub_id = normalize_id(_scenario_payload.get("subcategory", _scenario_payload.get("presentation", {}).get("subcategory", "")))
 	var count = 0
 	for item in registry.get_all_scenarios_in_world(u_id, w_id):
 		if item is Dictionary and normalize_id(item.get("type", "")) == t_id:
-			count += 1
+			var item_sub = normalize_id(item.get("subcategory", item.get("presentation", {}).get("subcategory", "")))
+			if sub_id == "" or item_sub == sub_id:
+				count += 1
 	if count > 0 and target_trials > count:
 		target_trials = count
 		if current_trial > target_trials:
@@ -127,6 +135,8 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 	_scenario_payload["universe"] = normalize_id(payload.get("universe", "unknown"))
 	_scenario_payload["world"] = normalize_id(payload.get("world", "unknown"))
 	_scenario_payload["type"] = normalize_id(payload.get("type", "unknown"))
+	if payload.has("subcategory"):
+		_scenario_payload["subcategory"] = normalize_id(payload.get("subcategory", ""))
 	_remember_current_content_id()
 
 	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null

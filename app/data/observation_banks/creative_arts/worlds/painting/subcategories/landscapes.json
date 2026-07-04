@@ -1,0 +1,6032 @@
+{
+  "schema_version": 1,
+  "observation_bank_version": "creative_arts.v1.painting",
+  "universe": "creative_arts",
+  "world": "painting",
+  "subcategory": "landscapes",
+  "display_name": "Landscapes",
+  "scenario_preferences": {
+    "preferred": [
+      "rapid_classification",
+      "signal_vs_noise",
+      "odd_one_out"
+    ],
+    "secondary": [
+      "memory_cascade",
+      "sequence_reverse",
+      "stroop_test"
+    ],
+    "rare": [
+      "pattern_continuation",
+      "spatial_recall"
+    ],
+    "disabled": [
+      "math_surprise",
+      "risk_selection",
+      "reflex_tap",
+      "speed_sort"
+    ]
+  },
+  "observations": [
+    {
+      "observation_id": "creative_arts_painting_landscapes_0001",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "eye-level boundary in a scene.",
+      "correct_answer": "Horizon Line",
+      "distractors": [
+        "Foreground",
+        "Middle Ground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0001_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0001_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "horizon_line"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0001",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0002",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "nearest part of the landscape.",
+      "correct_answer": "Foreground",
+      "distractors": [
+        "Horizon Line",
+        "Middle Ground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0002_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0002_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "foreground"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0002",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0003",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "space between front and distance.",
+      "correct_answer": "Middle Ground",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0003_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0003_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "middle_ground"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0003",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0004",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "distant part of a scene.",
+      "correct_answer": "Background",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0004_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0004_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "background"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0004",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0005",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "distance shown by haze and blue tones.",
+      "correct_answer": "Atmospheric Perspective",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0005_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0005_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "atmospheric_perspective"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0005",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0006",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "space organized by receding lines.",
+      "correct_answer": "Linear Perspective",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0006_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0006_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "linear_perspective"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0006",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0007",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "painting of the sea.",
+      "correct_answer": "Seascape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0007_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0007_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "seascape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0007",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0008",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "urban landscape.",
+      "correct_answer": "Cityscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0008_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0008_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "cityscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0008",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0009",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "idealized countryside.",
+      "correct_answer": "Pastoral Landscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0009_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0009_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "pastoral_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0009",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0010",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "nature shown as powerful or awe-inspiring.",
+      "correct_answer": "Sublime Landscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0010_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0010_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "sublime_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0010",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0011",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "charming varied landscape view.",
+      "correct_answer": "Picturesque",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0011_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0011_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "picturesque"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0011",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0012",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "painting outdoors.",
+      "correct_answer": "Plein Air",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0012_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0012_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "plein_air"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0012",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0013",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "focused observation of clouds.",
+      "correct_answer": "Cloud Study",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0013_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0013_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "cloud_study"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0013",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0014",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "night landscape mood.",
+      "correct_answer": "Nocturne",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0014_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0014_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "nocturne"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0014",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0015",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "wide sweeping view.",
+      "correct_answer": "Panorama",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0015_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0015_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "panorama"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0015",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0016",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "small figures in a landscape.",
+      "correct_answer": "Staffage",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0016_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0016_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "staffage"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0016",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0017",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "sun or moon direction in the scene.",
+      "correct_answer": "Light Source",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0017_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0017_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "light_source"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0017",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0018",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "mirrored forms in water.",
+      "correct_answer": "Reflections",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0018_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0018_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "reflections"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0018",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0019",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "landform such as hills or rocks.",
+      "correct_answer": "Terrain",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0019_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0019_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "terrain"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0019",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0020",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "rain fog snow or storm.",
+      "correct_answer": "Weather Effect",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0020_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0020_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "weather_effect"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0020",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0021",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: eye-level boundary in a scene.",
+      "correct_answer": "Horizon Line",
+      "distractors": [
+        "Foreground",
+        "Middle Ground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0021_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0021_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "horizon_line"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0021",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0022",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: nearest part of the landscape.",
+      "correct_answer": "Foreground",
+      "distractors": [
+        "Horizon Line",
+        "Middle Ground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0022_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0022_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "foreground"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0022",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0023",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: space between front and distance.",
+      "correct_answer": "Middle Ground",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0023_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0023_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "middle_ground"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0023",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0024",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: distant part of a scene.",
+      "correct_answer": "Background",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0024_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0024_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "background"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0024",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0025",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: distance shown by haze and blue tones.",
+      "correct_answer": "Atmospheric Perspective",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0025_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0025_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "atmospheric_perspective"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0025",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0026",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: space organized by receding lines.",
+      "correct_answer": "Linear Perspective",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0026_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0026_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "linear_perspective"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0026",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0027",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: painting of the sea.",
+      "correct_answer": "Seascape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0027_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0027_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "seascape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0027",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0028",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: urban landscape.",
+      "correct_answer": "Cityscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0028_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0028_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "cityscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0028",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0029",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: idealized countryside.",
+      "correct_answer": "Pastoral Landscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0029_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0029_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "pastoral_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0029",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0030",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: nature shown as powerful or awe-inspiring.",
+      "correct_answer": "Sublime Landscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0030_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0030_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "sublime_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0030",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0031",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: charming varied landscape view.",
+      "correct_answer": "Picturesque",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0031_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0031_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "picturesque"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0031",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0032",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: painting outdoors.",
+      "correct_answer": "Plein Air",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0032_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0032_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "plein_air"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0032",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0033",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: focused observation of clouds.",
+      "correct_answer": "Cloud Study",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0033_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0033_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "cloud_study"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0033",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0034",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: night landscape mood.",
+      "correct_answer": "Nocturne",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0034_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0034_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "nocturne"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0034",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0035",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: wide sweeping view.",
+      "correct_answer": "Panorama",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0035_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0035_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "panorama"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0035",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0036",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: small figures in a landscape.",
+      "correct_answer": "Staffage",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0036_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0036_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "staffage"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0036",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0037",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: sun or moon direction in the scene.",
+      "correct_answer": "Light Source",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0037_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0037_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "light_source"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0037",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0038",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: mirrored forms in water.",
+      "correct_answer": "Reflections",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0038_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0038_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "reflections"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0038",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0039",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: landform such as hills or rocks.",
+      "correct_answer": "Terrain",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0039_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0039_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "terrain"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0039",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0040",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "beginner",
+        "tier": 1
+      },
+      "observation_type": "Tool/Technique Recognition",
+      "prompt": "Identify the art term: rain fog snow or storm.",
+      "correct_answer": "Weather Effect",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0040_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0040_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "weather_effect"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0040",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0041",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means eye-level boundary in a scene?",
+      "correct_answer": "Horizon Line",
+      "distractors": [
+        "Foreground",
+        "Middle Ground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0041_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0041_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "horizon_line"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0041",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0042",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means nearest part of the landscape?",
+      "correct_answer": "Foreground",
+      "distractors": [
+        "Horizon Line",
+        "Middle Ground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0042_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0042_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "foreground"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0042",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0043",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means space between front and distance?",
+      "correct_answer": "Middle Ground",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0043_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0043_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "middle_ground"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0043",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0044",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means distant part of a scene?",
+      "correct_answer": "Background",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0044_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0044_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "background"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0044",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0045",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means distance shown by haze and blue tones?",
+      "correct_answer": "Atmospheric Perspective",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0045_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0045_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "atmospheric_perspective"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0045",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0046",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means space organized by receding lines?",
+      "correct_answer": "Linear Perspective",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0046_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0046_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "linear_perspective"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0046",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0047",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means painting of the sea?",
+      "correct_answer": "Seascape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0047_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0047_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "seascape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0047",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0048",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means urban landscape?",
+      "correct_answer": "Cityscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0048_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0048_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "cityscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0048",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0049",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means idealized countryside?",
+      "correct_answer": "Pastoral Landscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0049_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0049_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "pastoral_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0049",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0050",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means nature shown as powerful or awe-inspiring?",
+      "correct_answer": "Sublime Landscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0050_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0050_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "sublime_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0050",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0051",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means charming varied landscape view?",
+      "correct_answer": "Picturesque",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0051_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0051_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "picturesque"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0051",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0052",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means painting outdoors?",
+      "correct_answer": "Plein Air",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0052_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0052_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "plein_air"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0052",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0053",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means focused observation of clouds?",
+      "correct_answer": "Cloud Study",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0053_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0053_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "cloud_study"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0053",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0054",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means night landscape mood?",
+      "correct_answer": "Nocturne",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0054_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0054_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "nocturne"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0054",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0055",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means wide sweeping view?",
+      "correct_answer": "Panorama",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0055_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0055_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "panorama"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0055",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0056",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means small figures in a landscape?",
+      "correct_answer": "Staffage",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0056_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0056_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "staffage"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0056",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0057",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means sun or moon direction in the scene?",
+      "correct_answer": "Light Source",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0057_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0057_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "light_source"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0057",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0058",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means mirrored forms in water?",
+      "correct_answer": "Reflections",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0058_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0058_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "reflections"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0058",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0059",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means landform such as hills or rocks?",
+      "correct_answer": "Terrain",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0059_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0059_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "terrain"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0059",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0060",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Rapid Classification",
+      "prompt": "Which concept means rain fog snow or storm?",
+      "correct_answer": "Weather Effect",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0060_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0060_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "weather_effect"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0060",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0061",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: eye-level boundary in a scene.",
+      "correct_answer": "Horizon Line",
+      "distractors": [
+        "Foreground",
+        "Middle Ground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0061_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0061_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "horizon_line"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0061",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0062",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: nearest part of the landscape.",
+      "correct_answer": "Foreground",
+      "distractors": [
+        "Horizon Line",
+        "Middle Ground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0062_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0062_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "foreground"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0062",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0063",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: space between front and distance.",
+      "correct_answer": "Middle Ground",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Background"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0063_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0063_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "middle_ground"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0063",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0064",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: distant part of a scene.",
+      "correct_answer": "Background",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0064_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0064_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "background"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0064",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0065",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: distance shown by haze and blue tones.",
+      "correct_answer": "Atmospheric Perspective",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0065_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0065_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "atmospheric_perspective"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0065",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0066",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: space organized by receding lines.",
+      "correct_answer": "Linear Perspective",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0066_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0066_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "linear_perspective"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0066",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0067",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: painting of the sea.",
+      "correct_answer": "Seascape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0067_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0067_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "seascape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0067",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0068",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: urban landscape.",
+      "correct_answer": "Cityscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0068_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0068_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "cityscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0068",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0069",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: idealized countryside.",
+      "correct_answer": "Pastoral Landscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0069_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0069_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "pastoral_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0069",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0070",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "intermediate",
+        "tier": 2
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: nature shown as powerful or awe-inspiring.",
+      "correct_answer": "Sublime Landscape",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0070_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0070_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "sublime_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0070",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0071",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: charming varied landscape view.",
+      "correct_answer": "Picturesque",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0071_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0071_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "picturesque"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0071",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0072",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: painting outdoors.",
+      "correct_answer": "Plein Air",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0072_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0072_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "plein_air"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0072",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0073",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: focused observation of clouds.",
+      "correct_answer": "Cloud Study",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0073_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0073_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "cloud_study"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0073",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0074",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: night landscape mood.",
+      "correct_answer": "Nocturne",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0074_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0074_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "nocturne"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0074",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0075",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: wide sweeping view.",
+      "correct_answer": "Panorama",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0075_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0075_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "panorama"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0075",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0076",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: small figures in a landscape.",
+      "correct_answer": "Staffage",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0076_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0076_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "staffage"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0076",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0077",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: sun or moon direction in the scene.",
+      "correct_answer": "Light Source",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0077_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0077_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "light_source"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0077",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0078",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: mirrored forms in water.",
+      "correct_answer": "Reflections",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0078_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0078_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "reflections"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0078",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0079",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: landform such as hills or rocks.",
+      "correct_answer": "Terrain",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0079_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0079_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "terrain"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0079",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0080",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "Visual Identification",
+      "prompt": "Spot the matching term for: rain fog snow or storm.",
+      "correct_answer": "Weather Effect",
+      "distractors": [
+        "Horizon Line",
+        "Foreground",
+        "Middle Ground"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0080_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0080_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "weather_effect"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0080",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0081",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Horizon Line is best described as what?",
+      "correct_answer": "eye-level boundary in a scene",
+      "distractors": [
+        "nearest part of the landscape",
+        "space between front and distance",
+        "distant part of a scene"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0081_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0081_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "eye_level_boundary_in_a_scene"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0081",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0082",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Foreground is best described as what?",
+      "correct_answer": "nearest part of the landscape",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "space between front and distance",
+        "distant part of a scene"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0082_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0082_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "nearest_part_of_the_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0082",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0083",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Middle Ground is best described as what?",
+      "correct_answer": "space between front and distance",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "distant part of a scene"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0083_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0083_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "space_between_front_and_distance"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0083",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0084",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Background is best described as what?",
+      "correct_answer": "distant part of a scene",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0084_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0084_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "distant_part_of_a_scene"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0084",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0085",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Atmospheric Perspective is best described as what?",
+      "correct_answer": "distance shown by haze and blue tones",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0085_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0085_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "distance_shown_by_haze_and_blue_tones"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0085",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0086",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Linear Perspective is best described as what?",
+      "correct_answer": "space organized by receding lines",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0086_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0086_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "space_organized_by_receding_lines"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0086",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0087",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Seascape is best described as what?",
+      "correct_answer": "painting of the sea",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0087_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0087_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "painting_of_the_sea"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0087",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0088",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Cityscape is best described as what?",
+      "correct_answer": "urban landscape",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0088_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0088_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "urban_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0088",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0089",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Pastoral Landscape is best described as what?",
+      "correct_answer": "idealized countryside",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0089_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0089_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "idealized_countryside"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0089",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0090",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "advanced",
+        "tier": 3
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Sublime Landscape is best described as what?",
+      "correct_answer": "nature shown as powerful or awe-inspiring",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0090_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0090_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "nature_shown_as_powerful_or_awe_inspiring"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0090",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0091",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Picturesque is best described as what?",
+      "correct_answer": "charming varied landscape view",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0091_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0091_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "charming_varied_landscape_view"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0091",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0092",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Plein Air is best described as what?",
+      "correct_answer": "painting outdoors",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0092_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0092_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "painting_outdoors"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0092",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0093",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Cloud Study is best described as what?",
+      "correct_answer": "focused observation of clouds",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0093_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0093_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "focused_observation_of_clouds"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0093",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0094",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Nocturne is best described as what?",
+      "correct_answer": "night landscape mood",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0094_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0094_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "night_landscape_mood"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0094",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0095",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Panorama is best described as what?",
+      "correct_answer": "wide sweeping view",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0095_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0095_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "wide_sweeping_view"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0095",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0096",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Staffage is best described as what?",
+      "correct_answer": "small figures in a landscape",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0096_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0096_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "small_figures_in_a_landscape"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0096",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0097",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Light Source is best described as what?",
+      "correct_answer": "sun or moon direction in the scene",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0097_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0097_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "sun_or_moon_direction_in_the_scene"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0097",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0098",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Reflections is best described as what?",
+      "correct_answer": "mirrored forms in water",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0098_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0098_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "mirrored_forms_in_water"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0098",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0099",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Terrain is best described as what?",
+      "correct_answer": "landform such as hills or rocks",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0099_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0099_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "landform_such_as_hills_or_rocks"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0099",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    },
+    {
+      "observation_id": "creative_arts_painting_landscapes_0100",
+      "universe": "creative_arts",
+      "world": "painting",
+      "subcategory": "landscapes",
+      "difficulty": {
+        "label": "expert",
+        "tier": 4
+      },
+      "observation_type": "True / Definition",
+      "prompt": "Weather Effect is best described as what?",
+      "correct_answer": "rain fog snow or storm",
+      "distractors": [
+        "eye-level boundary in a scene",
+        "nearest part of the landscape",
+        "space between front and distance"
+      ],
+      "localization": {
+        "prompt_key": "creative_arts_painting_landscapes_0100_prompt",
+        "answer_key": "creative_arts_painting_landscapes_0100_answer"
+      },
+      "metadata": {
+        "tags": [
+          "landscapes",
+          "rain_fog_snow_or_storm"
+        ],
+        "scenario_compatibility": {
+          "preferred": [
+            "rapid_classification",
+            "signal_vs_noise",
+            "odd_one_out"
+          ],
+          "secondary": [
+            "memory_cascade",
+            "sequence_reverse",
+            "stroop_test"
+          ],
+          "rare": [
+            "pattern_continuation",
+            "spatial_recall"
+          ],
+          "disabled": [
+            "math_surprise",
+            "risk_selection",
+            "reflex_tap",
+            "speed_sort"
+          ]
+        },
+        "deterministic_seed_key": "creative_arts_painting_landscapes_0100",
+        "quality": {
+          "recognition": 5,
+          "visual_presentation": 5,
+          "fast_comprehension": 5,
+          "replayability": 5,
+          "educational_value": 5,
+          "mobile_readability": 5
+        },
+        "source_basis": "Museum/education reference set: Tate art terms, National Gallery elements of art, Britannica and Met-linked painting technique references."
+      }
+    }
+  ]
+}
