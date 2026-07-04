@@ -4,1399 +4,2799 @@
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 1",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 1",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0002",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 2",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 2",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0003",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 3",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 3",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0004",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 4",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 4",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0005",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 5",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 5",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0006",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 6",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 6",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0007",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 7",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 7",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0008",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 8",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 8",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0009",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 9",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 9",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0010",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 10",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 10",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0011",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 11",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 11",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0012",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 12",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 12",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0013",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 13",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 13",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0014",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 14",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 14",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0015",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 15",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 15",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0016",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 16",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 16",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0017",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 17",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 17",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0018",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 18",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 18",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0019",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 19",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 19",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0020",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 20",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 20",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0021",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 21",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 21",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0022",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 22",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 22",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0023",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 23",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 23",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0024",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 24",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 24",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0025",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 25",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 25",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0026",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 26",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 26",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0027",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 27",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 27",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0028",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 28",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 28",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0029",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 29",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 29",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0030",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 30",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 30",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0031",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 31",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 31",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0032",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 32",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 32",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0033",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 33",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 33",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0034",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 34",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 34",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0035",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 35",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 35",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0036",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 36",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 36",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0037",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 37",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 37",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0038",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 38",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 38",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0039",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 39",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 39",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0040",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 40",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 40",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0041",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 41",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 41",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0042",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 42",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 42",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0043",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 43",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 43",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0044",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 44",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 44",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0045",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 45",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 45",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0046",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 46",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 46",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0047",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 47",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 47",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0048",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 48",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 48",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0049",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 49",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 49",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0050",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 50",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 50",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0051",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 51",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 51",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0052",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 52",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 52",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0053",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 53",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 53",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0054",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 54",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 54",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0055",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 55",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 55",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0056",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 56",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 56",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0057",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 57",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 57",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0058",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 58",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 58",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0059",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 59",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 59",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0060",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 60",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 60",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0061",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 61",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 61",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0062",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 62",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 62",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0063",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 63",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 63",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0064",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 64",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 64",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0065",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 65",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 65",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0066",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 66",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 66",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0067",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 67",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 67",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0068",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 68",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 68",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0069",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 69",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 69",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0070",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 70",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 70",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0071",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 71",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 71",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0072",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 72",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 72",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0073",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 73",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 73",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0074",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 74",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 74",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0075",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 75",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 75",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0076",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 76",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 76",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0077",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 77",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 77",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0078",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 78",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 78",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0079",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 79",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 79",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0080",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 80",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 80",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0081",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 81",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 81",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0082",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 82",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 82",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0083",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 83",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 83",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0084",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 84",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 84",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0085",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 85",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 85",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0086",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 86",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 86",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0087",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 87",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 87",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0088",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 88",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 88",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0089",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 89",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 89",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0090",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 90",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 90",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0091",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 91",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 91",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0092",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 92",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 92",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0093",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 93",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 93",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0094",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 94",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 94",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0095",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 95",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 95",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0096",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 96",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 96",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0097",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 97",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 97",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0098",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 98",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 98",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0099",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 99",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 99",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "motifs": "High"
+    }
   },
   {
     "observation_id": "creative_arts_art_history_baroque_theatrics_0100",
     "universe": "creative_arts",
     "world": "art_history",
     "subcategory": "baroque_theatrics",
-    "entity": "baroque_theatrics 100",
-    "entity_type": "Movement",
+    "entity": "Baroque Theatrics Period 100",
+    "entity_type": "Timeline Node",
     "features": {
-      "visual": {}
+      "semantic": {
+        "year_range": "Temporal Context"
+      },
+      "visual": {
+        "motifs": "Period Signatures"
+      }
     },
-    "dimensions": {},
-    "confusions": [],
-    "difficulty": 1
+    "dimensions": {
+      "Category": "History",
+      "Signature": "Temporal Identity"
+    },
+    "confusions": [
+      "Adjacent era",
+      "Regional variation"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "motifs": "High"
+    }
   }
 ]
