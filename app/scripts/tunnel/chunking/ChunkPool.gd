@@ -58,17 +58,19 @@ func reset_pool(max_chunks: int, universe_id: String = "science_lab"):
 		multi.material_override = node_mat
 		chunk.add_child(multi)
 		
-		chunk.visible = true 
+		chunk.visible = false
 		chunk.position.y = -1000.0
 		add_child(chunk)
 		pooled_chunks.append(chunk)
 
 func spawn_at_offset(_z_offset: float):
 	for chunk in pooled_chunks:
-		if chunk.position.y == -1000.0: 
+		if not chunk.visible or chunk.position.y == -1000.0:
+			chunk.visible = true
 			chunk.position.y = 0.0
 			chunk.position.z = _z_offset
 			return
 
 func recycle_chunk(_chunk_node: Node3D):
+	_chunk_node.visible = false
 	_chunk_node.position.y = -1000.0

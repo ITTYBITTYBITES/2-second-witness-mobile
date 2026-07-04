@@ -2,6 +2,13 @@ extends ColorRect
 
 var _material: ShaderMaterial
 var active_universe_id: String = ""
+var _baseline_flow_speed: float = 1.0
+var _baseline_density: float = 0.6
+var _baseline_flow_type: int = 0
+var _baseline_color_primary: Color = Color(0.04, 0.07, 0.12, 1.0)
+var _baseline_color_secondary: Color = Color(0.07, 0.25, 0.44, 1.0)
+var _baseline_color_tertiary: Color = Color(0.17, 0.45, 0.70, 1.0)
+var _distortion_tween: Tween = null
 
 # The 4 Tiers of Tunnel Intensity
 enum TunnelIntensity { AMBIENT, FOCUS, CHALLENGE, PEAK }
@@ -43,13 +50,19 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: Str
 	elif flow_str == "branching": flow_int = 2
 	elif flow_str == "wave": flow_int = 3
 
-	_material.set_shader_parameter("color_primary", bg_color)
-	_material.set_shader_parameter("color_secondary", primary_color.darkened(0.5))
-	_material.set_shader_parameter("color_tertiary", primary_color)
+	_baseline_color_primary = bg_color
+	_baseline_color_secondary = primary_color.darkened(0.5)
+	_baseline_color_tertiary = primary_color
+	_baseline_flow_speed = float(tunnel.get("speed_multiplier", 1.0))
+	_baseline_density = clampf(float(density_val), 0.25, 0.85)
+	_baseline_flow_type = flow_int
 
-	_material.set_shader_parameter("flow_speed", tunnel.get("speed_multiplier", 1.0))
-	_material.set_shader_parameter("density", density_val)
-	_material.set_shader_parameter("flow_type", flow_int)
+	_material.set_shader_parameter("color_primary", _baseline_color_primary)
+	_material.set_shader_parameter("color_secondary", _baseline_color_secondary)
+	_material.set_shader_parameter("color_tertiary", _baseline_color_tertiary)
+	_material.set_shader_parameter("flow_speed", _baseline_flow_speed)
+	_material.set_shader_parameter("density", _baseline_density)
+	_material.set_shader_parameter("flow_type", _baseline_flow_type)
 	
 	var asset_registry = AssetManifestRegistry
 	var manifest = asset_registry.get_manifest(universe_id)
@@ -72,13 +85,27 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: Str
 		
 	print("[TIER 1 - SHADER] Field environment synchronized with universe: ", universe_id, " | World: ", world_id)
 
+func _kill_distortion_tween():
+	if _distortion_tween and _distortion_tween.is_valid():
+		_distortion_tween.kill()
+	_distortion_tween = null
+
+func reset_to_baseline(duration: float = 0.35, include_speed: bool = false):
+	if not _material:
+		return
+	_kill_distortion_tween()
+	_material.set_shader_parameter("flow_type", _baseline_flow_type)
+	_distortion_tween = get_tree().create_tween().set_parallel(true)
+	_distortion_tween.tween_property(_material, "shader_parameter/color_primary", _baseline_color_primary, duration)
+	_distortion_tween.tween_property(_material, "shader_parameter/color_secondary", _baseline_color_secondary, duration)
+	_distortion_tween.tween_property(_material, "shader_parameter/color_tertiary", _baseline_color_tertiary, duration)
+	_distortion_tween.tween_property(_material, "shader_parameter/density", _baseline_density, duration)
+	if include_speed:
+		_distortion_tween.tween_property(_material, "shader_parameter/flow_speed", _baseline_flow_speed, duration)
+
 func _on_spike_started():
+	# Keep ambient tunnel motion stable during gameplay; avoid random peak/vortex distortion.
 	var spike_intensity = TunnelIntensity.FOCUS
-	if randf() > 0.95:
-		spike_intensity = TunnelIntensity.PEAK
-	elif randf() > 0.70:
-		spike_intensity = TunnelIntensity.CHALLENGE
-	
 	_apply_intensity_shift(spike_intensity)
 	
 	var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator") if Engine.get_main_loop() else null
@@ -127,26 +154,21 @@ func modulate_for_scenario(scenario_type: String, scenario_payload: Dictionary =
 		print("[TIER 1 - SHADER] Applied subject tunnel coloring: ", subject_colors)
 
 func _apply_intensity_shift(intensity: int):
-	var tween = get_tree().create_tween().set_parallel(true)
-	var renderer = UniverseRenderer.new()
-	var def = renderer.universe_definitions.get(active_universe_id, renderer.universe_definitions["science_lab"])
-	var base_density = 0.6
-	
+	if not _material:
+		return
+	_kill_distortion_tween()
+	_distortion_tween = get_tree().create_tween().set_parallel(true)
 	match intensity:
 		TunnelIntensity.FOCUS:
-			# Level 1: Narrows slightly, 10% color shift. Player feels "Something is happening."
-			tween.tween_property(_material, "shader_parameter/color_primary", def["palette"]["bg"].lightened(0.1), 0.5)
-			tween.tween_property(_material, "shader_parameter/density", base_density * 1.1, 0.5)
-			
+			# Minimal, temporary pulse only. It always settles back to the active theme baseline.
+			_distortion_tween.tween_property(_material, "shader_parameter/color_primary", _baseline_color_primary.lightened(0.08), 0.25)
+			_distortion_tween.tween_property(_material, "shader_parameter/density", clampf(_baseline_density * 1.05, 0.25, 0.90), 0.25)
 		TunnelIntensity.CHALLENGE:
-			# Level 2: Fog changes, rotation begins. The environment is actively participating.
-			tween.tween_property(_material, "shader_parameter/color_primary", def["palette"]["primary"].darkened(0.6), 0.5)
-			tween.tween_property(_material, "shader_parameter/density", base_density * 1.5, 0.5)
-			_material.set_shader_parameter("flow_type", 3) # Wave
-			
+			_material.set_shader_parameter("flow_type", _baseline_flow_type)
+			_distortion_tween.tween_property(_material, "shader_parameter/color_primary", _baseline_color_primary.lightened(0.12), 0.25)
+			_distortion_tween.tween_property(_material, "shader_parameter/density", clampf(_baseline_density * 1.12, 0.25, 0.90), 0.25)
 		TunnelIntensity.PEAK:
-			# Level 3: Rare. Vortex effects, major color inversion. Absolute reality distortion.
-			print("[TIER 1 - SHADER] PEAK INTENSITY REACHED. Distorting reality.")
-			tween.tween_property(_material, "shader_parameter/color_primary", def["palette"]["primary"], 0.5)
-			tween.tween_property(_material, "shader_parameter/density", 0.1, 0.5)
-			_material.set_shader_parameter("flow_type", 1) # Vortex
+			_material.set_shader_parameter("flow_type", _baseline_flow_type)
+			_distortion_tween.tween_property(_material, "shader_parameter/color_primary", _baseline_color_secondary, 0.25)
+			_distortion_tween.tween_property(_material, "shader_parameter/density", clampf(_baseline_density * 0.85, 0.25, 0.90), 0.25)
+	_distortion_tween.chain().tween_callback(func(): reset_to_baseline(0.45, false))

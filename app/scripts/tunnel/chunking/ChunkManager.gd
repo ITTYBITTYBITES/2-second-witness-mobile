@@ -16,6 +16,8 @@ var device_performance_factor: float = 1.0 # 0.5 for low-end, 1.0 for high-end
 
 func _ready():
 	_detect_device_performance()
+	if stream_controller:
+		stream_controller.chunk_pool = chunk_pool
 
 func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: String = ""):
 	if universe_id == "": universe_id = theme_data.get("id", "science_lab")
@@ -32,6 +34,7 @@ func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: Str
 	# Instruct subsystems to purge and recreate for the new Theme
 	instance_registry.assign_mesh_profiles(theme_data)
 	chunk_pool.reset_pool(MAX_VISIBLE_CHUNKS, universe_id)
+	stream_controller.chunk_pool = chunk_pool
 	stream_controller.set_flow_speed(active_speed_multiplier)
 	chunk_spawner.seed_initial_buffer(final_density)
 

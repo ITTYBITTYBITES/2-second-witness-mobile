@@ -40,15 +40,11 @@ func _process(delta):
 		if _slingshot_timer <= 0.0:
 			_is_slingshotting = false
 			geometry_pool.active_speed_multiplier = 1.0
-			shader_field._material.set_shader_parameter("flow_speed", 1.0)
-			
-			# Spawning the next recurrence hook at baseline stabilization
-			var new_iris = preload("res://scripts/portals/ScenarioNode.gd").new()
-			new_iris.position = Vector3(0, 0, -25)
-			new_iris.setup(2, {"universe": ThemeManager.active_theme_id if ThemeManager.active_theme_id != "" else "science_lab", "world": "cognitive_bias", "chunk_id": "next"})
-			portal_layer.add_child(new_iris)
-			
-			print("[TUNNEL CORE] Slingshot stabilized. Next Iris spawned.")
+			if shader_field and shader_field.has_method("reset_to_baseline"):
+				shader_field.reset_to_baseline(0.35, true)
+			elif shader_field._material:
+				shader_field._material.set_shader_parameter("flow_speed", 1.0)
+			print("[TUNNEL CORE] Slingshot stabilized. Tunnel baseline restored.")
 		else:
 			# Damped decay: Lerp from 2.0x down to 1.0x over 3.5 seconds
 			var t = _slingshot_timer / 3.5 
