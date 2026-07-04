@@ -91,8 +91,8 @@ func _check_directors_pass_status():
 	var profile = get_node_or_null("/root/PlayerProfile")
 	if profile and not profile.has_directors_pass:
 		var btn_dpass = Button.new()
-		btn_dpass.custom_minimum_size = Vector2(0, 60)
-		btn_dpass.add_theme_font_size_override("font_size", 20)
+		btn_dpass.custom_minimum_size = Vector2(0, 54)
+		btn_dpass.add_theme_font_size_override("font_size", 18)
 		btn_dpass.add_theme_color_override("font_color", Color(0.968, 0.145, 0.521))
 		btn_dpass.text = "★ DIRECTOR'S PASS"
 		btn_dpass.pressed.connect(_show_directors_pass_gate)
