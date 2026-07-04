@@ -155,6 +155,27 @@ func standardize(item: Dictionary) -> Dictionary:
 	if _standardization_cache.has(obs_id):
 		return _standardization_cache[obs_id]
 		
+	# NEW: Support for Canonical Knowledge Object (CKO) v2.0
+	if item.has("concept") and item.has("recognized_answer"):
+		var standardized = {
+			"id": normalize_id(item.get("id", obs_id)),
+			"observation_id": obs_id,
+			"universe": normalize_id(item.get("universe", "")),
+			"world": normalize_id(item.get("world", "")),
+			"subcategory": normalize_id(item.get("subcategory", "")),
+			"mechanic": "dynamic", # Marker for JIT transformation
+			"concept": item.get("concept", ""),
+			"recognized_answer": item.get("recognized_answer", ""),
+			"distractor_family": item.get("distractor_family", []),
+			"difficulty": int(item.get("difficulty", 1)),
+			"visual_cues": item.get("visual_cues", {}),
+			"metadata": item.get("metadata", {}),
+			"raw": item
+		}
+		_standardization_cache[obs_id] = standardized
+		return standardized
+
+	# Legacy v1.0 Standardizer
 	var rules = item.get("rules", {})
 	var presentation = item.get("presentation", {})
 	var metadata = item.get("metadata", {})
