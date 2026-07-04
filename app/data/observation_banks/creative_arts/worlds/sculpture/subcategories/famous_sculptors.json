@@ -1,0 +1,2902 @@
+[
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0001",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 1",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 1",
+      "Confuser B 1",
+      "Confuser C 1"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0002",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 2",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 2",
+      "Confuser B 2",
+      "Confuser C 2"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0003",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 3",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 3",
+      "Confuser B 3",
+      "Confuser C 3"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0004",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 4",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 4",
+      "Confuser B 4",
+      "Confuser C 4"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0005",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 5",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 5",
+      "Confuser B 5",
+      "Confuser C 5"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0006",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 6",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 6",
+      "Confuser B 6",
+      "Confuser C 6"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0007",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 7",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 7",
+      "Confuser B 7",
+      "Confuser C 7"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0008",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 8",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 8",
+      "Confuser B 8",
+      "Confuser C 8"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0009",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 9",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 9",
+      "Confuser B 9",
+      "Confuser C 9"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0010",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 10",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 10",
+      "Confuser B 10",
+      "Confuser C 10"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0011",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 11",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 11",
+      "Confuser B 11",
+      "Confuser C 11"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0012",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 12",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 12",
+      "Confuser B 12",
+      "Confuser C 12"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0013",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 13",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 13",
+      "Confuser B 13",
+      "Confuser C 13"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0014",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 14",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 14",
+      "Confuser B 14",
+      "Confuser C 14"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0015",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 15",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 15",
+      "Confuser B 15",
+      "Confuser C 15"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0016",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 16",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 16",
+      "Confuser B 16",
+      "Confuser C 16"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0017",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 17",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 17",
+      "Confuser B 17",
+      "Confuser C 17"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0018",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 18",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 18",
+      "Confuser B 18",
+      "Confuser C 18"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0019",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 19",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 19",
+      "Confuser B 19",
+      "Confuser C 19"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0020",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 20",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 20",
+      "Confuser B 20",
+      "Confuser C 20"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0021",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 21",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 21",
+      "Confuser B 21",
+      "Confuser C 21"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0022",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 22",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 22",
+      "Confuser B 22",
+      "Confuser C 22"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0023",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 23",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 23",
+      "Confuser B 23",
+      "Confuser C 23"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0024",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 24",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 24",
+      "Confuser B 24",
+      "Confuser C 24"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0025",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 25",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 25",
+      "Confuser B 25",
+      "Confuser C 25"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0026",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 26",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 26",
+      "Confuser B 26",
+      "Confuser C 26"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0027",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 27",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 27",
+      "Confuser B 27",
+      "Confuser C 27"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0028",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 28",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 28",
+      "Confuser B 28",
+      "Confuser C 28"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0029",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 29",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 29",
+      "Confuser B 29",
+      "Confuser C 29"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0030",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 30",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 30",
+      "Confuser B 30",
+      "Confuser C 30"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0031",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 31",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 31",
+      "Confuser B 31",
+      "Confuser C 31"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0032",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 32",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 32",
+      "Confuser B 32",
+      "Confuser C 32"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0033",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 33",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 33",
+      "Confuser B 33",
+      "Confuser C 33"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0034",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 34",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 34",
+      "Confuser B 34",
+      "Confuser C 34"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0035",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 35",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 35",
+      "Confuser B 35",
+      "Confuser C 35"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0036",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 36",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 36",
+      "Confuser B 36",
+      "Confuser C 36"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0037",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 37",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 37",
+      "Confuser B 37",
+      "Confuser C 37"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0038",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 38",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 38",
+      "Confuser B 38",
+      "Confuser C 38"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0039",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 39",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 39",
+      "Confuser B 39",
+      "Confuser C 39"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0040",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 40",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 40",
+      "Confuser B 40",
+      "Confuser C 40"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0041",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 41",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 41",
+      "Confuser B 41",
+      "Confuser C 41"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0042",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 42",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 42",
+      "Confuser B 42",
+      "Confuser C 42"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0043",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 43",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 43",
+      "Confuser B 43",
+      "Confuser C 43"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0044",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 44",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 44",
+      "Confuser B 44",
+      "Confuser C 44"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0045",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 45",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 45",
+      "Confuser B 45",
+      "Confuser C 45"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0046",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 46",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 46",
+      "Confuser B 46",
+      "Confuser C 46"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0047",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 47",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 47",
+      "Confuser B 47",
+      "Confuser C 47"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0048",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 48",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 48",
+      "Confuser B 48",
+      "Confuser C 48"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0049",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 49",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 49",
+      "Confuser B 49",
+      "Confuser C 49"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0050",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 50",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 50",
+      "Confuser B 50",
+      "Confuser C 50"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0051",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 51",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 51",
+      "Confuser B 51",
+      "Confuser C 51"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0052",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 52",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 52",
+      "Confuser B 52",
+      "Confuser C 52"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0053",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 53",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 53",
+      "Confuser B 53",
+      "Confuser C 53"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0054",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 54",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 54",
+      "Confuser B 54",
+      "Confuser C 54"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0055",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 55",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 55",
+      "Confuser B 55",
+      "Confuser C 55"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0056",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 56",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 56",
+      "Confuser B 56",
+      "Confuser C 56"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0057",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 57",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 57",
+      "Confuser B 57",
+      "Confuser C 57"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0058",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 58",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 58",
+      "Confuser B 58",
+      "Confuser C 58"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0059",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 59",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 59",
+      "Confuser B 59",
+      "Confuser C 59"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0060",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 60",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 60",
+      "Confuser B 60",
+      "Confuser C 60"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0061",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 61",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 61",
+      "Confuser B 61",
+      "Confuser C 61"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0062",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 62",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 62",
+      "Confuser B 62",
+      "Confuser C 62"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0063",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 63",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 63",
+      "Confuser B 63",
+      "Confuser C 63"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0064",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 64",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 64",
+      "Confuser B 64",
+      "Confuser C 64"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0065",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 65",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 65",
+      "Confuser B 65",
+      "Confuser C 65"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0066",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 66",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 66",
+      "Confuser B 66",
+      "Confuser C 66"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0067",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 67",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 67",
+      "Confuser B 67",
+      "Confuser C 67"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0068",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 68",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 68",
+      "Confuser B 68",
+      "Confuser C 68"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0069",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 69",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 69",
+      "Confuser B 69",
+      "Confuser C 69"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0070",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 70",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 70",
+      "Confuser B 70",
+      "Confuser C 70"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0071",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 71",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 71",
+      "Confuser B 71",
+      "Confuser C 71"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0072",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 72",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 72",
+      "Confuser B 72",
+      "Confuser C 72"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0073",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 73",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 73",
+      "Confuser B 73",
+      "Confuser C 73"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0074",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 74",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 74",
+      "Confuser B 74",
+      "Confuser C 74"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0075",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 75",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 75",
+      "Confuser B 75",
+      "Confuser C 75"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0076",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 76",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 76",
+      "Confuser B 76",
+      "Confuser C 76"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0077",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 77",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 77",
+      "Confuser B 77",
+      "Confuser C 77"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0078",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 78",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 78",
+      "Confuser B 78",
+      "Confuser C 78"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0079",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 79",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 79",
+      "Confuser B 79",
+      "Confuser C 79"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0080",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 80",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 80",
+      "Confuser B 80",
+      "Confuser C 80"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0081",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 81",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 81",
+      "Confuser B 81",
+      "Confuser C 81"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0082",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 82",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 82",
+      "Confuser B 82",
+      "Confuser C 82"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0083",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 83",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 83",
+      "Confuser B 83",
+      "Confuser C 83"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0084",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 84",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 84",
+      "Confuser B 84",
+      "Confuser C 84"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0085",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 85",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 85",
+      "Confuser B 85",
+      "Confuser C 85"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0086",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 86",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 86",
+      "Confuser B 86",
+      "Confuser C 86"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0087",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 87",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 87",
+      "Confuser B 87",
+      "Confuser C 87"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0088",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 88",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 88",
+      "Confuser B 88",
+      "Confuser C 88"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0089",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 89",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 89",
+      "Confuser B 89",
+      "Confuser C 89"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0090",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 90",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 90",
+      "Confuser B 90",
+      "Confuser C 90"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0091",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 91",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 91",
+      "Confuser B 91",
+      "Confuser C 91"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0092",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 92",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 92",
+      "Confuser B 92",
+      "Confuser C 92"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0093",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 93",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 93",
+      "Confuser B 93",
+      "Confuser C 93"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0094",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 94",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 94",
+      "Confuser B 94",
+      "Confuser C 94"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0095",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 95",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 95",
+      "Confuser B 95",
+      "Confuser C 95"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0096",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 96",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 96",
+      "Confuser B 96",
+      "Confuser C 96"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0097",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 97",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 97",
+      "Confuser B 97",
+      "Confuser C 97"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0098",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 98",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 98",
+      "Confuser B 98",
+      "Confuser C 98"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0099",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 99",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 99",
+      "Confuser B 99",
+      "Confuser C 99"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "clue": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0100",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Famous Sculptors Entity 100",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "clue": "Recognition Signature"
+      },
+      "physical": {
+        "property": "Hard Characteristic"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculpture",
+      "Signature": "Primary Cue"
+    },
+    "confusions": [
+      "Confuser A 100",
+      "Confuser B 100",
+      "Confuser C 100"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "clue": "High"
+    }
+  }
+]
