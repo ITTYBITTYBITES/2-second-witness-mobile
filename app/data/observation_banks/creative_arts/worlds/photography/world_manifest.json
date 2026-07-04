@@ -42,7 +42,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "lenses",
@@ -70,7 +71,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "lighting",
@@ -98,7 +100,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "composition",
@@ -126,7 +129,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "portrait_photography",
@@ -154,7 +158,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "wildlife_photography",
@@ -182,7 +187,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "landscape_photography",
@@ -210,7 +216,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "street_photography",
@@ -238,7 +245,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "famous_photographers",
@@ -266,7 +274,8 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     },
     {
       "id": "editing",
@@ -294,8 +303,9 @@
         ]
       },
       "target_observations": 100,
-      "implemented_observations": 0
+      "implemented_observations": 100,
+      "status": "complete"
     }
   ],
-  "status": "metadata_only_pending_full_observation_bank"
+  "status": "complete"
 }
