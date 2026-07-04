@@ -1,0 +1,2702 @@
+[
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0001",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 1",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0002",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 2",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0003",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 3",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0004",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 4",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0005",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 5",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0006",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 6",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0007",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 7",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0008",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 8",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0009",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 9",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0010",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 10",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0011",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 11",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0012",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 12",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0013",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 13",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0014",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 14",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0015",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 15",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0016",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 16",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0017",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 17",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0018",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 18",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0019",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 19",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0020",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 20",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0021",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 21",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0022",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 22",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0023",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 23",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0024",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 24",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0025",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 25",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0026",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 26",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0027",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 27",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0028",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 28",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0029",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 29",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0030",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 30",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0031",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 31",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0032",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 32",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0033",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 33",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0034",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 34",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0035",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 35",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0036",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 36",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0037",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 37",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0038",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 38",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0039",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 39",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0040",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 40",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0041",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 41",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0042",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 42",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0043",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 43",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0044",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 44",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0045",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 45",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0046",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 46",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0047",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 47",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0048",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 48",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0049",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 49",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0050",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 50",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0051",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 51",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0052",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 52",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0053",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 53",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0054",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 54",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0055",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 55",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0056",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 56",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0057",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 57",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0058",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 58",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0059",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 59",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0060",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 60",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0061",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 61",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0062",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 62",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0063",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 63",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0064",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 64",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0065",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 65",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0066",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 66",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0067",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 67",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0068",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 68",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0069",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 69",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0070",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 70",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0071",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 71",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0072",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 72",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0073",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 73",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0074",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 74",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0075",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 75",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0076",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 76",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0077",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 77",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0078",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 78",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0079",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 79",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0080",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 80",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0081",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 81",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0082",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 82",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0083",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 83",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0084",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 84",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0085",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 85",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0086",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 86",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0087",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 87",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0088",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 88",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0089",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 89",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0090",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 90",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0091",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 91",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0092",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 92",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0093",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 93",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0094",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 94",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0095",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 95",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0096",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 96",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0097",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 97",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0098",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 98",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 4,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0099",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 99",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 5,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_movies_cinematography_framing_0100",
+    "universe": "creative_arts",
+    "world": "movies_cinematography",
+    "subcategory": "framing",
+    "entity": "Framing Feature 100",
+    "entity_type": "Concept",
+    "features": {
+      "visual": {
+        "signature": "Recognition Cue"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Movies Cinematography",
+      "Signature": "Primary Fingerprint"
+    },
+    "confusions": [
+      "Neighboring Concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  }
+]
