@@ -55,19 +55,29 @@ func _mount_close_button():
 	var btn_close = Button.new()
 	btn_close.name = "CloseMirrorButton"
 	btn_close.text = "CLOSE MIRROR"
-	btn_close.custom_minimum_size = Vector2(170, 48)
-	btn_close.anchor_left = 1.0
-	btn_close.anchor_right = 1.0
-	btn_close.offset_left = -198.0
-	btn_close.offset_top = 24.0
-	btn_close.offset_right = -24.0
-	btn_close.offset_bottom = 72.0
+	btn_close.custom_minimum_size = Vector2(150, 44)
+	btn_close.size = btn_close.custom_minimum_size
+	btn_close.mouse_filter = Control.MOUSE_FILTER_STOP
 	btn_close.z_index = 200
-	btn_close.add_theme_font_size_override("font_size", 16)
+	btn_close.add_theme_font_size_override("font_size", 15)
 	if PresentationToolkit and PresentationToolkit.has_method("make_response_card"):
 		PresentationToolkit.make_response_card(btn_close, "CLOSE MIRROR", Color("#F72585"))
+		btn_close.custom_minimum_size = Vector2(150, 44)
+		btn_close.size = btn_close.custom_minimum_size
 	btn_close.pressed.connect(_request_close)
 	add_child(btn_close)
+	if get_viewport() and not get_viewport().size_changed.is_connected(_position_close_button):
+		get_viewport().size_changed.connect(_position_close_button)
+	call_deferred("_position_close_button")
+
+func _position_close_button():
+	var btn_close = get_node_or_null("CloseMirrorButton")
+	var panel = get_node_or_null("PanelContainer")
+	if not btn_close or not panel:
+		return
+	var btn_size = btn_close.custom_minimum_size
+	btn_close.size = btn_size
+	btn_close.position = panel.global_position + Vector2(max(16.0, panel.size.x - btn_size.x - 18.0), 18.0)
 
 func _apply_universe_manifest(universe_id: String):
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")

@@ -220,15 +220,17 @@ func _show_gameplay_hud():
 	hud_root.add_child(active_gameplay_hud)
 	print("[ROUTER] Gameplay HUD attached. Persistent 3-Layer UI separation active.")
 
-func _close_mirror_modal():
+func _close_mirror_modal(restore_landing: bool = true):
+	var should_restore_landing = restore_landing and current_screen_name == "LandingScreen" and active_landing_screen and is_instance_valid(active_landing_screen)
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if persistent_mirror_instance and is_instance_valid(persistent_mirror_instance):
 		persistent_mirror_instance.visible = false
 		if modal_mgr and modal_mgr.has_modal(persistent_mirror_instance):
 			modal_mgr.pop_modal(persistent_mirror_instance, "NavigationRouter")
-	_update_nav_log(previous_screen_name, true)
-	if current_screen_name == "LandingScreen" and active_landing_screen and is_instance_valid(active_landing_screen):
-		show_landing_screen()
+	if should_restore_landing:
+		call_deferred("show_landing_screen")
+	else:
+		_update_nav_log(previous_screen_name, true)
 
 func _validate_recommended_world(universe_id: String, world_id: String) -> Dictionary:
 	var u_id = normalize_id(universe_id)
@@ -244,7 +246,7 @@ func _validate_recommended_world(universe_id: String, world_id: String) -> Dicti
 func _on_mirror_recommendation_requested(universe_id: String, world_id: String):
 	print("[ROUTER] Mirror recommendation selected: ", universe_id, " / ", world_id)
 	var clean = _validate_recommended_world(universe_id, world_id)
-	_close_mirror_modal()
+	_close_mirror_modal(false)
 	call_deferred("_start_recommended_world", clean["universe"], clean["world"])
 
 func _start_recommended_world(universe_id: String, world_id: String):
