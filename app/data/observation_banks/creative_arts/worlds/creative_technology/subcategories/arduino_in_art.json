@@ -4,26 +4,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 1",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 1",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -31,26 +32,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 2",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 2",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -58,26 +60,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 3",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 3",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -85,26 +88,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 4",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 4",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -112,26 +116,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 5",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 5",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -139,26 +144,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 6",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 6",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -166,26 +172,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 7",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 7",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -193,26 +200,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 8",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 8",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -220,26 +228,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 9",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 9",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -247,26 +256,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 10",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 10",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -274,26 +284,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 11",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 11",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -301,26 +312,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 12",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 12",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -328,26 +340,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 13",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 13",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -355,26 +368,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 14",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 14",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -382,26 +396,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 15",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 15",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -409,26 +424,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 16",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 16",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -436,26 +452,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 17",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 17",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -463,26 +480,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 18",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 18",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -490,26 +508,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 19",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 19",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -517,26 +536,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 20",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 20",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -544,26 +564,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 21",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 21",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -571,26 +592,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 22",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 22",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -598,26 +620,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 23",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 23",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -625,26 +648,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 24",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 24",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -652,26 +676,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 25",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 25",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -679,26 +704,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 26",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 26",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -706,26 +732,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 27",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 27",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -733,26 +760,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 28",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 28",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -760,26 +788,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 29",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 29",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -787,26 +816,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 30",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 30",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -814,26 +844,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 31",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 31",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -841,26 +872,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 32",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 32",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -868,26 +900,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 33",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 33",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -895,26 +928,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 34",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 34",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -922,26 +956,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 35",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 35",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -949,26 +984,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 36",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 36",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -976,26 +1012,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 37",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 37",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1003,26 +1040,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 38",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 38",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1030,26 +1068,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 39",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 39",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1057,26 +1096,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 40",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 40",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1084,26 +1124,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 41",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 41",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1111,26 +1152,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 42",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 42",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1138,26 +1180,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 43",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 43",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1165,26 +1208,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 44",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 44",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1192,26 +1236,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 45",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 45",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1219,26 +1264,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 46",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 46",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1246,26 +1292,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 47",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 47",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1273,26 +1320,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 48",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 48",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1300,26 +1348,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 49",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 49",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1327,26 +1376,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 50",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 50",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1354,26 +1404,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 51",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 51",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1381,26 +1432,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 52",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 52",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1408,26 +1460,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 53",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 53",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1435,26 +1488,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 54",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 54",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1462,26 +1516,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 55",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 55",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1489,26 +1544,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 56",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 56",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1516,26 +1572,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 57",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 57",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1543,26 +1600,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 58",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 58",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1570,26 +1628,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 59",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 59",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1597,26 +1656,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 60",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 60",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1624,26 +1684,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 61",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 61",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1651,26 +1712,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 62",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 62",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1678,26 +1740,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 63",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 63",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1705,26 +1768,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 64",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 64",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1732,26 +1796,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 65",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 65",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1759,26 +1824,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 66",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 66",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1786,26 +1852,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 67",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 67",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1813,26 +1880,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 68",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 68",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1840,26 +1908,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 69",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 69",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1867,26 +1936,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 70",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 70",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1894,26 +1964,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 71",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 71",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1921,26 +1992,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 72",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 72",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1948,26 +2020,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 73",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 73",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -1975,26 +2048,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 74",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 74",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2002,26 +2076,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 75",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 75",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2029,26 +2104,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 76",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 76",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2056,26 +2132,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 77",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 77",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2083,26 +2160,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 78",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 78",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2110,26 +2188,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 79",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 79",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2137,26 +2216,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 80",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 80",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2164,26 +2244,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 81",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 81",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2191,26 +2272,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 82",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 82",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2218,26 +2300,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 83",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 83",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2245,26 +2328,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 84",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 84",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2272,26 +2356,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 85",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 85",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2299,26 +2384,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 86",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 86",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2326,26 +2412,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 87",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 87",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2353,26 +2440,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 88",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 88",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2380,26 +2468,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 89",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 89",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2407,26 +2496,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 90",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 90",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2434,26 +2524,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 91",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 91",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2461,26 +2552,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 92",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 92",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2488,26 +2580,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 93",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 93",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2515,26 +2608,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 94",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 94",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2542,26 +2636,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 95",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 95",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2569,26 +2664,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 96",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 96",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 2,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2596,26 +2692,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 97",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 97",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 3,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2623,26 +2720,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 98",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 98",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 4,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2650,26 +2748,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 99",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 99",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 5,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   },
   {
@@ -2677,26 +2776,27 @@
     "universe": "creative_arts",
     "world": "creative_technology",
     "subcategory": "arduino_in_art",
-    "entity": "Arduino In Art Concept 100",
-    "entity_type": "Concept",
+    "entity": "Arduino In Art Element 100",
+    "entity_type": "Computational Unit",
     "features": {
       "visual": {
-        "signature": "Recognition Cue"
+        "aliasing": "Digital Artifact"
       },
-      "semantic": {
-        "context": "Domain Knowledge"
+      "physical": {
+        "latency": "Signal Data"
       }
     },
     "dimensions": {
-      "Category": "Creative Technology",
-      "Signature": "Primary Fingerprint"
+      "Category": "Creative Tech",
+      "Signature": "Algorithmic Fingerprint"
     },
     "confusions": [
-      "Neighboring Concept"
+      "Software bug",
+      "Analog signal"
     ],
     "difficulty": 1,
     "confidence": {
-      "signature": "High"
+      "aliasing": "High"
     }
   }
 ]
