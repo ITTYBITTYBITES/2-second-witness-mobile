@@ -11,6 +11,7 @@ var _deterministic_rng: RandomNumberGenerator
 var current_trial: int = 1
 var target_trials: int = 5
 var _used_content_ids: Dictionary = {}
+var _last_payload_refresh_trial: int = 1
 
 func normalize_id(id: Variant) -> String:
 	return str(id)
@@ -66,6 +67,10 @@ func _refresh_payload_for_current_trial():
 	_scenario_payload["world"] = w_id
 	_scenario_payload["type"] = t_id
 	_remember_current_content_id()
+	_last_payload_refresh_trial = current_trial
+	var engine = get_node_or_null("/root/ScenarioExecutionEngine")
+	if engine and engine.get("active_scenario") == self:
+		engine.active_payload = _scenario_payload
 	print("[BASE SCENARIO] Refreshed trial content: ", _scenario_payload["id"])
 
 func _style_question_label(lbl: Label, font_size: int = 30):
@@ -113,6 +118,7 @@ func inject_payload(payload: Dictionary, seed_val: int = 12345):
 		target_trials = max(1, orch.current_mission["mechanics_chain"].size())
 	elif payload.has("target_trials"):
 		target_trials = int(payload["target_trials"])
+	_last_payload_refresh_trial = current_trial
 
 	_deterministic_rng = RandomNumberGenerator.new()
 	_deterministic_rng.seed = seed_val
@@ -314,6 +320,8 @@ func _mount_cockpit_instrument_overlay():
 	print("[COCKPIT] Persistent Observation Instrument HUD successfully mounted with PresentationToolkit glass skin.")
 
 func engine_generate_hook():
+	if current_trial != _last_payload_refresh_trial:
+		_refresh_payload_for_current_trial()
 	if has_method("_setup_round"): call("_setup_round")
 	elif has_method("_generate_problem"): call("_generate_problem")
 	elif has_method("_generate_grid"): call("_generate_grid")
