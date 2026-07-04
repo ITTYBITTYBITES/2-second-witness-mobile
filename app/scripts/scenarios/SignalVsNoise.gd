@@ -1,4 +1,5 @@
 extends BaseScenario
+@warning_ignore("unused_signal")
 signal completed
 
 @onready var target_label = $TargetLabel

@@ -1,5 +1,6 @@
 extends BaseScenario
 
+@warning_ignore("unused_signal")
 signal completed
 
 @onready var bg = $VoidBG
