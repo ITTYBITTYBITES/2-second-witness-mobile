@@ -83,4 +83,4 @@ func _check_cycle_boundary():
 func _compute_current_week_id() -> int:
 	# Compute exact 7-day weekly epoch cycle ID (604800 seconds per week)
 	var now_sec = int(Time.get_unix_time_from_system())
-	return int(now_sec / 604800)
+	return int(float(now_sec) / 604800.0)

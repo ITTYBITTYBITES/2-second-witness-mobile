@@ -45,7 +45,7 @@ func _initialize_weekly_rotation():
 		featured_universes = rot_mgr.get_active_universes().duplicate()
 	else:
 		var now_sec = int(Time.get_unix_time_from_system())
-		var week_id = int(now_sec / 604800)
+		var week_id = int(float(now_sec) / 604800.0)
 		current_week_seed = week_id * 77777 + 2026
 		var all_universes = ["science_lab", "history", "tech_ops", "life_sciences", "society_mind", "creative_arts", "frontier"]
 		var rng_fallback = RandomNumberGenerator.new()

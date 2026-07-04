@@ -28,7 +28,6 @@ var active_scenario: Node = null
 var active_payload: Dictionary = {}
 var engine_start_ticks: int = 0
 var is_input_enabled: bool = false
-var _is_transitioning: bool = false
 
 func _ready():
 	if BootTracer: BootTracer.log_init("ScenarioExecutionEngine")

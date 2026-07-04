@@ -16,6 +16,7 @@ func _ready():
 ## Triggers a visual and haptic "Success" event.
 func trigger_success():
 	print("[FEEDBACK] Triggering SUCCESS presentation.")
+	feedback_triggered.emit("success")
 	_play_visual_flash(Color(0.2, 1.0, 0.4, 0.3))
 	if AudioManager: AudioManager.play_sfx("ui_click")
 	_trigger_haptic("light")
@@ -23,6 +24,7 @@ func trigger_success():
 ## Triggers a visual and haptic "Failure" event.
 func trigger_failure():
 	print("[FEEDBACK] Triggering FAILURE presentation.")
+	feedback_triggered.emit("failure")
 	_play_visual_flash(Color(1.0, 0.2, 0.2, 0.3))
 	if AudioManager: AudioManager.play_sfx("ui_error")
 	_trigger_haptic("heavy")
