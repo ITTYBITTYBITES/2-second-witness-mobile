@@ -1,301 +1,71 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "universe": "creative_arts",
   "world": "street_art",
   "display_name": "Street Art",
   "subcategory_order": [
-    "graffiti",
-    "murals",
-    "stencils",
-    "stickers",
-    "public_installations",
-    "urban_artists",
-    "spray_paint",
-    "lettering",
-    "street_styles",
-    "famous_works"
+    "graffiti_styles",
+    "stencil_art",
+    "muralism",
+    "wheatpasting",
+    "tools_and_spray",
+    "legal_vs_illegal",
+    "history_of_street_art",
+    "iconography",
+    "urban_context",
+    "contemporary_pioneers"
   ],
   "subcategories": [
     {
-      "id": "graffiti",
-      "display_name": "Graffiti",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "graffiti_styles",
+      "display_name": "Graffiti Styles",
+      "implemented_observations": 100
     },
     {
-      "id": "murals",
-      "display_name": "Murals",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "stencil_art",
+      "display_name": "Stencil Art",
+      "implemented_observations": 100
     },
     {
-      "id": "stencils",
-      "display_name": "Stencils",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "muralism",
+      "display_name": "Muralism",
+      "implemented_observations": 100
     },
     {
-      "id": "stickers",
-      "display_name": "Stickers",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "wheatpasting",
+      "display_name": "Wheatpasting",
+      "implemented_observations": 100
     },
     {
-      "id": "public_installations",
-      "display_name": "Public Installations",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "tools_and_spray",
+      "display_name": "Tools and Spray",
+      "implemented_observations": 100
     },
     {
-      "id": "urban_artists",
-      "display_name": "Urban Artists",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "stroop_test"
-        ],
-        "secondary": [
-          "odd_one_out",
-          "memory_cascade",
-          "sequence_reverse"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "legal_vs_illegal",
+      "display_name": "Legal vs Illegal",
+      "implemented_observations": 100
     },
     {
-      "id": "spray_paint",
-      "display_name": "Spray Paint",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "history_of_street_art",
+      "display_name": "History of Street Art",
+      "implemented_observations": 100
     },
     {
-      "id": "lettering",
-      "display_name": "Lettering",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "iconography",
+      "display_name": "Iconography",
+      "implemented_observations": 100
     },
     {
-      "id": "street_styles",
-      "display_name": "Street Styles",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "stroop_test"
-        ],
-        "secondary": [
-          "odd_one_out",
-          "memory_cascade",
-          "sequence_reverse"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "urban_context",
+      "display_name": "Urban Context",
+      "implemented_observations": 100
     },
     {
-      "id": "famous_works",
-      "display_name": "Famous Works",
-      "scenario_preferences": {
-        "preferred": [
-          "rapid_classification",
-          "signal_vs_noise",
-          "odd_one_out"
-        ],
-        "secondary": [
-          "memory_cascade",
-          "sequence_reverse",
-          "stroop_test"
-        ],
-        "rare": [
-          "pattern_continuation",
-          "spatial_recall"
-        ],
-        "disabled": [
-          "math_surprise",
-          "risk_selection",
-          "reflex_tap",
-          "speed_sort"
-        ]
-      },
-      "target_observations": 100,
-      "implemented_observations": 0
+      "id": "contemporary_pioneers",
+      "display_name": "Contemporary Pioneers",
+      "implemented_observations": 100
     }
   ],
-  "status": "metadata_only_pending_full_observation_bank"
+  "status": "complete"
 }
