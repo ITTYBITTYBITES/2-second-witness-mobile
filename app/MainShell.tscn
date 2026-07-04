@@ -51,8 +51,9 @@ anchors_preset = 15
 mouse_filter = 2
 
 [node name="TransitionOverlay" type="ColorRect" parent="UILayer"]
+visible = false
 anchors_preset = 15
-color = Color(0, 0, 0, 1)
+color = Color(0, 0, 0, 0)
 mouse_filter = 2
 
 [node name="MonetizationUI" type="Control" parent="UILayer"]

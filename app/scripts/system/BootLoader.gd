@@ -79,6 +79,8 @@ func _execute_fast_boot():
 
 	var main_shell = get_tree().root.get_node_or_null("MainShell")
 	if main_shell:
+		if main_shell.has_method("_clear_transition_overlay"):
+			main_shell._clear_transition_overlay()
 		var ui_layer = main_shell.get_node_or_null("UILayer")
 		var world_layer = main_shell.get_node_or_null("WorldLayer")
 		if ui_layer:

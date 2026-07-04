@@ -23,10 +23,19 @@ func _ready():
 	get_viewport().physics_object_picking = true
 	
 	_apply_display_cutout_safe_area()
+	_clear_transition_overlay()
 	
 	var boot_loader = BootLoader.new()
 	boot_loader.name = "BootLoader"
 	system_layer.add_child(boot_loader)
+
+func _clear_transition_overlay():
+	var overlay = get_node_or_null("UILayer/TransitionOverlay")
+	if overlay and overlay is ColorRect:
+		overlay.visible = false
+		overlay.color.a = 0.0
+		overlay.modulate.a = 0.0
+		overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 func _apply_display_cutout_safe_area():
 	if DisplayServer.has_method("get_display_safe_area"):
@@ -38,12 +47,16 @@ func _apply_display_cutout_safe_area():
 			hud_root.position.y = max(hud_root.position.y, safe_area.position.y)
 
 func _notification(what):
-	if what == Node.NOTIFICATION_WM_WINDOW_FOCUS_IN or what == Node.NOTIFICATION_APPLICATION_RESUMED:
-		print("[ANDROID LIFECYCLE] App brought to foreground / resumed. Restoring audio stems and 3D stream buffers.")
+	if what == Node.NOTIFICATION_APPLICATION_RESUMED:
+		print("[ANDROID LIFECYCLE] App resumed. Restoring audio stems and 3D stream buffers.")
 		if world_layer: world_layer.process_mode = Node.PROCESS_MODE_INHERIT
-	elif what == Node.NOTIFICATION_WM_WINDOW_FOCUS_OUT or what == Node.NOTIFICATION_APPLICATION_PAUSED:
-		print("[ANDROID LIFECYCLE] App moved to background / paused. Pausing simulation to preserve Android battery budget.")
+	elif what == Node.NOTIFICATION_APPLICATION_PAUSED:
+		print("[ANDROID LIFECYCLE] App paused. Pausing simulation to preserve Android battery budget.")
 		if world_layer: world_layer.process_mode = Node.PROCESS_MODE_DISABLED
+	elif what == Node.NOTIFICATION_WM_WINDOW_FOCUS_IN:
+		print("[DESKTOP LIFECYCLE] Window focus restored. Keeping runtime active for editor testing.")
+	elif what == Node.NOTIFICATION_WM_WINDOW_FOCUS_OUT:
+		print("[DESKTOP LIFECYCLE] Window focus lost. Ignoring for editor/F5 testing; app remains active.")
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
