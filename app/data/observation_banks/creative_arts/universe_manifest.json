@@ -26,7 +26,10 @@
   ],
   "architecture": "Universe > World > Subcategory > Observation Bank",
   "implementation_status": {
-    "painting": "complete_template",
-    "remaining_worlds": "metadata_scaffold_pending_full_banks"
-  }
+    "global_status": "complete",
+    "all_worlds": "complete_with_compiled_banks",
+    "last_reconciled": "2026-07-04T22:05:53Z"
+  },
+  "last_verified": "2026-07-04T22:05:53Z",
+  "observation_count": 20000
 }

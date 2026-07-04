@@ -1,5 +1,8 @@
 extends Node
 
+const MASTER_REGISTRY_PATH = "res://MASTER_UNIVERSE_REGISTRY.json"
+var master_universe_registry: Dictionary = {}
+
 var runtime_index = {} # Structure: [universe_id][world_id][type_id] = Array[Dictionary]
 var _registered_ids: Dictionary = {}
 var _world_metadata: Dictionary = {}
@@ -37,9 +40,34 @@ var curated_missions = {
 func normalize_id(id: Variant) -> String:
 	return str(id)
 
+
+func _load_master_registry():
+	if not FileAccess.file_exists(MASTER_REGISTRY_PATH):
+		push_error("[CONTENT REGISTRY] Master universe registry missing: " + MASTER_REGISTRY_PATH)
+		return
+	var file = FileAccess.open(MASTER_REGISTRY_PATH, FileAccess.READ)
+	if not file:
+		push_error("[CONTENT REGISTRY] Failed to open master universe registry")
+		return
+	var json = JSON.new()
+	if json.parse(file.get_as_text()) != OK:
+		push_error("[CONTENT REGISTRY] Failed to parse master universe registry")
+		file.close()
+		return
+	file.close()
+	var data = json.get_data()
+	if typeof(data) != TYPE_DICTIONARY:
+		push_error("[CONTENT REGISTRY] Master registry root is not a dictionary")
+		return
+	master_universe_registry = data
+	print("[CONTENT REGISTRY] Master universe registry loaded: ", master_universe_registry.get("universes", {}).size(), " universes")
+
+func get_master_registry() -> Dictionary:
+	return master_universe_registry
 func _ready():
 	if BootTracer: BootTracer.log_init("ContentRegistry")
 	print("ContentRegistry initialized. Awaiting content ingestion...")
+	_load_master_registry()
 
 func register_world(universe_id: Variant, world_id: Variant, metadata: Dictionary = {}):
 	var u_id = normalize_id(universe_id)

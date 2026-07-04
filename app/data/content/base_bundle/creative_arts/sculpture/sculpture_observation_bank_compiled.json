@@ -30130,5 +30130,873 @@
     "confidence": {
       "signature": "High"
     }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0090",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Spatial Abstraction",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Spatial Abstraction"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Spatial Abstraction"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0091",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Temporal Form",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Temporal Form"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Temporal Form"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0092",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Rhythmic Structure",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Rhythmic Structure"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Rhythmic Structure"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0093",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Topological Form",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Topological Form"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Topological Form"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0094",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Modulated Surface",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Modulated Surface"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Modulated Surface"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0095",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Tactile Form",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Tactile Form"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Tactile Form"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0096",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Chromatic Sculpture",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Chromatic Sculpture"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Chromatic Sculpture"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0097",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Kinesthetic Form",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Kinesthetic Form"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Kinesthetic Form"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0098",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Symbiotic Form",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Symbiotic Form"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Symbiotic Form"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0099",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Hybrid Abstraction",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Hybrid Abstraction"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Hybrid Abstraction"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_abstract_sculpture_0100",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "abstract_sculpture",
+    "entity": "Emergent Form",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Emergent Form"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Emergent Form"
+    },
+    "confusions": [
+      "Similar abstract_sculpture item",
+      "Related abstract_sculpture concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_clay_0098",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "clay",
+    "entity": "Plastic Clay",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Plastic Clay"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Plastic Clay"
+    },
+    "confusions": [
+      "Similar clay item",
+      "Related clay concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_clay_0099",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "clay",
+    "entity": "Bisque Firing",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Bisque Firing"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Bisque Firing"
+    },
+    "confusions": [
+      "Similar clay item",
+      "Related clay concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_clay_0100",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "clay",
+    "entity": "Kiln Atmosphere",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Kiln Atmosphere"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Kiln Atmosphere"
+    },
+    "confusions": [
+      "Similar clay item",
+      "Related clay concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0098",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Medardo Rosso",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Medardo Rosso"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Medardo Rosso"
+    },
+    "confusions": [
+      "Similar famous_sculptors item",
+      "Related famous_sculptors concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0099",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Marino Marini",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Marino Marini"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Marino Marini"
+    },
+    "confusions": [
+      "Similar famous_sculptors item",
+      "Related famous_sculptors concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_famous_sculptors_0100",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "famous_sculptors",
+    "entity": "Germaine Richier",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Germaine Richier"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Germaine Richier"
+    },
+    "confusions": [
+      "Similar famous_sculptors item",
+      "Related famous_sculptors concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_public_sculptures_0096",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "public_sculptures",
+    "entity": "Civic Plaza",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Civic Plaza"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Civic Plaza"
+    },
+    "confusions": [
+      "Similar public_sculptures item",
+      "Related public_sculptures concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_public_sculptures_0097",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "public_sculptures",
+    "entity": "Sculpture Garden",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Sculpture Garden"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Sculpture Garden"
+    },
+    "confusions": [
+      "Similar public_sculptures item",
+      "Related public_sculptures concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_public_sculptures_0098",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "public_sculptures",
+    "entity": "Urban Landmark",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Urban Landmark"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Urban Landmark"
+    },
+    "confusions": [
+      "Similar public_sculptures item",
+      "Related public_sculptures concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_public_sculptures_0099",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "public_sculptures",
+    "entity": "Public Commission",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Public Commission"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Public Commission"
+    },
+    "confusions": [
+      "Similar public_sculptures item",
+      "Related public_sculptures concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_public_sculptures_0100",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "public_sculptures",
+    "entity": "Outdoor Installation",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Outdoor Installation"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Outdoor Installation"
+    },
+    "confusions": [
+      "Similar public_sculptures item",
+      "Related public_sculptures concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_relief_sculpture_0095",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "relief_sculpture",
+    "entity": "Alto Rilievo",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Alto Rilievo"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Alto Rilievo"
+    },
+    "confusions": [
+      "Similar relief_sculpture item",
+      "Related relief_sculpture concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_relief_sculpture_0096",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "relief_sculpture",
+    "entity": "Basso Rilievo",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Basso Rilievo"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Basso Rilievo"
+    },
+    "confusions": [
+      "Similar relief_sculpture item",
+      "Related relief_sculpture concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_relief_sculpture_0097",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "relief_sculpture",
+    "entity": "Mezzo Rilievo",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Mezzo Rilievo"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Mezzo Rilievo"
+    },
+    "confusions": [
+      "Similar relief_sculpture item",
+      "Related relief_sculpture concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_relief_sculpture_0098",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "relief_sculpture",
+    "entity": "Schiacciato",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Schiacciato"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Schiacciato"
+    },
+    "confusions": [
+      "Similar relief_sculpture item",
+      "Related relief_sculpture concept"
+    ],
+    "difficulty": 2,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_relief_sculpture_0099",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "relief_sculpture",
+    "entity": "Stiacciato",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Stiacciato"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Stiacciato"
+    },
+    "confusions": [
+      "Similar relief_sculpture item",
+      "Related relief_sculpture concept"
+    ],
+    "difficulty": 3,
+    "confidence": {
+      "signature": "High"
+    }
+  },
+  {
+    "observation_id": "creative_arts_sculpture_relief_sculpture_0100",
+    "universe": "creative_arts",
+    "world": "sculpture",
+    "subcategory": "relief_sculpture",
+    "entity": "Rilievo",
+    "entity_type": "Core Concept",
+    "features": {
+      "visual": {
+        "signature": "Characteristic Rilievo"
+      },
+      "physical": {
+        "property": "Material/Process Data"
+      },
+      "semantic": {
+        "context": "Domain Knowledge"
+      }
+    },
+    "dimensions": {
+      "Category": "Sculptural Arts",
+      "Signature": "Visual Signature of Rilievo"
+    },
+    "confusions": [
+      "Similar relief_sculpture item",
+      "Related relief_sculpture concept"
+    ],
+    "difficulty": 1,
+    "confidence": {
+      "signature": "High"
+    }
   }
 ]

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "universe": "science_lab",
+  "display_name": "Science Lab",
+  "world_order": [
+    "ai",
+    "astronomy",
+    "biotechnology",
+    "chemistry",
+    "ecology",
+    "forensics",
+    "genetics",
+    "geology",
+    "marine_biology",
+    "meteorology",
+    "microbiology",
+    "nanotechnology",
+    "neuroscience",
+    "optics",
+    "paleontology",
+    "physics",
+    "quantum_mechanics",
+    "robotics",
+    "thermodynamics",
+    "virology"
+  ],
+  "architecture": "Universe > World > Subcategory > Observation Bank",
+  "implementation_status": {
+    "global_status": "scaffolded",
+    "note": "World and subcategory metadata present; compiled observation banks are placeholders awaiting content generation.",
+    "last_reconciled": "2026-07-04T22:05:53Z"
+  },
+  "last_verified": "2026-07-04T22:05:53Z",
+  "observation_count": 0,
+  "world_count": 20
+}

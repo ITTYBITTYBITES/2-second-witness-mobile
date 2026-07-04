@@ -18,5 +18,11 @@
     "secondary",
     "rare",
     "disabled"
-  ]
+  ],
+  "storage_model": "file_based",
+  "source_hierarchy": {
+    "description": "Subcategory observation banks are stored as individual JSON files inside the world's subcategories directory.",
+    "path_pattern": "app/data/observation_banks/<universe>/worlds/<world>/subcategories/<subcategory>.json"
+  },
+  "last_reconciled": "2026-07-04T22:05:53Z"
 }

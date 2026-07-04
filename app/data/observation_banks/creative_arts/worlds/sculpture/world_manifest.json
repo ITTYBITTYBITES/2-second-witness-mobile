@@ -20,22 +20,54 @@
       "id": "marble",
       "display_name": "Marble",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
-      "implemented_observations": 100
+      "implemented_observations": 102
     },
     {
       "id": "bronze",
       "display_name": "Bronze",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
       "implemented_observations": 100
@@ -44,10 +76,26 @@
       "id": "wood",
       "display_name": "Wood",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
       "implemented_observations": 100
@@ -56,10 +104,26 @@
       "id": "clay",
       "display_name": "Clay",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
       "implemented_observations": 100
@@ -68,10 +132,26 @@
       "id": "public_sculptures",
       "display_name": "Public Sculptures",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
       "implemented_observations": 100
@@ -80,22 +160,54 @@
       "id": "monuments",
       "display_name": "Monuments",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
-      "implemented_observations": 100
+      "implemented_observations": 98
     },
     {
       "id": "relief_sculpture",
       "display_name": "Relief Sculpture",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
       "implemented_observations": 100
@@ -104,10 +216,26 @@
       "id": "abstract_sculpture",
       "display_name": "Abstract Sculpture",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
       "implemented_observations": 100
@@ -116,10 +244,26 @@
       "id": "famous_sculptors",
       "display_name": "Famous Sculptors",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
-        "secondary": ["memory_cascade", "sequence_reverse", "stroop_test"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "memory_cascade",
+          "sequence_reverse",
+          "stroop_test"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
       "implemented_observations": 100
@@ -128,14 +272,31 @@
       "id": "sculpture_techniques",
       "display_name": "Sculpture Techniques",
       "scenario_preferences": {
-        "preferred": ["rapid_classification", "signal_vs_noise", "stroop_test"],
-        "secondary": ["odd_one_out", "memory_cascade", "sequence_reverse"],
-        "rare": ["pattern_continuation", "spatial_recall"],
-        "disabled": ["math_surprise", "risk_selection", "reflex_tap", "speed_sort"]
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "stroop_test"
+        ],
+        "secondary": [
+          "odd_one_out",
+          "memory_cascade",
+          "sequence_reverse"
+        ],
+        "rare": [
+          "pattern_continuation",
+          "spatial_recall"
+        ],
+        "disabled": [
+          "math_surprise",
+          "risk_selection",
+          "reflex_tap",
+          "speed_sort"
+        ]
       },
       "target_observations": 100,
       "implemented_observations": 100
     }
   ],
-  "status": "complete"
+  "status": "complete",
+  "last_reconciled": "2026-07-04T22:05:53Z"
 }

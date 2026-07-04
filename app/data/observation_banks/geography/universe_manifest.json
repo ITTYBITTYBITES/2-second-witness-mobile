@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "universe": "geography",
+  "display_name": "Geography",
+  "world_order": [
+    "biomes",
+    "capitals",
+    "climate",
+    "continents",
+    "deserts",
+    "islands",
+    "landmarks",
+    "mountains",
+    "oceans",
+    "rivers"
+  ],
+  "architecture": "Universe > World > Spike Catalog",
+  "implementation_status": {
+    "global_status": "spike_catalog_only",
+    "note": "Legacy spike catalog content present; no observation bank pipeline scaffolded.",
+    "last_reconciled": "2026-07-04T22:05:53Z"
+  },
+  "last_verified": "2026-07-04T22:05:53Z",
+  "observation_count": 0,
+  "world_count": 10
+}

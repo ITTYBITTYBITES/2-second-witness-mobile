@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "executed_at": "2026-07-04T23:01:27Z",
+  "patch_plan": "app/logs/patch_plan.json",
+  "operations": [
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/arctic",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/arctic",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/aviation",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/aviation",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/disaster",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/disaster",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/heist",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/heist",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/military",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/military",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/ocean",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/ocean",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/space",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/space",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/survival",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/survival",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/volcano",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/volcano",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/frontier/wilderness",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/frontier/wilderness",
+      "batch_id": 1
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/firstaid",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/firstaid",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/fitness",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/fitness",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/food",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/food",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/gardening",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/gardening",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/homerepair",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/homerepair",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/medical",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/medical",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/nature",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/nature",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/nutrition",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/nutrition",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/parenting",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/parenting",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/life_sciences/pets",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/life_sciences/pets",
+      "batch_id": 2
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/science_lab/engineering",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/science_lab/engineering",
+      "batch_id": 3
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/science_lab/quantum",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/science_lab/quantum",
+      "batch_id": 3
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/science_lab/science",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/science_lab/science",
+      "batch_id": 3
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/science_lab/weather",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/science_lab/weather",
+      "batch_id": 3
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/cognitive_bias",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/cognitive_bias",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/crime",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/crime",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/economics",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/economics",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/finance",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/finance",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/history",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/history",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/influence",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/influence",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/law",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/law",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/philosophy",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/philosophy",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/politics",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/politics",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/society_mind/psych",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/society_mind/psych",
+      "batch_id": 4
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/ai",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/ai",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/auto",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/auto",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/blockchain",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/blockchain",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/cyber",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/cyber",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/gamedev",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/gamedev",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/hardware",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/hardware",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/iot",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/iot",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/robotics",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/robotics",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/telecom",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/telecom",
+      "batch_id": 5
+    },
+    {
+      "operation_type": "delete",
+      "source": "app/data/content/base_bundle/tech_ops/webdev",
+      "backup": "app/logs/rollback/app/data/content/base_bundle/tech_ops/webdev",
+      "batch_id": 5
+    }
+  ]
+}

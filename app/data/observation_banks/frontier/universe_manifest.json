@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "universe": "frontier",
+  "display_name": "Frontier",
+  "world_order": [
+    "asteroid_mining",
+    "cosmic_radiation",
+    "cryogenics",
+    "deep_space_navigation",
+    "deep_space_probes",
+    "exoplanet_survey",
+    "extravehicular_activity",
+    "interstellar_travel",
+    "life_support",
+    "lunar_base_ops",
+    "mars_colonization",
+    "near_earth_objects",
+    "orbital_mechanics",
+    "planetary_defense",
+    "propulsion_systems",
+    "satellite_comm",
+    "space_law",
+    "space_weather",
+    "terraforming",
+    "xeno_biology"
+  ],
+  "architecture": "Universe > World > Subcategory > Observation Bank",
+  "implementation_status": {
+    "global_status": "scaffolded",
+    "note": "World and subcategory metadata present; compiled observation banks are placeholders awaiting content generation.",
+    "last_reconciled": "2026-07-04T22:05:53Z"
+  },
+  "last_verified": "2026-07-04T22:05:53Z",
+  "observation_count": 0,
+  "world_count": 20
+}

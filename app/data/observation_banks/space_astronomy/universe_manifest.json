@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "universe": "space_astronomy",
+  "display_name": "Space Astronomy",
+  "world_order": [
+    "asteroids",
+    "black_holes",
+    "cosmology",
+    "exoplanets",
+    "galaxies",
+    "nebulae",
+    "solar_system",
+    "space_missions",
+    "stars",
+    "telescopes"
+  ],
+  "architecture": "Universe > World > Spike Catalog",
+  "implementation_status": {
+    "global_status": "spike_catalog_only",
+    "note": "Legacy spike catalog content present; no observation bank pipeline scaffolded.",
+    "last_reconciled": "2026-07-04T22:05:53Z"
+  },
+  "last_verified": "2026-07-04T22:05:53Z",
+  "observation_count": 0,
+  "world_count": 10
+}
