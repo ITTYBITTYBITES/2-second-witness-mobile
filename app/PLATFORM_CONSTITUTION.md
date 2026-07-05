@@ -1,5 +1,5 @@
 # 2 SECOND WITNESS: PLATFORM CONSTITUTION
-**The Immutable Laws of the Liquid Memory Engine**
+**The Immutable Laws of the 2 Second Witness Engine**
 
 This document is not a guide. It is the hard constraint layer that prevents structural decay as the platform scales. Any Pull Request or code change that violates these axioms must be immediately rejected.
 

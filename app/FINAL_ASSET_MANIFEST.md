@@ -1,5 +1,5 @@
 # FINAL ASSET PRODUCTION MANIFEST
-*The complete list of all missing art and audio assets required to bring Liquid Memory V2 to a fully polished, launch-ready state.*
+*The complete list of all missing art and audio assets required to bring 2 Second Witness to a fully polished, launch-ready state.*
 
 ---
 

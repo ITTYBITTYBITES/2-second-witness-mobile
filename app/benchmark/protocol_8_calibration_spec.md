@@ -1,5 +1,5 @@
 # PROTOCOL 8: CROSS-UNIVERSE CALIBRATION TESTING
-*Validating the Invariance of the Cognitive Mirror*
+*Validating the Invariance of the Mirror*
 
 **Objective:**
 Falsify the assumption that the `WitnessEngine` measures cognition equally across all perceptual manifolds. We actively attempt to prove that World rendering (Colors, Fog, Audio, Geometry) biases the reaction time (RT) or error distribution of a fixed Cognitive Task.

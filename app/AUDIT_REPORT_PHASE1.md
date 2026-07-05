@@ -1,4 +1,4 @@
-# Phase 1 Audit Report — Liquid Memory V2 Observation System
+# Phase 1 Audit Report — 2 Second Witness Observation System
 
 **Date:** 2026-07-05 · **Status:** Pre-change audit complete · **Scope:** All observation content, registry, and engine contract
 

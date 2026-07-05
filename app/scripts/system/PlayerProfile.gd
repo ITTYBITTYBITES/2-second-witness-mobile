@@ -2,7 +2,7 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness 
-# THE MEMORY MIRROR & MEANINGFUL PROGRESSION SYSTEM
+# THE MIRROR & MEANINGFUL PROGRESSION SYSTEM
 # ---------------------------------------------------------
 
 const SAVE_PATH = "user://profile.save"
@@ -136,7 +136,7 @@ func record_cognitive_event(c_trait: String, scenario_id: String, universe_id: S
 	experience += xp_gained
 	current_level = 1 + int(float(experience) / 1000.0)
 	
-	var titles = ["Observer", "Pattern Explorer", "Focus Specialist", "Speed Architect", "Pattern Witness", "Liquid Master"]
+	var titles = ["Observer", "Pattern Explorer", "Focus Specialist", "Speed Architect", "Pattern Witness", "Master Witness"]
 	player_title = titles[clamp(current_level - 1, 0, titles.size() - 1)]
 	
 	if not unlocked_achievements.has("FIRST_STEP") and lifetime_sessions >= 1: unlocked_achievements.append("FIRST_STEP")

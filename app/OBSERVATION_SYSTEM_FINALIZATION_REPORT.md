@@ -1,4 +1,4 @@
-# Liquid Memory V2 — Observation System Finalization Report
+# 2 Second Witness — Observation System Finalization Report
 
 **Commit:** `f77e11d` (pushed to `main`) · **Date:** 2026-07-05 · **Engine:** Godot 4.6-stable
 

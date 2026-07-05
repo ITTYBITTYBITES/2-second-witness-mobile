@@ -5,7 +5,7 @@
 
 ### 🚀 Major Architectural Enhancements
 *   **Safe Audit Ground-Truth Enforcement:** Completely eliminated narrative inflation and speculative synthesis from architecture status reports. Permanently established `GROUND_TRUTH_ARCHITECTURE_AUDIT.md` to map exact runtime singletons, reachable scenes, and uncompromised system truth tables.
-*   **The Product Bible:** Established `LIQUID_MEMORY_V2_PRODUCT_BIBLE.md` as the single canonical product specification, locking in core definitions for `Universe`, `World`, `Scenario`, `Scenario Set`, `Curated Mission`, `Cognitive Mechanic`, and `Knowledge Exposure` to prevent conceptual drift.
+*   **The Product Bible:** Established `PRODUCT_BIBLE.md` as the single canonical product specification, locking in core definitions for `Universe`, `World`, `Scenario`, `Scenario Set`, `Curated Mission`, `Cognitive Mechanic`, and `Knowledge Exposure` to prevent conceptual drift.
 *   **Dual Persistence Ledgers:** Strictly decoupled data persistence into permanent profiles (`user://profile.save`) and weekly competition ledgers (`Active Scenario Pool`, `Featured Free Worlds`).
 *   **Google Play Billing Adapter Layer:** Fully implemented production-grade billing adapter in `StoreManager.gd`. Established explicit signal connections for `GodotGooglePlayBilling` (`connected`, `purchases_updated`), native purchase restoration (`queryPurchases`), purchase acknowledgements (`acknowledgePurchase`), and offline-first transaction queues (`_pending_transactions`).
 

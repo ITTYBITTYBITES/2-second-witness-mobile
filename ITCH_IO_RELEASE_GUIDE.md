@@ -28,7 +28,7 @@ Godot generates the `index.html` file, but you need to manually drop your Adster
 ## 3. ITCH.IO PAGE SETTINGS
 
 **Title:** 2 Second Witness
-**Short Description:** A high-speed cognitive mirror. You are not playing a game. The game is observing you.
+**Short Description:** A high-speed Mirror. You are not playing a game. The game is observing you.
 **Classification:** Game
 **Kind of Project:** HTML (You play it in the browser)
 **Release Status:** In development / Early Access
@@ -52,7 +52,7 @@ Check the box that says: **"This file will be played in the browser"**.
 
 Clicking the Iris violently collapses the environment, plunging you into a high-pressure "Cognitive Spike." You have 2 seconds to resolve the ambiguity. 
 
-### The Cognitive Mirror
+### The Mirror
 This is not a brain-training app that grades you with arbitrary "XP." *2 Second Witness* is a psychometric instrument. As you play, the engine silently maps your reaction times, error rates, and hesitation under uncertainty. 
 
 The **Player Profile** acts as a mirror, actively generating psychological insights based on your playstyle:

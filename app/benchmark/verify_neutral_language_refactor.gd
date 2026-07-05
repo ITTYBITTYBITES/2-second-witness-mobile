@@ -33,7 +33,7 @@ func _init():
 		push_error("LANGUAGE FAIL: LandingScreen failed to reflect neutral observation experience.")
 		quit(1); return
 		
-	print("\n  [Check 2] PlayerProfileScreen -> Verifying Memory Mirror title & traits header...")
+	print("\n  [Check 2] PlayerProfileScreen -> Verifying Mirror title & traits header...")
 	router.toggle_mirror_modal()
 	var mirror = router.persistent_mirror_instance
 	var title = mirror.get_node_or_null("PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/Header/Title")
@@ -41,8 +41,8 @@ func _init():
 	print("    Mirror Title: ", title.text if title else "NULL")
 	print("    Traits Header: ", t_sec.text if t_sec else "NULL")
 	
-	if not title or title.text != "MEMORY MIRROR":
-		push_error("LANGUAGE FAIL: PlayerProfileScreen failed to rename Cognitive Mirror to Memory Mirror.")
+	if not title or title.text != "MIRROR":
+		push_error("LANGUAGE FAIL: PlayerProfileScreen failed to use the canonical Mirror term.")
 		quit(1); return
 		
 	if not t_sec or t_sec.text != "OBSERVATION METRICS (PATTERN SKILLS)":

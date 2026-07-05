@@ -21,7 +21,7 @@ These three are the **tinting backbone** — every component below defers to the
 | 2 | **`WorldCard`** | 270×124 variant; world name + scenario count + mastery %; same border treatment | World-selection grid |
 | 3 | **`NeonButton`** | Layer-3 `UIButtonFrame` (256×96), border-only; StyleBox states (normal/hover/pressed); `primary` font color lightened 0.6 on hover | All scenarios + menus |
 | 4 | **`ModalFrame`** | Frosted-glass modal via `ModalWindowManager`; semi-transparent `bg` (~15% alpha); `primary` border; 12px radius | All modal dialogs |
-| 5 | **`MirrorPanel`** | Cognitive Mirror HUD utility; must satisfy 3 constraints (zero nav dependency, zero sim mutation, zero uninvoked blocking) | HUD (always-present) |
+| 5 | **`MirrorPanel`** | Mirror HUD utility; must satisfy 3 constraints (zero nav dependency, zero sim mutation, zero uninvoked blocking) | HUD (always-present) |
 | 6 | **`StimulusSprite`** | Layer-3 128×128, centered origin, no padding; **positionally locked** at cascade start | Every cognitive scenario |
 | 7 | **`MetricLabel`** | Tabular-figure micro-label (10–12px); monospaced numerals; letter-spaced | HUD + Mirror + cards |
 | 8 | **`SectionHeader`** | Small-caps / uppercase title rule with `primary` underline accent | All screen headers |

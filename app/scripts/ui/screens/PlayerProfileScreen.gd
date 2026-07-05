@@ -29,7 +29,7 @@ func _ready():
 	
 	$VoidBG.gui_input.connect(func(event):
 		if event is InputEventMouseButton and event.pressed:
-			print("[MEMORY MIRROR] Background clicked. Exiting mirror.")
+			print("[MIRROR] Background clicked. Exiting mirror.")
 			_request_close()
 	)
 	

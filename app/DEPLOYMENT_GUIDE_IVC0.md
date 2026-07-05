@@ -7,7 +7,7 @@ This guide provides the exact steps to generate the locked `ivc0_instrument.apk`
 ## STEP 1: PREPARE GODOT FOR EXPORT
 
 1. **Open Godot 4.3 (or 4.6 if using the custom build).**
-2. **Open the Project:** Select the `LiquidMemory_V2` directory.
+2. **Open the Project:** Select the `2-second-witness-mobile/app` directory.
 3. **Verify Boot Scene:** Ensure `MCT0_Calibration.tscn` is set as the main scene if you want to force the calibration on every fresh boot, OR ensure `MainShell.tscn` is the main scene and you have wired it to load `MCT0_Calibration` before the tunnel starts. *(Currently, the project is configured to boot `MainShell.tscn`. To force the calibration gate, you must manually launch `MCT0_Calibration.tscn` or wire it into the `MainShell.gd` boot sequence.)*
 
 ## STEP 2: CONFIGURE THE ANDROID PRESET
@@ -25,7 +25,7 @@ This guide provides the exact steps to generate the locked `ivc0_instrument.apk`
 
 1. At the bottom of the Export window, make sure **Export With Debug** is **UNCHECKED**. We want a clean Release build with no editor overhead.
 2. Click **Export Project**.
-3. Save the file as `ivc0_instrument.apk` inside the `LiquidMemory_V2/build/android/` folder.
+3. Save the file as `ivc0_instrument.apk` inside the `2-second-witness-mobile/app/build/android/` folder.
 
 ## STEP 4: DEPLOY TO THE DEVICE
 
@@ -36,7 +36,7 @@ You have two options to get the APK onto the test devices:
 2. Ensure **USB Debugging** is enabled in the Android Developer Options.
 3. Open a terminal/command prompt and run:
    ```bash
-   adb install -r LiquidMemory_V2/build/android/ivc0_instrument.apk
+   adb install -r 2-second-witness-mobile/app/build/android/ivc0_instrument.apk
    ```
 
 ### Option B: Direct Transfer (Wireless - Easier for friends/family)

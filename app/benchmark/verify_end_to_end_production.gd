@@ -70,7 +70,7 @@ func _init():
 	ad_mgr.check_and_show_ad()
 	print("✅ STAGE 4 PASS: Google Play Billing adapter layer and AdMob simulation flows complete flawlessly.\n")
 	
-	print("--- STAGE 5: ASSERTING SAVE / LOAD PROGRESSION & COGNITIVE MIRROR INSIGHTS ---")
+	print("--- STAGE 5: ASSERTING SAVE / LOAD PROGRESSION & MIRROR INSIGHTS ---")
 	profile.record_cognitive_event("recall", "memory_cascade", "life_sciences", "firstaid", true, 420.0)
 	print("  Player Level: ", profile.current_level, " | Title: ", profile.player_title, " | Experience: ", profile.experience)
 	print("  Achievements Unlocked: ", profile.unlocked_achievements)
@@ -80,7 +80,7 @@ func _init():
 	if router.current_screen_name != "PlayerProfileScreen":
 		push_error("MIRROR FAIL: PlayerProfileScreen failed to mount.")
 		quit(1); return
-	print("✅ STAGE 5 PASS: PlayerProfile successfully saves and rehydrates full progression statistics into the Cognitive Mirror centerpiece.\n")
+	print("✅ STAGE 5 PASS: PlayerProfile successfully saves and rehydrates full progression statistics into the Mirror centerpiece.\n")
 	
 	print("=================================================================")
 	print("🏆 END-TO-END PRODUCTION VERIFICATION PASS: 100% SUCCESS CONDITION ATTAINED.")

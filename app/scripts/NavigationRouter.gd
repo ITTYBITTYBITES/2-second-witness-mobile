@@ -269,7 +269,7 @@ func _start_recommended_world(universe_id: String, world_id: String):
 func toggle_mirror_modal():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "external_call", "toggle_mirror_modal()")
-	print("[HUD UTILITY] Toggling Memory Mirror modal instance under HUDRoot.")
+	print("[HUD UTILITY] Toggling Mirror modal instance under HUDRoot.")
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if persistent_mirror_instance and is_instance_valid(persistent_mirror_instance):
 		if persistent_mirror_instance.visible:

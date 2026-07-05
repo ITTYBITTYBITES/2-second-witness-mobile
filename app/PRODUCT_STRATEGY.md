@@ -1,7 +1,7 @@
 # 2 SECOND WITNESS: PRODUCT & RETENTION STRATEGY
 
 **Product Name:** 2 Second Witness
-**Underlying Engine:** Liquid Memory V2
+**Underlying Engine:** 2 Second Witness
 
 ## The Definitive Platform Classification
 *2 Second Witness* is not a "game with levels" or an "ambitious trivia game with cognitive mechanics." 

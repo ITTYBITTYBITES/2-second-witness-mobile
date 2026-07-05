@@ -106,7 +106,7 @@ func _check_returning_user_welcome():
 	subtitle_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	subtitle_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	if profile and profile.lifetime_sessions > 1:
-		subtitle_label.text = "Welcome back. Your Memory Mirror is ready.\nContinue observing or discover a new world."
+		subtitle_label.text = "Welcome back. Your Mirror is ready.\nContinue observing or discover a new world."
 		subtitle_label.add_theme_color_override("font_color", Color(0.85, 0.95, 1.0))
 	else:
 		subtitle_label.text = "Test your cognitive speed and visual recall across weekly featured universes.\nBegin instantly, or discover a world first."

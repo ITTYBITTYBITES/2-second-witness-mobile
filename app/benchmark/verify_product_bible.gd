@@ -6,7 +6,7 @@ func _init():
 	print("=================================================================\n")
 	
 	print("--- STAGE 1: VERIFYING PHYSICAL EXISTENCE & READABILITY ---")
-	var bible_path = "res://LIQUID_MEMORY_V2_PRODUCT_BIBLE.md"
+	var bible_path = "res://PRODUCT_BIBLE.md"
 	
 	if not FileAccess.file_exists(bible_path):
 		push_error("BIBLE FAIL: Product Bible missing at path: " + bible_path)

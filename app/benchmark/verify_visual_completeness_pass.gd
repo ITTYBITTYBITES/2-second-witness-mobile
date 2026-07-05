@@ -21,7 +21,7 @@ func _init():
 	print("--- STAGE 2: ASSERTING ALL 7 PRESENTATION DOMAINS ---")
 	var domains = [
 		"Domain 1: Universe Cards", "Domain 2: World Cards", "Domain 3: Portal Visuals",
-		"Domain 4: Scenario Screens", "Domain 5 & 6: Player Profile & Cognitive Mirror",
+		"Domain 4: Scenario Screens", "Domain 5 & 6: Player Profile & Mirror",
 		"Domain 7: Settings Modal"
 	]
 	

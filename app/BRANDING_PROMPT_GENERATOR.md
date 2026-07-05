@@ -1,14 +1,14 @@
 # 2 SECOND WITNESS: AI ART DIRECTION & BRANDING MANIFEST
 
-If you are feeding this into an AI image generator (like Midjourney, DALL-E 3, or Stable Diffusion) to lock in the final visual identity of the app, use the following prompts. They are engineered to produce assets that perfectly match the *Liquid Memory V2* architecture.
+If you are feeding this into an AI image generator (like Midjourney, DALL-E 3, or Stable Diffusion) to lock in the final visual identity of the app, use the following prompts. They are engineered to produce assets that perfectly match the *2 Second Witness* architecture.
 
 ---
 
 ## 1. THE APP ICON (The App Store Face)
-*This is the most important asset. It must communicate "Cognitive Mirror" instantly.*
+*This is the most important asset. It must communicate "Mirror" instantly.*
 
 **AI Prompt:**
-> A sleek, minimalist, ultra-modern app icon design for a sci-fi cognitive testing application. A glowing, perfect geometric neon-cyan ring (an iris) hovering in a deep, dark blue void. Inside the center of the ring is absolute, pitch-black nothingness. The aesthetic is "Liquid Memory" — clinical, high-tech, yet mysterious. Vector art style, flat but with intense neon bloom, dark mode, high contrast, UI/UX design, masterpiece.
+> A sleek, minimalist, ultra-modern app icon design for a sci-fi cognitive testing application. A glowing, perfect geometric neon-cyan ring (an iris) hovering in a deep, dark blue void. Inside the center of the ring is absolute, pitch-black nothingness. The aesthetic is "2 Second Witness" — clinical, high-tech, yet mysterious. Vector art style, flat but with intense neon bloom, dark mode, high contrast, UI/UX design, masterpiece.
 
 ---
 

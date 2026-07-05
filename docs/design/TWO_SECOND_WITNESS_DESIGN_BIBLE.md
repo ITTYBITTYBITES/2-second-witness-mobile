@@ -63,15 +63,15 @@ These terms recur throughout the project and the engine code. Defining them once
 - **Observation** — A single canonical knowledge object (CKO) sourced from a bank, transformed by the pipeline into a playable trial.
 - **Cascade** — The timed ~2-second cognitive event the player performs against an observation.
 - **Measurement Lock** — The invariant that interaction geometry (positions, sizes, timing) is identical across all universes, so cognitive difficulty is a constant. Visual themes may *never* alter it.
-- **Cognitive Mirror** — The product's core metaphor and the player-facing profile/insights HUD utility. Reflects observation data back to the player; satisfies the 3 HUD-utility constraints (zero navigation dependency, zero simulation mutation, zero uninvoked blocking).
+- **Mirror** — The product's core metaphor and the player-facing profile/insights HUD utility. Reflects observation data back to the player; satisfies the 3 HUD-utility constraints (zero navigation dependency, zero simulation mutation, zero uninvoked blocking).
 
 ---
 
 ## 3. Product Identity & Visual Design Principles
 
-**Product:** *2 Second Witness* — an interactive observation-discovery platform built on the "Liquid Memory" concept: a clinical, high-tech cognitive instrument wrapped in a mysterious, flowing sci-fi atmosphere.
+**Product:** *2 Second Witness* — an interactive observation-discovery platform built on the observation-discovery concept: a clinical, high-tech cognitive instrument wrapped in a mysterious, flowing sci-fi atmosphere.
 
-**Core metaphor:** *The Cognitive Mirror.* The player flies through a forward-motion tunnel toward a luminous geometric ring (the **Iris** / Lens) and performs rapid 2-second cognitive observations. The interface is a measurement instrument, not a decoration.
+**Core metaphor:** *The Mirror.* The player flies through a forward-motion tunnel toward a luminous geometric ring (the **Iris** / Lens) and performs rapid 2-second cognitive observations. The interface is a measurement instrument, not a decoration.
 
 ### The Five Design Pillars
 1. **The Instrument Is Honest.** Every visual element either *measures* or *reports*. Ornament that does not serve cognition is forbidden. (Source: `ASSET_CONTRACT_SPEC` — "Art is a perceptual substitution layer only.")
@@ -111,7 +111,7 @@ The UI is organized as a **3-layer separation** (source: `UI_TAXONOMY_SPEC`). Ea
 ### Control-plane governance
 Two **orthogonal** graphs intersect *only* through `ModalWindowManager`:
 - **Navigation Graph** (linear, reachable): `LandingScreen → WeeklyFeaturedScreen → WorldSelectScreen → ScenarioNode`, governed by `NavigationRouter`.
-- **HUD Utility Graph** (quick-access): HUD buttons → `ModalWindowManager.push()`. The Cognitive Mirror is a HUD utility (zero navigation dependency, zero simulation mutation, zero uninvoked blocking) — it is *never* a scene transition.
+- **HUD Utility Graph** (quick-access): HUD buttons → `ModalWindowManager.push()`. The Mirror is a HUD utility (zero navigation dependency, zero simulation mutation, zero uninvoked blocking) — it is *never* a scene transition.
 
 ### Surface treatment
 - **Panels:** Frosted-glass / holographic. Semi-transparent dark base (`bg` color at ~15% alpha), neon `primary` border (4px bottom accent).
@@ -219,7 +219,7 @@ During the active 2-second cognitive window:
 - **Set:** `icon_check`, plus a minimal semantic set (play, lock, back, mirror, settings, store). Each universe *tints* the shared icon set rather than shipping its own.
 
 ### App icon
-- Glowing geometric neon ring (iris) in a deep-blue void; pitch-black center. "Cognitive Mirror" must read instantly at 512×512 and down to 48×48. (See `BRANDING_PROMPT_GENERATOR.md` §1, incorporated.)
+- Glowing geometric neon ring (iris) in a deep-blue void; pitch-black center. "Mirror" must read instantly at 512×512 and down to 48×48. (See `BRANDING_PROMPT_GENERATOR.md` §1, incorporated.)
 
 ---
 
@@ -377,10 +377,10 @@ The project uses a **two-domain split** (source: `README.md`):
 
 ## 15. AI Asset Generation Standards
 
-To guarantee a consistent *Liquid Memory* identity across AI-generated assets, **every generation prompt must include the style lock + the specific asset contract**. (Consolidated from `BRANDING_PROMPT_GENERATOR.md`.)
+To guarantee a consistent *2 Second Witness* identity across AI-generated assets, **every generation prompt must include the style lock + the specific asset contract**. (Consolidated from `BRANDING_PROMPT_GENERATOR.md`.)
 
 ### The universal style lock (append to EVERY prompt)
-> *Minimalist, clinical, high-tech, dark-mode, high-contrast, UI/UX design, vector art style, flat with intense neon bloom, no drop shadows, sharp edges, masterpiece. Aesthetic: "Liquid Memory" — clinical yet mysterious.*
+> *Minimalist, clinical, high-tech, dark-mode, high-contrast, UI/UX design, vector art style, flat with intense neon bloom, no drop shadows, sharp edges, masterpiece. Aesthetic: "2 Second Witness" — clinical yet mysterious.*
 
 ### Per-asset-type prompts (authoritative examples)
 **App icon:** glowing perfect geometric neon-cyan ring (iris) in deep dark-blue void, pitch-black center.
@@ -410,7 +410,7 @@ To guarantee a consistent *Liquid Memory* identity across AI-generated assets, *
 | `VisualIdentityManager` (exists) | Resolves universe identity → tints | All screens |
 | `UniverseCard` | 280×138 frosted-glass card, `primary` border, title/desc/mastery | Universe grid |
 | `WorldCard` | 270×124 variant; world name + scenario count + mastery % | World grid |
-| `MirrorPanel` | Cognitive Mirror HUD utility (3-rule compliant) | HUD |
+| `MirrorPanel` | Mirror HUD utility (3-rule compliant) | HUD |
 | `ModalFrame` | Frosted-glass modal via `ModalWindowManager` | All modals |
 | `NeonButton` | Layer-3 button frame (256×96), StyleBox states | Scenarios + menus |
 | `StimulusSprite` | Layer-3 128×128, positionally locked | All scenarios |
@@ -455,7 +455,7 @@ This Bible **merges** (does not duplicate) the following existing specs. They re
 | `app/CONSISTENCY_CONTRACT_SPEC.md` | §9 animation (time-sliced consistency, control plane) |
 | `app/DESIGN_CONSTRAINT_ENGINEERING_SPEC.md` | §9 animation (incoherence tolerance matrix) |
 | `app/BRANDING_PROMPT_GENERATOR.md` | §8 app icon, §15 AI generation standards |
-| `app/LIQUID_MEMORY_V2_PRODUCT_BIBLE.md` | §3 product identity (Cognitive Mirror concept) |
+| `app/PRODUCT_BIBLE.md` | §3 product identity (Mirror concept) |
 | `app/INTERACTION_DESIGN_UNDER_CONSTRAINT_SPEC.md` | §4, §9 (2-second timing invariant) |
 | `app/MASTER_UNIVERSE_REGISTRY.json` | §6 color palette (authoritative source of all palette values) |
 | `app/FINAL_ASSET_MANIFEST.md` | §14 specs, §17 structure |

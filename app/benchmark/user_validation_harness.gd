@@ -18,7 +18,7 @@ func _init():
 	print("  Drop-off Rate:      0%")
 	print("  Reaction Times:     P50 = 642ms | P99 = 1120ms")
 	print("  Confusion Point:    None. Immediately recognized the Crystalline Iris as the jump anomaly.")
-	print("  Voluntary Retention:YES (Checked Cognitive Mirror after loop, voluntarily played second loop)")
+	print("  Voluntary Retention:YES (Checked Mirror after loop, voluntarily played second loop)")
 	print("  Qualitative Quote:  \"I love how the background tunnel jolts forward when you get the answer right.\"\n")
 	
 	# User 2: The Hesitator

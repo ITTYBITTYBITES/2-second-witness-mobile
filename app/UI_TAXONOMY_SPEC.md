@@ -31,7 +31,7 @@ This document provides a definitive mental model and architectural documentation
 ---
 
 ## 3. The Mandatory Constraints of HUD Utility Classification
-The Cognitive Mirror (`PlayerProfileScreen`) is classified as a pure HUD utility. This classification is valid only because `Mirror` satisfies three strict runtime constraints simultaneously:
+The Mirror (`PlayerProfileScreen`) is classified as a pure HUD utility. This classification is valid only because `Mirror` satisfies three strict runtime constraints simultaneously:
 1. **Zero Navigation Dependency:** It does not depend on navigation state (world or world-select context).
 2. **Zero Simulation Mutation:** It does not mutate simulation state directly (zero gameplay-altering writes).
 3. **Zero Uninvoked Blocking:** It does not block HUD interaction flow (no persistent modal lock unless explicitly invoked by the player).
@@ -39,7 +39,7 @@ The Cognitive Mirror (`PlayerProfileScreen`) is classified as a pure HUD utility
 ---
 
 ## 4. The Orthogonality of the Two Graphs (Eliminating Stack Ambiguity)
-The architecture formally rejects the practice of calling `scene_shift` to invoke HUD utility actions. Calling `scene_shift` for the Cognitive Mirror represents a scene transition that silently collapses the 3-layer model into a 2-layer navigation system with overlays. 
+The architecture formally rejects the practice of calling `scene_shift` to invoke HUD utility actions. Calling `scene_shift` for the Mirror represents a scene transition that silently collapses the 3-layer model into a 2-layer navigation system with overlays. 
 
 To maintain absolute long-term stability, the system enforces two completely orthogonal graphs that intersect **exclusively via `ModalWindowManager`**:
 
@@ -49,4 +49,4 @@ $$\text{LandingScreen} \longrightarrow \text{WeeklyFeaturedScreen} \longrightarr
 
 ### B. The HUD Utility Graph (Orthogonal Quick Access)
 $$\text{HUDRoot Buttons (Mirror, Leave, Store, Profile)} \longrightarrow \text{ModalWindowManager.push("mirror")}$$
-*   `Instancing Rule:` The Cognitive Mirror is instanced once under `HUDRoot` and toggled via `visible` or `ModalWindowManager.push("mirror")`. Zero overlap, zero routing crossover.
+*   `Instancing Rule:` The Mirror is instanced once under `HUDRoot` and toggled via `visible` or `ModalWindowManager.push("mirror")`. Zero overlap, zero routing crossover.

@@ -11,7 +11,7 @@ The repository is split into two distinct operational domains to support Over-Th
 ### `/app/` (The Engine)
 This directory contains the Godot 4.6 project. It handles all rendering, state management, observation measurement logic, and the offline fallback bundle.
 - **Do NOT** update content here if you want it to push to live users. This requires a full App Store update.
-- Contains the `FidelityEnforcer`, `SystemHealthMonitor`, `InteractionKernel`, `ModalWindowManager`, `NavigationRouter`, `PlayerProfile` (Memory Mirror Engine), and `UniverseRenderer` manifolds.
+- Contains the `FidelityEnforcer`, `SystemHealthMonitor`, `InteractionKernel`, `ModalWindowManager`, `NavigationRouter`, `PlayerProfile` (Mirror Engine), and `UniverseRenderer` manifolds.
 
 ### `/live_content/` (The OTA Pipeline)
 This directory is the live production database. 
@@ -92,7 +92,7 @@ The repository has reached the point where no further engineering work can be co
 
 ## 7. Architecture Documentation
 Please read the following documents in the root directory before modifying the codebase:
-- `LIQUID_MEMORY_V2_PRODUCT_BIBLE.md` (Canonical Product Specification)
+- `PRODUCT_BIBLE.md` (Canonical Product Specification)
 - `GROUND_TRUTH_RECONCILIATION_AUDIT.md` (Definitive Software Audit & Anti-Hallucination Inventory)
 - `PRODUCTION_READINESS_REPORT.md` (Consolidated Release Checklist)
 - `ASSET_AUDIT.md` (Asset Health Report)

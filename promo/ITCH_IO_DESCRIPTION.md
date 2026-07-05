@@ -6,7 +6,7 @@
 
 Clicking the Iris violently collapses the environment, plunging you into a 10-second high-pressure "Cognitive Spike."
 
-### The Cognitive Mirror
+### The Mirror
 This is not a brain-training app that grades you with arbitrary "XP" or "Levels." *2 Second Witness* is a psychometric instrument. As you play, the engine silently maps your reaction times, error rates, and hesitation under uncertainty. 
 
 The **Player Profile** acts as a mirror, actively generating psychological insights based on your playstyle:
@@ -23,4 +23,4 @@ The **Player Profile** acts as a mirror, actively generating psychological insig
 **Are you ready to see how your mind actually works?**
 
 ---
-*Built on the Liquid Memory V2 Engine. Optimized for 60FPS Android hardware.*
+*Built on the 2 Second Witness Engine. Optimized for 60FPS Android hardware.*

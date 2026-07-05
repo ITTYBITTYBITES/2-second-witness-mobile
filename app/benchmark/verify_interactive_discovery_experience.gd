@@ -108,7 +108,7 @@ func _init():
 		
 	print("✅ STAGE 4 PASS: World Selection perfectly surfaces estimated time, completion, and Bayesian recommendation status.\n")
 	
-	print("--- STAGE 5: ASSERTING COGNITIVE MIRROR OBSERVATION FRAMING ---")
+	print("--- STAGE 5: ASSERTING MIRROR OBSERVATION FRAMING ---")
 	print("  User invokes MIRROR -> Opening PlayerProfileScreen...")
 	router.toggle_mirror_modal()
 	var mirror = router.persistent_mirror_instance
@@ -129,7 +129,7 @@ func _init():
 		quit(1)
 		return
 		
-	print("✅ STAGE 5 PASS: Cognitive Mirror successfully frames all metrics as non-judgmental observations rather than intelligence scores.\n")
+	print("✅ STAGE 5 PASS: Mirror successfully frames all metrics as non-judgmental observations rather than intelligence scores.\n")
 	
 	print("=================================================================")
 	print("🏆 END-TO-END UX VERIFICATION PASS: 100% COGNITIVE DISCOVERY ALIGNMENT SATISFIED.")

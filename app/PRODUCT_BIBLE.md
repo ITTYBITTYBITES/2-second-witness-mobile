@@ -1,8 +1,8 @@
-# LIQUID MEMORY V2 — THE PRODUCT BIBLE
+# 2 SECOND WITNESS — THE PRODUCT BIBLE
 **Authoritative Architectural & Pedagogical Specification**
 
 ## Executive Summary
-This document serves as the single, canonical product specification for **Liquid Memory V2** (operating commercially as *2 Second Witness*). Its primary purpose is to halt conceptual drift, establishing an uncompromised definition of product ontology, content hierarchy, dual persistence layers, and behavior-driven monetization. 
+This document serves as the single, canonical product specification for **2 Second Witness** (operating commercially as *2 Second Witness*). Its primary purpose is to halt conceptual drift, establishing an uncompromised definition of product ontology, content hierarchy, dual persistence layers, and behavior-driven monetization. 
 
 Every future feature, refactor, or architectural binding must be evaluated directly against the definitions in this Product Bible.
 
@@ -42,7 +42,7 @@ A **Universe** is a top-level macro-domain of human knowledge and inquiry (e.g.,
 A **World** is a specific, cohesive sub-discipline or historical epoch contained within a Universe (e.g., `Ancient Egypt` within `History`, `Cellular Biology` within `Life Sciences`, `Disaster Response` within `Frontier`). A World represents a dedicated learning environment containing specific lore, factual ontologies, and distinct presentation contracts (`WorldProfile.json`).
 
 ### 3. What is a Scenario?
-A **Scenario** is a discrete, interactive educational encounter within a World. It acts as the narrative and pedagogical wrapper for a specific body of knowledge. In the Liquid Memory V2 paradigm, the educational content drives the experience; the Scenario establishes the context, lore, and factual baseline before any cognitive stress testing begins.
+A **Scenario** is a discrete, interactive educational encounter within a World. It acts as the narrative and pedagogical wrapper for a specific body of knowledge. In the 2 Second Witness paradigm, the educational content drives the experience; the Scenario establishes the context, lore, and factual baseline before any cognitive stress testing begins.
 
 ### 4. What is a Scenario Set?
 A **Scenario Set** is a curated, multi-part episodic lesson plan (e.g., `Scenario Set: Building the Pyramids`). It aggregates multiple related Scenarios into a coherent thematic journey. A Scenario Set functions as an interactive chapter of a "living textbook," taking the player through a progression of related knowledge exposures under varying cognitive stresses.
@@ -60,7 +60,7 @@ A **Knowledge Exposure** is a 2-second flash of factual stimulus (a concept, art
 
 ## 2. The Dual Persistence Layers
 
-The Liquid Memory V2 architecture strictly isolates data persistence into two orthogonal operational layers: **Permanent** and **Weekly**.
+The 2 Second Witness architecture strictly isolates data persistence into two orthogonal operational layers: **Permanent** and **Weekly**.
 
 ```
 ┌───────────────────────────────────────────────────────────────────────────┐
@@ -70,14 +70,14 @@ The Liquid Memory V2 architecture strictly isolates data persistence into two or
 ├─────────────────────────────────────┼─────────────────────────────────────┤
 │ • Player Profile (`profile.save`)   │ • Active Scenario Pool              │
 │ • Cognitive Traits & Baselines      │ • Weekly Leaderboard Rankings       │
-│ • The Cognitive Mirror Insights     │ • Featured Free Worlds              │
+│ • The Mirror Insights     │ • Featured Free Worlds              │
 │ • Append-Only Purchase Ledger       │ • Daily & Weekly Challenges         │
 │ • Unlocked Achievements & Mastery   │ • Live Local Content Cache          │
 └─────────────────────────────────────┴─────────────────────────────────────┘
 ```
 
 ### 8. What is stored permanently?
-*   **The Player Profile & Cognitive Mirror:** All 6 core cognitive trait baselines (`Pattern Recognition`, `Recall`, `Rapid Classification`, `Spatial Tracking`, `Decision Confidence`, `Processing Speed`), longitudinal performance histories, Bayesian drift vectors, and generated psychological insights.
+*   **The Player Profile & Mirror:** All 6 core cognitive trait baselines (`Pattern Recognition`, `Recall`, `Rapid Classification`, `Spatial Tracking`, `Decision Confidence`, `Processing Speed`), longitudinal performance histories, Bayesian drift vectors, and generated psychological insights.
 *   **The Entitlement Ledger:** An append-only, event-sourced transaction log (`purchase_receipt_log`) recording every unlocked Universe, Director's Pass ownership status, and physical store receipt.
 *   **Lifetime Milestones:** Total lifetime session counts, accumulated World mastery affinity scores, and unlocked achievements.
 
@@ -155,14 +155,14 @@ Every week, an automated remote content synthesis pipeline (the GitHub Generator
 ### 14. What is free?
 *   **The Base Bundled Slice:** Permanent free access to the flagship starter Worlds (`History -> Ancient Egypt` and `Science Lab -> Cognitive Bias`).
 *   **Weekly Featured Content:** Free exploration access to 3 dynamically rotating Universes and their respective featured Worlds every week.
-*   **The Cognitive Mirror:** Unrestricted, permanent access to the player's evolving psychological profile, trait baselines, and weekly observation trends.
+*   **The Mirror:** Unrestricted, permanent access to the player's evolving psychological profile, trait baselines, and weekly observation trends.
 
 ---
 
 ## 5. Longitudinal Mirror Evolution
 
 ### 15. How does the Mirror evolve over months?
-The Cognitive Mirror is engineered to transform from a simple onboarding guide into a profound psychological dashboard over extended months of play.
+The Mirror is engineered to transform from a simple onboarding guide into a profound psychological dashboard over extended months of play.
 
 ```
 ┌───────────────────────────────────────────────────────────────────────────┐
@@ -185,4 +185,4 @@ The Cognitive Mirror is engineered to transform from a simple onboarding guide i
 └──────────────────────┴────────────────────────────────────────────────────┘
 ```
 
-**Definitive Framing Rule:** Nothing in the Cognitive Mirror is ever framed as a static intelligence score, pass/fail grade, or judgment. Everything is presented exclusively as an empirical, non-judgmental observation of the player's interaction patterns under time pressure.
+**Definitive Framing Rule:** Nothing in the Mirror is ever framed as a static intelligence score, pass/fail grade, or judgment. Everything is presented exclusively as an empirical, non-judgmental observation of the player's interaction patterns under time pressure.

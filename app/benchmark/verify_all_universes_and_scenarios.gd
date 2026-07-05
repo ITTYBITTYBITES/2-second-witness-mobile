@@ -111,7 +111,7 @@ func _init():
 		quit(1)
 		return
 		
-	print("\n✅ STAGE 3 PASS: 3-scenario gameplay stream successfully feeds observations into the Cognitive Mirror centerpiece and returns home flawlessly.\n")
+	print("\n✅ STAGE 3 PASS: 3-scenario gameplay stream successfully feeds observations into the Mirror centerpiece and returns home flawlessly.\n")
 	
 	print("=================================================================")
 	print("🏆 COMPREHENSIVE VERIFICATION HARNESS PASS: ALL UNIVERSES & GAMEPLAY LOOPS SATISFIED.")
