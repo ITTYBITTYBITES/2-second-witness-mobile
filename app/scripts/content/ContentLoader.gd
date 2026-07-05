@@ -230,11 +230,20 @@ func _normalize_item(item: Dictionary) -> Dictionary:
 	# v1_legacy: passthrough (placeholder gate above filters synthetic spikes)
 	return out
 
-# Quality gate: reject synthetic spikes_catalog placeholder content so it never ships.
-const _PLACEHOLDER_PATTERNS = ["Verified Observation #", "Anomaly A#", "Distractor B#", "PROTOCOL SEQUENCE"]
+# Quality gate: reject synthetic placeholder/scaffold content so it never ships.
+# Catches two classes of auto-generated content:
+#  (a) pattern-based placeholders ("Verified Observation #", "Anomaly A#")
+#  (b) "knowledge spike" scaffold items ("Knowledge Spike" titles, spikes_catalog ids)
+const _PLACEHOLDER_PATTERNS = ["Verified Observation #", "Anomaly A#", "Distractor B#", "PROTOCOL SEQUENCE", "Knowledge Spike"]
 
 func _is_placeholder(item: Dictionary) -> bool:
+	# Fast path: synthetic spikes_catalog items carry it in their generated id.
+	if str(item.get("id", "")).find("spikes_catalog") >= 0:
+		return true
 	var blobs: Array = [str(item.get("correct_answer", "")), str(item.get("prompt", ""))]
+	var presentation = item.get("presentation", {})
+	if presentation is Dictionary:
+		blobs.append(str(presentation.get("title", "")))
 	var rules = item.get("rules", {})
 	if rules is Dictionary:
 		blobs.append(str(rules.get("correct_answer", "")))

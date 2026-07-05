@@ -64,12 +64,21 @@ func get_master_registry() -> Dictionary:
 # ---------------------------------------------------------
 
 func get_first_universe() -> String:
+	# Prefer a playable universe so boot/landing starts on real content.
+	var playable = get_playable_universes()
+	if not playable.is_empty():
+		return playable[0]
 	var universes = master_universe_registry.get("universes", {})
 	var keys = universes.keys()
 	return keys[0] if keys.size() > 0 else ""
 
 func get_first_world(universe_id: Variant) -> String:
 	var u_id = normalize_id(universe_id)
+	# Prefer a playable world within the universe.
+	if is_universe_playable(u_id):
+		var pw = get_playable_worlds_for_universe(u_id)
+		if not pw.is_empty():
+			return pw[0]
 	var worlds = get_worlds_for_universe(u_id)
 	return worlds[0] if worlds.size() > 0 else ""
 

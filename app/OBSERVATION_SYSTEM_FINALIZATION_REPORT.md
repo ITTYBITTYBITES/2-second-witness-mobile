@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-The Observation System is now **functionally production-ready**: the data-contract blocker that dropped 100% of observations has been fixed, and **20,474 real observations now flow through the shared pipeline** (previously **0**). The architecture is fully content-pipeline-driven — new universes, worlds, and observations require **zero engine edits**.
+The Observation System is now **functionally production-ready**: the data-contract blocker that dropped 100% of observations has been fixed, and **20,186 genuine observations now flow through the shared pipeline** (previously **0**). (An earlier figure of 20,474 included ~359 low-quality "knowledge spike" scaffold items that were removed during the audit; see `AUDIT_INDEPENDENT.md`.) The architecture is fully content-pipeline-driven — new universes, worlds, and observations require **zero engine edits**.
 
 **One universe is content-complete and fully playable: `creative_arts`** (20 worlds, 20,000 observations). Other universes have empty stub banks requiring authored content — this is a **content-authoring task** (the README already lists "Final Human Art Pass" as a known blocker), not an engine task. No placeholder/synthetic content ships.
 
