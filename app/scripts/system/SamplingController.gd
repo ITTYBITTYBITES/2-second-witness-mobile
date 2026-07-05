@@ -47,7 +47,10 @@ func _initialize_weekly_rotation():
 		var now_sec = int(Time.get_unix_time_from_system())
 		var week_id = int(float(now_sec) / 604800.0)
 		current_week_seed = week_id * 77777 + 2026
-		var all_universes = ["science_lab", "history", "tech_ops", "life_sciences", "society_mind", "creative_arts", "frontier"]
+		var all_universes = []
+		var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
+		if registry and registry.has_method("get_all_universes"):
+			all_universes = registry.get_all_universes().duplicate()
 		var rng_fallback = RandomNumberGenerator.new()
 		rng_fallback.seed = current_week_seed
 		for i in range(all_universes.size() - 1, 0, -1):

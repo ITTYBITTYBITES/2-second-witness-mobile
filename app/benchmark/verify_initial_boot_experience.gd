@@ -6,7 +6,7 @@ func _init():
 	print("=================================================================\n")
 	
 	print("--- STAGE 1: BOOTING COLD LAUNCH CONTROLLER (BootLoader) ---")
-	var boot_loader = load("res://scripts/system/BootLoader.gd").new()
+	var boot_loader = load("res://scripts/BootLoader.gd").new()
 	root.add_child(boot_loader)
 	boot_loader.name = "BootLoader"
 	print("✅ STAGE 1 PASS: BootLoader active and managing cold launch.\n")
@@ -40,7 +40,7 @@ func _init():
 	
 	print("--- STAGE 4: ASSERTING 1-TIME COLD LAUNCH ISOLATION GUARD ---")
 	print("\n  [Action 2] Simulating secondary invocation of BootLoader...")
-	var second_boot = load("res://scripts/system/BootLoader.gd").new()
+	var second_boot = load("res://scripts/BootLoader.gd").new()
 	root.add_child(second_boot)
 	second_boot.name = "SecondBootLoader"
 	

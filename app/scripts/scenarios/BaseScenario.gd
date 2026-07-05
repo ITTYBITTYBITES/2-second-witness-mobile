@@ -217,8 +217,14 @@ func _register_with_execution_engine():
 func _mount_cockpit_instrument_overlay():
 	if get_node_or_null("CockpitHeader") != null: return
 
-	var u_id = _scenario_payload.get("universe", "science_lab")
-	var w_id = _scenario_payload.get("world", "cognitive_bias")
+	var u_id = _scenario_payload.get("universe", "")
+	var w_id = _scenario_payload.get("world", "")
+	if u_id == "" or w_id == "":
+		var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+		if registry and registry.has_method("get_starter_selection"):
+			var sel = registry.get_starter_selection()
+			if u_id == "": u_id = sel["universe_id"]
+			if w_id == "": w_id = sel["world_id"]
 	var s_id = _scenario_payload.get("id", "memory_cascade")
 	var t_id = _scenario_payload.get("type", "memory")
 
@@ -364,8 +370,14 @@ func _set_all_buttons_disabled(node: Node, disable_flag: bool):
 
 func execute_progression_event(is_success: bool, rt_ms: float, trait_id: String = ""):
 	var s_id = _scenario_payload.get("id", "unknown")
-	var u_id = _scenario_payload.get("universe", "history")
-	var w_id = _scenario_payload.get("world", "ancient_egypt")
+	var u_id = _scenario_payload.get("universe", "")
+	var w_id = _scenario_payload.get("world", "")
+	if u_id == "" or w_id == "":
+		var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+		if registry and registry.has_method("get_starter_selection"):
+			var sel = registry.get_starter_selection()
+			if u_id == "": u_id = sel["universe_id"]
+			if w_id == "": w_id = sel["world_id"]
 	var t_id = trait_id if trait_id != "" else _scenario_payload.get("type", "general")
 
 	if is_success:
@@ -452,8 +464,13 @@ func enforce_attentional_strata():
 
 	var pal = {}
 	var vim = Engine.get_main_loop().root.get_node_or_null("VisualIdentityManager") if Engine.get_main_loop() else null
+	var u_id = _scenario_payload.get("universe", "")
+	if u_id == "":
+		var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+		if registry and registry.has_method("get_first_universe"):
+			u_id = registry.get_first_universe()
 	if vim and vim.has_method("get_universe_identity"):
-		pal = vim.get_universe_identity(_scenario_payload.get("universe", "science_lab")).get("palette", {})
+		pal = vim.get_universe_identity(u_id).get("palette", {})
 	var primary_c = pal.get("primary", Color("#00D4FF"))
 	var accent_c = pal.get("accent", Color("#80E5FF"))
 	var dark_outline = Color(0.02, 0.04, 0.08, 0.95)

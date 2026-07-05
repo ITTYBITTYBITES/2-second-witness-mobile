@@ -14,7 +14,12 @@ static func validate_descriptor(descriptor: Dictionary) -> bool:
 	var det = descriptor.get("determinism", {})
 	if not det.has("seed") or det.get("seed", 0) == 0:
 		var ident = descriptor.get("identity", {})
-		var fallback_seed = (str(ident.get("universe_id", "science_lab")) + "_" + str(ident.get("world_id", "default"))).hash()
+		var u_id = str(ident.get("universe_id", ""))
+		var w_id = str(ident.get("world_id", ""))
+		if u_id == "" or w_id == "":
+			push_error("[COMPILER FATAL] WorldDescriptor missing identity and seed. Cannot deterministically compile world.")
+			return false
+		var fallback_seed = (u_id + "_" + w_id).hash()
 		det["seed"] = fallback_seed
 		descriptor["determinism"] = det
 		print("[COMPILER WARNING] Missing or zero seed in WorldDescriptor. Clamped to deterministic identity hash: ", fallback_seed)

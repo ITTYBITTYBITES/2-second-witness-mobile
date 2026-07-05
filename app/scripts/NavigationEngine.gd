@@ -19,6 +19,10 @@ func _ready():
 func _connect_to_router():
 	navigation_event.connect(NavigationRouter.handle_navigation_event)
 
+func navigate_to(destination_data: Dictionary):
+	print("[NAV ENGINE] navigate_to invoked: ", destination_data)
+	process_selection(null, destination_data.get("portal_type", "scenario_node"), destination_data)
+
 func process_selection(_portal_node: Node3D, portal_type: String, destination_data: Dictionary):
 	print("[NAV ENGINE] Portal selected: ", portal_type, " -> ", destination_data)
 	

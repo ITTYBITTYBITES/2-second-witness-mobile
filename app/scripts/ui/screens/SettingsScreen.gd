@@ -21,7 +21,13 @@ func _ready():
 	StyleInjector.apply_menu_style(self)
 	
 	var orch = get_tree().root.get_node_or_null("ExperienceOrchestrator")
-	var uni = orch.active_state.current_universe if (orch and orch.get("active_state") != null) else "history"
+	var uni = ""
+	if orch and orch.get("active_state") != null:
+		uni = orch.active_state.current_universe
+	if uni == "":
+		var registry = get_tree().root.get_node_or_null("ContentRegistry")
+		if registry and registry.has_method("get_first_universe"):
+			uni = registry.get_first_universe()
 	_apply_universe_manifest(uni)
 	
 	btn_close.pressed.connect(_request_close)

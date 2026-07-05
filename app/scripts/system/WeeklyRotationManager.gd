@@ -3,17 +3,6 @@ class_name WeeklyRotationManagerNode
 
 signal rotation_refreshed(active_universes: Array[String], current_seed: int)
 
-# Full Universe Library (7 available universes in repository)
-const FULL_UNIVERSE_LIBRARY: Array[String] = [
-	"science_lab",
-	"history",
-	"tech_ops",
-	"life_sciences",
-	"society_mind",
-	"creative_arts",
-	"frontier"
-]
-
 const ACTIVE_SUBSET_SIZE: int = 6
 
 var current_week_seed: int = 0
@@ -43,7 +32,7 @@ func get_full_universe_library() -> Array:
 		var u_list = reg.get_all_universes()
 		if not u_list.is_empty():
 			return u_list
-	return FULL_UNIVERSE_LIBRARY.duplicate()
+	return []
 
 func refresh_weekly_rotation(force_refresh: bool = false):
 	var week_id = _compute_current_week_id()

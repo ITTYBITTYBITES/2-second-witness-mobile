@@ -9,37 +9,6 @@ signal return_requested
 var monetization_gate_scene = preload("res://scenes/ui/screens/MonetizationGate.tscn")
 var active_gate = null
 
-var universe_meta = {
-	"history": {
-		"title": "History", "desc": "Explore civilizations and human decision making.",
-		"completion": "18%", "traits": "Pattern Recognition, Memory, Reasoning"
-	},
-	"science_lab": {
-		"title": "Science Lab", "desc": "Empirical deduction and probabilistic estimation.",
-		"completion": "32%", "traits": "Hypothesis Testing, Abstraction, Calculation"
-	},
-	"creative_arts": {
-		"title": "Creative Arts", "desc": "Divergent thinking and compositional harmony.",
-		"completion": "45%", "traits": "Divergence, Aesthetic Judgment, Intuition"
-	},
-	"frontier": {
-		"title": "Frontier", "desc": "Deep space navigation and high-stakes trade-offs.",
-		"completion": "12%", "traits": "Spatial Reasoning, Risk Assessment, Navigation"
-	},
-	"society_mind": {
-		"title": "Society & Mind", "desc": "Behavioral dynamics and societal evolution.",
-		"completion": "27%", "traits": "Social Dynamics, Empathy, Systemic Thinking"
-	},
-	"tech_ops": {
-		"title": "Technology", "desc": "Cybernetic protocols and algorithmic efficiency.",
-		"completion": "61%", "traits": "Algorithmic Speed, Precision, Code Parse"
-	},
-	"life_sciences": {
-		"title": "Life Sciences", "desc": "Cellular mechanics and ecological equilibrium.",
-		"completion": "24%", "traits": "Taxonomy, Biological Scaling, Equilibria"
-	}
-}
-
 func _ready():
 	print("WEEKLY SCREEN READY")
 	print("Size: ", $PanelContainer.size)
@@ -52,7 +21,9 @@ func _ready():
 	if get_viewport() and not get_viewport().size_changed.is_connected(_apply_responsive_layout):
 		get_viewport().size_changed.connect(_apply_responsive_layout)
 	_apply_responsive_layout()
-	_apply_universe_manifest("science_lab")
+	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	var featured = registry.get_first_universe() if registry else ""
+	_apply_universe_manifest(featured)
 	_populate_grid()
 
 func _to_color(value: Variant, fallback: Color) -> Color:
@@ -95,7 +66,14 @@ func _populate_grid():
 	
 	var rot_mgr = WeeklyRotationManager if WeeklyRotationManager else get_tree().root.get_node_or_null("WeeklyRotationManager")
 	var reg = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
-	var all_universes = rot_mgr.get_full_universe_library() if (rot_mgr and rot_mgr.has_method("get_full_universe_library")) else (reg.get_all_universes() if (reg and reg.has_method("get_all_universes") and not reg.get_all_universes().is_empty()) else ["history", "science_lab", "creative_arts", "frontier", "society_mind", "tech_ops", "life_sciences"])
+	var all_universes = []
+	if rot_mgr and rot_mgr.has_method("get_full_universe_library"):
+		all_universes = rot_mgr.get_full_universe_library()
+	elif reg and reg.has_method("get_all_universes"):
+		all_universes = reg.get_all_universes()
+	if all_universes.is_empty() and reg and reg.has_method("get_first_universe"):
+		var first = reg.get_first_universe()
+		if first != "": all_universes = [first]
 	all_universes.sort()
 	
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
@@ -105,14 +83,17 @@ func _populate_grid():
 	
 	for uni in all_universes:
 		var is_featured = controller.featured_universes.has(uni)
-		var is_owned = profile.unlocked_universes.has(uni) or uni == "history"
+		var is_owned = profile.unlocked_universes.has(uni)
 		var can_play = is_featured or is_owned
 		
+		var spec = reg.get_universe(uni) if reg else {}
 		var def = vim.get_universe_identity(uni) if vim else {"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")}}
 		var palette = def.get("palette", {})
 		var bg_color = _to_color(palette.get("bg", Color("#0B1320")), Color("#0B1320"))
 		var primary_color = _to_color(palette.get("primary", Color("#00D4FF")), Color("#00D4FF"))
-		var meta = universe_meta.get(uni, universe_meta["science_lab"])
+		var title = spec.get("display_name", uni.capitalize().replace("_", " "))
+		var desc = spec.get("description", "")
+		var completion = spec.get("completion", "0%")
 		
 		var btn = Button.new()
 		btn.custom_minimum_size = Vector2(280, 138)
@@ -120,10 +101,10 @@ func _populate_grid():
 		var status_text = "(OWNED)" if is_owned else ("(FEATURED)" if is_featured else "[LOCKED - $2.99]")
 		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter") if Engine.get_main_loop() else null
 		var prog_ctx = interp.get_universe_progression_context(uni) if (interp and interp.has_method("get_universe_progression_context")) else {}
-		var m_str = prog_ctx.get("global_mastery_trend", "GLOBAL MASTERY: " + meta["completion"])
+		var m_str = prog_ctx.get("global_mastery_trend", "GLOBAL MASTERY: " + completion)
 		var c_str = prog_ctx.get("continuity", "TOTAL OBSERVATIONS: 0")
 		
-		btn.text = meta["title"].to_upper() + " " + status_text + "\n" + meta["desc"] + "\n" + m_str + " | " + c_str
+		btn.text = title.to_upper() + " " + status_text + "\n" + desc + "\n" + m_str + " | " + c_str
 		btn.add_theme_font_size_override("font_size", 14)
 		btn.clip_text = true
 		

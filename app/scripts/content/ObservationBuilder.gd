@@ -31,8 +31,8 @@ func _build_v3_payload(cko: Dictionary, mechanic_id: String, context: Dictionary
 	var payload = {
 		"id": cko.get("observation_id", "unknown") + "_" + mechanic,
 		"observation_id": cko.get("observation_id", "unknown"),
-		"universe": cko.get("universe", context.get("universe", "history")),
-		"world": cko.get("world", context.get("world", "ancient_egypt")),
+		"universe": cko.get("universe", context.get("universe", "")),
+		"world": cko.get("world", context.get("world", "")),
 		"subcategory": cko.get("subcategory", context.get("subcategory", "")),
 		"type": mechanic,
 		"difficulty": int(cko.get("difficulty", 1)),

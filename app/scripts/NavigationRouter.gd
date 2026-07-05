@@ -15,7 +15,7 @@ var _is_transition_completed: bool = false
 var navigation_stack: Array[String] = []
 var current_screen_name: String = ""
 var previous_screen_name: String = ""
-var active_universe_selection: String = "science_lab"
+var active_universe_selection: String = ""
 var active_world_selection: String = ""
 var active_subcategory_selection: String = ""
 var active_scenario_selection: String = ""
@@ -252,11 +252,9 @@ func _validate_recommended_world(universe_id: String, world_id: String) -> Dicti
 	var u_id = normalize_id(universe_id)
 	var w_id = normalize_id(world_id)
 	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
-	if registry and registry.has_method("get_all_worlds_in_universe"):
-		var worlds = registry.get_all_worlds_in_universe(u_id)
-		if worlds.is_empty() or not worlds.has(w_id):
-			u_id = "history"
-			w_id = "ancient_egypt"
+	if registry and registry.has_method("ensure_valid_selection"):
+		var validated = registry.ensure_valid_selection({"universe_id": u_id, "world_id": w_id})
+		return {"universe": validated["universe_id"], "world": validated["world_id"]}
 	return {"universe": u_id, "world": w_id}
 
 func _on_mirror_recommendation_requested(universe_id: String, world_id: String):
@@ -509,8 +507,10 @@ func handle_navigation_event(event: Dictionary):
 		var nav_state = NavigationState if NavigationState else get_tree().root.get_node_or_null("NavigationState")
 		var ctx = nav_state.get_transition_context() if (nav_state and nav_state.has_method("get_transition_context")) else {}
 		
-		var u_id = ctx.get("universe_id", "history")
-		var w_id = ctx.get("world_id", "ancient_egypt")
+		var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+		var validated = registry.ensure_valid_selection({"universe_id": ctx.get("universe_id", active_universe_selection), "world_id": ctx.get("world_id", active_world_selection)}) if registry else {"universe_id": ctx.get("universe_id", active_universe_selection), "world_id": ctx.get("world_id", active_world_selection)}
+		var u_id = validated["universe_id"]
+		var w_id = validated["world_id"]
 		var sub_id = ctx.get("subcategory_id", "")
 		var s_id = ctx.get("scenario_id", "memory_cascade")
 		var c_id = ctx.get("chunk_id", "0")
@@ -585,7 +585,7 @@ func _on_cascade_completed():
 		var nav_state = NavigationState if NavigationState else get_tree().root.get_node_or_null("NavigationState")
 		var old_ctx = nav_state.get_transition_context() if (nav_state and nav_state.has_method("get_transition_context")) else {}
 		var u_id = old_ctx.get("universe_id", active_universe_selection)
-		var w_id = old_ctx.get("world_id", "ancient_egypt")
+		var w_id = old_ctx.get("world_id", active_world_selection)
 		var sub_id = old_ctx.get("subcategory_id", active_subcategory_selection)
 		
 		var profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")

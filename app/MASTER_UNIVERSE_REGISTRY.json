@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
-  "last_verified": "2026-07-04T22:05:53Z",
+  "schema_version": 2,
+  "last_verified": "2026-07-05T00:02:56Z",
   "note": "15 universes requested; 14 canonical universes exist in filesystem.",
   "universes": {
     "animals_wildlife": {
-      "display_name": "Animals Wildlife",
+      "display_name": "Animals & Wildlife",
       "status": "spike_catalog_only",
       "source_path": null,
       "bundle_path": "res://data/content/base_bundle/animals_wildlife",
@@ -22,7 +22,29 @@
         "predators",
         "reptiles"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Fauna and natural history.",
+      "traits": "Taxonomy, Observation",
+      "palette": {
+        "bg": "#0B1320",
+        "primary": "#00D4FF",
+        "accent": "#80E5FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_animals_wildlife.png",
+      "background": "res://assets/textures/env/bg_animals_wildlife.png",
+      "typography": "TECHNICAL",
+      "emotion": "CLINICAL",
+      "motion_scale": 1.0,
+      "lens_profile": "particle_accelerator",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/iris_crystalline.obj"
+      },
+      "completion": "0%",
+      "worlds": {}
     },
     "creative_arts": {
       "display_name": "Creative Arts",
@@ -53,10 +75,93 @@
         "street_art",
         "tattoos_body_art"
       ],
-      "observation_count": 20000
+      "observation_count": 20000,
+      "description": "Divergent thinking and compositional harmony.",
+      "traits": "Divergence, Aesthetic Judgment, Intuition",
+      "palette": {
+        "bg": "#180A22",
+        "primary": "#B833FF",
+        "accent": "#D175FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_creative_arts.png",
+      "background": "res://assets/textures/env/v1/bg_creative_arts.png",
+      "typography": "SPARSE",
+      "emotion": "SATURATED",
+      "motion_scale": 1.5,
+      "lens_profile": "prismatic_lens",
+      "feedback_tone": "poetic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/bg_creative_arts.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/rib_creative_arts.obj"
+      },
+      "completion": "45%",
+      "worlds": {
+        "animation": {
+          "display_name": "Animation"
+        },
+        "architecture": {
+          "display_name": "Architecture"
+        },
+        "art_history": {
+          "display_name": "Art History"
+        },
+        "calligraphy_lettering": {
+          "display_name": "Calligraphy Lettering"
+        },
+        "comics_manga": {
+          "display_name": "Comics Manga"
+        },
+        "crafts_diy": {
+          "display_name": "Crafts Diy"
+        },
+        "creative_technology": {
+          "display_name": "Creative Technology"
+        },
+        "digital_art": {
+          "display_name": "Digital Art"
+        },
+        "drawing": {
+          "display_name": "Drawing"
+        },
+        "famous_artists": {
+          "display_name": "Famous Artists"
+        },
+        "fashion": {
+          "display_name": "Fashion"
+        },
+        "graphic_design": {
+          "display_name": "Graphic Design"
+        },
+        "interior_design": {
+          "display_name": "Interior Design"
+        },
+        "movies_cinematography": {
+          "display_name": "Movies Cinematography"
+        },
+        "painting": {
+          "display_name": "Painting"
+        },
+        "photography": {
+          "display_name": "Photography"
+        },
+        "pottery_ceramics": {
+          "display_name": "Pottery Ceramics"
+        },
+        "sculpture": {
+          "display_name": "Sculpture"
+        },
+        "street_art": {
+          "display_name": "Street Art"
+        },
+        "tattoos_body_art": {
+          "display_name": "Tattoos Body Art"
+        }
+      }
     },
     "food_cuisine": {
-      "display_name": "Food Cuisine",
+      "display_name": "Food & Cuisine",
       "status": "spike_catalog_only",
       "source_path": null,
       "bundle_path": "res://data/content/base_bundle/food_cuisine",
@@ -74,10 +179,32 @@
         "regional_cuisine",
         "spices"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Culinary science and culture.",
+      "traits": "Taste, Chemistry",
+      "palette": {
+        "bg": "#0B1320",
+        "primary": "#00D4FF",
+        "accent": "#80E5FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_food_cuisine.png",
+      "background": "res://assets/textures/env/bg_food_cuisine.png",
+      "typography": "TECHNICAL",
+      "emotion": "CLINICAL",
+      "motion_scale": 1.0,
+      "lens_profile": "particle_accelerator",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/iris_crystalline.obj"
+      },
+      "completion": "0%",
+      "worlds": {}
     },
     "frontier": {
-      "display_name": "Frontier",
+      "display_name": "The Frontier",
       "status": "scaffolded",
       "source_path": "res://data/observation_banks/frontier",
       "bundle_path": "res://data/content/base_bundle/frontier",
@@ -105,7 +232,90 @@
         "terraforming",
         "xeno_biology"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Deep space navigation and high-stakes trade-offs.",
+      "traits": "Spatial Reasoning, Risk Assessment, Navigation",
+      "palette": {
+        "bg": "#081218",
+        "primary": "#33CCFF",
+        "accent": "#80DFFF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_frontier.png",
+      "background": "res://assets/textures/env/v1/bg_frontier.png",
+      "typography": "TECHNICAL",
+      "emotion": "DEEP_SPACE",
+      "motion_scale": 1.3,
+      "lens_profile": "historical_astrolabe",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/bg_frontier.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/rib_frontier.obj"
+      },
+      "completion": "12%",
+      "worlds": {
+        "asteroid_mining": {
+          "display_name": "Asteroid Mining"
+        },
+        "cosmic_radiation": {
+          "display_name": "Cosmic Radiation"
+        },
+        "cryogenics": {
+          "display_name": "Cryogenics"
+        },
+        "deep_space_navigation": {
+          "display_name": "Deep Space Navigation"
+        },
+        "deep_space_probes": {
+          "display_name": "Deep Space Probes"
+        },
+        "exoplanet_survey": {
+          "display_name": "Exoplanet Survey"
+        },
+        "extravehicular_activity": {
+          "display_name": "Extravehicular Activity"
+        },
+        "interstellar_travel": {
+          "display_name": "Interstellar Travel"
+        },
+        "life_support": {
+          "display_name": "Life Support"
+        },
+        "lunar_base_ops": {
+          "display_name": "Lunar Base Ops"
+        },
+        "mars_colonization": {
+          "display_name": "Mars Colonization"
+        },
+        "near_earth_objects": {
+          "display_name": "Near Earth Objects"
+        },
+        "orbital_mechanics": {
+          "display_name": "Orbital Mechanics"
+        },
+        "planetary_defense": {
+          "display_name": "Planetary Defense"
+        },
+        "propulsion_systems": {
+          "display_name": "Propulsion Systems"
+        },
+        "satellite_comm": {
+          "display_name": "Satellite Comm"
+        },
+        "space_law": {
+          "display_name": "Space Law"
+        },
+        "space_weather": {
+          "display_name": "Space Weather"
+        },
+        "terraforming": {
+          "display_name": "Terraforming"
+        },
+        "xeno_biology": {
+          "display_name": "Xeno Biology"
+        }
+      }
     },
     "geography": {
       "display_name": "Geography",
@@ -126,10 +336,32 @@
         "oceans",
         "rivers"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Places, landforms, and maps.",
+      "traits": "Spatial, Exploration",
+      "palette": {
+        "bg": "#0B1320",
+        "primary": "#00D4FF",
+        "accent": "#80E5FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_geography.png",
+      "background": "res://assets/textures/env/bg_geography.png",
+      "typography": "TECHNICAL",
+      "emotion": "CLINICAL",
+      "motion_scale": 1.0,
+      "lens_profile": "particle_accelerator",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/iris_crystalline.obj"
+      },
+      "completion": "0%",
+      "worlds": {}
     },
     "history": {
-      "display_name": "History",
+      "display_name": "Historical Archives",
       "status": "scaffolded",
       "source_path": "res://data/observation_banks/history",
       "bundle_path": "res://data/content/base_bundle/history",
@@ -157,7 +389,106 @@
         "viking_age",
         "world_wars"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Explore civilizations and human decision making.",
+      "traits": "Pattern Recognition, Memory, Reasoning",
+      "palette": {
+        "bg": "#1A1400",
+        "primary": "#E6B800",
+        "accent": "#FFD700"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_history.png",
+      "background": "res://assets/textures/env/v1/bg_society_mind.png",
+      "typography": "HEAVY",
+      "emotion": "WARM",
+      "motion_scale": 1.2,
+      "lens_profile": "eye_of_horus",
+      "feedback_tone": "archaeological",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/bg_society_mind.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/rib_society_mind.obj"
+      },
+      "completion": "18%",
+      "worlds": {
+        "age_of_exploration": {
+          "display_name": "Age Of Exploration"
+        },
+        "ancient_china": {
+          "display_name": "Ancient China"
+        },
+        "ancient_egypt": {
+          "display_name": "Ancient Egypt",
+          "accent_override": "#FFD700",
+          "tint_alpha": 0.2,
+          "sub_identity": "Pharaonic Dynasties",
+          "palette_override": {
+            "accent": "#E6C229",
+            "shadow": "#4A2511"
+          },
+          "tunnel_modifier": {
+            "fog_density": 1.5,
+            "flow_type": "wave"
+          },
+          "lens_accent": "eye_of_horus_engraving",
+          "cognitive_presentation": "artifact_recovery"
+        },
+        "ancient_greece": {
+          "display_name": "Ancient Greece"
+        },
+        "ancient_rome": {
+          "display_name": "Ancient Rome",
+          "accent_override": "#FF4500",
+          "tint_alpha": 0.2,
+          "sub_identity": "Imperial Legions"
+        },
+        "cold_war": {
+          "display_name": "Cold War"
+        },
+        "colonial_america": {
+          "display_name": "Colonial America"
+        },
+        "enlightenment": {
+          "display_name": "Enlightenment"
+        },
+        "feudal_japan": {
+          "display_name": "Feudal Japan"
+        },
+        "industrial_revolution": {
+          "display_name": "Industrial Revolution"
+        },
+        "islamic_golden_age": {
+          "display_name": "Islamic Golden Age"
+        },
+        "medieval_europe": {
+          "display_name": "Medieval Europe"
+        },
+        "mesoamerica": {
+          "display_name": "Mesoamerica"
+        },
+        "mesopotamia": {
+          "display_name": "Mesopotamia"
+        },
+        "modern_era": {
+          "display_name": "Modern Era"
+        },
+        "ottoman_empire": {
+          "display_name": "Ottoman Empire"
+        },
+        "renaissance": {
+          "display_name": "Renaissance"
+        },
+        "russian_empire": {
+          "display_name": "Russian Empire"
+        },
+        "viking_age": {
+          "display_name": "Viking Age"
+        },
+        "world_wars": {
+          "display_name": "World Wars"
+        }
+      }
     },
     "life_sciences": {
       "display_name": "Life Sciences",
@@ -190,10 +521,102 @@
         "virology_life",
         "zoology"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Cellular mechanics and ecological equilibrium.",
+      "traits": "Taxonomy, Biological Scaling, Equilibria",
+      "palette": {
+        "bg": "#0A1A10",
+        "primary": "#2ECC71",
+        "accent": "#70DB93"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_life_sciences.png",
+      "background": "res://assets/textures/env/v1/bg_life_sciences.png",
+      "typography": "SPARSE",
+      "emotion": "NATURAL",
+      "motion_scale": 1.2,
+      "lens_profile": "cellular_membrane",
+      "feedback_tone": "organic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/bg_life_sciences.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/rib_life_sciences.obj"
+      },
+      "completion": "24%",
+      "worlds": {
+        "anatomy": {
+          "display_name": "Anatomy"
+        },
+        "biochemistry": {
+          "display_name": "Biochemistry"
+        },
+        "bioethics": {
+          "display_name": "Bioethics"
+        },
+        "biotechnology_life": {
+          "display_name": "Biotechnology Life"
+        },
+        "botany": {
+          "display_name": "Botany"
+        },
+        "cellular_biology": {
+          "display_name": "Cellular Biology"
+        },
+        "ecology": {
+          "display_name": "Ecology"
+        },
+        "ecology_life": {
+          "display_name": "Ecology Life"
+        },
+        "entomology": {
+          "display_name": "Entomology"
+        },
+        "evolutionary_theory": {
+          "display_name": "Evolutionary Theory"
+        },
+        "genetics": {
+          "display_name": "Genetics",
+          "accent_override": "#00FF7F",
+          "tint_alpha": 0.2,
+          "sub_identity": "DNA Sequencing"
+        },
+        "genetics_life": {
+          "display_name": "Genetics Life"
+        },
+        "immunology": {
+          "display_name": "Immunology"
+        },
+        "marine_biology_life": {
+          "display_name": "Marine Biology Life"
+        },
+        "microbiology_life": {
+          "display_name": "Microbiology Life"
+        },
+        "mycology": {
+          "display_name": "Mycology"
+        },
+        "neurobiology": {
+          "display_name": "Neurobiology"
+        },
+        "paleontology_life": {
+          "display_name": "Paleontology Life"
+        },
+        "physiology": {
+          "display_name": "Physiology"
+        },
+        "synthetic_biology": {
+          "display_name": "Synthetic Biology"
+        },
+        "virology_life": {
+          "display_name": "Virology Life"
+        },
+        "zoology": {
+          "display_name": "Zoology"
+        }
+      }
     },
     "nature_environment": {
-      "display_name": "Nature Environment",
+      "display_name": "Nature & Environment",
       "status": "spike_catalog_only",
       "source_path": null,
       "bundle_path": "res://data/content/base_bundle/nature_environment",
@@ -211,7 +634,29 @@
         "tundra",
         "wetlands"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Ecosystems and earth science.",
+      "traits": "Ecology, Systems",
+      "palette": {
+        "bg": "#0B1320",
+        "primary": "#00D4FF",
+        "accent": "#80E5FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_nature_environment.png",
+      "background": "res://assets/textures/env/bg_nature_environment.png",
+      "typography": "TECHNICAL",
+      "emotion": "CLINICAL",
+      "motion_scale": 1.0,
+      "lens_profile": "particle_accelerator",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/iris_crystalline.obj"
+      },
+      "completion": "0%",
+      "worlds": {}
     },
     "science_discovery": {
       "display_name": "Science Discovery",
@@ -232,7 +677,29 @@
         "quantum",
         "weather"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Scientific exploration and inquiry.",
+      "traits": "Curiosity, Method",
+      "palette": {
+        "bg": "#0B1320",
+        "primary": "#00D4FF",
+        "accent": "#80E5FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_science_discovery.png",
+      "background": "res://assets/textures/env/bg_science_discovery.png",
+      "typography": "TECHNICAL",
+      "emotion": "CLINICAL",
+      "motion_scale": 1.0,
+      "lens_profile": "particle_accelerator",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/iris_crystalline.obj"
+      },
+      "completion": "0%",
+      "worlds": {}
     },
     "science_lab": {
       "display_name": "Science Lab",
@@ -263,10 +730,116 @@
         "thermodynamics",
         "virology"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Empirical deduction and probabilistic estimation.",
+      "traits": "Hypothesis Testing, Abstraction, Calculation",
+      "palette": {
+        "bg": "#0B1320",
+        "primary": "#00D4FF",
+        "accent": "#80E5FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_science_lab.png",
+      "background": "res://assets/textures/env/bg_science_lab.png",
+      "typography": "TECHNICAL",
+      "emotion": "CLINICAL",
+      "motion_scale": 1.0,
+      "lens_profile": "particle_accelerator",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/rib_science_lab.obj"
+      },
+      "completion": "32%",
+      "worlds": {
+        "ai": {
+          "display_name": "Ai"
+        },
+        "astronomy": {
+          "display_name": "Astronomy",
+          "palette_override": {
+            "accent": "#9D4EDD",
+            "shadow": "#0B090A"
+          },
+          "tunnel_modifier": {
+            "fog_density": 0.2,
+            "flow_type": "vortex"
+          },
+          "lens_accent": "constellation_map",
+          "cognitive_presentation": "spatial_scale"
+        },
+        "biotechnology": {
+          "display_name": "Biotechnology"
+        },
+        "chemistry": {
+          "display_name": "Chemistry"
+        },
+        "ecology": {
+          "display_name": "Ecology"
+        },
+        "forensics": {
+          "display_name": "Forensics"
+        },
+        "genetics": {
+          "display_name": "Genetics",
+          "accent_override": "#00FF7F",
+          "tint_alpha": 0.2,
+          "sub_identity": "DNA Sequencing"
+        },
+        "geology": {
+          "display_name": "Geology"
+        },
+        "marine_biology": {
+          "display_name": "Marine Biology"
+        },
+        "meteorology": {
+          "display_name": "Meteorology"
+        },
+        "microbiology": {
+          "display_name": "Microbiology"
+        },
+        "nanotechnology": {
+          "display_name": "Nanotechnology"
+        },
+        "neuroscience": {
+          "display_name": "Neuroscience"
+        },
+        "optics": {
+          "display_name": "Optics"
+        },
+        "paleontology": {
+          "display_name": "Paleontology"
+        },
+        "physics": {
+          "display_name": "Physics",
+          "palette_override": {
+            "accent": "#00F5FF",
+            "shadow": "#001B2E"
+          },
+          "tunnel_modifier": {
+            "fog_density": 1.0,
+            "flow_type": "branching"
+          },
+          "lens_accent": "atomic_orbitals",
+          "cognitive_presentation": "velocity_trajectories"
+        },
+        "quantum_mechanics": {
+          "display_name": "Quantum Mechanics"
+        },
+        "robotics": {
+          "display_name": "Robotics"
+        },
+        "thermodynamics": {
+          "display_name": "Thermodynamics"
+        },
+        "virology": {
+          "display_name": "Virology"
+        }
+      }
     },
     "society_mind": {
-      "display_name": "Society Mind",
+      "display_name": "Society & Mind",
       "status": "scaffolded",
       "source_path": "res://data/observation_banks/society_mind",
       "bundle_path": "res://data/content/base_bundle/society_mind",
@@ -294,10 +867,93 @@
         "sociology",
         "urban_sociology"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Behavioral dynamics and societal evolution.",
+      "traits": "Social Dynamics, Empathy, Systemic Thinking",
+      "palette": {
+        "bg": "#120818",
+        "primary": "#FF3366",
+        "accent": "#FF8099"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_society_mind.png",
+      "background": "res://assets/textures/env/v1/bg_society_mind.png",
+      "typography": "HEAVY",
+      "emotion": "UNCANNY",
+      "motion_scale": 1.1,
+      "lens_profile": "historical_astrolabe",
+      "feedback_tone": "poetic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/bg_society_mind.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/rib_society_mind.obj"
+      },
+      "completion": "27%",
+      "worlds": {
+        "anthropology": {
+          "display_name": "Anthropology"
+        },
+        "behavioral_economics": {
+          "display_name": "Behavioral Economics"
+        },
+        "cognitive_psychology": {
+          "display_name": "Cognitive Psychology"
+        },
+        "cross_cultural_analysis": {
+          "display_name": "Cross Cultural Analysis"
+        },
+        "cultural_studies": {
+          "display_name": "Cultural Studies"
+        },
+        "educational_theory": {
+          "display_name": "Educational Theory"
+        },
+        "ethics": {
+          "display_name": "Ethics"
+        },
+        "game_theory": {
+          "display_name": "Game Theory"
+        },
+        "group_dynamics": {
+          "display_name": "Group Dynamics"
+        },
+        "human_factors": {
+          "display_name": "Human Factors"
+        },
+        "linguistics": {
+          "display_name": "Linguistics"
+        },
+        "media_psychology": {
+          "display_name": "Media Psychology"
+        },
+        "neuroscience_social": {
+          "display_name": "Neuroscience Social"
+        },
+        "organizational_behavior": {
+          "display_name": "Organizational Behavior"
+        },
+        "philosophy_of_mind": {
+          "display_name": "Philosophy Of Mind"
+        },
+        "political_science": {
+          "display_name": "Political Science"
+        },
+        "psycholinguistics": {
+          "display_name": "Psycholinguistics"
+        },
+        "social_evolution": {
+          "display_name": "Social Evolution"
+        },
+        "sociology": {
+          "display_name": "Sociology"
+        },
+        "urban_sociology": {
+          "display_name": "Urban Sociology"
+        }
+      }
     },
     "space_astronomy": {
-      "display_name": "Space Astronomy",
+      "display_name": "Space & Astronomy",
       "status": "spike_catalog_only",
       "source_path": null,
       "bundle_path": "res://data/content/base_bundle/space_astronomy",
@@ -315,7 +971,29 @@
         "stars",
         "telescopes"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Celestial bodies and exploration.",
+      "traits": "Scale, Cosmology",
+      "palette": {
+        "bg": "#0B1320",
+        "primary": "#00D4FF",
+        "accent": "#80E5FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_space_astronomy.png",
+      "background": "res://assets/textures/env/bg_space_astronomy.png",
+      "typography": "TECHNICAL",
+      "emotion": "CLINICAL",
+      "motion_scale": 1.0,
+      "lens_profile": "particle_accelerator",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/iris_crystalline.obj"
+      },
+      "completion": "0%",
+      "worlds": {}
     },
     "tech_ops": {
       "display_name": "Tech Ops",
@@ -346,10 +1024,93 @@
         "signals_and_processing",
         "web_architecture"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Cybernetic protocols and algorithmic efficiency.",
+      "traits": "Algorithmic Speed, Precision, Code Parse",
+      "palette": {
+        "bg": "#050505",
+        "primary": "#00FF41",
+        "accent": "#66FF88"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_tech_ops.png",
+      "background": "res://assets/textures/env/bg_tech_ops.png",
+      "typography": "TECHNICAL",
+      "emotion": "UNCANNY",
+      "motion_scale": 0.8,
+      "lens_profile": "cyber_matrix",
+      "feedback_tone": "mechanical",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_tech.png",
+        "bg_noise": "res://assets/textures/env/v1/plasma_static.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/hard_geo_hex.png",
+        "rib_mesh": "res://assets/meshes/rib_tech_ops.obj"
+      },
+      "completion": "61%",
+      "worlds": {
+        "algorithmic_logic": {
+          "display_name": "Algorithmic Logic"
+        },
+        "artificial_intelligence": {
+          "display_name": "Artificial Intelligence"
+        },
+        "blockchain_tech": {
+          "display_name": "Blockchain Tech"
+        },
+        "cloud_infrastructure": {
+          "display_name": "Cloud Infrastructure"
+        },
+        "compiler_design": {
+          "display_name": "Compiler Design"
+        },
+        "cryptography": {
+          "display_name": "Cryptography"
+        },
+        "cybersecurity": {
+          "display_name": "Cybersecurity"
+        },
+        "database_architecture": {
+          "display_name": "Database Architecture"
+        },
+        "devops_automation": {
+          "display_name": "Devops Automation"
+        },
+        "distributed_systems": {
+          "display_name": "Distributed Systems"
+        },
+        "embedded_systems": {
+          "display_name": "Embedded Systems"
+        },
+        "hardware_engineering": {
+          "display_name": "Hardware Engineering"
+        },
+        "low_level_assembly": {
+          "display_name": "Low Level Assembly"
+        },
+        "machine_learning": {
+          "display_name": "Machine Learning"
+        },
+        "mobile_development": {
+          "display_name": "Mobile Development"
+        },
+        "network_protocols": {
+          "display_name": "Network Protocols"
+        },
+        "operating_systems": {
+          "display_name": "Operating Systems"
+        },
+        "quantum_computing": {
+          "display_name": "Quantum Computing"
+        },
+        "signals_and_processing": {
+          "display_name": "Signals And Processing"
+        },
+        "web_architecture": {
+          "display_name": "Web Architecture"
+        }
+      }
     },
     "travel_tourism": {
-      "display_name": "Travel Tourism",
+      "display_name": "Travel & Tourism",
       "status": "spike_catalog_only",
       "source_path": null,
       "bundle_path": "res://data/content/base_bundle/travel_tourism",
@@ -367,7 +1128,29 @@
         "transport_routes",
         "world_heritage"
       ],
-      "observation_count": 0
+      "observation_count": 0,
+      "description": "Places, cultures, and journeys.",
+      "traits": "Culture, Navigation",
+      "palette": {
+        "bg": "#0B1320",
+        "primary": "#00D4FF",
+        "accent": "#80E5FF"
+      },
+      "banner": "res://assets/textures/ui/v1/banner_travel_tourism.png",
+      "background": "res://assets/textures/env/bg_travel_tourism.png",
+      "typography": "TECHNICAL",
+      "emotion": "CLINICAL",
+      "motion_scale": 1.0,
+      "lens_profile": "particle_accelerator",
+      "feedback_tone": "diagnostic",
+      "assets": {
+        "button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
+        "bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
+        "stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png",
+        "rib_mesh": "res://assets/meshes/iris_crystalline.obj"
+      },
+      "completion": "0%",
+      "worlds": {}
     }
   }
 }

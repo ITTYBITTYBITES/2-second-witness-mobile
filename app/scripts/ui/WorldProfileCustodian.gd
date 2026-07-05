@@ -49,16 +49,23 @@ func _load_profile_file(path: String):
 func get_profile(world_id: String) -> Dictionary:
 	if _profiles.has(world_id):
 		return _profiles[world_id]
-	return _default_profile()
+	return _default_profile(world_id)
 
-func _default_profile() -> Dictionary:
+func _default_profile(world_id: String) -> Dictionary:
+	var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+	var palette = {"primary": Color(0.9, 0.7, 0.1), "bg": Color(0.1, 0.08, 0.05)}
+	if registry and registry.has_method("get_world_identity"):
+		var identity = registry.get_world_identity("", world_id)
+		var reg_palette = identity.get("palette", {})
+		if reg_palette.has("primary"): palette["primary"] = reg_palette["primary"]
+		if reg_palette.has("bg"): palette["bg"] = reg_palette["bg"]
 	return {
-		"world": "ancient_egypt",
-		"lens": {"mesh": "eye_of_horus", "fog_density": 0.8, "colors": {"primary": Color(0.9, 0.7, 0.1), "bg": Color(0.1, 0.08, 0.05)}},
+		"world": world_id,
+		"lens": {"mesh": "neutral_lens", "fog_density": 0.8, "colors": palette},
 		"tunnel": {"density": 0.8, "speed_multiplier": 1.2, "flow_type": "linear"},
-		"audio": {"ambience": "desert_winds", "ui_stem": "stone_click"},
-		"typography": {"font": "hieroglyphic", "spacing": 2.0},
+		"audio": {"ambience": "ambient_default", "ui_stem": "ui_click"},
+		"typography": {"font": "default", "spacing": 2.0},
 		"animation": {"camera_sway": 1.5, "transition_ms": 900},
-		"ui": {"glass_opacity": 0.9, "border_color": Color(0.9, 0.7, 0.1)},
-		"feedback": {"style": "archaeological"}
+		"ui": {"glass_opacity": 0.9, "border_color": palette["primary"]},
+		"feedback": {"style": "diagnostic"}
 	}

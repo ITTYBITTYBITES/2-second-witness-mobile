@@ -10,14 +10,13 @@ var _sfx_players: Array[AudioStreamPlayer] = []
 var _sfx_pool_size: int = 5
 var _sfx_index: int = 0
 
-var active_universe_id: String = "science_lab"
+var active_universe_id: String = ""
 var active_world_id: String = ""
 
 # World-level Pitch Modifiers for SFX
 var current_sfx_pitch_shift: float = 1.0
 
 var audio_assets = {
-	"ambient_science_lab": "res://assets/audio/ambience_science_lab.wav",
 	"ui_click": "res://assets/audio/ui_click.wav",
 	"ui_error": "res://assets/audio/ui_error.wav",
 	"slingshot": "res://assets/audio/slingshot_drop.wav",
@@ -65,12 +64,12 @@ func apply_audio_profile(universe_id: String, world_id: String, def: Dictionary)
 	# Apply global SFX pitch shift
 	current_sfx_pitch_shift = audio_modifiers.get("sfx_pitch", 1.0)
 	
-	# Determine Ambient Track (World fallback to Universe)
+	# Determine Ambient Track (World fallback to Universe; no hardcoded default)
 	var ambient_id = "ambient_" + world_id
 	if not audio_assets.has(ambient_id):
 		ambient_id = "ambient_" + universe_id
 		if not audio_assets.has(ambient_id):
-			ambient_id = "ambient_science_lab"
+			return
 			
 	var stream = load(audio_assets[ambient_id])
 	if stream and _ambient_player.stream != stream:

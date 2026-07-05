@@ -43,8 +43,14 @@ func process_progression_event(event_type: int, value: Variant, context: Diction
 
 func _handle_session_complete(value: Variant, context: Dictionary, timestamp: float):
 	var s_id = str(context.get("scenario_id", "unknown"))
-	var u_id = str(context.get("universe_id", "history"))
-	var w_id = str(context.get("world_id", "ancient_egypt"))
+	var u_id = str(context.get("universe_id", ""))
+	var w_id = str(context.get("world_id", ""))
+	if u_id == "" or w_id == "":
+		var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+		if registry and registry.has_method("get_starter_selection"):
+			var sel = registry.get_starter_selection()
+			if u_id == "": u_id = sel["universe_id"]
+			if w_id == "": w_id = sel["world_id"]
 	var success = bool(context.get("success", bool(value) if typeof(value) == TYPE_BOOL else (int(value) > 0)))
 	var rt_ms = float(context.get("reaction_time_ms", 500.0))
 	var c_trait = str(context.get("trait", _resolve_trait_for_scenario(s_id)))

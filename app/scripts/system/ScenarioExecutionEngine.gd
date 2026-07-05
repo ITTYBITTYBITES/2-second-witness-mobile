@@ -97,8 +97,14 @@ func submit_answer(is_success: bool, custom_rt: float = -1.0):
 	
 	var rt_ms = custom_rt if custom_rt >= 0.0 else float(Time.get_ticks_msec() - engine_start_ticks)
 	var s_id = active_payload.get("id", "unknown")
-	var u_id = active_payload.get("universe", "history")
-	var w_id = active_payload.get("world", "ancient_egypt")
+	var u_id = active_payload.get("universe", "")
+	var w_id = active_payload.get("world", "")
+	if u_id == "" or w_id == "":
+		var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+		if registry and registry.has_method("get_starter_selection"):
+			var sel = registry.get_starter_selection()
+			if u_id == "": u_id = sel["universe_id"]
+			if w_id == "": w_id = sel["world_id"]
 	
 	print("[SCENARIO ENGINE EVALUATE] Result: ", "SUCCESS" if is_success else "FAILURE", " | Reaction Time: ", rt_ms, " ms")
 	

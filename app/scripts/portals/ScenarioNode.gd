@@ -12,8 +12,15 @@ func _ready():
 	if mesh_instance == null:
 		mesh_instance = MeshInstance3D.new()
 		
-		var uni = destination_data.get("universe", "science_lab")
+		var uni = destination_data.get("universe", "")
 		var world_id = destination_data.get("world", "")
+		if uni == "":
+			var registry = get_tree().root.get_node_or_null("ContentRegistry")
+			if registry and registry.has_method("get_starter_selection"):
+				var sel = registry.get_starter_selection()
+				uni = sel["universe_id"]
+				if world_id == "":
+					world_id = sel["world_id"]
 		var lens_profile = destination_data.get("lens_profile", "particle_accelerator_tier_0")
 		var complexity = destination_data.get("complexity", 1)
 		

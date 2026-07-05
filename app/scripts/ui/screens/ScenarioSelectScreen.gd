@@ -8,9 +8,9 @@ signal return_requested
 @onready var title_label = $PanelContainer/MarginContainer/VBoxContainer/Header/Title
 @onready var subtitle_label = $PanelContainer/MarginContainer/VBoxContainer/Subtitle
 
-var active_universe_id: String = "creative_arts"
-var active_world_id: String = "painting"
-var active_subcategory_id: String = "famous_paintings"
+var active_universe_id: String = ""
+var active_world_id: String = ""
+var active_subcategory_id: String = ""
 var _is_setup_ready: bool = false
 
 var scenario_meta = {

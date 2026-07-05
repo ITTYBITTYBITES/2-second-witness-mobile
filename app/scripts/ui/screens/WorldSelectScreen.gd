@@ -7,29 +7,17 @@ signal return_requested
 @onready var btn_return = $PanelContainer/MarginContainer/VBoxContainer/Header/BtnReturn
 @onready var title_label = $PanelContainer/MarginContainer/VBoxContainer/Header/Title
 
-var active_universe_id: String = "history"
+var active_universe_id: String = ""
 var _is_setup_ready: bool = false
-
-var world_meta = {
-	"ancient_egypt": {"name": "Ancient Egypt", "scenarios": "12 scenarios", "completion": "34%", "rec": "Recommended Today"},
-	"ancient_rome": {"name": "Ancient Rome", "scenarios": "10 scenarios", "completion": "0%", "rec": "Optimal Alignment"},
-	"medieval_europe": {"name": "Medieval Europe", "scenarios": "15 scenarios", "completion": "52%", "rec": "Moderate Alignment"},
-	"renaissance": {"name": "Renaissance", "scenarios": "8 scenarios", "completion": "100%", "rec": "Mastered"},
-	"industrial_revolution": {"name": "Industrial Revolution", "scenarios": "14 scenarios", "completion": "15%", "rec": "High Potential"},
-	"arctic": {"name": "Arctic", "scenarios": "10 scenarios", "completion": "40%", "rec": "Recommended Today"},
-	"aviation": {"name": "Aviation", "scenarios": "12 scenarios", "completion": "10%", "rec": "High Potential"},
-	"disaster": {"name": "Disaster Response", "scenarios": "15 scenarios", "completion": "80%", "rec": "Advanced Alignment"},
-	"wilderness": {"name": "Wilderness", "scenarios": "14 scenarios", "completion": "25%", "rec": "Recommended Today"},
-	"painting": {"name": "Painting", "scenarios": "100 scenarios", "completion": "0%", "rec": "High Creative Potential"},
-	"drawing": {"name": "Drawing", "scenarios": "100 scenarios", "completion": "0%", "rec": "Focus Alignment"},
-	"photography": {"name": "Photography", "scenarios": "100 scenarios", "completion": "0%", "rec": "Optimal Composition"},
-	"digital_art": {"name": "Digital Art", "scenarios": "100 scenarios", "completion": "0%", "rec": "Futurist Alignment"}
-}
 
 func setup(universe_id: String):
 	active_universe_id = universe_id
-	if title_label: title_label.text = universe_id.capitalize().replace("_", " ") + " - WORLDS"
-	_apply_universe_manifest(universe_id)
+	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	active_universe_id = registry.ensure_valid_selection({"universe_id": active_universe_id, "world_id": ""}).get("universe_id", "")
+	if title_label:
+		var spec = registry.get_universe(active_universe_id)
+		title_label.text = spec.get("display_name", active_universe_id).to_upper() + " - WORLDS"
+	_apply_universe_manifest(active_universe_id)
 	if is_inside_tree():
 		_populate_grid()
 	else:
@@ -38,7 +26,10 @@ func setup(universe_id: String):
 func _ready():
 	print("WORLD SELECT SCREEN READY")
 	print("Size: ", $PanelContainer.size)
-	if title_label: title_label.text = active_universe_id.capitalize().replace("_", " ") + " - WORLDS"
+	if title_label:
+		var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+		var spec = registry.get_universe(active_universe_id) if active_universe_id != "" else {}
+		title_label.text = spec.get("display_name", active_universe_id).to_upper() + " - WORLDS" if active_universe_id != "" else "WORLDS"
 	if AdManager: AdManager.show_banner()
 	btn_return.pressed.connect(func(): return_requested.emit())
 	if get_viewport() and not get_viewport().size_changed.is_connected(_apply_responsive_layout):
@@ -85,24 +76,15 @@ func _populate_grid():
 	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 	var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
 	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
-	var def = vim.get_universe_identity(active_universe_id) if vim else {"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")}}
+	var def = registry.get_universe_identity(active_universe_id)
 	var default_palette = def.get("palette", {})
 	var default_bg = _to_color(default_palette.get("bg", Color("#0B1320")), Color("#0B1320"))
 	var default_primary = _to_color(default_palette.get("primary", Color("#00D4FF")), Color("#00D4FF"))
 	
-	var worlds = registry.get_all_worlds_in_universe(active_universe_id) if registry else []
-	var fallback_worlds = []
-	match active_universe_id:
-		"history": fallback_worlds = ["ancient_egypt", "ancient_rome", "medieval_europe", "renaissance", "industrial_revolution"]
-		"science_lab": fallback_worlds = ["cognitive_bias", "neural_mapping", "ai", "quantum_mechanics", "optics"]
-		"life_sciences": fallback_worlds = ["genetics", "cellular_biology", "virology", "botany", "neuroscience"]
-		"tech_ops": fallback_worlds = ["cyber_matrix", "subliminal_code", "protocols", "encryption", "firewalls"]
-		"creative_arts": fallback_worlds = ["painting", "drawing", "photography", "digital_art", "sculpture", "architecture", "color_theory", "composition", "harmony"]
-		"society_mind": fallback_worlds = ["behavioral_economics", "sociology", "psychology", "linguistics", "group_dynamics"]
-		"frontier": fallback_worlds = ["arctic", "aviation", "disaster", "wilderness", "space_exploration", "deep_sea", "mountain_summit", "desert_crossing", "subterranean", "jungle_canopy"]
-		_: fallback_worlds = ["foundations", "advanced_concepts", "synthesis"]
+	var worlds = registry.get_worlds_for_universe(active_universe_id)
 	if worlds.is_empty():
-		worlds = fallback_worlds
+		push_error("[WorldSelectScreen] No worlds found for universe: " + active_universe_id)
+		return
 	worlds.sort()
 
 	print("Universe:", active_universe_id)
@@ -118,22 +100,22 @@ func _populate_grid():
 		btn.custom_minimum_size = Vector2(270, 124)
 		btn.mouse_filter = Control.MOUSE_FILTER_STOP
 		
-		var w_def = vim.get_world_identity(active_universe_id, w_id) if vim else def
+		var w_def = registry.get_world_identity(active_universe_id, w_id)
 		var palette = w_def.get("palette", {})
 		var bg_color = _to_color(palette.get("bg", default_bg), default_bg)
 		var primary_color = _to_color(palette.get("primary", default_primary), default_primary)
-		var pretty_name = w_id.capitalize().replace("_", " ")
-		var meta = world_meta.get(w_id, {"name": pretty_name, "scenarios": "10 scenarios", "completion": "20%", "rec": "Recommended Today"})
+		var world_spec = registry.get_world(active_universe_id, w_id)
+		var pretty_name = world_spec.get("display_name", w_id.capitalize().replace("_", " "))
 		
 		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter") if Engine.get_main_loop() else null
 		var w_ctx = interp.get_world_progression_context(active_universe_id, w_id) if (interp and interp.has_method("get_world_progression_context")) else {}
 		var s_ctx = interp.get_scenario_progression_context("rapid_classification") if (interp and interp.has_method("get_scenario_progression_context")) else {}
 		
-		var wm_str = w_ctx.get("world_mastery", "WORLD MASTERY: " + meta["completion"])
-		var wr_str = w_ctx.get("recency", meta["scenarios"])
-		var sp_str = s_ctx.get("recent_perf", "★ " + meta["rec"])
+		var completion = w_ctx.get("completion", "0%")
+		var scenario_count = w_ctx.get("scenario_count", "10 scenarios")
+		var rec = s_ctx.get("recent_perf", "Recommended Today")
 		
-		btn.text = meta["name"].to_upper() + "\n" + wr_str + " | " + wm_str + "\n" + sp_str
+		btn.text = pretty_name.to_upper() + "\n" + str(scenario_count) + " | WORLD MASTERY: " + str(completion) + "\n★ " + str(rec)
 		btn.add_theme_font_size_override("font_size", 14)
 		btn.clip_text = true
 		

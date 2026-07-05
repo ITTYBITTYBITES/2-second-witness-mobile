@@ -1,41 +1,14 @@
 extends Node
 
 const MASTER_REGISTRY_PATH = "res://MASTER_UNIVERSE_REGISTRY.json"
+const CURATED_MISSIONS_PATH = "res://data/curated_missions.json"
 var master_universe_registry: Dictionary = {}
+var curated_missions: Dictionary = {}
 
 var runtime_index = {} # Structure: [universe_id][world_id][type_id] = Array[Dictionary]
 var _registered_ids: Dictionary = {}
 var _world_metadata: Dictionary = {}
 var _subcategory_index: Dictionary = {} # [universe_id][world_id][subcategory_id] = metadata
-
-var curated_missions = {
-	"history_ancient_egypt": [
-		{
-			"mission_id": "life_along_nile",
-			"title": "Life Along the Nile",
-			"description": "Examine the ecological and agricultural cycles of the Nile river basin.",
-			"mechanics_chain": ["memory_cascade", "stroop_test", "signal_vs_noise", "spatial_recall"]
-		},
-		{
-			"mission_id": "pharaohs_court",
-			"title": "Pharaoh's Court",
-			"description": "Process political hierarchies, royal decrees, and dynastic lineage under time pressure.",
-			"mechanics_chain": ["rapid_classification", "pattern_continuation", "memory_cascade", "reflex_tap"]
-		},
-		{
-			"mission_id": "building_pyramids",
-			"title": "Building the Pyramids",
-			"description": "Analyze monumental architectural trade-offs, labor logistics, and geometry.",
-			"mechanics_chain": ["sequence_reverse", "speed_sort", "signal_vs_noise", "stroop_test"]
-		},
-		{
-			"mission_id": "the_tomb_builder",
-			"title": "The Tomb Builder",
-			"description": "Navigate funerary texts, sacred geometry, and subterranean traps.",
-			"mechanics_chain": ["spatial_recall", "rapid_classification", "memory_cascade", "speed_sort"]
-		}
-	]
-}
 
 func normalize_id(id: Variant) -> String:
 	return str(id)
@@ -62,12 +35,127 @@ func _load_master_registry():
 	master_universe_registry = data
 	print("[CONTENT REGISTRY] Master universe registry loaded: ", master_universe_registry.get("universes", {}).size(), " universes")
 
+func _load_curated_missions():
+	if not FileAccess.file_exists(CURATED_MISSIONS_PATH):
+		curated_missions = {}
+		return
+	var file = FileAccess.open(CURATED_MISSIONS_PATH, FileAccess.READ)
+	if not file:
+		curated_missions = {}
+		return
+	var json = JSON.new()
+	if json.parse(file.get_as_text()) != OK:
+		push_error("[CONTENT REGISTRY] Failed to parse curated missions")
+		file.close()
+		curated_missions = {}
+		return
+	file.close()
+	var data = json.get_data()
+	if typeof(data) != TYPE_DICTIONARY:
+		curated_missions = {}
+		return
+	curated_missions = data.get("missions", {})
+
 func get_master_registry() -> Dictionary:
 	return master_universe_registry
+
+# ---------------------------------------------------------
+# REGISTRY QUERY API — single source of truth accessors
+# ---------------------------------------------------------
+
+func get_first_universe() -> String:
+	var universes = master_universe_registry.get("universes", {})
+	var keys = universes.keys()
+	return keys[0] if keys.size() > 0 else ""
+
+func get_first_world(universe_id: Variant) -> String:
+	var u_id = normalize_id(universe_id)
+	var worlds = get_worlds_for_universe(u_id)
+	return worlds[0] if worlds.size() > 0 else ""
+
+func get_universe(universe_id: Variant) -> Dictionary:
+	var u_id = normalize_id(universe_id)
+	return master_universe_registry.get("universes", {}).get(u_id, {})
+
+func get_world(universe_id: Variant, world_id: Variant) -> Dictionary:
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	return get_universe(u_id).get("worlds", {}).get(w_id, {})
+
+func get_worlds_for_universe(universe_id: Variant) -> Array:
+	var u_id = normalize_id(universe_id)
+	var spec = get_universe(u_id)
+	return spec.get("world_order", [])
+
+func get_universe_identity(universe_id: Variant) -> Dictionary:
+	var spec = get_universe(universe_id)
+	return {
+		"display_name": spec.get("display_name", str(universe_id).capitalize().replace("_", " ")),
+		"banner": spec.get("banner", ""),
+		"background": spec.get("background", ""),
+		"palette": spec.get("palette", {"bg": "#0B1320", "primary": "#00D4FF", "accent": "#80E5FF"}),
+		"typography": spec.get("typography", "TECHNICAL"),
+		"emotion": spec.get("emotion", "CLINICAL"),
+		"motion_scale": spec.get("motion_scale", 1.0),
+		"lens_profile": spec.get("lens_profile", "particle_accelerator"),
+		"feedback_tone": spec.get("feedback_tone", "diagnostic")
+	}
+
+func get_world_identity(universe_id: Variant, world_id: Variant) -> Dictionary:
+	var base = get_universe_identity(universe_id)
+	var w = get_world(universe_id, world_id)
+	if w.has("palette_override"):
+		var po = w["palette_override"]
+		if po.has("accent"): base["palette"]["primary"] = po["accent"]
+		if po.has("shadow"): base["palette"]["bg"] = po["shadow"]
+	if w.has("accent_override"):
+		base["palette"]["accent"] = w["accent_override"]
+	base["world_sub_identity"] = w.get("sub_identity", w.get("display_name", str(world_id).capitalize().replace("_", " ")))
+	base["world_tint_alpha"] = w.get("tint_alpha", 0.15)
+	base["lens_accent"] = w.get("lens_accent", base.get("lens_profile", ""))
+	base["cognitive_presentation"] = w.get("cognitive_presentation", "")
+	base["tunnel_modifier"] = w.get("tunnel_modifier", {})
+	return base
+
+func get_universe_asset_manifest(universe_id: Variant) -> Dictionary:
+	return get_universe(universe_id).get("assets", {})
+
+func get_universe_render_profile(universe_id: Variant) -> Dictionary:
+	var spec = get_universe(universe_id)
+	return {
+		"emotion": spec.get("emotion", "CLINICAL"),
+		"typography": spec.get("typography", "TECHNICAL"),
+		"feedback_tone": spec.get("feedback_tone", "diagnostic"),
+		"motion_scale": spec.get("motion_scale", 1.0),
+		"lens_profile": spec.get("lens_profile", "particle_accelerator")
+	}
+
+func ensure_valid_selection(selection: Dictionary) -> Dictionary:
+	var u_id = normalize_id(selection.get("universe_id", ""))
+	var w_id = normalize_id(selection.get("world_id", ""))
+	var universes = master_universe_registry.get("universes", {})
+	if not universes.has(u_id):
+		u_id = get_first_universe()
+		w_id = get_first_world(u_id)
+	elif not universes[u_id].get("worlds", {}).has(w_id):
+		w_id = get_first_world(u_id)
+	return {"universe_id": u_id, "world_id": w_id}
+
+func get_curated_missions_for_world(universe_id: Variant, world_id: Variant) -> Array:
+	var u_id = normalize_id(universe_id)
+	var w_id = normalize_id(world_id)
+	return curated_missions.get(u_id + "_" + w_id, [])
+
+func get_starter_selection() -> Dictionary:
+	var u_id = get_first_universe()
+	var w_id = get_first_world(u_id)
+	return ensure_valid_selection({"universe_id": u_id, "world_id": w_id})
+
 func _ready():
 	if BootTracer: BootTracer.log_init("ContentRegistry")
 	print("ContentRegistry initialized. Awaiting content ingestion...")
 	_load_master_registry()
+	_load_curated_missions()
 
 func register_world(universe_id: Variant, world_id: Variant, metadata: Dictionary = {}):
 	var u_id = normalize_id(universe_id)

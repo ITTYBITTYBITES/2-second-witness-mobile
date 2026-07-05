@@ -1,10 +1,15 @@
 extends Node
 
 var pooled_chunks = []
-var active_universe = "science_lab"
+var active_universe = ""
 
-func reset_pool(max_chunks: int, universe_id: String = "science_lab"):
+func reset_pool(max_chunks: int, universe_id: String = ""):
 	active_universe = universe_id
+	if active_universe == "":
+		var registry = get_tree().root.get_node_or_null("ContentRegistry")
+		if registry and registry.has_method("get_first_universe"):
+			active_universe = registry.get_first_universe()
+	universe_id = active_universe
 	print("[CHUNK POOL] Flushing and allocating ", max_chunks, " MultiMesh chunks for ", universe_id)
 	
 	for child in get_children():
@@ -22,10 +27,12 @@ func reset_pool(max_chunks: int, universe_id: String = "science_lab"):
 		
 	# Update Material Colors based on Universe
 	var renderer = UniverseRenderer.new()
-	var def = renderer.universe_definitions.get(universe_id, renderer.universe_definitions["science_lab"])
+	var profile = renderer.get_render_profile(universe_id)
+	var identity = renderer._registry().get_universe_identity(universe_id) if renderer._registry() else {}
+	var palette = identity.get("palette", {"bg": Color("#0B1320"), "primary": Color("#00D4FF")})
 	var u_mat = structure_mat.duplicate()
-	u_mat.albedo_color = def["palette"]["bg"]
-	u_mat.emission = def["palette"]["primary"]
+	u_mat.albedo_color = palette.get("bg", Color("#0B1320"))
+	u_mat.emission = palette.get("primary", Color("#00D4FF"))
 	
 	for i in range(max_chunks):
 		var chunk = Node3D.new()

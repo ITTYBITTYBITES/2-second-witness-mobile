@@ -19,8 +19,8 @@ var coins: int = 100
 var universe_affinity: Dictionary = {}
 var world_affinity: Dictionary = {}
 var favorite_mechanic: String = "memory_cascade"
-var unlocked_universes: Array = ["science_lab", "history"]
-var unlocked_worlds: Array = ["cognitive_bias", "ancient_egypt"]
+var unlocked_universes: Array = []
+var unlocked_worlds: Array = []
 var has_directors_pass: bool = false
 var purchase_receipt_log: Array = [] 
 var unlocked_achievements: Array = []
@@ -87,9 +87,17 @@ func record_purchase_receipt(receipt: Dictionary):
 	evaluate_entitlements()
 	save_profile()
 
+func _starter_unlocks() -> Dictionary:
+	var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+	if registry and registry.has_method("get_starter_selection"):
+		var sel = registry.get_starter_selection()
+		return {"universes": [sel["universe_id"]], "worlds": [sel["world_id"]]}
+	return {"universes": [], "worlds": []}
+
 func evaluate_entitlements():
-	unlocked_universes = ["science_lab", "history"]
-	unlocked_worlds = ["cognitive_bias", "ancient_egypt"]
+	var starter = _starter_unlocks()
+	unlocked_universes = starter["universes"].duplicate()
+	unlocked_worlds = starter["worlds"].duplicate()
 	has_directors_pass = false
 	
 	var sorted_log = purchase_receipt_log.duplicate()
@@ -188,7 +196,13 @@ func record_cognitive_event(c_trait: String, scenario_id: String, universe_id: S
 	save_profile()
 
 func get_adaptive_recommendation() -> Dictionary:
-	var rec = {"universe": "history", "world": "ancient_egypt", "reason": "Expanding historical knowledge base."}
+	var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+	var starter = {"universe": "", "world": ""}
+	if registry and registry.has_method("get_starter_selection"):
+		var sel = registry.get_starter_selection()
+		starter = {"universe": sel["universe_id"], "world": sel["world_id"]}
+	
+	var rec = {"universe": starter["universe"], "world": starter["world"], "reason": "Expanding your observation knowledge base."}
 	var highest_hesitation_trait = ""
 	var max_rt = 0.0
 	
@@ -199,17 +213,39 @@ func get_adaptive_recommendation() -> Dictionary:
 			if avg > max_rt:
 				max_rt = avg
 				highest_hesitation_trait = t
-				
-	if highest_hesitation_trait == "rapid_classification":
-		rec = {"universe": "history", "world": "ancient_egypt", "reason": "High hesitation in rapid classification detected. Recommending History -> Ancient Egypt -> Stroop."}
-	elif highest_hesitation_trait == "recall":
-		rec = {"universe": "science_lab", "world": "genetics", "reason": "Recall latency elevating. Recommending Science Lab -> Genetics."}
-	elif highest_hesitation_trait == "pattern_recognition":
-		rec = {"universe": "history", "world": "ancient_greece", "reason": "Structured pattern work is your next opportunity. Recommending History -> Ancient Greece."}
-	elif highest_hesitation_trait == "spatial_tracking":
-		rec = {"universe": "history", "world": "ancient_rome", "reason": "Your recent decisions suggest spatial reasoning practice. Recommending History -> Ancient Rome."}
-		
+	
+	# Map hesitation traits to a registry-resolved world. Without hardcoded IDs, we pick the
+	# first world of any unlocked universe whose display name or identity suggests a match.
+	if highest_hesitation_trait != "" and registry:
+		var candidate = _resolve_recommendation_for_trait(highest_hesitation_trait, registry)
+		if candidate["world"] != "":
+			rec = candidate
+			
 	return rec
+
+func _resolve_recommendation_for_trait(trait: String, registry: Node) -> Dictionary:
+	for u_id in unlocked_universes:
+		var worlds = registry.get_worlds_for_universe(u_id) if registry.has_method("get_worlds_for_universe") else []
+		for w_id in worlds:
+			if not unlocked_worlds.has(w_id):
+				continue
+			var w_meta = registry.get_world(u_id, w_id) if registry.has_method("get_world") else {}
+			var sub_identity = str(w_meta.get("sub_identity", w_meta.get("display_name", w_id))).to_lower()
+			var match_found = false
+			match trait:
+				"rapid_classification", "stroop_test":
+					match_found = ("symbol" in sub_identity or "court" in sub_identity or "language" in sub_identity or "script" in sub_identity)
+				"recall", "memory":
+					match_found = ("memory" in sub_identity or "sequence" in sub_identity or "dynasty" in sub_identity or "lineage" in sub_identity)
+				"pattern_recognition", "spatial_tracking":
+					match_found = ("pattern" in sub_identity or "geometry" in sub_identity or "spatial" in sub_identity or "structure" in sub_identity)
+				"decision_confidence":
+					match_found = ("risk" in sub_identity or "strategy" in sub_identity or "tactic" in sub_identity)
+				"processing_speed":
+					match_found = ("speed" in sub_identity or "rapid" in sub_identity or "reflex" in sub_identity)
+			if match_found:
+				return {"universe": u_id, "world": w_id, "reason": "%s practice detected as your next opportunity." % trait.capitalize().replace("_", " ")}
+	return {"universe": "", "world": "", "reason": ""}
 
 func _load_profile():
 	if not FileAccess.file_exists(SAVE_PATH):
@@ -244,8 +280,9 @@ func _apply_loaded_data(data: Dictionary):
 		universe_affinity = data.get("universe_affinity", {})
 		world_affinity = data.get("world_affinity", {})
 		favorite_mechanic = data.get("favorite_mechanic", "memory_cascade")
-		unlocked_universes = data.get("unlocked_universes", ["science_lab", "history"])
-		unlocked_worlds = data.get("unlocked_worlds", ["cognitive_bias", "ancient_egypt"])
+		var starter = _starter_unlocks()
+		unlocked_universes = data.get("unlocked_universes", starter["universes"])
+		unlocked_worlds = data.get("unlocked_worlds", starter["worlds"])
 		has_directors_pass = data.get("has_directors_pass", false)
 		purchase_receipt_log = data.get("purchase_receipt_log", [])
 		unlocked_achievements = data.get("unlocked_achievements", [])

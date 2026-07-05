@@ -13,7 +13,7 @@ enum NavigationMode {
 
 var current_mode: int = NavigationMode.UNIVERSE_EXPLORATION
 
-var active_universe_id: String = "science_lab"
+var active_universe_id: String = ""
 var active_world_id: String = "" # Empty if in Exploration or Adaptive mode
 
 var current_transition_context: Dictionary = {}

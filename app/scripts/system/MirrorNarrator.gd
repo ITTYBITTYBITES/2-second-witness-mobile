@@ -190,11 +190,16 @@ func get_next_recommendation(profile: Node) -> Dictionary:
 	var rec: Dictionary = {}
 	if is_instance_valid(profile) and profile.has_method("get_adaptive_recommendation"):
 		rec = profile.get_adaptive_recommendation()
-	else:
-		rec = {"universe": "history", "world": "ancient_egypt", "reason": "Your recent sessions suggest this world will strengthen memory while reinforcing your strongest observation skills."}
-		
-	var u_id = rec.get("universe", "history")
-	var w_id = rec.get("world", "ancient_egypt")
+	
+	var u_id = rec.get("universe", "")
+	var w_id = rec.get("world", "")
+	if u_id == "" or w_id == "":
+		var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+		if registry and registry.has_method("get_starter_selection"):
+			var sel = registry.get_starter_selection()
+			if u_id == "": u_id = sel["universe_id"]
+			if w_id == "": w_id = sel["world_id"]
+	
 	var pretty_uni = u_id.capitalize().replace("_", " ")
 	var pretty_world = w_id.capitalize().replace("_", " ")
 	

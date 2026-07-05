@@ -243,7 +243,11 @@ func _execute_serialized_command(command: Dictionary):
 				orch.request_navigation_transition("WeeklyFeaturedScreen")
 			elif NavigationRouter: NavigationRouter._on_play_requested()
 		"play_universe":
-			var u_id = command.get("universe_id", "science_lab")
+			var u_id = command.get("universe_id", "")
+			if u_id == "":
+				var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
+				if registry and registry.has_method("get_first_universe"):
+					u_id = registry.get_first_universe()
 			var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator")
 			if orch and orch.has_method("request_universe_selection"):
 				orch.request_universe_selection(u_id)

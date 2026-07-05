@@ -9,8 +9,8 @@ signal return_requested
 @onready var header = $PanelContainer/MarginContainer/VBoxContainer/Header
 @onready var subtitle_label = $PanelContainer/MarginContainer/VBoxContainer/Subtitle
 
-var active_universe_id: String = "creative_arts"
-var active_world_id: String = "painting"
+var active_universe_id: String = ""
+var active_world_id: String = ""
 var _is_setup_ready: bool = false
 var _manual_activity_mode: bool = false
 var _btn_activity_mode: Button = null

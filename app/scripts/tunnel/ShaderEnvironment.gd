@@ -30,8 +30,12 @@ func _ready():
 	NavigationEngine.transition_sequence_started.connect(_on_spike_started)
 	
 func apply_theme(theme_data: Dictionary, universe_id: String = "", world_id: String = ""):
-	if universe_id == "": universe_id = theme_data.get("id", "science_lab")
-	active_universe_id = universe_id
+	var u_id = universe_id if universe_id != "" else theme_data.get("id", "")
+	if u_id == "":
+		var registry = get_tree().root.get_node_or_null("ContentRegistry")
+		if registry and registry.has_method("get_first_universe"):
+			u_id = registry.get_first_universe()
+	active_universe_id = u_id
 	var tunnel = theme_data.get("tunnel", {})
 	
 	var world_prof = WorldProfileCustodian.get_profile(world_id) if world_id != "" and Engine.get_main_loop().root.has_node("WorldProfileCustodian") else {}

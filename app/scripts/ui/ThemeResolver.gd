@@ -2,30 +2,11 @@ extends Node
 class_name ThemeResolver
 
 # Option C: Hybrid Resolution
-# Universe drives palette/material identity.
+# Universe drives palette/material identity from registry.
 # Task type drives spatial density and motion curves.
 
 enum MotionProfile { FAST_SNAP, SMOOTH_EASE, ORGANIC_DRIFT }
 enum DensityProfile { MINIMAL, STRUCTURED, HEAVY }
-
-var universe_palettes = {
-	"science_lab": {
-		"primary": Color("#00D4FF"),
-		"bg": Color("#0B1320"),
-		"glass_blur": 1.2
-	},
-	"tech_ops": {
-		"primary": Color("#00F5FF"),
-		"bg": Color("#050505"),
-		"glass_blur": 0.5
-	},
-	"life_sciences": {
-		"primary": Color("#2ECC71"),
-		"bg": Color("#0A1A10"),
-		"glass_blur": 2.0
-	}
-	# Others to be populated...
-}
 
 var task_profiles = {
 	"rapid_classification": {
@@ -45,17 +26,23 @@ var task_profiles = {
 	}
 }
 
+func _registry() -> Node:
+	return ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+
 func resolve_theme(scenario_data: Dictionary) -> Dictionary:
-	var universe = scenario_data.get("universe", "science_lab")
+	var universe = scenario_data.get("universe", "")
 	var type = scenario_data.get("type", "rapid_classification")
 	var difficulty = scenario_data.get("difficulty", 1)
 	
-	var base_palette = universe_palettes.get(universe, universe_palettes["science_lab"])
+	var reg = _registry()
+	var base_palette = {"bg": "#0B1320", "primary": "#00D4FF", "accent": "#80E5FF"}
+	if reg and reg.has_method("get_universe_identity"):
+		var identity = reg.get_universe_identity(universe)
+		base_palette = identity.get("palette", base_palette)
+	
 	var task_profile = task_profiles.get(type, task_profiles["rapid_classification"])
 	
 	var active_contrast = task_profile.get("contrast_boost", 1.0) * (1.0 + (float(difficulty) * 0.1))
-	
-	# Clamp contrast to ensure it remains legible but never dominates the tunnel backdrop
 	active_contrast = clamp(active_contrast, 0.5, 2.5)
 	
 	return {

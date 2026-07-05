@@ -10,7 +10,7 @@ signal experience_state_changed(active_state: Object)
 signal session_personalized(orchestration_vector: Dictionary)
 
 class ActiveExperienceState extends RefCounted:
-	var current_universe: String = "science_lab"
+	var current_universe: String = ""
 	var current_world: String = ""
 	var current_scenario: String = ""
 	var visual_identity: Dictionary = {}
@@ -19,8 +19,8 @@ class ActiveExperienceState extends RefCounted:
 
 var active_state: ActiveExperienceState = ActiveExperienceState.new()
 var current_mode: String = "discovery"
-var active_universe: String = "history"
-var active_world: String = "ancient_egypt"
+var active_universe: String = ""
+var active_world: String = ""
 var active_spike: String = "memory_cascade"
 var current_difficulty: int = 1
 
@@ -136,6 +136,9 @@ func reset_session_state():
 	request_navigation_transition("LandingScreen")
 
 func determine_next_experience(player_profile: Node, target_universe: String = "", target_world: String = "") -> Dictionary:
+	var registry = get_node_or_null("/root/ContentRegistry")
+	var starter = registry.get_starter_selection() if registry else {"universe_id": "", "world_id": ""}
+	
 	if not is_instance_valid(player_profile):
 		return _fallback_vector()
 		
@@ -149,23 +152,23 @@ func determine_next_experience(player_profile: Node, target_universe: String = "
 		active_world = normalize_id(target_world)
 		current_mode = "targeted_exploration"
 	elif current_mode == "discovery":
-		active_universe = "history"
-		active_world = "ancient_egypt"
+		active_universe = starter["universe_id"]
+		active_world = starter["world_id"]
 	else:
 		var recommended = player_profile.get_adaptive_recommendation()
 		if recommended.has("universe"):
 			active_universe = normalize_id(recommended["universe"])
-			active_world = normalize_id(recommended.get("world", "ancient_egypt"))
+			active_world = normalize_id(recommended.get("world", ""))
+		if active_world == "" and registry:
+			active_world = registry.get_first_world(active_universe)
 			
 	# 3. Knowledge Item & Mission Exposure Selection
-	var registry = get_node_or_null("/root/ContentRegistry")
 	var sampling = get_node_or_null("/root/SamplingController")
 	
 	active_universe = normalize_id(active_universe)
 	active_world = normalize_id(active_world)
 	
-	var mission_key = active_universe + "_" + active_world
-	var missions = registry.curated_missions.get(mission_key, []) if registry and registry.get("curated_missions") != null else []
+	var missions = registry.get_curated_missions_for_world(active_universe, active_world) if (registry and registry.has_method("get_curated_missions_for_world")) else []
 	var available_types = registry.get_available_types_in_world(active_universe, active_world) if (registry and registry.has_method("get_available_types_in_world")) else []
 	
 	if not missions.is_empty():
@@ -196,7 +199,7 @@ func determine_next_experience(player_profile: Node, target_universe: String = "
 	if knowledge_payload.is_empty():
 		knowledge_payload = {
 			"id": active_spike, "universe": active_universe, "world": active_world, "type": active_spike,
-			"rules": {"correct_answer": "Eye of Horus", "wrong_answers": ["Ankh", "Scarab", "Djed"], "legacy_prompt": "DEITY SYMBOL"}
+			"rules": {}
 		}
 		
 	# 4. Difficulty & Presentation Calibration
@@ -231,9 +234,11 @@ func finalize_scenario_mounting(scenario_id: String):
 	print("[ORCHESTRATOR] Scenario state = READY. GameplayHUD active. Input Release Contract fulfilled.")
 
 func _fallback_vector() -> Dictionary:
+	var registry = get_node_or_null("/root/ContentRegistry")
+	var starter = registry.get_starter_selection() if registry else {"universe_id": "", "world_id": ""}
 	return {
-		"mode": "discovery", "universe": "history", "world": "ancient_egypt",
-		"knowledge_item": {"id": "memory_cascade", "universe": "history", "world": "ancient_egypt", "type": "memory_cascade", "rules": {}},
+		"mode": "discovery", "universe": starter["universe_id"], "world": starter["world_id"],
+		"knowledge_item": {"id": "memory_cascade", "universe": starter["universe_id"], "world": starter["world_id"], "type": "memory_cascade", "rules": {}},
 		"spike": "memory_cascade", "difficulty": 1, "presentation": {},
 		"mission": {}, "exposure_index": 0
 	}

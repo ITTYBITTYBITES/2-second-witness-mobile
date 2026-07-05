@@ -20,7 +20,8 @@ func _ready():
 	print("Children: ", get_child_count())
 	
 	var nav = get_node_or_null("/root/NavigationRouter")
-	var uni = nav.active_universe_selection if nav else "history"
+	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	var uni = nav.active_universe_selection if nav else registry.get_first_universe()
 	_apply_universe_manifest(uni)
 	
 	$PanelContainer.mouse_filter = Control.MOUSE_FILTER_PASS
@@ -124,7 +125,9 @@ func _populate_data():
 		btn_begin.text = "BEGIN OBSERVATION"
 		btn_begin.add_theme_font_size_override("font_size", 20)
 		btn_begin.pressed.connect(func():
-			recommendation_requested.emit("history", "ancient_egypt")
+			var reg = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+			var selection = reg.ensure_valid_selection({"universe_id": "", "world_id": ""}) if reg else {"universe_id": "", "world_id": ""}
+			recommendation_requested.emit(selection["universe_id"], selection["world_id"])
 		)
 		nav_container.add_child(btn_begin)
 		

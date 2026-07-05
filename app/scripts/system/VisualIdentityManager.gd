@@ -2,105 +2,21 @@ extends Node
 class_name VisualIdentityManagerNode
 
 # ---------------------------------------------------------
-# PRODUCT: 2 Second Witness 
-# VISUAL IDENTITY MANAGER (AUTHORITATIVE VISUAL BINDING LAYER)
+# PRODUCT: 2 Second Witness
+# VISUAL IDENTITY MANAGER (REGISTRY-DRIVEN VISUAL BINDING)
 # Bridge: ContentGraph -> Visual Assets -> UI Rendering
+# All universe/world identity data is sourced from ContentRegistry.
 # ---------------------------------------------------------
 
 signal visual_identity_applied(universe_id: String, world_id: String, identity_data: Dictionary)
 
-# 1. Authoritative Universe Visual Binding Library
-var universe_identities = {
-	"science_lab": {
-		"display_name": "Science Lab",
-		"banner": "res://assets/textures/ui/v1/banner_science_lab.png",
-		"background": "res://assets/textures/env/bg_science_lab.png",
-		"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF"), "accent": Color("#80E5FF")},
-		"typography": "TECHNICAL",
-		"emotion": "CLINICAL",
-		"motion_scale": 1.0,
-		"lens_profile": "particle_accelerator"
-	},
-	"history": {
-		"display_name": "Historical Archives",
-		"banner": "res://assets/textures/ui/v1/banner_history.png",
-		"background": "res://assets/textures/env/v1/bg_society_mind.png", # Textured fallback
-		"palette": {"bg": Color("#1A1400"), "primary": Color("#E6B800"), "accent": Color("#FFD700")},
-		"typography": "HEAVY",
-		"emotion": "WARM",
-		"motion_scale": 1.2,
-		"lens_profile": "eye_of_horus"
-	},
-	"tech_ops": {
-		"display_name": "Tech Ops",
-		"banner": "res://assets/textures/ui/v1/banner_tech_ops.png",
-		"background": "res://assets/textures/env/bg_tech_ops.png",
-		"palette": {"bg": Color("#050505"), "primary": Color("#00FF41"), "accent": Color("#66FF88")},
-		"typography": "TECHNICAL",
-		"emotion": "UNCANNY",
-		"motion_scale": 0.8,
-		"lens_profile": "cyber_matrix"
-	},
-	"life_sciences": {
-		"display_name": "Life Sciences",
-		"banner": "res://assets/textures/ui/v1/banner_life_sciences.png",
-		"background": "res://assets/textures/env/v1/bg_life_sciences.png",
-		"palette": {"bg": Color("#0A1A10"), "primary": Color("#2ECC71"), "accent": Color("#70DB93")},
-		"typography": "SPARSE",
-		"emotion": "NATURAL",
-		"motion_scale": 1.2,
-		"lens_profile": "cellular_membrane"
-	},
-	"creative_arts": {
-		"display_name": "Creative Arts",
-		"banner": "res://assets/textures/ui/v1/banner_creative_arts.png",
-		"background": "res://assets/textures/env/v1/bg_creative_arts.png",
-		"palette": {"bg": Color("#180A22"), "primary": Color("#B833FF"), "accent": Color("#D175FF")},
-		"typography": "SPARSE",
-		"emotion": "SATURATED",
-		"motion_scale": 1.5,
-		"lens_profile": "prismatic_lens"
-	},
-	"society_mind": {
-		"display_name": "Society & Mind",
-		"banner": "res://assets/textures/ui/v1/banner_society_mind.png",
-		"background": "res://assets/textures/env/v1/bg_society_mind.png",
-		"palette": {"bg": Color("#120818"), "primary": Color("#FF3366"), "accent": Color("#FF8099")},
-		"typography": "HEAVY",
-		"emotion": "UNCANNY",
-		"motion_scale": 1.1,
-		"lens_profile": "wormhole_singularity"
-	},
-	"frontier": {
-		"display_name": "The Frontier",
-		"banner": "res://assets/textures/ui/v1/banner_frontier.png",
-		"background": "res://assets/textures/env/v1/bg_frontier.png",
-		"palette": {"bg": Color("#081218"), "primary": Color("#33CCFF"), "accent": Color("#80DFFF")},
-		"typography": "TECHNICAL",
-		"emotion": "DEEP_SPACE",
-		"motion_scale": 1.3,
-		"lens_profile": "historical_astrolabe"
-	}
-}
-
-# 2. Authoritative World Visual Overrides (Inherit Universe + Override Variation)
-var world_overrides = {
-	"ancient_egypt": {"accent_override": Color("#FFD700"), "tint_alpha": 0.2, "sub_identity": "Pharaonic Dynasties"},
-	"ancient_rome": {"accent_override": Color("#FF4500"), "tint_alpha": 0.2, "sub_identity": "Imperial Legions"},
-	"cognitive_bias": {"accent_override": Color("#00FFFF"), "tint_alpha": 0.15, "sub_identity": "Heuristic Faults"},
-	"neural_mapping": {"accent_override": Color("#3399FF"), "tint_alpha": 0.15, "sub_identity": "Synaptic Pathways"},
-	"genetics": {"accent_override": Color("#00FF7F"), "tint_alpha": 0.2, "sub_identity": "DNA Sequencing"},
-	"cyber_matrix": {"accent_override": Color("#00FF00"), "tint_alpha": 0.25, "sub_identity": "Subliminal Architecture"},
-	"color_theory": {"accent_override": Color("#FF00FF"), "tint_alpha": 0.2, "sub_identity": "Prismatic Harmonies"}
-}
-
-var active_universe_id: String = "science_lab"
+var active_universe_id: String = ""
 var active_world_id: String = ""
 var active_identity_payload: Dictionary = {}
 
 func _ready():
 	if BootTracer: BootTracer.log_init("VisualIdentityManager")
-	print("[VISUAL IDENTITY] Online. Binding content graph to visual identity layer.")
+	print("[VISUAL IDENTITY] Online. Binding content graph to visual identity layer via registry.")
 
 func _coerce_color(value: Variant, fallback: Color) -> Color:
 	if value is Color:
@@ -121,21 +37,34 @@ func _normalize_palette(identity: Dictionary) -> Dictionary:
 	identity["palette"] = palette
 	return identity
 
+func _registry() -> Node:
+	return ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+
 func get_universe_identity(universe_id: String) -> Dictionary:
-	var u_id = str(universe_id).to_lower()
-	if universe_identities.has(u_id):
-		return _normalize_palette(universe_identities[u_id].duplicate(true))
-	var base = universe_identities["science_lab"].duplicate(true)
-	base["display_name"] = u_id.capitalize().replace("_", " ")
-	if FileAccess.file_exists("res://assets/textures/ui/v1/banner_" + u_id + ".png"):
-		base["banner"] = "res://assets/textures/ui/v1/banner_" + u_id + ".png"
-	if FileAccess.file_exists("res://assets/textures/env/bg_" + u_id + ".png"):
-		base["background"] = "res://assets/textures/env/bg_" + u_id + ".png"
-	return _normalize_palette(base)
+	var reg = _registry()
+	if reg and reg.has_method("get_universe_identity"):
+		var identity = reg.get_universe_identity(universe_id).duplicate(true)
+		return _normalize_palette(identity)
+	# Minimal fallback only if registry unavailable (should never happen in production)
+	return _normalize_palette({
+		"display_name": str(universe_id).capitalize().replace("_", " "),
+		"banner": "",
+		"background": "",
+		"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF"), "accent": Color("#80E5FF")},
+		"typography": "TECHNICAL",
+		"emotion": "CLINICAL",
+		"motion_scale": 1.0,
+		"lens_profile": "particle_accelerator"
+	})
 
 func get_world_identity(universe_id: String, world_id: String) -> Dictionary:
 	var base_id = get_universe_identity(universe_id)
 	var w_id = str(world_id).to_lower()
+	var reg = _registry()
+	if reg and reg.has_method("get_world_identity"):
+		base_id = reg.get_world_identity(universe_id, world_id).duplicate(true)
+		return _normalize_palette(base_id)
+	
 	var custodian = Engine.get_main_loop().root.get_node_or_null("WorldProfileCustodian") if Engine.get_main_loop() else null
 	var cust_profile = custodian.get_profile(w_id) if (custodian and custodian.has_method("get_profile")) else {}
 	
@@ -148,13 +77,6 @@ func get_world_identity(universe_id: String, world_id: String) -> Dictionary:
 			if c.has("bg"): base_id["palette"]["bg"] = _coerce_color(c["bg"], base_id["palette"].get("bg", Color("#0B1320")))
 		base_id["world_sub_identity"] = w_id.capitalize().replace("_", " ")
 		base_id["world_tint_alpha"] = cust_profile.get("ui", {}).get("glass_opacity", 0.18)
-	elif world_overrides.has(w_id):
-		var over = world_overrides[w_id]
-		if over.has("accent_override"):
-			base_id["palette"]["accent"] = over["accent_override"]
-		if over.has("sub_identity"):
-			base_id["world_sub_identity"] = over["sub_identity"]
-		base_id["world_tint_alpha"] = over.get("tint_alpha", 0.15)
 	else:
 		base_id["world_sub_identity"] = w_id.capitalize().replace("_", " ")
 		base_id["world_tint_alpha"] = 0.15
@@ -216,7 +138,7 @@ func _inject_hero_banner(_screen_node: Node, panel_node: Node, banner_path: Stri
 		banner_rect.custom_minimum_size = Vector2(0, 140)
 		banner_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		vbox.add_child(banner_rect)
-		vbox.move_child(banner_rect, 0) # Place at the very top of VBoxContainer
+		vbox.move_child(banner_rect, 0)
 		
 	if FileAccess.file_exists(banner_path):
 		banner_rect.texture = load(banner_path)

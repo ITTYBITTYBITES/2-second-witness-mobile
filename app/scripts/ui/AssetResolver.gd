@@ -3,41 +3,30 @@ class_name AssetResolver
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# ASSET CONCRETIZATION LAYER (STRICT SUBSTITUTION ENGINE)
+# ASSET CONCRETIZATION LAYER (REGISTRY-DRIVEN)
+# All universe-specific asset mappings are sourced from ContentRegistry.
 # ---------------------------------------------------------
 
-var asset_manifest = {
-	"science_lab": {
-		"button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
-		"bg_noise": "res://assets/textures/env/v1/grid_noise_soft.png",
-		"stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png"
-	},
-	"tech_ops": {
-		"button_frame": "res://assets/textures/ui/v1/btn_frame_tech.png",
-		"bg_noise": "res://assets/textures/env/v1/plasma_static.png",
-		"stimulus_node": "res://assets/textures/sprites/v1/hard_geo_hex.png"
-	},
-	"history": {
-		"button_frame": "res://assets/textures/ui/v1/btn_frame_scilab.png",
-		"bg_noise": "res://assets/textures/env/v1/bg_society_mind.png",
-		"stimulus_node": "res://assets/textures/sprites/v1/neural_node_v3.png"
-	}
-}
-
 func substitute_assets(target_ui: CanvasLayer, universe_id: String):
-	var manifest = asset_manifest.get(universe_id, asset_manifest["science_lab"])
+	var reg = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	var manifest = reg.get_universe_asset_manifest(universe_id) if (reg and reg.has_method("get_universe_asset_manifest")) else {}
+	if manifest.is_empty():
+		push_warning("[ASSET RESOLVER] No asset manifest for universe: " + universe_id)
+		return
 	_recursive_substitution(target_ui, manifest)
 
 func _recursive_substitution(node: Node, manifest: Dictionary):
 	for child in node.get_children():
 		if child is ColorRect and child.name == "VoidBG":
-			_apply_texture_bg(child, manifest["bg_noise"])
+			if manifest.has("bg_noise"):
+				_apply_texture_bg(child, manifest["bg_noise"])
 			
 		elif child is Button:
-			_apply_button_texture(child, manifest["button_frame"])
+			if manifest.has("button_frame"):
+				_apply_button_texture(child, manifest["button_frame"])
 			
 		elif child.is_in_group("stimulus_node"):
-			if child is TextureRect or child is Sprite2D:
+			if (child is TextureRect or child is Sprite2D) and manifest.has("stimulus_node"):
 				child.texture = load(manifest["stimulus_node"])
 				
 		_recursive_substitution(child, manifest)

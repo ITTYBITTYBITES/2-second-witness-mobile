@@ -14,8 +14,8 @@ class_name ProgressionHUDPlatesNode
 # - NEVER animate continuously or move position dynamically
 # ---------------------------------------------------------
 
-var active_universe_id: String = "history"
-var active_world_id: String = "ancient_egypt"
+var active_universe_id: String = ""
+var active_world_id: String = ""
 
 var _plate_mastery: PanelContainer = null
 var _lbl_mastery: RichTextLabel = null
@@ -122,6 +122,14 @@ func _on_progression_event(event_type: int, _value: Variant, _context: Dictionar
 	if event_type == 0 or event_type == 1 or event_type == 2 or event_type == 4: # SESSION_COMPLETE, STREAK_EXTENDED, WORLD_PROGRESS, MASTERY_INCREASE
 		_refresh_plates()
 
+func _resolve_active_ids() -> Dictionary:
+	if active_universe_id != "" and active_world_id != "":
+		return {"universe_id": active_universe_id, "world_id": active_world_id}
+	var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+	if registry and registry.has_method("get_starter_selection"):
+		return registry.get_starter_selection()
+	return {"universe_id": "", "world_id": ""}
+
 func _refresh_plates():
 	var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter") if Engine.get_main_loop() else null
 	
@@ -132,17 +140,29 @@ func _refresh_plates():
 		var profile = Engine.get_main_loop().root.get_node_or_null("PlayerProfile") if Engine.get_main_loop() else null
 		if profile and "current_streak" in profile:
 			streak_val = profile.current_streak
-			
+	
+	var ids = _resolve_active_ids()
+	var u_id = ids["universe_id"]
+	var w_id = ids["world_id"]
+	var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+	var u_name = ""
+	var w_name = ""
+	if registry:
+		u_name = str(registry.get_universe_identity(u_id).get("display_name", u_id)).to_upper()
+		w_name = str(registry.get_world(u_id, w_id).get("display_name", w_id)).to_upper()
+	if u_name == "":
+		u_name = u_id.capitalize().replace("_", " ").to_upper()
+	if w_name == "":
+		w_name = w_id.capitalize().replace("_", " ").to_upper()
+		
 	if is_instance_valid(_lbl_mastery):
-		var u_name = active_universe_id.capitalize().replace("_", " ").to_upper()
-		var w_name = active_world_id.capitalize().replace("_", " ").to_upper()
 		var tier_name = "BASE"
 		if interp and interp.has_method("get_mastery_tier_name"):
-			tier_name = interp.get_mastery_tier_name(active_universe_id, active_world_id)
+			tier_name = interp.get_mastery_tier_name(u_id, w_id)
 		var obs_count = 0
 		var profile = Engine.get_main_loop().root.get_node_or_null("PlayerProfile") if Engine.get_main_loop() else null
 		if profile and "world_affinity" in profile:
-			obs_count = profile.world_affinity.get(active_universe_id + "_" + active_world_id, 0)
+			obs_count = profile.world_affinity.get(u_id + "_" + w_id, 0)
 		_lbl_mastery.text = "[color=#667799]%s // %s:[/color] [b][color=#00D4FF]%s (%d OBS)[/color][/b]" % [u_name, w_name, tier_name, obs_count]
 		
 	if is_instance_valid(_lbl_streak):
