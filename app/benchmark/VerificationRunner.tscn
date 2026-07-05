@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1v3r1f1c4t10n"]
+
+[ext_resource type="Script" path="res://benchmark/run_verification.gd" id="1_runner"]
+
+[node name="VerificationRunner" type="Node"]
+script = ExtResource("1_runner")
