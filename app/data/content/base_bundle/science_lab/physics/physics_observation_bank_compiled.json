@@ -1,1 +1,114 @@
-[]
+[
+  {
+    "id": "science_lab_physics_quantities_0001",
+    "universe": "science_lab",
+    "world": "physics",
+    "subcategory": "quantities",
+    "type": "rapid_classification",
+    "difficulty": {"label": "intermediate", "tier": 3},
+    "rules": {
+      "prompt": "Which of the following is a scalar quantity?",
+      "correct_answer": "Temperature",
+      "wrong_answers": ["Velocity", "Force", "Displacement"],
+      "legacy_prompt": "Which of the following is a scalar quantity?"
+    },
+    "presentation": {"title": "Physics - Quantities", "difficulty_tier": 3},
+    "metadata": {"tags": ["quantities", "scalar", "vector"]}
+  },
+  {
+    "id": "science_lab_physics_laws_0001",
+    "universe": "science_lab",
+    "world": "physics",
+    "subcategory": "laws",
+    "type": "rapid_classification",
+    "difficulty": {"label": "beginner", "tier": 2},
+    "rules": {
+      "prompt": "Which law explains inertia?",
+      "correct_answer": "Newton's First Law",
+      "wrong_answers": ["Newton's Third Law", "Boyle's Law", "Ohm's Law"],
+      "legacy_prompt": "Which law explains inertia?"
+    },
+    "presentation": {"title": "Physics - Laws of Motion", "difficulty_tier": 2},
+    "metadata": {"tags": ["laws", "newton", "inertia"]}
+  },
+  {
+    "id": "science_lab_physics_units_0001",
+    "universe": "science_lab",
+    "world": "physics",
+    "subcategory": "units",
+    "type": "rapid_classification",
+    "difficulty": {"label": "beginner", "tier": 1},
+    "rules": {
+      "prompt": "What unit measures force?",
+      "correct_answer": "Newton",
+      "wrong_answers": ["Joule", "Watt", "Pascal"],
+      "legacy_prompt": "What unit measures force?"
+    },
+    "presentation": {"title": "Physics - Units", "difficulty_tier": 1},
+    "metadata": {"tags": ["units", "force", "si"]}
+  },
+  {
+    "id": "science_lab_physics_quantities_0002",
+    "universe": "science_lab",
+    "world": "physics",
+    "subcategory": "quantities",
+    "type": "odd_one_out",
+    "difficulty": {"label": "intermediate", "tier": 3},
+    "rules": {
+      "prompt": "Which is NOT a vector quantity?",
+      "correct_answer": "Speed",
+      "wrong_answers": ["Velocity", "Acceleration", "Force"],
+      "legacy_prompt": "Which is NOT a vector quantity?"
+    },
+    "presentation": {"title": "Physics - Vector vs Scalar", "difficulty_tier": 3},
+    "metadata": {"tags": ["quantities", "vector", "scalar"]}
+  },
+  {
+    "id": "science_lab_physics_energy_0001",
+    "universe": "science_lab",
+    "world": "physics",
+    "subcategory": "energy",
+    "type": "rapid_classification",
+    "difficulty": {"label": "beginner", "tier": 2},
+    "rules": {
+      "prompt": "Energy stored due to position is called?",
+      "correct_answer": "Potential energy",
+      "wrong_answers": ["Kinetic energy", "Thermal energy", "Nuclear energy"],
+      "legacy_prompt": "Energy stored due to position is called?"
+    },
+    "presentation": {"title": "Physics - Energy", "difficulty_tier": 2},
+    "metadata": {"tags": ["energy", "potential", "kinetic"]}
+  },
+  {
+    "id": "science_lab_physics_mechanics_0001",
+    "universe": "science_lab",
+    "world": "physics",
+    "subcategory": "mechanics",
+    "type": "rapid_classification",
+    "difficulty": {"label": "advanced", "tier": 4},
+    "rules": {
+      "prompt": "If mass increases and force stays constant, acceleration...",
+      "correct_answer": "Decreases",
+      "wrong_answers": ["Increases", "Stays constant", "Becomes zero"],
+      "legacy_prompt": "If mass increases and force stays constant, acceleration..."
+    },
+    "presentation": {"title": "Physics - Newton's Second Law", "difficulty_tier": 4},
+    "metadata": {"tags": ["mechanics", "newton", "acceleration"]}
+  },
+  {
+    "id": "science_lab_physics_conservation_0001",
+    "universe": "science_lab",
+    "world": "physics",
+    "subcategory": "conservation",
+    "type": "rapid_classification",
+    "difficulty": {"label": "intermediate", "tier": 3},
+    "rules": {
+      "prompt": "Which quantity is conserved in closed systems?",
+      "correct_answer": "Energy",
+      "wrong_answers": ["Velocity", "Force", "Time"],
+      "legacy_prompt": "Which quantity is conserved in closed systems?"
+    },
+    "presentation": {"title": "Physics - Conservation Laws", "difficulty_tier": 3},
+    "metadata": {"tags": ["conservation", "energy", "closed_systems"]}
+  }
+]
