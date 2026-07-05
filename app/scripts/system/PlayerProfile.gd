@@ -223,7 +223,7 @@ func get_adaptive_recommendation() -> Dictionary:
 			
 	return rec
 
-func _resolve_recommendation_for_trait(trait: String, registry: Node) -> Dictionary:
+func _resolve_recommendation_for_trait(c_trait: String, registry: Node) -> Dictionary:
 	for u_id in unlocked_universes:
 		var worlds = registry.get_worlds_for_universe(u_id) if registry.has_method("get_worlds_for_universe") else []
 		for w_id in worlds:
@@ -232,7 +232,7 @@ func _resolve_recommendation_for_trait(trait: String, registry: Node) -> Diction
 			var w_meta = registry.get_world(u_id, w_id) if registry.has_method("get_world") else {}
 			var sub_identity = str(w_meta.get("sub_identity", w_meta.get("display_name", w_id))).to_lower()
 			var match_found = false
-			match trait:
+			match c_trait:
 				"rapid_classification", "stroop_test":
 					match_found = ("symbol" in sub_identity or "court" in sub_identity or "language" in sub_identity or "script" in sub_identity)
 				"recall", "memory":
@@ -244,7 +244,7 @@ func _resolve_recommendation_for_trait(trait: String, registry: Node) -> Diction
 				"processing_speed":
 					match_found = ("speed" in sub_identity or "rapid" in sub_identity or "reflex" in sub_identity)
 			if match_found:
-				return {"universe": u_id, "world": w_id, "reason": "%s practice detected as your next opportunity." % trait.capitalize().replace("_", " ")}
+				return {"universe": u_id, "world": w_id, "reason": "%s practice detected as your next opportunity." % c_trait.capitalize().replace("_", " ")}
 	return {"universe": "", "world": "", "reason": ""}
 
 func _load_profile():
