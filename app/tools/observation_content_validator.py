@@ -138,20 +138,29 @@ def validate():
     if bad_q: err(f"{bad_q} observations have invalid rapid-fire questions (missing answer, <1 distractor, or answer in distractors)")
 
     # --- empty banks / empty worlds ---
+    # Content-status aware: empty worlds in non-playable universes are expected
+    # (in_development) and reported as info, not errors. Only empty worlds inside
+    # universes marked playable (status complete/playable) are blocking errors.
+    PLAYABLE = {"complete", "playable", "gold_standard", "production"}
     bank_counts = Counter()
     for it in items:
         if is_placeholder(it): continue
         bank_counts[(it.get('universe'), it.get('world'))] += 1
+    in_dev_worlds = 0
     for u in unis:
+        status = str(unis[u].get('status','')).lower()
+        playable = status in PLAYABLE
         worlds = unis[u].get('worlds', {})
         wo = unis[u].get('world_order', [])
         for w in set(list(worlds.keys()) + wo):
-            if bank_counts.get((u,w),0) == 0:
-                # only error if world is in the active worlds dict
-                if w in worlds:
-                    err(f"EMPTY WORLD: {u}/{w} is in registry worlds but has 0 valid observations")
+            has = bank_counts.get((u,w),0) > 0
+            if not has:
+                if playable and w in worlds:
+                    err(f"EMPTY WORLD in PLAYABLE universe: {u}/{w} (status={status}) marked complete but has 0 valid observations")
                 else:
-                    warn(f"World {u}/{w} in world_order but no populated world / no real content")
+                    in_dev_worlds += 1
+    if in_dev_worlds:
+        print(f"[INFO] {in_dev_worlds} worlds are in_development (non-playable universes, content pending) -- not blocking.")
 
     # --- assets: referenced textures/fonts exist? (lightweight check on registry banners) ---
     missing_assets = []

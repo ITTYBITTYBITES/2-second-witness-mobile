@@ -81,7 +81,7 @@ func _populate_grid():
 	var default_bg = _to_color(default_palette.get("bg", Color("#0B1320")), Color("#0B1320"))
 	var default_primary = _to_color(default_palette.get("primary", Color("#00D4FF")), Color("#00D4FF"))
 	
-	var worlds = registry.get_worlds_for_universe(active_universe_id)
+	var worlds = registry.get_playable_worlds_for_universe(active_universe_id) if registry.has_method("get_playable_worlds_for_universe") else registry.get_worlds_for_universe(active_universe_id)
 	if worlds.is_empty():
 		push_error("[WorldSelectScreen] No worlds found for universe: " + active_universe_id)
 		return

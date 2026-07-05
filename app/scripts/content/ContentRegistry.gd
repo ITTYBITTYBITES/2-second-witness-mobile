@@ -151,6 +151,47 @@ func get_starter_selection() -> Dictionary:
 	var w_id = get_first_world(u_id)
 	return ensure_valid_selection({"universe_id": u_id, "world_id": w_id})
 
+# ---------------------------------------------------------
+# CONTENT STATUS / PLAYABILITY (Phase: polished player experience)
+# Uses the registry's existing `status` field as the canonical
+# content_status: "complete"/"playable"/"gold_standard" => playable.
+# Universes are gated by status (metadata); worlds within a playable
+# universe are gated by real content presence (auto-derived).
+# Flip a universe's `status` to "complete" to expose it -- no engine edit.
+# ---------------------------------------------------------
+const PLAYABLE_STATUSES = ["complete", "playable", "gold_standard", "production"]
+
+func is_universe_playable(universe_id: Variant) -> bool:
+	var spec = get_universe(universe_id)
+	if spec.is_empty():
+		return false
+	var status = str(spec.get("status", "")).to_lower()
+	return PLAYABLE_STATUSES.has(status)
+
+func is_world_playable(universe_id: Variant, world_id: Variant) -> bool:
+	# A world is playable only if its universe is playable AND it has real content.
+	if not is_universe_playable(universe_id):
+		return false
+	return get_all_scenarios_in_world(universe_id, world_id).size() > 0
+
+func get_playable_universes() -> Array:
+	var result: Array = []
+	for u in get_all_universes():
+		if is_universe_playable(u):
+			result.append(u)
+	result.sort()
+	return result
+
+func get_playable_worlds_for_universe(universe_id: Variant) -> Array:
+	var result: Array = []
+	if not is_universe_playable(universe_id):
+		return result
+	for w in get_worlds_for_universe(universe_id):
+		if is_world_playable(universe_id, w):
+			result.append(w)
+	result.sort()
+	return result
+
 func _ready():
 	if BootTracer: BootTracer.log_init("ContentRegistry")
 	print("ContentRegistry initialized. Awaiting content ingestion...")

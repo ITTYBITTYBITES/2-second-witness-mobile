@@ -67,7 +67,10 @@ func _populate_grid():
 	var rot_mgr = WeeklyRotationManager if WeeklyRotationManager else get_tree().root.get_node_or_null("WeeklyRotationManager")
 	var reg = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 	var all_universes = []
-	if rot_mgr and rot_mgr.has_method("get_full_universe_library"):
+	# Playability gate: only expose universes whose status marks them playable.
+	if reg and reg.has_method("get_playable_universes"):
+		all_universes = reg.get_playable_universes()
+	elif rot_mgr and rot_mgr.has_method("get_full_universe_library"):
 		all_universes = rot_mgr.get_full_universe_library()
 	elif reg and reg.has_method("get_all_universes"):
 		all_universes = reg.get_all_universes()
