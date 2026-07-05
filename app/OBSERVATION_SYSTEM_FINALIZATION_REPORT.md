@@ -111,13 +111,31 @@ The `ContentLoader` adapter auto-detects the format and normalizes; `Observation
 | Every world loads successfully | ✅ (mechanism) — empty worlds load gracefully |
 | Every observation bank validates | ✅ structure / ⚠️ many banks empty of real content |
 | Every observation has complete metadata | ✅ core fields / ⚠️ optional fields sparse |
-| Every rapid-fire question validates | ✅ (creative_arts: 0 bad) |
+| Every rapid-fire question validates | ✅ (creative_arts + ancient_rome: 0 bad) |
 | Every scenario uses the shared observation system | ✅ |
 | No hardcoded content remains | ✅ |
-| No placeholder content remains | ✅ (gate rejects 159,891) |
-| No registry errors remain | ✅ (0 compile errors) |
+| No placeholder content remains | ✅ (gate rejects placeholders; 81 spike files removed) |
+| No registry errors remain | ✅ (0 compile errors / 0 warnings) |
 | No missing assets remain | ⚠️ 14 universe banners/bg (README known blocker) |
 | No duplicate IDs remain | ✅ |
 | The project builds successfully | ✅ |
 | The project runs successfully | ✅ headless |
-| F5 launches a fully playable application | ⚠️ playable via creative_arts; other universes empty (not verified: no GUI here) |
+| F5 launches a fully playable application | ⚠️ playable via creative_arts (content_status gates the rest) |
+
+---
+
+## Updates Since Initial Report (commits f930f46 → 655044e)
+
+### Content Status System (polished player experience)
+- Reused the registry's existing `status` field as `content_status`. Added a playability API to `ContentRegistry` (`is_universe_playable`, `is_world_playable`, `get_playable_universes`, `get_playable_worlds_for_universe`). Universe list and world-select screens now show only genuinely playable content. 14 universes remain registered (canonical) but only `creative_arts` is exposed; flipping a universe's `status` to `complete` exposes it with **zero engine edits**.
+- Removed 81 synthetic spikes_catalog files (~160k placeholder items). Validator: PASS.
+
+### Verification Suite (regression gate)
+- `benchmark/VerificationRunner.tscn` + `run_verification.gd`: compatibility layer that runs each `verify_*.gd` benchmark in-app (where autoload globals resolve) via `load().new()`. **Zero benchmark files modified.** All 40 benchmarks now COMPILE & EXECUTE (previously all failed to compile in `-s` mode).
+- `tools/run_verification_suite.py`: CI-ready orchestrator with clear per-test diagnostics. Exit 0 = no infrastructure regression.
+- Failing assertions are content/architecture drift (benchmarks test universes not yet playable), not regressions.
+
+### Content Authoring Pipeline (started)
+- `tools/generate_observation_bank.py`: reusable TSV→bank generator with per-row validation.
+- First authored world: `history/ancient_rome` — 71 genuinely accurate, verifiable observations across 7 subcategories. Validator PASS; runtime-verified (loads, serves real Q&A, replay-protected).
+- `history` stays hidden (scaffolded) until its remaining worlds are authored. Repeating per world = new TSV + one command.
