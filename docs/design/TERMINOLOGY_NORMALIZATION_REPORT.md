@@ -4,15 +4,17 @@
 
 ## Canonical term map applied
 
+**Key principle:** *2 Second Witness* is **product branding only**. Where the legacy "Liquid Memory" described a *mechanism/engine/architecture*, it is rewritten to **neutral system language** — never to the product brand.
+
 | Legacy / variant | Canonical | Where applied |
 |---|---|---|
-| `Cognitive Mirror` / `Memory Mirror` / `MEMORY MIRROR` | **Mirror** | all living docs, comments, UI strings |
-| `Liquid Memory` / `LiquidMemory` / `Liquid Memory V2` | **2 Second Witness** (product) / rephrased (engine/concept) | living docs, headers, prompts, tool output |
+| `Cognitive Mirror` / `Memory Mirror` / `MEMORY MIRROR` | **Mirror** (the only user-facing profile concept) | all living docs, comments, UI strings |
+| `Liquid Memory` as **branding** | **2 Second Witness** (product brand) | product-name references, marketing, identity |
+| `Liquid Memory` as **mechanism** (`…Engine`, `…architecture`, `…paradigm`, `…Asset Pipeline`) | **neutral system language** (the architecture / the Platform / the Asset Pipeline / "this architecture") | specs, headers, prompts, metadata |
 | `Liquid Master` (player rank) | **Master Witness** | `PlayerProfile.gd` title ladder |
-| `LiquidMemory Asset Pipeline` (OBJ headers) | **2 Second Witness Asset Pipeline** | 9 mesh headers |
+| `LiquidMemory Asset Pipeline` (OBJ headers) | **the Asset Pipeline** (neutral mechanism) | 9 mesh headers |
 | `LIQUID_MEMORY_V2_PRODUCT_BIBLE.md` | **PRODUCT_BIBLE.md** | renamed + 4 refs updated |
 | `LiquidMemory_V2` (stale dir refs in deploy guide) | `2-second-witness-mobile/app` | `DEPLOYMENT_GUIDE_IVC0.md` |
-| `Cognitive Mirror` (lowercase, itch description) | `Mirror` | itch.io guides |
 
 ## Files changed (31)
 30 modified + 1 renamed. Docs (`.md`): README, CHANGELOG, itch guides, app specs (BRANDING_PROMPT_GENERATOR, DEPLOYMENT_GUIDE, FINAL_ASSET_MANIFEST, GROUND_TRUTH_ARCHITECTURE_AUDIT, PLATFORM_CONSTITUTION, PRODUCT_STRATEGY, UI_TAXONOMY, PRODUCT_BIBLE, my AUDIT/FINALIZATION reports, benchmark specs), promo, Design Bible + companions. Code (comments/strings/UI): 8 `.gd` files, 1 `.tscn` (player-facing "MEMORY MIRROR"→"MIRROR" header), 1 `.py` tool, 9 `.obj` headers.
@@ -21,12 +23,15 @@
 - `PlayerProfile.gd` — rank `"Liquid Master"` → `"Master Witness"` (top of the title ladder; computed from level, so saves auto-update on next cognitive event).
 - `PlayerProfileScreen.tscn` — header `"MEMORY MIRROR"` → `"MIRROR"`; the `verify_neutral_language_refactor.gd` assertion updated to match.
 
+## Historical archives (tagged, not content-modified)
+All 36 historical documents (`docs_legacy/`, `app/docs_legacy/`, and root `PHASE_*`/`ALPHA_*`/`RC1_*` reports) now carry a prepended `⚠️ LEGACY / HISTORICAL ARCHIVE` banner pointing to the Design Bible. Their bodies — including any legacy terminology — are **retained verbatim** as dated records, per the carve-out.
+
 ## Verification (post-normalization)
 - ✅ Project boots headless with **0 errors, 0 warnings**.
 - ✅ Full verification suite: **40/40 benchmarks compile & execute** (no regression).
-- ✅ Case-insensitive sweep: **no legacy terms remain in any living doc/comment/string**.
+- ✅ Mechanism audit: **no "2 Second Witness" used as an engine/architecture/paradigm name** anywhere in living docs — branding only.
+- ✅ "Mirror" is the sole user-facing profile concept (no `Memory Mirror` / `Cognitive Mirror` in UI or docs).
 - ✅ File rename verified: `PRODUCT_BIBLE.md` resolves; `verify_product_bible.gd` finds it.
-- One regression was introduced and caught during verification: a `sed` had inserted unescaped quotes in `verify_neutral_language_refactor.gd:45` → fixed and re-verified.
 
 ---
 

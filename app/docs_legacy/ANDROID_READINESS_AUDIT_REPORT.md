@@ -1,3 +1,7 @@
+> ⚠️ **LEGACY / HISTORICAL ARCHIVE** — Retained as a dated record. Content reflects the state at time of writing and may use legacy terminology (e.g., "Liquid Memory") or past architecture. Not authoritative for current design; see `docs/design/TWO_SECOND_WITNESS_DESIGN_BIBLE.md`.
+>
+---
+
 # LIQUID MEMORY V2 — ANDROID READINESS AUDIT REPORT
 **Definitive Android Platform Verification & Google Play Submission Inventory**
 

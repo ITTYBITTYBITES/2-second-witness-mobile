@@ -1,6 +1,6 @@
 # 2 SECOND WITNESS: AI ART DIRECTION & BRANDING MANIFEST
 
-If you are feeding this into an AI image generator (like Midjourney, DALL-E 3, or Stable Diffusion) to lock in the final visual identity of the app, use the following prompts. They are engineered to produce assets that perfectly match the *2 Second Witness* architecture.
+If you are feeding this into an AI image generator (like Midjourney, DALL-E 3, or Stable Diffusion) to lock in the final visual identity of the app, use the following prompts. They are engineered to produce assets that perfectly match the app's visual identity.
 
 ---
 

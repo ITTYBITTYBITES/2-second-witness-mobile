@@ -23,4 +23,4 @@ The **Player Profile** acts as a mirror, actively generating psychological insig
 **Are you ready to see how your mind actually works?**
 
 ---
-*Built on the 2 Second Witness Engine. Optimized for 60FPS Android hardware.*
+*Optimized for 60FPS Android hardware.*

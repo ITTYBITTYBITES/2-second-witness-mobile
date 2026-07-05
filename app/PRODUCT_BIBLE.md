@@ -42,7 +42,7 @@ A **Universe** is a top-level macro-domain of human knowledge and inquiry (e.g.,
 A **World** is a specific, cohesive sub-discipline or historical epoch contained within a Universe (e.g., `Ancient Egypt` within `History`, `Cellular Biology` within `Life Sciences`, `Disaster Response` within `Frontier`). A World represents a dedicated learning environment containing specific lore, factual ontologies, and distinct presentation contracts (`WorldProfile.json`).
 
 ### 3. What is a Scenario?
-A **Scenario** is a discrete, interactive educational encounter within a World. It acts as the narrative and pedagogical wrapper for a specific body of knowledge. In the 2 Second Witness paradigm, the educational content drives the experience; the Scenario establishes the context, lore, and factual baseline before any cognitive stress testing begins.
+A **Scenario** is a discrete, interactive educational encounter within a World. It acts as the narrative and pedagogical wrapper for a specific body of knowledge. In this architecture, the educational content drives the experience; the Scenario establishes the context, lore, and factual baseline before any cognitive stress testing begins.
 
 ### 4. What is a Scenario Set?
 A **Scenario Set** is a curated, multi-part episodic lesson plan (e.g., `Scenario Set: Building the Pyramids`). It aggregates multiple related Scenarios into a coherent thematic journey. A Scenario Set functions as an interactive chapter of a "living textbook," taking the player through a progression of related knowledge exposures under varying cognitive stresses.
@@ -60,7 +60,7 @@ A **Knowledge Exposure** is a 2-second flash of factual stimulus (a concept, art
 
 ## 2. The Dual Persistence Layers
 
-The 2 Second Witness architecture strictly isolates data persistence into two orthogonal operational layers: **Permanent** and **Weekly**.
+The architecture strictly isolates data persistence into two orthogonal operational layers: **Permanent** and **Weekly**.
 
 ```
 ┌───────────────────────────────────────────────────────────────────────────┐

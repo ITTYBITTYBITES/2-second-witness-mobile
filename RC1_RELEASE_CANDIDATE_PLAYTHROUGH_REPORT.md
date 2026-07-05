@@ -1,3 +1,7 @@
+> ⚠️ **LEGACY / HISTORICAL ARCHIVE** — Retained as a dated record. Content reflects the state at time of writing and may use legacy terminology (e.g., "Liquid Memory") or past architecture. Not authoritative for current design; see `docs/design/TWO_SECOND_WITNESS_DESIGN_BIBLE.md`.
+>
+---
+
 # RELEASE CANDIDATE 1 (RC1) — HUMAN PLAYTHROUGH & FINAL RELEASE CERTIFICATION REPORT
 **Project:** 2 SECOND WITNESS (`2-second-witness-mobile`)  
 **Primary Repository:** `https://github.com/ITTYBITTYBITES/2-second-witness-mobile`  

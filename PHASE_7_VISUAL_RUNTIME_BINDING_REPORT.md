@@ -1,3 +1,7 @@
+> ⚠️ **LEGACY / HISTORICAL ARCHIVE** — Retained as a dated record. Content reflects the state at time of writing and may use legacy terminology (e.g., "Liquid Memory") or past architecture. Not authoritative for current design; see `docs/design/TWO_SECOND_WITNESS_DESIGN_BIBLE.md`.
+>
+---
+
 # PHASE 7 — VISUAL RUNTIME BINDING & EXPERIENCE INTEGRATION AUDIT REPORT
 **Project:** LIQUID MEMORY V2 (`2-second-witness-mobile`)  
 **Date of Review:** 2026-07-01  
