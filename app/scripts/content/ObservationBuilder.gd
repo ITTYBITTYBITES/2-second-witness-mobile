@@ -2,61 +2,79 @@ extends Node
 
 # ---------------------------------------------------------
 # PRODUCT: 2 Second Witness
-# OBSERVATION BUILDER v4.0 (CONTRACT-DRIVEN PROJECTION)
+# OBSERVATION BUILDER v4.1 (LAYERED CONTRACT PROJECTION)
 # ---------------------------------------------------------
 # Transforms semantic entity objects into gameplay payloads via a
 # deterministic contract pipeline:
 #
 #   ENTITY → EDGE NORMALIZATION → COMPATIBILITY CHECK → PROJECTION
 #
-# Every mechanic declares a contract (required features). The
-# normalization layer safely converts any v3 entity format into a
-# single internal canonical representation. If an entity cannot
-# satisfy a contract, it is projected via a safe fallback (never
-# crashes, never returns empty).
+# v4.1 refinements over v4.0:
+#   - Visual is a LAYERED representation system:
+#       visual.semantic  = descriptive perceptual features (color, pattern)
+#       visual.asset     = renderable asset abstraction (sprites, metadata)
+#     Legacy Dict-visual maps to semantic; v4 visual maps to asset.
+#     Mechanics declare which layer they depend on. No silent overloading.
+#   - Structured incompatibility reasoning (reason, layer, severity, missing)
+#     so coverage analytics are analytically valid, not visually plausible.
+#   - Two-level caching: identity-level normalization cache + projection cache.
 # ---------------------------------------------------------
 
 const SCHEMA_VERSION = 4
 
 # =========================================================
 # SECTION 1: MECHANIC CONTRACTS
-# Each contract declares what a mechanic needs to produce a
-# valid, high-quality payload. The compatibility resolver checks
-# these against the NORMALIZED entity (not the raw input).
+# Each contract declares required features (dotted paths into the
+# normalized entity), the visual layer it depends on, and a fallback.
 # =========================================================
 
 const MECHANIC_CONTRACTS = {
 	"rapid_classification": {
 		"requires": ["category"],
 		"prefers": ["confusions"],
+		"layer": "semantic",
 		"output_schema": "single_label",
 		"fallback": "derive_category_from_type"
 	},
 	"signal_vs_noise": {
 		"requires": ["signature"],
 		"prefers": ["confusions"],
+		"layer": "semantic",
 		"output_schema": "disambiguation_task",
 		"fallback": "derive_signature_from_label"
 	},
 	"odd_one_out": {
 		"requires": ["confusions"],
 		"prefers": ["category"],
+		"layer": "structural",
 		"output_schema": "set_exclusion",
 		"fallback": "none"
 	},
 	"stroop_test": {
-		"requires": ["material", "visual_color"],
+		"requires": ["material", "visual.semantic.color"],
 		"prefers": [],
+		"layer": "semantic",
 		"output_schema": "interference_pair",
 		"fallback": "derive_material_from_dims"
 	},
 	"memory_cascade": {
 		"requires": ["signature"],
 		"prefers": [],
+		"layer": "semantic",
 		"output_schema": "ordered_recall",
 		"fallback": "derive_signature_from_label"
 	}
 }
+
+# =========================================================
+# SECTION 1b: CACHING (two-level)
+# _norm_cache: identity-level, keyed by observation_id (stable)
+# _proj_cache: projection-level, keyed by "obs_id|mechanic" (volatile)
+# Both are deterministic: same input always yields same output.
+# =========================================================
+
+var _norm_cache: Dictionary = {}
+var _proj_cache: Dictionary = {}
 
 # =========================================================
 # SECTION 2: PUBLIC API
@@ -66,7 +84,6 @@ func build_payload(cko: Dictionary, mechanic_id: String, context: Dictionary = {
 	if cko.is_empty():
 		return {}
 
-	# Schema Version Detection
 	if cko.has("entity") and cko.has("features"):
 		return _build_v4_payload(cko, mechanic_id, context)
 	elif cko.has("concept") and not cko.has("entity"):
@@ -75,7 +92,6 @@ func build_payload(cko: Dictionary, mechanic_id: String, context: Dictionary = {
 		return _build_legacy_v1_payload(cko, mechanic_id, context)
 
 ## Returns the list of mechanics an entity can fully satisfy (contract-compatible).
-## Enables mechanic coverage maps per universe (future Phase 10 feature).
 func get_compatible_mechanics(cko: Dictionary) -> Array:
 	if not (cko.has("entity") and cko.has("features")):
 		return []
@@ -85,6 +101,18 @@ func get_compatible_mechanics(cko: Dictionary) -> Array:
 		if _is_compatible(norm, mechanic):
 			result.append(mechanic)
 	return result
+
+## Returns a structured compatibility report for an entity across all mechanics.
+## This is what enables analytically-valid mechanic coverage maps.
+## Structure: { mechanic: {compatible, reason, layer, severity, missing} }
+func get_compatibility_report(cko: Dictionary) -> Dictionary:
+	if not (cko.has("entity") and cko.has("features")):
+		return {}
+	var norm = _normalize_entity(cko)
+	var report: Dictionary = {}
+	for mechanic in MECHANIC_CONTRACTS.keys():
+		report[mechanic] = _check_compatibility(norm, mechanic)
+	return report
 
 # =========================================================
 # SECTION 3: v4 CONTRACT-DRIVEN PROJECTION (entity path)
@@ -96,104 +124,187 @@ func _build_v4_payload(raw: Dictionary, mechanic_id: String, context: Dictionary
 	var norm = _normalize_entity(raw)
 
 	var payload = _build_payload_shell(raw, mechanic, context)
-	norm.mechanic = mechanic
 
-	if _is_compatible(norm, mechanic):
+	# Projection cache (level 2): rules are deterministic from norm + mechanic.
+	var cache_key = str(norm.label) + "|" + mechanic
+	if _proj_cache.has(cache_key):
+		payload["rules"] = (_proj_cache[cache_key] as Dictionary).duplicate(true)
+		payload["contract_status"] = "cached"
+		payload["rules"]["legacy_prompt"] = payload["rules"].get("prompt", "OBSERVE")
+		return payload
+
+	var compat = _check_compatibility(norm, mechanic)
+	if compat.compatible:
 		payload["rules"] = _project(norm, mechanic)
 		payload["contract_status"] = "compatible"
 	else:
-		# Graceful fallback: always produces a valid payload, never crashes.
-		# The compatibility info is available via get_compatible_mechanics()
-		# for the selection engine to prefer compatible entities.
 		payload["rules"] = _project_fallback(norm)
 		payload["contract_status"] = "fallback"
 
+	_proj_cache[cache_key] = (payload["rules"] as Dictionary).duplicate(true)
 	payload["rules"]["legacy_prompt"] = payload["rules"].get("prompt", "OBSERVE")
 	return payload
 
 # =========================================================
-# SECTION 4: EDGE NORMALIZATION
-# Converts ANY v3 entity (legacy Dict-visual, Array-visual, or
-# missing fields) into a single canonical internal representation.
-# This is the ONLY place format ambiguity is handled.
-# Never crashes; missing data becomes empty strings/arrays.
+# SECTION 4: EDGE NORMALIZATION (layered visual)
+# Converts ANY v3 entity into a canonical internal representation.
+# Visual is split into two layers:
+#   semantic = descriptive perceptual features (what it looks like)
+#   asset    = renderable abstraction (what it can render as)
+# This is the ONLY place format ambiguity is resolved.
 # =========================================================
 
 func _normalize_entity(raw: Dictionary) -> Dictionary:
+	# Level-1 cache (identity-level): same entity always normalizes identically.
+	var obs_id = str(raw.get("observation_id", raw.get("id", "")))
+	if obs_id != "" and _norm_cache.has(obs_id):
+		return _norm_cache[obs_id]
+
 	var dims_raw = raw.get("dimensions", {})
 	var dims: Dictionary = dims_raw if dims_raw is Dictionary else {}
 
 	var features_raw = raw.get("features", {})
 	var features: Dictionary = features_raw if features_raw is Dictionary else {}
 
-	# Safe visual extraction — handles Dict, Array, String, or missing.
-	var visual_color := "#FFFFFF"
+	# --- Layered visual extraction ---
+	var visual_semantic := {"color": "#FFFFFF", "pattern": "", "label": ""}
+	var visual_asset := {"sprites": [], "metadata": {}, "available": false}
+
 	var visual_raw = features.get("visual", null)
 	if visual_raw is Dictionary:
-		visual_color = str(visual_raw.get("color", visual_raw.get("pattern", "#FFFFFF")))
+		# Legacy v3: color/pattern are descriptive perceptual features.
+		if visual_raw.has("color"):
+			visual_semantic["color"] = str(visual_raw["color"])
+		if visual_raw.has("pattern"):
+			visual_semantic["pattern"] = str(visual_raw["pattern"])
+		# v4: sprites/metadata are renderable asset abstraction.
+		if visual_raw.has("sprites"):
+			var sp = visual_raw["sprites"]
+			visual_asset["sprites"] = sp if sp is Array else []
+			visual_asset["available"] = not (visual_asset["sprites"] as Array).is_empty()
+		if visual_raw.has("metadata"):
+			visual_asset["metadata"] = visual_raw["metadata"] if visual_raw["metadata"] is Dictionary else {}
+		if visual_raw.has("annotation"):
+			visual_semantic["label"] = str(visual_raw["annotation"])
 	elif visual_raw is Array and visual_raw.size() > 0:
-		visual_color = str(visual_raw[0])
+		visual_semantic["color"] = str(visual_raw[0])
 	elif visual_raw is String and visual_raw != "":
-		visual_color = visual_raw
+		visual_semantic["color"] = visual_raw
 
-	# Safe confusions extraction
 	var confusions_raw = raw.get("confusions", [])
 	var confusions: Array = confusions_raw if confusions_raw is Array else []
 
 	var label = str(raw.get("entity", raw.get("observation_id", "Unknown")))
 
-	# Derive category with fallback chain
 	var category = str(dims.get("Category", ""))
 	if category == "":
 		category = str(raw.get("entity_type", ""))
 
-	# Derive signature with fallback chain
 	var signature = str(dims.get("Signature", ""))
 	if signature == "":
-		# Try to derive from features description
-		if features.has("visual") and features["visual"] is Dictionary:
-			signature = str(features["visual"].get("pattern", ""))
+		if visual_semantic["pattern"] != "":
+			signature = str(visual_semantic["pattern"])
 		if signature == "":
-			signature = label  # Last resort: use the label itself
+			signature = label
 
-	return {
+	var norm = {
 		"label": label,
 		"type": str(raw.get("entity_type", "")),
 		"category": category,
 		"signature": signature,
 		"material": str(dims.get("Material", "")),
-		"visual_color": visual_color,
+		"visual": {
+			"semantic": visual_semantic,
+			"asset": visual_asset
+		},
 		"confusions": confusions,
 		"sequence": [label]
 	}
 
+	if obs_id != "":
+		_norm_cache[obs_id] = norm
+	return norm
+
 # =========================================================
-# SECTION 5: COMPATIBILITY RESOLVER
-# Checks whether a normalized entity satisfies a mechanic's contract.
-# Deterministic: same entity + mechanic = same result, every time.
+# SECTION 5: COMPATIBILITY RESOLVER (structured)
+# Returns a structured result, not just bool. This is what makes
+# coverage analytics analytically valid.
 # =========================================================
 
-func _is_compatible(norm: Dictionary, mechanic: String) -> bool:
+func _check_compatibility(norm: Dictionary, mechanic: String) -> Dictionary:
 	var contract = MECHANIC_CONTRACTS.get(mechanic, null)
 	if contract == null:
-		return false
+		return {"compatible": false, "reason": "unsupported_contract", "layer": "structural", "severity": "hard", "missing": []}
+
 	var requires = contract.get("requires", [])
+	var missing: Array = []
 	for req in requires:
-		var val = norm.get(req, null)
-		if val == null:
-			return false
-		if val is String and val == "":
-			return false
-		if val is Array and val.is_empty():
-			return false
+		if not _has_feature(norm, req):
+			missing.append(req)
+
+	var contract_layer = str(contract.get("layer", "structural"))
+
+	if missing.is_empty():
+		return {"compatible": true, "reason": "", "layer": contract_layer, "severity": "none", "missing": []}
+
+	# Classify the incompatibility.
+	var reason: String = "missing_dimension"
+	var layer: String = contract_layer
+	var severity: String = "soft"
+	for m in missing:
+		if m.find("visual.asset") >= 0:
+			reason = "no_render_layer"
+			layer = "asset"
+			severity = "soft"
+		elif m.find("visual.semantic") >= 0:
+			reason = "missing_dimension"
+			layer = "semantic"
+			severity = "soft"
+		elif m == "confusions":
+			reason = "missing_dimension"
+			layer = "structural"
+			severity = "hard"
+		else:
+			reason = "missing_dimension"
+			layer = "semantic"
+			severity = "soft"
+
+	return {"compatible": false, "reason": reason, "layer": layer, "severity": severity, "missing": missing}
+
+func _is_compatible(norm: Dictionary, mechanic: String) -> bool:
+	return _check_compatibility(norm, mechanic).compatible
+
+# Resolves a dotted path (e.g. "visual.semantic.color") into the normalized dict.
+func _has_feature(norm: Dictionary, dotted_path: String) -> bool:
+	var val = _get_nested(norm, dotted_path)
+	if val == null:
+		return false
+	if val is String:
+		return val != ""
+	if val is Array:
+		return not val.is_empty()
 	return true
+
+func _get_nested(dict: Variant, dotted_path: String) -> Variant:
+	var parts = dotted_path.split(".", false)
+	var current: Variant = dict
+	for part in parts:
+		if current is Dictionary and current.has(part):
+			current = current[part]
+		else:
+			return null
+	return current
 
 # =========================================================
 # SECTION 6: PROJECTION (contract-bound output generation)
-# Each branch produces a structurally distinct rules dict.
+# Output shape is IDENTICAL to v4.0 — only the source of visual
+# color changed (now from the layered semantic sub-dict).
 # =========================================================
 
 func _project(norm: Dictionary, mechanic: String) -> Dictionary:
+	var vis_semantic = (norm.get("visual", {}).get("semantic", {})) if norm.get("visual", {}) is Dictionary else {}
+	var visual_color = str(vis_semantic.get("color", "#FFFFFF")) if vis_semantic is Dictionary else "#FFFFFF"
+
 	match mechanic:
 		"rapid_classification":
 			return {
@@ -217,7 +328,7 @@ func _project(norm: Dictionary, mechanic: String) -> Dictionary:
 			return {
 				"prompt": norm.label,
 				"correct_answer": norm.material,
-				"visual_interference": norm.visual_color
+				"visual_interference": visual_color
 			}
 		"memory_cascade":
 			return {
@@ -228,8 +339,6 @@ func _project(norm: Dictionary, mechanic: String) -> Dictionary:
 		_:
 			return _project_fallback(norm)
 
-# Safe fallback projection — always produces a valid payload,
-# even for entities that satisfy no contract.
 func _project_fallback(norm: Dictionary) -> Dictionary:
 	var answer = norm.category
 	if answer == "":
