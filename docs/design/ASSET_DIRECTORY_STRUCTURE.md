@@ -1,14 +1,14 @@
 # Recommended Asset Directory Structure
 
-**Companion to:** `TWO_SECOND_WITNESS_DESIGN_BIBLE.md` §15 · **Status:** Recommendation (Phase 1)
+**Companion to:** `TWO_SECOND_WITNESS_DESIGN_BIBLE.md` §17 · **Status:** Recommendation (Phase 1)
 
-This document defines a scalable asset layout that supports all current universes and unlimited future growth, **without requiring engine-code changes**. It is a recommendation only — no migration is performed in Phase 1.
+This document defines a scalable asset layout that supports all current universes and unlimited future growth. It is a recommendation only — no migration is performed in Phase 1.
 
 ## Design rules
 1. **Build once, theme everywhere.** Reusable art lives in `_shared/` and is tinted by registry palette at runtime. Universes never duplicate component art.
 2. **Tri-layer isolation** (`ASSET_CONTRACT_SPEC`): Layer-1 (universe base), Layer-2 (world overlay), and Layer-3 (task-kernel / measurement-locked) assets live in clearly separated locations.
-3. **No import-path breakage.** Because all assets resolve through `AssetManifestRegistry`, this is a path-registry migration, not an engine-code change.
-4. ** snake_case everywhere.** All folder/file names match the conventions in the Bible §10.
+3. **Migration is intentional, not free.** Reorganizing existing assets is *intended* to preserve runtime behavior, but in practice it requires coordinated manifest and asset-path updates, import-metadata regeneration, and validator-confirmed path verification. (Adding *new* content is data + registry only — see below.)
+4. ** snake_case everywhere.** All folder/file names match the conventions in the Bible §12.
 
 ## Target structure
 

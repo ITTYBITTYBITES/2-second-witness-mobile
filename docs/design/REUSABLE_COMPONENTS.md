@@ -1,6 +1,6 @@
 # Reusable UI Components & Shared Assets
 
-**Companion to:** `TWO_SECOND_WITNESS_DESIGN_BIBLE.md` §14 · **Status:** Inventory + spec (Phase 1)
+**Companion to:** `TWO_SECOND_WITNESS_DESIGN_BIBLE.md` §16 · **Status:** Inventory + spec (Phase 1)
 
 The component philosophy: **build once, theme everywhere.** Components are authored visually neutral and tinted by registry palette (`ThemeManager` / `VisualIdentityManager`) at runtime. Universes never ship duplicate component art.
 
@@ -36,5 +36,5 @@ These three are the **tinting backbone** — every component below defers to the
 1. **No hardcoded colors.** Read from `VisualIdentityManager.get_universe_identity()`.
 2. **No hardcoded IDs.** Universes/worlds resolve through `ContentRegistry`.
 3. **StyleBox-driven state.** Buttons change state via StyleBox color, never geometry.
-4. **Responsive insets.** All screens use the clamped proportional insets (Bible §5).
+4. **Responsive insets.** All screens use the clamped proportional insets (Bible §7).
 5. **Accessibility.** Touch targets ≥48×48dp; contrast ≥4.5:1; color never the sole encoder.

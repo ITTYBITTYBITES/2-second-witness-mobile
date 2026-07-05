@@ -3,31 +3,71 @@
 
 **Status:** Canonical design foundation (Phase 1) · **Scope:** Project-wide · **Last reviewed:** 2026-07-05
 
-> This Bible is the single source of truth for all visual, UI, audio, and asset-production decisions in *2 Second Witness*. It **consolidates and supersedes** the scattered design specifications previously living under `app/` (see §16 — *Incorporated Documentation*). When this document and an older spec disagree, **this Bible governs** for visual/design matters; the older engineering specs remain authoritative only for their narrow runtime-engineering concerns.
+> This Bible is the single source of truth for all visual, UI, audio, and asset-production decisions in *2 Second Witness*. It **consolidates and supersedes** the scattered design specifications previously living under `app/` (see §18 — *Incorporated Documentation*). The **Design Authority Hierarchy** (§1) defines exactly which document wins when two disagree. Implementation-specific conflicts and Phase-2 recommendations live in a companion `ROADMAP.md`, so this Bible can remain stable.
 
 ---
 
 ## Table of Contents
-1. [Product Identity & Visual Design Principles](#1-product-identity--visual-design-principles)
-2. [UI Design System](#2-ui-design-system)
-3. [Typography Standards](#3-typography-standards)
-4. [Color Palette](#4-color-palette)
-5. [Layout & Spacing Guidelines](#5-layout--spacing-guidelines)
-6. [Iconography Standards](#6-iconography-standards)
-7. [Animation Principles](#7-animation-principles)
-8. [Audio Style Guidelines](#8-audio-style-guidelines)
-9. [Accessibility Guidelines](#9-accessibility-guidelines)
-10. [Asset Naming Conventions](#10-asset-naming-conventions)
-11. [Folder Organization](#11-folder-organization)
-12. [Technical Asset Specifications](#12-technical-asset-specifications)
-13. [AI Asset Generation Standards](#13-ai-asset-generation-standards)
-14. [Reusable UI Components & Shared Assets](#14-reusable-ui-components--shared-assets)
-15. [Recommended Asset Directory Structure](#15-recommended-asset-directory-structure)
-16. [Incorporated Documentation](#16-incorporated-documentation)
+1. [Design Authority Hierarchy](#1-design-authority-hierarchy)
+2. [Glossary](#2-glossary)
+3. [Product Identity & Visual Design Principles](#3-product-identity--visual-design-principles)
+4. [UI Design System](#4-ui-design-system)
+5. [Typography Standards](#5-typography-standards)
+6. [Color Palette](#6-color-palette)
+7. [Layout & Spacing Guidelines](#7-layout--spacing-guidelines)
+8. [Iconography Standards](#8-iconography-standards)
+9. [Animation Principles](#9-animation-principles)
+10. [Audio Style Guidelines](#10-audio-style-guidelines)
+11. [Accessibility Guidelines](#11-accessibility-guidelines)
+12. [Asset Naming Conventions](#12-asset-naming-conventions)
+13. [Folder Organization](#13-folder-organization)
+14. [Technical Asset Specifications](#14-technical-asset-specifications)
+15. [AI Asset Generation Standards](#15-ai-asset-generation-standards)
+16. [Reusable UI Components & Shared Assets](#16-reusable-ui-components--shared-assets)
+17. [Recommended Asset Directory Structure](#17-recommended-asset-directory-structure)
+18. [Incorporated Documentation](#18-incorporated-documentation)
+19. [Implementation Roadmap](#19-implementation-roadmap)
 
 ---
 
-## 1. Product Identity & Visual Design Principles
+## 1. Design Authority Hierarchy
+
+When any two project documents disagree, resolve the conflict using this chain — **higher rank wins for the matter in its scope**. This gives every contributor and AI agent a single, unambiguous decision path and prevents quiet drift between specs.
+
+| Rank | Source | Governs | Notes |
+|---|---|---|---|
+| **1** | **This Design Bible** | Visual, UI, audio, interaction, and asset-production *design* | Supersedes legacy design specs on design matters |
+| **2** | **Universe Registry** (`MASTER_UNIVERSE_REGISTRY.json`) | Canonical universe/world identity: palettes, typography profiles, status, world topology | Single source of truth for runtime content identity — all palette values originate here |
+| **3** | **Asset Contract** (`ASSET_CONTRACT_SPEC.md`) | Tri-layer asset classification + the measurement-lock invariants | Engineering authority for asset *structure* and measurement integrity |
+| **4** | **Engine Architecture** (GDScript autoloads + `*_SPEC.md`) | Runtime behavior: timing budgets, mutation contracts, consistency model | Governs *how things run*, not how they look |
+| **5** | **Legacy Documentation** (older `*_SPEC.md`, phase reports) | Historical context only | Defers to all of the above; useful for "why," not authoritative for "what" |
+
+**How to use it:** Before changing a visual/asset decision, check ranks 1–3. Before changing runtime behavior, check ranks 3–4. If a legacy doc (rank 5) conflicts with anything above it, the legacy doc is **stale** — update or retire it rather than working around it.
+
+> Where this Bible and `ASSET_CONTRACT_SPEC`/engine specs overlap (e.g., measurement lock, timing budgets), they are written to agree. If a disagreement is found, raise it in `ROADMAP.md` and resolve toward the measurement invariants (rank 3) — the cognitive measurement is never compromised for aesthetics.
+
+---
+
+## 2. Glossary
+
+These terms recur throughout the project and the engine code. Defining them once prevents drift.
+
+- **Iris** — The luminous geometric ring (the "Lens") at the center of the frame; the player's primary focal point and the measurement anchor. Always the brightest object in the scene; its interior is pitch-black.
+- **Tunnel** — The forward-motion streaming environment (rib meshes + shader) the player flies through toward the Iris. The spatial reference frame.
+- **Layer 1 (Universe Base)** — Foundational geometry/physics assets global to a universe: `rib_mesh`, `base_iris_mesh`, ambient drone. Contain zero semantic content.
+- **Layer 2 (World Overlay)** — Perceptual modulation assets that change how a universe "feels" without altering geometry: background noise texture, particles, audio overlays. Aesthetic only; may never modify Layer-3 geometry.
+- **Layer 3 (Task Kernel)** — The measurement-locked cognitive core: stimulus sprites (128×128) and answer button frames (256×96). Identical interaction geometry across all universes.
+- **Universe** — A top-level content domain (e.g., `creative_arts`, `history`). Carries a palette, typography profile, and lens profile. Contains Worlds.
+- **World** — A sub-domain within a Universe (e.g., `painting`, `ancient_rome`). Carries observation banks. The unit of content authoring.
+- **Scenario** — A gameplay mechanic / measurement type (e.g., `rapid_classification`, `memory_cascade`). Consumes observations through the shared pipeline; never carries its own content.
+- **Observation** — A single canonical knowledge object (CKO) sourced from a bank, transformed by the pipeline into a playable trial.
+- **Cascade** — The timed ~2-second cognitive event the player performs against an observation.
+- **Measurement Lock** — The invariant that interaction geometry (positions, sizes, timing) is identical across all universes, so cognitive difficulty is a constant. Visual themes may *never* alter it.
+- **Cognitive Mirror** — The product's core metaphor and the player-facing profile/insights HUD utility. Reflects observation data back to the player; satisfies the 3 HUD-utility constraints (zero navigation dependency, zero simulation mutation, zero uninvoked blocking).
+
+---
+
+## 3. Product Identity & Visual Design Principles
 
 **Product:** *2 Second Witness* — an interactive observation-discovery platform built on the "Liquid Memory" concept: a clinical, high-tech cognitive instrument wrapped in a mysterious, flowing sci-fi atmosphere.
 
@@ -51,7 +91,7 @@
 
 ---
 
-## 2. UI Design System
+## 4. UI Design System
 
 The UI is organized as a **3-layer separation** (source: `UI_TAXONOMY_SPEC`). Each layer has a fixed container and may not bleed into another.
 
@@ -81,11 +121,11 @@ Two **orthogonal** graphs intersect *only* through `ModalWindowManager`:
 
 ---
 
-## 3. Typography Standards
+## 5. Typography Standards
 
 The project uses a **typography-profile system** (not a single font) bound per-universe via the registry field `typography`. Profiles are applied by `ThemeManager`.
 
-> **Current gap (flagged, not fixed in Phase 1):** no font files (`.ttf`/`.otf`) ship yet — the project relies on Godot's built-in default font. **Phase 2 must introduce one neutral geometric sans family** (e.g., a variable-weight font) and map the profiles below to weights/tracking.
+> **Current gap (flagged in ROADMAP.md, not fixed in Phase 1):** no font files (`.ttf`/`.otf`) ship yet — the project relies on Godot's built-in default font. **Phase 2 must introduce one neutral geometric sans family** (e.g., a variable-weight font) and map the profiles below to weights/tracking.
 
 ### Typography profiles
 | Profile | Used by | Character | Treatment |
@@ -108,7 +148,7 @@ The project uses a **typography-profile system** (not a single font) bound per-u
 
 ---
 
-## 4. Color Palette
+## 6. Color Palette
 
 Colors are **data-driven** from `MASTER_UNIVERSE_REGISTRY.json` (field `palette: {bg, primary, accent}`) and resolved by `VisualIdentityManager`. There is **no hardcoded color in engine code** — themes come purely from registry data.
 
@@ -141,7 +181,7 @@ Colors are **data-driven** from `MASTER_UNIVERSE_REGISTRY.json` (field `palette:
 
 ---
 
-## 5. Layout & Spacing Guidelines
+## 7. Layout & Spacing Guidelines
 
 ### The responsive shell
 Screens use a `PanelContainer` inset from the viewport by a clamped proportional margin (source: existing `WeeklyFeaturedScreen` / `WorldSelectScreen`):
@@ -153,7 +193,7 @@ Screens use a `PanelContainer` inset from the viewport by a clamped proportional
 - **Card size:** Universe card `280×138`; World card `270×124`.
 - **Base spacing unit:** 8px. All paddings/margins are multiples of 8 (8, 16, 24, 32, 48, 64).
 
-### Measurement-invariant zone (Layer 3 lock)
+### Measurement-invariant zone (Layer-3 lock)
 During the active 2-second cognitive window:
 - **Stimulus sprites** (`128×128`) and **answer buttons** (`256×96`) are **positionally locked** the instant the timer starts.
 - The spatial distance between `[Button A]` and `[Button B]` is a **constant** so Fitts's-Law traversal time is invariant across worlds. Layout changes that affect this distance are forbidden.
@@ -163,7 +203,7 @@ During the active 2-second cognitive window:
 
 ---
 
-## 6. Iconography Standards
+## 8. Iconography Standards
 
 ### Style
 - **Flat, minimalist, vector.** High contrast against pure black. **No drop shadows, no baked gradients** on task icons.
@@ -172,7 +212,7 @@ During the active 2-second cognitive window:
 
 ### Stimulus icons (Layer 3 — measurement)
 - **Size:** exactly `128×128`, centered origin, **no transparent padding**, **no baked shadows** (source: `ASSET_CONTRACT_SPEC`).
-- Sets are universe-themed: hexagons/diamonds (science), organic cell blobs (life sciences), Rorschach ink blots (society & mind). See §13 for generation prompts.
+- Sets are universe-themed: hexagons/diamonds (science), organic cell blobs (life sciences), Rorschach ink blots (society & mind). See §15 for generation prompts.
 
 ### UI icons
 - **Size:** 64×64 master, displayed at 32/48.
@@ -183,7 +223,7 @@ During the active 2-second cognitive window:
 
 ---
 
-## 7. Animation Principles
+## 9. Animation Principles
 
 ### Timing budget (the hard floor)
 The architecture is a **time-sliced consistency model** over Godot's non-deterministic loop (source: `CONSISTENCY_CONTRACT_SPEC`, `DESIGN_CONSTRAINT_ENGINEERING_SPEC`). Permitted incoherence:
@@ -204,7 +244,7 @@ From `FIDELITY_BUDGET_SPEC`: HIGH/MID/LOW profiles scale particles, shader compl
 
 ---
 
-## 8. Audio Style Guidelines
+## 10. Audio Style Guidelines
 
 ### Bus architecture (from `AudioManager`)
 - **Ambient** bus: single looping `AudioStreamPlayer`, base volume `-10 dB`. One ambient drone per universe (`ambient_base_audio`, Layer 1).
@@ -226,7 +266,7 @@ From `FIDELITY_BUDGET_SPEC`: HIGH/MID/LOW profiles scale particles, shader compl
 
 ---
 
-## 9. Accessibility Guidelines
+## 11. Accessibility Guidelines
 
 ### Cognitive accessibility (this product's core concern)
 - The 2-second window is the design constant; **do not** add "accessibility options" that extend it (that would invalidate the measurement). Instead, accommodate via:
@@ -239,7 +279,7 @@ From `FIDELITY_BUDGET_SPEC`: HIGH/MID/LOW profiles scale particles, shader compl
 - Generous tap slop; no precision-aiming required during the cascade.
 
 ### Visual accessibility
-- WCAG AA contrast (4.5:1) for all text (see §4).
+- WCAG AA contrast (4.5:1) for all text (see §6).
 - **Reduced-motion:** respect OS reduced-motion preference — collapse particle/VFX tiers and shorten tweens, but never alter Iris hitboxes or timing.
 - Photosensitivity: no strobing > 3 Hz. Iris pulse is a slow breath, not a flash.
 
@@ -249,7 +289,7 @@ From `FIDELITY_BUDGET_SPEC`: HIGH/MID/LOW profiles scale particles, shader compl
 
 ---
 
-## 10. Asset Naming Conventions
+## 12. Asset Naming Conventions
 
 All identifiers are **snake_case**, ASCII only. No spaces, no camelCase in filenames.
 
@@ -277,7 +317,7 @@ All identifiers are **snake_case**, ASCII only. No spaces, no camelCase in filen
 
 ---
 
-## 11. Folder Organization
+## 13. Folder Organization
 
 The project uses a **two-domain split** (source: `README.md`):
 
@@ -291,14 +331,14 @@ The project uses a **two-domain split** (source: `README.md`):
 │   ├── tools/            ← Python authoring/validation tooling
 │   └── MASTER_UNIVERSE_REGISTRY.json   ← Canonical universe spec
 ├── live_content/         ← OTA pipeline (pushes to live users w/o rebuild)
-└── docs/design/          ← This Bible + design foundation
+└── docs/design/          ← This Bible + design foundation + ROADMAP
 ```
 
-> **Naming inconsistency (flagged):** the engine project lives in `app/`, but multiple `*.md` docs and a duplicate `app/` subtree of docs exist at the repo root. See §17 — *Conflicts & Inconsistencies*.
+> **Naming inconsistency (flagged in ROADMAP.md):** the engine project lives in `app/`, but multiple `*.md` docs and a duplicate `app/` subtree of docs exist at the repo root. See `ROADMAP.md` — *Conflicts & Inconsistencies*.
 
 ---
 
-## 12. Technical Asset Specifications
+## 14. Technical Asset Specifications
 
 ### Image / texture
 | Asset | Size | Format | Notes |
@@ -335,7 +375,7 @@ The project uses a **two-domain split** (source: `README.md`):
 
 ---
 
-## 13. AI Asset Generation Standards
+## 15. AI Asset Generation Standards
 
 To guarantee a consistent *Liquid Memory* identity across AI-generated assets, **every generation prompt must include the style lock + the specific asset contract**. (Consolidated from `BRANDING_PROMPT_GENERATOR.md`.)
 
@@ -351,7 +391,7 @@ To guarantee a consistent *Liquid Memory* identity across AI-generated assets, *
 ### Post-generation pipeline (mandatory)
 1. Generate.
 2. Strip messy backgrounds to pure transparency (`remove.bg` / equivalent) for icons/stimuli.
-3. Resize to **exact** contract dimensions (§12).
+3. Resize to **exact** contract dimensions (§14).
 4. Drop into `assets_incoming/`.
 5. Run `PreImportAssetValidator` → on PASS, asset moves to `assets/` and registers in `AssetManifestRegistry`.
 
@@ -359,7 +399,7 @@ To guarantee a consistent *Liquid Memory* identity across AI-generated assets, *
 
 ---
 
-## 14. Reusable UI Components & Shared Assets
+## 16. Reusable UI Components & Shared Assets
 
 **Principle:** build once, theme everywhere. A component is authored neutral and tinted by registry palette at runtime — universes never ship duplicate component art.
 
@@ -384,96 +424,52 @@ To guarantee a consistent *Liquid Memory* identity across AI-generated assets, *
 
 ---
 
-## 15. Recommended Asset Directory Structure
+## 17. Recommended Asset Directory Structure
 
-A scalable layout supporting all 14 universes and future growth. It preserves the existing `assets/` root (so no engine import paths break) while introducing per-universe content folders.
+A scalable layout supporting all 14 universes and future growth. It preserves the existing `assets/` root (so existing import paths are a known starting point) while introducing per-universe content folders. Full detail lives in the companion `ASSET_DIRECTORY_STRUCTURE.md`.
 
 ```
 app/assets/
 ├── _shared/                       ← ONE copy of every reusable (tinted at runtime)
-│   ├── icons/                     ← icon_check.png, icon_play.png, ...
-│   ├── ui/                        ← NeonButton frames, ModalFrame, card templates
-│   ├── audio/                     ← ui_click.wav, ui_error.wav, iris_heartbeat.wav
-│   ├── meshes/                    ← iris_crystalline.obj, degraded_fallback.obj
-│   ├── shaders/                   ← tunnel_core.gdshader
-│   └── materials/                 ← lab_data_node.tres, portal_glow.tres
-│
+│   ├── icons/  ui/  audio/  meshes/  shaders/  materials/
 ├── brand/                         ← App-store-facing identity (universe-agnostic)
-│   ├── app_icon_1024.png
-│   ├── promo_header_1920.png
-│   └── android/                   ← adaptive icon fg/bg
-│
 ├── universes/                     ← Per-universe bespoke art (Layer 1 + Layer 2)
-│   ├── _default/                  ← fallback theme (current scaffolded palette)
-│   │   ├── bg_default.png
-│   │   ├── rib_default.obj
-│   │   └── ambience_default.wav
-│   ├── creative_arts/
-│   │   ├── bg_creative_arts.png
-│   │   ├── rib_creative_arts.obj
-│   │   ├── ambience_creative_arts.wav
-│   │   └── stimuli/               ← Layer-3 stimulus set for this universe
-│   │       ├── stim_violet_hex.png
-│   │       └── stim_palette.png
-│   ├── history/
-│   ├── life_sciences/
-│   ├── science_lab/
-│   ├── society_mind/
-│   ├── tech_ops/
-│   └── frontier/
-│
+│   ├── _default/  creative_arts/  history/  ...  <future_universe>/
 └── vfx/                           ← Particle/animation scenes (cross-universe)
-    ├── iris_fracture.tscn
-    └── slingshot_warp.tscn
 ```
 
-### Migration note (do NOT execute in Phase 1)
-The current `assets/textures/env/`, `assets/textures/sprites/`, `assets/audio/` mix shared and per-universe assets flatly. Phase 2 (Global UI Asset Pack) should reorganize into the structure above. Because all asset paths resolve through `AssetManifestRegistry`, this is a **path-registry migration**, not an engine-code change — but it must be done deliberately with the validator guarding it.
+> **Migration caveat (important):** Because all asset paths resolve through `AssetManifestRegistry`, this reorganization is *intended* to preserve runtime behavior — but in practice it requires **coordinated manifest and asset-path updates**, import-metadata regeneration, and validator-confirmed path verification. Treat it as a deliberate, tested migration, **not a free file move**. (Adding *new* content, by contrast, is data + registry only and needs no engine-code change — see `ASSET_DIRECTORY_STRUCTURE.md`.)
 
 ---
 
-## 16. Incorporated Documentation
+## 18. Incorporated Documentation
 
-This Bible **merges** (does not duplicate) the following existing specs. They remain in place as deeper engineering references but defer to this Bible on visual/design matters:
+This Bible **merges** (does not duplicate) the following existing specs. They remain in place as deeper references but defer to this Bible (and the Authority Hierarchy, §1) on design matters:
 
 | Source doc | Incorporated as |
 |---|---|
-| `app/UI_TAXONOMY_SPEC.md` | §2 UI Design System (3-layer separation, orthogonality) |
-| `app/ASSET_CONTRACT_SPEC.md` | §1 pillars, §6 iconography, §12 specs, §14 components (tri-layer contract) |
-| `app/ATTENTION_BUDGET_SPEC.md` | §1 pillars, §1 three-tier hierarchy, §13 rejection rule |
-| `app/FIDELITY_BUDGET_SPEC.md` | §7 animation (performance profiles), §12 specs (texture/mesh caps) |
-| `app/CONSISTENCY_CONTRACT_SPEC.md` | §7 animation (time-sliced consistency, control plane) |
-| `app/DESIGN_CONSTRAINT_ENGINEERING_SPEC.md` | §7 animation (incoherence tolerance matrix) |
-| `app/BRANDING_PROMPT_GENERATOR.md` | §6 app icon, §13 AI generation standards |
-| `app/LIQUID_MEMORY_V2_PRODUCT_BIBLE.md` | §1 product identity (Cognitive Mirror concept) |
-| `app/INTERACTION_DESIGN_UNDER_CONSTRAINT_SPEC.md` | §2, §7 (2-second timing invariant) |
-| `app/MASTER_UNIVERSE_REGISTRY.json` | §4 color palette (authoritative source of all palette values) |
-| `app/FINAL_ASSET_MANIFEST.md` | §12 specs, §15 structure |
+| `app/UI_TAXONOMY_SPEC.md` | §4 UI Design System (3-layer separation, orthogonality) |
+| `app/ASSET_CONTRACT_SPEC.md` | §3 pillars, §8 iconography, §14 specs, §16 components (tri-layer contract) |
+| `app/ATTENTION_BUDGET_SPEC.md` | §3 pillars, §3 three-tier hierarchy, §15 rejection rule |
+| `app/FIDELITY_BUDGET_SPEC.md` | §9 animation (performance profiles), §14 specs (texture/mesh caps) |
+| `app/CONSISTENCY_CONTRACT_SPEC.md` | §9 animation (time-sliced consistency, control plane) |
+| `app/DESIGN_CONSTRAINT_ENGINEERING_SPEC.md` | §9 animation (incoherence tolerance matrix) |
+| `app/BRANDING_PROMPT_GENERATOR.md` | §8 app icon, §15 AI generation standards |
+| `app/LIQUID_MEMORY_V2_PRODUCT_BIBLE.md` | §3 product identity (Cognitive Mirror concept) |
+| `app/INTERACTION_DESIGN_UNDER_CONSTRAINT_SPEC.md` | §4, §9 (2-second timing invariant) |
+| `app/MASTER_UNIVERSE_REGISTRY.json` | §6 color palette (authoritative source of all palette values) |
+| `app/FINAL_ASSET_MANIFEST.md` | §14 specs, §17 structure |
 
 ---
 
-## 17. Conflicts & Inconsistencies Discovered
+## 19. Implementation Roadmap
 
-These were **identified, not fixed** (Phase 1 is documentation only):
+The Bible is kept intentionally timeless. Current inconsistencies to resolve and concrete Phase-2 recommendations live in a separate, frequently-updated companion document:
 
-1. **Duplicated documentation (root vs `app/`).** `ADMOB_HOUSEHOLD_SAFETY_GUIDE.md`, `ADS_INTEGRATION_GUIDE.md`, `ASSET_AUDIT.md`, and `ITCH_IO_RELEASE_GUIDE.md` exist **byte-identically** in *both* the repo root and `app/`. Recommend removing the root copies and keeping `app/` canonical (or vice-versa) in Phase 2.
-2. **No font files ship.** All typography profiles (TECHNICAL/SPARSE/HEAVY) are defined but unmapped to actual `.ttf`/`.otf` resources — the project uses Godot's default font. Phase 2 must introduce a font family.
-3. **Flat asset mixing.** `assets/audio/`, `assets/textures/env/`, `assets/textures/sprites/` intermingle shared and per-universe assets with no `_shared/` separation (see §15). A reorganization is needed.
-4. **7 universes use the default palette.** animals_wildlife, food_cuisine, geography, nature_environment, science_discovery, space_astronomy, travel_tourism all carry the identical `#0B1320/#00D4FF/#80E5FF` clinical-cyan default — they will look indistinguishable until given bespoke palettes.
-5. **Two `assets/` doc-subtree copies.** Beyond the 4 duplicated guides above, the repo also carries a duplicate `app/.github/`, `app/ADMOB_*`, etc. subtree — likely a stale workspace sync artifact.
+→ **`docs/design/ROADMAP.md`** (conflicts discovered + Phase 2 Global UI Asset Pack recommendations)
+
+Update the Bible only when the *design foundation itself* changes. Track implementation progress in the Roadmap.
 
 ---
 
-## 18. Recommendations for Phase 2 (Global UI Asset Pack)
-
-1. **Establish `_shared/` and reorganize** per §15 — guarded by the content validator so no import path breaks.
-2. **Introduce one geometric sans font family** (variable weight) and bind the three typography profiles to weight/tracking. Replace reliance on Godot's default.
-3. **Produce the shared component set** (§14): `UniverseCard`, `WorldCard`, `NeonButton`, `ModalFrame`, `MetricLabel` as reusable themed scenes — authored neutral, tinted by `ThemeManager`.
-4. **Generate the Layer-1/Layer-2 asset pack** for the 6 bespoke-palette universes (creative_arts, frontier, history, life_sciences, society_mind, tech_ops) using the §13 AI standards: rib mesh, bg texture, ambient drone, stimulus set each.
-5. **De-duplicate root-vs-app docs** (§17.1) and consolidate all design specs under `docs/design/`.
-6. **Author bespoke palettes** for the 7 default-palette universes (§17.4) so each is visually distinct.
-7. **Wire the validator** to enforce the §12 dimension/format contract on every asset in `assets/` (currently the validator covers observations only).
-
----
-
-*End of Design Bible. This is a living document — update via pull request, and keep §16–18 current as the foundation evolves.*
+*End of Design Bible. This is a living canonical document — update via pull request. For implementation status and transitional items, see `ROADMAP.md`.*
