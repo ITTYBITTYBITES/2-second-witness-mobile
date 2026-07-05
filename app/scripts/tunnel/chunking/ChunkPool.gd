@@ -27,7 +27,7 @@ func reset_pool(max_chunks: int, universe_id: String = ""):
 		
 	# Update Material Colors based on Universe
 	var renderer = UniverseRenderer.new()
-	var profile = renderer.get_render_profile(universe_id)
+	var _profile = renderer.get_render_profile(universe_id)
 	var identity = renderer._registry().get_universe_identity(universe_id) if renderer._registry() else {}
 	var palette = identity.get("palette", {"bg": Color("#0B1320"), "primary": Color("#00D4FF")})
 	var u_mat = structure_mat.duplicate()

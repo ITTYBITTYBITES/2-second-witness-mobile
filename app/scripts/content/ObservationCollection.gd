@@ -157,7 +157,7 @@ func standardize(item: Dictionary) -> Dictionary:
 		
 	# NEW: Support for Canonical Knowledge Object (CKO) v2.0
 	if item.has("concept") and item.has("recognized_answer"):
-		var standardized = {
+		var standardized_cko = {
 			"id": normalize_id(item.get("id", obs_id)),
 			"observation_id": obs_id,
 			"universe": normalize_id(item.get("universe", "")),
@@ -172,8 +172,8 @@ func standardize(item: Dictionary) -> Dictionary:
 			"metadata": item.get("metadata", {}),
 			"raw": item
 		}
-		_standardization_cache[obs_id] = standardized
-		return standardized
+		_standardization_cache[obs_id] = standardized_cko
+		return standardized_cko
 
 	# Legacy v1.0 Standardizer
 	var rules = item.get("rules", {})

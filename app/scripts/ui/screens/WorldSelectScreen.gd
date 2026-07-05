@@ -75,7 +75,7 @@ func _populate_grid():
 	_apply_responsive_layout()
 	var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 	var _profile = PlayerProfile if PlayerProfile else get_tree().root.get_node_or_null("PlayerProfile")
-	var vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
+	var _vim = VisualIdentityManager if VisualIdentityManager else get_tree().root.get_node_or_null("VisualIdentityManager")
 	var def = registry.get_universe_identity(active_universe_id)
 	var default_palette = def.get("palette", {})
 	var default_bg = _to_color(default_palette.get("bg", Color("#0B1320")), Color("#0B1320"))
