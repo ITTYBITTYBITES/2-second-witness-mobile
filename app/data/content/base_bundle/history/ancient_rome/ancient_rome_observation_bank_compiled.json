@@ -1,1 +1,2491 @@
-[]
+[
+ {
+  "observation_id": "history_ancient_rome_emperors_0002",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the first Roman emperor, taking power in 27 BC?",
+  "correct_answer": "Augustus",
+  "distractors": [
+   "Julius Caesar",
+   "Nero",
+   "Tiberius"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0002_prompt",
+   "answer_key": "history_ancient_rome_emperors_0002_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "augustus"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0003",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which emperor, successor of Augustus, ruled during Jesus of Nazareth's adulthood?",
+  "correct_answer": "Tiberius",
+  "distractors": [
+   "Claudius",
+   "Caligula",
+   "Nero"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0003_prompt",
+   "answer_key": "history_ancient_rome_emperors_0003_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "julio-claudian"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0004",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which emperor is infamously associated with the Great Fire of Rome in 64 AD?",
+  "correct_answer": "Nero",
+  "distractors": [
+   "Caligula",
+   "Claudius",
+   "Vespasian"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0004_prompt",
+   "answer_key": "history_ancient_rome_emperors_0004_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "nero"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0005",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which emperor began construction of the Colosseum?",
+  "correct_answer": "Vespasian",
+  "distractors": [
+   "Titus",
+   "Domitian",
+   "Nero"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0005_prompt",
+   "answer_key": "history_ancient_rome_emperors_0005_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "flavian"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0006",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which emperor built a famous wall marking the empire's edge in northern Britain?",
+  "correct_answer": "Hadrian",
+  "distractors": [
+   "Trajan",
+   "Antoninus Pius",
+   "Claudius"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0006_prompt",
+   "answer_key": "history_ancient_rome_emperors_0006_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "hadrian"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0007",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which 'philosopher emperor' authored the book 'Meditations'?",
+  "correct_answer": "Marcus Aurelius",
+  "distractors": [
+   "Trajan",
+   "Nero",
+   "Hadrian"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0007_prompt",
+   "answer_key": "history_ancient_rome_emperors_0007_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "stoicism"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0008",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which emperor issued the Edict of Milan, legalizing Christianity?",
+  "correct_answer": "Constantine",
+  "distractors": [
+   "Diocletian",
+   "Theodosius",
+   "Galerius"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0008_prompt",
+   "answer_key": "history_ancient_rome_emperors_0008_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "constantine",
+    "christianity"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0009",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which emperor divided the empire into a tetrarchy of four rulers?",
+  "correct_answer": "Diocletian",
+  "distractors": [
+   "Constantine",
+   "Aurelian",
+   "Septimius Severus"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0009_prompt",
+   "answer_key": "history_ancient_rome_emperors_0009_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "tetrarchy"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0010",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which emperor conquered Dacia, noted on his famous column?",
+  "correct_answer": "Trajan",
+  "distractors": [
+   "Hadrian",
+   "Nerva",
+   "Domitian"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0010_prompt",
+   "answer_key": "history_ancient_rome_emperors_0010_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "trajan"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_emperors_0011",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "emperors",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which emperor launched the Roman invasion of Britain in 43 AD?",
+  "correct_answer": "Claudius",
+  "distractors": [
+   "Caligula",
+   "Nero",
+   "Vespasian"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_emperors_0011_prompt",
+   "answer_key": "history_ancient_rome_emperors_0011_answer"
+  },
+  "metadata": {
+   "tags": [
+    "emperors",
+    "claudius",
+    "britain"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0012",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the king of the Roman gods?",
+  "correct_answer": "Jupiter",
+  "distractors": [
+   "Mars",
+   "Neptune",
+   "Apollo"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0012_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0012_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "jupiter"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0013",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman god of war?",
+  "correct_answer": "Mars",
+  "distractors": [
+   "Jupiter",
+   "Mercury",
+   "Vulcan"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0013_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0013_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "mars"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0014",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman goddess of love and beauty?",
+  "correct_answer": "Venus",
+  "distractors": [
+   "Diana",
+   "Minerva",
+   "Juno"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0014_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0014_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "venus"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0015",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman god of the sea?",
+  "correct_answer": "Neptune",
+  "distractors": [
+   "Jupiter",
+   "Pluto",
+   "Mars"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0015_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0015_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "neptune"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0016",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman god of the underworld?",
+  "correct_answer": "Pluto",
+  "distractors": [
+   "Neptune",
+   "Jupiter",
+   "Saturn"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0016_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0016_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "pluto"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0017",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman goddess of wisdom and crafts?",
+  "correct_answer": "Minerva",
+  "distractors": [
+   "Diana",
+   "Venus",
+   "Ceres"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0017_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0017_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "minerva"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0018",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman god of wine and revelry?",
+  "correct_answer": "Bacchus",
+  "distractors": [
+   "Apollo",
+   "Mercury",
+   "Mars"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0018_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0018_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "bacchus"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0019",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman messenger of the gods?",
+  "correct_answer": "Mercury",
+  "distractors": [
+   "Apollo",
+   "Mars",
+   "Vulcan"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0019_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0019_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "mercury"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0020",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman god of fire and metalworking?",
+  "correct_answer": "Vulcan",
+  "distractors": [
+   "Mars",
+   "Neptune",
+   "Apollo"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0020_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0020_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "vulcan"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0021",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the Roman goddess of the hunt and the moon?",
+  "correct_answer": "Diana",
+  "distractors": [
+   "Minerva",
+   "Venus",
+   "Juno"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0021_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0021_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "diana"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0022",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Who was the queen of the Roman gods and protector of marriage?",
+  "correct_answer": "Juno",
+  "distractors": [
+   "Venus",
+   "Minerva",
+   "Diana"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0022_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0022_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "juno"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0023",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "According to myth, who were the twin brothers said to have founded Rome?",
+  "correct_answer": "Romulus and Remus",
+  "distractors": [
+   "Aeneas and Ascanius",
+   "Castor and Pollux",
+   "Rhea and Silvia"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0023_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0023_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "founding"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_gods_mythology_0024",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "gods_mythology",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "From which fallen city did the Trojan hero Aeneas flee to Italy, according to Roman legend?",
+  "correct_answer": "Troy",
+  "distractors": [
+   "Carthage",
+   "Greece",
+   "Latium"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_gods_mythology_0024_prompt",
+   "answer_key": "history_ancient_rome_gods_mythology_0024_answer"
+  },
+  "metadata": {
+   "tags": [
+    "gods",
+    "aeneas"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0025",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the original name of the Colosseum?",
+  "correct_answer": "Flavian Amphitheatre",
+  "distractors": [
+   "Circus Maximus",
+   "Pantheon",
+   "Roman Forum"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0025_prompt",
+   "answer_key": "history_ancient_rome_architecture_0025_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "colosseum"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0026",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the large oval arena in Rome used for gladiatorial games?",
+  "correct_answer": "Colosseum",
+  "distractors": [
+   "Pantheon",
+   "Circus Maximus",
+   "Forum"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0026_prompt",
+   "answer_key": "history_ancient_rome_architecture_0026_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "colosseum"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0027",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Visual Identification",
+  "prompt": "What building material allowed the Romans to build the Pantheon's record-setting dome?",
+  "correct_answer": "Concrete",
+  "distractors": [
+   "Marble",
+   "Bronze",
+   "Granite"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0027_prompt",
+   "answer_key": "history_ancient_rome_architecture_0027_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "engineering"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0028",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the central public square of ancient Rome used for business and politics?",
+  "correct_answer": "Roman Forum",
+  "distractors": [
+   "Circus Maximus",
+   "Palatine Hill",
+   "Capitoline Hill"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0028_prompt",
+   "answer_key": "history_ancient_rome_architecture_0028_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "forum"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0029",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the Circus Maximus primarily used for?",
+  "correct_answer": "Chariot racing",
+  "distractors": [
+   "Gladiatorial combat",
+   "Theatre",
+   "Animal hunts"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0029_prompt",
+   "answer_key": "history_ancient_rome_architecture_0029_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "circus"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0030",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which famous Roman aqueduct bridge survives near Nimes in modern France?",
+  "correct_answer": "Pont du Gard",
+  "distractors": [
+   "Aqua Claudia",
+   "Aqua Appia",
+   "Pons Aemilius"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0030_prompt",
+   "answer_key": "history_ancient_rome_architecture_0030_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "aqueduct"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0031",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which monument depicts the Dacian Wars in a continuous spiral relief?",
+  "correct_answer": "Trajan's Column",
+  "distractors": [
+   "Hadrian's Wall",
+   "Marcus Aurelius Column",
+   "Arch of Titus"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0031_prompt",
+   "answer_key": "history_ancient_rome_architecture_0031_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "relief"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0032",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the major Roman road leading south from Rome called?",
+  "correct_answer": "Via Appia",
+  "distractors": [
+   "Via Flaminia",
+   "Via Aurelia",
+   "Via Latina"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0032_prompt",
+   "answer_key": "history_ancient_rome_architecture_0032_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "roads"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_architecture_0033",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "architecture",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What is the Roman arch-based structure used to carry water across valleys?",
+  "correct_answer": "Aqueduct",
+  "distractors": [
+   "Viaduct",
+   "Bridge",
+   "Causeway"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_architecture_0033_prompt",
+   "answer_key": "history_ancient_rome_architecture_0033_answer"
+  },
+  "metadata": {
+   "tags": [
+    "architecture",
+    "engineering"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0034",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the basic large military unit of the Roman army?",
+  "correct_answer": "Legion",
+  "distractors": [
+   "Phalanx",
+   "Century",
+   "Maniple"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0034_prompt",
+   "answer_key": "history_ancient_rome_military_0034_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "legion"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0035",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was a common foot soldier of the Roman army called?",
+  "correct_answer": "Legionary",
+  "distractors": [
+   "Centurion",
+   "Hoplite",
+   "Gladiator"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0035_prompt",
+   "answer_key": "history_ancient_rome_military_0035_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "legionary"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0036",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which officer commanded roughly 80 soldiers, a 'century'?",
+  "correct_answer": "Centurion",
+  "distractors": [
+   "Legate",
+   "Tribune",
+   "Decurion"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0036_prompt",
+   "answer_key": "history_ancient_rome_military_0036_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "officers"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0037",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which Carthaginian general famously crossed the Alps with war elephants?",
+  "correct_answer": "Hannibal",
+  "distractors": [
+   "Scipio",
+   "Hasdrubal",
+   "Pyrrhus"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0037_prompt",
+   "answer_key": "history_ancient_rome_military_0037_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "hannibal"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0038",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "At which 216 BC battle did Hannibal annihilate a huge Roman army?",
+  "correct_answer": "Cannae",
+  "distractors": [
+   "Zama",
+   "Trebia",
+   "Lake Trasimene"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0038_prompt",
+   "answer_key": "history_ancient_rome_military_0038_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "cannae"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0039",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "At which 202 BC battle did Scipio Africanus finally defeat Hannibal?",
+  "correct_answer": "Zama",
+  "distractors": [
+   "Cannae",
+   "Magnesia",
+   "Cynosephalae"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0039_prompt",
+   "answer_key": "history_ancient_rome_military_0039_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "scipio"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0040",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Visual Identification",
+  "prompt": "What was the 'tortoise'-like defensive formation of interlocking shields called?",
+  "correct_answer": "Testudo",
+  "distractors": [
+   "Phalanx",
+   "Wedge",
+   "Orb"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0040_prompt",
+   "answer_key": "history_ancient_rome_military_0040_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "formations"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0041",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which leader said 'Veni, vidi, vici' (I came, I saw, I conquered)?",
+  "correct_answer": "Julius Caesar",
+  "distractors": [
+   "Augustus",
+   "Pompey",
+   "Trajan"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0041_prompt",
+   "answer_key": "history_ancient_rome_military_0041_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "caesar"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0042",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Crossing which river in 49 BC began Julius Caesar's civil war?",
+  "correct_answer": "Rubicon",
+  "distractors": [
+   "Tiber",
+   "Po",
+   "Tiber"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0042_prompt",
+   "answer_key": "history_ancient_rome_military_0042_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "caesar",
+    "civilwar"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0043",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which region did Julius Caesar conquer and recount in his 'Commentaries'?",
+  "correct_answer": "Gaul",
+  "distractors": [
+   "Germania",
+   "Britain",
+   "Egypt"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0043_prompt",
+   "answer_key": "history_ancient_rome_military_0043_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "caesar",
+    "gaul"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_military_0044",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "military",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "At which forest battle in 9 AD did Germanic tribes destroy three Roman legions?",
+  "correct_answer": "Teutoburg Forest",
+  "distractors": [
+   "Cannae",
+   "Adrianople",
+   "Watling Street"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_military_0044_prompt",
+   "answer_key": "history_ancient_rome_military_0044_answer"
+  },
+  "metadata": {
+   "tags": [
+    "military",
+    "varus"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_republic_0045",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "republic",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "During the Republic, who were the two chief elected executives serving one-year terms?",
+  "correct_answer": "Consuls",
+  "distractors": [
+   "Kings",
+   "Tribunes",
+   "Praetors"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_republic_0045_prompt",
+   "answer_key": "history_ancient_rome_republic_0045_answer"
+  },
+  "metadata": {
+   "tags": [
+    "republic",
+    "consuls"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_republic_0046",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "republic",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the advisory council of elders that governed Rome's finances and foreign policy?",
+  "correct_answer": "Senate",
+  "distractors": [
+   "Assembly",
+   "Curia",
+   "Comitia"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_republic_0046_prompt",
+   "answer_key": "history_ancient_rome_republic_0046_answer"
+  },
+  "metadata": {
+   "tags": [
+    "republic",
+    "senate"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_republic_0047",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "republic",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which official was elected to protect the rights of the common people (plebeians)?",
+  "correct_answer": "Tribune of the Plebs",
+  "distractors": [
+   "Censor",
+   "Consul",
+   "Praetor"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_republic_0047_prompt",
+   "answer_key": "history_ancient_rome_republic_0047_answer"
+  },
+  "metadata": {
+   "tags": [
+    "republic",
+    "tribune"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_republic_0048",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "republic",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "The 'Twelve Tables' were ancient Rome's earliest written what?",
+  "correct_answer": "Law code",
+  "distractors": [
+   "Building plan",
+   "Treaty",
+   "Calendar"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_republic_0048_prompt",
+   "answer_key": "history_ancient_rome_republic_0048_answer"
+  },
+  "metadata": {
+   "tags": [
+    "republic",
+    "law"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_republic_0049",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "republic",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Against which rival power did Rome fight the three Punic Wars?",
+  "correct_answer": "Carthage",
+  "distractors": [
+   "Greece",
+   "Egypt",
+   "Persia"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_republic_0049_prompt",
+   "answer_key": "history_ancient_rome_republic_0049_answer"
+  },
+  "metadata": {
+   "tags": [
+    "republic",
+    "punicwars"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_republic_0050",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "republic",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "How many Punic Wars were fought in total?",
+  "correct_answer": "Three",
+  "distractors": [
+   "Two",
+   "Four",
+   "Five"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_republic_0050_prompt",
+   "answer_key": "history_ancient_rome_republic_0050_answer"
+  },
+  "metadata": {
+   "tags": [
+    "republic",
+    "punicwars"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_republic_0051",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "republic",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "True / Definition",
+  "prompt": "What does the Roman abbreviation 'SPQR' stand for, in translation?",
+  "correct_answer": "The Senate and People of Rome",
+  "distractors": [
+   "The Soldiers and Praetors of Rome",
+   "Sons of Peace and Reason",
+   "Senate of Power and Quest"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_republic_0051_prompt",
+   "answer_key": "history_ancient_rome_republic_0051_answer"
+  },
+  "metadata": {
+   "tags": [
+    "republic",
+    "spqr"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_republic_0052",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "republic",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What form of government did Rome have from roughly 509 BC to 27 BC?",
+  "correct_answer": "Republic",
+  "distractors": [
+   "Empire",
+   "Monarchy",
+   "Dictatorship"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_republic_0052_prompt",
+   "answer_key": "history_ancient_rome_republic_0052_answer"
+  },
+  "metadata": {
+   "tags": [
+    "republic",
+    "government"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0053",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the primary language spoken and written by the Romans?",
+  "correct_answer": "Latin",
+  "distractors": [
+   "Greek",
+   "Etruscan",
+   "Celtic"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0053_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0053_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "language"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0054",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which flowing garment, worn over a tunic, marked a male Roman citizen?",
+  "correct_answer": "Toga",
+  "distractors": [
+   "Stola",
+   "Pallium",
+   "Cloak"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0054_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0054_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "clothing"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0055",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the long garment worn by married Roman women called?",
+  "correct_answer": "Stola",
+  "distractors": [
+   "Toga",
+   "Palla",
+   "Sagum"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0055_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0055_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "clothing"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0056",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What were the multi-storey apartment blocks that housed most of Rome's population called?",
+  "correct_answer": "Insulae",
+  "distractors": [
+   "Domus",
+   "Villae",
+   "Tabernae"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0056_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0056_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "housing"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0057",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was a wealthy Roman's private city house called?",
+  "correct_answer": "Domus",
+  "distractors": [
+   "Insula",
+   "Villa",
+   "Palace"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0057_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0057_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "housing"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0058",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What were the public bath complexes where Romans socialized and bathed called?",
+  "correct_answer": "Thermae",
+  "distractors": [
+   "Fora",
+   "Theatres",
+   "Basilicas"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0058_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0058_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "baths"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0059",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What is the Roman numeral for the number five?",
+  "correct_answer": "V",
+  "distractors": [
+   "X",
+   "L",
+   "I"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0059_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0059_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "numerals"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0060",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What is the Roman numeral for the number fifty?",
+  "correct_answer": "L",
+  "distractors": [
+   "C",
+   "D",
+   "V"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0060_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0060_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "numerals"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0061",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What is the Roman numeral for the number one hundred?",
+  "correct_answer": "C",
+  "distractors": [
+   "M",
+   "D",
+   "L"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0061_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0061_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "numerals"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0062",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What is the Roman numeral for the number one thousand?",
+  "correct_answer": "M",
+  "distractors": [
+   "C",
+   "D",
+   "V"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0062_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0062_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "numerals"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0063",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What value does the Roman numeral 'IV' represent?",
+  "correct_answer": "4",
+  "distractors": [
+   "6",
+   "14",
+   "9"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0063_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0063_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "numerals"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0064",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What value does the Roman numeral 'IX' represent?",
+  "correct_answer": "9",
+  "distractors": [
+   "11",
+   "4",
+   "7"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0064_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0064_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "numerals"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_daily_life_0065",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "daily_life",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What was the Latin name for a gladiator training school?",
+  "correct_answer": "Ludus",
+  "distractors": [
+   "Thermae",
+   "Circus",
+   "Forum"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_daily_life_0065_prompt",
+   "answer_key": "history_ancient_rome_daily_life_0065_answer"
+  },
+  "metadata": {
+   "tags": [
+    "dailylife",
+    "gladiators"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_geography_0066",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "geography",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "On which river was the city of Rome built?",
+  "correct_answer": "Tiber",
+  "distractors": [
+   "Arno",
+   "Po",
+   "Rhone"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_geography_0066_prompt",
+   "answer_key": "history_ancient_rome_geography_0066_answer"
+  },
+  "metadata": {
+   "tags": [
+    "geography",
+    "rome"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_geography_0067",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "geography",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Which Roman city was buried by the eruption of Mount Vesuvius in 79 AD?",
+  "correct_answer": "Pompeii",
+  "distractors": [
+   "Ostia",
+   "Naples",
+   "Capua"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_geography_0067_prompt",
+   "answer_key": "history_ancient_rome_geography_0067_answer"
+  },
+  "metadata": {
+   "tags": [
+    "geography",
+    "pompeii"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_geography_0068",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "geography",
+  "difficulty": {
+   "label": "beginner",
+   "tier": 1
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "What kind of mountain is Vesuvius, which erupted in 79 AD?",
+  "correct_answer": "Volcano",
+  "distractors": [
+   "Hill",
+   "Plateau",
+   "Cliff"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_geography_0068_prompt",
+   "answer_key": "history_ancient_rome_geography_0068_answer"
+  },
+  "metadata": {
+   "tags": [
+    "geography",
+    "vesuvius"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_geography_0069",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "geography",
+  "difficulty": {
+   "label": "intermediate",
+   "tier": 3
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "Byzantium was renamed to which city by Constantine?",
+  "correct_answer": "Constantinople",
+  "distractors": [
+   "Alexandria",
+   "Ravenna",
+   "Antioch"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_geography_0069_prompt",
+   "answer_key": "history_ancient_rome_geography_0069_answer"
+  },
+  "metadata": {
+   "tags": [
+    "geography",
+    "constantinople"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_geography_0070",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "geography",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "In which modern-day country was the ancient city of Carthage located?",
+  "correct_answer": "Tunisia",
+  "distractors": [
+   "Italy",
+   "Spain",
+   "Greece"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_geography_0070_prompt",
+   "answer_key": "history_ancient_rome_geography_0070_answer"
+  },
+  "metadata": {
+   "tags": [
+    "geography",
+    "carthage"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_geography_0071",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "geography",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "The Roman province of Gaul corresponds roughly to which modern country?",
+  "correct_answer": "France",
+  "distractors": [
+   "Spain",
+   "Germany",
+   "Turkey"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_geography_0071_prompt",
+   "answer_key": "history_ancient_rome_geography_0071_answer"
+  },
+  "metadata": {
+   "tags": [
+    "geography",
+    "gaul"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ },
+ {
+  "observation_id": "history_ancient_rome_geography_0072",
+  "universe": "history",
+  "world": "ancient_rome",
+  "subcategory": "geography",
+  "difficulty": {
+   "label": "easy",
+   "tier": 2
+  },
+  "observation_type": "Rapid Classification",
+  "prompt": "The Roman province of Hispania corresponds roughly to which modern country?",
+  "correct_answer": "Spain",
+  "distractors": [
+   "France",
+   "Greece",
+   "Egypt"
+  ],
+  "localization": {
+   "prompt_key": "history_ancient_rome_geography_0072_prompt",
+   "answer_key": "history_ancient_rome_geography_0072_answer"
+  },
+  "metadata": {
+   "tags": [
+    "geography",
+    "hipspania"
+   ],
+   "scenario_compatibility": {
+    "preferred": [
+     "rapid_classification",
+     "signal_vs_noise",
+     "odd_one_out"
+    ]
+   }
+  }
+ }
+]

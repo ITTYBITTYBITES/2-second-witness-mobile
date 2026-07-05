@@ -1,0 +1,72 @@
+subcategory	observation_type	difficulty	prompt	correct_answer	distractor1	distractor2	distractor3	tags
+emperors	Rapid Classification	1	Who was the first Roman emperor, taking power in 27 BC?	Augustus	Julius Caesar	Nero	Tiberius	emperors,augustus
+emperors	Rapid Classification	2	Which emperor, successor of Augustus, ruled during Jesus of Nazareth's adulthood?	Tiberius	Claudius	Caligula	Nero	emperors,julio-claudian
+emperors	Rapid Classification	2	Which emperor is infamously associated with the Great Fire of Rome in 64 AD?	Nero	Caligula	Claudius	Vespasian	emperors,nero
+emperors	Rapid Classification	2	Which emperor began construction of the Colosseum?	Vespasian	Titus	Domitian	Nero	emperors,flavian
+emperors	Rapid Classification	2	Which emperor built a famous wall marking the empire's edge in northern Britain?	Hadrian	Trajan	Antoninus Pius	Claudius	emperors,hadrian
+emperors	Rapid Classification	2	Which 'philosopher emperor' authored the book 'Meditations'?	Marcus Aurelius	Trajan	Nero	Hadrian	emperors,stoicism
+emperors	Rapid Classification	3	Which emperor issued the Edict of Milan, legalizing Christianity?	Constantine	Diocletian	Theodosius	Galerius	emperors,constantine,christianity
+emperors	Rapid Classification	3	Which emperor divided the empire into a tetrarchy of four rulers?	Diocletian	Constantine	Aurelian	Septimius Severus	emperors,tetrarchy
+emperors	Rapid Classification	3	Which emperor conquered Dacia, noted on his famous column?	Trajan	Hadrian	Nerva	Domitian	emperors,trajan
+emperors	Rapid Classification	2	Which emperor launched the Roman invasion of Britain in 43 AD?	Claudius	Caligula	Nero	Vespasian	emperors,claudius,britain
+gods_mythology	Rapid Classification	1	Who was the king of the Roman gods?	Jupiter	Mars	Neptune	Apollo	gods,jupiter
+gods_mythology	Rapid Classification	1	Who was the Roman god of war?	Mars	Jupiter	Mercury	Vulcan	gods,mars
+gods_mythology	Rapid Classification	1	Who was the Roman goddess of love and beauty?	Venus	Diana	Minerva	Juno	gods,venus
+gods_mythology	Rapid Classification	1	Who was the Roman god of the sea?	Neptune	Jupiter	Pluto	Mars	gods,neptune
+gods_mythology	Rapid Classification	2	Who was the Roman god of the underworld?	Pluto	Neptune	Jupiter	Saturn	gods,pluto
+gods_mythology	Rapid Classification	1	Who was the Roman goddess of wisdom and crafts?	Minerva	Diana	Venus	Ceres	gods,minerva
+gods_mythology	Rapid Classification	2	Who was the Roman god of wine and revelry?	Bacchus	Apollo	Mercury	Mars	gods,bacchus
+gods_mythology	Rapid Classification	1	Who was the Roman messenger of the gods?	Mercury	Apollo	Mars	Vulcan	gods,mercury
+gods_mythology	Rapid Classification	2	Who was the Roman god of fire and metalworking?	Vulcan	Mars	Neptune	Apollo	gods,vulcan
+gods_mythology	Rapid Classification	1	Who was the Roman goddess of the hunt and the moon?	Diana	Minerva	Venus	Juno	gods,diana
+gods_mythology	Rapid Classification	2	Who was the queen of the Roman gods and protector of marriage?	Juno	Venus	Minerva	Diana	gods,juno
+gods_mythology	Rapid Classification	2	According to myth, who were the twin brothers said to have founded Rome?	Romulus and Remus	Aeneas and Ascanius	Castor and Pollux	Rhea and Silvia	gods,founding
+gods_mythology	Rapid Classification	3	From which fallen city did the Trojan hero Aeneas flee to Italy, according to Roman legend?	Troy	Carthage	Greece	Latium	gods,aeneas
+architecture	Rapid Classification	2	What was the original name of the Colosseum?	Flavian Amphitheatre	Circus Maximus	Pantheon	Roman Forum	architecture,colosseum
+architecture	Rapid Classification	1	What was the large oval arena in Rome used for gladiatorial games?	Colosseum	Pantheon	Circus Maximus	Forum	architecture,colosseum
+architecture	Visual Identification	2	What building material allowed the Romans to build the Pantheon's record-setting dome?	Concrete	Marble	Bronze	Granite	architecture,engineering
+architecture	Rapid Classification	2	What was the central public square of ancient Rome used for business and politics?	Roman Forum	Circus Maximus	Palatine Hill	Capitoline Hill	architecture,forum
+architecture	Rapid Classification	1	What was the Circus Maximus primarily used for?	Chariot racing	Gladiatorial combat	Theatre	Animal hunts	architecture,circus
+architecture	Rapid Classification	3	Which famous Roman aqueduct bridge survives near Nimes in modern France?	Pont du Gard	Aqua Claudia	Aqua Appia	Pons Aemilius	architecture,aqueduct
+architecture	Rapid Classification	2	Which monument depicts the Dacian Wars in a continuous spiral relief?	Trajan's Column	Hadrian's Wall	Marcus Aurelius Column	Arch of Titus	architecture,relief
+architecture	Rapid Classification	2	What was the major Roman road leading south from Rome called?	Via Appia	Via Flaminia	Via Aurelia	Via Latina	architecture,roads
+architecture	Rapid Classification	3	What is the Roman arch-based structure used to carry water across valleys?	Aqueduct	Viaduct	Bridge	Causeway	architecture,engineering
+military	Rapid Classification	1	What was the basic large military unit of the Roman army?	Legion	Phalanx	Century	Maniple	military,legion
+military	Rapid Classification	1	What was a common foot soldier of the Roman army called?	Legionary	Centurion	Hoplite	Gladiator	military,legionary
+military	Rapid Classification	2	Which officer commanded roughly 80 soldiers, a 'century'?	Centurion	Legate	Tribune	Decurion	military,officers
+military	Rapid Classification	2	Which Carthaginian general famously crossed the Alps with war elephants?	Hannibal	Scipio	Hasdrubal	Pyrrhus	military,hannibal
+military	Rapid Classification	3	At which 216 BC battle did Hannibal annihilate a huge Roman army?	Cannae	Zama	Trebia	Lake Trasimene	military,cannae
+military	Rapid Classification	3	At which 202 BC battle did Scipio Africanus finally defeat Hannibal?	Zama	Cannae	Magnesia	Cynosephalae	military,scipio
+military	Visual Identification	2	What was the 'tortoise'-like defensive formation of interlocking shields called?	Testudo	Phalanx	Wedge	Orb	military,formations
+military	Rapid Classification	1	Which leader said 'Veni, vidi, vici' (I came, I saw, I conquered)?	Julius Caesar	Augustus	Pompey	Trajan	military,caesar
+military	Rapid Classification	2	Crossing which river in 49 BC began Julius Caesar's civil war?	Rubicon	Tiber	Po	Tiber	military,caesar,civilwar
+military	Rapid Classification	2	Which region did Julius Caesar conquer and recount in his 'Commentaries'?	Gaul	Germania	Britain	Egypt	military,caesar,gaul
+military	Rapid Classification	3	At which forest battle in 9 AD did Germanic tribes destroy three Roman legions?	Teutoburg Forest	Cannae	Adrianople	Watling Street	military,varus
+republic	Rapid Classification	1	During the Republic, who were the two chief elected executives serving one-year terms?	Consuls	Kings	Tribunes	Praetors	republic,consuls
+republic	Rapid Classification	2	What was the advisory council of elders that governed Rome's finances and foreign policy?	Senate	Assembly	Curia	Comitia	republic,senate
+republic	Rapid Classification	2	Which official was elected to protect the rights of the common people (plebeians)?	Tribune of the Plebs	Censor	Consul	Praetor	republic,tribune
+republic	Rapid Classification	2	The 'Twelve Tables' were ancient Rome's earliest written what?	Law code	Building plan	Treaty	Calendar	republic,law
+republic	Rapid Classification	1	Against which rival power did Rome fight the three Punic Wars?	Carthage	Greece	Egypt	Persia	republic,punicwars
+republic	Rapid Classification	1	How many Punic Wars were fought in total?	Three	Two	Four	Five	republic,punicwars
+republic	True / Definition	2	What does the Roman abbreviation 'SPQR' stand for, in translation?	The Senate and People of Rome	The Soldiers and Praetors of Rome	Sons of Peace and Reason	Senate of Power and Quest	republic,spqr
+republic	Rapid Classification	3	What form of government did Rome have from roughly 509 BC to 27 BC?	Republic	Empire	Monarchy	Dictatorship	republic,government
+daily_life	Rapid Classification	1	What was the primary language spoken and written by the Romans?	Latin	Greek	Etruscan	Celtic	dailylife,language
+daily_life	Rapid Classification	1	Which flowing garment, worn over a tunic, marked a male Roman citizen?	Toga	Stola	Pallium	Cloak	dailylife,clothing
+daily_life	Rapid Classification	2	What was the long garment worn by married Roman women called?	Stola	Toga	Palla	Sagum	dailylife,clothing
+daily_life	Rapid Classification	2	What were the multi-storey apartment blocks that housed most of Rome's population called?	Insulae	Domus	Villae	Tabernae	dailylife,housing
+daily_life	Rapid Classification	2	What was a wealthy Roman's private city house called?	Domus	Insula	Villa	Palace	dailylife,housing
+daily_life	Rapid Classification	2	What were the public bath complexes where Romans socialized and bathed called?	Thermae	Fora	Theatres	Basilicas	dailylife,baths
+daily_life	Rapid Classification	1	What is the Roman numeral for the number five?	V	X	L	I	dailylife,numerals
+daily_life	Rapid Classification	1	What is the Roman numeral for the number fifty?	L	C	D	V	dailylife,numerals
+daily_life	Rapid Classification	1	What is the Roman numeral for the number one hundred?	C	M	D	L	dailylife,numerals
+daily_life	Rapid Classification	1	What is the Roman numeral for the number one thousand?	M	C	D	V	dailylife,numerals
+daily_life	Rapid Classification	2	What value does the Roman numeral 'IV' represent?	4	6	14	9	dailylife,numerals
+daily_life	Rapid Classification	2	What value does the Roman numeral 'IX' represent?	9	11	4	7	dailylife,numerals
+daily_life	Rapid Classification	2	What was the Latin name for a gladiator training school?	Ludus	Thermae	Circus	Forum	dailylife,gladiators
+geography	Rapid Classification	1	On which river was the city of Rome built?	Tiber	Arno	Po	Rhone	geography,rome
+geography	Rapid Classification	2	Which Roman city was buried by the eruption of Mount Vesuvius in 79 AD?	Pompeii	Ostia	Naples	Capua	geography,pompeii
+geography	Rapid Classification	1	What kind of mountain is Vesuvius, which erupted in 79 AD?	Volcano	Hill	Plateau	Cliff	geography,vesuvius
+geography	Rapid Classification	3	Byzantium was renamed to which city by Constantine?	Constantinople	Alexandria	Ravenna	Antioch	geography,constantinople
+geography	Rapid Classification	2	In which modern-day country was the ancient city of Carthage located?	Tunisia	Italy	Spain	Greece	geography,carthage
+geography	Rapid Classification	2	The Roman province of Gaul corresponds roughly to which modern country?	France	Spain	Germany	Turkey	geography,gaul
+geography	Rapid Classification	2	The Roman province of Hispania corresponds roughly to which modern country?	Spain	France	Greece	Egypt	geography,hipspania
