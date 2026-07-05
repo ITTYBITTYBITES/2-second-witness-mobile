@@ -175,17 +175,91 @@ func _load_and_register_file(path: String):
 			if registry == null: registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
 			if registry == null: return
 
-			if typeof(data) == TYPE_DICTIONARY and _validate_schema(data):
-				registry.register_scenario(data)
+			var items: Array = []
+			if typeof(data) == TYPE_DICTIONARY:
+				items = [data]
 			elif typeof(data) == TYPE_ARRAY:
-				for item in data:
-					if typeof(item) == TYPE_DICTIONARY and _validate_schema(item):
-						registry.register_scenario(item)
-			else:
-				print("[CONTENT ERROR] Schema invalid: ", path)
+				items = data
+
+			var registered := 0
+			var skipped := 0
+			for item in items:
+				if typeof(item) != TYPE_DICTIONARY:
+					continue
+				var normalized = _normalize_item(item)
+				if normalized.is_empty():
+					skipped += 1
+					continue
+				if _validate_schema(normalized):
+					registry.register_scenario(normalized)
+					registered += 1
+			if registered == 0 and skipped > 0:
+				print("[CONTENT LOADER] ", path, ": 0 registered, ", skipped, " placeholder items skipped.")
 		else:
 			print("[CONTENT ERROR] JSON parse failed: ", path)
 		file.close()
+
+# Canonical registry schema: every observation MUST have id + universe + type.
+# v3_entity (entity/features) -> type "dynamic" (mechanic-agnostic, JIT via _build_v3_payload)
+# v2_compiled (prompt/correct_answer/distractors) -> rules block + mapped mechanic
+# v1_legacy (already has id/type/rules) -> passthrough
+func _normalize_item(item: Dictionary) -> Dictionary:
+	if _is_placeholder(item):
+		return {}
+	var out: Dictionary = item.duplicate(true)
+	# Canonical id
+	if not out.has("id") and out.has("observation_id"):
+		out["id"] = str(out["observation_id"])
+	# CKO v3 entity: register as mechanic-agnostic "dynamic"
+	if out.has("entity") and out.has("features"):
+		out["type"] = "dynamic"
+		if not out.has("subcategory"):
+			out["subcategory"] = str(out.get("entity_type", ""))
+		return out
+	# v2_compiled question format: synthesize rules block + map mechanic
+	if out.has("prompt") and out.has("correct_answer"):
+		if not (out.get("rules") is Dictionary and out["rules"].size() > 0):
+			out["rules"] = {
+				"prompt": str(out.get("prompt", "")),
+				"correct_answer": str(out.get("correct_answer", "")),
+				"wrong_answers": out.get("distractors", []),
+				"legacy_prompt": str(out.get("prompt", ""))
+			}
+		var otype = str(out.get("observation_type", "")).to_lower()
+		out["type"] = _OBS_TYPE_TO_MECHANIC.get(otype, "rapid_classification")
+	# v1_legacy: passthrough (placeholder gate above filters synthetic spikes)
+	return out
+
+# Quality gate: reject synthetic spikes_catalog placeholder content so it never ships.
+const _PLACEHOLDER_PATTERNS = ["Verified Observation #", "Anomaly A#", "Distractor B#", "PROTOCOL SEQUENCE"]
+
+func _is_placeholder(item: Dictionary) -> bool:
+	var blobs: Array = [str(item.get("correct_answer", "")), str(item.get("prompt", ""))]
+	var rules = item.get("rules", {})
+	if rules is Dictionary:
+		blobs.append(str(rules.get("correct_answer", "")))
+		blobs.append(str(rules.get("prompt", rules.get("legacy_prompt", ""))))
+	var distractors = item.get("distractors", rules.get("wrong_answers", []) if rules is Dictionary else [])
+	if distractors is Array:
+		for d in distractors:
+			blobs.append(str(d))
+	for blob in blobs:
+		for p in _PLACEHOLDER_PATTERNS:
+			if p in blob:
+				return true
+	return false
+
+# Maps v2_compiled observation_type (question style) to an engine gameplay mechanic.
+const _OBS_TYPE_TO_MECHANIC = {
+	"rapid classification": "rapid_classification",
+	"rapid recognition": "rapid_classification",
+	"true / definition": "rapid_classification",
+	"tool/technique recognition": "rapid_classification",
+	"artist → artwork": "rapid_classification",
+	"visual identification": "signal_vs_noise",
+	"artwork → artist": "signal_vs_noise",
+	"style recognition": "odd_one_out"
+}
 
 func _validate_schema(data: Dictionary) -> bool:
 	return data.has("id") and data.has("universe") and data.has("type")

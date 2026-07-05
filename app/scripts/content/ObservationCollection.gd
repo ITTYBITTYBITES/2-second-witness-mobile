@@ -80,9 +80,13 @@ func get_collection(universe_id: Variant, world_id: Variant, subcategory_id: Var
 		if not (item is Dictionary):
 			continue
 		
-		# Optimized filtering: Check mechanic before expensive standardization
-		if mechanic_id != "" and normalize_id(item.get("type", "")) != normalize_id(mechanic_id):
-			continue
+		# Optimized filtering: Check mechanic before expensive standardization.
+		# "dynamic" items are mechanic-agnostic (CKO v3) and eligible for any mechanic.
+		if mechanic_id != "":
+			var item_type = normalize_id(item.get("type", ""))
+			var want = normalize_id(mechanic_id)
+			if item_type != want and item_type != "dynamic":
+				continue
 			
 		var standardized = standardize(item)
 		if _passes_filters(standardized, filters):
@@ -152,55 +156,56 @@ func next_observation(universe_id: Variant, world_id: Variant, subcategory_id: V
 
 func standardize(item: Dictionary) -> Dictionary:
 	var obs_id = normalize_id(item.get("observation_id", item.get("id", "")))
+	if obs_id == "":
+		obs_id = "obs_" + str(item.hash())
 	if _standardization_cache.has(obs_id):
 		return _standardization_cache[obs_id]
-		
-	# NEW: Support for Canonical Knowledge Object (CKO) v2.0
-	if item.has("concept") and item.has("recognized_answer"):
-		var standardized_cko = {
-			"id": normalize_id(item.get("id", obs_id)),
-			"observation_id": obs_id,
-			"universe": normalize_id(item.get("universe", "")),
-			"world": normalize_id(item.get("world", "")),
-			"subcategory": normalize_id(item.get("subcategory", "")),
-			"mechanic": "dynamic", # Marker for JIT transformation
-			"concept": item.get("concept", ""),
-			"recognized_answer": item.get("recognized_answer", ""),
-			"distractor_family": item.get("distractor_family", []),
-			"difficulty": int(item.get("difficulty", 1)),
-			"visual_cues": item.get("visual_cues", {}),
-			"metadata": item.get("metadata", {}),
-			"raw": item
-		}
-		_standardization_cache[obs_id] = standardized_cko
-		return standardized_cko
 
-	# Legacy v1.0 Standardizer
-	var rules = item.get("rules", {})
-	var presentation = item.get("presentation", {})
-	var metadata = item.get("metadata", {})
-	var knowledge = metadata.get("knowledge", item.get("knowledge", {}))
-	
+	var u_id = normalize_id(item.get("universe", ""))
+	var w_id = normalize_id(item.get("world", ""))
+	var sub_id = normalize_id(item.get("subcategory", item.get("presentation", {}).get("subcategory", "")))
+	var t_id = normalize_id(item.get("type", "dynamic"))
+
+	# Difficulty resolution: handles int, float, or {"label","tier"} dict
+	var diff = item.get("difficulty", item.get("presentation", {}).get("difficulty_tier", 1))
+	if diff is Dictionary:
+		diff = int(diff.get("tier", 1))
+	else:
+		diff = int(diff)
+
 	var standardized = {
 		"id": normalize_id(item.get("id", obs_id)),
 		"observation_id": obs_id,
-		"universe": normalize_id(item.get("universe", "")),
-		"world": normalize_id(item.get("world", "")),
-		"subcategory": normalize_id(item.get("subcategory", presentation.get("subcategory", ""))),
-		"mechanic": normalize_id(item.get("type", "rapid_classification")),
-		"question": _clean_text(rules.get("prompt", rules.get("legacy_prompt", ""))),
-		"correct_answer": _clean_text(rules.get("correct_answer", "")),
-		"distractors": _clean_array(rules.get("wrong_answers", [])),
-		"difficulty": int(presentation.get("difficulty_tier", metadata.get("difficulty_tier", 1))),
-		"presentation": presentation,
-		"metadata": metadata,
-		"knowledge": knowledge,
+		"universe": u_id,
+		"world": w_id,
+		"subcategory": sub_id,
+		"type": t_id,
+		"difficulty": diff,
 		"raw": item
 	}
-	
+
+	# Preserve builder-relevant payload for the consumer (ObservationBuilder).
+	if item.has("entity") and item.has("features"):
+		standardized["entity"] = item.get("entity", "")
+		standardized["entity_type"] = item.get("entity_type", "")
+		standardized["features"] = item.get("features", {})
+		standardized["dimensions"] = item.get("dimensions", {})
+		standardized["confusions"] = item.get("confusions", [])
+	else:
+		# Rules-based (v2_compiled or v1_legacy): ensure a usable rules block exists.
+		var rules = item.get("rules", {})
+		if rules is Dictionary and rules.size() > 0:
+			standardized["rules"] = rules
+		elif item.has("prompt"):
+			standardized["rules"] = {
+				"prompt": str(item.get("prompt", "")),
+				"correct_answer": str(item.get("correct_answer", "")),
+				"wrong_answers": item.get("distractors", []),
+				"legacy_prompt": str(item.get("prompt", ""))
+			}
+
 	if obs_id != "":
 		_standardization_cache[obs_id] = standardized
-		
 	return standardized
 
 func _passes_filters(observation: Dictionary, filters: Dictionary) -> bool:
