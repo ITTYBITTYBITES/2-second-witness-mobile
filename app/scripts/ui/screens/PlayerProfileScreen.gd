@@ -80,10 +80,48 @@ func _build_focus(profile, narrator, exp_mgr):
 
 	var level = profile.current_level if profile else 1
 	var title = profile.player_title if profile else "Observer"
+	var sessions = profile.lifetime_sessions if profile else 0
 
 	# Identity line
 	if identity_label:
 		identity_label.text = title.to_upper() + " • LEVEL " + str(level)
+
+	# === FADING GUIDE LAYER ===
+	# Session 3 transition: bridge from curated arc to procedural expedition.
+	# Shows once when the player completes the arc and enters the open system.
+	if sessions == 3:
+		var transition_card = _create_focus_card(
+			"PATTERN RECOGNITION",
+			"You begin to recognize patterns across worlds",
+			"Your journey continues — each day brings new worlds to explore"
+		)
+		focus_section.add_child(transition_card)
+
+		if exp_mgr:
+			var exp3 = exp_mgr.get_expedition()
+			var prog3 = exp_mgr.get_progress()
+			var completed3 = int(prog3.get("completed", 0))
+			var total3 = int(prog3.get("total", exp3.size()))
+			var exp_info = Label.new()
+			exp_info.text = "Today: %d / %d worlds" % [completed3, total3]
+			exp_info.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			exp_info.add_theme_font_size_override("font_size", 16)
+			exp_info.add_theme_color_override("font_color", Color(0.5, 0.55, 0.6))
+			focus_section.add_child(exp_info)
+
+		var btn3 = Button.new()
+		btn3.custom_minimum_size = Vector2(320, 56)
+		btn3.text = "CONTINUE"
+		btn3.add_theme_font_size_override("font_size", 20)
+		_style_primary_button(btn3)
+		btn3.pressed.connect(func():
+			if AudioManager: AudioManager.play_sfx("ui_click")
+			return_requested.emit()
+		)
+		focus_section.add_child(btn3)
+		return
+
+	# === STANDARD FOCUS (sessions 0-2 or 4+) ===
 
 	if exp_mgr:
 		var exp = exp_mgr.get_expedition()
