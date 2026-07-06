@@ -3,7 +3,135 @@
   "universe": "history",
   "world": "ancient_rome",
   "display_name": "Ancient Rome",
-  "subcategory_order": [],
-  "subcategories": [],
-  "status": "SCAFFOLDED"
+  "subcategory_order": [
+    "architecture",
+    "daily_life",
+    "emperors",
+    "geography",
+    "gods_mythology",
+    "military",
+    "republic"
+  ],
+  "subcategories": [
+    {
+      "id": "architecture",
+      "display_name": "Architecture",
+      "implemented_observations": 9,
+      "target_observations": 9,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "daily_life",
+      "display_name": "Daily Life",
+      "implemented_observations": 13,
+      "target_observations": 13,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "emperors",
+      "display_name": "Emperors",
+      "implemented_observations": 10,
+      "target_observations": 10,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "geography",
+      "display_name": "Geography",
+      "implemented_observations": 7,
+      "target_observations": 7,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "gods_mythology",
+      "display_name": "Gods Mythology",
+      "implemented_observations": 13,
+      "target_observations": 13,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "military",
+      "display_name": "Military",
+      "implemented_observations": 11,
+      "target_observations": 11,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "republic",
+      "display_name": "Republic",
+      "implemented_observations": 8,
+      "target_observations": 8,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    }
+  ],
+  "status": "POPULATED"
 }

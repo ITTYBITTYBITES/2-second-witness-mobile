@@ -3,7 +3,171 @@
   "universe": "history",
   "world": "world_wars",
   "display_name": "World Wars",
-  "subcategory_order": [],
-  "subcategories": [],
-  "status": "SCAFFOLDED"
+  "subcategory_order": [
+    "concepts",
+    "geography",
+    "homefront",
+    "leaders_axis",
+    "leaders_ww1",
+    "leaders_ww2",
+    "weapons",
+    "ww1_events",
+    "ww2_events"
+  ],
+  "subcategories": [
+    {
+      "id": "concepts",
+      "display_name": "Concepts",
+      "implemented_observations": 6,
+      "target_observations": 6,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "geography",
+      "display_name": "Geography",
+      "implemented_observations": 4,
+      "target_observations": 4,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "homefront",
+      "display_name": "Homefront",
+      "implemented_observations": 6,
+      "target_observations": 6,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "leaders_axis",
+      "display_name": "Leaders Axis",
+      "implemented_observations": 3,
+      "target_observations": 3,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "leaders_ww1",
+      "display_name": "Leaders Ww1",
+      "implemented_observations": 3,
+      "target_observations": 3,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "leaders_ww2",
+      "display_name": "Leaders Ww2",
+      "implemented_observations": 4,
+      "target_observations": 4,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "weapons",
+      "display_name": "Weapons",
+      "implemented_observations": 8,
+      "target_observations": 8,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "ww1_events",
+      "display_name": "Ww1 Events",
+      "implemented_observations": 7,
+      "target_observations": 7,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "ww2_events",
+      "display_name": "Ww2 Events",
+      "implemented_observations": 9,
+      "target_observations": 9,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    }
+  ],
+  "status": "POPULATED"
 }
