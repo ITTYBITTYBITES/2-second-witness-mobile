@@ -15,6 +15,13 @@ signal expedition_progress_updated(completed: int, total: int)
 
 const EXPEDITION_SIZE := 5
 
+# Experience Arc: curated first 3 worlds for new players (cognitive learning curve)
+const ARC_WORLDS = [
+	{"universe": "history", "world": "ancient_greece", "stage_name": "Perception Break"},
+	{"universe": "history", "world": "ancient_egypt", "stage_name": "Pattern Formation"},
+	{"universe": "history", "world": "renaissance", "stage_name": "Compression"}
+]
+
 var current_day_seed: int = 0
 var current_expedition: Array = []  # Array of {universe_id, world_id}
 var completed_worlds_today: Dictionary = {}  # key: "u/w" -> true
@@ -48,12 +55,28 @@ func _generate_if_needed():
 	if today_str != last_completion_date:
 		completed_worlds_today.clear()
 
-	# Build pool from ALL universes with content (not just playable — scaffolded have content too)
-	var pool: Array = []
+	# === EXPERIENCE ARC: for new players (sessions 0-2), use curated arc worlds ===
+	var profile = Engine.get_main_loop().root.get_node_or_null("PlayerProfile")
+	var sessions = profile.lifetime_sessions if profile else 0
+	if sessions < ARC_WORLDS.size():
+		var arc_entry = ARC_WORLDS[sessions]
+		current_expedition = [{
+			"universe_id": arc_entry["universe"],
+			"world_id": arc_entry["world"]
+		}]
+		print("[DAILY EXPEDITION] Experience Arc Stage ", sessions, ": ", arc_entry["stage_name"],
+			  " (", arc_entry["universe"], "/", arc_entry["world"], ")")
+		expedition_generated.emit(current_expedition)
+		_save_expedition_state()
+		return
+
+	# === NORMAL EXPEDITION: deterministic daily selection ===
 	var reg = ContentRegistry if ContentRegistry else Engine.get_main_loop().root.get_node_or_null("ContentRegistry")
 	if not reg:
 		print("[DAILY EXPEDITION] No ContentRegistry — empty expedition.")
 		return
+
+	var pool: Array = []
 
 	for u_id in reg.get_all_universes():
 		for w_id in reg.get_all_worlds_in_universe(u_id):
