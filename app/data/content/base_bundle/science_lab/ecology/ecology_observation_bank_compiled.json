@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "science_lab_ecology_concepts_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "concepts",
+  "entity": "Ecosystem",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Forest with animals"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Community of living organisms",
+   "Material": "Biological system"
+  },
+  "confusions": [
+   "Biome",
+   "Habitat",
+   "Biosphere"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_concepts_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "concepts",
+  "entity": "Food Chain",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Arrows of energy flow"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Energy transfer sequence",
+   "Material": "Trophic levels"
+  },
+  "confusions": [
+   "Food Web",
+   "Trophic Level",
+   "Energy Pyramid"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_concepts_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "concepts",
+  "entity": "Food Web",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Interconnected feeding"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Complex feeding relationships",
+   "Material": "Network of feeding"
+  },
+  "confusions": [
+   "Food Chain",
+   "Trophic Cascade",
+   "Energy Flow"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_concepts_0004",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "concepts",
+  "entity": "Biodiversity",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Many species"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Variety of life forms",
+   "Material": "Species variety"
+  },
+  "confusions": [
+   "Species Richness",
+   "Ecosystem Diversity",
+   "Genetic Diversity"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_concepts_0005",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "concepts",
+  "entity": "Symbiosis",
+  "entity_type": "Relationship",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Two organisms together"
+   }
+  },
+  "dimensions": {
+   "Category": "Relationship",
+   "Signature": "Living together",
+   "Material": "Biological interaction"
+  },
+  "confusions": [
+   "Mutualism",
+   "Commensalism",
+   "Parasitism"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_concepts_0006",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "concepts",
+  "entity": "Biome",
+  "entity_type": "Habitat",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Major ecosystem type"
+   }
+  },
+  "dimensions": {
+   "Category": "Habitat",
+   "Signature": "Large-scale ecosystem",
+   "Material": "Geographical region"
+  },
+  "confusions": [
+   "Ecosystem",
+   "Habitat",
+   "Biosphere"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_concepts_0007",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "concepts",
+  "entity": "Niche",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Organism role"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Organism ecological role",
+   "Material": "Functional position"
+  },
+  "confusions": [
+   "Habitat",
+   "Competition",
+   "Adaptation"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_concepts_0008",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "concepts",
+  "entity": "Carrying Capacity",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Population limit"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Maximum sustainable population",
+   "Material": "Population limit"
+  },
+  "confusions": [
+   "Population",
+   "Growth Rate",
+   "Limiting Factor"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_cycles_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "cycles",
+  "entity": "Carbon Cycle",
+  "entity_type": "Cycle",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Carbon flowing through nature"
+   }
+  },
+  "dimensions": {
+   "Category": "Cycle",
+   "Signature": "Carbon movement through Earth",
+   "Material": "Biogeochemical"
+  },
+  "confusions": [
+   "Nitrogen Cycle",
+   "Water Cycle",
+   "Oxygen Cycle"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_cycles_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "cycles",
+  "entity": "Nitrogen Cycle",
+  "entity_type": "Cycle",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Nitrogen in soil and air"
+   }
+  },
+  "dimensions": {
+   "Category": "Cycle",
+   "Signature": "Nitrogen through ecosystems",
+   "Material": "Biogeochemical"
+  },
+  "confusions": [
+   "Carbon Cycle",
+   "Phosphorus Cycle",
+   "Water Cycle"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_cycles_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "cycles",
+  "entity": "Water Cycle",
+  "entity_type": "Cycle",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Evaporation and rain"
+   }
+  },
+  "dimensions": {
+   "Category": "Cycle",
+   "Signature": "Water movement through Earth",
+   "Material": "Hydrological"
+  },
+  "confusions": [
+   "Carbon Cycle",
+   "Nitrogen Cycle",
+   "Transpiration"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_cycles_0004",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "cycles",
+  "entity": "Phosphorus Cycle",
+  "entity_type": "Cycle",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Phosphorus through ecosystems"
+   }
+  },
+  "dimensions": {
+   "Category": "Cycle",
+   "Signature": "Phosphorus movement",
+   "Material": "Biogeochemical"
+  },
+  "confusions": [
+   "Nitrogen Cycle",
+   "Carbon Cycle",
+   "Sulfur Cycle"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_relationships_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "relationships",
+  "entity": "Mutualism",
+  "entity_type": "Relationship",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Both benefit"
+   }
+  },
+  "dimensions": {
+   "Category": "Relationship",
+   "Signature": "Both species benefit",
+   "Material": "Biological interaction"
+  },
+  "confusions": [
+   "Commensalism",
+   "Parasitism",
+   "Symbiosis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_relationships_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "relationships",
+  "entity": "Parasitism",
+  "entity_type": "Relationship",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "One benefits one harmed"
+   }
+  },
+  "dimensions": {
+   "Category": "Relationship",
+   "Signature": "One benefits one is harmed",
+   "Material": "Biological interaction"
+  },
+  "confusions": [
+   "Mutualism",
+   "Commensalism",
+   "Predation"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_relationships_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "relationships",
+  "entity": "Commensalism",
+  "entity_type": "Relationship",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "One benefits one unaffected"
+   }
+  },
+  "dimensions": {
+   "Category": "Relationship",
+   "Signature": "One benefits other unaffected",
+   "Material": "Biological interaction"
+  },
+  "confusions": [
+   "Mutualism",
+   "Parasitism",
+   "Symbiosis"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_relationships_0004",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "relationships",
+  "entity": "Predation",
+  "entity_type": "Relationship",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Hunter and prey"
+   }
+  },
+  "dimensions": {
+   "Category": "Relationship",
+   "Signature": "One eats another",
+   "Material": "Feeding interaction"
+  },
+  "confusions": [
+   "Parasitism",
+   "Competition",
+   "Herbivory"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_relationships_0005",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "relationships",
+  "entity": "Competition",
+  "entity_type": "Relationship",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Two organisms competing"
+   }
+  },
+  "dimensions": {
+   "Category": "Relationship",
+   "Signature": "Contest for resources",
+   "Material": "Ecological struggle"
+  },
+  "confusions": [
+   "Predation",
+   "Resource Partitioning",
+   "Niche Overlap"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_levels_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "levels",
+  "entity": "Population",
+  "entity_type": "Level",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Group of same species"
+   }
+  },
+  "dimensions": {
+   "Category": "Level",
+   "Signature": "Same species in an area",
+   "Material": "Organism group"
+  },
+  "confusions": [
+   "Community",
+   "Ecosystem",
+   "Individual"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_levels_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "levels",
+  "entity": "Community",
+  "entity_type": "Level",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Multiple species"
+   }
+  },
+  "dimensions": {
+   "Category": "Level",
+   "Signature": "All populations in area",
+   "Material": "Species group"
+  },
+  "confusions": [
+   "Population",
+   "Ecosystem",
+   "Biome"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_levels_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "levels",
+  "entity": "Biosphere",
+  "entity_type": "Level",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Earth from space"
+   }
+  },
+  "dimensions": {
+   "Category": "Level",
+   "Signature": "All life on Earth",
+   "Material": "Global life zone"
+  },
+  "confusions": [
+   "Biome",
+   "Ecosystem",
+   "Lithosphere"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_succession_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "succession",
+  "entity": "Primary Succession",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Life on bare rock"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Life colonizing barren land",
+   "Material": "Ecological development"
+  },
+  "confusions": [
+   "Secondary Succession",
+   "Pioneer Species",
+   "Climax Community"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_succession_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "succession",
+  "entity": "Secondary Succession",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Regrowth after disturbance"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Regrowth after disruption",
+   "Material": "Ecological recovery"
+  },
+  "confusions": [
+   "Primary Succession",
+   "Pioneer Species",
+   "Climax Community"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_human_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "human",
+  "entity": "Deforestation",
+  "entity_type": "Impact",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Cut forest"
+   }
+  },
+  "dimensions": {
+   "Category": "Impact",
+   "Signature": "Forest removal",
+   "Material": "Environmental damage"
+  },
+  "confusions": [
+   "Desertification",
+   "Habitat Loss",
+   "Urbanization"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_human_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "human",
+  "entity": "Climate Change",
+  "entity_type": "Impact",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Warming earth"
+   }
+  },
+  "dimensions": {
+   "Category": "Impact",
+   "Signature": "Global temperature rise",
+   "Material": "Atmospheric change"
+  },
+  "confusions": [
+   "Global Warming",
+   "Greenhouse Effect",
+   "Ocean Acidification"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_human_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "human",
+  "entity": "Pollution",
+  "entity_type": "Impact",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Smokestack"
+   }
+  },
+  "dimensions": {
+   "Category": "Impact",
+   "Signature": "Environmental contamination",
+   "Material": "Chemical waste"
+  },
+  "confusions": [
+   "Oil Spill",
+   "Smog",
+   "Plastic Waste"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_human_0004",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "human",
+  "entity": "Conservation",
+  "entity_type": "Practice",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Protected area"
+   }
+  },
+  "dimensions": {
+   "Category": "Practice",
+   "Signature": "Protecting biodiversity",
+   "Material": "Environmental management"
+  },
+  "confusions": [
+   "Restoration",
+   "Preservation",
+   "Sustainability"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_human_0005",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "human",
+  "entity": "Overfishing",
+  "entity_type": "Impact",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Empty nets"
+   }
+  },
+  "dimensions": {
+   "Category": "Impact",
+   "Signature": "Depleting fish populations",
+   "Material": "Resource depletion"
+  },
+  "confusions": [
+   "Bycatch",
+   "Trawling",
+   "Aquaculture"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_energy_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "energy",
+  "entity": "Photosynthesis",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Plant making food"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Plants converting sunlight",
+   "Material": "Biological process"
+  },
+  "confusions": [
+   "Respiration",
+   "Chemosynthesis",
+   "Transpiration"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_energy_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "energy",
+  "entity": "Cellular Respiration",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Cells releasing energy"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Cells converting glucose",
+   "Material": "Biological process"
+  },
+  "confusions": [
+   "Photosynthesis",
+   "Fermentation",
+   "Metabolism"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_energy_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "energy",
+  "entity": "Decomposition",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Rotting leaves"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Breaking down dead matter",
+   "Material": "Biological recycling"
+  },
+  "confusions": [
+   "Decomposer",
+   "Detritus",
+   "Composting"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_organisms_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "organisms",
+  "entity": "Producers",
+  "entity_type": "Role",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Green plants"
+   }
+  },
+  "dimensions": {
+   "Category": "Role",
+   "Signature": "Organisms that make own food",
+   "Material": "Autotrophs"
+  },
+  "confusions": [
+   "Consumers",
+   "Decomposers",
+   "Autotrophs"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_organisms_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "organisms",
+  "entity": "Consumers",
+  "entity_type": "Role",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Animals eating"
+   }
+  },
+  "dimensions": {
+   "Category": "Role",
+   "Signature": "Organisms that eat others",
+   "Material": "Heterotrophs"
+  },
+  "confusions": [
+   "Producers",
+   "Decomposers",
+   "Herbivores"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_organisms_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "organisms",
+  "entity": "Decomposers",
+  "entity_type": "Role",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Fungi on log"
+   }
+  },
+  "dimensions": {
+   "Category": "Role",
+   "Signature": "Organisms that break down dead",
+   "Material": "Saprotrophs"
+  },
+  "confusions": [
+   "Producers",
+   "Consumers",
+   "Detritivores"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_organisms_0004",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "organisms",
+  "entity": "Invasive Species",
+  "entity_type": "Organism",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Non-native organism"
+   }
+  },
+  "dimensions": {
+   "Category": "Organism",
+   "Signature": "Non-native harmful species",
+   "Material": "Introduced species"
+  },
+  "confusions": [
+   "Native Species",
+   "Pest",
+   "Feral"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_organisms_0005",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "organisms",
+  "entity": "Keystone Species",
+  "entity_type": "Organism",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Important species"
+   }
+  },
+  "dimensions": {
+   "Category": "Organism",
+   "Signature": "Species crucial to ecosystem",
+   "Material": "Critical species"
+  },
+  "confusions": [
+   "Indicator Species",
+   "Apex Predator",
+   "Foundation Species"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_conservation_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "conservation",
+  "entity": "Endangered Species",
+  "entity_type": "Status",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Rare animal"
+   }
+  },
+  "dimensions": {
+   "Category": "Status",
+   "Signature": "At risk of extinction",
+   "Material": "Conservation status"
+  },
+  "confusions": [
+   "Threatened",
+   "Vulnerable",
+   "Extinct"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_conservation_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "conservation",
+  "entity": "Extinction",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Empty habitat"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "Species dying out completely",
+   "Material": "Species loss"
+  },
+  "confusions": [
+   "Endangered",
+   "Mass Extinction",
+   "Biodiversity Loss"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_conservation_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "conservation",
+  "entity": "Protected Area",
+  "entity_type": "Area",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "National park"
+   }
+  },
+  "dimensions": {
+   "Category": "Area",
+   "Signature": "Safeguarded habitat",
+   "Material": "Conservation land"
+  },
+  "confusions": [
+   "Reserve",
+   "Sanctuary",
+   "Wilderness"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_conservation_0004",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "conservation",
+  "entity": "Restoration",
+  "entity_type": "Practice",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Planting trees"
+   }
+  },
+  "dimensions": {
+   "Category": "Practice",
+   "Signature": "Repairing damaged ecosystems",
+   "Material": "Ecological repair"
+  },
+  "confusions": [
+   "Conservation",
+   "Reforestation",
+   "Rewilding"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_conservation_0005",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "conservation",
+  "entity": "Carbon Footprint",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Shadow footprint"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Personal carbon emissions",
+   "Material": "Climate metric"
+  },
+  "confusions": [
+   "Greenhouse Gas",
+   "Emissions",
+   "Sustainability"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_conservation_0006",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "conservation",
+  "entity": "Renewable Resource",
+  "entity_type": "Resource",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Solar panels wind turbines"
+   }
+  },
+  "dimensions": {
+   "Category": "Resource",
+   "Signature": "Naturally replenishing",
+   "Material": "Sustainable material"
+  },
+  "confusions": [
+   "Non-renewable",
+   "Fossil Fuel",
+   "Solar Energy"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_conservation_0007",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "conservation",
+  "entity": "Sustainability",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Balanced earth"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Meeting needs without depletion",
+   "Material": "Environmental balance"
+  },
+  "confusions": [
+   "Conservation",
+   "Renewable",
+   "Circular Economy"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_biomes_0001",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "biomes",
+  "entity": "Tropical Rainforest",
+  "entity_type": "Biome",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Dense green canopy"
+   }
+  },
+  "dimensions": {
+   "Category": "Biome",
+   "Signature": "Hot wet biodiverse forest",
+   "Material": "Tropical vegetation"
+  },
+  "confusions": [
+   "Temperate Forest",
+   "Savanna",
+   "Cloud Forest"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_biomes_0002",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "biomes",
+  "entity": "Desert",
+  "entity_type": "Biome",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Sand dunes"
+   }
+  },
+  "dimensions": {
+   "Category": "Biome",
+   "Signature": "Dry arid ecosystem",
+   "Material": "Sand rock"
+  },
+  "confusions": [
+   "Tundra",
+   "Savanna",
+   "Scrubland"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_biomes_0003",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "biomes",
+  "entity": "Tundra",
+  "entity_type": "Biome",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Snowy plain"
+   }
+  },
+  "dimensions": {
+   "Category": "Biome",
+   "Signature": "Cold treeless ecosystem",
+   "Material": "Permafrost"
+  },
+  "confusions": [
+   "Taiga",
+   "Desert",
+   "Alpine"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_biomes_0004",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "biomes",
+  "entity": "Coral Reef",
+  "entity_type": "Biome",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Underwater coral"
+   }
+  },
+  "dimensions": {
+   "Category": "Biome",
+   "Signature": "Underwater ecosystem",
+   "Material": "Calcium carbonate"
+  },
+  "confusions": [
+   "Kelp Forest",
+   "Estuary",
+   "Seamount"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_biomes_0005",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "biomes",
+  "entity": "Wetland",
+  "entity_type": "Biome",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Marshy area"
+   }
+  },
+  "dimensions": {
+   "Category": "Biome",
+   "Signature": "Water-saturated ecosystem",
+   "Material": "Marshy land"
+  },
+  "confusions": [
+   "Swamp",
+   "Bog",
+   "Estuary"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_biomes_0006",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "biomes",
+  "entity": "Taiga",
+  "entity_type": "Biome",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Coniferous forest"
+   }
+  },
+  "dimensions": {
+   "Category": "Biome",
+   "Signature": "Cold northern forest",
+   "Material": "Conifer trees"
+  },
+  "confusions": [
+   "Tundra",
+   "Temperate Forest",
+   "Grassland"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_extra_0049",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "biomes",
+  "entity": "Grassland",
+  "entity_type": "Biome",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Rolling grass plains"
+   }
+  },
+  "dimensions": {
+   "Category": "Biome",
+   "Signature": "Dominated by grasses few trees",
+   "Material": "Grassland soil"
+  },
+  "confusions": [
+   "Savanna",
+   "Steppe",
+   "Prairie"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ecology_extra_0050",
+  "universe": "science_lab",
+  "world": "ecology",
+  "subcategory": "biomes",
+  "entity": "Estuary",
+  "entity_type": "Biome",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "River meeting sea"
+   }
+  },
+  "dimensions": {
+   "Category": "Biome",
+   "Signature": "Where river meets ocean",
+   "Material": "Brackish water"
+  },
+  "confusions": [
+   "Wetland",
+   "Delta",
+   "Lagoon"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

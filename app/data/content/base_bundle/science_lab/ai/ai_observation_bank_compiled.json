@@ -1,1 +1,1458 @@
-[]
+[
+ {
+  "observation_id": "science_lab_ai_concepts_0001",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Machine Learning",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Neural network diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Pattern recognition from data",
+   "Material": "Digital algorithms"
+  },
+  "confusions": [
+   "Deep Learning",
+   "NLP",
+   "Computer Vision"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_concepts_0002",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Deep Learning",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Multi-layer neural network"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Learning via deep neural networks",
+   "Material": "Digital algorithms"
+  },
+  "confusions": [
+   "Machine Learning",
+   "Reinforcement Learning",
+   "Transfer Learning"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_concepts_0003",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Neural Network",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Connected nodes in layers"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Interconnected artificial neurons",
+   "Material": "Software architecture"
+  },
+  "confusions": [
+   "Decision Tree",
+   "Support Vector Machine",
+   "Bayesian Network"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_concepts_0004",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Natural Language Processing",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Text being parsed"
+   }
+  },
+  "dimensions": {
+   "Category": "Field",
+   "Signature": "Computer understanding of human language",
+   "Material": "Software algorithms"
+  },
+  "confusions": [
+   "Computer Vision",
+   "Speech Recognition",
+   "Machine Translation"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_concepts_0005",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Computer Vision",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Camera analyzing image"
+   }
+  },
+  "dimensions": {
+   "Category": "Field",
+   "Signature": "Computer interpretation of visual data",
+   "Material": "Software algorithms"
+  },
+  "confusions": [
+   "NLP",
+   "Image Processing",
+   "Pattern Recognition"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_concepts_0006",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Reinforcement Learning",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Agent interacting with environment"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Learning through reward and penalty",
+   "Material": "Software algorithms"
+  },
+  "confusions": [
+   "Supervised Learning",
+   "Unsupervised Learning",
+   "Deep Learning"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_concepts_0007",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Generative AI",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "AI creating new content"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "AI that generates text images or code",
+   "Material": "Software models"
+  },
+  "confusions": [
+   "Discriminative AI",
+   "Expert Systems",
+   "Rule-Based AI"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_concepts_0008",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Transformer",
+  "entity_type": "Architecture",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Attention mechanism diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Architecture",
+   "Signature": "Neural architecture using attention",
+   "Material": "Software architecture"
+  },
+  "confusions": [
+   "CNN",
+   "RNN",
+   "LSTM"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_concepts_0009",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "concepts",
+  "entity": "Large Language Model",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "ChatGPT-style interface"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Massive text prediction model",
+   "Material": "Software model"
+  },
+  "confusions": [
+   "Small Language Model",
+   "Expert System",
+   "Search Engine"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_models_0001",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "models",
+  "entity": "GPT",
+  "entity_type": "Model",
+  "features": {
+   "visual": {
+    "color": "#10A37F",
+    "pattern": "OpenAI logo style interface"
+   }
+  },
+  "dimensions": {
+   "Category": "Model",
+   "Signature": "Autoregressive text generation model",
+   "Material": "Neural network weights"
+  },
+  "confusions": [
+   "BERT",
+   "LLaMA",
+   "Claude"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_models_0002",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "models",
+  "entity": "BERT",
+  "entity_type": "Model",
+  "features": {
+   "visual": {
+    "color": "#4285F4",
+    "pattern": "Google-style interface"
+   }
+  },
+  "dimensions": {
+   "Category": "Model",
+   "Signature": "Bidirectional text understanding",
+   "Material": "Neural network weights"
+  },
+  "confusions": [
+   "GPT",
+   "RoBERTa",
+   "T5"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_models_0003",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "models",
+  "entity": "Diffusion Model",
+  "entity_type": "Model",
+  "features": {
+   "visual": {
+    "color": "#FF6B6B",
+    "pattern": "Iterative denoising process"
+   }
+  },
+  "dimensions": {
+   "Category": "Model",
+   "Signature": "Generates images from noise",
+   "Material": "Neural network weights"
+  },
+  "confusions": [
+   "GAN",
+   "VAE",
+   "Autoregressive Model"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_models_0004",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "models",
+  "entity": "GAN",
+  "entity_type": "Architecture",
+  "features": {
+   "visual": {
+    "color": "#9B59B6",
+    "pattern": "Generator vs discriminator"
+   }
+  },
+  "dimensions": {
+   "Category": "Architecture",
+   "Signature": "Adversarial training framework",
+   "Material": "Neural network architecture"
+  },
+  "confusions": [
+   "Diffusion Model",
+   "VAE",
+   "Autoencoder"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_models_0005",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "models",
+  "entity": "CNN",
+  "entity_type": "Architecture",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Convolutional filters"
+   }
+  },
+  "dimensions": {
+   "Category": "Architecture",
+   "Signature": "Convolutional neural network for images",
+   "Material": "Software architecture"
+  },
+  "confusions": [
+   "RNN",
+   "Transformer",
+   "MLP"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_models_0006",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "models",
+  "entity": "RNN",
+  "entity_type": "Architecture",
+  "features": {
+   "visual": {
+    "color": "#F39C12",
+    "pattern": "Sequential processing loop"
+   }
+  },
+  "dimensions": {
+   "Category": "Architecture",
+   "Signature": "Recurrent network for sequences",
+   "Material": "Software architecture"
+  },
+  "confusions": [
+   "CNN",
+   "LSTM",
+   "Transformer"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_models_0007",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "models",
+  "entity": "LSTM",
+  "entity_type": "Architecture",
+  "features": {
+   "visual": {
+    "color": "#1ABC9C",
+    "pattern": "Memory cell diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Architecture",
+   "Signature": "Long Short-Term Memory network",
+   "Material": "Software architecture"
+  },
+  "confusions": [
+   "GRU",
+   "RNN",
+   "Transformer"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_techniques_0001",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "techniques",
+  "entity": "Backpropagation",
+  "entity_type": "Algorithm",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Gradient flowing backward"
+   }
+  },
+  "dimensions": {
+   "Category": "Algorithm",
+   "Signature": "Training by propagating errors",
+   "Material": "Mathematical algorithm"
+  },
+  "confusions": [
+   "Gradient Descent",
+   "Forward Pass",
+   "Loss Function"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_techniques_0002",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "techniques",
+  "entity": "Gradient Descent",
+  "entity_type": "Algorithm",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Ball rolling down hill"
+   }
+  },
+  "dimensions": {
+   "Category": "Algorithm",
+   "Signature": "Optimization by following gradient",
+   "Material": "Mathematical algorithm"
+  },
+  "confusions": [
+   "Backpropagation",
+   "SGD",
+   "Adam Optimizer"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_techniques_0003",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "techniques",
+  "entity": "Attention Mechanism",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Focus weights on words"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Selective focus on relevant input",
+   "Material": "Software technique"
+  },
+  "confusions": [
+   "Self-Attention",
+   "Multi-Head Attention",
+   "Masking"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_techniques_0004",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "techniques",
+  "entity": "Transfer Learning",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#2ECC71",
+    "pattern": "Knowledge transfer diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Reusing pre-trained knowledge",
+   "Material": "Software technique"
+  },
+  "confusions": [
+   "Fine-Tuning",
+   "Feature Extraction",
+   "Domain Adaptation"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_techniques_0005",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "techniques",
+  "entity": "Fine-Tuning",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#3498DB",
+    "pattern": "Adjusting pre-trained model"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Adapting a model to specific task",
+   "Material": "Software technique"
+  },
+  "confusions": [
+   "Transfer Learning",
+   "Pre-Training",
+   "Domain Adaptation"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_techniques_0006",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "techniques",
+  "entity": "Prompt Engineering",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#E67E22",
+    "pattern": "Crafting input text"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Designing inputs for best output",
+   "Material": "Text technique"
+  },
+  "confusions": [
+   "Few-Shot",
+   "Zero-Shot",
+   "Chain-of-Thought"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_techniques_0007",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "techniques",
+  "entity": "Embedding",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#9B59B6",
+    "pattern": "Words mapped to vectors"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Representing data as vectors",
+   "Material": "Mathematical technique"
+  },
+  "confusions": [
+   "One-Hot Encoding",
+   "Tokenization",
+   "Vectorization"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_techniques_0008",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "techniques",
+  "entity": "Tokenization",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#1ABC9C",
+    "pattern": "Text split into tokens"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Breaking text into units",
+   "Material": "Text processing"
+  },
+  "confusions": [
+   "Embedding",
+   "Subword Tokenization",
+   "BPE"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_applications_0001",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "applications",
+  "entity": "Chatbot",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#10A37F",
+    "pattern": "Chat interface"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Conversational AI assistant",
+   "Material": "Software application"
+  },
+  "confusions": [
+   "Virtual Assistant",
+   "Search Engine",
+   "Expert System"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_applications_0002",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "applications",
+  "entity": "Autonomous Vehicle",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Self-driving car"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Self-driving transportation",
+   "Material": "Sensor suites AI"
+  },
+  "confusions": [
+   "Driver Assist",
+   "Remote Control",
+   "Cruise Control"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_applications_0003",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "applications",
+  "entity": "Recommendation System",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Suggested items list"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Personalized content suggestions",
+   "Material": "Software application"
+  },
+  "confusions": [
+   "Search Engine",
+   "Filter System",
+   "Collaborative Filtering"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_applications_0004",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "applications",
+  "entity": "Image Generation",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#9B59B6",
+    "pattern": "AI artwork creation"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Creating images from text",
+   "Material": "Software application"
+  },
+  "confusions": [
+   "Photo Editing",
+   "3D Rendering",
+   "Procedural Art"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_applications_0005",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "applications",
+  "entity": "Code Generation",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#F39C12",
+    "pattern": "AI writing code"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Automated programming assistance",
+   "Material": "Software application"
+  },
+  "confusions": [
+   "Autocomplete",
+   "Template System",
+   "Compiler"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_applications_0006",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "applications",
+  "entity": "Speech Recognition",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#1ABC9C",
+    "pattern": "Voice waveform to text"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Converting speech to text",
+   "Material": "Audio processing"
+  },
+  "confusions": [
+   "NLP",
+   "Voice Command",
+   "Dictation"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_applications_0007",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "applications",
+  "entity": "Fraud Detection",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Transaction analysis"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Identifying fraudulent activity",
+   "Material": "Software application"
+  },
+  "confusions": [
+   "Anomaly Detection",
+   "Rule Engine",
+   "Audit System"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_data_0001",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "data",
+  "entity": "Training Data",
+  "entity_type": "Resource",
+  "features": {
+   "visual": {
+    "color": "#3498DB",
+    "pattern": "Dataset visualization"
+   }
+  },
+  "dimensions": {
+   "Category": "Resource",
+   "Signature": "Data used to teach models",
+   "Material": "Digital datasets"
+  },
+  "confusions": [
+   "Test Data",
+   "Validation Data",
+   "Synthetic Data"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_data_0002",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "data",
+  "entity": "Dataset",
+  "entity_type": "Resource",
+  "features": {
+   "visual": {
+    "color": "#2ECC71",
+    "pattern": "Collection of examples"
+   }
+  },
+  "dimensions": {
+   "Category": "Resource",
+   "Signature": "Structured collection of data",
+   "Material": "Digital files"
+  },
+  "confusions": [
+   "Database",
+   "Corpus",
+   "Data Lake"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_data_0003",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "data",
+  "entity": "Feature",
+  "entity_type": "Resource",
+  "features": {
+   "visual": {
+    "color": "#F39C12",
+    "pattern": "Individual data point"
+   }
+  },
+  "dimensions": {
+   "Category": "Resource",
+   "Signature": "Measurable input property",
+   "Material": "Data attribute"
+  },
+  "confusions": [
+   "Label",
+   "Target",
+   "Variable"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_data_0004",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "data",
+  "entity": "Label",
+  "entity_type": "Resource",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Annotated output"
+   }
+  },
+  "dimensions": {
+   "Category": "Resource",
+   "Signature": "Correct answer for training",
+   "Material": "Data annotation"
+  },
+  "confusions": [
+   "Feature",
+   "Target",
+   "Ground Truth"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_hardware_0001",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "hardware",
+  "entity": "GPU",
+  "entity_type": "Hardware",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Graphics card"
+   }
+  },
+  "dimensions": {
+   "Category": "Hardware",
+   "Signature": "Parallel processor for AI",
+   "Material": "Silicon chips"
+  },
+  "confusions": [
+   "CPU",
+   "TPU",
+   "FPGA"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_hardware_0002",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "hardware",
+  "entity": "TPU",
+  "entity_type": "Hardware",
+  "features": {
+   "visual": {
+    "color": "#FF6B6B",
+    "pattern": "AI accelerator chip"
+   }
+  },
+  "dimensions": {
+   "Category": "Hardware",
+   "Signature": "Tensor Processing Unit",
+   "Material": "Silicon chips"
+  },
+  "confusions": [
+   "GPU",
+   "CPU",
+   "Neuromorphic Chip"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_hardware_0003",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "hardware",
+  "entity": "Data Center",
+  "entity_type": "Infrastructure",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Server room"
+   }
+  },
+  "dimensions": {
+   "Category": "Infrastructure",
+   "Signature": "Large-scale computing facility",
+   "Material": "Steel servers"
+  },
+  "confusions": [
+   "Cloud",
+   "Server Farm",
+   "Supercomputer"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_hardware_0004",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "hardware",
+  "entity": "Neuromorphic Chip",
+  "entity_type": "Hardware",
+  "features": {
+   "visual": {
+    "color": "#9B59B6",
+    "pattern": "Brain-inspired processor"
+   }
+  },
+  "dimensions": {
+   "Category": "Hardware",
+   "Signature": "Spiking neural network hardware",
+   "Material": "Silicon memristor"
+  },
+  "confusions": [
+   "GPU",
+   "TPU",
+   "Quantum Processor"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_ethics_0001",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "ethics",
+  "entity": "AI Bias",
+  "entity_type": "Issue",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Skewed decision diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Issue",
+   "Signature": "Systematic unfairness in AI",
+   "Material": "Social impact"
+  },
+  "confusions": [
+   "Fairness",
+   "Discrimination",
+   "Algorithmic Bias"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_ethics_0002",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "ethics",
+  "entity": "Explainability",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#3498DB",
+    "pattern": "Transparent decision tree"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Understanding AI decisions",
+   "Material": "Research field"
+  },
+  "confusions": [
+   "Interpretability",
+   "Transparency",
+   "Black Box"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_ethics_0003",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "ethics",
+  "entity": "Alignment",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#9B59B6",
+    "pattern": "AI matching human values"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Ensuring AI goals match human intent",
+   "Material": "Research field"
+  },
+  "confusions": [
+   "Safety",
+   "Control Problem",
+   "Value Learning"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_ethics_0004",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "ethics",
+  "entity": "Deepfake",
+  "entity_type": "Issue",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Face swap manipulation"
+   }
+  },
+  "dimensions": {
+   "Category": "Issue",
+   "Signature": "Synthetic media manipulation",
+   "Material": "Digital content"
+  },
+  "confusions": [
+   "Misinformation",
+   "Forgery",
+   "Manipulation"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_ethics_0005",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "ethics",
+  "entity": "Hallucination",
+  "entity_type": "Issue",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "AI generating false info"
+   }
+  },
+  "dimensions": {
+   "Category": "Issue",
+   "Signature": "Confident incorrect output",
+   "Material": "Model behavior"
+  },
+  "confusions": [
+   "Misinformation",
+   "Error",
+   "Confabulation"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_ethics_0006",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "ethics",
+  "entity": "Copyright",
+  "entity_type": "Issue",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Legal document"
+   }
+  },
+  "dimensions": {
+   "Category": "Issue",
+   "Signature": "Ownership of AI-generated content",
+   "Material": "Legal framework"
+  },
+  "confusions": [
+   "IP",
+   "Plagiarism",
+   "Fair Use"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_pioneers_0001",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "pioneers",
+  "entity": "Alan Turing",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Portrait with computer"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Father of computer science",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "John von Neumann",
+   "Claude Shannon",
+   "Ada Lovelace"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_pioneers_0002",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "pioneers",
+  "entity": "Geoffrey Hinton",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Portrait with neural diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Godfather of deep learning",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "Yann LeCun",
+   "Yoshua Bengio",
+   "Andrew Ng"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_pioneers_0003",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "pioneers",
+  "entity": "Yann LeCun",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Portrait with CNN"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Pioneer of convolutional networks",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "Geoffrey Hinton",
+   "Yoshua Bengio",
+   "Andrew Ng"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_pioneers_0004",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "pioneers",
+  "entity": "Ada Lovelace",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Victorian portrait"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "First computer programmer",
+   "Material": "Oil painting"
+  },
+  "confusions": [
+   "Alan Turing",
+   "Charles Babbage",
+   "Grace Hopper"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_pioneers_0005",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "pioneers",
+  "entity": "Grace Hopper",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Portrait in uniform"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Pioneer of programming languages",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "Ada Lovelace",
+   "Alan Turing",
+   "Margaret Hamilton"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_pioneers_0006",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "pioneers",
+  "entity": "Claude Shannon",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Portrait with circuit"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Father of information theory",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "Alan Turing",
+   "Norbert Wiener",
+   "John von Neumann"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_ai_pioneers_0007",
+  "universe": "science_lab",
+  "world": "ai",
+  "subcategory": "pioneers",
+  "entity": "Yoshua Bengio",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Portrait with deep learning"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Deep learning researcher",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "Geoffrey Hinton",
+   "Yann LeCun",
+   "Andrew Ng"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

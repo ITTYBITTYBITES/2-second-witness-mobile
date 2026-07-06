@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "science_lab_genetics_basics_0001",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "DNA",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Double helix"
+   }
+  },
+  "dimensions": {
+   "Category": "Molecule",
+   "Signature": "Genetic blueprint molecule",
+   "Material": "Nucleic acid"
+  },
+  "confusions": [
+   "RNA",
+   "Protein",
+   "Chromosome"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0002",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "RNA",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Single strand"
+   }
+  },
+  "dimensions": {
+   "Category": "Molecule",
+   "Signature": "Genetic messenger molecule",
+   "Material": "Nucleic acid"
+  },
+  "confusions": [
+   "DNA",
+   "mRNA",
+   "Protein"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0003",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "Gene",
+  "entity_type": "Unit",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Section of DNA"
+   }
+  },
+  "dimensions": {
+   "Category": "Unit",
+   "Signature": "Unit of heredity",
+   "Material": "DNA sequence"
+  },
+  "confusions": [
+   "Allele",
+   "Chromosome",
+   "Genome"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0004",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "Chromosome",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "X-shaped structure"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "DNA packaging unit",
+   "Material": "Chromatin"
+  },
+  "confusions": [
+   "Chromatid",
+   "Centromere",
+   "Telomere"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0005",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "Genome",
+  "entity_type": "Collection",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Complete genetic code"
+   }
+  },
+  "dimensions": {
+   "Category": "Collection",
+   "Signature": "Complete set of genes",
+   "Material": "DNA"
+  },
+  "confusions": [
+   "Proteome",
+   "Transcriptome",
+   "Epigenome"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0006",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "Allele",
+  "entity_type": "Variant",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Alternative gene form"
+   }
+  },
+  "dimensions": {
+   "Category": "Variant",
+   "Signature": "Alternative form of gene",
+   "Material": "DNA variant"
+  },
+  "confusions": [
+   "Gene",
+   "Genotype",
+   "Phenotype"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0007",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "Protein",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Folded chain"
+   }
+  },
+  "dimensions": {
+   "Category": "Molecule",
+   "Signature": "Functional gene product",
+   "Material": "Amino acids"
+  },
+  "confusions": [
+   "Enzyme",
+   "Polypeptide",
+   "Lipid"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0008",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "Amino Acid",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Building block"
+   }
+  },
+  "dimensions": {
+   "Category": "Molecule",
+   "Signature": "Protein building block",
+   "Material": "Organic molecule"
+  },
+  "confusions": [
+   "Protein",
+   "Peptide",
+   "Nucleotide"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0009",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "Nucleotide",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "DNA building block"
+   }
+  },
+  "dimensions": {
+   "Category": "Molecule",
+   "Signature": "DNA unit",
+   "Material": "Base sugar phosphate"
+  },
+  "confusions": [
+   "Amino Acid",
+   "Base Pair",
+   "Nucleoside"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_basics_0010",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "basics",
+  "entity": "Codon",
+  "entity_type": "Sequence",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Three nucleotides"
+   }
+  },
+  "dimensions": {
+   "Category": "Sequence",
+   "Signature": "Three-nucleotide code",
+   "Material": "RNA triplet"
+  },
+  "confusions": [
+   "Anticodon",
+   "Gene",
+   "Reading Frame"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_processes_0001",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "processes",
+  "entity": "Replication",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "DNA copying"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "DNA copying itself",
+   "Material": "Enzymatic process"
+  },
+  "confusions": [
+   "Transcription",
+   "Translation",
+   "PCR"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_processes_0002",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "processes",
+  "entity": "Transcription",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "DNA to RNA"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "DNA copied to RNA",
+   "Material": "Enzymatic process"
+  },
+  "confusions": [
+   "Translation",
+   "Replication",
+   "Splicing"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_processes_0003",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "processes",
+  "entity": "Translation",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "RNA to protein"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "RNA decoded to protein",
+   "Material": "Ribosomal process"
+  },
+  "confusions": [
+   "Transcription",
+   "Replication",
+   "Folding"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_processes_0004",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "processes",
+  "entity": "Mutation",
+  "entity_type": "Change",
+  "features": {
+   "visual": {
+    "color": "#E74C3C",
+    "pattern": "Changed DNA"
+   }
+  },
+  "dimensions": {
+   "Category": "Change",
+   "Signature": "Change in DNA sequence",
+   "Material": "Genetic alteration"
+  },
+  "confusions": [
+   "Point Mutation",
+   "Frameshift",
+   "Deletion"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_processes_0005",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "processes",
+  "entity": "Mitosis",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Cell division"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Cell division for growth",
+   "Material": "Cellular division"
+  },
+  "confusions": [
+   "Meiosis",
+   "Cytokinesis",
+   "Binary Fission"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_processes_0006",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "processes",
+  "entity": "Meiosis",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Reducing chromosomes"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Cell division for sex cells",
+   "Material": "Cellular division"
+  },
+  "confusions": [
+   "Mitosis",
+   "Crossing Over",
+   "Fertilization"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_concepts_0001",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Heredity",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Family traits"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Trait inheritance",
+   "Material": "Genetic transmission"
+  },
+  "confusions": [
+   "Genetics",
+   "Inheritance",
+   "Trait"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_concepts_0002",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Dominant",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Masking allele"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Allele that is expressed",
+   "Material": "Genetic dominance"
+  },
+  "confusions": [
+   "Recessive",
+   "Codominant",
+   "Incomplete Dominance"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_concepts_0003",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Recessive",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Hidden allele"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Allele that is hidden",
+   "Material": "Genetic trait"
+  },
+  "confusions": [
+   "Dominant",
+   "Carrier",
+   "Codominant"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_concepts_0004",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Genotype",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Genetic makeup"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Genetic composition",
+   "Material": "DNA sequence"
+  },
+  "confusions": [
+   "Phenotype",
+   "Allele",
+   "Homozygous"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_concepts_0005",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Phenotype",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Physical traits"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Observable characteristics",
+   "Material": "Physical traits"
+  },
+  "confusions": [
+   "Genotype",
+   "Trait",
+   "Expression"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_concepts_0006",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Homozygous",
+  "entity_type": "State",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Same alleles"
+   }
+  },
+  "dimensions": {
+   "Category": "State",
+   "Signature": "Two identical alleles",
+   "Material": "Genetic state"
+  },
+  "confusions": [
+   "Heterozygous",
+   "Hemizygous",
+   "Purebred"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_concepts_0007",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Heterozygous",
+  "entity_type": "State",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Different alleles"
+   }
+  },
+  "dimensions": {
+   "Category": "State",
+   "Signature": "Two different alleles",
+   "Material": "Genetic state"
+  },
+  "confusions": [
+   "Homozygous",
+   "Hybrid",
+   "Carrier"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_technology_0001",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "technology",
+  "entity": "CRISPR",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Gene editing tool"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Precision gene editing",
+   "Material": "Guide RNA Cas9"
+  },
+  "confusions": [
+   "TALEN",
+   "Zinc Finger",
+   "RNAi"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_technology_0002",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "technology",
+  "entity": "PCR",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "DNA copying machine"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "DNA amplification method",
+   "Material": "Thermal cycling"
+  },
+  "confusions": [
+   "RT-PCR",
+   "Gel Electrophoresis",
+   "Cloning"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_technology_0003",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "technology",
+  "entity": "Gel Electrophoresis",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "DNA bands on gel"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "DNA separation method",
+   "Material": "Agarose gel"
+  },
+  "confusions": [
+   "PCR",
+   "Sequencing",
+   "Blotting"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_technology_0004",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "technology",
+  "entity": "DNA Sequencing",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Reading code"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Reading genetic code",
+   "Material": "Sequencing machine"
+  },
+  "confusions": [
+   "PCR",
+   "Microarray",
+   "Genotyping"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_technology_0005",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "technology",
+  "entity": "Genetic Engineering",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Modified organism"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Direct genome modification",
+   "Material": "Biotechnology"
+  },
+  "confusions": [
+   "CRISPR",
+   "GMO",
+   "Cloning"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_technology_0006",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "technology",
+  "entity": "GMO",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Modified crops"
+   }
+  },
+  "dimensions": {
+   "Category": "Product",
+   "Signature": "Genetically modified organism",
+   "Material": "Engineered DNA"
+  },
+  "confusions": [
+   "Selective Breeding",
+   "Hybrid",
+   "Synthetic Biology"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_disorders_0001",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "disorders",
+  "entity": "Down Syndrome",
+  "entity_type": "Disorder",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Extra chromosome 21"
+   }
+  },
+  "dimensions": {
+   "Category": "Disorder",
+   "Signature": "Trisomy 21 condition",
+   "Material": "Chromosomal disorder"
+  },
+  "confusions": [
+   "Turner Syndrome",
+   "Klinefelter",
+   "Edwards Syndrome"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_disorders_0002",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "disorders",
+  "entity": "Cystic Fibrosis",
+  "entity_type": "Disorder",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Lung affected"
+   }
+  },
+  "dimensions": {
+   "Category": "Disorder",
+   "Signature": "CFTR gene mutation",
+   "Material": "Genetic disease"
+  },
+  "confusions": [
+   "Sickle Cell",
+   "Huntington",
+   "Tay-Sachs"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_disorders_0003",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "disorders",
+  "entity": "Sickle Cell",
+  "entity_type": "Disorder",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Deformed red blood cell"
+   }
+  },
+  "dimensions": {
+   "Category": "Disorder",
+   "Signature": "Hemoglobin mutation",
+   "Material": "Blood disorder"
+  },
+  "confusions": [
+   "Cystic Fibrosis",
+   "Thalassemia",
+   "Hemophilia"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_disorders_0004",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "disorders",
+  "entity": "Huntington Disease",
+  "entity_type": "Disorder",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Brain affected"
+   }
+  },
+  "dimensions": {
+   "Category": "Disorder",
+   "Signature": "HTT gene repeat disorder",
+   "Material": "Neurodegenerative"
+  },
+  "confusions": [
+   "Parkinson",
+   "Alzheimer",
+   "ALS"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_disorders_0005",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "disorders",
+  "entity": "Color Blindness",
+  "entity_type": "Disorder",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Color test plates"
+   }
+  },
+  "dimensions": {
+   "Category": "Disorder",
+   "Signature": "Inability to see colors",
+   "Material": "Vision disorder"
+  },
+  "confusions": [
+   "Hemophilia",
+   "Tritanopia",
+   "Deuteranopia"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_history_0001",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "history",
+  "entity": "Gregor Mendel",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Monk with pea plants"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Father of genetics",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "Darwin",
+   "Watson",
+   "Crick"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_history_0002",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "history",
+  "entity": "Rosalind Franklin",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Woman with X-ray"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "DNA structure discovery",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "Watson",
+   "Crick",
+   "Wilkins"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_history_0003",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "history",
+  "entity": "Watson and Crick",
+  "entity_type": "People",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Two men with model"
+   }
+  },
+  "dimensions": {
+   "Category": "People",
+   "Signature": "DNA double helix discoverers",
+   "Material": "Photograph"
+  },
+  "confusions": [
+   "Franklin",
+   "Mendel",
+   "Wilkins"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_history_0004",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "history",
+  "entity": "Human Genome Project",
+  "entity_type": "Project",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "DNA sequence map"
+   }
+  },
+  "dimensions": {
+   "Category": "Project",
+   "Signature": "Sequencing all human DNA",
+   "Material": "International project"
+  },
+  "confusions": [
+   "ENCODE",
+   "HapMap",
+   "1000 Genomes"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_advanced_0001",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "advanced",
+  "entity": "Epigenetics",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Gene expression tags"
+   }
+  },
+  "dimensions": {
+   "Category": "Field",
+   "Signature": "Heritable gene expression changes",
+   "Material": "Molecular biology"
+  },
+  "confusions": [
+   "Genetics",
+   "Methylation",
+   "Histone Modification"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_advanced_0002",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "advanced",
+  "entity": "Gene Therapy",
+  "entity_type": "Treatment",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Replacing genes"
+   }
+  },
+  "dimensions": {
+   "Category": "Treatment",
+   "Signature": "Treating disease with genes",
+   "Material": "Medical technique"
+  },
+  "confusions": [
+   "CRISPR",
+   "Stem Cells",
+   "RNAi"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_advanced_0003",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "advanced",
+  "entity": "Stem Cell",
+  "entity_type": "Cell",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Undifferentiated cell"
+   }
+  },
+  "dimensions": {
+   "Category": "Cell",
+   "Signature": "Master cell type",
+   "Material": "Biological cell"
+  },
+  "confusions": [
+   "Embryonic Cell",
+   "IPSC",
+   "Progenitor Cell"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_advanced_0004",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "advanced",
+  "entity": "Cloning",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Copy of organism"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Creating genetic copies",
+   "Material": "Biotechnology"
+  },
+  "confusions": [
+   "IVF",
+   "Twinning",
+   "SCNT"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_advanced_0005",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "advanced",
+  "entity": "Transcription Factor",
+  "entity_type": "Protein",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Gene switch"
+   }
+  },
+  "dimensions": {
+   "Category": "Protein",
+   "Signature": "Gene expression regulator",
+   "Material": "DNA-binding protein"
+  },
+  "confusions": [
+   "Promoter",
+   "Enhancer",
+   "RNA Polymerase"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_advanced_0006",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "advanced",
+  "entity": "Epigenome",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#9B59B6",
+    "pattern": "Chemical tags on DNA"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Gene expression regulators",
+   "Material": "Chemical modifications"
+  },
+  "confusions": [
+   "Genome",
+   "Methylome",
+   "Chromatin"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_extra_0045",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Punnett Square",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Grid showing trait combinations"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Predicts offspring genotype ratios",
+   "Material": "Paper diagram"
+  },
+  "confusions": [
+   "Pedigree",
+   "Test Cross",
+   "Monohybrid Cross"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_extra_0046",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Pedigree",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Family tree diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Family inheritance chart",
+   "Material": "Paper diagram"
+  },
+  "confusions": [
+   "Punnett Square",
+   "Karyotype",
+   "Test Cross"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_extra_0047",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Incomplete Dominance",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Blended trait flowers"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Heterozygote shows intermediate phenotype",
+   "Material": "Abstract concept"
+  },
+  "confusions": [
+   "Codominance",
+   "Dominant",
+   "Recessive"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_extra_0048",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "concepts",
+  "entity": "Codominance",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Both traits fully expressed"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Both alleles expressed simultaneously",
+   "Material": "Abstract concept"
+  },
+  "confusions": [
+   "Incomplete Dominance",
+   "Dominant",
+   "Recessive"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_extra_0049",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "disorders",
+  "entity": "Hemophilia",
+  "entity_type": "Disorder",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Blood clotting diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Disorder",
+   "Signature": "Blood clotting disorder on X chromosome",
+   "Material": "Genetic condition"
+  },
+  "confusions": [
+   "Sickle Cell",
+   "Von Willebrand",
+   "Thrombocytopenia"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_genetics_extra_0050",
+  "universe": "science_lab",
+  "world": "genetics",
+  "subcategory": "advanced",
+  "entity": "Polymerase Chain Reaction",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Heating cooling cycle diagram"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Amplifies DNA exponentially",
+   "Material": "Laboratory technique"
+  },
+  "confusions": [
+   "RT-PCR",
+   "DNA Replication",
+   "Cloning"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]
