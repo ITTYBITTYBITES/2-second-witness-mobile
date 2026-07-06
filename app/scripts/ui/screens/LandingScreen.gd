@@ -1,17 +1,13 @@
 extends CanvasLayer
 
 # ---------------------------------------------------------
-# ARRIVAL SPACE — Diegetic Landing Experience
+# ARRIVAL SPACE — Progressive Affordance Reveal
 # ---------------------------------------------------------
-# Replaces the menu-based landing with an environmental entry.
-# Navigation is embedded as spatial interaction points, not a
-# button grid. Daily Expedition is visually dominant.
+# First launch: only Expedition Portal is visible.
+# After first completion: Mirror fades in, Archive appears.
+# After multiple sessions: full environment active.
 #
-# Interaction mapping:
-#   Expedition Portal → DailyExpeditionScreen (primary focal)
-#   World Archive     → Explore All Worlds (secondary)
-#   Mirror            → Mirror screen (tertiary, subtle)
-#   Settings          → Settings (corner, minimal)
+# Design principle: one unambiguous action at time=0.
 # ---------------------------------------------------------
 
 signal play_requested
@@ -24,20 +20,19 @@ signal settings_requested
 @onready var archive_node = $Panel/ArrivalSpace/CenterAnchor/ArrivalVBox/SecondaryRow/ArchiveNode
 @onready var mirror_node = $Panel/ArrivalSpace/CenterAnchor/ArrivalVBox/SecondaryRow/MirrorNode
 @onready var settings_node = $Panel/ArrivalSpace/CenterAnchor/ArrivalVBox/SecondaryRow/SettingsNode
+@onready var secondary_row = $Panel/ArrivalSpace/CenterAnchor/ArrivalVBox/SecondaryRow
 @onready var subtitle_label = $Panel/ArrivalSpace/SubtitleLabel
+@onready var title_label = $Panel/ArrivalSpace/TitleLabel
 
 var _portal_glow_tween: Tween
 
 func _ready():
-	# Hide old menu elements that are unused
-	# (Title/Subtitle in the scene are repurposed as atmospheric labels)
-
 	_style_expedition_portal()
 	_style_archive_node()
 	_style_mirror_node()
 	_style_settings_node()
 
-	# Wire interactions (same routing logic as before)
+	# Wire interactions
 	expedition_portal.pressed.connect(_on_expedition_selected)
 	expedition_portal.gui_input.connect(_on_portal_gui_input)
 	archive_node.pressed.connect(_on_archive_selected)
@@ -54,18 +49,90 @@ func _ready():
 		if btn_version: btn_version.pressed.connect(func():
 			print("[VERSION] Version 1.0.0-DEV (Godot 4.6 Engine)"))
 
-	_update_arrival_state()
-
-	# Register with kernel
-	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
-	if kernel and $Panel:
-		kernel.register_panel($Panel, "arrival_space", kernel.UIState.MODAL_ACTIVE)
-
-	# Start atmospheric animation
+	_apply_progressive_reveal()
+	_register_with_kernel()
 	_start_portal_pulse()
 
 # =========================================================
-# INTERACTION HANDLERS (same routing as before)
+# PROGRESSIVE AFFORDANCE REVEAL
+# The core mechanic: show fewer options to new players.
+# =========================================================
+
+func _apply_progressive_reveal():
+	var profile = get_node_or_null("/root/PlayerProfile")
+	var sessions = profile.lifetime_sessions if profile else 0
+	var exp_mgr = DailyExpeditionManager if DailyExpeditionManager else get_tree().root.get_node_or_null("DailyExpeditionManager")
+
+	# === FIRST LAUNCH (sessions <= 1): single affordance ===
+	if sessions <= 1:
+		# Only expedition portal visible. Everything else hidden.
+		secondary_row.visible = false
+		secondary_row.modulate.a = 0.0
+
+		# No progress numbers — removes meaningless framing
+		if exp_mgr:
+			var exp = exp_mgr.get_expedition()
+			var prog = exp_mgr.get_progress()
+			var completed = int(prog.get("completed", 0))
+			var total = int(prog.get("total", exp.size()))
+
+			if completed == 0:
+				# Truly first time — no progress shown at all
+				expedition_portal.text = "BEGIN YOUR FIRST JOURNEY"
+				expedition_label.text = ""
+				subtitle_label.text = "You are beginning."
+			else:
+				# Partial progress but still first session
+				expedition_portal.text = "TODAY'S EXPEDITION\n%d / %d worlds" % [completed, total]
+				expedition_label.text = "Continue exploring"
+				subtitle_label.text = "You have arrived."
+		else:
+			expedition_portal.text = "BEGIN"
+			expedition_label.text = ""
+			subtitle_label.text = "You are beginning."
+
+		# Title very dim on first launch
+		title_label.modulate.a = 0.3
+		return
+
+	# === RETURNING PLAYER (sessions > 1): full environment ===
+	secondary_row.visible = true
+	secondary_row.modulate.a = 1.0
+
+	# Title brighter for returning players
+	title_label.modulate.a = 0.5
+
+	if exp_mgr:
+		var exp = exp_mgr.get_expedition()
+		var prog = exp_mgr.get_progress()
+		var completed = int(prog.get("completed", 0))
+		var total = int(prog.get("total", exp.size()))
+		var streak = int(prog.get("streak", 0))
+
+		if completed < total:
+			expedition_portal.text = "TODAY'S EXPEDITION\n%d / %d worlds" % [completed, total]
+			expedition_label.text = "Streak: %d days" % streak
+			subtitle_label.text = "You have arrived."
+		else:
+			expedition_portal.text = "EXPEDITION COMPLETE\n%d / %d worlds" % [completed, total]
+			expedition_label.text = "Return tomorrow for a new expedition"
+			subtitle_label.text = "You have arrived."
+	else:
+		expedition_portal.text = "BEGIN"
+		expedition_label.text = ""
+		subtitle_label.text = "You have arrived."
+
+	# Archive node — shows world count
+	var reg = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+	var world_count = _count_playable_worlds(reg)
+	archive_node.text = "WORLD ARCHIVE\n%d worlds" % world_count
+
+	# Mirror node — shows player title
+	var title = profile.player_title if profile else "Observer"
+	mirror_node.text = title.to_upper()
+
+# =========================================================
+# INTERACTION HANDLERS (routing unchanged)
 # =========================================================
 
 func _on_expedition_selected():
@@ -103,52 +170,10 @@ func _on_settings_selected():
 	else: settings_requested.emit()
 
 # =========================================================
-# STATE — what the player sees on arrival
-# =========================================================
-
-func _update_arrival_state():
-	var profile = get_node_or_null("/root/PlayerProfile")
-	var exp_mgr = DailyExpeditionManager if DailyExpeditionManager else get_tree().root.get_node_or_null("DailyExpeditionManager")
-
-	# Subtitle / welcome text
-	if profile and profile.lifetime_sessions > 1:
-		subtitle_label.text = "You have arrived."
-	else:
-		subtitle_label.text = "Step into observation."
-
-	# Expedition portal content
-	if exp_mgr:
-		var exp = exp_mgr.get_expedition()
-		var prog = exp_mgr.get_progress()
-		var completed = int(prog.get("completed", 0))
-		var total = int(prog.get("total", exp.size()))
-		var streak = int(prog.get("streak", 0))
-
-		if completed < total:
-			expedition_portal.text = "TODAY'S EXPEDITION\n%d / %d worlds" % [completed, total]
-			expedition_label.text = "Streak: %d days — Continue exploring" % streak
-		else:
-			expedition_portal.text = "EXPEDITION COMPLETE\n%d / %d worlds" % [completed, total]
-			expedition_label.text = "Return tomorrow for a new expedition"
-	else:
-		expedition_portal.text = "BEGIN"
-		expedition_label.text = ""
-
-	# Archive node
-	var reg = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
-	var world_count = _count_playable_worlds(reg)
-	archive_node.text = "WORLD ARCHIVE\n%d worlds" % world_count
-
-	# Mirror node
-	var title = profile.player_title if profile else "Observer"
-	mirror_node.text = title.to_upper()
-
-# =========================================================
-# STYLING — environmental, not menu-like
+# STYLING
 # =========================================================
 
 func _style_expedition_portal():
-	# Dominant: large glowing ring, dark glass with bright border
 	var style = StyleBoxFlat.new()
 	style.bg_color = Color(0.04, 0.1, 0.18, 0.85)
 	style.border_width_left = 2
@@ -211,19 +236,20 @@ func _style_settings_node():
 	settings_node.add_theme_stylebox_override("pressed", style.duplicate())
 
 # =========================================================
-# ATMOSPHERE — subtle pulse on the portal
+# ATMOSPHERE
 # =========================================================
 
 func _start_portal_pulse():
 	if _portal_glow_tween:
 		_portal_glow_tween.kill()
 	_portal_glow_tween = get_tree().create_tween().set_loops()
-	_portal_glow_tween.tween_property(expedition_portal, "modulate:a", 0.92, 2.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	_portal_glow_tween.tween_property(expedition_portal, "modulate:a", 0.88, 2.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	_portal_glow_tween.tween_property(expedition_portal, "modulate:a", 1.0, 2.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
-# =========================================================
-# UTILITIES
-# =========================================================
+func _register_with_kernel():
+	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
+	if kernel and $Panel:
+		kernel.register_panel($Panel, "arrival_space", kernel.UIState.MODAL_ACTIVE)
 
 func _count_playable_worlds(reg) -> int:
 	if not reg:
@@ -236,7 +262,7 @@ func _count_playable_worlds(reg) -> int:
 	return count
 
 # =========================================================
-# TRANSITION (called by NavigationRouter)
+# TRANSITION
 # =========================================================
 
 func hide_screen():
