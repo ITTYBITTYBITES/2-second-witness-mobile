@@ -52,7 +52,8 @@ func _ready():
 			print("[RESTORE PURCHASES] Entitlements rehydrated successfully.")
 		)
 	
-	_check_directors_pass_status()
+	# DEVELOPMENT BUILD: Directors Pass monetization disabled.
+	# _check_directors_pass_status()
 	_check_returning_user_welcome()
 
 func _on_play_pressed():
@@ -130,7 +131,7 @@ func _show_directors_pass_gate():
 	)
 
 func hide_screen():
-	if AdManager: AdManager.hide_banner()
+	pass # DEVELOPMENT BUILD: Ads disabled.
 	print("[INTERACTION DESIGN] Initiating 500ms Transitional Alpha Masking window. Hitboxes visually present but input suppressed.")
 	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
 	if kernel: kernel.begin_transition($Panel, "main_menu")
@@ -143,7 +144,7 @@ func hide_screen():
 		)
 
 func show_screen():
-	if AdManager: AdManager.show_banner()
+	pass # DEVELOPMENT BUILD: Ads disabled.
 	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
 	if kernel: kernel.begin_transition($Panel, "main_menu")
 	var tween = get_tree().create_tween()

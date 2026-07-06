@@ -6,7 +6,8 @@ signal return_requested
 @onready var grid = $PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/GridContainer
 @onready var btn_return = $PanelContainer/MarginContainer/VBoxContainer/Header/BtnReturn
 
-var monetization_gate_scene = preload("res://scenes/ui/screens/MonetizationGate.tscn")
+# DEVELOPMENT BUILD: Monetization gate disabled.
+# var monetization_gate_scene = preload("res://scenes/ui/screens/MonetizationGate.tscn")
 var active_gate = null
 
 func _ready():
@@ -15,8 +16,8 @@ func _ready():
 	for child in get_children():
 		print("Child: ", child.name)
 		
-	if AdManager: AdManager.show_banner()
-	print("[2 SECOND WITNESS] Weekly Discovery Screen active.")
+	pass # DEVELOPMENT BUILD: Ads disabled.
+	print("[2 SECOND WITNESS] Explore All Worlds active.")
 	btn_return.pressed.connect(func(): return_requested.emit())
 	if get_viewport() and not get_viewport().size_changed.is_connected(_apply_responsive_layout):
 		get_viewport().size_changed.connect(_apply_responsive_layout)
@@ -85,9 +86,8 @@ func _populate_grid():
 		child.queue_free()
 	
 	for uni in all_universes:
-		var is_featured = controller.featured_universes.has(uni)
-		var is_owned = profile.unlocked_universes.has(uni)
-		var can_play = is_featured or is_owned
+		# DEVELOPMENT BUILD: All universes playable
+		var can_play = true
 		
 		var spec = reg.get_universe(uni) if reg else {}
 		var def = vim.get_universe_identity(uni) if vim else {"palette": {"bg": Color("#0B1320"), "primary": Color("#00D4FF")}}
@@ -101,7 +101,7 @@ func _populate_grid():
 		var btn = Button.new()
 		btn.custom_minimum_size = Vector2(280, 138)
 		
-		var status_text = "(OWNED)" if is_owned else ("(FEATURED)" if is_featured else "[LOCKED - $2.99]")
+		var status_text = ""
 		var interp = Engine.get_main_loop().root.get_node_or_null("ProgressionInterpreter") if Engine.get_main_loop() else null
 		var prog_ctx = interp.get_universe_progression_context(uni) if (interp and interp.has_method("get_universe_progression_context")) else {}
 		var m_str = prog_ctx.get("global_mastery_trend", "GLOBAL MASTERY: " + completion)
@@ -131,10 +131,10 @@ func _populate_grid():
 		btn.pressed.connect(func(): _on_universe_clicked(uni, can_play))
 		grid.add_child(btn)
 
-func _on_universe_clicked(universe_id: String, can_play: bool):
+func _on_universe_clicked(universe_id: String, _can_play: bool):
 	print("CARD CLICKED:", universe_id)
 	if AudioManager: AudioManager.play_sfx("ui_click")
-	if can_play:
+	# DEVELOPMENT BUILD: All universes playable
 		var orch = ExperienceOrchestrator if ExperienceOrchestrator else get_tree().root.get_node_or_null("ExperienceOrchestrator")
 		if orch and orch.has_method("request_universe_selection"):
 			orch.request_universe_selection(universe_id)
@@ -167,5 +167,5 @@ func _show_monetization_gate(universe_id: String):
 	)
 
 func hide_screen():
-	if AdManager: AdManager.hide_banner()
+	pass # DEVELOPMENT BUILD: Ads disabled.
 	queue_free()

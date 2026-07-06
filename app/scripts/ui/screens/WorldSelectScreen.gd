@@ -30,7 +30,7 @@ func _ready():
 		var registry = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
 		var spec = registry.get_universe(active_universe_id) if active_universe_id != "" else {}
 		title_label.text = spec.get("display_name", active_universe_id).to_upper() + " - WORLDS" if active_universe_id != "" else "WORLDS"
-	if AdManager: AdManager.show_banner()
+	pass # DEVELOPMENT BUILD: Ads disabled.
 	btn_return.pressed.connect(func(): return_requested.emit())
 	if get_viewport() and not get_viewport().size_changed.is_connected(_apply_responsive_layout):
 		get_viewport().size_changed.connect(_apply_responsive_layout)
@@ -141,5 +141,5 @@ func _populate_grid():
 		grid.add_child(btn)
 
 func hide_screen():
-	if AdManager: AdManager.hide_banner()
+	pass # DEVELOPMENT BUILD: Ads disabled.
 	queue_free()

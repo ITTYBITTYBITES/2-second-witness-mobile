@@ -88,17 +88,23 @@ func record_purchase_receipt(receipt: Dictionary):
 	save_profile()
 
 func _starter_unlocks() -> Dictionary:
+	# DEVELOPMENT BUILD: Return all universes as starter content.
 	var registry = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
-	if registry and registry.has_method("get_starter_selection"):
-		var sel = registry.get_starter_selection()
-		return {"universes": [sel["universe_id"]], "worlds": [sel["world_id"]]}
+	if registry and registry.has_method("get_all_universes"):
+		return {"universes": registry.get_all_universes().duplicate(), "worlds": []}
 	return {"universes": [], "worlds": []}
 
 func evaluate_entitlements():
-	var starter = _starter_unlocks()
-	unlocked_universes = starter["universes"].duplicate()
-	unlocked_worlds = starter["worlds"].duplicate()
-	has_directors_pass = false
+	# DEVELOPMENT BUILD: All content unlocked. Monetization temporarily disabled.
+	# When re-enabling monetization, restore the purchase_receipt_log evaluation below.
+	has_directors_pass = true
+	var reg = Engine.get_main_loop().root.get_node_or_null("ContentRegistry") if Engine.get_main_loop() else null
+	if reg and reg.has_method("get_all_universes"):
+		unlocked_universes = reg.get_all_universes().duplicate()
+	else:
+		var starter = _starter_unlocks()
+		unlocked_universes = starter["universes"].duplicate()
+	unlocked_worlds = []  # All worlds accessible; empty = no restrictions
 	
 	var sorted_log = purchase_receipt_log.duplicate()
 	sorted_log.sort_custom(func(a, b): return a.get("timestamp", 0) < b.get("timestamp", 0))

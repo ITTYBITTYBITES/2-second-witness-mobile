@@ -96,6 +96,26 @@ func on_scene_transition_complete():
 func goto_landing():
 	show_landing_screen()
 
+func _show_explore_all():
+	print("[ROUTER] Opening Explore All Worlds.")
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	if active_secondary_screen:
+		active_secondary_screen.queue_free()
+		active_secondary_screen = null
+	var explore_scene = load("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
+	if explore_scene:
+		active_secondary_screen = explore_scene.instantiate()
+		active_secondary_screen.name = "ExploreAllWorlds"
+		if modal_mgr:
+			modal_mgr.push_modal(active_secondary_screen, true, "NavigationRouter")
+		else:
+			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+			if ui_layer: ui_layer.add_child(active_secondary_screen)
+		active_secondary_screen.return_requested.connect(func(): _show_daily_expedition())
+		_update_nav_log("ExploreAllWorlds", false)
+
+
 func _show_daily_expedition():
 	print("[ROUTER] Opening DailyExpeditionScreen.")
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
@@ -114,6 +134,7 @@ func _show_daily_expedition():
 			if ui_layer: ui_layer.add_child(active_secondary_screen)
 		active_secondary_screen.return_requested.connect(func(): show_landing_screen())
 		active_secondary_screen.expedition_world_selected.connect(func(u_id, w_id): _on_play_universe_requested(u_id))
+		active_secondary_screen.explore_all_requested.connect(_show_explore_all)
 		_update_nav_log("DailyExpeditionScreen", false)
 
 
@@ -587,8 +608,8 @@ func _on_cascade_completed():
 		StructuredLogger.log_event_trace(self, "external_call", "_on_cascade_completed()")
 	print("[ROUTER] Observation Spike resolved (Answer submitted). Checking Ad Gate before Slingshot.")
 	
-	if AdManager and AdManager.check_and_show_ad():
-		await AdManager.ad_finished
+	# DEVELOPMENT BUILD: Interstitial ads disabled.
+	# if AdManager and AdManager.check_and_show_ad(): await AdManager.ad_finished
 	
 	if SystemHealthMonitor:
 		SystemHealthMonitor.pop_context(SystemHealthMonitor.ExecContext.SCENARIO_ACTIVE)

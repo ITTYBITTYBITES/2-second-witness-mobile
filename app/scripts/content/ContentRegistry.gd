@@ -171,11 +171,15 @@ func get_starter_selection() -> Dictionary:
 const PLAYABLE_STATUSES = ["complete", "playable", "gold_standard", "production"]
 
 func is_universe_playable(universe_id: Variant) -> bool:
-	var spec = get_universe(universe_id)
-	if spec.is_empty():
-		return false
-	var status = str(spec.get("status", "")).to_lower()
-	return PLAYABLE_STATUSES.has(status)
+	# DEVELOPMENT BUILD: A universe is playable if it has ANY registered content.
+	# When monetization/status gating is re-enabled, restore the status check below:
+	# var status = str(spec.get("status", "")).to_lower()
+	# return PLAYABLE_STATUSES.has(status)
+	var u_id = normalize_id(universe_id)
+	for w_id in get_all_worlds_in_universe(u_id):
+		if get_all_scenarios_in_world(u_id, w_id).size() > 0:
+			return true
+	return false
 
 func is_world_playable(universe_id: Variant, world_id: Variant) -> bool:
 	# A world is playable only if its universe is playable AND it has real content.

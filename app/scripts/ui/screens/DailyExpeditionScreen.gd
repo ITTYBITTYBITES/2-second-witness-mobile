@@ -2,6 +2,7 @@ extends CanvasLayer
 
 signal expedition_world_selected(universe_id: String, world_id: String)
 signal return_requested
+signal explore_all_requested
 
 @onready var grid = $PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/GridContainer
 @onready var btn_return = $PanelContainer/MarginContainer/VBoxContainer/Header/BtnReturn
@@ -16,7 +17,21 @@ func _ready():
 	if get_viewport() and not get_viewport().size_changed.is_connected(_apply_responsive_layout):
 		get_viewport().size_changed.connect(_apply_responsive_layout)
 	_apply_responsive_layout()
+	_mount_explore_button()
 	_populate()
+
+func _mount_explore_button():
+	var vbox = $PanelContainer/MarginContainer/VBoxContainer
+	var btn_explore = Button.new()
+	btn_explore.name = "BtnExploreAll"
+	btn_explore.custom_minimum_size = Vector2(0, 48)
+	btn_explore.text = "EXPLORE ALL WORLDS"
+	btn_explore.add_theme_font_size_override("font_size", 16)
+	btn_explore.pressed.connect(func():
+		if AudioManager: AudioManager.play_sfx("ui_click")
+		explore_all_requested.emit()
+	)
+	vbox.add_child(btn_explore)
 
 func _on_return_pressed():
 	if AudioManager: AudioManager.play_sfx("ui_click")

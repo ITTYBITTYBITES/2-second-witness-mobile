@@ -33,7 +33,7 @@ func _ready():
 			_request_close()
 	)
 	
-	if AdManager: AdManager.show_banner()
+	pass # DEVELOPMENT BUILD: Ads disabled.
 	_mount_close_button()
 	print("[2 SECOND WITNESS] Player Profile Screen initializing.")
 	_populate_data()
@@ -47,7 +47,7 @@ func _escape_bbcode(value: Variant) -> String:
 
 func _request_close():
 	if AudioManager: AudioManager.play_sfx("ui_click")
-	if AdManager: AdManager.hide_banner()
+	pass # DEVELOPMENT BUILD: Ads disabled.
 	return_requested.emit()
 
 func _mount_close_button():
