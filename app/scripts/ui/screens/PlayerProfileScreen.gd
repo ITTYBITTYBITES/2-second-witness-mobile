@@ -164,8 +164,8 @@ func _build_progress(profile, narrator):
 	# Mechanics mastered (traits with >5 successes)
 	var mechanics_count = 0
 	if profile and "cognitive_baseline" in profile:
-		for trait in profile.cognitive_baseline:
-			if int(profile.cognitive_baseline[trait].get("successes", 0)) >= 5:
+		for c_trait in profile.cognitive_baseline:
+			if int(profile.cognitive_baseline[c_trait].get("successes", 0)) >= 5:
 				mechanics_count += 1
 
 	# Expeditions completed
