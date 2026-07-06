@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "history_ancient_egypt_pharaohs_0001",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "pharaohs",
+  "entity": "Tutankhamun",
+  "entity_type": "Pharaoh",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Gold death mask with blue and gold stripes"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharaoh",
+   "Signature": "Boy king whose intact tomb was found in 1922",
+   "Material": "Gold and lapis lazuli burial mask"
+  },
+  "confusions": [
+   "Ramses II",
+   "Akhenaten",
+   "Cleopatra"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_pharaohs_0002",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "pharaohs",
+  "entity": "Ramses II",
+  "entity_type": "Pharaoh",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Colossal seated statue with double crown"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharaoh",
+   "Signature": "Greatest builder pharaoh of the New Kingdom",
+   "Material": "Red granite colossal statue"
+  },
+  "confusions": [
+   "Tutankhamun",
+   "Akhenaten",
+   "Thutmose III"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_pharaohs_0003",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "pharaohs",
+  "entity": "Cleopatra VII",
+  "entity_type": "Pharaoh",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Hellenistic queen with diadem"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharaoh",
+   "Signature": "Last active ruler of Ptolemaic Egypt",
+   "Material": "Gold jewelry and marble bust"
+  },
+  "confusions": [
+   "Nefertiti",
+   "Hatshepsut",
+   "Arsinoe"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_pharaohs_0004",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "pharaohs",
+  "entity": "Khufu",
+  "entity_type": "Pharaoh",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Small ivory seated statuette"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharaoh",
+   "Signature": "Builder of the Great Pyramid of Giza",
+   "Material": "Ivory statuette"
+  },
+  "confusions": [
+   "Khafre",
+   "Menkaure",
+   "Djoser"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_pharaohs_0005",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "pharaohs",
+  "entity": "Hatshepsut",
+  "entity_type": "Pharaoh",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Female pharaoh in Osiride beard"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharaoh",
+   "Signature": "Female pharaoh who ruled as king",
+   "Material": "Red quartzite statues"
+  },
+  "confusions": [
+   "Cleopatra",
+   "Nefertiti",
+   "Tausret"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_pharaohs_0006",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "pharaohs",
+  "entity": "Akhenaten",
+  "entity_type": "Pharaoh",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Elongated face and androgynous body"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharaoh",
+   "Signature": "Abolished polytheism for Aten worship",
+   "Material": "Limestone relief sculpture"
+  },
+  "confusions": [
+   "Tutankhamun",
+   "Ramses II",
+   "Amenhotep III"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_pharaohs_0007",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "pharaohs",
+  "entity": "Nefertiti",
+  "entity_type": "Queen",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Bust with tall blue crown and serene face"
+   }
+  },
+  "dimensions": {
+   "Category": "Queen",
+   "Signature": "Iconic painted bust found at Amarna",
+   "Material": "Limestone and stucco bust"
+  },
+  "confusions": [
+   "Cleopatra",
+   "Hatshepsut",
+   "Nefertari"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_pharaohs_0008",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "pharaohs",
+  "entity": "Thutmose III",
+  "entity_type": "Pharaoh",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Statue in schist with white crown"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharaoh",
+   "Signature": "Greatest military pharaoh of the New Kingdom",
+   "Material": "Green schist statue"
+  },
+  "confusions": [
+   "Ramses II",
+   "Amenhotep II",
+   "Thutmose I"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_gods_0001",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "gods",
+  "entity": "Ra",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Falcon-headed god with sun disk"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Sun god and supreme deity",
+   "Material": "Gold and faience amulet"
+  },
+  "confusions": [
+   "Amun",
+   "Horus",
+   "Atum"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_gods_0002",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "gods",
+  "entity": "Anubis",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Jackal-headed god in black"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "God of mummification and the afterlife",
+   "Material": "Painted wood and gold leaf"
+  },
+  "confusions": [
+   "Osiris",
+   "Thoth",
+   "Wepwawet"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_gods_0003",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "gods",
+  "entity": "Osiris",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Mummified god with crook and flail and green skin"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "God of the dead and ruler of the underworld",
+   "Material": "Gold and jade-green faience"
+  },
+  "confusions": [
+   "Anubis",
+   "Horus",
+   "Ptah"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_gods_0004",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "gods",
+  "entity": "Isis",
+  "entity_type": "Goddess",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Throne headdress on female figure"
+   }
+  },
+  "dimensions": {
+   "Category": "Goddess",
+   "Signature": "Goddess of magic and motherhood",
+   "Material": "Gold and lapis amulet"
+  },
+  "confusions": [
+   "Hathor",
+   "Nephthys",
+   "Bastet"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_gods_0005",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "gods",
+  "entity": "Horus",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Falcon-headed god with double crown"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Sky god with the Eye of Horus",
+   "Material": "Gold and electrum statuette"
+  },
+  "confusions": [
+   "Ra",
+   "Anubis",
+   "Osiris"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_gods_0006",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "gods",
+  "entity": "Thoth",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Ibis-headed god with writing palette"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "God of wisdom writing and the moon",
+   "Material": "Faience and bronze statuette"
+  },
+  "confusions": [
+   "Anubis",
+   "Ptah",
+   "Seshat"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_gods_0007",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "gods",
+  "entity": "Bastet",
+  "entity_type": "Goddess",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Cat-headed or cat-bodied figure"
+   }
+  },
+  "dimensions": {
+   "Category": "Goddess",
+   "Signature": "Cat goddess of home protection and fertility",
+   "Material": "Bronze cat statuette"
+  },
+  "confusions": [
+   "Sekhmet",
+   "Isis",
+   "Hathor"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_gods_0008",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "gods",
+  "entity": "Hathor",
+  "entity_type": "Goddess",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Cow-horned goddess with sun disk"
+   }
+  },
+  "dimensions": {
+   "Category": "Goddess",
+   "Signature": "Goddess of love music and joy",
+   "Material": "Faience and turquoise amulet"
+  },
+  "confusions": [
+   "Isis",
+   "Bastet",
+   "Nut"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_architecture_0001",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "architecture",
+  "entity": "Great Pyramid of Giza",
+  "entity_type": "Pyramid",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Massive smooth-sided pyramid on plateau"
+   }
+  },
+  "dimensions": {
+   "Category": "Pyramid",
+   "Signature": "Largest pyramid and tallest structure for millennia",
+   "Material": "Limestone blocks originally polished white"
+  },
+  "confusions": [
+   "Pyramid of Khafre",
+   "Step Pyramid",
+   "Red Pyramid"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_architecture_0002",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "architecture",
+  "entity": "The Sphinx",
+  "entity_type": "Monument",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Lion body with human head carved from bedrock"
+   }
+  },
+  "dimensions": {
+   "Category": "Monument",
+   "Signature": "Colossal lion-human guardian at Giza",
+   "Material": "Natural limestone bedrock"
+  },
+  "confusions": [
+   "Great Pyramid",
+   "Temple of Karnak",
+   "Luxor Temple"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_architecture_0003",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "architecture",
+  "entity": "Temple of Karnak",
+  "entity_type": "Temple Complex",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Forest of massive stone columns"
+   }
+  },
+  "dimensions": {
+   "Category": "Temple Complex",
+   "Signature": "Largest religious complex ever built",
+   "Material": "Sandstone columns and obelisks"
+  },
+  "confusions": [
+   "Luxor Temple",
+   "Temple of Edfu",
+   "Abu Simbel"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_architecture_0004",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "architecture",
+  "entity": "Abu Simbel",
+  "entity_type": "Temple",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Four colossal seated figures at cliff face"
+   }
+  },
+  "dimensions": {
+   "Category": "Temple",
+   "Signature": "Rock-cut temple with four giant Ramses II statues",
+   "Material": "Carved sandstone cliff"
+  },
+  "confusions": [
+   "Temple of Karnak",
+   "Luxor Temple",
+   "Temple of Philae"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_architecture_0005",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "architecture",
+  "entity": "Step Pyramid of Djoser",
+  "entity_type": "Pyramid",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Six stacked mastaba tiers"
+   }
+  },
+  "dimensions": {
+   "Category": "Pyramid",
+   "Signature": "Earliest colossal stone building in Egypt",
+   "Material": "Cut limestone blocks"
+  },
+  "confusions": [
+   "Great Pyramid",
+   "Red Pyramid",
+   "Bent Pyramid"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_architecture_0006",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "architecture",
+  "entity": "Valley of the Kings",
+  "entity_type": "Necropolis",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Underground tombs in desert valley"
+   }
+  },
+  "dimensions": {
+   "Category": "Necropolis",
+   "Signature": "Hidden royal tombs for New Kingdom pharaohs",
+   "Material": "Carved and painted limestone tunnels"
+  },
+  "confusions": [
+   "Valley of the Queens",
+   "Tombs of the Nobles",
+   "Giza Necropolis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_architecture_0007",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "architecture",
+  "entity": "Luxor Temple",
+  "entity_type": "Temple",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Avenue of sphinxes leading to pylon gate"
+   }
+  },
+  "dimensions": {
+   "Category": "Temple",
+   "Signature": "Festival temple connected to Karnak by sphinx avenue",
+   "Material": "Sandstone with relief carvings"
+  },
+  "confusions": [
+   "Temple of Karnak",
+   "Abu Simbel",
+   "Temple of Edfu"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0001",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Hieroglyphs",
+  "entity_type": "Writing System",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Pictorial symbols carved on stone"
+   }
+  },
+  "dimensions": {
+   "Category": "Writing System",
+   "Signature": "Sacred picture-writing of ancient Egypt",
+   "Material": "Ink on papyrus and carved stone"
+  },
+  "confusions": [
+   "Cuneiform",
+   "Demotic Script",
+   "Phoenician Alphabet"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0002",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Papyrus",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Cream-colored woven sheets from reeds"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "Paper-like writing material from Nile reeds",
+   "Material": "Pressed Cyperus papyrus fibers"
+  },
+  "confusions": [
+   "Parchment",
+   "Vellum",
+   "Bamboo Slips"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0003",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Mummification",
+  "entity_type": "Funerary Practice",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Wrapped body with decorated cartonnage mask"
+   }
+  },
+  "dimensions": {
+   "Category": "Funerary Practice",
+   "Signature": "Preservation of bodies for the afterlife",
+   "Material": "Linen bandages with resins and natron salt"
+  },
+  "confusions": [
+   "Cremation",
+   "Embalming",
+   "Sarcophagus"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0004",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Scarab Beetle",
+  "entity_type": "Amulet",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Carved beetle with wing case"
+   }
+  },
+  "dimensions": {
+   "Category": "Amulet",
+   "Signature": "Sacred beetle symbol of rebirth and the sun",
+   "Material": "Carved stone or faience"
+  },
+  "confusions": [
+   "Ankh",
+   "Eye of Horus",
+   "Djed Pillar"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0005",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Ankh",
+  "entity_type": "Symbol",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Looped cross with arms"
+   }
+  },
+  "dimensions": {
+   "Category": "Symbol",
+   "Signature": "Symbol of eternal life",
+   "Material": "Gold or faience amulet"
+  },
+  "confusions": [
+   "Eye of Horus",
+   "Scarab",
+   "Djed Pillar"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0006",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Eye of Horus",
+  "entity_type": "Symbol",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Stylized eye with falcon markings"
+   }
+  },
+  "dimensions": {
+   "Category": "Symbol",
+   "Signature": "Protective symbol of healing and power",
+   "Material": "Blue faience or gold inlay"
+  },
+  "confusions": [
+   "Ankh",
+   "Scarab",
+   "Wedjat"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0007",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Canopic Jar",
+  "entity_type": "Funerary Object",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Lidded jar with animal-headed stopper"
+   }
+  },
+  "dimensions": {
+   "Category": "Funerary Object",
+   "Signature": "Vessel holding mummified organs",
+   "Material": "Carved alabaster or limestone"
+  },
+  "confusions": [
+   "Sarcophagus",
+   "Ushabti",
+   "Cartonnage"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0008",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Ushabti",
+  "entity_type": "Funerary Object",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Small mummiform figurine"
+   }
+  },
+  "dimensions": {
+   "Category": "Funerary Object",
+   "Signature": "Servant figurines for the afterlife",
+   "Material": "Faience wood or stone"
+  },
+  "confusions": [
+   "Canopic Jar",
+   "Sarcophagus",
+   "Shabti Box"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_geography_0001",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "geography",
+  "entity": "The Nile River",
+  "entity_type": "River",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Green strip through desert"
+   }
+  },
+  "dimensions": {
+   "Category": "River",
+   "Signature": "Lifeblood of Egypt flowing south to north",
+   "Material": "Freshwater with fertile silt"
+  },
+  "confusions": [
+   "Tigris River",
+   "Euphrates",
+   "Congo River"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_geography_0002",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "geography",
+  "entity": "Giza Plateau",
+  "entity_type": "Geographic Feature",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Flat rocky plateau overlooking Cairo"
+   }
+  },
+  "dimensions": {
+   "Category": "Geographic Feature",
+   "Signature": "Site of the three great pyramids",
+   "Material": "Limestone bedrock"
+  },
+  "confusions": [
+   "Valley of the Kings",
+   "Saqqara",
+   "Memphis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_geography_0003",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "geography",
+  "entity": "Thebes",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "City of temples on both Nile banks"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Religious capital with Karnak and Luxor temples",
+   "Material": "Mud-brick and sandstone architecture"
+  },
+  "confusions": [
+   "Memphis",
+   "Alexandria",
+   "Heliopolis"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_geography_0004",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "geography",
+  "entity": "Alexandria",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Coastal city with harbor and lighthouse"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Greco-Roman capital with great library",
+   "Material": "Limestone buildings and harbors"
+  },
+  "confusions": [
+   "Thebes",
+   "Memphis",
+   "Naucratis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_geography_0005",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "geography",
+  "entity": "Sahara Desert",
+  "entity_type": "Desert",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Vast sand dunes and rocky plateaus"
+   }
+  },
+  "dimensions": {
+   "Category": "Desert",
+   "Signature": "Vast desert protecting Egypt from invasion",
+   "Material": "Sand and sandstone"
+  },
+  "confusions": [
+   "Libyan Desert",
+   "Arabian Desert",
+   "Nubian Desert"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_geography_0006",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "geography",
+  "entity": "Red Sea",
+  "entity_type": "Sea",
+  "features": {
+   "visual": {
+    "color": "#FF0000",
+    "pattern": "Narrow sea between Africa and Arabia"
+   }
+  },
+  "dimensions": {
+   "Category": "Sea",
+   "Signature": "Trade route to Punt and Arabia",
+   "Material": "Saltwater with coral reefs"
+  },
+  "confusions": [
+   "Mediterranean Sea",
+   "Gulf of Suez",
+   "Dead Sea"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0001",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Book of the Dead",
+  "entity_type": "Text",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Scroll with illustrated spells and hieroglyphs"
+   }
+  },
+  "dimensions": {
+   "Category": "Text",
+   "Signature": "Funerary spells for the deceased journey",
+   "Material": "Ink and paint on papyrus"
+  },
+  "confusions": [
+   "Pyramid Texts",
+   "Coffin Texts",
+   "Amduat"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0002",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Rosetta Stone",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Black stone slab with three scripts"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Key to deciphering hieroglyphs",
+   "Material": "Granodiorite stele"
+  },
+  "confusions": [
+   "Book of the Dead",
+   "Narmer Palette",
+   "Palermo Stone"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0003",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Narmer Palette",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Shield-shaped stone with carved scenes"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Commemorates unification of Upper and Lower Egypt",
+   "Material": "Carved siltstone"
+  },
+  "confusions": [
+   "Rosetta Stone",
+   "Palermo Stone",
+   "Palette of Narmer"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0004",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Maat",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Feather of truth against a heart"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Goddess and concept of cosmic order truth and justice",
+   "Material": "Ostrich feather symbol"
+  },
+  "confusions": [
+   "Isis",
+   "Hathor",
+   "Anubis"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0005",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Weighing of the Heart",
+  "entity_type": "Ritual",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Scales with heart against feather"
+   }
+  },
+  "dimensions": {
+   "Category": "Ritual",
+   "Signature": "Afterlife judgment weighing heart against Maat feather",
+   "Material": "Depicted in painted papyrus"
+  },
+  "confusions": [
+   "Opening of the Mouth",
+   "Mummification",
+   "Book of the Dead"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0006",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Obelisk",
+  "entity_type": "Monument",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Tall four-sided tapered stone pillar with pyramid top"
+   }
+  },
+  "dimensions": {
+   "Category": "Monument",
+   "Signature": "Tall monolithic pillar honoring the sun god",
+   "Material": "Single piece of granite or sandstone"
+  },
+  "confusions": [
+   "Stele",
+   "Pylon",
+   "Colossus"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0007",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Sistrum",
+  "entity_type": "Musical Instrument",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Rattle with U-shaped metal frame and discs"
+   }
+  },
+  "dimensions": {
+   "Category": "Musical Instrument",
+   "Signature": "Sacred rattle used in temple rituals for Hathor",
+   "Material": "Bronze or gold frame with metal discs"
+  },
+  "confusions": [
+   "Lyre",
+   "Harp",
+   "Menat Necklace"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0008",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Hieratic Script",
+  "entity_type": "Writing System",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Flowing cursive ink on papyrus"
+   }
+  },
+  "dimensions": {
+   "Category": "Writing System",
+   "Signature": "Simplified cursive form of hieroglyphs",
+   "Material": "Carbon ink on papyrus"
+  },
+  "confusions": [
+   "Hieroglyphs",
+   "Demotic",
+   "Coptic Script"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0009",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Cat",
+  "entity_type": "Animal",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Sleek tabby cat statue"
+   }
+  },
+  "dimensions": {
+   "Category": "Animal",
+   "Signature": "Sacred animal of Bastet venerated in temples",
+   "Material": "Bronze statuette"
+  },
+  "confusions": [
+   "Jackal",
+   "Falcon",
+   "Ibis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0010",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Lotus",
+  "entity_type": "Plant",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Blue and white water lily"
+   }
+  },
+  "dimensions": {
+   "Category": "Plant",
+   "Signature": "Sacred flower symbol of creation and rebirth",
+   "Material": "Living aquatic plant"
+  },
+  "confusions": [
+   "Papyrus Reed",
+   "Palm",
+   "Flax"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0011",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Crook and Flail",
+  "entity_type": "Regalia",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Shepherds crook and grain flail crossed"
+   }
+  },
+  "dimensions": {
+   "Category": "Regalia",
+   "Signature": "Royal scepters symbolizing rule and provision",
+   "Material": "Gold and electrum with lapis inlay"
+  },
+  "confusions": [
+   "Ankh",
+   "Was Scepter",
+   "Crown of Egypt"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_culture_0012",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "culture",
+  "entity": "Solar Barque",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Large wooden boat with curved ends"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Ritual boat for the pharaohs journey with the sun",
+   "Material": "Cedar planks lashed with rope"
+  },
+  "confusions": [
+   "Felucca",
+   "Reed Boat",
+   "Papyrus Skiff"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ancient_egypt_dailylife_0009",
+  "universe": "history",
+  "world": "ancient_egypt",
+  "subcategory": "dailylife",
+  "entity": "Sarcophagus",
+  "entity_type": "Funerary Object",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Stone coffin with carved human face and hieroglyphs"
+   }
+  },
+  "dimensions": {
+   "Category": "Funerary Object",
+   "Signature": "Stone coffin holding the mummy and its coffin",
+   "Material": "Carved granite or limestone with gold paint"
+  },
+  "confusions": [
+   "Canopic Jar",
+   "Cartonnage",
+   "Ushabti"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]
