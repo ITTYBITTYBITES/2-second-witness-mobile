@@ -58,6 +58,7 @@ GoodwillManager="*res://scripts/system/GoodwillManager.gd"
 AdManager="*res://scripts/system/AdManager.gd"
 GitHubSyncManager="*res://scripts/content/GitHubSyncManager.gd"
 DailyExpeditionManager="*res://scripts/system/DailyExpeditionManager.gd"
+DevDashboard="*res://scripts/system/DevDashboard.gd"
 
 [display]
 window/stretch/mode="canvas_items"

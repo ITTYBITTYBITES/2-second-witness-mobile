@@ -18,7 +18,7 @@ Usage:
     python3 tools/generate_observation_bank.py <universe> <world> <source.tsv>
 Emits: data/content/base_bundle/<universe>/<world>/<world>_observation_bank_compiled.json
 """
-import json, os, sys, csv, re
+import json, os, os, sys, csv, re
 
 APP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(APP, 'data', 'content', 'base_bundle')
@@ -31,6 +31,51 @@ VALID_TYPES = {
 
 def slug(s):
     return re.sub(r'[^a-z0-9]+','_', str(s).lower()).strip('_')
+
+
+def generate_manifest(universe: str, world: str, bank_path: str):
+    """Generates world_manifest.json from the compiled observation bank.
+    This is the bridge between 'Complete' and 'Playable' — without it,
+    the world is invisible in the UI."""
+    import json
+    from collections import Counter
+
+    bank = json.load(open(bank_path))
+    if not isinstance(bank, list) or len(bank) == 0:
+        print(f"  ⚠ Cannot generate manifest: bank is empty")
+        return
+
+    sub_counts = Counter(e.get("subcategory", "general") for e in bank)
+    subcats = []
+    for sub_id, count in sorted(sub_counts.items()):
+        display = sub_id.replace("_", " ").title()
+        subcats.append({
+            "id": sub_id,
+            "display_name": display,
+            "implemented_observations": count,
+            "target_observations": count,
+            "scenario_preferences": {
+                "preferred": ["rapid_classification", "signal_vs_noise", "odd_one_out"],
+                "secondary": ["stroop_test", "memory_cascade"]
+            }
+        })
+
+    manifest = {
+        "schema_version": 3,
+        "universe": universe,
+        "world": world,
+        "display_name": world.replace("_", " ").title(),
+        "subcategory_order": [s["id"] for s in subcats],
+        "subcategories": subcats,
+        "status": "POPULATED"
+    }
+
+    manifest_dir = f"data/observation_banks/{universe}/worlds/{world}"
+    os.makedirs(manifest_dir, exist_ok=True)
+    manifest_path = f"{manifest_dir}/world_manifest.json"
+    with open(manifest_path, 'w') as f:
+        json.dump(manifest, f, indent=2)
+    print(f"✅ Manifest generated: {manifest_path} ({len(subcats)} subcategories)")
 
 def gen(universe, world, tsv_path):
     items = []
@@ -83,6 +128,9 @@ def gen(universe, world, tsv_path):
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(items, f, ensure_ascii=False, indent=1)
     print(f"\n✅ Generated {len(items)} observations -> {os.path.relpath(out_path, APP)}")
+
+    # Auto-generate world_manifest.json (part of the publishing pipeline)
+    generate_manifest(universe, world, out_path)
     if len(items) == 0:
         print("⚠ No valid items produced."); sys.exit(1)
     return out_path
