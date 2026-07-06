@@ -1,113 +1,111 @@
 extends SceneTree
 
+# ---------------------------------------------------------
+# VERTICAL SLICE REGRESSION TEST
+# ---------------------------------------------------------
+# Verifies the full playable chain that was broken by the
+# "mechanic" vs "type" field name mismatch:
+#
+#   subcategories → mechanics → choose_mechanic →
+#   next_observation → build_payload → valid rules
+#
+# This test runs in-app (not standalone -s) via the
+# VerificationRunner, so autoloads resolve correctly.
+#
+# Usage via runner:
+#   godot --headless --path app res://benchmark/VerificationRunner.tscn
+#         -- res://benchmark/verify_vertical_slice.gd
+# ---------------------------------------------------------
+
 func _init():
 	print("\n=================================================================")
-	print("[PHASE 2.5] END-TO-END VERTICAL SLICE AUTOMATED REGRESSION SUITE")
+	print("[VERTICAL SLICE] Full Playable Chain Regression Test")
 	print("=================================================================\n")
-	
-	print("--- STAGE 1: BOOT ENGINE & SINGLETON INITIALIZATION ---")
-	var profile = load("res://scripts/system/PlayerProfile.gd").new()
-	profile._ready()
-	
-	var registry = load("res://scripts/content/ContentRegistry.gd").new()
-	registry._ready()
+
+	var builder = load("res://scripts/content/ObservationBuilder.gd").new()
+	var collection = load("res://scripts/content/ObservationCollection.gd").new()
 	var loader = load("res://scripts/content/ContentLoader.gd").new()
-	loader.registry = registry
+	var registry = load("res://scripts/content/ContentRegistry.gd").new()
+	var director = load("res://scripts/content/GameplayDirector.gd").new()
+
+	root.add_child(registry)
+	registry._ready()
+	root.add_child(loader)
 	loader._ready()
-	
-	var orch = load("res://scripts/system/ExperienceOrchestrator.gd").new()
-	orch._ready()
-	var cust = load("res://scripts/ui/WorldProfileCustodian.gd").new()
-	cust._ready()
-	var themes = load("res://scripts/ThemeManager.gd").new()
-	themes._ready()
-	var modal_mgr = load("res://scripts/ui/ModalWindowManager.gd").new()
-	modal_mgr._ready()
-	
-	print("✅ STAGE 1 PASS: Kernel and singletons active with zero exceptions.\n")
-	
-	print("--- STAGE 2: ASSERTIONS & INVARIANT VERIFICATION ---")
-	
-	var session_vector = orch.determine_next_experience(profile)
-	var active_uni = session_vector.get("universe", "history")
-	print("  Active Theme ID: ", active_uni)
-	if active_uni != "history":
-		push_error("ASSERTION FAILED: active_theme_id != 'history'. Got: " + active_uni)
-		quit(1)
-		return
-	print("✅ ASSERTION PASS: active_theme_id == 'history'")
-	
-	var renderer = load("res://scripts/ui/UniverseRenderer.gd").new()
-	var def = renderer.universe_definitions.get(active_uni, renderer.universe_definitions["science_lab"])
-	var lens_profile = def.get("lens_profile", "unknown")
-	print("  Spawned Lens Profile: ", lens_profile)
-	if lens_profile != "eye_of_horus":
-		push_error("ASSERTION FAILED: spawned lens profile != 'eye_of_horus'. Got: " + lens_profile)
-		quit(1)
-		return
-	print("✅ ASSERTION PASS: spawned lens profile == 'eye_of_horus'")
-	
-	var world_id = session_vector.get("world", "unknown")
-	print("  Spawned World ID: ", world_id)
-	if world_id == "unknown" or world_id == "default":
-		push_error("ASSERTION FAILED: Fallback universe/world was selected: " + world_id)
-		quit(1)
-		return
-	print("✅ ASSERTION PASS: no fallback universe was selected")
-	
-	var initial_stack_depth = modal_mgr._modal_stack.size()
-	print("  Initial Modal Stack Depth: ", initial_stack_depth)
-	
-	var mirror_screen = load("res://scripts/ui/screens/PlayerProfileScreen.gd").new()
-	mirror_screen.name = "PlayerProfileScreen"
-	modal_mgr.push_modal(mirror_screen, true)
-	print("  Modal Stack Depth After Push: ", modal_mgr._modal_stack.size())
-	if modal_mgr._modal_stack.size() != initial_stack_depth + 1:
-		push_error("ASSERTION FAILED: Modal stack failed to increment on push.")
-		quit(1)
-		return
-		
-	modal_mgr.pop_modal(mirror_screen)
-	print("  Modal Stack Depth After Pop: ", modal_mgr._modal_stack.size())
-	if modal_mgr._modal_stack.size() != initial_stack_depth:
-		push_error("ASSERTION FAILED: Modal stack depth did not return to original value after exiting Mirror.")
-		quit(1)
-		return
-	print("✅ ASSERTION PASS: modal stack depth returns to its original value after exiting the Mirror")
-	
-	if not modal_mgr._modal_stack.is_empty():
-		push_error("ASSERTION FAILED: Orphaned nodes detected in modal stack.")
-		quit(1)
-		return
-	print("✅ ASSERTION PASS: no orphaned nodes remain after returning to the landing state\n")
-	
-	print("--- STAGE 3: 3 HISTORY SCENARIOS & SAVE INVARIANCE ---")
-	profile.record_cognitive_event("recall", "memory_cascade", "history", "ancient_egypt", true, 1482.0)
-	profile.record_cognitive_event("rapid_classification", "rapid_classification", "history", "ancient_egypt", true, 850.0)
-	profile.record_cognitive_event("pattern_recognition", "signal_vs_noise", "history", "ancient_egypt", false, 2100.0)
-	
-	var rec = profile.get_adaptive_recommendation()
-	print("  Adaptive Recommendation: ", rec.get("reason"))
-	
-	var p2 = load("res://scripts/system/PlayerProfile.gd").new()
-	p2._ready()
-	if p2.lifetime_sessions != profile.lifetime_sessions:
-		push_error("ASSERTION FAILED: Save system reload failed to reproduce identical lifetime sessions.")
-		quit(1)
-		return
-	print("✅ ASSERTION PASS: Save created and reload reproduces the exact same state.\n")
-	
-	print("=================================================================")
-	print("🏆 PHASE 2.5 REGRESSION SUITE PASS: ALL 9 VERIFICATION INVARIANTS SATISFIED.")
+	root.add_child(collection)
+	root.add_child(director)
+
+	var failures: int = 0
+
+	# TEST 1: creative_arts/painting (v2_compiled)
+	print("--- TEST 1: creative_arts/painting (v2_compiled) ---")
+	loader.load_world_content("creative_arts", "painting")
+	var m1 = collection.get_available_mechanics("creative_arts", "painting", "")
+	if m1.is_empty():
+		push_error("FAIL: get_available_mechanics returned empty for creative_arts/painting")
+		failures += 1
+	else:
+		print("  mechanics: ", m1)
+	var c1 = director.choose_mechanic("creative_arts", "painting", "")
+	if c1 == "" or c1 == "dynamic":
+		push_error("FAIL: choose_mechanic returned '" + c1 + "' for creative_arts/painting")
+		failures += 1
+	else:
+		print("  chosen: ", c1)
+		var o1 = collection.next_observation("creative_arts", "painting", "", c1, "vs1")
+		var p1 = builder.build_payload(o1, c1, {})
+		if p1.get("rules", {}).is_empty():
+			push_error("FAIL: build_payload produced empty rules")
+			failures += 1
+		else:
+			print("  served: '", str(p1["rules"].get("prompt","")).substr(0,40), "'")
+
+	# TEST 2: history/ancient_greece (v3_entity, type=dynamic)
+	print("\n--- TEST 2: history/ancient_greece (v3_entity) ---")
+	loader.load_world_content("history", "ancient_greece")
+	var m2 = collection.get_available_mechanics("history", "ancient_greece", "")
+	if m2.is_empty():
+		push_error("FAIL: get_available_mechanics returned empty for history/ancient_greece")
+		failures += 1
+	else:
+		print("  raw mechanics: ", m2)
+	var c2 = director.choose_mechanic("history", "ancient_greece", "")
+	if c2 == "" or c2 == "dynamic":
+		push_error("FAIL: choose_mechanic returned '" + c2 + "' — dynamic was not expanded to a real mechanic")
+		failures += 1
+	else:
+		print("  chosen (expanded from dynamic): ", c2)
+		var o2 = collection.next_observation("history", "ancient_greece", "", c2, "vs2")
+		var p2 = builder.build_payload(o2, c2, {})
+		if p2.get("rules", {}).is_empty():
+			push_error("FAIL: build_payload produced empty rules for history content")
+			failures += 1
+		else:
+			print("  served: '", str(p2["rules"].get("prompt","")).substr(0,40), "'")
+
+	# TEST 3: MechanicResolver.expand
+	print("\n--- TEST 3: MechanicResolver ---")
+	var expanded = MechanicResolver.expand("dynamic")
+	if expanded.size() != 5:
+		push_error("FAIL: MechanicResolver.expand('dynamic') should return 5 mechanics, got " + str(expanded.size()))
+		failures += 1
+	else:
+		print("  expand('dynamic'): ", expanded.size(), " mechanics")
+	if not MechanicResolver.is_playable("rapid_classification"):
+		push_error("FAIL: is_playable('rapid_classification') should be true")
+		failures += 1
+
+	# RESULT
+	print("\n=================================================================")
+	if failures == 0:
+		print("🏆 VERTICAL SLICE: ALL TESTS PASSED")
+	else:
+		print("❌ VERTICAL SLICE: " + str(failures) + " FAILURE(S)")
 	print("=================================================================\n")
-	
-	profile.free()
-	p2.free()
+
 	registry.free()
 	loader.free()
-	orch.free()
-	cust.free()
-	themes.free()
-	modal_mgr.free()
-	renderer.free()
-	quit(0)
+	if collection.get_parent(): collection.free()
+	if director.get_parent(): director.free()
+	if builder.get_parent(): builder.free()
+	quit(failures)

@@ -25,12 +25,9 @@ func choose_mechanic(universe_id: Variant, world_id: Variant, subcategory_id: Va
 	var available = ObservationCollection.get_available_mechanics(universe_id, world_id, subcategory_id) if ObservationCollection else []
 	if available.is_empty():
 		return ""
-	# Expand "dynamic" (v3_entity polymorphic type) to real playable mechanics.
-	if available.has("dynamic"):
-		available.erase("dynamic")
-		for mech in ["rapid_classification", "signal_vs_noise", "odd_one_out", "stroop_test", "memory_cascade"]:
-			if not available.has(mech):
-				available.append(mech)
+	# Expand polymorphic types (e.g. "dynamic") to real playable mechanics.
+	# All type→mechanic translation goes through MechanicResolver.
+	available = MechanicResolver.expand_all(available)
 	var override = normalize_id(manual_override)
 	if override != "" and available.has(override):
 		record_mechanic_used(scope, override)
