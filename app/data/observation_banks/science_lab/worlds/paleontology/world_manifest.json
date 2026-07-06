@@ -3,7 +3,171 @@
   "universe": "science_lab",
   "world": "paleontology",
   "display_name": "Paleontology",
-  "subcategory_order": [],
-  "subcategories": [],
-  "status": "SCAFFOLDED"
+  "subcategory_order": [
+    "concepts",
+    "dinosaurs",
+    "discoveries",
+    "eras",
+    "events",
+    "mammals",
+    "marine",
+    "plants",
+    "tools"
+  ],
+  "subcategories": [
+    {
+      "id": "concepts",
+      "display_name": "Concepts",
+      "implemented_observations": 6,
+      "target_observations": 6,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "dinosaurs",
+      "display_name": "Dinosaurs",
+      "implemented_observations": 11,
+      "target_observations": 11,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "discoveries",
+      "display_name": "Discoveries",
+      "implemented_observations": 6,
+      "target_observations": 6,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "eras",
+      "display_name": "Eras",
+      "implemented_observations": 7,
+      "target_observations": 7,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "events",
+      "display_name": "Events",
+      "implemented_observations": 4,
+      "target_observations": 4,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "mammals",
+      "display_name": "Mammals",
+      "implemented_observations": 5,
+      "target_observations": 5,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "marine",
+      "display_name": "Marine",
+      "implemented_observations": 5,
+      "target_observations": 5,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "plants",
+      "display_name": "Plants",
+      "implemented_observations": 3,
+      "target_observations": 3,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "tools",
+      "display_name": "Tools",
+      "implemented_observations": 4,
+      "target_observations": 4,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    }
+  ],
+  "status": "POPULATED"
 }

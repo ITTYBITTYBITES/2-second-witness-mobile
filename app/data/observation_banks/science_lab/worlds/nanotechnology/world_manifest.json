@@ -3,7 +3,135 @@
   "universe": "science_lab",
   "world": "nanotechnology",
   "display_name": "Nanotechnology",
-  "subcategory_order": [],
-  "subcategories": [],
-  "status": "SCAFFOLDED"
+  "subcategory_order": [
+    "applications",
+    "concepts",
+    "future",
+    "history",
+    "materials",
+    "safety",
+    "tools"
+  ],
+  "subcategories": [
+    {
+      "id": "applications",
+      "display_name": "Applications",
+      "implemented_observations": 8,
+      "target_observations": 8,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "concepts",
+      "display_name": "Concepts",
+      "implemented_observations": 13,
+      "target_observations": 13,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "future",
+      "display_name": "Future",
+      "implemented_observations": 10,
+      "target_observations": 10,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "history",
+      "display_name": "History",
+      "implemented_observations": 3,
+      "target_observations": 3,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "materials",
+      "display_name": "Materials",
+      "implemented_observations": 8,
+      "target_observations": 8,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "safety",
+      "display_name": "Safety",
+      "implemented_observations": 2,
+      "target_observations": 2,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "tools",
+      "display_name": "Tools",
+      "implemented_observations": 6,
+      "target_observations": 6,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    }
+  ],
+  "status": "POPULATED"
 }

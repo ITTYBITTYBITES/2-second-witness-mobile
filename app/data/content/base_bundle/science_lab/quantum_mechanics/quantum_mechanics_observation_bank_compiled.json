@@ -1,1 +1,1430 @@
-[]
+[
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0001",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Quantum",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Smallest discrete unit",
+   "Material": "Energy packet"
+  },
+  "confusions": [
+   "Photon",
+   "Quantum Number",
+   "Planck"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0002",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Wave Function",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Wave Function illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Probability wave description",
+   "Material": "Mathematical wave"
+  },
+  "confusions": [
+   "Schrodinger",
+   "Probability",
+   "Amplitude"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0003",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Superposition",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Superposition illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Multiple states at once",
+   "Material": "Quantum state"
+  },
+  "confusions": [
+   "Schrodinger Cat",
+   "Entanglement",
+   "Measurement"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0004",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Entanglement",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Entanglement illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Spooky action at distance",
+   "Material": "Linked particles"
+  },
+  "confusions": [
+   "EPR",
+   "Bell Inequality",
+   "Non-locality"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0005",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Uncertainty Principle",
+  "entity_type": "Law",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Uncertainty Principle illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "Position-momentum limit",
+   "Material": "Heisenberg limit"
+  },
+  "confusions": [
+   "Measurement",
+   "Planck",
+   "Observer Effect"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0006",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Tunneling",
+  "entity_type": "Phenomenon",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Tunneling illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Phenomenon",
+   "Signature": "Passing through barrier",
+   "Material": "Quantum penetration"
+  },
+  "confusions": [
+   "Barrier",
+   "Wave Function",
+   "Alpha Decay"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0007",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Spin",
+  "entity_type": "Property",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Spin illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Property",
+   "Signature": "Intrinsic angular momentum",
+   "Material": "Quantum property"
+  },
+  "confusions": [
+   "Fermion",
+   "Boson",
+   "Magnetic Moment"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0008",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Decoherence",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Decoherence illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Quantum to classical transition",
+   "Material": "Loss of coherence"
+  },
+  "confusions": [
+   "Measurement",
+   "Environment",
+   "Classical Limit"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_particles_0001",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "particles",
+  "entity": "Electron",
+  "entity_type": "Particle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Electron illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Particle",
+   "Signature": "Negative charge carrier",
+   "Material": "Lepton"
+  },
+  "confusions": [
+   "Positron",
+   "Muon",
+   "Tau"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_particles_0002",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "particles",
+  "entity": "Photon",
+  "entity_type": "Particle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Photon illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Particle",
+   "Signature": "Light quantum",
+   "Material": "Boson"
+  },
+  "confusions": [
+   "Electron",
+   "Quantum",
+   "Wave"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_particles_0003",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "particles",
+  "entity": "Quark",
+  "entity_type": "Particle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quark illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Particle",
+   "Signature": "Proton constituent",
+   "Material": "Fundamental particle"
+  },
+  "confusions": [
+   "Gluon",
+   "Proton",
+   "Neutron"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_particles_0004",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "particles",
+  "entity": "Boson",
+  "entity_type": "Particle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Boson illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Particle",
+   "Signature": "Force-carrying particle",
+   "Material": "Integer spin"
+  },
+  "confusions": [
+   "Photon",
+   "Gluon",
+   "Higgs"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_particles_0005",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "particles",
+  "entity": "Fermion",
+  "entity_type": "Particle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Fermion illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Particle",
+   "Signature": "Matter particle",
+   "Material": "Half-integer spin"
+  },
+  "confusions": [
+   "Electron",
+   "Quark",
+   "Neutrino"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_particles_0006",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "particles",
+  "entity": "Neutrino",
+  "entity_type": "Particle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Neutrino illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Particle",
+   "Signature": "Nearly massless ghost particle",
+   "Material": "Weakly interacting"
+  },
+  "confusions": [
+   "Electron",
+   "Muon",
+   "Tau Neutrino"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_particles_0007",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "particles",
+  "entity": "Higgs Boson",
+  "entity_type": "Particle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Higgs Boson illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Particle",
+   "Signature": "Mass-giving particle",
+   "Material": "God particle"
+  },
+  "confusions": [
+   "Boson",
+   "Mass",
+   "Field"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_equations_0001",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "equations",
+  "entity": "Schrodinger Equation",
+  "entity_type": "Equation",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Schrodinger Equation illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Equation",
+   "Signature": "Wave function evolution",
+   "Material": "Differential equation"
+  },
+  "confusions": [
+   "Wave Function",
+   "Hamiltonian",
+   "Eigenvalue"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_equations_0002",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "equations",
+  "entity": "Dirac Equation",
+  "entity_type": "Equation",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Dirac Equation illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Equation",
+   "Signature": "Relativistic electron equation",
+   "Material": "Spin included"
+  },
+  "confusions": [
+   "Schrodinger",
+   "Relativity",
+   "Antimatter"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_equations_0003",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "equations",
+  "entity": "Planck Constant",
+  "entity_type": "Constant",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Planck Constant illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Constant",
+   "Signature": "Quantum of action",
+   "Material": "Fundamental constant"
+  },
+  "confusions": [
+   "Planck",
+   "Quantum",
+   "h"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_equations_0004",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "equations",
+  "entity": "de Broglie Wavelength",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "de Broglie Wavelength illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Matter wave length",
+   "Material": "Wave-particle"
+  },
+  "confusions": [
+   "Wave Function",
+   "Matter Wave",
+   "Interference"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_interpretations_0001",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "interpretations",
+  "entity": "Copenhagen",
+  "entity_type": "Interpretation",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Copenhagen illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Interpretation",
+   "Signature": "Standard measurement view",
+   "Material": "Collapse interpretation"
+  },
+  "confusions": [
+   "Many Worlds",
+   "Pilot Wave",
+   "Consciousness"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_interpretations_0002",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "interpretations",
+  "entity": "Many Worlds",
+  "entity_type": "Interpretation",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Many Worlds illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Interpretation",
+   "Signature": "All outcomes happen",
+   "Material": "Multiverse interpretation"
+  },
+  "confusions": [
+   "Copenhagen",
+   "Pilot Wave",
+   "Splitting"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_interpretations_0003",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "interpretations",
+  "entity": "Pilot Wave",
+  "entity_type": "Interpretation",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Pilot Wave illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Interpretation",
+   "Signature": "Hidden variable theory",
+   "Material": "Bohmian mechanics"
+  },
+  "confusions": [
+   "Copenhagen",
+   "Many Worlds",
+   "Determinism"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_applications_0001",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "applications",
+  "entity": "Quantum Computer",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Computer illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Qubit processing machine",
+   "Material": "Superposition computing"
+  },
+  "confusions": [
+   "Qubit",
+   "Quantum Gate",
+   "Shor Algorithm"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_applications_0002",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "applications",
+  "entity": "Quantum Cryptography",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Cryptography illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Unbreakable communication",
+   "Material": "Quantum key distribution"
+  },
+  "confusions": [
+   "BB84",
+   "QKD",
+   "Entanglement Key"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_applications_0003",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "applications",
+  "entity": "Quantum Sensor",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Sensor illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Ultra-precise measurement",
+   "Material": "Quantum metrology"
+  },
+  "confusions": [
+   "Atomic Clock",
+   "Magnetometer",
+   "Gravimeter"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_applications_0004",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "applications",
+  "entity": "Laser",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Laser illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Coherent light source",
+   "Material": "Stimulated emission"
+  },
+  "confusions": [
+   "LED",
+   "Photon",
+   "Maser"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_applications_0005",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "applications",
+  "entity": "MRI",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "MRI illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Magnetic resonance imaging",
+   "Material": "Spin alignment"
+  },
+  "confusions": [
+   "CT Scan",
+   "NMR",
+   "Spin"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_applications_0006",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "applications",
+  "entity": "Transistor",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Transistor illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Quantum semiconductor switch",
+   "Material": "Band gap control"
+  },
+  "confusions": [
+   "Diode",
+   "Chip",
+   "Semiconductor"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_applications_0007",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "applications",
+  "entity": "Atomic Clock",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Atomic Clock illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Quantum time standard",
+   "Material": "Cesium fountain"
+  },
+  "confusions": [
+   "Quartz",
+   "GPS",
+   "Time Standard"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_applications_0008",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "applications",
+  "entity": "Electron Microscope",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Electron Microscope illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Quantum wave imaging",
+   "Material": "de Broglie wavelength"
+  },
+  "confusions": [
+   "SEM",
+   "TEM",
+   "Wave"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_experiments_0001",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "experiments",
+  "entity": "Double Slit",
+  "entity_type": "Experiment",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Double Slit illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Experiment",
+   "Signature": "Wave-particle proof",
+   "Material": "Interference pattern"
+  },
+  "confusions": [
+   "Young",
+   "Interference",
+   "Wave-Particle"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_experiments_0002",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "experiments",
+  "entity": "Stern-Gerlach",
+  "entity_type": "Experiment",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Stern-Gerlach illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Experiment",
+   "Signature": "Spin discovery",
+   "Material": "Magnetic deflection"
+  },
+  "confusions": [
+   "Spin",
+   "Silver Atoms",
+   "Magnetic Field"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_experiments_0003",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "experiments",
+  "entity": "Photoelectric Effect",
+  "entity_type": "Experiment",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Photoelectric Effect illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Experiment",
+   "Signature": "Light as particles proof",
+   "Material": "Einstein Nobel"
+  },
+  "confusions": [
+   "Photon",
+   "Einstein",
+   "Quantum"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_experiments_0004",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "experiments",
+  "entity": "Bell Test",
+  "entity_type": "Experiment",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Bell Test illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Experiment",
+   "Signature": "Entanglement proof",
+   "Material": "Inequality violation"
+  },
+  "confusions": [
+   "Entanglement",
+   "Bell",
+   "Non-locality"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_experiments_0005",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "experiments",
+  "entity": "Michelson-Morley",
+  "entity_type": "Experiment",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Michelson-Morley illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Experiment",
+   "Signature": "No ether proof",
+   "Material": "Interferometer"
+  },
+  "confusions": [
+   "Ether",
+   "Light Speed",
+   "Interferometer"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_scientists_0001",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "scientists",
+  "entity": "Niels Bohr",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Niels Bohr illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Atomic model and complementarity",
+   "Material": "Danish physicist"
+  },
+  "confusions": [
+   "Heisenberg",
+   "Einstein",
+   "Pauli"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_scientists_0002",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "scientists",
+  "entity": "Werner Heisenberg",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Werner Heisenberg illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Uncertainty principle",
+   "Material": "German physicist"
+  },
+  "confusions": [
+   "Bohr",
+   "Schrodinger",
+   "Pauli"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_scientists_0003",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "scientists",
+  "entity": "Erwin Schrodinger",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Erwin Schrodinger illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Wave equation",
+   "Material": "Austrian physicist"
+  },
+  "confusions": [
+   "Heisenberg",
+   "Bohr",
+   "Dirac"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_scientists_0004",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "scientists",
+  "entity": "Max Planck",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Max Planck illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Quantum theory founder",
+   "Material": "German physicist"
+  },
+  "confusions": [
+   "Einstein",
+   "Bohr",
+   "Quantum"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_scientists_0005",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "scientists",
+  "entity": "Albert Einstein",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Albert Einstein illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Photoelectric effect and relativity",
+   "Material": "German-Swiss physicist"
+  },
+  "confusions": [
+   "Planck",
+   "Bohr",
+   "Relativity"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_scientists_0006",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "scientists",
+  "entity": "Paul Dirac",
+  "entity_type": "Person",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Paul Dirac illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Person",
+   "Signature": "Relativistic quantum equation",
+   "Material": "English physicist"
+  },
+  "confusions": [
+   "Schrodinger",
+   "Heisenberg",
+   "Fermi"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0009",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Quantum Field Theory",
+  "entity_type": "Theory",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Field Theory illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Theory",
+   "Signature": "Fields not particles",
+   "Material": "Field excitations"
+  },
+  "confusions": [
+   "QED",
+   "QCD",
+   "Standard Model"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0010",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Quantum Electrodynamics",
+  "entity_type": "Theory",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Electrodynamics illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Theory",
+   "Signature": "QED light-matter theory",
+   "Material": "Feynman theory"
+  },
+  "confusions": [
+   "QCD",
+   "Field Theory",
+   "Feynman"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0011",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Standard Model",
+  "entity_type": "Theory",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Standard Model illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Theory",
+   "Signature": "Particle physics framework",
+   "Material": "Three forces unified"
+  },
+  "confusions": [
+   "QCD",
+   "QED",
+   "Higgs"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0012",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "String Theory",
+  "entity_type": "Theory",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "String Theory illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Theory",
+   "Signature": "Vibrating strings theory",
+   "Material": "Unification attempt"
+  },
+  "confusions": [
+   "M-Theory",
+   "Extra Dimensions",
+   "Brane"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0013",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Quantum Gravity",
+  "entity_type": "Theory",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Gravity illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Theory",
+   "Signature": "Unifying gravity and quantum",
+   "Material": "Unsolved theory"
+  },
+  "confusions": [
+   "String Theory",
+   "Loop Gravity",
+   "Graviton"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0014",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Zero-Point Energy",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Zero-Point Energy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Vacuum energy",
+   "Material": "Ground state energy"
+  },
+  "confusions": [
+   "Vacuum",
+   "Casimir",
+   "Quantum Fluctuation"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0015",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Quantum Zeno Effect",
+  "entity_type": "Phenomenon",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Zeno Effect illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Phenomenon",
+   "Signature": "Watching stops change",
+   "Material": "Frequent measurement"
+  },
+  "confusions": [
+   "Decoherence",
+   "Measurement",
+   "Freeze"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0016",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Quantum Teleportation",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Teleportation illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "State transfer via entanglement",
+   "Material": "Information transfer"
+  },
+  "confusions": [
+   "Entanglement",
+   "QKD",
+   "Teleport"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0017",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Quantum Annealing",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Annealing illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Optimization via quantum",
+   "Material": "D-Wave approach"
+  },
+  "confusions": [
+   "Quantum Computer",
+   "Optimization",
+   "Annealing"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_quantum_mechanics_concepts_0018",
+  "universe": "science_lab",
+  "world": "quantum_mechanics",
+  "subcategory": "concepts",
+  "entity": "Bloch Sphere",
+  "entity_type": "Visualization",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Bloch Sphere illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Visualization",
+   "Signature": "Qubit state representation",
+   "Material": "Geometric sphere"
+  },
+  "confusions": [
+   "Qubit",
+   "Superposition",
+   "Quantum State"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ }
+]

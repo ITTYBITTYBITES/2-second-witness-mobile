@@ -3,7 +3,153 @@
   "universe": "science_lab",
   "world": "physics",
   "display_name": "Physics",
-  "subcategory_order": [],
-  "subcategories": [],
-  "status": "SCAFFOLDED"
+  "subcategory_order": [
+    "electricity",
+    "energy",
+    "light",
+    "magnetism",
+    "modern",
+    "motion",
+    "thermo",
+    "waves"
+  ],
+  "subcategories": [
+    {
+      "id": "electricity",
+      "display_name": "Electricity",
+      "implemented_observations": 12,
+      "target_observations": 12,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "energy",
+      "display_name": "Energy",
+      "implemented_observations": 6,
+      "target_observations": 6,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "light",
+      "display_name": "Light",
+      "implemented_observations": 3,
+      "target_observations": 3,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "magnetism",
+      "display_name": "Magnetism",
+      "implemented_observations": 5,
+      "target_observations": 5,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "modern",
+      "display_name": "Modern",
+      "implemented_observations": 2,
+      "target_observations": 2,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "motion",
+      "display_name": "Motion",
+      "implemented_observations": 11,
+      "target_observations": 11,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "thermo",
+      "display_name": "Thermo",
+      "implemented_observations": 5,
+      "target_observations": 5,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "waves",
+      "display_name": "Waves",
+      "implemented_observations": 8,
+      "target_observations": 8,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    }
+  ],
+  "status": "POPULATED"
 }

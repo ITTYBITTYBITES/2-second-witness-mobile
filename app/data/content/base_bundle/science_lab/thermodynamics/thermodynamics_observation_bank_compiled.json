@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "science_lab_thermodynamics_laws_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "laws",
+  "entity": "First Law",
+  "entity_type": "Law",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "First Law illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "Energy conservation",
+   "Material": "Energy cannot be created"
+  },
+  "confusions": [
+   "Second Law",
+   "Third Law",
+   "Zeroth Law"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_laws_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "laws",
+  "entity": "Second Law",
+  "entity_type": "Law",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Second Law illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "Entropy always increases",
+   "Material": "Disorder increases"
+  },
+  "confusions": [
+   "First Law",
+   "Entropy",
+   "Third Law"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_laws_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "laws",
+  "entity": "Third Law",
+  "entity_type": "Law",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Third Law illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "Absolute zero unattainable",
+   "Material": "Zero entropy at 0K"
+  },
+  "confusions": [
+   "Second Law",
+   "Absolute Zero",
+   "Entropy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_laws_0004",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "laws",
+  "entity": "Zeroth Law",
+  "entity_type": "Law",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Zeroth Law illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "Thermal equilibrium",
+   "Material": "Temperature definition"
+  },
+  "confusions": [
+   "First Law",
+   "Equilibrium",
+   "Temperature"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_concepts_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "concepts",
+  "entity": "Temperature",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Temperature illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Measure of heat",
+   "Material": "Average kinetic energy"
+  },
+  "confusions": [
+   "Heat",
+   "Thermal",
+   "Kelvin"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_concepts_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "concepts",
+  "entity": "Heat",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Heat illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Thermal energy transfer",
+   "Material": "Energy in transit"
+  },
+  "confusions": [
+   "Temperature",
+   "Thermal Energy",
+   "Conduction"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_concepts_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "concepts",
+  "entity": "Entropy",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Entropy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Measure of disorder",
+   "Material": "Randomness measure"
+  },
+  "confusions": [
+   "Second Law",
+   "Disorder",
+   "Chaos"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_concepts_0004",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "concepts",
+  "entity": "Enthalpy",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Enthalpy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Total heat content",
+   "Material": "Heat plus work"
+  },
+  "confusions": [
+   "Internal Energy",
+   "Heat",
+   "Gibbs Free Energy"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_concepts_0005",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "concepts",
+  "entity": "Internal Energy",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Internal Energy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Total molecular energy",
+   "Material": "Sum of all energies"
+  },
+  "confusions": [
+   "Enthalpy",
+   "Heat",
+   "Kinetic Energy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_concepts_0006",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "concepts",
+  "entity": "Gibbs Free Energy",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Gibbs Free Energy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Available work energy",
+   "Material": "Spontaneity measure"
+  },
+  "confusions": [
+   "Enthalpy",
+   "Entropy",
+   "Chemical Potential"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_concepts_0007",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "concepts",
+  "entity": "Specific Heat",
+  "entity_type": "Property",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Specific Heat illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Property",
+   "Signature": "Heat per degree",
+   "Material": "Heat capacity"
+  },
+  "confusions": [
+   "Heat Capacity",
+   "Thermal Mass",
+   "Calorimetry"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_concepts_0008",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "concepts",
+  "entity": "Thermal Equilibrium",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Thermal Equilibrium illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Same temperature",
+   "Material": "Balanced heat"
+  },
+  "confusions": [
+   "Zeroth Law",
+   "Temperature",
+   "Balance"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_processes_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "processes",
+  "entity": "Heat Transfer",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Heat Transfer illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Thermal energy flow",
+   "Material": "Energy movement"
+  },
+  "confusions": [
+   "Conduction",
+   "Convection",
+   "Radiation"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_processes_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "processes",
+  "entity": "Conduction",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Conduction illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Heat through solid",
+   "Material": "Direct contact transfer"
+  },
+  "confusions": [
+   "Convection",
+   "Radiation",
+   "Insulator"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_processes_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "processes",
+  "entity": "Convection",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Convection illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Heat through fluid",
+   "Material": "Circulating transfer"
+  },
+  "confusions": [
+   "Conduction",
+   "Radiation",
+   "Current"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_processes_0004",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "processes",
+  "entity": "Radiation",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Radiation illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Heat through space",
+   "Material": "Electromagnetic waves"
+  },
+  "confusions": [
+   "Conduction",
+   "Convection",
+   "Infrared"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_processes_0005",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "processes",
+  "entity": "Adiabatic",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Adiabatic illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "No heat exchange",
+   "Material": "Insulated change"
+  },
+  "confusions": [
+   "Isothermal",
+   "Isobaric",
+   "Isentropic"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_processes_0006",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "processes",
+  "entity": "Isothermal",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Isothermal illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Constant temperature",
+   "Material": "Equal temperature"
+  },
+  "confusions": [
+   "Adiabatic",
+   "Isobaric",
+   "Phase Change"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_processes_0007",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "processes",
+  "entity": "Phase Change",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Phase Change illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "State transformation",
+   "Material": "Melting boiling"
+  },
+  "confusions": [
+   "Melting",
+   "Boiling",
+   "Condensation"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_cycles_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "cycles",
+  "entity": "Carnot Cycle",
+  "entity_type": "Cycle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Carnot Cycle illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Cycle",
+   "Signature": "Maximum efficiency cycle",
+   "Material": "Ideal heat engine"
+  },
+  "confusions": [
+   "Otto Cycle",
+   "Rankine",
+   "Stirling"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_cycles_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "cycles",
+  "entity": "Otto Cycle",
+  "entity_type": "Cycle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Otto Cycle illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Cycle",
+   "Signature": "Gasoline engine cycle",
+   "Material": "Four-stroke"
+  },
+  "confusions": [
+   "Carnot",
+   "Diesel",
+   "Rankine"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_cycles_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "cycles",
+  "entity": "Rankine Cycle",
+  "entity_type": "Cycle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Rankine Cycle illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Cycle",
+   "Signature": "Steam power cycle",
+   "Material": "Power plant cycle"
+  },
+  "confusions": [
+   "Carnot",
+   "Otto",
+   "Brayton"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_cycles_0004",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "cycles",
+  "entity": "Refrigeration Cycle",
+  "entity_type": "Cycle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Refrigeration Cycle illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Cycle",
+   "Signature": "Heat pump cycle",
+   "Material": "Cooling cycle"
+  },
+  "confusions": [
+   "Carnot",
+   "Heat Pump",
+   "Compressor"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_engines_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "engines",
+  "entity": "Heat Engine",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Heat Engine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Heat to work converter",
+   "Material": "Thermal machine"
+  },
+  "confusions": [
+   "Carnot",
+   "Steam Engine",
+   "Turbine"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_engines_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "engines",
+  "entity": "Steam Engine",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Steam Engine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Steam-powered engine",
+   "Material": "Piston steam"
+  },
+  "confusions": [
+   "Turbine",
+   "Locomotive",
+   "Watt"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_engines_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "engines",
+  "entity": "Internal Combustion",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Internal Combustion illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Fuel-burning engine",
+   "Material": "Cylinder piston"
+  },
+  "confusions": [
+   "Gasoline",
+   "Diesel",
+   "Engine"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_engines_0004",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "engines",
+  "entity": "Gas Turbine",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Gas Turbine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Jet engine turbine",
+   "Material": "Rotary engine"
+  },
+  "confusions": [
+   "Jet",
+   "Brayton",
+   "Turbine"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_engines_0005",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "engines",
+  "entity": "Stirling Engine",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Stirling Engine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "External combustion engine",
+   "Material": "Closed cycle"
+  },
+  "confusions": [
+   "Carnot",
+   "Steam",
+   "Hot Air Engine"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_engines_0006",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "engines",
+  "entity": "Heat Pump",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Heat Pump illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Reverse heat engine",
+   "Material": "Heating cooling"
+  },
+  "confusions": [
+   "Refrigerator",
+   "AC",
+   "Compressor"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_engines_0007",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "engines",
+  "entity": "Refrigerator",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Refrigerator illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Cooling machine",
+   "Material": "Heat removal"
+  },
+  "confusions": [
+   "Heat Pump",
+   "Freezer",
+   "AC"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_states_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "states",
+  "entity": "Absolute Zero",
+  "entity_type": "Temperature",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Absolute Zero illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Temperature",
+   "Signature": "Minimum temperature 0K",
+   "Material": "-273.15 Celsius"
+  },
+  "confusions": [
+   "Zero Kelvin",
+   "Third Law",
+   "Lowest Temperature"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_states_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "states",
+  "entity": "Critical Point",
+  "entity_type": "State",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Critical Point illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "State",
+   "Signature": "Liquid gas indistinguishable",
+   "Material": "Phase boundary end"
+  },
+  "confusions": [
+   "Triple Point",
+   "Supercritical",
+   "Phase Diagram"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_states_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "states",
+  "entity": "Triple Point",
+  "entity_type": "State",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Triple Point illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "State",
+   "Signature": "All three phases coexist",
+   "Material": "Unique condition"
+  },
+  "confusions": [
+   "Critical Point",
+   "Phase Diagram",
+   "Equilibrium"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_states_0004",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "states",
+  "entity": "Plasma",
+  "entity_type": "State",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Plasma illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "State",
+   "Signature": "Ionized gas fourth state",
+   "Material": "Charged particles"
+  },
+  "confusions": [
+   "Solid",
+   "Liquid",
+   "Gas"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_properties_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "properties",
+  "entity": "Pressure",
+  "entity_type": "Property",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Pressure illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Property",
+   "Signature": "Force per area",
+   "Material": "Gas pressure"
+  },
+  "confusions": [
+   "Volume",
+   "Temperature",
+   "Boyle"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_properties_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "properties",
+  "entity": "Volume",
+  "entity_type": "Property",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Volume illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Property",
+   "Signature": "Space occupied",
+   "Material": "Gas volume"
+  },
+  "confusions": [
+   "Pressure",
+   "Temperature",
+   "Capacity"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_properties_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "properties",
+  "entity": "Boyles Law",
+  "entity_type": "Law",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Boyles Law illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "Pressure inverse to volume",
+   "Material": "Gas compression"
+  },
+  "confusions": [
+   "Charles Law",
+   "Ideal Gas",
+   "Avogadro"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_properties_0004",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "properties",
+  "entity": "Charles Law",
+  "entity_type": "Law",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Charles Law illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "Volume proportional to temperature",
+   "Material": "Gas expansion"
+  },
+  "confusions": [
+   "Boyles Law",
+   "Gay-Lussac",
+   "Ideal Gas"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_properties_0005",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "properties",
+  "entity": "Ideal Gas Law",
+  "entity_type": "Law",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Ideal Gas Law illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "PV=nRT equation",
+   "Material": "Gas behavior"
+  },
+  "confusions": [
+   "Boyles",
+   "Charles",
+   "Avogadro"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_properties_0006",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "properties",
+  "entity": "Thermal Conductivity",
+  "entity_type": "Property",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Thermal Conductivity illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Property",
+   "Signature": "Heat flow rate",
+   "Material": "Material property"
+  },
+  "confusions": [
+   "Insulator",
+   "Conductor",
+   "Heat Transfer"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_properties_0007",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "properties",
+  "entity": "Thermal Expansion",
+  "entity_type": "Property",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Thermal Expansion illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Property",
+   "Signature": "Size increase with heat",
+   "Material": "Material expansion"
+  },
+  "confusions": [
+   "Contraction",
+   "Bimetallic",
+   "Coefficient"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_statistics_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "statistics",
+  "entity": "Maxwell-Boltzmann",
+  "entity_type": "Distribution",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Maxwell-Boltzmann illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Distribution",
+   "Signature": "Molecular speed distribution",
+   "Material": "Statistical mechanics"
+  },
+  "confusions": [
+   "Boltzmann",
+   "Gas Speed",
+   "Statistics"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_statistics_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "statistics",
+  "entity": "Boltzmann Constant",
+  "entity_type": "Constant",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Boltzmann Constant illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Constant",
+   "Signature": "Entropy-temperature link",
+   "Material": "Fundamental constant"
+  },
+  "confusions": [
+   "Boltzmann",
+   "Entropy",
+   "Statistics"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_statistics_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "statistics",
+  "entity": "Statistical Mechanics",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Statistical Mechanics illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Field",
+   "Signature": "Microscopic to macroscopic",
+   "Material": "Probability physics"
+  },
+  "confusions": [
+   "Thermodynamics",
+   "Entropy",
+   "Partition Function"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_applications_0001",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "applications",
+  "entity": "Power Plant",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Power Plant illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Electricity from heat",
+   "Material": "Thermal power generation"
+  },
+  "confusions": [
+   "Nuclear",
+   "Coal",
+   "Gas Turbine"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_applications_0002",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "applications",
+  "entity": "Solar Thermal",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Solar Thermal illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Sun to heat energy",
+   "Material": "Concentrated solar"
+  },
+  "confusions": [
+   "Solar Panel",
+   "Mirror",
+   "Heat Engine"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_applications_0003",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "applications",
+  "entity": "Thermoelectric",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Thermoelectric illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Heat to electricity directly",
+   "Material": "Seebeck effect"
+  },
+  "confusions": [
+   "Peltier",
+   "Seebeck",
+   "Cooler"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_applications_0004",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "applications",
+  "entity": "Insulation",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Insulation illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Preventing heat flow",
+   "Material": "Thermal barrier"
+  },
+  "confusions": [
+   "Insulator",
+   "Fiberglass",
+   "Foam"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_applications_0005",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "applications",
+  "entity": "HVAC",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "HVAC illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Heating ventilation cooling",
+   "Material": "Climate control"
+  },
+  "confusions": [
+   "Air Conditioner",
+   "Heater",
+   "Ventilation"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_thermodynamics_applications_0006",
+  "universe": "science_lab",
+  "world": "thermodynamics",
+  "subcategory": "applications",
+  "entity": "Nuclear Reactor",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nuclear Reactor illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Atomic heat power",
+   "Material": "Fission reactor"
+  },
+  "confusions": [
+   "Power Plant",
+   "Uranium",
+   "Steam"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "science_lab_virology_concepts_0001",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Virus",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Virus illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Infectious particle",
+   "Material": "Protein coat nucleic acid"
+  },
+  "confusions": [
+   "Bacteria",
+   "Prion",
+   "Viroid"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0002",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Capsid",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Capsid illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Protein shell",
+   "Material": "Viral coat"
+  },
+  "confusions": [
+   "Envelope",
+   "Nucleocapsid",
+   "Shell"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0003",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Envelope",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Envelope illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Lipid outer layer",
+   "Material": "Membrane coat"
+  },
+  "confusions": [
+   "Capsid",
+   "Membrane",
+   "Spike"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0004",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Viral Genome",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Viral Genome illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "Viral genetic material",
+   "Material": "DNA or RNA"
+  },
+  "confusions": [
+   "DNA Virus",
+   "RNA Virus",
+   "Retrovirus"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0005",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Host Cell",
+  "entity_type": "Cell",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Host Cell illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Cell",
+   "Signature": "Virus target cell",
+   "Material": "Infected cell"
+  },
+  "confusions": [
+   "Bacterium",
+   "Human Cell",
+   "Receptor"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0006",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Receptor",
+  "entity_type": "Protein",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Receptor illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Protein",
+   "Signature": "Cell entry point",
+   "Material": "Virus docking protein"
+  },
+  "confusions": [
+   "ACE2",
+   "CD4",
+   "Spike Protein"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_life_cycle_0001",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "life_cycle",
+  "entity": "Attachment",
+  "entity_type": "Stage",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Attachment illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Stage",
+   "Signature": "Virus binds cell",
+   "Material": "Receptor binding"
+  },
+  "confusions": [
+   "Entry",
+   "Fusion",
+   "Docking"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_life_cycle_0002",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "life_cycle",
+  "entity": "Entry",
+  "entity_type": "Stage",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Entry illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Stage",
+   "Signature": "Virus enters cell",
+   "Material": "Membrane fusion"
+  },
+  "confusions": [
+   "Attachment",
+   "Uncoating",
+   "Endocytosis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_life_cycle_0003",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "life_cycle",
+  "entity": "Replication",
+  "entity_type": "Stage",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Replication illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Stage",
+   "Signature": "Virus copies genome",
+   "Material": "Viral replication"
+  },
+  "confusions": [
+   "Transcription",
+   "Translation",
+   "Assembly"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_life_cycle_0004",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "life_cycle",
+  "entity": "Assembly",
+  "entity_type": "Stage",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Assembly illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Stage",
+   "Signature": "New virus parts built",
+   "Material": "Particle assembly"
+  },
+  "confusions": [
+   "Budding",
+   "Maturation",
+   "Packaging"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_life_cycle_0005",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "life_cycle",
+  "entity": "Release",
+  "entity_type": "Stage",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Release illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Stage",
+   "Signature": "New viruses exit cell",
+   "Material": "Budding lysis"
+  },
+  "confusions": [
+   "Assembly",
+   "Lysis",
+   "Budding"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_life_cycle_0006",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "life_cycle",
+  "entity": "Lysis",
+  "entity_type": "Stage",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Lysis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Stage",
+   "Signature": "Cell bursts open",
+   "Material": "Cell death"
+  },
+  "confusions": [
+   "Release",
+   "Apoptosis",
+   "Bursting"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_families_0001",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "families",
+  "entity": "Coronaviridae",
+  "entity_type": "Family",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Coronaviridae illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Family",
+   "Signature": "Corona-shaped viruses",
+   "Material": "COVID SARS"
+  },
+  "confusions": [
+   "Corona",
+   "COVID",
+   "SARS"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_families_0002",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "families",
+  "entity": "Orthomyxoviridae",
+  "entity_type": "Family",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Orthomyxoviridae illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Family",
+   "Signature": "Flu viruses",
+   "Material": "Influenza"
+  },
+  "confusions": [
+   "Flu",
+   "Influenza",
+   "Segmented RNA"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_families_0003",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "families",
+  "entity": "Retroviridae",
+  "entity_type": "Family",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Retroviridae illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Family",
+   "Signature": "Reverse transcriptors",
+   "Material": "HIV lentivirus"
+  },
+  "confusions": [
+   "HIV",
+   "Reverse Transcriptase",
+   "RNA Tumor Virus"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_families_0004",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "families",
+  "entity": "Herpesviridae",
+  "entity_type": "Family",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Herpesviridae illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Family",
+   "Signature": "Persistent DNA viruses",
+   "Material": "Cold sore chickenpox"
+  },
+  "confusions": [
+   "HSV",
+   "VZV",
+   "EBV"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_families_0005",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "families",
+  "entity": "Picornaviridae",
+  "entity_type": "Family",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Picornaviridae illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Family",
+   "Signature": "Small RNA viruses",
+   "Material": "Polio cold"
+  },
+  "confusions": [
+   "Polio",
+   "Rhinovirus",
+   "Foot Mouth"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0001",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "COVID-19",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "COVID-19 illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Pandemic respiratory illness",
+   "Material": "SARS-CoV-2"
+  },
+  "confusions": [
+   "SARS",
+   "MERS",
+   "Influenza"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0002",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Influenza",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Influenza illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Seasonal flu",
+   "Material": "Flu virus"
+  },
+  "confusions": [
+   "COVID",
+   "Cold",
+   "Pneumonia"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0003",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "HIV/AIDS",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "HIV/AIDS illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Immune deficiency disease",
+   "Material": "HIV retrovirus"
+  },
+  "confusions": [
+   "Retrovirus",
+   "Immunodeficiency",
+   "Opportunistic"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0004",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Rabies",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Rabies illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Fatal brain infection",
+   "Material": "Lyssavirus"
+  },
+  "confusions": [
+   "Encephalitis",
+   "Bite",
+   "Vaccine"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0005",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Measles",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Measles illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Childhood rash disease",
+   "Material": "Morbillivirus"
+  },
+  "confusions": [
+   "MMR",
+   "Rubella",
+   "Mumps"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0006",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Smallpox",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Smallpox illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Eradicated killer disease",
+   "Material": "Variola virus"
+  },
+  "confusions": [
+   "Cowpox",
+   "Monkeypox",
+   "Vaccine"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0007",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Ebola",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Ebola illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Hemorrhagic fever",
+   "Material": "Filovirus"
+  },
+  "confusions": [
+   "Marburg",
+   "Hemorrhagic",
+   "Biosafety Level 4"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0008",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Polio",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Polio illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Paralyzing childhood disease",
+   "Material": "Poliovirus"
+  },
+  "confusions": [
+   "Paralysis",
+   "Iron Lung",
+   "Sabin"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0009",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Hepatitis",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Hepatitis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Liver inflammation",
+   "Material": "Hepatitis A-E"
+  },
+  "confusions": [
+   "Liver",
+   "Jaundice",
+   "Cirrhosis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0010",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Dengue",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Dengue illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Mosquito-borne fever",
+   "Material": "Flavivirus"
+  },
+  "confusions": [
+   "Mosquito",
+   "Zika",
+   "Yellow Fever"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_diseases_0011",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "diseases",
+  "entity": "Herpes",
+  "entity_type": "Disease",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Herpes illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Disease",
+   "Signature": "Recurring blister disease",
+   "Material": "HSV"
+  },
+  "confusions": [
+   "Cold Sore",
+   "Genital",
+   "Reactivation"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_immune_0001",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "immune",
+  "entity": "Vaccine",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Vaccine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Product",
+   "Signature": "Immune training",
+   "Material": "Biological preparation"
+  },
+  "confusions": [
+   "Antibody",
+   "Antigen",
+   "Booster"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_immune_0002",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "immune",
+  "entity": "Antibody",
+  "entity_type": "Protein",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Antibody illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Protein",
+   "Signature": "Immune defense protein",
+   "Material": "Immunoglobulin"
+  },
+  "confusions": [
+   "Antigen",
+   "B Cell",
+   "Vaccine"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_immune_0003",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "immune",
+  "entity": "Interferon",
+  "entity_type": "Protein",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Interferon illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Protein",
+   "Signature": "Antiviral signal",
+   "Material": "Immune messenger"
+  },
+  "confusions": [
+   "Cytokine",
+   "Immune Response",
+   "Antiviral"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_immune_0004",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "immune",
+  "entity": "T Cell",
+  "entity_type": "Cell",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "T Cell illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Cell",
+   "Signature": "Virus-killing cell",
+   "Material": "Cytotoxic T lymphocyte"
+  },
+  "confusions": [
+   "B Cell",
+   "Killer T",
+   "CD8"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_immune_0005",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "immune",
+  "entity": "B Cell",
+  "entity_type": "Cell",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "B Cell illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Cell",
+   "Signature": "Antibody producer",
+   "Material": "Humoral immunity"
+  },
+  "confusions": [
+   "T Cell",
+   "Antibody",
+   "Plasma Cell"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_tools_0001",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "tools",
+  "entity": "PCR",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "PCR illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Virus DNA amplification",
+   "Material": "Test method"
+  },
+  "confusions": [
+   "RT-PCR",
+   "Antigen Test",
+   "Swab"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_tools_0002",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "tools",
+  "entity": "ELISA",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "ELISA illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Antibody detection",
+   "Material": "Test method"
+  },
+  "confusions": [
+   "Western Blot",
+   "RIA",
+   "Serology"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_tools_0003",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "tools",
+  "entity": "Cell Culture",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Cell Culture illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Growing viruses in lab",
+   "Material": "Virus cultivation"
+  },
+  "confusions": [
+   "Embryonated Egg",
+   "Vero Cell",
+   "Tissue Culture"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_tools_0004",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "tools",
+  "entity": "Electron Microscope",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Electron Microscope illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Virus visualization",
+   "Material": "Nanoscale imaging"
+  },
+  "confusions": [
+   "SEM",
+   "TEM",
+   "Cryo-EM"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_tools_0005",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "tools",
+  "entity": "Vaccine Development",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Vaccine Development illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Creating new vaccines",
+   "Material": "R&D pipeline"
+  },
+  "confusions": [
+   "Clinical Trial",
+   "mRNA",
+   "Phase Trial"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_tools_0006",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "tools",
+  "entity": "Genome Sequencing",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Genome Sequencing illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Technique",
+   "Signature": "Reading viral genes",
+   "Material": "Surveillance"
+  },
+  "confusions": [
+   "PCR",
+   "NGS",
+   "Genotyping"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0007",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Mutation",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Mutation illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Viral genetic change",
+   "Material": "Variant emergence"
+  },
+  "confusions": [
+   "Variant",
+   "Drift",
+   "Shift"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0008",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Variant",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Variant illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Mutated virus strain",
+   "Material": "Genetic variant"
+  },
+  "confusions": [
+   "Mutation",
+   "Strain",
+   "Lineage"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0009",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Zoonosis",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Zoonosis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Animal to human jump",
+   "Material": "Cross-species"
+  },
+  "confusions": [
+   "Spillover",
+   "Reservoir",
+   "Bat"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0010",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Vector",
+  "entity_type": "Organism",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Vector illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Organism",
+   "Signature": "Disease carrier organism",
+   "Material": "Mosquito tick"
+  },
+  "confusions": [
+   "Mosquito",
+   "Tick",
+   "Fly"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0011",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Herd Immunity",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Herd Immunity illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Population protection",
+   "Material": "Threshold immunity"
+  },
+  "confusions": [
+   "Vaccination",
+   "R0",
+   "Threshold"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0012",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Antiviral Drug",
+  "entity_type": "Treatment",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Antiviral Drug illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Treatment",
+   "Signature": "Virus-blocking medicine",
+   "Material": "Therapeutic"
+  },
+  "confusions": [
+   "Vaccine",
+   "Inhibitor",
+   "Treatment"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0013",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "mRNA Vaccine",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "mRNA Vaccine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Genetic code vaccine",
+   "Material": "New platform"
+  },
+  "confusions": [
+   "Pfizer",
+   "Moderna",
+   "Lipid Nanoparticle"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0014",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Phage Therapy",
+  "entity_type": "Treatment",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Phage Therapy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Treatment",
+   "Signature": "Virus-eating viruses",
+   "Material": "Bacterial treatment"
+  },
+  "confusions": [
+   "Bacteriophage",
+   "Antibiotic Alternative",
+   "Lytic"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0015",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Viral Vector",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Viral Vector illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Gene delivery virus",
+   "Material": "Engineering tool"
+  },
+  "confusions": [
+   "AAV",
+   "Lentivirus",
+   "Adenovirus"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0016",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Oncolytic Virus",
+  "entity_type": "Therapy",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Oncolytic Virus illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Therapy",
+   "Signature": "Cancer-killing virus",
+   "Material": "Viral therapy"
+  },
+  "confusions": [
+   "T-VEC",
+   "Cancer",
+   "Immunotherapy"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_virology_concepts_0017",
+  "universe": "science_lab",
+  "world": "virology",
+  "subcategory": "concepts",
+  "entity": "Viroid",
+  "entity_type": "Pathogen",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Viroid illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Pathogen",
+   "Signature": "Bare RNA pathogen",
+   "Material": "Plant pathogen"
+  },
+  "confusions": [
+   "Virus",
+   "Prion",
+   "RNA Molecule"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

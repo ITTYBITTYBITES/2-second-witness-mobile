@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0001",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Nanoparticle",
+  "entity_type": "Particle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nanoparticle illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Particle",
+   "Signature": "Nanoscale particle 1-100nm",
+   "Material": "Nanoscale material"
+  },
+  "confusions": [
+   "Nanotube",
+   "Quantum Dot",
+   "Fullerene"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0002",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Carbon Nanotube",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Carbon Nanotube illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Cylindrical carbon molecule",
+   "Material": "Carbon hexagons"
+  },
+  "confusions": [
+   "Graphene",
+   "Fullerene",
+   "Nanowire"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0003",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Graphene",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Graphene illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "Single layer of carbon atoms",
+   "Material": "Two-dimensional carbon"
+  },
+  "confusions": [
+   "Carbon Nanotube",
+   "Fullerene",
+   "Graphite"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0004",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Quantum Dot",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Dot illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Nanoscale semiconductor crystal",
+   "Material": "Fluorescent nanocrystal"
+  },
+  "confusions": [
+   "Nanoparticle",
+   "Nanocrystal",
+   "Phosphor"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0005",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Fullerene",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Fullerene illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Molecule",
+   "Signature": "Spherical carbon molecule",
+   "Material": "Buckminsterfullerene"
+  },
+  "confusions": [
+   "Graphene",
+   "Nanotube",
+   "Diamond"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0006",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Nanowire",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nanowire illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Nanoscale conducting wire",
+   "Material": "Metal semiconductor wire"
+  },
+  "confusions": [
+   "Nanotube",
+   "Nanorod",
+   "Nanofiber"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0007",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Self-Assembly",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Self-Assembly illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Bottom-up nanoscale building",
+   "Material": "Molecular organization"
+  },
+  "confusions": [
+   "Bottom-Up",
+   "Molecular Recognition",
+   "Template"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0008",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Top-Down",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Top-Down illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Process",
+   "Signature": "Etching from larger to nano",
+   "Material": "Lithographic fabrication"
+  },
+  "confusions": [
+   "Photolithography",
+   "E-beam Lithography",
+   "Etching"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_applications_0001",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "applications",
+  "entity": "Drug Delivery",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Drug Delivery illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Application",
+   "Signature": "Targeted nanomedicine transport",
+   "Material": "Nanoscale drug carrier"
+  },
+  "confusions": [
+   "Liposome",
+   "Nanoparticle",
+   "Targeted Therapy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_applications_0002",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "applications",
+  "entity": "Nanosensor",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nanosensor illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Nanoscale detection device",
+   "Material": "Molecular sensor"
+  },
+  "confusions": [
+   "Biosensor",
+   "Chemical Sensor",
+   "Gas Sensor"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_applications_0003",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "applications",
+  "entity": "Solar Cell",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Solar Cell illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Nano-enhanced photovoltaic",
+   "Material": "Nanomaterial cells"
+  },
+  "confusions": [
+   "Photovoltaic",
+   "Quantum Dot Solar",
+   "Perovskite"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_applications_0004",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "applications",
+  "entity": "Water Filter",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Water Filter illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Nanomembrane filtration",
+   "Material": "Nanopore membrane"
+  },
+  "confusions": [
+   "Reverse Osmosis",
+   "Carbon Filter",
+   "UV Filter"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_applications_0005",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "applications",
+  "entity": "Stain-Resistant Fabric",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Stain-Resistant Fabric illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Product",
+   "Signature": "Nano-coated textile",
+   "Material": "Hydrophobic nanocoating"
+  },
+  "confusions": [
+   "Teflon",
+   "Waterproof",
+   "Nano-Coating"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_applications_0006",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "applications",
+  "entity": "Sunscreen",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Sunscreen illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Product",
+   "Signature": "Nanoparticle UV protection",
+   "Material": "Zinc oxide titanium dioxide"
+  },
+  "confusions": [
+   "UV Block",
+   "Titanium Dioxide",
+   "Zinc Oxide"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_applications_0007",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "applications",
+  "entity": "Nanomedicine",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nanomedicine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Field",
+   "Signature": "Medical nanoscale treatment",
+   "Material": "Targeted nanotherapy"
+  },
+  "confusions": [
+   "Drug Delivery",
+   "Imaging",
+   "Therapy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_applications_0008",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "applications",
+  "entity": "Nano Electronics",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nano Electronics illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Field",
+   "Signature": "Nanoscale electronic devices",
+   "Material": "Molecular electronics"
+  },
+  "confusions": [
+   "Transistor",
+   "Chip",
+   "Molecular Wire"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_tools_0001",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "tools",
+  "entity": "Electron Microscope",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Electron Microscope illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Nanoscale imaging instrument",
+   "Material": "Electron beam"
+  },
+  "confusions": [
+   "SEM",
+   "TEM",
+   "AFM"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_tools_0002",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "tools",
+  "entity": "Scanning Probe",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Scanning Probe illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Atomic-scale surface scanner",
+   "Material": "Sharp tip probe"
+  },
+  "confusions": [
+   "STM",
+   "AFM",
+   "NSOM"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_tools_0003",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "tools",
+  "entity": "Atomic Force Microscope",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Atomic Force Microscope illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Surface topology scanner",
+   "Material": "Cantilever probe"
+  },
+  "confusions": [
+   "STM",
+   "SEM",
+   "SNOM"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_tools_0004",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "tools",
+  "entity": "Lithography",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Lithography illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Nanoscale patterning tool",
+   "Material": "Light electron beam"
+  },
+  "confusions": [
+   "Photolithography",
+   "E-beam",
+   "Nanoimprint"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_tools_0005",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "tools",
+  "entity": "Clean Room",
+  "entity_type": "Facility",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Clean Room illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Facility",
+   "Signature": "Dust-free fabrication environment",
+   "Material": "Filtered air room"
+  },
+  "confusions": [
+   "Lab",
+   "Fabrication Facility",
+   "Wafer Fab"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_tools_0006",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "tools",
+  "entity": "Centrifuge",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Centrifuge illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Nanoscale separation device",
+   "Material": "Spinning separator"
+  },
+  "confusions": [
+   "Ultracentrifuge",
+   " Separator",
+   "Filter"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_materials_0001",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "materials",
+  "entity": "Nanocomposite",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nanocomposite illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "Nano-reinforced composite",
+   "Material": "Embedded nanoparticles"
+  },
+  "confusions": [
+   "Composite",
+   "Polymer",
+   "Matrix"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_materials_0002",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "materials",
+  "entity": "Nanocrystal",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nanocrystal illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Nanoscale crystal",
+   "Material": "Single crystal particle"
+  },
+  "confusions": [
+   "Quantum Dot",
+   "Nanoparticle",
+   "Colloid"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_materials_0003",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "materials",
+  "entity": "Dendrimer",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Dendrimer illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Molecule",
+   "Signature": "Tree-like nanomolecule",
+   "Material": "Branched polymer"
+  },
+  "confusions": [
+   "Polymer",
+   "Nanoparticle",
+   "Cage Molecule"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_materials_0004",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "materials",
+  "entity": "Hydrogel",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Hydrogel illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "Water-swollen nanoscale network",
+   "Material": "Crosslinked polymer"
+  },
+  "confusions": [
+   "Gel",
+   "Polymer Network",
+   "Smart Material"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_materials_0005",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "materials",
+  "entity": "Metal-Organic Framework",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Metal-Organic Framework illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Porous nanomaterial cage",
+   "Material": "Metal organic linker"
+  },
+  "confusions": [
+   "Zeolite",
+   "COF",
+   "Porous Material"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_materials_0006",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "materials",
+  "entity": "Aerogel",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Aerogel illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "Ultralight nanoporous solid",
+   "Material": "99% air solid"
+  },
+  "confusions": [
+   "Foam",
+   "Gel",
+   "Insulator"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_materials_0007",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "materials",
+  "entity": "Superconductor",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Superconductor illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "Zero-resistance nanomaterial",
+   "Material": "Quantum coherence"
+  },
+  "confusions": [
+   "Conductor",
+   "Cooper Pair",
+   "Meissner Effect"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_materials_0008",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "materials",
+  "entity": "Shape Memory Alloy",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Shape Memory Alloy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "Temperature-responsive metal",
+   "Material": "Phase-changing metal"
+  },
+  "confusions": [
+   "Nitinol",
+   "Martensite",
+   "Smart Material"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0009",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Surface Area",
+  "entity_type": "Property",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Surface Area illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Property",
+   "Signature": "Enhanced nanoscale surface",
+   "Material": "High area ratio"
+  },
+  "confusions": [
+   "Volume Ratio",
+   "Porosity",
+   "Reactivity"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0010",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Quantum Confinement",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Confinement illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Nanoscale quantum effect",
+   "Material": "Electron confinement"
+  },
+  "confusions": [
+   "Quantum Dot",
+   "Band Gap",
+   "Size Effect"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0011",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Brownian Motion",
+  "entity_type": "Phenomenon",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Brownian Motion illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Phenomenon",
+   "Signature": "Nanoscale random movement",
+   "Material": "Thermal jiggle"
+  },
+  "confusions": [
+   "Diffusion",
+   "Random Walk",
+   "Thermal Motion"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0012",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Van der Waals Force",
+  "entity_type": "Force",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Van der Waals Force illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Force",
+   "Signature": "Nanoscale attraction force",
+   "Material": "Intermolecular attraction"
+  },
+  "confusions": [
+   "Surface Tension",
+   "Adhesion",
+   "Casimir Force"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_concepts_0013",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "concepts",
+  "entity": "Casimir Effect",
+  "entity_type": "Phenomenon",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Casimir Effect illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Phenomenon",
+   "Signature": "Quantum vacuum force",
+   "Material": "Nanoscale attraction"
+  },
+  "confusions": [
+   "Van der Waals",
+   "Quantum",
+   "Vacuum Energy"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_safety_0001",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "safety",
+  "entity": "Nanotoxicology",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nanotoxicology illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Field",
+   "Signature": "Nanoscale safety study",
+   "Material": "Toxicity of nanoparticles"
+  },
+  "confusions": [
+   "Toxicology",
+   "Safety",
+   "Health Risk"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_safety_0002",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "safety",
+  "entity": "Environmental Impact",
+  "entity_type": "Concern",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Environmental Impact illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concern",
+   "Signature": "Nano waste in environment",
+   "Material": "Ecological risk"
+  },
+  "confusions": [
+   "Pollution",
+   "Persistence",
+   "Bioaccumulation"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_history_0001",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "history",
+  "entity": "Feynman Lecture",
+  "entity_type": "History",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Feynman Lecture illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "History",
+   "Signature": "Theres plenty of room at the bottom",
+   "Material": "Foundational talk"
+  },
+  "confusions": [
+   "Drexler",
+   "Smalley",
+   "Nano Vision"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_history_0002",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "history",
+  "entity": "Scanning Tunneling Microscope",
+  "entity_type": "Invention",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Scanning Tunneling Microscope illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Invention",
+   "Signature": "First atom imaging tool",
+   "Material": "Quantum tunneling"
+  },
+  "confusions": [
+   "STM",
+   "Binnig",
+   "Rohrer"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_history_0003",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "history",
+  "entity": "Drexler Molecular Manufacturing",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Drexler Molecular Manufacturing illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Molecular assembler vision",
+   "Material": "Nanoscale assembly"
+  },
+  "confusions": [
+   "Self-Assembly",
+   "Molecular Machine",
+   "Grey Goo"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0001",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Molecular Machine",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Molecular Machine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Nanoscale mechanical device",
+   "Material": "Molecular motor"
+  },
+  "confusions": [
+   "Nanobot",
+   "Molecular Motor",
+   "Rotaxane"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0002",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Nanorobot",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nanorobot illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Autonomous nanoscale robot",
+   "Material": "Medical nanobot"
+  },
+  "confusions": [
+   "Molecular Machine",
+   "Drug Delivery",
+   "Nanosub"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0003",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Space Elevator",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Space Elevator illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Nanotube cable to space",
+   "Material": "Carbon nanotube ribbon"
+  },
+  "confusions": [
+   "Nanotube",
+   "Tether",
+   "Geostationary"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0004",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Quantum Computer",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Quantum Computer illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Nanoscale quantum computing",
+   "Material": "Qubit processor"
+  },
+  "confusions": [
+   "Quantum Dot",
+   "Qubit",
+   "Superposition"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0005",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Smart Dust",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Smart Dust illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Networked nanoscale sensors",
+   "Material": "Mote sensors"
+  },
+  "confusions": [
+   "Sensor Network",
+   "MEMS",
+   "Nanosensor"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0006",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Artificial Cell",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Artificial Cell illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Synthetic nanoscale cell",
+   "Material": "Minimal synthetic life"
+  },
+  "confusions": [
+   "Protocell",
+   "Liposome",
+   "Synthetic Biology"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0007",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Nano Battery",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nano Battery illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Nanoscale energy storage",
+   "Material": "Nanowire battery"
+  },
+  "confusions": [
+   "Lithium Ion",
+   "Supercapacitor",
+   "Thin Film Battery"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0008",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Nano Filter",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nano Filter illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Virus-blocking nanomembrane",
+   "Material": "Precision filtration"
+  },
+  "confusions": [
+   "Water Filter",
+   "Air Filter",
+   "Nanopore"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0009",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "Nano Catalyst",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Nano Catalyst illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Material",
+   "Signature": "High-surface-area catalyst",
+   "Material": "Nanoscale catalysis"
+  },
+  "confusions": [
+   "Catalyst",
+   "Enzyme",
+   "Surface Area"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_nanotechnology_future_0010",
+  "universe": "science_lab",
+  "world": "nanotechnology",
+  "subcategory": "future",
+  "entity": "DNA Nanotechnology",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "DNA Nanotechnology illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Field",
+   "Signature": "DNA as building material",
+   "Material": "DNA origami"
+  },
+  "confusions": [
+   "DNA",
+   "Origami",
+   "Molecular Scaffold"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]
