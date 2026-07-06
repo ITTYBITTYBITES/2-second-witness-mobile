@@ -76,7 +76,7 @@ func _on_discover_pressed():
 	print("BUTTON PRESSED: BtnDiscover")
 	var kernel = InteractionKernel if InteractionKernel else get_tree().root.get_node_or_null("InteractionKernel")
 	if kernel and not kernel.consume_provenance("BtnDiscover", null): return
-	if kernel: kernel.commit_intent({"type": "scene_shift", "target": "WeeklyFeaturedScreen"})
+	if kernel: kernel.commit_intent({"type": "scene_shift", "target": "DailyExpeditionScreen"})
 	else: discover_requested.emit()
 
 func _on_settings_pressed():

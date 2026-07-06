@@ -96,6 +96,27 @@ func on_scene_transition_complete():
 func goto_landing():
 	show_landing_screen()
 
+func _show_daily_expedition():
+	print("[ROUTER] Opening DailyExpeditionScreen.")
+	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
+	if active_secondary_screen:
+		active_secondary_screen.queue_free()
+		active_secondary_screen = null
+	var exp_scene = load("res://scenes/ui/screens/DailyExpeditionScreen.tscn")
+	if exp_scene:
+		active_secondary_screen = exp_scene.instantiate()
+		active_secondary_screen.name = "DailyExpeditionScreen"
+		if modal_mgr:
+			modal_mgr.push_modal(active_secondary_screen, true, "NavigationRouter")
+		else:
+			var ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer/NavigationUI")
+			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
+			if ui_layer: ui_layer.add_child(active_secondary_screen)
+		active_secondary_screen.return_requested.connect(func(): show_landing_screen())
+		active_secondary_screen.expedition_world_selected.connect(func(u_id, w_id): _on_play_universe_requested(u_id))
+		_update_nav_log("DailyExpeditionScreen", false)
+
+
 func show_landing_screen():
 	if StructuredLogger and StructuredLogger.has_method("log_event_trace"):
 		StructuredLogger.log_event_trace(self, "external_call", "show_landing_screen()")
@@ -297,7 +318,7 @@ func toggle_mirror_modal():
 
 func _on_play_requested():
 	print("STEP 1: PLAY REQUEST RECEIVED")
-	print("[ROUTER] Tapping Play -> Opening Universe List (WeeklyFeaturedScreen)")
+	print("[ROUTER] Tapping Play -> Opening Daily Expedition")
 	_on_discover_requested()
 
 func _on_profile_requested():
@@ -319,10 +340,10 @@ func _on_discover_requested():
 	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
 	if modal_mgr: modal_mgr.pop_all_modals(null, "NavigationRouter")
 		
-	var discover_scene = load("res://scenes/ui/screens/WeeklyFeaturedScreen.tscn")
+	var discover_scene = load("res://scenes/ui/screens/DailyExpeditionScreen.tscn")
 	if discover_scene:
 		active_secondary_screen = discover_scene.instantiate()
-		active_secondary_screen.name = "WeeklyFeaturedScreen"
+		active_secondary_screen.name = "DailyExpeditionScreen"
 		if modal_mgr:
 			modal_mgr.push_modal(active_secondary_screen, true, "NavigationRouter")
 		else:
@@ -330,7 +351,7 @@ func _on_discover_requested():
 			if not ui_layer: ui_layer = get_tree().root.get_node_or_null("MainShell/UILayer")
 			if ui_layer: ui_layer.add_child(active_secondary_screen)
 		
-		_update_nav_log("WeeklyFeaturedScreen", false)
+		_update_nav_log("DailyExpeditionScreen", false)
 		active_secondary_screen.return_requested.connect(show_landing_screen)
 		active_secondary_screen.play_universe_requested.connect(_on_play_universe_requested)
 

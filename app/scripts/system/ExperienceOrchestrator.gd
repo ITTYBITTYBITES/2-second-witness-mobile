@@ -57,7 +57,7 @@ func request_navigation_transition(target_screen: String, payload: Dictionary = 
 	if router:
 		match target_screen:
 			"LandingScreen": if router.has_method("show_landing_screen"): router.show_landing_screen()
-			"WeeklyFeaturedScreen": if router.has_method("_on_discover_requested"): router._on_discover_requested()
+			"DailyExpeditionScreen": if router.has_method("_on_discover_requested"): router._on_discover_requested()
 			"WorldSelectScreen": if router.has_method("_on_play_universe_requested"): router._on_play_universe_requested(payload.get("universe_id", active_state.current_universe))
 			"PlayerProfileScreen": if router.has_method("_on_profile_requested"): router._on_profile_requested()
 			"GameplayHUD": if router.has_method("_on_world_selected"): router._on_world_selected(payload.get("universe_id", active_state.current_universe), payload.get("world_id", active_state.current_world))

@@ -220,7 +220,7 @@ func _execute_serialized_command(command: Dictionary):
 			if orch and orch.has_method("request_navigation_transition"):
 				orch.request_navigation_transition(target)
 			elif target == "LandingScreen": if NavigationRouter: NavigationRouter.show_landing_screen()
-			elif target == "WeeklyFeaturedScreen": if NavigationRouter: NavigationRouter._on_discover_requested()
+			elif target == "DailyExpeditionScreen": if NavigationRouter: NavigationRouter._show_daily_expedition()
 		"toggle_utility":
 			var u_id = command.get("utility_id", ModalWindowManager.UtilityID.MIRROR if ModalWindowManager else 0)
 			var is_mirror = false
@@ -240,7 +240,7 @@ func _execute_serialized_command(command: Dictionary):
 		"enter_stream":
 			var orch = Engine.get_main_loop().root.get_node_or_null("ExperienceOrchestrator")
 			if orch and orch.has_method("request_navigation_transition"):
-				orch.request_navigation_transition("WeeklyFeaturedScreen")
+				orch.request_navigation_transition("DailyExpeditionScreen")
 			elif NavigationRouter: NavigationRouter._on_play_requested()
 		"play_universe":
 			var u_id = command.get("universe_id", "")
