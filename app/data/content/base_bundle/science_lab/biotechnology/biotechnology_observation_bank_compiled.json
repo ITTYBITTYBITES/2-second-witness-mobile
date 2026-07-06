@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0001",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Recombinant DNA",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Recombinant DNA illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Combining DNA from different sources",
+   "Material": "Engineered DNA"
+  },
+  "confusions": [
+   "Plasmid",
+   "Gene Splicing",
+   "PCR"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0002",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Plasmid",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Plasmid illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Small circular DNA vector",
+   "Material": "DNA molecule"
+  },
+  "confusions": [
+   "Vector",
+   "Bacteriophage",
+   "Cosmid"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0003",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Fermentation",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Fermentation illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Microbes converting sugars",
+   "Material": "Biological process"
+  },
+  "confusions": [
+   "Bioreactor",
+   "Yeast Culture",
+   "Brewing"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0004",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Bioreactor",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Bioreactor illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Vessel for biological production",
+   "Material": "Steel glass vessel"
+  },
+  "confusions": [
+   "Fermenter",
+   "Incubator",
+   "Centrifuge"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0005",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Enzyme",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Enzyme illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Biological catalyst protein",
+   "Material": "Protein molecule"
+  },
+  "confusions": [
+   "Catalyst",
+   "Protein",
+   "Coenzyme"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0006",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Monoclonal Antibody",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Monoclonal Antibody illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Identical immune proteins",
+   "Material": "Protein therapeutic"
+  },
+  "confusions": [
+   "Polyclonal",
+   "Antiserum",
+   "Vaccine"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0007",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Stem Cell",
+  "entity_type": "Cell",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Stem Cell illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Undifferentiated master cell",
+   "Material": "Biological cell"
+  },
+  "confusions": [
+   "IPSC",
+   "Embryonic Cell",
+   "Progenitor"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0008",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Tissue Culture",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Tissue Culture illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Growing cells in lab",
+   "Material": "Laboratory technique"
+  },
+  "confusions": [
+   "Cell Line",
+   "Organoid",
+   "Biopsy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0001",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Insulin",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Insulin illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharmaceutical",
+   "Signature": "Recombinant diabetes treatment",
+   "Material": "Protein hormone"
+  },
+  "confusions": [
+   "Glucagon",
+   "Growth Hormone",
+   "Interferon"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0002",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Vaccine",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Vaccine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharmaceutical",
+   "Signature": "Immune system training",
+   "Material": "Biological preparation"
+  },
+  "confusions": [
+   "Antibody",
+   "Antigen",
+   "Booster"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0003",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Golden Rice",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Golden Rice illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "GMO",
+   "Signature": "Vitamin A enhanced rice",
+   "Material": "Engineered crop"
+  },
+  "confusions": [
+   "Bt Cotton",
+   "GMO Corn",
+   "Soybean"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0004",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Bt Cotton",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Bt Cotton illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "GMO",
+   "Signature": "Insect-resistant cotton",
+   "Material": "Engineered crop"
+  },
+  "confusions": [
+   "Golden Rice",
+   "Bt Corn",
+   "Papaya"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0005",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Penicillin",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Penicillin illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharmaceutical",
+   "Signature": "First antibiotic from mold",
+   "Material": "Fungal product"
+  },
+  "confusions": [
+   "Streptomycin",
+   "Tetracycline",
+   "Amoxicillin"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0006",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Gene Therapy",
+  "entity_type": "Treatment",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Gene Therapy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Medical",
+   "Signature": "Treating disease with genes",
+   "Material": "Medical technique"
+  },
+  "confusions": [
+   "CRISPR",
+   "RNAi",
+   "Stem Cell Therapy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0007",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Bioremediation",
+  "entity_type": "Application",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Bioremediation illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Environmental",
+   "Signature": "Cleaning pollution with microbes",
+   "Material": "Environmental technique"
+  },
+  "confusions": [
+   "Phytoremediation",
+   "Biofilter",
+   "Composting"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0008",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "PCR Test",
+  "entity_type": "Diagnostic",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "PCR Test illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Medical",
+   "Signature": "DNA amplification test",
+   "Material": "Diagnostic technique"
+  },
+  "confusions": [
+   "Antigen Test",
+   "Antibody Test",
+   "Culture Test"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0009",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Biofuel",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Biofuel illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Energy",
+   "Signature": "Fuel from biological sources",
+   "Material": "Renewable fuel"
+  },
+  "confusions": [
+   "Ethanol",
+   "Biodiesel",
+   "Biogas"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0010",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Ligase",
+  "entity_type": "Enzyme",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Ligase illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "DNA joining enzyme",
+   "Material": "Protein enzyme"
+  },
+  "confusions": [
+   "Polymerase",
+   "Restriction Enzyme",
+   "Nuclease"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0011",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "Restriction Enzyme",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Restriction Enzyme illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "DNA cutting enzyme",
+   "Material": "Protein enzyme"
+  },
+  "confusions": [
+   "Ligase",
+   "Polymerase",
+   "Nuclease"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_applications_0012",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "applications",
+  "entity": "ELISA",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "ELISA illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Diagnostic",
+   "Signature": "Antibody detection test",
+   "Material": "Lab technique"
+  },
+  "confusions": [
+   "Western Blot",
+   "RIA",
+   "Flow Cytometry"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_organisms_0001",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "organisms",
+  "entity": "E coli",
+  "entity_type": "Organism",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "E coli illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Model Organism",
+   "Signature": "Common lab bacterium",
+   "Material": "Bacterial cell"
+  },
+  "confusions": [
+   "Yeast",
+   "Bacillus",
+   "Streptococcus"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_organisms_0002",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "organisms",
+  "entity": "Yeast",
+  "entity_type": "Organism",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Yeast illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Model Organism",
+   "Signature": "Baking and brewing fungus",
+   "Material": "Fungal cell"
+  },
+  "confusions": [
+   "E coli",
+   "Mold",
+   "Mushroom"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_organisms_0003",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "organisms",
+  "entity": "Bacteriophage",
+  "entity_type": "Organism",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Bacteriophage illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Virus",
+   "Signature": "Bacteria-infecting virus",
+   "Material": "Viral particle"
+  },
+  "confusions": [
+   "Virus",
+   "Plasmid",
+   "Prion"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_organisms_0004",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "organisms",
+  "entity": "Agrobacterium",
+  "entity_type": "Organism",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Agrobacterium illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Plant genetic engineering tool",
+   "Material": "Soil bacterium"
+  },
+  "confusions": [
+   "E coli",
+   "Rhizobium",
+   "Bacillus"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_techniques_0001",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "techniques",
+  "entity": "Gel Electrophoresis",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Gel Electrophoresis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab Method",
+   "Signature": "DNA separation on gel",
+   "Material": "Lab technique"
+  },
+  "confusions": [
+   "PCR",
+   "Blotting",
+   "Chromatography"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_techniques_0002",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "techniques",
+  "entity": "DNA Sequencing",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "DNA Sequencing illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab Method",
+   "Signature": "Reading genetic code",
+   "Material": "Sequencing technology"
+  },
+  "confusions": [
+   "PCR",
+   "Microarray",
+   "Genotyping"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_techniques_0003",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "techniques",
+  "entity": "Cloning",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Cloning illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Creating genetic copies",
+   "Material": "Biotechnology"
+  },
+  "confusions": [
+   "SCNT",
+   "IVF",
+   "Twinning"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_techniques_0004",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "techniques",
+  "entity": "CRISPR",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "CRISPR illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Precision gene editing",
+   "Material": "Gene editing tool"
+  },
+  "confusions": [
+   "TALEN",
+   "Zinc Finger",
+   "RNAi"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_techniques_0005",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "techniques",
+  "entity": "Flow Cytometry",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Flow Cytometry illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Diagnostic",
+   "Signature": "Cell counting and sorting",
+   "Material": "Lab instrument"
+  },
+  "confusions": [
+   "FACS",
+   "Microscopy",
+   "ELISA"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_techniques_0006",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "techniques",
+  "entity": "Western Blot",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Western Blot illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Diagnostic",
+   "Signature": "Protein detection method",
+   "Material": "Lab technique"
+  },
+  "confusions": [
+   "ELISA",
+   "Northern Blot",
+   "Southern Blot"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_ethics_0001",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "ethics",
+  "entity": "GMO Safety",
+  "entity_type": "Issue",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "GMO Safety illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Ethics",
+   "Signature": "Engineered food concerns",
+   "Material": "Safety debate"
+  },
+  "confusions": [
+   "Labeling",
+   "Organic",
+   "Allergen Risk"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_ethics_0002",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "ethics",
+  "entity": "Bioethics",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Bioethics illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Ethics",
+   "Signature": "Ethical implications of biotech",
+   "Material": "Ethical framework"
+  },
+  "confusions": [
+   "Medical Ethics",
+   "Research Ethics",
+   "Bioethics"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_ethics_0003",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "ethics",
+  "entity": "Gene Editing Ethics",
+  "entity_type": "Issue",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Gene Editing Ethics illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Ethics",
+   "Signature": "Ethical concerns of editing",
+   "Material": "Ethical debate"
+  },
+  "confusions": [
+   "CRISPR Babies",
+   "Designer Babies",
+   "Enhancement"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_ethics_0004",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "ethics",
+  "entity": "Patent",
+  "entity_type": "Issue",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Patent illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Law",
+   "Signature": "Ownership of genetic inventions",
+   "Material": "Legal framework"
+  },
+  "confusions": [
+   "Copyright",
+   "Trademark",
+   "IP"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0009",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Vaccine",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Vaccine illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Medical",
+   "Signature": "Immune training",
+   "Material": "Biological preparation"
+  },
+  "confusions": [
+   "Antibody",
+   "Booster",
+   "Adjuvant"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0010",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Antigen",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Antigen illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Medical",
+   "Signature": "Immune trigger molecule",
+   "Material": "Molecular marker"
+  },
+  "confusions": [
+   "Antibody",
+   "Epitope",
+   "Pathogen"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0011",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Antibody",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Antibody illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Medical",
+   "Signature": "Immune defense protein",
+   "Material": "Y-shaped protein"
+  },
+  "confusions": [
+   "Antigen",
+   "B Cell",
+   "Immunoglobulin"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0012",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Immune System",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Immune System illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Medical",
+   "Signature": "Body defense network",
+   "Material": "Biological system"
+  },
+  "confusions": [
+   "Antibody",
+   "Vaccine",
+   "T Cell"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0013",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Antibiotic",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Antibiotic illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Medical",
+   "Signature": "Bacteria-killing drug",
+   "Material": "Pharmaceutical"
+  },
+  "confusions": [
+   "Antiviral",
+   "Antifungal",
+   "Disinfectant"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0014",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Vitamin",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Vitamin illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Nutrition",
+   "Signature": "Essential micronutrient",
+   "Material": "Organic compound"
+  },
+  "confusions": [
+   "Mineral",
+   "Supplement",
+   "Nutrient"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0015",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Plasmid",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Plasmid illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "DNA delivery vector",
+   "Material": "Circular DNA"
+  },
+  "confusions": [
+   "Vector",
+   "Viral Vector",
+   "Liposome"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0016",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Vector",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Vector illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Gene delivery vehicle",
+   "Material": "DNA carrier"
+  },
+  "confusions": [
+   "Plasmid",
+   "Viral Vector",
+   "Liposome"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0017",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Promoter",
+  "entity_type": "Element",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Promoter illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Genetics",
+   "Signature": "Gene activation switch",
+   "Material": "DNA sequence"
+  },
+  "confusions": [
+   "Enhancer",
+   "Operator",
+   "Terminator"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0018",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Insulin",
+  "entity_type": "Product",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Insulin illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Pharmaceutical",
+   "Signature": "Blood sugar hormone",
+   "Material": "Protein hormone"
+  },
+  "confusions": [
+   "Glucagon",
+   "Insulin Receptor",
+   "Diabetes"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0019",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Enzyme",
+  "entity_type": "Molecule",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Enzyme illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biochemistry",
+   "Signature": "Biological catalyst",
+   "Material": "Protein catalyst"
+  },
+  "confusions": [
+   "Catalyst",
+   "Active Site",
+   "Substrate"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0020",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Protein Folding",
+  "entity_type": "Process",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Protein Folding illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biochemistry",
+   "Signature": "3D structure formation",
+   "Material": "Molecular process"
+  },
+  "confusions": [
+   "Denaturation",
+   "Chaperone",
+   "Prion"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0021",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Proteomics",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Proteomics illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biochemistry",
+   "Signature": "Study of all proteins",
+   "Material": "Research field"
+  },
+  "confusions": [
+   "Genomics",
+   "Transcriptomics",
+   "Metabolomics"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0022",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Synthetic Biology",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Synthetic Biology illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Designing new biological systems",
+   "Material": "Engineering field"
+  },
+  "confusions": [
+   "Biotechnology",
+   "Bioengineering",
+   "Systems Biology"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0023",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Biosensor",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Biosensor illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Biological detection device",
+   "Material": "Sensor device"
+  },
+  "confusions": [
+   "Glucose Monitor",
+   "Pregnancy Test",
+   "DNA Chip"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_biotechnology_concepts_0024",
+  "universe": "science_lab",
+  "world": "biotechnology",
+  "subcategory": "concepts",
+  "entity": "Bioplastic",
+  "entity_type": "Material",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Bioplastic illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Biotechnology",
+   "Signature": "Plastic from biological sources",
+   "Material": "Biodegradable material"
+  },
+  "confusions": [
+   "Bioplastic",
+   "PLA",
+   "PHA"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

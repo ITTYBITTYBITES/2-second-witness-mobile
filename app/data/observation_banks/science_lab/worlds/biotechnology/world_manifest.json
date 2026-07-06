@@ -3,7 +3,99 @@
   "universe": "science_lab",
   "world": "biotechnology",
   "display_name": "Biotechnology",
-  "subcategory_order": [],
-  "subcategories": [],
-  "status": "SCAFFOLDED"
+  "subcategory_order": [
+    "applications",
+    "concepts",
+    "ethics",
+    "organisms",
+    "techniques"
+  ],
+  "subcategories": [
+    {
+      "id": "applications",
+      "display_name": "Applications",
+      "implemented_observations": 12,
+      "target_observations": 12,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "concepts",
+      "display_name": "Concepts",
+      "implemented_observations": 24,
+      "target_observations": 24,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "ethics",
+      "display_name": "Ethics",
+      "implemented_observations": 4,
+      "target_observations": 4,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "organisms",
+      "display_name": "Organisms",
+      "implemented_observations": 4,
+      "target_observations": 4,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "techniques",
+      "display_name": "Techniques",
+      "implemented_observations": 6,
+      "target_observations": 6,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    }
+  ],
+  "status": "POPULATED"
 }

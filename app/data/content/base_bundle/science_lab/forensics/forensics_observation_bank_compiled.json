@@ -1,1 +1,1430 @@
-[]
+[
+ {
+  "observation_id": "science_lab_forensics_techniques_0001",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Fingerprinting",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Fingerprinting illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Unique ridge pattern identification",
+   "Material": "Dermatoglyphics"
+  },
+  "confusions": [
+   "DNA Profiling",
+   "Palm Print",
+   "Footprint"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0002",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "DNA Profiling",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "DNA Profiling illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Genetic identification",
+   "Material": "DNA analysis"
+  },
+  "confusions": [
+   "Fingerprinting",
+   "Paternity Test",
+   "CODIS"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0003",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Ballistics",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Ballistics illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Firearm and bullet analysis",
+   "Material": "Ammunition analysis"
+  },
+  "confusions": [
+   "Toolmarks",
+   "Firearms ID",
+   "Caliber"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0004",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Toxicology",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Toxicology illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Poison and drug detection",
+   "Material": "Chemical analysis"
+  },
+  "confusions": [
+   "Drug Test",
+   "Blood Alcohol",
+   "Poison Screen"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0005",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Blood Spatter",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Blood Spatter illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Blood pattern analysis",
+   "Material": "Forensic technique"
+  },
+  "confusions": [
+   "DNA",
+   "Serology",
+   "Blood Type"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0006",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Autopsy",
+  "entity_type": "Procedure",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Autopsy illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Post-mortem examination",
+   "Material": "Medical procedure"
+  },
+  "confusions": [
+   "Pathology",
+   "Necropsy",
+   "Dissection"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0007",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Impression Evidence",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Impression Evidence illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Shoe and tire marks",
+   "Material": "Pattern evidence"
+  },
+  "confusions": [
+   "Fingerprinting",
+   "Toolmarks",
+   "Bite Mark"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0008",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Digital Forensics",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Digital Forensics illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Computer crime investigation",
+   "Material": "Electronic evidence"
+  },
+  "confusions": [
+   "Cybersecurity",
+   "Data Recovery",
+   "Network Analysis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0009",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Trace Evidence",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Trace Evidence illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Hair fiber glass analysis",
+   "Material": "Microscopic evidence"
+  },
+  "confusions": [
+   "Hair Analysis",
+   "Fiber Analysis",
+   "Glass Fragments"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_techniques_0010",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "techniques",
+  "entity": "Entomology",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Entomology illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Insects on decomposing bodies",
+   "Material": "Insect analysis"
+  },
+  "confusions": [
+   "Blowfly",
+   "Maggot",
+   "Beetle"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0001",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Fingerprint",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Fingerprint illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Ridge pattern",
+   "Material": "Skin print"
+  },
+  "confusions": [
+   "Palm Print",
+   "Footprint",
+   "Lip Print"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0002",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "DNA",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "DNA illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Genetic material",
+   "Material": "Biological sample"
+  },
+  "confusions": [
+   "Blood",
+   "Saliva",
+   "Hair"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0003",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Blood",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Blood illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Biological fluid",
+   "Material": "Liquid sample"
+  },
+  "confusions": [
+   "DNA",
+   "Serum",
+   "Plasma"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0004",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Hair",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Hair illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Hair shaft analysis",
+   "Material": "Trace evidence"
+  },
+  "confusions": [
+   "Fiber",
+   "Fur",
+   "DNA"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0005",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Bullet",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Bullet illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Projectile analysis",
+   "Material": "Ammunition"
+  },
+  "confusions": [
+   "Casing",
+   "Cartridge",
+   "Projectile"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0006",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Fiber",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Fiber illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Textile analysis",
+   "Material": "Trace evidence"
+  },
+  "confusions": [
+   "Hair",
+   "Thread",
+   "Fabric"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0007",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Glass",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Glass illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Fragment analysis",
+   "Material": "Trace evidence"
+  },
+  "confusions": [
+   "Fragment",
+   "Shard",
+   "Refraction"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0008",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Soil",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Soil illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Earth material analysis",
+   "Material": "Geological trace"
+  },
+  "confusions": [
+   "Mineral",
+   "Sand",
+   "Clay"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0009",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Document",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Document illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Handwriting analysis",
+   "Material": "Paper evidence"
+  },
+  "confusions": [
+   "Signature",
+   "Ink",
+   "Paper"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_evidence_0010",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "evidence",
+  "entity": "Footwear",
+  "entity_type": "Evidence",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Footwear illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Shoe impression",
+   "Material": "Pattern evidence"
+  },
+  "confusions": [
+   "Tire Mark",
+   "Fingerprint",
+   "Toolmark"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_tools_0001",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "tools",
+  "entity": "Microscope",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Microscope illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab",
+   "Signature": "Magnification instrument",
+   "Material": "Optical instrument"
+  },
+  "confusions": [
+   "SEM",
+   "Magnifier",
+   "Loupe"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_tools_0002",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "tools",
+  "entity": "Magnifying Glass",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Magnifying Glass illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab",
+   "Signature": "Simple magnifier",
+   "Material": "Lens instrument"
+  },
+  "confusions": [
+   "Microscope",
+   "Loupe",
+   "Hand Lens"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_tools_0003",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "tools",
+  "entity": "UV Light",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "UV Light illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab",
+   "Signature": "Ultraviolet evidence detector",
+   "Material": "Light source"
+  },
+  "confusions": [
+   "Alternate Light",
+   "Fluorescence",
+   "Luminescence"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_tools_0004",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "tools",
+  "entity": "Luminol",
+  "entity_type": "Chemical",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Luminol illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab",
+   "Signature": "Blood detection chemical",
+   "Material": "Chemical reagent"
+  },
+  "confusions": [
+   "Fluorescein",
+   "BlueStar",
+   "Phenolphthalein"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_tools_0005",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "tools",
+  "entity": "Comparison Microscope",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Comparison Microscope illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab",
+   "Signature": "Side-by-side comparison",
+   "Material": "Optical instrument"
+  },
+  "confusions": [
+   "Microscope",
+   "SEM",
+   "Stereo Microscope"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_tools_0006",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "tools",
+  "entity": "Spectrometer",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Spectrometer illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab",
+   "Signature": "Chemical identification",
+   "Material": "Analytical instrument"
+  },
+  "confusions": [
+   "Mass Spec",
+   "FTIR",
+   "Raman"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_tools_0007",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "tools",
+  "entity": "Fuming Chamber",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Fuming Chamber illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab",
+   "Signature": "Fingerprint development chamber",
+   "Material": "Fuming equipment"
+  },
+  "confusions": [
+   "Cyanacrylate",
+   "Superglue",
+   "Iodine"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_tools_0008",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "tools",
+  "entity": "Electrophoresis",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Electrophoresis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Lab",
+   "Signature": "DNA separation equipment",
+   "Material": "Gel apparatus"
+  },
+  "confusions": [
+   "PCR",
+   "Sequencer",
+   "Blotting"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0001",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "Chain of Custody",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Chain of Custody illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Legal",
+   "Signature": "Evidence handling record",
+   "Material": "Legal documentation"
+  },
+  "confusions": [
+   "Evidence Log",
+   "Documentation",
+   "Integrity"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0002",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "CODIS",
+  "entity_type": "Database",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "CODIS illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "National DNA database",
+   "Material": "DNA database"
+  },
+  "confusions": [
+   "DNA Profile",
+   "STR",
+   "Allele Frequency"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0003",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "Rigor Mortis",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Rigor Mortis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Body stiffening after death",
+   "Material": "Post-mortem change"
+  },
+  "confusions": [
+   "Lividity",
+   "Algor Mortis",
+   "Decomposition"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0004",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "Lividity",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Lividity illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Blood pooling after death",
+   "Material": "Post-mortem change"
+  },
+  "confusions": [
+   "Rigor Mortis",
+   "Algor Mortis",
+   "Decomposition"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0005",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "Algor Mortis",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Algor Mortis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Body cooling after death",
+   "Material": "Post-mortem change"
+  },
+  "confusions": [
+   "Rigor Mortis",
+   "Lividity",
+   "Body Temperature"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0006",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "Time of Death",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Time of Death illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Estimated death time",
+   "Material": "Forensic estimation"
+  },
+  "confusions": [
+   "Rigor Mortis",
+   "Lividity",
+   "Insects"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0007",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "Probative Value",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Probative Value illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Legal",
+   "Signature": "Evidentiary worth",
+   "Material": "Legal concept"
+  },
+  "confusions": [
+   "Relevance",
+   "Admissibility",
+   "Weight"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0008",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "Expert Witness",
+  "entity_type": "Role",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Expert Witness illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Legal",
+   "Signature": "Professional testimony",
+   "Material": "Legal role"
+  },
+  "confusions": [
+   "Forensic Scientist",
+   "Pathologist",
+   "Toxicologist"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_concepts_0009",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "concepts",
+  "entity": "Circumstantial Evidence",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Circumstantial Evidence illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Legal",
+   "Signature": "Indirect evidence",
+   "Material": "Legal concept"
+  },
+  "confusions": [
+   "Direct Evidence",
+   "Physical Evidence",
+   "Testimonial"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_careers_0001",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "careers",
+  "entity": "Forensic Scientist",
+  "entity_type": "Career",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Forensic Scientist illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Profession",
+   "Signature": "Crime lab analyst",
+   "Material": "Professional role"
+  },
+  "confusions": [
+   "CSI",
+   "Detective",
+   "Pathologist"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_careers_0002",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "careers",
+  "entity": "Medical Examiner",
+  "entity_type": "Career",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Medical Examiner illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Profession",
+   "Signature": "Death investigator",
+   "Material": "Professional role"
+  },
+  "confusions": [
+   "Coroner",
+   "Pathologist",
+   "Forensic Doctor"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_careers_0003",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "careers",
+  "entity": "CSI",
+  "entity_type": "Career",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "CSI illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Profession",
+   "Signature": "Crime scene investigator",
+   "Material": "Professional role"
+  },
+  "confusions": [
+   "Detective",
+   "Forensic Tech",
+   "Evidence Tech"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_careers_0004",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "careers",
+  "entity": "Forensic Pathologist",
+  "entity_type": "Career",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Forensic Pathologist illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Profession",
+   "Signature": "Autopsy specialist",
+   "Material": "Professional role"
+  },
+  "confusions": [
+   "Medical Examiner",
+   "Coroner",
+   "Pathologist"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_careers_0005",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "careers",
+  "entity": "Forensic Psychologist",
+  "entity_type": "Career",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Forensic Psychologist illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Profession",
+   "Signature": "Criminal mind analyst",
+   "Material": "Professional role"
+  },
+  "confusions": [
+   "Profiler",
+   "Psychiatrist",
+   "Criminologist"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0001",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "Locard Exchange Principle",
+  "entity_type": "Principle",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Locard Exchange Principle illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Every contact leaves trace",
+   "Material": "Forensic principle"
+  },
+  "confusions": [
+   "Transfer Evidence",
+   "Trace Evidence",
+   "Contact"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0002",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "CODIS Database",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "CODIS Database illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Convicted offender DNA",
+   "Material": "National database"
+  },
+  "confusions": [
+   "DNA Profile",
+   "STR Loci",
+   "Familial Search"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0003",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "Pollen Analysis",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Pollen Analysis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Plant spore evidence",
+   "Material": "Botanical evidence"
+  },
+  "confusions": [
+   "Palynology",
+   "Spore",
+   "Plant DNA"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0004",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "Facial Reconstruction",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Facial Reconstruction illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Skull to face rebuild",
+   "Material": "Forensic technique"
+  },
+  "confusions": [
+   "Skull",
+   "Clay Model",
+   "Anthropology"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0005",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "Bite Mark Analysis",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Bite Mark Analysis illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Dental pattern matching",
+   "Material": "Forensic technique"
+  },
+  "confusions": [
+   "Dental Record",
+   "Teeth",
+   "Odontology"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0006",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "Voice Identification",
+  "entity_type": "Technique",
+  "features": {
+   "visual": {
+    "color": "#FF69B4",
+    "pattern": "Voice Identification illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Speaker analysis",
+   "Material": "Audio forensics"
+  },
+  "confusions": [
+   "Spectrogram",
+   "Voiceprint",
+   "Acoustic"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0007",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "Lie Detector",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Lie Detector illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Polygraph test",
+   "Material": "Deception detection"
+  },
+  "confusions": [
+   "Polygraph",
+   "GSR",
+   "Heart Rate"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0008",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "K9 Unit",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "K9 Unit illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Detection dog",
+   "Material": "Canine unit"
+  },
+  "confusions": [
+   "Cadaver Dog",
+   "Tracker Dog",
+   "Drug Dog"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "science_lab_forensics_cases_0009",
+  "universe": "science_lab",
+  "world": "forensics",
+  "subcategory": "cases",
+  "entity": "Forensic Anthropology",
+  "entity_type": "Field",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Forensic Anthropology illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Forensic",
+   "Signature": "Skeletal analysis",
+   "Material": "Bone analysis"
+  },
+  "confusions": [
+   "Skeleton",
+   "Osteology",
+   "Bone Age"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

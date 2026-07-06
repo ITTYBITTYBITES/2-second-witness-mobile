@@ -3,7 +3,135 @@
   "universe": "science_lab",
   "world": "optics",
   "display_name": "Optics",
-  "subcategory_order": [],
-  "subcategories": [],
-  "status": "SCAFFOLDED"
+  "subcategory_order": [
+    "applications",
+    "concepts",
+    "eyes",
+    "history",
+    "phenomena",
+    "quantum",
+    "waves"
+  ],
+  "subcategories": [
+    {
+      "id": "applications",
+      "display_name": "Applications",
+      "implemented_observations": 10,
+      "target_observations": 10,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "concepts",
+      "display_name": "Concepts",
+      "implemented_observations": 11,
+      "target_observations": 11,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "eyes",
+      "display_name": "Eyes",
+      "implemented_observations": 6,
+      "target_observations": 6,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "history",
+      "display_name": "History",
+      "implemented_observations": 4,
+      "target_observations": 4,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "phenomena",
+      "display_name": "Phenomena",
+      "implemented_observations": 5,
+      "target_observations": 5,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "quantum",
+      "display_name": "Quantum",
+      "implemented_observations": 8,
+      "target_observations": 8,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    },
+    {
+      "id": "waves",
+      "display_name": "Waves",
+      "implemented_observations": 7,
+      "target_observations": 7,
+      "scenario_preferences": {
+        "preferred": [
+          "rapid_classification",
+          "signal_vs_noise",
+          "odd_one_out"
+        ],
+        "secondary": [
+          "stroop_test",
+          "memory_cascade"
+        ]
+      }
+    }
+  ],
+  "status": "POPULATED"
 }
