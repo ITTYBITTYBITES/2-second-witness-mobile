@@ -89,7 +89,7 @@ func _populate():
 			var w_spec = reg.get_world(u_id, w_id)
 			w_name = str(w_spec.get("display_name", w_name))
 
-		var u_name = u_id.capitalize().Replace("_", " ")
+		var u_name = u_id.capitalize().replace("_", " ")
 		if reg and reg.has_method("get_universe"):
 			var u_spec = reg.get_universe(u_id)
 			u_name = str(u_spec.get("display_name", u_name))
