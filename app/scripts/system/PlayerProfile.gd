@@ -279,6 +279,11 @@ func _apply_loaded_data(data: Dictionary):
 		experience = data.get("experience", 0)
 		current_level = data.get("current_level", 1)
 		player_title = data.get("player_title", "Observer")
+		# Recompute title from level to fix stale saves (e.g. old "Liquid Master")
+		var titles_check = ["Observer", "Pattern Explorer", "Focus Specialist", "Speed Architect", "Pattern Witness", "Master Witness"]
+		var expected_title = titles_check[clamp(current_level - 1, 0, titles_check.size() - 1)]
+		if player_title == "Liquid Master" or player_title == "Liquid Memory" or player_title not in titles_check:
+			player_title = expected_title
 		current_streak = data.get("current_streak", 1)
 		last_active_day = data.get("last_active_day", 0)
 		coins = data.get("coins", 100)

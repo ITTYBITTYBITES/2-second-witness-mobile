@@ -141,9 +141,8 @@ func _apply_progressive_reveal():
 	var world_count = _count_playable_worlds(reg)
 	archive_node.text = "WORLD ARCHIVE\n%d worlds" % world_count
 
-	# Mirror node — shows player title
-	var title = profile.player_title if profile else "Observer"
-	mirror_node.text = title.to_upper()
+	# Mirror node — clear label, not the rank title
+	mirror_node.text = "MIRROR"
 
 # =========================================================
 # INTERACTION HANDLERS (routing unchanged)
