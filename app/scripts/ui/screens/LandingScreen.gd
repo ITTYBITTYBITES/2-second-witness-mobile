@@ -63,61 +63,75 @@ func _apply_progressive_reveal():
 	var sessions = profile.lifetime_sessions if profile else 0
 	var exp_mgr = DailyExpeditionManager if DailyExpeditionManager else get_tree().root.get_node_or_null("DailyExpeditionManager")
 
-	# === FIRST LAUNCH (sessions <= 1): single affordance ===
-	if sessions <= 1:
-		# Only expedition portal visible. Everything else hidden.
+	# --- Stage 0: ARRIVAL (sessions == 0) — single affordance ---
+	if sessions == 0:
 		secondary_row.visible = false
 		secondary_row.modulate.a = 0.0
+		title_label.modulate.a = 0.3
 
-		# No progress numbers — removes meaningless framing
 		if exp_mgr:
-			var exp = exp_mgr.get_expedition()
-			var prog = exp_mgr.get_progress()
-			var completed = int(prog.get("completed", 0))
-			var total = int(prog.get("total", exp.size()))
-
-			if completed == 0:
-				# Truly first time — no progress shown at all
+			var prog0 = exp_mgr.get_progress()
+			if int(prog0.get("completed", 0)) == 0:
 				expedition_portal.text = "BEGIN YOUR FIRST JOURNEY"
 				expedition_label.text = ""
 				subtitle_label.text = "You are beginning."
 			else:
-				# Partial progress but still first session
-				expedition_portal.text = "TODAY'S EXPEDITION\n%d / %d worlds" % [completed, total]
+				# Started but hasn't completed a full session yet
+				expedition_portal.text = "TODAY'S EXPEDITION\n%d / %d worlds" % [int(prog0.get("completed", 0)), int(prog0.get("total", 5))]
 				expedition_label.text = "Continue exploring"
-				subtitle_label.text = "You have arrived."
+				subtitle_label.text = "You are beginning."
 		else:
 			expedition_portal.text = "BEGIN"
-			expedition_label.text = ""
 			subtitle_label.text = "You are beginning."
-
-		# Title very dim on first launch
-		title_label.modulate.a = 0.3
 		return
 
-	# === RETURNING PLAYER (sessions > 1): full environment ===
+	# --- Stage 1: FAMILIARITY (sessions == 1) — faint secondary nodes emerge ---
+	if sessions == 1:
+		secondary_row.visible = true
+		secondary_row.modulate.a = 0.35  # Faint — present but not demanding
+		title_label.modulate.a = 0.4
+
+		if exp_mgr:
+			var prog1 = exp_mgr.get_progress()
+			var c1 = int(prog1.get("completed", 0))
+			var t1 = int(prog1.get("total", 5))
+			if c1 < t1:
+				expedition_portal.text = "TODAY'S EXPEDITION\n%d / %d worlds" % [c1, t1]
+				expedition_label.text = "Continue exploring"
+			else:
+				expedition_portal.text = "EXPEDITION COMPLETE\n%d / %d worlds" % [c1, t1]
+				expedition_label.text = "Return tomorrow"
+			subtitle_label.text = "You have arrived."
+		else:
+			expedition_portal.text = "CONTINUE"
+			subtitle_label.text = "You have arrived."
+
+		# Secondary nodes: visible but muted — Mirror barely readable
+		var reg1 = ContentRegistry if ContentRegistry else get_tree().root.get_node_or_null("ContentRegistry")
+		archive_node.text = "WORLD ARCHIVE\n%d worlds" % _count_playable_worlds(reg1)
+		mirror_node.text = "..."
+		return
+
+	# --- Stage 2: RECOGNITION (sessions >= 2) — full system surface ---
 	secondary_row.visible = true
 	secondary_row.modulate.a = 1.0
-
-	# Title brighter for returning players
 	title_label.modulate.a = 0.5
 
 	if exp_mgr:
-		var exp = exp_mgr.get_expedition()
-		var prog = exp_mgr.get_progress()
-		var completed = int(prog.get("completed", 0))
-		var total = int(prog.get("total", exp.size()))
-		var streak = int(prog.get("streak", 0))
-
-		if completed < total:
-			expedition_portal.text = "TODAY'S EXPEDITION\n%d / %d worlds" % [completed, total]
-			expedition_label.text = "Streak: %d days" % streak
-			subtitle_label.text = "You have arrived."
+		var prog2 = exp_mgr.get_progress()
+		var c2 = int(prog2.get("completed", 0))
+		var t2 = int(prog2.get("total", 5))
+		var streak2 = int(prog2.get("streak", 0))
+		if c2 < t2:
+			expedition_portal.text = "TODAY'S EXPEDITION\n%d / %d worlds" % [c2, t2]
+			expedition_label.text = "Streak: %d days" % streak2
 		else:
-			expedition_portal.text = "EXPEDITION COMPLETE\n%d / %d worlds" % [completed, total]
+			expedition_portal.text = "EXPEDITION COMPLETE\n%d / %d worlds" % [c2, t2]
 			expedition_label.text = "Return tomorrow for a new expedition"
-			subtitle_label.text = "You have arrived."
+		subtitle_label.text = "You have arrived."
 	else:
+		expedition_portal.text = "BEGIN"
+		subtitle_label.text = "You have arrived."
 		expedition_portal.text = "BEGIN"
 		expedition_label.text = ""
 		subtitle_label.text = "You have arrived."
