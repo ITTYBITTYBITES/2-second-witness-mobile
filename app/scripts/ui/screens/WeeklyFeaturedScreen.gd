@@ -141,28 +141,10 @@ func _on_universe_clicked(universe_id: String, _can_play: bool):
 	else:
 		play_universe_requested.emit(universe_id)
 
-func _show_monetization_gate(universe_id: String):
-	if active_gate: active_gate.queue_free()
-	active_gate = monetization_gate_scene.instantiate()
-	active_gate.name = "MonetizationGate"
-	if active_gate.has_method("setup_universe_unlock"):
-		active_gate.setup_universe_unlock(universe_id)
-	elif active_gate.has_method("setup"):
-		active_gate.setup(universe_id)
-		
-	var modal_mgr = ModalWindowManager if ModalWindowManager else get_tree().root.get_node_or_null("ModalWindowManager")
-	if modal_mgr:
-		modal_mgr.push_modal(active_gate, true, "WeeklyFeaturedScreen")
-	else:
-		add_child(active_gate)
-	
-	active_gate.purchase_completed.connect(func():
-		var profile = PlayerProfile if PlayerProfile else get_node_or_null("/root/PlayerProfile")
-		if profile and not profile.unlocked_universes.has(universe_id):
-			profile.unlocked_universes.append(universe_id)
-			profile.save_profile()
-		_populate_grid()
-	)
+# DEVELOPMENT BUILD: _show_monetization_gate disabled. Function retained
+# as placeholder for future monetization re-enablement.
+# func _show_monetization_gate(universe_id: String):
+# 	...
 
 func hide_screen():
 	pass # DEVELOPMENT BUILD: Ads disabled.
