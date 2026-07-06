@@ -1,1 +1,1626 @@
-[]
+[
+ {
+  "observation_id": "history_cold_war_leaders_0001",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "John F. Kennedy",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with swept hair and navy suit"
+   }
+  },
+  "dimensions": {
+   "Category": "US President",
+   "Signature": "Cuban Missile Crisis and Moon landing pledge",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "Richard Nixon",
+   "Lyndon B. Johnson",
+   "Dwight Eisenhower"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0002",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Richard Nixon",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with receding hairline and dark suit"
+   }
+  },
+  "dimensions": {
+   "Category": "US President",
+   "Signature": "Opened diplomatic relations with China and Détente",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "John F. Kennedy",
+   "Gerald Ford",
+   "Dwight Eisenhower"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0003",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Ronald Reagan",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with swept-back hair and warm smile"
+   }
+  },
+  "dimensions": {
+   "Category": "US President",
+   "Signature": "Tear down this wall speech and SDI initiative",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "George H. W. Bush",
+   "Richard Nixon",
+   "Jimmy Carter"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0004",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Dwight D. Eisenhower",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with bald head and military bearing"
+   }
+  },
+  "dimensions": {
+   "Category": "US President",
+   "Signature": "Supreme Allied Commander turned president and Domino Theory",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "Harry Truman",
+   "John F. Kennedy",
+   "George Marshall"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0005",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Harry S. Truman",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with glasses and double-breasted suit"
+   }
+  },
+  "dimensions": {
+   "Category": "US President",
+   "Signature": "Truman Doctrine and Marshall Plan",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "Dwight Eisenhower",
+   "John F. Kennedy",
+   "Franklin Roosevelt"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0006",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Joseph Stalin",
+  "entity_type": "Premier",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait with mustache and military uniform"
+   }
+  },
+  "dimensions": {
+   "Category": "Soviet Premier",
+   "Signature": "Postwar Soviet expansion and Eastern Bloc control",
+   "Material": "Oil painting and photographs"
+  },
+  "confusions": [
+   "Nikita Khrushchev",
+   "Leonid Brezhnev",
+   "Vyacheslav Molotov"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0007",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Nikita Khrushchev",
+  "entity_type": "Premier",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait with bald head and robust build"
+   }
+  },
+  "dimensions": {
+   "Category": "Soviet Premier",
+   "Signature": "Cuban Missile Crisis and de-Stalinization",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "Joseph Stalin",
+   "Leonid Brezhnev",
+   "Mikhail Gorbachev"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0008",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Mikhail Gorbachev",
+  "entity_type": "Premier",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait with birthmark on head"
+   }
+  },
+  "dimensions": {
+   "Category": "Soviet Premier",
+   "Signature": "Glasnost Perestroika and end of the Cold War",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "Leonid Brezhnev",
+   "Boris Yeltsin",
+   "Nikita Khrushchev"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0009",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Leonid Brezhnev",
+  "entity_type": "Premier",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait with bushy eyebrows and medals"
+   }
+  },
+  "dimensions": {
+   "Category": "Soviet Premier",
+   "Signature": "Era of Stagnation and Soviet invasion of Afghanistan",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "Nikita Khrushchev",
+   "Yuri Andropov",
+   "Konstantin Chernenko"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0010",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Winston Churchill",
+  "entity_type": "Prime Minister",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with cigar and bowler hat"
+   }
+  },
+  "dimensions": {
+   "Category": "British Prime Minister",
+   "Signature": "Coined the term Iron Curtain in 1946",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "Clement Attlee",
+   "Harold Macmillan",
+   "Anthony Eden"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0011",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Fidel Castro",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Bearded figure in military fatigues and cap"
+   }
+  },
+  "dimensions": {
+   "Category": "Cuban Leader",
+   "Signature": "Communist revolutionary who allied Cuba with the USSR",
+   "Material": "Photographic portrait"
+  },
+  "confusions": [
+   "Che Guevara",
+   "Raul Castro",
+   "Hugo Chavez"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_leaders_0012",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "leaders",
+  "entity": "Mao Zedong",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait with mole and high-collared suit"
+   }
+  },
+  "dimensions": {
+   "Category": "Chinese Leader",
+   "Signature": "Communist founder of the Peoples Republic of China",
+   "Material": "Oil painting propaganda portrait"
+  },
+  "confusions": [
+   "Deng Xiaoping",
+   "Zhou Enlai",
+   "Chiang Kai-shek"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0001",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Berlin Blockade",
+  "entity_type": "Crisis",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Cargo planes landing at Templehof airport"
+   }
+  },
+  "dimensions": {
+   "Category": "Crisis",
+   "Signature": "Soviet blockade broken by the Berlin Airlift",
+   "Material": "Cargo aircraft and supplies"
+  },
+  "confusions": [
+   "Cuban Missile Crisis",
+   "Berlin Crisis",
+   "Prague Spring"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0002",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Cuban Missile Crisis",
+  "entity_type": "Crisis",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Map of Cuba with missile sites circled"
+   }
+  },
+  "dimensions": {
+   "Category": "Crisis",
+   "Signature": "Thirteen days that brought the world closest to nuclear war",
+   "Material": "Reconnaissance photographs and missile sites"
+  },
+  "confusions": [
+   "Berlin Blockade",
+   "Bay of Pigs",
+   "Korean War"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0003",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Berlin Wall Construction",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Concrete wall with barbed wire dividing a city"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "Physical division of East and West Berlin in 1961",
+   "Material": "Concrete segments and barbed wire"
+  },
+  "confusions": [
+   "Berlin Blockade",
+   "Fall of the Berlin Wall",
+   "Iron Curtain"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0004",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Fall of the Berlin Wall",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Crowds celebrating atop a crumbling wall"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "Symbolic end of the Cold War in November 1989",
+   "Material": "Concrete fragments and graffiti"
+  },
+  "confusions": [
+   "Berlin Wall Construction",
+   "German Reunification",
+   "Prague Spring"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0005",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Bay of Pigs Invasion",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Bay shoreline with failed landing craft"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "Failed CIA-backed invasion of Cuba",
+   "Material": "Landing craft and aircraft"
+  },
+  "confusions": [
+   "Cuban Missile Crisis",
+   "Operation Condor",
+   "Operation Mongoose"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0006",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Prague Spring",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Tanks rolling through Prague streets"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "Czech reform movement crushed by Warsaw Pact invasion",
+   "Material": "Soviet tanks and protests"
+  },
+  "confusions": [
+   "Hungarian Uprising",
+   "Berlin Wall",
+   "Solidarity Movement"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0007",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Hungarian Uprising",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Street fighters with flags in Budapest"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "1956 revolt against Soviet control crushed by tanks",
+   "Material": "Improvised weapons and Soviet armor"
+  },
+  "confusions": [
+   "Prague Spring",
+   "Berlin Blockade",
+   "Solidarity Movement"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0008",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Soviet invasion of Afghanistan",
+  "entity_type": "Conflict",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Soviet helicopters over mountainous terrain"
+   }
+  },
+  "dimensions": {
+   "Category": "Conflict",
+   "Signature": "Decade-long Soviet war against mujahideen fighters",
+   "Material": "Helicopters and AK-47 rifles"
+  },
+  "confusions": [
+   "Vietnam War",
+   "Korean War",
+   "Prague Spring"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0009",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Korean War",
+  "entity_type": "Proxy War",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Map of Korea divided at the 38th parallel"
+   }
+  },
+  "dimensions": {
+   "Category": "Proxy War",
+   "Signature": "First major proxy war dividing Korea at the 38th parallel",
+   "Material": "Military hardware and trenches"
+  },
+  "confusions": [
+   "Vietnam War",
+   "Soviet invasion of Afghanistan",
+   "Bay of Pigs"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0010",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Vietnam War",
+  "entity_type": "Proxy War",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Jungle terrain with helicopters and rice paddies"
+   }
+  },
+  "dimensions": {
+   "Category": "Proxy War",
+   "Signature": "US intervention against communist North Vietnam",
+   "Material": "Helicopters napalm and booby traps"
+  },
+  "confusions": [
+   "Korean War",
+   "Soviet invasion of Afghanistan",
+   "Laotian Civil War"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0011",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Arms Race",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Escalating bar chart of nuclear warheads"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Competition to build ever more nuclear weapons",
+   "Material": "ICBMs and warheads"
+  },
+  "confusions": [
+   "Space Race",
+   "Détente",
+   "Mutually Assured Destruction"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_events_0012",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "events",
+  "entity": "Détente",
+  "entity_type": "Period",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Handshake between US and Soviet leaders"
+   }
+  },
+  "dimensions": {
+   "Category": "Period",
+   "Signature": "Easing of tensions in the 1970s through diplomacy",
+   "Material": "Treaties and diplomatic agreements"
+  },
+  "confusions": [
+   "Arms Race",
+   "Glasnost",
+   "SALT Treaties"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_organizations_0001",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "organizations",
+  "entity": "NATO",
+  "entity_type": "Alliance",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Blue compass star emblem on flag"
+   }
+  },
+  "dimensions": {
+   "Category": "Alliance",
+   "Signature": "Western military alliance against Soviet threat",
+   "Material": "Collective military defense pact"
+  },
+  "confusions": [
+   "Warsaw Pact",
+   "United Nations",
+   "SEATO"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_organizations_0002",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "organizations",
+  "entity": "Warsaw Pact",
+  "entity_type": "Alliance",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Red flag with crossed swords emblem"
+   }
+  },
+  "dimensions": {
+   "Category": "Alliance",
+   "Signature": "Soviet-led military alliance of Eastern Bloc nations",
+   "Material": "Collective military defense pact"
+  },
+  "confusions": [
+   "NATO",
+   "Comecon",
+   "Comintern"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_organizations_0003",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "organizations",
+  "entity": "CIA",
+  "entity_type": "Intelligence Agency",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Seal with eagle on shield"
+   }
+  },
+  "dimensions": {
+   "Category": "Intelligence Agency",
+   "Signature": "US foreign intelligence and covert operations",
+   "Material": "Intelligence networks and covert operations"
+  },
+  "confusions": [
+   "KGB",
+   "FBI",
+   "NSA"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_organizations_0004",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "organizations",
+  "entity": "KGB",
+  "entity_type": "Intelligence Agency",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Shield and sword emblem"
+   }
+  },
+  "dimensions": {
+   "Category": "Intelligence Agency",
+   "Signature": "Soviet security and intelligence agency",
+   "Material": "Espionage networks and surveillance"
+  },
+  "confusions": [
+   "CIA",
+   "Stasi",
+   "GRU"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_organizations_0005",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "organizations",
+  "entity": "Stasi",
+  "entity_type": "Intelligence Agency",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Shield emblem with sword and compass"
+   }
+  },
+  "dimensions": {
+   "Category": "Intelligence Agency",
+   "Signature": "East German secret police with massive surveillance",
+   "Material": "Files informant networks and surveillance"
+  },
+  "confusions": [
+   "KGB",
+   "CIA",
+   "Securitate"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_organizations_0006",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "organizations",
+  "entity": "United Nations",
+  "entity_type": "International Organization",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Blue flag with world map and olive branches"
+   }
+  },
+  "dimensions": {
+   "Category": "International Organization",
+   "Signature": "Global forum for peacekeeping and diplomacy",
+   "Material": "Diplomatic resolutions and peacekeeping forces"
+  },
+  "confusions": [
+   "NATO",
+   "League of Nations",
+   "Warsaw Pact"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_organizations_0007",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "organizations",
+  "entity": "European Economic Community",
+  "entity_type": "Economic Organization",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Circle of stars on blue field"
+   }
+  },
+  "dimensions": {
+   "Category": "Economic Organization",
+   "Signature": "Precursor to the EU promoting Western European unity",
+   "Material": "Trade agreements and common market"
+  },
+  "confusions": [
+   "European Union",
+   "Comecon",
+   "Benelux"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_spacerace_0001",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "spacerace",
+  "entity": "Sputnik 1",
+  "entity_type": "Satellite",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Polished metal sphere with four antennas"
+   }
+  },
+  "dimensions": {
+   "Category": "Satellite",
+   "Signature": "First artificial satellite launched in 1957",
+   "Material": "Polished aluminum sphere"
+  },
+  "confusions": [
+   "Explorer 1",
+   "Vostok 1",
+   "Apollo 11"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_spacerace_0002",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "spacerace",
+  "entity": "Apollo 11",
+  "entity_type": "Space Mission",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Lunar module on the moons surface"
+   }
+  },
+  "dimensions": {
+   "Category": "Space Mission",
+   "Signature": "First manned moon landing in 1969",
+   "Material": "Saturn V rocket and lunar module"
+  },
+  "confusions": [
+   "Apollo 13",
+   "Sputnik 1",
+   "Vostok 1"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_spacerace_0003",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "spacerace",
+  "entity": "Yuri Gagarin",
+  "entity_type": "Cosmonaut",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Figure in white helmet and orange suit"
+   }
+  },
+  "dimensions": {
+   "Category": "Cosmonaut",
+   "Signature": "First human in space aboard Vostok 1",
+   "Material": "Spacesuit and space capsule"
+  },
+  "confusions": [
+   "Neil Armstrong",
+   "Alexei Leonov",
+   "Valentina Tereshkova"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_spacerace_0004",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "spacerace",
+  "entity": "Neil Armstrong",
+  "entity_type": "Astronaut",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Figure in white spacesuit with helmet"
+   }
+  },
+  "dimensions": {
+   "Category": "Astronaut",
+   "Signature": "First human to walk on the moon",
+   "Material": "Apollo spacesuit"
+  },
+  "confusions": [
+   "Buzz Aldrin",
+   "Yuri Gagarin",
+   "Michael Collins"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_spacerace_0005",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "spacerace",
+  "entity": "Mir Space Station",
+  "entity_type": "Space Station",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Modular orbital station with solar panels"
+   }
+  },
+  "dimensions": {
+   "Category": "Space Station",
+   "Signature": "First long-duration modular space station",
+   "Material": "Aluminum modules and solar arrays"
+  },
+  "confusions": [
+   "Skylab",
+   "ISS",
+   "Salyut"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_spacerace_0006",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "spacerace",
+  "entity": "Saturn V Rocket",
+  "entity_type": "Rocket",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Tall three-stage rocket with black and white markings"
+   }
+  },
+  "dimensions": {
+   "Category": "Rocket",
+   "Signature": "Most powerful rocket that carried humans to the moon",
+   "Material": "Aluminum and kerosene fuel tanks"
+  },
+  "confusions": [
+   "Soyuz Rocket",
+   "Falcon 9",
+   "Space Shuttle"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_technology_0001",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "technology",
+  "entity": "Atomic Bomb",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Mushroom cloud rising over a city"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Fission bomb based on uranium or plutonium",
+   "Material": "Uranium-235 or plutonium-239"
+  },
+  "confusions": [
+   "Hydrogen Bomb",
+   "ICBM",
+   "Napalm"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_technology_0002",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "technology",
+  "entity": "Hydrogen Bomb",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Massive fireball over an atoll"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Fusion bomb vastly more powerful than fission bombs",
+   "Material": "Deuterium and tritium with fission trigger"
+  },
+  "confusions": [
+   "Atomic Bomb",
+   "ICBM",
+   "Neutron Bomb"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_technology_0003",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "technology",
+  "entity": "ICBM",
+  "entity_type": "Weapon System",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Tall missile in underground silo"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon System",
+   "Signature": "Intercontinental missile delivering nuclear warheads",
+   "Material": "Rocket stages and guidance systems"
+  },
+  "confusions": [
+   "Cruise Missile",
+   "SLBM",
+   "Scud Missile"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_technology_0004",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "technology",
+  "entity": "B-52 Stratofortress",
+  "entity_type": "Aircraft",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Large swept-wing bomber with eight engines"
+   }
+  },
+  "dimensions": {
+   "Category": "Aircraft",
+   "Signature": "Long-range strategic nuclear bomber",
+   "Material": "Aluminum airframe with jet engines"
+  },
+  "confusions": [
+   "B-2 Spirit",
+   "Tu-95 Bear",
+   "B-1 Lancer"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_technology_0005",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "technology",
+  "entity": "AK-47",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Curved magazine and wooden stock rifle"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Soviet assault rifle used by proxy forces worldwide",
+   "Material": "Stamped steel and wood"
+  },
+  "confusions": [
+   "M16 Rifle",
+   "SKS Carbine",
+   "MPi-KM"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_technology_0006",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "technology",
+  "entity": "U-2 Spy Plane",
+  "entity_type": "Aircraft",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Long glider-like wings and slender fuselage"
+   }
+  },
+  "dimensions": {
+   "Category": "Aircraft",
+   "Signature": "High-altitude reconnaissance aircraft",
+   "Material": "Aluminum with specialized cameras"
+  },
+  "confusions": [
+   "SR-71 Blackbird",
+   "B-52",
+   "MiG-21"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_technology_0007",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "technology",
+  "entity": "Bunker Buster",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Heavy pointed bomb casing"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Penetrating bomb designed for hardened underground targets",
+   "Material": "Hardened steel casing"
+  },
+  "confusions": [
+   "Bunker Buster",
+   "Daisy Cutter",
+   "Cluster Bomb"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_concepts_0001",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "concepts",
+  "entity": "Iron Curtain",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Heavy curtain dividing a map of Europe"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Metaphorical and physical divide of Europe",
+   "Material": "Metaphorical barrier and fences"
+  },
+  "confusions": [
+   "Berlin Wall",
+   "Berlin Blockade",
+   "Containment Policy"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_concepts_0002",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "concepts",
+  "entity": "Domino Theory",
+  "entity_type": "Doctrine",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Falling dominoes across a map of Southeast Asia"
+   }
+  },
+  "dimensions": {
+   "Category": "Doctrine",
+   "Signature": "Fear that one nation falling to communism would topple neighbors",
+   "Material": "Geopolitical strategy"
+  },
+  "confusions": [
+   "Containment Policy",
+   "Truman Doctrine",
+   "Mutually Assured Destruction"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_concepts_0003",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "concepts",
+  "entity": "Mutually Assured Destruction",
+  "entity_type": "Doctrine",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Two missiles aimed at each other"
+   }
+  },
+  "dimensions": {
+   "Category": "Doctrine",
+   "Signature": "Nuclear deterrence through guaranteed mutual annihilation",
+   "Material": "Nuclear arsenals and deterrence logic"
+  },
+  "confusions": [
+   "Domino Theory",
+   "Flexible Response",
+   "Détente"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_concepts_0004",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "concepts",
+  "entity": "Containment Policy",
+  "entity_type": "Doctrine",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Wall holding back a red wave"
+   }
+  },
+  "dimensions": {
+   "Category": "Doctrine",
+   "Signature": "US strategy to stop the spread of communism",
+   "Material": "Diplomatic and military strategy"
+  },
+  "confusions": [
+   "Domino Theory",
+   "Truman Doctrine",
+   "Marshall Plan"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_concepts_0005",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "concepts",
+  "entity": "Glasnost",
+  "entity_type": "Policy",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Open book radiating light"
+   }
+  },
+  "dimensions": {
+   "Category": "Policy",
+   "Signature": "Gorbachev openness policy reforming Soviet society",
+   "Material": "Political reform and press freedom"
+  },
+  "confusions": [
+   "Perestroika",
+   "Détente",
+   "Demokratizatsiya"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_concepts_0006",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "concepts",
+  "entity": "Perestroika",
+  "entity_type": "Policy",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Gear and wrench reorganizing a machine"
+   }
+  },
+  "dimensions": {
+   "Category": "Policy",
+   "Signature": "Gorbachev economic restructuring of the Soviet system",
+   "Material": "Economic reform legislation"
+  },
+  "confusions": [
+   "Glasnost",
+   "Détente",
+   "New Economic Mechanism"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_concepts_0007",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "concepts",
+  "entity": "Marshall Plan",
+  "entity_type": "Program",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Arrows of aid flowing to Western Europe"
+   }
+  },
+  "dimensions": {
+   "Category": "Program",
+   "Signature": "US economic aid to rebuild postwar Western Europe",
+   "Material": "Billions in grants and loans"
+  },
+  "confusions": [
+   "Truman Doctrine",
+   "Lend-Lease",
+   "Molotov Plan"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_concepts_0008",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "concepts",
+  "entity": "Truman Doctrine",
+  "entity_type": "Doctrine",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Shield protecting Greece and Turkey"
+   }
+  },
+  "dimensions": {
+   "Category": "Doctrine",
+   "Signature": "US pledge to support nations resisting communism",
+   "Material": "Military and economic aid"
+  },
+  "confusions": [
+   "Marshall Plan",
+   "Containment Policy",
+   "Eisenhower Doctrine"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_geography_0001",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "geography",
+  "entity": "Berlin",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Divided city map with four sectors"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Divided city at the front line of the Cold War",
+   "Material": "Concrete wall and barbed wire"
+  },
+  "confusions": [
+   "Bonn",
+   "Vienna",
+   "Geneva"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_geography_0002",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "geography",
+  "entity": "The DMZ",
+  "entity_type": "Border",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Fenced corridor across the Korean peninsula"
+   }
+  },
+  "dimensions": {
+   "Category": "Border",
+   "Signature": "Demilitarized zone dividing North and South Korea",
+   "Material": "Barbed wire fences and guard posts"
+  },
+  "confusions": [
+   "Berlin Wall",
+   "Iron Curtain",
+   "38th Parallel"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_geography_0003",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "geography",
+  "entity": "Check Point Charlie",
+  "entity_type": "Location",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Guard post with sandbags and American flag"
+   }
+  },
+  "dimensions": {
+   "Category": "Location",
+   "Signature": "Famous crossing point between East and West Berlin",
+   "Material": "Guard booth and barriers"
+  },
+  "confusions": [
+   "Berlin Wall",
+   "Brandenburg Gate",
+   "The DMZ"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_geography_0004",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "geography",
+  "entity": "Cuba",
+  "entity_type": "Island Nation",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Caribbean island with Soviet missiles"
+   }
+  },
+  "dimensions": {
+   "Category": "Island Nation",
+   "Signature": "Communist island ninety miles from Florida",
+   "Material": "Tropical island geography"
+  },
+  "confusions": [
+   "North Korea",
+   "Vietnam",
+   "Nicaragua"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_geography_0005",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "geography",
+  "entity": "Siberia",
+  "entity_type": "Region",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Snow-covered taiga and gulag camps"
+   }
+  },
+  "dimensions": {
+   "Category": "Region",
+   "Signature": "Vast frozen region housing gulags and resources",
+   "Material": "Permafrost and boreal forest"
+  },
+  "confusions": [
+   "Tundra",
+   "Russian Far East",
+   "Kamchatka"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_cold_war_geography_0006",
+  "universe": "history",
+  "world": "cold_war",
+  "subcategory": "geography",
+  "entity": "Saigon",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Tropical city with military helicopters overhead"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "South Vietnamese capital that fell in 1975",
+   "Material": "Urban landscape amid jungle"
+  },
+  "confusions": [
+   "Hanoi",
+   "Da Nang",
+   "Phnom Penh"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]
