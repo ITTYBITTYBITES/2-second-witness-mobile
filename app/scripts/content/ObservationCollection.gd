@@ -102,7 +102,7 @@ func get_available_mechanics(universe_id: Variant, world_id: Variant, subcategor
 	
 	var collection = get_collection(u_id, w_id, sub_id)
 	for obs in collection:
-		var t = normalize_id(obs.get("mechanic", ""))
+		var t = normalize_id(obs.get("type", obs.get("mechanic", "")))
 		if t != "" and not types.has(t):
 			types.append(t)
 	types.sort()
