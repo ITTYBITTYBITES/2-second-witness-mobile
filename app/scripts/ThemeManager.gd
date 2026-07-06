@@ -52,9 +52,6 @@ func apply_theme(theme_id: String):
 		active_theme_data = _theme_registry[theme_id]
 		print("[THEME] Applying Theme Identity: ", active_theme_data["display_name"])
 		emit_signal("theme_applied", active_theme_data)
-		
-		var duration = active_theme_data.get("transition", {}).get("duration_ms", 900)
-		await get_tree().create_timer(duration / 1000.0).timeout
 		_is_transitioning = false
 	else:
 		print("[THEME ERROR] Theme not found in registry: ", theme_id)
