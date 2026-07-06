@@ -1,1 +1,1430 @@
-[]
+[
+ {
+  "observation_id": "history_industrial_revolution_inventors_0001",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "James Watt",
+  "entity_type": "Inventor",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Portrait with steam engine model"
+   }
+  },
+  "dimensions": {
+   "Category": "Inventor",
+   "Signature": "Improved steam engine enabling the Industrial Revolution",
+   "Material": "Brass and iron"
+  },
+  "confusions": [
+   "Thomas Newcomen",
+   "George Stephenson",
+   "Richard Arkwright"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0002",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "George Stephenson",
+  "entity_type": "Engineer",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Portrait with locomotive"
+   }
+  },
+  "dimensions": {
+   "Category": "Engineer",
+   "Signature": "Father of Railways and built the Rocket locomotive",
+   "Material": "Iron locomotive"
+  },
+  "confusions": [
+   "James Watt",
+   "Richard Trevithick",
+   "Isambard Brunel"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0003",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Richard Arkwright",
+  "entity_type": "Industrialist",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Portrait with textile machinery"
+   }
+  },
+  "dimensions": {
+   "Category": "Industrialist",
+   "Signature": "Water frame and factory system pioneer",
+   "Material": "Iron machinery"
+  },
+  "confusions": [
+   "James Hargreaves",
+   "Samuel Crompton",
+   "Edmund Cartwright"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0004",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Isambard Kingdom Brunel",
+  "entity_type": "Engineer",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with top hat and chains"
+   }
+  },
+  "dimensions": {
+   "Category": "Engineer",
+   "Signature": "Built ships bridges and railways",
+   "Material": "Iron and steel"
+  },
+  "confusions": [
+   "George Stephenson",
+   "Thomas Telford",
+   "Joseph Bazalgette"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0005",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Thomas Edison",
+  "entity_type": "Inventor",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Portrait with light bulb"
+   }
+  },
+  "dimensions": {
+   "Category": "Inventor",
+   "Signature": "Practical incandescent light bulb and phonograph",
+   "Material": "Carbon filament glass"
+  },
+  "confusions": [
+   "Nikola Tesla",
+   "Alexander Bell",
+   "Michael Faraday"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0006",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Nikola Tesla",
+  "entity_type": "Inventor",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Portrait with mustache and electrical apparatus"
+   }
+  },
+  "dimensions": {
+   "Category": "Inventor",
+   "Signature": "AC electrical system and induction motor",
+   "Material": "Copper coils"
+  },
+  "confusions": [
+   "Thomas Edison",
+   "Michael Faraday",
+   "Galileo Ferraris"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0007",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Michael Faraday",
+  "entity_type": "Scientist",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Portrait with electrical apparatus"
+   }
+  },
+  "dimensions": {
+   "Category": "Scientist",
+   "Signature": "Electromagnetic induction and electric motor principle",
+   "Material": "Copper wire magnets"
+  },
+  "confusions": [
+   "James Clerk Maxwell",
+   "Alessandro Volta",
+   "Hans Christian Oersted"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0008",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Henry Bessemer",
+  "entity_type": "Inventor",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Portrait with Bessemer converter"
+   }
+  },
+  "dimensions": {
+   "Category": "Inventor",
+   "Signature": "Mass steel production process",
+   "Material": "Molten iron steel"
+  },
+  "confusions": [
+   "James Watt",
+   "George Stephenson",
+   "Karl Benz"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0009",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Alexander Graham Bell",
+  "entity_type": "Inventor",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Portrait with telephone receiver"
+   }
+  },
+  "dimensions": {
+   "Category": "Inventor",
+   "Signature": "Invention of the telephone",
+   "Material": "Brass wood"
+  },
+  "confusions": [
+   "Thomas Edison",
+   "Elisha Gray",
+   "Guglielmo Marconi"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0010",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Karl Benz",
+  "entity_type": "Inventor",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with early automobile"
+   }
+  },
+  "dimensions": {
+   "Category": "Inventor",
+   "Signature": "First practical gasoline automobile",
+   "Material": "Steel rubber"
+  },
+  "confusions": [
+   "Henry Ford",
+   "Gottlieb Daimler",
+   "Rudolf Diesel"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0011",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Wright Brothers",
+  "entity_type": "Inventors",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with biplane"
+   }
+  },
+  "dimensions": {
+   "Category": "Inventors",
+   "Signature": "First powered airplane flight in 1903",
+   "Material": "Wood canvas aluminum"
+  },
+  "confusions": [
+   "Louis Bleriot",
+   "Glenn Curtiss",
+   "Alberto Santos-Dumont"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventors_0012",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventors",
+  "entity": "Eli Whitney",
+  "entity_type": "Inventor",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Portrait with cotton gin model"
+   }
+  },
+  "dimensions": {
+   "Category": "Inventor",
+   "Signature": "Cotton gin and interchangeable parts",
+   "Material": "Iron wood"
+  },
+  "confusions": [
+   "Richard Arkwright",
+   "James Hargreaves",
+   "Samuel Slater"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0013",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Steam Engine",
+  "entity_type": "Machine",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Brass boiler with piston and flywheel"
+   }
+  },
+  "dimensions": {
+   "Category": "Machine",
+   "Signature": "Engine converting steam pressure into mechanical work",
+   "Material": "Cast iron brass"
+  },
+  "confusions": [
+   "Internal Combustion Engine",
+   "Water Wheel",
+   "Wind Turbine"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0014",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Spinning Jenny",
+  "entity_type": "Machine",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Wooden frame with multiple spindles"
+   }
+  },
+  "dimensions": {
+   "Category": "Machine",
+   "Signature": "Multi-spindle spinning frame",
+   "Material": "Wood iron cotton"
+  },
+  "confusions": [
+   "Water Frame",
+   "Spinning Mule",
+   "Power Loom"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0015",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Power Loom",
+  "entity_type": "Machine",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Mechanized weaving machine"
+   }
+  },
+  "dimensions": {
+   "Category": "Machine",
+   "Signature": "Mechanized weaving of cloth",
+   "Material": "Iron frame cotton"
+  },
+  "confusions": [
+   "Spinning Jenny",
+   "Water Frame",
+   "Spinning Mule"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0016",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Railway Locomotive",
+  "entity_type": "Vehicle",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Iron steam locomotive on rails"
+   }
+  },
+  "dimensions": {
+   "Category": "Vehicle",
+   "Signature": "Steam-powered rail transport",
+   "Material": "Iron boiler steel rails"
+  },
+  "confusions": [
+   "Steam Engine",
+   "Horse Coach",
+   "Electric Tram"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0017",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Telegraph",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Brass key and wire apparatus with clicks"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Long-distance electrical communication via Morse code",
+   "Material": "Copper wire brass"
+  },
+  "confusions": [
+   "Telephone",
+   "Radio",
+   "Semaphore"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0018",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Telephone",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Brass candlestick phone with receiver"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Voice transmission over electrical wire",
+   "Material": "Brass copper"
+  },
+  "confusions": [
+   "Telegraph",
+   "Radio",
+   "Phonograph"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0019",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Light Bulb",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Glass bulb with glowing filament"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Electric incandescent lighting",
+   "Material": "Glass carbon filament"
+  },
+  "confusions": [
+   "Arc Lamp",
+   "Gas Lamp",
+   "Fluorescent Light"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0020",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Bessemer Converter",
+  "entity_type": "Machine",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Pear-shaped iron vessel on pivots"
+   }
+  },
+  "dimensions": {
+   "Category": "Machine",
+   "Signature": "Process for mass-producing cheap steel",
+   "Material": "Iron vessel air blast"
+  },
+  "confusions": [
+   "Open Hearth Furnace",
+   "Blast Furnace",
+   "Crucible Steel"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0021",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Internal Combustion Engine",
+  "entity_type": "Machine",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Metal engine block with pistons"
+   }
+  },
+  "dimensions": {
+   "Category": "Machine",
+   "Signature": "Engine burning fuel inside cylinders",
+   "Material": "Cast iron steel"
+  },
+  "confusions": [
+   "Steam Engine",
+   "Electric Motor",
+   "Jet Engine"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0022",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Cotton Gin",
+  "entity_type": "Machine",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Wooden machine with rotating wire teeth"
+   }
+  },
+  "dimensions": {
+   "Category": "Machine",
+   "Signature": "Machine separating cotton seeds from fiber",
+   "Material": "Wood iron wire"
+  },
+  "confusions": [
+   "Spinning Jenny",
+   "Threshing Machine",
+   "Mechanical Reaper"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0023",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Assembly Line",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Conveyor belt with workers at stations"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Sequential mass production with interchangeable parts",
+   "Material": "Conveyor belts parts"
+  },
+  "confusions": [
+   "Cottage Industry",
+   "Craft Production",
+   "Lean Manufacturing"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_inventions_0024",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "inventions",
+  "entity": "Radio",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Wooden box with dials and vacuum tubes"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Wireless transmission of voice and signals",
+   "Material": "Vacuum tubes copper"
+  },
+  "confusions": [
+   "Telegraph",
+   "Telephone",
+   "Phonograph"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_industry_0025",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "industry",
+  "entity": "Textile Mills",
+  "entity_type": "Industry",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Brick factory with smokestacks"
+   }
+  },
+  "dimensions": {
+   "Category": "Industry",
+   "Signature": "Mechanized cotton and wool cloth production",
+   "Material": "Brick iron machinery"
+  },
+  "confusions": [
+   "Coal Mines",
+   "Iron Foundries",
+   "Steel Works"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_industry_0026",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "industry",
+  "entity": "Coal Mining",
+  "entity_type": "Industry",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Mine shaft with cage elevator"
+   }
+  },
+  "dimensions": {
+   "Category": "Industry",
+   "Signature": "Extraction of coal fueling steam engines",
+   "Material": "Coal seams iron rails"
+  },
+  "confusions": [
+   "Iron Mining",
+   "Copper Mining",
+   "Gold Mining"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_industry_0027",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "industry",
+  "entity": "Iron Foundries",
+  "entity_type": "Industry",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Furnace with molten metal"
+   }
+  },
+  "dimensions": {
+   "Category": "Industry",
+   "Signature": "Smelting iron from ore in blast furnaces",
+   "Material": "Blast furnaces pig iron"
+  },
+  "confusions": [
+   "Steel Works",
+   "Copper Smelters",
+   "Brass Foundries"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_industry_0028",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "industry",
+  "entity": "Railways",
+  "entity_type": "Infrastructure",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Tracked routes with stations"
+   }
+  },
+  "dimensions": {
+   "Category": "Infrastructure",
+   "Signature": "Rail network for passenger and freight",
+   "Material": "Steel rails wooden ties"
+  },
+  "confusions": [
+   "Canals",
+   "Turnpike Roads",
+   "Telegraph Lines"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_industry_0029",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "industry",
+  "entity": "Canals",
+  "entity_type": "Infrastructure",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Waterway with locks and barges"
+   }
+  },
+  "dimensions": {
+   "Category": "Infrastructure",
+   "Signature": "Artificial waterways for bulk cargo",
+   "Material": "Earth banks stone locks"
+  },
+  "confusions": [
+   "Railways",
+   "Turnpike Roads",
+   "Bridges"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_industry_0030",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "industry",
+  "entity": "Steel Industry",
+  "entity_type": "Industry",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Mill with rolling machines"
+   }
+  },
+  "dimensions": {
+   "Category": "Industry",
+   "Signature": "Mass steel production via Bessemer process",
+   "Material": "Steel ingots rolling mills"
+  },
+  "confusions": [
+   "Iron Foundries",
+   "Aluminum Mills",
+   "Copper Works"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_society_0031",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "society",
+  "entity": "Urbanization",
+  "entity_type": "Social Change",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Crowded industrial city with smoke"
+   }
+  },
+  "dimensions": {
+   "Category": "Social Change",
+   "Signature": "Massive migration from rural areas to factory cities",
+   "Material": "Brick tenements smokestacks"
+  },
+  "confusions": [
+   "Rural Depopulation",
+   "Suburban Growth",
+   "Deindustrialization"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_society_0032",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "society",
+  "entity": "Child Labor",
+  "entity_type": "Social Issue",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Small children working among machines"
+   }
+  },
+  "dimensions": {
+   "Category": "Social Issue",
+   "Signature": "Exploitation of children in factories and mines",
+   "Material": "Factory machinery"
+  },
+  "confusions": [
+   "Factory Acts",
+   "Slavery",
+   "Sweatshops"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_society_0033",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "society",
+  "entity": "Labor Unions",
+  "entity_type": "Organization",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Workers holding banners striking"
+   }
+  },
+  "dimensions": {
+   "Category": "Organization",
+   "Signature": "Workers organizing for better wages and conditions",
+   "Material": "Printed banners halls"
+  },
+  "confusions": [
+   "Trade Guilds",
+   "Socialist Party",
+   "Cooperative Movement"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_society_0034",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "society",
+  "entity": "Factory Acts",
+  "entity_type": "Legislation",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Printed law with royal seal"
+   }
+  },
+  "dimensions": {
+   "Category": "Legislation",
+   "Signature": "British laws limiting child labor hours",
+   "Material": "Printed acts"
+  },
+  "confusions": [
+   "Poor Laws",
+   "Mines Act",
+   "Ten Hours Act"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_society_0035",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "society",
+  "entity": "Cottage Industry",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Family spinning at home"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Home-based production before factories",
+   "Material": "Hand looms spinning wheels"
+  },
+  "confusions": [
+   "Factory System",
+   "Guild System",
+   "Plantation Economy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_society_0036",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "society",
+  "entity": "Luddites",
+  "entity_type": "Movement",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Workers smashing machines"
+   }
+  },
+  "dimensions": {
+   "Category": "Movement",
+   "Signature": "Textile workers who destroyed machinery in protest",
+   "Material": "Hammers broken looms"
+  },
+  "confusions": [
+   "Chartists",
+   "Swing Rioters",
+   "Trade Unions"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_society_0037",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "society",
+  "entity": "Socialism",
+  "entity_type": "Political Movement",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Red banner with workers"
+   }
+  },
+  "dimensions": {
+   "Category": "Political Movement",
+   "Signature": "Movement for collective ownership of production",
+   "Material": "Printed pamphlets red flags"
+  },
+  "confusions": [
+   "Capitalism",
+   "Communism",
+   "Chartism"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_society_0038",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "society",
+  "entity": "Middle Class",
+  "entity_type": "Social Class",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Well-dressed family in parlor"
+   }
+  },
+  "dimensions": {
+   "Category": "Social Class",
+   "Signature": "New class of merchants managers and professionals",
+   "Material": "Furnished parlors clothing"
+  },
+  "confusions": [
+   "Working Class",
+   "Aristocracy",
+   "Peasantry"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_geography_0039",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "geography",
+  "entity": "Manchester",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Smoky industrial city with mills"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Cottonopolis center of textile manufacturing",
+   "Material": "Red brick mills chimneys"
+  },
+  "confusions": [
+   "Birmingham",
+   "Leeds",
+   "Liverpool"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_geography_0040",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "geography",
+  "entity": "Birmingham",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Metalworking city with foundries"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Workshop of the world for metal goods",
+   "Material": "Iron foundries"
+  },
+  "confusions": [
+   "Manchester",
+   "Sheffield",
+   "Leeds"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_geography_0041",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "geography",
+  "entity": "London",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Sprawling capital with docks"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Imperial capital expanded by railways and docks",
+   "Material": "Brick stone"
+  },
+  "confusions": [
+   "Manchester",
+   "Liverpool",
+   "Glasgow"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_geography_0042",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "geography",
+  "entity": "Coal Fields of Yorkshire",
+  "entity_type": "Region",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Mine heads and slag heaps"
+   }
+  },
+  "dimensions": {
+   "Category": "Region",
+   "Signature": "Coal deposits fueling northern industry",
+   "Material": "Coal seams colliery"
+  },
+  "confusions": [
+   "Midlands Iron Ore",
+   "Welsh Slate",
+   "Cornish Tin"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_geography_0043",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "geography",
+  "entity": "Detroit",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Car factories and assembly lines"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Motor City center of automobile manufacturing",
+   "Material": "Steel concrete"
+  },
+  "confusions": [
+   "Manchester",
+   "Birmingham",
+   "Pittsburgh"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_concepts_0044",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "concepts",
+  "entity": "Mass Production",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Conveyor belt producing identical goods"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Standardized large-scale manufacturing",
+   "Material": "Standardized parts"
+  },
+  "confusions": [
+   "Craft Production",
+   "Lean Manufacturing",
+   "Batch Production"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_concepts_0045",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "concepts",
+  "entity": "Capitalism",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Factory owner counting profits"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Private ownership and profit-driven production",
+   "Material": "Money factory deeds"
+  },
+  "confusions": [
+   "Socialism",
+   "Mercantilism",
+   "Feudalism"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_concepts_0046",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "concepts",
+  "entity": "Interchangeable Parts",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Pile of identical metal parts"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Standardized components for assembly",
+   "Material": "Machined metal"
+  },
+  "confusions": [
+   "Craft Production",
+   "Hand Fitting",
+   "Mass Production"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_concepts_0047",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "concepts",
+  "entity": "Patent System",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Official document with seal"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Legal protection rewarding invention",
+   "Material": "Printed patents"
+  },
+  "confusions": [
+   "Copyright",
+   "Trademark",
+   "Trade Secret"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_concepts_0048",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "concepts",
+  "entity": "Standard Time Zones",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Clock with colored zones on map"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Synchronized time for railway scheduling",
+   "Material": "Railway clocks"
+  },
+  "confusions": [
+   "Greenwich Mean Time",
+   "Daylight Saving",
+   "Local Solar Time"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_concepts_0049",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "concepts",
+  "entity": "Electric Grid",
+  "entity_type": "Infrastructure",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Network of power lines"
+   }
+  },
+  "dimensions": {
+   "Category": "Infrastructure",
+   "Signature": "Distributed electrical power network",
+   "Material": "Copper wires"
+  },
+  "confusions": [
+   "Gas Network",
+   "Water Supply",
+   "Telegraph Network"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_concepts_0050",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "concepts",
+  "entity": "Corporation",
+  "entity_type": "Entity",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Office building with shareholders"
+   }
+  },
+  "dimensions": {
+   "Category": "Entity",
+   "Signature": "Limited liability business with shareholders",
+   "Material": "Corporate charters stock"
+  },
+  "confusions": [
+   "Partnership",
+   "Cooperative",
+   "Sole Proprietorship"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_industrial_revolution_concepts_0051",
+  "universe": "history",
+  "world": "industrial_revolution",
+  "subcategory": "concepts",
+  "entity": "Greenwich Mean Time",
+  "entity_type": "Standard",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Clock at the Royal Observatory"
+   }
+  },
+  "dimensions": {
+   "Category": "Standard",
+   "Signature": "Global time standard set at Greenwich",
+   "Material": "Brass clocks"
+  },
+  "confusions": [
+   "Local Solar Time",
+   "Standard Time Zones",
+   "Daylight Saving"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

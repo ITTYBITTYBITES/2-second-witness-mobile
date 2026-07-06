@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "history_world_wars_ww1_events_0001",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww1_events",
+  "entity": "Assassination of Archduke Franz Ferdinand",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Figure shot in an open car"
+   }
+  },
+  "dimensions": {
+   "Category": "Trigger Event",
+   "Signature": "1914 assassination sparking WWI",
+   "Material": "Bullets pistol"
+  },
+  "confusions": [
+   "Pearl Harbor",
+   "Invasion of Poland",
+   "Sinking of Lusitania"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww1_events_0002",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww1_events",
+  "entity": "Battle of the Somme",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Soldiers going over the top"
+   }
+  },
+  "dimensions": {
+   "Category": "Battle",
+   "Signature": "1916 battle with massive casualties",
+   "Material": "Rifles machine guns"
+  },
+  "confusions": [
+   "Verdun",
+   "Passchendaele",
+   "Gallipoli"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww1_events_0003",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww1_events",
+  "entity": "Battle of Verdun",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Bombardment of fortified city"
+   }
+  },
+  "dimensions": {
+   "Category": "Battle",
+   "Signature": "1916 longest battle of WWI",
+   "Material": "Artillery barbed wire"
+  },
+  "confusions": [
+   "Somme",
+   "Passchendaele",
+   "Tannenberg"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww1_events_0004",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww1_events",
+  "entity": "Trench Warfare",
+  "entity_type": "Tactic",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Muddy trenches with barbed wire"
+   }
+  },
+  "dimensions": {
+   "Category": "Tactic",
+   "Signature": "Static warfare in dug lines",
+   "Material": "Mud steel wire"
+  },
+  "confusions": [
+   "Blitzkrieg",
+   "Guerrilla War",
+   "Naval Blockade"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww1_events_0005",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww1_events",
+  "entity": "Treaty of Versailles",
+  "entity_type": "Treaty",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Signatures on treaty at palace"
+   }
+  },
+  "dimensions": {
+   "Category": "Treaty",
+   "Signature": "1919 peace treaty punishing Germany",
+   "Material": "Ink parchment"
+  },
+  "confusions": [
+   "Treaty of Brest-Litovsk",
+   "Treaty of Trianon",
+   "League Covenant"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww1_events_0006",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww1_events",
+  "entity": "Gallipoli Campaign",
+  "entity_type": "Campaign",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Beach landings under cliffs"
+   }
+  },
+  "dimensions": {
+   "Category": "Campaign",
+   "Signature": "Failed Allied attack on Ottoman Empire",
+   "Material": "Ships rifles"
+  },
+  "confusions": [
+   "Somme",
+   "Verdun",
+   "Mesopotamia Campaign"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww1_events_0007",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww1_events",
+  "entity": "Sinking of the Lusitania",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Passenger ship sinking by torpedo"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "1915 sinking bringing US closer to war",
+   "Material": "Torpedo steel"
+  },
+  "confusions": [
+   "Zimmermann Telegram",
+   "Unrestricted Submarine Warfare",
+   "Pearl Harbor"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0008",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "Invasion of Poland",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Tanks crossing border"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "1939 invasion starting WWII",
+   "Material": "Tanks aircraft"
+  },
+  "confusions": [
+   "D-Day",
+   "Pearl Harbor",
+   "Battle of Britain"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0009",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "Battle of Britain",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Spitfires and Messerschmitts in sky"
+   }
+  },
+  "dimensions": {
+   "Category": "Air Battle",
+   "Signature": "1940 air battle over England",
+   "Material": "Aircraft radar"
+  },
+  "confusions": [
+   "Blitz",
+   "D-Day",
+   "Invasion of Poland"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0010",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "Pearl Harbor",
+  "entity_type": "Attack",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Battleships exploding in harbor"
+   }
+  },
+  "dimensions": {
+   "Category": "Attack",
+   "Signature": "1941 Japanese attack bringing US into war",
+   "Material": "Torpedoes bombs"
+  },
+  "confusions": [
+   "D-Day",
+   "Hiroshima",
+   "Battle of Midway"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0011",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "D-Day",
+  "entity_type": "Operation",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Troops landing on beaches"
+   }
+  },
+  "dimensions": {
+   "Category": "Military Operation",
+   "Signature": "1944 Normandy landings in France",
+   "Material": "Landing craft rifles"
+  },
+  "confusions": [
+   "Operation Market Garden",
+   "Battle of the Bulge",
+   "Invasion of Italy"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0012",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "Battle of Stalingrad",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Urban ruins with soldiers fighting"
+   }
+  },
+  "dimensions": {
+   "Category": "Battle",
+   "Signature": "1942-43 turning point on Eastern Front",
+   "Material": "Rubble rifles tanks"
+  },
+  "confusions": [
+   "Leningrad",
+   "Kursk",
+   "Berlin"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0013",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "Atomic Bombing of Hiroshima",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Mushroom cloud over city"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "1945 first nuclear attack",
+   "Material": "Uranium bomb"
+  },
+  "confusions": [
+   "Nagasaki",
+   "Firebombing of Tokyo",
+   "Dresden"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0014",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "The Holocaust",
+  "entity_type": "Genocide",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Barbed wire camp gates"
+   }
+  },
+  "dimensions": {
+   "Category": "Genocide",
+   "Signature": "Nazi systematic murder of Jews",
+   "Material": "Camps gas chambers"
+  },
+  "confusions": [
+   "Armenian Genocide",
+   "Rwandan Genocide",
+   "Holodomor"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0015",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "Battle of Midway",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Aircraft carriers in Pacific"
+   }
+  },
+  "dimensions": {
+   "Category": "Naval Battle",
+   "Signature": "1942 Pacific turning point",
+   "Material": "Aircraft carriers"
+  },
+  "confusions": [
+   "Pearl Harbor",
+   "Coral Sea",
+   "Guadalcanal"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_ww2_events_0016",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "ww2_events",
+  "entity": "Operation Barbarossa",
+  "entity_type": "Invasion",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "German armies invading USSR"
+   }
+  },
+  "dimensions": {
+   "Category": "Invasion",
+   "Signature": "1941 German invasion of Soviet Union",
+   "Material": "Tanks aircraft"
+  },
+  "confusions": [
+   "D-Day",
+   "Stalingrad",
+   "Battle of Britain"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_ww1_0017",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_ww1",
+  "entity": "Woodrow Wilson",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with glasses"
+   }
+  },
+  "dimensions": {
+   "Category": "President",
+   "Signature": "US president who proposed League of Nations",
+   "Material": "Suit speeches"
+  },
+  "confusions": [
+   "Theodore Roosevelt",
+   "Warren Harding",
+   "Franklin Roosevelt"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_ww1_0018",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_ww1",
+  "entity": "David Lloyd George",
+  "entity_type": "PM",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with white hair"
+   }
+  },
+  "dimensions": {
+   "Category": "Prime Minister",
+   "Signature": "British wartime prime minister",
+   "Material": "Suit speeches"
+  },
+  "confusions": [
+   "Winston Churchill",
+   "Herbert Asquith",
+   "Bonar Law"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_ww1_0019",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_ww1",
+  "entity": "Georges Clemenceau",
+  "entity_type": "PM",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with beard and cane"
+   }
+  },
+  "dimensions": {
+   "Category": "Prime Minister",
+   "Signature": "French Tiger who led at Versailles",
+   "Material": "Suit cane"
+  },
+  "confusions": [
+   "Raymond Poincare",
+   "Ferdinand Foch",
+   "Aristide Briand"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_ww2_0020",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_ww2",
+  "entity": "Winston Churchill",
+  "entity_type": "PM",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with cigar"
+   }
+  },
+  "dimensions": {
+   "Category": "Prime Minister",
+   "Signature": "British wartime leader",
+   "Material": "Suit cigars speeches"
+  },
+  "confusions": [
+   "Franklin Roosevelt",
+   "Neville Chamberlain",
+   "Clement Attlee"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_ww2_0021",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_ww2",
+  "entity": "Franklin D. Roosevelt",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with glasses"
+   }
+  },
+  "dimensions": {
+   "Category": "President",
+   "Signature": "US leader during Depression and WWII",
+   "Material": "Suit wheelchair"
+  },
+  "confusions": [
+   "Churchill",
+   "Harry Truman",
+   "Theodore Roosevelt"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_ww2_0022",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_ww2",
+  "entity": "Charles de Gaulle",
+  "entity_type": "General",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Figure with kepi and uniform"
+   }
+  },
+  "dimensions": {
+   "Category": "General",
+   "Signature": "Leader of Free France",
+   "Material": "Military uniform"
+  },
+  "confusions": [
+   "Petain",
+   "Darlan",
+   "Giraud"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_ww2_0023",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_ww2",
+  "entity": "Dwight D. Eisenhower",
+  "entity_type": "General",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with five stars"
+   }
+  },
+  "dimensions": {
+   "Category": "General",
+   "Signature": "Supreme Allied Commander",
+   "Material": "Military uniform maps"
+  },
+  "confusions": [
+   "Patton",
+   "MacArthur",
+   "Montgomery"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_axis_0024",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_axis",
+  "entity": "Adolf Hitler",
+  "entity_type": "Dictator",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with mustache"
+   }
+  },
+  "dimensions": {
+   "Category": "Dictator",
+   "Signature": "Nazi leader who started WWII in Europe",
+   "Material": "Uniform propaganda"
+  },
+  "confusions": [
+   "Mussolini",
+   "Hirohito",
+   "Goebbels"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_axis_0025",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_axis",
+  "entity": "Benito Mussolini",
+  "entity_type": "Dictator",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with bald head and jaw"
+   }
+  },
+  "dimensions": {
+   "Category": "Dictator",
+   "Signature": "Fascist dictator of Italy",
+   "Material": "Black shirt uniform"
+  },
+  "confusions": [
+   "Hitler",
+   "Hirohito",
+   "Franco"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_leaders_axis_0026",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "leaders_axis",
+  "entity": "Emperor Hirohito",
+  "entity_type": "Emperor",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Portrait in imperial robes"
+   }
+  },
+  "dimensions": {
+   "Category": "Emperor",
+   "Signature": "Emperor of Japan during WWII",
+   "Material": "Silk robes"
+  },
+  "confusions": [
+   "Hideki Tojo",
+   "Hitler",
+   "Mussolini"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_weapons_0027",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "weapons",
+  "entity": "Machine Gun",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Heavy gun on tripod"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Devastating automatic weapon of WWI",
+   "Material": "Steel ammunition"
+  },
+  "confusions": [
+   "Rifle",
+   "Mortar",
+   "Artillery"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_weapons_0028",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "weapons",
+  "entity": "Tank",
+  "entity_type": "Vehicle",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Armored vehicle with treads"
+   }
+  },
+  "dimensions": {
+   "Category": "Vehicle",
+   "Signature": "Armored warfare revolution",
+   "Material": "Steel treads cannon"
+  },
+  "confusions": [
+   "Armored Car",
+   "Halftrack",
+   "Self-Propelled Gun"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_weapons_0029",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "weapons",
+  "entity": "Submarine",
+  "entity_type": "Vessel",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Submerged vessel with periscope"
+   }
+  },
+  "dimensions": {
+   "Category": "Naval Vessel",
+   "Signature": "Undersea warfare vessel",
+   "Material": "Steel torpedoes"
+  },
+  "confusions": [
+   "Destroyer",
+   "Battleship",
+   "Aircraft Carrier"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_weapons_0030",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "weapons",
+  "entity": "Mustard Gas",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Yellow gas cloud over trenches"
+   }
+  },
+  "dimensions": {
+   "Category": "Chemical Weapon",
+   "Signature": "Terrifying chemical weapon of WWI",
+   "Material": "Gas canisters masks"
+  },
+  "confusions": [
+   "Chlorine Gas",
+   "Phosgene",
+   "Nerve Gas"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_weapons_0031",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "weapons",
+  "entity": "Atomic Bomb",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Massive explosive mushroom cloud"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Nuclear weapon ending WWII",
+   "Material": "Uranium plutonium"
+  },
+  "confusions": [
+   "Hydrogen Bomb",
+   "Conventional Bomb",
+   "Incendiary Bomb"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_weapons_0032",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "weapons",
+  "entity": "Spitfire",
+  "entity_type": "Aircraft",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Fighter plane with elliptical wings"
+   }
+  },
+  "dimensions": {
+   "Category": "Aircraft",
+   "Signature": "Iconic British fighter of WWII",
+   "Material": "Aluminum engine"
+  },
+  "confusions": [
+   "Hurricane",
+   "Messerschmitt Bf 109",
+   "Mustang"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_weapons_0033",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "weapons",
+  "entity": "Aircraft Carrier",
+  "entity_type": "Vessel",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Flat-top ship with planes"
+   }
+  },
+  "dimensions": {
+   "Category": "Naval Vessel",
+   "Signature": "Floating airbase revolutionizing naval war",
+   "Material": "Steel flight deck"
+  },
+  "confusions": [
+   "Battleship",
+   "Destroyer",
+   "Submarine"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_weapons_0034",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "weapons",
+  "entity": "Radar",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Rotating dish and oscilloscope"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Detection of aircraft and ships",
+   "Material": "Antennas cathode tubes"
+  },
+  "confusions": [
+   "Sonar",
+   "Radio",
+   "Enigma Machine"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_homefront_0035",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "homefront",
+  "entity": "Rosie the Riveter",
+  "entity_type": "Symbol",
+  "features": {
+   "visual": {
+    "color": "#FF0000",
+    "pattern": "Woman flexing arm in factory"
+   }
+  },
+  "dimensions": {
+   "Category": "Symbol",
+   "Signature": "Symbol of women in wartime industry",
+   "Material": "Factories rivets"
+  },
+  "confusions": [
+   "Land Girls",
+   "WACs",
+   "WRENS"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_homefront_0036",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "homefront",
+  "entity": "Rationing",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Ration book and stamps"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Wartime food and goods rationing",
+   "Material": "Paper stamps"
+  },
+  "confusions": [
+   "Price Controls",
+   "Black Market",
+   "Victory Gardens"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_homefront_0037",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "homefront",
+  "entity": "Enigma Machine",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Rotors and keyboard cipher machine"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "German code machine broken by Allies",
+   "Material": "Rotors wires"
+  },
+  "confusions": [
+   "Lorenz Cipher",
+   "Bombe",
+   "Colossus"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_homefront_0038",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "homefront",
+  "entity": "Manhattan Project",
+  "entity_type": "Program",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Secret laboratory with scientists"
+   }
+  },
+  "dimensions": {
+   "Category": "Program",
+   "Signature": "US program to build the atomic bomb",
+   "Material": "Uranium laboratories"
+  },
+  "confusions": [
+   "Tube Alloys",
+   "Soviet Bomb Project",
+   "Tizard Mission"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_homefront_0039",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "homefront",
+  "entity": "Resistance Movement",
+  "entity_type": "Movement",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Underground fighters with armbands"
+   }
+  },
+  "dimensions": {
+   "Category": "Movement",
+   "Signature": "Underground opposition to occupation",
+   "Material": "Weapons secret presses"
+  },
+  "confusions": [
+   "Maquis",
+   "Partisans",
+   "Underground"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_homefront_0040",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "homefront",
+  "entity": "Propaganda",
+  "entity_type": "Media",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Poster with heroic figure"
+   }
+  },
+  "dimensions": {
+   "Category": "Media",
+   "Signature": "Wartime messaging to motivate populations",
+   "Material": "Printed posters radio"
+  },
+  "confusions": [
+   "Censorship",
+   "Film Bureau",
+   "Leaflets"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_geography_0041",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "geography",
+  "entity": "Normandy Beaches",
+  "entity_type": "Location",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Code-named invasion beaches"
+   }
+  },
+  "dimensions": {
+   "Category": "Location",
+   "Signature": "D-Day landing beaches in France",
+   "Material": "Sand concrete"
+  },
+  "confusions": [
+   "Dunkirk",
+   "Passchendaele",
+   "Somme"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_geography_0042",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "geography",
+  "entity": "Maginot Line",
+  "entity_type": "Fortification",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Concrete bunkers and fortresses"
+   }
+  },
+  "dimensions": {
+   "Category": "Fortification",
+   "Signature": "French defensive line bypassed by Germany",
+   "Material": "Concrete steel"
+  },
+  "confusions": [
+   "Siegfried Line",
+   "Atlantic Wall",
+   "Hadrians Wall"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_geography_0043",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "geography",
+  "entity": "Berlin",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Bombed city divided into sectors"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Final objective and divided capital",
+   "Material": "Rubble stone"
+  },
+  "confusions": [
+   "London",
+   "Tokyo",
+   "Stalingrad"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_geography_0044",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "geography",
+  "entity": "Pearl Harbor",
+  "entity_type": "Naval Base",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Harbor with battleship row"
+   }
+  },
+  "dimensions": {
+   "Category": "Naval Base",
+   "Signature": "US Pacific Fleet base attacked in 1941",
+   "Material": "Warships oil"
+  },
+  "confusions": [
+   "Midway",
+   "Guadalcanal",
+   "Corregidor"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_concepts_0045",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "concepts",
+  "entity": "League of Nations",
+  "entity_type": "Organization",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Assembly hall with delegates"
+   }
+  },
+  "dimensions": {
+   "Category": "Organization",
+   "Signature": "Post-WWI international peace body",
+   "Material": "Documents assembly hall"
+  },
+  "confusions": [
+   "United Nations",
+   "European Union",
+   "Court of Justice"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_concepts_0046",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "concepts",
+  "entity": "Blitzkrieg",
+  "entity_type": "Tactic",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Tanks and aircraft overwhelming enemy"
+   }
+  },
+  "dimensions": {
+   "Category": "Tactic",
+   "Signature": "Lightning war of coordinated armor and air",
+   "Material": "Tanks aircraft radios"
+  },
+  "confusions": [
+   "Trench Warfare",
+   "Guerrilla War",
+   "Attrition"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_concepts_0047",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "concepts",
+  "entity": "Appeasement",
+  "entity_type": "Policy",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Handshake at Munich Conference"
+   }
+  },
+  "dimensions": {
+   "Category": "Policy",
+   "Signature": "Pre-war policy of conceding to Hitler",
+   "Material": "Documents treaties"
+  },
+  "confusions": [
+   "Containment",
+   "Deterrence",
+   "Isolationism"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_concepts_0048",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "concepts",
+  "entity": "Total War",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Civilians and factories mobilized"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Conflict mobilizing entire societies",
+   "Material": "Factories civilians"
+  },
+  "confusions": [
+   "Limited War",
+   "Proxy War",
+   "Cold War"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_concepts_0049",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "concepts",
+  "entity": "United Nations",
+  "entity_type": "Organization",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "General Assembly with flags"
+   }
+  },
+  "dimensions": {
+   "Category": "Organization",
+   "Signature": "Post-WWII international peace organization",
+   "Material": "Documents assembly hall"
+  },
+  "confusions": [
+   "League of Nations",
+   "NATO",
+   "European Union"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_world_wars_concepts_0050",
+  "universe": "history",
+  "world": "world_wars",
+  "subcategory": "concepts",
+  "entity": "Nuremberg Trials",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Defendants in a courtroom dock"
+   }
+  },
+  "dimensions": {
+   "Category": "Judicial Event",
+   "Signature": "Post-WWII trials of Nazi leaders",
+   "Material": "Court records evidence"
+  },
+  "confusions": [
+   "Tokyo Trials",
+   "ICC",
+   "War Crimes Tribunal"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

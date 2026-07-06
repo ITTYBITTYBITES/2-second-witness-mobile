@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "history_mesoamerica_civs_0001",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "civs",
+  "entity": "Aztec Empire",
+  "entity_type": "Empire",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Eagle on cactus with pyramid"
+   }
+  },
+  "dimensions": {
+   "Category": "Empire",
+   "Signature": "Mexica empire at Tenochtitlan",
+   "Material": "Stone pyramids gold"
+  },
+  "confusions": [
+   "Maya Civilization",
+   "Inca Empire",
+   "Toltec Empire"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_civs_0002",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "civs",
+  "entity": "Maya Civilization",
+  "entity_type": "Civilization",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Jungle city with stepped pyramid"
+   }
+  },
+  "dimensions": {
+   "Category": "Civilization",
+   "Signature": "Advanced astronomers and calendar-makers",
+   "Material": "Limestone pyramids stelae"
+  },
+  "confusions": [
+   "Aztec Empire",
+   "Olmec Civilization",
+   "Toltec Empire"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_civs_0003",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "civs",
+  "entity": "Olmec Civilization",
+  "entity_type": "Civilization",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Colossal stone head with helmet"
+   }
+  },
+  "dimensions": {
+   "Category": "Civilization",
+   "Signature": "Mother culture of Mesoamerica",
+   "Material": "Basalt heads"
+  },
+  "confusions": [
+   "Maya Civilization",
+   "Zapotec",
+   "Teotihuacan"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_civs_0004",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "civs",
+  "entity": "Teotihuacan",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Avenue with pyramids of Sun and Moon"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Massive pre-Aztec metropolis",
+   "Material": "Stone pyramids"
+  },
+  "confusions": [
+   "Tenochtitlan",
+   "Chichen Itza",
+   "Tikal"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_civs_0005",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "civs",
+  "entity": "Toltec Empire",
+  "entity_type": "Empire",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Warriors with serpent columns"
+   }
+  },
+  "dimensions": {
+   "Category": "Empire",
+   "Signature": "Warrior culture before the Aztecs",
+   "Material": "Stone columns"
+  },
+  "confusions": [
+   "Aztec Empire",
+   "Teotihuacan",
+   "Maya Civilization"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_civs_0006",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "civs",
+  "entity": "Inca Empire",
+  "entity_type": "Empire",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Terraced mountains with stone cities"
+   }
+  },
+  "dimensions": {
+   "Category": "Empire",
+   "Signature": "Andean empire with road networks",
+   "Material": "Stone terraces gold"
+  },
+  "confusions": [
+   "Aztec Empire",
+   "Maya Civilization",
+   "Tiwanaku"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_civs_0007",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "civs",
+  "entity": "Zapotec Civilization",
+  "entity_type": "Civilization",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Carved stone steles at Monte Alban"
+   }
+  },
+  "dimensions": {
+   "Category": "Civilization",
+   "Signature": "Zapotec builders of Monte Alban",
+   "Material": "Stone carvings"
+  },
+  "confusions": [
+   "Olmec",
+   "Mixtec",
+   "Maya"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_gods_0008",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "gods",
+  "entity": "Quetzalcoatl",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Feathered serpent"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Plumed serpent god of creation",
+   "Material": "Stone carvings jade"
+  },
+  "confusions": [
+   "Tezcatlipoca",
+   "Huitzilopochtli",
+   "Tlaloc"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_gods_0009",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "gods",
+  "entity": "Huitzilopochtli",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Figure with hummingbird headdress"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Aztec war and sun god",
+   "Material": "Obsidian weapons shields"
+  },
+  "confusions": [
+   "Quetzalcoatl",
+   "Tezcatlipoca",
+   "Tlaloc"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_gods_0010",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "gods",
+  "entity": "Tezcatlipoca",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Figure with smoking mirror"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Aztec god of night and destiny",
+   "Material": "Obsidian mirrors"
+  },
+  "confusions": [
+   "Quetzalcoatl",
+   "Huitzilopochtli",
+   "Tlaloc"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_gods_0011",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "gods",
+  "entity": "Tlaloc",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Figure with goggle eyes"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Aztec god of rain and fertility",
+   "Material": "Stone painted"
+  },
+  "confusions": [
+   "Quetzalcoatl",
+   "Huitzilopochtli",
+   "Chaac"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_gods_0012",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "gods",
+  "entity": "Chaac",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Figure with axe nose"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Maya god of rain and storms",
+   "Material": "Stone carved"
+  },
+  "confusions": [
+   "Tlaloc",
+   "Kukulkan",
+   "Itzamna"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_gods_0013",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "gods",
+  "entity": "Kukulkan",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Feathered serpent on pyramid"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Maya feathered serpent deity",
+   "Material": "Stone carved"
+  },
+  "confusions": [
+   "Quetzalcoatl",
+   "Chaac",
+   "Itzamna"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_gods_0014",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "gods",
+  "entity": "Itzamna",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Aged figure with sun disc"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Maya creator and sky god",
+   "Material": "Stone jade"
+  },
+  "confusions": [
+   "Kukulkan",
+   "Chaac",
+   "Ix Chel"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_sites_0015",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "sites",
+  "entity": "Chichen Itza",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Stepped pyramid with serpent shadow"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Maya city with pyramid of Kukulkan",
+   "Material": "Limestone pyramid"
+  },
+  "confusions": [
+   "Tikal",
+   "Teotihuacan",
+   "Tenochtitlan"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_sites_0016",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "sites",
+  "entity": "Machu Picchu",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Stone city on mountain ridge"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Inca citadel in the Andes",
+   "Material": "Granite dry-stone"
+  },
+  "confusions": [
+   "Cusco",
+   "Ollantaytambo",
+   "Sacsayhuaman"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_sites_0017",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "sites",
+  "entity": "Tenochtitlan",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Island city with canals and pyramid"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Aztec capital built on a lake",
+   "Material": "Stone chinampas"
+  },
+  "confusions": [
+   "Teotihuacan",
+   "Tlatelolco",
+   "Chichen Itza"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_sites_0018",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "sites",
+  "entity": "Tikal",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Jungle temples above canopy"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Major Maya city in Guatemala",
+   "Material": "Limestone temples"
+  },
+  "confusions": [
+   "Chichen Itza",
+   "Palenque",
+   "Copan"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_sites_0019",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "sites",
+  "entity": "Palenque",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Temple with inscriptions tablet"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Maya city with Temple of Inscriptions",
+   "Material": "Limestone jade mask"
+  },
+  "confusions": [
+   "Tikal",
+   "Copan",
+   "Chichen Itza"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_sites_0020",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "sites",
+  "entity": "Tula",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Stone warrior columns"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Toltec capital with Atlantean figures",
+   "Material": "Basalt statues"
+  },
+  "confusions": [
+   "Teotihuacan",
+   "Tenochtitlan",
+   "Tzintzuntzan"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_sites_0021",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "sites",
+  "entity": "Monte Alban",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Flat mountaintop with steles"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Zapotec capital on a hill",
+   "Material": "Stone platforms steles"
+  },
+  "confusions": [
+   "Teotihuacan",
+   "Tikal",
+   "Palenque"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_sites_0022",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "sites",
+  "entity": "Copan",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Site with carved stelae of kings"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Maya city known for sculpture",
+   "Material": "Limestone stelae"
+  },
+  "confusions": [
+   "Tikal",
+   "Palenque",
+   "Chichen Itza"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_artifacts_0023",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "artifacts",
+  "entity": "Aztec Calendar Stone",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Giant circular stone with sun face"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Massive Aztec solar calendar",
+   "Material": "Carved basalt"
+  },
+  "confusions": [
+   "Maya Calendar",
+   "Zapotec Calendar",
+   "Olmec Head"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_artifacts_0024",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "artifacts",
+  "entity": "Maya Long Count Calendar",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Bar and dot numerals on stela"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Precise dating system",
+   "Material": "Stone carving"
+  },
+  "confusions": [
+   "Aztec Calendar Stone",
+   "Tzolkin",
+   "Xiuhpohualli"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_artifacts_0025",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "artifacts",
+  "entity": "Obsidian Mirror",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Polished black glass disc"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Divination tool of Tezcatlipoca",
+   "Material": "Obsidian glass"
+  },
+  "confusions": [
+   "Crystal Ball",
+   "Bronze Mirror",
+   "Copper Mirror"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_artifacts_0026",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "artifacts",
+  "entity": "Macuahuitl Sword",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Wooden club with obsidian blades"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Aztec sword with volcanic glass",
+   "Material": "Wood obsidian"
+  },
+  "confusions": [
+   "Macana",
+   "Atlatl",
+   "Sling"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_artifacts_0027",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "artifacts",
+  "entity": "Jade Death Mask",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Mosaic mask of jade pieces"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Funerary mask of a Maya king",
+   "Material": "Jade tiles cinnabar"
+  },
+  "confusions": [
+   "Gold Mask",
+   "Turquoise Mask",
+   "Obsidian Mask"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_artifacts_0028",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "artifacts",
+  "entity": "Quipu",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Knotted cords on a string"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Inca recording system",
+   "Material": "Cotton wool cords"
+  },
+  "confusions": [
+   "Codex",
+   "Tally Stick",
+   "Knotted Cord"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_artifacts_0029",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "artifacts",
+  "entity": "Turquoise Mosaic Mask",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Mask covered in turquoise tiles"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Aztec mosaic mask of precious stone",
+   "Material": "Turquoise wood"
+  },
+  "confusions": [
+   "Jade Mask",
+   "Gold Mask",
+   "Obsidian Mask"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_artifacts_0030",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "artifacts",
+  "entity": "Atlatl",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Spear thrower with hook"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Device for throwing darts with force",
+   "Material": "Wood bone"
+  },
+  "confusions": [
+   "Macuahuitl",
+   "Sling",
+   "Bow"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_practices_0031",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "practices",
+  "entity": "Mesoamerican Ballgame",
+  "entity_type": "Sport",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Players hitting rubber ball"
+   }
+  },
+  "dimensions": {
+   "Category": "Sport",
+   "Signature": "Ritual game in stone courts",
+   "Material": "Rubber ball court"
+  },
+  "confusions": [
+   "Gladiator Combat",
+   "Arrow Sacrifice",
+   "Flower War"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_practices_0032",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "practices",
+  "entity": "Human Sacrifice",
+  "entity_type": "Ritual",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Priest with obsidian knife"
+   }
+  },
+  "dimensions": {
+   "Category": "Ritual",
+   "Signature": "Religious offering to the gods",
+   "Material": "Obsidian blades temple"
+  },
+  "confusions": [
+   "Auto-Sacrifice",
+   "Flower War",
+   "Captive Execution"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_practices_0033",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "practices",
+  "entity": "Chinampa Farming",
+  "entity_type": "Agriculture",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Garden plots on a lake"
+   }
+  },
+  "dimensions": {
+   "Category": "Agriculture",
+   "Signature": "Floating gardens for farming",
+   "Material": "Mud reed willow"
+  },
+  "confusions": [
+   "Terrace Farming",
+   "Slash and Burn",
+   "Irrigation"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_practices_0034",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "practices",
+  "entity": "Inca Trail",
+  "entity_type": "Route",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Stone-paved mountain road"
+   }
+  },
+  "dimensions": {
+   "Category": "Route",
+   "Signature": "Road network of the Inca Empire",
+   "Material": "Stone paths bridges"
+  },
+  "confusions": [
+   "Royal Road",
+   "Appian Way",
+   "Silk Road"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_practices_0035",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "practices",
+  "entity": "Cacao Beans",
+  "entity_type": "Currency",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Pile of brown beans"
+   }
+  },
+  "dimensions": {
+   "Category": "Currency",
+   "Signature": "Money and chocolate drink source",
+   "Material": "Dried cacao beans"
+  },
+  "confusions": [
+   "Copper Axes",
+   "Cotton Cloaks",
+   "Gold Dust"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_practices_0036",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "practices",
+  "entity": "Auto-Sacrifice",
+  "entity_type": "Ritual",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Figure piercing tongue with thorn"
+   }
+  },
+  "dimensions": {
+   "Category": "Ritual",
+   "Signature": "Bloodletting for communion with gods",
+   "Material": "Stingray spine thorns"
+  },
+  "confusions": [
+   "Human Sacrifice",
+   "Flower War",
+   "Offering"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_figures_0037",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "figures",
+  "entity": "Moctezuma II",
+  "entity_type": "Emperor",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Portrait in feathered headdress"
+   }
+  },
+  "dimensions": {
+   "Category": "Emperor",
+   "Signature": "Last Aztec emperor who met Cortes",
+   "Material": "Turquoise feathers"
+  },
+  "confusions": [
+   "Cuauhtemoc",
+   "Ahuitzotl",
+   "Itzcoatl"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_figures_0038",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "figures",
+  "entity": "Cuauhtemoc",
+  "entity_type": "Emperor",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Figure in warrior regalia"
+   }
+  },
+  "dimensions": {
+   "Category": "Emperor",
+   "Signature": "Last Aztec emperor resisting Spanish",
+   "Material": "Eagle feathers"
+  },
+  "confusions": [
+   "Moctezuma II",
+   "Cuitlahuac",
+   "Itzcoatl"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_figures_0039",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "figures",
+  "entity": "Pachacuti",
+  "entity_type": "Emperor",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Figure with golden sun disc"
+   }
+  },
+  "dimensions": {
+   "Category": "Emperor",
+   "Signature": "Inca emperor who built Machu Picchu",
+   "Material": "Gold regalia"
+  },
+  "confusions": [
+   "Huayna Capac",
+   "Topa Inca",
+   "Manco Capac"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_figures_0040",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "figures",
+  "entity": "Pacal the Great",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Jade mask and headdress"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Maya king of Palenque",
+   "Material": "Jade limestone"
+  },
+  "confusions": [
+   "Yax Pac",
+   "Shield Jaguar",
+   "Smoke Jaguar"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_figures_0041",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "figures",
+  "entity": "Hernan Cortes",
+  "entity_type": "Conquistador",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Armored figure with cross"
+   }
+  },
+  "dimensions": {
+   "Category": "Conquistador",
+   "Signature": "Conquered the Aztec Empire",
+   "Material": "Steel armor harquebus"
+  },
+  "confusions": [
+   "Francisco Pizarro",
+   "Pedro de Alvarado",
+   "Cabeza de Vaca"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_figures_0042",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "figures",
+  "entity": "Francisco Pizarro",
+  "entity_type": "Conquistador",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Armored figure with sword"
+   }
+  },
+  "dimensions": {
+   "Category": "Conquistador",
+   "Signature": "Conquered the Inca Empire",
+   "Material": "Steel armor sword"
+  },
+  "confusions": [
+   "Hernan Cortes",
+   "Balboa",
+   "Cabeza de Vaca"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_figures_0043",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "figures",
+  "entity": "Topa Inca",
+  "entity_type": "Emperor",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Figure in golden regalia"
+   }
+  },
+  "dimensions": {
+   "Category": "Emperor",
+   "Signature": "Inca emperor who expanded the empire",
+   "Material": "Gold bronze"
+  },
+  "confusions": [
+   "Pachacuti",
+   "Huayna Capac",
+   "Manco Capac"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_concepts_0044",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "concepts",
+  "entity": "Codex",
+  "entity_type": "Document",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Folded bark-paper book"
+   }
+  },
+  "dimensions": {
+   "Category": "Document",
+   "Signature": "Mesoamerican painted book",
+   "Material": "Bark paper paint"
+  },
+  "confusions": [
+   "Scroll",
+   "Tablet",
+   "Stela Inscription"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_concepts_0045",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "concepts",
+  "entity": "Step Pyramid",
+  "entity_type": "Architecture",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Tiered pyramid with temple"
+   }
+  },
+  "dimensions": {
+   "Category": "Architecture",
+   "Signature": "Pyramid with stepped tiers and temple",
+   "Material": "Stone"
+  },
+  "confusions": [
+   "Smooth Pyramid",
+   "Ziggurat",
+   "Platform Mound"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_concepts_0046",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "concepts",
+  "entity": "Stelae",
+  "entity_type": "Monument",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Carved stone pillar"
+   }
+  },
+  "dimensions": {
+   "Category": "Monument",
+   "Signature": "Commemorative carved stone slabs",
+   "Material": "Carved stone"
+  },
+  "confusions": [
+   "Obelisk",
+   "Runestone",
+   "Totem Pole"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_concepts_0047",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "concepts",
+  "entity": "Tzompantli",
+  "entity_type": "Structure",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Skull rack near temple"
+   }
+  },
+  "dimensions": {
+   "Category": "Structure",
+   "Signature": "Display of sacrificial victims skulls",
+   "Material": "Skulls wooden rack"
+  },
+  "confusions": [
+   "Mortuary Temple",
+   "Ossuary",
+   "Bone Charnel"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_concepts_0048",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "concepts",
+  "entity": "Underworld Xibalba",
+  "entity_type": "Mythology",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Dark cave realm of the dead"
+   }
+  },
+  "dimensions": {
+   "Category": "Mythology",
+   "Signature": "Maya underworld of trials",
+   "Material": "Stone caves darkness"
+  },
+  "confusions": [
+   "Mictlan",
+   "Hell",
+   "Hades"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_concepts_0049",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "concepts",
+  "entity": "Templo Mayor",
+  "entity_type": "Temple",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Twin-shrined stepped pyramid"
+   }
+  },
+  "dimensions": {
+   "Category": "Temple",
+   "Signature": "Aztec main temple in Tenochtitlan",
+   "Material": "Stone shrines"
+  },
+  "confusions": [
+   "Pyramid of the Sun",
+   "Pyramid of Kukulkan",
+   "Temple of Inscriptions"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesoamerica_civs_0050",
+  "universe": "history",
+  "world": "mesoamerica",
+  "subcategory": "civs",
+  "entity": "Mixtec Civilization",
+  "entity_type": "Civilization",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Codex with colorful painted figures"
+   }
+  },
+  "dimensions": {
+   "Category": "Civilization",
+   "Signature": "Master codex painters and goldsmiths",
+   "Material": "Bark paper and gold"
+  },
+  "confusions": [
+   "Zapotec",
+   "Aztec",
+   "Maya"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

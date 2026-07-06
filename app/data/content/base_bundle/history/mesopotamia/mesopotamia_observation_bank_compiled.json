@@ -1,1 +1,1430 @@
-[]
+[
+ {
+  "observation_id": "history_mesopotamia_civs_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "civs",
+  "entity": "Sumerian City-States",
+  "entity_type": "Civilization",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Ziggurat with stepped tiers"
+   }
+  },
+  "dimensions": {
+   "Category": "Civilization",
+   "Signature": "First urban civilization with writing",
+   "Material": "Mudbrick ziggurats"
+  },
+  "confusions": [
+   "Babylon",
+   "Assyria",
+   "Akkad"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_civs_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "civs",
+  "entity": "Babylonian Empire",
+  "entity_type": "Empire",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Walled city with blue gates"
+   }
+  },
+  "dimensions": {
+   "Category": "Empire",
+   "Signature": "Mesopotamian empire of Hammurabi",
+   "Material": "Mudbrick walls blue tile"
+  },
+  "confusions": [
+   "Assyria",
+   "Sumer",
+   "Akkad"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_civs_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "civs",
+  "entity": "Assyrian Empire",
+  "entity_type": "Empire",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Citadel with winged bulls"
+   }
+  },
+  "dimensions": {
+   "Category": "Empire",
+   "Signature": "Iron-age military superpower",
+   "Material": "Stone reliefs iron weapons"
+  },
+  "confusions": [
+   "Babylon",
+   "Sumer",
+   "Hittites"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_civs_0004",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "civs",
+  "entity": "Akkadian Empire",
+  "entity_type": "Empire",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Bronze head of a king"
+   }
+  },
+  "dimensions": {
+   "Category": "Empire",
+   "Signature": "First empire under Sargon",
+   "Material": "Bronze sculpture"
+  },
+  "confusions": [
+   "Sumer",
+   "Babylon",
+   "Assyria"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_civs_0005",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "civs",
+  "entity": "Sumer",
+  "entity_type": "Civilization",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Reed marshes with mudbrick temples"
+   }
+  },
+  "dimensions": {
+   "Category": "Civilization",
+   "Signature": "Cradle of civilization in southern Mesopotamia",
+   "Material": "Mudbrick reeds"
+  },
+  "confusions": [
+   "Akkad",
+   "Babylon",
+   "Assyria"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_rulers_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "rulers",
+  "entity": "Hammurabi",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Bust with beard and law stele"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Babylonian king famous for his law code",
+   "Material": "Basalt stele"
+  },
+  "confusions": [
+   "Sargon",
+   "Nebuchadnezzar",
+   "Ashurbanipal"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_rulers_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "rulers",
+  "entity": "Sargon of Akkad",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Bronze head of ruler"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Founder of the first empire",
+   "Material": "Bronze head"
+  },
+  "confusions": [
+   "Hammurabi",
+   "Naram-Sin",
+   "Shar-Kali-Sharri"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_rulers_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "rulers",
+  "entity": "Nebuchadnezzar II",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Portrait with crown and walls"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Built Hanging Gardens and conquered Jerusalem",
+   "Material": "Brick walls"
+  },
+  "confusions": [
+   "Hammurabi",
+   "Nabonidus",
+   "Ashurbanipal"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_rulers_0004",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "rulers",
+  "entity": "Ashurbanipal",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Portrait with lion hunt"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Last great Assyrian king and library builder",
+   "Material": "Stone reliefs clay tablets"
+  },
+  "confusions": [
+   "Esarhaddon",
+   "Sennacherib",
+   "Tiglath-Pileser"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_rulers_0005",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "rulers",
+  "entity": "Gilgamesh",
+  "entity_type": "Legendary King",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Figure wrestling a bull"
+   }
+  },
+  "dimensions": {
+   "Category": "Legendary King",
+   "Signature": "Legendary king of Uruk in the epic",
+   "Material": "Stone carving"
+  },
+  "confusions": [
+   "Sargon",
+   "Hammurabi",
+   "Enkidu"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_rulers_0006",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "rulers",
+  "entity": "Sennacherib",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Portrait with siege of city"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Assyrian king who sacked Babylon",
+   "Material": "Stone reliefs"
+  },
+  "confusions": [
+   "Ashurbanipal",
+   "Esarhaddon",
+   "Tiglath-Pileser"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_rulers_0007",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "rulers",
+  "entity": "Gudea",
+  "entity_type": "Ruler",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Diorite statue of pious ruler"
+   }
+  },
+  "dimensions": {
+   "Category": "Ruler",
+   "Signature": "Sumerian governor known for statues",
+   "Material": "Diorite stone"
+  },
+  "confusions": [
+   "Gudea of Lagash",
+   "Ur-Nammu",
+   "Shulgi"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_inventions_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "inventions",
+  "entity": "Cuneiform",
+  "entity_type": "Writing System",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Wedge-shaped marks on clay tablet"
+   }
+  },
+  "dimensions": {
+   "Category": "Writing System",
+   "Signature": "Worlds first writing system",
+   "Material": "Clay tablets reed stylus"
+  },
+  "confusions": [
+   "Hieroglyphs",
+   "Phoenician Alphabet",
+   "Linear B"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_inventions_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "inventions",
+  "entity": "Wheel",
+  "entity_type": "Invention",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Spoked wooden wheel"
+   }
+  },
+  "dimensions": {
+   "Category": "Invention",
+   "Signature": "Revolutionized transport and pottery",
+   "Material": "Wood iron"
+  },
+  "confusions": [
+   "Sail",
+   "Plow",
+   "Lever"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_inventions_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "inventions",
+  "entity": "Sailboat",
+  "entity_type": "Vehicle",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Reed boat with woven sail"
+   }
+  },
+  "dimensions": {
+   "Category": "Vehicle",
+   "Signature": "Harnessing wind for water transport",
+   "Material": "Reeds woven cloth"
+  },
+  "confusions": [
+   "Wheel",
+   "Rowboat",
+   "Raft"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_inventions_0004",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "inventions",
+  "entity": "Plow",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Wooden plow drawn by oxen"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Agricultural tool for tilling soil",
+   "Material": "Wood iron"
+  },
+  "confusions": [
+   "Wheel",
+   "Sickle",
+   "Hoe"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_inventions_0005",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "inventions",
+  "entity": "Mathematics System",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Cuneiform numerals base-60"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Base-60 number system giving us 60 minutes",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Base-10 System",
+   "Roman Numerals",
+   "Egyptian Fractions"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_inventions_0006",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "inventions",
+  "entity": "Astronomy",
+  "entity_type": "Science",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Star chart on clay tablet"
+   }
+  },
+  "dimensions": {
+   "Category": "Science",
+   "Signature": "Systematic observation of celestial bodies",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Astrology",
+   "Calendrics",
+   "Geometry"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_inventions_0007",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "inventions",
+  "entity": "Irrigation",
+  "entity_type": "Agriculture",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Canals branching from river"
+   }
+  },
+  "dimensions": {
+   "Category": "Agriculture",
+   "Signature": "Controlled water supply for farming",
+   "Material": "Mud canals dikes"
+  },
+  "confusions": [
+   "Terrace Farming",
+   "Dry Farming",
+   "Rain-fed Agriculture"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_inventions_0008",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "inventions",
+  "entity": "Glassmaking",
+  "entity_type": "Craft",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Molten glass being shaped"
+   }
+  },
+  "dimensions": {
+   "Category": "Craft",
+   "Signature": "Early manufacture of glass vessels",
+   "Material": "Sand soda ash"
+  },
+  "confusions": [
+   "Pottery",
+   "Metal Casting",
+   "Bead Making"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_sites_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "sites",
+  "entity": "Ziggurat of Ur",
+  "entity_type": "Temple",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Stepped mudbrick pyramid"
+   }
+  },
+  "dimensions": {
+   "Category": "Temple",
+   "Signature": "Sumerian temple tower dedicated to moon god",
+   "Material": "Baked mudbrick"
+  },
+  "confusions": [
+   "Tower of Babel",
+   "Etemenanki",
+   "Chogha Zanbil"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_sites_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "sites",
+  "entity": "Hanging Gardens of Babylon",
+  "entity_type": "Wonder",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Terraced gardens with cascading plants"
+   }
+  },
+  "dimensions": {
+   "Category": "Wonder",
+   "Signature": "One of Seven Wonders allegedly built by Nebuchadnezzar",
+   "Material": "Stone terraces soil water"
+  },
+  "confusions": [
+   "Pyramid of Giza",
+   "Lighthouse of Alexandria",
+   "Temple of Artemis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_sites_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "sites",
+  "entity": "Ishtar Gate",
+  "entity_type": "Monument",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Blue glazed gate with animal reliefs"
+   }
+  },
+  "dimensions": {
+   "Category": "Monument",
+   "Signature": "Babylon gate with bulls and dragons",
+   "Material": "Glazed brick"
+  },
+  "confusions": [
+   "Lion Gate of Mycenae",
+   "Arc de Triomphe",
+   "Brandenburg Gate"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_sites_0004",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "sites",
+  "entity": "Library of Ashurbanipal",
+  "entity_type": "Institution",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Shelves of clay tablets"
+   }
+  },
+  "dimensions": {
+   "Category": "Institution",
+   "Signature": "Earliest systematically organized library",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Library of Alexandria",
+   "House of Wisdom",
+   "Pergamum Library"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_sites_0005",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "sites",
+  "entity": "City of Uruk",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Walled city with temples"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "One of the worlds first true cities",
+   "Material": "Mudbrick walls"
+  },
+  "confusions": [
+   "Ur",
+   "Babylon",
+   "Nineveh"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_sites_0006",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "sites",
+  "entity": "City of Ur",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Ziggurat beside river"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Sumerian city with Royal Cemetery",
+   "Material": "Mudbrick tombs gold"
+  },
+  "confusions": [
+   "Uruk",
+   "Babylon",
+   "Nineveh"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_sites_0007",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "sites",
+  "entity": "Nineveh",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Walled Assyrian capital"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Last capital of the Assyrian Empire",
+   "Material": "Stone walls reliefs"
+  },
+  "confusions": [
+   "Babylon",
+   "Nimrud",
+   "Khorsabad"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_artifacts_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "artifacts",
+  "entity": "Code of Hammurabi",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Basalt stele with laws"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Earliest comprehensive written law code",
+   "Material": "Basalt stele"
+  },
+  "confusions": [
+   "Magna Carta",
+   "Twelve Tables",
+   "Edict of Ashoka"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_artifacts_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "artifacts",
+  "entity": "Cylinder Seal",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#D4A574",
+    "pattern": "Small carved stone cylinder"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Rolled seal for authenticating documents",
+   "Material": "Carved stone"
+  },
+  "confusions": [
+   "Signet Ring",
+   "Stamp Seal",
+   "Clay Bulla"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_artifacts_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "artifacts",
+  "entity": "Standard of Ur",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Wooden box with mosaic scenes"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Sumerian mosaic depicting war and peace",
+   "Material": "Lapis lazuli shell bitumen"
+  },
+  "confusions": [
+   "Royal Standard",
+   "Warka Vase",
+   "Stele of Vultures"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_artifacts_0004",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "artifacts",
+  "entity": "Stele of Hammurabi",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Stone stele receiving laws from god"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Depicts king receiving laws from Shamash",
+   "Material": "Basalt stele"
+  },
+  "confusions": [
+   "Code of Ur-Nammu",
+   "Stele of Vultures",
+   "Naram-Sin Stele"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_artifacts_0005",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "artifacts",
+  "entity": "Lyre of Ur",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Decorated wooden lyre with bull head"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Worlds oldest surviving stringed instrument",
+   "Material": "Wood gold lapis"
+  },
+  "confusions": [
+   "Harp",
+   "Lute",
+   "Sistrum"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_artifacts_0006",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "artifacts",
+  "entity": "Mask of Warka",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Carved marble female face"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Earliest known naturalistic human face",
+   "Material": "Marble"
+  },
+  "confusions": [
+   "Death Mask of Agamemnon",
+   "Nefertiti Bust",
+   "Tutankhamun Mask"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_mythology_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "mythology",
+  "entity": "Epic of Gilgamesh",
+  "entity_type": "Literature",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Clay tablets with cuneiform story"
+   }
+  },
+  "dimensions": {
+   "Category": "Literature",
+   "Signature": "Worlds oldest surviving great literature",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Iliad",
+   "Enuma Elish",
+   "Atrahasis"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_mythology_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "mythology",
+  "entity": "Enkidu",
+  "entity_type": "Mythological Figure",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Wild man with animal companions"
+   }
+  },
+  "dimensions": {
+   "Category": "Mythological Figure",
+   "Signature": "Wild man created as Gilgameshs equal",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Gilgamesh",
+   "Humbaba",
+   "Ishtar"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_mythology_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "mythology",
+  "entity": "Marduk",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Figure with dragon companion"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Chief god of Babylon and creator deity",
+   "Material": "Gold bronze statues"
+  },
+  "confusions": [
+   "Ashur",
+   "Ishtar",
+   "Enlil"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_mythology_0004",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "mythology",
+  "entity": "Ishtar",
+  "entity_type": "Goddess",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Figure with star crown"
+   }
+  },
+  "dimensions": {
+   "Category": "Goddess",
+   "Signature": "Goddess of love war and fertility",
+   "Material": "Stone carving"
+  },
+  "confusions": [
+   "Inanna",
+   "Astarte",
+   "Asherah"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_mythology_0005",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "mythology",
+  "entity": "Enuma Elish",
+  "entity_type": "Text",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Tablet with creation story"
+   }
+  },
+  "dimensions": {
+   "Category": "Text",
+   "Signature": "Babylonian creation epic",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Epic of Gilgamesh",
+   "Atrahasis",
+   "Genesis"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_mythology_0006",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "mythology",
+  "entity": "Tower of Babel",
+  "entity_type": "Legend",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Tall ziggurat reaching skyward"
+   }
+  },
+  "dimensions": {
+   "Category": "Legend",
+   "Signature": "Biblical tower inspired by Mesopotamian ziggurats",
+   "Material": "Mudbrick"
+  },
+  "confusions": [
+   "Ziggurat of Ur",
+   "Etemenanki",
+   "Pyramid of Giza"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_mythology_0007",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "mythology",
+  "entity": "Underworld Kur",
+  "entity_type": "Mythology",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Dark realm of the dead"
+   }
+  },
+  "dimensions": {
+   "Category": "Mythology",
+   "Signature": "Mesopotamian land of no return",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Sheol",
+   "Hades",
+   "Xibalba"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_geography_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "geography",
+  "entity": "Tigris River",
+  "entity_type": "River",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "River through arid plain"
+   }
+  },
+  "dimensions": {
+   "Category": "River",
+   "Signature": "Eastern river of Mesopotamia",
+   "Material": "Freshwater silt"
+  },
+  "confusions": [
+   "Euphrates",
+   "Nile",
+   "Jordan"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_geography_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "geography",
+  "entity": "Euphrates River",
+  "entity_type": "River",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Wide river through reed beds"
+   }
+  },
+  "dimensions": {
+   "Category": "River",
+   "Signature": "Western river of Mesopotamia",
+   "Material": "Freshwater silt"
+  },
+  "confusions": [
+   "Tigris",
+   "Nile",
+   "Orontes"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_geography_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "geography",
+  "entity": "Fertile Crescent",
+  "entity_type": "Region",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Arc of green land between rivers"
+   }
+  },
+  "dimensions": {
+   "Category": "Region",
+   "Signature": "Cradle of agriculture and civilization",
+   "Material": "Alluvial soil"
+  },
+  "confusions": [
+   "Nile Delta",
+   "Indus Valley",
+   "Yellow River Valley"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_geography_0004",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "geography",
+  "entity": "Persian Gulf",
+  "entity_type": "Sea",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Body of water south of Mesopotamia"
+   }
+  },
+  "dimensions": {
+   "Category": "Sea",
+   "Signature": "Trade route to India and Arabia",
+   "Material": "Saltwater pearls"
+  },
+  "confusions": [
+   "Red Sea",
+   "Mediterranean",
+   "Caspian Sea"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_concepts_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "concepts",
+  "entity": "Base-60 Number System",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Sexagesimal numerals"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "System giving us 60 seconds and 360 degrees",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Base-10 System",
+   "Roman Numerals",
+   "Binary"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_concepts_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "concepts",
+  "entity": "Lunar Calendar",
+  "entity_type": "Calendar",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Moon phases chart on tablet"
+   }
+  },
+  "dimensions": {
+   "Category": "Calendar",
+   "Signature": "Month-based calendar tracking lunar cycles",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Solar Calendar",
+   "Julian Calendar",
+   "Egyptian Calendar"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_concepts_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "concepts",
+  "entity": "City-State",
+  "entity_type": "Political Unit",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Walled city with surrounding farmland"
+   }
+  },
+  "dimensions": {
+   "Category": "Political Unit",
+   "Signature": "Independent urban center with territory",
+   "Material": "Mudbrick walls"
+  },
+  "confusions": [
+   "Nation-State",
+   "Empire",
+   "Polis"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_culture_0001",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "culture",
+  "entity": "Cuneiform Tablet",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Clay tablet with wedge writing"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Recording medium of Mesopotamian civilization",
+   "Material": "Clay reed stylus"
+  },
+  "confusions": [
+   "Papyrus Scroll",
+   "Bamboo Slip",
+   "Parchment"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_culture_0002",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "culture",
+  "entity": "Lion Hunt of Ashurbanipal",
+  "entity_type": "Art",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Relief of king hunting lions"
+   }
+  },
+  "dimensions": {
+   "Category": "Art",
+   "Signature": "Masterpiece of Assyrian palace relief",
+   "Material": "Carved stone"
+  },
+  "confusions": [
+   "Standard of Ur",
+   "Stele of Vultures",
+   "Warka Vase"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_culture_0003",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "culture",
+  "entity": "Cuneiform Mathematics",
+  "entity_type": "Science",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Geometric figures on tablet"
+   }
+  },
+  "dimensions": {
+   "Category": "Science",
+   "Signature": "Advanced geometry and algebra",
+   "Material": "Clay tablets"
+  },
+  "confusions": [
+   "Egyptian Mathematics",
+   "Greek Mathematics",
+   "Vedic Mathematics"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_mesopotamia_culture_0004",
+  "universe": "history",
+  "world": "mesopotamia",
+  "subcategory": "culture",
+  "entity": "First Written Laws",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "King receiving laws from god"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Earliest codified legal systems",
+   "Material": "Stone stele"
+  },
+  "confusions": [
+   "Code of Ur-Nammu",
+   "Code of Hammurabi",
+   "Roman Twelve Tables"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

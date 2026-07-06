@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "history_viking_age_figures_0001",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "figures",
+  "entity": "Leif Erikson",
+  "entity_type": "Explorer",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Figure in helmet standing on shore"
+   }
+  },
+  "dimensions": {
+   "Category": "Explorer",
+   "Signature": "Norse explorer who reached North America",
+   "Material": "Iron wood"
+  },
+  "confusions": [
+   "Erik the Red",
+   "Bjarni Herjolfsson",
+   "Thorfinn Karlsefni"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_figures_0002",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "figures",
+  "entity": "Erik the Red",
+  "entity_type": "Explorer",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Figure with red beard and axe"
+   }
+  },
+  "dimensions": {
+   "Category": "Explorer",
+   "Signature": "Norse explorer who colonized Greenland",
+   "Material": "Iron axe wool"
+  },
+  "confusions": [
+   "Leif Erikson",
+   "Thorfinn Karlsefni",
+   "Bjarni Herjolfsson"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_figures_0003",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "figures",
+  "entity": "Ragnar Lothbrok",
+  "entity_type": "Legendary",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Figure with braided hair and axe"
+   }
+  },
+  "dimensions": {
+   "Category": "Legendary Hero",
+   "Signature": "Semi-legendary Viking hero",
+   "Material": "Iron steel"
+  },
+  "confusions": [
+   "Bjorn Ironside",
+   "Ivar the Boneless",
+   "Rollo"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_figures_0004",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "figures",
+  "entity": "Cnut the Great",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Portrait with crown and scepter"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Viking king of England Denmark and Norway",
+   "Material": "Gold crown"
+  },
+  "confusions": [
+   "Harald Bluetooth",
+   "Sweyn Forkbeard",
+   "Olaf Tryggvason"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_figures_0005",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "figures",
+  "entity": "Harald Hardrada",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Figure in mail armor with banner"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Last great Viking king who died at Stamford Bridge",
+   "Material": "Steel mail banner"
+  },
+  "confusions": [
+   "Harald Bluetooth",
+   "Cnut the Great",
+   "Olaf Haraldsson"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_figures_0006",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "figures",
+  "entity": "William the Conqueror",
+  "entity_type": "King",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Figure on horseback at Hastings"
+   }
+  },
+  "dimensions": {
+   "Category": "King",
+   "Signature": "Norman (Viking descendant) who conquered England",
+   "Material": "Steel armor"
+  },
+  "confusions": [
+   "Harold Godwinson",
+   "Cnut",
+   "Harald Hardrada"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_figures_0007",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "figures",
+  "entity": "Rollo",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Figure receiving land in France"
+   }
+  },
+  "dimensions": {
+   "Category": "Leader",
+   "Signature": "Viking founder of Normandy",
+   "Material": "Iron sword land deeds"
+  },
+  "confusions": [
+   "Ragnar",
+   "Cnut",
+   "William Conqueror"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_warriors_0008",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "warriors",
+  "entity": "Berserker",
+  "entity_type": "Warrior",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Figure in fury with axe"
+   }
+  },
+  "dimensions": {
+   "Category": "Warrior",
+   "Signature": "Frenzied Norse warrior in trance",
+   "Material": "Bear skin iron axe"
+  },
+  "confusions": [
+   "Housecarl",
+   "Thrall",
+   "Huscarl"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_warriors_0009",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "warriors",
+  "entity": "Viking Longship",
+  "entity_type": "Ship",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Long wooden ship with dragon prow and shields"
+   }
+  },
+  "dimensions": {
+   "Category": "Ship",
+   "Signature": "Viking warship with shallow draft and sail",
+   "Material": "Oak iron sail"
+  },
+  "confusions": [
+   "Knarr",
+   "Karvi",
+   "Busse"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_warriors_0010",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "warriors",
+  "entity": "Viking Shield",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Round wooden shield with iron boss"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Round center-grip shield of Viking warriors",
+   "Material": "Wood iron"
+  },
+  "confusions": [
+   "Kite Shield",
+   "Targe",
+   "Buckler"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_warriors_0011",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "warriors",
+  "entity": "Battle Axe",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Long-handled Danish axe"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Signature Viking weapon",
+   "Material": "Iron wood"
+  },
+  "confusions": [
+   "Sword",
+   "Spear",
+   "Mace"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_warriors_0012",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "warriors",
+  "entity": "Chainmail",
+  "entity_type": "Armor",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Iron mail shirt"
+   }
+  },
+  "dimensions": {
+   "Category": "Armor",
+   "Signature": "Viking mail protection",
+   "Material": "Iron rings"
+  },
+  "confusions": [
+   "Plate Armor",
+   "Leather Armor",
+   "Padded Gambeson"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0013",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Norse Mythology",
+  "entity_type": "Religion",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Tree of life with nine worlds"
+   }
+  },
+  "dimensions": {
+   "Category": "Religion",
+   "Signature": "Pre-Christian religion of Scandinavia",
+   "Material": "Stone wood carvings"
+  },
+  "confusions": [
+   "Greek Mythology",
+   "Celtic Mythology",
+   "Slavic Mythology"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0014",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Valhalla",
+  "entity_type": "Afterlife",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Great hall with warriors feasting"
+   }
+  },
+  "dimensions": {
+   "Category": "Afterlife",
+   "Signature": "Warriors paradise for the slain",
+   "Material": "Gold timber mead"
+  },
+  "confusions": [
+   "Hel",
+   "Folkvangr",
+   "Asgard"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0015",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Ragnarok",
+  "entity_type": "Myth",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Final battle of gods and giants"
+   }
+  },
+  "dimensions": {
+   "Category": "Eschatology",
+   "Signature": "Norse apocalypse of gods and world",
+   "Material": "Fire iron"
+  },
+  "confusions": [
+   "Apocalypse",
+   "Armageddon",
+   "Twilight of the Gods"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0016",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Runes",
+  "entity_type": "Writing",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Carved angular symbols on stone"
+   }
+  },
+  "dimensions": {
+   "Category": "Writing System",
+   "Signature": "Norse runic alphabet",
+   "Material": "Stone bone wood"
+  },
+  "confusions": [
+   "Latin Alphabet",
+   "Ogham",
+   "Cyrillic"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0017",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Thing",
+  "entity_type": "Assembly",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Freemen gathered on a hill"
+   }
+  },
+  "dimensions": {
+   "Category": "Assembly",
+   "Signature": "Norse democratic assembly of free men",
+   "Material": "Stone seats"
+  },
+  "confusions": [
+   "Althing",
+   "Witenagemot",
+   "Folkmoot"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0018",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Saga",
+  "entity_type": "Literature",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Long parchment with Norse tales"
+   }
+  },
+  "dimensions": {
+   "Category": "Literature",
+   "Signature": "Norse prose epic stories",
+   "Material": "Ink vellum"
+  },
+  "confusions": [
+   "Edda",
+   "Skaldic Poetry",
+   "Chronicle"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0019",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Skald",
+  "entity_type": "Poet",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Figure reciting verse at court"
+   }
+  },
+  "dimensions": {
+   "Category": "Poet",
+   "Signature": "Norse court poet composing praise poetry",
+   "Material": "Voice memory"
+  },
+  "confusions": [
+   "Bard",
+   "Troubadour",
+   "Griot"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_gods_0020",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "gods",
+  "entity": "Odin",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "One-eyed figure with spear and ravens"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Allfather and god of wisdom war and death",
+   "Material": "Spear gold"
+  },
+  "confusions": [
+   "Thor",
+   "Loki",
+   "Freyr"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_gods_0021",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "gods",
+  "entity": "Thor",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Figure with hammer and red beard"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Thunder god with Mjolnir hammer",
+   "Material": "Hammer iron"
+  },
+  "confusions": [
+   "Odin",
+   "Loki",
+   "Tyr"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_gods_0022",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "gods",
+  "entity": "Loki",
+  "entity_type": "Trickster",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Figure with cunning smile"
+   }
+  },
+  "dimensions": {
+   "Category": "Trickster",
+   "Signature": "Shape-shifting trickster god",
+   "Material": "Fire illusions"
+  },
+  "confusions": [
+   "Odin",
+   "Thor",
+   "Fenrir"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_gods_0023",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "gods",
+  "entity": "Freyja",
+  "entity_type": "Goddess",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Figure in flowing gown with cats"
+   }
+  },
+  "dimensions": {
+   "Category": "Goddess",
+   "Signature": "Goddess of love beauty and war",
+   "Material": "Gold amber"
+  },
+  "confusions": [
+   "Frigg",
+   "Sif",
+   "Idunn"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_gods_0024",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "gods",
+  "entity": "Heimdall",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Figure with horn on rainbow bridge"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "Watchman of the gods and Bifrost",
+   "Material": "Gjallarhorn gold"
+  },
+  "confusions": [
+   "Odin",
+   "Thor",
+   "Tyr"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_gods_0025",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "gods",
+  "entity": "Tyr",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "One-handed figure with sword"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "God of war and justice",
+   "Material": "Sword iron"
+  },
+  "confusions": [
+   "Odin",
+   "Thor",
+   "Heimdall"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_artifacts_0026",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "artifacts",
+  "entity": "Mjolnir",
+  "entity_type": "Weapon",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Short-handled hammer with short handle"
+   }
+  },
+  "dimensions": {
+   "Category": "Weapon",
+   "Signature": "Thors magical thunder hammer",
+   "Material": "Iron stone"
+  },
+  "confusions": [
+   "Gungnir",
+   "Draupnir",
+   "Gram"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_artifacts_0027",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "artifacts",
+  "entity": "Yggdrasil",
+  "entity_type": "Cosmology",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "World tree with roots and branches"
+   }
+  },
+  "dimensions": {
+   "Category": "Cosmology",
+   "Signature": "World tree connecting nine realms",
+   "Material": "Ash wood"
+  },
+  "confusions": [
+   "Irminsul",
+   "Tree of Life",
+   "Axis Mundi"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_artifacts_0028",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "artifacts",
+  "entity": "Runestone",
+  "entity_type": "Monument",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Standing stone with runic inscription"
+   }
+  },
+  "dimensions": {
+   "Category": "Monument",
+   "Signature": "Commemorative carved stone",
+   "Material": "Granite sandstone"
+  },
+  "confusions": [
+   "Hogback",
+   "Picture Stone",
+   "Cross Slab"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_artifacts_0029",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "artifacts",
+  "entity": "Dragon Prow",
+  "entity_type": "Ship Decoration",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Carved dragon head on ship stem"
+   }
+  },
+  "dimensions": {
+   "Category": "Decoration",
+   "Signature": "Intimidating carved figurehead",
+   "Material": "Oak carving"
+  },
+  "confusions": [
+   "Shields",
+   "Sail",
+   "Carving"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_artifacts_0030",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "artifacts",
+  "entity": "Hnefatafl",
+  "entity_type": "Game",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Board with pieces of unequal sides"
+   }
+  },
+  "dimensions": {
+   "Category": "Game",
+   "Signature": "Norse board game of king and attackers",
+   "Material": "Wood bone"
+  },
+  "confusions": [
+   "Chess",
+   "Nine Mens Morris",
+   "Backgammon"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_sites_0031",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "sites",
+  "entity": "Jorvik",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Viking settlement at York"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Viking kingdom of York",
+   "Material": "Timber earth"
+  },
+  "confusions": [
+   "Dublin",
+   "Novgorod",
+   "Hedeby"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_sites_0032",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "sites",
+  "entity": "Hedeby",
+  "entity_type": "Trading Town",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Walled trading settlement by the sea"
+   }
+  },
+  "dimensions": {
+   "Category": "Trading Town",
+   "Signature": "Major Viking Age trade port",
+   "Material": "Timber earth"
+  },
+  "confusions": [
+   "Jorvik",
+   "Birka",
+   "Kaupang"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_sites_0033",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "sites",
+  "entity": "Birka",
+  "entity_type": "Trading Town",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Island trading settlement"
+   }
+  },
+  "dimensions": {
+   "Category": "Trading Town",
+   "Signature": "Important Swedish Viking trading center",
+   "Material": "Timber earth"
+  },
+  "confusions": [
+   "Hedeby",
+   "Jorvik",
+   "Kaupang"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_sites_0034",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "sites",
+  "entity": "LAnse aux Meadows",
+  "entity_type": "Settlement",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Sod longhouses in Newfoundland"
+   }
+  },
+  "dimensions": {
+   "Category": "Settlement",
+   "Signature": "Only confirmed Norse site in North America",
+   "Material": "Sod timber"
+  },
+  "confusions": [
+   "Jorvik",
+   "Hedeby",
+   "Greenland"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_sites_0035",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "sites",
+  "entity": "Lindisfarne",
+  "entity_type": "Monastery",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Island monastery raided in 793"
+   }
+  },
+  "dimensions": {
+   "Category": "Monastery",
+   "Signature": "Site of the first major Viking raid",
+   "Material": "Stone manuscripts"
+  },
+  "confusions": [
+   "Iona",
+   "Jarrow",
+   "Whitby"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_geography_0036",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "geography",
+  "entity": "Scandinavia",
+  "entity_type": "Region",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Snowy mountains and fjords"
+   }
+  },
+  "dimensions": {
+   "Category": "Region",
+   "Signature": "Homeland of the Norse peoples",
+   "Material": "Granite ice fjords"
+  },
+  "confusions": [
+   "Iceland",
+   "Greenland",
+   "Faroe Islands"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_geography_0037",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "geography",
+  "entity": "Iceland",
+  "entity_type": "Island",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Volcanic island with geysers"
+   }
+  },
+  "dimensions": {
+   "Category": "Island",
+   "Signature": "Norse-settled volcanic island",
+   "Material": "Lava basalt"
+  },
+  "confusions": [
+   "Greenland",
+   "Faroes",
+   "Shetland"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_geography_0038",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "geography",
+  "entity": "Greenland",
+  "entity_type": "Island",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Vast icy island"
+   }
+  },
+  "dimensions": {
+   "Category": "Island",
+   "Signature": "Erik the Reds Norse colony",
+   "Material": "Ice stone"
+  },
+  "confusions": [
+   "Iceland",
+   "Vinland",
+   "Faroes"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_geography_0039",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "geography",
+  "entity": "Fjord",
+  "entity_type": "Geography",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Narrow sea inlet between cliffs"
+   }
+  },
+  "dimensions": {
+   "Category": "Geographic Feature",
+   "Signature": "Glacial valley flooded by sea",
+   "Material": "Granite seawater"
+  },
+  "confusions": [
+   "Sound",
+   "Bay",
+   "Strait"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_concepts_0040",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "concepts",
+  "entity": "Longship Design",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Clinker-built hull with sail and oars"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Revolutionary ship enabling Viking expansion",
+   "Material": "Oak iron sail"
+  },
+  "confusions": [
+   "Knarr",
+   "Cog",
+   "Galley"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_concepts_0041",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "concepts",
+  "entity": "Raiding and Trading",
+  "entity_type": "Economy",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Vikings trading and raiding"
+   }
+  },
+  "dimensions": {
+   "Category": "Economy",
+   "Signature": "Dual economy of commerce and plunder",
+   "Material": "Silver goods slaves"
+  },
+  "confusions": [
+   "Farming",
+   "Fishing",
+   "Mercenary Work"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_concepts_0042",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "concepts",
+  "entity": "Vinland",
+  "entity_type": "Geography",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Coastal land with grapes"
+   }
+  },
+  "dimensions": {
+   "Category": "Legendary Land",
+   "Signature": "Norse name for North America",
+   "Material": "Timber grapes"
+  },
+  "confusions": [
+   "Greenland",
+   "Markland",
+   "Helluland"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_concepts_0043",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "concepts",
+  "entity": "Danelaw",
+  "entity_type": "Territory",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Map of eastern England"
+   }
+  },
+  "dimensions": {
+   "Category": "Territory",
+   "Signature": "Area of England under Norse law",
+   "Material": "Official documents"
+  },
+  "confusions": [
+   "Normandy",
+   "Orkneys",
+   "Isle of Man"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_concepts_0044",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "concepts",
+  "entity": "Norse Law",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Assembly judging a case"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Norse legal system at the Thing",
+   "Material": "Spoken law memory"
+  },
+  "confusions": [
+   "Roman Law",
+   "Common Law",
+   "Canon Law"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0045",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Drakkar",
+  "entity_type": "Ship",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Dragon-headed warship"
+   }
+  },
+  "dimensions": {
+   "Category": "Ship",
+   "Signature": "Large decorated Viking warship",
+   "Material": "Oak sail iron"
+  },
+  "confusions": [
+   "Longship",
+   "Knarr",
+   "Karvi"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0046",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Norse Funeral",
+  "entity_type": "Ritual",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Ship burial with grave goods"
+   }
+  },
+  "dimensions": {
+   "Category": "Ritual",
+   "Signature": "Ship or mound burial with weapons",
+   "Material": "Timber iron gold"
+  },
+  "confusions": [
+   "Cremation",
+   "Mound Burial",
+   "Ship Burial"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_gods_0007",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "gods",
+  "entity": "Freyr",
+  "entity_type": "God",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Figure with golden boar and ship"
+   }
+  },
+  "dimensions": {
+   "Category": "God",
+   "Signature": "God of fertility peace and prosperity",
+   "Material": "Gold wood"
+  },
+  "confusions": [
+   "Freyja",
+   "Odin",
+   "Thor"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_culture_0047",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "culture",
+  "entity": "Seax",
+  "entity_type": "Tool",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Single-edged utility knife"
+   }
+  },
+  "dimensions": {
+   "Category": "Tool",
+   "Signature": "Everyday Norse utility knife",
+   "Material": "Iron wood bone"
+  },
+  "confusions": [
+   " scramasax",
+   "Dagger",
+   "Folding Knife"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_artifacts_0011",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "artifacts",
+  "entity": "Oseberg Ship",
+  "entity_type": "Artifact",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Ornately carved Viking ship burial"
+   }
+  },
+  "dimensions": {
+   "Category": "Artifact",
+   "Signature": "Magnificently carved ship burial of a Norse queen",
+   "Material": "Oak carving"
+  },
+  "confusions": [
+   "Gokstad Ship",
+   "Tune Ship",
+   "Skuldelev Ships"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_viking_age_concepts_0045",
+  "universe": "history",
+  "world": "viking_age",
+  "subcategory": "concepts",
+  "entity": "Uppsala",
+  "entity_type": "Site",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Grand pagan temple with golden roof"
+   }
+  },
+  "dimensions": {
+   "Category": "Site",
+   "Signature": "Great pagan temple and burial mounds of Sweden",
+   "Material": "Gold timber stone"
+  },
+  "confusions": [
+   "Birka",
+   "Hedeby",
+   "Jorvik"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

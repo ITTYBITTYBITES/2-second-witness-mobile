@@ -1,1 +1,1430 @@
-[]
+[
+ {
+  "observation_id": "history_modern_era_events_0001",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "World War I",
+  "entity_type": "Conflict",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Trench warfare with barbed wire"
+   }
+  },
+  "dimensions": {
+   "Category": "Conflict",
+   "Signature": "First global war 1914-1918",
+   "Material": "Steel rifles trenches"
+  },
+  "confusions": [
+   "World War II",
+   "Korean War",
+   "Spanish Civil War"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_events_0002",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "World War II",
+  "entity_type": "Conflict",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Map with advancing armies"
+   }
+  },
+  "dimensions": {
+   "Category": "Conflict",
+   "Signature": "Global war 1939-1945",
+   "Material": "Tanks aircraft bombs"
+  },
+  "confusions": [
+   "World War I",
+   "Cold War",
+   "Korean War"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_events_0003",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "Russian Revolution",
+  "entity_type": "Revolution",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Crowds storming the Winter Palace"
+   }
+  },
+  "dimensions": {
+   "Category": "Revolution",
+   "Signature": "1917 revolution creating Soviet Russia",
+   "Material": "Red flags rifles"
+  },
+  "confusions": [
+   "French Revolution",
+   "Chinese Revolution",
+   "Cuban Revolution"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_events_0004",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "Great Depression",
+  "entity_type": "Economic Crisis",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Bread lines and shuttered banks"
+   }
+  },
+  "dimensions": {
+   "Category": "Economic Crisis",
+   "Signature": "Global economic collapse of the 1930s",
+   "Material": "Currency stocks"
+  },
+  "confusions": [
+   "Panic of 1873",
+   "2008 Financial Crisis",
+   "Stagflation"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_events_0005",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "Atomic Bombings",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#FF4500",
+    "pattern": "Mushroom cloud over a city"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "Nuclear attacks on Hiroshima and Nagasaki",
+   "Material": "Uranium plutonium"
+  },
+  "confusions": [
+   "Firebombing",
+   "Hiroshima",
+   "Nagasaki"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_events_0006",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "Holocaust",
+  "entity_type": "Genocide",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Barbed wire fence of a camp"
+   }
+  },
+  "dimensions": {
+   "Category": "Genocide",
+   "Signature": "Nazi systematic murder of six million Jews",
+   "Material": "Concentration camps"
+  },
+  "confusions": [
+   "Armenian Genocide",
+   "Rwandan Genocide",
+   "Cambodian Genocide"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_events_0007",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "Moon Landing",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Astronaut on lunar surface"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "1969 Apollo 11 first moon landing",
+   "Material": "Spacesuits lunar module"
+  },
+  "confusions": [
+   "Sputnik",
+   "Space Shuttle",
+   "Mars Rover"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_events_0008",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "Fall of the Soviet Union",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Crowds tearing down red flag"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "1991 collapse of the USSR",
+   "Material": "Political documents"
+  },
+  "confusions": [
+   "Berlin Wall Fall",
+   "Prague Spring",
+   "Velvet Revolution"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_events_0009",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "events",
+  "entity": "Digital Revolution",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Computers and internet connecting the world"
+   }
+  },
+  "dimensions": {
+   "Category": "Era",
+   "Signature": "Transformation by computers and internet",
+   "Material": "Silicon copper"
+  },
+  "confusions": [
+   "Industrial Revolution",
+   "Information Age",
+   "Space Age"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0001",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Winston Churchill",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with cigar and bowler hat"
+   }
+  },
+  "dimensions": {
+   "Category": "Leader",
+   "Signature": "British wartime prime minister",
+   "Material": "Suit speeches"
+  },
+  "confusions": [
+   "Franklin Roosevelt",
+   "Neville Chamberlain",
+   "Clement Attlee"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0002",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Franklin D. Roosevelt",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with pince-nez glasses"
+   }
+  },
+  "dimensions": {
+   "Category": "President",
+   "Signature": "US president during Depression and WWII",
+   "Material": "Wheelchair speeches"
+  },
+  "confusions": [
+   "Winston Churchill",
+   "Harry Truman",
+   "Theodore Roosevelt"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0003",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Mahatma Gandhi",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Thin figure in white dhoti with staff"
+   }
+  },
+  "dimensions": {
+   "Category": "Leader",
+   "Signature": "Nonviolent leader of Indian independence",
+   "Material": "Handspun cotton staff"
+  },
+  "confusions": [
+   "Nehru",
+   "Martin Luther King",
+   "Nelson Mandela"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0004",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Nelson Mandela",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with warm smile"
+   }
+  },
+  "dimensions": {
+   "Category": "Leader",
+   "Signature": "Anti-apartheid revolutionary and president",
+   "Material": "African National Congress"
+  },
+  "confusions": [
+   "Gandhi",
+   "Desmond Tutu",
+   "Steve Biko"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0005",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Martin Luther King Jr.",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with microphone"
+   }
+  },
+  "dimensions": {
+   "Category": "Leader",
+   "Signature": "Civil rights leader and I Have a Dream speech",
+   "Material": "Speeches marches"
+  },
+  "confusions": [
+   "Malcolm X",
+   "Rosa Parks",
+   "James Baldwin"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0006",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Adolf Hitler",
+  "entity_type": "Dictator",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Portrait with mustache and uniform"
+   }
+  },
+  "dimensions": {
+   "Category": "Dictator",
+   "Signature": "Nazi dictator who started WWII",
+   "Material": "Uniforms propaganda"
+  },
+  "confusions": [
+   "Mussolini",
+   "Stalin",
+   "Hirohito"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0007",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Joseph Stalin",
+  "entity_type": "Dictator",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait with mustache and uniform"
+   }
+  },
+  "dimensions": {
+   "Category": "Dictator",
+   "Signature": "Soviet dictator during WWII and Cold War",
+   "Material": "Military uniform"
+  },
+  "confusions": [
+   "Lenin",
+   "Mao Zedong",
+   "Khrushchev"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0008",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Mao Zedong",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait with mole and high collar"
+   }
+  },
+  "dimensions": {
+   "Category": "Leader",
+   "Signature": "Communist founder of Peoples Republic of China",
+   "Material": "Propaganda art"
+  },
+  "confusions": [
+   "Chiang Kai-shek",
+   "Deng Xiaoping",
+   "Zhou Enlai"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0009",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "John F. Kennedy",
+  "entity_type": "President",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Portrait with swept hair"
+   }
+  },
+  "dimensions": {
+   "Category": "President",
+   "Signature": "US president during Cuban Missile Crisis",
+   "Material": "Suit speeches"
+  },
+  "confusions": [
+   "Nixon",
+   "Eisenhower",
+   "Johnson"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_leaders_0010",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "leaders",
+  "entity": "Nikita Khrushchev",
+  "entity_type": "Leader",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait with bald head"
+   }
+  },
+  "dimensions": {
+   "Category": "Leader",
+   "Signature": "Soviet leader during Cold War crises",
+   "Material": "Suit uniforms"
+  },
+  "confusions": [
+   "Stalin",
+   "Gorbachev",
+   "Brezhnev"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0001",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Television",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Box with cathode ray tube screen"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Broadcast visual media to homes",
+   "Material": "Glass vacuum tubes"
+  },
+  "confusions": [
+   "Radio",
+   "Cinema",
+   "Internet"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0002",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Computer",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#C0C0C0",
+    "pattern": "Room-sized machine with tape and lights"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Programmable electronic calculating machine",
+   "Material": "Vacuum tubes wires"
+  },
+  "confusions": [
+   "Abacus",
+   "Calculator",
+   "Smartphone"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0003",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Internet",
+  "entity_type": "Network",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Globe connected by network lines"
+   }
+  },
+  "dimensions": {
+   "Category": "Network",
+   "Signature": "Global interconnected computer network",
+   "Material": "Fiber optic cables silicon"
+  },
+  "confusions": [
+   "Telephone",
+   "Radio",
+   "Telegraph"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0004",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Nuclear Power",
+  "entity_type": "Energy",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Cooling towers and reactor dome"
+   }
+  },
+  "dimensions": {
+   "Category": "Energy",
+   "Signature": "Electricity from controlled fission",
+   "Material": "Uranium steel concrete"
+  },
+  "confusions": [
+   "Coal Power",
+   "Solar Power",
+   "Hydroelectric"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0005",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Jet Engine",
+  "entity_type": "Machine",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Turbine with intake and exhaust"
+   }
+  },
+  "dimensions": {
+   "Category": "Machine",
+   "Signature": "Jet propulsion for aircraft",
+   "Material": "Titanium alloys"
+  },
+  "confusions": [
+   "Propeller Engine",
+   "Rocket Motor",
+   "Turboprop"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0006",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "DNA Discovery",
+  "entity_type": "Science",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Double helix structure"
+   }
+  },
+  "dimensions": {
+   "Category": "Science",
+   "Signature": "Discovery of the structure of DNA",
+   "Material": "X-ray crystallography models"
+  },
+  "confusions": [
+   "Periodic Table",
+   "Germ Theory",
+   "Relativity"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0007",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Vaccine",
+  "entity_type": "Medicine",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Syringe and vial"
+   }
+  },
+  "dimensions": {
+   "Category": "Medicine",
+   "Signature": "Preventive treatment against diseases",
+   "Material": "Biological cultures"
+  },
+  "confusions": [
+   "Antibiotics",
+   "Insulin",
+   "Chemotherapy"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0008",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Smartphone",
+  "entity_type": "Device",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Handheld device with touchscreen"
+   }
+  },
+  "dimensions": {
+   "Category": "Device",
+   "Signature": "Pocket computer phone and camera",
+   "Material": "Glass silicon lithium"
+  },
+  "confusions": [
+   "Telephone",
+   "Computer",
+   "Radio"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0009",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Artificial Intelligence",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Neural network nodes"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Machines simulating human intelligence",
+   "Material": "Silicon algorithms"
+  },
+  "confusions": [
+   "Computer",
+   "Robotics",
+   "Internet"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0010",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Antibiotics",
+  "entity_type": "Medicine",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Petri dish with mold"
+   }
+  },
+  "dimensions": {
+   "Category": "Medicine",
+   "Signature": "Drugs that kill bacteria",
+   "Material": "Penicillin mold"
+  },
+  "confusions": [
+   "Vaccines",
+   "Antivirals",
+   "Antiseptics"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_technology_0011",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "technology",
+  "entity": "Genetic Engineering",
+  "entity_type": "Science",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "DNA strand being edited"
+   }
+  },
+  "dimensions": {
+   "Category": "Science",
+   "Signature": "Direct manipulation of genes",
+   "Material": "CRISPR enzymes"
+  },
+  "confusions": [
+   "Selective Breeding",
+   "Cloning",
+   "Gene Therapy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_culture_0001",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "culture",
+  "entity": "Rock and Roll",
+  "entity_type": "Music",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Electric guitar and amplifier"
+   }
+  },
+  "dimensions": {
+   "Category": "Music",
+   "Signature": "Revolutionary popular music genre",
+   "Material": "Electric guitars drums"
+  },
+  "confusions": [
+   "Jazz",
+   "Blues",
+   "Hip Hop"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_culture_0002",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "culture",
+  "entity": "Cinema",
+  "entity_type": "Art",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Film reel and projector beam"
+   }
+  },
+  "dimensions": {
+   "Category": "Art",
+   "Signature": "Motion picture entertainment",
+   "Material": "Film celluloid projectors"
+  },
+  "confusions": [
+   "Television",
+   "Theater",
+   "Radio Drama"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_culture_0003",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "culture",
+  "entity": "Hip Hop",
+  "entity_type": "Music",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "DJ turntables and microphone"
+   }
+  },
+  "dimensions": {
+   "Category": "Music",
+   "Signature": "Urban culture of rap and breakdance",
+   "Material": "Vinyl records drum machines"
+  },
+  "confusions": [
+   "Rock and Roll",
+   "Jazz",
+   "Reggae"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_culture_0004",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "culture",
+  "entity": "Social Media",
+  "entity_type": "Platform",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Phone with app icons"
+   }
+  },
+  "dimensions": {
+   "Category": "Platform",
+   "Signature": "Online platforms for social networking",
+   "Material": "Silicon software"
+  },
+  "confusions": [
+   "Internet",
+   "Television",
+   "Newspaper"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_culture_0005",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "culture",
+  "entity": "Environmental Movement",
+  "entity_type": "Movement",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Globe with green leaf"
+   }
+  },
+  "dimensions": {
+   "Category": "Movement",
+   "Signature": "Global awareness of environmental crisis",
+   "Material": "Printed materials protests"
+  },
+  "confusions": [
+   "Peace Movement",
+   "Civil Rights",
+   "Feminist Movement"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_culture_0006",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "culture",
+  "entity": "Globalization",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Arrows linking continents"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Interconnected world economy and culture",
+   "Material": "Shipping containers fiber optics"
+  },
+  "confusions": [
+   "Nationalism",
+   "Isolationism",
+   "Imperialism"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_culture_0007",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "culture",
+  "entity": "Jazz",
+  "entity_type": "Music",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Saxophone and trumpet performance"
+   }
+  },
+  "dimensions": {
+   "Category": "Music",
+   "Signature": "Improvisational American music",
+   "Material": "Brass instruments"
+  },
+  "confusions": [
+   "Blues",
+   "Rock",
+   "Classical"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_culture_0008",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "culture",
+  "entity": "Punk Rock",
+  "entity_type": "Music",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Spiky hair and leather jacket"
+   }
+  },
+  "dimensions": {
+   "Category": "Music",
+   "Signature": "Rebellious anti-establishment music",
+   "Material": "Electric guitar drums"
+  },
+  "confusions": [
+   "Rock",
+   "Metal",
+   "New Wave"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_geography_0001",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "geography",
+  "entity": "United Nations HQ",
+  "entity_type": "Institution",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Glass tower beside river"
+   }
+  },
+  "dimensions": {
+   "Category": "Institution",
+   "Signature": "Headquarters of international organization",
+   "Material": "Glass steel concrete"
+  },
+  "confusions": [
+   "League of Nations",
+   "European Parliament",
+   "World Bank"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_geography_0002",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "geography",
+  "entity": "Silicon Valley",
+  "entity_type": "Region",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Tech campuses and garages"
+   }
+  },
+  "dimensions": {
+   "Category": "Region",
+   "Signature": "Global center of technology innovation",
+   "Material": "Glass offices server farms"
+  },
+  "confusions": [
+   "Route 128",
+   "Bangalore",
+   "Shenzhen"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_geography_0003",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "geography",
+  "entity": "Berlin Wall",
+  "entity_type": "Monument",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Concrete wall with graffiti"
+   }
+  },
+  "dimensions": {
+   "Category": "Monument",
+   "Signature": "Symbol of Cold War division",
+   "Material": "Concrete barbed wire"
+  },
+  "confusions": [
+   "Iron Curtain",
+   "DMZ Korea",
+   "Checkpoint Charlie"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_geography_0004",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "geography",
+  "entity": "Israel",
+  "entity_type": "Nation",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Map of Middle Eastern nation"
+   }
+  },
+  "dimensions": {
+   "Category": "Nation",
+   "Signature": "Modern state founded in 1948",
+   "Material": "Limestone desert"
+  },
+  "confusions": [
+   "Palestine",
+   "Jordan",
+   "Lebanon"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_geography_0005",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "geography",
+  "entity": "European Union",
+  "entity_type": "Bloc",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Circle of stars flag"
+   }
+  },
+  "dimensions": {
+   "Category": "Bloc",
+   "Signature": "Political and economic union of Europe",
+   "Material": "Documents treaties"
+  },
+  "confusions": [
+   "United Nations",
+   "NATO",
+   "Comecon"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_concepts_0001",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "concepts",
+  "entity": "Democracy",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Ballot box with voting"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Government by the people",
+   "Material": "Ballot boxes constitutions"
+  },
+  "confusions": [
+   "Dictatorship",
+   "Monarchy",
+   "Oligarchy"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_concepts_0002",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "concepts",
+  "entity": "Human Rights",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Universal Declaration document"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Universal rights belonging to all people",
+   "Material": "Printed declarations"
+  },
+  "confusions": [
+   "Civil Rights",
+   "Natural Law",
+   "Citizenship"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_concepts_0003",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "concepts",
+  "entity": "Climate Change",
+  "entity_type": "Concept",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Thermometer rising over earth"
+   }
+  },
+  "dimensions": {
+   "Category": "Concept",
+   "Signature": "Global warming from human activity",
+   "Material": "Carbon dioxide ice cores"
+  },
+  "confusions": [
+   "Ozone Depletion",
+   "Deforestation",
+   "Pollution"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_concepts_0004",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "concepts",
+  "entity": "Space Exploration",
+  "entity_type": "Endeavor",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Rocket launching into space"
+   }
+  },
+  "dimensions": {
+   "Category": "Endeavor",
+   "Signature": "Human exploration beyond Earth",
+   "Material": "Rockets spacesuits"
+  },
+  "confusions": [
+   "Deep Sea Exploration",
+   "Polar Exploration",
+   "Aviation"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_concepts_0005",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "concepts",
+  "entity": "Quantum Physics",
+  "entity_type": "Science",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Particles and probability clouds"
+   }
+  },
+  "dimensions": {
+   "Category": "Science",
+   "Signature": "Physics of the very small",
+   "Material": "Mathematics particle accelerators"
+  },
+  "confusions": [
+   "Relativity",
+   "Classical Physics",
+   "Thermodynamics"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_concepts_0006",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "concepts",
+  "entity": "Renewable Energy",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Wind turbines and solar panels"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "Clean energy from natural sources",
+   "Material": "Silicon turbines"
+  },
+  "confusions": [
+   "Fossil Fuels",
+   "Nuclear Power",
+   "Hydroelectric"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_concepts_0007",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "concepts",
+  "entity": "World Wide Web",
+  "entity_type": "Technology",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Browser window with hyperlinks"
+   }
+  },
+  "dimensions": {
+   "Category": "Technology",
+   "Signature": "System of interlinked hypertext documents",
+   "Material": "Software servers"
+  },
+  "confusions": [
+   "Internet",
+   "Telegram",
+   "Telephone"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_modern_era_concepts_0008",
+  "universe": "history",
+  "world": "modern_era",
+  "subcategory": "concepts",
+  "entity": "NATO",
+  "entity_type": "Alliance",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Compass star emblem"
+   }
+  },
+  "dimensions": {
+   "Category": "Alliance",
+   "Signature": "Western military alliance",
+   "Material": "Collective defense"
+  },
+  "confusions": [
+   "Warsaw Pact",
+   "UN",
+   "EU"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]

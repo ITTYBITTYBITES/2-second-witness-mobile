@@ -1,1 +1,1402 @@
-[]
+[
+ {
+  "observation_id": "history_ottoman_empire_rulers_0001",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "rulers",
+  "entity": "Suleiman the Magnificent",
+  "entity_type": "Sultan",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Portrait with turban and jeweled crown"
+   }
+  },
+  "dimensions": {
+   "Category": "Sultan",
+   "Signature": "Greatest Ottoman sultan and lawgiver",
+   "Material": "Silk gold jewelry"
+  },
+  "confusions": [
+   "Selim I",
+   "Mehmed II",
+   "Murad IV"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_rulers_0002",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "rulers",
+  "entity": "Mehmed II",
+  "entity_type": "Sultan",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Portrait with red turban"
+   }
+  },
+  "dimensions": {
+   "Category": "Sultan",
+   "Signature": "Conquered Constantinople in 1453",
+   "Material": "Silk gold"
+  },
+  "confusions": [
+   "Suleiman",
+   "Selim I",
+   "Bayezid II"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_rulers_0003",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "rulers",
+  "entity": "Osman I",
+  "entity_type": "Founder",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Portrait with simple turban"
+   }
+  },
+  "dimensions": {
+   "Category": "Founder",
+   "Signature": "Founder of the Ottoman dynasty",
+   "Material": "Wool steel"
+  },
+  "confusions": [
+   "Orhan",
+   "Murad I",
+   "Bayezid I"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_rulers_0004",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "rulers",
+  "entity": "Selim I",
+  "entity_type": "Sultan",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Portrait with fierce expression"
+   }
+  },
+  "dimensions": {
+   "Category": "Sultan",
+   "Signature": "Conquered Egypt and claimed caliphate",
+   "Material": "Gold silk"
+  },
+  "confusions": [
+   "Mehmed II",
+   "Suleiman",
+   "Bayezid II"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_rulers_0005",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "rulers",
+  "entity": "Bayezid II",
+  "entity_type": "Sultan",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Portrait with white beard"
+   }
+  },
+  "dimensions": {
+   "Category": "Sultan",
+   "Signature": "Patron of navigation and refugees",
+   "Material": "Silk gold"
+  },
+  "confusions": [
+   "Mehmed II",
+   "Selim I",
+   "Suleiman"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_rulers_0006",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "rulers",
+  "entity": "Kara Mustafa",
+  "entity_type": "Vizier",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Portrait in fur-trimmed robe"
+   }
+  },
+  "dimensions": {
+   "Category": "Grand Vizier",
+   "Signature": "Led the failed siege of Vienna 1683",
+   "Material": "Silk fur"
+  },
+  "confusions": [
+   "Koprulu Mehmed",
+   "Sokollu Mehmed",
+   "Ibrahim Pasha"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_military_0007",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "military",
+  "entity": "Janissary",
+  "entity_type": "Soldier",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Soldier with white bork hat and musket"
+   }
+  },
+  "dimensions": {
+   "Category": "Elite Soldier",
+   "Signature": "Elite infantry corps of slave soldiers",
+   "Material": "Steel muskets wool"
+  },
+  "confusions": [
+   "Spahi",
+   "Azap",
+   "Bashi-bazouk"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_military_0008",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "military",
+  "entity": "Sipahi",
+  "entity_type": "Cavalry",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Armored horseman with lance"
+   }
+  },
+  "dimensions": {
+   "Category": "Cavalry",
+   "Signature": "Ottoman feudal cavalry",
+   "Material": "Steel lance horse"
+  },
+  "confusions": [
+   "Janissary",
+   "Akinci",
+   "Deliler"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_military_0009",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "military",
+  "entity": "Ottoman Navy",
+  "entity_type": "Fleet",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Galleys with crescent flags"
+   }
+  },
+  "dimensions": {
+   "Category": "Navy",
+   "Signature": "Dominant Mediterranean naval force",
+   "Material": "Wood galley cannons"
+  },
+  "confusions": [
+   "Venetian Fleet",
+   "Spanish Armada",
+   "Mamluk Navy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_military_0010",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "military",
+  "entity": "Siege of Vienna",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Tents and cannons outside city walls"
+   }
+  },
+  "dimensions": {
+   "Category": "Siege",
+   "Signature": "1683 Ottoman siege that was turned back",
+   "Material": "Cannons tents"
+  },
+  "confusions": [
+   "Battle of Lepanto",
+   "Battle of Mohacs",
+   "Battle of Kosovo"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_military_0011",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "military",
+  "entity": "Battle of Lepanto",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Galleys clashing at sea"
+   }
+  },
+  "dimensions": {
+   "Category": "Naval Battle",
+   "Signature": "1571 defeat ending Ottoman naval dominance",
+   "Material": "Galleys cannons"
+  },
+  "confusions": [
+   "Siege of Vienna",
+   "Battle of Mohacs",
+   "Battle of Kosovo"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_military_0012",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "military",
+  "entity": "Devshirme System",
+  "entity_type": "Institution",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Boys collected as tax levy"
+   }
+  },
+  "dimensions": {
+   "Category": "Institution",
+   "Signature": "Christian boys levied for Janissary corps",
+   "Material": "Official registers"
+  },
+  "confusions": [
+   "Janissary Corps",
+   "Timar System",
+   "Kapi Kullari"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_sites_0013",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "sites",
+  "entity": "Topkapi Palace",
+  "entity_type": "Palace",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Walled palace complex overlooking the sea"
+   }
+  },
+  "dimensions": {
+   "Category": "Palace",
+   "Signature": "Ottoman imperial residence for centuries",
+   "Material": "Stone tile gold"
+  },
+  "confusions": [
+   "Dolmabahce Palace",
+   "Edirne Palace",
+   "Beylerbeyi Palace"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_sites_0014",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "sites",
+  "entity": "Hagia Sophia",
+  "entity_type": "Mosque",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Grand dome with minarets added"
+   }
+  },
+  "dimensions": {
+   "Category": "Mosque",
+   "Signature": "Byzantine church converted to mosque",
+   "Material": "Stone mosaic gold"
+  },
+  "confusions": [
+   "Blue Mosque",
+   "Suleymaniye Mosque",
+   "Selimiye Mosque"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_sites_0015",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "sites",
+  "entity": "Blue Mosque",
+  "entity_type": "Mosque",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Domed mosque with six minarets"
+   }
+  },
+  "dimensions": {
+   "Category": "Mosque",
+   "Signature": "Masterpiece of Ottoman architecture",
+   "Material": "Iznik tiles stone"
+  },
+  "confusions": [
+   "Hagia Sophia",
+   "Suleymaniye",
+   "Selimiye"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_sites_0016",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "sites",
+  "entity": "Suleymaniye Mosque",
+  "entity_type": "Mosque",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Grand mosque complex with dome"
+   }
+  },
+  "dimensions": {
+   "Category": "Mosque",
+   "Signature": "Suleimans masterpiece by architect Sinan",
+   "Material": "Stone lead"
+  },
+  "confusions": [
+   "Blue Mosque",
+   "Selimiye",
+   "Hagia Sophia"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_sites_0017",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "sites",
+  "entity": "Grand Bazaar",
+  "entity_type": "Market",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Covered market with vaulted streets"
+   }
+  },
+  "dimensions": {
+   "Category": "Market",
+   "Signature": "Vast covered marketplace of Istanbul",
+   "Material": "Stone vaults"
+  },
+  "confusions": [
+   "Spice Bazaar",
+   "Egyptian Bazaar",
+   "Bazaar of Isfahan"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_sites_0018",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "sites",
+  "entity": "Edirne",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "City with grand Selimiye Mosque"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Ottoman capital before Istanbul",
+   "Material": "Stone mosques"
+  },
+  "confusions": [
+   "Istanbul",
+   "Bursa",
+   "Konya"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_sites_0019",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "sites",
+  "entity": "Bursa",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "City with green mosques and tombs"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "First Ottoman capital",
+   "Material": "Stone green tile"
+  },
+  "confusions": [
+   "Edirne",
+   "Istanbul",
+   "Konya"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_culture_0020",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Ottoman Calligraphy",
+  "entity_type": "Art",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Flowing Arabic script in gold"
+   }
+  },
+  "dimensions": {
+   "Category": "Art",
+   "Signature": "Supreme decorative art of the Ottoman court",
+   "Material": "Gold ink paper"
+  },
+  "confusions": [
+   "Persian Miniature",
+   "Arabesque",
+   "Tilework"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_culture_0021",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Iznik Pottery",
+  "entity_type": "Ceramics",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Brilliantly glazed tiles and bowls"
+   }
+  },
+  "dimensions": {
+   "Category": "Ceramics",
+   "Signature": "Famous Ottoman ceramic art",
+   "Material": "Glazed earthenware"
+  },
+  "confusions": [
+   "Persian Ceramics",
+   "Chinese Porcelain",
+   "Hispano-Moresque"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_culture_0022",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Ottoman Coffeehouse",
+  "entity_type": "Institution",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Coffeehouse with low seats and brass pots"
+   }
+  },
+  "dimensions": {
+   "Category": "Institution",
+   "Signature": "Social center for coffee politics and culture",
+   "Material": "Brass cups coffee"
+  },
+  "confusions": [
+   "Salon",
+   "Tavern",
+   "Caravanserai"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_culture_0023",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Turkish Bath Hammam",
+  "entity_type": "Institution",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Domed marble bathhouse"
+   }
+  },
+  "dimensions": {
+   "Category": "Institution",
+   "Signature": "Public bath in the Ottoman tradition",
+   "Material": "Marble steam copper"
+  },
+  "confusions": [
+   "Roman Bath",
+   "Bimaristan",
+   "Sauna"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_culture_0024",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Whirling Dervishes",
+  "entity_type": "Mysticism",
+  "features": {
+   "visual": {
+    "color": "#FFFFFF",
+    "pattern": "Figure spinning in white robes"
+   }
+  },
+  "dimensions": {
+   "Category": "Mysticism",
+   "Signature": "Sufi Mevlevi order ceremony",
+   "Material": "White wool robes"
+  },
+  "confusions": [
+   "Sufism",
+   "Zikr",
+   "Mevlevi Order"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_culture_0025",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Miniature Painting",
+  "entity_type": "Art",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Detailed court scene illustration"
+   }
+  },
+  "dimensions": {
+   "Category": "Art",
+   "Signature": "Ottoman illustrated manuscript painting",
+   "Material": "Gold ink paper"
+  },
+  "confusions": [
+   "Persian Miniature",
+   "Mughal Painting",
+   "Byzantine Icon"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_culture_0026",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Ottoman Music",
+  "entity_type": "Art",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Musicians with oud and ney flute"
+   }
+  },
+  "dimensions": {
+   "Category": "Art",
+   "Signature": "Classical court music tradition",
+   "Material": "Oud ney tanbur"
+  },
+  "confusions": [
+   "Persian Music",
+   "Arab Music",
+   "Byzantine Chant"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_culture_0027",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Ottoman Cuisine",
+  "entity_type": "Cuisine",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Table with kebabs baklava and coffee"
+   }
+  },
+  "dimensions": {
+   "Category": "Cuisine",
+   "Signature": "Rich fusion cuisine of the empire",
+   "Material": "Copper pots spices"
+  },
+  "confusions": [
+   "Persian Cuisine",
+   "Arab Cuisine",
+   "Byzantine Food"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_geography_0028",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "geography",
+  "entity": "Istanbul",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "City spanning two continents with domes"
+   }
+  },
+  "dimensions": {
+   "Category": "City",
+   "Signature": "Ottoman capital on the Bosphorus",
+   "Material": "Stone domes minarets"
+  },
+  "confusions": [
+   "Edirne",
+   "Bursa",
+   "Izmir"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_geography_0029",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "geography",
+  "entity": "Bosphorus Strait",
+  "entity_type": "Waterway",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Narrow strait between Europe and Asia"
+   }
+  },
+  "dimensions": {
+   "Category": "Waterway",
+   "Signature": "Strategic waterway dividing Istanbul",
+   "Material": "Saltwater"
+  },
+  "confusions": [
+   "Dardanelles",
+   "Gulf of Corinth",
+   "Strait of Hormuz"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_geography_0030",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "geography",
+  "entity": "Anatolia",
+  "entity_type": "Region",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Plateau heartland of Turkey"
+   }
+  },
+  "dimensions": {
+   "Category": "Region",
+   "Signature": "Turkish heartland of the empire",
+   "Material": "Stone steppe"
+  },
+  "confusions": [
+   "Balkans",
+   "Levant",
+   "Mesopotamia"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_geography_0031",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "geography",
+  "entity": "The Balkans",
+  "entity_type": "Region",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Mountainous peninsula under Ottoman rule"
+   }
+  },
+  "dimensions": {
+   "Category": "Region",
+   "Signature": "European territories of the empire",
+   "Material": "Mountains forests"
+  },
+  "confusions": [
+   "Anatolia",
+   "Levant",
+   "Hungary"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_geography_0032",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "geography",
+  "entity": "Levant",
+  "entity_type": "Region",
+  "features": {
+   "visual": {
+    "color": "#DAA520",
+    "pattern": "Coastal eastern Mediterranean"
+   }
+  },
+  "dimensions": {
+   "Category": "Region",
+   "Signature": "Ottoman provinces of Syria and Palestine",
+   "Material": "Limestone coast"
+  },
+  "confusions": [
+   "Anatolia",
+   "Egypt",
+   "Balkans"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_geography_0033",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "geography",
+  "entity": "Mecca",
+  "entity_type": "City",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Kaaba in the center of the Grand Mosque"
+   }
+  },
+  "dimensions": {
+   "Category": "Holy City",
+   "Signature": "Ottoman-controlled holiest city of Islam",
+   "Material": "Black stone marble"
+  },
+  "confusions": [
+   "Medina",
+   "Jerusalem",
+   "Baghdad"
+  ],
+  "difficulty": 2,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_concepts_0034",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "concepts",
+  "entity": "Millet System",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#4169E1",
+    "pattern": "Map showing religious communities"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Autonomous religious community self-governance",
+   "Material": "Official documents"
+  },
+  "confusions": [
+   "Devshirme",
+   "Timar System",
+   "Capitulations"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_concepts_0035",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "concepts",
+  "entity": "Timar System",
+  "entity_type": "System",
+  "features": {
+   "visual": {
+    "color": "#8B4513",
+    "pattern": "Land grant for military service"
+   }
+  },
+  "dimensions": {
+   "Category": "System",
+   "Signature": "Feudal land grant supporting cavalry",
+   "Material": "Land deeds"
+  },
+  "confusions": [
+   "Millet",
+   "Devshirme",
+   "Ottoman Law"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_concepts_0036",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "concepts",
+  "entity": "Caliphate",
+  "entity_type": "Title",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Figure holding the title of Islamic leader"
+   }
+  },
+  "dimensions": {
+   "Category": "Religious Title",
+   "Signature": "Ottoman claim to leadership of Islam",
+   "Material": "Official decrees"
+  },
+  "confusions": [
+   "Sultanate",
+   "Imamate",
+   "Papacy"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_concepts_0037",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "concepts",
+  "entity": "Capitulations",
+  "entity_type": "Treaty",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Document granting trade privileges"
+   }
+  },
+  "dimensions": {
+   "Category": "Treaty",
+   "Signature": "Trade privileges granted to foreign powers",
+   "Material": "Printed treaties"
+  },
+  "confusions": [
+   "Millet System",
+   "Timar",
+   "Ottoman Law"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_concepts_0038",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "concepts",
+  "entity": "Tanzimat Reforms",
+  "entity_type": "Period",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Modernizing reforms edicts"
+   }
+  },
+  "dimensions": {
+   "Category": "Period",
+   "Signature": "19th century modernization of the empire",
+   "Material": "Printed edicts"
+  },
+  "confusions": [
+   "Mehmed Ali",
+   "Young Turks",
+   "Constitution of 1876"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_concepts_0039",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "concepts",
+  "entity": "Tulip Period",
+  "entity_type": "Era",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Ornate garden with tulips"
+   }
+  },
+  "dimensions": {
+   "Category": "Era",
+   "Signature": "Early 18th century Ottoman cultural flowering",
+   "Material": "Tulips gardens"
+  },
+  "confusions": [
+   "Tanzimat",
+   "Classical Age",
+   "Decline Period"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0040",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Fall of Constantinople",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Cannons breaching city walls"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "1453 conquest ending the Byzantine Empire",
+   "Material": "Cannons stone"
+  },
+  "confusions": [
+   "Siege of Vienna",
+   "Battle of Lepanto",
+   "Battle of Mohacs"
+  ],
+  "difficulty": 1,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0041",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Battle of Mohacs",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Ottoman victory over Hungary"
+   }
+  },
+  "dimensions": {
+   "Category": "Battle",
+   "Signature": "1526 battle crushing Hungarian kingdom",
+   "Material": "Cannons cavalry"
+  },
+  "confusions": [
+   "Lepanto",
+   "Vienna",
+   "Kosovo"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0042",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Greek War of Independence",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#228B22",
+    "pattern": "Greek fighters with flags"
+   }
+  },
+  "dimensions": {
+   "Category": "War",
+   "Signature": "1821 Greek revolt against Ottoman rule",
+   "Material": "Various materials"
+  },
+  "confusions": [
+   "Balkan Wars",
+   "Serbian Revolt",
+   "Bulgarian Independence"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0043",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Crimean War",
+  "entity_type": "Conflict",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Troops in trench warfare"
+   }
+  },
+  "dimensions": {
+   "Category": "Conflict",
+   "Signature": "1853-56 war over Ottoman territories",
+   "Material": "Various materials"
+  },
+  "confusions": [
+   "Russo-Turkish War",
+   "Balkan Wars",
+   "WWI"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0044",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Armenian Genocide",
+  "entity_type": "Atrocity",
+  "features": {
+   "visual": {
+    "color": "#1a1a1a",
+    "pattern": "Deportation march"
+   }
+  },
+  "dimensions": {
+   "Category": "Genocide",
+   "Signature": "WWI-era mass killing of Armenians",
+   "Material": "Various materials"
+  },
+  "confusions": [
+   "Holocaust",
+   "Rwandan Genocide",
+   "Cambodian Genocide"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0045",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Gallipoli Campaign",
+  "entity_type": "Battle",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Beach landings under fire"
+   }
+  },
+  "dimensions": {
+   "Category": "Battle",
+   "Signature": "WWI Ottoman defense of the Dardanelles",
+   "Material": "Various materials"
+  },
+  "confusions": [
+   "Crimean War",
+   "Battle of Lepanto",
+   "Siege of Kut"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0046",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Young Turk Revolution",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#8B0000",
+    "pattern": "Officers restoring constitution"
+   }
+  },
+  "dimensions": {
+   "Category": "Revolution",
+   "Signature": "1908 constitutionalist movement",
+   "Material": "Various materials"
+  },
+  "confusions": [
+   "Tanzimat",
+   "Greek Independence",
+   "Abdulhamid II"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0047",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Treaty of Sevres",
+  "entity_type": "Treaty",
+  "features": {
+   "visual": {
+    "color": "#F5DEB3",
+    "pattern": "Map showing partition of empire"
+   }
+  },
+  "dimensions": {
+   "Category": "Treaty",
+   "Signature": "1920 treaty dissolving the Ottoman Empire",
+   "Material": "Various materials"
+  },
+  "confusions": [
+   "Treaty of Lausanne",
+   "Sykes-Picot",
+   "Treaty of Versailles"
+  ],
+  "difficulty": 5,
+  "confidence": {
+   "classification": "Medium"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_events_0048",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "events",
+  "entity": "Abolition of the Sultanate",
+  "entity_type": "Event",
+  "features": {
+   "visual": {
+    "color": "#FFD700",
+    "pattern": "Grand National Assembly in session"
+   }
+  },
+  "dimensions": {
+   "Category": "Event",
+   "Signature": "1922 end of Ottoman monarchy",
+   "Material": "Various materials"
+  },
+  "confusions": [
+   "Young Turk Revolution",
+   "Republic Proclamation",
+   "Treaty of Lausanne"
+  ],
+  "difficulty": 4,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_sites_0021",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "sites",
+  "entity": "Galata Tower",
+  "entity_type": "Landmark",
+  "features": {
+   "visual": {
+    "color": "#808080",
+    "pattern": "Medieval stone tower with conical roof"
+   }
+  },
+  "dimensions": {
+   "Category": "Landmark",
+   "Signature": "Medieval Genoese tower in Istanbul",
+   "Material": "Stone"
+  },
+  "confusions": [
+   "Maidens Tower",
+   "Beyazit Tower",
+   "Dolmabahce Clock Tower"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ },
+ {
+  "observation_id": "history_ottoman_empire_extra_0149",
+  "universe": "history",
+  "world": "ottoman_empire",
+  "subcategory": "culture",
+  "entity": "Ottoman Tile Panel",
+  "entity_type": "Art",
+  "features": {
+   "visual": {
+    "color": "#1E90FF",
+    "pattern": "Blue and white glazed tile panel"
+   }
+  },
+  "dimensions": {
+   "Category": "Art",
+   "Signature": "Decorative Iznik-style tile panel",
+   "Material": "Glazed ceramic"
+  },
+  "confusions": [
+   "Iznik Pottery",
+   "Calligraphy",
+   "Miniature"
+  ],
+  "difficulty": 3,
+  "confidence": {
+   "classification": "High"
+  }
+ }
+]
