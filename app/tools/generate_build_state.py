@@ -72,6 +72,13 @@ def next_run_id():
         except (json.JSONDecodeError, ValueError, IndexError):
             pass
     return f"{today}-001"
+def load_json_safe(p, default=None):
+    try:
+        with open(p, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default
+
 def main():
     if not MANIFEST_PATH.exists():
         print(f"ERROR: manifest not found at {MANIFEST_PATH}")
@@ -90,10 +97,41 @@ def main():
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     export_hash = compute_export_hash(manifest)
 
+    # Governance layer – read-only, optional (Phase 2.3+)
+    def gov_count(path, key=None):
+        d = load_json_safe(SHARED_DIR / path, {})
+        if not d:
+            return 0, "none"
+        if key:
+            c = d.get("counts", {}).get(key, 0)
+        else:
+            c = d.get("counts", {}).get("total", len(d.get("proposals", d.get("approvals", d.get("queue", d.get("executions", []))))))
+        model = d.get("model_version", "none")
+        return c, model
+
+    proposals_count, proposals_model = gov_count("evolution/growth_proposals.json", None)
+    # approvals counts – sum all states
+    approvals_data = load_json_safe(SHARED_DIR / "evolution/approvals.json", {})
+    approvals_counts = approvals_data.get("counts", {}) if approvals_data else {}
+    approvals_total = approvals_counts.get("total", 0)
+    approvals_model = approvals_data.get("model_version", "none") if approvals_data else "none"
+    # queue
+    queue_data = load_json_safe(SHARED_DIR / "evolution/generation_queue.json", {})
+    queue_count = queue_data.get("counts", {}).get("queued", 0) if queue_data else 0
+    queue_model = queue_data.get("model_version", "none") if queue_data else "none"
+    # history
+    history_data = load_json_safe(SHARED_DIR / "evolution/generation_history.json", {})
+    execution_count = history_data.get("counts", {}).get("total_executions", 0) if history_data else 0
+    history_model = history_data.get("model_version", "none") if history_data else "none"
+    # evolution core models
+    ranking_data = load_json_safe(SHARED_DIR / "evolution/ranking.json", {})
+    lifecycle_data = load_json_safe(SHARED_DIR / "evolution/lifecycle.json", {})
+    placement_data = load_json_safe(SHARED_DIR / "evolution/placement.json", {})
+
     state = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
         "run_id": run_id,
-        "pipeline_version": "1.0.0",
+        "pipeline_version": "1.1.0",
         "timestamp": now,
         "app_commit": app_commit,
         "app_commit_short": app_commit[:7] if len(app_commit) > 7 else app_commit,
@@ -106,7 +144,31 @@ def main():
             "observations_exported": counts.get("observations_exported", 0),
             "worlds": counts.get("worlds", 0),
             "universes": counts.get("universes", 0),
-            "characters": counts.get("characters", 0)
+            "characters": counts.get("characters", 0),
+            "proposals": proposals_count,
+            "approvals": approvals_total,
+            "queue": queue_count,
+            "executions": execution_count
+        },
+        "evolution": {
+            "ranking_model": ranking_data.get("model_version", "none") if ranking_data else "none",
+            "lifecycle_model": lifecycle_data.get("model_version", "none") if lifecycle_data else "none",
+            "placement_model": placement_data.get("model_version", "none") if placement_data else "none",
+            "proposals_model": proposals_model,
+            "approvals_model": approvals_model,
+            "queue_model": queue_model,
+            "history_model": history_model
+        },
+        "governance": {
+            "approvals_breakdown": {
+                "proposed": approvals_counts.get("proposed", 0),
+                "approved": approvals_counts.get("approved", 0),
+                "rejected": approvals_counts.get("rejected", 0),
+                "expired": approvals_counts.get("expired", 0),
+                "completed": approvals_counts.get("completed", 0)
+            } if approvals_counts else {},
+            "queue_depth": queue_count,
+            "execution_success_rate": None
         },
         "validation": {
             "duplicate_identifiers": manifest.get("validation", {}).get("duplicate_identifiers", 0),
@@ -118,7 +180,7 @@ def main():
         "authority_tier": "tier_1_projection",
         "provenance": {
             "generated_by": "generate_build_state.py",
-            "pipeline": "chronicle_export -> build_state -> build_website -> deploy"
+            "pipeline": "chronicle_export -> evolution_ranker -> evolution_lifecycle -> evolution_placement -> evolution_proposals -> evolution_approvals -> evolution_queue -> build_state -> build_website -> deploy"
         }
     }
 
@@ -132,6 +194,10 @@ def main():
     print(f"  worlds:         {counts.get('worlds',0)}")
     print(f"  universes:      {counts.get('universes',0)}")
     print(f"  characters:     {counts.get('characters',0)}")
+    print(f"  proposals:      {proposals_count}")
+    print(f"  approvals:      {approvals_total}")
+    print(f"  queue:          {queue_count}")
+    print(f"  executions:     {execution_count}")
     return 0
 
 if __name__ == "__main__":
