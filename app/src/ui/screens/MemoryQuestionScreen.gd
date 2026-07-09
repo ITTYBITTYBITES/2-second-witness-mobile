@@ -177,9 +177,7 @@ func on_navigated_to(params: Dictionary) -> void:
 	modulate.a = 1.0
 	_load_question()
 	_animate_in()
-
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("memory_question", {"challenge_id": _challenge_id})
+	# Screen-view analytics are centralized in NavigationService.navigate_to.
 
 func _animate_in() -> void:
 	modulate.a = 0.0

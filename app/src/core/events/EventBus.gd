@@ -40,6 +40,42 @@ func publish_navigation(route: String, params: Dictionary = {}) -> void:
 	_log_event("navigation_requested", [route, params])
 	navigation_requested.emit(route, params)
 
+func publish_app_initialized() -> void:
+	_log_event("app_initialized", [])
+	app_initialized.emit()
+
+func publish_navigation_changed(route: String, params: Dictionary = {}) -> void:
+	_log_event("navigation_changed", [route, params])
+	navigation_changed.emit(route, params)
+
+func publish_setting_changed(key: String, value: Variant) -> void:
+	_log_event("setting_changed", [key, value])
+	setting_changed.emit(key, value)
+
+func publish_theme_changed(theme_name: String) -> void:
+	_log_event("theme_changed", [theme_name])
+	theme_changed.emit(theme_name)
+
+func request_audio(bus: String, sound_id: String, params: Dictionary = {}) -> void:
+	_log_event("audio_requested", [bus, sound_id, params])
+	audio_requested.emit(bus, sound_id, params)
+
+func publish_profile_updated(profile_data: Dictionary) -> void:
+	_log_event("profile_updated", [profile_data])
+	profile_updated.emit(profile_data)
+
+func publish_experience_unlocked(exp_id: String) -> void:
+	_log_event("experience_unlocked", [exp_id])
+	experience_unlocked.emit(exp_id)
+
+func publish_experience_completed(exp_id: String, result: Dictionary = {}) -> void:
+	_log_event("experience_completed", [exp_id, result])
+	experience_completed.emit(exp_id, result)
+
+func publish_accessibility_changed(settings: Dictionary) -> void:
+	_log_event("accessibility_changed", [settings])
+	accessibility_changed.emit(settings)
+
 func publish_error(code: String, message: String, context: Dictionary = {}) -> void:
 	_log_event("error_occurred", [code, message, context])
 	error_occurred.emit(code, message, context)

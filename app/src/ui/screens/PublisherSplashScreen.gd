@@ -89,5 +89,4 @@ func on_navigated_to(_params: Dictionary) -> void:
 	$Center.modulate.a = 0.0
 	set_process(true)
 	_animate_in()
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("publisher_splash")
+	# Screen-view analytics are centralized in NavigationService.navigate_to.

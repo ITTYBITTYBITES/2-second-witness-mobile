@@ -49,7 +49,7 @@ func _ensure_ui() -> void:
 
 	var back := Button.new()
 	back.name = "BackButton"
-	back.text = "<"
+	back.text = "Back"
 	back.visible = show_back
 	back.custom_minimum_size = Vector2(40,40)
 	hbox.add_child(back)
@@ -66,13 +66,13 @@ func _ensure_ui() -> void:
 
 	var set_btn := Button.new()
 	set_btn.name = "SettingsButton"
-	set_btn.text = "⚙"
+	set_btn.text = "Settings"
 	set_btn.custom_minimum_size = Vector2(40,40)
 	actions.add_child(set_btn)
 
 	var prof := Button.new()
 	prof.name = "ProfileButton"
-	prof.text = "◉"
+	prof.text = "Profile"
 	prof.custom_minimum_size = Vector2(40,40)
 	prof.visible = show_profile
 	actions.add_child(prof)

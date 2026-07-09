@@ -104,26 +104,24 @@ func _animate_in() -> void:
 func _spin_spinner() -> void:
 	if not spinner_label:
 		return
+	# Plain text "Loading" renders consistently across device fallback fonts
+	# (the previous ◍ glyph was unreliable). We keep a gentle alpha pulse but
+	# drop the rotation tween, since rotating text would look erratic.
+	spinner_label.text = "Loading"
+	spinner_label.rotation = 0.0
 	if AccessibilityService and AccessibilityService.is_reduced_motion_enabled():
-		spinner_label.text = "• • •"
-		spinner_label.rotation = 0.0
+		spinner_label.modulate.a = 1.0
 		return
-	spinner_label.text = "◍"
 	if _spinner_pulse_tween and _spinner_pulse_tween.is_valid():
 		_spinner_pulse_tween.kill()
 	if _spinner_rotate_tween and _spinner_rotate_tween.is_valid():
 		_spinner_rotate_tween.kill()
-	spinner_label.rotation = 0.0
 	spinner_label.modulate.a = 1.0
 	_spinner_pulse_tween = create_tween().set_loops()
 	var pulse_down := _spinner_pulse_tween.tween_property(spinner_label, "modulate:a", 0.45, 0.6)
 	pulse_down.set_ease(Tween.EASE_IN_OUT)
 	var pulse_up := _spinner_pulse_tween.tween_property(spinner_label, "modulate:a", 1.0, 0.6)
 	pulse_up.set_ease(Tween.EASE_IN_OUT)
-
-	_spinner_rotate_tween = create_tween().set_loops()
-	var spin := _spinner_rotate_tween.tween_property(spinner_label, "rotation", TAU, 2.0)
-	spin.set_ease(Tween.EASE_IN_OUT)
 
 func _process(delta: float) -> void:
 	_elapsed += delta
@@ -178,6 +176,22 @@ func _show_privacy_dialog() -> void:
 			_privacy_dialog.view_policy.connect(_on_view_privacy_policy)
 	dialog_layer.visible = true
 	_privacy_dialog.visible = true
+	# Force the overlay + dialog to cover the full screen, capture input, and
+	# render above every other splash element so the modal is clearly visible.
+	if dialog_layer:
+		dialog_layer.set_anchors_preset(Control.PRESET_FULL_RECT)
+		dialog_layer.offset_left = 0
+		dialog_layer.offset_right = 0
+		dialog_layer.offset_top = 0
+		dialog_layer.offset_bottom = 0
+		dialog_layer.mouse_filter = Control.MOUSE_FILTER_STOP
+		dialog_layer.z_index = 100
+		dialog_layer.move_to_front()
+	if _privacy_dialog:
+		_privacy_dialog.set_anchors_preset(Control.PRESET_FULL_RECT)
+		_privacy_dialog.mouse_filter = Control.MOUSE_FILTER_STOP
+		_privacy_dialog.z_index = 101
+		_privacy_dialog.move_to_front()
 	# Stop the spinner and update status - user must make a choice.
 	if spinner_label:
 		spinner_label.visible = false
@@ -255,5 +269,4 @@ func on_navigated_to(_params: Dictionary) -> void:
 		_spin_spinner()
 	set_process(true)
 	_animate_in()
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("title_splash")
+	# Screen-view analytics are centralized in NavigationService.navigate_to.

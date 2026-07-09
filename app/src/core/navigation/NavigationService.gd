@@ -59,14 +59,20 @@ func navigate_to(route: String, params: Dictionary = {}) -> bool:
 	print("[NavigationService] -> %s %s" % [route, str(params)])
 	route_changed.emit(route, params)
 	if EventBus:
-		EventBus.navigation_changed.emit(route, params)
+		EventBus.publish_navigation_changed(route, params)
 
 	_update_app_state_phase(route)
 
-	if AnalyticsService:
-		AnalyticsService.log_screen_view(route, params)
+	_log_screen_view(route, params)
 
 	return true
+
+func _log_screen_view(route: String, params: Dictionary) -> void:
+	# Single source of truth for screen-view analytics so each navigation is
+	# logged exactly once. Individual screens must NOT also call
+	# AnalyticsService.log_screen_view from their on_navigated_to methods.
+	if AnalyticsService:
+		AnalyticsService.log_screen_view(route, params)
 
 func go_back() -> bool:
 	# Never navigate back into the launch splash sequence.
@@ -86,9 +92,10 @@ func go_back() -> bool:
 	current_params = params
 	route_changed.emit(route, params)
 	if EventBus:
-		EventBus.navigation_changed.emit(route, params)
+		EventBus.publish_navigation_changed(route, params)
 	_update_app_state_phase(route)
 	print("[NavigationService] Back -> %s" % route)
+	_log_screen_view(route, params)
 	return true
 
 func replace(route: String, params: Dictionary = {}) -> bool:
@@ -98,9 +105,10 @@ func replace(route: String, params: Dictionary = {}) -> bool:
 	current_params = params
 	route_changed.emit(route, params)
 	if EventBus:
-		EventBus.navigation_changed.emit(route, params)
+		EventBus.publish_navigation_changed(route, params)
 	_update_app_state_phase(route)
 	print("[NavigationService] Replace -> %s" % route)
+	_log_screen_view(route, params)
 	return true
 
 func can_go_back() -> bool:

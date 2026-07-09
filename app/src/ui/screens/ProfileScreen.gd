@@ -161,7 +161,7 @@ func _refresh() -> void:
 		avatar_vbox.get_node("IdLabel").text = "ID: %s" % profile.get("id", "---")
 		var created_at: String = profile.get("created_at", "")
 		var total_sessions: int = profile.get("total_sessions", 0)
-		avatar_vbox.get_node("SinceLabel").text = "Member since %s • %d sessions" % [
+		avatar_vbox.get_node("SinceLabel").text = "Member since %s - %d sessions" % [
 			created_at,
 			total_sessions
 		]
@@ -235,11 +235,11 @@ func _refresh_stats() -> void:
 	var stats: Dictionary = ProfileService.get_stats() if ProfileService else {}
 
 	var stat_defs := [
-		{"key": "observations_made", "label": "Observed", "icon": "👁"},
-		{"key": "correct_observations", "label": "Correct", "icon": "✓"},
-		{"key": "fastest_reaction_ms", "label": "Fastest", "icon": "⚡", "format": "%d ms"},
-		{"key": "streak_best", "label": "Best Streak", "icon": "🔥"},
-		{"key": "streak_current", "label": "Current Streak", "icon": "✦"},
+		{"key": "observations_made", "label": "Observed", "icon": "OBS"},
+		{"key": "correct_observations", "label": "Correct", "icon": "OK"},
+		{"key": "fastest_reaction_ms", "label": "Fastest", "icon": "MS", "format": "%d ms"},
+		{"key": "streak_best", "label": "Best Streak", "icon": "BEST"},
+		{"key": "streak_current", "label": "Current Streak", "icon": "NOW"},
 	]
 
 	for def in stat_defs:
@@ -335,8 +335,7 @@ func _refresh_experience_progress() -> void:
 
 func on_navigated_to(_params: Dictionary) -> void:
 	_refresh()
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("profile")
+	# Screen-view analytics are centralized in NavigationService.navigate_to.
 
 func _on_profile_updated(_field: String, _value: Variant) -> void:
 	_refresh()

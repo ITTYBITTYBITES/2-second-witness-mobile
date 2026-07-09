@@ -44,7 +44,7 @@ func start_boot() -> void:
 	print("[AppBoot] Boot completed in %d ms" % total)
 	_is_booting = false
 	boot_completed.emit()
-	EventBus.app_initialized.emit()
+	EventBus.publish_app_initialized()
 
 func _run_step(name: String, _step: BootStep, callable: Callable) -> void:
 	var start := Time.get_ticks_msec()

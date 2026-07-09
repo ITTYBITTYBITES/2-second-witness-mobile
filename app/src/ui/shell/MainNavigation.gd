@@ -4,10 +4,10 @@ extends Control
 signal tab_selected(route: String)
 
 const TABS := [
-	{"route": "home", "label": "Home", "icon": "⌂"},
-	{"route": "experiences", "label": "Play", "icon": "◫"},
-	{"route": "profile", "label": "Profile", "icon": "◉"},
-	{"route": "settings", "label": "Settings", "icon": "⚙"},
+	{"route": "home", "label": "Home", "icon": ""},
+	{"route": "experiences", "label": "Play", "icon": ""},
+	{"route": "profile", "label": "Profile", "icon": ""},
+	{"route": "settings", "label": "Settings", "icon": ""},
 ]
 
 var current_route: String = "home"
@@ -52,7 +52,8 @@ func _ensure_ui() -> void:
 
 		var btn := Button.new()
 		btn.name = "%s_Button" % tab["route"]
-		btn.text = "%s\n%s" % [tab["icon"], tab["label"]]
+		# Plain-text labels render consistently across device fallback fonts.
+		btn.text = str(tab["label"])
 		btn.custom_minimum_size = Vector2(0, 60)
 		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		# Store route meta

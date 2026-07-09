@@ -119,7 +119,7 @@ func _build_ui() -> void:
 	vbox.add_child(meta_row)
 	var meta = Label.new()
 	meta.name = "Meta"
-	meta.text = "• 2 sec • Memory"
+	meta.text = "- 2 sec - Memory"
 	vbox.add_child(meta)
 	meta_label = meta
 	var desc = Label.new()
@@ -205,7 +205,7 @@ func _refresh_ui() -> void:
 		meta_parts.append("%ds" % duration)
 		if tags.size() > 0:
 			meta_parts.append(str(tags[0]).capitalize())
-		meta_label.text = " • ".join(meta_parts)
+		meta_label.text = " - ".join(meta_parts)
 	if play_button:
 		if coming_soon:
 			play_button.text = "Coming Soon"
@@ -214,7 +214,7 @@ func _refresh_ui() -> void:
 			play_button.text = "Locked"
 			play_button.disabled = true
 		else:
-			play_button.text = "Play • %ds" % duration
+			play_button.text = "Play - %ds" % duration
 			play_button.disabled = false
 	if icon_panel:
 		var style = StyleBoxFlat.new()

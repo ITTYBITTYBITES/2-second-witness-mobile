@@ -133,7 +133,7 @@ func set_theme_mode(mode: ThemeMode) -> void:
 			current_theme_name = "dark"
 
 	theme_changed.emit(current_theme_name, tokens)
-	EventBus.theme_changed.emit(current_theme_name)
+	EventBus.publish_theme_changed(current_theme_name)
 	print("[ThemeService] Theme changed to %s" % current_theme_name)
 
 func get_color(token_name: String, fallback: Color = Color.WHITE) -> Color:

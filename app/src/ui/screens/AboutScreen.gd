@@ -67,5 +67,4 @@ func on_navigated_to(params: Dictionary) -> void:
 	if section == "privacy":
 		# Scroll to privacy section if needed
 		pass
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("about", params)
+	# Screen-view analytics are centralized in NavigationService.navigate_to.
