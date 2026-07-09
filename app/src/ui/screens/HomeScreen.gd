@@ -38,7 +38,7 @@ func _ensure_ui() -> void:
 
 	if has_node("Margin/Scroll/VBox/QuickPlayButton"):
 		var btn: Button = $Margin/Scroll/VBox/QuickPlayButton
-		btn.text = "Play Now • Start a Round"
+		btn.text = "Play Now - Start a Round"
 		if not btn.pressed.is_connected(_on_quick_play):
 			btn.pressed.connect(_on_quick_play)
 
@@ -48,10 +48,103 @@ func _ensure_ui() -> void:
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	if has_node("Margin/Scroll/VBox"):
-		for child in $Margin/Scroll/VBox.get_children():
-			if child is PanelContainer:
-				ThemeService.apply_theme_to_control(child)
+	var tokens := ThemeService.tokens
+	if tokens.is_empty():
+		return
+	# Explicit editorial styling so the main menu reads as a consistent,
+	# premium mobile layout instead of scattered default Godot sizing.
+	_style_hero_card(tokens)
+	_style_stat_cards(tokens)
+	_style_quick_play(tokens)
+	_style_section_label(tokens)
+	# The featured challenge card owns its own styling via ExperienceCard.
+
+func _editorial_panel_style(tokens: Dictionary, elevated: bool = false) -> StyleBoxFlat:
+	var style := StyleBoxFlat.new()
+	style.bg_color = tokens.get("surface_elevated" if elevated else "surface", Color("#1E1E26"))
+	var radius: int = tokens.get("radius_lg", 20)
+	style.corner_radius_top_left = radius
+	style.corner_radius_top_right = radius
+	style.corner_radius_bottom_left = radius
+	style.corner_radius_bottom_right = radius
+	style.border_color = tokens.get("border", Color("#2E2E3A"))
+	style.border_width_left = 1
+	style.border_width_right = 1
+	style.border_width_top = 1
+	style.border_width_bottom = 1
+	return style
+
+func _style_hero_card(tokens: Dictionary) -> void:
+	var card_path := "Margin/Scroll/VBox/HeroCard"
+	if not has_node(card_path):
+		return
+	var card: PanelContainer = get_node(card_path)
+	card.add_theme_stylebox_override("panel", _editorial_panel_style(tokens, true))
+	if has_node("%s/Margin/VBox/Title" % card_path):
+		var title: Label = get_node("%s/Margin/VBox/Title" % card_path)
+		title.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
+		title.add_theme_font_size_override("font_size", 30)
+		title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	if has_node("%s/Margin/VBox/Subtitle" % card_path):
+		var sub: Label = get_node("%s/Margin/VBox/Subtitle" % card_path)
+		sub.add_theme_color_override("font_color", tokens.get("text_secondary", Color("#A1A1B3")))
+		sub.add_theme_font_size_override("font_size", 14)
+		sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		sub.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+
+func _style_stat_cards(tokens: Dictionary) -> void:
+	if not has_node("Margin/Scroll/VBox/StatsRow"):
+		return
+	for stat_card in $Margin/Scroll/VBox/StatsRow.get_children():
+		if stat_card is PanelContainer:
+			var panel_card: PanelContainer = stat_card
+			panel_card.add_theme_stylebox_override(
+				"panel", _editorial_panel_style(tokens, false)
+			)
+		if stat_card.has_node("Margin/VBox/Value"):
+			var value_lbl: Label = stat_card.get_node("Margin/VBox/Value")
+			value_lbl.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
+			value_lbl.add_theme_font_size_override("font_size", 22)
+			value_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		if stat_card.has_node("Margin/VBox/Label"):
+			var label_lbl: Label = stat_card.get_node("Margin/VBox/Label")
+			label_lbl.add_theme_color_override("font_color", tokens.get("text_tertiary", Color("#6B6B80")))
+			label_lbl.add_theme_font_size_override("font_size", 11)
+			label_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+
+func _style_quick_play(tokens: Dictionary) -> void:
+	if not has_node("Margin/Scroll/VBox/QuickPlayButton"):
+		return
+	var btn: Button = get_node("Margin/Scroll/VBox/QuickPlayButton")
+	var radius: int = tokens.get("radius_md", 12)
+	var primary_color: Color = tokens.get("primary", Color("#7C5CFF"))
+	var normal := StyleBoxFlat.new()
+	normal.bg_color = primary_color
+	normal.corner_radius_top_left = radius
+	normal.corner_radius_top_right = radius
+	normal.corner_radius_bottom_left = radius
+	normal.corner_radius_bottom_right = radius
+	normal.content_margin_left = 20
+	normal.content_margin_right = 20
+	normal.content_margin_top = 14
+	normal.content_margin_bottom = 14
+	var hover := normal.duplicate()
+	hover.bg_color = tokens.get("primary_variant", Color("#9B83FF"))
+	var pressed := normal.duplicate()
+	pressed.bg_color = primary_color.darkened(0.12)
+	btn.add_theme_stylebox_override("normal", normal)
+	btn.add_theme_stylebox_override("hover", hover)
+	btn.add_theme_stylebox_override("pressed", pressed)
+	btn.add_theme_stylebox_override("focus", hover)
+	btn.add_theme_color_override("font_color", tokens.get("text_on_primary", Color.WHITE))
+	btn.add_theme_font_size_override("font_size", 17)
+
+func _style_section_label(tokens: Dictionary) -> void:
+	if not has_node("Margin/Scroll/VBox/SectionLabel"):
+		return
+	var section: Label = get_node("Margin/Scroll/VBox/SectionLabel")
+	section.add_theme_color_override("font_color", tokens.get("primary", Color("#7C5CFF")))
+	section.add_theme_font_size_override("font_size", 16)
 
 func _refresh_data() -> void:
 	if not has_node("Margin/Scroll/VBox"):
@@ -121,8 +214,7 @@ func _create_featured_card(challenge: Dictionary) -> Control:
 
 func on_navigated_to(_params: Dictionary) -> void:
 	_refresh_data()
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("home")
+	# Screen-view analytics are centralized in NavigationService.navigate_to.
 
 func _on_quick_play() -> void:
 	if AccessibilityService:

@@ -94,7 +94,7 @@ func set_value(key: String, value: Variant) -> bool:
 	_settings[key] = value
 	_save()
 	setting_changed.emit(key, value)
-	EventBus.setting_changed.emit(key, value)
+	EventBus.publish_setting_changed(key, value)
 
 	# Analytics for settings change (non-sensitive)
 	if AnalyticsService and not key.begins_with("volume"):

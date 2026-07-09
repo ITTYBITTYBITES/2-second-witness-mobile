@@ -101,8 +101,7 @@ func _focus_highlighted() -> void:
 func on_navigated_to(params: Dictionary) -> void:
 	_highlight_id = str(params.get("highlight", ""))
 	_refresh_list()
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("experiences", params)
+	# Screen-view analytics are centralized in NavigationService.navigate_to.
 
 func _on_challenge_selected(challenge_id: String) -> void:
 	if ChallengeRegistry:

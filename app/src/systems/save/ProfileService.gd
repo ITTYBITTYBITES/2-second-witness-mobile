@@ -63,7 +63,7 @@ func initialize() -> void:
 
 	_initialized = true
 	profile_loaded.emit(profile)
-	EventBus.profile_updated.emit(profile)
+	EventBus.publish_profile_updated(profile)
 
 func _merge_default(loaded: Dictionary) -> Dictionary:
 	var merged := DEFAULT_PROFILE.duplicate(true)
@@ -84,7 +84,7 @@ func save() -> bool:
 	var ok := SaveService.save_profile(profile)
 	if ok:
 		profile_saved.emit(profile)
-		EventBus.profile_updated.emit(profile)
+		EventBus.publish_profile_updated(profile)
 	return ok
 
 func get_value(key: String, default: Variant = null) -> Variant:
@@ -153,7 +153,7 @@ func record_experience_play(exp_id: String, result: Dictionary) -> void:
 
 	experience_progress_updated.emit(exp_id, entry)
 	stats_updated.emit(stats)
-	EventBus.experience_completed.emit(exp_id, result)
+	EventBus.publish_experience_completed(exp_id, result)
 	save()
 
 	if AnalyticsService:
@@ -166,7 +166,7 @@ func unlock_experience(exp_id: String) -> bool:
 	unlocked.append(exp_id)
 	profile["experiences_unlocked"] = unlocked
 	save()
-	EventBus.experience_unlocked.emit(exp_id)
+	EventBus.publish_experience_unlocked(exp_id)
 	print("[ProfileService] Unlocked experience: %s" % exp_id)
 	return true
 

@@ -15,9 +15,33 @@ signal view_policy()
 @onready var accept_btn: Button = $Margin/Center/DialogPanel/InnerMargin/VBox/Actions/AcceptButton
 
 func _ready() -> void:
+	_enforce_layout()
 	_apply_theme()
 	_connect()
 	_animate_in()
+
+func _enforce_layout() -> void:
+	# Force the modal to fill the viewport, sit on top, and stop input so the
+	# dialog is clearly visible and content beneath cannot be tapped through.
+	set_anchors_preset(Control.PRESET_FULL_RECT)
+	offset_left = 0
+	offset_right = 0
+	offset_top = 0
+	offset_bottom = 0
+	mouse_filter = Control.MOUSE_FILTER_STOP
+	z_index = 100
+	if scrim:
+		scrim.set_anchors_preset(Control.PRESET_FULL_RECT)
+		scrim.mouse_filter = Control.MOUSE_FILTER_STOP
+	_apply_responsive_size()
+
+func _apply_responsive_size() -> void:
+	# Keep the panel within a comfortable reading width on phones and tablets.
+	var viewport_width := get_viewport().get_visible_rect().size.x
+	var target_width := clampf(viewport_width - 64.0, 320.0, 520.0)
+	if panel:
+		panel.custom_minimum_size = Vector2(target_width, 0)
+		panel.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 
 func _connect() -> void:
 	if accept_btn and not accept_btn.pressed.is_connected(_on_accept):

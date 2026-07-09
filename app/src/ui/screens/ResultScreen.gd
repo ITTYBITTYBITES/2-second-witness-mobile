@@ -55,10 +55,10 @@ func _display_result(data: Dictionary) -> void:
 
 	if result_icon:
 		if _is_correct:
-			result_icon.text = "✓"
+			result_icon.text = "OK"
 			result_icon.add_theme_color_override("font_color", Color("#2EE6A6"))
 		else:
-			result_icon.text = "✕"
+			result_icon.text = "X"
 			result_icon.add_theme_color_override("font_color", Color("#FF4D5E"))
 
 	if result_title:
@@ -133,5 +133,4 @@ func on_navigated_to(params: Dictionary) -> void:
 	_result_data = params
 	_display_result(params)
 	modulate.a = 1.0
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("result", {"is_correct": params.get("is_correct", false)})
+	# Screen-view analytics are centralized in NavigationService.navigate_to.

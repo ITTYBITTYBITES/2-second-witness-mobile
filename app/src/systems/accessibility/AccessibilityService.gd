@@ -58,7 +58,7 @@ func _accessibility_updated() -> void:
 		"screen_reader_hints": _screen_reader_hints
 	}
 	accessibility_updated.emit(settings)
-	EventBus.accessibility_changed.emit(settings)
+	EventBus.publish_accessibility_changed(settings)
 
 func get_font_scale() -> float:
 	return _font_scale

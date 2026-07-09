@@ -201,11 +201,11 @@ func _refresh() -> void:
 			)
 		)
 	)
-	vb.add_child(_create_info_row("Build", "Playable Release • ITTYBITTYBITES"))
+	vb.add_child(_create_info_row("Build", "Playable Release - ITTYBITTYBITES"))
 	vb.add_child(_create_info_row("Engine", "Godot 4.6 / GL Compatibility"))
 
 	var about_btn := Button.new()
-	about_btn.text = "About • Privacy • ITTYBITTYBITES"
+	about_btn.text = "About - Privacy - ITTYBITTYBITES"
 	about_btn.custom_minimum_size = Vector2(0, 52)
 	vb.add_child(about_btn)
 	about_btn.pressed.connect(_on_about_pressed)
@@ -371,8 +371,7 @@ func _create_info_row(label: String, value: String) -> Control:
 
 func on_navigated_to(_params: Dictionary) -> void:
 	_refresh()
-	if AnalyticsService:
-		AnalyticsService.log_screen_view("settings")
+	# Screen-view analytics are centralized in NavigationService.navigate_to.
 
 
 func _with_alpha(value: Variant, alpha: float) -> Color:
