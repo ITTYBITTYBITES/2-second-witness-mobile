@@ -176,9 +176,13 @@ func get_all_experiences() -> Array[Dictionary]:
 			"is_unlocked": ProfileService.is_experience_unlocked(id) if ProfileService else true
 		}
 		list.append(combined)
-	# Sort by title
-	list.sort_custom(func(a,b): return a.get("title","") < b.get("title",""))
+	# Sort by title without relying on an inline lambda. This keeps the registry
+	# compatible with older Godot 4.x parser versions used by Android builds.
+	list.sort_custom(_sort_experiences_by_title)
 	return list
+
+func _sort_experiences_by_title(a: Dictionary, b: Dictionary) -> bool:
+	return str(a.get("title", "")) < str(b.get("title", ""))
 
 func get_unlocked_experiences() -> Array[Dictionary]:
 	var all := get_all_experiences()

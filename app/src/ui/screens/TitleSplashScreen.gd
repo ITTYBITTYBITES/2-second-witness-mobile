@@ -8,8 +8,10 @@ extends Control
 
 var _boot_progress: float = 0.0
 var _min_display_time: float = 2.0
+const MAX_BOOT_WAIT_TIME: float = 8.0
 var _elapsed: float = 0.0
 var _boot_completed: bool = false
+var _is_navigating: bool = false
 
 func _ready() -> void:
 	_elapsed = 0.0
@@ -34,11 +36,12 @@ func _ready() -> void:
 		var boot_already_done = false
 		if AppState and AppState.is_initialized:
 			boot_already_done = true
-		if boot_node.has_method("get") or true:
-			# Check _is_booting property if exists
-			var is_booting = boot_node.get("_is_booting")
-			if is_booting == false:
-				boot_already_done = true
+		# AppBoot exposes its state as a normal script property. Do not make
+		# the splash depend on a signal that may have fired before this scene
+		# was instantiated.
+		var is_booting = boot_node.get("_is_booting")
+		if is_booting == false:
+			boot_already_done = true
 		if boot_already_done:
 			_boot_completed = true
 			_boot_progress = 100
@@ -79,7 +82,17 @@ func _animate_in() -> void:
 
 func _process(delta: float) -> void:
 	_elapsed += delta
-	if _boot_completed and _elapsed >= _min_display_time:
+	# A broken optional initializer must never leave the user on a loading
+	# screen. AppBoot normally completes in well under a second; the watchdog
+	# is only a last-resort path for a device/storage/plugin failure.
+	if not _boot_completed and _elapsed >= MAX_BOOT_WAIT_TIME:
+		_boot_completed = true
+		_boot_progress = 100.0
+		if progress_bar:
+			progress_bar.value = 100.0
+		if status_label:
+			status_label.text = "Continuing"
+	if _boot_completed and _elapsed >= _min_display_time and not _is_navigating:
 		_navigate_next()
 		set_process(false)
 
@@ -100,6 +113,9 @@ func _on_boot_completed() -> void:
 		status_label.text = "Ready"
 
 func _navigate_next() -> void:
+	if _is_navigating:
+		return
+	_is_navigating = true
 	var tween = create_tween()
 	tween.tween_property(self, "modulate:a", 0.0, 0.4)
 	tween.finished.connect(func():
@@ -121,6 +137,7 @@ func _navigate_next() -> void:
 func on_navigated_to(_params: Dictionary) -> void:
 	_elapsed = 0.0
 	_boot_progress = 0.0
+	_is_navigating = false
 	# Foundation Fix: Check if boot already done to avoid getting stuck after publisher splash
 	if AppState and AppState.is_initialized:
 		_boot_completed = true

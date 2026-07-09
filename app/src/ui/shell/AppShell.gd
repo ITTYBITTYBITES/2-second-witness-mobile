@@ -115,8 +115,8 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 	else:
 		var scene_path: String = SCREEN_SCENES.get(route, "")
 		if scene_path == "":
-			scene_path = "res://src/ui/screens/%s.tscn" % _capitalize_first(route) + "Screen"
-		
+			scene_path = "res://src/ui/screens/%sScreen.tscn" % _capitalize_first(route)
+
 		var screen_instance: Control = null
 		
 		if ResourceLoader.exists(scene_path):
@@ -218,7 +218,11 @@ func _show_error(message: String) -> void:
 		error_banner.visible = true
 		if error_banner.has_node("Margin/Label"):
 			error_banner.get_node("Margin/Label").text = message
-		get_tree().create_timer(4.0).timeout.connect(func(): if error_banner: error_banner.visible = false)
+	get_tree().create_timer(4.0).timeout.connect(_hide_error_banner)
+
+func _hide_error_banner() -> void:
+	if is_instance_valid(error_banner):
+		error_banner.visible = false
 
 func _apply_theme() -> void:
 	if not ThemeService:
