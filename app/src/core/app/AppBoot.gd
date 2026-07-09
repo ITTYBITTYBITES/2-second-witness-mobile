@@ -19,11 +19,13 @@ func start_boot() -> void:
 	_boot_start_time = Time.get_ticks_msec()
 	print("[AppBoot] Starting boot sequence")
 	
-	# Sequential boot - each step timed and fault-tolerant
+	# Keep the dependency order explicit. Settings reads SaveService and the
+	# theme reads SettingsService; starting either one too early produces a
+	# cascade of null/default errors on a cold Android launch.
 	await _run_step("config", BootStep.INIT_CONFIG, _boot_config)
-	await _run_step("theme", BootStep.INIT_THEME, _boot_theme)
-	await _run_step("settings", BootStep.INIT_SETTINGS, _boot_settings)
 	await _run_step("save", BootStep.INIT_SAVE, _boot_save)
+	await _run_step("settings", BootStep.INIT_SETTINGS, _boot_settings)
+	await _run_step("theme", BootStep.INIT_THEME, _boot_theme)
 	await _run_step("content", BootStep.INIT_CONTENT, _boot_content)
 	await _run_step("audio", BootStep.INIT_AUDIO, _boot_audio)
 	await _run_step("navigation", BootStep.INIT_NAV, _boot_nav)

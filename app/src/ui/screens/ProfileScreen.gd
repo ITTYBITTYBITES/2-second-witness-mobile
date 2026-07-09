@@ -56,8 +56,8 @@ func _ensure_ui() -> void:
 	stats_grid.columns = 2
 	stats_grid.add_theme_constant_override("h_separation", 12)
 	stats_grid.add_theme_constant_override("v_separation", 12)
-	vbox.add_child(stats_grid) if false else vb.add_child(stats_grid)
-	
+	vb.add_child(stats_grid)
+
 	# Experiences progress
 	var exp_label := Label.new()
 	exp_label.text = "Progress"
