@@ -57,7 +57,7 @@ func _on_privacy_link() -> void:
 		NavigationService.navigate_to("about", {"section": "privacy"})
 	# For now just show info
 	if ErrorHandler:
-		ErrorHandler.handle("PRIVACY_LINK", "Privacy policy: https://ittybittybites.com/privacy (placeholder)", {}, ErrorHandler.Severity.INFO)
+		ErrorHandler.handle("PRIVACY_LINK", "Privacy policy: https://ittybittybites.github.io/privacy-policy/", {}, ErrorHandler.Severity.INFO)
 
 func on_navigated_to(_params: Dictionary) -> void:
 	if AnalyticsService:

@@ -38,10 +38,10 @@ func _on_privacy() -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
 	# Placeholder - in real app would open URL
-	var url = "https://ittybittybites.com/privacy"
-	print("[About] Open privacy policy %s (placeholder)" % url)
+	var url = "https://ittybittybites.github.io/privacy-policy/"
+	print("[About] Open privacy policy %s" % url)
 	if ErrorHandler:
-		ErrorHandler.handle("PRIVACY_POLICY", "Privacy Policy:\n\nNo account required\nNo personal data collected\nNo ads currently\nProgress stored locally\n\nFull policy at ittybittybites.com/privacy (placeholder)", {}, ErrorHandler.Severity.INFO)
+		ErrorHandler.handle("PRIVACY_POLICY", "Privacy Policy:\n\nNo account required\nNo personal data collected\nNo ads currently\nProgress stored locally\n\nFull policy at ittybittybites.github.io/privacy-policy/", {}, ErrorHandler.Severity.INFO)
 	# Try open URL if OS can
 	if OS.has_feature("mobile") or OS.has_feature("web"):
 		# OS.shell_open is available in Godot 4

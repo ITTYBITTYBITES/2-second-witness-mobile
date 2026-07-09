@@ -10,11 +10,12 @@ var _is_loaded: bool = false
 
 const DEFAULT_CONFIG := {
 	"app_name": "Two Second Witness",
-	"app_version": "2.0.0",
+	"app_version": "4.0.0",
 	"publisher": "ITTYBITTYBITES",
 	"publisher_tagline": "Interactive Experiences",
 	"environment": "development", # development / staging / production
 	"package_id": "com.ittybittybites.the2secondwitness",
+	"privacy_policy_url": "https://ittybittybites.github.io/privacy-policy/",
 	"feature_flags": {
 		"analytics_enabled": true,
 		"ads_enabled": false,
