@@ -5,7 +5,8 @@ extends Node
 signal route_changed(route: String, params: Dictionary)
 signal route_change_requested(route: String, params: Dictionary)
 signal history_updated(history: Array)
-signal deep_link_received(route: String, params: Dictionary)
+@warning_ignore("UNUSED_SIGNAL")
+signal deep_link_received(route: String, params: Dictionary)  ## Emitted by handle_deep_link() when a URI deep link is processed.
 
 var current_route: String = "publisher_splash"
 var current_params: Dictionary = {}

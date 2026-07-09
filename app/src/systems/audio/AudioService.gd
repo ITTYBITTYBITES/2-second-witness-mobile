@@ -16,7 +16,6 @@ const BUS_NAMES := {
 	Bus.UI: "UI"
 }
 
-var _players: Dictionary = {} # sound_id -> AudioStreamPlayer
 var _bgm_player: AudioStreamPlayer
 var _sfx_pool: Array[AudioStreamPlayer] = []
 var _ui_player: AudioStreamPlayer
@@ -163,24 +162,24 @@ func _get_stream_for_id(sound_id: String) -> AudioStream:
 	return null
 
 func set_volume(bus: Bus, linear: float) -> void:
-	var name: String = BUS_NAMES[bus]
-	_volumes[name] = clamp(linear, 0.0, 1.0)
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index(name), linear_to_db(_volumes[name]))
-	volume_changed.emit(name, linear_to_db(_volumes[name]), _volumes[name])
+	var bus_name: String = BUS_NAMES[bus]
+	_volumes[bus_name] = clamp(linear, 0.0, 1.0)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index(bus_name), linear_to_db(_volumes[bus_name]))
+	volume_changed.emit(bus_name, linear_to_db(_volumes[bus_name]), _volumes[bus_name])
 	if SettingsService:
-		SettingsService.set_value("volume_%s" % name.to_lower(), _volumes[name])
-	print("[AudioService] Volume %s = %.2f" % [name, linear])
+		SettingsService.set_value("volume_%s" % bus_name.to_lower(), _volumes[bus_name])
+	print("[AudioService] Volume %s = %.2f" % [bus_name, linear])
 
 func get_volume(bus: Bus) -> float:
 	return _volumes.get(BUS_NAMES[bus], 1.0)
 
 func set_muted(bus: Bus, muted: bool) -> void:
-	var name: String = BUS_NAMES[bus]
-	_muted[name] = muted
-	AudioServer.set_bus_mute(AudioServer.get_bus_index(name), muted)
-	bus_muted.emit(name, muted)
+	var bus_name: String = BUS_NAMES[bus]
+	_muted[bus_name] = muted
+	AudioServer.set_bus_mute(AudioServer.get_bus_index(bus_name), muted)
+	bus_muted.emit(bus_name, muted)
 	if SettingsService:
-		SettingsService.set_value("mute_%s" % name.to_lower(), muted)
+		SettingsService.set_value("mute_%s" % bus_name.to_lower(), muted)
 
 func is_muted(bus: Bus) -> bool:
 	return _muted.get(BUS_NAMES[bus], false)

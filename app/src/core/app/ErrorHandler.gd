@@ -65,6 +65,7 @@ func clear_history() -> void:
 	_error_history.clear()
 
 func _attempt_safe_recovery() -> void:
-	print("[ErrorHandler] Attempting safe recovery")
+	_crash_count_today += 1
+	print("[ErrorHandler] Attempting safe recovery (crash_count_today: %d)" % _crash_count_today)
 	AppState.set_loading(false)
 	NavigationService.navigate_to("home")
