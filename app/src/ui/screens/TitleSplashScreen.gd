@@ -12,6 +12,8 @@ var _elapsed: float = 0.0
 var _boot_completed: bool = false
 
 func _ready() -> void:
+	_elapsed = 0.0
+	set_process(true)
 	_apply_theme()
 	_load_splash_asset()
 	_animate_in()

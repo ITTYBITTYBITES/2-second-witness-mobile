@@ -83,8 +83,10 @@ func _boot_save() -> Dictionary:
 func _boot_content() -> Dictionary:
 	if ContentService:
 		await ContentService.initialize()
-	if ExperienceRegistry:
-		await ExperienceRegistry.initialize()
+	# Do not let placeholder experience discovery block mobile startup.
+	# The playable app boots from ChallengeRegistry, not ExperienceRegistry.
+	if ChallengeRegistry:
+		await ChallengeRegistry.initialize()
 	return {}
 
 func _boot_audio() -> Dictionary:

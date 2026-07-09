@@ -90,11 +90,11 @@ autowrap_mode=3
 
 [node name="PrivacyButton" type="Button" parent="Margin/Scroll/VBox/PrivacySection"]
 layout_mode=2
-text="Privacy Policy (Placeholder Link)"
+text="Privacy Policy"
 
 [node name="VersionInfo" type="Label" parent="Margin/Scroll/VBox"]
 layout_mode=2
-text="Version 2.0.0-foundation
+text="Version 2.0.0
 Package: com.ittybittybites.the2secondwitness
 © ITTYBITTYBITES"
 

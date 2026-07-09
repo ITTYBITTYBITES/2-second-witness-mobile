@@ -72,4 +72,9 @@ text="Replay Challenge"
 [node name="ContinueButton" type="Button" parent="Margin/VBox"]
 custom_minimum_size=Vector2(0, 56)
 layout_mode=2
-text="Continue to App"
+text="Next Challenge"
+
+[node name="MenuButton" type="Button" parent="Margin/VBox"]
+custom_minimum_size=Vector2(0, 56)
+layout_mode=2
+text="Main Menu"

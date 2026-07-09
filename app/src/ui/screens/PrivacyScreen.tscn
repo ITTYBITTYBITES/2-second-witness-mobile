@@ -73,7 +73,7 @@ size_flags_vertical=3
 
 [node name="PrivacyLink" type="Button" parent="Margin/VBox"]
 layout_mode=2
-text="Privacy Policy (Placeholder)"
+text="Privacy Policy"
 
 [node name="ContinueButton" type="Button" parent="Margin/VBox"]
 custom_minimum_size=Vector2(0, 56)

@@ -1,5 +1,5 @@
 extends Control
-## ResultScreen - Feedback after memory question
+## ResultScreen - Feedback after each recall question
 
 @onready var result_icon: Label = $Margin/VBox/ResultIcon
 @onready var result_title: Label = $Margin/VBox/Title
@@ -7,23 +7,23 @@ extends Control
 @onready var detail_label: Label = $Margin/VBox/Detail
 @onready var replay_btn: Button = $Margin/VBox/ReplayButton
 @onready var continue_btn: Button = $Margin/VBox/ContinueButton
+@onready var menu_btn: Button = $Margin/VBox/MenuButton
 
 var _result_data: Dictionary = {}
 var _is_correct: bool = false
+var _is_onboarding_result: bool = false
 
 func _ready() -> void:
 	_apply_theme()
 	_ensure_wired()
 
 func _ensure_wired() -> void:
-	if has_node("Margin/VBox/ReplayButton"):
-		var btn = $Margin/VBox/ReplayButton
-		if not btn.pressed.is_connected(_on_replay):
-			btn.pressed.connect(_on_replay)
-	if has_node("Margin/VBox/ContinueButton"):
-		var btn2 = $Margin/VBox/ContinueButton
-		if not btn2.pressed.is_connected(_on_continue):
-			btn2.pressed.connect(_on_continue)
+	if replay_btn and not replay_btn.pressed.is_connected(_on_replay):
+		replay_btn.pressed.connect(_on_replay)
+	if continue_btn and not continue_btn.pressed.is_connected(_on_continue):
+		continue_btn.pressed.connect(_on_continue)
+	if menu_btn and not menu_btn.pressed.is_connected(_on_menu):
+		menu_btn.pressed.connect(_on_menu)
 
 func _apply_theme() -> void:
 	if not ThemeService:
@@ -37,12 +37,17 @@ func _apply_theme() -> void:
 
 func _display_result(data: Dictionary) -> void:
 	_result_data = data
-	_is_correct = data.get("is_correct", false)
+	_is_correct = bool(data.get("is_correct", false))
 	
-	var selected = data.get("selected", "")
-	var correct = data.get("correct", "")
-	var detail = data.get("detail", "")
-	var question = data.get("question", "")
+	var selected := str(data.get("selected", ""))
+	var correct := str(data.get("correct", ""))
+	var detail := str(data.get("detail", ""))
+	var title := str(data.get("title", "Challenge"))
+	_is_onboarding_result = _should_finish_onboarding()
+	var run_position := ChallengeRegistry.get_run_position() if ChallengeRegistry else {"index": 0, "total": 0}
+	var round_label := ""
+	if int(run_position.get("total", 0)) > 0:
+		round_label = "Challenge %d of %d" % [int(run_position.get("index", 0)) + 1, int(run_position.get("total", 0))]
 	
 	if result_icon:
 		if _is_correct:
@@ -53,36 +58,58 @@ func _display_result(data: Dictionary) -> void:
 			result_icon.add_theme_color_override("font_color", Color("#FF4D5E"))
 	
 	if result_title:
-		if _is_correct:
-			result_title.text = "Correct!"
-		else:
-			result_title.text = "Not quite"
+		result_title.text = "Correct!" if _is_correct else "Not quite"
 	
 	if result_desc:
 		if _is_correct:
-			result_desc.text = "Excellent observation. You noticed the detail in just 2 seconds."
+			result_desc.text = "%s\n%s" % [title, round_label] if round_label != "" else title
 		else:
-			result_desc.text = "You selected %s, but the correct answer was %s." % [selected, correct]
+			var prefix := "%s\n" % title if title != "" else ""
+			var suffix := "\n%s" % round_label if round_label != "" else ""
+			result_desc.text = "%sYou selected %s, but the correct answer was %s.%s" % [prefix, selected, correct, suffix]
 	
 	if detail_label:
 		detail_label.text = detail if detail != "" else ""
 		detail_label.visible = detail != ""
 	
-	# Haptics
-	if AccessibilityService:
-		if _is_correct:
-			AccessibilityService.vibrate(50)
+	if continue_btn:
+		if _is_onboarding_result:
+			continue_btn.text = "Continue to Main Menu"
+		elif ChallengeRegistry and ChallengeRegistry.count() > 1:
+			continue_btn.text = "Next Challenge"
 		else:
-			AccessibilityService.vibrate(100)
+			continue_btn.text = "Play Again"
+	if menu_btn:
+		menu_btn.visible = not _is_onboarding_result
 	
-	# Audio placeholder
-	if AudioService:
-		if _is_correct:
-			AudioService.play_ui("ui_click")
-		else:
-			AudioService.play_ui("ui_click")
-	
+	_mark_first_run_complete()
+	_play_feedback()
 	_animate_in()
+
+func _should_finish_onboarding() -> bool:
+	var onboarding_done := false
+	var first_launch_done := false
+	if ProfileService:
+		onboarding_done = ProfileService.profile.get("preferences", {}).get("onboarding_completed", false)
+	if SettingsService:
+		first_launch_done = SettingsService.get_value("first_launch_completed", false)
+	return not onboarding_done or not first_launch_done
+
+func _mark_first_run_complete() -> void:
+	if ProfileService:
+		var prefs = ProfileService.profile.get("preferences", {})
+		if not prefs.get("onboarding_completed", false):
+			prefs["onboarding_completed"] = true
+			ProfileService.profile["preferences"] = prefs
+			ProfileService.save()
+	if SettingsService and not SettingsService.get_value("first_launch_completed", false):
+		SettingsService.set_value("first_launch_completed", true)
+
+func _play_feedback() -> void:
+	if AccessibilityService:
+		AccessibilityService.vibrate(50 if _is_correct else 100)
+	if AudioService:
+		AudioService.play_ui("ui_click")
 
 func _animate_in() -> void:
 	if AccessibilityService and AccessibilityService.is_reduced_motion_enabled():
@@ -97,28 +124,30 @@ func _on_replay() -> void:
 		AudioService.play_ui("ui_click")
 	if AnalyticsService:
 		AnalyticsService.log_event("replay_challenge", {"challenge_id": _result_data.get("challenge_id", "")})
-	if NavigationService:
-		NavigationService.navigate_to("observation", {"challenge_id": _result_data.get("challenge_id", "challenge_01")})
+	if ChallengeRegistry:
+		ChallengeRegistry.replay_current()
 
 func _on_continue() -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
-	
-	# Mark onboarding completed on first run
-	if ProfileService:
-		var prefs = ProfileService.profile.get("preferences", {})
-		if not prefs.get("onboarding_completed", false):
-			prefs["onboarding_completed"] = true
-			ProfileService.profile["preferences"] = prefs
-			ProfileService.save()
-			print("[Result] Onboarding marked completed")
-	
-	if SettingsService:
-		SettingsService.set_value("first_launch_completed", true)
-	
+	if _is_onboarding_result:
+		if ChallengeRegistry:
+			ChallengeRegistry.clear_run()
+		if AnalyticsService:
+			AnalyticsService.log_event("onboarding_completed", {"challenge_id": _result_data.get("challenge_id", "")})
+		if NavigationService:
+			NavigationService.navigate_to("home")
+		return
 	if AnalyticsService:
-		AnalyticsService.log_event("first_run_completed", _result_data)
-	
+		AnalyticsService.log_event("next_challenge", {"challenge_id": _result_data.get("challenge_id", "")})
+	if ChallengeRegistry:
+		ChallengeRegistry.go_to_next_challenge()
+
+func _on_menu() -> void:
+	if AudioService:
+		AudioService.play_ui("ui_click")
+	if ChallengeRegistry:
+		ChallengeRegistry.clear_run()
 	if NavigationService:
 		NavigationService.navigate_to("home")
 
