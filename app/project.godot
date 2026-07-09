@@ -1,65 +1,57 @@
 ; Engine configuration file.
-; It's best edited using the editor UI and not directly.
+; Two Second Witness - Foundation Rebuild
+; Godot 4.6 - Clean Architecture
 
 config_version=5
 
 [application]
 config/name="2 Second Witness"
-run/main_scene="res://MainShell.tscn"
-config/features=PackedStringArray("4.6", "Forward Plus")
-boot_splash/image="res://assets/textures/sprites/v1/neural_node_v3.png"
+config/description="Short, replayable experiences focused on observation, memory, reaction, and quick decision-making."
+run/main_scene="res://src/ui/shell/AppShell.tscn"
+config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/image="res://assets/brand/app_icon_1024.png"
 boot_splash/fullsize=false
-boot_splash/use_filter=true
-boot_splash/bg_color=Color(0.04, 0.04, 0.06, 1)
-
-[rendering]
-textures/vram_compression/import_etc2_astc=true
-shader_compiler/shader_cache/enabled=true
-vulkan/rendering/shader_compilation_mode=2
+boot_splash/bg_color=Color(0.055, 0.055, 0.08, 1)
+config/icon="res://assets/brand/app_icon_1024.png"
 
 [autoload]
-FeedbackManager="*res://scripts/system/FeedbackManager.gd"
-PresentationToolkit="*res://scripts/system/PresentationToolkit.gd"
-BootTracer="*res://scripts/system/BootTracer.gd"
-ContentRegistry="*res://scripts/content/ContentRegistry.gd"
-PlayerProfile="*res://scripts/system/PlayerProfile.gd"
-MirrorNarrator="*res://scripts/system/MirrorNarrator.gd"
-ObservationCollection="*res://scripts/content/ObservationCollection.gd"
-ObservationBuilder="*res://scripts/content/ObservationBuilder.gd"
-GameplayDirector="*res://scripts/content/GameplayDirector.gd"
-ContentLoader="*res://scripts/content/ContentLoader.gd"
-AssetManifestRegistry="*res://scripts/ui/AssetManifestRegistry.gd"
-RuntimeMeasurementIsolation="*res://scripts/system/enforcement/RuntimeMeasurementIsolation.gd"
-NavigationState="*res://scripts/system/NavigationState.gd"
-ThemeManager="*res://scripts/ThemeManager.gd"
-VisualIdentityManager="*res://scripts/system/VisualIdentityManager.gd"
-LensMorphology="*res://scripts/system/LensMorphology.gd"
-AudioManager="*res://scripts/system/AudioManager.gd"
-NavigationEngine="*res://scripts/NavigationEngine.gd"
-ScenarioExecutionEngine="*res://scripts/system/ScenarioExecutionEngine.gd"
-NavigationRouter="*res://scripts/NavigationRouter.gd"
-SystemHealthMonitor="*res://scripts/system/SystemHealthMonitor.gd"
-StructuredLogger="*res://scripts/system/StructuredLogger.gd"
-SessionTracker="*res://scripts/system/SessionTracker.gd"
-FidelityEnforcer="*res://scripts/system/enforcement/FidelityEnforcer.gd"
-RuntimeInvarianceMonitor="*res://scripts/system/enforcement/RuntimeInvarianceMonitor.gd"
-ModalWindowManager="*res://scripts/ui/ModalWindowManager.gd"
-InteractionKernel="*res://scripts/system/InteractionKernel.gd"
-ExperienceOrchestrator="*res://scripts/system/ExperienceOrchestrator.gd"
-ProgressionInterpreter="*res://scripts/system/ProgressionInterpreter.gd"
-WorldProfileCustodian="*res://scripts/ui/WorldProfileCustodian.gd"
-WeeklyRotationManager="*res://scripts/system/WeeklyRotationManager.gd"
-SamplingController="*res://scripts/system/SamplingController.gd"
-IVC0_InstrumentConfig="*res://scripts/system/IVC0_InstrumentConfig.gd"
-DiagnosticAutomator="*res://scripts/system/DiagnosticAutomator.gd"
-StoreTransactionState="*res://scripts/system/StoreTransactionState.gd"
-StoreManager="*res://scripts/system/StoreManager.gd"
-GoodwillManager="*res://scripts/system/GoodwillManager.gd"
-AdManager="*res://scripts/system/AdManager.gd"
-GitHubSyncManager="*res://scripts/content/GitHubSyncManager.gd"
-DailyExpeditionManager="*res://scripts/system/DailyExpeditionManager.gd"
-DevDashboard="*res://scripts/system/DevDashboard.gd"
+EventBus="*res://src/core/events/EventBus.gd"
+AppConfig="*res://src/systems/config/ConfigService.gd"
+ConfigService="*res://src/systems/config/ConfigService.gd"
+ErrorHandler="*res://src/core/app/ErrorHandler.gd"
+AnalyticsService="*res://src/systems/analytics/AnalyticsService.gd"
+SettingsService="*res://src/systems/settings/SettingsService.gd"
+SaveService="*res://src/systems/save/SaveService.gd"
+ProfileService="*res://src/systems/save/ProfileService.gd"
+ThemeService="*res://src/systems/theme/ThemeService.gd"
+AudioService="*res://src/systems/audio/AudioService.gd"
+AccessibilityService="*res://src/systems/accessibility/AccessibilityService.gd"
+ContentService="*res://src/systems/content/ContentService.gd"
+ExperienceRegistry="*res://src/systems/content/ExperienceRegistry.gd"
+NavigationService="*res://src/core/navigation/NavigationService.gd"
+AppState="*res://src/core/app/AppState.gd"
 
 [display]
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/size/resizable=false
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[input]
+tap={
+"deadzone": 0.5,
+"events": [Object(InputEventScreenTouch,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"index":0,"pressed":false,"x":0,"y":0) ]
+}
+
+[input_devices]
+pointing/emulate_touch_from_mouse=true
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.06, 0.06, 0.09, 1)
+
+[dotnet]
+project/assembly_name="TwoSecondWitness"

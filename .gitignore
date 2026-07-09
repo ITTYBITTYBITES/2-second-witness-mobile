@@ -1,12 +1,15 @@
 # Godot 4+ specific ignores
 .godot/
 *.translation
-export_presets.cfg
+# export_presets.cfg intentionally TRACKED for foundation (preserve package ID)
+# build/ # we keep app/build ignored via app/.gitignore logic but allow root build?
+app/build/
 build/
 user/
 *.apk
 *.aab
 *.keystore
+*.zip
 
 # Mac/Windows
 .DS_Store
@@ -20,4 +23,19 @@ __pycache__/
 # Live Content Staging
 live_content/temp/
 godot_headless
-*.zip
+
+# Legacy archive - keep but ignore heavy external?
+# _legacy_archive/ is tracked as reference but can be large - keep tracked for now
+
+# Godot import caches
+*.import
+!app/assets/brand/*.import
+!app/assets/brand/android/*.import
+
+# Analytics buffer, saves (user:// maps to local, but if file created in repo root)
+user_analytics.jsonl
+analytics_buffer.jsonl
+
+# Logs
+*.log
+app/logs/
