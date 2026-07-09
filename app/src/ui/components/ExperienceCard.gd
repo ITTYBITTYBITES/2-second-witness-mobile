@@ -27,9 +27,23 @@ func _ready() -> void:
 	_refresh_ui()
 
 func _attempt_find_nodes() -> void:
-	title_label = _find_label(["Card/Margin/VBox/Title", "Margin/VBox/Title", "VBox/Title", "Title"])
-	desc_label = _find_label(["Card/Margin/VBox/Description", "Margin/VBox/Description", "Description"])
-	meta_label = _find_label(["Card/Margin/VBox/MetaRow/Meta", "Margin/VBox/MetaRow/Meta", "MetaRow/Meta", "Meta"])
+	title_label = _find_label([
+		"Card/Margin/VBox/Title",
+		"Margin/VBox/Title",
+		"VBox/Title",
+		"Title"
+	])
+	desc_label = _find_label([
+		"Card/Margin/VBox/Description",
+		"Margin/VBox/Description",
+		"Description"
+	])
+	meta_label = _find_label([
+		"Card/Margin/VBox/MetaRow/Meta",
+		"Margin/VBox/MetaRow/Meta",
+		"MetaRow/Meta",
+		"Meta"
+	])
 	icon_panel = get_node_or_null("Card/Margin/VBox/TopRow/IconWrapper") as PanelContainer
 	if icon_panel == null:
 		icon_panel = get_node_or_null("Margin/VBox/TopRow/IconWrapper") as PanelContainer
@@ -160,7 +174,10 @@ func _refresh_ui() -> void:
 		return
 	if not _built and card_root == null:
 		_build_ui()
-	var title = manifest.get("title", experience_id.capitalize() if experience_id != "" else "Experience")
+	var title_fallback := "Experience"
+	if experience_id != "":
+		title_fallback = experience_id.capitalize()
+	var title = manifest.get("title", title_fallback)
 	var short_desc = manifest.get("short_description", manifest.get("description", ""))
 	var category = manifest.get("category", "observation")
 	var duration = manifest.get("estimated_duration_sec", 10)

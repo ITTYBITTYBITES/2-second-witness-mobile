@@ -19,7 +19,7 @@ func _ready() -> void:
 func initialize() -> void:
 	if _initialized:
 		return
-	
+
 	if SettingsService:
 		_font_scale = SettingsService.get_value("accessibility_font_scaling", 1.0)
 		_reduced_motion = SettingsService.get_value("accessibility_reduce_motion", false)
@@ -27,9 +27,10 @@ func initialize() -> void:
 		_haptics_enabled = SettingsService.get_value("haptics_enabled", true)
 		_screen_reader_hints = SettingsService.get_value("accessibility_screen_reader_hints", false)
 		SettingsService.setting_changed.connect(_on_setting_changed)
-	
+
 	_initialized = true
-	print("[AccessibilityService] Initialized - font_scale=%.2f reduced_motion=%s" % [_font_scale, str(_reduced_motion)])
+	var summary := "[AccessibilityService] Initialized - font_scale=%.2f reduced_motion=%s"
+	print(summary % [_font_scale, str(_reduced_motion)])
 	_accessibility_updated()
 
 func _on_setting_changed(key: String, value: Variant) -> void:
@@ -92,7 +93,7 @@ func apply_accessibility_to_control(control: Control) -> void:
 			var btn := control as Button
 			btn.add_theme_font_size_override("font_size", int(16 * _font_scale))
 
-func vibrate(duration_ms: int = 50, amplitude: float = 0.5) -> void:
+func vibrate(duration_ms: int = 50, _amplitude: float = 0.5) -> void:
 	if not _haptics_enabled:
 		return
 	if OS.has_feature("mobile"):

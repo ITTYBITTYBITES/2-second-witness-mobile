@@ -23,7 +23,7 @@ func start(params: Dictionary = {}) -> Dictionary:
 	_current_word = _pick_word(diff)
 	_choices = _generate_choices(_current_word, 4)
 	_start_time_ms = Time.get_ticks_msec()
-	
+
 	var session := {
 		"exp_id": id,
 		"word": _current_word,
@@ -33,11 +33,11 @@ func start(params: Dictionary = {}) -> Dictionary:
 		"recall_ms": manifest.get("rules", {}).get("recall_ms", 5000),
 		"status": "observation"
 	}
-	
+
 	is_active = true
 	started.emit(id)
 	print("[Flashword] Started - Word: %s Choices: %s" % [_current_word, str(_choices)])
-	
+
 	return session
 
 func submit_answer(answer: String) -> Dictionary:
@@ -45,13 +45,13 @@ func submit_answer(answer: String) -> Dictionary:
 	var correct: bool = (answer == _current_word)
 	var base_points: int = manifest.get("scoring", {}).get("base_points", 10)
 	var score: int = base_points if correct else 0
-	
+
 	# Speed bonus
 	if correct:
 		var max_time: int = manifest.get("rules", {}).get("recall_ms", 5000)
 		var speed_factor: float = clamp(1.0 - (float(elapsed) / float(max_time)), 0.0, 1.0)
 		score += int(speed_factor * 10)
-	
+
 	var result := {
 		"exp_id": id,
 		"correct": correct,
@@ -61,16 +61,17 @@ func submit_answer(answer: String) -> Dictionary:
 		"reaction_ms": elapsed,
 		"streak_bonus": 0
 	}
-	
+
 	is_active = false
 	completed.emit(id, result)
-	
+
 	# Record to profile
 	if ProfileService:
 		ProfileService.record_experience_play(id, result)
-	
-	print("[Flashword] Completed - Correct: %s Score: %d Elapsed: %d ms" % [str(correct), score, elapsed])
-	
+
+	var summary := "[Flashword] Completed - Correct: %s Score: %d Elapsed: %d ms"
+	print(summary % [str(correct), score, elapsed])
+
 	return result
 
 func _pick_word(_difficulty: String) -> String:
@@ -82,13 +83,13 @@ func _generate_choices(correct: String, count: int) -> Array[String]:
 	var pool := _words.duplicate()
 	pool.erase(correct)
 	pool.shuffle()
-	
+
 	var choices: Array[String] = [correct]
 	while choices.size() < count and pool.size() > 0:
 		var w: String = pool.pop_back()
 		if not choices.has(w):
 			choices.append(w)
-	
+
 	choices.shuffle()
 	return choices
 

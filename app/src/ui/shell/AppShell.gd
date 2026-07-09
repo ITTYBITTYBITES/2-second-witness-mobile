@@ -16,24 +16,22 @@ var _boot_flow: Node
 
 const SCREEN_SCENES := {
 	"publisher_splash": "res://src/ui/screens/PublisherSplashScreen.tscn",
-	"title_splash": "res://src/ui/screens/TitleSplashScreen.tscn",
-	"splash": "res://src/ui/screens/TitleSplashScreen.tscn",
-	"privacy": "res://src/ui/screens/PrivacyScreen.tscn",
-	"tutorial": "res://src/ui/screens/TutorialScreen.tscn",
-	"observation": "res://src/ui/screens/ObservationChallengeScreen.tscn",
+	"title_splash":    "res://src/ui/screens/TitleSplashScreen.tscn",
+	"splash":          "res://src/ui/screens/TitleSplashScreen.tscn",
+	"observation":     "res://src/ui/screens/ObservationChallengeScreen.tscn",
 	"memory_question": "res://src/ui/screens/MemoryQuestionScreen.tscn",
-	"result": "res://src/ui/screens/ResultScreen.tscn",
-	"about": "res://src/ui/screens/AboutScreen.tscn",
-	"home": "res://src/ui/screens/HomeScreen.tscn",
-	"experiences": "res://src/ui/screens/ExperiencesScreen.tscn",
-	"profile": "res://src/ui/screens/ProfileScreen.tscn",
-	"settings": "res://src/ui/screens/SettingsScreen.tscn"
+	"result":          "res://src/ui/screens/ResultScreen.tscn",
+	"about":           "res://src/ui/screens/AboutScreen.tscn",
+	"home":            "res://src/ui/screens/HomeScreen.tscn",
+	"experiences":     "res://src/ui/screens/ExperiencesScreen.tscn",
+	"profile":         "res://src/ui/screens/ProfileScreen.tscn",
+	"settings":        "res://src/ui/screens/SettingsScreen.tscn"
 }
 
 func _ready() -> void:
 	print("[AppShell] Starting - New Vision with ITTYBITTYBITES identity")
 	_ensure_boot_flow()
-	
+
 	if AppState:
 		if not AppState.phase_changed.is_connected(_on_phase_changed):
 			AppState.phase_changed.connect(_on_phase_changed)
@@ -48,20 +46,28 @@ func _ready() -> void:
 	if ThemeService:
 		if not ThemeService.theme_changed.is_connected(_on_theme_changed):
 			ThemeService.theme_changed.connect(_on_theme_changed)
-	
+
 	_apply_theme()
-	
+
 	if top_bar:
 		if top_bar.has_signal("back_pressed") and not top_bar.back_pressed.is_connected(_on_topbar_back):
 			top_bar.back_pressed.connect(_on_topbar_back)
-		if top_bar.has_signal("profile_pressed") and not top_bar.profile_pressed.is_connected(_on_topbar_profile):
+		var has_profile_signal := top_bar.has_signal("profile_pressed")
+		if has_profile_signal and not top_bar.profile_pressed.is_connected(_on_topbar_profile):
 			top_bar.profile_pressed.connect(_on_topbar_profile)
-		if top_bar.has_signal("settings_pressed") and not top_bar.settings_pressed.is_connected(_on_topbar_settings):
+		var has_settings_signal := top_bar.has_signal("settings_pressed")
+		if has_settings_signal and not top_bar.settings_pressed.is_connected(_on_topbar_settings):
 			top_bar.settings_pressed.connect(_on_topbar_settings)
-	
-	if nav_bar and nav_bar.has_signal("tab_selected") and not nav_bar.tab_selected.is_connected(_on_nav_tab_selected):
-		nav_bar.tab_selected.connect(_on_nav_tab_selected)
-	
+
+	if nav_bar and nav_bar.has_signal("tab_selected"):
+		if not nav_bar.tab_selected.is_connected(_on_nav_tab_selected):
+			nav_bar.tab_selected.connect(_on_nav_tab_selected)
+
+	# Display the publisher splash immediately while systems initialize in the
+	# background, so the user sees branding within the first frame or two.
+	if NavigationService:
+		NavigationService.replace("publisher_splash")
+
 	if _boot_flow:
 		_boot_flow.boot_completed.connect(_on_boot_completed)
 		_boot_flow.boot_failed.connect(_on_boot_failed)
@@ -77,19 +83,18 @@ func _ensure_boot_flow() -> void:
 		add_child(_boot_flow)
 
 func _on_boot_completed() -> void:
-	print("[AppShell] Boot completed - starting publisher flow")
+	print("[AppShell] Boot completed")
 	AppState.set_loading(false)
-	
-	# Always start with publisher splash for professional identity
-	# Title splash will then check first-run
+	# The publisher splash is displayed immediately in _ready; once boot finishes
+	# the splash's own timer advances us to the title/loading screen. If for some
+	# reason we're not on a splash route (e.g. deep link), load that screen.
 	if NavigationService:
 		var current = NavigationService.current_route
-		if current == "splash" or current == "publisher_splash" or current == "":
-			NavigationService.navigate_to("publisher_splash")
-		else:
-			_load_screen(NavigationService.current_route)
-	else:
-		_load_screen("publisher_splash")
+		if current != "publisher_splash" and current != "title_splash" and current != "splash":
+			_load_screen(current)
+	# Notify the active splash screen that boot has completed (if it is already up).
+	if _current_screen and _current_screen.has_method("notify_boot_completed"):
+		_current_screen.notify_boot_completed()
 
 func _on_boot_failed(reason: String) -> void:
 	print("[AppShell] Boot failed: %s" % reason)
@@ -106,7 +111,7 @@ func _on_route_changed(route: String, params: Dictionary) -> void:
 func _load_screen(route: String, params: Dictionary = {}) -> void:
 	if _current_screen:
 		_current_screen.visible = false
-	
+
 	if _screen_cache.has(route):
 		_current_screen = _screen_cache[route]
 		_current_screen.visible = true
@@ -118,14 +123,14 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 			scene_path = "res://src/ui/screens/%sScreen.tscn" % _capitalize_first(route)
 
 		var screen_instance: Control = null
-		
+
 		if ResourceLoader.exists(scene_path):
 			var scene: PackedScene = load(scene_path)
 			if scene:
 				screen_instance = scene.instantiate() as Control
 		else:
 			screen_instance = _create_placeholder_screen(route)
-		
+
 		if screen_instance:
 			screen_instance.name = "%sScreenInstance" % route.capitalize()
 			screen_instance.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -160,22 +165,22 @@ func _update_chrome(route: String) -> void:
 	var routes_script = load("res://src/core/navigation/AppRoutes.gd")
 	if routes_script:
 		is_tab = routes_script.is_tab_route(route)
-	
-	# Hide chrome for splash and first-run flow
-	var is_splash = route in ["publisher_splash", "title_splash", "splash"]
-	var is_first_run = route in ["privacy", "tutorial", "observation", "memory_question", "result"]
-	
+
+	# Hide chrome for the launch splash/loading sequence. Gameplay screens show
+	# top bar (for exit/back) but hide the bottom tab bar so players cannot
+	# wander off mid-challenge.
+	var is_splash := route in ["publisher_splash", "title_splash", "splash"]
+	var is_gameplay := route in ["observation", "memory_question", "result"]
+
 	if nav_bar:
-		nav_bar.visible = is_tab and not is_splash and not is_first_run
+		nav_bar.visible = is_tab and not is_splash and not is_gameplay
 		if nav_bar.has_method("set_current_route"):
 			nav_bar.set_current_route(route)
-	
+
 	if top_bar:
-		top_bar.visible = not is_splash and not is_first_run
+		top_bar.visible = not is_splash
 		if top_bar.has_method("set_show_back"):
-			# Show back for non-tab but not for first-run flow start (privacy has its own continue)
-			var show_back = not is_tab and not is_splash and not is_first_run
-			# For about, show back
+			var show_back := not is_tab and not is_splash
 			if route == "about":
 				show_back = true
 			top_bar.set_show_back(show_back)
@@ -183,8 +188,6 @@ func _update_chrome(route: String) -> void:
 			"publisher_splash": "",
 			"title_splash": "",
 			"splash": "",
-			"privacy": "Privacy",
-			"tutorial": "How to Play",
 			"observation": "Observe",
 			"memory_question": "Recall",
 			"result": "Result",
@@ -210,7 +213,7 @@ func _on_loading_changed(is_loading: bool, message: String) -> void:
 		if loading_overlay.has_node("Center/VBox/Message"):
 			loading_overlay.get_node("Center/VBox/Message").text = message if message != "" else "Loading..."
 
-func _on_user_message(message: String, severity: int) -> void:
+func _on_user_message(message: String, _severity: int) -> void:
 	_show_error(message)
 
 func _show_error(message: String) -> void:

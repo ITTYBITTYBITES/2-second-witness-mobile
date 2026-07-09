@@ -17,9 +17,9 @@ func _ready() -> void:
 func initialize() -> void:
 	if _initialized:
 		return
-	
+
 	await _scan_and_register()
-	
+
 	_initialized = true
 	print("[ExperienceRegistry] Initialized - %d experiences" % _experiences.size())
 	registry_updated.emit(get_all_experiences())
@@ -27,14 +27,14 @@ func initialize() -> void:
 func _scan_and_register() -> void:
 	# Scan known experiences
 	var known_ids := ["flashword"] # seed with known
-	
+
 	# Also try to read manifest list
 	if ContentService:
 		var list: Array = ContentService.get_content_list()
 		for id in list:
 			if not known_ids.has(id):
 				known_ids.append(id)
-	
+
 	# Important: do not scan res:// directories at runtime on Android exports.
 	# In exported mobile builds, DirAccess on res:// can fail during boot and stall startup.
 	# Rely on the manifest + known IDs for runtime; only perform directory scans in editor.
@@ -49,7 +49,7 @@ func _scan_and_register() -> void:
 						known_ids.append(fname)
 				fname = dir.get_next()
 			dir.list_dir_end()
-	
+
 	for exp_id in known_ids:
 		_register_from_path(exp_id)
 
@@ -62,7 +62,7 @@ func _register_from_path(exp_id: String) -> bool:
 	# Also try hardcoded defaults
 	var manifest: Dictionary = {}
 	var found := false
-	
+
 	for p in manifest_paths:
 		if p == "":
 			continue
@@ -74,27 +74,27 @@ func _register_from_path(exp_id: String) -> bool:
 					manifest = parsed
 					found = true
 					break
-	
+
 	if not found:
 		# Create default manifest for foundation placeholder
 		manifest = _create_default_manifest(exp_id)
-	
+
 	if manifest.is_empty():
 		return false
-	
+
 	# Ensure required fields
 	if not manifest.has("id"):
 		manifest["id"] = exp_id
 	if not manifest.has("title"):
 		manifest["title"] = exp_id.capitalize()
-	
+
 	_experiences[exp_id] = {
 		"manifest": manifest,
 		"registered_at": Time.get_ticks_msec(),
 		"is_locked": manifest.get("is_locked", false),
 		"is_coming_soon": manifest.get("coming_soon", false)
 	}
-	
+
 	experience_registered.emit(exp_id, manifest)
 	print("[ExperienceRegistry] Registered '%s' - %s" % [exp_id, manifest.get("title")])
 	return true

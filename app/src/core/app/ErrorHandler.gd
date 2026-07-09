@@ -18,7 +18,12 @@ func _ready() -> void:
 func _on_error_occurred(code: String, message: String, context: Dictionary) -> void:
 	handle(code, message, context, Severity.ERROR)
 
-func handle(code: String, message: String, context: Dictionary = {}, severity: Severity = Severity.ERROR) -> void:
+func handle(
+	code: String,
+	message: String,
+	context: Dictionary = {},
+	severity: Severity = Severity.ERROR
+) -> void:
 	var entry := {
 		"code": code,
 		"message": message,
@@ -31,9 +36,9 @@ func handle(code: String, message: String, context: Dictionary = {}, severity: S
 	_error_history.append(entry)
 	if _error_history.size() > MAX_HISTORY:
 		_error_history.pop_front()
-	
+
 	error_logged.emit(entry)
-	
+
 	match severity:
 		Severity.CRITICAL:
 			push_error("[CRITICAL] %s: %s %s" % [code, message, str(context)])
@@ -45,7 +50,7 @@ func handle(code: String, message: String, context: Dictionary = {}, severity: S
 			push_warning("[WARN] %s: %s" % [code, message])
 		_:
 			print("[INFO] %s: %s" % [code, message])
-	
+
 	# Also forward to Analytics if available
 	if AnalyticsService:
 		AnalyticsService.log_error(code, message, context, severity)

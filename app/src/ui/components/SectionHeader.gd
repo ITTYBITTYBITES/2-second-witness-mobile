@@ -26,23 +26,23 @@ func _ensure_ui() -> void:
 	var vbox := VBoxContainer.new()
 	vbox.name = "VBox"
 	add_child(vbox)
-	
+
 	var title_row := HBoxContainer.new()
 	title_row.name = "TitleRow"
 	vbox.add_child(title_row)
-	
+
 	var title := Label.new()
 	title.name = "Title"
 	title.text = title_text
 	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	title_row.add_child(title)
-	
+
 	var action := Button.new()
 	action.name = "ActionButton"
 	action.text = action_text
 	action.visible = show_action
 	title_row.add_child(action)
-	
+
 	var sub := Label.new()
 	sub.name = "Subtitle"
 	sub.text = subtitle_text
@@ -55,7 +55,8 @@ func _apply_theme() -> void:
 	if not ThemeService:
 		return
 	var tokens = ThemeService.tokens
-	$VBox/TitleRow/Title.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
+	var title_color: Color = tokens.get("text_primary", Color.WHITE)
+	$VBox/TitleRow/Title.add_theme_color_override("font_color", title_color)
 	$VBox/TitleRow/Title.add_theme_font_size_override("font_size", 20)
 	$VBox/Subtitle.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
 	$VBox/Subtitle.add_theme_font_size_override("font_size", 14)

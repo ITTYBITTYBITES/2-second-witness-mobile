@@ -10,7 +10,7 @@ func _ready() -> void:
 	_ensure_ui()
 	_apply_theme()
 	_refresh_list()
-	
+
 	if ThemeService:
 		ThemeService.theme_changed.connect(_on_theme_changed)
 	if ChallengeRegistry:
@@ -20,7 +20,8 @@ func _ensure_ui() -> void:
 	if has_node("Margin/Scroll/VBox/Header/Title"):
 		$Margin/Scroll/VBox/Header/Title.text = "Play"
 	if has_node("Margin/Scroll/VBox/Header/Subtitle"):
-		$Margin/Scroll/VBox/Header/Subtitle.text = "Choose any Two Second Witness challenge and jump straight into a round."
+		var subtitle := "Choose any Two Second Witness challenge and jump straight into a round."
+		$Margin/Scroll/VBox/Header/Subtitle.text = subtitle
 	if has_node("Margin/Scroll/VBox/FilterRow"):
 		$Margin/Scroll/VBox/FilterRow.visible = false
 
@@ -31,13 +32,18 @@ func _refresh_list() -> void:
 	if not has_node("Margin/Scroll/VBox"):
 		return
 	var vbox: VBoxContainer = $Margin/Scroll/VBox
-	
+
 	for child in vbox.get_children():
-		if child.name.begins_with("Challenge_") or child.name == "ChallengeSummary" or child.name == "ChallengeEmpty":
+		var is_challenge_row := child.name.begins_with("Challenge_")
+		var is_summary := child.name == "ChallengeSummary"
+		var is_empty_state := child.name == "ChallengeEmpty"
+		if is_challenge_row or is_summary or is_empty_state:
 			vbox.remove_child(child)
 			child.queue_free()
-	
-	var challenges: Array[Dictionary] = ChallengeRegistry.get_all_challenges() if ChallengeRegistry else []
+
+	var challenges: Array[Dictionary] = []
+	if ChallengeRegistry:
+		challenges = ChallengeRegistry.get_all_challenges()
 	if challenges.is_empty():
 		var empty := Label.new()
 		empty.name = "ChallengeEmpty"
@@ -45,7 +51,7 @@ func _refresh_list() -> void:
 		empty.autowrap_mode = TextServer.AUTOWRAP_WORD
 		vbox.add_child(empty)
 		return
-	
+
 	var summary := Label.new()
 	summary.name = "ChallengeSummary"
 	summary.text = "%d playable challenges" % challenges.size()
@@ -53,13 +59,13 @@ func _refresh_list() -> void:
 	summary.add_theme_color_override("font_color", Color(0.7, 0.7, 0.8, 1.0))
 	vbox.add_child(summary)
 	vbox.move_child(summary, min(1, vbox.get_child_count() - 1))
-	
+
 	for challenge in challenges:
 		var challenge_id: String = challenge.get("id", "")
 		var card := _create_challenge_card(challenge)
 		card.name = "Challenge_%s" % challenge_id
 		vbox.add_child(card)
-	
+
 	if _highlight_id != "":
 		call_deferred("_focus_highlighted")
 

@@ -1,5 +1,7 @@
 extends Control
-## ResultScreen - Feedback after each recall question
+## ResultScreen - Feedback after each recall question.
+## Every challenge is launched from the main menu, so there is no longer a
+## special "first run onboarding result" path.
 
 @onready var result_icon: Label = $Margin/VBox/ResultIcon
 @onready var result_title: Label = $Margin/VBox/Title
@@ -11,7 +13,6 @@ extends Control
 
 var _result_data: Dictionary = {}
 var _is_correct: bool = false
-var _is_onboarding_result: bool = false
 
 func _ready() -> void:
 	_apply_theme()
@@ -38,17 +39,20 @@ func _apply_theme() -> void:
 func _display_result(data: Dictionary) -> void:
 	_result_data = data
 	_is_correct = bool(data.get("is_correct", false))
-	
+
 	var selected := str(data.get("selected", ""))
 	var correct := str(data.get("correct", ""))
 	var detail := str(data.get("detail", ""))
 	var title := str(data.get("title", "Challenge"))
-	_is_onboarding_result = _should_finish_onboarding()
-	var run_position := ChallengeRegistry.get_run_position() if ChallengeRegistry else {"index": 0, "total": 0}
+	var run_position := {"index": 0, "total": 0}
+	if ChallengeRegistry:
+		run_position = ChallengeRegistry.get_run_position()
 	var round_label := ""
-	if int(run_position.get("total", 0)) > 0:
-		round_label = "Challenge %d of %d" % [int(run_position.get("index", 0)) + 1, int(run_position.get("total", 0))]
-	
+	if int(run_position.get("total", 0)) > 1:
+		var round_index := int(run_position.get("index", 0)) + 1
+		var round_total := int(run_position.get("total", 0))
+		round_label = "Challenge %d of %d" % [round_index, round_total]
+
 	if result_icon:
 		if _is_correct:
 			result_icon.text = "✓"
@@ -56,54 +60,33 @@ func _display_result(data: Dictionary) -> void:
 		else:
 			result_icon.text = "✕"
 			result_icon.add_theme_color_override("font_color", Color("#FF4D5E"))
-	
+
 	if result_title:
 		result_title.text = "Correct!" if _is_correct else "Not quite"
-	
+
 	if result_desc:
 		if _is_correct:
 			result_desc.text = "%s\n%s" % [title, round_label] if round_label != "" else title
 		else:
 			var prefix := "%s\n" % title if title != "" else ""
 			var suffix := "\n%s" % round_label if round_label != "" else ""
-			result_desc.text = "%sYou selected %s, but the correct answer was %s.%s" % [prefix, selected, correct, suffix]
-	
+			var feedback := "You selected %s, but the correct answer was %s."
+			result_desc.text = "%s%s%s" % [prefix, feedback % [selected, correct], suffix]
+
 	if detail_label:
 		detail_label.text = detail if detail != "" else ""
 		detail_label.visible = detail != ""
-	
+
 	if continue_btn:
-		if _is_onboarding_result:
-			continue_btn.text = "Continue to Main Menu"
-		elif ChallengeRegistry and ChallengeRegistry.count() > 1:
+		if ChallengeRegistry and ChallengeRegistry.count() > 1:
 			continue_btn.text = "Next Challenge"
 		else:
 			continue_btn.text = "Play Again"
 	if menu_btn:
-		menu_btn.visible = not _is_onboarding_result
-	
-	_mark_first_run_complete()
+		menu_btn.visible = true
+
 	_play_feedback()
 	_animate_in()
-
-func _should_finish_onboarding() -> bool:
-	var onboarding_done := false
-	var first_launch_done := false
-	if ProfileService:
-		onboarding_done = ProfileService.profile.get("preferences", {}).get("onboarding_completed", false)
-	if SettingsService:
-		first_launch_done = SettingsService.get_value("first_launch_completed", false)
-	return not onboarding_done or not first_launch_done
-
-func _mark_first_run_complete() -> void:
-	if ProfileService:
-		var prefs = ProfileService.profile.get("preferences", {})
-		if not prefs.get("onboarding_completed", false):
-			prefs["onboarding_completed"] = true
-			ProfileService.profile["preferences"] = prefs
-			ProfileService.save()
-	if SettingsService and not SettingsService.get_value("first_launch_completed", false):
-		SettingsService.set_value("first_launch_completed", true)
 
 func _play_feedback() -> void:
 	if AccessibilityService:
@@ -116,30 +99,25 @@ func _animate_in() -> void:
 		return
 	if result_icon:
 		result_icon.scale = Vector2.ZERO
-		var tween = create_tween()
-		tween.tween_property(result_icon, "scale", Vector2.ONE, 0.5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+		var tween := create_tween()
+		var scale_tween := tween.tween_property(result_icon, "scale", Vector2.ONE, 0.5)
+		scale_tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 
 func _on_replay() -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
 	if AnalyticsService:
-		AnalyticsService.log_event("replay_challenge", {"challenge_id": _result_data.get("challenge_id", "")})
+		var replay_params := {"challenge_id": _result_data.get("challenge_id", "")}
+		AnalyticsService.log_event("replay_challenge", replay_params)
 	if ChallengeRegistry:
 		ChallengeRegistry.replay_current()
 
 func _on_continue() -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
-	if _is_onboarding_result:
-		if ChallengeRegistry:
-			ChallengeRegistry.clear_run()
-		if AnalyticsService:
-			AnalyticsService.log_event("onboarding_completed", {"challenge_id": _result_data.get("challenge_id", "")})
-		if NavigationService:
-			NavigationService.navigate_to("home")
-		return
 	if AnalyticsService:
-		AnalyticsService.log_event("next_challenge", {"challenge_id": _result_data.get("challenge_id", "")})
+		var next_params := {"challenge_id": _result_data.get("challenge_id", "")}
+		AnalyticsService.log_event("next_challenge", next_params)
 	if ChallengeRegistry:
 		ChallengeRegistry.go_to_next_challenge()
 

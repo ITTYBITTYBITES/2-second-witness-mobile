@@ -16,7 +16,7 @@ func start(params: Dictionary = {}) -> Dictionary:
 	is_active = true
 	started.emit(id)
 	print("[TemplateExperience] Started %s" % id)
-	
+
 	return {
 		"exp_id": id,
 		"status": "started",
@@ -33,8 +33,8 @@ func end_with_result(correct: bool, reaction_ms: int) -> Dictionary:
 	}
 	is_active = false
 	completed.emit(id, result)
-	
+
 	if ProfileService:
 		ProfileService.record_experience_play(id, result)
-	
+
 	return result

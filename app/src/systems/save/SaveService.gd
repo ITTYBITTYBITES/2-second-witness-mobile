@@ -25,30 +25,30 @@ func initialize() -> void:
 	_initialized = true
 	print("[SaveService] Initialized - Dir: %s" % SAVE_DIR)
 
-func save_json(path: String, data: Dictionary, encrypt: bool = false) -> bool:
+func save_json(path: String, data: Dictionary, _encrypt: bool = false) -> bool:
 	var dir := path.get_base_dir()
 	if not DirAccess.dir_exists_absolute(dir):
 		DirAccess.make_dir_recursive_absolute(dir)
-	
+
 	var wrapper := {
 		"version": SAVE_VERSION,
 		"timestamp": Time.get_datetime_string_from_system(),
 		"ticks": Time.get_ticks_msec(),
 		"data": data
 	}
-	
+
 	var json_text := JSON.stringify(wrapper, "\t")
-	
+
 	var file := FileAccess.open(path, FileAccess.WRITE)
 	if not file:
 		var err := "Failed to open %s for write: %s" % [path, str(FileAccess.get_open_error())]
 		ErrorHandler.handle("SAVE_WRITE_FAILED", err, {"path": path})
 		save_failed.emit(path, err)
 		return false
-	
+
 	file.store_string(json_text)
 	file.close()
-	
+
 	save_completed.emit(path)
 	# print("[SaveService] Saved %s (%d bytes)" % [path, json_text.length()])
 	return true
@@ -56,28 +56,28 @@ func save_json(path: String, data: Dictionary, encrypt: bool = false) -> bool:
 func load_json(path: String, default_data: Dictionary = {}) -> Dictionary:
 	if not FileAccess.file_exists(path):
 		return default_data
-	
+
 	var file := FileAccess.open(path, FileAccess.READ)
 	if not file:
 		ErrorHandler.handle("SAVE_READ_FAILED", "Cannot open file", {"path": path})
 		return default_data
-	
+
 	var text := file.get_as_text()
 	file.close()
-	
+
 	var parsed = JSON.parse_string(text)
 	if parsed == null or not (parsed is Dictionary):
 		ErrorHandler.handle("SAVE_PARSE_FAILED", "JSON parse failed", {"path": path})
 		return default_data
-	
+
 	var wrapper: Dictionary = parsed
 	var version: int = wrapper.get("version", 1)
 	var data: Dictionary = wrapper.get("data", {})
-	
+
 	# Migration hook
 	if version < SAVE_VERSION:
 		data = _migrate(data, version, SAVE_VERSION)
-	
+
 	save_loaded.emit(path, data)
 	return data
 

@@ -37,7 +37,7 @@ func set_phase(new_phase: AppPhase) -> void:
 	current_phase = new_phase
 	phase_changed.emit(new_phase, old)
 	print("[AppState] Phase %s -> %s" % [AppPhase.keys()[old], AppPhase.keys()[new_phase]])
-	
+
 func set_loading(loading: bool, msg: String = "") -> void:
 	is_loading = loading
 	loading_message = msg
