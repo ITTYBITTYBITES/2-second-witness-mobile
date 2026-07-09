@@ -23,9 +23,9 @@ func _ready() -> void:
 func emit_routed(signal_name: String, args: Array = []) -> void:
 	_log_event(signal_name, args)
 
-func _log_event(name: String, args: Array) -> void:
+func _log_event(event_name: String, args: Array) -> void:
 	var entry := {
-		"name": name,
+		"name": event_name,
 		"args": args,
 		"timestamp": Time.get_ticks_msec()
 	}
