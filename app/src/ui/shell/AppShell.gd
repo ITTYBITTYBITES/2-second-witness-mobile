@@ -1,7 +1,7 @@
 extends Control
 ## AppShell - Root application container
 ## Manages layers, first-run flow, splash system, main navigation
-## Premium Itty Bitty Bytes + Two Second Witness identity
+## Premium ITTYBITTYBITES + Two Second Witness identity
 
 @onready var content_container: Control = $ContentLayer/ContentContainer
 @onready var nav_bar: Control = $NavigationLayer/MainNavigation
@@ -31,7 +31,7 @@ const SCREEN_SCENES := {
 }
 
 func _ready() -> void:
-	print("[AppShell] Starting - New Vision with Itty Bitty Bytes identity")
+	print("[AppShell] Starting - New Vision with ITTYBITTYBITES identity")
 	_ensure_boot_flow()
 	
 	if AppState:

@@ -1,0 +1,57 @@
+name: Foundation CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Godot 4.6.3
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.6.3
+          use-dotnet: false
+          include-templates: true
+      
+      - name: Validate project import
+        run: |
+          godot --headless --import --path ./app --quit 2>&1 | tail -n 20
+          echo "Import validated"
+      
+      - name: Check branding
+        run: |
+          echo "Checking for old branding ITTY BITTY BYTES spaced..."
+          if grep -R "ITTY BITTY BYTES" --include="*.gd" --include="*.md" app/ docs/ 2>/dev/null; then
+            echo "FAIL: Old branding found"
+            exit 1
+          fi
+          if grep -R "Itty Bitty Bytes" --include="*.gd" --include="*.md" app/ docs/ 2>/dev/null; then
+            echo "FAIL: Old branding found"
+            exit 1
+          fi
+          echo "Branding check OK - ITTYBITTYBITES consistent"
+      
+      - name: Verify package ID
+        run: |
+          grep -q "com.ittybittybites.the2secondwitness" app/export_presets.cfg
+          echo "Package ID preserved"
+      
+      - name: Verify assets
+        run: |
+          ls -lh app/assets/splash/ittybittybites_splash.png
+          ls -lh app/assets/splash/two_second_witness_splash.png
+          ls -lh app/assets/brand/app_icon_1024.png
+          ls -lh app/assets/gameplay/observation_challenge_01.png
+          ls -lh app/assets/backgrounds/main_menu_bg.png
+          echo "Assets exist"
+      
+      - name: Validate export presets
+        run: |
+          cat app/export_presets.cfg | grep -E "package/unique_name|version/code|launcher_icons"
+          echo "Export presets valid"

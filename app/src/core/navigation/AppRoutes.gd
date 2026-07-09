@@ -3,7 +3,7 @@ extends RefCounted
 ## Includes publisher splash, title splash, first-run flow, and main tabs
 
 const ROUTES := {
-	# Publisher & Title Splash (Itty Bitty Bytes identity)
+	# Publisher & Title Splash (ITTYBITTYBITES identity)
 	"publisher_splash": {"screen": "PublisherSplashScreen", "is_tab": false, "requires_auth": false},
 	"splash": {"screen": "SplashScreen", "is_tab": false, "requires_auth": false},
 	"title_splash": {"screen": "TitleSplashScreen", "is_tab": false, "requires_auth": false},

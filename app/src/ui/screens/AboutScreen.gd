@@ -1,5 +1,5 @@
 extends Control
-## AboutScreen - About Itty Bitty Bytes + Two Second Witness, privacy policy placeholder
+## AboutScreen - About ITTYBITTYBITES + Two Second Witness, privacy policy placeholder
 
 @onready var title_label: Label = $Margin/Scroll/VBox/Title
 @onready var brand_label: Label = $Margin/Scroll/VBox/BrandSection/BrandTitle

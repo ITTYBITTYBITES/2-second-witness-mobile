@@ -1,12 +1,12 @@
 # Two Second Witness — Professional Foundation Release
-## Itty Bitty Bytes Platform Identity
+## ITTYBITTYBITES Platform Identity
 
 > **How much can you notice in two seconds?**
 > Premium digital exhibit exploring attention, observation, and memory.
 
 This repository is **clean — no previous application code, content, documentation, assets, or architecture**. Only identifiers needed for Google Play update continuity are preserved. Old app is not foundation, dependency, or reference. Future content, experiences, systems will be recreated from new vision.
 
-**Publisher:** Itty Bitty Bytes — Curiosity • Creativity • Discovery
+**Publisher:** ITTYBITTYBITES — Curiosity • Creativity • Discovery
 **App:** Two Second Witness — `com.ittybittybites.the2secondwitness`
 
 ---
@@ -26,9 +26,9 @@ This repository is **clean — no previous application code, content, documentat
 
 ## Publisher Identity — Two Splash Screens
 
-**Splash 1 — Itty Bitty Bytes presents:**
-- Premium gallery splash `itty_bitty_bytes_splash.png` 768x1376 dark elegant subtle texture grid constellation
-- Text: `ITTY BITTY BYTES` centered, subtitle `Interactive Experiences`, small `Curiosity • Creativity • Discovery`
+**Splash 1 — ITTYBITTYBITES presents:**
+- Premium gallery splash `ittybittybites_splash.png` 768x1376 dark elegant subtle texture grid constellation
+- Text: `ITTYBITTYBITES` centered, subtitle `Interactive Experiences`, small `Curiosity • Creativity • Discovery`
 - Duration 2.5s, fade, tap to skip after 0.5s
 
 **Splash 2 — Two Second Witness title/loading:**
@@ -43,7 +43,7 @@ Flow: `publisher_splash` → `title_splash` → privacy (first-run) → home
 ## First-Run Flow (Professional)
 
 ```
-Launch → Itty Bitty Bytes splash → Two Second Witness title/loading → Privacy acknowledgment → Short tutorial (Observe/Remember/Recall, 3 steps, skip) → First observation challenge (2s timer) → Memory question (multiple choice) → Result (✓/✕ feedback, detail, replay, continue) → Main menu
+Launch → ITTYBITTYBITES splash → Two Second Witness title/loading → Privacy acknowledgment → Short tutorial (Observe/Remember/Recall, 3 steps, skip) → First observation challenge (2s timer) → Memory question (multiple choice) → Result (✓/✕ feedback, detail, replay, continue) → Main menu
 ```
 
 **Privacy Acknowledgment:**
@@ -68,11 +68,11 @@ User understands concept within 30 seconds.
 
 ---
 
-## Generated Assets (Premium, Itty Bitty Bytes Website Identity)
+## Generated Assets (Premium, ITTYBITTYBITES Website Identity)
 
 **Visual direction:** Premium digital exhibit, curious and intelligent, minimal editorial, cognitive science inspired, calm modern polished, not arcade, not flashy mobile.
 
-1. **Itty Bitty Bytes Splash** `assets/splash/itty_bitty_bytes_splash.png` 768x1376 dark elegant #0F0F12 subtle grid constellation thin line circles, centered typography white, museum-quality
+1. **ITTYBITTYBITES Splash** `assets/splash/ittybittybites_splash.png` 768x1376 dark elegant #0F0F12 subtle grid constellation thin line circles, centered typography white, museum-quality
 2. **Two Second Witness Splash** `assets/splash/two_second_witness_splash.png` 768x1376 dark cinematic aperture eye-inspired purple #7C5CFF glow, fragments, subtitle italic
 3. **App Icon** `assets/brand/app_icon_1024.png` 1024x1024 minimal vector 2+eye observation focus, dark #0F0F12 white 2 purple iris, no text, launcher size
 4. **Adaptive Icons** `assets/brand/android/icon_foreground.png` transparent central 2+eye, `icon_background.png` solid dark #0F0F12
@@ -111,14 +111,14 @@ app/
   export_presets.cfg (package preserved code 100 v2.0.0-ibby-foundation)
   android/plugins/GodotGooglePlayBilling/
   assets/brand/ app_icon_1024.png + adaptive foreground/background + .import
-  assets/splash/ itty_bitty_bytes_splash.png, two_second_witness_splash.png
+  assets/splash/ ittybittybites_splash.png, two_second_witness_splash.png
   assets/gameplay/ observation_challenge_01.png
   assets/backgrounds/ main_menu_bg.png
   src/
     core/app/ AppBoot 10 steps, AppState, ErrorHandler
     core/events/ EventBus
     core/navigation/ AppRoutes (publisher_splash, title_splash, privacy, tutorial, observation, memory_question, result, about, home, experiences...), NavigationService initial publisher_splash, SPLASH_ROUTES, FIRST_RUN_ROUTES
-    systems/ theme 32 tokens DARK, audio buses, save versioned + profile, settings 25 synced, analytics rotation, accessibility sync, content, config (app_name Two Second Witness, version 2.0.0-ibby-foundation, publisher Itty Bitty Bytes)
+    systems/ theme 32 tokens DARK, audio buses, save versioned + profile, settings 25 synced, analytics rotation, accessibility sync, content, config (app_name Two Second Witness, version 2.0.0-ibby-foundation, publisher ITTYBITTYBITES)
     ui/shell/ AppShell (SCREEN_SCENES all new routes, chrome hidden for splash/first-run, publisher->title->privacy->tutorial->observation->memory->result->home flow)
     ui/components/ AppButton, AppCard, ExperienceCard.tscn robust, SectionHeader
     ui/screens/ PublisherSplashScreen, TitleSplashScreen, PrivacyScreen, TutorialScreen, ObservationChallengeScreen (2s timer), MemoryQuestionScreen, ResultScreen, AboutScreen, HomeScreen (main menu bg), ExperiencesScreen, ProfileScreen, SettingsScreen (with About), Placeholder
@@ -182,4 +182,4 @@ Future content, experiences, systems will be recreated from new vision:
 - Benchmark tests
 - OTA content sync
 
-**Foundation release ready for professional Google Play — Itty Bitty Bytes presents Two Second Witness.**
+**Foundation release ready for professional Google Play — ITTYBITTYBITES presents Two Second Witness.**

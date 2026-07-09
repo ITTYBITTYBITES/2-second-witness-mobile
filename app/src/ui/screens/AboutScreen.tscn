@@ -52,7 +52,7 @@ layout_mode=2
 
 [node name="BrandTitle" type="Label" parent="Margin/Scroll/VBox/BrandSection"]
 layout_mode=2
-text="Itty Bitty Bytes"
+text="ITTYBITTYBITES"
 autowrap_mode=0
 
 [node name="BrandDesc" type="Label" parent="Margin/Scroll/VBox/BrandSection"]
@@ -96,7 +96,7 @@ text="Privacy Policy (Placeholder Link)"
 layout_mode=2
 text="Version 2.0.0-foundation
 Package: com.ittybittybites.the2secondwitness
-© Itty Bitty Bytes"
+© ITTYBITTYBITES"
 
 [node name="BackButton" type="Button" parent="Margin/Scroll/VBox"]
 custom_minimum_size=Vector2(0, 56)

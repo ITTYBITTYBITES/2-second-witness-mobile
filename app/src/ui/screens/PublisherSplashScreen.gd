@@ -1,5 +1,5 @@
 extends Control
-## PublisherSplashScreen - Itty Bitty Bytes presents
+## PublisherSplashScreen - ITTYBITTYBITES presents
 ## First screen in first-run flow, premium gallery feeling
 
 @onready var bg_rect: TextureRect = $Background
@@ -14,18 +14,18 @@ func _ready() -> void:
 	_apply_theme()
 	_load_splash_asset()
 	_animate_in()
-	print("[PublisherSplash] Ready - Itty Bitty Bytes presents")
+	print("[PublisherSplash] Ready - ITTYBITTYBITES presents")
 
 func _load_splash_asset() -> void:
 	# Try to load generated premium asset
-	var path = "res://assets/splash/itty_bitty_bytes_splash.png"
+	var path = "res://assets/splash/ittybittybites_splash.png"
 	if ResourceLoader.exists(path):
 		var tex = load(path) as Texture2D
 		if tex and has_node("Background"):
 			$Background.texture = tex
 			print("[PublisherSplash] Loaded premium asset")
-	elif FileAccess.file_exists("res://assets/splash/itty_bitty_bytes_splash.png"):
-		var img = Image.load_from_file("res://assets/splash/itty_bitty_bytes_splash.png")
+	elif FileAccess.file_exists("res://assets/splash/ittybittybites_splash.png"):
+		var img = Image.load_from_file("res://assets/splash/ittybittybites_splash.png")
 		if img:
 			var tex = ImageTexture.create_from_image(img)
 			if has_node("Background"):

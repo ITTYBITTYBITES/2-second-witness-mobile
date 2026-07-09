@@ -1,6 +1,6 @@
 extends Node
 ## NavigationService - Central navigation orchestrator
-## Updated for Itty Bitty Bytes publisher identity + first-run flow
+## Updated for ITTYBITTYBITES publisher identity + first-run flow
 
 signal route_changed(route: String, params: Dictionary)
 signal route_change_requested(route: String, params: Dictionary)
