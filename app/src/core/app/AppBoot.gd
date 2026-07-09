@@ -1,4 +1,5 @@
 extends Node
+class_name AppBoot
 ## AppBoot - Clean startup flow orchestrator
 ## Phases: Preload configs -> Init systems -> Load saves -> Ready
 
@@ -31,14 +32,23 @@ func start_boot() -> void:
 	# Keep the dependency order explicit. Settings reads SaveService and the
 	# theme reads SettingsService; starting either one too early produces a
 	# cascade of null/default errors on a cold Android launch.
-	await _run_step("config", BootStep.INIT_CONFIG, _boot_config)
-	await _run_step("save", BootStep.INIT_SAVE, _boot_save)
-	await _run_step("settings", BootStep.INIT_SETTINGS, _boot_settings)
-	await _run_step("theme", BootStep.INIT_THEME, _boot_theme)
-	await _run_step("content", BootStep.INIT_CONTENT, _boot_content)
-	await _run_step("audio", BootStep.INIT_AUDIO, _boot_audio)
-	await _run_step("navigation", BootStep.INIT_NAV, _boot_nav)
-	await _run_step("finalize", BootStep.FINALIZE, _boot_finalize)
+	var steps := [
+		["config", BootStep.INIT_CONFIG, _boot_config],
+		["save", BootStep.INIT_SAVE, _boot_save],
+		["settings", BootStep.INIT_SETTINGS, _boot_settings],
+		["theme", BootStep.INIT_THEME, _boot_theme],
+		["content", BootStep.INIT_CONTENT, _boot_content],
+		["audio", BootStep.INIT_AUDIO, _boot_audio],
+		["navigation", BootStep.INIT_NAV, _boot_nav],
+		["finalize", BootStep.FINALIZE, _boot_finalize],
+	]
+	for s in steps:
+		var ok := await _run_step(s[0], s[1], s[2])
+		if not ok:
+			# _run_step already emitted boot_failed and logged via ErrorHandler
+			_is_booting = false
+			AppState.set_loading(false)
+			return
 
 	var total := Time.get_ticks_msec() - _boot_start_time
 	print("[AppBoot] Boot completed in %d ms" % total)
@@ -46,7 +56,7 @@ func start_boot() -> void:
 	boot_completed.emit()
 	EventBus.app_initialized.emit()
 
-func _run_step(name: String, _step: BootStep, callable: Callable) -> void:
+func _run_step(name: String, _step: BootStep, callable: Callable) -> bool:
 	var start := Time.get_ticks_msec()
 	boot_step_started.emit(name)
 	print("[AppBoot] Step: %s" % name)
@@ -67,9 +77,13 @@ func _run_step(name: String, _step: BootStep, callable: Callable) -> void:
 	if not success:
 		var error_code := "BOOT_%s_FAILED" % name.to_upper()
 		var context := {"step": name}
-		ErrorHandler.handle(error_code, err, context, ErrorHandler.Severity.WARNING)
+		ErrorHandler.handle(error_code, err, context, ErrorHandler.Severity.CRITICAL)
+		print("[AppBoot] Step %s FAILED: %s" % [name, err])
+		boot_failed.emit(err if err != "" else "Step %s failed" % name)
+		return false
 	else:
 		print("[AppBoot] Step %s OK (%d ms)" % [name, duration])
+		return true
 
 func _boot_config() -> Dictionary:
 	if ConfigService:

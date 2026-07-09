@@ -34,38 +34,50 @@ func _ready() -> void:
 
 func _connect_boot() -> void:
 	var boot_node := _find_boot_node()
-	if boot_node:
-		var has_step_started := boot_node.has_signal("boot_step_started")
-		if has_step_started and not boot_node.boot_step_started.is_connected(_on_boot_step_started):
-			boot_node.boot_step_started.connect(_on_boot_step_started)
-
-		var has_step_completed := boot_node.has_signal("boot_step_completed")
-		if has_step_completed and not boot_node.boot_step_completed.is_connected(_on_boot_step_completed):
-			boot_node.boot_step_completed.connect(_on_boot_step_completed)
-
-		var has_boot_completed := boot_node.has_signal("boot_completed")
-		if has_boot_completed and not boot_node.boot_completed.is_connected(_on_boot_completed):
-			boot_node.boot_completed.connect(_on_boot_completed)
+	if boot_node is AppBoot:
+		var app_boot: AppBoot = boot_node
+		if not app_boot.boot_step_started.is_connected(_on_boot_step_started):
+			app_boot.boot_step_started.connect(_on_boot_step_started)
+		if not app_boot.boot_step_completed.is_connected(_on_boot_step_completed):
+			app_boot.boot_step_completed.connect(_on_boot_step_completed)
+		if not app_boot.boot_completed.is_connected(_on_boot_completed):
+			app_boot.boot_completed.connect(_on_boot_completed)
+		if not app_boot.boot_failed.is_connected(_on_boot_failed):
+			app_boot.boot_failed.connect(_on_boot_failed)
 
 		var boot_already_done := false
 		if AppState and AppState.is_initialized:
 			boot_already_done = true
-		var is_booting = boot_node.get("_is_booting")
+		# _is_booting is private; access safely via get()
+		var is_booting = app_boot.get("_is_booting")
 		if is_booting == false:
 			boot_already_done = true
 		if boot_already_done:
 			_boot_completed = true
 			if status_label:
 				status_label.text = "Ready"
+		return
+
+	# Fallback: no typed AppBoot found (e.g., in editor previews)
+	if boot_node != null:
+		# Try string-based connects for untyped nodes
+		if boot_node.has_signal("boot_completed") and not boot_node.is_connected("boot_completed", Callable(self, "_on_boot_completed")):
+			boot_node.connect("boot_completed", Callable(self, "_on_boot_completed"))
+		var is_booting = boot_node.get("_is_booting")
+		if is_booting == false:
+			_boot_completed = true
 	else:
 		_boot_completed = true
 
 func _find_boot_node() -> Node:
+	# Prefer typed global lookup
+	var tree := get_tree()
+	if tree:
+		var root := tree.root
+		if root and root.has_node("AppShell/AppBoot"):
+			return root.get_node("AppShell/AppBoot")
 	if has_node("/root/AppShell/AppBoot"):
 		return get_node("/root/AppShell/AppBoot")
-	var root := get_tree().root
-	if root.has_node("AppShell/AppBoot"):
-		return root.get_node("AppShell/AppBoot")
 	return null
 
 func _apply_theme() -> void:
@@ -146,6 +158,14 @@ func _on_boot_completed() -> void:
 	_boot_completed = true
 	if status_label:
 		status_label.text = "Ready"
+
+func _on_boot_failed(reason: String) -> void:
+	# Allow the splash to continue so the user isn't stuck; AppShell
+	# will show the error banner. Mark boot as completed to unblock.
+	print("[TitleSplash] Boot failed: %s" % reason)
+	_boot_completed = true
+	if status_label:
+		status_label.text = "Continuing"
 
 func _on_ready_to_proceed() -> void:
 	if _is_navigating:
@@ -243,7 +263,12 @@ func on_navigated_to(_params: Dictionary) -> void:
 	else:
 		_boot_completed = false
 		var boot_node := _find_boot_node()
-		if boot_node:
+		if boot_node is AppBoot:
+			var app_boot: AppBoot = boot_node
+			var is_booting = app_boot.get("_is_booting")
+			if is_booting == false:
+				_boot_completed = true
+		elif boot_node:
 			var is_booting = boot_node.get("_is_booting")
 			if is_booting == false:
 				_boot_completed = true
