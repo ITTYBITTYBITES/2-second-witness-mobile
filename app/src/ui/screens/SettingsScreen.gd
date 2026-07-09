@@ -90,9 +90,9 @@ func _refresh() -> void:
 	
 	# About
 	vb.add_child(_create_section_header("About"))
-	vb.add_child(_create_info_row("App Version", ConfigService.get_value("app_version", "2.0.0-foundation") if ConfigService else "2.0.0"))
+	vb.add_child(_create_info_row("App Version", ConfigService.get_value("app_version", "2.0.0") if ConfigService else "2.0.0"))
 	vb.add_child(_create_info_row("Package ID", ConfigService.get_value("package_id", "com.ittybittybites.the2secondwitness") if ConfigService else "com.ittybittybites.the2secondwitness"))
-	vb.add_child(_create_info_row("Build", "Foundation Release • ITTYBITTYBITES"))
+	vb.add_child(_create_info_row("Build", "Playable Release • ITTYBITTYBITES"))
 	vb.add_child(_create_info_row("Engine", "Godot 4.6 / GL Compatibility"))
 	
 	var about_btn := Button.new()

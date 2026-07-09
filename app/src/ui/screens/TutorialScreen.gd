@@ -106,7 +106,9 @@ func _on_skip() -> void:
 func _finish_tutorial() -> void:
 	if AnalyticsService:
 		AnalyticsService.log_event("tutorial_completed", {"steps": TUTORIAL_STEPS.size()})
-	if NavigationService:
+	if ChallengeRegistry:
+		ChallengeRegistry.start_run("challenge_01")
+	elif NavigationService:
 		NavigationService.navigate_to("observation")
 
 func on_navigated_to(_params: Dictionary) -> void:

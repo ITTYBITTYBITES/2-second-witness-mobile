@@ -11,6 +11,8 @@ var _elapsed: float = 0.0
 const DISPLAY_DURATION := 2.5
 
 func _ready() -> void:
+	_elapsed = 0.0
+	set_process(true)
 	_apply_theme()
 	_load_splash_asset()
 	_animate_in()

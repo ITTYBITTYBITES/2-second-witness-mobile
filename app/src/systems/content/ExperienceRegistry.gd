@@ -35,10 +35,11 @@ func _scan_and_register() -> void:
 			if not known_ids.has(id):
 				known_ids.append(id)
 	
-	# Try dynamic scan of directory if possible
-	var dir_path := EXPERIENCE_BASE_PATH
-	if DirAccess.dir_exists_absolute(dir_path):
-		var dir := DirAccess.open(dir_path)
+	# Important: do not scan res:// directories at runtime on Android exports.
+	# In exported mobile builds, DirAccess on res:// can fail during boot and stall startup.
+	# Rely on the manifest + known IDs for runtime; only perform directory scans in editor.
+	if OS.has_feature("editor"):
+		var dir := DirAccess.open(EXPERIENCE_BASE_PATH)
 		if dir:
 			dir.list_dir_begin()
 			var fname := dir.get_next()

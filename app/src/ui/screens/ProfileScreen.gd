@@ -12,6 +12,8 @@ func _ready() -> void:
 	if ProfileService:
 		ProfileService.profile_updated.connect(_on_profile_updated)
 		ProfileService.stats_updated.connect(_on_stats_updated)
+	if ChallengeRegistry:
+		ChallengeRegistry.registry_updated.connect(_on_registry_updated)
 	if ThemeService:
 		ThemeService.theme_changed.connect(_on_theme_changed)
 
@@ -166,7 +168,9 @@ func _refresh() -> void:
 	# Stats
 	_refresh_stats()
 	
-	# Experience progress
+	# Challenge progress
+	if has_node("Margin/Scroll/VBox/ProgressHeader"):
+		$Margin/Scroll/VBox/ProgressHeader.text = "Challenge Progress"
 	_refresh_experience_progress()
 
 func _refresh_level_card() -> void:
@@ -277,21 +281,26 @@ func _refresh_experience_progress() -> void:
 	for child in vp.get_children():
 		child.queue_free()
 	
-	if not ExperienceRegistry:
-		return
-	
+	var challenges: Array[Dictionary] = ChallengeRegistry.get_all_challenges() if ChallengeRegistry else []
 	var progress_dict: Dictionary = ProfileService.profile.get("experiences_progress", {}) if ProfileService else {}
 	
-	for exp in ExperienceRegistry.get_all_experiences():
-		var exp_id: String = exp.get("id", "")
-		var prog: Dictionary = progress_dict.get(exp_id, {"played": 0, "best_score": 0})
+	if challenges.is_empty():
+		var empty := Label.new()
+		empty.text = "Play a round to begin tracking your challenge history."
+		empty.autowrap_mode = TextServer.AUTOWRAP_WORD
+		vp.add_child(empty)
+		return
+	
+	for challenge in challenges:
+		var challenge_id: String = challenge.get("id", "")
+		var prog: Dictionary = progress_dict.get(challenge_id, {"played": 0, "best_score": 0})
 		
 		var row := HBoxContainer.new()
 		row.custom_minimum_size = Vector2(0, 50)
 		vp.add_child(row)
 		
 		var title_lbl := Label.new()
-		title_lbl.text = exp.get("title", exp_id)
+		title_lbl.text = challenge.get("title", challenge_id)
 		title_lbl.custom_minimum_size = Vector2(120, 0)
 		row.add_child(title_lbl)
 		
@@ -320,6 +329,9 @@ func _on_stats_updated(_stats: Dictionary) -> void:
 
 func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:
 	_apply_theme()
+
+func _on_registry_updated(_challenges: Array) -> void:
+	_refresh_experience_progress()
 
 func _on_reset_pressed() -> void:
 	if ProfileService:
