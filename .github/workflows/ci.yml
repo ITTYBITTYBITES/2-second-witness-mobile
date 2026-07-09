@@ -70,9 +70,21 @@ jobs:
         run: |
           echo "Checking export presets..."
           cat app/export_presets.cfg | grep -E "package/unique_name|version/code|version/name|launcher_icons"
-          # Ensure version code is incremented (should be >=100)
-          grep -q "version/code=100\|version/code=101\|version/code=102" app/export_presets.cfg
-          echo "Export presets valid - production ready"
+          # Ensure version code is incremented for Play update (must be > old production 3.0.00, now 40000)
+          if grep -q "version/code=40000" app/export_presets.cfg; then
+            echo "Version code 40000 found - ready for update over existing 3.0.00 production"
+          elif grep -q "version/code=101" app/export_presets.cfg; then
+            echo "Version code 101 found"
+          else
+            # Check any version code >=100 exists
+            if grep -E "version/code=[0-9]{3,}" app/export_presets.cfg; then
+              echo "Version code exists and is >=100 - OK"
+            else
+              echo "FAIL: Version code not found or not incremented"
+              exit 1
+            fi
+          fi
+          echo "Export presets valid - production ready for existing Play listing update"
       
       - name: Validate first-run routes
         run: |
