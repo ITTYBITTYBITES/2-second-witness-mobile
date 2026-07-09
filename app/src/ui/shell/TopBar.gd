@@ -18,8 +18,9 @@ func _ready() -> void:
 	_ensure_ui()
 	_apply_theme()
 	_refresh()
-	if ThemeService and ThemeService.theme_changed:
-		ThemeService.theme_changed.connect(_on_theme_changed)
+	if ThemeService:
+		if not ThemeService.theme_changed.is_connected(_on_theme_changed):
+			ThemeService.theme_changed.connect(_on_theme_changed)
 
 func _ensure_ui() -> void:
 	if has_node("Margin/HBox/Title"):
