@@ -23,7 +23,7 @@ func initialize() -> void:
 	if not DirAccess.dir_exists_absolute(USER_CONTENT_DIR):
 		DirAccess.make_dir_recursive_absolute(USER_CONTENT_DIR)
 
-	await _load_manifest()
+	_load_manifest()
 
 	_initialized = true
 	print("[ContentService] Initialized - %d content entries" % _manifest.size())

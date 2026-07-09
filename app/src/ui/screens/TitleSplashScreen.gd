@@ -11,10 +11,10 @@ const PRIVACY_POLICY_URL := "https://ittybittybites.github.io/two-second-witness
 
 const PrivacyDialogScene := preload("res://src/ui/dialogs/PrivacyTermsDialog.tscn")
 
-@onready var title_label: Label = $Center/Margin/VBox/Title
-@onready var tagline_label: Label = $Center/Margin/VBox/Tagline
-@onready var spinner_label: Label = $Center/Margin/VBox/Loader/Spinner
-@onready var status_label: Label = $Center/Margin/VBox/Loader/Status
+@onready var title_label: Label = $MainVBox/Margin/VBox/Title
+@onready var tagline_label: Label = $MainVBox/Margin/VBox/Tagline
+@onready var spinner_label: Label = $MainVBox/Margin/VBox/Loader/Spinner
+@onready var status_label: Label = $MainVBox/Margin/VBox/Loader/Status
 @onready var footer_label: Label = $Footer
 @onready var dialog_layer: Control = $PrivacyDialogLayer
 

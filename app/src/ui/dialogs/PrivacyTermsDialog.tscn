@@ -29,51 +29,59 @@ anchor_right=1.0
 anchor_bottom=1.0
 grow_horizontal=2
 grow_vertical=2
-custom_constants/margin_left=32
-custom_constants/margin_right=32
-custom_constants/margin_top=48
-custom_constants/margin_bottom=48
+custom_constants/margin_left=24
+custom_constants/margin_right=24
+custom_constants/margin_top=40
+custom_constants/margin_bottom=40
 mouse_filter=2
 
-[node name="Center" type="CenterContainer" parent="Margin"]
+[node name="CenterVBox" type="VBoxContainer" parent="Margin"]
 layout_mode=2
+alignment=1
 size_flags_horizontal=3
 size_flags_vertical=3
 
-[node name="DialogPanel" type="PanelContainer" parent="Margin/Center"]
+[node name="DialogPanel" type="PanelContainer" parent="Margin/CenterVBox"]
 custom_minimum_size=Vector2(360, 0)
 layout_mode=2
 size_flags_horizontal=4
 
-[node name="InnerMargin" type="MarginContainer" parent="Margin/Center/DialogPanel"]
+[node name="InnerMargin" type="MarginContainer" parent="Margin/CenterVBox/DialogPanel"]
 layout_mode=2
 custom_constants/margin_left=24
 custom_constants/margin_right=24
 custom_constants/margin_top=24
 custom_constants/margin_bottom=24
 
-[node name="VBox" type="VBoxContainer" parent="Margin/Center/DialogPanel/InnerMargin"]
+[node name="Scroll" type="ScrollContainer" parent="Margin/CenterVBox/DialogPanel/InnerMargin"]
+layout_mode=2
+size_flags_horizontal=3
+size_flags_vertical=3
+horizontal_scroll_mode=0
+
+[node name="VBox" type="VBoxContainer" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll"]
 layout_mode=2
 custom_constants/separation=16
 size_flags_horizontal=3
+size_flags_vertical=3
 
-[node name="Title" type="Label" parent="Margin/Center/DialogPanel/InnerMargin/VBox"]
+[node name="Title" type="Label" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox"]
 layout_mode=2
 text="Privacy & Terms"
 horizontal_alignment=1
 
-[node name="Body" type="VBoxContainer" parent="Margin/Center/DialogPanel/InnerMargin/VBox"]
+[node name="Body" type="VBoxContainer" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox"]
 layout_mode=2
 custom_constants/separation=10
 size_flags_horizontal=3
 
-[node name="Welcome" type="Label" parent="Margin/Center/DialogPanel/InnerMargin/VBox/Body"]
+[node name="Welcome" type="Label" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body"]
 layout_mode=2
 text="Welcome to Two Second Witness."
 horizontal_alignment=1
 autowrap_mode=3
 
-[node name="Bullets" type="Label" parent="Margin/Center/DialogPanel/InnerMargin/VBox/Body"]
+[node name="Bullets" type="Label" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body"]
 layout_mode=2
 text="• Progress is stored locally on your device.
 • No account is required.
@@ -81,24 +89,24 @@ text="• Progress is stored locally on your device.
 • No advertising is currently included."
 autowrap_mode=3
 
-[node name="Footer" type="Label" parent="Margin/Center/DialogPanel/InnerMargin/VBox/Body"]
+[node name="Footer" type="Label" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body"]
 layout_mode=2
 text="By continuing, you acknowledge these terms."
 horizontal_alignment=1
 autowrap_mode=3
 
-[node name="Actions" type="VBoxContainer" parent="Margin/Center/DialogPanel/InnerMargin/VBox"]
+[node name="Actions" type="VBoxContainer" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox"]
 layout_mode=2
 custom_constants/separation=10
 size_flags_horizontal=3
 
-[node name="AcceptButton" type="Button" parent="Margin/Center/DialogPanel/InnerMargin/VBox/Actions"]
+[node name="AcceptButton" type="Button" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions"]
 custom_minimum_size=Vector2(0, 48)
 layout_mode=2
 size_flags_horizontal=3
 text="Accept"
 
-[node name="PolicyButton" type="Button" parent="Margin/Center/DialogPanel/InnerMargin/VBox/Actions"]
+[node name="PolicyButton" type="Button" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions"]
 custom_minimum_size=Vector2(0, 44)
 layout_mode=2
 size_flags_horizontal=3

@@ -21,53 +21,58 @@ grow_vertical=2
 color=Color(0.055, 0.055, 0.07, 1)
 mouse_filter=2
 
-[node name="Center" type="CenterContainer" parent="."]
+[node name="MainVBox" type="VBoxContainer" parent="."]
 layout_mode=1
 anchors_preset=15
 anchor_right=1.0
 anchor_bottom=1.0
 grow_horizontal=2
 grow_vertical=2
+alignment=1
+custom_constants/separation=0
 
-[node name="Margin" type="MarginContainer" parent="Center"]
+[node name="Margin" type="MarginContainer" parent="MainVBox"]
 layout_mode=2
 custom_constants/margin_left=32
 custom_constants/margin_right=32
 custom_constants/margin_top=32
 custom_constants/margin_bottom=32
+size_flags_horizontal=3
+size_flags_vertical=3
 
-[node name="VBox" type="VBoxContainer" parent="Center/Margin"]
+[node name="VBox" type="VBoxContainer" parent="MainVBox/Margin"]
 layout_mode=2
 alignment=1
 custom_constants/separation=14
 size_flags_horizontal=3
+size_flags_vertical=3
 
-[node name="Title" type="Label" parent="Center/Margin/VBox"]
+[node name="Title" type="Label" parent="MainVBox/Margin/VBox"]
 layout_mode=2
 text="Two Second Witness"
 horizontal_alignment=1
 
-[node name="Tagline" type="Label" parent="Center/Margin/VBox"]
+[node name="Tagline" type="Label" parent="MainVBox/Margin/VBox"]
 layout_mode=2
 text="How much can you notice in two seconds?"
 horizontal_alignment=1
 autowrap_mode=3
 
-[node name="Spacer" type="Control" parent="Center/Margin/VBox"]
+[node name="Spacer" type="Control" parent="MainVBox/Margin/VBox"]
 custom_minimum_size=Vector2(0, 8)
 layout_mode=2
 
-[node name="Loader" type="VBoxContainer" parent="Center/Margin/VBox"]
+[node name="Loader" type="VBoxContainer" parent="MainVBox/Margin/VBox"]
 layout_mode=2
 alignment=1
 custom_constants/separation=8
 
-[node name="Spinner" type="Label" parent="Center/Margin/VBox/Loader"]
+[node name="Spinner" type="Label" parent="MainVBox/Margin/VBox/Loader"]
 layout_mode=2
 text="Loading"
 horizontal_alignment=1
 
-[node name="Status" type="Label" parent="Center/Margin/VBox/Loader"]
+[node name="Status" type="Label" parent="MainVBox/Margin/VBox/Loader"]
 layout_mode=2
 text="Loading..."
 horizontal_alignment=1

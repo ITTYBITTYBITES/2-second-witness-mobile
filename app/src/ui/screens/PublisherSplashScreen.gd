@@ -3,8 +3,8 @@ extends Control
 ## Simple text-only on black, 1-2 seconds, fade to black (we already start on black).
 ## Premium editorial feel, minimal.
 
-@onready var title_label: Label = $Center/VBox/Title
-@onready var subtitle_label: Label = $Center/VBox/Subtitle
+@onready var title_label: Label = $VBox/Margin/Inner/Title
+@onready var subtitle_label: Label = $VBox/Margin/Inner/Subtitle
 
 var _elapsed: float = 0.0
 const DISPLAY_DURATION := 1.5  # 1-2 seconds, premium feel without dragging
@@ -46,11 +46,11 @@ func _apply_theme() -> void:
 
 func _animate_in() -> void:
 	modulate.a = 0.0
-	$Center.modulate.a = 0.0
+	$VBox.modulate.a = 0.0
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	tween.tween_property(self, "modulate:a", 1.0, 0.3).set_ease(Tween.EASE_OUT)
-	var center_fade := tween.parallel().tween_property($Center, "modulate:a", 1.0, 0.5)
+	var center_fade := tween.parallel().tween_property($VBox, "modulate:a", 1.0, 0.5)
 	center_fade.set_ease(Tween.EASE_OUT).set_delay(0.1)
 
 func _process(delta: float) -> void:
@@ -75,7 +75,7 @@ func _navigate_next() -> void:
 	_is_navigating = true
 	# Fade to black (we're already on near-black, so just fade text out cleanly)
 	var tween := create_tween()
-	tween.tween_property($Center, "modulate:a", 0.0, 0.35).set_ease(Tween.EASE_IN)
+	tween.tween_property($VBox, "modulate:a", 0.0, 0.35).set_ease(Tween.EASE_IN)
 	tween.tween_property(self, "modulate:a", 0.0, 0.35).set_ease(Tween.EASE_IN)
 	tween.finished.connect(func():
 		if NavigationService:
@@ -86,7 +86,7 @@ func on_navigated_to(_params: Dictionary) -> void:
 	_elapsed = 0.0
 	_is_navigating = false
 	modulate.a = 0.0
-	$Center.modulate.a = 0.0
+	$VBox.modulate.a = 0.0
 	set_process(true)
 	_animate_in()
 	# Screen-view analytics are centralized in NavigationService.navigate_to.

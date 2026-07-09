@@ -12,7 +12,6 @@ const TABS := [
 
 var current_route: String = "home"
 var _buttons: Dictionary = {} # route -> Button
-var _indicator: PanelContainer
 
 func _ready() -> void:
 	_ensure_ui()

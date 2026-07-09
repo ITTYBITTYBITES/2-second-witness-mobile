@@ -6,13 +6,13 @@ signal accepted()
 signal view_policy()
 
 @onready var scrim: ColorRect = $Scrim
-@onready var panel: PanelContainer = $Margin/Center/DialogPanel
-@onready var title_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/Title
-@onready var welcome_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/Body/Welcome
-@onready var bullets_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/Body/Bullets
-@onready var footer_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/Body/Footer
-@onready var policy_btn: Button = $Margin/Center/DialogPanel/InnerMargin/VBox/Actions/PolicyButton
-@onready var accept_btn: Button = $Margin/Center/DialogPanel/InnerMargin/VBox/Actions/AcceptButton
+@onready var panel: PanelContainer = $Margin/CenterVBox/DialogPanel
+@onready var title_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Title
+@onready var welcome_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body/Welcome
+@onready var bullets_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body/Bullets
+@onready var footer_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body/Footer
+@onready var policy_btn: Button = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions/PolicyButton
+@onready var accept_btn: Button = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions/AcceptButton
 
 func _ready() -> void:
 	_enforce_layout()
