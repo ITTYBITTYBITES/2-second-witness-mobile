@@ -18,7 +18,7 @@ func initialize() -> void:
 	if _initialized:
 		return
 
-	await _scan_and_register()
+	_scan_and_register()
 
 	_initialized = true
 	print("[ExperienceRegistry] Initialized - %d experiences" % _experiences.size())
@@ -187,10 +187,10 @@ func _sort_experiences_by_title(a: Dictionary, b: Dictionary) -> bool:
 func get_unlocked_experiences() -> Array[Dictionary]:
 	var all := get_all_experiences()
 	var unlocked: Array[Dictionary] = []
-	for exp in all:
-		var runtime: Dictionary = exp.get("runtime", {})
+	for item in all:
+		var runtime: Dictionary = item.get("runtime", {})
 		if runtime.get("is_unlocked", true) and not runtime.get("is_coming_soon", false):
-			unlocked.append(exp)
+			unlocked.append(item)
 	return unlocked
 
 func is_registered(exp_id: String) -> bool:
