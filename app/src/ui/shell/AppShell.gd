@@ -12,7 +12,7 @@ extends Control
 
 var _current_screen: Control = null
 var _screen_cache: Dictionary = {}
-var _boot_flow: Node
+var _boot_flow: AppBoot = null
 
 const SCREEN_SCENES := {
 	"publisher_splash": "res://src/ui/screens/PublisherSplashScreen.tscn",
@@ -69,18 +69,22 @@ func _ready() -> void:
 		NavigationService.replace("publisher_splash")
 
 	if _boot_flow:
-		_boot_flow.boot_completed.connect(_on_boot_completed)
-		_boot_flow.boot_failed.connect(_on_boot_failed)
+		if not _boot_flow.boot_completed.is_connected(_on_boot_completed):
+			_boot_flow.boot_completed.connect(_on_boot_completed)
+		if not _boot_flow.boot_failed.is_connected(_on_boot_failed):
+			_boot_flow.boot_failed.connect(_on_boot_failed)
 		_boot_flow.start_boot()
 	else:
 		call_deferred("_on_boot_completed")
 
 func _ensure_boot_flow() -> void:
-	var boot_script = load("res://src/core/app/AppBoot.gd")
-	if boot_script:
-		_boot_flow = boot_script.new()
-		_boot_flow.name = "AppBoot"
-		add_child(_boot_flow)
+	# AppBoot is now a globally registered class (class_name AppBoot),
+	# so we can instantiate it directly with proper typing.
+	if _boot_flow != null:
+		return
+	_boot_flow = AppBoot.new()
+	_boot_flow.name = "AppBoot"
+	add_child(_boot_flow)
 
 func _on_boot_completed() -> void:
 	print("[AppShell] Boot completed")
