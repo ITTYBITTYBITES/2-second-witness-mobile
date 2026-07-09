@@ -74,7 +74,7 @@ func _wire_existing_buttons() -> void:
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
 	
 	var bg_style := StyleBoxFlat.new()
 	bg_style.bg_color = tokens.get("background_secondary", Color("#1A1A1F"))

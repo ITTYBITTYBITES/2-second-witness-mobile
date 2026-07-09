@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=3 uid="uid://title_splash"]
+
+[ext_resource type="Script" path="res://src/ui/screens/TitleSplashScreen.gd" id="1_script"]
+
+[node name="TitleSplashScreen" type="Control" groups=["app_screen"]]
+layout_mode=3
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+script=ExtResource("1_script")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode=1
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+expand_mode=1
+stretch_mode=5
+
+[node name="Overlay" type="ColorRect" parent="."]
+layout_mode=1
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+color=Color(0.0588235, 0.0588235, 0.0784314, 0.6)
+mouse_filter=2
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode=1
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+
+[node name="VBox" type="VBoxContainer" parent="Center"]
+layout_mode=2
+alignment=1
+custom_constants/separation=16
+
+[node name="Icon" type="Label" parent="Center/VBox"]
+layout_mode=2
+text="◉"
+horizontal_alignment=1
+
+[node name="Title" type="Label" parent="Center/VBox"]
+layout_mode=2
+text="TWO SECOND
+WITNESS"
+horizontal_alignment=1
+
+[node name="Subtitle" type="Label" parent="Center/VBox"]
+layout_mode=2
+text="How much can you notice in two seconds?"
+horizontal_alignment=1
+autowrap_mode=3
+
+[node name="ProgressBar" type="ProgressBar" parent="Center/VBox"]
+custom_minimum_size=Vector2(200, 6)
+layout_mode=2
+size_flags_horizontal=4
+show_percentage=false
+value=0.0
+
+[node name="Status" type="Label" parent="Center/VBox"]
+layout_mode=2
+text="Loading..."
+horizontal_alignment=1

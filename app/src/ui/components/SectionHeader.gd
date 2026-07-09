@@ -54,7 +54,7 @@ func _apply_theme() -> void:
 		return
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
 	$VBox/TitleRow/Title.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
 	$VBox/TitleRow/Title.add_theme_font_size_override("font_size", 20)
 	$VBox/Subtitle.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))

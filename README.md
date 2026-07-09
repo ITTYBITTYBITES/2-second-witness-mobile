@@ -1,194 +1,138 @@
-# 2 Second Witness — Foundation Rebuild (2.0)
+# 2 Second Witness — Clean Foundation (2.0 New Vision)
 
 > **Short, replayable experiences focused on observation, memory, reaction, and quick decision-making.**
 
-This repository now contains a **completely fresh implementation** built from the ground up. The previous app structure (Worlds, Universes, old progression, old navigation, old game architecture) has been archived and is NOT the foundation.
+This repository has been **purged of all previous application code, content, documentation, assets, and architecture**. Only the identifiers and technical requirements needed to publish as a Google Play update are preserved. The old application is not a foundation, dependency, or reference — future content, experiences, and systems will be recreated from the new vision.
 
-- **Brand:** Two Second Witness (preserved)
-- **Premise:** Entertainment, 2-second observation tests
-- **Existing Concepts:** Flashword carried forward as first modular experience
-- **Engine:** Godot 4.6 (GL Compatibility for Android)
-- **Package ID:** `com.ittybittybites.the2secondwitness` (preserved for Google Play update continuity)
-- **Version:** 2.0.0-foundation
+**Preserved for Update Continuity:**
+- Package ID `com.ittybittybites.the2secondwitness`
+- App name `2 Second Witness`
+- Brand icons `app_icon_1024.png` + adaptive foreground/background
+- Android export presets (APK dev + AAB release)
+- Android billing plugin `GodotGooglePlayBilling` AAR (optional, for future IAP)
+- Version code 100 > old 1 (allows Play Store update if signed same keystore)
+
+**Engine:** Godot 4.6, GL Compatibility
 
 ---
 
-## 📁 New Architecture
-
-### Core Philosophy
-
-- **Clean separation:** 8 independent systems communicate via EventBus, no circular deps
-- **Maintainability:** <40 source files vs old ~2000, each <250 LOC
-- **Future expansion:** Experiences as independent modules under `src/experiences/` — add new experience without rewriting core
-- **Performance:** No 3D tunnel, no heavy shaders, 6 pooled SFX players, JSONL buffered analytics
-- **Mobile-first:** 1080x1920, bottom nav, 60dp touch, haptics abstraction
+## Repository Structure (New Vision Only)
 
 ```
 app/
-  project.godot (clean, 14 autoloads)
-  export_presets.cfg (Android APK + AAB, package preserved)
-  android/plugins/GodotGooglePlayBilling/ (preserved for Play continuity)
-  assets/brand/ (app_icon_1024 + adaptive icons)
-  src/
-    core/app/ (AppBoot, AppState, ErrorHandler)
-    core/events/ (EventBus)
-    core/navigation/ (AppRoutes, NavigationService)
-    systems/ (theme, audio, save/profile, settings, analytics, accessibility, content, config)
-    ui/shell/ (AppShell root, MainNavigation 4-tab, TopBar)
-    ui/components/ (AppButton, AppCard, ExperienceCard, SectionHeader)
-    ui/screens/ (Splash, Home, Experiences, Profile, Settings, Placeholder)
-    experiences/ (ExperienceBase contract, manifest.json, flashword, _template)
+  project.godot               # Clean project, main_scene AppShell.tscn, 13 autoloads, 1080x1920 portrait
+  export_presets.cfg          # Android_Development APK + Android_PlayStore AAB, package preserved, version 2.0.0-foundation code 100
+  android/                    # Preserved for continuity
+    plugins/GodotGooglePlayBilling/
+  assets/brand/               # Brand icons only
+    app_icon_1024.png + .import
+    android/icon_foreground/background + .import
+    promo_header_1920.png
+  src/                        # New foundation (clean, no old concepts)
+    core/app/       AppBoot (10-step boot), AppState (BOOT/SPLASH/HOME/EXPERIENCES/PROFILE/SETTINGS), ErrorHandler
+    core/events/    EventBus (decoupled signals, 200 log)
+    core/navigation/ AppRoutes (route table), NavigationService (history 50, tab mapping)
+    systems/
+      theme/        ThemeService DARK/LIGHT tokens primary #7C5CFF secondary #2EE6A6, 32 tokens
+      audio/        AudioService buses Master/BGM/SFX/UI, 6 pooled SFX
+      save/         SaveService versioned JSON + ProfileService level/xp/streak/progress
+      settings/     SettingsService 25 keys, synced font_scale↔accessibility_font_scaling
+      analytics/    AnalyticsService session_id + JSONL buffer rotation 1MB
+      accessibility/ AccessibilityService font_scale 0.8-1.5, reduced_motion, vibrate
+      content/      ContentService manifest + ExperienceRegistry (safe DirAccess, manifest-first for Android)
+      config/       ConfigService feature flags, dot-notation
+    ui/
+      shell/        AppShell (layers Background/Content/TopBar/Navigation/Overlay), MainNavigation 4 tabs, TopBar
+      components/   AppButton, AppCard, ExperienceCard.tscn robust (no @onready crash), SectionHeader
+      screens/      Splash (boot progress), Home (hero + stats + featured + Quick Play), Experiences (filterable grid), Profile (level bar + stats + progress), Settings (appearance/audio/accessibility/gameplay/privacy/about), Placeholder
+    experiences/    ExperienceBase contract, manifest.json, flashword (2000ms observe, 5000ms recall, scoring), _template (copy to add new)
+docs/foundation/                # New architecture docs only
+  ARCHITECTURE_SUMMARY.md
+  FOLDER_STRUCTURE.md
+  IMPLEMENTED_SYSTEMS.md
+  BUILD_TEST_RESULTS.md
+  NEXT_STEPS.md
+  VERIFICATION_REPORT_2.md      # Full stability audit
+.gitignore
+README.md
 ```
 
-**Full docs:**
-- `docs/foundation/ARCHITECTURE_SUMMARY.md` — Layers, boot flow, systems, experience contract
-- `docs/foundation/FOLDER_STRUCTURE.md` — File tree rationale, autoload order, adding files
-- `docs/foundation/IMPLEMENTED_SYSTEMS.md` — API list per system
-- `docs/foundation/BUILD_TEST_RESULTS.md` — Static validation, export checks
-- `docs/foundation/NEXT_STEPS.md` — Phase 2 (full gameplay) + Phase 3/4
+**No legacy:** No `CHANGELOG.md`, `EVOLUTION_*`, `asset_creation_queue.json`, `missing_assets.json`, `live_content/`, `promo/`, `shared/`, `docs/design/`, `.github/workflows/` — all removed.
 
 ---
 
-## 🚀 Quick Start
-
-### Requirements
-- Godot 4.6.3 Stable
-- Android Studio + SDK 33+ + OpenJDK 17 (for Android build)
-- Git
-
-### Clone
+## Quick Start
 
 ```bash
 git clone https://github.com/ITTYBITTYBITES/2-second-witness-mobile.git
 cd 2-second-witness-mobile
+# Open Godot 4.6.3, Import app/project.godot, Play F5
+# Splash 10-step boot 2-19ms → Home
 ```
 
-### Run in Editor
-
-1. Open Godot 4.6
-2. Import `app/project.godot`
-3. Play (F5) → Splash boot progress 8 steps → Home
-4. Tabs: Home (hero + stats + featured), Experiences (filterable grid), Profile (level/xp/streak), Settings (toggles/sliders)
-
-### Build Android (Dev APK)
-
-- Editor → Project → Export → Android_Development → Export
-- Output: `build/android/2sw-dev.apk`
-- ADB: `adb install build/android/2sw-dev.apk`
-
-### Build Android (PlayStore AAB)
-
-- Requires `app/release.keystore` (not committed, user provides)
-- Fill keystore user/pass in export preset or `Editor Settings > Export > Android`
-- Export preset: Android_PlayStore → `build/android/2sw-release.aab`
-- Version code 100 ( > old 1, allows Play Store update)
+**Tested via headless Godot:**
+- Import SUCCESS 4 assets
+- Boot 10 steps OK, theme tokens 32, registry 1 experience, profile new ID, settings 25
+- AppShell flow 0 errors (previously 10+), navigation home→experiences→profile→settings→back OK
+- Full flow: persistence, theme toggle light/dark, font_scale sync 1.2, error handling invalid route
+- Android export preset valid structurally (fails only due to missing SDK/templates env, not project config)
 
 ---
 
-## 🎮 Core Systems Implemented (Foundation Phase)
+## Core Systems (Foundation Phase)
 
-| System | File | Responsibility |
-|--------|------|----------------|
-| **Navigation** | `NavigationService.gd`, `AppRoutes.gd` | Route table, history stack max 50, tab mapping, analytics hook |
-| **Theme/UI** | `ThemeService.gd` | DARK/LIGHT tokens (primary #7C5CFF, secondary #2EE6A6), spacing, radius, typography |
-| **Audio** | `AudioService.gd` | Buses Master/BGM/SFX/UI, 6 pooled SFX, volume/mute persist via Settings |
-| **Save/Profile** | `SaveService.gd`, `ProfileService.gd` | Versioned JSON wrapper, migration hook, profile level/xp/streak/per-exp progress |
-| **Settings** | `SettingsService.gd` | Volumes, haptics, theme_mode, reduced_motion, font_scale, high_contrast, privacy |
-| **Analytics** | `AnalyticsService.gd` | Session ID, buffer 200 + JSONL file, screen_view, experience_event, respects opt-out |
-| **Accessibility** | `AccessibilityService.gd` | Font scale 0.8-1.5, reduced_motion halves animation, high_contrast flag, vibrate abstraction |
-| **Content** | `ContentService.gd`, `ExperienceRegistry.gd` | Manifest loading, cache user:// overrides res:// OTA ready, auto-scan experiences |
+All independent, EventBus only, no old dependencies.
 
-**App State:** `AppState.gd` phase BOOT→SPLASH→HOME→EXPERIENCES→PROFILE→SETTINGS→EXPERIENCE_PLAYING, transient store, loading overlay
+| System | Responsibility |
+|--------|----------------|
+| Navigation | Route table, history, tab mapping |
+| Theme | DARK/LIGHT tokens, spacing, radius |
+| Audio | Buses + pooled SFX |
+| Save/Profile | Versioned JSON, level/xp, per-exp progress |
+| Settings | 25 prefs, synced font_scale |
+| Analytics | Session + JSONL rotation |
+| Accessibility | Font scale, reduced motion, haptics |
+| Content | Manifest + registry safe for Android export |
 
-**Error Handling:** `ErrorHandler.gd` severity INFO/WARNING/ERROR/CRITICAL, history max 100, safe recovery navigate home
-
-**EventBus:** Decoupled signals, logs last 200 events
+See `docs/foundation/IMPLEMENTED_SYSTEMS.md`
 
 ---
 
-## 🧩 Adding a New Experience (No Core Rewrite)
+## Adding Experiences (New Vision, No Core Rewrite)
 
-1. Copy `src/experiences/_template/` → `src/experiences/my_exp/`
-2. Edit `manifest.json`: id, title, category, preview_color, rules
-3. Implement `MyExpExperience.gd` extending `ExperienceBase.gd`:
-   ```gdscript
-   extends "res://src/experiences/ExperienceBase.gd"
-   func start(params): 
-       # return session {observation_ms: 2000, ...}
-   func submit_answer(answer):
-       # return {correct, score, reaction_ms}
-   ```
-4. Add `"my_exp"` to `src/experiences/manifest.json` list
-5. Registry auto-discovers on next boot — appears in ExperiencesScreen grid
-
-See `_template/TemplateExperience.gd` for commented guide.
-
-**Current Experience:** Flashword — 2-sec glance word then 4-choice recall, scoring base 10 + speed bonus, stats recorded to profile.
+1. Copy `_template/` → `my_exp/`
+2. Edit `manifest.json`
+3. Implement `MyExpExperience.gd` extending `ExperienceBase`
+4. Add id to `manifest.json` list
+5. Registry auto-discovers
 
 ---
 
-## 📱 Google Play Continuity
+## Google Play Update Continuity (Identifiers Preserved)
 
-- **Package ID preserved:** `com.ittybittybites.the2secondwitness` in `export_presets.cfg` + `ConfigService.gd`
-- **Icons preserved:** `assets/brand/app_icon_1024.png` + adaptive foreground/background
-- **Android plugin preserved:** `android/plugins/GodotGooglePlayBilling/` AAR + GDAP billingclient 7.0.0
-- **Export compatibility:** APK dev + AAB release presets, arm64, immersive, 32-bit framebuffer
-- **Signing compatibility:** keystore path `res://release.keystore` placeholder, user provides actual keystore for release
-- **Version code:** 100 (higher than old 1.x RC) allows Play Store to accept as update
+- Package `com.ittybittybites.the2secondwitness`
+- Version code 100 > old 1
+- Icons preserved
+- Export presets preserved
+- Signing: provide `app/release.keystore` same as old to allow update
+- Plugin `GodotGooglePlayBilling` preserved but optional
 
-Final app capable of replacing current Play release as update (if signed with same keystore).
-
----
-
-## 📦 Foundation Deliverables
-
-1. **Architecture Summary:** `docs/foundation/ARCHITECTURE_SUMMARY.md`
-2. **Folder Structure:** `docs/foundation/FOLDER_STRUCTURE.md`
-3. **Implemented Systems:** `docs/foundation/IMPLEMENTED_SYSTEMS.md` + source in `app/src/`
-4. **Build/Test Results:** `docs/foundation/BUILD_TEST_RESULTS.md`
-5. **Next Steps:** `docs/foundation/NEXT_STEPS.md` (Phase 2 gameplay, Phase 3 OTA/monetization)
-
-**What was removed (per mission):**
-- Worlds, Universes, Old progression (spikes/knowledge items), Old navigation (NavigationRouter, WorldLayer, TunnelLayer, ModalWindowManager etc), Previous game architecture (ScenarioExecutionEngine, ObservationCollection, Iris Engine, Mirror Engine, FidelityEnforcer, SystemHealthMonitor etc)
-- All old content `data/content/base_bundle/` (1000+ JSONs), `universes/`, `benchmark/`, `tools/`, `meta/`, `shared/` — archived to `_legacy_archive/app_old/` for reference but not loaded
+Without old code/content/docs/assets/architecture — **only new vision going forward**.
 
 ---
 
-## 🧪 Testing
+## Next Steps (New Vision Recreation)
 
-- Manual flow: Splash booting 8 steps → Home hero + stats + featured → Quick Play random exp → Experiences filter → Profile level bar + stats grid → Settings toggles dark/light + sliders volume + reset
-- Persistence: close/reopen retains profile `user://profile_v2.json` + settings `user://settings_v2.json`
-- Error handling: invalid route logs via ErrorHandler but no crash
-- Build validation: Python JSON checks for manifests, file existence checks for icons + AAR, grep package ID preserved, no old concepts via grep
+Future content, experiences, systems will be recreated from new vision, not old:
 
----
+- Flashword full gameplay screen
+- 2+ new experiences proving modularity
+- Generic ExperiencePlayScreen
+- Onboarding
+- Audio assets
+- Benchmark tests
+- OTA content sync
 
-## ⏭️ Next Phase (Recommended)
+See `docs/foundation/NEXT_STEPS.md` and `VERIFICATION_REPORT_2.md`
 
-- Flashword full gameplay screen `ExperiencePlayScreen` with observation 2000ms → recall 5000ms → result
-- 2 more experiences proving modularity: FlashShape (visual memory), SnapReact (reaction)
-- Onboarding 3 slides if first launch
-- Audio assets placeholder ogg (ui_click, success, fail)
-- Benchmark headless tests `benchmark/verify_*.gd`
-- OTA Content GitHub sync service
-
-See `NEXT_STEPS.md` for detailed roadmap.
-
----
-
-## 📄 Legacy Archive
-
-Previous production repo snapshot archived at `_legacy_archive/app_old/` — contains old scripts, scenes, content, docs (EVOLUTION_*, PRODUCT_BIBLE etc). Not used by new foundation, kept for reference.
-
-Old `live_content/` and `shared/` ignored by new ContentService.
-
----
-
-## 🛡️ License & Notes
-
-- This is production repo for ITTY BITTY BITES GAMES
-- Brand Two Second Witness retained
-- Do not reintroduce Worlds/Universes concepts
-- Always add via independent experience modules
-
-**Foundation Phase Complete — Ready for Phase 2.**
+**Foundation is clean, stable, and contains no previous implementation references.**

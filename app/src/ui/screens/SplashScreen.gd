@@ -112,7 +112,7 @@ func _ensure_ui() -> void:
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
 	if title_label:
 		title_label.add_theme_color_override("font_color", tokens.get("primary", Color("#7C5CFF")))
 	if subtitle_label:

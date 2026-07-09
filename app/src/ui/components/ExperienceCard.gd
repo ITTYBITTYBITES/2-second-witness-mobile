@@ -1,5 +1,6 @@
 extends Control
 ## ExperienceCard - Displays experience info, polished placeholder
+## FIXED: Robust to both TSCN instantiation and programmatic Control+script usage
 
 signal experience_selected(exp_id: String)
 signal info_requested(exp_id: String)
@@ -7,111 +8,128 @@ signal info_requested(exp_id: String)
 @export var experience_id: String = ""
 var manifest: Dictionary = {}
 
-@onready var card_root: PanelContainer = $Card
-@onready var title_label: Label = $Card/Margin/VBox/Title
-@onready var desc_label: Label = $Card/Margin/VBox/Description
-@onready var meta_label: Label = $Card/Margin/VBox/MetaRow/Meta
-@onready var icon_panel: PanelContainer = $Card/Margin/VBox/TopRow/IconWrapper
-@onready var play_button: Button = $Card/Margin/VBox/PlayButton
+var card_root: PanelContainer = null
+var title_label: Label = null
+var desc_label: Label = null
+var meta_label: Label = null
+var icon_panel: PanelContainer = null
+var play_button: Button = null
+
+var _built: bool = false
 
 func _ready() -> void:
-	# If manifest not set via set_experience, try to create from ID
 	if manifest.is_empty() and experience_id != "" and ExperienceRegistry:
 		manifest = ExperienceRegistry.get_manifest(experience_id)
-	_ensure_wired()
+	_attempt_find_nodes()
+	if not _built and (card_root == null):
+		_build_ui()
 	_apply_theme()
 	_refresh_ui()
+
+func _attempt_find_nodes() -> void:
+	title_label = _find_label(["Card/Margin/VBox/Title", "Margin/VBox/Title", "VBox/Title", "Title"])
+	desc_label = _find_label(["Card/Margin/VBox/Description", "Margin/VBox/Description", "Description"])
+	meta_label = _find_label(["Card/Margin/VBox/MetaRow/Meta", "Margin/VBox/MetaRow/Meta", "MetaRow/Meta", "Meta"])
+	icon_panel = get_node_or_null("Card/Margin/VBox/TopRow/IconWrapper") as PanelContainer
+	if icon_panel == null:
+		icon_panel = get_node_or_null("Margin/VBox/TopRow/IconWrapper") as PanelContainer
+	play_button = get_node_or_null("Card/Margin/VBox/PlayButton") as Button
+	if play_button == null:
+		play_button = get_node_or_null("Margin/VBox/PlayButton") as Button
+	if play_button == null:
+		play_button = get_node_or_null("PlayButton") as Button
+	if has_node("Card"):
+		card_root = get_node_or_null("Card") as PanelContainer
+	_ensure_wired()
+
+func _find_label(paths: Array) -> Label:
+	for p in paths:
+		var n = get_node_or_null(p)
+		if n is Label:
+			return n as Label
+	return null
 
 func set_experience(exp_manifest: Dictionary) -> void:
 	manifest = exp_manifest
 	experience_id = exp_manifest.get("id", "")
-	_refresh_ui()
+	if is_inside_tree():
+		_refresh_ui()
 
 func _ensure_wired() -> void:
-	if not has_node("Card/Margin/VBox/PlayButton"):
-		_build_ui()
-	else:
-		if play_button:
-			if not play_button.pressed.is_connected(_on_play_pressed):
-				play_button.pressed.connect(_on_play_pressed)
-		if has_node("Card"):
-			var card_btn := $Card as PanelContainer
-			card_btn.gui_input.connect(_on_card_input)
+	if play_button:
+		if not play_button.pressed.is_connected(_on_play_pressed):
+			play_button.pressed.connect(_on_play_pressed)
+	if card_root:
+		if not card_root.gui_input.is_connected(_on_card_input):
+			card_root.gui_input.connect(_on_card_input)
 
 func _build_ui() -> void:
-	# Programmatic UI fallback for foundation
+	if _built:
+		return
+	_built = true
+	if card_root and is_instance_valid(card_root):
+		return
 	custom_minimum_size = Vector2(0, 180)
-	
-	var card := PanelContainer.new()
+	var card = PanelContainer.new()
 	card.name = "Card"
 	card.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	card.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	add_child(card)
-	
-	var margin := MarginContainer.new()
+	card_root = card
+	var margin = MarginContainer.new()
 	margin.name = "Margin"
 	margin.add_theme_constant_override("margin_left", 16)
 	margin.add_theme_constant_override("margin_right", 16)
 	margin.add_theme_constant_override("margin_top", 16)
 	margin.add_theme_constant_override("margin_bottom", 16)
 	card.add_child(margin)
-	
-	var vbox := VBoxContainer.new()
+	var vbox = VBoxContainer.new()
 	vbox.name = "VBox"
 	margin.add_child(vbox)
-	
-	var top_row := HBoxContainer.new()
+	var top_row = HBoxContainer.new()
 	top_row.name = "TopRow"
 	vbox.add_child(top_row)
-	
-	var icon_wrap := PanelContainer.new()
+	var icon_wrap = PanelContainer.new()
 	icon_wrap.name = "IconWrapper"
 	icon_wrap.custom_minimum_size = Vector2(48,48)
 	top_row.add_child(icon_wrap)
-	
-	var title := Label.new()
+	icon_panel = icon_wrap
+	var title = Label.new()
 	title.name = "Title"
 	title.text = "Experience"
 	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	top_row.add_child(title)
-	
-	var meta_row := HBoxContainer.new()
+	title_label = title
+	var meta_row = HBoxContainer.new()
 	meta_row.name = "MetaRow"
 	vbox.add_child(meta_row)
-	
-	var meta := Label.new()
+	var meta = Label.new()
 	meta.name = "Meta"
 	meta.text = "• 2 sec • Memory"
 	vbox.add_child(meta)
-	
-	var desc := Label.new()
+	meta_label = meta
+	var desc = Label.new()
 	desc.name = "Description"
 	desc.text = "Observe quickly"
 	desc.autowrap_mode = TextServer.AUTOWRAP_WORD
 	desc.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	vbox.add_child(desc)
-	
-	var play := Button.new()
+	desc_label = desc
+	var play = Button.new()
 	play.name = "PlayButton"
 	play.text = "Play"
 	vbox.add_child(play)
-	play.pressed.connect(_on_play_pressed)
-	
-	card.gui_input.connect(_on_card_input)
-	
-	card_root = card
-	title_label = title
-	desc_label = desc
-	meta_label = meta
-	icon_panel = icon_wrap
 	play_button = play
+	_ensure_wired()
 
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
+	if tokens.is_empty():
+		return
 	if card_root:
-		var style := StyleBoxFlat.new()
+		var style = StyleBoxFlat.new()
 		style.bg_color = tokens.get("surface", Color("#1E1E26"))
 		style.corner_radius_top_left = tokens.get("radius_lg", 20)
 		style.corner_radius_top_right = tokens.get("radius_lg", 20)
@@ -127,7 +145,6 @@ func _apply_theme() -> void:
 		style.border_width_top = 1
 		style.border_width_bottom = 1
 		card_root.add_theme_stylebox_override("panel", style)
-	
 	if title_label:
 		title_label.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
 		title_label.add_theme_font_size_override("font_size", 18)
@@ -141,20 +158,26 @@ func _apply_theme() -> void:
 func _refresh_ui() -> void:
 	if manifest.is_empty():
 		return
-	
-	_ensure_wired()
-	
-	var title: String = manifest.get("title", experience_id.capitalize())
-	var short_desc: String = manifest.get("short_description", manifest.get("description", ""))
-	var category: String = manifest.get("category", "observation")
-	var duration: int = manifest.get("estimated_duration_sec", 10)
-	var tags: Array = manifest.get("tags", [])
-	var color_str: String = manifest.get("preview_color", "#7C5CFF")
-	var coming_soon: bool = manifest.get("coming_soon", false)
-	var runtime: Dictionary = manifest.get("runtime", {})
-	var is_locked: bool = runtime.get("is_locked", false) if not runtime.is_empty() else manifest.get("is_locked", false)
-	var is_unlocked: bool = runtime.get("is_unlocked", true) if not runtime.is_empty() else true
-	
+	if not _built and card_root == null:
+		_build_ui()
+	var title = manifest.get("title", experience_id.capitalize() if experience_id != "" else "Experience")
+	var short_desc = manifest.get("short_description", manifest.get("description", ""))
+	var category = manifest.get("category", "observation")
+	var duration = manifest.get("estimated_duration_sec", 10)
+	var tags = manifest.get("tags", [])
+	var color_str = manifest.get("preview_color", "#7C5CFF")
+	var coming_soon = manifest.get("coming_soon", false)
+	var runtime = manifest.get("runtime", {})
+	var is_locked = false
+	if not runtime.is_empty():
+		is_locked = runtime.get("is_locked", false)
+	else:
+		is_locked = manifest.get("is_locked", false)
+	var is_unlocked = true
+	if not runtime.is_empty():
+		is_unlocked = runtime.get("is_unlocked", true)
+	else:
+		is_unlocked = not is_locked
 	if title_label:
 		title_label.text = title
 	if desc_label:
@@ -166,7 +189,6 @@ func _refresh_ui() -> void:
 		if tags.size() > 0:
 			meta_parts.append(str(tags[0]).capitalize())
 		meta_label.text = " • ".join(meta_parts)
-	
 	if play_button:
 		if coming_soon:
 			play_button.text = "Coming Soon"
@@ -177,10 +199,10 @@ func _refresh_ui() -> void:
 		else:
 			play_button.text = "Play • %ds" % duration
 			play_button.disabled = false
-	
-	if icon_panel and ThemeService:
-		var style := StyleBoxFlat.new()
-		style.bg_color = Color(color_str) if color_str != "" else Color("#7C5CFF")
+	if icon_panel:
+		var style = StyleBoxFlat.new()
+		var col = Color(color_str) if color_str != "" else Color("#7C5CFF")
+		style.bg_color = col
 		style.corner_radius_top_left = 12
 		style.corner_radius_top_right = 12
 		style.corner_radius_bottom_left = 12
@@ -190,22 +212,19 @@ func _refresh_ui() -> void:
 func _on_play_pressed() -> void:
 	if manifest.is_empty():
 		return
-	var runtime: Dictionary = manifest.get("runtime", {})
+	var runtime = manifest.get("runtime", {})
 	if runtime.get("is_coming_soon", false) or manifest.get("coming_soon", false):
 		return
 	if not (runtime.get("is_unlocked", true)):
-		return
-	
-	# Haptics
+		if manifest.get("is_locked", false):
+			return
 	if AccessibilityService:
-		AccessibilityService.vibrate(30)
-	# SFX
+		if AccessibilityService.is_haptics_enabled():
+			AccessibilityService.vibrate(30)
 	if AudioService:
 		AudioService.play_ui("ui_click")
-	
 	experience_selected.emit(experience_id if experience_id != "" else manifest.get("id",""))
 
 func _on_card_input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch and event.pressed:
-		# Could show details
 		pass

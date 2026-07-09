@@ -92,8 +92,14 @@ func _refresh() -> void:
 	vb.add_child(_create_section_header("About"))
 	vb.add_child(_create_info_row("App Version", ConfigService.get_value("app_version", "2.0.0-foundation") if ConfigService else "2.0.0"))
 	vb.add_child(_create_info_row("Package ID", ConfigService.get_value("package_id", "com.ittybittybites.the2secondwitness") if ConfigService else "com.ittybittybites.the2secondwitness"))
-	vb.add_child(_create_info_row("Build", "Foundation Phase • 2026-07-09"))
+	vb.add_child(_create_info_row("Build", "Foundation Release • Itty Bitty Bytes"))
 	vb.add_child(_create_info_row("Engine", "Godot 4.6 / GL Compatibility"))
+	
+	var about_btn := Button.new()
+	about_btn.text = "About • Privacy • Itty Bitty Bytes"
+	about_btn.custom_minimum_size = Vector2(0, 52)
+	vb.add_child(about_btn)
+	about_btn.pressed.connect(_on_about_pressed)
 	
 	var reset_btn := Button.new()
 	reset_btn.text = "Reset All Settings"
@@ -276,6 +282,12 @@ func _on_slider_changed(key: String, value: float) -> void:
 				AudioService.set_volume(AudioService.Bus.SFX, value)
 			"volume_ui":
 				AudioService.set_volume(AudioService.Bus.UI, value)
+
+func _on_about_pressed() -> void:
+	if AudioService:
+		AudioService.play_ui("ui_click")
+	if NavigationService:
+		NavigationService.navigate_to("about")
 
 func _on_reset_settings() -> void:
 	if SettingsService:

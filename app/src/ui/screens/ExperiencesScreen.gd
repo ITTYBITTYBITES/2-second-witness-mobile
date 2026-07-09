@@ -148,10 +148,17 @@ func _refresh_list() -> void:
 		vbox.add_child(empty)
 
 func _create_experience_card(manifest: Dictionary) -> Control:
-	var script = load("res://src/ui/components/ExperienceCard.gd")
-	var card := Control.new()
-	if script:
-		card.set_script(script)
+	var card: Control = null
+	var tscn_path = "res://src/ui/components/ExperienceCard.tscn"
+	if ResourceLoader.exists(tscn_path):
+		var scene = load(tscn_path) as PackedScene
+		if scene:
+			card = scene.instantiate() as Control
+	if card == null:
+		var script = load("res://src/ui/components/ExperienceCard.gd")
+		card = Control.new()
+		if script:
+			card.set_script(script)
 	card.custom_minimum_size = Vector2(0, 200)
 	if card.has_method("set_experience"):
 		card.call("set_experience", manifest)

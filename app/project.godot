@@ -16,7 +16,6 @@ config/icon="res://assets/brand/app_icon_1024.png"
 
 [autoload]
 EventBus="*res://src/core/events/EventBus.gd"
-AppConfig="*res://src/systems/config/ConfigService.gd"
 ConfigService="*res://src/systems/config/ConfigService.gd"
 ErrorHandler="*res://src/core/app/ErrorHandler.gd"
 AnalyticsService="*res://src/systems/analytics/AnalyticsService.gd"

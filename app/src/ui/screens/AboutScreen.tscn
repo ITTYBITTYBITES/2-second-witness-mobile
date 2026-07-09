@@ -1,0 +1,104 @@
+[gd_scene load_steps=2 format=3 uid="uid://about_screen"]
+
+[ext_resource type="Script" path="res://src/ui/screens/AboutScreen.gd" id="1_script"]
+
+[node name="AboutScreen" type="Control" groups=["app_screen"]]
+layout_mode=3
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+script=ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode=1
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+color=Color(0.0588235, 0.0588235, 0.0784314, 1)
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode=1
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+custom_constants/margin_left=16
+custom_constants/margin_right=16
+custom_constants/margin_top=80
+custom_constants/margin_bottom=16
+
+[node name="Scroll" type="ScrollContainer" parent="Margin"]
+layout_mode=2
+size_flags_horizontal=3
+size_flags_vertical=3
+
+[node name="VBox" type="VBoxContainer" parent="Margin/Scroll"]
+layout_mode=2
+size_flags_horizontal=3
+custom_constants/separation=24
+
+[node name="Title" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode=2
+text="About"
+horizontal_alignment=0
+
+[node name="BrandSection" type="VBoxContainer" parent="Margin/Scroll/VBox"]
+layout_mode=2
+
+[node name="BrandTitle" type="Label" parent="Margin/Scroll/VBox/BrandSection"]
+layout_mode=2
+text="Itty Bitty Bytes"
+autowrap_mode=0
+
+[node name="BrandDesc" type="Label" parent="Margin/Scroll/VBox/BrandSection"]
+layout_mode=2
+text="A curated platform of interactive experiences exploring curiosity, creativity, and discovery. Museum-quality digital exhibits designed to spark observation and wonder."
+autowrap_mode=3
+
+[node name="WebsiteButton" type="Button" parent="Margin/Scroll/VBox/BrandSection"]
+layout_mode=2
+text="Visit ittybittybites.com"
+
+[node name="AboutTitle" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode=2
+text="Two Second Witness"
+
+[node name="AboutDesc" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode=2
+text="How much can you notice in two seconds? This experience explores attention, observation, and memory through short visual challenges. Premium digital exhibit, calm and intelligent."
+autowrap_mode=3
+
+[node name="PrivacySection" type="VBoxContainer" parent="Margin/Scroll/VBox"]
+layout_mode=2
+
+[node name="PrivacyTitle" type="Label" parent="Margin/Scroll/VBox/PrivacySection"]
+layout_mode=2
+text="Privacy"
+
+[node name="PrivacyDesc" type="Label" parent="Margin/Scroll/VBox/PrivacySection"]
+layout_mode=2
+text="• No account required
+• No personal information collected
+• No advertising currently included
+• Progress stored locally on your device"
+autowrap_mode=3
+
+[node name="PrivacyButton" type="Button" parent="Margin/Scroll/VBox/PrivacySection"]
+layout_mode=2
+text="Privacy Policy (Placeholder Link)"
+
+[node name="VersionInfo" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode=2
+text="Version 2.0.0-foundation
+Package: com.ittybittybites.the2secondwitness
+© Itty Bitty Bytes"
+
+[node name="BackButton" type="Button" parent="Margin/Scroll/VBox"]
+custom_minimum_size=Vector2(0, 56)
+layout_mode=2
+text="Back"

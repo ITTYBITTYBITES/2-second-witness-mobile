@@ -9,8 +9,10 @@ var _config: Dictionary = {}
 var _is_loaded: bool = false
 
 const DEFAULT_CONFIG := {
-	"app_name": "2 Second Witness",
-	"app_version": "2.0.0-foundation",
+	"app_name": "Two Second Witness",
+	"app_version": "2.0.0-ibby-foundation",
+	"publisher": "Itty Bitty Bytes",
+	"publisher_tagline": "Interactive Experiences",
 	"environment": "development", # development / staging / production
 	"package_id": "com.ittybittybites.the2secondwitness",
 	"feature_flags": {

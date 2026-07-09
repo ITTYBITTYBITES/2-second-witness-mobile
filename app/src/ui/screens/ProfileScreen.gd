@@ -129,7 +129,7 @@ func _create_avatar_card() -> Control:
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
 	if has_node("Margin/Scroll/VBox"):
 		for child in $Margin/Scroll/VBox.get_children():
 			if child is PanelContainer:
@@ -236,7 +236,7 @@ func _refresh_stats() -> void:
 		var v = stats.get(k, 0)
 		if k == "fastest_reaction_ms" and int(v) == 9999:
 			v = "--"
-		var card := _create_stat_card(def["label"], str(v) if not (def.has("format")) else (def["format"] % v) if v is int else str(v), def.get("icon", ""))
+		var card = _create_stat_card(def["label"], str(v) if not (def.has("format")) else (def["format"] % v) if v is int else str(v), def.get("icon", ""))
 		grid.add_child(card)
 
 func _create_stat_card(label: String, value: String, icon: String) -> Control:

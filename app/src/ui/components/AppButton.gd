@@ -24,13 +24,13 @@ func _ready() -> void:
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
 	
-	var bg := tokens.get("primary", Color("#7C5CFF"))
-	var text_color := tokens.get("text_on_primary", Color.WHITE)
-	var border := tokens.get("border", Color.TRANSPARENT)
-	var bg_hover := tokens.get("primary_variant", Color("#9B83FF"))
-	var bg_secondary := tokens.get("surface_elevated", Color("#2A2A36"))
+	var bg = tokens.get("primary", Color("#7C5CFF"))
+	var text_color = tokens.get("text_on_primary", Color.WHITE)
+	var border = tokens.get("border", Color.TRANSPARENT)
+	var bg_hover = tokens.get("primary_variant", Color("#9B83FF"))
+	var bg_secondary = tokens.get("surface_elevated", Color("#2A2A36"))
 	
 	# Clear existing overrides
 	var style_normal := StyleBoxFlat.new()

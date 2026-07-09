@@ -17,6 +17,26 @@ func _ready() -> void:
 		ExperienceRegistry.registry_updated.connect(_on_registry_updated)
 
 func _ensure_ui() -> void:
+	# Foundation Fix: Add main menu background if asset exists
+	if not has_node("MainMenuBackground"):
+		var bg_path = "res://assets/backgrounds/main_menu_bg.png"
+		if ResourceLoader.exists(bg_path):
+			var bg_tex = load(bg_path) as Texture2D
+			if bg_tex:
+				var bg_rect = TextureRect.new()
+				bg_rect.name = "MainMenuBackground"
+				bg_rect.texture = bg_tex
+				bg_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+				bg_rect.stretch_mode = TextureRect.STRETCH_SCALE
+				bg_rect.layout_mode = 3
+				bg_rect.anchors_preset = 15
+				bg_rect.anchor_right = 1.0
+				bg_rect.anchor_bottom = 1.0
+				bg_rect.mouse_filter = 2
+				bg_rect.modulate = Color(1,1,1,0.6)
+				add_child(bg_rect)
+				move_child(bg_rect, 0)
+	
 	if has_node("Margin/Scroll/VBox"):
 		# Wire actions
 		if has_node("Margin/Scroll/VBox/QuickPlayButton"):
@@ -81,7 +101,7 @@ func _create_hero_card() -> Control:
 	card.custom_minimum_size = Vector2(0, 160)
 	
 	if ThemeService:
-		var tokens := ThemeService.tokens
+		var tokens = ThemeService.tokens
 		var style := StyleBoxFlat.new()
 		style.bg_color = tokens.get("primary", Color("#7C5CFF"))
 		style.corner_radius_top_left = 24
@@ -118,7 +138,7 @@ func _create_hero_card() -> Control:
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
 	# Background handled by shell
 	if has_node("Margin/Scroll/VBox"):
 		for child in $Margin/Scroll/VBox.get_children():
@@ -223,10 +243,17 @@ func _refresh_featured_experience() -> void:
 		var exps: Array = ExperienceRegistry.get_all_experiences()
 		if exps.size() > 0:
 			var featured: Dictionary = exps[0]
-			var exp_card_script = load("res://src/ui/components/ExperienceCard.gd")
-			var card := Control.new()
-			if exp_card_script:
-				card.set_script(exp_card_script)
+			var card: Control = null
+			var tscn_path = "res://src/ui/components/ExperienceCard.tscn"
+			if ResourceLoader.exists(tscn_path):
+				var scene = load(tscn_path) as PackedScene
+				if scene:
+					card = scene.instantiate() as Control
+			if card == null:
+				var exp_card_script = load("res://src/ui/components/ExperienceCard.gd")
+				card = Control.new()
+				if exp_card_script:
+					card.set_script(exp_card_script)
 			card.name = "FeaturedExperienceCard"
 			card.custom_minimum_size = Vector2(0, 200)
 			vbox.add_child(card)

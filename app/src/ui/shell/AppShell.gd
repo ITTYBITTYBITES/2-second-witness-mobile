@@ -1,6 +1,7 @@
 extends Control
 ## AppShell - Root application container
-## Manages layers: Background, Content, Navigation, Overlays, Boot
+## Manages layers, first-run flow, splash system, main navigation
+## Premium Itty Bitty Bytes + Two Second Witness identity
 
 @onready var content_container: Control = $ContentLayer/ContentContainer
 @onready var nav_bar: Control = $NavigationLayer/MainNavigation
@@ -10,11 +11,19 @@ extends Control
 @onready var background_layer: Control = $BackgroundLayer
 
 var _current_screen: Control = null
-var _screen_cache: Dictionary = {} # route -> Control
+var _screen_cache: Dictionary = {}
 var _boot_flow: Node
 
 const SCREEN_SCENES := {
-	"splash": "res://src/ui/screens/SplashScreen.tscn",
+	"publisher_splash": "res://src/ui/screens/PublisherSplashScreen.tscn",
+	"title_splash": "res://src/ui/screens/TitleSplashScreen.tscn",
+	"splash": "res://src/ui/screens/TitleSplashScreen.tscn",
+	"privacy": "res://src/ui/screens/PrivacyScreen.tscn",
+	"tutorial": "res://src/ui/screens/TutorialScreen.tscn",
+	"observation": "res://src/ui/screens/ObservationChallengeScreen.tscn",
+	"memory_question": "res://src/ui/screens/MemoryQuestionScreen.tscn",
+	"result": "res://src/ui/screens/ResultScreen.tscn",
+	"about": "res://src/ui/screens/AboutScreen.tscn",
 	"home": "res://src/ui/screens/HomeScreen.tscn",
 	"experiences": "res://src/ui/screens/ExperiencesScreen.tscn",
 	"profile": "res://src/ui/screens/ProfileScreen.tscn",
@@ -22,35 +31,45 @@ const SCREEN_SCENES := {
 }
 
 func _ready() -> void:
-	print("[AppShell] Starting")
+	print("[AppShell] Starting - New Vision with Itty Bitty Bytes identity")
 	_ensure_boot_flow()
 	
-	# Connect services
 	if AppState:
-		AppState.phase_changed.connect(_on_phase_changed)
-		AppState.loading_changed.connect(_on_loading_changed)
+		if not AppState.phase_changed.is_connected(_on_phase_changed):
+			AppState.phase_changed.connect(_on_phase_changed)
+		if not AppState.loading_changed.is_connected(_on_loading_changed):
+			AppState.loading_changed.connect(_on_loading_changed)
 	if NavigationService:
-		NavigationService.route_changed.connect(_on_route_changed)
+		if not NavigationService.route_changed.is_connected(_on_route_changed):
+			NavigationService.route_changed.connect(_on_route_changed)
 	if ErrorHandler:
-		ErrorHandler.user_message_requested.connect(_on_user_message)
-	
-	# Theme background
+		if not ErrorHandler.user_message_requested.is_connected(_on_user_message):
+			ErrorHandler.user_message_requested.connect(_on_user_message)
 	if ThemeService:
-		ThemeService.theme_changed.connect(_on_theme_changed)
+		if not ThemeService.theme_changed.is_connected(_on_theme_changed):
+			ThemeService.theme_changed.connect(_on_theme_changed)
 	
 	_apply_theme()
 	
-	# Start boot sequence
+	if top_bar:
+		if top_bar.has_signal("back_pressed") and not top_bar.back_pressed.is_connected(_on_topbar_back):
+			top_bar.back_pressed.connect(_on_topbar_back)
+		if top_bar.has_signal("profile_pressed") and not top_bar.profile_pressed.is_connected(_on_topbar_profile):
+			top_bar.profile_pressed.connect(_on_topbar_profile)
+		if top_bar.has_signal("settings_pressed") and not top_bar.settings_pressed.is_connected(_on_topbar_settings):
+			top_bar.settings_pressed.connect(_on_topbar_settings)
+	
+	if nav_bar and nav_bar.has_signal("tab_selected") and not nav_bar.tab_selected.is_connected(_on_nav_tab_selected):
+		nav_bar.tab_selected.connect(_on_nav_tab_selected)
+	
 	if _boot_flow:
 		_boot_flow.boot_completed.connect(_on_boot_completed)
 		_boot_flow.boot_failed.connect(_on_boot_failed)
 		_boot_flow.start_boot()
 	else:
-		# Fallback if boot flow not set
 		call_deferred("_on_boot_completed")
 
 func _ensure_boot_flow() -> void:
-	# Create AppBoot instance if not exists as child
 	var boot_script = load("res://src/core/app/AppBoot.gd")
 	if boot_script:
 		_boot_flow = boot_script.new()
@@ -58,21 +77,26 @@ func _ensure_boot_flow() -> void:
 		add_child(_boot_flow)
 
 func _on_boot_completed() -> void:
-	print("[AppShell] Boot completed, navigating to home")
+	print("[AppShell] Boot completed - starting publisher flow")
 	AppState.set_loading(false)
 	
-	# Determine initial route
-	if NavigationService.current_route == "splash":
-		NavigationService.navigate_to("home")
+	# Always start with publisher splash for professional identity
+	# Title splash will then check first-run
+	if NavigationService:
+		var current = NavigationService.current_route
+		if current == "splash" or current == "publisher_splash" or current == "":
+			NavigationService.navigate_to("publisher_splash")
+		else:
+			_load_screen(NavigationService.current_route)
 	else:
-		# Ensure screen loaded for current route
-		_load_screen(NavigationService.current_route)
+		_load_screen("publisher_splash")
 
 func _on_boot_failed(reason: String) -> void:
 	print("[AppShell] Boot failed: %s" % reason)
 	_show_error("Boot failed: %s" % reason)
 	AppState.set_loading(false)
-	NavigationService.navigate_to("home")
+	if NavigationService:
+		NavigationService.navigate_to("publisher_splash")
 
 func _on_route_changed(route: String, params: Dictionary) -> void:
 	print("[AppShell] Route change to %s" % route)
@@ -80,11 +104,8 @@ func _on_route_changed(route: String, params: Dictionary) -> void:
 	_update_chrome(route)
 
 func _load_screen(route: String, params: Dictionary = {}) -> void:
-	# Remove current
 	if _current_screen:
 		_current_screen.visible = false
-		# Optionally free non-tab screens to save memory
-		# For foundation we keep cache but hide
 	
 	if _screen_cache.has(route):
 		_current_screen = _screen_cache[route]
@@ -94,7 +115,6 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 	else:
 		var scene_path: String = SCREEN_SCENES.get(route, "")
 		if scene_path == "":
-			# Try generic
 			scene_path = "res://src/ui/screens/%s.tscn" % _capitalize_first(route) + "Screen"
 		
 		var screen_instance: Control = null
@@ -104,22 +124,24 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 			if scene:
 				screen_instance = scene.instantiate() as Control
 		else:
-			# Create placeholder screen
 			screen_instance = _create_placeholder_screen(route)
 		
 		if screen_instance:
 			screen_instance.name = "%sScreenInstance" % route.capitalize()
 			screen_instance.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 			screen_instance.size_flags_vertical = Control.SIZE_EXPAND_FILL
-			content_container.add_child(screen_instance)
+			if content_container:
+				content_container.add_child(screen_instance)
+			else:
+				add_child(screen_instance)
 			_screen_cache[route] = screen_instance
 			_current_screen = screen_instance
-			
 			if screen_instance.has_method("on_navigated_to"):
 				screen_instance.call("on_navigated_to", params)
 		else:
 			print("[AppShell] Failed to load screen for route %s" % route)
-			ErrorHandler.handle("SCREEN_LOAD_FAILED", "Failed to load %s" % route, {"route": route})
+			if ErrorHandler:
+				ErrorHandler.handle("SCREEN_LOAD_FAILED", "Failed to load %s" % route, {"route": route})
 
 func _create_placeholder_screen(route: String) -> Control:
 	var placeholder_script = load("res://src/ui/screens/PlaceholderScreen.gd")
@@ -134,35 +156,53 @@ func _create_placeholder_screen(route: String) -> Control:
 	return ctrl
 
 func _update_chrome(route: String) -> void:
-	# Show/hide nav bar based on route
 	var is_tab := true
-	# Check via AppRoutes
 	var routes_script = load("res://src/core/navigation/AppRoutes.gd")
 	if routes_script:
 		is_tab = routes_script.is_tab_route(route)
 	
+	# Hide chrome for splash and first-run flow
+	var is_splash = route in ["publisher_splash", "title_splash", "splash"]
+	var is_first_run = route in ["privacy", "tutorial", "observation", "memory_question", "result"]
+	
 	if nav_bar:
-		nav_bar.visible = is_tab and route != "splash"
+		nav_bar.visible = is_tab and not is_splash and not is_first_run
 		if nav_bar.has_method("set_current_route"):
 			nav_bar.set_current_route(route)
 	
 	if top_bar:
-		top_bar.visible = route != "splash"
+		top_bar.visible = not is_splash and not is_first_run
 		if top_bar.has_method("set_show_back"):
-			top_bar.set_show_back(not is_tab)
+			# Show back for non-tab but not for first-run flow start (privacy has its own continue)
+			var show_back = not is_tab and not is_splash and not is_first_run
+			# For about, show back
+			if route == "about":
+				show_back = true
+			top_bar.set_show_back(show_back)
 		var title_map := {
-			"home": "2 Second Witness",
+			"publisher_splash": "",
+			"title_splash": "",
+			"splash": "",
+			"privacy": "Privacy",
+			"tutorial": "How to Play",
+			"observation": "Observe",
+			"memory_question": "Recall",
+			"result": "Result",
+			"home": "Two Second Witness",
 			"experiences": "Experiences",
 			"profile": "Profile",
 			"settings": "Settings",
-			"splash": ""
+			"about": "About"
 		}
 		if top_bar.has_method("set_title"):
 			top_bar.set_title(title_map.get(route, route.capitalize()))
 
 func _on_phase_changed(new_phase, old_phase) -> void:
 	print("[AppShell] Phase %s -> %s" % [str(old_phase), str(new_phase)])
-	_update_chrome(NavigationService.current_route if NavigationService else "home")
+	if NavigationService:
+		_update_chrome(NavigationService.current_route)
+	else:
+		_update_chrome("home")
 
 func _on_loading_changed(is_loading: bool, message: String) -> void:
 	if loading_overlay:
@@ -178,13 +218,12 @@ func _show_error(message: String) -> void:
 		error_banner.visible = true
 		if error_banner.has_node("Margin/Label"):
 			error_banner.get_node("Margin/Label").text = message
-		# Auto-hide after 4 seconds
 		get_tree().create_timer(4.0).timeout.connect(func(): if error_banner: error_banner.visible = false)
 
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
 	var bg: Color = tokens.get("background", Color("#0F0F12"))
 	if background_layer:
 		var style := StyleBoxFlat.new()
@@ -193,6 +232,25 @@ func _apply_theme() -> void:
 
 func _on_theme_changed(_theme_name: String, _tokens: Dictionary) -> void:
 	_apply_theme()
+
+func _on_topbar_back() -> void:
+	if NavigationService:
+		if NavigationService.can_go_back():
+			NavigationService.go_back()
+		else:
+			NavigationService.navigate_to("home")
+
+func _on_topbar_profile() -> void:
+	if NavigationService:
+		NavigationService.navigate_to("profile")
+
+func _on_topbar_settings() -> void:
+	if NavigationService:
+		NavigationService.navigate_to("settings")
+
+func _on_nav_tab_selected(route: String) -> void:
+	if NavigationService and NavigationService.current_route != route:
+		NavigationService.navigate_to(route)
 
 func _capitalize_first(s: String) -> String:
 	if s.is_empty():

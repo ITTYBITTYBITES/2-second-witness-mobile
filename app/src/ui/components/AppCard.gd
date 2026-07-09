@@ -13,7 +13,7 @@ func _ready() -> void:
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
+	var tokens = ThemeService.tokens
 	var bg: Color = tokens.get("surface_elevated" if elevated else "surface", Color("#1E1E26"))
 	var border: Color = tokens.get("border", Color("#2E2E3A"))
 	var radius: int = corner_radius if corner_radius != -1 else tokens.get("radius_lg", 20)

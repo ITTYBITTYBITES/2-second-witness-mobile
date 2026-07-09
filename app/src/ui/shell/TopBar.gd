@@ -88,8 +88,8 @@ func _ensure_ui() -> void:
 func _apply_theme() -> void:
 	if not ThemeService:
 		return
-	var tokens := ThemeService.tokens
-	var bg := tokens.get("background", Color("#0F0F12"))
+	var tokens = ThemeService.tokens
+	var bg = tokens.get("background", Color("#0F0F12"))
 	
 	var style := StyleBoxFlat.new()
 	style.bg_color = bg
