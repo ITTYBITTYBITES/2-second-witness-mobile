@@ -19,11 +19,31 @@ func _ready() -> void:
 	var boot_node = _find_boot_node()
 	if boot_node:
 		if boot_node.has_signal("boot_step_started"):
-			boot_node.boot_step_started.connect(_on_boot_step_started)
+			if not boot_node.boot_step_started.is_connected(_on_boot_step_started):
+				boot_node.boot_step_started.connect(_on_boot_step_started)
 		if boot_node.has_signal("boot_step_completed"):
-			boot_node.boot_step_completed.connect(_on_boot_step_completed)
+			if not boot_node.boot_step_completed.is_connected(_on_boot_step_completed):
+				boot_node.boot_step_completed.connect(_on_boot_step_completed)
 		if boot_node.has_signal("boot_completed"):
-			boot_node.boot_completed.connect(_on_boot_completed)
+			if not boot_node.boot_completed.is_connected(_on_boot_completed):
+				boot_node.boot_completed.connect(_on_boot_completed)
+		# Foundation Fix: If boot already completed (AppState initialized or boot not booting), set completed true immediately
+		# This prevents getting stuck on title splash when publisher splash delayed and boot finished early
+		var boot_already_done = false
+		if AppState and AppState.is_initialized:
+			boot_already_done = true
+		if boot_node.has_method("get") or true:
+			# Check _is_booting property if exists
+			var is_booting = boot_node.get("_is_booting")
+			if is_booting == false:
+				boot_already_done = true
+		if boot_already_done:
+			_boot_completed = true
+			_boot_progress = 100
+			if progress_bar:
+				progress_bar.value = 100
+			if status_label:
+				status_label.text = "Ready"
 	else:
 		# If no boot node, assume boot done
 		_boot_completed = true
@@ -99,7 +119,19 @@ func _navigate_next() -> void:
 func on_navigated_to(_params: Dictionary) -> void:
 	_elapsed = 0.0
 	_boot_progress = 0.0
-	_boot_completed = false
+	# Foundation Fix: Check if boot already done to avoid getting stuck after publisher splash
+	if AppState and AppState.is_initialized:
+		_boot_completed = true
+		_boot_progress = 100
+	else:
+		_boot_completed = false
+		# Also check boot node _is_booting
+		var boot_node = _find_boot_node()
+		if boot_node:
+			var is_booting = boot_node.get("_is_booting")
+			if is_booting == false:
+				_boot_completed = true
+				_boot_progress = 100
 	modulate.a = 0.0
 	set_process(true)
 	_animate_in()
