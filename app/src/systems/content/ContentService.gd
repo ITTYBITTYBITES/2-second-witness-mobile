@@ -19,12 +19,12 @@ func _ready() -> void:
 func initialize() -> void:
 	if _initialized:
 		return
-	
+
 	if not DirAccess.dir_exists_absolute(USER_CONTENT_DIR):
 		DirAccess.make_dir_recursive_absolute(USER_CONTENT_DIR)
-	
+
 	await _load_manifest()
-	
+
 	_initialized = true
 	print("[ContentService] Initialized - %d content entries" % _manifest.size())
 
@@ -34,7 +34,7 @@ func _load_manifest() -> void:
 		"res://src/systems/content/content_manifest.json",
 		"user://content_manifest.json"
 	]
-	
+
 	for p in paths:
 		if FileAccess.file_exists(p) or ResourceLoader.exists(p):
 			var data := _load_json(p)
@@ -42,7 +42,7 @@ func _load_manifest() -> void:
 				_manifest = data
 				print("[ContentService] Loaded manifest from %s" % p)
 				return
-	
+
 	# Fallback default manifest
 	_manifest = {
 		"version": 1,
@@ -68,14 +68,14 @@ func _load_json(path: String) -> Dictionary:
 func get_content(content_id: String) -> Dictionary:
 	if _cache.has(content_id):
 		return _cache[content_id]
-	
+
 	# Try load from disk
 	var paths := [
 		"res://src/experiences/%s/%s.json" % [content_id, content_id],
 		"res://src/experiences/%s/manifest.json" % content_id,
 		USER_CONTENT_DIR.path_join("%s.json" % content_id)
 	]
-	
+
 	for p in paths:
 		if FileAccess.file_exists(p):
 			var data := _load_json(p)
@@ -83,7 +83,7 @@ func get_content(content_id: String) -> Dictionary:
 				_cache[content_id] = data
 				content_loaded.emit(content_id, data)
 				return data
-	
+
 	content_load_failed.emit(content_id, "Not found")
 	return {}
 

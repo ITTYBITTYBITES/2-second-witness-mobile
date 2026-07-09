@@ -45,7 +45,7 @@ func _ready() -> void:
 func initialize() -> void:
 	if _initialized:
 		return
-	
+
 	var loaded := SaveService.load_profile() if SaveService else {}
 	if loaded.is_empty():
 		profile = DEFAULT_PROFILE.duplicate(true)
@@ -55,12 +55,12 @@ func initialize() -> void:
 	else:
 		profile = _merge_default(loaded)
 		print("[ProfileService] Loaded existing profile: %s" % profile.get("id", "unknown"))
-	
+
 	profile["last_seen"] = Time.get_datetime_string_from_system()
 	profile["total_sessions"] = int(profile.get("total_sessions", 0)) + 1
-	
+
 	save()
-	
+
 	_initialized = true
 	profile_loaded.emit(profile)
 	EventBus.profile_updated.emit(profile)
@@ -99,9 +99,9 @@ func add_xp(amount: int) -> void:
 	var current_xp: int = profile.get("xp", 0)
 	var level: int = profile.get("level", 1)
 	var xp_to_next: int = profile.get("xp_to_next", 100)
-	
+
 	current_xp += amount
-	
+
 	while current_xp >= xp_to_next:
 		current_xp -= xp_to_next
 		level += 1
@@ -109,7 +109,7 @@ func add_xp(amount: int) -> void:
 		print("[ProfileService] Level up! %d" % level)
 		if AnalyticsService:
 			AnalyticsService.log_event("level_up", {"level": level})
-	
+
 	profile["level"] = level
 	profile["xp"] = current_xp
 	profile["xp_to_next"] = xp_to_next
@@ -121,19 +121,19 @@ func record_experience_play(exp_id: String, result: Dictionary) -> void:
 	var progress: Dictionary = profile.get("experiences_progress", {})
 	if not progress.has(exp_id):
 		progress[exp_id] = {"played": 0, "best_score": 0, "last_played": "", "total_score": 0}
-	
+
 	var entry: Dictionary = progress[exp_id]
 	entry["played"] = int(entry.get("played", 0)) + 1
 	entry["last_played"] = Time.get_datetime_string_from_system()
-	
+
 	var score: int = result.get("score", 0)
 	entry["total_score"] = int(entry.get("total_score", 0)) + score
 	if score > int(entry.get("best_score", 0)):
 		entry["best_score"] = score
-	
+
 	progress[exp_id] = entry
 	profile["experiences_progress"] = progress
-	
+
 	# Update stats
 	var stats: Dictionary = profile.get("stats", {})
 	stats["observations_made"] = int(stats.get("observations_made", 0)) + 1
@@ -144,18 +144,18 @@ func record_experience_play(exp_id: String, result: Dictionary) -> void:
 			stats["streak_best"] = stats["streak_current"]
 	else:
 		stats["streak_current"] = 0
-	
+
 	var reaction: int = result.get("reaction_ms", 9999)
 	if reaction < int(stats.get("fastest_reaction_ms", 9999)):
 		stats["fastest_reaction_ms"] = reaction
-	
+
 	profile["stats"] = stats
-	
+
 	experience_progress_updated.emit(exp_id, entry)
 	stats_updated.emit(stats)
 	EventBus.experience_completed.emit(exp_id, result)
 	save()
-	
+
 	if AnalyticsService:
 		AnalyticsService.log_event("experience_completed", {"exp_id": exp_id, "score": score})
 

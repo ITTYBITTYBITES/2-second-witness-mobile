@@ -25,10 +25,10 @@ func _load_question() -> void:
 		var transient = AppState.get_transient("current_challenge", {})
 		if transient is Dictionary and not transient.is_empty():
 			_challenge_data = transient
-	
+
 	if _challenge_data.is_empty() and ChallengeRegistry:
 		_challenge_data = ChallengeRegistry.get_challenge(_challenge_id)
-	
+
 	if _challenge_data.is_empty():
 		_challenge_data = {
 			"id": "challenge_01",
@@ -37,15 +37,15 @@ func _load_question() -> void:
 			"correct": "5",
 			"detail": "There were 5 writing tools in the green mug."
 		}
-	
+
 	_challenge_id = str(_challenge_data.get("id", _challenge_id))
 	_correct_answer = str(_challenge_data.get("correct", ""))
-	
+
 	if question_label:
 		question_label.text = str(_challenge_data.get("question", "What did you see?"))
-	
+
 	_build_options(_challenge_data.get("options", []))
-	
+
 	if AppState:
 		AppState.set_transient("question_started_ms", Time.get_ticks_msec())
 
@@ -55,7 +55,7 @@ func _build_options(options: Array) -> void:
 	for child in options_container.get_children():
 		options_container.remove_child(child)
 		child.queue_free()
-	
+
 	for opt in options:
 		var btn := Button.new()
 		btn.text = str(opt)
@@ -93,20 +93,22 @@ func _apply_option_theme(btn: Button) -> void:
 
 func _on_option_selected(answer: String, button: Button) -> void:
 	_selected_answer = answer
-	
+
 	if AccessibilityService:
 		AccessibilityService.vibrate(30)
 	if AudioService:
 		AudioService.play_ui("ui_click")
-	
+
 	for child in options_container.get_children():
 		if child is Button:
 			child.disabled = true
-	
+
 	var is_correct := (answer == _correct_answer)
 	_highlight_answers(button, is_correct)
-	
-	var question_start_ms: int = int(AppState.get_transient("question_started_ms", Time.get_ticks_msec())) if AppState else Time.get_ticks_msec()
+
+	var question_start_ms := Time.get_ticks_msec()
+	if AppState:
+		question_start_ms = int(AppState.get_transient("question_started_ms", question_start_ms))
 	var reaction_ms: int = max(Time.get_ticks_msec() - question_start_ms, 0)
 	var score: int = 100 if is_correct else 0
 	var result := {
@@ -120,20 +122,20 @@ func _on_option_selected(answer: String, button: Button) -> void:
 		"score": score,
 		"reaction_ms": reaction_ms
 	}
-	
+
 	if AppState:
 		AppState.set_transient("last_result", result)
-	
+
 	if ProfileService:
 		ProfileService.record_experience_play(_challenge_id, {
 			"score": score,
 			"correct": is_correct,
 			"reaction_ms": reaction_ms
 		})
-	
+
 	if AnalyticsService:
 		AnalyticsService.log_event("memory_answered", result)
-	
+
 	get_tree().create_timer(1.0).timeout.connect(func():
 		if NavigationService:
 			NavigationService.navigate_to("result", result)
@@ -141,8 +143,9 @@ func _on_option_selected(answer: String, button: Button) -> void:
 
 func _highlight_answers(selected_button: Button, is_correct: bool) -> void:
 	if selected_button:
-		selected_button.add_theme_stylebox_override("normal", _feedback_style(Color("#2EE6A6") if is_correct else Color("#FF4D5E")))
-	
+		var selected_color := Color("#2EE6A6") if is_correct else Color("#FF4D5E")
+		selected_button.add_theme_stylebox_override("normal", _feedback_style(selected_color))
+
 	if not is_correct:
 		for child in options_container.get_children():
 			if child is Button and str(child.get_meta("answer", "")) == _correct_answer:
@@ -162,16 +165,19 @@ func _feedback_style(color: Color) -> StyleBoxFlat:
 	return style
 
 func on_navigated_to(params: Dictionary) -> void:
-	_challenge_id = str(params.get("challenge_id", AppState.get_transient("current_challenge_id", "challenge_01") if AppState else "challenge_01"))
+	var fallback_id := "challenge_01"
+	if AppState:
+		fallback_id = AppState.get_transient("current_challenge_id", fallback_id)
+	_challenge_id = str(params.get("challenge_id", fallback_id))
 	if params.has("challenge_data") and params.get("challenge_data") is Dictionary:
 		_challenge_data = params.get("challenge_data")
 	else:
 		_challenge_data = {}
-	
+
 	modulate.a = 1.0
 	_load_question()
 	_animate_in()
-	
+
 	if AnalyticsService:
 		AnalyticsService.log_screen_view("memory_question", {"challenge_id": _challenge_id})
 

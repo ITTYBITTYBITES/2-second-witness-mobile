@@ -28,7 +28,7 @@ func _ensure_ui() -> void:
 		# Wire existing if built from scene
 		_wire_existing_buttons()
 		return
-	
+
 	var margin := MarginContainer.new()
 	margin.name = "Margin"
 	margin.add_theme_constant_override("margin_left", 8)
@@ -36,20 +36,20 @@ func _ensure_ui() -> void:
 	margin.add_theme_constant_override("margin_top", 8)
 	margin.add_theme_constant_override("margin_bottom", 12)
 	add_child(margin)
-	
+
 	var hbox := HBoxContainer.new()
 	hbox.name = "HBox"
 	hbox.alignment = BoxContainer.ALIGNMENT_CENTER
 	hbox.add_theme_constant_override("separation", 4)
 	margin.add_child(hbox)
-	
+
 	for tab in TABS:
 		var btn_container := VBoxContainer.new()
 		btn_container.name = "%s_Container" % tab["route"]
 		btn_container.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		btn_container.alignment = BoxContainer.ALIGNMENT_CENTER
 		hbox.add_child(btn_container)
-		
+
 		var btn := Button.new()
 		btn.name = "%s_Button" % tab["route"]
 		btn.text = "%s\n%s" % [tab["icon"], tab["label"]]
@@ -75,7 +75,7 @@ func _apply_theme() -> void:
 	if not ThemeService:
 		return
 	var tokens = ThemeService.tokens
-	
+
 	var bg_style := StyleBoxFlat.new()
 	bg_style.bg_color = tokens.get("background_secondary", Color("#1A1A1F"))
 	bg_style.border_color = tokens.get("border", Color("#2E2E3A"))
@@ -83,11 +83,11 @@ func _apply_theme() -> void:
 	bg_style.corner_radius_top_left = tokens.get("radius_lg", 20)
 	bg_style.corner_radius_top_right = tokens.get("radius_lg", 20)
 	add_theme_stylebox_override("panel", bg_style)
-	
+
 	for route in _buttons.keys():
 		var btn: Button = _buttons[route]
 		var is_selected: bool = (route == current_route)
-		
+
 		var normal := StyleBoxFlat.new()
 		normal.corner_radius_top_left = tokens.get("radius_md", 12)
 		normal.corner_radius_top_right = tokens.get("radius_md", 12)
@@ -97,14 +97,14 @@ func _apply_theme() -> void:
 		normal.content_margin_right = 8
 		normal.content_margin_top = 6
 		normal.content_margin_bottom = 6
-		
+
 		if is_selected:
 			normal.bg_color = tokens.get("primary", Color("#7C5CFF"))
 			btn.add_theme_color_override("font_color", tokens.get("text_on_primary", Color.WHITE))
 		else:
 			normal.bg_color = Color.TRANSPARENT
 			btn.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
-		
+
 		btn.add_theme_stylebox_override("normal", normal)
 		btn.add_theme_stylebox_override("hover", normal)
 		btn.add_theme_stylebox_override("pressed", normal)
@@ -119,19 +119,19 @@ func _on_tab_pressed(route: String) -> void:
 		if AccessibilityService:
 			AccessibilityService.vibrate(20)
 		return
-	
+
 	current_route = route
 	_refresh_selection()
-	
+
 	if AccessibilityService:
 		AccessibilityService.vibrate(30)
 	if AudioService:
 		AudioService.play_ui("ui_click")
-	
+
 	tab_selected.emit(route)
 	if NavigationService:
 		NavigationService.navigate_to(route)
-	
+
 	if AnalyticsService:
 		AnalyticsService.log_event("tab_selected", {"route": route})
 

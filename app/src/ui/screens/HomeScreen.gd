@@ -8,7 +8,7 @@ func _ready() -> void:
 	_ensure_ui()
 	_apply_theme()
 	_refresh_data()
-	
+
 	if ThemeService:
 		ThemeService.theme_changed.connect(_on_theme_changed)
 	if ProfileService:
@@ -35,13 +35,13 @@ func _ensure_ui() -> void:
 				bg_rect.modulate = Color(1, 1, 1, 0.6)
 				add_child(bg_rect)
 				move_child(bg_rect, 0)
-	
+
 	if has_node("Margin/Scroll/VBox/QuickPlayButton"):
 		var btn: Button = $Margin/Scroll/VBox/QuickPlayButton
 		btn.text = "Play Now • Start a Round"
 		if not btn.pressed.is_connected(_on_quick_play):
 			btn.pressed.connect(_on_quick_play)
-	
+
 	if has_node("Margin/Scroll/VBox/SectionLabel"):
 		$Margin/Scroll/VBox/SectionLabel.text = "Featured Challenge"
 
@@ -87,11 +87,11 @@ func _refresh_featured_challenge() -> void:
 		if child.name == "FeaturedChallengeCard" or child.name == "ExperienceCardPlaceholder":
 			vbox.remove_child(child)
 			child.queue_free()
-	
+
 	var featured: Dictionary = ChallengeRegistry.get_featured_challenge() if ChallengeRegistry else {}
 	if featured.is_empty():
 		return
-	
+
 	var card := _create_featured_card(featured)
 	card.name = "FeaturedChallengeCard"
 	card.custom_minimum_size = Vector2(0, 200)
@@ -129,7 +129,7 @@ func _on_quick_play() -> void:
 		AccessibilityService.vibrate(30)
 	if AudioService:
 		AudioService.play_ui("ui_click")
-	
+
 	if ChallengeRegistry and ChallengeRegistry.count() > 0:
 		ChallengeRegistry.start_run()
 	elif NavigationService:

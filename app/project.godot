@@ -5,7 +5,7 @@
 config_version=5
 
 [application]
-config/name="2 Second Witness"
+config/name="Two Second Witness"
 config/description="Short, replayable experiences focused on observation, memory, reaction, and quick decision-making."
 run/main_scene="res://src/ui/shell/AppShell.tscn"
 config/features=PackedStringArray("4.6", "Mobile")

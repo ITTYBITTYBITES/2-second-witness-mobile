@@ -1,7 +1,7 @@
 extends Control
 ## TopBar - App header with title, actions, brand
 
-@export var title_text: String = "2 Second Witness" : set = set_title
+@export var title_text: String = "Two Second Witness" : set = set_title
 @export var show_back: bool = false
 @export var show_profile: bool = true
 
@@ -32,7 +32,7 @@ func _ensure_ui() -> void:
 		if settings_button and not settings_button.pressed.is_connected(_on_settings):
 			settings_button.pressed.connect(_on_settings)
 		return
-	
+
 	# Build programmatically
 	var margin := MarginContainer.new()
 	margin.name = "Margin"
@@ -41,47 +41,47 @@ func _ensure_ui() -> void:
 	margin.add_theme_constant_override("margin_top", 12)
 	margin.add_theme_constant_override("margin_bottom", 12)
 	add_child(margin)
-	
+
 	var hbox := HBoxContainer.new()
 	hbox.name = "HBox"
 	hbox.alignment = BoxContainer.ALIGNMENT_CENTER
 	margin.add_child(hbox)
-	
+
 	var back := Button.new()
 	back.name = "BackButton"
 	back.text = "<"
 	back.visible = show_back
 	back.custom_minimum_size = Vector2(40,40)
 	hbox.add_child(back)
-	
+
 	var title := Label.new()
 	title.name = "Title"
 	title.text = title_text
 	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	hbox.add_child(title)
-	
+
 	var actions := HBoxContainer.new()
 	actions.name = "Actions"
 	hbox.add_child(actions)
-	
+
 	var set_btn := Button.new()
 	set_btn.name = "SettingsButton"
 	set_btn.text = "⚙"
 	set_btn.custom_minimum_size = Vector2(40,40)
 	actions.add_child(set_btn)
-	
+
 	var prof := Button.new()
 	prof.name = "ProfileButton"
 	prof.text = "◉"
 	prof.custom_minimum_size = Vector2(40,40)
 	prof.visible = show_profile
 	actions.add_child(prof)
-	
+
 	back_button = back
 	title_label = title
 	settings_button = set_btn
 	profile_button = prof
-	
+
 	back_button.pressed.connect(_on_back)
 	profile_button.pressed.connect(_on_profile)
 	settings_button.pressed.connect(_on_settings)
@@ -91,7 +91,7 @@ func _apply_theme() -> void:
 		return
 	var tokens = ThemeService.tokens
 	var bg = tokens.get("background", Color("#0F0F12"))
-	
+
 	var style := StyleBoxFlat.new()
 	style.bg_color = bg
 	# No rounding for top bar, just bottom border
@@ -102,7 +102,7 @@ func _apply_theme() -> void:
 	style.content_margin_top = 0
 	style.content_margin_bottom = 0
 	add_theme_stylebox_override("panel", style)
-	
+
 	if has_node("Margin/HBox/Title"):
 		$Margin/HBox/Title.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
 		$Margin/HBox/Title.add_theme_font_size_override("font_size", 20)

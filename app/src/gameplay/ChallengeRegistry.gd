@@ -30,23 +30,23 @@ func _load_registry() -> void:
 	_manifest = {}
 	_challenges.clear()
 	_ordered_ids.clear()
-	
+
 	if FileAccess.file_exists(CHALLENGES_PATH):
 		var file := FileAccess.open(CHALLENGES_PATH, FileAccess.READ)
 		if file:
 			var parsed = JSON.parse_string(file.get_as_text())
 			if parsed is Dictionary:
 				_manifest = parsed
-	
+
 	if _manifest.is_empty():
 		_manifest = _fallback_manifest()
-	
+
 	var sequence: Array = _manifest.get("default_sequence", [])
 	for entry in sequence:
 		var challenge_id := str(entry)
 		if not _ordered_ids.has(challenge_id):
 			_ordered_ids.append(challenge_id)
-	
+
 	var challenge_entries: Array = _manifest.get("challenges", [])
 	for entry in challenge_entries:
 		if entry is Dictionary:
@@ -88,8 +88,14 @@ func _normalize_challenge(entry: Dictionary) -> Dictionary:
 	var challenge := entry.duplicate(true)
 	challenge["id"] = str(challenge.get("id", ""))
 	challenge["title"] = str(challenge.get("title", challenge.get("id", "Challenge")))
-	challenge["short_description"] = str(challenge.get("short_description", challenge.get("description", "Observe for 2 seconds, then answer from memory.")))
-	challenge["description"] = str(challenge.get("description", challenge.get("short_description", "")))
+
+	var default_short_desc := "Observe for 2 seconds, then answer from memory."
+	var short_desc = challenge.get("description", default_short_desc)
+	short_desc = challenge.get("short_description", short_desc)
+	challenge["short_description"] = str(short_desc)
+
+	var description = challenge.get("description", challenge.get("short_description", ""))
+	challenge["description"] = str(description)
 	challenge["category"] = str(challenge.get("category", "observation"))
 	challenge["preview_color"] = str(challenge.get("preview_color", "#7C5CFF"))
 	challenge["estimated_duration_sec"] = int(challenge.get("estimated_duration_sec", 10))
@@ -207,7 +213,7 @@ func get_next_challenge_id() -> String:
 		var ids := get_challenge_ids()
 		if ids.size() <= 1:
 			return get_default_challenge_id()
-			
+
 		var current := get_current_challenge_id()
 		var idx := ids.find(current)
 		if idx == -1:

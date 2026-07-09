@@ -25,10 +25,10 @@ func initialize() -> void:
 	if SettingsService:
 		_is_enabled = SettingsService.get_value("analytics_enabled", true)
 		SettingsService.setting_changed.connect(_on_setting_changed)
-	
+
 	_initialized = true
 	print("[AnalyticsService] Initialized - Session: %s Enabled: %s" % [_session_id, str(_is_enabled)])
-	
+
 	# Log session start
 	log_event("session_start", {
 		"app_version": ConfigService.get_value("app_version", "unknown") if ConfigService else "unknown",
@@ -44,7 +44,7 @@ func _on_setting_changed(key: String, value: Variant) -> void:
 func log_event(event_name: String, params: Dictionary = {}) -> void:
 	if not _is_enabled and event_name != "session_start":
 		return
-	
+
 	var entry := {
 		"v": ANALYTICS_VERSION,
 		"event": event_name,
@@ -54,16 +54,16 @@ func log_event(event_name: String, params: Dictionary = {}) -> void:
 		"session_id": _session_id,
 		"phase": str(AppState.current_phase) if AppState else "unknown"
 	}
-	
+
 	_event_buffer.append(entry)
 	if _event_buffer.size() > MAX_BUFFER:
 		_event_buffer.pop_front()
-	
+
 	event_logged.emit(event_name, params)
-	
+
 	# Local buffer persistence (JSONL)
 	_append_to_file(entry)
-	
+
 	# Debug print in dev
 	if ConfigService and ConfigService.get_value("environment") == "development":
 		print("[Analytics] %s %s" % [event_name, str(params)])

@@ -43,21 +43,21 @@ func _ready() -> void:
 func initialize() -> void:
 	if _initialized:
 		return
-	
+
 	# Create audio buses if not present (gl_compatibility still supports buses)
 	_ensure_buses()
-	
+
 	# Create players
 	_bgm_player = AudioStreamPlayer.new()
 	_bgm_player.bus = BUS_NAMES[Bus.BGM]
 	_bgm_player.name = "BGMPlayer"
 	add_child(_bgm_player)
-	
+
 	_ui_player = AudioStreamPlayer.new()
 	_ui_player.bus = BUS_NAMES[Bus.UI]
 	_ui_player.name = "UIPlayer"
 	add_child(_ui_player)
-	
+
 	# SFX pool of 6 players
 	for i in range(6):
 		var p := AudioStreamPlayer.new()
@@ -65,7 +65,7 @@ func initialize() -> void:
 		p.name = "SFXPool_%d" % i
 		add_child(p)
 		_sfx_pool.append(p)
-	
+
 	# Load settings
 	if SettingsService:
 		_volumes["Master"] = SettingsService.get_value("volume_master", 1.0)
@@ -76,15 +76,14 @@ func initialize() -> void:
 		_muted["BGM"] = SettingsService.get_value("mute_bgm", false)
 		_muted["SFX"] = SettingsService.get_value("mute_sfx", false)
 		_muted["UI"] = SettingsService.get_value("mute_ui", false)
-	
+
 	_apply_all_volumes()
-	
+
 	_initialized = true
 	print("[AudioService] Initialized - Buses: %s" % str(BUS_NAMES))
 
 func _ensure_buses() -> void:
 	# Create custom buses via AudioServer if not exist
-	var bus_count := AudioServer.bus_count
 	var needed := ["BGM", "SFX", "UI"]
 	for n in needed:
 		var idx := AudioServer.get_bus_index(n)
@@ -101,24 +100,29 @@ func play_ui(sound_id: String, volume_linear: float = 1.0) -> void:
 func play_sfx(sound_id: String, volume_linear: float = 1.0) -> void:
 	play_sound(sound_id, Bus.SFX, volume_linear)
 
-func play_bgm(sound_id: String, loop: bool = true, fade_duration: float = 0.5) -> void:
+func play_bgm(sound_id: String, loop: bool = true, _fade_duration: float = 0.5) -> void:
 	play_sound(sound_id, Bus.BGM, 1.0, loop)
 
-func play_sound(sound_id: String, bus: Bus = Bus.SFX, volume_linear: float = 1.0, loop: bool = false) -> void:
+func play_sound(
+	sound_id: String,
+	bus: Bus = Bus.SFX,
+	volume_linear: float = 1.0,
+	_loop: bool = false
+) -> void:
 	# In foundation phase, we support placeholder beeps and Tone generation
 	# Real implementation would load AudioStream from ContentService
-	
+
 	var bus_name: String = BUS_NAMES[bus]
 	if _muted.get(bus_name, false) or _muted.get("Master", false):
 		return
-	
+
 	# Generate placeholder procedural audio if no file (foundation placeholder)
 	var stream: AudioStream = _get_stream_for_id(sound_id)
 	if not stream:
 		# Silently skip if no asset yet, but log for analytics
 		print("[AudioService] Sound '%s' not found (placeholder)" % sound_id)
 		return
-	
+
 	match bus:
 		Bus.BGM:
 			_bgm_player.stream = stream
@@ -135,7 +139,7 @@ func play_sound(sound_id: String, bus: Bus = Bus.SFX, volume_linear: float = 1.0
 				player.stream = stream
 				player.volume_db = linear_to_db(volume_linear * _volumes[bus_name])
 				player.play()
-	
+
 	sound_played.emit(sound_id, bus_name)
 
 func _get_free_sfx_player() -> AudioStreamPlayer:
@@ -188,7 +192,7 @@ func _apply_all_volumes() -> void:
 			AudioServer.set_bus_volume_db(idx, linear_to_db(_volumes.get(b, 1.0)))
 			AudioServer.set_bus_mute(idx, _muted.get(b, false))
 
-func stop_bgm(fade_duration: float = 0.3) -> void:
+func stop_bgm(_fade_duration: float = 0.3) -> void:
 	if _bgm_player and _bgm_player.playing:
 		_bgm_player.stop()
 

@@ -15,7 +15,7 @@ const DEFAULT_CONFIG := {
 	"publisher_tagline": "Interactive Experiences",
 	"environment": "development", # development / staging / production
 	"package_id": "com.ittybittybites.the2secondwitness",
-	"privacy_policy_url": "https://ittybittybites.github.io/privacy-policy/",
+	"privacy_policy_url": "https://ittybittybites.github.io/two-second-witness/privacy",
 	"feature_flags": {
 		"analytics_enabled": true,
 		"ads_enabled": false,
@@ -49,7 +49,7 @@ func initialize() -> void:
 	if _is_loaded:
 		return
 	_config = DEFAULT_CONFIG.duplicate(true)
-	
+
 	# Try load from user config override (local file)
 	var path := "user://app_config_override.json"
 	if FileAccess.file_exists(path):
@@ -59,7 +59,7 @@ func initialize() -> void:
 			if parsed is Dictionary:
 				_merge_config(_config, parsed)
 				print("[ConfigService] Loaded override from %s" % path)
-	
+
 	_is_loaded = true
 	config_loaded.emit(_config)
 	print("[ConfigService] Initialized with %d keys" % _config.size())

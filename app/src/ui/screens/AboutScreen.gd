@@ -30,22 +30,22 @@ func _apply_theme() -> void:
 		return
 	var tokens = ThemeService.tokens
 	# Apply theme to labels
-	for path in ["Margin/Scroll/VBox/Title", "Margin/Scroll/VBox/BrandSection/BrandTitle", "Margin/Scroll/VBox/AboutTitle"]:
+	var heading_paths := [
+		"Margin/Scroll/VBox/Title",
+		"Margin/Scroll/VBox/BrandSection/BrandTitle",
+		"Margin/Scroll/VBox/AboutTitle"
+	]
+	for path in heading_paths:
 		if has_node(path):
 			get_node(path).add_theme_color_override("font_color", tokens.get("primary", Color("#7C5CFF")))
 
 func _on_privacy() -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
-	# Placeholder - in real app would open URL
-	var url = "https://ittybittybites.github.io/privacy-policy/"
+	# Placeholder URL - replace with real policy when published
+	var url = "https://ittybittybites.github.io/two-second-witness/privacy"
 	print("[About] Open privacy policy %s" % url)
-	if ErrorHandler:
-		ErrorHandler.handle("PRIVACY_POLICY", "Privacy Policy:\n\nNo account required\nNo personal data collected\nNo ads currently\nProgress stored locally\n\nFull policy at ittybittybites.github.io/privacy-policy/", {}, ErrorHandler.Severity.INFO)
-	# Try open URL if OS can
-	if OS.has_feature("mobile") or OS.has_feature("web"):
-		# OS.shell_open is available in Godot 4
-		OS.shell_open(url)
+	OS.shell_open(url)
 
 func _on_website() -> void:
 	if AudioService:

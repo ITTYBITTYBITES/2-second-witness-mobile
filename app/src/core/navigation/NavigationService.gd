@@ -15,7 +15,10 @@ const MAX_HISTORY := 50
 var _initialized: bool = false
 
 const SPLASH_ROUTES := ["publisher_splash", "title_splash", "splash"]
-const FIRST_RUN_ROUTES := ["privacy", "tutorial", "observation", "memory_question", "result"]
+# First-run onboarding is now a modal over the loading screen, not a routed flow.
+# Gameplay screens (observation, memory_question, result) are launched from the
+# main menu and participate in normal history/back navigation.
+const FIRST_RUN_ROUTES: Array[String] = []
 
 func _ready() -> void:
 	if EventBus:
@@ -38,47 +41,47 @@ func navigate_to(route: String, params: Dictionary = {}) -> bool:
 		if ErrorHandler:
 			ErrorHandler.handle("NAV_INVALID_ROUTE", "Route not found: %s" % route, {"route": route})
 		return false
-	
+
 	# Do not push splash or first-run to history to keep back simple, unless going to main tabs
 	var should_push = true
 	if current_route in SPLASH_ROUTES:
 		should_push = false
 	if current_route in FIRST_RUN_ROUTES and route in FIRST_RUN_ROUTES:
 		should_push = false # linear first-run flow, no history bloat
-	
+
 	if should_push and current_route != route:
 		_push_history(current_route, current_params)
-	
+
 	route_change_requested.emit(route, params)
 	current_route = route
 	current_params = params
-	
+
 	print("[NavigationService] -> %s %s" % [route, str(params)])
 	route_changed.emit(route, params)
 	if EventBus:
 		EventBus.navigation_changed.emit(route, params)
-	
+
 	_update_app_state_phase(route)
-	
+
 	if AnalyticsService:
 		AnalyticsService.log_screen_view(route, params)
-	
+
 	return true
 
 func go_back() -> bool:
-	if history.is_empty():
-		if current_route != "home" and current_route not in SPLASH_ROUTES and current_route not in FIRST_RUN_ROUTES:
-			return navigate_to("home")
-		# If in first-run, don't go back to splash
-		if current_route in FIRST_RUN_ROUTES:
-			return false
+	# Never navigate back into the launch splash sequence.
+	if current_route in SPLASH_ROUTES:
 		return false
-	
+	if history.is_empty():
+		if current_route != "home":
+			return navigate_to("home")
+		return false
+
 	var prev: Dictionary = history.pop_back()
 	history_updated.emit(history.duplicate())
 	var route: String = prev.get("route", "home")
 	var params: Dictionary = prev.get("params", {})
-	
+
 	current_route = route
 	current_params = params
 	route_changed.emit(route, params)
@@ -134,8 +137,6 @@ func _update_app_state_phase(route: String) -> void:
 			AppState.set_phase(AppState.AppPhase.PROFILE)
 		"settings", "about":
 			AppState.set_phase(AppState.AppPhase.SETTINGS)
-		"privacy", "tutorial":
-			AppState.set_phase(AppState.AppPhase.SPLASH)
 		"observation", "memory_question", "result", "experience_play":
 			AppState.set_phase(AppState.AppPhase.EXPERIENCE_PLAYING)
 

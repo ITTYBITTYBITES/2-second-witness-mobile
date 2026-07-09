@@ -107,7 +107,7 @@ func initialize() -> void:
 	var preferred: String = "dark"
 	if SettingsService:
 		preferred = SettingsService.get_value("theme_mode", "dark")
-	
+
 	match preferred:
 		"light":
 			set_theme_mode(ThemeMode.LIGHT)
@@ -115,7 +115,7 @@ func initialize() -> void:
 			set_theme_mode(ThemeMode.DARK)
 		_:
 			set_theme_mode(ThemeMode.DARK)
-	
+
 	print("[ThemeService] Initialized - Theme: %s" % current_theme_name)
 
 func set_theme_mode(mode: ThemeMode) -> void:
@@ -131,7 +131,7 @@ func set_theme_mode(mode: ThemeMode) -> void:
 			# Detect system theme - default dark for now
 			tokens = DARK_TOKENS.duplicate(true)
 			current_theme_name = "dark"
-	
+
 	theme_changed.emit(current_theme_name, tokens)
 	EventBus.theme_changed.emit(current_theme_name)
 	print("[ThemeService] Theme changed to %s" % current_theme_name)
