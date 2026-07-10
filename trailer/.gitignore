@@ -1,0 +1,13 @@
+# Reproducible render intermediates and QA artifacts
+.render/
+.render_v2/
+generated/
+v2_generated/
+inspection/
+contact_sheet.jpg
+generated_contact_sheet.jpg
+qa_*.jpg
+v2_storyboard.jpg
+two_second_witness_trailer_animatic_v1.mp4
+
+# Keep the delivered master, captions, source stills, narration, poster, and build scripts.

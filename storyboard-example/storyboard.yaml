@@ -1,0 +1,62 @@
+project:
+  title: Two Second Witness — Storyboard Example
+  width: 1280
+  height: 720
+  fps: 24
+  output: output/two_second_witness_storyboard_example.mp4
+
+# Narration is optional. Times are measured from the beginning of the complete trailer.
+narration:
+  - file: ../trailer/audio/narration_01.wav
+    at: 1.0
+
+shots:
+  - name: quiet_room
+    type: parallax
+    image: ../trailer/assets/01_quiet_room.png
+    duration: 4.0
+    camera:
+      background_zoom: [1.025, 1.070]
+      foreground_zoom: [1.050, 1.115]
+      pan: [14, 6]
+    # Mask coordinates are normalized from 0–1, so the configuration is resolution-independent.
+    foreground_polygons:
+      - [[0.209, 0.287], [0.616, 0.276], [0.694, 0.542], [0.906, 0.595], [0.957, 1.0], [0.149, 1.0], [0.096, 0.696]]
+    effects: [rain, dust, light_flicker]
+
+  - name: investigation_desk
+    type: parallax
+    image: ../trailer/assets/03_desk_documents.png
+    duration: 4.0
+    camera:
+      background_zoom: [1.030, 1.075]
+      foreground_zoom: [1.055, 1.120]
+      pan: [-16, -5]
+    foreground_polygons:
+      - [[0.144, 0.218], [0.861, 0.128], [0.996, 0.765], [0.784, 1.0], [0.066, 0.946]]
+    effects: [dust, evidence_scan, light_flicker]
+
+  - name: altered_photograph
+    type: change
+    image: ../trailer/assets/05_photo_base.png
+    duration: 4.0
+    change_at: 2.45
+    change:
+      type: recolor_red_to_blue
+      # Ellipse: center_x, center_y, radius_x, radius_y — all normalized.
+      region: [0.522, 0.616, 0.047, 0.154]
+    camera:
+      background_zoom: [1.025, 1.070]
+      foreground_zoom: [1.050, 1.115]
+      pan: [13, -5]
+    foreground_polygons:
+      - [[0.179, 0.080], [0.819, 0.266], [0.730, 0.983], [0.138, 0.829]]
+      - [[0.000, 0.457], [0.365, 0.542], [0.389, 1.000], [0.000, 1.000]]
+    effects: [dust, focus_bloom]
+
+  - name: title
+    type: title_card
+    duration: 3.0
+    headline: TWO SECOND WITNESS
+    subhead: HOW MUCH CAN YOU NOTICE IN TWO SECONDS?
+    effects: [animated_aperture]
