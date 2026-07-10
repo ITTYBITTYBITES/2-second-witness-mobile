@@ -329,7 +329,7 @@ func _apply_safe_area() -> void:
 	# Content container respects safe area
 	if content_container:
 		var current_route = NavigationService.current_route if NavigationService else "home"
-		var is_splash := current_route in ["publisher_splash", "title_splash", "splash"]
+		var is_splash: bool = current_route in ["publisher_splash", "title_splash", "splash"]
 		var top_offset = top + (64 if not is_splash else 0)
 		var bottom_offset = -bottom - (80 if nav_bar and nav_bar.visible else 0)
 
