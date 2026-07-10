@@ -113,7 +113,7 @@ func _apply_theme() -> void:
 	style.content_margin_bottom = 0
 	add_theme_stylebox_override("panel", style)
 
-	var touch_min := tokens.get("touch_target_min", 48)
+	var touch_min: int = tokens.get("touch_target_min", 48) as int
 	_style_bar_button(back_button, touch_min)
 	_style_bar_button(settings_button, touch_min)
 	_style_bar_button(profile_button, touch_min)

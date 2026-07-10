@@ -291,20 +291,12 @@ func _on_nav_tab_selected(route: String) -> void:
 func _apply_safe_area() -> void:
 	if not ThemeService:
 		return
-	var safe := ThemeService.get_safe_area()
-	var top_inset := safe.position.y
-	var bottom_inset := safe.size.y  # right in our Rect2i encoding
-	var left_inset := safe.position.x
-	var right_inset := safe.size.x
-	# Actually get_safe_area returns Rect2i(left, top, right, bottom)
-	# So size.x = right, size.y = bottom - need to unpack correctly
-	# Let's call again properly
-	var area := DisplayServer.get_display_safe_area()
-	var win_size := DisplayServer.window_get_size()
-	var top := area.position.y
-	var bottom := max(0, win_size.y - (area.position.y + area.size.y))
-	var left := area.position.x
-	var right := max(0, win_size.x - (area.position.x + area.size.x))
+	var area: Rect2i = DisplayServer.get_display_safe_area()
+	var win_size: Vector2i = DisplayServer.window_get_size()
+	var top: int = area.position.y
+	var bottom: int = maxi(0, win_size.y - (area.position.y + area.size.y))
+	var left: int = area.position.x
+	var right: int = maxi(0, win_size.x - (area.position.x + area.size.x))
 	# Ensure minimum safe areas for phones with gesture nav / notches
 	if OS.get_name() == "Android" or OS.get_name() == "iOS":
 		top = max(top, 44)

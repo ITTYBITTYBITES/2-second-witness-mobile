@@ -53,11 +53,10 @@ custom_constants/margin_right=24
 custom_constants/margin_top=24
 custom_constants/margin_bottom=24
 
-[node name="Scroll" type="ScrollContainer" parent="Margin/CenterVBox/DialogPanel/InnerMargin"]
+[node name="Scroll" type="MarginContainer" parent="Margin/CenterVBox/DialogPanel/InnerMargin"]
 layout_mode=2
 size_flags_horizontal=3
 size_flags_vertical=3
-horizontal_scroll_mode=0
 
 [node name="VBox" type="VBoxContainer" parent="Margin/CenterVBox/DialogPanel/InnerMargin/Scroll"]
 layout_mode=2
