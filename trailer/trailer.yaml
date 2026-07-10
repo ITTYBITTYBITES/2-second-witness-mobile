@@ -1,0 +1,68 @@
+project:
+  title: Two Second Witness
+  publisher: ITTYBITTYBITES
+  tagline: Observe. Remember. Discover.
+  runtime_seconds: 45
+  fps: 24
+  width: 1920
+  height: 1080
+  play_store_url: https://play.google.com/store/apps/details?id=com.ittybittybites.the2secondwitness
+
+look:
+  shadow_tint: [0.93, 0.97, 1.08]
+  highlight_tint: [1.06, 1.01, 0.93]
+  contrast: 1.055
+  saturation: 0.92
+  grain_strength: 2
+  accent: [124, 92, 255]
+
+# Exactly five reusable hero scenes. Source plates are supplied so the render is
+# deterministic; the build grades them, estimates depth, separates planes, and
+# creates the changed versions automatically.
+hero_scenes:
+  - id: quiet_room
+    source: assets/01_quiet_room.png
+    changed: generated/18_quiet_room_changed.png
+    change: key_disappears
+    atmosphere: rain
+  - id: family_photo
+    source: assets/05_photo_base.png
+    changed: generated/06_photo_changed.png
+    change: scarf_changes_colour
+    atmosphere: dust
+  - id: living_room
+    source: assets/07_room_object_base.png
+    changed: generated/08_room_object_changed.png
+    change: chess_piece_moves
+    atmosphere: dust
+  - id: witness
+    source: assets/09_face_base.png
+    changed: generated/10_face_changed.png
+    change: expression_changes
+    atmosphere: air
+  - id: case_files
+    source: assets/11_documents_base.png
+    changed: generated/12_documents_changed.png
+    change: photograph_changes
+    atmosphere: dust
+
+context_scenes:
+  hallway: assets/02_hallway.png
+  evidence_desk: assets/03_desk_documents.png
+  investigator: assets/04_observer.png
+  eye: assets/13_eye_closeup.png
+  notebook: assets/14_notes.png
+
+narration:
+  act12:
+    file: audio/narration_v3_act12.wav
+    start: 0.70
+  two_seconds:
+    file: audio/narration_v3_two_seconds.wav
+    start: 29.55
+  what_changed:
+    file: audio/narration_v3_what_changed.wav
+    start: 32.45
+  cta:
+    file: audio/narration_v3_cta.wav
+    start: 41.48
