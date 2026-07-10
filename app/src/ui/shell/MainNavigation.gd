@@ -84,9 +84,21 @@ func _apply_theme() -> void:
 	bg_style.corner_radius_top_right = tokens.get("radius_lg", 20)
 	add_theme_stylebox_override("panel", bg_style)
 
+	# Adjust bottom margin for safe area
+	var margin_node := get_node_or_null("Margin")
+	if margin_node is MarginContainer:
+		var m: MarginContainer = margin_node
+		var safe_bottom := int(tokens.get("safe_area_bottom", 0))
+		m.add_theme_constant_override("margin_bottom", max(12, safe_bottom + 8))
+		m.add_theme_constant_override("margin_top", 12)
+		m.add_theme_constant_override("margin_left", 8)
+		m.add_theme_constant_override("margin_right", 8)
+
 	for route in _buttons.keys():
 		var btn: Button = _buttons[route]
 		var is_selected: bool = (route == current_route)
+
+		btn.custom_minimum_size.y = max(btn.custom_minimum_size.y, tokens.get("touch_target_min", 48))
 
 		var normal := StyleBoxFlat.new()
 		normal.corner_radius_top_left = tokens.get("radius_md", 12)
@@ -95,11 +107,11 @@ func _apply_theme() -> void:
 		normal.corner_radius_bottom_right = tokens.get("radius_md", 12)
 		normal.content_margin_left = 8
 		normal.content_margin_right = 8
-		normal.content_margin_top = 6
-		normal.content_margin_bottom = 6
+		normal.content_margin_top = 10
+		normal.content_margin_bottom = 10
 
 		if is_selected:
-			normal.bg_color = tokens.get("primary", Color("#7C5CFF"))
+			normal.bg_color = tokens.get("primary", Color("#6A3DFF"))
 			btn.add_theme_color_override("font_color", tokens.get("text_on_primary", Color.WHITE))
 		else:
 			normal.bg_color = Color.TRANSPARENT
@@ -108,7 +120,8 @@ func _apply_theme() -> void:
 		btn.add_theme_stylebox_override("normal", normal)
 		btn.add_theme_stylebox_override("hover", normal)
 		btn.add_theme_stylebox_override("pressed", normal)
-		btn.add_theme_font_size_override("font_size", 12)
+		btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("label_small"))
+		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _refresh_selection() -> void:
 	_apply_theme()

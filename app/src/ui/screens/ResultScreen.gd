@@ -31,10 +31,24 @@ func _apply_theme() -> void:
 		return
 	var tokens = ThemeService.tokens
 	if result_title:
-		result_title.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-		result_title.add_theme_font_size_override("font_size", 28)
+		ThemeService.apply_label_style(result_title, "headline", "text_primary")
+		result_title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	if result_desc:
-		result_desc.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
+		ThemeService.apply_label_style(result_desc, "body", "text_secondary")
+		result_desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		result_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if detail_label:
+		ThemeService.apply_label_style(detail_label, "body_small", "text_tertiary")
+		detail_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		detail_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if result_icon:
+		ThemeService.apply_typography(result_icon, "display")
+	# Style buttons
+	for btn in [replay_btn, continue_btn, menu_btn]:
+		if btn is Button and ThemeService:
+			ThemeService.apply_typography(btn, "button")
+			btn.custom_minimum_size.y = max(btn.custom_minimum_size.y, tokens.get("touch_target_min", 48))
+			btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 
 func _display_result(data: Dictionary) -> void:
 	_result_data = data
@@ -100,7 +114,7 @@ func _animate_in() -> void:
 	if result_icon:
 		result_icon.scale = Vector2.ZERO
 		var tween := create_tween()
-		var scale_tween := tween.tween_property(result_icon, "scale", Vector2.ONE, 0.5)
+		var scale_tween := tween.tween_property(result_icon, "scale", Vector2.ONE, 0.3)
 		scale_tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 
 func _on_replay() -> void:

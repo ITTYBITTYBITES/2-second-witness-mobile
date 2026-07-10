@@ -4,7 +4,9 @@ extends Node
 
 enum AppPhase { BOOT, SPLASH, HOME, EXPERIENCES, PROFILE, SETTINGS, EXPERIENCE_PLAYING }
 
+@warning_ignore("unused_signal")
 signal phase_changed(new_phase: AppPhase, old_phase: AppPhase)
+@warning_ignore("unused_signal")
 signal state_updated(key: String, value: Variant)
 signal loading_changed(is_loading: bool, message: String)
 

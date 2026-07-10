@@ -30,14 +30,21 @@ func _apply_theme() -> void:
 		return
 	var tokens = ThemeService.tokens
 	# Apply theme to labels
-	var heading_paths := [
-		"Margin/Scroll/VBox/Title",
-		"Margin/Scroll/VBox/BrandSection/BrandTitle",
-		"Margin/Scroll/VBox/AboutTitle"
-	]
-	for path in heading_paths:
-		if has_node(path):
-			get_node(path).add_theme_color_override("font_color", tokens.get("primary", Color("#7C5CFF")))
+	if title_label:
+		ThemeService.apply_label_style(title_label, "headline", "primary")
+	if brand_label:
+		ThemeService.apply_label_style(brand_label, "title", "primary")
+	var about_title_path := "Margin/Scroll/VBox/AboutTitle"
+	if has_node(about_title_path):
+		var about_lbl: Label = get_node(about_title_path)
+		ThemeService.apply_label_style(about_lbl, "title", "primary")
+	# Style buttons
+	for btn in [privacy_btn, website_btn, back_btn]:
+		if btn:
+			ThemeService.apply_typography(btn, "button")
+			btn.custom_minimum_size.y = max(btn.custom_minimum_size.y, tokens.get("touch_target_min", 48))
+			btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+			btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _on_privacy() -> void:
 	if AudioService:

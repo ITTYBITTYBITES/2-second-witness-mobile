@@ -31,12 +31,14 @@ func _apply_theme() -> void:
 	if ThemeService:
 		var tokens = ThemeService.tokens
 		if instruction_label:
-			instruction_label.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
+			ThemeService.apply_label_style(instruction_label, "body", "text_primary")
+			instruction_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if countdown_label:
-			countdown_label.add_theme_color_override("font_color", tokens.get("primary", Color("#7C5CFF")))
+			ThemeService.apply_label_style(countdown_label, "headline", "primary")
+			countdown_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if hint_label:
-			var hint_color: Color = tokens.get("text_secondary", Color(1, 1, 1, 0.75))
-			hint_label.add_theme_color_override("font_color", hint_color)
+			ThemeService.apply_label_style(hint_label, "body_small", "text_secondary")
+			hint_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func _load_challenge() -> void:
 	if _challenge_data.is_empty() and AppState:

@@ -47,7 +47,10 @@ func _ready() -> void:
 		if not ThemeService.theme_changed.is_connected(_on_theme_changed):
 			ThemeService.theme_changed.connect(_on_theme_changed)
 
+	_apply_safe_area()
 	_apply_theme()
+	_setup_loading_overlay()
+	_setup_error_banner()
 
 	if top_bar:
 		if top_bar.has_signal("back_pressed") and not top_bar.back_pressed.is_connected(_on_topbar_back):
@@ -219,9 +222,18 @@ func _on_user_message(message: String, _severity: int) -> void:
 func _show_error(message: String) -> void:
 	if error_banner:
 		error_banner.visible = true
-		if error_banner.has_node("Margin/Label"):
+		if error_banner.has_node("Margin/HBox/Label"):
+			error_banner.get_node("Margin/HBox/Label").text = message
+		elif error_banner.has_node("Margin/Label"):
 			error_banner.get_node("Margin/Label").text = message
-	get_tree().create_timer(4.0).timeout.connect(_hide_error_banner)
+	# Auto-hide after 4s, but user can dismiss early
+	if _error_hide_timer:
+		_error_hide_timer.timeout.disconnect(_hide_error_banner)
+		_error_hide_timer.queue_free()
+	_error_hide_timer = get_tree().create_timer(4.0)
+	_error_hide_timer.timeout.connect(_hide_error_banner)
+
+var _error_hide_timer: SceneTreeTimer = null
 
 func _hide_error_banner() -> void:
 	if is_instance_valid(error_banner):
@@ -236,9 +248,24 @@ func _apply_theme() -> void:
 		var style := StyleBoxFlat.new()
 		style.bg_color = bg
 		background_layer.add_theme_stylebox_override("panel", style)
+	# Error banner styling
+	if error_banner:
+		var err_style := StyleBoxFlat.new()
+		err_style.bg_color = tokens.get("error_container", tokens.get("error", Color.RED))
+		err_style.corner_radius_bottom_left = 8
+		err_style.corner_radius_bottom_right = 8
+		error_banner.add_theme_stylebox_override("panel", err_style)
+		var label_path := "Margin/HBox/Label"
+		if error_banner.has_node(label_path):
+			var lbl: Label = error_banner.get_node(label_path)
+			lbl.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
+			ThemeService.apply_typography(lbl, "body_small")
 
 func _on_theme_changed(_theme_name: String, _tokens: Dictionary) -> void:
+	_apply_safe_area()
 	_apply_theme()
+	_setup_loading_overlay()
+	_setup_error_banner()
 
 func _on_topbar_back() -> void:
 	if NavigationService:
@@ -258,6 +285,141 @@ func _on_topbar_settings() -> void:
 func _on_nav_tab_selected(route: String) -> void:
 	if NavigationService and NavigationService.current_route != route:
 		NavigationService.navigate_to(route)
+
+func _apply_safe_area() -> void:
+	if not ThemeService:
+		return
+	var safe := ThemeService.get_safe_area()
+	var top_inset := safe.position.y
+	var bottom_inset := safe.size.y  # right in our Rect2i encoding
+	var left_inset := safe.position.x
+	var right_inset := safe.size.x
+	# Actually get_safe_area returns Rect2i(left, top, right, bottom)
+	# So size.x = right, size.y = bottom - need to unpack correctly
+	# Let's call again properly
+	var area := DisplayServer.get_display_safe_area()
+	var win_size := DisplayServer.window_get_size()
+	var top := area.position.y
+	var bottom := max(0, win_size.y - (area.position.y + area.size.y))
+	var left := area.position.x
+	var right := max(0, win_size.x - (area.position.x + area.size.x))
+	# Ensure minimum safe areas for phones with gesture nav / notches
+	if OS.get_name() == "Android" or OS.get_name() == "iOS":
+		top = max(top, 44)
+		bottom = max(bottom, 24)
+	else:
+		# Editor / desktop fallback – still add a little breathing room
+		top = max(top, 12)
+		bottom = max(bottom, 12)
+
+	# Top bar offset
+	var top_bar_layer := get_node_or_null("TopBarLayer")
+	if top_bar_layer:
+		top_bar_layer.offset_top = top
+		top_bar_layer.offset_left = left
+		top_bar_layer.offset_right = -right
+	# Navigation bottom offset
+	var nav_layer := get_node_or_null("NavigationLayer")
+	if nav_layer:
+		nav_layer.offset_bottom = -bottom
+		nav_layer.offset_left = left
+		nav_layer.offset_right = -right
+	# Content container respects safe area
+	if content_container:
+		content_container.offset_top = top + 64  # top bar height approx
+		content_container.offset_bottom = -bottom - 80 if nav_bar and nav_bar.visible else -bottom
+		content_container.offset_left = left
+		content_container.offset_right = -right
+
+	# Store in ThemeService tokens for children to use
+	if ThemeService and ThemeService.tokens:
+		ThemeService.tokens["safe_area_top"] = top
+		ThemeService.tokens["safe_area_bottom"] = bottom
+
+func _setup_loading_overlay() -> void:
+	if not loading_overlay or not ThemeService:
+		return
+	var tokens = ThemeService.tokens
+	# Style background
+	var style := StyleBoxFlat.new()
+	style.bg_color = Color(tokens.get("background", Color.BLACK), 0.85)
+	loading_overlay.add_theme_stylebox_override("panel", style)
+
+	# Find message label
+	var msg_label: Label = null
+	if loading_overlay.has_node("Center/VBox/Message"):
+		msg_label = loading_overlay.get_node("Center/VBox/Message")
+		ThemeService.apply_label_style(msg_label, "body", "text_primary")
+		msg_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+
+	# Replace / enhance spinner
+	var spinner_parent: VBoxContainer = null
+	if loading_overlay.has_node("Center/VBox"):
+		spinner_parent = loading_overlay.get_node("Center/VBox")
+	var spinner_label: Label = null
+	if spinner_parent and spinner_parent.get_child_count() > 0:
+		var first = spinner_parent.get_child(0)
+		if first is Label:
+			spinner_label = first
+	if spinner_label:
+		spinner_label.text = "⟳"
+		ThemeService.apply_typography(spinner_label, "display")
+		spinner_label.add_theme_color_override("font_color", tokens.get("primary", Color.WHITE))
+		spinner_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		# Animate rotation
+		if not spinner_label.has_meta("spinner_tween_started"):
+			spinner_label.set_meta("spinner_tween_started", true)
+			var tw := spinner_label.create_tween()
+			tw.set_loops()
+			tw.tween_property(spinner_label, "rotation_degrees", 360.0, 1.2).from(0.0)
+
+func _setup_error_banner() -> void:
+	if not error_banner or not ThemeService:
+		return
+	# Ensure HBox with label + close button exists
+	var margin: MarginContainer = null
+	if error_banner.has_node("Margin"):
+		margin = error_banner.get_node("Margin")
+	if not margin:
+		return
+	var hbox: HBoxContainer = null
+	if margin.has_node("HBox"):
+		hbox = margin.get_node("HBox")
+	else:
+		# Migrate old Label to HBox layout
+		var old_label: Label = null
+		if margin.has_node("Label"):
+			old_label = margin.get_node("Label")
+			margin.remove_child(old_label)
+		hbox = HBoxContainer.new()
+		hbox.name = "HBox"
+		hbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		margin.add_child(hbox)
+		if old_label:
+			old_label.name = "Label"
+			old_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+			old_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			hbox.add_child(old_label)
+		else:
+			var lbl := Label.new()
+			lbl.name = "Label"
+			lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+			lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			hbox.add_child(lbl)
+		var close_btn := Button.new()
+		close_btn.name = "CloseButton"
+		close_btn.text = "✕"
+		close_btn.custom_minimum_size = Vector2(48, 48)
+		close_btn.flat = true
+		hbox.add_child(close_btn)
+		if not close_btn.pressed.is_connected(_hide_error_banner):
+			close_btn.pressed.connect(_hide_error_banner)
+	# Style close button
+	var close_btn_node = hbox.get_node_or_null("CloseButton")
+	if close_btn_node is Button:
+		var btn: Button = close_btn_node
+		btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("body"))
+		btn.add_theme_color_override("font_color", ThemeService.get_color("text_primary"))
 
 func _capitalize_first(s: String) -> String:
 	if s.is_empty():

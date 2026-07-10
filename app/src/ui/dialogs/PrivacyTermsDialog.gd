@@ -71,14 +71,14 @@ func _apply_theme() -> void:
 
 	if title_label:
 		title_label.text = "Privacy & Terms"
-		title_label.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-		title_label.add_theme_font_size_override("font_size", 20)
+		if ThemeService:
+			ThemeService.apply_label_style(title_label, "title", "text_primary")
 		title_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 	if welcome_label:
 		welcome_label.text = "Welcome to Two Second Witness."
-		welcome_label.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-		welcome_label.add_theme_font_size_override("font_size", 15)
+		if ThemeService:
+			ThemeService.apply_label_style(welcome_label, "body", "text_primary")
 		welcome_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		welcome_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
@@ -89,14 +89,14 @@ func _apply_theme() -> void:
 			"• No personal information is collected.",
 			"• No advertising is currently included."
 		])
-		bullets_label.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
-		bullets_label.add_theme_font_size_override("font_size", 14)
+		if ThemeService:
+			ThemeService.apply_label_style(bullets_label, "body_small", "text_secondary")
 		bullets_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 	if footer_label:
 		footer_label.text = "By continuing, you acknowledge these terms."
-		footer_label.add_theme_color_override("font_color", tokens.get("text_tertiary", Color.GRAY))
-		footer_label.add_theme_font_size_override("font_size", 12)
+		if ThemeService:
+			ThemeService.apply_label_style(footer_label, "caption", "text_tertiary")
 		footer_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		footer_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
@@ -104,8 +104,8 @@ func _apply_theme() -> void:
 	if accept_btn:
 		accept_btn.text = "Accept"
 		_apply_button_style(accept_btn,
-			tokens.get("primary", Color("#7C5CFF")),
-			tokens.get("primary_variant", Color("#9B83FF")),
+			tokens.get("primary", Color("#6A3DFF")),
+			tokens.get("primary_variant", Color("#8A68FF")),
 			tokens.get("text_on_primary", Color.WHITE),
 			tokens.get("radius_md", 12))
 	if policy_btn:
@@ -131,10 +131,10 @@ func _apply_button_style(
 	normal.corner_radius_top_right = radius
 	normal.corner_radius_bottom_left = radius
 	normal.corner_radius_bottom_right = radius
-	normal.content_margin_left = 20
-	normal.content_margin_right = 20
-	normal.content_margin_top = 12
-	normal.content_margin_bottom = 12
+	normal.content_margin_left = 24
+	normal.content_margin_right = 24
+	normal.content_margin_top = 14
+	normal.content_margin_bottom = 14
 	if ghost:
 		normal.bg_color = Color.TRANSPARENT
 
@@ -148,8 +148,13 @@ func _apply_button_style(
 	btn.add_theme_stylebox_override("pressed", pressed)
 	btn.add_theme_stylebox_override("focus", hover)
 	btn.add_theme_color_override("font_color", fg)
-	btn.add_theme_font_size_override("font_size", 14)
-	btn.custom_minimum_size = Vector2(0, 48)
+	if ThemeService:
+		btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("button"))
+	else:
+		btn.add_theme_font_size_override("font_size", 18)
+	btn.custom_minimum_size.y = 48
+	btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _animate_in() -> void:
 	modulate.a = 0.0

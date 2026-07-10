@@ -2,9 +2,12 @@ extends Node
 ## AppBoot - Clean startup flow orchestrator
 ## Phases: Preload configs -> Init systems -> Load saves -> Ready
 
+@warning_ignore("unused_signal")
 signal boot_step_started(step: String)
+@warning_ignore("unused_signal")
 signal boot_step_completed(step: String, duration_ms: int)
 signal boot_completed()
+signal boot_failed(reason: String)
 
 enum BootStep {
 	INIT_CONFIG,
@@ -58,7 +61,7 @@ func _run_step(step_name: String, _step: BootStep, callable: Callable) -> void:
 	var result = callable.call()
 	if result is Dictionary and result.has("error"):
 		success = false
-		err = result["error"]
+		err = str(result["error"])
 
 	var duration := Time.get_ticks_msec() - start
 	boot_step_completed.emit(step_name, duration)
@@ -67,6 +70,8 @@ func _run_step(step_name: String, _step: BootStep, callable: Callable) -> void:
 		var error_code := "BOOT_%s_FAILED" % step_name.to_upper()
 		var context := {"step": step_name}
 		ErrorHandler.handle(error_code, err, context, ErrorHandler.Severity.WARNING)
+		boot_failed.emit("[%s] %s" % [error_code, err])
+		print("[AppBoot] Step %s FAILED - %s" % [step_name, err])
 	else:
 		print("[AppBoot] Step %s OK (%d ms)" % [step_name, duration])
 

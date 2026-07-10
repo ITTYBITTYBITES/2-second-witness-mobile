@@ -23,14 +23,24 @@ func _ready() -> void:
 			ThemeService.theme_changed.connect(_on_theme_changed)
 
 func _ensure_ui() -> void:
+	var touch_min := 48
+	if ThemeService:
+		touch_min = ThemeService.tokens.get("touch_target_min", 48)
 	if has_node("Margin/HBox/Title"):
-		# Wire existing
-		if back_button and not back_button.pressed.is_connected(_on_back):
-			back_button.pressed.connect(_on_back)
-		if profile_button and not profile_button.pressed.is_connected(_on_profile):
-			profile_button.pressed.connect(_on_profile)
-		if settings_button and not settings_button.pressed.is_connected(_on_settings):
-			settings_button.pressed.connect(_on_settings)
+		# Wire existing and fix touch targets
+		if back_button:
+			back_button.custom_minimum_size = Vector2(touch_min, touch_min)
+			back_button.text = "←"
+			if not back_button.pressed.is_connected(_on_back):
+				back_button.pressed.connect(_on_back)
+		if profile_button:
+			profile_button.custom_minimum_size = Vector2(touch_min, touch_min)
+			if not profile_button.pressed.is_connected(_on_profile):
+				profile_button.pressed.connect(_on_profile)
+		if settings_button:
+			settings_button.custom_minimum_size = Vector2(touch_min, touch_min)
+			if not settings_button.pressed.is_connected(_on_settings):
+				settings_button.pressed.connect(_on_settings)
 		return
 
 	# Build programmatically
@@ -49,9 +59,9 @@ func _ensure_ui() -> void:
 
 	var back := Button.new()
 	back.name = "BackButton"
-	back.text = "Back"
+	back.text = "←"
 	back.visible = show_back
-	back.custom_minimum_size = Vector2(40,40)
+	back.custom_minimum_size = Vector2(touch_min, touch_min)
 	hbox.add_child(back)
 
 	var title := Label.new()
@@ -66,14 +76,14 @@ func _ensure_ui() -> void:
 
 	var set_btn := Button.new()
 	set_btn.name = "SettingsButton"
-	set_btn.text = "Settings"
-	set_btn.custom_minimum_size = Vector2(40,40)
+	set_btn.text = "⚙"
+	set_btn.custom_minimum_size = Vector2(touch_min, touch_min)
 	actions.add_child(set_btn)
 
 	var prof := Button.new()
 	prof.name = "ProfileButton"
-	prof.text = "Profile"
-	prof.custom_minimum_size = Vector2(40,40)
+	prof.text = "👤"
+	prof.custom_minimum_size = Vector2(touch_min, touch_min)
 	prof.visible = show_profile
 	actions.add_child(prof)
 
@@ -103,9 +113,25 @@ func _apply_theme() -> void:
 	style.content_margin_bottom = 0
 	add_theme_stylebox_override("panel", style)
 
-	if has_node("Margin/HBox/Title"):
-		$Margin/HBox/Title.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-		$Margin/HBox/Title.add_theme_font_size_override("font_size", 20)
+	var touch_min := tokens.get("touch_target_min", 48)
+	_style_bar_button(back_button, touch_min)
+	_style_bar_button(settings_button, touch_min)
+	_style_bar_button(profile_button, touch_min)
+
+	if title_label:
+		ThemeService.apply_label_style(title_label, "title", "text_primary")
+		title_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+
+func _style_bar_button(btn: Button, min_size: int) -> void:
+	if not btn or not ThemeService:
+		return
+	btn.custom_minimum_size = Vector2(min_size, min_size)
+	ThemeService.apply_typography(btn, "title")
+	btn.add_theme_color_override("font_color", ThemeService.get_color("text_primary"))
+	btn.flat = true
+	btn.focus_mode = Control.FOCUS_NONE
+	btn.autowrap_mode = TextServer.AUTOWRAP_OFF
+	btn.clip_text = true
 
 func _refresh() -> void:
 	if has_node("Margin/HBox/BackButton"):

@@ -44,8 +44,9 @@ func _ensure_ui() -> void:
 
 
 func _apply_theme() -> void:
-	# no custom per now
-	pass
+	# Theme is applied per-row in _refresh; just trigger refresh
+	if is_node_ready():
+		_refresh()
 
 
 func _refresh() -> void:
@@ -60,7 +61,10 @@ func _refresh() -> void:
 
 	var title := Label.new()
 	title.text = "Settings"
-	title.add_theme_font_size_override("font_size", 28)
+	if ThemeService:
+		ThemeService.apply_label_style(title, "headline", "text_primary")
+	else:
+		title.add_theme_font_size_override("font_size", 28)
 	vb.add_child(title)
 
 	# Appearance Section
@@ -205,14 +209,21 @@ func _refresh() -> void:
 	vb.add_child(_create_info_row("Engine", "Godot 4.6 / GL Compatibility"))
 
 	var about_btn := Button.new()
-	about_btn.text = "About - Privacy - ITTYBITTYBITES"
+	about_btn.text = "About • Privacy • ITTYBITTYBITES"
 	about_btn.custom_minimum_size = Vector2(0, 52)
+	about_btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	about_btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if ThemeService:
+		ThemeService.apply_typography(about_btn, "button")
 	vb.add_child(about_btn)
 	about_btn.pressed.connect(_on_about_pressed)
 
 	var reset_btn := Button.new()
 	reset_btn.text = "Reset All Settings"
 	reset_btn.custom_minimum_size = Vector2(0, 48)
+	reset_btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	if ThemeService:
+		ThemeService.apply_typography(reset_btn, "button")
 	vb.add_child(reset_btn)
 	reset_btn.pressed.connect(_on_reset_settings)
 
@@ -220,8 +231,11 @@ func _refresh() -> void:
 func _create_section_header(text: String) -> Control:
 	var lbl := Label.new()
 	lbl.text = text
-	lbl.add_theme_font_size_override("font_size", 16)
-	lbl.add_theme_color_override("font_color", Color("#7C5CFF") if ThemeService else Color.PURPLE)
+	if ThemeService:
+		ThemeService.apply_label_style(lbl, "label", "primary")
+	else:
+		lbl.add_theme_font_size_override("font_size", 18)
+		lbl.add_theme_color_override("font_color", Color("#6A3DFF"))
 	return lbl
 
 
@@ -234,7 +248,11 @@ func _create_setting_row_toggle(
 	var lbl := Label.new()
 	lbl.text = label
 	lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	lbl.size_flags_stretch_ratio = 2.0
 	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if ThemeService:
+		ThemeService.apply_label_style(lbl, "body_small", "text_primary")
 	hbox.add_child(lbl)
 
 	var toggle := CheckButton.new()
@@ -277,10 +295,15 @@ func _create_setting_row_slider(
 	var lbl := Label.new()
 	lbl.text = label
 	lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if ThemeService:
+		ThemeService.apply_label_style(lbl, "body_small", "text_primary")
 	hbox.add_child(lbl)
 
 	var val_lbl := Label.new()
 	val_lbl.name = "ValueLabel"
+	if ThemeService:
+		ThemeService.apply_label_style(val_lbl, "body_small", "text_secondary")
 	val_lbl.text = (
 		"%.1f" % value
 		if max_v <= 1.5
@@ -345,11 +368,19 @@ func _create_info_row(label: String, value: String) -> Control:
 	var l := Label.new()
 	l.text = label
 	l.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if ThemeService:
+		ThemeService.apply_label_style(l, "body_small", "text_primary")
 	hbox.add_child(l)
 	var v := Label.new()
 	v.text = value
-	v.add_theme_color_override("font_color", Color(0.6, 0.6, 0.7, 1))
-	v.add_theme_font_size_override("font_size", 12)
+	v.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	v.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	if ThemeService:
+		ThemeService.apply_label_style(v, "caption", "text_secondary")
+	else:
+		v.add_theme_color_override("font_color", Color(0.6, 0.6, 0.7, 1))
+		v.add_theme_font_size_override("font_size", 14)
 	hbox.add_child(v)
 
 	var card := PanelContainer.new()

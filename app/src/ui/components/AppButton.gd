@@ -29,11 +29,16 @@ func _apply_theme() -> void:
 		return
 	var tokens = ThemeService.tokens
 
-	var bg = tokens.get("primary", Color("#7C5CFF"))
+	var bg = tokens.get("primary", Color("#6A3DFF"))
 	var text_color = tokens.get("text_on_primary", Color.WHITE)
 	var border = tokens.get("border", Color.TRANSPARENT)
-	var bg_hover = tokens.get("primary_variant", Color("#9B83FF"))
+	var bg_hover = tokens.get("primary_variant", Color("#8A68FF"))
 	var bg_secondary = tokens.get("surface_elevated", Color("#2A2A36"))
+
+	var font_size := ThemeService.get_font_size("button")
+	add_theme_font_size_override("font_size", font_size)
+	autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	custom_minimum_size.y = max(custom_minimum_size.y, tokens.get("touch_target_min", 48))
 
 	# Clear existing overrides
 	var style_normal := StyleBoxFlat.new()
@@ -48,10 +53,10 @@ func _apply_theme() -> void:
 			style_normal.corner_radius_top_right = tokens.get("radius_md", 12)
 			style_normal.corner_radius_bottom_left = tokens.get("radius_md", 12)
 			style_normal.corner_radius_bottom_right = tokens.get("radius_md", 12)
-			style_normal.content_margin_left = 20
-			style_normal.content_margin_right = 20
-			style_normal.content_margin_top = 12
-			style_normal.content_margin_bottom = 12
+			style_normal.content_margin_left = 24
+			style_normal.content_margin_right = 24
+			style_normal.content_margin_top = 14
+			style_normal.content_margin_bottom = 14
 
 			style_hover = style_normal.duplicate()
 			style_hover.bg_color = bg_hover
@@ -71,10 +76,10 @@ func _apply_theme() -> void:
 			style_normal.corner_radius_top_right = tokens.get("radius_md", 12)
 			style_normal.corner_radius_bottom_left = tokens.get("radius_md", 12)
 			style_normal.corner_radius_bottom_right = tokens.get("radius_md", 12)
-			style_normal.content_margin_left = 20
-			style_normal.content_margin_right = 20
-			style_normal.content_margin_top = 12
-			style_normal.content_margin_bottom = 12
+			style_normal.content_margin_left = 24
+			style_normal.content_margin_right = 24
+			style_normal.content_margin_top = 14
+			style_normal.content_margin_bottom = 14
 
 			add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
 			style_hover = style_normal.duplicate()
@@ -83,10 +88,10 @@ func _apply_theme() -> void:
 			style_pressed.bg_color = bg_secondary.darkened(0.1)
 		Variant.GHOST:
 			style_normal.bg_color = Color.TRANSPARENT
-			style_normal.content_margin_left = 16
-			style_normal.content_margin_right = 16
-			style_normal.content_margin_top = 10
-			style_normal.content_margin_bottom = 10
+			style_normal.content_margin_left = 20
+			style_normal.content_margin_right = 20
+			style_normal.content_margin_top = 14
+			style_normal.content_margin_bottom = 14
 			add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
 			style_hover = style_normal.duplicate()
 			style_hover.bg_color = _with_alpha(tokens.get("surface_elevated", Color.GRAY), 0.5)
@@ -97,10 +102,10 @@ func _apply_theme() -> void:
 			style_normal.corner_radius_top_right = tokens.get("radius_md", 12)
 			style_normal.corner_radius_bottom_left = tokens.get("radius_md", 12)
 			style_normal.corner_radius_bottom_right = tokens.get("radius_md", 12)
-			style_normal.content_margin_left = 20
-			style_normal.content_margin_right = 20
-			style_normal.content_margin_top = 12
-			style_normal.content_margin_bottom = 12
+			style_normal.content_margin_left = 24
+			style_normal.content_margin_right = 24
+			style_normal.content_margin_top = 14
+			style_normal.content_margin_bottom = 14
 			add_theme_color_override("font_color", Color.WHITE)
 			style_hover = style_normal.duplicate()
 			style_hover.bg_color = style_normal.bg_color.lightened(0.1)

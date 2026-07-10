@@ -2,16 +2,27 @@ extends Node
 ## EventBus - Decoupled messaging
 ## Global signal bus to keep systems independent.
 
+@warning_ignore("unused_signal")
 signal app_initialized()
+@warning_ignore("unused_signal")
 signal navigation_requested(route: String, params: Dictionary)
+@warning_ignore("unused_signal")
 signal navigation_changed(route: String, params: Dictionary)
+@warning_ignore("unused_signal")
 signal setting_changed(key: String, value: Variant)
+@warning_ignore("unused_signal")
 signal theme_changed(theme_name: String)
+@warning_ignore("unused_signal")
 signal audio_requested(bus: String, sound_id: String, params: Dictionary)
+@warning_ignore("unused_signal")
 signal profile_updated(profile_data: Dictionary)
+@warning_ignore("unused_signal")
 signal experience_unlocked(exp_id: String)
+@warning_ignore("unused_signal")
 signal experience_completed(exp_id: String, result: Dictionary)
+@warning_ignore("unused_signal")
 signal error_occurred(code: String, message: String, context: Dictionary)
+@warning_ignore("unused_signal")
 signal accessibility_changed(settings: Dictionary)
 
 var _event_log: Array[Dictionary] = []

@@ -17,8 +17,8 @@ func _apply_theme() -> void:
 		return
 	var tokens = ThemeService.tokens
 	if question_label:
-		question_label.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-		question_label.add_theme_font_size_override("font_size", 20)
+		ThemeService.apply_label_style(question_label, "title", "text_primary")
+		question_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func _load_question() -> void:
 	if _challenge_data.is_empty() and AppState:
@@ -61,6 +61,7 @@ func _build_options(options: Array) -> void:
 		btn.text = str(opt)
 		btn.custom_minimum_size = Vector2(0, 56)
 		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		btn.set_meta("answer", str(opt))
 		btn.pressed.connect(_on_option_selected.bind(str(opt), btn))
 		_apply_option_theme(btn)
@@ -81,15 +82,19 @@ func _apply_option_theme(btn: Button) -> void:
 	style.border_width_right = 1
 	style.border_width_top = 1
 	style.border_width_bottom = 1
-	style.content_margin_left = 12
-	style.content_margin_right = 12
-	style.content_margin_top = 12
-	style.content_margin_bottom = 12
+	style.content_margin_left = 16
+	style.content_margin_right = 16
+	style.content_margin_top = 14
+	style.content_margin_bottom = 14
 	btn.add_theme_stylebox_override("normal", style)
 	var hover := style.duplicate()
 	hover.bg_color = tokens.get("surface_elevated", Color("#2A2A36"))
 	btn.add_theme_stylebox_override("hover", hover)
 	btn.add_theme_stylebox_override("pressed", hover)
+	btn.add_theme_stylebox_override("focus", hover)
+	ThemeService.apply_typography(btn, "body")
+	btn.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
+	btn.custom_minimum_size.y = max(btn.custom_minimum_size.y, tokens.get("touch_target_min", 48))
 
 func _on_option_selected(answer: String, button: Button) -> void:
 	_selected_answer = answer
@@ -182,4 +187,4 @@ func on_navigated_to(params: Dictionary) -> void:
 func _animate_in() -> void:
 	modulate.a = 0.0
 	var tween = create_tween()
-	tween.tween_property(self, "modulate:a", 1.0, 0.4)
+	tween.tween_property(self, "modulate:a", 1.0, 0.3)
