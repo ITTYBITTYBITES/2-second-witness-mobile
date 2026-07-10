@@ -129,6 +129,7 @@ func _on_replay() -> void:
 func _on_continue() -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
+	_check_first_run_completion()
 	if AnalyticsService:
 		var next_params := {"challenge_id": _result_data.get("challenge_id", "")}
 		AnalyticsService.log_event("next_challenge", next_params)
@@ -138,10 +139,26 @@ func _on_continue() -> void:
 func _on_menu() -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
+	_check_first_run_completion()
 	if ChallengeRegistry:
 		ChallengeRegistry.clear_run()
 	if NavigationService:
 		NavigationService.navigate_to("home")
+
+func _check_first_run_completion() -> void:
+	var needs_save := false
+	if ProfileService:
+		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
+		if not prefs.get("onboarding_completed", false):
+			prefs["onboarding_completed"] = true
+			ProfileService.profile["preferences"] = prefs
+			needs_save = true
+	if SettingsService:
+		if not SettingsService.get_value("first_launch_completed", false):
+			SettingsService.set_value("first_launch_completed", true)
+			# SettingsService usually saves automatically on set_value if implemented that way
+	if needs_save and ProfileService:
+		ProfileService.save()
 
 func on_navigated_to(params: Dictionary) -> void:
 	_result_data = params

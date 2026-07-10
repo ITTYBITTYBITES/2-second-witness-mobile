@@ -21,6 +21,11 @@ const ROUTES := {
 		"is_tab": false,
 		"requires_auth": false
 	},
+	"tutorial": {
+		"screen": "TutorialScreen",
+		"is_tab": false,
+		"requires_auth": false
+	},
 
 	# Gameplay (launched from main menu)
 	"observation": {

@@ -5,9 +5,10 @@ extends Control
 
 @onready var title_label: Label = $VBox/Margin/Inner/Title
 @onready var subtitle_label: Label = $VBox/Margin/Inner/Subtitle
+@onready var splash_image: TextureRect = $SplashImage
 
 var _elapsed: float = 0.0
-const DISPLAY_DURATION := 1.5  # 1-2 seconds, premium feel without dragging
+const DISPLAY_DURATION := 2.5  # Slightly longer for visual splash
 var _is_navigating: bool = false
 var _can_advance: bool = false
 
@@ -16,6 +17,7 @@ func _ready() -> void:
 	_is_navigating = false
 	_can_advance = false
 	set_process(true)
+	_load_splash_image()
 	_apply_theme()
 	_animate_in()
 	# If boot already finished (fast devices / warm start) advance as soon as
@@ -23,6 +25,16 @@ func _ready() -> void:
 	if AppState and AppState.is_initialized:
 		_can_advance = true
 	print("[PublisherSplash] Ready")
+
+func _load_splash_image() -> void:
+	if splash_image:
+		var path := "res://assets/splash/ittybittybites_splash.png"
+		if ResourceLoader.exists(path):
+			splash_image.texture = load(path)
+			splash_image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+			splash_image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		else:
+			splash_image.visible = false
 
 func notify_boot_completed() -> void:
 	# Called by AppShell when background boot finishes.
@@ -32,6 +44,8 @@ func _apply_theme() -> void:
 	# Black canvas - we own the background directly.
 	if $Background:
 		$Background.color = Color(0.055, 0.055, 0.07, 1.0)
+	if splash_image:
+		splash_image.modulate.a = 0.5
 	if not ThemeService:
 		return
 	var tokens := ThemeService.tokens
