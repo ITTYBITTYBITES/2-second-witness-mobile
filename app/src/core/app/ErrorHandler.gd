@@ -4,6 +4,7 @@ extends Node
 
 enum Severity { INFO, WARNING, ERROR, CRITICAL }
 
+@warning_ignore("unused_signal")
 signal error_logged(entry: Dictionary)
 signal user_message_requested(message: String, severity: Severity)
 

@@ -26,7 +26,16 @@ func _ensure_ui() -> void:
 		$Margin/Scroll/VBox/FilterRow.visible = false
 
 func _apply_theme() -> void:
-	pass
+	if not ThemeService:
+		return
+	# Header styling
+	if has_node("Margin/Scroll/VBox/Header/Title"):
+		var title_lbl: Label = $Margin/Scroll/VBox/Header/Title
+		ThemeService.apply_label_style(title_lbl, "headline", "text_primary")
+	if has_node("Margin/Scroll/VBox/Header/Subtitle"):
+		var sub_lbl: Label = $Margin/Scroll/VBox/Header/Subtitle
+		ThemeService.apply_label_style(sub_lbl, "body_small", "text_secondary")
+		sub_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _refresh_list() -> void:
 	if not has_node("Margin/Scroll/VBox"):
@@ -48,15 +57,21 @@ func _refresh_list() -> void:
 		var empty := Label.new()
 		empty.name = "ChallengeEmpty"
 		empty.text = "No challenges are available right now."
-		empty.autowrap_mode = TextServer.AUTOWRAP_WORD
+		empty.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		empty.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		if ThemeService:
+			ThemeService.apply_label_style(empty, "body", "text_secondary")
 		vbox.add_child(empty)
 		return
 
 	var summary := Label.new()
 	summary.name = "ChallengeSummary"
 	summary.text = "%d playable challenges" % challenges.size()
-	summary.add_theme_font_size_override("font_size", 14)
-	summary.add_theme_color_override("font_color", Color(0.7, 0.7, 0.8, 1.0))
+	if ThemeService:
+		ThemeService.apply_label_style(summary, "label_small", "text_secondary")
+	else:
+		summary.add_theme_font_size_override("font_size", 14)
+		summary.add_theme_color_override("font_color", Color(0.7, 0.7, 0.8, 1.0))
 	vbox.add_child(summary)
 	vbox.move_child(summary, min(1, vbox.get_child_count() - 1))
 

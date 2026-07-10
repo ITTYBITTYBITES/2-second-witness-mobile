@@ -68,13 +68,15 @@ func _ensure_ui() -> void:
 	exp_vbox.name = "ExperienceProgress"
 	vb.add_child(exp_vbox)
 
-	# Actions
+	# Actions - Debug reset hidden in production builds
 	var reset_btn := Button.new()
 	reset_btn.name = "ResetButton"
-	reset_btn.text = "Reset Profile (Debug)"
-	reset_btn.custom_minimum_size = Vector2(0, 44)
+	reset_btn.text = "Reset Profile"
+	reset_btn.custom_minimum_size = Vector2(0, 48)
+	reset_btn.visible = OS.is_debug_build()
 	vb.add_child(reset_btn)
-	reset_btn.pressed.connect(_on_reset_pressed)
+	if reset_btn.visible:
+		reset_btn.pressed.connect(_on_reset_pressed)
 
 	scroll = s
 	vbox = vb
@@ -82,7 +84,9 @@ func _ensure_ui() -> void:
 func _wire_actions() -> void:
 	if has_node("Margin/Scroll/VBox/ResetButton"):
 		var btn: Button = $Margin/Scroll/VBox/ResetButton
-		if not btn.pressed.is_connected(_on_reset_pressed):
+		btn.visible = OS.is_debug_build()
+		btn.text = "Reset Profile"
+		if btn.visible and not btn.pressed.is_connected(_on_reset_pressed):
 			btn.pressed.connect(_on_reset_pressed)
 
 func _create_avatar_card() -> Control:
@@ -111,19 +115,23 @@ func _create_avatar_card() -> Control:
 	var name_lbl := Label.new()
 	name_lbl.name = "NameLabel"
 	name_lbl.text = "Witness"
-	name_lbl.add_theme_font_size_override("font_size", 20)
+	if ThemeService:
+		ThemeService.apply_label_style(name_lbl, "title", "text_primary")
 	vbox.add_child(name_lbl)
 
 	var id_lbl := Label.new()
 	id_lbl.name = "IdLabel"
 	id_lbl.text = "ID: witness_..."
-	id_lbl.add_theme_font_size_override("font_size", 12)
+	if ThemeService:
+		ThemeService.apply_label_style(id_lbl, "caption", "text_secondary")
 	vbox.add_child(id_lbl)
 
 	var since_lbl := Label.new()
 	since_lbl.name = "SinceLabel"
 	since_lbl.text = "Since today"
-	since_lbl.add_theme_font_size_override("font_size", 11)
+	since_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if ThemeService:
+		ThemeService.apply_label_style(since_lbl, "caption", "text_tertiary")
 	vbox.add_child(since_lbl)
 
 	return card
@@ -147,6 +155,18 @@ func _apply_theme() -> void:
 				style.border_width_top = 1
 				style.border_width_bottom = 1
 				child.add_theme_stylebox_override("panel", style)
+	# Avatar card text styling
+	var avatar_path := "Margin/Scroll/VBox/AvatarCard/Margin/HBox/VBox"
+	if has_node(avatar_path + "/NameLabel"):
+		var name_lbl: Label = get_node(avatar_path + "/NameLabel")
+		ThemeService.apply_label_style(name_lbl, "title", "text_primary")
+	if has_node(avatar_path + "/IdLabel"):
+		var id_lbl: Label = get_node(avatar_path + "/IdLabel")
+		ThemeService.apply_label_style(id_lbl, "caption", "text_secondary")
+	if has_node(avatar_path + "/SinceLabel"):
+		var since_lbl: Label = get_node(avatar_path + "/SinceLabel")
+		ThemeService.apply_label_style(since_lbl, "caption", "text_tertiary")
+		since_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _refresh() -> void:
 	if not ProfileService:
@@ -209,13 +229,16 @@ func _refresh_level_card() -> void:
 
 	var lvl_lbl := Label.new()
 	lvl_lbl.text = "Level %d" % level
-	lvl_lbl.add_theme_font_size_override("font_size", 20)
+	if ThemeService:
+		ThemeService.apply_label_style(lvl_lbl, "title", "text_primary")
 	level_hbox.add_child(lvl_lbl)
 
 	var xp_lbl := Label.new()
 	xp_lbl.text = "%d / %d XP" % [xp, xp_next]
 	xp_lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	xp_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	if ThemeService:
+		ThemeService.apply_label_style(xp_lbl, "body_small", "text_secondary")
 	level_hbox.add_child(xp_lbl)
 
 	var progress := ProgressBar.new()
@@ -273,15 +296,20 @@ func _create_stat_card(label: String, value: String, icon: String) -> Control:
 	vbox.add_child(top_hbox)
 	var icon_lbl := Label.new()
 	icon_lbl.text = icon
+	if ThemeService:
+		ThemeService.apply_label_style(icon_lbl, "caption", "text_tertiary")
 	top_hbox.add_child(icon_lbl)
 	var val_lbl := Label.new()
 	val_lbl.text = value
-	val_lbl.add_theme_font_size_override("font_size", 18)
+	if ThemeService:
+		ThemeService.apply_label_style(val_lbl, "title", "text_primary")
 	top_hbox.add_child(val_lbl)
 
 	var lab_lbl := Label.new()
 	lab_lbl.text = label
-	lab_lbl.add_theme_font_size_override("font_size", 11)
+	lab_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if ThemeService:
+		ThemeService.apply_label_style(lab_lbl, "label_small", "text_tertiary")
 	vbox.add_child(lab_lbl)
 
 	return card
@@ -304,7 +332,10 @@ func _refresh_experience_progress() -> void:
 	if challenges.is_empty():
 		var empty := Label.new()
 		empty.text = "Play a round to begin tracking your challenge history."
-		empty.autowrap_mode = TextServer.AUTOWRAP_WORD
+		empty.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		empty.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		if ThemeService:
+			ThemeService.apply_label_style(empty, "body_small", "text_secondary")
 		vp.add_child(empty)
 		return
 

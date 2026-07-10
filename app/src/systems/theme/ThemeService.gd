@@ -18,17 +18,18 @@ const DARK_TOKENS := {
 	"background_tertiary": Color("#24242C"),
 	"surface": Color("#1E1E26"),
 	"surface_elevated": Color("#2A2A36"),
-	"primary": Color("#7C5CFF"),
-	"primary_variant": Color("#9B83FF"),
+	"primary": Color("#6A3DFF"),
+	"primary_variant": Color("#8A68FF"),
 	"secondary": Color("#2EE6A6"),
 	"accent": Color("#FF6B6B"),
 	"text_primary": Color("#FFFFFF"),
-	"text_secondary": Color("#A1A1B3"),
-	"text_tertiary": Color("#6B6B80"),
+	"text_secondary": Color("#B8B8CC"),
+	"text_tertiary": Color("#8A8AA3"),
 	"text_on_primary": Color("#FFFFFF"),
 	"border": Color("#2E2E3A"),
 	"border_strong": Color("#3D3D4D"),
 	"error": Color("#FF4D5E"),
+	"error_container": Color("#3A1A1E"),
 	"success": Color("#2EE6A6"),
 	"warning": Color("#FFC84D"),
 	"shadow": Color(0,0,0,0.4),
@@ -43,14 +44,19 @@ const DARK_TOKENS := {
 	"spacing_md": 16,
 	"spacing_lg": 24,
 	"spacing_xl": 32,
+	"touch_target_min": 48,
+	"safe_area_top": 0,
+	"safe_area_bottom": 0,
 	"typography": {
-		"display": {"size": 36, "weight": 700},
-		"headline": {"size": 24, "weight": 700},
-		"title": {"size": 20, "weight": 600},
-		"body": {"size": 16, "weight": 400},
-		"body_small": {"size": 14, "weight": 400},
-		"caption": {"size": 12, "weight": 500},
-		"label": {"size": 14, "weight": 600}
+		"display": {"size": 34, "weight": 700},
+		"headline": {"size": 26, "weight": 700},
+		"title": {"size": 22, "weight": 600},
+		"body": {"size": 18, "weight": 400},
+		"body_small": {"size": 16, "weight": 400},
+		"caption": {"size": 14, "weight": 500},
+		"label": {"size": 16, "weight": 600},
+		"label_small": {"size": 14, "weight": 600},
+		"button": {"size": 18, "weight": 600}
 	}
 }
 
@@ -61,17 +67,18 @@ const LIGHT_TOKENS := {
 	"background_tertiary": Color("#F0F0F5"),
 	"surface": Color("#FFFFFF"),
 	"surface_elevated": Color("#FFFFFF"),
-	"primary": Color("#7C5CFF"),
-	"primary_variant": Color("#5A3EDC"),
+	"primary": Color("#5A3EDC"),
+	"primary_variant": Color("#7C5CFF"),
 	"secondary": Color("#0ABF86"),
 	"accent": Color("#FF4D5E"),
 	"text_primary": Color("#111113"),
-	"text_secondary": Color("#636378"),
-	"text_tertiary": Color("#8D8DA3"),
+	"text_secondary": Color("#4A4A5E"),
+	"text_tertiary": Color("#6B6B80"),
 	"text_on_primary": Color("#FFFFFF"),
 	"border": Color("#E8E8EF"),
 	"border_strong": Color("#D4D4DF"),
-	"error": Color("#FF4D5E"),
+	"error": Color("#E53945"),
+	"error_container": Color("#FFEBEE"),
 	"success": Color("#0ABF86"),
 	"warning": Color("#FF9F1C"),
 	"shadow": Color(0,0,0,0.1),
@@ -86,14 +93,19 @@ const LIGHT_TOKENS := {
 	"spacing_md": 16,
 	"spacing_lg": 24,
 	"spacing_xl": 32,
+	"touch_target_min": 48,
+	"safe_area_top": 0,
+	"safe_area_bottom": 0,
 	"typography": {
-		"display": {"size": 36, "weight": 700},
-		"headline": {"size": 24, "weight": 700},
-		"title": {"size": 20, "weight": 600},
-		"body": {"size": 16, "weight": 400},
-		"body_small": {"size": 14, "weight": 400},
-		"caption": {"size": 12, "weight": 500},
-		"label": {"size": 14, "weight": 600}
+		"display": {"size": 34, "weight": 700},
+		"headline": {"size": 26, "weight": 700},
+		"title": {"size": 22, "weight": 600},
+		"body": {"size": 18, "weight": 400},
+		"body_small": {"size": 16, "weight": 400},
+		"caption": {"size": 14, "weight": 500},
+		"label": {"size": 16, "weight": 600},
+		"label_small": {"size": 14, "weight": 600},
+		"button": {"size": 18, "weight": 600}
 	}
 }
 
@@ -147,7 +159,39 @@ func get_radius(size_name: String) -> int:
 
 func get_typography(style: String) -> Dictionary:
 	var typo: Dictionary = tokens.get("typography", {})
-	return typo.get(style, {"size": 16, "weight": 400})
+	return typo.get(style, {"size": 18, "weight": 400})
+
+func get_font_size(style: String) -> int:
+	return get_typography(style).get("size", 18)
+
+func apply_typography(control: Control, style: String) -> void:
+	if not control:
+		return
+	var typo := get_typography(style)
+	control.add_theme_font_size_override("font_size", typo.get("size", 18))
+
+func apply_label_style(label: Label, style: String, color_token: String = "text_primary") -> void:
+	if not label:
+		return
+	apply_typography(label, style)
+	label.add_theme_color_override("font_color", get_color(color_token))
+	if not label.autowrap_mode:
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+
+func get_safe_area() -> Rect2i:
+	# Returns safe area insets for notches / gesture bars
+	var area := DisplayServer.get_display_safe_area()
+	var window_size := DisplayServer.window_get_size()
+	var top := area.position.y
+	var bottom := window_size.y - (area.position.y + area.size.y)
+	var left := area.position.x
+	var right := window_size.x - (area.position.x + area.size.x)
+	# Fallback minimums for desktop / editor
+	if top < 24 and OS.get_name() in ["Android", "iOS"]:
+		top = 32
+	if bottom < 16 and OS.get_name() in ["Android", "iOS"]:
+		bottom = 24
+	return Rect2i(left, top, right, bottom)
 
 func apply_theme_to_control(control: Control) -> void:
 	if not control:

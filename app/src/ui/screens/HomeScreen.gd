@@ -82,13 +82,13 @@ func _style_hero_card(tokens: Dictionary) -> void:
 	card.add_theme_stylebox_override("panel", _editorial_panel_style(tokens, true))
 	if has_node("%s/Margin/VBox/Title" % card_path):
 		var title: Label = get_node("%s/Margin/VBox/Title" % card_path)
-		title.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-		title.add_theme_font_size_override("font_size", 30)
+		if ThemeService:
+			ThemeService.apply_label_style(title, "headline", "text_primary")
 		title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	if has_node("%s/Margin/VBox/Subtitle" % card_path):
 		var sub: Label = get_node("%s/Margin/VBox/Subtitle" % card_path)
-		sub.add_theme_color_override("font_color", tokens.get("text_secondary", Color("#A1A1B3")))
-		sub.add_theme_font_size_override("font_size", 14)
+		if ThemeService:
+			ThemeService.apply_label_style(sub, "body_small", "text_secondary")
 		sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		sub.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
@@ -103,33 +103,39 @@ func _style_stat_cards(tokens: Dictionary) -> void:
 			)
 		if stat_card.has_node("Margin/VBox/Value"):
 			var value_lbl: Label = stat_card.get_node("Margin/VBox/Value")
-			value_lbl.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-			value_lbl.add_theme_font_size_override("font_size", 22)
+			if ThemeService:
+				ThemeService.apply_label_style(value_lbl, "title", "text_primary")
 			value_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if stat_card.has_node("Margin/VBox/Label"):
 			var label_lbl: Label = stat_card.get_node("Margin/VBox/Label")
-			label_lbl.add_theme_color_override("font_color", tokens.get("text_tertiary", Color("#6B6B80")))
-			label_lbl.add_theme_font_size_override("font_size", 11)
+			if ThemeService:
+				ThemeService.apply_label_style(label_lbl, "label_small", "text_tertiary")
 			label_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			label_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _style_quick_play(tokens: Dictionary) -> void:
 	if not has_node("Margin/Scroll/VBox/QuickPlayButton"):
 		return
 	var btn: Button = get_node("Margin/Scroll/VBox/QuickPlayButton")
+	# Try to upgrade to AppButton for consistent styling
+	var app_button_script = load("res://src/ui/components/AppButton.gd")
+	if app_button_script and not btn is preload("res://src/ui/components/AppButton.gd"):
+		# Just style manually to match AppButton
+		pass
 	var radius: int = tokens.get("radius_md", 12)
-	var primary_color: Color = tokens.get("primary", Color("#7C5CFF"))
+	var primary_color: Color = tokens.get("primary", Color("#6A3DFF"))
 	var normal := StyleBoxFlat.new()
 	normal.bg_color = primary_color
 	normal.corner_radius_top_left = radius
 	normal.corner_radius_top_right = radius
 	normal.corner_radius_bottom_left = radius
 	normal.corner_radius_bottom_right = radius
-	normal.content_margin_left = 20
-	normal.content_margin_right = 20
-	normal.content_margin_top = 14
-	normal.content_margin_bottom = 14
+	normal.content_margin_left = 24
+	normal.content_margin_right = 24
+	normal.content_margin_top = 16
+	normal.content_margin_bottom = 16
 	var hover := normal.duplicate()
-	hover.bg_color = tokens.get("primary_variant", Color("#9B83FF"))
+	hover.bg_color = tokens.get("primary_variant", Color("#8A68FF"))
 	var pressed := normal.duplicate()
 	pressed.bg_color = primary_color.darkened(0.12)
 	btn.add_theme_stylebox_override("normal", normal)
@@ -137,14 +143,21 @@ func _style_quick_play(tokens: Dictionary) -> void:
 	btn.add_theme_stylebox_override("pressed", pressed)
 	btn.add_theme_stylebox_override("focus", hover)
 	btn.add_theme_color_override("font_color", tokens.get("text_on_primary", Color.WHITE))
-	btn.add_theme_font_size_override("font_size", 17)
+	if ThemeService:
+		btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("button"))
+	btn.custom_minimum_size.y = max(btn.custom_minimum_size.y, tokens.get("touch_target_min", 48))
+	btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func _style_section_label(tokens: Dictionary) -> void:
 	if not has_node("Margin/Scroll/VBox/SectionLabel"):
 		return
 	var section: Label = get_node("Margin/Scroll/VBox/SectionLabel")
-	section.add_theme_color_override("font_color", tokens.get("primary", Color("#7C5CFF")))
-	section.add_theme_font_size_override("font_size", 16)
+	if ThemeService:
+		ThemeService.apply_label_style(section, "label", "primary")
+	else:
+		section.add_theme_color_override("font_color", tokens.get("primary", Color("#6A3DFF")))
+		section.add_theme_font_size_override("font_size", 16)
 
 func _refresh_data() -> void:
 	if not has_node("Margin/Scroll/VBox"):
