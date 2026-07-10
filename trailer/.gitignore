@@ -1,6 +1,7 @@
 # Reproducible render intermediates and QA artifacts
 .render/
 .render_v2/
+.build_v3/
 generated/
 v2_generated/
 inspection/

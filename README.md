@@ -6,9 +6,9 @@
 
 ## Official Cinematic Trailer
 
-Watch the 79-second 2.5D psychological mystery trailer: [`trailer/two_second_witness_trailer.mp4`](trailer/two_second_witness_trailer.mp4). Source stills, narration, depth animation build, English captions, and creative notes are in [`trailer/`](trailer/README.md).
+Watch the official 45-second cinematic reveal trailer: [`trailer/two_second_witness_trailer.mp4`](trailer/two_second_witness_trailer.mp4). The V3.1 cut adds a faster opening, scene-specific changes, procedural micro-animation, a complete select/confirm/advance gameplay interaction, and one consolidated end card. The one-command production pipeline and creative notes are in [`trailer/`](trailer/README.md).
 
-A smaller, documented learning project is available in [`storyboard-example/`](storyboard-example/README.md). It includes the image-generation prompts, editable YAML shot list, complete build script, rendered 15-second working example, and an extensive [`Windows 11 beginning-to-end workflow`](storyboard-example/WINDOWS_11_COMPLETE_WORKFLOW.md).
+Rebuild the complete 1920×1080, 24 fps H.264 master from the repository root with `python trailer.py`. A smaller learning project remains available in [`storyboard-example/`](storyboard-example/README.md).
 
 This repository is **clean — no previous application code, content, documentation, assets, or architecture**. Only identifiers needed for Google Play update continuity are preserved. Old app is not foundation, dependency, or reference. Future content, experiences, systems will be recreated from new vision.
 
