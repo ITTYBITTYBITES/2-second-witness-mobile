@@ -17,6 +17,7 @@ const PrivacyDialogScene := preload("res://src/ui/dialogs/PrivacyTermsDialog.tsc
 @onready var status_label: Label = $MainVBox/Margin/VBox/Loader/Status
 @onready var footer_label: Label = $Footer
 @onready var dialog_layer: Control = $PrivacyDialogLayer
+@onready var splash_image: TextureRect = $SplashImage
 
 var _elapsed: float = 0.0
 var _boot_completed: bool = false
@@ -28,9 +29,20 @@ var _spinner_rotate_tween: Tween = null
 func _ready() -> void:
 	_elapsed = 0.0
 	_is_navigating = false
+	_load_splash_image()
 	_apply_theme()
 	_animate_in()
 	_connect_boot()
+
+func _load_splash_image() -> void:
+	if splash_image:
+		var path := "res://assets/splash/two_second_witness_splash.png"
+		if ResourceLoader.exists(path):
+			splash_image.texture = load(path)
+			splash_image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+			splash_image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+		else:
+			splash_image.visible = false
 
 func _connect_boot() -> void:
 	var boot_node := _find_boot_node()
@@ -71,6 +83,8 @@ func _find_boot_node() -> Node:
 func _apply_theme() -> void:
 	if $Background:
 		$Background.color = Color(0.055, 0.055, 0.07, 1.0)
+	if splash_image:
+		splash_image.modulate.a = 0.5
 	if not ThemeService:
 		return
 	var tokens := ThemeService.tokens
@@ -150,6 +164,8 @@ func _on_ready_to_proceed() -> void:
 		return
 	if _needs_privacy_acknowledgment():
 		_show_privacy_dialog()
+	elif _needs_onboarding():
+		_navigate_tutorial()
 	else:
 		_navigate_home()
 
@@ -158,9 +174,16 @@ func _needs_privacy_acknowledgment() -> bool:
 		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
 		if prefs.get("privacy_acknowledged", false):
 			return false
+	if SettingsService and SettingsService.get_value("privacy_acknowledged", false):
+		return false
+	return true
+
+func _needs_onboarding() -> bool:
+	if ProfileService:
+		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
 		if prefs.get("onboarding_completed", false):
 			return false
-	if SettingsService and SettingsService.get_value("privacy_acknowledged", false):
+	if SettingsService and SettingsService.get_value("first_launch_completed", false):
 		return false
 	return true
 
@@ -208,20 +231,29 @@ func _on_privacy_accepted() -> void:
 	if ProfileService:
 		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
 		prefs["privacy_acknowledged"] = true
-		prefs["onboarding_completed"] = true
 		ProfileService.profile["preferences"] = prefs
 		ProfileService.save()
 	if SettingsService:
 		SettingsService.set_value("privacy_acknowledged", true)
-		SettingsService.set_value("first_launch_completed", true)
 	if AnalyticsService:
 		AnalyticsService.log_event("privacy_acknowledged")
-	# Dismiss dialog then continue to Main Menu.
+	# Dismiss dialog then continue to Tutorial.
 	if dialog_layer:
 		dialog_layer.visible = false
 	if _privacy_dialog:
 		_privacy_dialog.visible = false
-	_navigate_home()
+	_navigate_tutorial()
+
+func _navigate_tutorial() -> void:
+	if _is_navigating:
+		return
+	_is_navigating = true
+	var tween := create_tween()
+	tween.tween_property(self, "modulate:a", 0.0, 0.4).set_ease(Tween.EASE_IN)
+	tween.finished.connect(func():
+		if NavigationService:
+			NavigationService.navigate_to("tutorial")
+	)
 
 func _on_view_privacy_policy() -> void:
 	# Open placeholder URL while keeping the first-launch acceptance modal in place.

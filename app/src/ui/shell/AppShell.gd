@@ -18,6 +18,7 @@ const SCREEN_SCENES := {
 	"publisher_splash": "res://src/ui/screens/PublisherSplashScreen.tscn",
 	"title_splash":    "res://src/ui/screens/TitleSplashScreen.tscn",
 	"splash":          "res://src/ui/screens/TitleSplashScreen.tscn",
+	"tutorial":        "res://src/ui/screens/TutorialScreen.tscn",
 	"observation":     "res://src/ui/screens/ObservationChallengeScreen.tscn",
 	"memory_question": "res://src/ui/screens/MemoryQuestionScreen.tscn",
 	"result":          "res://src/ui/screens/ResultScreen.tscn",
@@ -164,6 +165,7 @@ func _create_placeholder_screen(route: String) -> Control:
 	return ctrl
 
 func _update_chrome(route: String) -> void:
+	_apply_safe_area() # Update offsets based on route-specific bar visibility
 	var is_tab := true
 	var routes_script = load("res://src/core/navigation/AppRoutes.gd")
 	if routes_script:
@@ -326,8 +328,13 @@ func _apply_safe_area() -> void:
 		nav_layer.offset_right = -right
 	# Content container respects safe area
 	if content_container:
-		content_container.offset_top = top + 64  # top bar height approx
-		content_container.offset_bottom = -bottom - 80 if nav_bar and nav_bar.visible else -bottom
+		var current_route = NavigationService.current_route if NavigationService else "home"
+		var is_splash := current_route in ["publisher_splash", "title_splash", "splash"]
+		var top_offset = top + (64 if not is_splash else 0)
+		var bottom_offset = -bottom - (80 if nav_bar and nav_bar.visible else 0)
+
+		content_container.offset_top = top_offset
+		content_container.offset_bottom = bottom_offset
 		content_container.offset_left = left
 		content_container.offset_right = -right
 
