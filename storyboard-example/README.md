@@ -17,6 +17,20 @@ The included rendered result is:
 
 [`output/two_second_witness_storyboard_example.mp4`](output/two_second_witness_storyboard_example.mp4)
 
+## Complete Windows 11 guide
+
+The extensive beginning-to-end production manual—including the original brief, all ten source-image prompts, change-edit prompts, narration direction, masking, animation, audio, Windows setup, validation, and troubleshooting—is available here:
+
+[`WINDOWS_11_COMPLETE_WORKFLOW.md`](WINDOWS_11_COMPLETE_WORKFLOW.md)
+
+Windows helper scripts:
+
+```powershell
+.\storyboard-example\setup-windows.ps1
+.\storyboard-example\build-on-windows.ps1 -Mode Example
+.\storyboard-example\build-on-windows.ps1 -Mode Full
+```
+
 ## Quick start
 
 From the repository root:
@@ -32,11 +46,14 @@ If FFmpeg is installed on the system, the script uses it. Otherwise, `imageio-ff
 
 ```text
 storyboard-example/
-├── README.md                 This guide
-├── prompts.md                Reusable image-generation prompts
-├── storyboard.yaml           Human-editable shot list
-├── build.py                  Complete example renderer
-├── requirements.txt          Python dependencies
+├── README.md                         Example guide
+├── WINDOWS_11_COMPLETE_WORKFLOW.md   Extensive beginning-to-end manual
+├── prompts.md                        Reusable image-generation prompts
+├── storyboard.yaml                   Human-editable shot list
+├── build.py                          Complete example renderer
+├── setup-windows.ps1                 Windows environment setup
+├── build-on-windows.ps1              Windows build helper
+├── requirements.txt                  Python dependencies
 └── output/
     └── two_second_witness_storyboard_example.mp4
 ```

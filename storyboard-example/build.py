@@ -29,8 +29,22 @@ except ImportError as exc:
 
 HERE = Path(__file__).resolve().parent
 BUILD = HERE / ".build"
-FONT = Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
-FONT_BOLD = Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
+def find_font(bold: bool = False) -> Path:
+    """Find a usable sans-serif font on Windows, Linux, or macOS."""
+    candidates = [
+        Path("C:/Windows/Fonts/segoeuib.ttf" if bold else "C:/Windows/Fonts/segoeui.ttf"),
+        Path("C:/Windows/Fonts/arialbd.ttf" if bold else "C:/Windows/Fonts/arial.ttf"),
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+        Path("/System/Library/Fonts/Supplemental/Arial Bold.ttf" if bold else "/System/Library/Fonts/Supplemental/Arial.ttf"),
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    raise FileNotFoundError("No supported sans-serif font was found. Update find_font() with an installed TTF path.")
+
+
+FONT = find_font(False)
+FONT_BOLD = find_font(True)
 PURPLE = (124, 92, 255)
 WHITE = (238, 239, 243)
 MUTED = (148, 153, 166)
