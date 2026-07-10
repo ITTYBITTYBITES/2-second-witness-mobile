@@ -119,7 +119,7 @@ func _style_quick_play(tokens: Dictionary) -> void:
 	var btn: Button = get_node("Margin/Scroll/VBox/QuickPlayButton")
 	# Try to upgrade to AppButton for consistent styling
 	var app_button_script = load("res://src/ui/components/AppButton.gd")
-	if app_button_script and not btn is preload("res://src/ui/components/AppButton.gd"):
+	if app_button_script and btn.get_script() != app_button_script:
 		# Just style manually to match AppButton
 		pass
 	var radius: int = tokens.get("radius_md", 12)
