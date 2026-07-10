@@ -659,7 +659,9 @@ def assemble(clips: list[Path]) -> None:
     run([ffmpeg,"-hide_banner","-loglevel","error","-y","-f","concat","-safe","0","-i",str(concat),"-c","copy",str(silent)])
     run([
         ffmpeg,"-hide_banner","-loglevel","error","-y","-i",str(silent),"-i",str(GEN/"trailer_v2_mix.wav"),
-        "-map","0:v:0","-map","1:a:0","-c:v","copy","-c:a","aac","-b:a","256k","-shortest","-movflags","+faststart",
+        "-map","0:v:0","-map","1:a:0","-c:v","copy",
+        "-af","loudnorm=I=-16:TP=-1.5:LRA=11:measured_I=-20.36:measured_TP=-5.23:measured_LRA=17.70:measured_thresh=-33.21:offset=4.57:linear=false",
+        "-c:a","aac","-b:a","256k","-ar","48000","-shortest","-movflags","+faststart",
         "-metadata","title=Two Second Witness — 2.5D Cinematic Identity Trailer",
         "-metadata","artist=ITTYBITTYBITES",
         "-metadata","comment=Observe. Remember. Discover what changed.",str(OUTPUT),

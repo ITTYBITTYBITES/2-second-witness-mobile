@@ -9,7 +9,7 @@ A 79-second, 16:9 identity trailer for the psychological observation mystery gam
 
 - **Runtime:** 1:19
 - **Picture:** 1920×1080, 24 fps, H.264 High Profile, YUV 4:2:0
-- **Audio:** 48 kHz stereo AAC, 256 kbps
+- **Audio:** 48 kHz stereo AAC, 256 kbps; web-normalized to approximately −16 LUFS
 - **Container:** MP4 with fast-start metadata for web playback
 - **Tone:** restrained investigative mystery; cool slate shadows, practical amber light, subtle violet observation motif
 - **Accessibility:** English captions in SRT and WebVTT formats
