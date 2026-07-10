@@ -39,6 +39,9 @@ func notify_boot_completed() -> void:
 	print("[PublisherSplash] Boot completed notified")
 
 func _animate_in() -> void:
+	if AccessibilityService and AccessibilityService.is_reduced_motion_enabled():
+		modulate.a = 1.0
+		return
 	modulate.a = 0.0
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
@@ -72,6 +75,10 @@ func _navigate_next() -> void:
 	if _is_navigating:
 		return
 	_is_navigating = true
+	if AccessibilityService and AccessibilityService.is_reduced_motion_enabled():
+		if NavigationService:
+			NavigationService.navigate_to("title_splash")
+		return
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	tween.tween_property(self, "modulate:a", 0.0, 0.32).set_ease(Tween.EASE_IN)

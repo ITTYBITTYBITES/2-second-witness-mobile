@@ -54,6 +54,7 @@ anchors_preset=12
 anchor_top=1.0
 anchor_right=1.0
 anchor_bottom=1.0
+offset_top=-76.0
 grow_horizontal=2
 grow_vertical=0
 mouse_filter=2
@@ -62,14 +63,17 @@ mouse_filter=2
 layout_mode=1
 anchors_preset=10
 anchor_right=1.0
+offset_bottom=56.0
 grow_horizontal=2
 mouse_filter=2
 
 [node name="TopBar" type="Panel" parent="TopBarLayer"]
 layout_mode=1
-anchors_preset=10
+anchors_preset=15
 anchor_right=1.0
+anchor_bottom=1.0
 grow_horizontal=2
+grow_vertical=2
 script=ExtResource("2_topbar")
 
 [node name="Margin" type="MarginContainer" parent="TopBarLayer/TopBar"]
@@ -79,13 +83,17 @@ anchor_right=1.0
 anchor_bottom=1.0
 grow_horizontal=2
 grow_vertical=2
+custom_constants/margin_left=12
+custom_constants/margin_right=12
+custom_constants/margin_top=4
+custom_constants/margin_bottom=4
 
 [node name="HBox" type="HBoxContainer" parent="TopBarLayer/TopBar/Margin"]
 layout_mode=2
 alignment=1
 
 [node name="BackButton" type="Button" parent="TopBarLayer/TopBar/Margin/HBox"]
-custom_minimum_size=Vector2(40, 40)
+custom_minimum_size=Vector2(48, 48)
 layout_mode=2
 text="Back"
 
@@ -101,23 +109,22 @@ layout_mode=2
 alignment=2
 
 [node name="SettingsButton" type="Button" parent="TopBarLayer/TopBar/Margin/HBox/Actions"]
-custom_minimum_size=Vector2(40, 40)
+custom_minimum_size=Vector2(48, 48)
 layout_mode=2
 text="Settings"
 
 [node name="ProfileButton" type="Button" parent="TopBarLayer/TopBar/Margin/HBox/Actions"]
-custom_minimum_size=Vector2(40, 40)
+custom_minimum_size=Vector2(48, 48)
 layout_mode=2
 text="Profile"
 
 [node name="MainNavigation" type="Panel" parent="NavigationLayer"]
 layout_mode=1
-anchors_preset=12
-anchor_top=1.0
+anchors_preset=15
 anchor_right=1.0
 anchor_bottom=1.0
 grow_horizontal=2
-grow_vertical=0
+grow_vertical=2
 script=ExtResource("3_nav")
 
 [node name="Margin" type="MarginContainer" parent="NavigationLayer/MainNavigation"]

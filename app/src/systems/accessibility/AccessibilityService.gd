@@ -21,8 +21,8 @@ func initialize() -> void:
 		return
 
 	if SettingsService:
-		_font_scale = SettingsService.get_value("accessibility_font_scaling", 1.0)
-		_reduced_motion = SettingsService.get_value("accessibility_reduce_motion", false)
+		_font_scale = SettingsService.get_value("font_scale", 1.0)
+		_reduced_motion = SettingsService.is_reduced_motion()
 		_high_contrast = SettingsService.get_value("high_contrast", false)
 		_haptics_enabled = SettingsService.get_value("haptics_enabled", true)
 		_screen_reader_hints = SettingsService.get_value("accessibility_screen_reader_hints", false)
@@ -83,15 +83,11 @@ func get_animation_duration(base_duration: float) -> float:
 func apply_accessibility_to_control(control: Control) -> void:
 	if not control:
 		return
-	# Apply font scale if labels/buttons
-	if _font_scale != 1.0:
-		if control is Label:
-			var lbl := control as Label
-			# Adjust via theme override if possible
-			lbl.add_theme_font_size_override("font_size", int(16 * _font_scale))
-		elif control is Button:
-			var btn := control as Button
-			btn.add_theme_font_size_override("font_size", int(16 * _font_scale))
+	# ThemeService owns scaled typography so component-specific text hierarchy is
+	# preserved. AccessibilityService enforces interaction affordances only.
+	if control is BaseButton:
+		control.custom_minimum_size.y = maxf(control.custom_minimum_size.y, 48.0)
+		control.focus_mode = Control.FOCUS_ALL
 
 func vibrate(duration_ms: int = 50, _amplitude: float = 0.5) -> void:
 	if not _haptics_enabled:

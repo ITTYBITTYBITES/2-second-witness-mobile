@@ -29,6 +29,7 @@ custom_constants/margin_bottom=16
 
 [node name="VBox" type="VBoxContainer" parent="Card/Margin"]
 layout_mode=2
+custom_constants/separation=8
 
 [node name="TopRow" type="HBoxContainer" parent="Card/Margin/VBox"]
 layout_mode=2
@@ -56,5 +57,7 @@ text="Observe quickly"
 autowrap_mode=3
 
 [node name="PlayButton" type="Button" parent="Card/Margin/VBox"]
+custom_minimum_size=Vector2(0, 48)
 layout_mode=2
+size_flags_horizontal=3
 text="Play"

@@ -57,9 +57,14 @@ func _apply_theme() -> void:
 	var tokens = ThemeService.tokens
 	var title_color: Color = tokens.get("text_primary", Color.WHITE)
 	$VBox/TitleRow/Title.add_theme_color_override("font_color", title_color)
-	$VBox/TitleRow/Title.add_theme_font_size_override("font_size", 20)
+	ThemeService.apply_typography($VBox/TitleRow/Title, "title")
 	$VBox/Subtitle.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
-	$VBox/Subtitle.add_theme_font_size_override("font_size", 14)
+	ThemeService.apply_typography($VBox/Subtitle, "caption")
+	if has_node("VBox/TitleRow/ActionButton"):
+		var action: Button = $VBox/TitleRow/ActionButton
+		ThemeService.apply_typography(action, "label")
+		action.custom_minimum_size.y = maxf(action.custom_minimum_size.y, 48.0)
+		action.focus_mode = Control.FOCUS_ALL
 
 func set_title(t: String) -> void:
 	title_text = t

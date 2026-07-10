@@ -26,8 +26,8 @@ func _ensure_ui() -> void:
 	margin.name = "Margin"
 	margin.add_theme_constant_override("margin_left", 16)
 	margin.add_theme_constant_override("margin_right", 16)
-	margin.add_theme_constant_override("margin_top", 80)
-	margin.add_theme_constant_override("margin_bottom", 90)
+	margin.add_theme_constant_override("margin_top", 16)
+	margin.add_theme_constant_override("margin_bottom", 16)
 	add_child(margin)
 
 	var s := ScrollContainer.new()
@@ -73,10 +73,8 @@ func _ensure_ui() -> void:
 	reset_btn.name = "ResetButton"
 	reset_btn.text = "Reset Profile"
 	reset_btn.custom_minimum_size = Vector2(0, 48)
-	reset_btn.visible = OS.is_debug_build()
+	reset_btn.visible = false
 	vb.add_child(reset_btn)
-	if reset_btn.visible:
-		reset_btn.pressed.connect(_on_reset_pressed)
 
 	scroll = s
 	vbox = vb
@@ -84,10 +82,8 @@ func _ensure_ui() -> void:
 func _wire_actions() -> void:
 	if has_node("Margin/Scroll/VBox/ResetButton"):
 		var btn: Button = $Margin/Scroll/VBox/ResetButton
-		btn.visible = OS.is_debug_build()
-		btn.text = "Reset Profile"
-		if btn.visible and not btn.pressed.is_connected(_on_reset_pressed):
-			btn.pressed.connect(_on_reset_pressed)
+		# Device-test APKs use the same production-facing profile UI.
+		btn.visible = false
 
 func _create_avatar_card() -> Control:
 	var card := PanelContainer.new()
@@ -140,6 +136,10 @@ func _apply_theme() -> void:
 	if not ThemeService:
 		return
 	var tokens = ThemeService.tokens
+	if has_node("Margin/Scroll/VBox/Title"):
+		ThemeService.apply_label_style($Margin/Scroll/VBox/Title, "headline", "text_primary")
+	if has_node("Margin/Scroll/VBox/ProgressHeader"):
+		ThemeService.apply_label_style($Margin/Scroll/VBox/ProgressHeader, "title", "text_primary")
 	if has_node("Margin/Scroll/VBox"):
 		for child in $Margin/Scroll/VBox.get_children():
 			if child is PanelContainer:
@@ -178,7 +178,7 @@ func _refresh() -> void:
 	if has_node("%s/NameLabel" % avatar_path):
 		var avatar_vbox := get_node(avatar_path)
 		avatar_vbox.get_node("NameLabel").text = profile.get("display_name", "Witness")
-		avatar_vbox.get_node("IdLabel").text = "ID: %s" % profile.get("id", "---")
+		avatar_vbox.get_node("IdLabel").text = "Local profile • no sign-in"
 		var created_at: String = profile.get("created_at", "")
 		var total_sessions: int = profile.get("total_sessions", 0)
 		avatar_vbox.get_node("SinceLabel").text = "Member since %s - %d sessions" % [
@@ -246,6 +246,15 @@ func _refresh_level_card() -> void:
 	progress.value = xp
 	progress.custom_minimum_size = Vector2(0, 8)
 	progress.show_percentage = false
+	if ThemeService:
+		var progress_bg := StyleBoxFlat.new()
+		progress_bg.bg_color = ThemeService.get_color("surface_elevated")
+		progress_bg.set_corner_radius_all(4)
+		var progress_fill := StyleBoxFlat.new()
+		progress_fill.bg_color = ThemeService.get_color("primary_text")
+		progress_fill.set_corner_radius_all(4)
+		progress.add_theme_stylebox_override("background", progress_bg)
+		progress.add_theme_stylebox_override("fill", progress_fill)
 	vbox.add_child(progress)
 
 func _refresh_stats() -> void:
@@ -258,11 +267,11 @@ func _refresh_stats() -> void:
 	var stats: Dictionary = ProfileService.get_stats() if ProfileService else {}
 
 	var stat_defs := [
-		{"key": "observations_made", "label": "Observed", "icon": "OBS"},
-		{"key": "correct_observations", "label": "Correct", "icon": "OK"},
-		{"key": "fastest_reaction_ms", "label": "Fastest", "icon": "MS", "format": "%d ms"},
-		{"key": "streak_best", "label": "Best Streak", "icon": "BEST"},
-		{"key": "streak_current", "label": "Current Streak", "icon": "NOW"},
+		{"key": "observations_made", "label": "Observed"},
+		{"key": "correct_observations", "label": "Correct"},
+		{"key": "fastest_reaction_ms", "label": "Fastest", "format": "%d ms"},
+		{"key": "streak_best", "label": "Best streak"},
+		{"key": "streak_current", "label": "Current streak"},
 	]
 
 	for def in stat_defs:
@@ -281,6 +290,13 @@ func _refresh_stats() -> void:
 func _create_stat_card(label: String, value: String, icon: String) -> Control:
 	var card := PanelContainer.new()
 	card.custom_minimum_size = Vector2(0, 80)
+	if ThemeService:
+		var style := StyleBoxFlat.new()
+		style.bg_color = ThemeService.get_color("surface")
+		style.border_color = ThemeService.get_color("border")
+		style.set_border_width_all(1)
+		style.set_corner_radius_all(12)
+		card.add_theme_stylebox_override("panel", style)
 
 	var m := MarginContainer.new()
 	m.add_theme_constant_override("margin_left", 12)
@@ -354,14 +370,16 @@ func _refresh_experience_progress() -> void:
 
 		var played_lbl := Label.new()
 		played_lbl.text = "Played %d" % prog.get("played", 0)
-		played_lbl.add_theme_font_size_override("font_size", 12)
+		if ThemeService:
+			ThemeService.apply_label_style(played_lbl, "caption", "text_secondary")
 		row.add_child(played_lbl)
 
 		var best_lbl := Label.new()
-		best_lbl.text = "Best: %d" % prog.get("best_score", 0)
+		best_lbl.text = "Best %d" % prog.get("best_score", 0)
 		best_lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		best_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-		best_lbl.add_theme_font_size_override("font_size", 12)
+		if ThemeService:
+			ThemeService.apply_label_style(best_lbl, "caption", "text_secondary")
 		row.add_child(best_lbl)
 
 func on_navigated_to(_params: Dictionary) -> void:

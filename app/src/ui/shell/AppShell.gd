@@ -121,6 +121,8 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 		_current_screen.visible = true
 		if _current_screen.has_method("on_navigated_to"):
 			_current_screen.call("on_navigated_to", params)
+		if _current_screen.has_method("_apply_theme"):
+			_current_screen.call("_apply_theme")
 	else:
 		var scene_path: String = SCREEN_SCENES.get(route, "")
 		if scene_path == "":
@@ -165,7 +167,6 @@ func _create_placeholder_screen(route: String) -> Control:
 	return ctrl
 
 func _update_chrome(route: String) -> void:
-	_apply_safe_area() # Update offsets based on route-specific bar visibility
 	var is_tab := true
 	var routes_script = load("res://src/core/navigation/AppRoutes.gd")
 	if routes_script:
@@ -183,7 +184,11 @@ func _update_chrome(route: String) -> void:
 			nav_bar.set_current_route(route)
 
 	if top_bar:
-		top_bar.visible = not is_splash
+		# Root tabs own their page headings and bottom navigation. Reserve the
+		# compact app bar for contextual/back navigation only.
+		top_bar.visible = not is_splash and not is_tab
+		if top_bar.has_method("set_show_actions"):
+			top_bar.set_show_actions(false)
 		if top_bar.has_method("set_show_back"):
 			var show_back := not is_tab and not is_splash
 			if route == "about":
@@ -204,6 +209,9 @@ func _update_chrome(route: String) -> void:
 		}
 		if top_bar.has_method("set_title"):
 			top_bar.set_title(title_map.get(route, route.capitalize()))
+
+	# Visibility must be finalized before offsets are calculated.
+	_apply_safe_area()
 
 func _on_phase_changed(new_phase, old_phase) -> void:
 	print("[AppShell] Phase %s -> %s" % [str(old_phase), str(new_phase)])
@@ -268,6 +276,8 @@ func _on_theme_changed(_theme_name: String, _tokens: Dictionary) -> void:
 	_apply_theme()
 	_setup_loading_overlay()
 	_setup_error_banner()
+	if _current_screen and _current_screen.has_method("_apply_theme"):
+		_current_screen.call("_apply_theme")
 
 func _on_topbar_back() -> void:
 	if NavigationService:
@@ -292,48 +302,58 @@ func _apply_safe_area() -> void:
 	if not ThemeService:
 		return
 	var area: Rect2i = DisplayServer.get_display_safe_area()
-	var win_size: Vector2i = DisplayServer.window_get_size()
-	var top: int = area.position.y
-	var bottom: int = maxi(0, win_size.y - (area.position.y + area.size.y))
-	var left: int = area.position.x
-	var right: int = maxi(0, win_size.x - (area.position.x + area.size.x))
-	# Ensure minimum safe areas for phones with gesture nav / notches
-	if OS.get_name() == "Android" or OS.get_name() == "iOS":
-		top = max(top, 44)
-		bottom = max(bottom, 24)
+	var window_size: Vector2i = DisplayServer.window_get_size()
+	if area.size.x <= 0 or area.size.y <= 0:
+		area = Rect2i(Vector2i.ZERO, window_size)
+	var viewport_size := get_viewport_rect().size
+	var scale_x := viewport_size.x / float(maxi(window_size.x, 1))
+	var scale_y := viewport_size.y / float(maxi(window_size.y, 1))
+	var raw_top := maxi(area.position.y, 0)
+	var raw_bottom := maxi(0, window_size.y - (area.position.y + area.size.y))
+	var raw_left := maxi(area.position.x, 0)
+	var raw_right := maxi(0, window_size.x - (area.position.x + area.size.x))
+	var top := int(round(raw_top * scale_y))
+	var bottom := int(round(raw_bottom * scale_y))
+	var left := int(round(raw_left * scale_x))
+	var right := int(round(raw_right * scale_x))
+	if OS.get_name() in ["Android", "iOS"]:
+		top = maxi(top, 24)
+		bottom = maxi(bottom, 16)
 	else:
-		# Editor / desktop fallback – still add a little breathing room
-		top = max(top, 12)
-		bottom = max(bottom, 12)
+		top = maxi(top, 8)
+		bottom = maxi(bottom, 8)
 
-	# Top bar offset
+	var current_route := NavigationService.current_route if NavigationService else "home"
+	var is_splash: bool = current_route in ["publisher_splash", "title_splash", "splash"]
+
 	var top_bar_layer := get_node_or_null("TopBarLayer")
 	if top_bar_layer:
 		top_bar_layer.offset_top = top
+		top_bar_layer.offset_bottom = top + 56
 		top_bar_layer.offset_left = left
 		top_bar_layer.offset_right = -right
-	# Navigation bottom offset
 	var nav_layer := get_node_or_null("NavigationLayer")
 	if nav_layer:
+		nav_layer.offset_top = -bottom - 76
 		nav_layer.offset_bottom = -bottom
 		nav_layer.offset_left = left
 		nav_layer.offset_right = -right
-	# Content container respects safe area
+
 	if content_container:
-		var current_route = NavigationService.current_route if NavigationService else "home"
-		var is_splash: bool = current_route in ["publisher_splash", "title_splash", "splash"]
-		var top_offset = top + (64 if not is_splash else 0)
-		var bottom_offset = -bottom - (80 if nav_bar and nav_bar.visible else 0)
+		# Splash art stays full bleed; its privacy modal applies its own safe
+		# margins. App content uses logical safe-area insets plus visible chrome.
+		content_container.offset_top = 0 if is_splash else top + (56 if top_bar and top_bar.visible else 0)
+		content_container.offset_bottom = 0 if is_splash else -bottom - (76 if nav_bar and nav_bar.visible else 0)
+		content_container.offset_left = 0 if is_splash else left
+		content_container.offset_right = 0 if is_splash else -right
 
-		content_container.offset_top = top_offset
-		content_container.offset_bottom = bottom_offset
-		content_container.offset_left = left
-		content_container.offset_right = -right
+	if error_banner:
+		error_banner.offset_top = top
+		error_banner.offset_left = left
+		error_banner.offset_right = -right
 
-	# Store in ThemeService tokens for children to use
-	if ThemeService and ThemeService.tokens:
-		ThemeService.tokens["safe_area_top"] = top
-		ThemeService.tokens["safe_area_bottom"] = bottom
+	ThemeService.tokens["safe_area_top"] = top
+	ThemeService.tokens["safe_area_bottom"] = bottom
 
 func _setup_loading_overlay() -> void:
 	if not loading_overlay or not ThemeService:
@@ -361,16 +381,12 @@ func _setup_loading_overlay() -> void:
 		if first is Label:
 			spinner_label = first
 	if spinner_label:
-		spinner_label.text = "⟳"
-		ThemeService.apply_typography(spinner_label, "display")
-		spinner_label.add_theme_color_override("font_color", tokens.get("primary", Color.WHITE))
+		# Text remains legible with fallback fonts and does not introduce a
+		# perpetual-motion accessibility exception.
+		spinner_label.text = "Preparing"
+		ThemeService.apply_typography(spinner_label, "label")
+		spinner_label.add_theme_color_override("font_color", tokens.get("primary_text", Color.WHITE))
 		spinner_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		# Animate rotation
-		if not spinner_label.has_meta("spinner_tween_started"):
-			spinner_label.set_meta("spinner_tween_started", true)
-			var tw := spinner_label.create_tween()
-			tw.set_loops()
-			tw.tween_property(spinner_label, "rotation_degrees", 360.0, 1.2).from(0.0)
 
 func _setup_error_banner() -> void:
 	if not error_banner or not ThemeService:
@@ -419,6 +435,25 @@ func _setup_error_banner() -> void:
 		var btn: Button = close_btn_node
 		btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("body"))
 		btn.add_theme_color_override("font_color", ThemeService.get_color("text_primary"))
+
+func _unhandled_input(event: InputEvent) -> void:
+	if not event.is_action_pressed("ui_cancel") or not NavigationService:
+		return
+	var route := NavigationService.current_route
+	if route in ["publisher_splash", "title_splash", "splash"]:
+		# The first-launch disclosure is mandatory and system back must not
+		# dismiss it or quit behind it.
+		if _current_screen and _current_screen.has_method("is_privacy_visible"):
+			if bool(_current_screen.call("is_privacy_visible")):
+				get_viewport().set_input_as_handled()
+				return
+		return
+	if NavigationService.can_go_back():
+		NavigationService.go_back()
+		get_viewport().set_input_as_handled()
+	elif route != "home":
+		NavigationService.navigate_to("home")
+		get_viewport().set_input_as_handled()
 
 func _capitalize_first(s: String) -> String:
 	if s.is_empty():

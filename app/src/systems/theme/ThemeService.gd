@@ -20,14 +20,15 @@ const DARK_TOKENS := {
 	"surface_elevated": Color("#2A2A36"),
 	"primary": Color("#6A3DFF"),
 	"primary_variant": Color("#8A68FF"),
+	"primary_text": Color("#A78FFF"),
 	"secondary": Color("#2EE6A6"),
 	"accent": Color("#FF6B6B"),
 	"text_primary": Color("#FFFFFF"),
 	"text_secondary": Color("#B8B8CC"),
-	"text_tertiary": Color("#8A8AA3"),
+	"text_tertiary": Color("#A2A2B8"),
 	"text_on_primary": Color("#FFFFFF"),
-	"border": Color("#2E2E3A"),
-	"border_strong": Color("#3D3D4D"),
+	"border": Color("#67677A"),
+	"border_strong": Color("#858599"),
 	"error": Color("#FF4D5E"),
 	"error_container": Color("#3A1A1E"),
 	"success": Color("#2EE6A6"),
@@ -67,16 +68,17 @@ const LIGHT_TOKENS := {
 	"background_tertiary": Color("#F0F0F5"),
 	"surface": Color("#FFFFFF"),
 	"surface_elevated": Color("#FFFFFF"),
-	"primary": Color("#5A3EDC"),
-	"primary_variant": Color("#7C5CFF"),
-	"secondary": Color("#0ABF86"),
+	"primary": Color("#5336C9"),
+	"primary_variant": Color("#6A4BE0"),
+	"primary_text": Color("#4930B2"),
+	"secondary": Color("#087A59"),
 	"accent": Color("#FF4D5E"),
 	"text_primary": Color("#111113"),
 	"text_secondary": Color("#4A4A5E"),
 	"text_tertiary": Color("#6B6B80"),
 	"text_on_primary": Color("#FFFFFF"),
-	"border": Color("#E8E8EF"),
-	"border_strong": Color("#D4D4DF"),
+	"border": Color("#8C8C9A"),
+	"border_strong": Color("#5D5D68"),
 	"error": Color("#E53945"),
 	"error_container": Color("#FFEBEE"),
 	"success": Color("#0ABF86"),
@@ -144,6 +146,7 @@ func set_theme_mode(mode: ThemeMode) -> void:
 			tokens = DARK_TOKENS.duplicate(true)
 			current_theme_name = "dark"
 
+	_apply_accessibility_tokens()
 	theme_changed.emit(current_theme_name, tokens)
 	EventBus.publish_theme_changed(current_theme_name)
 	print("[ThemeService] Theme changed to %s" % current_theme_name)
@@ -162,7 +165,11 @@ func get_typography(style: String) -> Dictionary:
 	return typo.get(style, {"size": 18, "weight": 400})
 
 func get_font_size(style: String) -> int:
-	return get_typography(style).get("size", 18)
+	var base_size: int = int(get_typography(style).get("size", 18))
+	var scale := 1.0
+	if SettingsService:
+		scale = SettingsService.get_font_scale()
+	return maxi(12, int(round(base_size * scale)))
 
 func apply_typography(control: Control, style: String) -> void:
 	if not control:
@@ -199,12 +206,45 @@ func apply_theme_to_control(control: Control) -> void:
 	# Can be extended to apply theme dynamically
 	theme_tokens_updated.emit()
 
+func _apply_accessibility_tokens() -> void:
+	if not SettingsService or not SettingsService.get_value("high_contrast", false):
+		return
+	if current_theme_name == "light":
+		tokens["background"] = Color("#FFFFFF")
+		tokens["background_secondary"] = Color("#FFFFFF")
+		tokens["surface"] = Color("#FFFFFF")
+		tokens["surface_elevated"] = Color("#F4F4F7")
+		tokens["text_primary"] = Color("#000000")
+		tokens["text_secondary"] = Color("#24242B")
+		tokens["text_tertiary"] = Color("#3E3E48")
+		tokens["primary_text"] = Color("#321B9D")
+		tokens["border"] = Color("#565660")
+		tokens["border_strong"] = Color("#24242B")
+	else:
+		tokens["background"] = Color("#000000")
+		tokens["background_secondary"] = Color("#08080A")
+		tokens["surface"] = Color("#101014")
+		tokens["surface_elevated"] = Color("#18181E")
+		tokens["text_primary"] = Color("#FFFFFF")
+		tokens["text_secondary"] = Color("#E6E6F0")
+		tokens["text_tertiary"] = Color("#CCCCD8")
+		tokens["primary_text"] = Color("#BBAAFF")
+		tokens["border"] = Color("#8C8C9A")
+		tokens["border_strong"] = Color("#FFFFFF")
+
 func _on_setting_changed(key: String, value: Variant) -> void:
-	if key == "theme_mode":
-		match str(value):
-			"dark":
-				set_theme_mode(ThemeMode.DARK)
-			"light":
-				set_theme_mode(ThemeMode.LIGHT)
-			_:
-				set_theme_mode(ThemeMode.DARK)
+	match key:
+		"theme_mode":
+			match str(value):
+				"dark":
+					set_theme_mode(ThemeMode.DARK)
+				"light":
+					set_theme_mode(ThemeMode.LIGHT)
+				_:
+					set_theme_mode(ThemeMode.DARK)
+		"high_contrast":
+			set_theme_mode(current_mode)
+		"font_scale":
+			# Typography is calculated lazily from the saved scale. Emitting the
+			# theme signal refreshes all cached screens after the slider is released.
+			theme_changed.emit(current_theme_name, tokens)

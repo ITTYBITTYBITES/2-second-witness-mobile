@@ -20,8 +20,8 @@ grow_horizontal=2
 grow_vertical=2
 custom_constants/margin_left=16
 custom_constants/margin_right=16
-custom_constants/margin_top=80
-custom_constants/margin_bottom=90
+custom_constants/margin_top=16
+custom_constants/margin_bottom=16
 
 [node name="Scroll" type="ScrollContainer" parent="Margin"]
 layout_mode=2
@@ -33,6 +33,10 @@ layout_mode=2
 size_flags_horizontal=3
 size_flags_vertical=3
 custom_constants/separation=20
+
+[node name="Title" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode=2
+text="Profile"
 
 [node name="AvatarCard" type="PanelContainer" parent="Margin/Scroll/VBox"]
 custom_minimum_size=Vector2(0, 120)
@@ -62,7 +66,7 @@ text="Witness"
 
 [node name="IdLabel" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/VBox"]
 layout_mode=2
-text="ID: witness_..."
+text="Local profile • no sign-in"
 
 [node name="SinceLabel" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/VBox"]
 layout_mode=2
@@ -86,6 +90,6 @@ text="Progress"
 layout_mode=2
 
 [node name="ResetButton" type="Button" parent="Margin/Scroll/VBox"]
-custom_minimum_size=Vector2(0, 44)
+custom_minimum_size=Vector2(0, 48)
 layout_mode=2
 text="Reset Profile (Debug)"

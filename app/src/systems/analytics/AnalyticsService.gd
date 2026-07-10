@@ -8,7 +8,7 @@ signal screen_view_logged(screen_name: String)
 
 var _event_buffer: Array[Dictionary] = []
 var _session_id: String = ""
-var _is_enabled: bool = true
+var _is_enabled: bool = false
 var _initialized: bool = false
 const MAX_BUFFER := 200
 const BUFFER_FILE := "user://analytics_buffer.jsonl"
@@ -21,9 +21,9 @@ func initialize() -> void:
 	if _initialized:
 		return
 	_session_id = _generate_session_id()
-	_is_enabled = true
+	_is_enabled = false
 	if SettingsService:
-		_is_enabled = SettingsService.get_value("analytics_enabled", true)
+		_is_enabled = SettingsService.get_value("analytics_enabled", false)
 		SettingsService.setting_changed.connect(_on_setting_changed)
 
 	_initialized = true
@@ -42,7 +42,11 @@ func _on_setting_changed(key: String, value: Variant) -> void:
 		print("[AnalyticsService] Enabled set to %s" % str(_is_enabled))
 
 func log_event(event_name: String, params: Dictionary = {}) -> void:
-	if not _is_enabled and event_name != "session_start":
+	# AppShell can render the publisher splash before boot has loaded privacy
+	# preferences. Never persist an event until initialization has read them.
+	if not _initialized:
+		return
+	if not _is_enabled:
 		return
 
 	var entry := {

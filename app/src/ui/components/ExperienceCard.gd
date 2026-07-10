@@ -25,6 +25,8 @@ func _ready() -> void:
 		_build_ui()
 	_apply_theme()
 	_refresh_ui()
+	if ThemeService and not ThemeService.theme_changed.is_connected(_on_theme_changed):
+		ThemeService.theme_changed.connect(_on_theme_changed)
 
 func _attempt_find_nodes() -> void:
 	title_label = _find_label([
@@ -99,6 +101,7 @@ func _build_ui() -> void:
 	card.add_child(margin)
 	var vbox = VBoxContainer.new()
 	vbox.name = "VBox"
+	vbox.add_theme_constant_override("separation", 8)
 	margin.add_child(vbox)
 	var top_row = HBoxContainer.new()
 	top_row.name = "TopRow"
@@ -132,6 +135,8 @@ func _build_ui() -> void:
 	var play = Button.new()
 	play.name = "PlayButton"
 	play.text = "Play"
+	play.custom_minimum_size = Vector2(0, 48)
+	play.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	vbox.add_child(play)
 	play_button = play
 	_ensure_wired()
@@ -160,14 +165,29 @@ func _apply_theme() -> void:
 		style.border_width_bottom = 1
 		card_root.add_theme_stylebox_override("panel", style)
 	if title_label:
-		title_label.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-		title_label.add_theme_font_size_override("font_size", 18)
+		ThemeService.apply_label_style(title_label, "title", "text_primary")
+		title_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	if desc_label:
-		desc_label.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
-		desc_label.add_theme_font_size_override("font_size", 13)
+		ThemeService.apply_label_style(desc_label, "body_small", "text_secondary")
+		desc_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	if meta_label:
-		meta_label.add_theme_color_override("font_color", tokens.get("text_tertiary", Color.GRAY))
-		meta_label.add_theme_font_size_override("font_size", 11)
+		ThemeService.apply_label_style(meta_label, "caption", "text_tertiary")
+		meta_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if play_button:
+		var button_style := StyleBoxFlat.new()
+		button_style.bg_color = tokens.get("primary", Color("#6A3DFF"))
+		button_style.set_corner_radius_all(int(tokens.get("radius_md", 12)))
+		var button_hover := button_style.duplicate() as StyleBoxFlat
+		button_hover.bg_color = tokens.get("primary_variant", Color("#8A68FF"))
+		play_button.add_theme_stylebox_override("normal", button_style)
+		play_button.add_theme_stylebox_override("hover", button_hover)
+		play_button.add_theme_stylebox_override("pressed", button_hover)
+		play_button.add_theme_stylebox_override("focus", button_hover)
+		play_button.add_theme_color_override("font_color", tokens.get("text_on_primary", Color.WHITE))
+		ThemeService.apply_typography(play_button, "button")
+		play_button.custom_minimum_size.y = maxf(play_button.custom_minimum_size.y, 48.0)
+		play_button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		play_button.focus_mode = Control.FOCUS_ALL
 
 func _refresh_ui() -> void:
 	if manifest.is_empty():
@@ -225,6 +245,9 @@ func _refresh_ui() -> void:
 		style.corner_radius_bottom_left = 12
 		style.corner_radius_bottom_right = 12
 		icon_panel.add_theme_stylebox_override("panel", style)
+
+func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:
+	_apply_theme()
 
 func _on_play_pressed() -> void:
 	if manifest.is_empty():
