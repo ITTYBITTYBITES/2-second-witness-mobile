@@ -4,6 +4,10 @@
 > **How much can you notice in two seconds?**
 > Premium digital exhibit exploring attention, observation, and memory.
 
+## Official Cinematic Trailer
+
+Watch the 83-second psychological mystery trailer: [`trailer/two_second_witness_trailer.mp4`](trailer/two_second_witness_trailer.mp4). Source stills, narration, English captions, creative notes, and the reproducible trailer build are in [`trailer/`](trailer/README.md).
+
 This repository is **clean — no previous application code, content, documentation, assets, or architecture**. Only identifiers needed for Google Play update continuity are preserved. Old app is not foundation, dependency, or reference. Future content, experiences, systems will be recreated from new vision.
 
 **Publisher:** ITTYBITTYBITES — Curiosity • Creativity • Discovery

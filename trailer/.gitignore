@@ -1,0 +1,9 @@
+# Reproducible render intermediates and QA artifacts
+.render/
+generated/
+inspection/
+contact_sheet.jpg
+generated_contact_sheet.jpg
+qa_*.jpg
+
+# Keep the delivered master, captions, source stills, narration, and build script.
