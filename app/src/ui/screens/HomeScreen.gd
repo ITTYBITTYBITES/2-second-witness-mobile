@@ -51,6 +51,10 @@ func _apply_theme() -> void:
 	var tokens := ThemeService.tokens
 	if tokens.is_empty():
 		return
+	# Keep decorative art subordinate to content in both color modes.
+	var menu_background := get_node_or_null("MainMenuBackground") as TextureRect
+	if menu_background:
+		menu_background.modulate = Color(1, 1, 1, 0.18 if ThemeService.current_theme_name == "light" else 0.5)
 	# Explicit editorial styling so the main menu reads as a consistent,
 	# premium mobile layout instead of scattered default Godot sizing.
 	_style_hero_card(tokens)
