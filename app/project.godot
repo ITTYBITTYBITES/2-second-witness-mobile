@@ -31,6 +31,10 @@ ChallengeRegistry="*res://src/gameplay/ChallengeRegistry.gd"
 NavigationService="*res://src/core/navigation/NavigationService.gd"
 AppState="*res://src/core/app/AppState.gd"
 
+[debug]
+
+gdscript/warnings/inference_on_variant=1
+
 [display]
 window/size/viewport_width=1080
 window/size/viewport_height=1920
