@@ -36,8 +36,10 @@ AppState="*res://src/core/app/AppState.gd"
 gdscript/warnings/inference_on_variant=1
 
 [display]
-window/size/viewport_width=1080
-window/size/viewport_height=1920
+# Mobile UI uses a dp-like 360 x 640 logical canvas. Android scales this
+# responsively to the device while preserving 48-unit minimum touch targets.
+window/size/viewport_width=360
+window/size/viewport_height=640
 window/size/resizable=false
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"

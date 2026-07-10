@@ -15,7 +15,8 @@ const DEFAULT_CONFIG := {
 	"publisher_tagline": "Interactive Experiences",
 	"environment": "development", # development / staging / production
 	"package_id": "com.ittybittybites.the2secondwitness",
-	"privacy_policy_url": "https://ittybittybites.github.io/two-second-witness/privacy",
+	"privacy_policy_url": "https://ittybittybites.github.io/privacy-policy/",
+	"website_url": "https://ittybittybites.itch.io/2-second-witness",
 	"feature_flags": {
 		"analytics_enabled": true,
 		"ads_enabled": false,

@@ -37,6 +37,8 @@ func start_boot() -> void:
 	_run_step("save", BootStep.INIT_SAVE, _boot_save)
 	_run_step("settings", BootStep.INIT_SETTINGS, _boot_settings)
 	_run_step("theme", BootStep.INIT_THEME, _boot_theme)
+	_run_step("accessibility", BootStep.INIT_SETTINGS, _boot_accessibility)
+	_run_step("analytics", BootStep.INIT_CONFIG, _boot_analytics)
 	_run_step("content", BootStep.INIT_CONTENT, _boot_content)
 	_run_step("audio", BootStep.INIT_AUDIO, _boot_audio)
 	_run_step("navigation", BootStep.INIT_NAV, _boot_nav)
@@ -88,6 +90,16 @@ func _boot_theme() -> Dictionary:
 func _boot_settings() -> Dictionary:
 	if SettingsService:
 		SettingsService.initialize()
+	return {}
+
+func _boot_accessibility() -> Dictionary:
+	if AccessibilityService:
+		AccessibilityService.initialize()
+	return {}
+
+func _boot_analytics() -> Dictionary:
+	if AnalyticsService:
+		AnalyticsService.initialize()
 	return {}
 
 func _boot_save() -> Dictionary:

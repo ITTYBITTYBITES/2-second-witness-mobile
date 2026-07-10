@@ -19,6 +19,7 @@ anchor_bottom=1.0
 grow_horizontal=2
 grow_vertical=2
 color=Color(0.0588235, 0.0588235, 0.0784314, 1)
+mouse_filter=2
 
 [node name="Margin" type="MarginContainer" parent="."]
 layout_mode=1
@@ -29,40 +30,38 @@ grow_horizontal=2
 grow_vertical=2
 custom_constants/margin_left=16
 custom_constants/margin_right=16
-custom_constants/margin_top=80
+custom_constants/margin_top=16
 custom_constants/margin_bottom=16
 
 [node name="Scroll" type="ScrollContainer" parent="Margin"]
 layout_mode=2
 size_flags_horizontal=3
 size_flags_vertical=3
+horizontal_scroll_mode=0
 
 [node name="VBox" type="VBoxContainer" parent="Margin/Scroll"]
 layout_mode=2
 size_flags_horizontal=3
-custom_constants/separation=24
-
-[node name="Title" type="Label" parent="Margin/Scroll/VBox"]
-layout_mode=2
-text="About"
-horizontal_alignment=0
+custom_constants/separation=20
 
 [node name="BrandSection" type="VBoxContainer" parent="Margin/Scroll/VBox"]
 layout_mode=2
+custom_constants/separation=8
 
 [node name="BrandTitle" type="Label" parent="Margin/Scroll/VBox/BrandSection"]
 layout_mode=2
 text="ITTYBITTYBITES"
-autowrap_mode=0
+autowrap_mode=3
 
 [node name="BrandDesc" type="Label" parent="Margin/Scroll/VBox/BrandSection"]
 layout_mode=2
-text="A curated platform of interactive experiences exploring curiosity, creativity, and discovery. Museum-quality digital exhibits designed to spark observation and wonder."
+text="Interactive experiences built around curiosity, creativity, and discovery."
 autowrap_mode=3
 
 [node name="WebsiteButton" type="Button" parent="Margin/Scroll/VBox/BrandSection"]
+custom_minimum_size=Vector2(0, 48)
 layout_mode=2
-text="Visit ittybittybites.com"
+text="Visit Two Second Witness online"
 
 [node name="AboutTitle" type="Label" parent="Margin/Scroll/VBox"]
 layout_mode=2
@@ -70,35 +69,34 @@ text="Two Second Witness"
 
 [node name="AboutDesc" type="Label" parent="Margin/Scroll/VBox"]
 layout_mode=2
-text="How much can you notice in two seconds? This experience explores attention, observation, and memory through short visual challenges. Premium digital exhibit, calm and intelligent."
+text="How much can you notice in two seconds? Study a scene, remember the details, and answer one focused question."
 autowrap_mode=3
 
 [node name="PrivacySection" type="VBoxContainer" parent="Margin/Scroll/VBox"]
 layout_mode=2
+custom_constants/separation=8
 
 [node name="PrivacyTitle" type="Label" parent="Margin/Scroll/VBox/PrivacySection"]
 layout_mode=2
-text="Privacy"
+text="Privacy & data"
 
 [node name="PrivacyDesc" type="Label" parent="Margin/Scroll/VBox/PrivacySection"]
 layout_mode=2
-text="• No account required
-• No personal information collected
-• No advertising currently included
-• Progress stored locally on your device"
+text="• No account required\n• No personal information collected\n• No advertising currently included\n• Progress stored locally on your device"
 autowrap_mode=3
 
 [node name="PrivacyButton" type="Button" parent="Margin/Scroll/VBox/PrivacySection"]
+custom_minimum_size=Vector2(0, 48)
 layout_mode=2
-text="Privacy Policy"
+text="Read Privacy Policy"
 
 [node name="VersionInfo" type="Label" parent="Margin/Scroll/VBox"]
 layout_mode=2
-text="Version 2.0.0
-Package: com.ittybittybites.the2secondwitness
-© ITTYBITTYBITES"
+text="Version 4.0.0\n© ITTYBITTYBITES"
+autowrap_mode=3
 
 [node name="BackButton" type="Button" parent="Margin/Scroll/VBox"]
-custom_minimum_size=Vector2(0, 56)
+visible=false
+custom_minimum_size=Vector2(0, 52)
 layout_mode=2
-text="Back"
+text="Back to Settings"

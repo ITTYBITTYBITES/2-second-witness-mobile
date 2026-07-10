@@ -33,7 +33,7 @@ const DEFAULT_SETTINGS := {
 	"auto_play_next": false,
 	"confirm_exit": true,
 	# Privacy
-	"analytics_enabled": true,
+	"analytics_enabled": false,
 	"crash_reporting": true,
 	# Accessibility
 	"accessibility_font_scaling": 1.0,

@@ -106,7 +106,7 @@ func _apply_theme() -> void:
 			style_normal.content_margin_right = 24
 			style_normal.content_margin_top = 14
 			style_normal.content_margin_bottom = 14
-			add_theme_color_override("font_color", Color.WHITE)
+			add_theme_color_override("font_color", Color("#101014"))
 			style_hover = style_normal.duplicate()
 			style_hover.bg_color = style_normal.bg_color.lightened(0.1)
 			style_pressed = style_normal.duplicate()

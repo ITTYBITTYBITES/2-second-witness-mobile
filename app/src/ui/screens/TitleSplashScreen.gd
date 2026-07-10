@@ -5,12 +5,13 @@ extends Control
 
 const MIN_DISPLAY_TIME := 1.2
 const MAX_BOOT_WAIT_TIME := 6.0
-const PRIVACY_POLICY_URL := "https://ittybittybites.github.io/two-second-witness/privacy"
+const PRIVACY_POLICY_URL := "https://ittybittybites.github.io/privacy-policy/"
 
 const PrivacyDialogScene := preload("res://src/ui/dialogs/PrivacyTermsDialog.tscn")
 
 @onready var splash_image: TextureRect = $SplashImage
 @onready var dialog_layer: Control = $PrivacyDialogLayer
+@onready var loading_status: Label = $LoadingStatus
 
 var _elapsed: float = 0.0
 var _boot_completed: bool = false
@@ -23,7 +24,9 @@ func _ready() -> void:
 	_load_splash_image()
 	_animate_in()
 	_connect_boot()
-	print("[TitleSplash] Ready - image only")
+	if ThemeService:
+		ThemeService.apply_label_style(loading_status, "caption", "text_secondary")
+	print("[TitleSplash] Ready")
 
 func _load_splash_image() -> void:
 	if splash_image:
@@ -74,6 +77,9 @@ func _find_boot_node() -> Node:
 	return null
 
 func _animate_in() -> void:
+	if AccessibilityService and AccessibilityService.is_reduced_motion_enabled():
+		modulate.a = 1.0
+		return
 	modulate.a = 0.0
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
@@ -91,11 +97,13 @@ func _process(delta: float) -> void:
 		_on_ready_to_proceed()
 		set_process(false)
 
-func _on_boot_step_started(_step: String) -> void:
-	pass
+func _on_boot_step_started(step: String) -> void:
+	if loading_status:
+		loading_status.text = "Preparing %s…" % step.capitalize()
 
 func _on_boot_step_completed(_step: String, _duration_ms: int) -> void:
-	pass
+	if loading_status:
+		loading_status.text = "Preparing your experience…"
 
 func _on_boot_completed() -> void:
 	_boot_completed = true
@@ -135,7 +143,7 @@ func _needs_privacy_acknowledgment() -> bool:
 func _show_privacy_dialog() -> void:
 	if dialog_layer and dialog_layer.visible:
 		return
-	print("[TitleSplash] Showing Privacy & Terms modal")
+	print("[TitleSplash] Showing Privacy & Data modal")
 	if _privacy_dialog == null:
 		_privacy_dialog = PrivacyDialogScene.instantiate() as Control
 		if dialog_layer:
@@ -187,14 +195,23 @@ func _on_privacy_accepted() -> void:
 	_navigate_home()
 
 func _on_view_privacy_policy() -> void:
-	if OS.shell_open(PRIVACY_POLICY_URL) != OK:
-		print("[TitleSplash] Unable to open privacy policy URL: %s" % PRIVACY_POLICY_URL)
+	var policy_url := PRIVACY_POLICY_URL
+	if ConfigService:
+		policy_url = str(ConfigService.get_value("privacy_policy_url", policy_url))
+	if OS.shell_open(policy_url) != OK:
+		print("[TitleSplash] Unable to open privacy policy URL: %s" % policy_url)
+		if _privacy_dialog and _privacy_dialog.has_method("show_policy_error"):
+			_privacy_dialog.call("show_policy_error")
 
 func _navigate_home() -> void:
 	if _is_navigating:
 		return
 	_is_navigating = true
 	print("[TitleSplash] Navigating to Home")
+	if AccessibilityService and AccessibilityService.is_reduced_motion_enabled():
+		if NavigationService:
+			NavigationService.navigate_to("home")
+		return
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	tween.tween_property(self, "modulate:a", 0.0, 0.35).set_ease(Tween.EASE_IN)
@@ -202,6 +219,9 @@ func _navigate_home() -> void:
 		if NavigationService:
 			NavigationService.navigate_to("home")
 	)
+
+func is_privacy_visible() -> bool:
+	return dialog_layer != null and dialog_layer.visible
 
 func _input(event: InputEvent) -> void:
 	# Block skip while privacy dialog is visible

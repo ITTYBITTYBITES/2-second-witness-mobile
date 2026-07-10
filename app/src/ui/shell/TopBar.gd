@@ -3,7 +3,8 @@ extends Control
 
 @export var title_text: String = "Two Second Witness" : set = set_title
 @export var show_back: bool = false
-@export var show_profile: bool = true
+@export var show_profile: bool = false
+@export var show_actions: bool = false
 
 signal back_pressed()
 signal profile_pressed()
@@ -31,6 +32,7 @@ func _ensure_ui() -> void:
 		if back_button:
 			back_button.custom_minimum_size = Vector2(touch_min, touch_min)
 			back_button.text = "←"
+			back_button.tooltip_text = "Back"
 			if not back_button.pressed.is_connected(_on_back):
 				back_button.pressed.connect(_on_back)
 		if profile_button:
@@ -129,15 +131,17 @@ func _style_bar_button(btn: Button, min_size: int) -> void:
 	ThemeService.apply_typography(btn, "title")
 	btn.add_theme_color_override("font_color", ThemeService.get_color("text_primary"))
 	btn.flat = true
-	btn.focus_mode = Control.FOCUS_NONE
+	btn.focus_mode = Control.FOCUS_ALL
 	btn.autowrap_mode = TextServer.AUTOWRAP_OFF
 	btn.clip_text = true
 
 func _refresh() -> void:
 	if has_node("Margin/HBox/BackButton"):
 		$Margin/HBox/BackButton.visible = show_back
+	if has_node("Margin/HBox/Actions"):
+		$Margin/HBox/Actions.visible = show_actions
 	if has_node("Margin/HBox/Actions/ProfileButton"):
-		$Margin/HBox/Actions/ProfileButton.visible = show_profile
+		$Margin/HBox/Actions/ProfileButton.visible = show_profile and show_actions
 	if has_node("Margin/HBox/Title"):
 		$Margin/HBox/Title.text = title_text
 
@@ -148,6 +152,10 @@ func set_title(t: String) -> void:
 
 func set_show_back(v: bool) -> void:
 	show_back = v
+	_refresh()
+
+func set_show_actions(value: bool) -> void:
+	show_actions = value
 	_refresh()
 
 func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:

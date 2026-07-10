@@ -26,7 +26,7 @@ func _ensure_ui() -> void:
 				bg_rect.name = "MainMenuBackground"
 				bg_rect.texture = bg_tex
 				bg_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-				bg_rect.stretch_mode = TextureRect.STRETCH_SCALE
+				bg_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 				bg_rect.layout_mode = 3
 				bg_rect.anchors_preset = 15
 				bg_rect.anchor_right = 1.0
@@ -38,7 +38,7 @@ func _ensure_ui() -> void:
 
 	if has_node("Margin/Scroll/VBox/QuickPlayButton"):
 		var btn: Button = $Margin/Scroll/VBox/QuickPlayButton
-		btn.text = "Play Now - Start a Round"
+		btn.text = "Play Now"
 		if not btn.pressed.is_connected(_on_quick_play):
 			btn.pressed.connect(_on_quick_play)
 
@@ -154,7 +154,7 @@ func _style_section_label(tokens: Dictionary) -> void:
 		return
 	var section: Label = get_node("Margin/Scroll/VBox/SectionLabel")
 	if ThemeService:
-		ThemeService.apply_label_style(section, "label", "primary")
+		ThemeService.apply_label_style(section, "label", "primary_text")
 	else:
 		section.add_theme_color_override("font_color", tokens.get("primary", Color("#6A3DFF")))
 		section.add_theme_font_size_override("font_size", 16)

@@ -1,28 +1,33 @@
 extends Control
-## PrivacyTermsDialog - Centered modal presented over the loading screen on first launch
-## Lightweight, editorial style. Blocks interaction with content beneath until accepted.
+## PrivacyTermsDialog - First-launch, blocking, responsive privacy disclosure.
 
 signal accepted()
 signal view_policy()
 
 @onready var scrim: ColorRect = $Scrim
-@onready var panel: PanelContainer = $Margin/CenterVBox/DialogPanel
-@onready var title_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Title
-@onready var welcome_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body/Welcome
-@onready var bullets_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body/Bullets
-@onready var footer_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body/Footer
-@onready var policy_btn: Button = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions/PolicyButton
-@onready var accept_btn: Button = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions/AcceptButton
+@onready var outer_margin: MarginContainer = $Margin
+@onready var panel: PanelContainer = $Margin/Center/DialogPanel
+@onready var title_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/Title
+@onready var welcome_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/BodyScroll/Body/Welcome
+@onready var intro_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/BodyScroll/Body/Intro
+@onready var bullets_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/BodyScroll/Body/Bullets
+@onready var footer_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/BodyScroll/Body/Footer
+@onready var policy_btn: Button = $Margin/Center/DialogPanel/InnerMargin/VBox/Actions/PolicyButton
+@onready var accept_btn: Button = $Margin/Center/DialogPanel/InnerMargin/VBox/Actions/AcceptButton
+@onready var status_label: Label = $Margin/Center/DialogPanel/InnerMargin/VBox/Status
 
 func _ready() -> void:
 	_enforce_layout()
 	_apply_theme()
-	_connect()
+	_connect_actions()
 	_animate_in()
+	if ThemeService and not ThemeService.theme_changed.is_connected(_on_theme_changed):
+		ThemeService.theme_changed.connect(_on_theme_changed)
+	if not get_viewport().size_changed.is_connected(_apply_responsive_size):
+		get_viewport().size_changed.connect(_apply_responsive_size)
+	accept_btn.call_deferred("grab_focus")
 
 func _enforce_layout() -> void:
-	# Force the modal to fill the viewport, sit on top, and stop input so the
-	# dialog is clearly visible and content beneath cannot be tapped through.
 	set_anchors_preset(Control.PRESET_FULL_RECT)
 	offset_left = 0
 	offset_right = 0
@@ -30,154 +35,105 @@ func _enforce_layout() -> void:
 	offset_bottom = 0
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	z_index = 100
-	if scrim:
-		scrim.set_anchors_preset(Control.PRESET_FULL_RECT)
-		scrim.mouse_filter = Control.MOUSE_FILTER_STOP
+	scrim.set_anchors_preset(Control.PRESET_FULL_RECT)
+	scrim.mouse_filter = Control.MOUSE_FILTER_STOP
 	_apply_responsive_size()
 
 func _apply_responsive_size() -> void:
-	# Keep the panel within a comfortable reading width on phones and tablets.
-	var viewport_width := get_viewport().get_visible_rect().size.x
-	var target_width := clampf(viewport_width - 64.0, 320.0, 520.0)
-	if panel:
-		panel.custom_minimum_size = Vector2(target_width, 0)
-		panel.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	if not is_instance_valid(panel):
+		return
+	var available := size
+	if available.x <= 0.0 or available.y <= 0.0:
+		available = get_viewport().get_visible_rect().size
+	var safe_top := 0
+	var safe_bottom := 0
+	if ThemeService:
+		safe_top = int(ThemeService.tokens.get("safe_area_top", 0))
+		safe_bottom = int(ThemeService.tokens.get("safe_area_bottom", 0))
+	outer_margin.add_theme_constant_override("margin_left", 16)
+	outer_margin.add_theme_constant_override("margin_right", 16)
+	outer_margin.add_theme_constant_override("margin_top", max(16, safe_top + 8))
+	outer_margin.add_theme_constant_override("margin_bottom", max(16, safe_bottom + 8))
+	var target_width := clampf(available.x - 32.0, 240.0, 520.0)
+	var target_height := clampf(available.y - float(max(32, safe_top + safe_bottom + 16)), 380.0, 520.0)
+	panel.custom_minimum_size = Vector2(target_width, target_height)
+	panel.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	panel.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 
-func _connect() -> void:
-	if accept_btn and not accept_btn.pressed.is_connected(_on_accept):
+func _connect_actions() -> void:
+	if not accept_btn.pressed.is_connected(_on_accept):
 		accept_btn.pressed.connect(_on_accept)
-	if policy_btn and not policy_btn.pressed.is_connected(_on_policy):
+	if not policy_btn.pressed.is_connected(_on_policy):
 		policy_btn.pressed.connect(_on_policy)
 
 func _apply_theme() -> void:
 	var tokens := ThemeService.tokens if ThemeService else {}
-	if scrim:
-		scrim.color = Color(0,0,0,0.55)
-	# Panel
-	if panel:
-		var style := StyleBoxFlat.new()
-		style.bg_color = tokens.get("surface_elevated", Color("#2A2A36"))
-		style.border_color = tokens.get("border_strong", Color("#3D3D4D"))
-		style.border_width_left = 1
-		style.border_width_right = 1
-		style.border_width_top = 1
-		style.border_width_bottom = 1
-		style.corner_radius_top_left = tokens.get("radius_lg", 20)
-		style.corner_radius_top_right = tokens.get("radius_lg", 20)
-		style.corner_radius_bottom_left = tokens.get("radius_lg", 20)
-		style.corner_radius_bottom_right = tokens.get("radius_lg", 20)
-		# Padding handled by the InnerMargin MarginContainer in the scene.
-		panel.add_theme_stylebox_override("panel", style)
+	scrim.color = Color(0, 0, 0, 0.72)
+	var panel_style := StyleBoxFlat.new()
+	panel_style.bg_color = tokens.get("surface_elevated", Color("#2A2A36"))
+	panel_style.border_color = tokens.get("border_strong", Color("#3D3D4D"))
+	panel_style.set_border_width_all(1)
+	var radius: int = int(tokens.get("radius_lg", 20))
+	panel_style.set_corner_radius_all(radius)
+	panel.add_theme_stylebox_override("panel", panel_style)
 
-	if title_label:
-		title_label.text = "Privacy & Terms"
-		if ThemeService:
-			ThemeService.apply_label_style(title_label, "title", "text_primary")
-		title_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ThemeService.apply_label_style(title_label, "title", "text_primary")
+	ThemeService.apply_label_style(welcome_label, "body", "text_primary")
+	ThemeService.apply_label_style(intro_label, "body_small", "text_secondary")
+	ThemeService.apply_label_style(bullets_label, "body_small", "text_secondary")
+	ThemeService.apply_label_style(footer_label, "caption", "text_tertiary")
+	ThemeService.apply_label_style(status_label, "caption", "error")
+	for label in [title_label, welcome_label, intro_label, bullets_label, footer_label, status_label]:
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
-	if welcome_label:
-		welcome_label.text = "Welcome to Two Second Witness."
-		if ThemeService:
-			ThemeService.apply_label_style(welcome_label, "body", "text_primary")
-		welcome_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		welcome_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_apply_button_style(accept_btn, true)
+	_apply_button_style(policy_btn, false)
 
-	if bullets_label:
-		bullets_label.text = "\n".join([
-			"• Progress is stored locally on your device.",
-			"• No account is required.",
-			"• No personal information is collected.",
-			"• No advertising is currently included."
-		])
-		if ThemeService:
-			ThemeService.apply_label_style(bullets_label, "body_small", "text_secondary")
-		bullets_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-
-	if footer_label:
-		footer_label.text = "By continuing, you acknowledge these terms."
-		if ThemeService:
-			ThemeService.apply_label_style(footer_label, "caption", "text_tertiary")
-		footer_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		footer_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-
-	# Buttons
-	if accept_btn:
-		accept_btn.text = "Accept"
-		_apply_button_style(accept_btn,
-			tokens.get("primary", Color("#6A3DFF")),
-			tokens.get("primary_variant", Color("#8A68FF")),
-			tokens.get("text_on_primary", Color.WHITE),
-			tokens.get("radius_md", 12))
-	if policy_btn:
-		policy_btn.text = "Privacy Policy"
-		_apply_button_style(policy_btn,
-			Color.TRANSPARENT,
-			Color(tokens.get("surface_elevated", Color("#2A2A36"))),
-			tokens.get("text_secondary", Color.GRAY),
-			tokens.get("radius_md", 12),
-			true)
-
-func _apply_button_style(
-	btn: Button,
-	bg: Color,
-	bg_hover: Color,
-	fg: Color,
-	radius: int,
-	ghost: bool = false
-) -> void:
-	var normal := StyleBoxFlat.new()
-	normal.bg_color = bg
-	normal.corner_radius_top_left = radius
-	normal.corner_radius_top_right = radius
-	normal.corner_radius_bottom_left = radius
-	normal.corner_radius_bottom_right = radius
-	normal.content_margin_left = 24
-	normal.content_margin_right = 24
-	normal.content_margin_top = 14
-	normal.content_margin_bottom = 14
-	if ghost:
-		normal.bg_color = Color.TRANSPARENT
-
-	var hover := normal.duplicate()
-	hover.bg_color = bg_hover if not ghost else Color(bg_hover).lerp(Color.WHITE, -0.4)
-	var pressed := normal.duplicate()
-	pressed.bg_color = bg.darkened(0.1)
-
-	btn.add_theme_stylebox_override("normal", normal)
-	btn.add_theme_stylebox_override("hover", hover)
-	btn.add_theme_stylebox_override("pressed", pressed)
-	btn.add_theme_stylebox_override("focus", hover)
-	btn.add_theme_color_override("font_color", fg)
-	if ThemeService:
-		btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("button"))
-	else:
-		btn.add_theme_font_size_override("font_size", 18)
-	btn.custom_minimum_size.y = 48
-	btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+func _apply_button_style(button: Button, primary: bool) -> void:
+	var tokens := ThemeService.tokens
+	var style := StyleBoxFlat.new()
+	style.bg_color = tokens.get("primary", Color("#6A3DFF")) if primary else Color.TRANSPARENT
+	style.set_corner_radius_all(int(tokens.get("radius_md", 12)))
+	style.content_margin_left = 20
+	style.content_margin_right = 20
+	style.content_margin_top = 12
+	style.content_margin_bottom = 12
+	if not primary:
+		style.border_color = tokens.get("border", Color.GRAY)
+		style.set_border_width_all(1)
+	var hover := style.duplicate() as StyleBoxFlat
+	hover.bg_color = tokens.get("primary_variant", Color("#8A68FF")) if primary else tokens.get("surface", Color("#1E1E26"))
+	button.add_theme_stylebox_override("normal", style)
+	button.add_theme_stylebox_override("hover", hover)
+	button.add_theme_stylebox_override("pressed", hover)
+	button.add_theme_stylebox_override("focus", hover)
+	button.add_theme_color_override("font_color", tokens.get("text_on_primary", Color.WHITE) if primary else tokens.get("text_primary", Color.WHITE))
+	ThemeService.apply_typography(button, "button")
+	button.custom_minimum_size.y = maxf(button.custom_minimum_size.y, 48.0)
+	button.focus_mode = Control.FOCUS_ALL
 
 func _animate_in() -> void:
+	if AccessibilityService and AccessibilityService.is_reduced_motion_enabled():
+		modulate.a = 1.0
+		return
 	modulate.a = 0.0
-	if panel:
-		panel.scale = Vector2(0.95, 0.95)
-		var tween := create_tween()
-		tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-		if AccessibilityService and AccessibilityService.is_reduced_motion_enabled():
-			modulate.a = 1.0
-			panel.scale = Vector2.ONE
-			return
-		tween.tween_property(self, "modulate:a", 1.0, 0.25).set_ease(Tween.EASE_OUT)
-		var panel_tween := tween.parallel().tween_property(panel, "scale", Vector2.ONE, 0.3)
-		panel_tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+	var tween := create_tween()
+	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	tween.tween_property(self, "modulate:a", 1.0, 0.2).set_ease(Tween.EASE_OUT)
+
+func show_policy_error() -> void:
+	status_label.visible = true
+	status_label.text = "Unable to open the policy. Check your connection and try again."
+	policy_btn.grab_focus()
 
 func _on_accept() -> void:
 	if AccessibilityService:
 		AccessibilityService.vibrate(30)
-	if AudioService:
-		AudioService.play_ui("ui_click")
 	accepted.emit()
 
 func _on_policy() -> void:
-	if AudioService:
-		AudioService.play_ui("ui_click")
+	status_label.visible = false
 	view_policy.emit()
+
+func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:
+	_apply_theme()

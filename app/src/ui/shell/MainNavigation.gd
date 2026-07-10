@@ -88,9 +88,9 @@ func _apply_theme() -> void:
 	var margin_node := get_node_or_null("Margin")
 	if margin_node is MarginContainer:
 		var m: MarginContainer = margin_node
-		var safe_bottom := int(tokens.get("safe_area_bottom", 0))
-		m.add_theme_constant_override("margin_bottom", max(12, safe_bottom + 8))
-		m.add_theme_constant_override("margin_top", 12)
+		# NavigationLayer is already offset above the device safe area by AppShell.
+		m.add_theme_constant_override("margin_bottom", 8)
+		m.add_theme_constant_override("margin_top", 8)
 		m.add_theme_constant_override("margin_left", 8)
 		m.add_theme_constant_override("margin_right", 8)
 
@@ -141,9 +141,9 @@ func _on_tab_pressed(route: String) -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
 
+	# AppShell owns route changes. Emitting and navigating here caused every tab
+	# tap to be processed twice.
 	tab_selected.emit(route)
-	if NavigationService:
-		NavigationService.navigate_to(route)
 
 	if AnalyticsService:
 		AnalyticsService.log_event("tab_selected", {"route": route})
