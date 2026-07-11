@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://home_screen"]
+[gd_scene load_steps=4 format=3 uid="uid://home_screen"]
 
 [ext_resource type="Script" path="res://src/ui/screens/HomeScreen.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://b8y6q7d62t6l8" path="res://assets/brand/witness_eye_glow.png" id="2_eye"]
 
 [node name="HomeScreen" type="Control" groups=["app_screen"]]
 layout_mode=3
@@ -11,135 +12,221 @@ grow_horizontal=2
 grow_vertical=2
 script=ExtResource("1_script")
 
-[node name="Margin" type="MarginContainer" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 layout_mode=1
 anchors_preset=15
 anchor_right=1.0
 anchor_bottom=1.0
 grow_horizontal=2
 grow_vertical=2
-custom_constants/margin_left=16
-custom_constants/margin_right=16
-custom_constants/margin_top=80
-custom_constants/margin_bottom=90
+color=Color(0.0588235, 0.0588235, 0.0705882, 1)
+mouse_filter=2
 
-[node name="Scroll" type="ScrollContainer" parent="Margin"]
-layout_mode=2
-size_flags_horizontal=3
-size_flags_vertical=3
-
-[node name="VBox" type="VBoxContainer" parent="Margin/Scroll"]
-layout_mode=2
-size_flags_horizontal=3
-size_flags_vertical=3
-custom_constants/separation=20
-
-[node name="HeroCard" type="PanelContainer" parent="Margin/Scroll/VBox"]
-custom_minimum_size=Vector2(0, 160)
-layout_mode=2
-
-[node name="Margin" type="MarginContainer" parent="Margin/Scroll/VBox/HeroCard"]
-layout_mode=2
+[node name="MainMargin" type="MarginContainer" parent="."]
+layout_mode=1
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
 custom_constants/margin_left=20
 custom_constants/margin_right=20
-custom_constants/margin_top=20
-custom_constants/margin_bottom=20
+custom_constants/margin_top=12
+custom_constants/margin_bottom=12
 
-[node name="VBox" type="VBoxContainer" parent="Margin/Scroll/VBox/HeroCard/Margin"]
+[node name="Scroll" type="ScrollContainer" parent="MainMargin"]
+layout_mode=2
+size_flags_horizontal=3
+size_flags_vertical=3
+horizontal_scroll_mode=0
+
+[node name="Content" type="VBoxContainer" parent="MainMargin/Scroll"]
+layout_mode=2
+size_flags_horizontal=3
+size_flags_vertical=3
+custom_constants/separation=28
+
+[node name="Hero" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
+layout_mode=2
+size_flags_horizontal=3
+alignment=1
+
+[node name="BrandLabel" type="Label" parent="MainMargin/Scroll/Content/Hero"]
+layout_mode=2
+size_flags_horizontal=3
+text="TWO SECOND WITNESS"
+horizontal_alignment=1
+
+[node name="SpacerTop" type="Control" parent="MainMargin/Scroll/Content/Hero"]
+custom_minimum_size=Vector2(0, 8)
 layout_mode=2
 
-[node name="Title" type="Label" parent="Margin/Scroll/VBox/HeroCard/Margin/VBox"]
+[node name="YouAreLabel" type="Label" parent="MainMargin/Scroll/Content/Hero"]
 layout_mode=2
-text="YOU ARE
-THE WITNESS"
+size_flags_horizontal=3
+text="YOU ARE"
+horizontal_alignment=1
 
-[node name="Subtitle" type="Label" parent="Margin/Scroll/VBox/HeroCard/Margin/VBox"]
+[node name="WitnessLabel" type="Label" parent="MainMargin/Scroll/Content/Hero"]
 layout_mode=2
-text="Short, replayable tests of observation, memory & reaction"
+size_flags_horizontal=3
+text="THE WITNESS"
+horizontal_alignment=1
 
-[node name="StatsRow" type="HBoxContainer" parent="Margin/Scroll/VBox"]
+[node name="EyeWrap" type="CenterContainer" parent="MainMargin/Scroll/Content/Hero"]
 layout_mode=2
+size_flags_horizontal=3
+
+[node name="Eye" type="TextureRect" parent="MainMargin/Scroll/Content/Hero/EyeWrap"]
+layout_mode=2
+texture=ExtResource("2_eye")
+expand_mode=1
+custom_minimum_size=Vector2(220, 88)
+size_flags_horizontal=4
+size_flags_vertical=4
+stretch_mode=5
+
+[node name="Tagline" type="Label" parent="MainMargin/Scroll/Content/Hero"]
+layout_mode=2
+size_flags_horizontal=3
+text="Sharpen your observation. Test your memory. Beat the clock."
+horizontal_alignment=1
+autowrap_mode=3
+
+[node name="StatsRow" type="HBoxContainer" parent="MainMargin/Scroll/Content"]
+layout_mode=2
+size_flags_horizontal=3
 custom_constants/separation=12
 
-[node name="StatLevel" type="PanelContainer" parent="Margin/Scroll/VBox/StatsRow"]
-custom_minimum_size=Vector2(0, 80)
+[node name="StatLevel" type="PanelContainer" parent="MainMargin/Scroll/Content/StatsRow"]
+layout_mode=2
+size_flags_horizontal=3
+size_flags_stretch_ratio=1.0
+
+[node name="Margin" type="MarginContainer" parent="MainMargin/Scroll/Content/StatsRow/StatLevel"]
+layout_mode=2
+custom_constants/margin_left=14
+custom_constants/margin_right=14
+custom_constants/margin_top=14
+custom_constants/margin_bottom=14
+
+[node name="HBox" type="HBoxContainer" parent="MainMargin/Scroll/Content/StatsRow/StatLevel/Margin"]
+layout_mode=2
+custom_constants/separation=10
+
+[node name="Icon" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatLevel/Margin/HBox"]
+layout_mode=2
+text="✦"
+horizontal_alignment=1
+vertical_alignment=1
+
+[node name="TextVBox" type="VBoxContainer" parent="MainMargin/Scroll/Content/StatsRow/StatLevel/Margin/HBox"]
 layout_mode=2
 size_flags_horizontal=3
 
-[node name="Margin" type="MarginContainer" parent="Margin/Scroll/VBox/StatsRow/StatLevel"]
+[node name="Label" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatLevel/Margin/HBox/TextVBox"]
 layout_mode=2
-custom_constants/margin_left=12
-custom_constants/margin_right=12
-custom_constants/margin_top=12
-custom_constants/margin_bottom=12
+text="LEVEL"
+horizontal_alignment=0
 
-[node name="VBox" type="VBoxContainer" parent="Margin/Scroll/VBox/StatsRow/StatLevel/Margin"]
-layout_mode=2
-
-[node name="Value" type="Label" parent="Margin/Scroll/VBox/StatsRow/StatLevel/Margin/VBox"]
+[node name="Value" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatLevel/Margin/HBox/TextVBox"]
 layout_mode=2
 text="1"
+horizontal_alignment=0
 
-[node name="Label" type="Label" parent="Margin/Scroll/VBox/StatsRow/StatLevel/Margin/VBox"]
+[node name="StatXP" type="PanelContainer" parent="MainMargin/Scroll/Content/StatsRow"]
 layout_mode=2
-text="Level"
+size_flags_horizontal=3
+size_flags_stretch_ratio=1.0
 
-[node name="StatXP" type="PanelContainer" parent="Margin/Scroll/VBox/StatsRow"]
-custom_minimum_size=Vector2(0, 80)
+[node name="Margin" type="MarginContainer" parent="MainMargin/Scroll/Content/StatsRow/StatXP"]
+layout_mode=2
+custom_constants/margin_left=14
+custom_constants/margin_right=14
+custom_constants/margin_top=14
+custom_constants/margin_bottom=14
+
+[node name="HBox" type="HBoxContainer" parent="MainMargin/Scroll/Content/StatsRow/StatXP/Margin"]
+layout_mode=2
+custom_constants/separation=10
+
+[node name="Icon" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatXP/Margin/HBox"]
+layout_mode=2
+text="◉"
+horizontal_alignment=1
+vertical_alignment=1
+
+[node name="TextVBox" type="VBoxContainer" parent="MainMargin/Scroll/Content/StatsRow/StatXP/Margin/HBox"]
 layout_mode=2
 size_flags_horizontal=3
 
-[node name="Margin" type="MarginContainer" parent="Margin/Scroll/VBox/StatsRow/StatXP"]
-layout_mode=2
-custom_constants/margin_left=12
-custom_constants/margin_right=12
-custom_constants/margin_top=12
-custom_constants/margin_bottom=12
-
-[node name="VBox" type="VBoxContainer" parent="Margin/Scroll/VBox/StatsRow/StatXP/Margin"]
-layout_mode=2
-
-[node name="Value" type="Label" parent="Margin/Scroll/VBox/StatsRow/StatXP/Margin/VBox"]
-layout_mode=2
-text="0"
-
-[node name="Label" type="Label" parent="Margin/Scroll/VBox/StatsRow/StatXP/Margin/VBox"]
+[node name="Label" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatXP/Margin/HBox/TextVBox"]
 layout_mode=2
 text="XP"
 
-[node name="StatStreak" type="PanelContainer" parent="Margin/Scroll/VBox/StatsRow"]
-custom_minimum_size=Vector2(0, 80)
-layout_mode=2
-size_flags_horizontal=3
-
-[node name="Margin" type="MarginContainer" parent="Margin/Scroll/VBox/StatsRow/StatStreak"]
-layout_mode=2
-custom_constants/margin_left=12
-custom_constants/margin_right=12
-custom_constants/margin_top=12
-custom_constants/margin_bottom=12
-
-[node name="VBox" type="VBoxContainer" parent="Margin/Scroll/VBox/StatsRow/StatStreak/Margin"]
-layout_mode=2
-
-[node name="Value" type="Label" parent="Margin/Scroll/VBox/StatsRow/StatStreak/Margin/VBox"]
+[node name="Value" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatXP/Margin/HBox/TextVBox"]
 layout_mode=2
 text="0"
 
-[node name="Label" type="Label" parent="Margin/Scroll/VBox/StatsRow/StatStreak/Margin/VBox"]
-layout_mode=2
-text="Streak"
-
-[node name="QuickPlayButton" type="Button" parent="Margin/Scroll/VBox"]
-custom_minimum_size=Vector2(0, 56)
+[node name="StatStreak" type="PanelContainer" parent="MainMargin/Scroll/Content/StatsRow"]
 layout_mode=2
 size_flags_horizontal=3
-text="Quick Play - 2 Seconds"
+size_flags_stretch_ratio=1.0
 
-[node name="SectionLabel" type="Label" parent="Margin/Scroll/VBox"]
+[node name="Margin" type="MarginContainer" parent="MainMargin/Scroll/Content/StatsRow/StatStreak"]
 layout_mode=2
-text="Featured Experience"
+custom_constants/margin_left=14
+custom_constants/margin_right=14
+custom_constants/margin_top=14
+custom_constants/margin_bottom=14
 
-[node name="ExperienceCardPlaceholder" type="Control" parent="Margin/Scroll/VBox"]
-custom_minimum_size=Vector2(0, 200)
+[node name="HBox" type="HBoxContainer" parent="MainMargin/Scroll/Content/StatsRow/StatStreak/Margin"]
+layout_mode=2
+custom_constants/separation=10
+
+[node name="Icon" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatStreak/Margin/HBox"]
+layout_mode=2
+text="🔥"
+horizontal_alignment=1
+vertical_alignment=1
+
+[node name="TextVBox" type="VBoxContainer" parent="MainMargin/Scroll/Content/StatsRow/StatStreak/Margin/HBox"]
+layout_mode=2
+size_flags_horizontal=3
+
+[node name="Label" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatStreak/Margin/HBox/TextVBox"]
+layout_mode=2
+text="STREAK"
+
+[node name="Value" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatStreak/Margin/HBox/TextVBox"]
+layout_mode=2
+text="3"
+
+[node name="BestLabel" type="Label" parent="MainMargin/Scroll/Content/StatsRow/StatStreak/Margin/HBox/TextVBox"]
+layout_mode=2
+text="BEST: 3"
+
+[node name="PlayNowButton" type="Button" parent="MainMargin/Scroll/Content"]
+custom_minimum_size=Vector2(0, 72)
+layout_mode=2
+size_flags_horizontal=3
+text="▶  PLAY NOW
+Start a New Round"
+
+[node name="FeaturedHeader" type="Label" parent="MainMargin/Scroll/Content"]
+layout_mode=2
+size_flags_horizontal=3
+text="FEATURED CHALLENGE"
+
+[node name="FeaturedChallengeHost" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
+layout_mode=2
+size_flags_horizontal=3
+
+[node name="ExperienceCardPlaceholder" type="Control" parent="MainMargin/Scroll/Content/FeaturedChallengeHost"]
+custom_minimum_size=Vector2(0, 180)
+layout_mode=2
+size_flags_horizontal=3
+
+[node name="BottomSpacer" type="Control" parent="MainMargin/Scroll/Content"]
+custom_minimum_size=Vector2(0, 24)
 layout_mode=2

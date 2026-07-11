@@ -1,20 +1,26 @@
 ; Engine configuration file.
-; Two Second Witness - Foundation Rebuild
-; Godot 4.6 - Clean Architecture
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
 
 config_version=5
 
 [application]
+
 config/name="Two Second Witness"
 config/description="Short, replayable experiences focused on observation, memory, reaction, and quick decision-making."
 run/main_scene="res://src/ui/shell/AppShell.tscn"
 config/features=PackedStringArray("4.6", "Mobile")
-boot_splash/image="res://assets/brand/app_icon_1024.png"
-boot_splash/fullsize=false
 boot_splash/bg_color=Color(0.055, 0.055, 0.08, 1)
+boot_splash/stretch_mode=0
+boot_splash/image="res://assets/brand/app_icon_1024.png"
 config/icon="res://assets/brand/app_icon_1024.png"
 
 [autoload]
+
 EventBus="*res://src/core/events/EventBus.gd"
 ConfigService="*res://src/systems/config/ConfigService.gd"
 ErrorHandler="*res://src/core/app/ErrorHandler.gd"
@@ -36,6 +42,7 @@ AppState="*res://src/core/app/AppState.gd"
 gdscript/warnings/inference_on_variant=1
 
 [display]
+
 window/size/viewport_width=1080
 window/size/viewport_height=1920
 window/size/resizable=false
@@ -43,19 +50,24 @@ window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/handheld/orientation=1
 
+[dotnet]
+
+project/assembly_name="TwoSecondWitness"
+
 [input]
+
 tap={
 "deadzone": 0.5,
-"events": [Object(InputEventScreenTouch,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"index":0,"pressed":false,"x":0,"y":0) ]
+"events": [Object(InputEventScreenTouch,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"index":0,"position":Vector2(0, 0),"canceled":false,"pressed":false,"double_tap":false,"script":null)
+]
 }
 
 [input_devices]
+
 pointing/emulate_touch_from_mouse=true
 
 [rendering]
+
 renderer/rendering_method="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(0.06, 0.06, 0.09, 1)
-
-[dotnet]
-project/assembly_name="TwoSecondWitness"

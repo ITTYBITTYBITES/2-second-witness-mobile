@@ -1,11 +1,15 @@
 extends Control
-## ObservationChallengeScreen - Reusable 2-second observation challenge screen
+## ObservationChallengeScreen – Witness Engine – Observation phase
+## Premium UI, matches Home / Boot / Tutorial
+## Gameplay logic unchanged – 2.0s observation, then memory_question
 
 @onready var timer_bar: ProgressBar = $Margin/VBox/TimerBar
-@onready var image_rect: TextureRect = $Margin/VBox/ImageContainer/ObservationImage
+@onready var image_rect: TextureRect = $Margin/VBox/ImageContainer/Margin/ObservationImage
 @onready var countdown_label: Label = $Margin/VBox/CountdownLabel
 @onready var instruction_label: Label = $Margin/VBox/InstructionLabel
 @onready var hint_label: Label = $Margin/VBox/Hint
+@onready var image_container: PanelContainer = $Margin/VBox/ImageContainer
+@onready var background_rect: ColorRect = $Background
 
 var _elapsed: float = 0.0
 var _duration: float = 2.0
@@ -27,18 +31,87 @@ func _ready() -> void:
 	_load_challenge()
 	_start_observation()
 
+func _get_anim_duration(base: float) -> float:
+	if AccessibilityService and AccessibilityService.has_method("get_animation_duration"):
+		return AccessibilityService.get_animation_duration(base)
+	return base
+
+func _should_animate() -> bool:
+	if AccessibilityService and AccessibilityService.has_method("should_animate"):
+		return AccessibilityService.should_animate()
+	return true
+
 func _apply_theme() -> void:
-	if ThemeService:
-		var tokens = ThemeService.tokens
-		if instruction_label:
-			ThemeService.apply_label_style(instruction_label, "body", "text_primary")
-			instruction_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		if countdown_label:
+	var tokens := ThemeService.tokens if ThemeService else {}
+	
+	if background_rect:
+		background_rect.color = tokens.get("background", Color("#0F0F12")) if not tokens.is_empty() else Color("#0F0F12")
+	
+	# Instruction – large "OBSERVE", like Tutorial / Home Witness label
+	if instruction_label:
+		if ThemeService:
+			ThemeService.apply_label_style(instruction_label, "display", "text_primary")
+			instruction_label.add_theme_font_size_override("font_size", 42)
+		else:
+			instruction_label.add_theme_font_size_override("font_size", 42)
+		instruction_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		instruction_label.text = "OBSERVE"
+	
+	# Countdown – purple, headline
+	if countdown_label:
+		if ThemeService:
 			ThemeService.apply_label_style(countdown_label, "headline", "primary")
-			countdown_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		if hint_label:
+		countdown_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	
+	# Hint / challenge title
+	if hint_label:
+		if ThemeService:
 			ThemeService.apply_label_style(hint_label, "body_small", "text_secondary")
-			hint_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		hint_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		hint_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	
+	# Timer bar – purple, rounded, matching Home CTA
+	if timer_bar:
+		timer_bar.show_percentage = false
+		var bg_style := StyleBoxFlat.new()
+		bg_style.bg_color = Color("#24242C")
+		bg_style.corner_radius_top_left = 99
+		bg_style.corner_radius_top_right = 99
+		bg_style.corner_radius_bottom_left = 99
+		bg_style.corner_radius_bottom_right = 99
+		timer_bar.add_theme_stylebox_override("background", bg_style)
+		var fill_style := StyleBoxFlat.new()
+		var primary := tokens.get("primary", Color("#6A3DFF")) if not tokens.is_empty() else Color("#6A3DFF")
+		fill_style.bg_color = primary
+		fill_style.corner_radius_top_left = 99
+		fill_style.corner_radius_top_right = 99
+		fill_style.corner_radius_bottom_left = 99
+		fill_style.corner_radius_bottom_right = 99
+		timer_bar.add_theme_stylebox_override("fill", fill_style)
+	
+	# Image card – premium, matches ExperienceCard
+	if image_container:
+		var style := StyleBoxFlat.new()
+		style.bg_color = tokens.get("surface", Color("#1E1E26")) if not tokens.is_empty() else Color("#1E1E26")
+		var r := tokens.get("radius_lg", 20) if not tokens.is_empty() else 20
+		style.corner_radius_top_left = r
+		style.corner_radius_top_right = r
+		style.corner_radius_bottom_left = r
+		style.corner_radius_bottom_right = r
+		style.border_color = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
+		style.border_width_left = 1
+		style.border_width_right = 1
+		style.border_width_top = 1
+		style.border_width_bottom = 1
+		style.content_margin_left = 4
+		style.content_margin_right = 4
+		style.content_margin_top = 4
+		style.content_margin_bottom = 4
+		image_container.add_theme_stylebox_override("panel", style)
+	
+	if image_rect:
+		image_rect.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
+		image_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 
 func _load_challenge() -> void:
 	if _challenge_data.is_empty() and AppState:
@@ -66,6 +139,7 @@ func _load_challenge() -> void:
 			image_rect.texture = null
 
 	if hint_label:
+		# Show challenge title, succinct – matches Home style
 		hint_label.text = str(_challenge_data.get("title", "Focus your attention"))
 
 func _start_observation() -> void:
@@ -73,14 +147,14 @@ func _start_observation() -> void:
 	_duration = 2.0
 	set_process(true)
 	if instruction_label:
-		instruction_label.text = "Observe carefully — 2 seconds"
+		instruction_label.text = "OBSERVE"
 	if countdown_label:
 		countdown_label.text = "2.0s"
 	if timer_bar:
 		timer_bar.max_value = _duration
 		timer_bar.value = _duration
 
-	if AccessibilityService:
+	if AccessibilityService and AccessibilityService.is_haptics_enabled():
 		AccessibilityService.vibrate(50)
 
 	print("[Observation] Challenge started - %s" % _challenge_id)
@@ -99,18 +173,24 @@ func _process(delta: float) -> void:
 		_transition_to_question()
 
 func _transition_to_question() -> void:
+	var fade_dur := _get_anim_duration(0.3)
+	if not _should_animate():
+		_do_question_transition()
+		return
 	var tween = create_tween()
-	tween.tween_property(self, "modulate:a", 0.0, 0.3)
-	tween.finished.connect(func():
-		if AppState:
-			AppState.set_transient("current_challenge_id", _challenge_id)
-			AppState.set_transient("current_challenge", _challenge_data)
-		if NavigationService:
-			NavigationService.navigate_to("memory_question", {
-				"challenge_id": _challenge_id,
-				"challenge_data": _challenge_data
-			})
-	)
+	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	tween.tween_property(self, "modulate:a", 0.0, fade_dur)
+	tween.finished.connect(_do_question_transition)
+
+func _do_question_transition() -> void:
+	if AppState:
+		AppState.set_transient("current_challenge_id", _challenge_id)
+		AppState.set_transient("current_challenge", _challenge_data)
+	if NavigationService:
+		NavigationService.navigate_to("memory_question", {
+			"challenge_id": _challenge_id,
+			"challenge_data": _challenge_data
+		})
 
 func on_navigated_to(params: Dictionary) -> void:
 	var fallback_id := "challenge_01"
@@ -123,6 +203,7 @@ func on_navigated_to(params: Dictionary) -> void:
 		_challenge_data = {}
 
 	modulate.a = 1.0
+	_apply_theme()
 	_load_challenge()
 	_start_observation()
 

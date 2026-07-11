@@ -1,79 +1,86 @@
-extends Control
-## SectionHeader - Title + optional action button
+extends HBoxContainer
+## SectionHeader – Premium section label
+## Matches Home "FEATURED CHALLENGE", Profile "CHALLENGE HISTORY"
+## style: label_small / text_tertiary, uppercase, letter-spaced
+##
+## Usage (code):
+##   var header := preload("res://src/ui/components/SectionHeader.gd").new()
+##   header.text = "FEATURED CHALLENGE"
+##   # optional: header.action_text = "See all"
+##
+## Or in .tscn: add a Label node named "Label" as child, script will find it
 
-@export var title_text: String = "Section" : set = set_title
-@export var subtitle_text: String = "" : set = set_subtitle
-@export var show_action: bool = false
-@export var action_text: String = "See all"
+@export var text: String = "SECTION":
+	set(v):
+		text = v
+		_update_label()
+@export var action_text: String = "":
+	set(v):
+		action_text = v
+		_update_action()
 
-signal action_pressed()
-
-@onready var title_label: Label = $VBox/TitleRow/Title
-@onready var subtitle_label: Label = $VBox/Subtitle
-@onready var action_button: Button = $VBox/TitleRow/ActionButton
+var _label: Label = null
+var _action_btn: Button = null
 
 func _ready() -> void:
-	# Might not have nodes if not in scene, handle via code build
-	_ensure_ui()
+	_ensure_nodes()
 	_apply_theme()
-	if ThemeService:
+	if ThemeService and not ThemeService.theme_changed.is_connected(_on_theme_changed):
 		ThemeService.theme_changed.connect(_on_theme_changed)
 
-func _ensure_ui() -> void:
-	if has_node("VBox"):
-		return
-	# Build programmatically if .tscn not present
-	var vbox := VBoxContainer.new()
-	vbox.name = "VBox"
-	add_child(vbox)
+func _ensure_nodes() -> void:
+	# Find or create label
+	_label = get_node_or_null("Label") as Label
+	if not _label:
+		_label = Label.new()
+		_label.name = "Label"
+		_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		add_child(_label)
+	
+	# Action button – optional, right-aligned
+	if action_text != "":
+		if not _action_btn:
+			_action_btn = Button.new()
+			_action_btn.name = "ActionButton"
+			_action_btn.flat = true
+			add_child(_action_btn)
+	else:
+		if _action_btn:
+			_action_btn.queue_free()
+			_action_btn = null
+	
+	_update_label()
+	_update_action()
 
-	var title_row := HBoxContainer.new()
-	title_row.name = "TitleRow"
-	vbox.add_child(title_row)
+func _update_label() -> void:
+	if _label:
+		_label.text = text.to_upper()
 
-	var title := Label.new()
-	title.name = "Title"
-	title.text = title_text
-	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	title_row.add_child(title)
-
-	var action := Button.new()
-	action.name = "ActionButton"
-	action.text = action_text
-	action.visible = show_action
-	title_row.add_child(action)
-
-	var sub := Label.new()
-	sub.name = "Subtitle"
-	sub.text = subtitle_text
-	sub.visible = subtitle_text != ""
-	vbox.add_child(sub)
+func _update_action() -> void:
+	if _action_btn:
+		_action_btn.text = action_text
+		_action_btn.visible = action_text != ""
 
 func _apply_theme() -> void:
-	if not has_node("VBox/TitleRow/Title"):
-		return
-	if not ThemeService:
-		return
-	var tokens = ThemeService.tokens
-	var title_color: Color = tokens.get("text_primary", Color.WHITE)
-	$VBox/TitleRow/Title.add_theme_color_override("font_color", title_color)
-	$VBox/TitleRow/Title.add_theme_font_size_override("font_size", 20)
-	$VBox/Subtitle.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
-	$VBox/Subtitle.add_theme_font_size_override("font_size", 14)
+	if _label and ThemeService:
+		ThemeService.apply_label_style(_label, "label_small", "text_tertiary")
+		_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+	elif _label:
+		_label.add_theme_color_override("font_color", Color("#8A8AA3"))
+		_label.add_theme_font_size_override("font_size", 14)
+	
+	if _action_btn and ThemeService:
+		_action_btn.add_theme_color_override("font_color", ThemeService.get_color("primary"))
+		_action_btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("label_small"))
+	
+	# Spacing – match Home
+	add_theme_constant_override("separation", 8)
+	alignment = BoxContainer.ALIGNMENT_CENTER
 
-func set_title(t: String) -> void:
-	title_text = t
-	if has_node("VBox/TitleRow/Title"):
-		$VBox/TitleRow/Title.text = t
-
-func set_subtitle(t: String) -> void:
-	subtitle_text = t
-	if has_node("VBox/Subtitle"):
-		$VBox/Subtitle.text = t
-		$VBox/Subtitle.visible = t != ""
-
-func _on_theme_changed(_name: String, _tokens: Dictionary) -> void:
+func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:
 	_apply_theme()
 
-func _on_ActionButton_pressed() -> void:
+# Signal for action button
+signal action_pressed()
+func _on_action_pressed() -> void:
 	action_pressed.emit()

@@ -1,58 +1,68 @@
 extends Control
-## ExperiencesScreen - Actual playable challenge list
+## ExperiencesScreen – Challenge Selection
+## Premium UI, matches Home / Boot / Tutorial
+## Internally still "ExperiencesScreen" for stability – user-facing is "Challenges"
 
-@onready var scroll: ScrollContainer = $Margin/Scroll
-@onready var list_vbox: VBoxContainer = $Margin/Scroll/VBox
+@onready var scroll: ScrollContainer = $MainMargin/Scroll
+@onready var content_vbox: VBoxContainer = $MainMargin/Scroll/Content
+@onready var brand_label: Label = $MainMargin/Scroll/Content/Header/BrandLabel
+@onready var title_label: Label = $MainMargin/Scroll/Content/Header/TitleLabel
+@onready var subtitle_label: Label = $MainMargin/Scroll/Content/Header/SubtitleLabel
+@onready var count_label: Label = $MainMargin/Scroll/Content/CountLabel
+@onready var challenge_list: VBoxContainer = $MainMargin/Scroll/Content/ChallengeList
 
 var _highlight_id: String = ""
 
 func _ready() -> void:
-	_ensure_ui()
 	_apply_theme()
 	_refresh_list()
-
 	if ThemeService:
 		ThemeService.theme_changed.connect(_on_theme_changed)
 	if ChallengeRegistry:
 		ChallengeRegistry.registry_updated.connect(_on_registry_updated)
 
-func _ensure_ui() -> void:
-	if has_node("Margin/Scroll/VBox/Header/Title"):
-		$Margin/Scroll/VBox/Header/Title.text = "Play"
-	if has_node("Margin/Scroll/VBox/Header/Subtitle"):
-		var subtitle := "Choose any Two Second Witness challenge and jump straight into a round."
-		$Margin/Scroll/VBox/Header/Subtitle.text = subtitle
-	if has_node("Margin/Scroll/VBox/FilterRow"):
-		$Margin/Scroll/VBox/FilterRow.visible = false
-
 func _apply_theme() -> void:
-	if not ThemeService:
-		return
-	# Header styling
-	if has_node("Margin/Scroll/VBox/Header/Title"):
-		var title_lbl: Label = $Margin/Scroll/VBox/Header/Title
-		ThemeService.apply_label_style(title_lbl, "headline", "text_primary")
-	if has_node("Margin/Scroll/VBox/Header/Subtitle"):
-		var sub_lbl: Label = $Margin/Scroll/VBox/Header/Subtitle
-		ThemeService.apply_label_style(sub_lbl, "body_small", "text_secondary")
-		sub_lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	var tokens := ThemeService.tokens if ThemeService else {}
+	var bg := get_node_or_null("Background") as ColorRect
+	if bg:
+		bg.color = tokens.get("background", Color("#0F0F12")) if not tokens.is_empty() else Color("#0F0F12")
+	
+	if brand_label:
+		if ThemeService:
+			ThemeService.apply_label_style(brand_label, "label", "text_tertiary")
+			brand_label.add_theme_font_size_override("font_size", 14)
+	if title_label:
+		if ThemeService:
+			ThemeService.apply_label_style(title_label, "display", "text_primary")
+			title_label.add_theme_font_size_override("font_size", 36)
+		title_label.text = "CHALLENGES"
+	if subtitle_label:
+		if ThemeService:
+			ThemeService.apply_label_style(subtitle_label, "body_small", "text_secondary")
+		subtitle_label.text = "Pick a scenario. Test your observation."
+	if count_label:
+		if ThemeService:
+			ThemeService.apply_label_style(count_label, "label_small", "text_tertiary")
+		count_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func _refresh_list() -> void:
-	if not has_node("Margin/Scroll/VBox"):
+	if not challenge_list:
 		return
-	var vbox: VBoxContainer = $Margin/Scroll/VBox
-
-	for child in vbox.get_children():
-		var is_challenge_row := child.name.begins_with("Challenge_")
-		var is_summary := child.name == "ChallengeSummary"
-		var is_empty_state := child.name == "ChallengeEmpty"
-		if is_challenge_row or is_summary or is_empty_state:
-			vbox.remove_child(child)
-			child.queue_free()
-
+	# Clear existing challenge cards
+	for child in challenge_list.get_children():
+		challenge_list.remove_child(child)
+		child.queue_free()
+	
 	var challenges: Array[Dictionary] = []
 	if ChallengeRegistry:
 		challenges = ChallengeRegistry.get_all_challenges()
+	
+	# Update count
+	if count_label:
+		var n := challenges.size()
+		count_label.text = "%d playable challenge%s" % [n, "" if n == 1 else "s"]
+		count_label.visible = n > 0
+	
 	if challenges.is_empty():
 		var empty := Label.new()
 		empty.name = "ChallengeEmpty"
@@ -61,26 +71,15 @@ func _refresh_list() -> void:
 		empty.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if ThemeService:
 			ThemeService.apply_label_style(empty, "body", "text_secondary")
-		vbox.add_child(empty)
+		challenge_list.add_child(empty)
 		return
-
-	var summary := Label.new()
-	summary.name = "ChallengeSummary"
-	summary.text = "%d playable challenges" % challenges.size()
-	if ThemeService:
-		ThemeService.apply_label_style(summary, "label_small", "text_secondary")
-	else:
-		summary.add_theme_font_size_override("font_size", 14)
-		summary.add_theme_color_override("font_color", Color(0.7, 0.7, 0.8, 1.0))
-	vbox.add_child(summary)
-	vbox.move_child(summary, min(1, vbox.get_child_count() - 1))
-
+	
 	for challenge in challenges:
 		var challenge_id: String = challenge.get("id", "")
 		var card := _create_challenge_card(challenge)
 		card.name = "Challenge_%s" % challenge_id
-		vbox.add_child(card)
-
+		challenge_list.add_child(card)
+	
 	if _highlight_id != "":
 		call_deferred("_focus_highlighted")
 
@@ -90,13 +89,12 @@ func _create_challenge_card(challenge: Dictionary) -> Control:
 	if ResourceLoader.exists(scene_path):
 		var scene := load(scene_path) as PackedScene
 		if scene:
-			card = scene.instantiate() as Control
+			card = scene.instantiate()
 	if card == null:
 		var script = load("res://src/ui/components/ExperienceCard.gd")
-		card = Control.new()
+		card = PanelContainer.new()
 		if script:
 			card.set_script(script)
-	card.custom_minimum_size = Vector2(0, 200)
 	if card.has_method("set_experience"):
 		card.call("set_experience", challenge)
 	if card.has_signal("experience_selected"):
@@ -105,25 +103,28 @@ func _create_challenge_card(challenge: Dictionary) -> Control:
 	return card
 
 func _focus_highlighted() -> void:
-	if not has_node("Margin/Scroll/VBox"):
+	if not challenge_list or _highlight_id == "":
 		return
 	var target_name := "Challenge_%s" % _highlight_id
-	if $Margin/Scroll/VBox.has_node(target_name):
-		var target := $Margin/Scroll/VBox.get_node(target_name) as Control
-		if target and scroll:
-			scroll.scroll_vertical = int(target.position.y)
+	var target := challenge_list.get_node_or_null(target_name) as Control
+	if target and scroll:
+		scroll.scroll_vertical = int(target.position.y)
 
 func on_navigated_to(params: Dictionary) -> void:
 	_highlight_id = str(params.get("highlight", ""))
 	_refresh_list()
-	# Screen-view analytics are centralized in NavigationService.navigate_to.
 
 func _on_challenge_selected(challenge_id: String) -> void:
+	if AccessibilityService:
+		AccessibilityService.vibrate(30)
+	if AudioService:
+		AudioService.play_ui("ui_click")
 	if ChallengeRegistry:
 		ChallengeRegistry.start_run(challenge_id)
 
 func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:
 	_apply_theme()
+	_refresh_list()
 
 func _on_registry_updated(_challenges: Array) -> void:
 	_refresh_list()

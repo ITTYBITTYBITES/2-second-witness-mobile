@@ -4,10 +4,10 @@ extends Control
 signal tab_selected(route: String)
 
 const TABS := [
-	{"route": "home", "label": "Home", "icon": ""},
-	{"route": "experiences", "label": "Play", "icon": ""},
-	{"route": "profile", "label": "Profile", "icon": ""},
-	{"route": "settings", "label": "Settings", "icon": ""},
+	{"route": "home", "label": "Home", "icon": "⌂"},
+	{"route": "experiences", "label": "Play", "icon": "▶"},
+	{"route": "profile", "label": "Profile", "icon": "○"},
+	{"route": "settings", "label": "Settings", "icon": "⚙"},
 ]
 
 var current_route: String = "home"
@@ -51,9 +51,9 @@ func _ensure_ui() -> void:
 
 		var btn := Button.new()
 		btn.name = "%s_Button" % tab["route"]
-		# Plain-text labels render consistently across device fallback fonts.
-		btn.text = str(tab["label"])
-		btn.custom_minimum_size = Vector2(0, 60)
+		# Icon + label, matches redesigned Home mockup
+		btn.text = "%s\n%s" % [tab.get("icon", ""), tab.get("label", "")]
+		btn.custom_minimum_size = Vector2(0, 64)
 		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		# Store route meta
 		btn.set_meta("route", tab["route"])
@@ -94,11 +94,21 @@ func _apply_theme() -> void:
 		m.add_theme_constant_override("margin_left", 8)
 		m.add_theme_constant_override("margin_right", 8)
 
+	# Helper to get tab info
+	var tab_map := {}
+	for t in TABS:
+		tab_map[t["route"]] = t
+
 	for route in _buttons.keys():
 		var btn: Button = _buttons[route]
 		var is_selected: bool = (route == current_route)
+		var tab_info: Dictionary = tab_map.get(route, {})
+		var icon := str(tab_info.get("icon", ""))
+		var label := str(tab_info.get("label", route.capitalize()))
+		btn.text = "%s\n%s" % [icon, label]
+		btn.alignment = HORIZONTAL_ALIGNMENT_CENTER
 
-		btn.custom_minimum_size.y = max(btn.custom_minimum_size.y, tokens.get("touch_target_min", 48))
+		btn.custom_minimum_size.y = max(64, tokens.get("touch_target_min", 48))
 
 		var normal := StyleBoxFlat.new()
 		normal.corner_radius_top_left = tokens.get("radius_md", 12)
@@ -111,15 +121,20 @@ func _apply_theme() -> void:
 		normal.content_margin_bottom = 10
 
 		if is_selected:
-			normal.bg_color = tokens.get("primary", Color("#6A3DFF"))
-			btn.add_theme_color_override("font_color", tokens.get("text_on_primary", Color.WHITE))
+			# Premium selected state – match Home mockup
+			normal.bg_color = Color(tokens.get("primary", Color("#6A3DFF")), 0.22)
+			btn.add_theme_color_override("font_color", tokens.get("primary_variant", Color("#8A68FF")))
+			# subtle top accent
+			normal.border_width_top = 2
+			normal.border_color = tokens.get("primary", Color("#6A3DFF"))
 		else:
 			normal.bg_color = Color.TRANSPARENT
-			btn.add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
+			btn.add_theme_color_override("font_color", tokens.get("text_tertiary", Color.GRAY))
 
 		btn.add_theme_stylebox_override("normal", normal)
 		btn.add_theme_stylebox_override("hover", normal)
 		btn.add_theme_stylebox_override("pressed", normal)
+		btn.add_theme_stylebox_override("focus", normal)
 		btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("label_small"))
 		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 

@@ -1,152 +1,165 @@
 extends Button
-## AppButton - Themed button with consistent styling
-## Supports primary, secondary, ghost variants
+## AppButton – Premium Witness UI button
+## Matches HomeScreen / Tutorial / Result CTA styling
+## ThemeService-driven, accessibility-aware
+##
+## Variants:
+##   PRIMARY   – Purple filled, white text – main CTA (Play Now, Continue, Accept)
+##   SECONDARY – Surface elevated, border – secondary actions (Replay, Back)
+##   GHOST     – Transparent, text_tertiary – tertiary / skip / cancel
+##   DANGER    – Error red – destructive (Reset Profile)
+##
+## Usage (GDScript):
+##   var btn = preload("res://src/ui/components/AppButton.gd").new()
+##   btn.variant = AppButton.Variant.PRIMARY
+##   btn.text = "PLAY NOW\nStart a New Round"
+##   btn.full_width = true
+##
+## Or in a .tscn, set script = ExtResource("AppButton.gd") on a Button node
 
 enum Variant { PRIMARY, SECONDARY, GHOST, DANGER }
 
-@export var variant: Variant = Variant.PRIMARY
-@export var full_width: bool = false
+@export var variant: Variant = Variant.PRIMARY:
+	set(v):
+		variant = v
+		_apply_theme()
+@export var full_width: bool = true:
+	set(v):
+		full_width = v
+		_update_sizing()
 @export var is_loading: bool = false:
-	set = set_loading
-@export var icon_name: String = ""
+	set(v):
+		set_loading(v)
 
-var _original_text: String = ""
-
+var _base_text: String = ""
 
 func _ready() -> void:
-	_original_text = text
+	_base_text = text
 	_apply_theme()
-	if ThemeService:
+	_update_sizing()
+	if ThemeService and not ThemeService.theme_changed.is_connected(_on_theme_changed):
 		ThemeService.theme_changed.connect(_on_theme_changed)
-	if AccessibilityService:
+	if AccessibilityService and not AccessibilityService.accessibility_updated.is_connected(_on_accessibility_updated):
 		AccessibilityService.accessibility_updated.connect(_on_accessibility_updated)
-	# Accessibility
 	focus_mode = Control.FOCUS_ALL
+	if not pressed.is_connected(_on_pressed_feedback):
+		pressed.connect(_on_pressed_feedback)
 
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_THEME_CHANGED:
+		_apply_theme()
 
 func _apply_theme() -> void:
-	if not ThemeService:
+	if not is_inside_tree():
 		return
-	var tokens = ThemeService.tokens
-
-	var bg = tokens.get("primary", Color("#6A3DFF"))
-	var text_color = tokens.get("text_on_primary", Color.WHITE)
-	var border = tokens.get("border", Color.TRANSPARENT)
-	var bg_hover = tokens.get("primary_variant", Color("#8A68FF"))
-	var bg_secondary = tokens.get("surface_elevated", Color("#2A2A36"))
-
-	var font_size := ThemeService.get_font_size("button")
-	add_theme_font_size_override("font_size", font_size)
-	autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	custom_minimum_size.y = max(custom_minimum_size.y, tokens.get("touch_target_min", 48))
-
-	# Clear existing overrides
-	var style_normal := StyleBoxFlat.new()
-	var style_hover := StyleBoxFlat.new()
-	var style_pressed := StyleBoxFlat.new()
-	var style_disabled := StyleBoxFlat.new()
-
+	var tokens := {}
+	if ThemeService:
+		tokens = ThemeService.tokens
+	
+	var radius := int(tokens.get("radius_lg", 18)) if not tokens.is_empty() else 18
+	var touch_min := int(tokens.get("touch_target_min", 48)) if not tokens.is_empty() else 48
+	# Primary CTA gets extra height – matches Home Play Now (72dp)
+	var min_h := 72 if variant == Variant.PRIMARY and full_width else max(56, touch_min)
+	custom_minimum_size.y = min_h
+	
+	# Colors
+	var bg := Color("#6A3DFF")
+	var bg_hover := Color("#8A68FF")
+	var fg := Color.WHITE
+	var border_col := Color.TRANSPARENT
+	var border_w := 0
+	
 	match variant:
 		Variant.PRIMARY:
-			style_normal.bg_color = bg
-			style_normal.corner_radius_top_left = tokens.get("radius_md", 12)
-			style_normal.corner_radius_top_right = tokens.get("radius_md", 12)
-			style_normal.corner_radius_bottom_left = tokens.get("radius_md", 12)
-			style_normal.corner_radius_bottom_right = tokens.get("radius_md", 12)
-			style_normal.content_margin_left = 24
-			style_normal.content_margin_right = 24
-			style_normal.content_margin_top = 14
-			style_normal.content_margin_bottom = 14
-
-			style_hover = style_normal.duplicate()
-			style_hover.bg_color = bg_hover
-
-			style_pressed = style_normal.duplicate()
-			style_pressed.bg_color = bg.darkened(0.1)
-
-			add_theme_color_override("font_color", text_color)
+			bg = tokens.get("primary", Color("#6A3DFF")) if not tokens.is_empty() else Color("#6A3DFF")
+			bg_hover = tokens.get("primary_variant", Color("#8A68FF")) if not tokens.is_empty() else Color("#8A68FF")
+			fg = tokens.get("text_on_primary", Color.WHITE) if not tokens.is_empty() else Color.WHITE
 		Variant.SECONDARY:
-			style_normal.bg_color = bg_secondary
-			style_normal.border_color = border
-			style_normal.border_width_left = 1
-			style_normal.border_width_right = 1
-			style_normal.border_width_top = 1
-			style_normal.border_width_bottom = 1
-			style_normal.corner_radius_top_left = tokens.get("radius_md", 12)
-			style_normal.corner_radius_top_right = tokens.get("radius_md", 12)
-			style_normal.corner_radius_bottom_left = tokens.get("radius_md", 12)
-			style_normal.corner_radius_bottom_right = tokens.get("radius_md", 12)
-			style_normal.content_margin_left = 24
-			style_normal.content_margin_right = 24
-			style_normal.content_margin_top = 14
-			style_normal.content_margin_bottom = 14
-
-			add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-			style_hover = style_normal.duplicate()
-			style_hover.bg_color = bg_secondary.lightened(0.08)
-			style_pressed = style_normal.duplicate()
-			style_pressed.bg_color = bg_secondary.darkened(0.1)
+			bg = tokens.get("surface_elevated", Color("#2A2A36")) if not tokens.is_empty() else Color("#2A2A36")
+			bg_hover = bg.lightened(0.08)
+			fg = tokens.get("text_primary", Color.WHITE) if not tokens.is_empty() else Color.WHITE
+			border_col = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
+			border_w = 1
 		Variant.GHOST:
-			style_normal.bg_color = Color.TRANSPARENT
-			style_normal.content_margin_left = 20
-			style_normal.content_margin_right = 20
-			style_normal.content_margin_top = 14
-			style_normal.content_margin_bottom = 14
-			add_theme_color_override("font_color", tokens.get("text_secondary", Color.GRAY))
-			style_hover = style_normal.duplicate()
-			style_hover.bg_color = _with_alpha(tokens.get("surface_elevated", Color.GRAY), 0.5)
-			style_pressed = style_hover.duplicate()
+			bg = Color.TRANSPARENT
+			bg_hover = Color(1,1,1,0.06)
+			fg = tokens.get("text_tertiary", Color("#8A8AA3")) if not tokens.is_empty() else Color("#8A8AA3")
 		Variant.DANGER:
-			style_normal.bg_color = tokens.get("error", Color.RED)
-			style_normal.corner_radius_top_left = tokens.get("radius_md", 12)
-			style_normal.corner_radius_top_right = tokens.get("radius_md", 12)
-			style_normal.corner_radius_bottom_left = tokens.get("radius_md", 12)
-			style_normal.corner_radius_bottom_right = tokens.get("radius_md", 12)
-			style_normal.content_margin_left = 24
-			style_normal.content_margin_right = 24
-			style_normal.content_margin_top = 14
-			style_normal.content_margin_bottom = 14
-			add_theme_color_override("font_color", Color.WHITE)
-			style_hover = style_normal.duplicate()
-			style_hover.bg_color = style_normal.bg_color.lightened(0.1)
-			style_pressed = style_normal.duplicate()
-			style_pressed.bg_color = style_normal.bg_color.darkened(0.1)
+			bg = Color.TRANSPARENT
+			bg_hover = Color(1,0.3,0.35,0.08)
+			fg = tokens.get("error", Color("#FF4D5E")) if not tokens.is_empty() else Color("#FF4D5E")
+			border_col = fg
+			border_w = 1
+	
+	# Build styleboxes
+	for state in ["normal", "hover", "pressed", "disabled", "focus"]:
+		var sb := StyleBoxFlat.new()
+		var col := bg
+		match state:
+			"hover", "focus":
+				col = bg_hover
+			"pressed":
+				col = bg.darkened(0.12) if bg.a > 0.1 else bg_hover
+			"disabled":
+				col = Color(bg.r, bg.g, bg.b, bg.a * 0.45)
+		sb.bg_color = col
+		sb.corner_radius_top_left = radius
+		sb.corner_radius_top_right = radius
+		sb.corner_radius_bottom_left = radius
+		sb.corner_radius_bottom_right = radius
+		sb.border_color = border_col
+		sb.border_width_left = border_w
+		sb.border_width_right = border_w
+		sb.border_width_top = border_w
+		sb.border_width_bottom = border_w
+		# Premium padding – matches Home Play Now
+		var px := 24
+		var py := 18 if variant == Variant.PRIMARY else 14
+		sb.content_margin_left = px
+		sb.content_margin_right = px
+		sb.content_margin_top = py
+		sb.content_margin_bottom = py
+		add_theme_stylebox_override(state, sb)
+	
+	add_theme_color_override("font_color", fg)
+	add_theme_color_override("font_hover_color", fg)
+	add_theme_color_override("font_pressed_color", fg)
+	add_theme_color_override("font_focus_color", fg)
+	add_theme_color_override("font_disabled_color", Color(fg.r, fg.g, fg.b, 0.5))
+	
+	var font_size := 18
+	if ThemeService:
+		font_size = ThemeService.get_font_size("button")
+	add_theme_font_size_override("font_size", font_size)
+	
+	autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_update_sizing()
 
-	style_disabled = style_normal.duplicate()
-	style_disabled.bg_color = _with_alpha(style_normal.bg_color, 0.4)
+func _update_sizing() -> void:
+	size_flags_horizontal = Control.SIZE_EXPAND_FILL if full_width else Control.SIZE_SHRINK_CENTER
 
-	add_theme_stylebox_override("normal", style_normal)
-	add_theme_stylebox_override("hover", style_hover)
-	add_theme_stylebox_override("pressed", style_pressed)
-	add_theme_stylebox_override("disabled", style_disabled)
-	add_theme_stylebox_override("focus", style_hover)
-
-	if full_width:
-		custom_minimum_size.x = 0
-		size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	else:
-		size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-
-
-func _on_theme_changed(_theme_name: String, _tokens: Dictionary) -> void:
+func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:
 	_apply_theme()
 
-
 func _on_accessibility_updated(_settings: Dictionary) -> void:
+	_apply_theme()
 	if AccessibilityService:
 		AccessibilityService.apply_accessibility_to_control(self)
 
-
-func _with_alpha(value: Variant, alpha: float) -> Color:
-	var color: Color = value if value is Color else Color.WHITE
-	color.a = alpha
-	return color
-
+func _on_pressed_feedback() -> void:
+	if AccessibilityService and AccessibilityService.is_haptics_enabled():
+		AccessibilityService.vibrate(30)
+	if AudioService:
+		AudioService.play_ui("ui_click")
 
 func set_loading(loading: bool) -> void:
 	is_loading = loading
 	disabled = loading
 	if loading:
-		text = "Loading..."
+		if _base_text == "":
+			_base_text = text
+		text = "Loading…"
 	else:
-		text = _original_text
+		if _base_text != "":
+			text = _base_text
+	_apply_theme()

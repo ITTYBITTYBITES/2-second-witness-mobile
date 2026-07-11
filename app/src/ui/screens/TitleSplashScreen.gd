@@ -1,7 +1,7 @@
 extends Control
-## TitleSplashScreen - Two Second Witness loading screen
-## Image-only splash, no text overlay. Shows privacy modal on first launch over the image,
-## then goes directly to Home. Robust against boot stalls.
+## TitleSplashScreen - Two Second Witness branded boot
+## Matches Home screen hero exactly for seamless transition
+## Eye motif pulses as loading indicator – no stock spinners
 
 const MIN_DISPLAY_TIME := 1.2
 const MAX_BOOT_WAIT_TIME := 6.0
@@ -9,34 +9,122 @@ const PRIVACY_POLICY_URL := "https://ittybittybites.github.io/two-second-witness
 
 const PrivacyDialogScene := preload("res://src/ui/dialogs/PrivacyTermsDialog.tscn")
 
-@onready var splash_image: TextureRect = $SplashImage
+@onready var brand_label: Label = $MainMargin/Scroll/Content/Hero/BrandLabel
+@onready var you_are_label: Label = $MainMargin/Scroll/Content/Hero/YouAreLabel
+@onready var witness_label: Label = $MainMargin/Scroll/Content/Hero/WitnessLabel
+@onready var eye_rect: TextureRect = $MainMargin/Scroll/Content/Hero/EyeWrap/Eye
+@onready var tagline_label: Label = $MainMargin/Scroll/Content/Hero/Tagline
+@onready var status_label: Label = $MainMargin/Scroll/Content/LoadingBlock/StatusLabel
+@onready var progress_bar: ProgressBar = $MainMargin/Scroll/Content/LoadingBlock/ProgressBar
 @onready var dialog_layer: Control = $PrivacyDialogLayer
 
 var _elapsed: float = 0.0
 var _boot_completed: bool = false
 var _is_navigating: bool = false
 var _privacy_dialog: Control = null
+var _eye_tween: Tween = null
+var _boot_progress: float = 0.0
 
 func _ready() -> void:
 	_elapsed = 0.0
 	_is_navigating = false
-	_load_splash_image()
-	_animate_in()
+	_apply_theme()
+	_start_eye_pulse()
 	_connect_boot()
-	print("[TitleSplash] Ready - image only")
+	_animate_in()
+	_update_loading_ui("Initializing…", 0.0)
+	print("[TitleSplash] Ready - branded hero")
 
-func _load_splash_image() -> void:
-	if splash_image:
-		var path := "res://assets/splash/two_second_witness_splash.png"
-		if ResourceLoader.exists(path):
-			splash_image.texture = load(path)
-			splash_image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-			splash_image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
-			splash_image.modulate.a = 1.0
+func _apply_theme() -> void:
+	var tokens := {}
+	if ThemeService and not ThemeService.tokens.is_empty():
+		tokens = ThemeService.tokens
+	
+	var bg := get_node_or_null("Background") as ColorRect
+	if bg:
+		bg.color = tokens.get("background", Color("#0F0F12")) if not tokens.is_empty() else Color("#0F0F12")
+
+	if brand_label:
+		if ThemeService:
+			ThemeService.apply_label_style(brand_label, "label", "text_tertiary")
+			brand_label.add_theme_font_size_override("font_size", 16)
 		else:
-			splash_image.visible = false
-	if has_node("Background") and $Background:
-		$Background.color = Color(0.055, 0.055, 0.07, 1.0)
+			brand_label.add_theme_color_override("font_color", Color("#8A8AA3"))
+	if you_are_label:
+		if ThemeService:
+			ThemeService.apply_label_style(you_are_label, "body", "text_secondary")
+	if witness_label:
+		if ThemeService:
+			ThemeService.apply_label_style(witness_label, "display", "text_primary")
+			witness_label.add_theme_font_size_override("font_size", 42)
+		else:
+			witness_label.add_theme_font_size_override("font_size", 42)
+	if tagline_label:
+		if ThemeService:
+			ThemeService.apply_label_style(tagline_label, "body_small", "text_secondary")
+	
+	if status_label:
+		if ThemeService:
+			ThemeService.apply_label_style(status_label, "label_small", "text_tertiary")
+		status_label.text = "Initializing…"
+	
+	if progress_bar:
+		progress_bar.max_value = 100.0
+		progress_bar.value = 0.0
+		# Style the progress bar to match Home CTA purple
+		var bg_style := StyleBoxFlat.new()
+		bg_style.bg_color = Color("#24242C")
+		bg_style.corner_radius_top_left = 99
+		bg_style.corner_radius_top_right = 99
+		bg_style.corner_radius_bottom_left = 99
+		bg_style.corner_radius_bottom_right = 99
+		progress_bar.add_theme_stylebox_override("background", bg_style)
+		var fill_style := StyleBoxFlat.new()
+		var primary := Color("#6A3DFF")
+		if not tokens.is_empty():
+			primary = tokens.get("primary", primary)
+		fill_style.bg_color = primary
+		fill_style.corner_radius_top_left = 99
+		fill_style.corner_radius_top_right = 99
+		fill_style.corner_radius_bottom_left = 99
+		fill_style.corner_radius_bottom_right = 99
+		progress_bar.add_theme_stylebox_override("fill", fill_style)
+
+func _start_eye_pulse() -> void:
+	if not eye_rect:
+		return
+	if _eye_tween and _eye_tween.is_valid():
+		_eye_tween.kill()
+	# Respect reduced motion
+	if not _should_animate():
+		eye_rect.modulate.a = 1.0
+		eye_rect.scale = Vector2.ONE
+		return
+	var breathe := _get_anim_duration(1.2)
+	_eye_tween = create_tween()
+	_eye_tween.set_loops()
+	_eye_tween.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	# Subtle breathe – scale + glow
+	_eye_tween.tween_property(eye_rect, "modulate:a", 0.92, breathe).from(1.0)
+	_eye_tween.tween_property(eye_rect, "modulate:a", 1.0, breathe)
+	# slight scale pulse
+	_eye_tween.parallel()
+	_eye_tween.tween_property(eye_rect, "scale", Vector2(1.015, 1.015), breathe).from(Vector2.ONE)
+	_eye_tween.tween_property(eye_rect, "scale", Vector2.ONE, breathe)
+
+func _stop_eye_pulse() -> void:
+	if _eye_tween and _eye_tween.is_valid():
+		_eye_tween.kill()
+	_eye_tween = null
+	if eye_rect:
+		eye_rect.modulate.a = 1.0
+		eye_rect.scale = Vector2.ONE
+
+func _update_loading_ui(text: String, progress_0_1: float) -> void:
+	if status_label:
+		status_label.text = text
+	if progress_bar:
+		progress_bar.value = clamp(progress_0_1, 0.0, 1.0) * 100.0
 
 func _connect_boot() -> void:
 	var boot_node := _find_boot_node()
@@ -47,7 +135,6 @@ func _connect_boot() -> void:
 			boot_node.boot_step_completed.connect(_on_boot_step_completed)
 		if boot_node.has_signal("boot_completed") and not boot_node.boot_completed.is_connected(_on_boot_completed):
 			boot_node.boot_completed.connect(_on_boot_completed)
-
 		var boot_already_done := false
 		if AppState and AppState.is_initialized:
 			boot_already_done = true
@@ -56,9 +143,10 @@ func _connect_boot() -> void:
 			boot_already_done = true
 		if boot_already_done:
 			_boot_completed = true
+			_update_loading_ui("Ready", 1.0)
 	else:
-		# No boot node found (e.g., running standalone) - don't block
 		_boot_completed = true
+		_update_loading_ui("Ready", 1.0)
 
 func _find_boot_node() -> Node:
 	if has_node("/root/AppShell/AppBoot"):
@@ -66,39 +154,59 @@ func _find_boot_node() -> Node:
 	var root := get_tree().root
 	if root and root.has_node("AppShell/AppBoot"):
 		return root.get_node("AppShell/AppBoot")
-	# Also try direct child search
 	if get_tree().root:
 		for child in get_tree().root.get_children():
 			if child.name == "AppShell" and child.has_node("AppBoot"):
 				return child.get_node("AppBoot")
 	return null
 
+func _get_anim_duration(base: float) -> float:
+	if AccessibilityService and AccessibilityService.has_method("get_animation_duration"):
+		return AccessibilityService.get_animation_duration(base)
+	return base
+
+func _should_animate() -> bool:
+	if AccessibilityService and AccessibilityService.has_method("should_animate"):
+		return AccessibilityService.should_animate()
+	return true
+
 func _animate_in() -> void:
 	modulate.a = 0.0
+	var dur := _get_anim_duration(0.32)
+	if not _should_animate():
+		modulate.a = 1.0
+		return
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	tween.tween_property(self, "modulate:a", 1.0, 0.32).set_ease(Tween.EASE_OUT)
+	tween.tween_property(self, "modulate:a", 1.0, dur).set_ease(Tween.EASE_OUT)
 
 func _process(delta: float) -> void:
 	_elapsed += delta
+	# Simulate smooth progress while booting
+	if not _boot_completed:
+		_boot_progress = min(_boot_progress + delta * 0.15, 0.85)
+		if progress_bar:
+			progress_bar.value = _boot_progress * 100.0
 	if not _boot_completed and _elapsed >= MAX_BOOT_WAIT_TIME:
 		_boot_completed = true
+		_update_loading_ui("Ready", 1.0)
 		print("[TitleSplash] Boot watchdog triggered - forcing continue")
 	if _boot_completed and _elapsed >= MIN_DISPLAY_TIME and not _is_navigating:
-		# Don't auto-proceed while privacy dialog is visible
 		if dialog_layer and dialog_layer.visible:
 			return
 		_on_ready_to_proceed()
 		set_process(false)
 
-func _on_boot_step_started(_step: String) -> void:
-	pass
+func _on_boot_step_started(step: String) -> void:
+	_update_loading_ui(step.capitalize().replace("_", " ") + "…", _boot_progress)
 
-func _on_boot_step_completed(_step: String, _duration_ms: int) -> void:
-	pass
+func _on_boot_step_completed(step: String, _duration_ms: int) -> void:
+	_boot_progress = min(_boot_progress + 0.12, 0.9)
+	_update_loading_ui(step.capitalize().replace("_", " ") + " ✓", _boot_progress)
 
 func _on_boot_completed() -> void:
 	_boot_completed = true
+	_update_loading_ui("Ready", 1.0)
 	print("[TitleSplash] Boot completed")
 
 func _on_ready_to_proceed() -> void:
@@ -108,11 +216,13 @@ func _on_ready_to_proceed() -> void:
 		return
 	if _needs_privacy_acknowledgment():
 		_show_privacy_dialog()
-	else:
-		_navigate_home()
+		return
+	if _needs_tutorial():
+		_navigate_tutorial()
+		return
+	_navigate_home()
 
 func _needs_privacy_acknowledgment() -> bool:
-	# Robust check - if services missing, don't block launch
 	var has_profile_ack := false
 	var has_settings_ack := false
 	if ProfileService and ProfileService.profile is Dictionary:
@@ -122,15 +232,54 @@ func _needs_privacy_acknowledgment() -> bool:
 	if SettingsService:
 		if SettingsService.get_value("privacy_acknowledged", false):
 			has_settings_ack = true
-	# If either says acknowledged, we're good
 	if has_profile_ack or has_settings_ack:
 		return false
-	# If neither service is available, don't block
 	if not ProfileService and not SettingsService:
 		return false
-	# Otherwise need acknowledgment (first launch)
-	# Extra safety: if profile is empty (not yet loaded), check settings only
 	return true
+
+func _needs_tutorial() -> bool:
+	# Respect user preference to skip tutorials
+	if SettingsService and not SettingsService.get_value("show_tutorials", true):
+		return false
+	# Check onboarding completion flag – set by ResultScreen after first challenge
+	if ProfileService and ProfileService.profile is Dictionary:
+		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
+		if prefs.get("onboarding_completed", false):
+			return false
+		# Also allow a specific tutorial_seen flag from the new TutorialScreen
+		if prefs.get("tutorial_seen", false):
+			# tutorial_seen alone doesn't count as onboarding_completed,
+			# but if user explicitly skipped, don't force again
+			pass
+	# Default: first launch needs tutorial
+	return true
+
+func _navigate_tutorial() -> void:
+	if _is_navigating:
+		return
+	_is_navigating = true
+	print("[TitleSplash] Navigating to Tutorial – Witness onboarding")
+	# Eye settle – same "waking up" transition as Home, keeps continuity
+	if _should_animate() and eye_rect:
+		if _eye_tween and _eye_tween.is_valid():
+			_eye_tween.kill()
+		var settle := create_tween()
+		settle.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+		settle.tween_property(eye_rect, "scale", Vector2.ONE, 0.22).set_ease(Tween.EASE_OUT)
+		settle.parallel().tween_property(eye_rect, "modulate:a", 1.0, 0.22)
+		await settle.finished
+	else:
+		_stop_eye_pulse()
+	
+	var fade_dur := _get_anim_duration(0.28)
+	var tween := create_tween()
+	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	tween.tween_property(self, "modulate:a", 0.0, fade_dur).set_ease(Tween.EASE_IN_OUT)
+	tween.finished.connect(func():
+		if NavigationService:
+			NavigationService.navigate_to("tutorial")
+	)
 
 func _show_privacy_dialog() -> void:
 	if dialog_layer and dialog_layer.visible:
@@ -149,10 +298,6 @@ func _show_privacy_dialog() -> void:
 	if dialog_layer:
 		dialog_layer.visible = true
 		dialog_layer.set_anchors_preset(Control.PRESET_FULL_RECT)
-		dialog_layer.offset_left = 0
-		dialog_layer.offset_right = 0
-		dialog_layer.offset_top = 0
-		dialog_layer.offset_bottom = 0
 		dialog_layer.mouse_filter = Control.MOUSE_FILTER_STOP
 		dialog_layer.z_index = 100
 		dialog_layer.move_to_front()
@@ -162,7 +307,6 @@ func _show_privacy_dialog() -> void:
 		_privacy_dialog.z_index = 101
 		_privacy_dialog.move_to_front()
 		_privacy_dialog.visible = true
-	# Pause splash processing - user must act
 	set_process(false)
 
 func _on_privacy_accepted() -> void:
@@ -170,8 +314,8 @@ func _on_privacy_accepted() -> void:
 	if ProfileService:
 		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
 		prefs["privacy_acknowledged"] = true
-		# Also mark onboarding as completed so we don't route to tutorial
-		prefs["onboarding_completed"] = true
+		# Do NOT set onboarding_completed here – let Tutorial + first Result handle it
+		# This allows the guided Witness tutorial to run on first launch
 		ProfileService.profile["preferences"] = prefs
 		ProfileService.save()
 	if SettingsService:
@@ -183,8 +327,10 @@ func _on_privacy_accepted() -> void:
 		dialog_layer.visible = false
 	if _privacy_dialog:
 		_privacy_dialog.visible = false
-	# Directly go to home - no tutorial step per simplified flow
-	_navigate_home()
+	# Continue boot flow – will check tutorial gate, then home
+	_is_navigating = false
+	_elapsed = MIN_DISPLAY_TIME
+	set_process(true)
 
 func _on_view_privacy_policy() -> void:
 	if OS.shell_open(PRIVACY_POLICY_URL) != OK:
@@ -194,17 +340,32 @@ func _navigate_home() -> void:
 	if _is_navigating:
 		return
 	_is_navigating = true
-	print("[TitleSplash] Navigating to Home")
+	print("[TitleSplash] Navigating to Home – seamless hero transition")
+	# Eye wake-up: slow the pulse, then settle – "instrument waking up"
+	if _should_animate() and eye_rect:
+		# Stop the fast breathe loop
+		if _eye_tween and _eye_tween.is_valid():
+			_eye_tween.kill()
+		# Slow settle: 300ms ease to resting state, slight glow up
+		var settle := create_tween()
+		settle.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+		settle.tween_property(eye_rect, "scale", Vector2.ONE, 0.28).set_ease(Tween.EASE_OUT)
+		settle.parallel().tween_property(eye_rect, "modulate:a", 1.0, 0.28)
+		await settle.finished
+	else:
+		_stop_eye_pulse()
+
+	var fade_dur := _get_anim_duration(0.28)
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	tween.tween_property(self, "modulate:a", 0.0, 0.35).set_ease(Tween.EASE_IN)
+	# Fade slightly – Home screen has identical hero, so this feels continuous
+	tween.tween_property(self, "modulate:a", 0.0, fade_dur).set_ease(Tween.EASE_IN_OUT)
 	tween.finished.connect(func():
 		if NavigationService:
 			NavigationService.navigate_to("home")
 	)
 
 func _input(event: InputEvent) -> void:
-	# Block skip while privacy dialog is visible
 	if dialog_layer and dialog_layer.visible:
 		return
 	var should_advance := false
@@ -223,15 +384,19 @@ func _input(event: InputEvent) -> void:
 func on_navigated_to(_params: Dictionary) -> void:
 	_elapsed = 0.0
 	_is_navigating = false
+	_boot_progress = 0.0
 	if AppState and AppState.is_initialized:
 		_boot_completed = true
+		_update_loading_ui("Ready", 1.0)
 	else:
 		_boot_completed = false
+		_update_loading_ui("Initializing…", 0.0)
 		var boot_node := _find_boot_node()
 		if boot_node:
 			var is_booting = boot_node.get("_is_booting")
 			if is_booting == false:
 				_boot_completed = true
+				_update_loading_ui("Ready", 1.0)
 	_connect_boot()
 	modulate.a = 0.0
 	if dialog_layer:
@@ -239,4 +404,6 @@ func on_navigated_to(_params: Dictionary) -> void:
 	if _privacy_dialog:
 		_privacy_dialog.visible = false
 	set_process(true)
+	_apply_theme()
+	_start_eye_pulse()
 	_animate_in()

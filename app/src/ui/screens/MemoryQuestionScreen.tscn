@@ -3,70 +3,75 @@
 [ext_resource type="Script" path="res://src/ui/screens/MemoryQuestionScreen.gd" id="1_script"]
 
 [node name="MemoryQuestionScreen" type="Control" groups=["app_screen"]]
-layout_mode=3
-anchors_preset=15
-anchor_right=1.0
-anchor_bottom=1.0
-grow_horizontal=2
-grow_vertical=2
-script=ExtResource("1_script")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
 
 [node name="Background" type="ColorRect" parent="."]
-layout_mode=1
-anchors_preset=15
-anchor_right=1.0
-anchor_bottom=1.0
-grow_horizontal=2
-grow_vertical=2
-color=Color(0.0588235, 0.0588235, 0.0784314, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0588235, 0.0705882, 1)
 
-[node name="Margin" type="MarginContainer" parent="."]
-layout_mode=1
-anchors_preset=15
-anchor_right=1.0
-anchor_bottom=1.0
-grow_horizontal=2
-grow_vertical=2
-custom_constants/margin_left=24
-custom_constants/margin_right=24
-custom_constants/margin_top=24
-custom_constants/margin_bottom=24
+[node name="MainMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_bottom = 24
 
-[node name="VBox" type="VBoxContainer" parent="Margin"]
-layout_mode=2
-custom_constants/separation=20
+[node name="Content" type="VBoxContainer" parent="MainMargin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 28
 
-[node name="Header" type="Label" parent="Margin/VBox"]
-layout_mode=2
-text="Memory Question"
-horizontal_alignment=1
+[node name="Header" type="VBoxContainer" parent="MainMargin/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+theme_override_constants/separation = 8
 
-[node name="QuestionLabel" type="Label" parent="Margin/VBox"]
-layout_mode=2
-text="How many colored pencils were in the green mug?"
-autowrap_mode=3
-custom_constants/line_spacing=4
+[node name="BrandLabel" type="Label" parent="MainMargin/Content/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "RECALL"
+horizontal_alignment = 1
 
-[node name="OptionsContainer" type="VBoxContainer" parent="Margin/VBox"]
-layout_mode=2
-custom_constants/separation=12
+[node name="SubtitleLabel" type="Label" parent="MainMargin/Content/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "What did you see?"
+horizontal_alignment = 1
+autowrap_mode = 3
 
-[node name="OptionA" type="Button" parent="Margin/VBox/OptionsContainer"]
-custom_minimum_size=Vector2(0, 56)
-layout_mode=2
-text="3"
+[node name="QuestionLabel" type="Label" parent="MainMargin/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "How many colored pencils were in the green mug?"
+horizontal_alignment = 1
+autowrap_mode = 3
 
-[node name="OptionB" type="Button" parent="Margin/VBox/OptionsContainer"]
-custom_minimum_size=Vector2(0, 56)
-layout_mode=2
-text="4"
+[node name="OptionsContainer" type="VBoxContainer" parent="MainMargin/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 12
 
-[node name="OptionC" type="Button" parent="Margin/VBox/OptionsContainer"]
-custom_minimum_size=Vector2(0, 56)
-layout_mode=2
-text="5"
-
-[node name="OptionD" type="Button" parent="Margin/VBox/OptionsContainer"]
-custom_minimum_size=Vector2(0, 56)
-layout_mode=2
-text="6"
+[node name="BottomSpacer" type="Control" parent="MainMargin/Content"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+size_flags_vertical = 0
+]
