@@ -10,6 +10,22 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	resized.connect(queue_redraw)
 	set_process(false)
+	_setup_background()
+
+func _setup_background() -> void:
+	var bg_path: String = "res://assets/gameplay/object_recall/background.png"
+	if ResourceLoader.exists(bg_path):
+		var bg := TextureRect.new()
+		bg.name = "Background"
+		bg.texture = load(bg_path)
+		bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		bg.stretch_mode = TextureRect.STRETCH_SCALE
+		bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		add_child(bg)
+	else:
+		# Fallback is already in _draw
+		pass
 
 func set_scene_data(data: Dictionary, highlight_ids: Array = []) -> void:
 	_scene = data.duplicate(true)
@@ -31,22 +47,33 @@ func _process(delta: float) -> void:
 
 func _draw() -> void:
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
-	draw_rect(Rect2(Vector2.ZERO, size), Color.BLACK if high_contrast else Color("#12131A"), true)
+	# Background is now handled by TextureRect
+	if high_contrast:
+		draw_rect(Rect2(Vector2.ZERO, size), Color.BLACK, true)
+		
 	var reveal: bool = not _highlights.is_empty() or bool(_scene.get("reveal_mode", false))
 	var missing_evidence := _missing_evidence()
 	var tray_bottom: float = 0.70 if reveal and not missing_evidence.is_empty() else 0.86
 	var tray := Rect2(size.x * 0.05, size.y * 0.12, size.x * 0.90, size.y * (tray_bottom - 0.12))
-	draw_rect(tray, Color.WHITE if high_contrast else Color("#E9E3D7"), true)
-	draw_rect(tray, Color.BLACK if high_contrast else Color("#6D6578"), false, 4.0)
+	
+	# Premium Tray: Soft off-white with a subtle border
+	var tray_color := Color.WHITE if high_contrast else Color("#FDFCFB")
+	var border_color := Color.BLACK if high_contrast else Color("#B8AFBF")
+	draw_rect(tray, tray_color, true)
+	draw_rect(tray, border_color, false, 3.0 if high_contrast else 2.0)
+	
 	var header := "EVIDENCE" if reveal else "REMEMBER THE SET"
+	var header_color := Color.WHITE if high_contrast else Color("#B7AECA")
+	var font_size := ThemeService.get_font_size("title") if ThemeService else 18
+	
 	draw_string(
 		ThemeDB.fallback_font,
 		Vector2(tray.position.x, size.y * 0.075),
 		header,
 		HORIZONTAL_ALIGNMENT_CENTER,
 		tray.size.x,
-		18,
-		Color.WHITE if high_contrast else Color("#B7AECA")
+		font_size,
+		header_color
 	)
 	for value: Variant in _scene.get("objects", []):
 		if value is Dictionary:
@@ -73,22 +100,32 @@ func _draw_object(tray: Rect2, data: Dictionary, use_position: bool) -> void:
 	var selected := _is_highlighted(data)
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
 	var pulse: float = 0.78 + 0.22 * sin(_reveal_elapsed * 5.0)
-	var card_color := Color.WHITE if high_contrast else Color("#FFFDF8")
+	
+	# Premium Card: Soft white with a slight inner shadow effect
+	var card_color := Color.WHITE if high_contrast else Color("#FDFCFB")
 	draw_rect(card, card_color, true)
-	draw_rect(card, Color.BLACK if high_contrast else Color("#B8AFBF"), false, 3.0 if high_contrast else 2.0)
+	draw_rect(card, Color.BLACK if high_contrast else Color("#B8AFBF"), false, 2.0 if high_contrast else 1.5)
+	
 	if selected:
-		draw_rect(card.grow(5.0 + pulse * 2.0), Color(1.0, 0.72, 0.30, pulse), false, 5.0)
+		# Golden glow for highlighted evidence
+		draw_rect(card.grow(4.0 + pulse * 2.0), Color(1.0, 0.72, 0.30, pulse * 0.5), false, 4.0)
+		
 	var icon_center := card.position + Vector2(card.size.x * 0.5, card.size.y * 0.42)
 	var icon_extent := minf(card.size.x, card.size.y) * 0.23
 	_draw_icon(icon_center, icon_extent, str(data.get("kind", "circle")), Color(str(data.get("color", "#5B7FD0"))))
+	
+	var label_text := str(data.get("label", "Object"))
+	var label_color := Color("#292631")
+	var label_size := ThemeService.get_font_size("caption") if ThemeService else 14
+	
 	draw_string(
 		ThemeDB.fallback_font,
 		card.position + Vector2(4.0, card.size.y - 11.0),
-		str(data.get("label", "Object")),
+		label_text,
 		HORIZONTAL_ALIGNMENT_CENTER,
 		card.size.x - 8.0,
-		14,
-		Color("#292631")
+		label_size,
+		label_color
 	)
 
 func _draw_missing_evidence(items: Array[Dictionary]) -> void:
