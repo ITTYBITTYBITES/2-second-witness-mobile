@@ -11,6 +11,21 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	resized.connect(queue_redraw)
 	set_process(not _scene.is_empty() and _highlights.is_empty())
+	_setup_background()
+
+func _setup_background() -> void:
+	var bg_path: String = "res://assets/gameplay/pattern_recall/background.png"
+	if ResourceLoader.exists(bg_path):
+		var bg := TextureRect.new()
+		bg.name = "Background"
+		bg.texture = load(bg_path)
+		bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		bg.stretch_mode = TextureRect.STRETCH_SCALE
+		bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		add_child(bg)
+	else:
+		pass
 
 func set_scene_data(data: Dictionary, highlight_ids: Array = []) -> void:
 	_scene = data.duplicate(true)
@@ -37,7 +52,9 @@ func _process(delta: float) -> void:
 
 func _draw() -> void:
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
-	draw_rect(Rect2(Vector2.ZERO, size), Color.BLACK if high_contrast else Color("#101119"), true)
+	# Background is now handled by TextureRect
+	if high_contrast:
+		draw_rect(Rect2(Vector2.ZERO, size), Color.BLACK, true)
 	var sequence_value: Variant = _scene.get("sequence", [])
 	var sequence: Array = sequence_value if sequence_value is Array else []
 	if sequence.is_empty():
@@ -70,10 +87,14 @@ func _draw_grid_presentation(sequence: Array) -> void:
 			var active := token == str(sequence[index])
 			var accumulated := revealed_tokens.has(token)
 			var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
-			var fill := Color("#5B2CCB") if active and high_contrast else Color("#8A68FF") if active else Color("#352254") if accumulated and high_contrast else Color("#51406F") if accumulated else Color("#111111") if high_contrast else Color("#292934")
+			
+			# Blueprint theme: glowing accents on dark blue
+			var fill := Color("#BFAEFF") if active and high_contrast else Color("#8A68FF") if active else Color("#5B2CCB") if accumulated and high_contrast else Color("#4A3B8C") if accumulated else Color("#111111") if high_contrast else Color("#1A2A4A")
 			draw_rect(rect, fill, true)
-			draw_rect(rect, Color.WHITE if high_contrast else Color("#77758A"), false, 3.0 if high_contrast else 2.0)
-			draw_string(ThemeDB.fallback_font, rect.position + Vector2(0, rect.size.y * 0.62), token, HORIZONTAL_ALIGNMENT_CENTER, rect.size.x, 19, Color.WHITE)
+			draw_rect(rect, Color.WHITE if high_contrast else Color("#BFAEFF"), false, 2.0 if high_contrast else 1.5)
+			
+			var text_color := Color.WHITE if not active else Color("#FDFCFB")
+			draw_string(ThemeDB.fallback_font, rect.position + Vector2(0, rect.size.y * 0.64), token, HORIZONTAL_ALIGNMENT_CENTER, rect.size.x, 18, text_color)
 	if style == "cumulative_build" and index > 0:
 		var points := PackedVector2Array()
 		for step: int in range(index + 1):

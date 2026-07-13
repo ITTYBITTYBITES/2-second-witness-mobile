@@ -417,22 +417,34 @@ func _apply_safe_area() -> void:
 
 	# Top bar offset
 	var top_bar_layer := get_node_or_null("TopBarLayer")
+	var top_bar_height: float = 0.0
 	if top_bar_layer:
 		top_bar_layer.offset_top = top
 		top_bar_layer.offset_left = left
 		top_bar_layer.offset_right = -right
+		top_bar_height = top_bar_layer.get_combined_minimum_size().y
+
 	# Navigation bottom offset
 	var nav_layer := get_node_or_null("NavigationLayer")
+	var nav_bar_height: float = 0.0
 	if nav_layer:
 		nav_layer.offset_bottom = -bottom
 		nav_layer.offset_left = left
 		nav_layer.offset_right = -right
+		nav_bar_height = nav_layer.get_combined_minimum_size().y
+
 	# Content container respects safe area
 	if content_container:
 		var current_route = NavigationService.current_route if NavigationService else "home"
 		var is_splash: bool = current_route in ["publisher_splash", "title_splash", "splash"]
-		var top_offset = top + (64 if not is_splash else 0)
-		var bottom_offset = -bottom - (80 if nav_bar and nav_bar.visible else 0)
+		
+		var top_offset = top
+		if not is_splash:
+			top_offset += top_bar_height
+			
+		var bottom_offset = -bottom
+		if nav_bar and nav_bar.visible:
+			bottom_offset -= nav_bar_height
 
 		content_container.offset_top = top_offset
 		content_container.offset_bottom = bottom_offset
