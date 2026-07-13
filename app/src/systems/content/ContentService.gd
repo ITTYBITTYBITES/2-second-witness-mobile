@@ -14,7 +14,7 @@ const CONTENT_MANIFEST_PATH := "res://src/experiences/manifest.json"
 const USER_CONTENT_DIR := "user://content/"
 
 func _ready() -> void:
-	print("[ContentService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -26,12 +26,10 @@ func initialize() -> void:
 	_load_manifest()
 
 	_initialized = true
-	print("[ContentService] Initialized - %d content entries" % _manifest.size())
 
 func _load_manifest() -> void:
 	var paths := [
 		CONTENT_MANIFEST_PATH,
-		"res://src/systems/content/content_manifest.json",
 		"user://content_manifest.json"
 	]
 
@@ -40,7 +38,6 @@ func _load_manifest() -> void:
 			var data := _load_json(p)
 			if not data.is_empty():
 				_manifest = data
-				print("[ContentService] Loaded manifest from %s" % p)
 				return
 
 	# Fallback default manifest
@@ -49,7 +46,6 @@ func _load_manifest() -> void:
 		"experiences": ["flashword"],
 		"last_updated": Time.get_datetime_string_from_system()
 	}
-	print("[ContentService] Using fallback manifest")
 
 func _load_json(path: String) -> Dictionary:
 	if FileAccess.file_exists(path):
@@ -104,7 +100,6 @@ func cache_content(content_id: String, data: Dictionary) -> void:
 func clear_cache() -> void:
 	_cache.clear()
 	content_cache_cleared.emit()
-	print("[ContentService] Cache cleared")
 
 func get_manifest() -> Dictionary:
 	return _manifest.duplicate(true)

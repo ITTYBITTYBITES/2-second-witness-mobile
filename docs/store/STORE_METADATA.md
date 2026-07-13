@@ -52,6 +52,8 @@ The existing Play listing may still display historic ads or purchase declaration
 
 - Listing source: `PLAY_STORE_LISTING.md`
 - Feature graphic: `feature_graphic_1024x500.png`
+- Promotional banner: `promo_banner_1920x1080.png`
+- Social/promotional banner: `promo_banner_1200x628.png`
 - App icon source: `app/assets/brand/app_icon_1024.png`
 - Required final screenshots: Home, Library, at least three Challenge Types, Result, Profile
 - All screenshots must come from the signed/internal-testing app on physical hardware

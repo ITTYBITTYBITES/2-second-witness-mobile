@@ -21,13 +21,12 @@ var _pipeline_trace: Array[String] = []
 var _last_pipeline_trace: Array[String] = []
 
 func _ready() -> void:
-	print("[ChallengeSessionService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
 		return
 	_initialized = true
-	print("[ChallengeSessionService] Initialized")
 
 func start_recommended_session(source: String = "play_now", seed_override: int = -1) -> bool:
 	var player_state := PlayerProgressService.get_player_state() if PlayerProgressService else {}
@@ -441,6 +440,5 @@ func _trace_once(stage: String) -> void:
 func _fail(reason: String) -> bool:
 	# A rejected or unavailable session is an expected runtime outcome, not an
 	# engine fault. Callers observe the signal and decide how to recover.
-	print("[ChallengeSessionService] Session failed: %s" % reason)
 	session_failed.emit(reason)
 	return false

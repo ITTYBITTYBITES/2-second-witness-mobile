@@ -17,9 +17,9 @@ func _ready() -> void:
 	_ensure_ui()
 	_apply_theme()
 	_refresh_selection()
-	if NavigationService:
+	if NavigationService and not NavigationService.route_changed.is_connected(_on_route_changed):
 		NavigationService.route_changed.connect(_on_route_changed)
-	if ThemeService:
+	if ThemeService and not ThemeService.theme_changed.is_connected(_on_theme_changed):
 		ThemeService.theme_changed.connect(_on_theme_changed)
 
 func _ensure_ui() -> void:
@@ -82,15 +82,18 @@ func _apply_theme() -> void:
 	bg_style.border_width_top = 1
 	bg_style.corner_radius_top_left = tokens.get("radius_lg", 20)
 	bg_style.corner_radius_top_right = tokens.get("radius_lg", 20)
+	bg_style.shadow_color = Color(0, 0, 0, 0.35)
+	bg_style.shadow_size = 18
+	bg_style.shadow_offset = Vector2(0, -4)
 	add_theme_stylebox_override("panel", bg_style)
 
-	# Adjust bottom margin for safe area
+	# AppShell positions the entire navigation layer above the safe area. Keep
+	# inner padding stable so the bar height does not double-count gesture insets.
 	var margin_node := get_node_or_null("Margin")
 	if margin_node is MarginContainer:
 		var m: MarginContainer = margin_node
-		var safe_bottom := int(tokens.get("safe_area_bottom", 0))
-		m.add_theme_constant_override("margin_bottom", max(12, safe_bottom + 8))
-		m.add_theme_constant_override("margin_top", 12)
+		m.add_theme_constant_override("margin_bottom", 10)
+		m.add_theme_constant_override("margin_top", 10)
 		m.add_theme_constant_override("margin_left", 8)
 		m.add_theme_constant_override("margin_right", 8)
 
@@ -159,8 +162,6 @@ func _on_tab_pressed(route: String) -> void:
 		AudioService.play_ui("ui_click")
 
 	tab_selected.emit(route)
-	if NavigationService:
-		NavigationService.navigate_to(route)
 
 	if AnalyticsService:
 		AnalyticsService.log_event("tab_selected", {"route": route})

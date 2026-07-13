@@ -29,11 +29,10 @@ __pycache__/
 *.log
 app/logs/
 
-# Godot import cache - ignore all .import EXCEPT brand icons needed for export continuity
+# Godot import cache - keep production asset imports tracked for export continuity
 *.import
-!app/assets/brand/*.import
-!app/assets/brand/**/*.import
-!app/assets/brand/**/
+!app/assets/**/*.import
+!app/assets/**/
 
 # Analytics local buffer
 user_analytics.jsonl

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://app_shell"]
+[gd_scene load_steps=6 format=3 uid="uid://app_shell"]
 
 [ext_resource type="Script" path="res://src/ui/shell/AppShell.gd" id="1_shell"]
 [ext_resource type="Script" path="res://src/ui/shell/TopBar.gd" id="2_topbar"]
 [ext_resource type="Script" path="res://src/ui/shell/MainNavigation.gd" id="3_nav"]
+[ext_resource type="Texture2D" uid="uid://c3gj5np5jt5ss" path="res://assets/brand/witness_eye_glow.png" id="4_eye"]
 
 [node name="AppShell" type="Control"]
 layout_mode=3
@@ -208,10 +209,12 @@ layout_mode=2
 alignment=1
 theme_override_constants/separation=12
 
-[node name="Spinner" type="Label" parent="OverlayLayer/LoadingOverlay/Center/VBox"]
+[node name="Spinner" type="TextureRect" parent="OverlayLayer/LoadingOverlay/Center/VBox"]
+custom_minimum_size=Vector2(120, 54)
 layout_mode=2
-text="◉"
-horizontal_alignment=1
+texture=ExtResource("4_eye")
+expand_mode=1
+stretch_mode=5
 
 [node name="Message" type="Label" parent="OverlayLayer/LoadingOverlay/Center/VBox"]
 layout_mode=2

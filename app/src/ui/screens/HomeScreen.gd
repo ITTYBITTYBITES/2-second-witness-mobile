@@ -151,6 +151,9 @@ func _card_style(tokens: Dictionary) -> StyleBoxFlat:
 	style.corner_radius_top_right = 16
 	style.corner_radius_bottom_left = 16
 	style.corner_radius_bottom_right = 16
+	style.shadow_color = Color(0, 0, 0, 0.22)
+	style.shadow_size = 10
+	style.shadow_offset = Vector2(0, 3)
 	return style
 
 func _refresh_data() -> void:

@@ -32,46 +32,51 @@ theme_override_constants/margin_right = 20
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="Content" type="VBoxContainer" parent="MainMargin"]
+[node name="Scroll" type="ScrollContainer" parent="MainMargin"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_constants/separation = 28
+horizontal_scroll_mode = 0
 
-[node name="Header" type="VBoxContainer" parent="MainMargin/Content"]
+[node name="Content" type="VBoxContainer" parent="MainMargin/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 22
+
+[node name="Header" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
 theme_override_constants/separation = 8
 
-[node name="BrandLabel" type="Label" parent="MainMargin/Content/Header"]
+[node name="BrandLabel" type="Label" parent="MainMargin/Scroll/Content/Header"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "RECALL"
 horizontal_alignment = 1
 
-[node name="SubtitleLabel" type="Label" parent="MainMargin/Content/Header"]
+[node name="SubtitleLabel" type="Label" parent="MainMargin/Scroll/Content/Header"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "What did you see?"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="QuestionLabel" type="Label" parent="MainMargin/Content"]
+[node name="QuestionLabel" type="Label" parent="MainMargin/Scroll/Content"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "How many colored pencils were in the green mug?"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="OptionsContainer" type="VBoxContainer" parent="MainMargin/Content"]
+[node name="OptionsContainer" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 12
 
-[node name="BottomSpacer" type="Control" parent="MainMargin/Content"]
-custom_minimum_size = Vector2(0, 8)
+[node name="BottomSpacer" type="Control" parent="MainMargin/Scroll/Content"]
+custom_minimum_size = Vector2(0, 16)
 layout_mode = 2
 size_flags_vertical = 0
-]

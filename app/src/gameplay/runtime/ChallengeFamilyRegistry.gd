@@ -14,7 +14,7 @@ var _modules: Dictionary = {}
 var _ordered_ids: Array[String] = []
 
 func _ready() -> void:
-	print("[ChallengeFamilyRegistry] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -23,7 +23,6 @@ func initialize() -> void:
 		InteractionAdapterRegistry.initialize()
 	_load_manifest()
 	_initialized = true
-	print("[ChallengeFamilyRegistry] Initialized - %d families" % _ordered_ids.size())
 	registry_ready.emit(get_family_ids())
 
 func _load_manifest() -> void:

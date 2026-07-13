@@ -39,7 +39,6 @@ const SCREEN_SCENES := {
 }
 
 func _ready() -> void:
-	print("[AppShell] Starting - New Vision with ITTYBITTYBITES identity")
 	_ensure_boot_flow()
 
 	if AppState:
@@ -98,7 +97,6 @@ func _ensure_boot_flow() -> void:
 		add_child(_boot_flow)
 
 func _on_boot_completed() -> void:
-	print("[AppShell] Boot completed")
 	AppState.set_loading(false)
 	# The publisher splash is displayed immediately in _ready; once boot finishes
 	# the splash's own timer advances us to the title/loading screen. If for some
@@ -112,14 +110,12 @@ func _on_boot_completed() -> void:
 		_current_screen.notify_boot_completed()
 
 func _on_boot_failed(reason: String) -> void:
-	print("[AppShell] Boot failed: %s" % reason)
 	_show_error("Boot failed: %s" % reason)
 	AppState.set_loading(false)
 	if NavigationService:
 		NavigationService.navigate_to("publisher_splash")
 
 func _on_route_changed(route: String, params: Dictionary) -> void:
-	print("[AppShell] Route change to %s" % route)
 	_load_screen(route, params)
 	_update_chrome(route)
 
@@ -151,7 +147,7 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 			if scene:
 				screen_instance = scene.instantiate() as Control
 		else:
-			screen_instance = _create_placeholder_screen(route)
+			screen_instance = _create_unavailable_screen(route)
 		if screen_instance:
 			screen_instance.name = "%sScreenInstance" % route.capitalize()
 			screen_instance.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -166,7 +162,6 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 			if screen_instance.has_method("on_navigated_to"):
 				screen_instance.call("on_navigated_to", params)
 		else:
-			print("[AppShell] Failed to load screen for route %s" % route)
 			if ErrorHandler:
 				ErrorHandler.handle("SCREEN_LOAD_FAILED", "Failed to load %s" % route, {"route": route})
 	_current_route = route
@@ -210,16 +205,21 @@ func _animate_screen_in(route: String) -> void:
 	var duration := AccessibilityService.get_animation_duration(base_duration) if AccessibilityService else base_duration
 	_screen_transition.tween_property(_current_screen, "modulate:a", 1.0, duration).set_ease(Tween.EASE_OUT)
 
-func _create_placeholder_screen(route: String) -> Control:
-	var placeholder_script = load("res://src/ui/screens/PlaceholderScreen.gd")
+func _create_unavailable_screen(route: String) -> Control:
 	var ctrl := Control.new()
-	if placeholder_script:
-		ctrl.set_script(placeholder_script)
-		ctrl.set("route_name", route)
-	else:
-		var label := Label.new()
-		label.text = "Screen: %s (Placeholder)" % route
-		ctrl.add_child(label)
+	ctrl.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var center := CenterContainer.new()
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	ctrl.add_child(center)
+	var label := Label.new()
+	label.text = "This screen is unavailable."
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	if ThemeService:
+		ThemeService.apply_label_style(label, "body", "text_secondary")
+	center.add_child(label)
+	if ErrorHandler:
+		ErrorHandler.handle("SCREEN_UNAVAILABLE", "Route has no screen scene: %s" % route, {"route": route}, ErrorHandler.Severity.WARNING)
 	return ctrl
 
 func _update_chrome(route: String) -> void:
@@ -247,7 +247,7 @@ func _update_chrome(route: String) -> void:
 				show_back = true
 			top_bar.set_show_back(show_back)
 		if top_bar.has_method("set_show_actions"):
-			top_bar.set_show_actions(not is_gameplay and route != "tutorial")
+			top_bar.set_show_actions(not is_tab and not is_gameplay and route != "tutorial")
 		var title_map := {
 			"publisher_splash": "",
 			"title_splash": "",
@@ -270,7 +270,6 @@ func _update_chrome(route: String) -> void:
 	_apply_safe_area()
 
 func _on_phase_changed(new_phase, old_phase) -> void:
-	print("[AppShell] Phase %s -> %s" % [str(old_phase), str(new_phase)])
 	if NavigationService:
 		_update_chrome(NavigationService.current_route)
 	else:
@@ -288,17 +287,20 @@ func _on_loading_changed(is_loading: bool, message: String) -> void:
 
 func _start_loading_pulse() -> void:
 	_stop_loading_pulse()
-	var indicator: Label = loading_overlay.get_node_or_null("Center/VBox/Spinner") as Label
+	var indicator: Control = loading_overlay.get_node_or_null("Center/VBox/Spinner") as Control
 	if indicator == null:
 		return
 	indicator.modulate.a = 1.0
+	indicator.scale = Vector2.ONE
 	if AccessibilityService and not AccessibilityService.should_animate():
 		return
 	_loading_pulse = indicator.create_tween()
 	_loading_pulse.set_loops()
 	_loading_pulse.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-	_loading_pulse.tween_property(indicator, "modulate:a", 0.45, 0.6)
-	_loading_pulse.tween_property(indicator, "modulate:a", 1.0, 0.6)
+	_loading_pulse.tween_property(indicator, "modulate:a", 0.58, 0.7)
+	_loading_pulse.parallel().tween_property(indicator, "scale", Vector2(1.035, 1.035), 0.7)
+	_loading_pulse.tween_property(indicator, "modulate:a", 1.0, 0.7)
+	_loading_pulse.parallel().tween_property(indicator, "scale", Vector2.ONE, 0.7)
 
 func _stop_loading_pulse() -> void:
 	if _loading_pulse and _loading_pulse.is_valid():
@@ -415,39 +417,60 @@ func _apply_safe_area() -> void:
 		top = max(top, 12)
 		bottom = max(bottom, 12)
 
-	# Top bar offset
+	# Measure and explicitly size chrome. These layers are anchored to edges; if
+	# their rect height is left at zero, child labels can visually escape the
+	# panel and appear as floating navigation text on phones.
 	var top_bar_layer := get_node_or_null("TopBarLayer")
 	var top_bar_height: float = 0.0
+	if top_bar and top_bar.visible:
+		top_bar_height = maxf(maxf(top_bar.get_combined_minimum_size().y, top_bar.custom_minimum_size.y), 60.0)
+		top_bar.custom_minimum_size.y = top_bar_height
+		top_bar.set_anchors_preset(Control.PRESET_FULL_RECT)
+		top_bar.offset_left = 0
+		top_bar.offset_top = 0
+		top_bar.offset_right = 0
+		top_bar.offset_bottom = 0
 	if top_bar_layer:
 		top_bar_layer.offset_top = top
+		top_bar_layer.offset_bottom = top + top_bar_height
 		top_bar_layer.offset_left = left
 		top_bar_layer.offset_right = -right
-		top_bar_height = top_bar_layer.get_combined_minimum_size().y
 
-	# Navigation bottom offset
 	var nav_layer := get_node_or_null("NavigationLayer")
 	var nav_bar_height: float = 0.0
+	if nav_bar and nav_bar.visible:
+		nav_bar_height = maxf(maxf(nav_bar.get_combined_minimum_size().y, nav_bar.custom_minimum_size.y), 76.0)
+		nav_bar.custom_minimum_size.y = nav_bar_height
+		nav_bar.set_anchors_preset(Control.PRESET_FULL_RECT)
+		nav_bar.offset_left = 0
+		nav_bar.offset_top = 0
+		nav_bar.offset_right = 0
+		nav_bar.offset_bottom = 0
 	if nav_layer:
+		nav_layer.offset_top = -(bottom + nav_bar_height)
 		nav_layer.offset_bottom = -bottom
 		nav_layer.offset_left = left
 		nav_layer.offset_right = -right
-		nav_bar_height = nav_layer.get_combined_minimum_size().y
 
-	# Content container respects safe area
+	# Content container respects safe area and active chrome. Offsets are clamped
+	# so tiny phone viewports still leave a usable content rectangle instead of
+	# allowing top and bottom bars to intersect.
 	if content_container:
 		var current_route = NavigationService.current_route if NavigationService else "home"
 		var is_splash: bool = current_route in ["publisher_splash", "title_splash", "splash"]
-		
-		var top_offset = top
+		var top_offset: float = top
 		if not is_splash:
 			top_offset += top_bar_height
-			
-		var bottom_offset = -bottom
+		var bottom_inset: float = bottom
 		if nav_bar and nav_bar.visible:
-			bottom_offset -= nav_bar_height
-
+			bottom_inset += nav_bar_height
+		var viewport_height: float = get_viewport_rect().size.y
+		var min_content_height := 260.0
+		if viewport_height > 0.0 and top_offset + bottom_inset > viewport_height - min_content_height:
+			var overflow := top_offset + bottom_inset - (viewport_height - min_content_height)
+			bottom_inset = maxf(bottom, bottom_inset - overflow)
 		content_container.offset_top = top_offset
-		content_container.offset_bottom = bottom_offset
+		content_container.offset_bottom = -bottom_inset
 		content_container.offset_left = left
 		content_container.offset_right = -right
 
@@ -472,9 +495,15 @@ func _setup_loading_overlay() -> void:
 		ThemeService.apply_label_style(msg_label, "body", "text_primary")
 		msg_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
-	# Branded eye-like pulse; no stock spinner and no color-only status.
-	var spinner_label: Label = loading_overlay.get_node_or_null("Center/VBox/Spinner") as Label
-	if spinner_label:
+	# Branded eye pulse; no stock spinner and no color-only status.
+	var spinner := loading_overlay.get_node_or_null("Center/VBox/Spinner")
+	if spinner is TextureRect:
+		var eye := spinner as TextureRect
+		eye.texture = load("res://assets/brand/witness_eye_glow.png") as Texture2D
+		eye.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
+		eye.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	elif spinner is Label:
+		var spinner_label := spinner as Label
 		spinner_label.text = "◉"
 		ThemeService.apply_typography(spinner_label, "display")
 		spinner_label.add_theme_color_override("font_color", tokens.get("primary", Color.WHITE))

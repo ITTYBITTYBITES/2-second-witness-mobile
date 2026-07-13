@@ -6,13 +6,12 @@ signal result_created(result: ChallengeResult)
 var _initialized: bool = false
 
 func _ready() -> void:
-	print("[ResultService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
 		return
 	_initialized = true
-	print("[ResultService] Initialized")
 
 func build_result(
 	session_id: String,

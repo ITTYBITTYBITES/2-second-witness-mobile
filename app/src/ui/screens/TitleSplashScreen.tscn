@@ -28,10 +28,10 @@ anchor_right=1.0
 anchor_bottom=1.0
 grow_horizontal=2
 grow_vertical=2
-custom_constants/margin_left=20
-custom_constants/margin_right=20
-custom_constants/margin_top=24
-custom_constants/margin_bottom=24
+theme_override_constants/margin_left=20
+theme_override_constants/margin_right=20
+theme_override_constants/margin_top=24
+theme_override_constants/margin_bottom=24
 
 [node name="Scroll" type="ScrollContainer" parent="MainMargin"]
 layout_mode=2
@@ -43,7 +43,7 @@ horizontal_scroll_mode=0
 layout_mode=2
 size_flags_horizontal=3
 alignment=1
-custom_constants/separation=28
+theme_override_constants/separation=28
 
 [node name="Hero" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
 layout_mode=2
@@ -90,7 +90,7 @@ autowrap_mode=3
 layout_mode=2
 size_flags_horizontal=3
 alignment=1
-custom_constants/separation=12
+theme_override_constants/separation=12
 
 [node name="StatusLabel" type="Label" parent="MainMargin/Scroll/Content/LoadingBlock"]
 layout_mode=2

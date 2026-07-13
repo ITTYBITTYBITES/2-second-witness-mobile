@@ -18,6 +18,10 @@ Two Second Witness
 
 Fast, fair observation challenges. Notice the detail, then reveal the evidence.
 
+## Promotional tagline
+
+Observe. Remember. Recall.
+
 ## Full description
 
 **How much will you notice before the moment disappears?**
@@ -81,6 +85,15 @@ Read the full policy at:
 
 **Published by ITTYBITTYBITES**
 
+## Feature highlights
+
+- Five distinct observation and memory Challenge Types
+- Evidence-first results that show what was missed
+- Curated Programs for focused or mixed runs
+- Local progress, achievements, favorites, and history
+- Offline play with no account, ads, or remote analytics in 4.0.0
+- Accessibility controls for contrast, timing, motion, text size, audio, and haptics
+
 ## Release notes — 4.0.0
 
 A complete five-Challenge-Type rebuild of Two Second Witness:
@@ -93,9 +106,22 @@ A complete five-Challenge-Type rebuild of Two Second Witness:
 - Offline production configuration
 - Refined phone, tablet, and foldable layouts
 
+## Suggested ASO keywords
+
+observation game, memory game, attention puzzle, recall game, visual puzzle, spot the difference, pattern memory, object memory, quick puzzle, offline puzzle game
+
+## Content rating guidance
+
+Recommended questionnaire posture: puzzle/observation game, no user-generated content, no online interaction, no gambling, no ads in 4.0.0, no in-app purchases in 4.0.0, no realistic violence, no explicit content, no location sharing. Refresh the official Play Console content rating against the signed AAB before rollout.
+
 ## Feature graphic
 
 **Existing file:** `docs/store/feature_graphic_1024x500.png`
+
+Additional promotional graphics:
+
+- `docs/store/promo_banner_1920x1080.png`
+- `docs/store/promo_banner_1200x628.png`
 
 Final review requirements:
 
@@ -125,6 +151,10 @@ Optional additional screenshots:
 - First-run privacy/tutorial flow
 
 Do not use only source artwork as a substitute for actual application screenshots.
+
+## Trailer status
+
+Production trailers should be assembled after Godot runtime validation from real app footage. Do not use mock gameplay footage for the final Play listing.
 
 ## Store review checklist
 

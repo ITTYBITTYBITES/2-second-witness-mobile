@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://home_screen"]
+[gd_scene load_steps=3 format=3 uid="uid://home_screen"]
 
 [ext_resource type="Script" path="res://src/ui/screens/HomeScreen.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://c3gj5np5jt5ss" path="res://assets/brand/witness_eye_glow.png" id="2_eye"]
 
 [node name="HomeScreen" type="Control" groups=["app_screen"]]
 layout_mode = 3
@@ -54,6 +55,17 @@ theme_override_constants/separation = 4
 layout_mode = 2
 text = "TWO SECOND WITNESS"
 horizontal_alignment = 1
+
+[node name="EyeWrap" type="CenterContainer" parent="MainMargin/Scroll/Content/Hero"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Eye" type="TextureRect" parent="MainMargin/Scroll/Content/Hero/EyeWrap"]
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+texture = ExtResource("2_eye")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="GreetingLabel" type="Label" parent="MainMargin/Scroll/Content/Hero"]
 layout_mode = 2

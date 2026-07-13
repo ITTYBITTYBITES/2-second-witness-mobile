@@ -1,6 +1,5 @@
 extends "res://src/experiences/ExperienceBase.gd"
-## FlashwordExperience - Foundation implementation
-## Future: Full gameplay in Phase 2, current placeholder with data contract
+## FlashwordExperience - Legacy foundation implementation retained for save compatibility.
 
 var _words: Array[String] = []
 var _current_word: String = ""
@@ -36,7 +35,6 @@ func start(params: Dictionary = {}) -> Dictionary:
 
 	is_active = true
 	started.emit(id)
-	print("[Flashword] Started - Word: %s Choices: %s" % [_current_word, str(_choices)])
 
 	return session
 
@@ -69,8 +67,6 @@ func submit_answer(answer: String) -> Dictionary:
 	if ProfileService:
 		ProfileService.record_experience_play(id, result)
 
-	var summary := "[Flashword] Completed - Correct: %s Score: %d Elapsed: %d ms"
-	print(summary % [str(correct), score, elapsed])
 
 	return result
 
@@ -109,4 +105,3 @@ func load_word_list_from_json(path: String) -> void:
 				_words.append(entry["word"])
 	elif parsed is Dictionary and parsed.has("words"):
 		_words = parsed["words"]
-	print("[Flashword] Loaded %d words from %s" % [_words.size(), path])

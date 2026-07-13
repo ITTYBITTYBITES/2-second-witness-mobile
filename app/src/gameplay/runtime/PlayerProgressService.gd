@@ -11,14 +11,13 @@ const MAX_RECENT_SEEDS: int = 20
 var _initialized: bool = false
 
 func _ready() -> void:
-	print("[PlayerProgressService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
 		return
 	_ensure_witness_progress()
 	_initialized = true
-	print("[PlayerProgressService] Initialized")
 
 func get_player_state() -> Dictionary:
 	_ensure_witness_progress()

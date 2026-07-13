@@ -105,6 +105,9 @@ func _apply_theme() -> void:
 		style.corner_radius_top_right = r
 		style.corner_radius_bottom_left = r
 		style.corner_radius_bottom_right = r
+		style.shadow_color = Color(0, 0, 0, 0.34)
+		style.shadow_size = 16
+		style.shadow_offset = Vector2(0, 5)
 		style.border_color = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
 		style.border_width_left = 1
 		style.border_width_right = 1
@@ -152,9 +155,7 @@ func _load_challenge() -> void:
 			if tex and image_rect:
 				image_rect.visible = true
 				image_rect.texture = tex
-				print("[Observation] Loaded challenge image %s" % image_path)
 		else:
-			print("[Observation] Challenge image not found: %s" % image_path)
 			if image_rect:
 				image_rect.visible = true
 				image_rect.texture = null
@@ -178,7 +179,6 @@ func _show_generated_scene(generated_scene: Dictionary, renderer_script: String)
 	_scene_view.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	image_rect.get_parent().add_child(_scene_view)
 	_scene_view.call("set_scene_data", generated_scene, [])
-	print("[Observation] Loaded generated scene %s" % generated_scene.get("template_id", "unknown"))
 
 func _clear_scene_view() -> void:
 	if is_instance_valid(_scene_view):
@@ -204,7 +204,6 @@ func _start_observation() -> void:
 	if AudioService:
 		AudioService.play_sfx("observation_start", 0.75)
 
-	print("[Observation] Challenge started - %s" % _challenge_id)
 
 func _process(delta: float) -> void:
 	_elapsed += delta

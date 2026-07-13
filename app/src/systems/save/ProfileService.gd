@@ -39,12 +39,14 @@ const DEFAULT_PROFILE := {
 	"program_progress": {},
 	"active_program_id": "",
 	"preferences": {
-		"onboarding_completed": false
+		"onboarding_completed": false,
+		"privacy_acknowledged": false,
+		"privacy_policy_version": ""
 	}
 }
 
 func _ready() -> void:
-	print("[ProfileService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -55,10 +57,8 @@ func initialize() -> void:
 		profile = DEFAULT_PROFILE.duplicate(true)
 		profile["id"] = _generate_id()
 		profile["created_at"] = Time.get_datetime_string_from_system()
-		print("[ProfileService] New profile created: %s" % profile["id"])
 	else:
 		profile = _merge_default(loaded)
-		print("[ProfileService] Loaded existing profile: %s" % profile.get("id", "unknown"))
 
 	profile["last_seen"] = Time.get_datetime_string_from_system()
 	profile["total_sessions"] = int(profile.get("total_sessions", 0)) + 1
@@ -117,7 +117,6 @@ func add_xp(amount: int) -> void:
 		current_xp -= xp_to_next
 		level += 1
 		xp_to_next = int(xp_to_next * 1.25)
-		print("[ProfileService] Level up! %d" % level)
 		if AnalyticsService:
 			AnalyticsService.log_event("level_up", {"level": level})
 
@@ -178,7 +177,6 @@ func unlock_experience(exp_id: String) -> bool:
 	profile["experiences_unlocked"] = unlocked
 	save()
 	EventBus.publish_experience_unlocked(exp_id)
-	print("[ProfileService] Unlocked experience: %s" % exp_id)
 	return true
 
 func is_experience_unlocked(exp_id: String) -> bool:
@@ -203,4 +201,3 @@ func reset_profile() -> void:
 	profile["created_at"] = Time.get_datetime_string_from_system()
 	save()
 	profile_loaded.emit(profile)
-	print("[ProfileService] Profile reset")

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs><radialGradient id="bg" cx="50%" cy="45%" r="72%"><stop offset="0" stop-color="#2B1C55"/><stop offset="1" stop-color="#08080F"/></radialGradient><filter id="g"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/><circle cx="1450" cy="180" r="430" fill="#6A3DFF" opacity=".14"/><circle cx="300" cy="900" r="420" fill="#FFB84D" opacity=".10"/>
+  <g transform="translate(960 430)" filter="url(#g)"><path d="M-430 0C-260-220 260-220 430 0C260 220-260 220-430 0Z" fill="#100D18" stroke="#8A68FF" stroke-width="20"/><circle r="150" fill="#0A0911" stroke="#FFCF78" stroke-width="22"/><circle r="58" fill="#F7E8C6"/></g>
+  <text x="960" y="750" text-anchor="middle" fill="#FFFFFF" font-size="104" font-family="Arial" font-weight="900">Two Second Witness</text>
+  <text x="960" y="830" text-anchor="middle" fill="#FFCF78" font-size="42" font-family="Arial" font-weight="800" letter-spacing="5">OBSERVE • REMEMBER • RECALL</text>
+</svg>

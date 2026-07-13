@@ -12,7 +12,7 @@ var _initialized: bool = false
 const EXPERIENCE_BASE_PATH := "res://src/experiences/"
 
 func _ready() -> void:
-	print("[ExperienceRegistry] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -21,7 +21,6 @@ func initialize() -> void:
 	_scan_and_register()
 
 	_initialized = true
-	print("[ExperienceRegistry] Initialized - %d experiences" % _experiences.size())
 	registry_updated.emit(get_all_experiences())
 
 func _scan_and_register() -> void:
@@ -76,7 +75,7 @@ func _register_from_path(exp_id: String) -> bool:
 					break
 
 	if not found:
-		# Create default manifest for foundation placeholder
+		# Create a safe fallback manifest for legacy experience modules.
 		manifest = _create_default_manifest(exp_id)
 
 	if manifest.is_empty():
@@ -96,7 +95,6 @@ func _register_from_path(exp_id: String) -> bool:
 	}
 
 	experience_registered.emit(exp_id, manifest)
-	print("[ExperienceRegistry] Registered '%s' - %s" % [exp_id, manifest.get("title")])
 	return true
 
 func _create_default_manifest(exp_id: String) -> Dictionary:
@@ -123,10 +121,10 @@ func _create_default_manifest(exp_id: String) -> Dictionary:
 				"id": exp_id,
 				"title": exp_id.capitalize(),
 				"short_description": "A quick observation experience",
-				"description": "Placeholder experience module",
+				"description": "A locked legacy experience module.",
 				"category": "observation",
 				"tags": ["observation"],
-				"version": "0.1.0-placeholder",
+				"version": "0.1.0-legacy",
 				"difficulty": ["easy"],
 				"estimated_duration_sec": 10,
 				"icon": "generic",
@@ -137,7 +135,7 @@ func _create_default_manifest(exp_id: String) -> Dictionary:
 
 func register_experience(exp_id: String, manifest: Dictionary) -> bool:
 	if _experiences.has(exp_id):
-		print("[ExperienceRegistry] Experience %s already registered, updating" % exp_id)
+		pass
 	_experiences[exp_id] = {
 		"manifest": manifest,
 		"registered_at": Time.get_ticks_msec(),

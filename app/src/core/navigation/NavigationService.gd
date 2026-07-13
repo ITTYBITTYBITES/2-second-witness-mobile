@@ -25,7 +25,6 @@ func _ready() -> void:
 	if EventBus:
 		if not EventBus.navigation_requested.is_connected(_on_navigation_requested):
 			EventBus.navigation_requested.connect(_on_navigation_requested)
-	print("[NavigationService] Ready")
 
 func initialize() -> void:
 	if _initialized:
@@ -34,7 +33,6 @@ func initialize() -> void:
 	current_route = "publisher_splash"
 	current_params = {}
 	history.clear()
-	print("[NavigationService] Initialized - start publisher_splash")
 	await get_tree().process_frame
 
 func navigate_to(route: String, params: Dictionary = {}) -> bool:
@@ -57,7 +55,6 @@ func navigate_to(route: String, params: Dictionary = {}) -> bool:
 	current_route = route
 	current_params = params
 
-	print("[NavigationService] -> %s %s" % [route, str(params)])
 	route_changed.emit(route, params)
 	if EventBus:
 		EventBus.publish_navigation_changed(route, params)
@@ -108,7 +105,6 @@ func go_back() -> bool:
 	if EventBus:
 		EventBus.publish_navigation_changed(route, params)
 	_update_app_state_phase(route)
-	print("[NavigationService] Back -> %s" % route)
 	_log_screen_view(route, params)
 	return true
 
@@ -121,7 +117,6 @@ func replace(route: String, params: Dictionary = {}) -> bool:
 	if EventBus:
 		EventBus.publish_navigation_changed(route, params)
 	_update_app_state_phase(route)
-	print("[NavigationService] Replace -> %s" % route)
 	_log_screen_view(route, params)
 	return true
 
@@ -163,7 +158,7 @@ func _update_app_state_phase(route: String) -> void:
 			AppState.set_phase(AppState.AppPhase.PROGRAMS)
 		"settings", "about":
 			AppState.set_phase(AppState.AppPhase.SETTINGS)
-		"observation", "memory_question", "result", "experience_play":
+		"observation", "memory_question", "result":
 			AppState.set_phase(AppState.AppPhase.EXPERIENCE_PLAYING)
 
 func get_current() -> Dictionary:

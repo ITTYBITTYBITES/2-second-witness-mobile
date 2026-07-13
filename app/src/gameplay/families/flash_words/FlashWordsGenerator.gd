@@ -321,6 +321,6 @@ func _unique_strings(values: Array[String]) -> Array[String]:
 func _shuffle(values: Array, rng: RandomNumberGenerator) -> void:
 	for index: int in range(values.size() - 1, 0, -1):
 		var swap_index := rng.randi_range(0, index)
-		var temporary: Variant = values[index]
+		var swap_value: Variant = values[index]
 		values[index] = values[swap_index]
-		values[swap_index] = temporary
+		values[swap_index] = swap_value

@@ -10,7 +10,7 @@ var _initialized: bool = false
 var _definitions: Array[Dictionary] = []
 
 func _ready() -> void:
-	print("[AchievementService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -18,7 +18,6 @@ func initialize() -> void:
 	_load_definitions()
 	_ensure_profile_fields()
 	_initialized = true
-	print("[AchievementService] Initialized - %d achievements" % _definitions.size())
 
 func get_definitions() -> Array[Dictionary]:
 	_ensure_initialized()
@@ -90,10 +89,10 @@ func evaluate_after_result(result: ChallengeResult) -> Array[String]:
 	return newly_unlocked
 
 func evaluate_profile_progress() -> Array[String]:
-	var placeholder := ChallengeResult.new()
-	placeholder.outcome = "incomplete"
-	placeholder.reaction_ms = 999999
-	return evaluate_after_result(placeholder)
+	var incomplete_result := ChallengeResult.new()
+	incomplete_result.outcome = "incomplete"
+	incomplete_result.reaction_ms = 999999
+	return evaluate_after_result(incomplete_result)
 
 func get_unlocked_count() -> int:
 	_ensure_initialized()

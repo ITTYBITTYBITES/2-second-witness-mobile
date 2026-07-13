@@ -22,15 +22,22 @@ func _ready() -> void:
 	add_child(background)
 	var margin := MarginContainer.new()
 	margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	margin.add_theme_constant_override("margin_left", 32)
-	margin.add_theme_constant_override("margin_right", 32)
-	margin.add_theme_constant_override("margin_top", 56)
-	margin.add_theme_constant_override("margin_bottom", 36)
+	margin.add_theme_constant_override("margin_left", 24)
+	margin.add_theme_constant_override("margin_right", 24)
+	margin.add_theme_constant_override("margin_top", 24)
+	margin.add_theme_constant_override("margin_bottom", 24)
 	add_child(margin)
+	ResponsiveLayout.apply_centered_margin(margin, 24.0, 760.0)
+	var scroll := ScrollContainer.new()
+	scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	margin.add_child(scroll)
 	var stack := VBoxContainer.new()
+	stack.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	stack.alignment = BoxContainer.ALIGNMENT_CENTER
-	stack.add_theme_constant_override("separation", 18)
-	margin.add_child(stack)
+	stack.add_theme_constant_override("separation", 14)
+	scroll.add_child(stack)
 	_progress = Label.new()
 	_progress.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	stack.add_child(_progress)
@@ -42,12 +49,9 @@ func _ready() -> void:
 	_description.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	stack.add_child(_description)
 	_preview = PatternRecallView.new()
-	_preview.custom_minimum_size = Vector2(0, 390)
+	_preview.custom_minimum_size = Vector2(0, 300)
 	_preview.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	stack.add_child(_preview)
-	var spacer := Control.new()
-	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	stack.add_child(spacer)
 	_next = Button.new()
 	_next.custom_minimum_size = Vector2(0, 64)
 	_next.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -85,6 +89,7 @@ func _update() -> void:
 		ThemeService.apply_label_style(_description, "body", "text_secondary")
 		ThemeService.apply_label_style(_progress, "label_small", "primary_variant")
 		ThemeService.apply_typography(_next, "button")
+	_style_primary_button(_next)
 	var reveal := _step in [1, 2]
 	_preview.set_scene_data(_demo_scene(reveal, _step == 1), ["A1", "A2", "B2"] if reveal else [])
 
@@ -111,3 +116,23 @@ func _advance() -> void:
 func _skip() -> void:
 	skipped.emit(FAMILY_ID, TUTORIAL_VERSION)
 	practice_requested.emit(FAMILY_ID, "grid_path_v1")
+
+func _style_primary_button(button: Button) -> void:
+	var tokens: Dictionary = ThemeService.tokens if ThemeService else {}
+	var style := StyleBoxFlat.new()
+	style.bg_color = tokens.get("primary", Color("#6A3DFF"))
+	style.corner_radius_top_left = 16
+	style.corner_radius_top_right = 16
+	style.corner_radius_bottom_left = 16
+	style.corner_radius_bottom_right = 16
+	style.content_margin_left = 18
+	style.content_margin_right = 18
+	style.content_margin_top = 14
+	style.content_margin_bottom = 14
+	var pressed: StyleBoxFlat = style.duplicate()
+	pressed.bg_color = style.bg_color.darkened(0.10)
+	button.add_theme_stylebox_override("normal", style)
+	button.add_theme_stylebox_override("hover", style)
+	button.add_theme_stylebox_override("focus", style)
+	button.add_theme_stylebox_override("pressed", pressed)
+	button.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))

@@ -28,7 +28,6 @@ func start_boot() -> void:
 		return
 	_is_booting = true
 	_boot_start_time = Time.get_ticks_msec()
-	print("[AppBoot] Starting boot sequence")
 
 	# Keep the dependency order explicit. Settings reads SaveService and the
 	# theme reads SettingsService; starting either one too early produces a
@@ -43,7 +42,6 @@ func start_boot() -> void:
 	_run_step("finalize", BootStep.FINALIZE, _boot_finalize)
 
 	var total := Time.get_ticks_msec() - _boot_start_time
-	print("[AppBoot] Boot completed in %d ms" % total)
 	if AnalyticsService:
 		AnalyticsService.log_event("cold_start_services_ready", {
 			"duration_ms": total,
@@ -56,7 +54,6 @@ func start_boot() -> void:
 func _run_step(step_name: String, _step: BootStep, callable: Callable) -> void:
 	var start := Time.get_ticks_msec()
 	boot_step_started.emit(step_name)
-	print("[AppBoot] Step: %s" % step_name)
 	AppState.set_loading(true, "Loading %s..." % step_name.capitalize())
 
 	var success: bool = true
@@ -76,9 +73,8 @@ func _run_step(step_name: String, _step: BootStep, callable: Callable) -> void:
 		var context := {"step": step_name}
 		ErrorHandler.handle(error_code, err, context, ErrorHandler.Severity.WARNING)
 		boot_failed.emit("[%s] %s" % [error_code, err])
-		print("[AppBoot] Step %s FAILED - %s" % [step_name, err])
 	else:
-		print("[AppBoot] Step %s OK (%d ms)" % [step_name, duration])
+		pass
 
 func _boot_config() -> Dictionary:
 	if ConfigService:

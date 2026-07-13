@@ -11,14 +11,13 @@ var _scripts: Dictionary = {}
 var _future_modes: Array[String] = []
 
 func _ready() -> void:
-	print("[InteractionAdapterRegistry] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
 		return
 	_load_manifest()
 	_initialized = true
-	print("[InteractionAdapterRegistry] Initialized - %d adapters" % _scripts.size())
 
 func register_adapter(adapter_id: String, script: Script) -> bool:
 	if adapter_id.is_empty() or script == null or _scripts.has(adapter_id):
