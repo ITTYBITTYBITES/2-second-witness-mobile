@@ -1,5 +1,7 @@
 # Production Readiness Audit — Foundation Release Stage
 
+> Historical Foundation release audit. Current Product Development direction is defined in [`../product/`](../product/README.md). This file records past validation and is not a future gameplay specification.
+
 **Date:** 2026-07-09
 **Target Engine:** Godot 4.6.3 Stable
 **Package:** `com.ittybittybites.the2secondwitness`
@@ -166,7 +168,7 @@ godot --export-release Android_PlayStore AAB → same environmental errors
 - Old CI: .github/workflows/ _ci_guardrail.yml, pipeline.yml, archive_ci/ disabled ymls
 
 ### Essential Check
-- `.github/workflows`: Previously contained disabled old CI referencing old architecture (android_ci.yml.disabled, fleet_self_healing.yml.disabled, universe-assets.yml.disabled). These are not essential for foundation release — they referenced old universes.
+- `.github/workflows`: Previously contained disabled CI tied to the retired architecture. Those workflows were not required for the Foundation release.
 - **Restored:** Created minimal `.github/workflows/ci.yml` that validates:
   - Godot import
   - Branding no spaced ITTY BITTY BYTES

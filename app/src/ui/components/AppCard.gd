@@ -29,10 +29,10 @@ func _notification(what: int) -> void:
 func _apply_theme() -> void:
 	var tokens := ThemeService.tokens if ThemeService else {}
 	var bg_key := "surface_elevated" if elevated else "surface"
-	var bg := tokens.get(bg_key, Color("#2A2A36") if elevated else Color("#1E1E26")) if not tokens.is_empty() else Color("#1E1E26")
-	var border := tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
-	var radius := tokens.get("radius_lg", 20) if not tokens.is_empty() else 20
-	
+	var bg: Color = tokens.get(bg_key, Color("#2A2A36") if elevated else Color("#1E1E26")) if not tokens.is_empty() else Color("#1E1E26")
+	var border: Color = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
+	var radius: int = int(tokens.get("radius_lg", 20)) if not tokens.is_empty() else 20
+
 	var style := StyleBoxFlat.new()
 	style.bg_color = bg
 	style.corner_radius_top_left = radius
@@ -48,7 +48,7 @@ func _apply_theme() -> void:
 	style.content_margin_right = padding
 	style.content_margin_top = padding
 	style.content_margin_bottom = padding
-	
+
 	add_theme_stylebox_override("panel", style)
 
 func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:

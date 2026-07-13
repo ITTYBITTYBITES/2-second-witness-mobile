@@ -11,6 +11,7 @@ var _session_id: String = ""
 var _is_enabled: bool = true
 var _initialized: bool = false
 const MAX_BUFFER := 200
+const MAX_BUFFER_FILE_BYTES := 1048576
 const BUFFER_FILE := "user://analytics_buffer.jsonl"
 const ANALYTICS_VERSION := 1
 
@@ -29,20 +30,22 @@ func initialize() -> void:
 	_initialized = true
 	print("[AnalyticsService] Initialized - Session: %s Enabled: %s" % [_session_id, str(_is_enabled)])
 
-	# Log session start
-	log_event("session_start", {
-		"app_version": ConfigService.get_value("app_version", "unknown") if ConfigService else "unknown",
-		"platform": OS.get_name(),
-		"session_id": _session_id
-	})
+	if _is_enabled:
+		log_event("session_start", {
+			"app_version": ConfigService.get_value("app_version", "unknown") if ConfigService else "unknown",
+			"platform": OS.get_name(),
+			"session_id": _session_id
+		})
 
 func _on_setting_changed(key: String, value: Variant) -> void:
 	if key == "analytics_enabled":
 		_is_enabled = bool(value)
+		if not _is_enabled:
+			clear_buffer()
 		print("[AnalyticsService] Enabled set to %s" % str(_is_enabled))
 
 func log_event(event_name: String, params: Dictionary = {}) -> void:
-	if not _is_enabled and event_name != "session_start":
+	if not _is_enabled:
 		return
 
 	var entry := {
@@ -88,15 +91,28 @@ func log_experience_event(exp_id: String, action: String, data: Dictionary = {})
 	log_event("experience_event", p)
 
 func _append_to_file(entry: Dictionary) -> void:
+	var line := JSON.stringify(entry) + "\n"
+	if _buffer_file_size() + line.to_utf8_buffer().size() > MAX_BUFFER_FILE_BYTES:
+		if FileAccess.file_exists(BUFFER_FILE):
+			DirAccess.remove_absolute(BUFFER_FILE)
 	var file := FileAccess.open(BUFFER_FILE, FileAccess.READ_WRITE)
-	if not file:
+	if file == null:
 		file = FileAccess.open(BUFFER_FILE, FileAccess.WRITE)
-		if not file:
+		if file == null:
 			return
-	# Move to end
 	file.seek_end()
-	file.store_string(JSON.stringify(entry) + "\n")
+	file.store_string(line)
 	file.close()
+
+func _buffer_file_size() -> int:
+	if not FileAccess.file_exists(BUFFER_FILE):
+		return 0
+	var file := FileAccess.open(BUFFER_FILE, FileAccess.READ)
+	if file == null:
+		return 0
+	var length := file.get_length()
+	file.close()
+	return length
 
 func _generate_session_id() -> String:
 	return "sess_%d_%d" % [Time.get_ticks_msec(), randi() % 100000]

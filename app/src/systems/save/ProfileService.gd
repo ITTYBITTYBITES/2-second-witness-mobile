@@ -34,6 +34,10 @@ const DEFAULT_PROFILE := {
 		"streak_best": 0
 	},
 	"achievements": [],
+	"achievement_progress": {},
+	"favorite_challenge_types": [],
+	"program_progress": {},
+	"active_program_id": "",
 	"preferences": {
 		"onboarding_completed": false
 	}
@@ -66,15 +70,22 @@ func initialize() -> void:
 	EventBus.publish_profile_updated(profile)
 
 func _merge_default(loaded: Dictionary) -> Dictionary:
-	var merged := DEFAULT_PROFILE.duplicate(true)
-	for k in loaded.keys():
-		if k == "stats" and loaded[k] is Dictionary:
-			for sk in loaded[k].keys():
-				merged["stats"][sk] = loaded[k][sk]
-		elif k == "experiences_progress" and loaded[k] is Dictionary:
-			merged[k] = loaded[k]
+	var merged := _merge_dictionary(DEFAULT_PROFILE, loaded)
+	merged["version"] = int(DEFAULT_PROFILE.get("version", 2))
+	if str(merged.get("id", "")).is_empty():
+		merged["id"] = _generate_id()
+	if str(merged.get("created_at", "")).is_empty():
+		merged["created_at"] = Time.get_datetime_string_from_system()
+	return merged
+
+func _merge_dictionary(defaults: Dictionary, loaded: Dictionary) -> Dictionary:
+	var merged := defaults.duplicate(true)
+	for key: Variant in loaded.keys():
+		var incoming: Variant = loaded[key]
+		if merged.has(key) and merged[key] is Dictionary and incoming is Dictionary:
+			merged[key] = _merge_dictionary(merged[key] as Dictionary, incoming as Dictionary)
 		else:
-			merged[k] = loaded[k]
+			merged[key] = incoming
 	return merged
 
 func save() -> bool:

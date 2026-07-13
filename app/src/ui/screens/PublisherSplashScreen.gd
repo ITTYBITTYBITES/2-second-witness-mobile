@@ -57,23 +57,9 @@ func notify_boot_completed() -> void:
 	_can_advance = true
 
 func _animate_in() -> void:
-	modulate.a = 0.0
-	if brand_label:
-		brand_label.modulate.a = 0.0
-	if subtitle_label:
-		subtitle_label.modulate.a = 0.0
-	if not _should_animate():
-		modulate.a = 1.0
-		if brand_label: brand_label.modulate.a = 1.0
-		if subtitle_label: subtitle_label.modulate.a = 1.0
-		return
-	var tween := create_tween()
-	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	tween.tween_property(self, "modulate:a", 1.0, _get_anim_duration(0.25))
-	if brand_label:
-		tween.parallel().tween_property(brand_label, "modulate:a", 1.0, _get_anim_duration(0.45)).set_delay(0.1)
-	if subtitle_label:
-		tween.parallel().tween_property(subtitle_label, "modulate:a", 1.0, _get_anim_duration(0.45)).set_delay(0.22)
+	# The sponsor is the first engine-drawn frame. Keep it static so a saved
+	# Reduced Motion preference is never preceded by an unavoidable animation.
+	modulate.a = 1.0
 
 func _process(delta: float) -> void:
 	_elapsed += delta

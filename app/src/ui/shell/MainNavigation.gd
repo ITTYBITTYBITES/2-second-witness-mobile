@@ -5,7 +5,7 @@ signal tab_selected(route: String)
 
 const TABS := [
 	{"route": "home", "label": "Home", "icon": "⌂"},
-	{"route": "experiences", "label": "Play", "icon": "▶"},
+	{"route": "experiences", "label": "Library", "icon": "▦"},
 	{"route": "profile", "label": "Profile", "icon": "○"},
 	{"route": "settings", "label": "Settings", "icon": "⚙"},
 ]
@@ -106,6 +106,8 @@ func _apply_theme() -> void:
 		var icon := str(tab_info.get("icon", ""))
 		var label := str(tab_info.get("label", route.capitalize()))
 		btn.text = "%s\n%s" % [icon, label]
+		btn.tooltip_text = label
+		btn.focus_mode = Control.FOCUS_ALL
 		btn.alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 		btn.custom_minimum_size.y = max(64, tokens.get("touch_target_min", 48))

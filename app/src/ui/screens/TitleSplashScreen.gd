@@ -24,10 +24,14 @@ var _is_navigating: bool = false
 var _privacy_dialog: Control = null
 var _eye_tween: Tween = null
 var _boot_progress: float = 0.0
+var _pending_tutorial_family_id: String = ""
 
 func _ready() -> void:
 	_elapsed = 0.0
 	_is_navigating = false
+	_apply_responsive_layout()
+	if not resized.is_connected(_apply_responsive_layout):
+		resized.connect(_apply_responsive_layout)
 	_apply_theme()
 	_start_eye_pulse()
 	_connect_boot()
@@ -35,11 +39,14 @@ func _ready() -> void:
 	_update_loading_ui("Initializing…", 0.0)
 	print("[TitleSplash] Ready - branded hero")
 
+func _apply_responsive_layout() -> void:
+	ResponsiveLayout.apply_centered_margin($MainMargin, 24.0, 760.0)
+
 func _apply_theme() -> void:
 	var tokens := {}
 	if ThemeService and not ThemeService.tokens.is_empty():
 		tokens = ThemeService.tokens
-	
+
 	var bg := get_node_or_null("Background") as ColorRect
 	if bg:
 		bg.color = tokens.get("background", Color("#0F0F12")) if not tokens.is_empty() else Color("#0F0F12")
@@ -47,7 +54,7 @@ func _apply_theme() -> void:
 	if brand_label:
 		if ThemeService:
 			ThemeService.apply_label_style(brand_label, "label", "text_tertiary")
-			brand_label.add_theme_font_size_override("font_size", 16)
+			brand_label.add_theme_font_size_override("font_size", ThemeService.get_scaled_size(16))
 		else:
 			brand_label.add_theme_color_override("font_color", Color("#8A8AA3"))
 	if you_are_label:
@@ -56,18 +63,18 @@ func _apply_theme() -> void:
 	if witness_label:
 		if ThemeService:
 			ThemeService.apply_label_style(witness_label, "display", "text_primary")
-			witness_label.add_theme_font_size_override("font_size", 42)
+			witness_label.add_theme_font_size_override("font_size", ThemeService.get_scaled_size(42))
 		else:
 			witness_label.add_theme_font_size_override("font_size", 42)
 	if tagline_label:
 		if ThemeService:
 			ThemeService.apply_label_style(tagline_label, "body_small", "text_secondary")
-	
+
 	if status_label:
 		if ThemeService:
 			ThemeService.apply_label_style(status_label, "label_small", "text_tertiary")
 		status_label.text = "Initializing…"
-	
+
 	if progress_bar:
 		progress_bar.max_value = 100.0
 		progress_bar.value = 0.0
@@ -239,20 +246,14 @@ func _needs_privacy_acknowledgment() -> bool:
 	return true
 
 func _needs_tutorial() -> bool:
-	# Respect user preference to skip tutorials
-	if SettingsService and not SettingsService.get_value("show_tutorials", true):
+	_pending_tutorial_family_id = ""
+	if not RecommendationService or not PlayerProgressService or not ChallengeSessionService:
 		return false
-	# Check onboarding completion flag – set by ResultScreen after first challenge
-	if ProfileService and ProfileService.profile is Dictionary:
-		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
-		if prefs.get("onboarding_completed", false):
-			return false
-		# Also allow a specific tutorial_seen flag from the new TutorialScreen
-		if prefs.get("tutorial_seen", false):
-			# tutorial_seen alone doesn't count as onboarding_completed,
-			# but if user explicitly skipped, don't force again
-			pass
-	# Default: first launch needs tutorial
+	var recommendation: Dictionary = RecommendationService.recommend_start(PlayerProgressService.get_player_state())
+	var family_id := str(recommendation.get("family_id", ""))
+	if family_id.is_empty() or not ChallengeSessionService.needs_tutorial(family_id):
+		return false
+	_pending_tutorial_family_id = family_id
 	return true
 
 func _navigate_tutorial() -> void:
@@ -271,14 +272,14 @@ func _navigate_tutorial() -> void:
 		await settle.finished
 	else:
 		_stop_eye_pulse()
-	
+
 	var fade_dur := _get_anim_duration(0.28)
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	tween.tween_property(self, "modulate:a", 0.0, fade_dur).set_ease(Tween.EASE_IN_OUT)
 	tween.finished.connect(func():
-		if NavigationService:
-			NavigationService.navigate_to("tutorial")
+			if NavigationService:
+				NavigationService.navigate_to("tutorial", {"family_id": _pending_tutorial_family_id})
 	)
 
 func _show_privacy_dialog() -> void:

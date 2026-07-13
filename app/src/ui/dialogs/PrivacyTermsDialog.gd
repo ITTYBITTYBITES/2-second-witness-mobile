@@ -18,6 +18,7 @@ func _ready() -> void:
 	_enforce_layout()
 	_apply_theme()
 	_connect()
+	accept_btn.grab_focus()
 	_animate_in()
 
 func _enforce_layout() -> void:
@@ -38,7 +39,7 @@ func _enforce_layout() -> void:
 func _apply_responsive_size() -> void:
 	# Keep the panel within a comfortable reading width on phones and tablets.
 	var viewport_width := get_viewport().get_visible_rect().size.x
-	var target_width := clampf(viewport_width - 64.0, 320.0, 520.0)
+	var target_width := clampf(viewport_width - 56.0, 260.0, 520.0)
 	if panel:
 		panel.custom_minimum_size = Vector2(target_width, 0)
 		panel.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
@@ -102,7 +103,7 @@ func _apply_theme() -> void:
 
 	# Buttons
 	if accept_btn:
-		accept_btn.text = "Accept"
+		accept_btn.text = "ACCEPT & CONTINUE"
 		_apply_button_style(accept_btn,
 			tokens.get("primary", Color("#6A3DFF")),
 			tokens.get("primary_variant", Color("#8A68FF")),

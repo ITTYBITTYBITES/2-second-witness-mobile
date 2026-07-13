@@ -1,188 +1,150 @@
-# Folder Structure - Two Second Witness Foundation
+# Repository Structure
 
-```
+This structure reflects the validated Foundation and locally complete Phase 5 five-family platform.
+
+```text
 2-second-witness-mobile/
-├── app/                                  # Godot 4.6 project root
-│   ├── project.godot                     # NEW clean config, autoloads, viewport 1080x1920, main_scene AppShell
-│   ├── export_presets.cfg                # NEW cleaned, preserves package ID com.ittybittybites.the2secondwitness
-│   ├── android/                          # PRESERVED for Play Store continuity
-│   │   └── plugins/
-│   │       └── GodotGooglePlayBilling/   # billingclient:7.0.0, needed for future IAP
-│   │           ├── GodotGooglePlayBilling.aar
-│   │           └── GodotGooglePlayBilling.gdap
+├── README.md
+├── PRIVACY.md
+├── app/
+│   ├── project.godot
+│   ├── export_presets.cfg
+│   ├── android/plugins/
 │   ├── assets/
-│   │   ├── brand/                        # PRESERVED brand icons
-│   │   │   ├── app_icon_1024.png
-│   │   │   ├── promo_header_1920.png
-│   │   │   └── android/
-│   │   │       ├── icon_foreground.png
-│   │   │       └── icon_background.png
-│   │   └── fonts/                        # Placeholder for future custom fonts
-│   ├── build/
-│   │   └── android/                      # Export output (gitignored via .godot)
-│   └── src/                              # NEW foundation source
-│       ├── core/
-│       │   ├── app/
-│       │   │   ├── AppBoot.gd            # Boot orchestrator, 8 sequential steps, fault-tolerant
-│       │   │   ├── AppState.gd           # Global phase (BOOT/SPLASH/HOME/EXPERIENCES/PROFILE/SETTINGS/PLAYING), transient data
-│       │   │   └── ErrorHandler.gd       # Central error handling, severity INFO/WARN/ERROR/CRITICAL, safe recovery
-│       │   ├── events/
-│       │   │   └── EventBus.gd           # Decoupled signal bus, all systems talk via here, logs last 200 events
-│       │   └── navigation/
-│       │       ├── AppRoutes.gd          # Route table, tab order, validation - single source of truth
-│       │       └── NavigationService.gd  # Router, history stack max 50, route_changed signals, deep link ready
-│       ├── systems/
-│       │   ├── config/
-│       │   │   └── ConfigService.gd      # App config, feature flags, dot-notation, override JSON, env dev/staging/prod
-│       │   ├── theme/
-│       │   │   └── ThemeService.gd       # Design tokens DARK/LIGHT, colors, spacing, radius, typography, theme_changed signal
-│       │   ├── audio/
-│       │   │   └── AudioService.gd       # Bus management Master/BGM/SFX/UI, pool 6 SFX, volume/mute, placeholder load
-│       │   ├── save/
-│       │   │   ├── SaveService.gd        # Low-level JSON versioned {version,timestamp,data}, migration hook, user://
-│       │   │   └── ProfileService.gd     # Player profile id/display_name/level/xp/mstats, progress per experience, achievements
-│       │   ├── settings/
-│       │   │   └── SettingsService.gd    # User prefs volume/theme/haptics/reduced_motion/font_scale, typed getters, reset
-│       │   ├── analytics/
-│       │   │   └── AnalyticsService.gd   # Buffered analytics session_id, JSONL file, log_event/log_screen_view, respects opt-out
-│       │   ├── accessibility/
-│       │   │   └── AccessibilityService.gd # Font scale 0.8-1.5, reduced_motion, high_contrast, haptics, vibrate abstraction
-│       │   └── content/
-│       │       ├── ContentService.gd     # Manifest loading, cache in-memory+user://, offline-first, OTA ready
-│       │       └── ExperienceRegistry.gd # Auto-scan experiences, register default manifests, merge unlock state
-│       ├── ui/
-│       │   ├── shell/
-│       │   │   ├── AppShell.gd           # Root: layers Background/Content/TopBar/Navigation/Overlay, screen cache, chrome update
-│       │   │   ├── AppShell.tscn         # Scene wrapper for AppShell
-│       │   │   ├── MainNavigation.gd     # Bottom 4-tab nav, selection refresh, theme-aware
-│       │   │   └── TopBar.gd             # Header with title/back/actions, dynamic per route
-│       │   ├── components/
-│       │   │   ├── AppButton.gd          # Themed button PRIMARY/SECONDARY/GHOST/DANGER, full_width, loading
-│       │   │   ├── AppCard.gd            # Elevated surface, bordered, themed radius
-│       │   │   ├── ExperienceCard.gd     # Manifest-driven card, locked/coming-soon states, haptics+sfx
-│       │   │   └── SectionHeader.gd      # Title+subtitle+action button reusable
-│       │   └── screens/
-│       │       ├── SplashScreen.gd/.tscn # Boot progress, animated icon, status label
-│       │       ├── HomeScreen.gd/.tscn   # Hero "YOU ARE THE WITNESS", stats row level/xp/streak, featured exp, Quick Play
-│       │       ├── ExperiencesScreen.gd/.tscn # Filter chips all/memory/observation/reaction, dynamic cards from registry
-│       │       ├── ProfileScreen.gd/.tscn # Avatar ID/since, level progress bar, stats grid, per-exp progress, reset debug
-│       │       ├── SettingsScreen.gd/.tscn # Appearance/Audio/Accessibility/Gameplay/Privacy/About sections, sliders/toggles
-│       │       └── PlaceholderScreen.gd  # Fallback for unknown routes
-│       └── experiences/
-│           ├── manifest.json             # Global list ["flashword"], version, featured
-│           ├── ExperienceBase.gd         # Contract class_name ExperienceBase, start/end/abort, signals
-│           ├── _template/
-│           │   ├── manifest.json         # Template coming_soon locked example
-│           │   └── TemplateExperience.gd # Copy-paste guide
-│           └── flashword/
-│               ├── manifest.json         # Flashword rules 2000ms observe 5000ms recall 4 choices, scoring
-│               └── FlashwordExperience.gd # start picks word + 4 choices, submit computes score+speed bonus, records profile
+│   │   ├── audio/
+│   │   │   ├── ui_click.wav
+│   │   │   ├── observation_start.wav
+│   │   │   ├── conceal.wav
+│   │   │   ├── reveal_correct.wav
+│   │   │   └── reveal_incorrect.wav
+│   │   ├── backgrounds/
+│   │   ├── brand/
+│   │   ├── gameplay/
+│   │   │   ├── scene_investigation/ (three premium backgrounds)
+│   │   │   └── flash_words/flash_words_preview.svg
+│   │   └── splash/
+│   ├── src/
+│   │   ├── core/
+│   │   ├── systems/
+│   │   ├── ui/
+│   │   │   └── layout/ResponsiveLayout.gd
+│   │   ├── gameplay/
+│   │   │   ├── contracts/
+│   │   │   │   ├── ChallengeFamily.gd
+│   │   │   │   ├── ChallengeTemplate.gd
+│   │   │   │   ├── ChallengeInstance.gd
+│   │   │   │   ├── PresentationProfile.gd
+│   │   │   │   ├── TutorialProfile.gd
+│   │   │   │   ├── InteractionProfile.gd
+│   │   │   │   ├── ChallengeValidationResult.gd
+│   │   │   │   └── ChallengeResult.gd
+│   │   │   ├── runtime/
+│   │   │   │   ├── ChallengeSessionService.gd
+│   │   │   │   ├── ChallengeFamilyRegistry.gd
+│   │   │   │   ├── ChallengeFamilyModule.gd
+│   │   │   │   ├── ChallengeGenerator.gd
+│   │   │   │   ├── ChallengeValidator.gd
+│   │   │   │   ├── DifficultyPolicy.gd
+│   │   │   │   ├── ExposurePolicy.gd
+│   │   │   │   ├── ScoringPolicy.gd
+│   │   │   │   ├── ResultService.gd
+│   │   │   │   ├── PlayerProgressService.gd
+│   │   │   │   └── RecommendationService.gd
+│   │   │   ├── interactions/
+│   │   │   │   ├── InteractionAdapter.gd
+│   │   │   │   ├── InteractionAdapterRegistry.gd
+│   │   │   │   ├── manifest.json
+│   │   │   │   └── adapters/ (six generic collectors)
+│   │   │   ├── families/
+│   │   │   │   ├── manifest.json
+│   │   │   │   ├── scene_investigation/
+│   │   │   │   ├── flash_words/
+│   │   │   │   ├── spot_the_difference/
+│   │   │   │   ├── object_recall/
+│   │   │   │   └── pattern_recall/
+│   │   │   │       └── each owns family, templates, generator, validator, policies, renderer, tutorial
+│   │   │   ├── progression/
+│   │   │   │   ├── AchievementService.gd
+│   │   │   │   └── achievements.json
+│   │   │   ├── programs/
+│   │   │   │   ├── ProgramService.gd
+│   │   │   │   └── programs.json
+│   │   │   ├── ChallengeRegistry.gd
+│   │   │   ├── challenges.json
+│   │   │   └── REGRESSION_FIXTURES.md
+│   │   └── experiences/
+│   │       └── dormant Foundation-era module scaffolding
+│   └── tests/runtime/
+│       ├── fixtures/
+│       ├── test_challenge_runtime_gate1.gd
+│       ├── test_first_run_runtime_regression.gd
+│       ├── test_fixture_generation_and_validation.gd
+│       ├── test_runtime_type_agnostic.gd
+│       ├── test_family_tutorial_architecture.gd
+│       ├── test_scene_investigation_production_flow.gd
+│       ├── test_scene_investigation_tutorial.gd
+│       ├── test_scene_investigation_scoring.gd
+│       ├── test_scene_investigation_difficulty.gd
+│       ├── test_scene_investigation_session_variety.gd
+│       ├── test_scene_investigation_stress.gd
+│       ├── test_flash_words_production_flow.gd
+│       ├── test_flash_words_tutorial.gd
+│       ├── test_flash_words_policies.gd
+│       ├── test_flash_words_session_variety.gd
+│       ├── test_flash_words_seed_reproducibility.gd
+│       ├── test_flash_words_stress.gd
+│       ├── test_phase3_home_experience.gd
+│       ├── test_phase35_production_polish.gd
+│       ├── test_phase4_product_experience.gd
+│       ├── test_phase5_interaction_system.gd
+│       ├── test_phase5_challenge_types.gd
+│       ├── test_phase5_tutorials.gd
+│       ├── test_phase5_reproducibility_variety.gd
+│       ├── test_phase5_stress.gd
+│       ├── verify_phase5_architecture.py
+│       ├── verify_phase5_content.py
+│       ├── verify_phase5_interaction_baseline.py
+│       ├── verify_phase4_product_architecture.py
+│       ├── verify_phase35_production_polish.py
+│       ├── generate_phase3_home_previews.gd
+│       ├── test_load_all_source_scripts.gd
+│       ├── verify_phase3_home_architecture.py
+│       ├── verify_runtime_architecture.py
+│       ├── verify_scene_investigation_content.py
+│       ├── verify_flash_words_content.py
+│       ├── verify_flash_words_engine_unchanged.py
+│       └── verify_documentation.py
 ├── docs/
-│   └── foundation/                       # NEW delivery docs
-│       ├── ARCHITECTURE_SUMMARY.md       # This rebuild summary
-│       ├── FOLDER_STRUCTURE.md           # This file
-│       ├── IMPLEMENTED_SYSTEMS.md        # Systems list + APIs
-│       ├── BUILD_TEST_RESULTS.md         # Build verification
-│       └── NEXT_STEPS.md                 # Phase 2 recommendations
-├── _legacy_archive/
-│   └── app_old/                          # Full snapshot of pre-rebuild app (archived, not loaded)
-│       ├── scripts/ (old 30+ singletons)
-│       ├── scenes/ui/screens/ (old WorldSelect etc)
-│       ├── data/content/base_bundle/ (hundreds)
-│       ├── universes/
-│       └── ...
-├── live_content/                         # Old OTA - now unused, kept for reference but ignored by new ContentService
-├── shared/                               # Old shared - archived reference
-├── .github/
-├── .gitignore
-├── asset_creation_queue.json             # Old queue - preserved but unused
-├── missing_assets.json                   # Old - preserved reference
-├── README.md                             # Will be replaced in Phase 2
-└── ... (old reports EVOLUTION_* etc preserved root but not used)
+│   ├── foundation/
+│   ├── product/
+│   │   └── challenge-types/
+│   └── store/
+├── trailer/
+└── storyboard-example/
 ```
 
-### Design Rationale
+## Ownership by layer
 
-**Why `app/src/` not `app/scripts/`?**
-- `src` conventional modern, separates source from assets, clearer for new devs, no Godot-coupled ambiguity.
+| Path | Layer | Responsibility |
+|---|---|---|
+| `app/src/core/` | Engine/Foundation | Boot, app state, events, navigation |
+| `app/src/systems/` | Engine/Foundation | Stable shared services |
+| `app/src/ui/` | Shared presentation | Shell, components, and presentation adapters |
+| `app/src/gameplay/contracts/` | Data contracts | Family, template, instance, validation, presentation, and result data |
+| `app/src/gameplay/runtime/` | Shared runtime | Type-agnostic orchestration and policies |
+| `app/src/gameplay/interactions/` | Shared interaction | Registered payload collectors with no family meaning |
+| `app/src/gameplay/families/` | Game modules | Family-specific generation, validation, scoring, difficulty, exposure, and presentation |
+| `app/src/gameplay/progression/` | Product progression | Data-driven achievement definitions and evaluation |
+| `app/src/gameplay/programs/` | Product journeys | Curated selection policies and Program progress |
+| `app/src/gameplay/challenges.json` | Regression content | Five deterministic compatibility fixtures |
+| `app/tests/runtime/` | Verification | Runtime, production gameplay, stress, content, visual, and documentation checks |
+| `docs/product/` | Product source of truth | Roadmap, API, specifications, style guides, reviews, and gate records |
 
-**Why `systems/` vs `core/`?**
-- `core/` = app lifecycle (boot, state, events, navigation) - must run first, order-critical
-- `systems/` = independent services - can be initialized in any order (boot still sequences them but they don't depend on each other directly)
+## Placement rules
 
-**Why Autoload ordering in project.godot?**
-1. EventBus (no dependencies)
-2. AppConfig/ConfigService (no dependencies)
-3. ErrorHandler (depends EventBus)
-4. Analytics (depends Config, Settings optional)
-5. SettingsService (depends SaveService but SaveService autoload earlier? Actually Save before Settings - ordering ensures SaveService ready)
-6. SaveService, ProfileService
-7. ThemeService, AudioService, AccessibilityService, ContentService, ExperienceRegistry
-8. NavigationService (last, depends on many but only uses signals)
-9. AppState (final, session tracker)
-
-**Why TSCN + GD split for screens?**
-- TSCN provides visual layout preview in editor (even if minimal), GD provides logic - separation of view and controller, theme applied in code not editor to keep tokens dynamic.
-
-**Why Experience manifest JSON not Resource?**
-- JSON is OTA-friendly: future can download new manifests to user:// without rebuild, Resource (.tres) would require editor.
-
-**Why keep `android/` folder?**
-- Google Play Continuity: gradle plugin config + billing AAR ensures AAB built by new project has same signing compatibility and can replace existing Play release as update.
-
-**Why keep `assets/brand/`?**
-- Brand continuity: icons required for export_presets, launcher icon and adaptive icons preserved to avoid Play Store rejection for icon change.
-
-**What about `.import` files?**
-- Godot 4 generates .import sidecars on editor open. We preserved only those for brand icons (1024 and android adaptive) to avoid reimport mismatch. Other .imports deleted as they belonged to old 3D assets (meshes, audio ambience) no longer needed.
-
-### File Count Reduction
-
-- Old: 13 md docs in app/, 30+ scripts in scripts/system/, 13+ scenes/ui/screens, 1000+ content JSONs, 100+ assets, benchmark/, tools/, meta/, logs/, universes/ etc (~2000 files)
-- New Foundation: 6 core app files, 8 systems, 4 UI shell, 4 components, 5 screens, 3 experiences, 2 configs, 2 brand assets, 1 android plugin = ~35 files
-
-Maintainability +10x.
-
-### Autoload Dependency Graph (Acyclic)
-
-```
-EventBus -> (none)
-ConfigService -> (none)
-ErrorHandler -> EventBus, AppState (optional), AnalyticsService (optional)
-SaveService -> ErrorHandler (optional)
-ProfileService -> SaveService, EventBus, AnalyticsService (optional)
-SettingsService -> SaveService, EventBus, AnalyticsService (optional)
-ThemeService -> SettingsService (optional, listens), EventBus
-AudioService -> SettingsService (optional), EventBus
-AccessibilityService -> SettingsService, EventBus
-AnalyticsService -> ConfigService, SettingsService, AppState (optional)
-ContentService -> ConfigService, ErrorHandler (optional)
-ExperienceRegistry -> ContentService (optional), ProfileService (optional), EventBus
-NavigationService -> AppRoutes (load), EventBus, AnalyticsService (optional), AppState (optional)
-AppState -> EventBus
-```
-
-No circular dependencies, each optional access via `if Service:` check.
-
-### Adding a File - Example
-
-To add new reusable component `AppDialog`:
-
-1. Create `src/ui/components/AppDialog.gd` + `.tscn`
-2. Implement `extends PanelContainer`, use ThemeService tokens
-3. Use via `var dialog = preload("res://src/ui/components/AppDialog.tscn").instantiate()` in any screen
-4. No core changes needed.
-
-Same for system: create `src/systems/leaderboard/LeaderboardService.gd`, add to autoload in project.godot, communicate via EventBus.
-
-### Gitignore Considerations
-
-- `app/build/` should be ignored (APK/AAB artifacts)
-- `.godot/` directory, `user://` not in repo (local)
-- `*.import` for new fonts/audio will be generated automatically - keep existing brand .imports committed
-- `user://` files never committed (saves, settings, analytics buffer)
-
-### Security / Signing Note
-
-- `export_presets.cfg` has `keystore/release = ""` intentionally empty - actual release.keystore not committed. To build PlayStore AAB, place keystore at `app/release.keystore` and fill keystore/release_user/release_password via editor or env var.
-- Preserved package ID ensures Play Console accepts update if same keystore used.
+- Shared runtime files contain no concrete family or fixture identifiers.
+- Family-specific behavior belongs under its family directory.
+- Production family modules register through `families/manifest.json`.
+- Test-only families remain under `app/tests/` and never enter the production manifest.
+- Runtime services extend but do not replace stable Foundation services.
+- Museum, Vehicle, and Outdoor remain documentation-only until a later approved content gate.

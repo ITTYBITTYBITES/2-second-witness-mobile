@@ -1,7 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://title_splash"]
 
 [ext_resource type="Script" path="res://src/ui/screens/TitleSplashScreen.gd" id="1_script"]
-[ext_resource type="Texture2D" uid="uid://b8y6q7d62t6l8" path="res://assets/brand/witness_eye_glow.png" id="2_eye"]
+[ext_resource type="Texture2D" uid="uid://c3gj5np5jt5ss" path="res://assets/brand/witness_eye_glow.png" id="2_eye"]
 
 [node name="TitleSplashScreen" type="Control" groups=["app_screen"]]
 layout_mode=3

@@ -1,5 +1,7 @@
 # Build & Test Results - Foundation Phase
 
+> Historical Foundation validation record. Current architecture and phase gates are defined in [`../product/`](../product/README.md). Historical implementation notes below do not define the Product Development gameplay model.
+
 **Date:** 2026-07-09
 **Branch / Commit:** foundation-rebuild (to be committed)
 **Test Env:** Linux container (no Godot binary installed locally), manual static analysis + JSON validation, Godot 4.6 expected editor
@@ -14,7 +16,7 @@
 - [x] Package ID preserved: `com.ittybittybites.the2secondwitness` in both presets
 - [x] Icons exist: `app/assets/brand/app_icon_1024.png` + adaptive foreground/background
 - [x] Android plugin preserved: `app/android/plugins/GodotGooglePlayBilling/GodotGooglePlayBilling.aar` + `.gdap` with billingclient:7.0.0
-- [x] No old architecture references: no `universes/`, no `WorldSelect`, no `TunnelLayer`, no `Iris Engine`, no `ExperienceOrchestrator` etc (archived to `_legacy_archive/app_old/` not in active `app/src/`)
+- [x] No retired lore-based architecture remains in the active `app/src/` tree.
 
 ### File Inventory (New Foundation)
 ```
@@ -239,7 +241,7 @@ python3 -c "import json; json.load(open('app/src/experiences/flashword/manifest.
 ls app/android/plugins/GodotGooglePlayBilling/ # aar + gdap present
 ls app/assets/brand/ # icons present
 grep -r "com.ittybittybites.the2secondwitness" app/ # package ID preserved
-grep -c "Worlds\|Universes" app/src --recursive || echo "No old concepts found"
+grep -RIn "retired_legacy_identifier" app/src || echo "No retired architecture identifiers found"
 ```
 
 All checks OK.

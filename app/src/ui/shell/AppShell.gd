@@ -13,6 +13,13 @@ extends Control
 var _current_screen: Control = null
 var _screen_cache: Dictionary = {}
 var _boot_flow: Node
+var _screen_transition: Tween = null
+var _loading_pulse: Tween = null
+var _current_route: String = ""
+
+const CACHEABLE_ROUTES: Array[String] = [
+	"home", "experiences", "profile", "settings", "about", "achievements", "programs"
+]
 
 const SCREEN_SCENES := {
 	"publisher_splash": "res://src/ui/screens/PublisherSplashScreen.tscn",
@@ -23,6 +30,8 @@ const SCREEN_SCENES := {
 	"memory_question": "res://src/ui/screens/MemoryQuestionScreen.tscn",
 	"result":          "res://src/ui/screens/ResultScreen.tscn",
 	"about":           "res://src/ui/screens/AboutScreen.tscn",
+	"achievements":    "res://src/ui/screens/AchievementsScreen.tscn",
+	"programs":        "res://src/ui/screens/ProgramsScreen.tscn",
 	"home":            "res://src/ui/screens/HomeScreen.tscn",
 	"experiences":     "res://src/ui/screens/ExperiencesScreen.tscn",
 	"profile":         "res://src/ui/screens/ProfileScreen.tscn",
@@ -44,6 +53,8 @@ func _ready() -> void:
 	if ErrorHandler:
 		if not ErrorHandler.user_message_requested.is_connected(_on_user_message):
 			ErrorHandler.user_message_requested.connect(_on_user_message)
+	if ChallengeSessionService and not ChallengeSessionService.session_failed.is_connected(_on_session_failed):
+		ChallengeSessionService.session_failed.connect(_on_session_failed)
 	if ThemeService:
 		if not ThemeService.theme_changed.is_connected(_on_theme_changed):
 			ThemeService.theme_changed.connect(_on_theme_changed)
@@ -113,10 +124,19 @@ func _on_route_changed(route: String, params: Dictionary) -> void:
 	_update_chrome(route)
 
 func _load_screen(route: String, params: Dictionary = {}) -> void:
-	if _current_screen:
-		_current_screen.visible = false
+	var started_at: int = Time.get_ticks_usec()
+	if _current_screen != null and _current_route == route:
+		_current_screen.visible = true
+		if _current_screen.has_method("on_navigated_to"):
+			_current_screen.call("on_navigated_to", params)
+		ResponsiveLayout.enforce_touch_targets(_current_screen)
+		_animate_screen_in(route)
+		_record_screen_presented(route, CACHEABLE_ROUTES.has(route), started_at)
+		return
+	_retire_current_screen(route)
+	var was_cached: bool = _screen_cache.has(route)
 
-	if _screen_cache.has(route):
+	if was_cached:
 		_current_screen = _screen_cache[route]
 		_current_screen.visible = true
 		if _current_screen.has_method("on_navigated_to"):
@@ -125,16 +145,13 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 		var scene_path: String = SCREEN_SCENES.get(route, "")
 		if scene_path == "":
 			scene_path = "res://src/ui/screens/%sScreen.tscn" % _capitalize_first(route)
-
 		var screen_instance: Control = null
-
 		if ResourceLoader.exists(scene_path):
 			var scene: PackedScene = load(scene_path)
 			if scene:
 				screen_instance = scene.instantiate() as Control
 		else:
 			screen_instance = _create_placeholder_screen(route)
-
 		if screen_instance:
 			screen_instance.name = "%sScreenInstance" % route.capitalize()
 			screen_instance.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -143,7 +160,8 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 				content_container.add_child(screen_instance)
 			else:
 				add_child(screen_instance)
-			_screen_cache[route] = screen_instance
+			if CACHEABLE_ROUTES.has(route):
+				_screen_cache[route] = screen_instance
 			_current_screen = screen_instance
 			if screen_instance.has_method("on_navigated_to"):
 				screen_instance.call("on_navigated_to", params)
@@ -151,6 +169,46 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 			print("[AppShell] Failed to load screen for route %s" % route)
 			if ErrorHandler:
 				ErrorHandler.handle("SCREEN_LOAD_FAILED", "Failed to load %s" % route, {"route": route})
+	_current_route = route
+	if _current_screen:
+		ResponsiveLayout.enforce_touch_targets(_current_screen)
+		_animate_screen_in(route)
+	_record_screen_presented(route, was_cached, started_at)
+
+func _record_screen_presented(route: String, was_cached: bool, started_at: int) -> void:
+	var duration_ms: float = float(Time.get_ticks_usec() - started_at) / 1000.0
+	if AnalyticsService:
+		AnalyticsService.log_event("screen_presented", {
+			"route": route,
+			"cached": was_cached,
+			"duration_ms": snappedf(duration_ms, 0.01),
+			"memory_mb": snappedf(float(Performance.get_monitor(Performance.MEMORY_STATIC)) / 1048576.0, 0.1)
+		})
+
+func _retire_current_screen(next_route: String) -> void:
+	if _current_screen == null or _current_route == next_route:
+		return
+	_current_screen.visible = false
+	if not CACHEABLE_ROUTES.has(_current_route):
+		_screen_cache.erase(_current_route)
+		_current_screen.queue_free()
+		_current_screen = null
+
+func _animate_screen_in(route: String) -> void:
+	if _current_screen == null:
+		return
+	if _screen_transition and _screen_transition.is_valid():
+		_screen_transition.kill()
+	_current_screen.modulate.a = 1.0
+	var is_launch_route: bool = route in ["publisher_splash", "title_splash", "splash"]
+	if is_launch_route or (AccessibilityService and not AccessibilityService.should_animate()):
+		return
+	_current_screen.modulate.a = 0.0
+	_screen_transition = create_tween()
+	_screen_transition.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	var base_duration := float(ConfigService.get_value("ui.animation_duration_ms", 200)) / 1000.0 if ConfigService else 0.20
+	var duration := AccessibilityService.get_animation_duration(base_duration) if AccessibilityService else base_duration
+	_screen_transition.tween_property(_current_screen, "modulate:a", 1.0, duration).set_ease(Tween.EASE_OUT)
 
 func _create_placeholder_screen(route: String) -> Control:
 	var placeholder_script = load("res://src/ui/screens/PlaceholderScreen.gd")
@@ -165,7 +223,6 @@ func _create_placeholder_screen(route: String) -> Control:
 	return ctrl
 
 func _update_chrome(route: String) -> void:
-	_apply_safe_area() # Update offsets based on route-specific bar visibility
 	var is_tab := true
 	var routes_script = load("res://src/core/navigation/AppRoutes.gd")
 	if routes_script:
@@ -189,6 +246,8 @@ func _update_chrome(route: String) -> void:
 			if route == "about":
 				show_back = true
 			top_bar.set_show_back(show_back)
+		if top_bar.has_method("set_show_actions"):
+			top_bar.set_show_actions(not is_gameplay and route != "tutorial")
 		var title_map := {
 			"publisher_splash": "",
 			"title_splash": "",
@@ -197,13 +256,18 @@ func _update_chrome(route: String) -> void:
 			"memory_question": "Recall",
 			"result": "Result",
 			"home": "Two Second Witness",
-			"experiences": "Experiences",
+			"experiences": "Challenge Library",
 			"profile": "Profile",
 			"settings": "Settings",
-			"about": "About"
+			"about": "About",
+			"achievements": "Achievements",
+			"programs": "Programs"
 		}
 		if top_bar.has_method("set_title"):
 			top_bar.set_title(title_map.get(route, route.capitalize()))
+	# Bar visibility changes the content's bottom inset, so safe areas are
+	# resolved after chrome state is final.
+	_apply_safe_area()
 
 func _on_phase_changed(new_phase, old_phase) -> void:
 	print("[AppShell] Phase %s -> %s" % [str(old_phase), str(new_phase)])
@@ -216,10 +280,36 @@ func _on_loading_changed(is_loading: bool, message: String) -> void:
 	if loading_overlay:
 		loading_overlay.visible = is_loading
 		if loading_overlay.has_node("Center/VBox/Message"):
-			loading_overlay.get_node("Center/VBox/Message").text = message if message != "" else "Loading..."
+			loading_overlay.get_node("Center/VBox/Message").text = message if message != "" else "Preparing…"
+		if is_loading:
+			_start_loading_pulse()
+		else:
+			_stop_loading_pulse()
+
+func _start_loading_pulse() -> void:
+	_stop_loading_pulse()
+	var indicator: Label = loading_overlay.get_node_or_null("Center/VBox/Spinner") as Label
+	if indicator == null:
+		return
+	indicator.modulate.a = 1.0
+	if AccessibilityService and not AccessibilityService.should_animate():
+		return
+	_loading_pulse = indicator.create_tween()
+	_loading_pulse.set_loops()
+	_loading_pulse.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	_loading_pulse.tween_property(indicator, "modulate:a", 0.45, 0.6)
+	_loading_pulse.tween_property(indicator, "modulate:a", 1.0, 0.6)
+
+func _stop_loading_pulse() -> void:
+	if _loading_pulse and _loading_pulse.is_valid():
+		_loading_pulse.kill()
+	_loading_pulse = null
 
 func _on_user_message(message: String, _severity: int) -> void:
 	_show_error(message)
+
+func _on_session_failed(reason: String) -> void:
+	_show_error(reason if not reason.is_empty() else "That challenge could not be prepared. Please try again.")
 
 func _show_error(message: String) -> void:
 	if error_banner:
@@ -229,9 +319,10 @@ func _show_error(message: String) -> void:
 		elif error_banner.has_node("Margin/Label"):
 			error_banner.get_node("Margin/Label").text = message
 	# Auto-hide after 4s, but user can dismiss early
-	if _error_hide_timer:
-		_error_hide_timer.timeout.disconnect(_hide_error_banner)
-		_error_hide_timer.queue_free()
+	if is_instance_valid(_error_hide_timer):
+		if _error_hide_timer.timeout.is_connected(_hide_error_banner):
+			_error_hide_timer.timeout.disconnect(_hide_error_banner)
+		_error_hide_timer = null
 	_error_hide_timer = get_tree().create_timer(4.0)
 	_error_hide_timer.timeout.connect(_hide_error_banner)
 
@@ -288,16 +379,34 @@ func _on_nav_tab_selected(route: String) -> void:
 	if NavigationService and NavigationService.current_route != route:
 		NavigationService.navigate_to(route)
 
+func _unhandled_input(event: InputEvent) -> void:
+	if not event.is_action_pressed("ui_cancel") or not NavigationService:
+		return
+	get_viewport().set_input_as_handled()
+	if NavigationService.current_route == "home":
+		return
+	if NavigationService.can_go_back():
+		NavigationService.go_back()
+	else:
+		NavigationService.navigate_to("home")
+
 func _apply_safe_area() -> void:
 	if not ThemeService:
 		return
 	var area: Rect2i = DisplayServer.get_display_safe_area()
 	var win_size: Vector2i = DisplayServer.window_get_size()
-	var top: int = area.position.y
-	var bottom: int = maxi(0, win_size.y - (area.position.y + area.size.y))
-	var left: int = area.position.x
-	var right: int = maxi(0, win_size.x - (area.position.x + area.size.x))
-	# Ensure minimum safe areas for phones with gesture nav / notches
+	if area.size.x <= 0 or area.size.y <= 0:
+		area = Rect2i(Vector2i.ZERO, win_size)
+	var insets: Dictionary = ResponsiveLayout.scale_safe_area_insets(
+		area,
+		win_size,
+		get_viewport_rect().size
+	)
+	var top: int = int(insets.get("top", 0))
+	var bottom: int = int(insets.get("bottom", 0))
+	var left: int = int(insets.get("left", 0))
+	var right: int = int(insets.get("right", 0))
+	# Ensure minimum safe areas for phones with gesture navigation or cutouts.
 	if OS.get_name() == "Android" or OS.get_name() == "iOS":
 		top = max(top, 44)
 		bottom = max(bottom, 24)
@@ -351,26 +460,13 @@ func _setup_loading_overlay() -> void:
 		ThemeService.apply_label_style(msg_label, "body", "text_primary")
 		msg_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
-	# Replace / enhance spinner
-	var spinner_parent: VBoxContainer = null
-	if loading_overlay.has_node("Center/VBox"):
-		spinner_parent = loading_overlay.get_node("Center/VBox")
-	var spinner_label: Label = null
-	if spinner_parent and spinner_parent.get_child_count() > 0:
-		var first = spinner_parent.get_child(0)
-		if first is Label:
-			spinner_label = first
+	# Branded eye-like pulse; no stock spinner and no color-only status.
+	var spinner_label: Label = loading_overlay.get_node_or_null("Center/VBox/Spinner") as Label
 	if spinner_label:
-		spinner_label.text = "⟳"
+		spinner_label.text = "◉"
 		ThemeService.apply_typography(spinner_label, "display")
 		spinner_label.add_theme_color_override("font_color", tokens.get("primary", Color.WHITE))
 		spinner_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		# Animate rotation
-		if not spinner_label.has_meta("spinner_tween_started"):
-			spinner_label.set_meta("spinner_tween_started", true)
-			var tw := spinner_label.create_tween()
-			tw.set_loops()
-			tw.tween_property(spinner_label, "rotation_degrees", 360.0, 1.2).from(0.0)
 
 func _setup_error_banner() -> void:
 	if not error_banner or not ThemeService:

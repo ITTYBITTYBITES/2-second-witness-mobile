@@ -57,7 +57,7 @@ autowrap_mode=0
 
 [node name="BrandDesc" type="Label" parent="Margin/Scroll/VBox/BrandSection"]
 layout_mode=2
-text="A curated platform of interactive experiences exploring curiosity, creativity, and discovery. Museum-quality digital exhibits designed to spark observation and wonder."
+text="Independent publisher of focused interactive games built with clarity, curiosity, and respect for the player."
 autowrap_mode=3
 
 [node name="WebsiteButton" type="Button" parent="Margin/Scroll/VBox/BrandSection"]
@@ -70,7 +70,7 @@ text="Two Second Witness"
 
 [node name="AboutDesc" type="Label" parent="Margin/Scroll/VBox"]
 layout_mode=2
-text="How much can you notice in two seconds? This experience explores attention, observation, and memory through short visual challenges. Premium digital exhibit, calm and intelligent."
+text="A premium observation game built around short, fair, replayable moments. Study what appears, recall one detail, and use the evidence reveal to see what you missed."
 autowrap_mode=3
 
 [node name="PrivacySection" type="VBoxContainer" parent="Margin/Scroll/VBox"]
@@ -92,11 +92,32 @@ autowrap_mode=3
 layout_mode=2
 text="Privacy Policy"
 
+[node name="CreditsSection" type="VBoxContainer" parent="Margin/Scroll/VBox"]
+layout_mode=2
+
+[node name="CreditsTitle" type="Label" parent="Margin/Scroll/VBox/CreditsSection"]
+layout_mode=2
+text="Credits"
+
+[node name="CreditsDesc" type="Label" parent="Margin/Scroll/VBox/CreditsSection"]
+layout_mode=2
+text="Design, engineering, artwork, audio, and publishing by ITTYBITTYBITES. Built with the Godot Engine."
+autowrap_mode=3
+
+[node name="LicenseTitle" type="Label" parent="Margin/Scroll/VBox/CreditsSection"]
+layout_mode=2
+text="Open-source notices"
+
+[node name="LicenseDesc" type="Label" parent="Margin/Scroll/VBox/CreditsSection"]
+layout_mode=2
+text="Godot Engine is available under the MIT License. This app includes no active advertising, billing, account, or remote analytics SDK. Full notices are included with the project documentation."
+autowrap_mode=3
+
 [node name="VersionInfo" type="Label" parent="Margin/Scroll/VBox"]
 layout_mode=2
-text="Version 2.0.0
+text="Version 4.0.0
 Package: com.ittybittybites.the2secondwitness
-© ITTYBITTYBITES"
+© 2026 ITTYBITTYBITES"
 
 [node name="BackButton" type="Button" parent="Margin/Scroll/VBox"]
 custom_minimum_size=Vector2(0, 56)

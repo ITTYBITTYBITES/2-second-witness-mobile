@@ -1,191 +1,171 @@
-# Two Second Witness — Professional Foundation Release
-## ITTYBITTYBITES Platform Identity
+# Two Second Witness
 
-> **How much can you notice in two seconds?**
-> Premium digital exhibit exploring attention, observation, and memory.
+> A premium observation game built around short, fair, highly replayable challenges.
 
-## Official Cinematic Trailer
+**Publisher:** ITTYBITTYBITES
+**Engine:** Godot 4.6.3
+**Android package:** `com.ittybittybites.the2secondwitness`
 
-Watch the official 45-second cinematic reveal trailer: [`trailer/two_second_witness_trailer.mp4`](trailer/two_second_witness_trailer.mp4). The V3.1 cut adds a faster opening, scene-specific changes, procedural micro-animation, a complete select/confirm/advance gameplay interaction, and one consolidated end card. The one-command production pipeline and creative notes are in [`trailer/`](trailer/README.md).
+## Project status
 
-Rebuild the complete 1920×1080, 24 fps H.264 master from the repository root with `python trailer.py`. A smaller learning project remains available in [`storyboard-example/`](storyboard-example/README.md).
+The **Foundation through Phase 5.5** are approved. **Phase 6 — Production Readiness** is locally complete. The five-family product has 20 templates, a frozen generic platform, atomic local saves, offline production defaults, and complete release-gate documentation. Human playtesting, signed-artifact review, and the physical Android sponsor-first boot gate remain open.
 
-This repository is **clean — no previous application code, content, documentation, assets, or architecture**. Only identifiers needed for Google Play update continuity are preserved. Old app is not foundation, dependency, or reference. Future content, experiences, systems will be recreated from new vision.
+Five production Challenge Types run through the same shared platform:
 
-**Publisher:** ITTYBITTYBITES — Curiosity • Creativity • Discovery
-**App:** Two Second Witness — `com.ittybittybites.the2secondwitness`
+- **Scene Investigation** — generated scenes, fair questions, and evidence reveals.
+- **Flash Words** — rapid word and sequence recognition with exact comparison.
+- **Spot the Difference** — paired visual comparison with Spatial Tap.
+- **Object Recall** — isolated set memory with Multiple Choice.
+- **Pattern Recall** — abstract ordered reconstruction with Sequence Input.
 
----
+The product hub is data-driven: Play Now, unfinished-Program Continue, daily feature, Challenge Library, curated Programs, favorites, Profile, Collections, Achievements, and Settings consume runtime/catalog data rather than naming a Challenge Type.
 
-## Identity Preservation (Google Play Continuity)
+Flash Words was added without changing 71 protected Engine/shared files. Phase 3 intentionally evolved shared product UI after that extensibility gate. Physical-device and human play review remain before store release.
 
-- **App name:** Two Second Witness (unchanged)
-- **Package ID:** `com.ittybittybites.the2secondwitness` preserved in `export_presets.cfg` + `ConfigService`
-- **No new listing** — same app, update path
-- **Version:** 2.0.0-ibby-foundation, code 100 > old 1
-- **Icons:** Premium new icon `app_icon_1024.png` (2 + eye motif) + adaptive foreground/background generated, dark #0F0F12 background, white 2, purple #7C5CFF iris
-- **Export:** Android_Development APK + Android_PlayStore AAB, arm64, immersive, gl_compatibility
-- **Plugin:** `GodotGooglePlayBilling` AAR preserved for future IAP (optional)
-- **Signing:** Placeholder `release.keystore`, provide same keystore to publish update
+## Product direction
 
----
+Players are never taking tests. Players are solving moments.
 
-## Publisher Identity — Two Splash Screens
+Every round should create an **“I missed it.”** response, never **“That was unfair.”** Player-facing language emphasizes Observation, Recall, Recognition, Attention, Focus, Witness Progress, Challenge History, Witness Level, and Witness Rank.
 
-**Splash 1 — ITTYBITTYBITES presents:**
-- Premium gallery splash `ittybittybites_splash.png` 768x1376 dark elegant subtle texture grid constellation
-- Text: `ITTYBITTYBITES` centered, subtitle `Interactive Experiences`, small `Curiosity • Creativity • Discovery`
-- Duration 2.5s, fade, tap to skip after 0.5s
+## Current player journey
 
-**Splash 2 — Two Second Witness title/loading:**
-- Cinematic splash `two_second_witness_splash.png` dark with purple aperture #7C5CFF focus, fragments assembling
-- Text: `TWO SECOND WITNESS`, subtitle `How much can you notice in two seconds?`
-- Progress bar + status loading, min display 2s, boot 10 steps 2-19ms
-
-Flow: `publisher_splash` → `title_splash` → privacy (first-run) → home
-
----
-
-## First-Run Flow (Professional)
-
-```
-Launch → ITTYBITTYBITES splash → Two Second Witness title/loading → Privacy acknowledgment → Short tutorial (Observe/Remember/Recall, 3 steps, skip) → First observation challenge (2s timer) → Memory question (multiple choice) → Result (✓/✕ feedback, detail, replay, continue) → Main menu
+```text
+Publisher Splash
+→ Title and privacy acknowledgment
+→ Family tutorial when required
+→ Home product hub
+   ├─ Play Now recommendation
+   ├─ Continue recent Challenge Type
+   ├─ Daily featured Challenge Type
+   └─ Challenge Library
+→ Observation / presentation
+→ Recall / response
+→ Result
+→ Continue or Home
 ```
 
-**Privacy Acknowledgment:**
-> Welcome to Two Second Witness.
-> This experience explores attention, observation, and memory through short visual challenges.
-> Your privacy matters:
-> • No account required
-> • No personal information collected
-> • No advertising currently included
-> • Progress stored locally on your device
-> Button: Continue + Privacy Policy placeholder link (shell_open to ittybittybites.com/privacy)
+All gameplay launch paths enter `ChallengeSessionService`. The five fixed challenges remain executable as hidden deterministic regression fixtures.
 
-**Tutorial:** 30-second concept, 3 steps Observe/Remember/Recall, animated scale, skip option.
+## Product systems
 
-**Gameplay Loop Representative (not full 62 puzzles):**
-- Observation challenge image `observation_challenge_01.png` detailed study desk: clock 12:00, plant, glasses on books, 5 pencils in green mug, magnifying glass, keys, coffee, papers — many intentional details
-- 2-second timer with countdown label and progress bar
-- Memory question: "How many colored pencils were in the green mug?" Options 3/4/5/6 Correct 5 Detail explanation
-- Result: Correct! / Not quite, detail, haptics 50/100ms, replay challenge, continue to app marks onboarding_completed + first_launch_completed
+### Validated Foundation
 
-User understands concept within 30 seconds.
+- Boot and splash flow
+- App shell, routes, history, safe areas, and navigation chrome
+- Save/Profile persistence
+- Settings, accessibility, theme, audio, analytics, and content services
+- Shared UI and error handling
 
----
+### Shared Challenge Runtime
 
-## Generated Assets (Premium, ITTYBITTYBITES Website Identity)
+- Data-driven family discovery
+- Session orchestration
+- Difficulty and exposure policies
+- Seeded generation
+- Fairness validation, retries, and fallback
+- Family tutorial and presentation profiles
+- Family-owned scoring
+- Canonical results
+- Witness Progress
+- Start, Continue, next-round, and daily recommendations
 
-**Visual direction:** Premium digital exhibit, curious and intelligent, minimal editorial, cognitive science inspired, calm modern polished, not arcade, not flashy mobile.
+### Phase 3 product hub
 
-1. **ITTYBITTYBITES Splash** `assets/splash/ittybittybites_splash.png` 768x1376 dark elegant #0F0F12 subtle grid constellation thin line circles, centered typography white, museum-quality
-2. **Two Second Witness Splash** `assets/splash/two_second_witness_splash.png` 768x1376 dark cinematic aperture eye-inspired purple #7C5CFF glow, fragments, subtitle italic
-3. **App Icon** `assets/brand/app_icon_1024.png` 1024x1024 minimal vector 2+eye observation focus, dark #0F0F12 white 2 purple iris, no text, launcher size
-4. **Adaptive Icons** `assets/brand/android/icon_foreground.png` transparent central 2+eye, `icon_background.png` solid dark #0F0F12
-5. **First Observation Challenge Image** `assets/gameplay/observation_challenge_01.png` 768x1376 detailed study desk many details, realistic approachable all ages, no text
-6. **Main Menu Background** `assets/backgrounds/main_menu_bg.png` 768x1376 clean abstract layered hidden eye/magnifying glass details, purple #7C5CFF and teal #2EE6A6 low opacity blobs, grid, open central area for UI
+- Data-driven Home snapshot
+- Play Now and Continue through the runtime
+- Rich Challenge Library cards
+- Observation Record and Family Mastery profile
+- Challenge History
+- Ten persisted achievements
+- Reading Comfort Mode and complete settings surface
+- Programs and Collections future-ready placeholders
+- Sponsor-first boot and redesigned loading states
+- Responsive phone/tablet/foldable layouts and safe-area scaling
+- Text Size, High Contrast, Reduced Motion, and Color Assistance
+- Startup, screen, challenge-preparation, and memory instrumentation
 
----
+## Documentation
 
-## Implementation (What Added)
+Start with:
 
-**Splash system:** PublisherSplashScreen + TitleSplashScreen with fade transitions, background texture loading, boot progress binding, skip on tap
+- [`docs/product/PRODUCT_DEVELOPMENT_ROADMAP.md`](docs/product/PRODUCT_DEVELOPMENT_ROADMAP.md)
+- [`docs/product/ARCHITECTURE_BOUNDARIES.md`](docs/product/ARCHITECTURE_BOUNDARIES.md)
+- [`docs/product/CHALLENGE_RUNTIME_API.md`](docs/product/CHALLENGE_RUNTIME_API.md)
+- [`docs/product/PHASE_3_HOME_EXPERIENCE_SPEC.md`](docs/product/PHASE_3_HOME_EXPERIENCE_SPEC.md)
+- [`docs/product/PHASE_3_HOME_EXPERIENCE_COMPLETION.md`](docs/product/PHASE_3_HOME_EXPERIENCE_COMPLETION.md)
+- [`docs/product/PHASE_3_5_PRODUCTION_POLISH_SPEC.md`](docs/product/PHASE_3_5_PRODUCTION_POLISH_SPEC.md)
+- [`docs/product/PHASE_3_5_DEVICE_VALIDATION_MATRIX.md`](docs/product/PHASE_3_5_DEVICE_VALIDATION_MATRIX.md)
+- [`docs/product/PHASE_3_5_PRODUCTION_POLISH_COMPLETION.md`](docs/product/PHASE_3_5_PRODUCTION_POLISH_COMPLETION.md)
+- [`docs/product/PHASE_4_PLAYER_JOURNEY_SPEC.md`](docs/product/PHASE_4_PLAYER_JOURNEY_SPEC.md)
+- [`docs/product/PHASE_4_PRODUCT_EXPERIENCE_COMPLETION.md`](docs/product/PHASE_4_PRODUCT_EXPERIENCE_COMPLETION.md)
+- [`docs/product/PHASE_5_PREPARATION_REPORT.md`](docs/product/PHASE_5_PREPARATION_REPORT.md)
+- [`docs/product/challenge-types/CHALLENGE_TYPE_ACCEPTANCE_CONTRACT.md`](docs/product/challenge-types/CHALLENGE_TYPE_ACCEPTANCE_CONTRACT.md)
+- [`docs/product/challenge-types/CHALLENGE_TYPE_PORTFOLIO_MATRIX.md`](docs/product/challenge-types/CHALLENGE_TYPE_PORTFOLIO_MATRIX.md)
+- [`docs/product/challenge-types/SPOT_THE_DIFFERENCE_SPEC.md`](docs/product/challenge-types/SPOT_THE_DIFFERENCE_SPEC.md)
+- [`docs/product/INTERACTION_ADAPTER_CONTRACT.md`](docs/product/INTERACTION_ADAPTER_CONTRACT.md)
+- [`docs/product/PHASE_5_COMPLETION.md`](docs/product/PHASE_5_COMPLETION.md)
+- [`docs/product/PHASE_5_5_CONTENT_QUALITY_COMPLETION.md`](docs/product/PHASE_5_5_CONTENT_QUALITY_COMPLETION.md)
+- [`docs/product/PHASE_5_5_REPLAY_QUALITY_AUDIT.md`](docs/product/PHASE_5_5_REPLAY_QUALITY_AUDIT.md)
+- [`docs/product/PHASE_6_PRODUCTION_READINESS_COMPLETION.md`](docs/product/PHASE_6_PRODUCTION_READINESS_COMPLETION.md)
+- [`docs/store/FINAL_RELEASE_CHECKLIST.md`](docs/store/FINAL_RELEASE_CHECKLIST.md)
+- [`docs/store/OPEN_SOURCE_NOTICES.md`](docs/store/OPEN_SOURCE_NOTICES.md)
+- [`docs/product/PHASE_2_GATE_3_COMPLETION.md`](docs/product/PHASE_2_GATE_3_COMPLETION.md)
+- [`docs/product/PHASE_2_GATE_4_COMPLETION.md`](docs/product/PHASE_2_GATE_4_COMPLETION.md)
 
-**Loading transition:** LoadingOverlay in AppShell, AppBoot 10 steps with timed fault-tolerant
+## Repository layout
 
-**Privacy:** PrivacyScreen with message, details, ContinueButton, PrivacyLink button placeholder shell_open
-
-**Settings placeholder:** SettingsScreen appearance/audio/accessibility/gameplay/privacy/about, sliders toggles, reset, About button navigates to AboutScreen
-
-**About page:** AboutScreen brand desc, Two Second Witness desc, privacy section, website button shell_open ittybittybites.com, privacy policy placeholder link, version info package ID, back handling
-
-**Accessibility-friendly UI:** font_scale 0.8-1.5 synced, reduced_motion halves animation, high_contrast flag, haptics abstraction Input.vibrate_handheld, apply_accessibility_to_control, screen reader hints flag, all buttons 56dp min, focus_mode
-
-**Privacy policy placeholder link:** AboutScreen + PrivacyScreen handle `EXP_COMING_SOON` info and shell_open
-
-**Main menu background:** HomeScreen loads `main_menu_bg.png` as TextureRect behind content with 0.6 modulate
-
-**Architecture expandable:** ExperienceRegistry manifest-first safe for Android export (no DirAccess on res:// in export), ContentService cache user:// overrides res:// OTA ready, ExperienceBase contract, _template copy guide
-
----
-
-## Repository Structure (Clean Slate)
-
-```
+```text
 app/
-  project.godot (main_scene AppShell.tscn, 13 autoloads, 1080x1920 portrait, gl_compatibility)
-  export_presets.cfg (package preserved code 100 v2.0.0-ibby-foundation)
-  android/plugins/GodotGooglePlayBilling/
-  assets/brand/ app_icon_1024.png + adaptive foreground/background + .import
-  assets/splash/ ittybittybites_splash.png, two_second_witness_splash.png
-  assets/gameplay/ observation_challenge_01.png
-  assets/backgrounds/ main_menu_bg.png
+  project.godot
+  assets/
   src/
-    core/app/ AppBoot 10 steps, AppState, ErrorHandler
-    core/events/ EventBus
-    core/navigation/ AppRoutes (publisher_splash, title_splash, privacy, tutorial, observation, memory_question, result, about, home, experiences...), NavigationService initial publisher_splash, SPLASH_ROUTES, FIRST_RUN_ROUTES
-    systems/ theme 32 tokens DARK, audio buses, save versioned + profile, settings 25 synced, analytics rotation, accessibility sync, content, config (app_name Two Second Witness, version 2.0.0-ibby-foundation, publisher ITTYBITTYBITES)
-    ui/shell/ AppShell (SCREEN_SCENES all new routes, chrome hidden for splash/first-run, publisher->title->privacy->tutorial->observation->memory->result->home flow)
-    ui/components/ AppButton, AppCard, ExperienceCard.tscn robust, SectionHeader
-    ui/screens/ PublisherSplashScreen, TitleSplashScreen, PrivacyScreen, TutorialScreen, ObservationChallengeScreen (2s timer), MemoryQuestionScreen, ResultScreen, AboutScreen, HomeScreen (main menu bg), ExperiencesScreen, ProfileScreen, SettingsScreen (with About), Placeholder
-    experiences/ ExperienceBase, manifest, flashword, _template
-docs/foundation/ (new architecture only, no old)
-  ARCHITECTURE_SUMMARY.md
-  FOLDER_STRUCTURE.md
-  IMPLEMENTED_SYSTEMS.md
-  BUILD_TEST_RESULTS.md
-  NEXT_STEPS.md
-  CLEAN_SLATE_VERIFICATION.md
+    core/                    # app state, boot, navigation, events
+    systems/                 # validated Foundation services
+    gameplay/
+      contracts/             # family, template, instance, validation, result
+      runtime/               # generic shared Challenge Runtime
+      families/              # production and hidden fixture modules
+      progression/           # data-driven achievements
+      programs/              # curated selection policies and run progress
+    ui/                      # shell, screens, product cards, dialogs
+    experiences/             # dormant Foundation-era scaffolding
+  tests/runtime/             # runtime, product, stress, and static checks
+docs/
+  foundation/                # validated infrastructure records
+  product/                   # Product Development source of truth
+  store/                     # store and release documentation
 ```
 
-No legacy: No CHANGELOG, EVOLUTION_*, asset_creation_queue, missing_assets, live_content, promo, shared, docs/design, .github workflows — purged.
+## Run locally
 
----
+Open `app/project.godot` in Godot 4.6.3 and run the project.
 
-## Quick Start & Test
+Fresh headless import:
 
 ```bash
-git clone https://github.com/ITTYBITTYBITES/2-second-witness-mobile.git
-# Godot 4.6.3 Import app/project.godot
-# Play F5: publisher splash 2.5s → title splash loading → privacy (if first run) → tutorial 3 steps → observation 2s timer → memory question → result → main menu
-# Tabs: Home (hero + main menu bg), Play, Profile, Settings → About
+godot --headless --editor --path ./app --quit --debug
 ```
 
-**Headless verification:**
+Phase 3 validation:
 
-```
-godot --import --path ./app → SUCCESS 8 assets (splash, gameplay, backgrounds, brand)
-godot --headless -s test_first_run → 
-  PublisherSplash loaded premium asset
-  Routes valid: publisher_splash, title_splash, privacy, tutorial, observation, memory_question, result, about, home
-  Assets exist: all 7 premium
-  Initial route publisher_splash → title_splash after 2.5s
-  First-run flow: privacy→tutorial→observation (image loaded) →memory_question→result→home
-  No Node not found errors (ExperienceCard fixed)
-  Accessibility font_scale 1.2 sync fixed
+```bash
+HOME=/tmp/tsw-phase3 godot --headless --path ./app \
+  --script res://tests/runtime/test_phase3_home_experience.gd --debug
+python3 app/tests/runtime/verify_phase3_home_architecture.py
 ```
 
----
+See [`app/tests/runtime/README.md`](app/tests/runtime/README.md) for the complete regression suite.
 
-## Design Principles
+Android export requires local Godot export templates, an Android SDK/JDK, and the existing release signing key for Play Store update continuity.
 
-- Premium digital exhibit, curated gallery
-- Curious and intelligent, cognitive science
-- Minimal editorial, calm modern polished
-- Not arcade, not flashy mobile
-- Accessibility-friendly, privacy-respecting
-- Expandable: new experiences via manifest + registry, no core rewrite
+## Development rule
 
----
+Complete one Product Development phase at a time. At each boundary:
 
-## Next Steps (New Vision Recreation)
-
-Future content, experiences, systems will be recreated from new vision:
-
-- More observation challenges (62 puzzle full experience later, not now)
-- Generic ExperiencePlayScreen reusable
-- Audio assets ui_click, success, fail
-- Benchmark tests
-- OTA content sync
-
-**Foundation release ready for professional Google Play — ITTYBITTYBITES presents Two Second Witness.**
+1. Summarize completed work.
+2. List changed files.
+3. Record architectural decisions.
+4. Identify risks.
+5. Recommend the next phase.
+6. Stop and wait for approval.

@@ -1,12 +1,43 @@
 extends Control
-## SettingsScreen - App preferences, accessibility, polished placeholder
+## Complete local settings and accessibility surface.
+
+const SETTING_HELP := {
+	"theme_mode": "Switch between the dark and light interface palettes.",
+	"reduced_motion": "Removes decorative movement and shortens transitions.",
+	"font_scale": "Scales interface text from 0.8× to 1.4×.",
+	"volume_master": "Controls every sound in the app.",
+	"volume_bgm": "Controls music when a screen provides it.",
+	"volume_sfx": "Controls gameplay and result cues.",
+	"volume_ui": "Controls taps and navigation feedback.",
+	"mute_master": "Silences all audio without changing volume levels.",
+	"haptics_enabled": "Enables short touch feedback on supported devices.",
+	"reading_comfort_mode": "Uses larger word presentation and steadier timing.",
+	"high_contrast": "Strengthens text, borders, and gameplay evidence.",
+	"color_assist_mode": "Avoids color-only questions and reinforces visual cues.",
+	"accessibility_screen_reader_hints": "Uses registered accessible interaction alternatives when available.",
+	"show_tutorials": "Presents a Challenge Type tutorial before its first round.",
+	"comfortable_timing": "Extends observation timing without reducing progress.",
+	"analytics_enabled": "Stores anonymous app activity locally. Nothing is uploaded."
+}
 
 @onready var scroll: ScrollContainer = $Margin/Scroll
 @onready var vbox: VBoxContainer = $Margin/Scroll/VBox
 
+var _refresh_pending: bool = false
+var _refresh_timer: Timer = null
+var _reset_dialog: ConfirmationDialog = null
 
 func _ready() -> void:
+	_refresh_timer = Timer.new()
+	_refresh_timer.one_shot = true
+	_refresh_timer.wait_time = 0.2
+	_refresh_timer.timeout.connect(_refresh)
+	add_child(_refresh_timer)
+	_ensure_reset_dialog()
 	_ensure_ui()
+	_apply_responsive_layout()
+	if not resized.is_connected(_apply_responsive_layout):
+		resized.connect(_apply_responsive_layout)
 	_apply_theme()
 	_refresh()
 
@@ -43,9 +74,15 @@ func _ensure_ui() -> void:
 	vbox = vb
 
 
+func _apply_responsive_layout() -> void:
+	ResponsiveLayout.apply_centered_margin($Margin)
+
 func _apply_theme() -> void:
-	# Theme is applied per-row in _refresh; just trigger refresh
-	if is_node_ready():
+	var background: ColorRect = get_node_or_null("Background") as ColorRect
+	if background and ThemeService:
+		background.color = ThemeService.get_color("background", Color("#0F0F12"))
+	# Theme is applied per-row in _refresh; just trigger refresh.
+	if is_node_ready() and is_visible_in_tree():
 		_refresh()
 
 
@@ -87,7 +124,7 @@ func _refresh() -> void:
 	)
 	vb.add_child(
 		_create_setting_row_slider(
-			"Font Scale", "font_scale", SettingsService.get_value("font_scale", 1.0), 0.8, 1.4, 0.1
+			"Text Size", "font_scale", SettingsService.get_value("font_scale", 1.0), 0.8, 1.4, 0.1
 		)
 	)
 
@@ -95,7 +132,7 @@ func _refresh() -> void:
 	vb.add_child(_create_section_header("Audio"))
 	vb.add_child(
 		_create_setting_row_slider(
-			"Master Volume",
+			"Audio Level",
 			"volume_master",
 			SettingsService.get_value("volume_master", 1.0),
 			0.0,
@@ -105,12 +142,25 @@ func _refresh() -> void:
 	)
 	vb.add_child(
 		_create_setting_row_slider(
-			"BGM Volume", "volume_bgm", SettingsService.get_value("volume_bgm", 0.7), 0.0, 1.0, 0.1
+			"Music", "volume_bgm", SettingsService.get_value("volume_bgm", 0.7), 0.0, 1.0, 0.1
 		)
 	)
 	vb.add_child(
 		_create_setting_row_slider(
-			"SFX Volume", "volume_sfx", SettingsService.get_value("volume_sfx", 0.9), 0.0, 1.0, 0.1
+			"Sound Effects", "volume_sfx", SettingsService.get_value("volume_sfx", 0.9), 0.0, 1.0, 0.1
+		)
+	)
+	vb.add_child(
+		_create_setting_row_slider(
+			"Interface Sounds", "volume_ui", SettingsService.get_value("volume_ui", 0.8), 0.0, 1.0, 0.1
+		)
+	)
+	vb.add_child(
+		_create_setting_row_toggle(
+			"Mute All Audio",
+			"mute_master",
+			SettingsService.get_value("mute_master", false),
+			_on_generic_toggle
 		)
 	)
 	vb.add_child(
@@ -126,6 +176,14 @@ func _refresh() -> void:
 	vb.add_child(_create_section_header("Accessibility"))
 	vb.add_child(
 		_create_setting_row_toggle(
+			"Reading Comfort Mode",
+			"reading_comfort_mode",
+			SettingsService.get_value("reading_comfort_mode", false),
+			_on_generic_toggle
+		)
+	)
+	vb.add_child(
+		_create_setting_row_toggle(
 			"High Contrast",
 			"high_contrast",
 			SettingsService.get_value("high_contrast", false),
@@ -134,17 +192,17 @@ func _refresh() -> void:
 	)
 	vb.add_child(
 		_create_setting_row_toggle(
-			"Screen Reader Hints",
-			"accessibility_screen_reader_hints",
-			SettingsService.get_value("accessibility_screen_reader_hints", false),
+			"Color Assistance",
+			"color_assist_mode",
+			SettingsService.get_value("color_assist_mode", false),
 			_on_generic_toggle
 		)
 	)
 	vb.add_child(
 		_create_setting_row_toggle(
-			"Reduce Motion (Accessibility)",
-			"accessibility_reduce_motion",
-			SettingsService.get_value("accessibility_reduce_motion", false),
+			"Screen Reader Hints",
+			"accessibility_screen_reader_hints",
+			SettingsService.get_value("accessibility_screen_reader_hints", false),
 			_on_generic_toggle
 		)
 	)
@@ -161,9 +219,9 @@ func _refresh() -> void:
 	)
 	vb.add_child(
 		_create_setting_row_toggle(
-			"Auto Play Next",
-			"auto_play_next",
-			SettingsService.get_value("auto_play_next", false),
+			"Comfortable Timing",
+			"comfortable_timing",
+			SettingsService.get_value("comfortable_timing", false),
 			_on_generic_toggle
 		)
 	)
@@ -178,14 +236,8 @@ func _refresh() -> void:
 			_on_generic_toggle
 		)
 	)
-	vb.add_child(
-		_create_setting_row_toggle(
-			"Crash Reporting",
-			"crash_reporting",
-			SettingsService.get_value("crash_reporting", true),
-			_on_generic_toggle
-		)
-	)
+	vb.add_child(_create_info_row("Storage", "Progress and diagnostics stay on this device"))
+	vb.add_child(_create_info_row("Offline Play", "All Challenge Types work without a connection"))
 
 	# About
 	vb.add_child(_create_section_header("About"))
@@ -205,18 +257,24 @@ func _refresh() -> void:
 			)
 		)
 	)
-	vb.add_child(_create_info_row("Build", "Playable Release - ITTYBITTYBITES"))
+	vb.add_child(_create_info_row("Build", "Production Readiness - ITTYBITTYBITES"))
 	vb.add_child(_create_info_row("Engine", "Godot 4.6 / GL Compatibility"))
 
-	var about_btn := Button.new()
-	about_btn.text = "About • Privacy • ITTYBITTYBITES"
-	about_btn.custom_minimum_size = Vector2(0, 52)
-	about_btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	about_btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	if ThemeService:
-		ThemeService.apply_typography(about_btn, "button")
-	vb.add_child(about_btn)
-	about_btn.pressed.connect(_on_about_pressed)
+	for destination: Dictionary in [
+		{"label": "Privacy", "section": "privacy"},
+		{"label": "Credits", "section": "credits"},
+		{"label": "About", "section": "about"}
+	]:
+		var destination_button := Button.new()
+		destination_button.text = str(destination.get("label", "About"))
+		destination_button.custom_minimum_size = Vector2(0, 52)
+		destination_button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		if ThemeService:
+			ThemeService.apply_typography(destination_button, "button")
+		vb.add_child(destination_button)
+		destination_button.pressed.connect(
+			_on_about_pressed.bind(str(destination.get("section", "about")))
+		)
 
 	var reset_btn := Button.new()
 	reset_btn.text = "Reset All Settings"
@@ -245,19 +303,31 @@ func _create_setting_row_toggle(
 	var hbox := HBoxContainer.new()
 	hbox.custom_minimum_size = Vector2(0, 56)
 
+	var text_stack := VBoxContainer.new()
+	text_stack.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	text_stack.size_flags_stretch_ratio = 2.0
+	text_stack.add_theme_constant_override("separation", 2)
+	hbox.add_child(text_stack)
 	var lbl := Label.new()
 	lbl.text = label
-	lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	lbl.size_flags_stretch_ratio = 2.0
-	lbl.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	if ThemeService:
 		ThemeService.apply_label_style(lbl, "body_small", "text_primary")
-	hbox.add_child(lbl)
+	text_stack.add_child(lbl)
+	var help_text := str(SETTING_HELP.get(key, ""))
+	if not help_text.is_empty():
+		var help := Label.new()
+		help.text = help_text
+		help.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		if ThemeService:
+			ThemeService.apply_label_style(help, "caption", "text_secondary")
+		text_stack.add_child(help)
 
 	var toggle := CheckButton.new()
 	toggle.button_pressed = value
 	toggle.set_meta("key", key)
+	toggle.tooltip_text = str(SETTING_HELP.get(key, label))
+	toggle.focus_mode = Control.FOCUS_ALL
 	toggle.toggled.connect(func(v: bool): callback.call(key, v))
 	hbox.add_child(toggle)
 
@@ -287,10 +357,10 @@ func _create_setting_row_toggle(
 func _create_setting_row_slider(
 	label: String, key: String, value: float, min_v: float, max_v: float, step: float
 ) -> Control:
-	var vbox := VBoxContainer.new()
+	var slider_vbox := VBoxContainer.new()
 
 	var hbox := HBoxContainer.new()
-	vbox.add_child(hbox)
+	slider_vbox.add_child(hbox)
 
 	var lbl := Label.new()
 	lbl.text = label
@@ -302,8 +372,12 @@ func _create_setting_row_slider(
 
 	var val_lbl := Label.new()
 	val_lbl.name = "ValueLabel"
+	val_lbl.custom_minimum_size.x = 64.0
+	val_lbl.autowrap_mode = TextServer.AUTOWRAP_OFF
+	val_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	if ThemeService:
 		ThemeService.apply_label_style(val_lbl, "body_small", "text_secondary")
+		val_lbl.autowrap_mode = TextServer.AUTOWRAP_OFF
 	val_lbl.text = (
 		"%.1f" % value
 		if max_v <= 1.5
@@ -318,6 +392,14 @@ func _create_setting_row_slider(
 		fmt_val = "%.1f" % value
 	val_lbl.text = fmt_val
 	hbox.add_child(val_lbl)
+	var help_text := str(SETTING_HELP.get(key, ""))
+	if not help_text.is_empty():
+		var help := Label.new()
+		help.text = help_text
+		help.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		if ThemeService:
+			ThemeService.apply_label_style(help, "caption", "text_secondary")
+		slider_vbox.add_child(help)
 
 	var slider := HSlider.new()
 	slider.min_value = min_v
@@ -326,6 +408,8 @@ func _create_setting_row_slider(
 	slider.value = value
 	slider.set_meta("key", key)
 	slider.set_meta("value_label", val_lbl)
+	slider.tooltip_text = str(SETTING_HELP.get(key, label))
+	slider.focus_mode = Control.FOCUS_ALL
 	slider.value_changed.connect(
 		func(v: float):
 			var vl: Label = slider.get_meta("value_label") as Label
@@ -337,7 +421,7 @@ func _create_setting_row_slider(
 				vl.text = "%.1f" % v
 			_on_slider_changed(key, v)
 	)
-	vbox.add_child(slider)
+	slider_vbox.add_child(slider)
 
 	var card := PanelContainer.new()
 	var style := StyleBoxFlat.new()
@@ -357,7 +441,7 @@ func _create_setting_row_slider(
 		style.content_margin_top = 8
 		style.content_margin_bottom = 8
 	card.add_theme_stylebox_override("panel", style)
-	card.add_child(vbox)
+	card.add_child(slider_vbox)
 
 	return card
 
@@ -368,12 +452,15 @@ func _create_info_row(label: String, value: String) -> Control:
 	var l := Label.new()
 	l.text = label
 	l.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	l.size_flags_stretch_ratio = 1.0
 	l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	if ThemeService:
 		ThemeService.apply_label_style(l, "body_small", "text_primary")
 	hbox.add_child(l)
 	var v := Label.new()
 	v.text = value
+	v.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	v.size_flags_stretch_ratio = 2.0
 	v.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	v.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	if ThemeService:
@@ -400,7 +487,21 @@ func _create_info_row(label: String, value: String) -> Control:
 	return card
 
 
+func _ensure_reset_dialog() -> void:
+	if _reset_dialog != null:
+		return
+	_reset_dialog = ConfirmationDialog.new()
+	_reset_dialog.name = "ConfirmationDialog"
+	_reset_dialog.title = "Reset settings?"
+	_reset_dialog.dialog_text = "This restores audio, appearance, gameplay, privacy, and accessibility settings to their defaults. Your Witness Progress is not affected."
+	_reset_dialog.ok_button_text = "RESET SETTINGS"
+	_reset_dialog.cancel_button_text = "CANCEL"
+	_reset_dialog.confirmed.connect(_perform_reset_settings)
+	add_child(_reset_dialog)
+
 func on_navigated_to(_params: Dictionary) -> void:
+	_refresh_pending = false
+	_apply_responsive_layout()
 	_refresh()
 	# Screen-view analytics are centralized in NavigationService.navigate_to.
 
@@ -430,44 +531,50 @@ func _on_theme_toggle(_key: String, is_dark: bool) -> void:
 		)
 	if AccessibilityService:
 		AccessibilityService.vibrate(20)
+	if AudioService:
+		AudioService.play_ui("ui_click")
 
 
 func _on_slider_changed(key: String, value: float) -> void:
 	if SettingsService:
 		SettingsService.set_value(key, value)
-	# Apply audio volumes immediately
-	if key.begins_with("volume_") and AudioService:
-		match key:
-			"volume_master":
-				AudioService.set_volume(AudioService.Bus.MASTER, value)
-			"volume_bgm":
-				AudioService.set_volume(AudioService.Bus.BGM, value)
-			"volume_sfx":
-				AudioService.set_volume(AudioService.Bus.SFX, value)
-			"volume_ui":
-				AudioService.set_volume(AudioService.Bus.UI, value)
 
 
-func _on_about_pressed() -> void:
+func _on_about_pressed(section: String = "about") -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
 	if NavigationService:
-		NavigationService.navigate_to("about")
+		NavigationService.navigate_to("about", {"section": section})
 
 
 func _on_reset_settings() -> void:
+	if AudioService:
+		AudioService.play_ui("ui_click")
+	_ensure_reset_dialog()
+	_reset_dialog.popup_centered(Vector2i(520, 260))
+
+func _perform_reset_settings() -> void:
 	if SettingsService:
 		SettingsService.reset_to_defaults()
 	_refresh()
-	if AudioService:
-		AudioService.play_ui("ui_click")
+	if AccessibilityService:
+		AccessibilityService.vibrate(35)
 
 
-func _on_setting_changed(_key: String, _value: Variant) -> void:
-	# Could refresh only needed row, but full refresh ok for foundation
-	# call_deferred to avoid recursion on slider
-	call_deferred("_refresh")
+func _on_setting_changed(key: String, _value: Variant) -> void:
+	if key in ["theme_mode", "high_contrast", "font_scale"]:
+		_schedule_refresh()
 
 
 func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:
-	_apply_theme()
+	var background: ColorRect = get_node_or_null("Background") as ColorRect
+	if background and ThemeService:
+		background.color = ThemeService.get_color("background", Color("#0F0F12"))
+	_schedule_refresh()
+
+func _schedule_refresh() -> void:
+	if not is_visible_in_tree():
+		_refresh_pending = true
+		return
+	if _refresh_timer:
+		_refresh_timer.start()

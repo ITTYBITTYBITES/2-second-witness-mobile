@@ -1,0 +1,203 @@
+extends Control
+class_name ObjectRecallView
+## Illustrated, label-reinforced object tray with explicit result evidence.
+
+var _scene: Dictionary = {}
+var _highlights: Array[String] = []
+var _reveal_elapsed: float = 0.0
+
+func _ready() -> void:
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	resized.connect(queue_redraw)
+	set_process(false)
+
+func set_scene_data(data: Dictionary, highlight_ids: Array = []) -> void:
+	_scene = data.duplicate(true)
+	_highlights.clear()
+	for value: Variant in highlight_ids:
+		_highlights.append(str(value))
+	_reveal_elapsed = 0.0
+	var animate: bool = not _highlights.is_empty()
+	if AccessibilityService and not AccessibilityService.should_animate():
+		animate = false
+	set_process(animate)
+	if _highlights.is_empty() and AudioService:
+		AudioService.play_sfx("object_settle", 0.20)
+	queue_redraw()
+
+func _process(delta: float) -> void:
+	_reveal_elapsed += delta
+	queue_redraw()
+
+func _draw() -> void:
+	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
+	draw_rect(Rect2(Vector2.ZERO, size), Color.BLACK if high_contrast else Color("#12131A"), true)
+	var reveal: bool = not _highlights.is_empty() or bool(_scene.get("reveal_mode", false))
+	var missing_evidence := _missing_evidence()
+	var tray_bottom: float = 0.70 if reveal and not missing_evidence.is_empty() else 0.86
+	var tray := Rect2(size.x * 0.05, size.y * 0.12, size.x * 0.90, size.y * (tray_bottom - 0.12))
+	draw_rect(tray, Color.WHITE if high_contrast else Color("#E9E3D7"), true)
+	draw_rect(tray, Color.BLACK if high_contrast else Color("#6D6578"), false, 4.0)
+	var header := "EVIDENCE" if reveal else "REMEMBER THE SET"
+	draw_string(
+		ThemeDB.fallback_font,
+		Vector2(tray.position.x, size.y * 0.075),
+		header,
+		HORIZONTAL_ALIGNMENT_CENTER,
+		tray.size.x,
+		18,
+		Color.WHITE if high_contrast else Color("#B7AECA")
+	)
+	for value: Variant in _scene.get("objects", []):
+		if value is Dictionary:
+			_draw_object(tray, value as Dictionary, true)
+	if reveal and not missing_evidence.is_empty():
+		_draw_missing_evidence(missing_evidence)
+
+func _draw_object(tray: Rect2, data: Dictionary, use_position: bool) -> void:
+	var center: Vector2
+	if use_position:
+		center = tray.position + Vector2(
+			float(data.get("x", 0.5)) * tray.size.x,
+			float(data.get("y", 0.5)) * tray.size.y
+		)
+	else:
+		center = Vector2(float(data.get("draw_x", size.x * 0.5)), float(data.get("draw_y", size.y * 0.82)))
+	var card_size := Vector2(
+		clampf(tray.size.x * 0.18, 70.0, 132.0),
+		clampf(tray.size.y * 0.28, 78.0, 138.0)
+	)
+	if not use_position:
+		card_size = Vector2(clampf(size.x * 0.24, 90.0, 150.0), clampf(size.y * 0.18, 78.0, 120.0))
+	var card := Rect2(center - card_size * 0.5, card_size)
+	var selected := _is_highlighted(data)
+	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
+	var pulse: float = 0.78 + 0.22 * sin(_reveal_elapsed * 5.0)
+	var card_color := Color.WHITE if high_contrast else Color("#FFFDF8")
+	draw_rect(card, card_color, true)
+	draw_rect(card, Color.BLACK if high_contrast else Color("#B8AFBF"), false, 3.0 if high_contrast else 2.0)
+	if selected:
+		draw_rect(card.grow(5.0 + pulse * 2.0), Color(1.0, 0.72, 0.30, pulse), false, 5.0)
+	var icon_center := card.position + Vector2(card.size.x * 0.5, card.size.y * 0.42)
+	var icon_extent := minf(card.size.x, card.size.y) * 0.23
+	_draw_icon(icon_center, icon_extent, str(data.get("kind", "circle")), Color(str(data.get("color", "#5B7FD0"))))
+	draw_string(
+		ThemeDB.fallback_font,
+		card.position + Vector2(4.0, card.size.y - 11.0),
+		str(data.get("label", "Object")),
+		HORIZONTAL_ALIGNMENT_CENTER,
+		card.size.x - 8.0,
+		14,
+		Color("#292631")
+	)
+
+func _draw_missing_evidence(items: Array[Dictionary]) -> void:
+	var band := Rect2(size.x * 0.05, size.y * 0.74, size.x * 0.90, size.y * 0.22)
+	draw_rect(band, Color("#24212D"), true)
+	draw_rect(band, Color("#FFB84D"), false, 3.0)
+	draw_string(
+		ThemeDB.fallback_font,
+		band.position + Vector2(0, 22),
+		"NOT SHOWN",
+		HORIZONTAL_ALIGNMENT_CENTER,
+		band.size.x,
+		16,
+		Color("#FFCF7A")
+	)
+	var spacing: float = band.size.x / float(items.size() + 1)
+	for index: int in range(items.size()):
+		var item: Dictionary = items[index].duplicate(true)
+		item["draw_x"] = band.position.x + spacing * float(index + 1)
+		item["draw_y"] = band.position.y + band.size.y * 0.62
+		_draw_object(band, item, false)
+
+func _missing_evidence() -> Array[Dictionary]:
+	var visible_values: Dictionary = {}
+	for value: Variant in _scene.get("objects", []):
+		if value is Dictionary:
+			visible_values[str((value as Dictionary).get("response_value", ""))] = true
+	var output: Array[Dictionary] = []
+	for value: Variant in _scene.get("option_objects", []):
+		if value is Dictionary:
+			var data: Dictionary = value
+			var response_value := str(data.get("response_value", data.get("label", "")))
+			if _highlights.has(response_value) and not visible_values.has(response_value):
+				output.append(data)
+	return output
+
+func _is_highlighted(data: Dictionary) -> bool:
+	return (
+		_highlights.has(str(data.get("id", "")))
+		or _highlights.has(str(data.get("response_value", data.get("label", ""))))
+	)
+
+func _draw_icon(center: Vector2, extent: float, kind: String, color: Color) -> void:
+	var outline := Color("#292631")
+	match kind:
+		"star", "flower":
+			var points := PackedVector2Array()
+			var count: int = 10 if kind == "star" else 12
+			for index: int in range(count):
+				var radius: float = extent if index % 2 == 0 else extent * (0.44 if kind == "star" else 0.62)
+				points.append(center + Vector2.UP.rotated(TAU * float(index) / float(count)) * radius)
+			draw_colored_polygon(points, color)
+			draw_polyline(points, outline, 2.0)
+		"moon":
+			draw_circle(center, extent, color)
+			draw_circle(center + Vector2(extent * 0.45, -extent * 0.10), extent * 0.82, Color("#FFFDF8"))
+		"leaf", "feather", "shell", "acorn", "pear":
+			draw_colored_polygon(PackedVector2Array([
+				center + Vector2(0, -extent),
+				center + Vector2(extent * 0.76, 0),
+				center + Vector2(0, extent),
+				center + Vector2(-extent * 0.76, 0)
+			]), color)
+			draw_line(center + Vector2(0, -extent * 0.65), center + Vector2(0, extent * 0.75), outline, 2.0)
+		"book", "folder", "map", "flag":
+			var rect := Rect2(center - Vector2(extent, extent * 0.72), Vector2(extent * 2.0, extent * 1.44))
+			draw_rect(rect, color, true)
+			draw_rect(rect, outline, false, 2.0)
+			draw_line(Vector2(rect.position.x + rect.size.x * 0.24, rect.position.y), Vector2(rect.position.x + rect.size.x * 0.24, rect.end.y), outline, 2.0)
+		"pencil", "brush", "spoon", "key", "comb", "scissors":
+			draw_line(center + Vector2(-extent, extent * 0.35), center + Vector2(extent, -extent * 0.35), outline, 7.0)
+			draw_line(center + Vector2(-extent, extent * 0.35), center + Vector2(extent, -extent * 0.35), color, 4.0)
+			if kind == "key":
+				draw_circle(center + Vector2(-extent * 0.78, extent * 0.27), extent * 0.24, color, false, 3.0)
+		"glasses", "wheel", "watch", "clock", "compass", "ring":
+			if kind == "glasses":
+				draw_circle(center + Vector2(-extent * 0.52, 0), extent * 0.45, color, false, 4.0)
+				draw_circle(center + Vector2(extent * 0.52, 0), extent * 0.45, color, false, 4.0)
+				draw_line(center + Vector2(-extent * 0.08, 0), center + Vector2(extent * 0.08, 0), outline, 3.0)
+			else:
+				if kind in ["ring", "wheel"]:
+					draw_circle(center, extent, color, false, 4.0)
+				else:
+					draw_circle(center, extent, color)
+				draw_arc(center, extent, 0, TAU, 24, outline, 2.0)
+				if kind in ["watch", "clock", "compass"]:
+					draw_line(center, center + Vector2(0, -extent * 0.62), outline, 3.0)
+		"cup", "mug", "bottle", "candle", "whistle", "bell":
+			var body := Rect2(center - Vector2(extent * 0.62, extent * 0.72), Vector2(extent * 1.24, extent * 1.44))
+			draw_rect(body, color, true)
+			draw_rect(body, outline, false, 2.0)
+			if kind in ["cup", "mug"]:
+				draw_arc(center + Vector2(extent * 0.66, 0), extent * 0.32, -PI * 0.5, PI * 0.5, 12, outline, 3.0)
+		"camera", "lamp", "magnet", "drum", "basket":
+			var rect := Rect2(center - Vector2(extent, extent * 0.66), Vector2(extent * 2.0, extent * 1.32))
+			draw_rect(rect, color, true)
+			draw_rect(rect, outline, false, 2.0)
+			if kind == "camera":
+				draw_circle(center, extent * 0.42, Color("#E9E3D7"))
+				draw_arc(center, extent * 0.42, 0, TAU, 20, outline, 2.0)
+		"anchor", "umbrella", "kite", "boat", "ribbon", "cloud", "hat", "glove", "boot":
+			var points := PackedVector2Array([
+				center + Vector2(0, -extent),
+				center + Vector2(extent, extent * 0.62),
+				center + Vector2(0, extent * 0.35),
+				center + Vector2(-extent, extent * 0.62)
+			])
+			draw_colored_polygon(points, color)
+			draw_polyline(points, outline, 2.0)
+		_:
+			draw_circle(center, extent, color)
+			draw_arc(center, extent, 0, TAU, 24, outline, 2.0)

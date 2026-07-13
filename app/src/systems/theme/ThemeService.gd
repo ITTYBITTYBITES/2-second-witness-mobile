@@ -144,6 +144,7 @@ func set_theme_mode(mode: ThemeMode) -> void:
 			tokens = DARK_TOKENS.duplicate(true)
 			current_theme_name = "dark"
 
+	_apply_accessibility_tokens()
 	theme_changed.emit(current_theme_name, tokens)
 	EventBus.publish_theme_changed(current_theme_name)
 	print("[ThemeService] Theme changed to %s" % current_theme_name)
@@ -161,14 +162,18 @@ func get_typography(style: String) -> Dictionary:
 	var typo: Dictionary = tokens.get("typography", {})
 	return typo.get(style, {"size": 18, "weight": 400})
 
+func get_scaled_size(base_size: int) -> int:
+	var scale: float = float(SettingsService.get_value("font_scale", 1.0)) if SettingsService else 1.0
+	return maxi(1, int(round(float(base_size) * clampf(scale, 0.8, 1.4))))
+
 func get_font_size(style: String) -> int:
-	return get_typography(style).get("size", 18)
+	var base_size: int = int(get_typography(style).get("size", 18))
+	return get_scaled_size(base_size)
 
 func apply_typography(control: Control, style: String) -> void:
 	if not control:
 		return
-	var typo := get_typography(style)
-	control.add_theme_font_size_override("font_size", typo.get("size", 18))
+	control.add_theme_font_size_override("font_size", get_font_size(style))
 
 func apply_label_style(label: Label, style: String, color_token: String = "text_primary") -> void:
 	if not label:
@@ -199,12 +204,48 @@ func apply_theme_to_control(control: Control) -> void:
 	# Can be extended to apply theme dynamically
 	theme_tokens_updated.emit()
 
+func _apply_accessibility_tokens() -> void:
+	var high_contrast: bool = bool(SettingsService.get_value("high_contrast", false)) if SettingsService else false
+	if not high_contrast:
+		return
+	if current_theme_name == "light":
+		tokens["background"] = Color("#FFFFFF")
+		tokens["background_secondary"] = Color("#F4F4F7")
+		tokens["background_tertiary"] = Color("#E8E8EE")
+		tokens["surface"] = Color("#FFFFFF")
+		tokens["surface_elevated"] = Color("#F4F4F7")
+		tokens["primary"] = Color("#3B16C7")
+		tokens["primary_variant"] = Color("#4B24DA")
+		tokens["text_primary"] = Color("#000000")
+		tokens["text_secondary"] = Color("#24242C")
+		tokens["text_tertiary"] = Color("#3D3D4D")
+		tokens["border"] = Color("#5A5A6A")
+		tokens["border_strong"] = Color("#202028")
+	else:
+		tokens["background"] = Color("#000000")
+		tokens["background_secondary"] = Color("#08080C")
+		tokens["background_tertiary"] = Color("#181820")
+		tokens["surface"] = Color("#111118")
+		tokens["surface_elevated"] = Color("#20202A")
+		tokens["primary"] = Color("#9D83FF")
+		tokens["primary_variant"] = Color("#B9A8FF")
+		tokens["secondary"] = Color("#38F0B8")
+		tokens["text_primary"] = Color("#FFFFFF")
+		tokens["text_secondary"] = Color("#F1F1F7")
+		tokens["text_tertiary"] = Color("#D2D2DE")
+		tokens["border"] = Color("#77778A")
+		tokens["border_strong"] = Color("#A0A0B0")
+
 func _on_setting_changed(key: String, value: Variant) -> void:
-	if key == "theme_mode":
-		match str(value):
-			"dark":
-				set_theme_mode(ThemeMode.DARK)
-			"light":
-				set_theme_mode(ThemeMode.LIGHT)
-			_:
-				set_theme_mode(ThemeMode.DARK)
+	match key:
+		"theme_mode":
+			match str(value):
+				"dark":
+					set_theme_mode(ThemeMode.DARK)
+				"light":
+					set_theme_mode(ThemeMode.LIGHT)
+				_:
+					set_theme_mode(ThemeMode.DARK)
+		"high_contrast", "font_scale":
+			# Rebuild derived tokens and notify every cached screen to restyle.
+			set_theme_mode(current_mode)

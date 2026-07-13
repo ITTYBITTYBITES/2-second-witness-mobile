@@ -1,7 +1,7 @@
 extends Control
-## ObservationChallengeScreen – Witness Engine – Observation phase
-## Premium UI, matches Home / Boot / Tutorial
-## Gameplay logic unchanged – 2.0s observation, then memory_question
+## ObservationChallengeScreen – shared scene-image presentation adapter
+## Reads a resolved ChallengeInstance from the Challenge Runtime while retaining
+## compatibility with deterministic fixture dictionaries.
 
 @onready var timer_bar: ProgressBar = $Margin/VBox/TimerBar
 @onready var image_rect: TextureRect = $Margin/VBox/ImageContainer/Margin/ObservationImage
@@ -15,6 +15,7 @@ var _elapsed: float = 0.0
 var _duration: float = 2.0
 var _challenge_id: String = "challenge_01"
 var _challenge_data: Dictionary = {}
+var _scene_view: Control = null
 
 const FALLBACK_CHALLENGE := {
 	"id": "challenge_01",
@@ -27,9 +28,15 @@ const FALLBACK_CHALLENGE := {
 }
 
 func _ready() -> void:
+	# AppShell supplies route data through on_navigated_to after adding the scene.
+	# Starting here as well caused duplicate initialization and duplicate haptics.
+	_apply_responsive_layout()
+	if not resized.is_connected(_apply_responsive_layout):
+		resized.connect(_apply_responsive_layout)
 	_apply_theme()
-	_load_challenge()
-	_start_observation()
+
+func _apply_responsive_layout() -> void:
+	ResponsiveLayout.apply_centered_margin($Margin, 20.0, 1040.0)
 
 func _get_anim_duration(base: float) -> float:
 	if AccessibilityService and AccessibilityService.has_method("get_animation_duration"):
@@ -43,33 +50,33 @@ func _should_animate() -> bool:
 
 func _apply_theme() -> void:
 	var tokens := ThemeService.tokens if ThemeService else {}
-	
+
 	if background_rect:
 		background_rect.color = tokens.get("background", Color("#0F0F12")) if not tokens.is_empty() else Color("#0F0F12")
-	
+
 	# Instruction – large "OBSERVE", like Tutorial / Home Witness label
 	if instruction_label:
 		if ThemeService:
 			ThemeService.apply_label_style(instruction_label, "display", "text_primary")
-			instruction_label.add_theme_font_size_override("font_size", 42)
+			instruction_label.add_theme_font_size_override("font_size", ThemeService.get_scaled_size(42))
 		else:
 			instruction_label.add_theme_font_size_override("font_size", 42)
 		instruction_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		instruction_label.text = "OBSERVE"
-	
+
 	# Countdown – purple, headline
 	if countdown_label:
 		if ThemeService:
 			ThemeService.apply_label_style(countdown_label, "headline", "primary")
 		countdown_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	
+
 	# Hint / challenge title
 	if hint_label:
 		if ThemeService:
 			ThemeService.apply_label_style(hint_label, "body_small", "text_secondary")
 		hint_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		hint_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	
+
 	# Timer bar – purple, rounded, matching Home CTA
 	if timer_bar:
 		timer_bar.show_percentage = false
@@ -81,19 +88,19 @@ func _apply_theme() -> void:
 		bg_style.corner_radius_bottom_right = 99
 		timer_bar.add_theme_stylebox_override("background", bg_style)
 		var fill_style := StyleBoxFlat.new()
-		var primary := tokens.get("primary", Color("#6A3DFF")) if not tokens.is_empty() else Color("#6A3DFF")
+		var primary: Color = tokens.get("primary", Color("#6A3DFF")) if not tokens.is_empty() else Color("#6A3DFF")
 		fill_style.bg_color = primary
 		fill_style.corner_radius_top_left = 99
 		fill_style.corner_radius_top_right = 99
 		fill_style.corner_radius_bottom_left = 99
 		fill_style.corner_radius_bottom_right = 99
 		timer_bar.add_theme_stylebox_override("fill", fill_style)
-	
+
 	# Image card – premium, matches ExperienceCard
 	if image_container:
 		var style := StyleBoxFlat.new()
 		style.bg_color = tokens.get("surface", Color("#1E1E26")) if not tokens.is_empty() else Color("#1E1E26")
-		var r := tokens.get("radius_lg", 20) if not tokens.is_empty() else 20
+		var r: int = int(tokens.get("radius_lg", 20)) if not tokens.is_empty() else 20
 		style.corner_radius_top_left = r
 		style.corner_radius_top_right = r
 		style.corner_radius_bottom_left = r
@@ -108,7 +115,7 @@ func _apply_theme() -> void:
 		style.content_margin_top = 4
 		style.content_margin_bottom = 4
 		image_container.add_theme_stylebox_override("panel", style)
-	
+
 	if image_rect:
 		image_rect.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
 		image_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
@@ -125,37 +132,77 @@ func _load_challenge() -> void:
 	if _challenge_data.is_empty():
 		_challenge_data = FALLBACK_CHALLENGE.duplicate(true)
 
-	_challenge_id = str(_challenge_data.get("id", _challenge_id))
-	var image_path: String = str(_challenge_data.get("image_path", FALLBACK_CHALLENGE["image_path"]))
-
-	if ResourceLoader.exists(image_path):
-		var tex = load(image_path) as Texture2D
-		if tex and image_rect:
-			image_rect.texture = tex
-			print("[Observation] Loaded challenge image %s" % image_path)
+	_challenge_id = str(_challenge_data.get("instance_id", _challenge_data.get("id", _challenge_id)))
+	var generated_scene: Dictionary = {}
+	var raw_scene: Variant = _challenge_data.get("generated_scene", {})
+	if raw_scene is Dictionary:
+		generated_scene = raw_scene as Dictionary
+	_duration = maxf(float(_challenge_data.get("exposure_duration_sec", 2.0)), 0.1)
+	_clear_scene_view()
+	var renderer_script := str(generated_scene.get("renderer_script", ""))
+	if not renderer_script.is_empty() and ResourceLoader.exists(renderer_script):
+		_show_generated_scene(generated_scene, renderer_script)
 	else:
-		print("[Observation] Challenge image not found: %s" % image_path)
-		if image_rect:
-			image_rect.texture = null
+		var image_path: String = str(generated_scene.get(
+			"image_path",
+			_challenge_data.get("image_path", FALLBACK_CHALLENGE["image_path"])
+		))
+		if ResourceLoader.exists(image_path):
+			var tex = load(image_path) as Texture2D
+			if tex and image_rect:
+				image_rect.visible = true
+				image_rect.texture = tex
+				print("[Observation] Loaded challenge image %s" % image_path)
+		else:
+			print("[Observation] Challenge image not found: %s" % image_path)
+			if image_rect:
+				image_rect.visible = true
+				image_rect.texture = null
 
 	if hint_label:
-		# Show challenge title, succinct – matches Home style
-		hint_label.text = str(_challenge_data.get("title", "Focus your attention"))
+		hint_label.text = str(generated_scene.get(
+			"title",
+			_challenge_data.get("title", "Focus your attention")
+		))
+
+func _show_generated_scene(generated_scene: Dictionary, renderer_script: String) -> void:
+	var script: Script = load(renderer_script)
+	if script == null or image_rect == null:
+		return
+	image_rect.visible = false
+	_scene_view = Control.new()
+	_scene_view.name = "GeneratedSceneView"
+	_scene_view.set_script(script)
+	_scene_view.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_scene_view.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_scene_view.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	image_rect.get_parent().add_child(_scene_view)
+	_scene_view.call("set_scene_data", generated_scene, [])
+	print("[Observation] Loaded generated scene %s" % generated_scene.get("template_id", "unknown"))
+
+func _clear_scene_view() -> void:
+	if is_instance_valid(_scene_view):
+		_scene_view.queue_free()
+	_scene_view = null
+	if image_rect:
+		image_rect.visible = true
 
 func _start_observation() -> void:
 	_elapsed = 0.0
-	_duration = 2.0
+	_duration = maxf(_duration, 0.1)
 	set_process(true)
 	if instruction_label:
 		instruction_label.text = "OBSERVE"
 	if countdown_label:
-		countdown_label.text = "2.0s"
+		countdown_label.text = "%.1fs" % _duration
 	if timer_bar:
 		timer_bar.max_value = _duration
 		timer_bar.value = _duration
 
 	if AccessibilityService and AccessibilityService.is_haptics_enabled():
 		AccessibilityService.vibrate(50)
+	if AudioService:
+		AudioService.play_sfx("observation_start", 0.75)
 
 	print("[Observation] Challenge started - %s" % _challenge_id)
 
@@ -173,7 +220,9 @@ func _process(delta: float) -> void:
 		_transition_to_question()
 
 func _transition_to_question() -> void:
-	var fade_dur := _get_anim_duration(0.3)
+	if AudioService:
+		AudioService.play_sfx("conceal", 0.32)
+	var fade_dur := _get_anim_duration(0.22)
 	if not _should_animate():
 		_do_question_transition()
 		return
@@ -186,11 +235,16 @@ func _do_question_transition() -> void:
 	if AppState:
 		AppState.set_transient("current_challenge_id", _challenge_id)
 		AppState.set_transient("current_challenge", _challenge_data)
-	if NavigationService:
-		NavigationService.navigate_to("memory_question", {
-			"challenge_id": _challenge_id,
-			"challenge_data": _challenge_data
-		})
+	if ChallengeSessionService and ChallengeSessionService.has_active_session():
+		ChallengeSessionService.advance_to_response()
+	else:
+		ErrorHandler.handle(
+			"RUNTIME_SESSION_MISSING",
+			"Observation cannot continue without an active challenge session",
+			{"instance_id": _challenge_id}
+		)
+		if NavigationService:
+			NavigationService.navigate_to("home")
 
 func on_navigated_to(params: Dictionary) -> void:
 	var fallback_id := "challenge_01"
@@ -203,6 +257,7 @@ func on_navigated_to(params: Dictionary) -> void:
 		_challenge_data = {}
 
 	modulate.a = 1.0
+	_apply_responsive_layout()
 	_apply_theme()
 	_load_challenge()
 	_start_observation()

@@ -1,146 +1,145 @@
-# Google Play Store Listing — Two Second Witness Update
-## Existing Production App Update — ITTYBITTYBITES Platform
+# Google Play Store Listing — Two Second Witness 4.0.0
 
-**App Name:** Two Second Witness (existing Play listing, not new)
-**Publisher Branding:** ITTYBITTYBITES (canonical one-word, all caps)
-**Package ID:** `com.ittybittybites.the2secondwitness` (unchanged, existing Play production app)
-**Existing Play Production Version Name:** 3.0.00 (per Play Console)
-**New Version Code:** 40000 (must be higher than existing production version code — set to 40000 to be safely higher than any plausible code for 3.0.00, previously 101, now 40000 for final update)
-**New Version Name:** 4.0.0 (major update from 3.0.00 foundation, clean new vision)
-**Category:** Puzzle / Educational / Brain Games (existing listing category)
-**Privacy Policy Existing:** https://ittybittybites.github.io/privacy-policy/ (ITTYBITTYBITES privacy-policy repository, already exists, not placeholder)
-**Content Rating:** Everyone (existing listing)
+**Listing type:** Update to the existing application
+**Publisher:** ITTYBITTYBITES
+**Package:** `com.ittybittybites.the2secondwitness`
+**Version name:** 4.0.0
+**Version code:** 40000
+**Category recommendation:** Puzzle
+**Privacy policy:** <https://ittybittybites.github.io/two-second-witness/privacy>
 
----
+Package identity and Play signing continuity must be preserved. Confirm the actual highest Play Console version code before upload; increase `40000` if the existing track already uses that value or a higher value.
 
-## Update Type
+## App name
 
-This is an **existing Google Play application update / replacement**, not a new app listing.
+Two Second Witness
 
-- Preserve existing signing identity (same keystore as 3.0.00 production)
-- Keep existing package name unchanged `com.ittybittybites.the2secondwitness`
-- Version code 40000 ensures Play sees update (higher than existing production)
-- Treat as app replacement/update, not new listing
+## Short description
 
-Existing app identity:
-- Play URL: https://play.google.com/store/apps/details?id=com.ittybittybites.the2secondwitness
-- Developer: ITTYBITTYBITES
-- Current production version name 3.0.00 (per user info)
-- Privacy policy existing in ITTYBITTYBITES privacy-policy repository https://ittybittybites.github.io/privacy-policy/
+Fast, fair observation challenges. Notice the detail, then reveal the evidence.
 
----
+## Full description
 
-## Short Description (80 char max) — 79 chars
+**How much will you notice before the moment disappears?**
 
-How much can you notice in 2 seconds? Premium observation & memory challenges.
+Two Second Witness is a premium observation game built around short, fair, replayable challenges. Study a scene, word sequence, object set, visual change, or abstract pattern. Then make your choice and see the exact evidence behind the answer.
 
----
+A miss should make you think, “I missed it”—never, “That was unfair.”
 
-## Full Description (4000 char max) — Updated for Existing Listing
+### Five Challenge Types
 
-**How much can you notice in two seconds?**
+**Scene Investigation**
+Study an ordinary illustrated setting, then answer one question about its objects, positions, colors, counts, or relationships.
 
-Two Second Witness is a premium digital exhibit exploring attention, observation, and memory through short, replayable visual challenges. Presented by ITTYBITTYBITES — a curated platform of interactive experiences.
+**Flash Words**
+Catch one word or a short sequence, remember its order or position, and choose the exact response.
 
-**New in 4.0.0 — ITTYBITTYBITES Foundation Release:**
+**Spot the Difference**
+Compare two matched visual states and tap the one object or location that changed.
 
-This is a complete rebuild from the ground up, preserving your existing Play identity while introducing a polished, professional experience:
+**Object Recall**
+Remember a clean set of illustrated objects, then recover the complete set, missing options, row, or bookends.
 
-• **ITTYBITTYBITES presents** — New publisher splash establishing platform identity
-• **Professional first-run flow** — Privacy acknowledgment, short tutorial, first observation challenge, memory question, result, then main menu — understand concept within 30 seconds
-• **Premium minimal design** — Dark elegant #0F0F12, purple #7C5CFF and teal #2EE6A6 accents, editorial typography, calm and intelligent, not arcade
-• **Privacy-respecting** — No account required, no personal information collected, progress stored locally, existing privacy policy at https://ittybittybites.github.io/privacy-policy/
+**Pattern Recall**
+Watch a connected path or geometric sequence unfold, then repeat it in the same order.
 
-**Core Concept:**
+### Built for replay
 
-You have exactly 2 seconds to observe a detailed scene. Notice objects, patterns, subtle differences. Then answer from memory.
+- 20 production templates
+- Seeded procedural rounds
+- Evidence-first result reveals
+- Challenge Type Mastery and Witness Progress
+- Curated Programs
+- Favorites and Challenge History
+- 26 achievements
+- Daily and Continue recommendations
 
-- Observation — Focus your attention for 2 seconds
-- Memory — Notice details, objects, patterns
-- Recall — Answer a question, see how much you noticed
-- Replay — Try again, improve observation
+### Accessibility
 
-**Features — Foundation Release 4.0.0:**
+- High Contrast
+- Text scaling up to 140%
+- Reading Comfort Mode
+- Comfortable Timing
+- Reduced Motion
+- Color Assistance
+- Screen Reader Hints and accessible interaction alternatives
+- Optional audio and haptics
+- Large touch targets and responsive phone/tablet layouts
 
-• No account required
-• No personal information collected (see existing privacy policy)
-• No advertising currently included (previous version had ads, foundation release currently ad-free for professional launch, fair monetization to be reintroduced thoughtfully)
-• Progress stored locally on your device
-• Premium minimal design — dark elegant, editorial, museum-quality
-• Accessibility-friendly — font scaling 0.8-1.5, reduced motion, high contrast option, haptics
-• Expandable architecture — new cognitive experiences can be added without rewriting core app
-• ITTYBITTYBITES platform identity — Curiosity • Creativity • Discovery
+### Privacy and offline play
 
-**Privacy:**
+- No account required
+- No personal information requested
+- No advertising in version 4.0.0
+- Progress stored locally on the device
+- All current gameplay works offline
+- No remote analytics endpoint
+- Local app-activity history can be disabled and cleared in Settings
 
-Your privacy matters. This foundation release stores everything locally. Existing privacy policy already exists in ITTYBITTYBITES privacy-policy repository: https://ittybittybites.github.io/privacy-policy/ — No account, No personal info collected, No ads currently, Progress local, Analytics anonymous session-based buffered locally with 1MB rotation respecting opt-out. Previously, app used AdMob and in-app purchases — foundation release currently ad-free for professional launch. See full policy at existing URL.
+Read the full policy at:
+<https://ittybittybites.github.io/two-second-witness/privacy>
 
-**Publisher:** ITTYBITTYBITES — Interactive Experiences
-**App:** Two Second Witness (existing listing update, not new)
-**Package:** com.ittybittybites.the2secondwitness (unchanged)
-**Version:** 4.0.0, Code 40000 — Ready to replace existing production 3.0.00
+**Published by ITTYBITTYBITES**
 
----
+## Release notes — 4.0.0
 
-## Feature Graphic Concept
+A complete five-Challenge-Type rebuild of Two Second Witness:
 
-**File:** `docs/store/feature_graphic_1024x500.png` 1024x500 generated
-**Concept:** Premium digital exhibit, dark elegant #0F0F12 grid + soft purple #7C5CFF and teal #2EE6A6 blobs (from main_menu_bg.png), minimal editorial. Left: app icon symbol white number 2 with eye purple iris on dark. Center: small caps `ITTYBITTYBITES presents` above bold `TWO SECOND WITNESS` white, subtitle `How much can you notice in two seconds?` muted gray. Right: subtle eye aperture. No device frames, no small text, no arcade flashy, calm modern intelligent museum-quality. Matches ITTYBITTYBITES website identity.
+- Scene Investigation, Flash Words, Spot the Difference, Object Recall, and Pattern Recall
+- New curated Programs, Witness Progress, achievements, favorites, history, and collections
+- Rebuilt tutorials and evidence reveals
+- Expanded accessibility and audio controls
+- Atomic local saves with recovery copies
+- Offline production configuration
+- Refined phone, tablet, and foldable layouts
 
-**Play Store Requirements:** 1024 w x 500 h, JPEG/PNG no alpha, no device images, no small illegible text — concept meets requirements.
+## Feature graphic
 
----
+**Existing file:** `docs/store/feature_graphic_1024x500.png`
 
-## Promotional Images — Based Only on Existing App Screens and Assets
+Final review requirements:
 
-**Existing assets in repo (premium, no old branding):**
-- `app/assets/splash/ittybittybites_splash.png` 768x1376 — ITTYBITTYBITES one-word correct branding, dark elegant grid constellation
-- `app/assets/splash/two_second_witness_splash.png` 768x1376 — Dark cinematic purple aperture
-- `app/assets/gameplay/observation_challenge_01.png` 768x1376 — Detailed study desk 5 pencils, clock, plant
-- `app/assets/backgrounds/main_menu_bg.png` 768x1376 — Abstract layered hidden eye details
-- `app/assets/brand/app_icon_1024.png` 1024x1024 — Minimal 2+eye
+- 1024×500, PNG or JPEG, no alpha requirement violations
+- ITTYBITTYBITES and Two Second Witness names readable
+- Dark product background with restrained purple accent
+- Observation/eye identity without tiny copy
+- No device frame, price, ranking, award, or unsupported feature claim
 
-**Phone Screenshots (recommended from device after installing signed AAB):**
-1. Publisher Splash ITTYBITTYBITES
-2. Title Splash TWO SECOND WITNESS
-3. PrivacyScreen Welcome + privacy bullets (existing privacy policy link to https://ittybittybites.github.io/privacy-policy/)
-4. Tutorial 3 steps Observe/Remember/Recall
-5. ObservationChallenge 2s timer + progress bar
-6. MemoryQuestion How many pencils? options
-7. Result Correct!/Not quite + detail + replay/continue
-8. Home main menu hero YOU ARE THE WITNESS + stats + featured with main_menu_bg behind
+## Required phone screenshots
 
----
+Capture from the signed/internal-testing build on physical hardware:
 
-## Store Metadata Final Confirmation
+1. Home — Play Now, Witness summary, featured Challenge Type
+2. Challenge Library — all five Challenge Types
+3. Scene Investigation presentation
+4. Spot the Difference paired comparison
+5. Object Recall set selection
+6. Pattern Recall sequence input
+7. Evidence-first Result screen
+8. Profile — Challenge Type Mastery, achievements, and Collection Progress
 
-- **App Name:** Two Second Witness ✓ unchanged, existing listing name "The 2-Second Witness" on Play, but config/name Two Second Witness preserved per instruction (do not rename unless instructed)
-- **Publisher Branding:** ITTYBITTYBITES one-word canonical ✓
-- **Package ID Unchanged:** `com.ittybittybites.the2secondwitness` ✓ existing production app package
-- **Version Code Ready for Update:** 40000 > existing production version code (old foundation 100, previous release 101, now 40000 to be safely higher than any plausible code for 3.0.00) ✓
-- **Version Name:** 4.0.0 clean production, higher than existing 3.0.00 ✓
+Optional additional screenshots:
 
----
+- Programs
+- Accessibility Settings
+- First-run privacy/tutorial flow
 
-## Privacy Policy — Existing Repository
+Do not use only source artwork as a substitute for actual application screenshots.
 
-**Do NOT create new placeholder unless needed** — existing privacy policy already exists in ITTYBITTYBITES privacy-policy repository:
-- URL: https://ittybittybites.github.io/privacy-policy/
-- Last updated: June 9, 2026 per fetched page
-- Content: No personal data collected, progress local, AdMob may collect device identifiers (previous version had ads), no data sent to server, children's privacy, etc.
+## Store review checklist
 
-Our AboutScreen and PrivacyScreen now point to this existing URL (fixed from placeholder ittybittybites.com/privacy).
+- App name matches the intended existing listing
+- Package remains `com.ittybittybites.the2secondwitness`
+- Version code is higher than every active/draft track
+- Signed with existing Play update identity or approved Play App Signing flow
+- Privacy URL hosts content matching bundled `PRIVACY.md`
+- Data Safety form states local-only implemented behavior accurately
+- No advertising, billing, account, or remote analytics SDK is present in the signed AAB
+- Content rating is refreshed for the rebuilt product
+- Screenshots and description show only implemented version 4.0.0 behavior
 
-For Play Console → App content → Privacy policy: Use existing URL https://ittybittybites.github.io/privacy-policy/
+## Release status
 
----
+**Ready for listing preparation and internal testing after signed artifact creation.**
 
-## No New Features Scope Kept
-
-This final packaging adds no new architecture, systems, features beyond foundation release already in main — only version bump 101→40000, version name 2.0.0→4.0.0, privacy URL fix to existing repo, store listing updated to reflect existing listing update, not new listing.
-
----
-
-## Ready for First Successful Google Play Update Release
-
-Objective: Simple, reliable first update release of Two Second Witness over existing production 3.0.00 — ITTYBITTYBITES presents Two Second Witness, version 4.0.0 code 40000, same package, same signing identity, existing privacy policy repository.
+Production rollout remains blocked on the physical-device matrix, human playtesting, save-upgrade samples, signed AAB dependency review, and final publisher/legal approval listed in [`FINAL_RELEASE_CHECKLIST.md`](FINAL_RELEASE_CHECKLIST.md).

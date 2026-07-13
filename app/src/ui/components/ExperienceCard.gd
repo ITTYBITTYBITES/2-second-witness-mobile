@@ -1,194 +1,204 @@
 extends PanelContainer
-## ExperienceCard - Premium featured challenge card
-## HomeScreen redesign - matches mockup
+## Premium, data-driven Challenge Type card used by Home and Challenge Library.
 
-signal experience_selected(exp_id: String)
-signal info_requested(exp_id: String)
+signal experience_selected(template_id: String)
+signal tutorial_requested(family_id: String)
+signal favorite_toggled(family_id: String, favorite: bool)
 
 @export var experience_id: String = ""
 var manifest: Dictionary = {}
 
-var card_root: PanelContainer = null
-var thumbnail_rect: TextureRect = null
-var title_label: Label = null
-var category_label: Label = null
-var duration_label: Label = null
-var desc_label: Label = null
-var play_button: Button = null
+@onready var artwork: TextureRect = $Margin/VBox/Artwork
+@onready var title_label: Label = $Margin/VBox/HeaderRow/Title
+@onready var favorite_button: Button = $Margin/VBox/HeaderRow/FavoriteButton
+@onready var lock_label: Label = $Margin/VBox/HeaderRow/LockLabel
+@onready var description_label: Label = $Margin/VBox/Description
+@onready var requirement_label: Label = $Margin/VBox/RequirementLabel
+@onready var mastery_label: Label = $Margin/VBox/MasteryRow/MasteryLabel
+@onready var mastery_value: Label = $Margin/VBox/MasteryRow/MasteryValue
+@onready var mastery_bar: ProgressBar = $Margin/VBox/MasteryBar
+@onready var progress_label: Label = $Margin/VBox/MetricsRow/ProgressLabel
+@onready var accuracy_label: Label = $Margin/VBox/MetricsRow/AccuracyLabel
+@onready var streak_label: Label = $Margin/VBox/MetricsRow/StreakLabel
+@onready var tutorial_button: Button = $Margin/VBox/BottomRow/TutorialButton
+@onready var play_button: Button = $Margin/VBox/BottomRow/PlayButton
 
 func _ready() -> void:
-	_find_nodes()
 	_apply_theme()
 	_refresh_ui()
-	if play_button and not play_button.pressed.is_connected(_on_play_pressed):
+	if not play_button.pressed.is_connected(_on_play_pressed):
 		play_button.pressed.connect(_on_play_pressed)
-
-func _find_nodes() -> void:
-	card_root = self
-	thumbnail_rect = get_node_or_null("Margin/HBox/Thumbnail") as TextureRect
-	title_label = get_node_or_null("Margin/HBox/RightVBox/TopRow/Title") as Label
-	var cat_badge = get_node_or_null("Margin/HBox/RightVBox/TopRow/CategoryBadge/BadgeLabel") as Label
-	category_label = cat_badge
-	duration_label = get_node_or_null("Margin/HBox/RightVBox/TopRow/DurationBadge/DurationLabel") as Label
-	desc_label = get_node_or_null("Margin/HBox/RightVBox/Description") as Label
-	play_button = get_node_or_null("Margin/HBox/RightVBox/BottomRow/PlayButton") as Button
+	if not tutorial_button.pressed.is_connected(_on_tutorial_pressed):
+		tutorial_button.pressed.connect(_on_tutorial_pressed)
+	if not favorite_button.pressed.is_connected(_on_favorite_pressed):
+		favorite_button.pressed.connect(_on_favorite_pressed)
+	if ThemeService and not ThemeService.theme_changed.is_connected(_on_theme_changed):
+		ThemeService.theme_changed.connect(_on_theme_changed)
 
 func set_experience(exp_manifest: Dictionary) -> void:
-	manifest = exp_manifest
-	experience_id = exp_manifest.get("id", "")
+	manifest = exp_manifest.duplicate(true)
+	experience_id = str(manifest.get("id", manifest.get("template_id", "")))
 	if is_inside_tree():
 		_refresh_ui()
+		_apply_theme()
 
 func _apply_theme() -> void:
-	if not ThemeService:
-		return
-	var tokens = ThemeService.tokens
-	if tokens.is_empty():
-		return
-	
-	# Card background
-	if card_root:
-		var style := StyleBoxFlat.new()
-		style.bg_color = tokens.get("surface", Color("#1E1E26"))
-		var r = tokens.get("radius_lg", 20)
-		style.corner_radius_top_left = r
-		style.corner_radius_top_right = r
-		style.corner_radius_bottom_left = r
-		style.corner_radius_bottom_right = r
-		style.border_color = tokens.get("border", Color("#2E2E3A"))
-		style.border_width_left = 1
-		style.border_width_right = 1
-		style.border_width_top = 1
-		style.border_width_bottom = 1
-		card_root.add_theme_stylebox_override("panel", style)
+	var tokens: Dictionary = ThemeService.tokens if ThemeService else {}
+	var style := StyleBoxFlat.new()
+	style.bg_color = tokens.get("surface", Color("#1E1E26"))
+	var radius: int = int(tokens.get("radius_lg", 20))
+	style.corner_radius_top_left = radius
+	style.corner_radius_top_right = radius
+	style.corner_radius_bottom_left = radius
+	style.corner_radius_bottom_right = radius
+	style.border_color = (
+		tokens.get("warning", Color("#FFC84D"))
+		if bool(manifest.get("locked", manifest.get("is_locked", false)))
+		else tokens.get("border", Color("#2E2E3A"))
+	)
+	style.border_width_left = 1
+	style.border_width_right = 1
+	style.border_width_top = 1
+	style.border_width_bottom = 1
+	add_theme_stylebox_override("panel", style)
+	if ThemeService:
+		ThemeService.apply_label_style(title_label, "title", "text_primary")
+		favorite_button.flat = true
+		favorite_button.custom_minimum_size = Vector2(48, 48)
+		favorite_button.add_theme_font_size_override("font_size", ThemeService.get_font_size("title"))
+		favorite_button.add_theme_color_override("font_color", tokens.get("warning", Color("#FFC84D")))
+		ThemeService.apply_label_style(lock_label, "label_small", "warning")
+		lock_label.autowrap_mode = TextServer.AUTOWRAP_OFF
+		lock_label.custom_minimum_size.x = 80.0
+		lock_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+		ThemeService.apply_label_style(description_label, "body_small", "text_secondary")
+		ThemeService.apply_label_style(requirement_label, "caption", "text_tertiary")
+		ThemeService.apply_label_style(mastery_label, "label_small", "text_secondary")
+		ThemeService.apply_label_style(mastery_value, "label_small", "text_primary")
+		mastery_value.autowrap_mode = TextServer.AUTOWRAP_OFF
+		mastery_value.custom_minimum_size.x = 48.0
+		mastery_value.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+		for metric: Label in [progress_label, accuracy_label, streak_label]:
+			ThemeService.apply_label_style(metric, "caption", "text_secondary")
+		_style_button(play_button, true, tokens)
+		_style_button(tutorial_button, false, tokens)
+	_style_mastery_bar(tokens)
 
-	# Title
-	if title_label:
-		ThemeService.apply_label_style(title_label, "label", "text_primary")
-		title_label.text = "EXPERIENCE"
-	
-	# Category badge
-	var cat_panel := get_node_or_null("Margin/HBox/RightVBox/TopRow/CategoryBadge") as PanelContainer
-	if cat_panel:
-		var cs := StyleBoxFlat.new()
-		cs.bg_color = Color(tokens.get("primary", Color("#6A3DFF")), 0.18)
-		cs.corner_radius_top_left = 8
-		cs.corner_radius_top_right = 8
-		cs.corner_radius_bottom_left = 8
-		cs.corner_radius_bottom_right = 8
-		cs.content_margin_left = 0
-		cs.content_margin_right = 0
-		cs.content_margin_top = 0
-		cs.content_margin_bottom = 0
-		cat_panel.add_theme_stylebox_override("panel", cs)
-	if category_label:
-		category_label.add_theme_color_override("font_color", tokens.get("primary_variant", Color("#8A68FF")))
-		category_label.add_theme_font_size_override("font_size", 11)
+func _style_button(button: Button, primary: bool, tokens: Dictionary) -> void:
+	var normal := StyleBoxFlat.new()
+	normal.bg_color = (
+		tokens.get("primary", Color("#6A3DFF"))
+		if primary
+		else tokens.get("background_tertiary", Color("#24242C"))
+	)
+	normal.corner_radius_top_left = 12
+	normal.corner_radius_top_right = 12
+	normal.corner_radius_bottom_left = 12
+	normal.corner_radius_bottom_right = 12
+	normal.content_margin_left = 14
+	normal.content_margin_right = 14
+	normal.content_margin_top = 10
+	normal.content_margin_bottom = 10
+	var hover: StyleBoxFlat = normal.duplicate()
+	hover.bg_color = normal.bg_color.lightened(0.08)
+	var pressed: StyleBoxFlat = normal.duplicate()
+	pressed.bg_color = normal.bg_color.darkened(0.10)
+	button.add_theme_stylebox_override("normal", normal)
+	button.add_theme_stylebox_override("hover", hover)
+	button.add_theme_stylebox_override("pressed", pressed)
+	button.add_theme_stylebox_override("focus", hover)
+	button.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
+	button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	button.add_theme_font_size_override(
+		"font_size",
+		ThemeService.get_scaled_size(14) if ThemeService else 14
+	)
 
-	# Duration badge
-	var dur_panel := get_node_or_null("Margin/HBox/RightVBox/TopRow/DurationBadge") as PanelContainer
-	if dur_panel:
-		var ds := StyleBoxFlat.new()
-		ds.bg_color = tokens.get("background_tertiary", Color("#24242C"))
-		ds.corner_radius_top_left = 8
-		ds.corner_radius_top_right = 8
-		ds.corner_radius_bottom_left = 8
-		ds.corner_radius_bottom_right = 8
-		dur_panel.add_theme_stylebox_override("panel", ds)
-	if duration_label:
-		ThemeService.apply_label_style(duration_label, "label_small", "text_secondary")
-
-	# Description
-	if desc_label:
-		ThemeService.apply_label_style(desc_label, "body_small", "text_secondary")
-
-	# Play button - secondary style
-	if play_button:
-		var btn_bg := StyleBoxFlat.new()
-		btn_bg.bg_color = Color(tokens.get("primary", Color("#6A3DFF")), 0.22)
-		btn_bg.corner_radius_top_left = 12
-		btn_bg.corner_radius_top_right = 12
-		btn_bg.corner_radius_bottom_left = 12
-		btn_bg.corner_radius_bottom_right = 12
-		btn_bg.content_margin_left = 16
-		btn_bg.content_margin_right = 16
-		btn_bg.content_margin_top = 8
-		btn_bg.content_margin_bottom = 8
-		play_button.add_theme_stylebox_override("normal", btn_bg)
-		play_button.add_theme_stylebox_override("hover", btn_bg)
-		play_button.add_theme_stylebox_override("pressed", btn_bg)
-		play_button.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
-		play_button.add_theme_font_size_override("font_size", ThemeService.get_font_size("label"))
-		play_button.text = "PLAY  →"
-
-	# Thumbnail rounding - via shader? Just clip - Godot 4 TextureRect no corner radius natively, acceptable
+func _style_mastery_bar(tokens: Dictionary) -> void:
+	var background := StyleBoxFlat.new()
+	background.bg_color = tokens.get("background_tertiary", Color("#24242C"))
+	background.corner_radius_top_left = 99
+	background.corner_radius_top_right = 99
+	background.corner_radius_bottom_left = 99
+	background.corner_radius_bottom_right = 99
+	mastery_bar.add_theme_stylebox_override("background", background)
+	var fill: StyleBoxFlat = background.duplicate()
+	fill.bg_color = tokens.get("primary_variant", Color("#8A68FF"))
+	mastery_bar.add_theme_stylebox_override("fill", fill)
 
 func _refresh_ui() -> void:
 	if manifest.is_empty():
 		return
-	_find_nodes()
+	var title: String = str(manifest.get("title", experience_id.capitalize()))
+	var description: String = str(manifest.get("short_description", manifest.get("description", "")))
+	var required_level: int = int(manifest.get("required_level", 1))
+	var locked: bool = bool(manifest.get("locked", manifest.get("is_locked", false)))
+	var progress: Dictionary = manifest.get("progress", {})
+	var plays: int = int(progress.get("plays", 0))
+	var progress_points: int = int(progress.get("progress_points", 0))
+	var accuracy: float = clampf(float(progress.get("accuracy", 0.0)), 0.0, 1.0)
+	var mastery: float = clampf(float(progress.get("mastery", 0.0)), 0.0, 100.0)
+	var best_streak: int = int(progress.get("best_streak", 0))
 
-	var title_fallback := "Experience"
-	if experience_id != "":
-		title_fallback = experience_id.capitalize()
-	var title = manifest.get("title", title_fallback)
-	# User-facing: Challenge terminology – show real challenge title
-	if title_label:
-		title_label.text = title.to_upper()
+	title_label.text = title
+	var favorite: bool = bool(manifest.get("favorite", false))
+	favorite_button.text = "★" if favorite else "☆"
+	favorite_button.tooltip_text = "Remove favorite" if favorite else "Add favorite"
+	description_label.text = description
+	requirement_label.text = "Witness Level %d required" % required_level
+	lock_label.text = "LOCKED" if locked else "READY"
+	mastery_label.text = "Mastery"
+	mastery_value.text = "%d%%" % int(round(mastery))
+	mastery_bar.value = mastery
+	progress_label.text = "%d rounds · %d progress" % [plays, progress_points]
+	accuracy_label.text = "%d%% accuracy" % int(round(accuracy * 100.0))
+	streak_label.text = "Best streak %d" % best_streak
 
-	var category = str(manifest.get("category", "observation")).to_upper()
-	if category_label:
-		category_label.text = category
+	var image_path: String = str(manifest.get("preview_image", manifest.get("image_path", "")))
+	artwork.texture = null
+	if not image_path.is_empty() and ResourceLoader.exists(image_path):
+		artwork.texture = load(image_path) as Texture2D
 
-	var duration = int(manifest.get("estimated_duration_sec", 10))
-	if duration_label:
-		duration_label.text = "%ds" % duration
-
-	if desc_label:
-		# Use short, punchy copy matching the mockup
-		desc_label.text = "Count the details. Beat the clock."
-
-	# Thumbnail
-	if thumbnail_rect:
-		var img_path: String = str(manifest.get("image_path", ""))
-		var tex: Texture2D = null
-		# UI-only premium preview override for challenge_01 to match mockup
-		# Gameplay image (ObservationChallengeScreen) remains manifest.image_path
-		var premium_preview := "res://assets/gameplay/featured_desk_scene_landscape.png"
-		if experience_id == "challenge_01" and ResourceLoader.exists(premium_preview):
-			tex = load(premium_preview)
-		elif img_path != "" and ResourceLoader.exists(img_path):
-			tex = load(img_path) as Texture2D
-		
-		if tex:
-			thumbnail_rect.texture = tex
-
-	# Play button text
-	if play_button:
-		var coming_soon = manifest.get("coming_soon", false)
-		var is_locked = manifest.get("is_locked", false)
-		if coming_soon:
-			play_button.text = "SOON"
-			play_button.disabled = true
-		elif is_locked:
-			play_button.text = "LOCKED"
-			play_button.disabled = true
-		else:
-			play_button.text = "PLAY  →"
-			play_button.disabled = false
+	var tutorial_profile: Dictionary = manifest.get("tutorial_profile", {})
+	tutorial_button.visible = not tutorial_profile.is_empty()
+	tutorial_button.text = "REPLAY TUTORIAL"
+	tutorial_button.tooltip_text = str(tutorial_profile.get("replay_label", "Replay tutorial"))
+	play_button.disabled = locked or bool(manifest.get("coming_soon", false))
+	if bool(manifest.get("coming_soon", false)):
+		play_button.text = "COMING SOON"
+	elif locked:
+		play_button.text = "LEVEL %d" % required_level
+	else:
+		play_button.text = "PLAY NOW  →"
+	modulate = Color(0.82, 0.82, 0.88, 1.0) if locked else Color.WHITE
 
 func _on_play_pressed() -> void:
-	if manifest.is_empty():
+	if manifest.is_empty() or play_button.disabled:
 		return
-	var runtime = manifest.get("runtime", {})
-	if runtime.get("is_coming_soon", false) or manifest.get("coming_soon", false):
-		return
-	if not (runtime.get("is_unlocked", true)):
-		if manifest.get("is_locked", false):
-			return
-	if AccessibilityService:
-		if AccessibilityService.is_haptics_enabled():
-			AccessibilityService.vibrate(30)
+	if AccessibilityService and AccessibilityService.is_haptics_enabled():
+		AccessibilityService.vibrate(30)
 	if AudioService:
 		AudioService.play_ui("ui_click")
-	experience_selected.emit(experience_id if experience_id != "" else manifest.get("id",""))
+	experience_selected.emit(experience_id)
+
+func _on_tutorial_pressed() -> void:
+	var family_id: String = str(manifest.get("family_id", ""))
+	if family_id.is_empty():
+		return
+	if AudioService:
+		AudioService.play_ui("ui_click")
+	tutorial_requested.emit(family_id)
+
+func _on_favorite_pressed() -> void:
+	var family_id: String = str(manifest.get("family_id", ""))
+	if family_id.is_empty():
+		return
+	var favorite: bool = not bool(manifest.get("favorite", false))
+	manifest["favorite"] = favorite
+	favorite_button.text = "★" if favorite else "☆"
+	if AccessibilityService:
+		AccessibilityService.vibrate(20)
+	favorite_toggled.emit(family_id, favorite)
+
+func _on_theme_changed(_theme_name: String, _tokens: Dictionary) -> void:
+	_apply_theme()

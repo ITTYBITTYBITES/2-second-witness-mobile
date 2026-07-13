@@ -73,7 +73,20 @@ func _log_screen_view(route: String, params: Dictionary) -> void:
 	# logged exactly once. Individual screens must NOT also call
 	# AnalyticsService.log_screen_view from their on_navigated_to methods.
 	if AnalyticsService:
-		AnalyticsService.log_screen_view(route, params)
+		AnalyticsService.log_screen_view(route, _sanitize_analytics_params(params))
+
+func _sanitize_analytics_params(params: Dictionary) -> Dictionary:
+	var safe: Dictionary = {}
+	for key: String in ["family_id", "template_id", "instance_id", "challenge_id", "outcome", "score", "reaction_ms", "runtime_session"]:
+		if params.has(key):
+			safe[key] = params[key]
+	var challenge_value: Variant = params.get("challenge_data", {})
+	if challenge_value is Dictionary:
+		var challenge: Dictionary = challenge_value
+		for key: String in ["family_id", "template_id", "instance_id", "difficulty_label", "seed", "content_version"]:
+			if challenge.has(key):
+				safe[key] = challenge[key]
+	return safe
 
 func go_back() -> bool:
 	# Never navigate back into the launch splash sequence.
@@ -144,6 +157,10 @@ func _update_app_state_phase(route: String) -> void:
 			AppState.set_phase(AppState.AppPhase.EXPERIENCES)
 		"profile":
 			AppState.set_phase(AppState.AppPhase.PROFILE)
+		"achievements":
+			AppState.set_phase(AppState.AppPhase.ACHIEVEMENTS)
+		"programs":
+			AppState.set_phase(AppState.AppPhase.PROGRAMS)
 		"settings", "about":
 			AppState.set_phase(AppState.AppPhase.SETTINGS)
 		"observation", "memory_question", "result", "experience_play":

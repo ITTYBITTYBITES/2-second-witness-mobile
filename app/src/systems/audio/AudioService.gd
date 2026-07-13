@@ -19,7 +19,15 @@ const BUS_NAMES := {
 var _bgm_player: AudioStreamPlayer
 var _sfx_pool: Array[AudioStreamPlayer] = []
 var _ui_player: AudioStreamPlayer
+var _stream_cache: Dictionary = {}
 var _initialized: bool = false
+
+const PACKAGED_SOUND_IDS: Array[String] = [
+	"conceal", "difference_switch", "flash_correct", "flash_incorrect",
+	"flash_interval", "flash_pulse", "flash_reveal_click", "object_settle",
+	"observation_start", "pattern_step", "result_settle", "reveal_correct",
+	"reveal_incorrect", "ui_click"
+]
 
 var _volumes: Dictionary = {
 	"Master": 1.0,
@@ -77,6 +85,9 @@ func initialize() -> void:
 		_muted["UI"] = SettingsService.get_value("mute_ui", false)
 
 	_apply_all_volumes()
+	_preload_packaged_sounds()
+	if SettingsService and not SettingsService.setting_changed.is_connected(_on_setting_changed):
+		SettingsService.setting_changed.connect(_on_setting_changed)
 
 	_initialized = true
 	print("[AudioService] Initialized - Buses: %s" % str(BUS_NAMES))
@@ -108,18 +119,15 @@ func play_sound(
 	volume_linear: float = 1.0,
 	_loop: bool = false
 ) -> void:
-	# In foundation phase, we support placeholder beeps and Tone generation
-	# Real implementation would load AudioStream from ContentService
-
+	if not _initialized:
+		return
 	var bus_name: String = BUS_NAMES[bus]
 	if _muted.get(bus_name, false) or _muted.get("Master", false):
 		return
 
-	# Generate placeholder procedural audio if no file (foundation placeholder)
 	var stream: AudioStream = _get_stream_for_id(sound_id)
-	if not stream:
-		# Silently skip if no asset yet, but log for analytics
-		print("[AudioService] Sound '%s' not found (placeholder)" % sound_id)
+	if stream == null:
+		print("[AudioService] Packaged sound not found: %s" % sound_id)
 		return
 
 	match bus:
@@ -148,17 +156,28 @@ func _get_free_sfx_player() -> AudioStreamPlayer:
 	# If all busy, return first (steal)
 	return _sfx_pool[0] if _sfx_pool.size() > 0 else null
 
+func _preload_packaged_sounds() -> void:
+	_stream_cache.clear()
+	for sound_id: String in PACKAGED_SOUND_IDS:
+		var stream := _load_stream(sound_id)
+		if stream != null:
+			_stream_cache[sound_id] = stream
+
 func _get_stream_for_id(sound_id: String) -> AudioStream:
-	# Try load from content
-	# res://assets/audio/ fallback
-	var paths := [
+	if _stream_cache.has(sound_id):
+		return _stream_cache[sound_id] as AudioStream
+	var stream := _load_stream(sound_id)
+	if stream != null:
+		_stream_cache[sound_id] = stream
+	return stream
+
+func _load_stream(sound_id: String) -> AudioStream:
+	for path: String in [
 		"res://assets/audio/%s.wav" % sound_id,
-		"res://assets/audio/%s.ogg" % sound_id,
-		"res://src/experiences/%s/audio/%s.wav" % [sound_id, sound_id]
-	]
-	for p in paths:
-		if ResourceLoader.exists(p):
-			return load(p)
+		"res://assets/audio/%s.ogg" % sound_id
+	]:
+		if ResourceLoader.exists(path):
+			return load(path) as AudioStream
 	return null
 
 func set_volume(bus: Bus, linear: float) -> void:
@@ -191,9 +210,36 @@ func _apply_all_volumes() -> void:
 			AudioServer.set_bus_volume_db(idx, linear_to_db(_volumes.get(b, 1.0)))
 			AudioServer.set_bus_mute(idx, _muted.get(b, false))
 
+func _on_setting_changed(key: String, value: Variant) -> void:
+	match key:
+		"volume_master": set_volume(Bus.MASTER, float(value))
+		"volume_bgm": set_volume(Bus.BGM, float(value))
+		"volume_sfx": set_volume(Bus.SFX, float(value))
+		"volume_ui": set_volume(Bus.UI, float(value))
+		"mute_master": set_muted(Bus.MASTER, bool(value))
+		"mute_bgm": set_muted(Bus.BGM, bool(value))
+		"mute_sfx": set_muted(Bus.SFX, bool(value))
+		"mute_ui": set_muted(Bus.UI, bool(value))
+
 func stop_bgm(_fade_duration: float = 0.3) -> void:
 	if _bgm_player and _bgm_player.playing:
 		_bgm_player.stop()
+
+func stop_all() -> void:
+	if is_instance_valid(_bgm_player):
+		_bgm_player.stop()
+		_bgm_player.stream = null
+	if is_instance_valid(_ui_player):
+		_ui_player.stop()
+		_ui_player.stream = null
+	for player: AudioStreamPlayer in _sfx_pool:
+		if is_instance_valid(player):
+			player.stop()
+			player.stream = null
+
+func _exit_tree() -> void:
+	stop_all()
+	_stream_cache.clear()
 
 func _on_audio_requested(bus: String, sound_id: String, params: Dictionary) -> void:
 	var b: Bus = Bus.SFX

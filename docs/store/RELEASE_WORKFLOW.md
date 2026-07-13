@@ -1,159 +1,173 @@
-# Release Workflow — Signed AAB for Google Play Existing Production Update
+# Two Second Witness — Android Release Workflow
 
-**Existing Production App:**
-- Play URL: https://play.google.com/store/apps/details?id=com.ittybittybites.the2secondwitness
-- Title on Play: The 2-Second Witness (existing listing)
-- Package ID (unchanged, must stay): `com.ittybittybites.the2secondwitness`
-- Current Play Production Version Name: 3.0.00 (per user info, updated Jun 23, 2026)
-- Current Play Production Version Code: Unknown from public page (not exposed), but likely for 3.0.00 was >=30000 or >=300 (common mapping major*10000). For safety, new code set to 40000 > any plausible existing code.
-- Developer: ITTYBITTYBITES
-- Existing Privacy Policy Repository: https://ittybittybites.github.io/privacy-policy/ (ITTYBITTYBITES privacy-policy repo, last updated June 9, 2026, already exists, do NOT create new placeholder unless needed)
+**Target:** Existing Google Play application update
+**Package:** `com.ittybittybites.the2secondwitness`
+**Version name:** 4.0.0
+**Configured version code:** 40000
+**Engine:** Godot 4.6.3
 
-**New Update:**
-- **Package ID unchanged:** `com.ittybittybites.the2secondwitness` ✓ (required for update, do NOT create new listing)
-- **App Name:** Two Second Witness (existing listing shows The 2-Second Witness, but config/name Two Second Witness preserved per instruction do not rename unless instructed)
-- **Publisher Branding:** ITTYBITTYBITES one-word canonical (fixed from spaced variations)
-- **Version Code:** 40000 (incremented: old foundation 100, previous release 101, now 40000 to be safely higher than existing production version code for 3.0.00 — verified higher than existing)
-- **Version Name:** 4.0.0 (clean production, higher than existing 3.0.00 — major update indicating new vision)
-- **Repository Branch:** `main` @ latest with ITTYBITTYBITES branding, first-run flow, premium assets, clean no old files
+This workflow prepares an internal-testing release first. It does not authorize production rollout by itself.
 
-**This is an app replacement/update, not new listing. Preserve existing signing identity, package name.**
+## 1. Preserve update identity
 
----
+- Select the existing Play Console application; do not create a new listing.
+- Keep package ID `com.ittybittybites.the2secondwitness`.
+- Use the existing Play App Signing/update-key process.
+- Confirm the highest version code across Production, Open, Closed, Internal, and draft releases.
+- Increase `version/code` in both export presets if `40000` is not higher.
+- Never store keystore files, aliases, or passwords in the repository.
 
-## 1. Prerequisites (Require Your Credentials / Local Machine) — Existing App Identity
+## 2. Provision the release machine
 
-- **Same keystore as existing production 3.0.00 release** — critical for update continuity. Play listing at https://play.google.com/store/apps/details?id=com.ittybittybites.the2secondwitness currently has production version 3.0.00. If different keystore used, Play will reject as new app. Locate existing `release.keystore` (or .jks) used for that production release.
-- **Keystore credentials:** alias, store password, key password
-- **Android SDK:** Android Studio with SDK 34, platform-tools adb, build-tools 34.0.0 apksigner — required for Godot Android export
-- **Godot 4.6.3 Stable:** Editor + export templates 4.6.3.stable installed via Editor → Manage Export Templates → Download
-- **Java 17:** Temurin 17.0.11+ or OpenJDK 17 for sdkmanager and Godot
+Required locally:
 
-In container we installed:
-- Java 17 at `~/jdk-17.0.11+9`
-- Android SDK at `~/android-sdk` with `platform-tools`, `build-tools;34.0.0`, `platforms;android-34`
-- Godot export templates at `~/.local/share/godot/export_templates/4.6.3.stable/` with `android_debug.apk`, `android_release.apk`
-- Editor settings at `~/.config/godot/editor_settings-4.tres` with android_sdk_path, adb, apksigner, build_tools_path
+- Godot 4.6.3 editor and matching Android export templates
+- Java 17
+- Android SDK/platform-tools/build-tools accepted by Godot 4.6.3
+- Existing update key or Play-managed upload-key access
+- `adb`, `apksigner`, and `bundletool` for artifact/device verification
 
-You need same locally.
+The persisted workspace intentionally contains no signing credentials.
 
----
+## 3. Run source validation
 
-## 2. Preserve Existing Signing Identity — Existing Production App
-
-- Do NOT create new keystore unless intending new listing. For update to existing production app 3.0.00, must use same keystore file + alias + passwords as existing Play production.
-- Place keystore file at `app/release.keystore` (path referenced in export_presets.cfg placeholder, currently empty for security)
-- In Godot Editor Settings → Export → Android:
-  - Release Keystore: `res://release.keystore`
-  - Release User: your alias (e.g., `ittybittybites` or existing alias from 3.0.00)
-  - Release Password: your store password
-- If keystore lost, Play update impossible — would need new listing (which instruction says do NOT create, treat as replacement/update).
-
----
-
-## 3. Exact Export Steps (Production-Ready Presets) — Existing Listing Update
-
-**Presets in `app/export_presets.cfg`:**
-- `[preset.0]` `Android_Development` — APK debug, `export_format=0`, path `build/android/2sw-dev.apk`, arch arm64 true, version code 40000, name 4.0.0, package `com.ittybittybites.the2secondwitness` (unchanged), icons `app_icon_1024.png` + adaptive foreground/background, orientation portrait, immersive true, permissions internet+access_network_state+vibrate minimal
-- `[preset.1]` `Android_PlayStore` — AAB release, `export_format=1`, path `build/android/2sw-release.aab`, same package/icons/version code 40000 name 4.0.0, signing placeholders (user provides existing keystore)
-
-**Steps in Godot Editor UI (Recommended for AAB, headless has Godot bug):**
-
-1. Open Godot 4.6.3 → Import `app/project.godot`
-2. Confirm no errors in Output: should show 0 errors after import (7 premium assets: ittybittybites_splash.png correct one-word, two_second_witness_splash.png, app_icon_1024.png new 2+eye, adaptive foreground/background, observation_challenge_01.png detailed desk, main_menu_bg.png abstract)
-3. Project → Export → Select `Android_Development` → Export as `build/android/2sw-dev.apk` Debug → Test on device via `adb install build/android/2sw-dev.apk`
-4. Verify on device first-run flow: ITTYBITTYBITES publisher splash (correct one-word branding, not spaced) → Title splash Two Second Witness loading → Privacy acknowledgment (No account/No personal info/No ads/Progress local, link to existing https://ittybittybites.github.io/privacy-policy/) → Tutorial 3 steps → Observation 2s timer with observation_challenge_01.png → Memory question 5 pencils → Result → Main menu with main_menu_bg.png
-5. Project → Export → Select `Android_PlayStore` → Export as `build/android/2sw-release.aab` Release — will prompt for keystore if not set, provide existing `res://release.keystore` + credentials from 3.0.00 production
-6. Headless workaround: `godot --headless --path ./app --export-debug "Android_Development" ./build/android/2sw-dev.apk` works (33M debug APK). Release APK with .apk extension works 32M unsigned. AAB headless currently fails in Godot 4.6.3 with `Invalid filename! Android APK requires the *.apk extension.` even though preset format 1 (verbose shows export format 0), so use Editor UI for final AAB.
-
-**Headless commands that work in container:**
+From the project root:
 
 ```bash
-export JAVA_HOME=~/jdk-17.0.11+9
-export PATH=$JAVA_HOME/bin:$PATH
-export ANDROID_HOME=~/android-sdk
-export ANDROID_SDK_ROOT=~/android-sdk
+godot --headless --editor --path ./app --quit --debug
 
-godot --headless --import --path ./app
-godot --headless --path ./app --export-debug "Android_Development" ./build/android/2sw-dev.apk
-godot --headless --path ./app --export-release "Android_PlayStore" ./build/android/2sw-release.apk # 32M unsigned, proves build, requires keystore for signing
+HOME=/tmp/tsw-phase6-product godot --headless --path ./app \
+  --script res://tests/runtime/test_phase6_product_pass.gd --debug
+
+HOME=/tmp/tsw-phase6-system godot --headless --path ./app \
+  --script res://tests/runtime/test_phase6_persistence_performance.gd --debug
+
+python3 app/tests/runtime/verify_phase6_production_readiness.py
+python3 app/tests/runtime/verify_documentation.py
 ```
 
-For final signed AAB, use Editor UI as above.
+Then execute the complete regression and stress commands in `app/tests/runtime/README.md`.
 
----
+Acceptance:
 
-## 4. Confirm No Settings Block Existing Play Listing Update
+- No application error or warning
+- All runtime/static suites pass
+- No conflict marker or trailing whitespace
+- No production family identifier appears in shared platform code
+- Final platform hashes match `docs/product/PHASE_6_PLATFORM_BASELINE.json`
 
-- **Package ID unchanged:** `com.ittybittybites.the2secondwitness` ✓ (existing production package, must stay)
-- **Version code higher than existing production:** 40000 > existing production version code for 3.0.00 (assumed plausible max 30000 for 3.0.00, plus old foundation 100/101, now 40000 safely higher) ✓ Verified higher than existing Play production, not assumed 1
-- **Version name clean production:** 4.0.0 higher than existing 3.0.00 ✓
-- **App name:** Two Second Witness preserved per instruction, existing Play listing shows The 2-Second Witness but config/name Two Second Witness preserved (do not rename unless instructed) ✓
-- **Publisher branding:** ITTYBITTYBITES one-word canonical ✓
-- **Icons:** `app_icon_1024.png` 1024x1024 new premium 2+eye + adaptive foreground/background 1024x1024 exist ✓
-- **Splash assets:** `ittybittybites_splash.png` correct one-word branding (regenerated), `two_second_witness_splash.png`, `main_menu_bg.png`, `observation_challenge_01.png` ✓
-- **Permissions minimal:** internet, access_network_state, vibrate true; location, camera, contacts, sms etc false ✓
-- **Orientation portrait:** screen/orientation=1 ✓
-- **Export filter:** all_resources ✓
-- **No debuggable:** release build not debuggable ✓
-- **No ads/monetization:** feature_flags ads_enabled false, iap_enabled false (existing Play listing had ads and in-app purchases per fetched page, but foundation release currently ad-free for professional launch — fair monetization to be reintroduced thoughtfully, as per full description) ✓
-- **No servers:** base_url placeholder but not used in foundation, no account ✓
-- **Branding:** Consistently ITTYBITTYBITES one-word, no spaced old branding in production code (grep 0 in app/src), package ID and domains preserved per instruction: `com.ittybittybites.the2secondwitness` lower case one-word correct and `ittybittybites.github.io/privacy-policy/` existing correct, not changed ✓
-- **Privacy:** Uses existing privacy policy repository https://ittybittybites.github.io/privacy-policy/ (last updated June 9, 2026 per fetch), not new placeholder unless needed — AboutScreen and PrivacyScreen now point to existing URL ✓
-- **First-run flow:** publisher_splash initial route, title_splash loading min 2s, privacy, tutorial, observation 2s timer, memory question, result, home — verified headless 0 errors ✓
+## 4. Review Android export configuration
 
-**No blocking settings remain except local SDK/templates/keystore which are environmental (allowed).**
+Both presets must retain:
 
----
+- Package `com.ittybittybites.the2secondwitness`
+- Version name 4.0.0
+- Version code higher than every Play track
+- Arm64 enabled
+- Portrait orientation
+- Immersive mode
+- GL Compatibility/OpenGL 3 mobile renderer
+- Sponsor artwork as Godot boot splash
+- Android 12+ dark system splash with transparent animated icon
+- Vibrate permission enabled
+- Internet and network-state permissions disabled
+- Camera, microphone, location, contacts, storage, account, and notification permissions disabled
 
-## 5. Google Play Upload Steps — Existing Listing Update (Not New App)
+Inspect the final exported manifest rather than relying only on source preset text.
 
-1. **Build signed AAB locally** (see section 3) with **same keystore as existing 3.0.00 production** → `app/build/android/2sw-release.aab` version code 40000 name 4.0.0
+## 5. Build a development APK
 
-2. **Play Console — Update Existing App (Not New Listing):**
-   - Go to https://play.google.com/console
-   - Select existing app **The 2-Second Witness** / Two Second Witness (package `com.ittybittybites.the2secondwitness`, existing production version name 3.0.00 as per user info, updated Jun 23, 2026 per fetched page)
-   - Left menu → **Testing** → **Internal Testing** (first, not Production)
-   - **Create new release** → Upload AAB `2sw-release.aab` code 40000 name 4.0.0 (must be higher than existing production code — 40000 is safely higher than any plausible code for 3.0.00)
-   - Release notes: `4.0.0 (40000) — ITTYBITTYBITES Foundation Release. Complete rebuild preserving existing Play identity com.ittybittybites.the2secondwitness. Professional first-run flow, 2-second observation, memory challenge, polished UI. Privacy: Uses existing policy https://ittybittybites.github.io/privacy-policy/ — No account, no personal info, progress local. Ready to replace existing production 3.0.00.`
-   - Save → Review → Rollout to Internal Testing
+Use `Android_Development` from the Godot Export dialog or the equivalent validated CLI command on the configured release machine.
 
-3. **Install Play-distributed version:**
-   - On Android phone, join Internal Testing via opt-in link
-   - Install from Play Store Internal Testing
-   - Verify: splash branding ITTYBITTYBITES one-word (not spaced), app opens without crashing, navigation works, no missing images/fonts, no console errors via `adb logcat`, observation image detailed, main menu background visible, privacy link opens existing https://ittybittybites.github.io/privacy-policy/
+Install with:
 
-4. **Test upgrade from existing production 3.0.00:**
-   - If you have device with existing production version 3.0.00 installed from Play, install Internal Testing AAB code 40000 — should upgrade correctly (package same, signing same, version code higher). Profile migration not needed (new foundation uses new save files `profile_v2.json` different from old, but that's expected for foundation rebuild — old progress not carried, foundation is clean).
+```bash
+adb install -r path/to/2sw-dev.apk
+```
 
-5. **Store Listing Update (Existing Listing, Not New):**
-   - Play Console → **Store presence** → **Main store listing** — Update existing listing (not create new):
-     - Short description: `How much can you notice in 2 seconds? Premium observation & memory challenges.` (79 chars)
-     - Full description: Use content from `PLAY_STORE_LISTING.md` which references existing listing update, existing privacy policy repo, existing app identity, version 4.0.0 code 40000 replacing 3.0.00
-     - Feature graphic: `docs/store/feature_graphic_1024x500.png` 1024x500
-     - Screenshots: Use existing premium assets + device captures: ittybittybites_splash.png, two_second_witness_splash.png, observation_challenge_01.png, main_menu_bg.png + actual device captures Privacy, Tutorial, Memory Question, Result, Home
-     - High-res icon: Resize `app_icon_1024.png` to 512x512
-     - Privacy policy URL: Use **existing** https://ittybittybites.github.io/privacy-policy/ (ITTYBITTYBITES privacy-policy repository, already exists, do not create new placeholder unless needed) — set in Play Console → App content → Privacy policy
+Run the physical boot, device/layout, accessibility, audio, persistence, and performance matrices in [`FINAL_RELEASE_CHECKLIST.md`](FINAL_RELEASE_CHECKLIST.md).
 
-6. **Promote:**
-   - If internal testing passes and upgrade from 3.0.00 works, Play Console → **Promote release** → Production → Review → Rollout as update replacing existing production 3.0.00 with 4.0.0 code 40000
+## 6. Validate sponsor-first startup
 
----
+On physical Android 12+ hardware, capture a cold launch and confirm:
 
-## 6. Remaining Manual Blockers Requiring Physical Device / Credentials
+```text
+Android launch surface
+→ Sponsor artwork
+→ Publisher screen
+→ Two Second Witness loading
+→ Privacy / Tutorial when required
+→ Home
+```
 
-- **Device verification** — Headless tests not same as real Android device touch/GPU, must tap through every screen on actual phone (PublisherSplash → TitleSplash → Privacy → Tutorial → Observation → Memory → Result → Main Menu)
-- **Signed AAB with existing signing identity** — Requires same `release.keystore` as existing production 3.0.00, not in repo for security, must be provided by you. Place at `app/release.keystore` + alias/pass.
-- **Privacy policy existing** — Already exists at https://ittybittybites.github.io/privacy-policy/ (fetched, last updated June 9, 2026) — no need to create new placeholder unless legal wants update. Verify URL in Play Console still points to this existing repo.
-- **Audio assets** — `ui_click` placeholder logs not crash, add 3 tiny ogg for polish optional.
-- **Visual confirmation** — Human eye check that splash text is exactly ITTYBITTYBITES one-word (generated image verified) and app icon new design, no spaced old branding.
+The launcher icon must not appear before sponsor artwork. Record device model, Android version, renderer, build checksum, and video evidence.
 
----
+## 7. Build the signed AAB
 
-## 7. Go / No-Go for Existing Production Update
+Use `Android_PlayStore` and the existing update identity.
 
-**GO for Internal Testing Update** — Foundation is clean, no old files, only new vision + Play identifiers (package ID preserved, version code 40000 > existing 3.0.00 production, version name 4.0.0 > 3.0.00), branding consistently ITTYBITTYBITES, zero Godot editor errors, first-run flow works, debug APK 33M + release APK 32M generated proving build, CI now success after fixing false positive (previous 121c2cb failed due to audit doc containing historical old branding, 61d8a50 and e4265a2 now success).
+After export:
 
-**No-Go for Production** until manual device verification, signed AAB with **same** keystore as existing 3.0.00 production, and confirmation privacy URL still https://ittybittybites.github.io/privacy-policy/ (existing repo).
+- Verify signature and certificate continuity.
+- Record SHA-256.
+- Inspect manifest permissions.
+- Inspect native architectures.
+- Generate and inspect the dependency report.
+- Confirm inactive Google Play Billing scaffolding is absent.
+- Confirm no advertising, account, social, or remote analytics SDK.
+- Use `bundletool` to generate installable APKs from the exact AAB.
+- Install and smoke-test that generated artifact.
 
-**Focus now is validating on real device and getting first successful Google Play update replacing existing 3.0.00 production — not additional architecture.**
+## 8. Test upgrades and saves
+
+Test at minimum:
+
+- Clean install and first run
+- Upgrade from the current Play production build
+- Upgrade from the latest internal build
+- Version-one synthetic save migration
+- Current save retention
+- Corrupt-primary recovery from `.bak`
+- Force-close around save replacement
+- Clear-data and reinstall behavior
+
+Do not assume old progress incompatibility is acceptable. Record the observed result and obtain a product decision before rollout if prior distributed data cannot migrate.
+
+## 9. Play Console internal testing
+
+- Select the existing app.
+- Create an Internal Testing release.
+- Upload the signed AAB.
+- Use the version 4.0.0 release notes from `PLAY_STORE_LISTING.md`.
+- Resolve every automated pre-launch, policy, Data Safety, target API, permission, and dependency warning.
+- Install through Play's internal-testing delivery path.
+- Repeat boot, upgrade, gameplay, offline, and accessibility smoke tests.
+
+## 10. Store and legal review
+
+Before production promotion:
+
+- Host policy content matching `PRIVACY.md` at the configured URL.
+- Complete Data Safety from implemented local-only behavior.
+- Complete content rating.
+- Review `OPEN_SOURCE_NOTICES.md` against the signed artifact.
+- Review screenshots, feature graphic, listing copy, credits, support URL, and copyright.
+- Obtain publisher/legal signoff appropriate to target jurisdictions.
+
+## 11. Staged rollout
+
+Promote only after every required item in `FINAL_RELEASE_CHECKLIST.md` passes.
+
+Recommended sequence:
+
+1. Internal Testing
+2. Small Closed Testing group
+3. Limited Production percentage
+4. Monitor crashes, ANRs, reviews, save/upgrade reports, and accessibility feedback
+5. Pause or expand based on evidence
+
+Archive the signed artifact, source snapshot, export presets, dependency report, checksums, release notes, test matrix, and rollback owner.
+
+## Current gate
+
+Local Phase 6 implementation is complete. Human playtesting, physical Android validation, signed-artifact inspection, store review, and legal approval remain required. There is no local software blocker preventing those activities from beginning.

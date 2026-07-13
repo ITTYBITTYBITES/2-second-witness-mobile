@@ -13,7 +13,7 @@ const DEFAULT_CONFIG := {
 	"app_version": "4.0.0",
 	"publisher": "ITTYBITTYBITES",
 	"publisher_tagline": "Interactive Experiences",
-	"environment": "development", # development / staging / production
+	"environment": "production", # development / staging / production
 	"package_id": "com.ittybittybites.the2secondwitness",
 	"privacy_policy_url": "https://ittybittybites.github.io/two-second-witness/privacy",
 	"feature_flags": {
@@ -26,9 +26,9 @@ const DEFAULT_CONFIG := {
 		"settings_enabled": true
 	},
 	"content": {
-		"content_version": 1,
-		"auto_update": true,
-		"base_url": "https://api.ittybittybites.com/content"
+		"content_version": 2,
+		"auto_update": false,
+		"base_url": ""
 	},
 	"gameplay": {
 		"default_replay_delay_ms": 500,

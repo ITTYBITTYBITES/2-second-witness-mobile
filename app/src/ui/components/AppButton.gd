@@ -55,20 +55,20 @@ func _apply_theme() -> void:
 	var tokens := {}
 	if ThemeService:
 		tokens = ThemeService.tokens
-	
+
 	var radius := int(tokens.get("radius_lg", 18)) if not tokens.is_empty() else 18
 	var touch_min := int(tokens.get("touch_target_min", 48)) if not tokens.is_empty() else 48
 	# Primary CTA gets extra height – matches Home Play Now (72dp)
-	var min_h := 72 if variant == Variant.PRIMARY and full_width else max(56, touch_min)
+	var min_h: int = 72 if variant == Variant.PRIMARY and full_width else maxi(56, touch_min)
 	custom_minimum_size.y = min_h
-	
+
 	# Colors
 	var bg := Color("#6A3DFF")
 	var bg_hover := Color("#8A68FF")
 	var fg := Color.WHITE
 	var border_col := Color.TRANSPARENT
 	var border_w := 0
-	
+
 	match variant:
 		Variant.PRIMARY:
 			bg = tokens.get("primary", Color("#6A3DFF")) if not tokens.is_empty() else Color("#6A3DFF")
@@ -90,7 +90,7 @@ func _apply_theme() -> void:
 			fg = tokens.get("error", Color("#FF4D5E")) if not tokens.is_empty() else Color("#FF4D5E")
 			border_col = fg
 			border_w = 1
-	
+
 	# Build styleboxes
 	for state in ["normal", "hover", "pressed", "disabled", "focus"]:
 		var sb := StyleBoxFlat.new()
@@ -120,18 +120,18 @@ func _apply_theme() -> void:
 		sb.content_margin_top = py
 		sb.content_margin_bottom = py
 		add_theme_stylebox_override(state, sb)
-	
+
 	add_theme_color_override("font_color", fg)
 	add_theme_color_override("font_hover_color", fg)
 	add_theme_color_override("font_pressed_color", fg)
 	add_theme_color_override("font_focus_color", fg)
 	add_theme_color_override("font_disabled_color", Color(fg.r, fg.g, fg.b, 0.5))
-	
+
 	var font_size := 18
 	if ThemeService:
 		font_size = ThemeService.get_font_size("button")
 	add_theme_font_size_override("font_size", font_size)
-	
+
 	autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_update_sizing()
 

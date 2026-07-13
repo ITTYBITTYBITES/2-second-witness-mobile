@@ -28,8 +28,11 @@ const DEFAULT_SETTINGS := {
 	"screen_shake_enabled": true,
 	"font_scale": 1.0, # 0.8 - 1.3
 	"high_contrast": false,
+	"color_assist_mode": false,
 	# Gameplay
 	"show_tutorials": true,
+	"comfortable_timing": false,
+	"reading_comfort_mode": false,
 	"auto_play_next": false,
 	"confirm_exit": true,
 	# Privacy

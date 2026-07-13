@@ -1,76 +1,91 @@
-# Privacy Policy - Two Second Witness
-## ITTYBITTYBITES Platform
+# Privacy Policy — Two Second Witness
 
-**Effective Date:** 2026-07-09
-**App:** Two Second Witness
+**Effective date:** July 13, 2026
+**App version reviewed:** 4.0.0
 **Publisher:** ITTYBITTYBITES
-**Package:** com.ittybittybites.the2secondwitness
+**Android package:** `com.ittybittybites.the2secondwitness`
 
----
+## Overview
 
-### Overview
+Two Second Witness is a premium observation game that works offline. It does not require an account, display advertising, or send gameplay analytics to a remote service.
 
-Two Second Witness is a premium digital exhibit exploring attention, observation, and memory through short visual challenges. This foundation release is designed to be privacy-respecting.
+## Information the app stores
 
-### Your Privacy Matters
+The app stores the following information locally on the device:
 
-**Current Foundation Release (2.0.0-ibby-foundation):**
+- An automatically generated anonymous Witness ID
+- Challenge history, scores, streaks, Mastery, Witness Progress, and achievements
+- Favorite Challenge Types and Program progress
+- Tutorial completion
+- Audio, appearance, gameplay, privacy, and accessibility settings
+- Anonymous app-activity events when the Analytics setting is enabled
 
-- **No account required** - You can use the app without creating an account
-- **No personal information collected** - We do not collect names, emails, or personal identifiers
-- **No advertising currently included** - No ad networks, no tracking for ads
-- **Progress stored locally** - All game progress, level, XP, and settings stored locally on your device in `user://` (Godot user data folder)
-- **No servers** - No data sent to servers in this foundation release
-- **No unnecessary dependencies** - No monetization, ads, accounts, servers
+The app does not ask for or store a name, email address, phone number, account password, precise location, contacts, photos, microphone recordings, or advertising identifier.
 
-### Data Storage
+## Local storage and recovery
 
-- Profile: `user://profile_v2.json` - Anonymous ID `witness_{ticks}_{rand}`, level, XP, stats, per-experience progress
-- Settings: `user://settings_v2.json` - Volumes, theme, haptics, font_scale, accessibility preferences
-- Analytics buffer (if enabled): `user://analytics_buffer.jsonl` - Anonymous session events, screen views, experience completions, errors - buffered locally, not sent to server in foundation release (ready for future endpoint injection with opt-out)
-- Content cache: `user://content/` - Cached experience manifests (if OTA enabled future)
-- Saves: `user://saves/`
+Player data is stored in Godot's private application-data directory:
 
-All files are stored locally and can be cleared by clearing app data or uninstalling.
+- `profile_v2.json` — Witness Progress and product history
+- `profile_v2.json.bak` — previous verified profile used for local recovery
+- `settings_v2.json` — app settings
+- `settings_v2.json.bak` — previous verified settings used for local recovery
+- `analytics_buffer.jsonl` — bounded local app-activity history, only while Analytics is enabled
 
-### Analytics (Foundation)
+Save replacement is verified and atomic. If a primary save is damaged, the app attempts recovery from its previous verified local copy.
 
-- Session ID anonymous `sess_{ticks}_{rand}`
-- Events: screen_view, experience_completed, setting_changed, error_logged, tutorial_completed, observation_started, memory_answered, first_run_completed
-- Buffer max 200 in-memory + 1MB file rotation
-- Respects opt-out: Settings → Privacy & Data → Analytics toggle
-- In foundation release, events are **not** sent to remote server (local only) - ready for future `https://api.ittybittybites.com/telemetry/ingest` with opt-out
+Local data can be removed by clearing the app's storage or uninstalling the app. The debug-only profile reset control is not present in production builds.
 
-### Permissions
+## Analytics setting
 
-- Internet: Not required for gameplay in foundation release, but declared for future OTA content and analytics (if enabled)
-- Access Network State: Check connectivity before OTA
-- Vibrate: Haptic feedback for observation and result (if enabled and device supports)
+Analytics is a local product-quality aid for testing. When enabled, it can record anonymous events such as:
 
-### Third Parties
+- App session start
+- Screen presentation
+- Challenge preparation and completion
+- Result outcome and response time
+- Tutorial and Program progress
+- Setting changes, excluding volume values
+- Application errors
 
-No third-party SDKs in foundation release. Future releases may include:
-- AdMob (if ads_enabled feature flag true) - would be disclosed
-- Google Play Billing (billingclient 7.0.0) - plugin preserved but not actively used in foundation, future IAP would be disclosed
+These events remain on the device. The local file is capped at approximately 1 MB and the in-memory buffer is capped at 200 events. No analytics endpoint is configured in the production build.
 
-### Children's Privacy
+Turning Analytics off stops new event recording and deletes the local analytics buffer.
 
-Suitable for all ages. No personal information collected from children. No account required.
+## Network and offline behavior
 
-### Changes
+All Challenge Types, tutorials, Programs, progression, achievements, and settings work offline. The Android production presets do not request Internet or network-state permissions.
 
-Future versions may add analytics remote upload, OTA content, ads, IAP - will update privacy policy and require acknowledgment via PrivacyScreen.
+Buttons for the privacy policy and publisher website can ask the operating system to open an external web browser. The browser, not Two Second Witness, handles that connection under the browser's own privacy terms.
 
-### Contact
+## Permissions
 
-- Website: https://ittybittybites.com (placeholder - platform site)
-- Privacy: https://ittybittybites.com/privacy (placeholder)
-- Repository: https://github.com/ITTYBITTYBITES/2-second-witness-mobile
+The Android build requests only the capabilities needed by the current product:
 
-### Placeholder Notice
+- **Vibrate:** optional haptic feedback when Haptics is enabled
 
-This is a foundation release placeholder privacy policy. Final policy for Google Play production release should be reviewed by legal and hosted at stable URL.
+The app does not request camera, microphone, contacts, location, storage, account, advertising, or notification permissions.
 
----
+## Third-party software
 
-**ITTYBITTYBITES — Curiosity • Creativity • Discovery**
+Two Second Witness is built with the Godot Engine. Godot is open-source software available under the MIT License. The app has no active advertising, billing, account, social, or remote analytics SDK integration.
+
+Open-source notices are recorded in [`docs/store/OPEN_SOURCE_NOTICES.md`](docs/store/OPEN_SOURCE_NOTICES.md) in the project distribution.
+
+## Children's privacy
+
+The app does not require an account or collect personal information. Gameplay and progress remain local to the device. A parent or guardian can remove all local data by clearing app storage or uninstalling the app.
+
+## Changes to this policy
+
+If a future version adds an account, remote analytics, advertising, billing, network-delivered content, or additional data collection, this policy and the in-app acknowledgment must be updated before that version is released.
+
+## Contact
+
+- Publisher website: <https://ittybittybites.com>
+- Hosted privacy policy: <https://ittybittybites.github.io/two-second-witness/privacy>
+- Project repository: <https://github.com/ITTYBITTYBITES/2-second-witness-mobile>
+
+## Release review note
+
+This policy reflects the implemented version 4.0.0 behavior as of the effective date. Store submission should include a final publisher review for jurisdiction-specific legal requirements; this technical review is not legal advice.

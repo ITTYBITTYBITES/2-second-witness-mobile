@@ -44,6 +44,11 @@ func start_boot() -> void:
 
 	var total := Time.get_ticks_msec() - _boot_start_time
 	print("[AppBoot] Boot completed in %d ms" % total)
+	if AnalyticsService:
+		AnalyticsService.log_event("cold_start_services_ready", {
+			"duration_ms": total,
+			"memory_mb": snappedf(float(Performance.get_monitor(Performance.MEMORY_STATIC)) / 1048576.0, 0.1)
+		})
 	_is_booting = false
 	boot_completed.emit()
 	EventBus.publish_app_initialized()
@@ -88,6 +93,10 @@ func _boot_theme() -> Dictionary:
 func _boot_settings() -> Dictionary:
 	if SettingsService:
 		SettingsService.initialize()
+	if AnalyticsService:
+		AnalyticsService.initialize()
+	if AccessibilityService:
+		AccessibilityService.initialize()
 	return {}
 
 func _boot_save() -> Dictionary:
@@ -95,15 +104,31 @@ func _boot_save() -> Dictionary:
 		SaveService.initialize()
 	if ProfileService:
 		ProfileService.initialize()
+	if AchievementService:
+		AchievementService.initialize()
 	return {}
 
 func _boot_content() -> Dictionary:
 	if ContentService:
 		ContentService.initialize()
-	# Do not let placeholder experience discovery block mobile startup.
-	# The playable app boots from ChallengeRegistry, not ExperienceRegistry.
+	# Keep deterministic fixture loading first so Product Development family
+	# modules can adapt the validated content without duplicating its source.
 	if ChallengeRegistry:
 		ChallengeRegistry.initialize()
+	if InteractionAdapterRegistry:
+		InteractionAdapterRegistry.initialize()
+	if ChallengeFamilyRegistry:
+		ChallengeFamilyRegistry.initialize()
+	if PlayerProgressService:
+		PlayerProgressService.initialize()
+	if RecommendationService:
+		RecommendationService.initialize()
+	if ProgramService:
+		ProgramService.initialize()
+	if ResultService:
+		ResultService.initialize()
+	if ChallengeSessionService:
+		ChallengeSessionService.initialize()
 	return {}
 
 func _boot_audio() -> Dictionary:

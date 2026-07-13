@@ -31,14 +31,19 @@ func _ensure_ui() -> void:
 		if back_button:
 			back_button.custom_minimum_size = Vector2(touch_min, touch_min)
 			back_button.text = "←"
+			back_button.tooltip_text = "Back"
 			if not back_button.pressed.is_connected(_on_back):
 				back_button.pressed.connect(_on_back)
 		if profile_button:
 			profile_button.custom_minimum_size = Vector2(touch_min, touch_min)
+			profile_button.text = "○"
+			profile_button.tooltip_text = "Profile"
 			if not profile_button.pressed.is_connected(_on_profile):
 				profile_button.pressed.connect(_on_profile)
 		if settings_button:
 			settings_button.custom_minimum_size = Vector2(touch_min, touch_min)
+			settings_button.text = "⚙"
+			settings_button.tooltip_text = "Settings"
 			if not settings_button.pressed.is_connected(_on_settings):
 				settings_button.pressed.connect(_on_settings)
 		return
@@ -129,7 +134,7 @@ func _style_bar_button(btn: Button, min_size: int) -> void:
 	ThemeService.apply_typography(btn, "title")
 	btn.add_theme_color_override("font_color", ThemeService.get_color("text_primary"))
 	btn.flat = true
-	btn.focus_mode = Control.FOCUS_NONE
+	btn.focus_mode = Control.FOCUS_ALL
 	btn.autowrap_mode = TextServer.AUTOWRAP_OFF
 	btn.clip_text = true
 
@@ -149,6 +154,11 @@ func set_title(t: String) -> void:
 func set_show_back(v: bool) -> void:
 	show_back = v
 	_refresh()
+
+func set_show_actions(visible_actions: bool) -> void:
+	var actions := get_node_or_null("Margin/HBox/Actions") as Control
+	if actions:
+		actions.visible = visible_actions
 
 func _on_theme_changed(_theme: String, _tokens: Dictionary) -> void:
 	_apply_theme()

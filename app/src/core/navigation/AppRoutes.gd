@@ -57,7 +57,7 @@ const ROUTES := {
 		"is_tab": true,
 		"requires_auth": false,
 		"icon": "grid",
-		"label": "Play"
+		"label": "Library"
 	},
 	"profile": {
 		"screen": "ProfileScreen",
@@ -75,6 +75,16 @@ const ROUTES := {
 	},
 	"about": {
 		"screen": "AboutScreen",
+		"is_tab": false,
+		"requires_auth": false
+	},
+	"achievements": {
+		"screen": "AchievementsScreen",
+		"is_tab": false,
+		"requires_auth": false
+	},
+	"programs": {
+		"screen": "ProgramsScreen",
 		"is_tab": false,
 		"requires_auth": false
 	},

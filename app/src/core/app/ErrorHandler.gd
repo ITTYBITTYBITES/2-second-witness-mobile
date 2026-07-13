@@ -47,6 +47,7 @@ func handle(
 			_attempt_safe_recovery()
 		Severity.ERROR:
 			push_error("[ERROR] %s: %s %s" % [code, message, str(context)])
+			user_message_requested.emit(_friendly_message(code), severity)
 		Severity.WARNING:
 			push_warning("[WARN] %s: %s" % [code, message])
 		_:
@@ -64,6 +65,17 @@ func get_history() -> Array[Dictionary]:
 
 func clear_history() -> void:
 	_error_history.clear()
+
+func _friendly_message(code: String) -> String:
+	if code.begins_with("SAVE_"):
+		return "Progress could not be saved safely. Your current screen can continue."
+	if code.begins_with("NAV_") or code.begins_with("SCREEN_"):
+		return "That screen could not be opened. Please try again."
+	if code.begins_with("TUTORIAL_"):
+		return "The tutorial could not be opened. Please choose another challenge."
+	if code.begins_with("INTERACTION_") or code.begins_with("RUNTIME_"):
+		return "That round could not continue. Please start another challenge."
+	return "Something went wrong. Please try again."
 
 func _attempt_safe_recovery() -> void:
 	_crash_count_today += 1

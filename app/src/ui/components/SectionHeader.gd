@@ -36,7 +36,7 @@ func _ensure_nodes() -> void:
 		_label.name = "Label"
 		_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		add_child(_label)
-	
+
 	# Action button – optional, right-aligned
 	if action_text != "":
 		if not _action_btn:
@@ -48,7 +48,7 @@ func _ensure_nodes() -> void:
 		if _action_btn:
 			_action_btn.queue_free()
 			_action_btn = null
-	
+
 	_update_label()
 	_update_action()
 
@@ -68,11 +68,11 @@ func _apply_theme() -> void:
 	elif _label:
 		_label.add_theme_color_override("font_color", Color("#8A8AA3"))
 		_label.add_theme_font_size_override("font_size", 14)
-	
+
 	if _action_btn and ThemeService:
 		_action_btn.add_theme_color_override("font_color", ThemeService.get_color("primary"))
 		_action_btn.add_theme_font_size_override("font_size", ThemeService.get_font_size("label_small"))
-	
+
 	# Spacing – match Home
 	add_theme_constant_override("separation", 8)
 	alignment = BoxContainer.ALIGNMENT_CENTER

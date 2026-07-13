@@ -1,8 +1,8 @@
 extends Node
 ## AppState - Single source of truth for app-level state
-## Machine: SPLASH -> BOOT -> HOME -> EXPERIENCES/PROFILE/SETTINGS etc
+## Machine: SPLASH -> BOOT -> HOME -> LIBRARY/PROFILE/ACHIEVEMENTS/SETTINGS etc
 
-enum AppPhase { BOOT, SPLASH, HOME, EXPERIENCES, PROFILE, SETTINGS, EXPERIENCE_PLAYING }
+enum AppPhase { BOOT, SPLASH, HOME, EXPERIENCES, PROFILE, SETTINGS, ACHIEVEMENTS, PROGRAMS, EXPERIENCE_PLAYING }
 
 @warning_ignore("unused_signal")
 signal phase_changed(new_phase: AppPhase, old_phase: AppPhase)

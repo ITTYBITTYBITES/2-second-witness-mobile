@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101119"/><stop offset="1" stop-color="#232131"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-opacity=".45"/></filter></defs>
+  <rect width="960" height="540" rx="32" fill="url(#bg)"/>
+  <text x="480" y="56" fill="#c9b8ff" font-family="sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="4">THE PATTERN, IN ORDER</text>
+  <g transform="translate(252 84)" filter="url(#s)">
+    <g fill="#292934" stroke="#77758a" stroke-width="3">
+      <rect x="0" y="0" width="140" height="120" rx="14"/><rect x="154" y="0" width="140" height="120" rx="14"/><rect x="308" y="0" width="140" height="120" rx="14"/>
+      <rect x="0" y="134" width="140" height="120" rx="14"/><rect x="154" y="134" width="140" height="120" rx="14"/><rect x="308" y="134" width="140" height="120" rx="14"/>
+      <rect x="0" y="268" width="140" height="120" rx="14"/><rect x="154" y="268" width="140" height="120" rx="14"/><rect x="308" y="268" width="140" height="120" rx="14"/>
+    </g>
+    <path d="M70 60H224V194H378" fill="none" stroke="#ffb84d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+    <g fill="#51406f" stroke="#a98cff" stroke-width="3"><rect x="0" y="0" width="140" height="120" rx="14"/><rect x="154" y="0" width="140" height="120" rx="14"/><rect x="154" y="134" width="140" height="120" rx="14"/><rect x="308" y="134" width="140" height="120" rx="14"/></g>
+    <g fill="#ffb84d" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+      <circle cx="28" cy="28" r="20"/><circle cx="182" cy="28" r="20"/><circle cx="182" cy="162" r="20"/><circle cx="336" cy="162" r="20"/>
+      <g fill="#191720"><text x="28" y="35">1</text><text x="182" y="35">2</text><text x="182" y="169">3</text><text x="336" y="169">4</text></g>
+    </g>
+    <g fill="#f5f3fa" font-family="sans-serif" font-size="24" text-anchor="middle"><text x="70" y="70">A1</text><text x="224" y="70">A2</text><text x="224" y="204">B2</text><text x="378" y="204">B3</text></g>
+  </g>
+</svg>
