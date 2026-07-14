@@ -4,9 +4,8 @@ extends Node
 
 enum Severity { INFO, WARNING, ERROR, CRITICAL }
 
-@warning_ignore("unused_signal")
 signal error_logged(entry: Dictionary)
-signal user_message_requested(message: String, severity: Severity)
+signal user_message_requested(message: String, severity: int)
 
 var _error_history: Array[Dictionary] = []
 const MAX_HISTORY := 100
@@ -22,7 +21,7 @@ func handle(
 	code: String,
 	message: String,
 	context: Dictionary = {},
-	severity: Severity = Severity.ERROR
+	severity: int = Severity.ERROR
 ) -> void:
 	var entry := {
 		"code": code,

@@ -19,7 +19,7 @@ extends Button
 
 enum Variant { PRIMARY, SECONDARY, GHOST, DANGER }
 
-@export var variant: Variant = Variant.PRIMARY:
+@export_enum("Primary", "Secondary", "Ghost", "Danger") var variant: int = Variant.PRIMARY:
 	set(v):
 		variant = v
 		_apply_theme()

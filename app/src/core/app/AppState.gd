@@ -4,14 +4,12 @@ extends Node
 
 enum AppPhase { BOOT, SPLASH, HOME, EXPERIENCES, PROFILE, SETTINGS, ACHIEVEMENTS, PROGRAMS, EXPERIENCE_PLAYING }
 
-@warning_ignore("unused_signal")
-signal phase_changed(new_phase: AppPhase, old_phase: AppPhase)
-@warning_ignore("unused_signal")
+signal phase_changed(new_phase: int, old_phase: int)
 signal state_updated(key: String, value: Variant)
 signal loading_changed(is_loading: bool, message: String)
 
-var current_phase: AppPhase = AppPhase.BOOT
-var previous_phase: AppPhase = AppPhase.BOOT
+var current_phase: int = AppPhase.BOOT
+var previous_phase: int = AppPhase.BOOT
 var is_initialized: bool = false
 var is_loading: bool = false
 var loading_message: String = ""
@@ -29,7 +27,7 @@ func _ready() -> void:
 func _on_app_initialized() -> void:
 	is_initialized = true
 
-func set_phase(new_phase: AppPhase) -> void:
+func set_phase(new_phase: int) -> void:
 	if new_phase == current_phase:
 		return
 	var old := current_phase
