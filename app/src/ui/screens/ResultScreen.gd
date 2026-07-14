@@ -6,9 +6,12 @@ extends Control
 @onready var result_icon: TextureRect = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/ResultIcon
 @onready var result_title: Label = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/Title
 @onready var result_desc: Label = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/Description
+@onready var reflection_label: Label = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/ReflectionLabel
 @onready var detail_label: Label = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/Detail
+@onready var progress_summary: Label = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/ProgressSummary
 @onready var continue_btn: Button = $MainMargin/Scroll/Content/Actions/ContinueButton
 @onready var replay_btn: Button = $MainMargin/Scroll/Content/Actions/ReplayButton
+@onready var library_btn: Button = $MainMargin/Scroll/Content/Actions/LibraryButton
 @onready var menu_btn: Button = $MainMargin/Scroll/Content/Actions/MenuButton
 @onready var result_card: PanelContainer = $MainMargin/Scroll/Content/ResultCard
 @onready var background_rect: ColorRect = $Background
@@ -25,13 +28,15 @@ func _ready() -> void:
 	_ensure_wired()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($MainMargin, 20.0)
+	ResponsiveLayout.apply_centered_margin($MainMargin, 16.0)
 
 func _ensure_wired() -> void:
 	if replay_btn and not replay_btn.pressed.is_connected(_on_replay):
 		replay_btn.pressed.connect(_on_replay)
 	if continue_btn and not continue_btn.pressed.is_connected(_on_continue):
 		continue_btn.pressed.connect(_on_continue)
+	if library_btn and not library_btn.pressed.is_connected(_on_library):
+		library_btn.pressed.connect(_on_library)
 	if menu_btn and not menu_btn.pressed.is_connected(_on_menu):
 		menu_btn.pressed.connect(_on_menu)
 
@@ -51,18 +56,11 @@ func _apply_theme() -> void:
 	if background_rect:
 		background_rect.color = bg_col
 
-	# Result card – premium, matches ExperienceCard
+	# Reflection remains visually grounded without putting the entire result in a
+	# dashboard card. Evidence renderers and outcome typography carry hierarchy.
 	if result_card:
 		var style := StyleBoxFlat.new()
-		style.bg_color = tokens.get("surface", Color("#1E1E26")) if not tokens.is_empty() else Color("#1E1E26")
-		var r: int = int(tokens.get("radius_lg", 20)) if not tokens.is_empty() else 20
-		style.corner_radius_top_left = r; style.corner_radius_top_right = r
-		style.corner_radius_bottom_left = r; style.corner_radius_bottom_right = r
-		style.shadow_color = Color(0, 0, 0, 0.30)
-		style.shadow_size = 16
-		style.shadow_offset = Vector2(0, 5)
-		style.border_color = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
-		style.border_width_left = 1; style.border_width_right = 1; style.border_width_top = 1; style.border_width_bottom = 1
+		style.bg_color = Color.TRANSPARENT
 		result_card.add_theme_stylebox_override("panel", style)
 
 	if result_title and ThemeService:
@@ -70,11 +68,16 @@ func _apply_theme() -> void:
 		result_title.add_theme_font_size_override("font_size", ThemeService.get_scaled_size(36))
 	if result_desc and ThemeService:
 		ThemeService.apply_label_style(result_desc, "body", "text_secondary")
+	if reflection_label and ThemeService:
+		ThemeService.apply_label_style(reflection_label, "label_small", "primary_variant")
 	if detail_label and ThemeService:
-		ThemeService.apply_label_style(detail_label, "body_small", "text_tertiary")
+		ThemeService.apply_label_style(detail_label, "body_small", "text_secondary")
+	if progress_summary and ThemeService:
+		ThemeService.apply_label_style(progress_summary, "body_small", "primary_variant")
 
 	_style_button(continue_btn, true, tokens)
 	_style_button(replay_btn, false, tokens)
+	_style_button(library_btn, false, tokens)
 	_style_button(menu_btn, false, tokens, true)
 
 func _style_button(btn: Button, primary: bool, tokens: Dictionary, ghost: bool = false) -> void:
@@ -84,8 +87,8 @@ func _style_button(btn: Button, primary: bool, tokens: Dictionary, ghost: bool =
 	var normal := StyleBoxFlat.new()
 	normal.corner_radius_top_left = radius; normal.corner_radius_top_right = radius
 	normal.corner_radius_bottom_left = radius; normal.corner_radius_bottom_right = radius
-	normal.content_margin_left = 24; normal.content_margin_right = 24
-	normal.content_margin_top = 18; normal.content_margin_bottom = 18
+	normal.content_margin_left = 20; normal.content_margin_right = 20
+	normal.content_margin_top = 14; normal.content_margin_bottom = 14
 
 	if primary:
 		var primary_col: Color = tokens.get("primary", Color("#6A3DFF")) if not tokens.is_empty() else Color("#6A3DFF")
@@ -95,7 +98,7 @@ func _style_button(btn: Button, primary: bool, tokens: Dictionary, ghost: bool =
 		hover.bg_color = tokens.get("primary_variant", Color("#8A68FF")) if not tokens.is_empty() else Color("#8A68FF")
 		btn.add_theme_stylebox_override("hover", hover)
 		btn.add_theme_stylebox_override("pressed", hover)
-		btn.custom_minimum_size.y = 72
+		btn.custom_minimum_size.y = 64
 	elif ghost:
 		normal.bg_color = Color.TRANSPARENT
 		btn.add_theme_color_override("font_color", tokens.get("text_tertiary", Color("#8A8AA3")) if not tokens.is_empty() else Color("#8A8AA3"))
@@ -150,52 +153,66 @@ func _display_result(data: Dictionary) -> void:
 
 	if result_title:
 		result_title.text = "CORRECT!" if _is_correct else "I MISSED IT."
+		if ThemeService:
+			result_title.add_theme_color_override(
+				"font_color",
+				ThemeService.get_color("success" if _is_correct else "primary_variant")
+			)
 	if result_desc:
 		if _is_correct:
 			result_desc.text = "%s\n%s" % [title, round_label] if round_label != "" else title
 		else:
 			var prefix := "%s\n" % title if title != "" else ""
 			var suffix := "\n%s" % round_label if round_label != "" else ""
-			var feedback := "You selected %s, correct was %s."
+			var feedback := "You chose %s · Evidence shows %s."
 			result_desc.text = "%s%s%s" % [prefix, feedback % [selected, correct], suffix]
 
+	var where_to_look := str((data.get("reveal_data", {}) as Dictionary).get("where_to_look", ""))
+	var detail_lines: Array[String] = []
+	if not detail.is_empty():
+		detail_lines.append(detail)
+	if not where_to_look.is_empty():
+		detail_lines.append(where_to_look)
 	if detail_label:
-		var where_to_look := str((data.get("reveal_data", {}) as Dictionary).get("where_to_look", ""))
-		var detail_lines: Array[String] = []
-		if not detail.is_empty():
-			detail_lines.append(detail)
-		if not where_to_look.is_empty():
-			detail_lines.append(where_to_look)
-		var progress_value: Variant = data.get("progress_earned", {})
-		if progress_value is Dictionary:
-			var progress: Dictionary = progress_value
-			var points := int(progress.get("progress_points", 0))
-			var family_progress: Variant = progress.get("family_progress", {})
-			var mastery := float((family_progress as Dictionary).get("mastery", 0.0)) if family_progress is Dictionary else 0.0
-			if points > 0:
-				detail_lines.append("+%d Witness Progress • Mastery %.1f" % [points, mastery])
-			var unlocked_value: Variant = progress.get("achievements_unlocked", [])
-			if unlocked_value is Array:
-				for achievement_id: Variant in unlocked_value:
-					detail_lines.append("Achievement unlocked • %s" % _achievement_title(str(achievement_id)))
-		var result_metadata_value: Variant = data.get("metadata", {})
-		if result_metadata_value is Dictionary:
-			var program_value: Variant = (result_metadata_value as Dictionary).get("program_progress", {})
-			if program_value is Dictionary and not (program_value as Dictionary).is_empty():
-				var program: Dictionary = program_value
-				if bool(program.get("run_completed", false)):
-					detail_lines.append("%s complete • Run %d" % [
-						str(program.get("program_title", "Program")),
-						int(program.get("completed_runs", 0))
-					])
-				else:
-					detail_lines.append("%s • Round %d of %d" % [
-						str(program.get("program_title", "Program")),
-						int(program.get("round", 1)),
-						int(program.get("round_count", 1))
-					])
 		detail_label.text = "\n".join(detail_lines)
 		detail_label.visible = not detail_label.text.is_empty()
+	if reflection_label:
+		var reveal_value: Variant = data.get("reveal_data", {})
+		var has_reveal: bool = reveal_value is Dictionary and not (reveal_value as Dictionary).is_empty()
+		reflection_label.visible = not detail_lines.is_empty() or has_reveal
+
+	var progress_lines: Array[String] = []
+	var progress_value: Variant = data.get("progress_earned", {})
+	if progress_value is Dictionary:
+		var progress: Dictionary = progress_value
+		var points := int(progress.get("progress_points", 0))
+		var family_progress: Variant = progress.get("family_progress", {})
+		var mastery := float((family_progress as Dictionary).get("mastery", 0.0)) if family_progress is Dictionary else 0.0
+		if points > 0:
+			progress_lines.append("+%d Witness Progress · Mastery %.1f%%" % [points, mastery])
+		var unlocked_value: Variant = progress.get("achievements_unlocked", [])
+		if unlocked_value is Array:
+			for achievement_id: Variant in unlocked_value:
+				progress_lines.append("Achievement earned · %s" % _achievement_title(str(achievement_id)))
+	var result_metadata_value: Variant = data.get("metadata", {})
+	if result_metadata_value is Dictionary:
+		var program_value: Variant = (result_metadata_value as Dictionary).get("program_progress", {})
+		if program_value is Dictionary and not (program_value as Dictionary).is_empty():
+			var program: Dictionary = program_value
+			if bool(program.get("run_completed", false)):
+				progress_lines.append("%s complete · Run %d" % [
+					str(program.get("program_title", "Program")),
+					int(program.get("completed_runs", 0))
+				])
+			else:
+				progress_lines.append("%s · Round %d of %d" % [
+					str(program.get("program_title", "Program")),
+					int(program.get("round", 1)),
+					int(program.get("round_count", 1))
+				])
+	if progress_summary:
+		progress_summary.text = "\n".join(progress_lines)
+		progress_summary.visible = not progress_summary.text.is_empty()
 	_show_reveal(data.get("reveal_data", {}))
 
 	if continue_btn:
@@ -207,10 +224,13 @@ func _display_result(data: Dictionary) -> void:
 			else "NEXT CHALLENGE  →" if ChallengeSessionService and ChallengeSessionService.has_active_session() else "HOME"
 		)
 	if replay_btn:
-		replay_btn.text = "Replay"
+		replay_btn.text = "RETRY CHALLENGE"
 		replay_btn.visible = true
+	if library_btn:
+		library_btn.text = "CHALLENGE LIBRARY"
+		library_btn.visible = true
 	if menu_btn:
-		menu_btn.text = "HOME"
+		menu_btn.text = "RETURN HOME"
 		menu_btn.visible = true
 
 	_play_feedback()
@@ -322,6 +342,15 @@ func _on_continue() -> void:
 		ChallengeSessionService.continue_recommended()
 	elif NavigationService:
 		NavigationService.navigate_to("home")
+
+func _on_library() -> void:
+	if AudioService:
+		AudioService.play_ui("ui_click")
+	_check_first_run_completion()
+	if ChallengeSessionService and ChallengeSessionService.has_active_session():
+		ChallengeSessionService.return_home()
+	if NavigationService:
+		NavigationService.navigate_to("experiences")
 
 func _on_menu() -> void:
 	if AudioService: AudioService.play_ui("ui_click")

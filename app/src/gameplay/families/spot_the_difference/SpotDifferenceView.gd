@@ -64,8 +64,8 @@ func _draw() -> void:
 	var mode := str(_scene.get("mode", "side_by_side"))
 	if mode == "sequential" and not reveal and not response:
 		_draw_title_band("WATCH FOR THE CHANGE")
-		var margin: float = size.x * 0.055
-		var rect := Rect2(margin, size.y * 0.13, size.x - margin * 2.0, size.y * 0.79)
+		var margin: float = size.x * 0.035
+		var rect := Rect2(margin, size.y * 0.08, size.x - margin * 2.0, size.y * 0.88)
 		var state_duration := maxf(float(_scene.get("state_duration", 2.5)), 0.1)
 		var showing_first := _elapsed < state_duration
 		_draw_panel(rect, _scene.get("objects_a", []) if showing_first else _scene.get("objects_b", []), "FIRST" if showing_first else "SECOND")
@@ -74,10 +74,10 @@ func _draw() -> void:
 
 func _draw_paired(reveal: bool) -> void:
 	_draw_title_band("SPOT THE DIFFERENCE" if not reveal else "CHANGE REVEALED")
-	var panel_gap: float = size.x * 0.04
+	var panel_gap: float = size.x * 0.025
 	var panel_width: float = (size.x - panel_gap * 3.0) * 0.5
-	var top: float = size.y * 0.13
-	var panel_height: float = size.y * 0.79
+	var top: float = size.y * 0.08
+	var panel_height: float = size.y * 0.88
 	var rect_a := Rect2(panel_gap, top, panel_width, panel_height)
 	var rect_b := Rect2(panel_gap * 2.0 + panel_width, top, panel_width, panel_height)
 	_draw_panel(rect_a, _scene.get("objects_a", []), "A")
@@ -89,7 +89,7 @@ func _draw_title_band(text: String) -> void:
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
 	var title_color := Color.WHITE if high_contrast else Color("#F5F3FA")
 	var accent := Color.WHITE if high_contrast else Color("#FFB84D")
-	var band := Rect2(size.x * 0.08, size.y * 0.035, size.x * 0.84, maxf(34.0, size.y * 0.055))
+	var band := Rect2(size.x * 0.08, size.y * 0.018, size.x * 0.84, maxf(30.0, size.y * 0.045))
 	draw_rect(band, Color(0, 0, 0, 0.28), true)
 	draw_line(Vector2(band.position.x, band.end.y), Vector2(band.end.x, band.end.y), Color(accent, 0.72), 2.0)
 	draw_string(ThemeDB.fallback_font, band.position + Vector2(0, band.size.y * 0.68), text, HORIZONTAL_ALIGNMENT_CENTER, band.size.x, 18, title_color)

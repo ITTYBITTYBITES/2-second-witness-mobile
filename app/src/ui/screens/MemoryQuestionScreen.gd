@@ -5,6 +5,7 @@ extends Control
 @onready var brand_label: Label = $MainMargin/Scroll/Content/Header/BrandLabel
 @onready var subtitle_label: Label = $MainMargin/Scroll/Content/Header/SubtitleLabel
 @onready var question_label: Label = $MainMargin/Scroll/Content/QuestionLabel
+@onready var question_accent: ColorRect = $MainMargin/Scroll/Content/QuestionAccent
 @onready var options_container: VBoxContainer = $MainMargin/Scroll/Content/OptionsContainer
 @onready var background_rect: ColorRect = $Background
 
@@ -23,7 +24,7 @@ func _ready() -> void:
 	_apply_theme()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($MainMargin, 20.0)
+	ResponsiveLayout.apply_centered_margin($MainMargin, 16.0)
 
 func _should_animate() -> bool:
 	return AccessibilityService.should_animate() if AccessibilityService else true
@@ -31,16 +32,36 @@ func _should_animate() -> bool:
 func _apply_theme() -> void:
 	var tokens: Dictionary = ThemeService.tokens if ThemeService else {}
 	background_rect.color = tokens.get("background", Color("#0F0F12"))
+	var accent := _family_accent()
+	question_accent.color = accent
 	if ThemeService:
-		ThemeService.apply_label_style(brand_label, "display", "text_primary")
-		brand_label.add_theme_font_size_override("font_size", ThemeService.get_scaled_size(42))
-		ThemeService.apply_label_style(subtitle_label, "body_small", "text_secondary")
-		ThemeService.apply_label_style(question_label, "title", "text_primary")
+		ThemeService.apply_label_style(brand_label, "label_small", "primary_variant")
+		ThemeService.apply_label_style(subtitle_label, "caption", "text_tertiary")
+		ThemeService.apply_label_style(question_label, "headline", "text_primary")
 	brand_label.text = "RECALL"
-	brand_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	subtitle_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	question_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	brand_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+	subtitle_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+	question_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	question_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+
+func _family_title() -> String:
+	var family_id := str(_challenge_data.get("family_id", ""))
+	if ChallengeFamilyRegistry and not family_id.is_empty():
+		var family: ChallengeFamily = ChallengeFamilyRegistry.get_family(family_id)
+		if family:
+			return family.title
+	return "What did you notice?"
+
+func _family_accent() -> Color:
+	var accents: Array[Color] = [
+		Color("#8A68FF"),
+		Color("#36CFC9"),
+		Color("#FFB454"),
+		Color("#F071B8"),
+		Color("#62A8FF")
+	]
+	var identity := str(_challenge_data.get("family_id", "challenge"))
+	return accents[absi(identity.hash()) % accents.size()]
 
 func _load_question(profile_data: Dictionary = {}) -> void:
 	if _challenge_data.is_empty() and AppState:
@@ -60,6 +81,7 @@ func _load_question(profile_data: Dictionary = {}) -> void:
 	_correct_answer = _challenge_data.get("correct_answer", _challenge_data.get("correct", null))
 	var raw_question: Variant = _challenge_data.get("question", {})
 	question_label.text = str((raw_question as Dictionary).get("prompt", "What did you notice?")) if raw_question is Dictionary else str(raw_question)
+	subtitle_label.text = _family_title()
 	_interaction_profile = InteractionProfile.new(profile_data) if not profile_data.is_empty() else InteractionProfile.default_single_choice()
 	_mount_adapter()
 	if AppState:
@@ -120,26 +142,51 @@ func _on_option_selected(answer: String, button: Button) -> void:
 
 func _style_interaction_tree(node: Node) -> void:
 	if node is CheckButton:
-		var check := node as CheckButton
-		check.custom_minimum_size.y = maxf(check.custom_minimum_size.y, 52.0)
-		check.focus_mode = Control.FOCUS_ALL
-		if ThemeService:
-			ThemeService.apply_typography(check, "body_small")
+		_apply_check_theme(node as CheckButton)
 	elif node is Button:
 		_apply_option_theme(node as Button)
 	for child: Node in node.get_children():
 		_style_interaction_tree(child)
 
-func _apply_option_theme(button: Button) -> void:
+func _apply_check_theme(check: CheckButton) -> void:
 	var tokens: Dictionary = ThemeService.tokens if ThemeService else {}
 	var normal := StyleBoxFlat.new()
-	normal.bg_color = tokens.get("surface", Color("#1E1E26"))
-	normal.border_color = tokens.get("border", Color("#2E2E3A"))
+	normal.bg_color = _with_alpha(tokens.get("surface", Color("#1E1E26")), 0.72)
+	normal.border_color = _with_alpha(tokens.get("border", Color("#2E2E3A")), 0.72)
 	normal.border_width_left = 1
 	normal.border_width_right = 1
 	normal.border_width_top = 1
 	normal.border_width_bottom = 1
-	var radius: int = int(tokens.get("radius_lg", 16))
+	normal.corner_radius_top_left = 14
+	normal.corner_radius_top_right = 14
+	normal.corner_radius_bottom_left = 14
+	normal.corner_radius_bottom_right = 14
+	normal.content_margin_left = 16
+	normal.content_margin_right = 16
+	normal.content_margin_top = 10
+	normal.content_margin_bottom = 10
+	var hover: StyleBoxFlat = normal.duplicate()
+	hover.bg_color = tokens.get("surface_elevated", Color("#2A2A36"))
+	check.add_theme_stylebox_override("normal", normal)
+	check.add_theme_stylebox_override("hover", hover)
+	check.add_theme_stylebox_override("focus", hover)
+	check.add_theme_stylebox_override("pressed", hover)
+	check.custom_minimum_size.y = maxf(check.custom_minimum_size.y, 56.0)
+	check.focus_mode = Control.FOCUS_ALL
+	check.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	if ThemeService:
+		ThemeService.apply_typography(check, "body_small")
+
+func _apply_option_theme(button: Button) -> void:
+	var tokens: Dictionary = ThemeService.tokens if ThemeService else {}
+	var normal := StyleBoxFlat.new()
+	normal.bg_color = _with_alpha(tokens.get("surface", Color("#1E1E26")), 0.78)
+	normal.border_color = _with_alpha(tokens.get("border", Color("#2E2E3A")), 0.78)
+	normal.border_width_left = 1
+	normal.border_width_right = 1
+	normal.border_width_top = 1
+	normal.border_width_bottom = 1
+	var radius: int = int(tokens.get("radius_md", 14))
 	normal.corner_radius_top_left = radius
 	normal.corner_radius_top_right = radius
 	normal.corner_radius_bottom_left = radius
@@ -162,12 +209,17 @@ func _apply_option_theme(button: Button) -> void:
 	button.add_theme_stylebox_override("hover", hover)
 	button.add_theme_stylebox_override("pressed", pressed)
 	button.add_theme_stylebox_override("focus", focus)
-	button.custom_minimum_size.y = 56
+	button.custom_minimum_size.y = 58
 	button.focus_mode = Control.FOCUS_ALL
 	button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	if ThemeService:
 		ThemeService.apply_typography(button, "button")
 		button.add_theme_color_override("font_color", ThemeService.get_color("text_primary"))
+
+func _with_alpha(value: Variant, alpha: float) -> Color:
+	var color: Color = value if value is Color else Color.WHITE
+	color.a = alpha
+	return color
 
 func _highlight_answers(selected_button: Button, is_correct: bool) -> void:
 	if not ThemeService or selected_button == null:
@@ -191,8 +243,8 @@ func on_navigated_to(params: Dictionary) -> void:
 	var profile_data: Dictionary = (profile_value as Dictionary).duplicate(true) if profile_value is Dictionary else {}
 	modulate.a = 1.0
 	_apply_responsive_layout()
-	_apply_theme()
 	_load_question(profile_data)
+	_apply_theme()
 	_animate_in()
 
 func _animate_in() -> void:

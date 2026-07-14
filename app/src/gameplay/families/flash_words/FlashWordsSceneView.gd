@@ -12,8 +12,8 @@ var _position_label: Label
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
-	if not resized.is_connected(queue_redraw):
-		resized.connect(queue_redraw)
+	if not resized.is_connected(_on_resized):
+		resized.connect(_on_resized)
 	_build_ui()
 	_apply_scene()
 	queue_redraw()
@@ -31,41 +31,33 @@ func _build_ui() -> void:
 		return
 	var margin := MarginContainer.new()
 	margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	margin.add_theme_constant_override("margin_left", 24)
-	margin.add_theme_constant_override("margin_right", 24)
-	margin.add_theme_constant_override("margin_top", 24)
-	margin.add_theme_constant_override("margin_bottom", 24)
+	margin.add_theme_constant_override("margin_left", 12)
+	margin.add_theme_constant_override("margin_right", 12)
+	margin.add_theme_constant_override("margin_top", 12)
+	margin.add_theme_constant_override("margin_bottom", 12)
 	add_child(margin)
 	var stack := VBoxContainer.new()
 	stack.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	stack.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	stack.alignment = BoxContainer.ALIGNMENT_CENTER
-	stack.add_theme_constant_override("separation", 18)
+	stack.add_theme_constant_override("separation", 8)
 	margin.add_child(stack)
 	_word_card = PanelContainer.new()
-	_word_card.name = "FlashWordCard"
-	_word_card.custom_minimum_size = Vector2(0, 176)
+	_word_card.name = "FlashWordFocusField"
 	_word_card.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	var card_style := StyleBoxFlat.new()
-	card_style.bg_color = Color(0.10, 0.07, 0.18, 0.92)
-	card_style.border_color = Color("#8A68FF")
-	card_style.border_width_left = 2
-	card_style.border_width_right = 2
-	card_style.border_width_top = 2
-	card_style.border_width_bottom = 2
-	card_style.corner_radius_top_left = 28
-	card_style.corner_radius_top_right = 28
-	card_style.corner_radius_bottom_left = 28
-	card_style.corner_radius_bottom_right = 28
-	card_style.content_margin_left = 18
-	card_style.content_margin_right = 18
-	card_style.content_margin_top = 18
-	card_style.content_margin_bottom = 18
-	_word_card.add_theme_stylebox_override("panel", card_style)
+	_word_card.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	var focus_style := StyleBoxFlat.new()
+	focus_style.bg_color = Color.TRANSPARENT
+	focus_style.content_margin_left = 8
+	focus_style.content_margin_right = 8
+	focus_style.content_margin_top = 8
+	focus_style.content_margin_bottom = 8
+	_word_card.add_theme_stylebox_override("panel", focus_style)
 	stack.add_child(_word_card)
 	_word_label = Label.new()
-	_word_label.custom_minimum_size = Vector2(0, 132)
+	_word_label.custom_minimum_size = Vector2(0, 176)
 	_word_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_word_label.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	_word_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_word_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_word_label.autowrap_mode = TextServer.AUTOWRAP_OFF
@@ -87,9 +79,16 @@ func _build_ui() -> void:
 	_position_label.add_theme_font_size_override("font_size", 18)
 	stack.add_child(_position_label)
 
+func _on_resized() -> void:
+	_update_word_size()
+	queue_redraw()
+
 func _draw() -> void:
 	var rect := Rect2(Vector2.ZERO, size)
-	draw_rect(rect, Color("#100D18"), true)
+	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
+	draw_rect(rect, Color.BLACK if high_contrast else Color("#100D18"), true)
+	if high_contrast:
+		return
 	var band_color := Color(0.42, 0.24, 1.0, 0.16)
 	draw_circle(Vector2(size.x * 0.18, size.y * 0.20), maxf(size.x, size.y) * 0.24, band_color)
 	draw_circle(Vector2(size.x * 0.86, size.y * 0.78), maxf(size.x, size.y) * 0.30, Color(1.0, 0.72, 0.30, 0.10))
@@ -100,8 +99,7 @@ func _draw() -> void:
 func _apply_scene() -> void:
 	if not _word_label:
 		return
-	var reading_comfort := bool(_scene_data.get("reading_comfort_mode", false))
-	_word_label.add_theme_font_size_override("font_size", 124 if reading_comfort else 104)
+	_update_word_size()
 	if bool(_scene_data.get("reveal_mode", false)):
 		set_process(false)
 		_word_label.text = str(_scene_data.get("correct_display", ""))
@@ -126,6 +124,23 @@ func _apply_scene() -> void:
 	_position_label.text = ""
 	set_process(true)
 	_update_sequence()
+
+func _update_word_size() -> void:
+	if not _word_label:
+		return
+	var reading_comfort := bool(_scene_data.get("reading_comfort_mode", false))
+	var target_size: float = 118.0 if reading_comfort else 102.0
+	var longest: int = 1
+	var words_value: Variant = _scene_data.get("words", [])
+	if words_value is Array:
+		for value: Variant in words_value:
+			longest = maxi(longest, str(value).length())
+	longest = maxi(longest, str(_scene_data.get("correct_display", "")).length())
+	var available_width := maxf(size.x - 40.0, 240.0)
+	var fitted_size := available_width / maxf(float(longest) * 0.58, 1.0)
+	_word_label.add_theme_font_size_override(
+		"font_size", int(round(clampf(minf(target_size, fitted_size), 46.0, target_size)))
+	)
 
 func _process(delta: float) -> void:
 	_elapsed += delta

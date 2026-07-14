@@ -5,9 +5,9 @@ extends Control
 
 @onready var timer_bar: ProgressBar = $Margin/VBox/TimerBar
 @onready var image_rect: TextureRect = $Margin/VBox/ImageContainer/Margin/ObservationImage
-@onready var countdown_label: Label = $Margin/VBox/CountdownLabel
-@onready var instruction_label: Label = $Margin/VBox/InstructionLabel
-@onready var hint_label: Label = $Margin/VBox/Hint
+@onready var countdown_label: Label = $Margin/VBox/HUD/CountdownLabel
+@onready var instruction_label: Label = $Margin/VBox/HUD/Phase/InstructionLabel
+@onready var hint_label: Label = $Margin/VBox/HUD/Phase/Hint
 @onready var image_container: PanelContainer = $Margin/VBox/ImageContainer
 @onready var background_rect: ColorRect = $Background
 
@@ -38,7 +38,7 @@ func _ready() -> void:
 	_apply_theme()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($Margin, 20.0)
+	ResponsiveLayout.apply_centered_margin($Margin, 12.0)
 
 func _get_anim_duration(base: float) -> float:
 	if AccessibilityService and AccessibilityService.has_method("get_animation_duration"):
@@ -56,27 +56,24 @@ func _apply_theme() -> void:
 	if background_rect:
 		background_rect.color = tokens.get("background", Color("#0F0F12")) if not tokens.is_empty() else Color("#0F0F12")
 
-	# Instruction – large "OBSERVE", like Tutorial / Home Witness label
+	# The compact HUD keeps phase, family identity, and time visible without
+	# competing with the observation surface.
 	if instruction_label:
 		if ThemeService:
-			ThemeService.apply_label_style(instruction_label, "display", "text_primary")
-			instruction_label.add_theme_font_size_override("font_size", ThemeService.get_scaled_size(42))
-		else:
-			instruction_label.add_theme_font_size_override("font_size", 42)
-		instruction_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			ThemeService.apply_label_style(instruction_label, "label_small", "primary_variant")
+		instruction_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		instruction_label.text = "OBSERVE"
 
-	# Countdown – purple, headline
 	if countdown_label:
 		if ThemeService:
-			ThemeService.apply_label_style(countdown_label, "headline", "primary")
-		countdown_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			ThemeService.apply_label_style(countdown_label, "label", "text_primary")
+		countdown_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+		countdown_label.autowrap_mode = TextServer.AUTOWRAP_OFF
 
-	# Hint / challenge title
 	if hint_label:
 		if ThemeService:
-			ThemeService.apply_label_style(hint_label, "body_small", "text_secondary")
-		hint_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			ThemeService.apply_label_style(hint_label, "caption", "text_tertiary")
+		hint_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		hint_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 	# Timer bar – purple, rounded, matching Home CTA
@@ -98,27 +95,21 @@ func _apply_theme() -> void:
 		fill_style.corner_radius_bottom_right = 99
 		timer_bar.add_theme_stylebox_override("fill", fill_style)
 
-	# Image card – premium, matches ExperienceCard
+	# The stage is a clipping boundary, not a decorative card. Family artwork
+	# owns the visual field while a quiet edge protects content on small phones.
 	if image_container:
 		var style := StyleBoxFlat.new()
-		style.bg_color = tokens.get("surface", Color("#1E1E26")) if not tokens.is_empty() else Color("#1E1E26")
-		var r: int = int(tokens.get("radius_lg", 20)) if not tokens.is_empty() else 20
-		style.corner_radius_top_left = r
-		style.corner_radius_top_right = r
-		style.corner_radius_bottom_left = r
-		style.corner_radius_bottom_right = r
-		style.shadow_color = Color(0, 0, 0, 0.34)
-		style.shadow_size = 16
-		style.shadow_offset = Vector2(0, 5)
-		style.border_color = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
+		style.bg_color = Color.TRANSPARENT
+		var radius: int = int(tokens.get("radius_lg", 20))
+		style.corner_radius_top_left = radius
+		style.corner_radius_top_right = radius
+		style.corner_radius_bottom_left = radius
+		style.corner_radius_bottom_right = radius
+		style.border_color = _with_alpha(tokens.get("border", Color("#2E2E3A")), 0.55)
 		style.border_width_left = 1
 		style.border_width_right = 1
 		style.border_width_top = 1
 		style.border_width_bottom = 1
-		style.content_margin_left = 4
-		style.content_margin_right = 4
-		style.content_margin_top = 4
-		style.content_margin_bottom = 4
 		image_container.add_theme_stylebox_override("panel", style)
 
 	if image_rect:
@@ -163,10 +154,7 @@ func _load_challenge() -> void:
 				image_rect.texture = null
 
 	if hint_label:
-		hint_label.text = str(generated_scene.get(
-			"title",
-			_challenge_data.get("title", "Focus your attention")
-		))
+		hint_label.text = _challenge_identity(generated_scene)
 
 func _show_generated_scene(generated_scene: Dictionary, renderer_script: String) -> void:
 	var script: Script = load(renderer_script)
@@ -188,6 +176,25 @@ func _clear_scene_view() -> void:
 	_scene_view = null
 	if image_rect:
 		image_rect.visible = true
+
+func _challenge_identity(generated_scene: Dictionary) -> String:
+	var family_title := ""
+	var family_id := str(_challenge_data.get("family_id", ""))
+	if ChallengeFamilyRegistry and not family_id.is_empty():
+		var family: ChallengeFamily = ChallengeFamilyRegistry.get_family(family_id)
+		if family:
+			family_title = family.title
+	var scene_title := str(generated_scene.get("title", _challenge_data.get("title", "")))
+	if not family_title.is_empty() and not scene_title.is_empty() and scene_title != family_title:
+		return "%s · %s" % [family_title, scene_title]
+	if not family_title.is_empty():
+		return family_title
+	return scene_title if not scene_title.is_empty() else "Focus your attention"
+
+func _with_alpha(value: Variant, alpha: float) -> Color:
+	var color: Color = value if value is Color else Color.WHITE
+	color.a = alpha
+	return color
 
 func _start_observation() -> void:
 	_elapsed = 0.0
