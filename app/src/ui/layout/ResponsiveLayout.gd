@@ -13,13 +13,13 @@ class_name ResponsiveLayout
 
 const DEFAULT_GUTTER: float = 20.0
 ## Widths at or below this value get only the base edge gutter — no centering.
-## 1280 sits above every common phone portrait logical width (incl. the 1080
+## 1280 sits above every common phone portrait logical width (incl. the 720
 ## design viewport and large phablets) while still catching tablet / foldable
 ## landscape and editor windows.
 const CENTERING_BREAKPOINT: float = 1280.0
 ## On very wide displays, keep content near the design width so cards and
 ## type remain comfortable. Only used when width > CENTERING_BREAKPOINT.
-const MAX_CONTENT_WIDTH: float = 1080.0
+const MAX_CONTENT_WIDTH: float = 720.0
 const MIN_TOUCH_TARGET: float = 48.0
 
 static func apply_centered_margin(
