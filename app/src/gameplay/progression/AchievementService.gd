@@ -12,6 +12,17 @@ var _definitions: Array[Dictionary] = []
 func _ready() -> void:
 	pass
 
+func _play_unlock_sound() -> void:
+	if AudioService:
+		AudioService.play_sfx("ui_achievement", 0.85)
+		AudioService.duck_bgm(-6.0, 0.1)
+		var tree: SceneTree = get_tree()
+		if tree:
+			tree.create_timer(0.6).timeout.connect(func() -> void:
+				if AudioService:
+					AudioService.unduck_bgm(0.4)
+			)
+
 func initialize() -> void:
 	if _initialized:
 		return
@@ -79,6 +90,7 @@ func evaluate_after_result(result: ChallengeResult) -> Array[String]:
 			unlocked.append(achievement_id)
 			newly_unlocked.append(achievement_id)
 			achievement_unlocked.emit(achievement_id, definition.duplicate(true))
+			_play_unlock_sound()
 			if AnalyticsService:
 				AnalyticsService.log_event("achievement_unlocked", {"achievement_id": achievement_id})
 	ProfileService.profile["achievements"] = unlocked

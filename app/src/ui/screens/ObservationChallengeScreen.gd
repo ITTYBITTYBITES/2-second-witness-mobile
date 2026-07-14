@@ -16,6 +16,8 @@ var _duration: float = 2.0
 var _challenge_id: String = "challenge_01"
 var _challenge_data: Dictionary = {}
 var _scene_view: Control = null
+var _last_remaining_int: int = -1
+var _pulse_at_remaining: Array[int] = []
 
 const FALLBACK_CHALLENGE := {
 	"id": "challenge_01",
@@ -191,6 +193,15 @@ func _start_observation() -> void:
 	_elapsed = 0.0
 	_duration = maxf(_duration, 0.1)
 	set_process(true)
+	_last_remaining_int = -1
+	# Pulse on the final 3 whole-second boundaries to build anticipation.
+	_pulse_at_remaining = []
+	if _duration >= 2.5:
+		_pulse_at_remaining = [3, 2, 1]
+	elif _duration >= 1.5:
+		_pulse_at_remaining = [2, 1]
+	elif _duration >= 0.8:
+		_pulse_at_remaining = [1]
 	if instruction_label:
 		instruction_label.text = "OBSERVE"
 	if countdown_label:
@@ -198,6 +209,22 @@ func _start_observation() -> void:
 	if timer_bar:
 		timer_bar.max_value = _duration
 		timer_bar.value = _duration
+
+	# Premium entrance: a soft scale-in on the timer bar and a hint label fade.
+	if timer_bar and _should_animate():
+		timer_bar.modulate = Color(1, 1, 1, 0.0)
+		var bar_tween := create_tween()
+		bar_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+		var bar_dur := _get_anim_duration(0.30)
+		bar_tween.tween_property(timer_bar, "modulate:a", 1.0, bar_dur).set_ease(Tween.EASE_OUT)
+	if instruction_label and _should_animate():
+		instruction_label.modulate = Color(1, 1, 1, 0.0)
+		instruction_label.scale = Vector2(0.92, 0.92)
+		var lbl_tween := create_tween()
+		lbl_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+		var lbl_dur := _get_anim_duration(0.35)
+		lbl_tween.tween_property(instruction_label, "modulate:a", 1.0, lbl_dur).set_ease(Tween.EASE_OUT)
+		lbl_tween.parallel().tween_property(instruction_label, "scale", Vector2.ONE, lbl_dur).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 
 	if AccessibilityService and AccessibilityService.is_haptics_enabled():
 		AccessibilityService.vibrate(50)
@@ -214,13 +241,27 @@ func _process(delta: float) -> void:
 	if timer_bar:
 		timer_bar.value = remaining
 
+	# Tick the timer with a soft pulse on whole-second boundaries
+	var remaining_int: int = int(ceil(remaining))
+	if remaining_int != _last_remaining_int and remaining_int > 0 and remaining_int <= 3:
+		if _pulse_at_remaining.has(remaining_int):
+			if AudioService:
+				AudioService.play_sfx("flash_pulse", 0.45)
+			if timer_bar and _should_animate():
+				var tween := create_tween()
+				tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+				tween.tween_property(timer_bar, "modulate:a", 0.55, 0.05)
+				tween.tween_property(timer_bar, "modulate:a", 1.0, 0.10)
+	_last_remaining_int = remaining_int
+
 	if _elapsed >= _duration:
 		set_process(false)
 		_transition_to_question()
 
 func _transition_to_question() -> void:
 	if AudioService:
-		AudioService.play_sfx("conceal", 0.32)
+		AudioService.play_sfx("conceal", 0.40)
+		AudioService.duck_bgm(-6.0, 0.15)
 	var fade_dur := _get_anim_duration(0.22)
 	if not _should_animate():
 		_do_question_transition()

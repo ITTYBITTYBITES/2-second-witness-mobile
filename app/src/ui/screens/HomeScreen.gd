@@ -166,6 +166,11 @@ func _refresh_data() -> void:
 
 func _refresh_summary() -> void:
 	var summary: Dictionary = _home_data.get("witness_summary", {})
+	var previous_level: int = 0
+	var previous_rank: String = ""
+	if rank_label:
+		previous_level = int(stat_level.get_node("Margin/VBox/Value").text) if stat_level else 0
+		previous_rank = rank_label.text
 	rank_label.text = str(summary.get("rank", "Observer"))
 	_set_stat_value(stat_level, str(summary.get("level", 1)))
 	_set_stat_value(stat_progress, str(summary.get("progress_points", 0)))
@@ -173,10 +178,31 @@ func _refresh_summary() -> void:
 		int(summary.get("current_streak", 0)),
 		int(summary.get("best_streak", 0))
 	])
+	# Detect a rank-up and play a small celebratory flash.
+	var new_level: int = int(summary.get("level", 1))
+	if new_level > previous_level and previous_level > 0 and is_visible_in_tree():
+		_flash_rank_up()
 
 func _set_stat_value(card: PanelContainer, text: String) -> void:
 	var value: Label = card.get_node("Margin/VBox/Value") as Label
 	value.text = text
+
+func _flash_rank_up() -> void:
+	if not is_visible_in_tree():
+		return
+	if rank_label:
+		var tween := create_tween()
+		tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+		var dur := 0.5
+		tween.tween_property(rank_label, "modulate", Color(1.0, 0.72, 0.30, 1.0), dur * 0.4).set_ease(Tween.EASE_OUT)
+		tween.tween_property(rank_label, "modulate", Color(1, 1, 1, 1), dur * 0.6).set_ease(Tween.EASE_IN)
+		rank_label.scale = Vector2.ONE
+		var scale_tween := create_tween()
+		scale_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+		scale_tween.tween_property(rank_label, "scale", Vector2(1.12, 1.12), dur * 0.45).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+		scale_tween.tween_property(rank_label, "scale", Vector2.ONE, dur * 0.55).set_ease(Tween.EASE_IN)
+	if AudioService:
+		AudioService.play_sfx("ui_unlock", 0.85)
 
 func _refresh_actions() -> void:
 	var play_recommendation: Dictionary = _home_data.get("play_now", {})
