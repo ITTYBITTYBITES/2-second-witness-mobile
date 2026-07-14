@@ -167,10 +167,10 @@ func _refresh_data() -> void:
 func _refresh_summary() -> void:
 	var summary: Dictionary = _home_data.get("witness_summary", {})
 	var previous_level: int = 0
-	var previous_rank: String = ""
+	var _previous_rank: String = ""
 	if rank_label:
 		previous_level = int(stat_level.get_node("Margin/VBox/Value").text) if stat_level else 0
-		previous_rank = rank_label.text
+		_previous_rank = rank_label.text
 	rank_label.text = str(summary.get("rank", "Observer"))
 	_set_stat_value(stat_level, str(summary.get("level", 1)))
 	_set_stat_value(stat_progress, str(summary.get("progress_points", 0)))

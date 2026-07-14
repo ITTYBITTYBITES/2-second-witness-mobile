@@ -8,8 +8,6 @@ const MAX_BOOT_WAIT_TIME := 6.0
 const POLICY_VERSION := "4.0.0-2026-07-13"
 const PRIVACY_POLICY_URL := "https://ittybittybites.github.io/two-second-witness/privacy"
 const TERMS_OF_SERVICE_URL := "https://ittybittybites.github.io/two-second-witness/terms"
-const INTRO_TUTORIAL_FAMILY_ID := "scene_investigation"
-const INTRO_TUTORIAL_TEMPLATE_ID := "office_v1"
 
 const PrivacyDialogScene := preload("res://src/ui/dialogs/PrivacyTermsDialog.tscn")
 
@@ -245,13 +243,29 @@ func _needs_privacy_acknowledgment() -> bool:
 		return false
 	return true
 
+func _get_intro_family_id() -> String:
+	if not ChallengeFamilyRegistry:
+		return ""
+	var visible: Array[String] = ChallengeFamilyRegistry.get_visible_family_ids()
+	return visible[0] if not visible.is_empty() else ""
+
+func _get_intro_template_id(family_id: String) -> String:
+	if not ChallengeFamilyRegistry or family_id.is_empty():
+		return ""
+	var module = ChallengeFamilyRegistry.get_module(family_id)
+	if module == null:
+		return ""
+	var templates = module.get_templates()
+	return templates[0].template_id if not templates.is_empty() else ""
+
 func _needs_intro_tutorial() -> bool:
 	if not ProfileService or not ChallengeFamilyRegistry:
 		return false
 	var prefs: Dictionary = ProfileService.profile.get("preferences", {})
 	if bool(prefs.get("onboarding_completed", false)):
 		return false
-	return ChallengeFamilyRegistry.get_family(INTRO_TUTORIAL_FAMILY_ID) != null
+	var intro_family: String = _get_intro_family_id()
+	return not intro_family.is_empty() and ChallengeFamilyRegistry.get_family(intro_family) != null
 
 func _navigate_intro_tutorial() -> void:
 	if _is_navigating:
@@ -272,10 +286,12 @@ func _navigate_intro_tutorial() -> void:
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	tween.tween_property(self, "modulate:a", 0.0, fade_dur).set_ease(Tween.EASE_IN_OUT)
 	tween.finished.connect(func():
-		if NavigationService:
+		var intro_family: String = _get_intro_family_id()
+		var intro_template: String = _get_intro_template_id(intro_family)
+		if NavigationService and not intro_family.is_empty():
 			NavigationService.navigate_to("tutorial", {
-				"family_id": INTRO_TUTORIAL_FAMILY_ID,
-				"pending_template_id": INTRO_TUTORIAL_TEMPLATE_ID,
+				"family_id": intro_family,
+				"pending_template_id": intro_template,
 				"launch_source": "first_launch_intro",
 				"session_context": {"intro_tutorial": true}
 			})
