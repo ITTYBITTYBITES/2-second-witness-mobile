@@ -152,7 +152,7 @@ func _refresh() -> void:
 	)
 	vb.add_child(
 		_create_setting_row_slider(
-			"Interface Sounds", "volume_ui", SettingsService.get_value("volume_ui", 0.8), 0.0, 1.0, 0.1
+			"Interface Sounds", "volume_ui", SettingsService.get_value("volume_ui", 0.58), 0.0, 1.0, 0.1
 		)
 	)
 	vb.add_child(

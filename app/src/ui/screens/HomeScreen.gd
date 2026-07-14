@@ -220,7 +220,7 @@ func _refresh_actions() -> void:
 	var featured_program: Dictionary = _home_data.get("featured_program", {})
 	var programs_copy: Label = programs_card.get_node("Margin/VBox/Copy") as Label
 	if featured_program.is_empty():
-		programs_copy.text = "Curated challenge journeys are currently unavailable."
+		programs_copy.text = "Curated challenge journeys are ready from the Programs tab."
 	else:
 		programs_copy.text = "%s · %s" % [
 			str(featured_program.get("title", "Featured Program")),

@@ -183,14 +183,30 @@ func _draw_object(panel: Rect2, data: Dictionary) -> void:
 			draw_colored_polygon(PackedVector2Array([Vector2(0,-extent),Vector2(extent,extent*0.58),Vector2(0,extent*0.34),Vector2(-extent,extent*0.58)]), color)
 			draw_polyline(PackedVector2Array([Vector2(0,-extent),Vector2(extent,extent*0.58),Vector2(0,extent*0.34),Vector2(-extent,extent*0.58),Vector2(0,-extent)]), outline, 2.0)
 		_:
-			draw_rect(rect, color, true)
-			draw_rect(rect, outline, false, 2.0)
+			_draw_curio_shape(rect, color, outline)
 	if high_contrast:
 		draw_rect(rect.grow(4.0), Color.BLACK, false, 3.0)
 	if int(data.get("state", 0)) == 1:
 		draw_circle(Vector2.ZERO, maxf(5.0, extent * 0.24), Color("#FFF7DB"))
 		draw_arc(Vector2.ZERO, maxf(5.0, extent * 0.24), 0, TAU, 16, outline, 2.0)
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+
+func _draw_curio_shape(rect: Rect2, color: Color, outline: Color) -> void:
+	var center := rect.get_center()
+	var extent := minf(rect.size.x, rect.size.y) * 0.44
+	var points := PackedVector2Array([
+		center + Vector2(0, -extent),
+		center + Vector2(extent * 0.78, -extent * 0.16),
+		center + Vector2(extent * 0.48, extent * 0.82),
+		center + Vector2(-extent * 0.48, extent * 0.82),
+		center + Vector2(-extent * 0.78, -extent * 0.16),
+	])
+	draw_colored_polygon(points, color)
+	var outline_points := PackedVector2Array(points)
+	outline_points.append(points[0])
+	draw_polyline(outline_points, outline, 2.0)
+	draw_circle(center, extent * 0.30, Color("#FFF7DB"), false, 2.0)
+	draw_line(center + Vector2(-extent * 0.18, 0), center + Vector2(extent * 0.18, 0), outline, 2.0)
 
 func _draw_reveal_regions() -> void:
 	var pulse := 0.72 + 0.28 * sin(_elapsed * 4.5)

@@ -1,9 +1,25 @@
 extends RefCounted
 class_name ResponsiveLayout
 ## Shared responsive-layout helpers for portrait phones, foldables, and tablets.
+##
+## Mobile-first architecture:
+##   - On phones / phablets the content uses the full available width minus a
+##     modest edge gutter. There is no centered "desktop column".
+##   - Centering only engages above CENTERING_BREAKPOINT (tablet / foldable /
+##     desktop-editor widths) so content does not stretch into an unreadable
+##     super-wide column.
+##
+## This is a mobile game, not a responsive website. Screens must feel native.
 
 const DEFAULT_GUTTER: float = 20.0
-const MAX_CONTENT_WIDTH: float = 960.0
+## Widths at or below this value get only the base edge gutter — no centering.
+## 1280 sits above every common phone portrait logical width (incl. the 1080
+## design viewport and large phablets) while still catching tablet / foldable
+## landscape and editor windows.
+const CENTERING_BREAKPOINT: float = 1280.0
+## On very wide displays, keep content near the design width so cards and
+## type remain comfortable. Only used when width > CENTERING_BREAKPOINT.
+const MAX_CONTENT_WIDTH: float = 1080.0
 const MIN_TOUCH_TARGET: float = 48.0
 
 static func apply_centered_margin(
@@ -15,7 +31,8 @@ static func apply_centered_margin(
 		return base_gutter
 	var viewport_width: float = margin.get_viewport_rect().size.x
 	if viewport_width <= 0.0:
-		viewport_width = maxf(margin.size.x, max_content_width)
+		# Prefer the control's own laid-out width over inventing a desktop column.
+		viewport_width = maxf(margin.size.x, 360.0)
 	var gutter: float = horizontal_gutter(viewport_width, base_gutter, max_content_width)
 	margin.add_theme_constant_override("margin_left", int(round(gutter)))
 	margin.add_theme_constant_override("margin_right", int(round(gutter)))
@@ -26,6 +43,10 @@ static func horizontal_gutter(
 	base_gutter: float = DEFAULT_GUTTER,
 	max_content_width: float = MAX_CONTENT_WIDTH
 ) -> float:
+	# Phones and phablets: full-bleed content with only edge padding.
+	if viewport_width <= CENTERING_BREAKPOINT:
+		return base_gutter
+	# Tablets / foldables / wide editor: center a design-width content column.
 	return maxf(base_gutter, (viewport_width - max_content_width) * 0.5)
 
 static func scale_safe_area_insets(

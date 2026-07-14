@@ -62,7 +62,7 @@ theme_override_constants/separation = 14
 [node name="Icon" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-text = "◉"
+text = "WITNESS"
 horizontal_alignment = 1
 vertical_alignment = 1
 theme_override_font_sizes/font_size = 38

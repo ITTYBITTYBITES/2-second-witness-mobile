@@ -25,7 +25,7 @@ func _ready() -> void:
 	_ensure_wired()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($MainMargin, 20.0, 840.0)
+	ResponsiveLayout.apply_centered_margin($MainMargin, 20.0)
 
 func _ensure_wired() -> void:
 	if replay_btn and not replay_btn.pressed.is_connected(_on_replay):

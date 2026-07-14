@@ -27,7 +27,7 @@ func _ready() -> void:
 	margin.add_theme_constant_override("margin_top", 24)
 	margin.add_theme_constant_override("margin_bottom", 24)
 	add_child(margin)
-	ResponsiveLayout.apply_centered_margin(margin, 24.0, 760.0)
+	ResponsiveLayout.apply_centered_margin(margin, 24.0)
 	var scroll := ScrollContainer.new()
 	scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL

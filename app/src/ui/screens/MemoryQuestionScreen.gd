@@ -23,7 +23,7 @@ func _ready() -> void:
 	_apply_theme()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($MainMargin, 20.0, 840.0)
+	ResponsiveLayout.apply_centered_margin($MainMargin, 20.0)
 
 func _should_animate() -> bool:
 	return AccessibilityService.should_animate() if AccessibilityService else true

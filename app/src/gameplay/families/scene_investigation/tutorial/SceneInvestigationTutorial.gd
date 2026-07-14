@@ -71,7 +71,7 @@ var _steps := [
 		"title": "YOUR TURN",
 		"desc": "Your first round uses a clear Office scene and comfortable timing.",
 		"mode": "eye",
-		"button": "START PRACTICE  ▶",
+		"button": "START PRACTICE",
 		"eye_alpha": 1.0,
 		"eye_scale": 1.0,
 		"pulse": true
@@ -90,7 +90,7 @@ func _ready() -> void:
 	_wire_buttons()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($MainMargin, 24.0, 840.0)
+	ResponsiveLayout.apply_centered_margin($MainMargin, 24.0)
 
 func _prepare_demo() -> void:
 	if not ChallengeFamilyRegistry:

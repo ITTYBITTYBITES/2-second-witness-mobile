@@ -99,7 +99,7 @@ func _draw_object(data: Dictionary, canvas_size: Vector2) -> void:
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
 	var outline := Color.BLACK if high_contrast else Color("#24242C")
 	var detail := body.lightened(0.35 if high_contrast else 0.28)
-	var kind := str(data.get("visual_kind", "generic"))
+	var kind := str(data.get("visual_kind", "evidence_marker"))
 
 	draw_set_transform(center, object_rotation, Vector2.ONE)
 	var rect := Rect2(-object_size * 0.5, object_size)
@@ -130,8 +130,7 @@ func _draw_object(data: Dictionary, canvas_size: Vector2) -> void:
 		"bread":
 			_draw_bread(rect, body, detail, outline)
 		_:
-			draw_rect(rect, body, true)
-			draw_rect(rect, outline, false, 3.0)
+			_draw_evidence_marker(rect, body, detail, outline)
 
 	if high_contrast:
 		draw_rect(rect.grow(6.0), Color.BLACK, false, 3.0)
@@ -142,6 +141,19 @@ func _draw_object(data: Dictionary, canvas_size: Vector2) -> void:
 		draw_rect(focus_rect, Color(0.42, 0.24, 1.0, pulse), false, 5.0)
 		draw_rect(focus_rect.grow(5.0), Color(0.42, 0.24, 1.0, 0.18 * pulse), false, 3.0)
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+
+func _draw_evidence_marker(rect: Rect2, body: Color, detail: Color, outline: Color) -> void:
+	var center := rect.get_center()
+	var radius := minf(rect.size.x, rect.size.y) * 0.42
+	var points := PackedVector2Array()
+	for index: int in range(6):
+		points.append(center + Vector2.UP.rotated(TAU * float(index) / 6.0) * radius)
+	draw_colored_polygon(points, body)
+	draw_polyline(points, outline, 3.0)
+	draw_circle(center, radius * 0.48, Color(detail, 0.42))
+	draw_arc(center, radius * 0.48, 0, TAU, 24, outline, 2.0)
+	draw_line(center + Vector2(-radius * 0.30, 0), center + Vector2(radius * 0.30, 0), detail, 3.0)
+	draw_line(center + Vector2(0, -radius * 0.30), center + Vector2(0, radius * 0.30), detail, 3.0)
 
 func _draw_box_kind(kind: String, rect: Rect2, body: Color, detail: Color, outline: Color) -> void:
 	draw_rect(rect, body, true)

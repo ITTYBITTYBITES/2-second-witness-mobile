@@ -38,7 +38,7 @@ func _ready() -> void:
 	_apply_theme()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($Margin, 20.0, 1040.0)
+	ResponsiveLayout.apply_centered_margin($Margin, 20.0)
 
 func _get_anim_duration(base: float) -> float:
 	if AccessibilityService and AccessibilityService.has_method("get_animation_duration"):
