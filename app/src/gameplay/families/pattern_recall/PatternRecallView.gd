@@ -20,9 +20,11 @@ func _setup_background() -> void:
 		bg.name = "Background"
 		bg.texture = load(bg_path)
 		bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		bg.stretch_mode = TextureRect.STRETCH_SCALE
+		bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 		bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 		bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		bg.modulate = Color(0.34, 0.43, 0.54, 0.52)
+		bg.show_behind_parent = true
 		add_child(bg)
 	else:
 		pass
@@ -106,7 +108,7 @@ func _draw_shape_presentation(sequence: Array) -> void:
 	var interval := maxf(float(_scene.get("interval", 0.8)), 0.15)
 	var index := mini(int(_elapsed / interval), sequence.size() - 1)
 	var token := str(sequence[index])
-	var panel := Rect2(size.x * 0.18, size.y * 0.16, size.x * 0.64, size.y * 0.64)
+	var panel := Rect2(size.x * 0.10, size.y * 0.10, size.x * 0.80, size.y * 0.76)
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
 	draw_rect(panel, Color("#111111") if high_contrast else Color("#242533"), true)
 	draw_rect(panel, Color.WHITE if high_contrast else Color("#69677D"), false, 4.0 if high_contrast else 3.0)
@@ -153,7 +155,7 @@ func _draw_reveal(sequence: Array, mode: String) -> void:
 				_draw_number_badge(rect.position + Vector2(20, 20), sequence_index + 1)
 
 func _grid_geometry(grid_size: int) -> Dictionary:
-	var side: float = minf(size.x * 0.78, size.y * 0.72)
+	var side: float = minf(size.x * 0.88, size.y * 0.82)
 	return {
 		"origin": Vector2((size.x - side) / 2.0, (size.y - side) / 2.0),
 		"cell": side / float(grid_size)
@@ -167,7 +169,7 @@ func _token_center(token: String, grid_size: int, origin: Vector2, cell: float) 
 	return origin + Vector2((float(column) + 0.5) * cell, (float(row) + 0.5) * cell)
 
 func _draw_step_counter(current: int, total: int) -> void:
-	draw_string(ThemeDB.fallback_font, Vector2(size.x * 0.10, size.y * 0.91), "STEP %d OF %d" % [current, total], HORIZONTAL_ALIGNMENT_CENTER, size.x * 0.80, 17, Color("#B8B8CC"))
+	draw_string(ThemeDB.fallback_font, Vector2(size.x * 0.10, size.y * 0.95), "STEP %d OF %d" % [current, total], HORIZONTAL_ALIGNMENT_CENTER, size.x * 0.80, 17, Color("#D3CCE8"))
 
 func _draw_number_badge(center: Vector2, number: int) -> void:
 	draw_circle(center, 16.0, Color("#FFB84D"))

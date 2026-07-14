@@ -246,9 +246,9 @@ func _update_chrome(route: String) -> void:
 	if routes_script:
 		is_tab = routes_script.is_tab_route(route)
 
-	# Hide chrome for the launch splash/loading sequence. Gameplay screens show
-	# top bar (for exit/back) but hide the bottom tab bar so players cannot
-	# wander off mid-challenge.
+	# Launch screens remain full-viewport. Active gameplay owns a compact,
+	# safe-area-aware exit control so the generic app header and tab bar do not
+	# sit between the player and the challenge.
 	var is_splash := route in ["publisher_splash", "title_splash", "splash"]
 	var is_gameplay := route in ["observation", "memory_question", "result"]
 
@@ -258,7 +258,7 @@ func _update_chrome(route: String) -> void:
 			nav_bar.set_current_route(route)
 
 	if top_bar:
-		top_bar.visible = not is_splash
+		top_bar.visible = not is_splash and not is_gameplay
 		if top_bar.has_method("set_show_back"):
 			var show_back := not is_tab and not is_splash
 			if route == "about":

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://profile_screen"]
+[gd_scene load_steps=3 format=3 uid="uid://profile_screen"]
 
 [ext_resource type="Script" path="res://src/ui/screens/ProfileScreen.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/brand/witness_eye_glow.png" id="2_eye"]
 
 [node name="ProfileScreen" type="Control" groups=["app_screen"]]
 layout_mode = 3
@@ -42,55 +43,90 @@ horizontal_scroll_mode = 0
 [node name="VBox" type="VBoxContainer" parent="Margin/Scroll"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/separation = 16
+theme_override_constants/separation = 18
 
 [node name="AvatarCard" type="PanelContainer" parent="Margin/Scroll/VBox"]
-custom_minimum_size = Vector2(0, 112)
+custom_minimum_size = Vector2(0, 152)
 layout_mode = 2
 
 [node name="Margin" type="MarginContainer" parent="Margin/Scroll/VBox/AvatarCard"]
 layout_mode = 2
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_right = 16
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_bottom = 18
 
 [node name="HBox" type="HBoxContainer" parent="Margin/Scroll/VBox/AvatarCard/Margin"]
 layout_mode = 2
-theme_override_constants/separation = 14
+theme_override_constants/separation = 16
 
-[node name="Icon" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox"]
-custom_minimum_size = Vector2(64, 64)
+[node name="Badge" type="PanelContainer" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox"]
+custom_minimum_size = Vector2(88, 104)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Badge"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBox" type="VBoxContainer" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Badge/Margin"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 2
+
+[node name="Eye" type="TextureRect" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Badge/Margin/VBox"]
+custom_minimum_size = Vector2(64, 58)
+layout_mode = 2
+texture = ExtResource("2_eye")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BadgeLabel" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Badge/Margin/VBox"]
 layout_mode = 2
 text = "WITNESS"
 horizontal_alignment = 1
-vertical_alignment = 1
-theme_override_font_sizes/font_size = 38
+autowrap_mode = 0
 
 [node name="Text" type="VBoxContainer" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
+alignment = 1
+theme_override_constants/separation = 4
+
+[node name="Eyebrow" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Text"]
+layout_mode = 2
+text = "YOUR WITNESS PROFILE"
+autowrap_mode = 3
 
 [node name="NameLabel" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Text"]
 layout_mode = 2
 text = "Witness"
+autowrap_mode = 3
 
-[node name="IdLabel" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Text"]
+[node name="RankLabel" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Text"]
 layout_mode = 2
-text = "Witness ID"
+text = "Observer"
+autowrap_mode = 3
 
 [node name="SinceLabel" type="Label" parent="Margin/Scroll/VBox/AvatarCard/Margin/HBox/Text"]
 layout_mode = 2
-text = "Member since"
+text = "Witness since today"
 autowrap_mode = 3
 
 [node name="LevelCard" type="PanelContainer" parent="Margin/Scroll/VBox"]
-custom_minimum_size = Vector2(0, 104)
+custom_minimum_size = Vector2(0, 144)
 layout_mode = 2
 
 [node name="ObservationHeader" type="Label" parent="Margin/Scroll/VBox"]
 layout_mode = 2
 text = "WITNESS RECORD"
+
+[node name="RecordIntro" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode = 2
+text = "The moments that best tell your story."
+autowrap_mode = 3
 
 [node name="StatsGrid" type="GridContainer" parent="Margin/Scroll/VBox"]
 layout_mode = 2
@@ -102,41 +138,14 @@ theme_override_constants/v_separation = 10
 layout_mode = 2
 text = "CHALLENGE TYPE MASTERY"
 
+[node name="MasteryIntro" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode = 2
+text = "Every round builds a different observation skill."
+autowrap_mode = 3
+
 [node name="ExperienceProgress" type="VBoxContainer" parent="Margin/Scroll/VBox"]
 layout_mode = 2
 theme_override_constants/separation = 10
-
-[node name="HistoryHeader" type="Label" parent="Margin/Scroll/VBox"]
-layout_mode = 2
-text = "CHALLENGE HISTORY"
-
-[node name="HistoryList" type="VBoxContainer" parent="Margin/Scroll/VBox"]
-layout_mode = 2
-theme_override_constants/separation = 8
-
-[node name="RecentlyPlayedHeader" type="Label" parent="Margin/Scroll/VBox"]
-layout_mode = 2
-text = "RECENTLY PLAYED"
-
-[node name="RecentlyPlayed" type="VBoxContainer" parent="Margin/Scroll/VBox"]
-layout_mode = 2
-theme_override_constants/separation = 8
-
-[node name="FavoritesHeader" type="Label" parent="Margin/Scroll/VBox"]
-layout_mode = 2
-text = "FAVORITE CHALLENGE TYPES"
-
-[node name="FavoritesList" type="VBoxContainer" parent="Margin/Scroll/VBox"]
-layout_mode = 2
-theme_override_constants/separation = 8
-
-[node name="ProgramsHeader" type="Label" parent="Margin/Scroll/VBox"]
-layout_mode = 2
-text = "PROGRAM RECORD"
-
-[node name="ProgramSummary" type="VBoxContainer" parent="Margin/Scroll/VBox"]
-layout_mode = 2
-theme_override_constants/separation = 8
 
 [node name="AchievementsHeader" type="Label" parent="Margin/Scroll/VBox"]
 layout_mode = 2
@@ -149,8 +158,8 @@ layout_mode = 2
 layout_mode = 2
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_right = 16
-theme_override_constants/margin_top = 14
-theme_override_constants/margin_bottom = 14
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_bottom = 16
 
 [node name="VBox" type="VBoxContainer" parent="Margin/Scroll/VBox/AchievementCard/Margin"]
 layout_mode = 2
@@ -158,18 +167,71 @@ theme_override_constants/separation = 10
 
 [node name="Summary" type="Label" parent="Margin/Scroll/VBox/AchievementCard/Margin/VBox"]
 layout_mode = 2
-text = "0 of 10 achievements unlocked"
+text = "0 achievements earned"
+
+[node name="NextMilestone" type="Label" parent="Margin/Scroll/VBox/AchievementCard/Margin/VBox"]
+layout_mode = 2
+text = "Your next milestone will appear here."
+autowrap_mode = 3
+
+[node name="AchievementBar" type="ProgressBar" parent="Margin/Scroll/VBox/AchievementCard/Margin/VBox"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+show_percentage = false
 
 [node name="AchievementButton" type="Button" parent="Margin/Scroll/VBox/AchievementCard/Margin/VBox"]
-custom_minimum_size = Vector2(0, 48)
+custom_minimum_size = Vector2(0, 52)
 layout_mode = 2
-text = "VIEW ACHIEVEMENTS"
+text = "EXPLORE ACHIEVEMENTS  →"
+
+[node name="HistoryHeader" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode = 2
+text = "RECENT CHALLENGES"
+
+[node name="HistoryIntro" type="Label" parent="Margin/Scroll/VBox"]
+layout_mode = 2
+text = "A simple record of the details you explored."
+autowrap_mode = 3
+
+[node name="HistoryList" type="VBoxContainer" parent="Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ProgramsHeader" type="Label" parent="Margin/Scroll/VBox"]
+visible = false
+layout_mode = 2
+text = "PROGRAM JOURNEYS"
+
+[node name="ProgramSummary" type="VBoxContainer" parent="Margin/Scroll/VBox"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="RecentlyPlayedHeader" type="Label" parent="Margin/Scroll/VBox"]
+visible = false
+layout_mode = 2
+text = "RECENTLY PLAYED"
+
+[node name="RecentlyPlayed" type="VBoxContainer" parent="Margin/Scroll/VBox"]
+visible = false
+layout_mode = 2
+
+[node name="FavoritesHeader" type="Label" parent="Margin/Scroll/VBox"]
+visible = false
+layout_mode = 2
+text = "FAVORITE CHALLENGE TYPES"
+
+[node name="FavoritesList" type="VBoxContainer" parent="Margin/Scroll/VBox"]
+visible = false
+layout_mode = 2
 
 [node name="CollectionsHeader" type="Label" parent="Margin/Scroll/VBox"]
+visible = false
 layout_mode = 2
 text = "COLLECTIONS"
 
 [node name="CollectionsCard" type="PanelContainer" parent="Margin/Scroll/VBox"]
+visible = false
 layout_mode = 2
 
 [node name="Margin" type="MarginContainer" parent="Margin/Scroll/VBox/CollectionsCard"]
@@ -191,11 +253,6 @@ text = "COLLECTION PROGRESS"
 layout_mode = 2
 text = "Challenge Types discovered: 0 / 0\nAchievements collected: 0 / 0\nCurated runs completed: 0"
 autowrap_mode = 3
-
-[node name="ResetButton" type="Button" parent="Margin/Scroll/VBox"]
-custom_minimum_size = Vector2(0, 48)
-layout_mode = 2
-text = "RESET PROFILE (DEBUG)"
 
 [node name="BottomSpacer" type="Control" parent="Margin/Scroll/VBox"]
 custom_minimum_size = Vector2(0, 24)
