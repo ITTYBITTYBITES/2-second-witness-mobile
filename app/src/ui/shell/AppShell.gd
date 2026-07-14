@@ -287,7 +287,7 @@ func _update_chrome(route: String) -> void:
 	# resolved after chrome state is final.
 	_apply_safe_area()
 
-func _on_phase_changed(new_phase, old_phase) -> void:
+func _on_phase_changed(_new_phase, _old_phase) -> void:
 	if NavigationService:
 		_update_chrome(NavigationService.current_route)
 	else:

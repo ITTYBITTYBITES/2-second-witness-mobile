@@ -351,11 +351,11 @@ def sfx_object_settle() -> List[float]:
 
 def sfx_pattern_step() -> List[float]:
     """A clean per-step tone for pattern recall."""
-    n = int(0.090 * SR)
+    n = int(0.140 * SR)
     f = 660.0
     s = [math.sin(TWO_PI * f * i / SR) for i in range(n)]
     s2 = [0.4 * math.sin(TWO_PI * (2 * f) * i / SR) for i in range(n)]
-    env = _adsr(n, 0.002, 0.030, 0.0, 0.055)
+    env = _adsr(n, 0.002, 0.040, 0.1, 0.098)
     return [(s[i] + s2[i]) * env[i] * 0.55 for i in range(n)]
 
 

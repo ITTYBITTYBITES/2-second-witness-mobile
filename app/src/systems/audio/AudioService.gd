@@ -16,7 +16,8 @@ const MIN_VOLUME_DB: float = -80.0
 static func linear_to_db(linear: float) -> float:
 	if linear <= 0.0:
 		return MIN_VOLUME_DB
-	return AudioServer.linear_to_db(max(linear, MIN_LINEAR_VOLUME))
+	var safe_linear: float = maxf(linear, MIN_LINEAR_VOLUME)
+	return 20.0 * (log(safe_linear) / log(10.0))
 
 enum Bus { MASTER, BGM, SFX, UI }
 

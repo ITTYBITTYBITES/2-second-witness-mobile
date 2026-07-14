@@ -6,8 +6,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from PIL import Image
-
 ROOT = Path(__file__).resolve().parents[3]
 APP = ROOT / "app"
 CONTENT = APP / "src/gameplay/families/scene_investigation/content"
@@ -56,9 +54,16 @@ for path in sorted(CONTENT.glob("*.json")):
         if not local_image.exists():
             errors.append(f"{template_id} background image is missing: {image_path}")
         else:
-            with Image.open(local_image) as image:
-                if image.width < 700 or image.height < 900:
-                    errors.append(f"{template_id} background resolution is too small: {image.size}")
+            try:
+                from PIL import Image
+                with Image.open(local_image) as image:
+                    width, height = image.size
+            except ModuleNotFoundError:
+                import struct
+                header = local_image.read_bytes()
+                width, height = struct.unpack('>II', header[16:24])
+            if width < 700 or height < 900:
+                errors.append(f"{template_id} background resolution is too small: {(width, height)}")
     surface_y = float(background.get("surface_y", 0.0))
     if not 0.25 <= surface_y <= 0.60:
         errors.append(f"{template_id} surface_y is outside approved composition range")

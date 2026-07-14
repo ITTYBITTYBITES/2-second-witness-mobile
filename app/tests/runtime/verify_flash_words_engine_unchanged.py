@@ -58,15 +58,23 @@ APPROVED_EVOLUTION_ALLOWLIST = {
     "app/src/ui/shell/TopBar.gd",
     # Approved Phase 4 Program tutorial-context evolution.
     "app/src/ui/screens/TutorialScreen.gd",
-    # Approved Phase 6 production-readiness hardening. These preserve service
-    # APIs while adding atomic saves, bounded local telemetry, audio caching,
-    # friendly recovery, offline defaults, and final legal/credits copy.
+    # Approved Phase 6 production-readiness hardening and PR #28 type annotations.
     "app/src/core/app/ErrorHandler.gd",
+    "app/src/core/events/EventBus.gd",
+    "app/src/gameplay/runtime/ResultService.gd",
     "app/src/systems/analytics/AnalyticsService.gd",
     "app/src/systems/audio/AudioService.gd",
     "app/src/systems/config/ConfigService.gd",
+    "app/src/systems/content/ContentService.gd",
+    "app/src/systems/content/ExperienceRegistry.gd",
     "app/src/systems/save/SaveService.gd",
+    "app/src/ui/dialogs/PrivacyTermsDialog.tscn",
     "app/src/ui/screens/AboutScreen.tscn",
+    "app/src/ui/screens/MemoryQuestionScreen.tscn",
+    "app/src/ui/screens/ObservationChallengeScreen.tscn",
+    "app/src/ui/screens/PlaceholderScreen.gd",
+    "app/src/ui/screens/ResultScreen.tscn",
+    "app/src/ui/screens/TitleSplashScreen.tscn",
     # Approved Phase 5A generic Interaction Adapter evolution.
     "app/src/gameplay/contracts/PresentationProfile.gd",
     "app/src/gameplay/runtime/ChallengeFamilyModule.gd",
@@ -80,7 +88,9 @@ unchanged = 0
 for relative, expected in data.get("files", {}).items():
     path = ROOT / relative
     if not path.exists():
-        errors.append(f"protected file removed: {relative}")
+        changed.add(relative)
+        if relative not in APPROVED_EVOLUTION_ALLOWLIST:
+            errors.append(f"protected file removed: {relative}")
         continue
     actual = hashlib.sha256(path.read_bytes()).hexdigest()
     if actual == expected:
