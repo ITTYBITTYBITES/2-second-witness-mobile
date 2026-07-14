@@ -13,10 +13,10 @@ var _initialized: bool = false
 const DEFAULT_SETTINGS := {
 	"version": 2,
 	# Audio
-	"volume_master": 1.0,
-	"volume_bgm": 0.7,
-	"volume_sfx": 0.9,
-	"volume_ui": 0.8,
+	"volume_master": 0.95,
+	"volume_bgm": 0.62,
+	"volume_sfx": 0.78,
+	"volume_ui": 0.58,
 	"mute_master": false,
 	"mute_bgm": false,
 	"mute_sfx": false,

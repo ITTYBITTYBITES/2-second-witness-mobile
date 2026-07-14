@@ -89,21 +89,39 @@ func _create_card(status: Dictionary) -> Control:
 	var row := HBoxContainer.new()
 	row.add_theme_constant_override("separation", 14)
 	margin.add_child(row)
-	var icon := Label.new()
-	icon.text = "◆" if bool(status.get("unlocked", false)) else "◇"
-	icon.add_theme_font_size_override(
+	var badge_panel := PanelContainer.new()
+	badge_panel.custom_minimum_size = Vector2(68, 34)
+	var badge_style := StyleBoxFlat.new()
+	badge_style.bg_color = (
+		Color(ThemeService.get_color("success", Color("#2EE6A6")), 0.28)
+		if bool(status.get("unlocked", false)) and ThemeService
+		else Color(ThemeService.get_color("primary", Color("#6A3DFF")), 0.18) if ThemeService else Color("#2A2A36")
+	)
+	badge_style.border_color = ThemeService.get_color("success", Color("#2EE6A6")) if bool(status.get("unlocked", false)) and ThemeService else ThemeService.get_color("border_strong", Color("#3D3D4D")) if ThemeService else Color("#3D3D4D")
+	badge_style.border_width_left = 1
+	badge_style.border_width_right = 1
+	badge_style.border_width_top = 1
+	badge_style.border_width_bottom = 1
+	badge_style.corner_radius_top_left = 14
+	badge_style.corner_radius_top_right = 14
+	badge_style.corner_radius_bottom_left = 14
+	badge_style.corner_radius_bottom_right = 14
+	badge_style.content_margin_left = 8
+	badge_style.content_margin_right = 8
+	badge_style.content_margin_top = 6
+	badge_style.content_margin_bottom = 6
+	badge_panel.add_theme_stylebox_override("panel", badge_style)
+	var badge := Label.new()
+	badge.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	badge.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	badge.text = "DONE" if bool(status.get("unlocked", false)) else "NEXT"
+	badge.add_theme_font_size_override(
 		"font_size",
-		ThemeService.get_font_size("headline") if ThemeService else 28
+		ThemeService.get_font_size("label_small") if ThemeService else 14
 	)
-	icon.add_theme_color_override(
-		"font_color",
-		(
-			ThemeService.get_color("success", Color("#2EE6A6"))
-			if bool(status.get("unlocked", false)) and ThemeService
-			else ThemeService.get_color("text_tertiary", Color("#8A8AA3")) if ThemeService else Color("#8A8AA3")
-		)
-	)
-	row.add_child(icon)
+	badge.add_theme_color_override("font_color", ThemeService.get_color("text_primary", Color.WHITE) if ThemeService else Color.WHITE)
+	badge_panel.add_child(badge)
+	row.add_child(badge_panel)
 	var text_stack := VBoxContainer.new()
 	text_stack.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	row.add_child(text_stack)

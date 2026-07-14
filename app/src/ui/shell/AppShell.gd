@@ -116,8 +116,11 @@ func _on_boot_failed(reason: String) -> void:
 		NavigationService.navigate_to("publisher_splash")
 
 func _on_route_changed(route: String, params: Dictionary) -> void:
-	_load_screen(route, params)
+	# Resolve chrome visibility and safe-area content rect before mounting the
+	# screen. This prevents splash/gameplay routes from drawing one frame inside
+	# the previous route's content frame.
 	_update_chrome(route)
+	_load_screen(route, params)
 
 func _load_screen(route: String, params: Dictionary = {}) -> void:
 	var started_at: int = Time.get_ticks_usec()
@@ -135,6 +138,11 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 	if was_cached:
 		_current_screen = _screen_cache[route]
 		_current_screen.visible = true
+		_current_screen.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_current_screen.offset_left = 0.0
+		_current_screen.offset_top = 0.0
+		_current_screen.offset_right = 0.0
+		_current_screen.offset_bottom = 0.0
 		if _current_screen.has_method("on_navigated_to"):
 			_current_screen.call("on_navigated_to", params)
 	else:
@@ -150,12 +158,22 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 			screen_instance = _create_unavailable_screen(route)
 		if screen_instance:
 			screen_instance.name = "%sScreenInstance" % route.capitalize()
+			# ContentContainer is a plain Control (not a Container), so size flags
+			# alone do not expand children. Force full-rect anchors so every
+			# production screen fills the available phone viewport.
+			screen_instance.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 			screen_instance.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 			screen_instance.size_flags_vertical = Control.SIZE_EXPAND_FILL
 			if content_container:
 				content_container.add_child(screen_instance)
 			else:
 				add_child(screen_instance)
+			# Re-assert after parenting; Godot can reset offsets when reparenting.
+			screen_instance.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+			screen_instance.offset_left = 0.0
+			screen_instance.offset_top = 0.0
+			screen_instance.offset_right = 0.0
+			screen_instance.offset_bottom = 0.0
 			if CACHEABLE_ROUTES.has(route):
 				_screen_cache[route] = screen_instance
 			_current_screen = screen_instance
@@ -458,21 +476,29 @@ func _apply_safe_area() -> void:
 	if content_container:
 		var current_route = NavigationService.current_route if NavigationService else "home"
 		var is_splash: bool = current_route in ["publisher_splash", "title_splash", "splash"]
-		var top_offset: float = top
+		var top_offset: float = 0.0
+		var bottom_inset: float = 0.0
+		var content_left: int = 0
+		var content_right: int = 0
 		if not is_splash:
-			top_offset += top_bar_height
-		var bottom_inset: float = bottom
-		if nav_bar and nav_bar.visible:
-			bottom_inset += nav_bar_height
-		var viewport_height: float = get_viewport_rect().size.y
-		var min_content_height := 260.0
-		if viewport_height > 0.0 and top_offset + bottom_inset > viewport_height - min_content_height:
-			var overflow := top_offset + bottom_inset - (viewport_height - min_content_height)
-			bottom_inset = maxf(bottom, bottom_inset - overflow)
+			# App content respects safe areas and visible chrome. Splash routes are
+			# intentionally full-viewport so publisher artwork and the title boot
+			# sequence feel native instead of inset or scaled inside a safe-area box.
+			top_offset = top + top_bar_height
+			bottom_inset = bottom
+			content_left = left
+			content_right = right
+			if nav_bar and nav_bar.visible:
+				bottom_inset += nav_bar_height
+			var viewport_height: float = get_viewport_rect().size.y
+			var min_content_height := 260.0
+			if viewport_height > 0.0 and top_offset + bottom_inset > viewport_height - min_content_height:
+				var overflow := top_offset + bottom_inset - (viewport_height - min_content_height)
+				bottom_inset = maxf(bottom, bottom_inset - overflow)
 		content_container.offset_top = top_offset
 		content_container.offset_bottom = -bottom_inset
-		content_container.offset_left = left
-		content_container.offset_right = -right
+		content_container.offset_left = content_left
+		content_container.offset_right = -content_right
 
 	# Store in ThemeService tokens for children to use
 	if ThemeService and ThemeService.tokens:
@@ -495,7 +521,7 @@ func _setup_loading_overlay() -> void:
 		ThemeService.apply_label_style(msg_label, "body", "text_primary")
 		msg_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
-	# Branded eye pulse; no stock spinner and no color-only status.
+	# Branded eye pulse; no generic spinner and no color-only status.
 	var spinner := loading_overlay.get_node_or_null("Center/VBox/Spinner")
 	if spinner is TextureRect:
 		var eye := spinner as TextureRect
@@ -504,7 +530,7 @@ func _setup_loading_overlay() -> void:
 		eye.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	elif spinner is Label:
 		var spinner_label := spinner as Label
-		spinner_label.text = "◉"
+		spinner_label.text = "WITNESS"
 		ThemeService.apply_typography(spinner_label, "display")
 		spinner_label.add_theme_color_override("font_color", tokens.get("primary", Color.WHITE))
 		spinner_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

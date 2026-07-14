@@ -1,7 +1,7 @@
 extends Control
 ## TitleSplashScreen - Two Second Witness branded boot
 ## Matches Home screen hero exactly for seamless transition
-## Eye motif pulses as loading indicator – no stock spinners
+## Eye motif pulses as loading indicator – no generic spinners
 
 const MIN_DISPLAY_TIME := 1.2
 const MAX_BOOT_WAIT_TIME := 6.0
@@ -42,7 +42,7 @@ func _ready() -> void:
 	_update_loading_ui("Initializing…", 0.0)
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($MainMargin, 24.0, 760.0)
+	ResponsiveLayout.apply_centered_margin($MainMargin, 24.0)
 
 func _apply_theme() -> void:
 	var tokens := {}

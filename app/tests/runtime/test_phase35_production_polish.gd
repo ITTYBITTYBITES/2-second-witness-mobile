@@ -74,9 +74,12 @@ func _verify_boot_and_orientation() -> void:
 	publisher.queue_free()
 
 func _verify_responsive_math() -> void:
+	# Mobile-first: phones and phablets fill the viewport with only the edge gutter.
+	# Centering engages only above CENTERING_BREAKPOINT (tablets / foldables).
 	_check(is_equal_approx(ResponsiveLayout.horizontal_gutter(360.0), 20.0), "Compact phones retain a 20 px content gutter")
-	_check(is_equal_approx(ResponsiveLayout.horizontal_gutter(1080.0), 60.0), "Standard portrait layout centers a 960 px content column")
-	_check(is_equal_approx(ResponsiveLayout.horizontal_gutter(1600.0), 320.0), "Tablets and unfolded displays cap content width")
+	_check(is_equal_approx(ResponsiveLayout.horizontal_gutter(1080.0), 20.0), "Standard portrait phones fill the viewport without a centered desktop column")
+	_check(is_equal_approx(ResponsiveLayout.horizontal_gutter(1280.0), 20.0), "Large phablets at the centering breakpoint still fill edge-to-edge")
+	_check(is_equal_approx(ResponsiveLayout.horizontal_gutter(1600.0), 260.0), "Tablets and unfolded displays center a design-width content column")
 	var insets: Dictionary = ResponsiveLayout.scale_safe_area_insets(
 		Rect2i(0, 100, 1080, 2200),
 		Vector2i(1080, 2400),

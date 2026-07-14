@@ -27,7 +27,7 @@ func _ready() -> void:
 	_update_step()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin(_margin, 28.0, 760.0)
+	ResponsiveLayout.apply_centered_margin(_margin, 28.0)
 
 func configure(_family: ChallengeFamily, _profile: TutorialProfile) -> void:
 	reset_tutorial()
@@ -147,7 +147,7 @@ func _update_step() -> void:
 			_word.text = "READY"
 			_description.text = "Reading Comfort Mode adds space and time without reducing your progress."
 			_comfort.visible = true
-			_next.text = "START PRACTICE  ▶"
+			_next.text = "START PRACTICE"
 
 func _add_answer(text: String) -> void:
 	var button := Button.new()

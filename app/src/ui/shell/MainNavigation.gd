@@ -4,10 +4,10 @@ extends Control
 signal tab_selected(route: String)
 
 const TABS := [
-	{"route": "home", "label": "Home", "icon": "⌂"},
-	{"route": "experiences", "label": "Library", "icon": "▦"},
-	{"route": "profile", "label": "Profile", "icon": "○"},
-	{"route": "settings", "label": "Settings", "icon": "⚙"},
+	{"route": "home", "label": "Home", "eyebrow": "Start"},
+	{"route": "experiences", "label": "Library", "eyebrow": "Types"},
+	{"route": "profile", "label": "Profile", "eyebrow": "Stats"},
+	{"route": "settings", "label": "Settings", "eyebrow": "Tune"},
 ]
 
 var current_route: String = "home"
@@ -51,8 +51,8 @@ func _ensure_ui() -> void:
 
 		var btn := Button.new()
 		btn.name = "%s_Button" % tab["route"]
-		# Icon + label, matches redesigned Home mockup
-		btn.text = "%s\n%s" % [tab.get("icon", ""), tab.get("label", "")]
+		# Eyebrow + label avoids generic symbol icons and stays legible on mobile.
+		btn.text = "%s\n%s" % [tab.get("eyebrow", ""), tab.get("label", "")]
 		btn.custom_minimum_size = Vector2(0, 64)
 		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		# Store route meta
@@ -106,9 +106,9 @@ func _apply_theme() -> void:
 		var btn: Button = _buttons[route]
 		var is_selected: bool = (route == current_route)
 		var tab_info: Dictionary = tab_map.get(route, {})
-		var icon := str(tab_info.get("icon", ""))
+		var eyebrow := str(tab_info.get("eyebrow", ""))
 		var label := str(tab_info.get("label", route.capitalize()))
-		btn.text = "%s\n%s" % [icon, label]
+		btn.text = "%s\n%s" % [eyebrow, label]
 		btn.tooltip_text = label
 		btn.focus_mode = Control.FOCUS_ALL
 		btn.alignment = HORIZONTAL_ALIGNMENT_CENTER

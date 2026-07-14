@@ -57,11 +57,39 @@ const SCENE_BGM: Dictionary = {
 	"experiences": "home"
 }
 
+const BGM_PLAYBACK_GAIN: float = 0.58
+
+const SOUND_GAINS: Dictionary = {
+	"ui_click": 0.55,
+	"ui_hover": 0.32,
+	"ui_back": 0.52,
+	"ui_navigate": 0.58,
+	"ui_success": 0.70,
+	"ui_failure": 0.66,
+	"ui_unlock": 0.78,
+	"ui_achievement": 0.82,
+	"observation_start": 0.82,
+	"flash_pulse": 0.58,
+	"flash_pulse_short": 0.46,
+	"conceal": 0.70,
+	"flash_interval": 0.44,
+	"flash_reveal_click": 0.58,
+	"flash_correct": 0.88,
+	"flash_incorrect": 0.78,
+	"reveal_correct": 0.92,
+	"reveal_incorrect": 0.82,
+	"object_settle": 0.48,
+	"pattern_step": 0.50,
+	"difference_switch": 0.54,
+	"result_settle": 0.78,
+	"mastery_up": 0.86
+}
+
 var _volumes: Dictionary = {
-	"Master": 1.0,
-	"BGM": 0.8,
-	"SFX": 0.9,
-	"UI": 0.8
+	"Master": 0.95,
+	"BGM": 0.62,
+	"SFX": 0.78,
+	"UI": 0.58
 }
 
 var _muted: Dictionary = {
@@ -102,10 +130,10 @@ func initialize() -> void:
 
 	# Load settings
 	if SettingsService:
-		_volumes["Master"] = SettingsService.get_value("volume_master", 1.0)
-		_volumes["BGM"] = SettingsService.get_value("volume_bgm", 0.8)
-		_volumes["SFX"] = SettingsService.get_value("volume_sfx", 0.9)
-		_volumes["UI"] = SettingsService.get_value("volume_ui", 0.8)
+		_volumes["Master"] = SettingsService.get_value("volume_master", 0.95)
+		_volumes["BGM"] = SettingsService.get_value("volume_bgm", 0.62)
+		_volumes["SFX"] = SettingsService.get_value("volume_sfx", 0.78)
+		_volumes["UI"] = SettingsService.get_value("volume_ui", 0.58)
 		_muted["Master"] = SettingsService.get_value("mute_master", false)
 		_muted["BGM"] = SettingsService.get_value("mute_bgm", false)
 		_muted["SFX"] = SettingsService.get_value("mute_sfx", false)
@@ -159,13 +187,14 @@ func play_bgm_track(track_key: String, fade_seconds: float = 0.45) -> void:
 func _fade_bgm(stream: AudioStream, fade_seconds: float) -> void:
 	if not _bgm_player:
 		return
+	_prepare_stream_for_loop(stream, true)
 	_bgm_player.stop()
 	_bgm_player.stream = stream
 	_bgm_player.volume_db = linear_to_db(0.0)
 	_bgm_player.play()
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	var target_linear: float = _volumes.get("BGM", 0.8) * 0.6
+	var target_linear: float = _volumes.get("BGM", 0.62) * BGM_PLAYBACK_GAIN
 	tween.tween_property(_bgm_player, "volume_db", linear_to_db(target_linear), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_OUT)
 
 func duck_bgm(amount_db: float = -8.0, fade_seconds: float = 0.15) -> void:
@@ -184,7 +213,7 @@ func unduck_bgm(fade_seconds: float = 0.25) -> void:
 		return
 	if _duck_tween and _duck_tween.is_valid():
 		_duck_tween.kill()
-	var target_linear: float = _volumes.get("BGM", 0.8) * 0.6
+	var target_linear: float = _volumes.get("BGM", 0.62) * BGM_PLAYBACK_GAIN
 	_duck_tween = create_tween()
 	_duck_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	_duck_tween.tween_property(_bgm_player, "volume_db", linear_to_db(target_linear), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_OUT)
@@ -218,21 +247,25 @@ func play_sound(
 	if stream == null:
 		return
 
+	var normalized_volume: float = clampf(volume_linear * float(SOUND_GAINS.get(sound_id, 1.0)), 0.0, 1.0)
 	match bus:
 		Bus.BGM:
+			_prepare_stream_for_loop(stream, _loop)
 			_bgm_player.stream = stream
-			_bgm_player.volume_db = linear_to_db(volume_linear * _volumes[bus_name])
+			_bgm_player.volume_db = linear_to_db(normalized_volume * _volumes[bus_name] * BGM_PLAYBACK_GAIN)
 			_bgm_player.play()
 		Bus.UI:
+			_prepare_stream_for_loop(stream, false)
 			_ui_player.stream = stream
-			_ui_player.volume_db = linear_to_db(volume_linear * _volumes[bus_name])
+			_ui_player.volume_db = linear_to_db(normalized_volume * _volumes[bus_name])
 			_ui_player.play()
 		_:
 			# Find free player in pool
 			var player: AudioStreamPlayer = _get_free_sfx_player()
 			if player:
+				_prepare_stream_for_loop(stream, false)
 				player.stream = stream
-				player.volume_db = linear_to_db(volume_linear * _volumes[bus_name])
+				player.volume_db = linear_to_db(normalized_volume * _volumes[bus_name])
 				player.play()
 
 	sound_played.emit(sound_id, bus_name)
@@ -243,6 +276,16 @@ func _get_free_sfx_player() -> AudioStreamPlayer:
 			return p
 	# If all busy, return first (steal)
 	return _sfx_pool[0] if _sfx_pool.size() > 0 else null
+
+func _prepare_stream_for_loop(stream: AudioStream, should_loop: bool) -> void:
+	if stream == null:
+		return
+	if stream is AudioStreamWAV:
+		var wav := stream as AudioStreamWAV
+		wav.loop_mode = AudioStreamWAV.LOOP_FORWARD if should_loop else AudioStreamWAV.LOOP_DISABLED
+	elif stream is AudioStreamOggVorbis:
+		var ogg := stream as AudioStreamOggVorbis
+		ogg.loop = should_loop
 
 func _preload_packaged_sounds() -> void:
 	_stream_cache.clear()
