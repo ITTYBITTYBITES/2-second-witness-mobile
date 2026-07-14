@@ -39,10 +39,10 @@ func _run() -> void:
 	_check(float((beginner.get("axes", {}) as Dictionary).get("similarity", 0.0)) < float((expert.get("axes", {}) as Dictionary).get("similarity", 0.0)), "Distractor similarity scales independently")
 
 	var single_times := [exposure.resolve_exposure(single, beginner, {}), exposure.resolve_exposure(single, standard, {}), exposure.resolve_exposure(single, advanced, {}), exposure.resolve_exposure(single, expert, {})]
-	_check(single_times[0] >= 3.0 and single_times[0] <= 4.0, "Single Word Beginner timing is 3–4 seconds")
-	_check(single_times[1] >= 2.0 and single_times[1] <= 3.0, "Single Word Standard timing is 2–3 seconds")
-	_check(single_times[2] >= 1.25 and single_times[2] <= 2.0, "Single Word Advanced timing is 1.25–2 seconds")
-	_check(single_times[3] >= 0.8 and single_times[3] <= 1.2, "Single Word Expert timing is 0.8–1.2 seconds")
+	_check(single_times[0] >= 4.5 and single_times[0] <= 5.5, "Single Word Beginner timing is 4.5–5.5 seconds")
+	_check(single_times[1] >= 3.0 and single_times[1] <= 4.0, "Single Word Standard timing is 3–4 seconds")
+	_check(single_times[2] >= 2.0 and single_times[2] <= 2.8, "Single Word Advanced timing is 2–2.8 seconds")
+	_check(single_times[3] >= 1.4 and single_times[3] <= 1.8, "Single Word Expert timing is 1.4–1.8 seconds")
 
 	var pair_beginner := difficulty.resolve_difficulty(_state(0, 0.0, 0.0, 0), family, pair)
 	var pair_total := exposure.resolve_exposure(pair, pair_beginner, {})

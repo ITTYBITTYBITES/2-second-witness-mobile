@@ -63,7 +63,17 @@ func navigate_to(route: String, params: Dictionary = {}) -> bool:
 
 	_log_screen_view(route, params)
 
+	_update_bgm_for_route(route)
+
 	return true
+
+func _update_bgm_for_route(route: String) -> void:
+	if not AudioService:
+		return
+	if not AudioService.SCENE_BGM.has(route):
+		return
+	var track_key: String = AudioService.SCENE_BGM[route]
+	AudioService.play_bgm_track(track_key)
 
 func _log_screen_view(route: String, params: Dictionary) -> void:
 	# Single source of truth for screen-view analytics so each navigation is
@@ -106,6 +116,7 @@ func go_back() -> bool:
 		EventBus.publish_navigation_changed(route, params)
 	_update_app_state_phase(route)
 	_log_screen_view(route, params)
+	_update_bgm_for_route(route)
 	return true
 
 func replace(route: String, params: Dictionary = {}) -> bool:
@@ -118,6 +129,7 @@ func replace(route: String, params: Dictionary = {}) -> bool:
 		EventBus.publish_navigation_changed(route, params)
 	_update_app_state_phase(route)
 	_log_screen_view(route, params)
+	_update_bgm_for_route(route)
 	return true
 
 func can_go_back() -> bool:

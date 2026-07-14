@@ -113,6 +113,14 @@ func _apply_scene() -> void:
 		_position_label.text = "REVEAL"
 		# ResultScreen owns the single outcome cue so family reveals do not layer
 		# a second success/failure sound over it.
+		# Animate the reveal: a soft scale-in on the word card.
+		if _word_card and not (AccessibilityService and not AccessibilityService.should_animate()):
+			_word_card.scale = Vector2(0.85, 0.85)
+			_word_card.modulate = Color(1, 1, 1, 0)
+			var tween := _word_card.create_tween()
+			tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+			tween.tween_property(_word_card, "modulate:a", 1.0, 0.25).set_ease(Tween.EASE_OUT)
+			tween.parallel().tween_property(_word_card, "scale", Vector2.ONE, 0.35).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 		return
 	_detail_label.text = ""
 	_position_label.text = ""

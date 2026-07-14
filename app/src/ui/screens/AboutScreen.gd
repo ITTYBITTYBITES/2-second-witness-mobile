@@ -2,7 +2,7 @@ extends Control
 ## Production credits, privacy, version, and open-source notices.
 
 const PRIVACY_POLICY_URL := "https://ittybittybites.github.io/two-second-witness/privacy"
-const PUBLISHER_URL := "https://ittybittybites.com"
+const PUBLISHER_URL := "https://ittybittybites.github.io/"
 
 @onready var title_label: Label = $Margin/Scroll/VBox/Title
 @onready var brand_label: Label = $Margin/Scroll/VBox/BrandSection/BrandTitle

@@ -285,6 +285,15 @@ func _refresh() -> void:
 	vb.add_child(reset_btn)
 	reset_btn.pressed.connect(_on_reset_settings)
 
+	var back_btn := Button.new()
+	back_btn.text = "Back"
+	back_btn.custom_minimum_size = Vector2(0, 56)
+	back_btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	if ThemeService:
+		ThemeService.apply_typography(back_btn, "button")
+	vb.add_child(back_btn)
+	back_btn.pressed.connect(_on_back_pressed)
+
 
 func _create_section_header(text: String) -> Control:
 	var lbl := Label.new()
@@ -545,6 +554,18 @@ func _on_about_pressed(section: String = "about") -> void:
 		AudioService.play_ui("ui_click")
 	if NavigationService:
 		NavigationService.navigate_to("about", {"section": section})
+
+
+func _on_back_pressed() -> void:
+	if AudioService:
+		AudioService.play_ui("ui_click")
+	if AccessibilityService:
+		AccessibilityService.vibrate(20)
+	if NavigationService:
+		if NavigationService.can_go_back():
+			NavigationService.go_back()
+		else:
+			NavigationService.navigate_to("home")
 
 
 func _on_reset_settings() -> void:

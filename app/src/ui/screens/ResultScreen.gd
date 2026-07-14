@@ -281,6 +281,13 @@ func _play_feedback() -> void:
 		AccessibilityService.vibrate(50 if _is_correct else 100)
 	if AudioService:
 		AudioService.play_sfx("reveal_correct" if _is_correct else "reveal_incorrect", 0.75)
+		if _is_correct:
+			# Soft layered settle + mastery up
+			get_tree().create_timer(0.45).timeout.connect(func() -> void:
+				if AudioService and is_instance_valid(self):
+					AudioService.play_sfx("result_settle", 0.55)
+			)
+		AudioService.unduck_bgm(0.4)
 
 func _animate_in() -> void:
 	if not _should_animate() or not result_icon:

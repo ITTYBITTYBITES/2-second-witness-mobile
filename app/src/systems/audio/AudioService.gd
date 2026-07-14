@@ -23,11 +23,39 @@ var _stream_cache: Dictionary = {}
 var _initialized: bool = false
 
 const PACKAGED_SOUND_IDS: Array[String] = [
-	"conceal", "difference_switch", "flash_correct", "flash_incorrect",
-	"flash_interval", "flash_pulse", "flash_reveal_click", "object_settle",
-	"observation_start", "pattern_step", "result_settle", "reveal_correct",
-	"reveal_incorrect", "ui_click"
+	"ui_click", "ui_hover", "ui_back", "ui_navigate",
+	"ui_success", "ui_failure", "ui_unlock", "ui_achievement",
+	"observation_start", "flash_pulse", "flash_pulse_short",
+	"conceal", "flash_interval", "flash_reveal_click",
+	"flash_correct", "flash_incorrect",
+	"reveal_correct", "reveal_incorrect",
+	"object_settle", "pattern_step", "difference_switch",
+	"result_settle", "mastery_up"
 ]
+
+const BGM_TRACKS := {
+	"publisher": "bgm_publisher",
+	"home": "bgm_home",
+	"gameplay": "bgm_gameplay",
+	"results": "bgm_results",
+	"tutorial": "bgm_tutorial"
+}
+
+const SCENE_BGM: Dictionary = {
+	"publisher_splash": "publisher",
+	"title_splash": "publisher",
+	"home": "home",
+	"tutorial": "tutorial",
+	"observation": "gameplay",
+	"memory_question": "gameplay",
+	"result": "results",
+	"profile": "home",
+	"settings": "home",
+	"about": "home",
+	"programs": "home",
+	"achievements": "home",
+	"experiences": "home"
+}
 
 var _volumes: Dictionary = {
 	"Master": 1.0,
@@ -109,6 +137,70 @@ func play_sfx(sound_id: String, volume_linear: float = 1.0) -> void:
 
 func play_bgm(sound_id: String, loop: bool = true, _fade_duration: float = 0.5) -> void:
 	play_sound(sound_id, Bus.BGM, 1.0, loop)
+
+var _active_bgm_track: String = ""
+var _duck_target_db: float = 0.0
+var _duck_tween: Tween = null
+
+func play_bgm_track(track_key: String, fade_seconds: float = 0.45) -> void:
+	if not BGM_TRACKS.has(track_key):
+		return
+	var sound_id: String = BGM_TRACKS[track_key]
+	if _active_bgm_track == sound_id and _bgm_player and _bgm_player.playing:
+		return
+	_active_bgm_track = sound_id
+	if not _initialized or _muted.get("BGM", false) or _muted.get("Master", false):
+		return
+	var stream: AudioStream = _get_stream_for_id(sound_id)
+	if stream == null:
+		return
+	_fade_bgm(stream, fade_seconds)
+
+func _fade_bgm(stream: AudioStream, fade_seconds: float) -> void:
+	if not _bgm_player:
+		return
+	_bgm_player.stop()
+	_bgm_player.stream = stream
+	_bgm_player.volume_db = linear_to_db(0.0)
+	_bgm_player.play()
+	var tween := create_tween()
+	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	var target_linear: float = _volumes.get("BGM", 0.8) * 0.6
+	tween.tween_property(_bgm_player, "volume_db", linear_to_db(target_linear), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_OUT)
+
+func duck_bgm(amount_db: float = -8.0, fade_seconds: float = 0.15) -> void:
+	if not _bgm_player or not _bgm_player.playing:
+		return
+	if _duck_tween and _duck_tween.is_valid():
+		_duck_tween.kill()
+	_duck_target_db = amount_db
+	_duck_tween = create_tween()
+	_duck_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	var current_db: float = _bgm_player.volume_db
+	_duck_tween.tween_property(_bgm_player, "volume_db", maxf(current_db + amount_db, -40.0), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_OUT)
+
+func unduck_bgm(fade_seconds: float = 0.25) -> void:
+	if not _bgm_player or not _bgm_player.playing:
+		return
+	if _duck_tween and _duck_tween.is_valid():
+		_duck_tween.kill()
+	var target_linear: float = _volumes.get("BGM", 0.8) * 0.6
+	_duck_tween = create_tween()
+	_duck_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	_duck_tween.tween_property(_bgm_player, "volume_db", linear_to_db(target_linear), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_OUT)
+
+func stop_bgm_track(fade_seconds: float = 0.4) -> void:
+	if not _bgm_player or not _bgm_player.playing:
+		_active_bgm_track = ""
+		return
+	var tween := create_tween()
+	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	tween.tween_property(_bgm_player, "volume_db", linear_to_db(0.0), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_IN)
+	tween.tween_callback(func() -> void:
+		if _bgm_player:
+			_bgm_player.stop()
+		_active_bgm_track = ""
+	)
 
 func play_sound(
 	sound_id: String,

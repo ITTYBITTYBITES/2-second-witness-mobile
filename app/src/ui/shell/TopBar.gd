@@ -30,13 +30,13 @@ func _ensure_ui() -> void:
 		# Wire existing and fix touch targets
 		if back_button:
 			back_button.custom_minimum_size = Vector2(touch_min, touch_min)
-			back_button.text = "←"
+			back_button.text = "‹"
 			back_button.tooltip_text = "Back"
 			if not back_button.pressed.is_connected(_on_back):
 				back_button.pressed.connect(_on_back)
 		if profile_button:
 			profile_button.custom_minimum_size = Vector2(touch_min, touch_min)
-			profile_button.text = "○"
+			profile_button.text = "◉"
 			profile_button.tooltip_text = "Profile"
 			if not profile_button.pressed.is_connected(_on_profile):
 				profile_button.pressed.connect(_on_profile)
@@ -64,7 +64,7 @@ func _ensure_ui() -> void:
 
 	var back := Button.new()
 	back.name = "BackButton"
-	back.text = "←"
+	back.text = "‹"
 	back.visible = show_back
 	back.custom_minimum_size = Vector2(touch_min, touch_min)
 	hbox.add_child(back)
@@ -87,7 +87,7 @@ func _ensure_ui() -> void:
 
 	var prof := Button.new()
 	prof.name = "ProfileButton"
-	prof.text = "👤"
+	prof.text = "◉"
 	prof.custom_minimum_size = Vector2(touch_min, touch_min)
 	prof.visible = show_profile
 	actions.add_child(prof)
