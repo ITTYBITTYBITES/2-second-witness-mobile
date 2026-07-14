@@ -15,7 +15,6 @@ config/description="A premium observation game built around short, fair, replaya
 run/main_scene="res://src/ui/shell/AppShell.tscn"
 config/features=PackedStringArray("4.6", "Mobile")
 boot_splash/bg_color=Color(0.055, 0.055, 0.08, 1)
-boot_splash/show_image=true
 boot_splash/stretch_mode=4
 boot_splash/image="res://assets/splash/ittybittybites_splash.png"
 config/icon="res://assets/brand/app_icon_1024.png"
@@ -77,8 +76,8 @@ pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
+rendering_device/driver.android="opengl3"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-rendering_device/driver.android="opengl3"
 textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(0.06, 0.06, 0.09, 1)
