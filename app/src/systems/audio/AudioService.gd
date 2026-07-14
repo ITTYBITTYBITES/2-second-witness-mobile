@@ -7,6 +7,17 @@ signal volume_changed(bus: String, volume_db: float, linear: float)
 signal bus_muted(bus: String, muted: bool)
 signal sound_played(sound_id: String, bus: String)
 
+## Minimum linear volume to avoid -inf dB (which causes NaN errors)
+const MIN_LINEAR_VOLUME: float = 0.0001
+## Minimum dB value for volume_db (effectively silent)
+const MIN_VOLUME_DB: float = -80.0
+
+## Converts linear volume (0.0-1.0) to decibels, clamping to avoid -inf/NaN
+static func linear_to_db(linear: float) -> float:
+	if linear <= 0.0:
+		return MIN_VOLUME_DB
+	return AudioServer.linear_to_db(max(linear, MIN_LINEAR_VOLUME))
+
 enum Bus { MASTER, BGM, SFX, UI }
 
 const BUS_NAMES := {
