@@ -33,84 +33,86 @@ theme_override_constants/margin_right = 20
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="Content" type="VBoxContainer" parent="MainMargin"]
+[node name="Scroll" type="ScrollContainer" parent="MainMargin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="MainMargin/Scroll"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
-theme_override_constants/separation = 28
+theme_override_constants/separation = 20
 
-[node name="Hero" type="VBoxContainer" parent="MainMargin/Content"]
+[node name="Hero" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
 theme_override_constants/separation = 12
 
-[node name="BrandLabel" type="Label" parent="MainMargin/Content/Hero"]
+[node name="BrandLabel" type="Label" parent="MainMargin/Scroll/Content/Hero"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "TWO SECOND WITNESS"
 horizontal_alignment = 1
 
-[node name="StepTitle" type="Label" parent="MainMargin/Content/Hero"]
+[node name="StepTitle" type="Label" parent="MainMargin/Scroll/Content/Hero"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "OBSERVE"
 horizontal_alignment = 1
 
-[node name="EyeWrap" type="CenterContainer" parent="MainMargin/Content/Hero"]
+[node name="EyeWrap" type="CenterContainer" parent="MainMargin/Scroll/Content/Hero"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Eye" type="TextureRect" parent="MainMargin/Content/Hero/EyeWrap"]
+[node name="Eye" type="TextureRect" parent="MainMargin/Scroll/Content/Hero/EyeWrap"]
 layout_mode = 2
 texture = ExtResource("2_eye")
 expand_mode = 1
-custom_minimum_size = Vector2(220, 88)
+custom_minimum_size = Vector2(190, 76)
 stretch_mode = 5
 
-[node name="Description" type="Label" parent="MainMargin/Content/Hero"]
+[node name="Description" type="Label" parent="MainMargin/Scroll/Content/Hero"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "You have exactly two seconds to study the scene. Every detail matters."
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="PageIndicator" type="HBoxContainer" parent="MainMargin/Content"]
+[node name="PageIndicator" type="HBoxContainer" parent="MainMargin/Scroll/Content"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
 theme_override_constants/separation = 12
 
-[node name="Dot1" type="PanelContainer" parent="MainMargin/Content/PageIndicator"]
+[node name="Dot1" type="PanelContainer" parent="MainMargin/Scroll/Content/PageIndicator"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 2
 
-[node name="Dot2" type="PanelContainer" parent="MainMargin/Content/PageIndicator"]
+[node name="Dot2" type="PanelContainer" parent="MainMargin/Scroll/Content/PageIndicator"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 2
 
-[node name="Dot3" type="PanelContainer" parent="MainMargin/Content/PageIndicator"]
+[node name="Dot3" type="PanelContainer" parent="MainMargin/Scroll/Content/PageIndicator"]
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 2
 
-[node name="Spacer" type="Control" parent="MainMargin/Content"]
-custom_minimum_size = Vector2(0, 16)
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Actions" type="VBoxContainer" parent="MainMargin/Content"]
+[node name="Actions" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 12
 
-[node name="NextButton" type="Button" parent="MainMargin/Content/Actions"]
+[node name="NextButton" type="Button" parent="MainMargin/Scroll/Content/Actions"]
 custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "NEXT  →"
 
-[node name="SkipButton" type="Button" parent="MainMargin/Content/Actions"]
+[node name="SkipButton" type="Button" parent="MainMargin/Scroll/Content/Actions"]
+custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Skip Tutorial"

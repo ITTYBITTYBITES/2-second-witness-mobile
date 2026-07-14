@@ -89,17 +89,6 @@ const ROUTES := {
 		"requires_auth": false
 	},
 
-	# Future extensibility routes (render as placeholders until scenes are added).
-	"experience_detail": {
-		"screen": "ExperienceDetail",
-		"is_tab": false,
-		"requires_auth": false
-	},
-	"experience_play": {
-		"screen": "ExperiencePlay",
-		"is_tab": false,
-		"requires_auth": false
-	},
 }
 
 const TAB_ORDER := ["home", "experiences", "profile", "settings"]

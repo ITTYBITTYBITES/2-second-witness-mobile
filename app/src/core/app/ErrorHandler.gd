@@ -13,7 +13,6 @@ const MAX_HISTORY := 100
 var _crash_count_today: int = 0
 
 func _ready() -> void:
-	print("[ErrorHandler] Initialized")
 	EventBus.error_occurred.connect(_on_error_occurred)
 
 func _on_error_occurred(code: String, message: String, context: Dictionary) -> void:
@@ -51,7 +50,7 @@ func handle(
 		Severity.WARNING:
 			push_warning("[WARN] %s: %s" % [code, message])
 		_:
-			print("[INFO] %s: %s" % [code, message])
+			pass
 
 	# Also forward to Analytics if available
 	if AnalyticsService:
@@ -79,6 +78,5 @@ func _friendly_message(code: String) -> String:
 
 func _attempt_safe_recovery() -> void:
 	_crash_count_today += 1
-	print("[ErrorHandler] Attempting safe recovery (crash_count_today: %d)" % _crash_count_today)
 	AppState.set_loading(false)
 	NavigationService.navigate_to("home")

@@ -10,13 +10,13 @@ const FAMILY_ID: String = "scene_investigation"
 ## 3-step: Observe / Remember / Recall
 ## Matches HomeScreen / TitleSplash visual language
 
-@onready var brand_label: Label = $MainMargin/Content/Hero/BrandLabel
-@onready var step_title: Label = $MainMargin/Content/Hero/StepTitle
-@onready var eye_rect: TextureRect = $MainMargin/Content/Hero/EyeWrap/Eye
-@onready var description_label: Label = $MainMargin/Content/Hero/Description
-@onready var page_indicator: HBoxContainer = $MainMargin/Content/PageIndicator
-@onready var next_button: Button = $MainMargin/Content/Actions/NextButton
-@onready var skip_button: Button = $MainMargin/Content/Actions/SkipButton
+@onready var brand_label: Label = $MainMargin/Scroll/Content/Hero/BrandLabel
+@onready var step_title: Label = $MainMargin/Scroll/Content/Hero/StepTitle
+@onready var eye_rect: TextureRect = $MainMargin/Scroll/Content/Hero/EyeWrap/Eye
+@onready var description_label: Label = $MainMargin/Scroll/Content/Hero/Description
+@onready var page_indicator: HBoxContainer = $MainMargin/Scroll/Content/PageIndicator
+@onready var next_button: Button = $MainMargin/Scroll/Content/Actions/NextButton
+@onready var skip_button: Button = $MainMargin/Scroll/Content/Actions/SkipButton
 
 const TUTORIAL_VERSION: String = "2"
 const DEMO_TEMPLATE_ID: String = "office_v1"
@@ -109,15 +109,15 @@ func _prepare_demo() -> void:
 		_demo_instance = candidate
 
 func _ensure_tutorial_ui() -> void:
-	var hero := get_node_or_null("MainMargin/Content/Hero") as VBoxContainer
+	var hero := get_node_or_null("MainMargin/Scroll/Content/Hero") as VBoxContainer
 	if hero and _demo_host == null:
 		_demo_host = Control.new()
 		_demo_host.name = "DemoHost"
-		_demo_host.custom_minimum_size = Vector2(0, 360)
+		_demo_host.custom_minimum_size = Vector2(0, 300)
 		_demo_host.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		hero.add_child(_demo_host)
 		hero.move_child(_demo_host, description_label.get_index())
-	var content := get_node_or_null("MainMargin/Content") as VBoxContainer
+	var content := get_node_or_null("MainMargin/Scroll/Content") as VBoxContainer
 	if content and _answer_container == null:
 		_answer_container = VBoxContainer.new()
 		_answer_container.name = "TutorialAnswers"
@@ -404,7 +404,7 @@ func _animate_step_transition() -> void:
 	if not _should_animate():
 		_update_step(false)
 		return
-	var hero := get_node_or_null("MainMargin/Content/Hero")
+	var hero := get_node_or_null("MainMargin/Scroll/Content/Hero")
 	if not hero:
 		_update_step(false)
 		return

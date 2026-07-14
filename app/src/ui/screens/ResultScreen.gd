@@ -3,14 +3,14 @@ extends Control
 ## Matches Home / Tutorial visual language
 ## Gameplay / scoring logic unchanged
 
-@onready var result_icon: Label = $MainMargin/Content/ResultCard/Margin/VBox/ResultIcon
-@onready var result_title: Label = $MainMargin/Content/ResultCard/Margin/VBox/Title
-@onready var result_desc: Label = $MainMargin/Content/ResultCard/Margin/VBox/Description
-@onready var detail_label: Label = $MainMargin/Content/ResultCard/Margin/VBox/Detail
-@onready var continue_btn: Button = $MainMargin/Content/Actions/ContinueButton
-@onready var replay_btn: Button = $MainMargin/Content/Actions/ReplayButton
-@onready var menu_btn: Button = $MainMargin/Content/Actions/MenuButton
-@onready var result_card: PanelContainer = $MainMargin/Content/ResultCard
+@onready var result_icon: TextureRect = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/ResultIcon
+@onready var result_title: Label = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/Title
+@onready var result_desc: Label = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/Description
+@onready var detail_label: Label = $MainMargin/Scroll/Content/ResultCard/Margin/VBox/Detail
+@onready var continue_btn: Button = $MainMargin/Scroll/Content/Actions/ContinueButton
+@onready var replay_btn: Button = $MainMargin/Scroll/Content/Actions/ReplayButton
+@onready var menu_btn: Button = $MainMargin/Scroll/Content/Actions/MenuButton
+@onready var result_card: PanelContainer = $MainMargin/Scroll/Content/ResultCard
 @onready var background_rect: ColorRect = $Background
 
 var _result_data: Dictionary = {}
@@ -58,6 +58,9 @@ func _apply_theme() -> void:
 		var r: int = int(tokens.get("radius_lg", 20)) if not tokens.is_empty() else 20
 		style.corner_radius_top_left = r; style.corner_radius_top_right = r
 		style.corner_radius_bottom_left = r; style.corner_radius_bottom_right = r
+		style.shadow_color = Color(0, 0, 0, 0.30)
+		style.shadow_size = 16
+		style.shadow_offset = Vector2(0, 5)
 		style.border_color = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
 		style.border_width_left = 1; style.border_width_right = 1; style.border_width_top = 1; style.border_width_bottom = 1
 		result_card.add_theme_stylebox_override("panel", style)
@@ -138,21 +141,12 @@ func _display_result(data: Dictionary) -> void:
 				]
 
 	if result_icon:
-		if _is_correct:
-			result_icon.text = "✓"
-			result_icon.add_theme_color_override(
-				"font_color",
-				ThemeService.get_color("success", Color("#2EE6A6")) if ThemeService else Color("#2EE6A6")
-			)
-		else:
-			result_icon.text = "✗"
-			result_icon.add_theme_color_override(
-				"font_color",
-				ThemeService.get_color("error", Color("#FF4D5E")) if ThemeService else Color("#FF4D5E")
-			)
-		if ThemeService:
-			ThemeService.apply_typography(result_icon, "display")
-			result_icon.add_theme_font_size_override("font_size", ThemeService.get_scaled_size(64))
+		var badge_path := "res://assets/results/result_success.svg" if _is_correct else "res://assets/results/result_missed.svg"
+		result_icon.texture = null
+		if ResourceLoader.exists(badge_path):
+			result_icon.texture = load(badge_path) as Texture2D
+		result_icon.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
+		result_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 
 	if result_title:
 		result_title.text = "CORRECT!" if _is_correct else "I MISSED IT."

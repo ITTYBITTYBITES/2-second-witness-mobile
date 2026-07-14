@@ -44,7 +44,6 @@ var _muted: Dictionary = {
 }
 
 func _ready() -> void:
-	print("[AudioService] Ready")
 	EventBus.audio_requested.connect(_on_audio_requested)
 
 func initialize() -> void:
@@ -90,7 +89,6 @@ func initialize() -> void:
 		SettingsService.setting_changed.connect(_on_setting_changed)
 
 	_initialized = true
-	print("[AudioService] Initialized - Buses: %s" % str(BUS_NAMES))
 
 func _ensure_buses() -> void:
 	# Create custom buses via AudioServer if not exist
@@ -102,7 +100,6 @@ func _ensure_buses() -> void:
 			var new_idx := AudioServer.bus_count - 1
 			AudioServer.set_bus_name(new_idx, n)
 			AudioServer.set_bus_send(new_idx, "Master")
-			print("[AudioService] Created bus %s at %d" % [n, new_idx])
 
 func play_ui(sound_id: String, volume_linear: float = 1.0) -> void:
 	play_sound(sound_id, Bus.UI, volume_linear)
@@ -127,7 +124,6 @@ func play_sound(
 
 	var stream: AudioStream = _get_stream_for_id(sound_id)
 	if stream == null:
-		print("[AudioService] Packaged sound not found: %s" % sound_id)
 		return
 
 	match bus:
@@ -187,7 +183,6 @@ func set_volume(bus: Bus, linear: float) -> void:
 	volume_changed.emit(bus_name, linear_to_db(_volumes[bus_name]), _volumes[bus_name])
 	if SettingsService:
 		SettingsService.set_value("volume_%s" % bus_name.to_lower(), _volumes[bus_name])
-	print("[AudioService] Volume %s = %.2f" % [bus_name, linear])
 
 func get_volume(bus: Bus) -> float:
 	return _volumes.get(BUS_NAMES[bus], 1.0)

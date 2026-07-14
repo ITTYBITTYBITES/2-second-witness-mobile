@@ -36,8 +36,10 @@ Android launch surface
 → Sponsor artwork
 → Publisher screen
 → Two Second Witness loading
-→ Privacy / Tutorial when required
+→ Privacy when required
 → Home
+
+Challenge Type tutorials appear only when a family is first entered or replayed from the Library.
 ```
 
 ## 3. Device and layout matrix

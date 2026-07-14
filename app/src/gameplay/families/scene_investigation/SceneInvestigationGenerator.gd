@@ -445,9 +445,9 @@ func _is_long_kind(kind: String) -> bool:
 func _shuffle(array: Array, rng: RandomNumberGenerator) -> void:
 	for index: int in range(array.size() - 1, 0, -1):
 		var swap_index := rng.randi_range(0, index)
-		var temporary: Variant = array[index]
+		var swap_value: Variant = array[index]
 		array[index] = array[swap_index]
-		array[swap_index] = temporary
+		array[swap_index] = swap_value
 
 func _scene_signature(template_id: String, objects: Array[Dictionary], question: Dictionary) -> String:
 	var compact_objects: Array[Dictionary] = []

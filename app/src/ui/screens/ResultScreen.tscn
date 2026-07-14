@@ -32,73 +32,87 @@ theme_override_constants/margin_right = 20
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="Content" type="VBoxContainer" parent="MainMargin"]
+[node name="Scroll" type="ScrollContainer" parent="MainMargin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="MainMargin/Scroll"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
-theme_override_constants/separation = 24
+theme_override_constants/separation = 20
 
-[node name="ResultCard" type="PanelContainer" parent="MainMargin/Content"]
+[node name="ResultCard" type="PanelContainer" parent="MainMargin/Scroll/Content"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
 
-[node name="Margin" type="MarginContainer" parent="MainMargin/Content/ResultCard"]
+[node name="Margin" type="MarginContainer" parent="MainMargin/Scroll/Content/ResultCard"]
 layout_mode = 2
-theme_override_constants/margin_left = 24
-theme_override_constants/margin_right = 24
-theme_override_constants/margin_top = 24
-theme_override_constants/margin_bottom = 24
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
 
-[node name="VBox" type="VBoxContainer" parent="MainMargin/Content/ResultCard/Margin"]
+[node name="VBox" type="VBoxContainer" parent="MainMargin/Scroll/Content/ResultCard/Margin"]
 layout_mode = 2
 alignment = 1
-theme_override_constants/separation = 16
+theme_override_constants/separation = 14
 
-[node name="ResultIcon" type="Label" parent="MainMargin/Content/ResultCard/Margin/VBox"]
+[node name="ResultIcon" type="TextureRect" parent="MainMargin/Scroll/Content/ResultCard/Margin/VBox"]
+custom_minimum_size = Vector2(0, 112)
 layout_mode = 2
-text = "✓"
-horizontal_alignment = 1
+size_flags_horizontal = 3
+expand_mode = 1
+stretch_mode = 5
 
-[node name="Title" type="Label" parent="MainMargin/Content/ResultCard/Margin/VBox"]
+[node name="Title" type="Label" parent="MainMargin/Scroll/Content/ResultCard/Margin/VBox"]
 layout_mode = 2
+size_flags_horizontal = 3
 text = "CORRECT!"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Description" type="Label" parent="MainMargin/Content/ResultCard/Margin/VBox"]
+[node name="Description" type="Label" parent="MainMargin/Scroll/Content/ResultCard/Margin/VBox"]
 layout_mode = 2
+size_flags_horizontal = 3
 text = "Excellent observation."
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Detail" type="Label" parent="MainMargin/Content/ResultCard/Margin/VBox"]
+[node name="Detail" type="Label" parent="MainMargin/Scroll/Content/ResultCard/Margin/VBox"]
 layout_mode = 2
+size_flags_horizontal = 3
 text = "Detail explanation"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Actions" type="VBoxContainer" parent="MainMargin/Content"]
+[node name="Actions" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 12
 
-[node name="ContinueButton" type="Button" parent="MainMargin/Content/Actions"]
+[node name="ContinueButton" type="Button" parent="MainMargin/Scroll/Content/Actions"]
 custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "NEXT CHALLENGE  →"
 
-[node name="ReplayButton" type="Button" parent="MainMargin/Content/Actions"]
+[node name="ReplayButton" type="Button" parent="MainMargin/Scroll/Content/Actions"]
 custom_minimum_size = Vector2(0, 56)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Replay"
 
-[node name="MenuButton" type="Button" parent="MainMargin/Content/Actions"]
+[node name="MenuButton" type="Button" parent="MainMargin/Scroll/Content/Actions"]
+custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Home"
 flat = true
-]
+
+[node name="BottomSpacer" type="Control" parent="MainMargin/Scroll/Content"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2

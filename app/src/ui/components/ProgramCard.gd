@@ -5,6 +5,7 @@ signal program_selected(program_id: String)
 
 var program: Dictionary = {}
 
+@onready var artwork: TextureRect = $Margin/VBox/Artwork
 @onready var title_label: Label = $Margin/VBox/Header/Title
 @onready var status_label: Label = $Margin/VBox/Header/Status
 @onready var description_label: Label = $Margin/VBox/Description
@@ -40,6 +41,9 @@ func _apply_theme() -> void:
 	style.corner_radius_top_right = 18
 	style.corner_radius_bottom_left = 18
 	style.corner_radius_bottom_right = 18
+	style.shadow_color = Color(0, 0, 0, 0.26)
+	style.shadow_size = 12
+	style.shadow_offset = Vector2(0, 4)
 	add_theme_stylebox_override("panel", style)
 	if ThemeService:
 		ThemeService.apply_label_style(title_label, "title", "text_primary")
@@ -87,11 +91,11 @@ func _refresh() -> void:
 	title_label.text = str(program.get("title", "Program"))
 	description_label.text = str(program.get("description", ""))
 	if not bool(program.get("scheduled", true)):
-		status_label.text = "RETURNS THIS WEEKEND"
+		status_label.text = "WEEKEND"
 	elif bool(program.get("locked", false)):
-		status_label.text = "WITNESS LEVEL %d" % int(program.get("required_level", 1))
+		status_label.text = "LEVEL %d" % int(program.get("required_level", 1))
 	else:
-		status_label.text = "%d ROUND RUN" % round_count
+		status_label.text = "%d ROUNDS" % round_count
 	progress_bar.max_value = float(round_count)
 	progress_bar.value = float(current_round)
 	progress_bar.show_percentage = false
@@ -101,6 +105,11 @@ func _refresh() -> void:
 		int(progress.get("completed_runs", 0)),
 		int(round(float(progress.get("best_run_accuracy", 0.0)) * 100.0))
 	]
+	var artwork_path := str(program.get("artwork", ""))
+	if artwork:
+		artwork.texture = null
+		if not artwork_path.is_empty() and ResourceLoader.exists(artwork_path):
+			artwork.texture = load(artwork_path) as Texture2D
 	action_button.disabled = not bool(program.get("available", false))
 	action_button.text = str(program.get("action_label", "START RUN")) if bool(program.get("available", false)) else "UNAVAILABLE"
 

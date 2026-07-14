@@ -5,7 +5,11 @@ extends Control
 
 const MIN_DISPLAY_TIME := 1.2
 const MAX_BOOT_WAIT_TIME := 6.0
+const POLICY_VERSION := "4.0.0-2026-07-13"
 const PRIVACY_POLICY_URL := "https://ittybittybites.github.io/two-second-witness/privacy"
+const TERMS_OF_SERVICE_URL := "https://ittybittybites.github.io/two-second-witness/terms"
+const INTRO_TUTORIAL_FAMILY_ID := "scene_investigation"
+const INTRO_TUTORIAL_TEMPLATE_ID := "office_v1"
 
 const PrivacyDialogScene := preload("res://src/ui/dialogs/PrivacyTermsDialog.tscn")
 
@@ -24,7 +28,6 @@ var _is_navigating: bool = false
 var _privacy_dialog: Control = null
 var _eye_tween: Tween = null
 var _boot_progress: float = 0.0
-var _pending_tutorial_family_id: String = ""
 
 func _ready() -> void:
 	_elapsed = 0.0
@@ -37,7 +40,6 @@ func _ready() -> void:
 	_connect_boot()
 	_animate_in()
 	_update_loading_ui("Initializing…", 0.0)
-	print("[TitleSplash] Ready - branded hero")
 
 func _apply_responsive_layout() -> void:
 	ResponsiveLayout.apply_centered_margin($MainMargin, 24.0, 760.0)
@@ -197,7 +199,6 @@ func _process(delta: float) -> void:
 	if not _boot_completed and _elapsed >= MAX_BOOT_WAIT_TIME:
 		_boot_completed = true
 		_update_loading_ui("Ready", 1.0)
-		print("[TitleSplash] Boot watchdog triggered - forcing continue")
 	if _boot_completed and _elapsed >= MIN_DISPLAY_TIME and not _is_navigating:
 		if dialog_layer and dialog_layer.visible:
 			return
@@ -214,7 +215,6 @@ func _on_boot_step_completed(step: String, _duration_ms: int) -> void:
 func _on_boot_completed() -> void:
 	_boot_completed = true
 	_update_loading_ui("Ready", 1.0)
-	print("[TitleSplash] Boot completed")
 
 func _on_ready_to_proceed() -> void:
 	if _is_navigating:
@@ -224,8 +224,8 @@ func _on_ready_to_proceed() -> void:
 	if _needs_privacy_acknowledgment():
 		_show_privacy_dialog()
 		return
-	if _needs_tutorial():
-		_navigate_tutorial()
+	if _needs_intro_tutorial():
+		_navigate_intro_tutorial()
 		return
 	_navigate_home()
 
@@ -234,10 +234,10 @@ func _needs_privacy_acknowledgment() -> bool:
 	var has_settings_ack := false
 	if ProfileService and ProfileService.profile is Dictionary:
 		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
-		if prefs.get("privacy_acknowledged", false):
+		if bool(prefs.get("privacy_acknowledged", false)) and str(prefs.get("privacy_policy_version", "")) == POLICY_VERSION:
 			has_profile_ack = true
 	if SettingsService:
-		if SettingsService.get_value("privacy_acknowledged", false):
+		if bool(SettingsService.get_value("privacy_acknowledged", false)) and str(SettingsService.get_value("privacy_policy_version", "")) == POLICY_VERSION:
 			has_settings_ack = true
 	if has_profile_ack or has_settings_ack:
 		return false
@@ -245,23 +245,18 @@ func _needs_privacy_acknowledgment() -> bool:
 		return false
 	return true
 
-func _needs_tutorial() -> bool:
-	_pending_tutorial_family_id = ""
-	if not RecommendationService or not PlayerProgressService or not ChallengeSessionService:
+func _needs_intro_tutorial() -> bool:
+	if not ProfileService or not ChallengeFamilyRegistry:
 		return false
-	var recommendation: Dictionary = RecommendationService.recommend_start(PlayerProgressService.get_player_state())
-	var family_id := str(recommendation.get("family_id", ""))
-	if family_id.is_empty() or not ChallengeSessionService.needs_tutorial(family_id):
+	var prefs: Dictionary = ProfileService.profile.get("preferences", {})
+	if bool(prefs.get("onboarding_completed", false)):
 		return false
-	_pending_tutorial_family_id = family_id
-	return true
+	return ChallengeFamilyRegistry.get_family(INTRO_TUTORIAL_FAMILY_ID) != null
 
-func _navigate_tutorial() -> void:
+func _navigate_intro_tutorial() -> void:
 	if _is_navigating:
 		return
 	_is_navigating = true
-	print("[TitleSplash] Navigating to Tutorial – Witness onboarding")
-	# Eye settle – same "waking up" transition as Home, keeps continuity
 	if _should_animate() and eye_rect:
 		if _eye_tween and _eye_tween.is_valid():
 			_eye_tween.kill()
@@ -272,20 +267,23 @@ func _navigate_tutorial() -> void:
 		await settle.finished
 	else:
 		_stop_eye_pulse()
-
 	var fade_dur := _get_anim_duration(0.28)
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	tween.tween_property(self, "modulate:a", 0.0, fade_dur).set_ease(Tween.EASE_IN_OUT)
 	tween.finished.connect(func():
-			if NavigationService:
-				NavigationService.navigate_to("tutorial", {"family_id": _pending_tutorial_family_id})
+		if NavigationService:
+			NavigationService.navigate_to("tutorial", {
+				"family_id": INTRO_TUTORIAL_FAMILY_ID,
+				"pending_template_id": INTRO_TUTORIAL_TEMPLATE_ID,
+				"launch_source": "first_launch_intro",
+				"session_context": {"intro_tutorial": true}
+			})
 	)
 
 func _show_privacy_dialog() -> void:
 	if dialog_layer and dialog_layer.visible:
 		return
-	print("[TitleSplash] Showing Privacy & Terms modal")
 	if _privacy_dialog == null:
 		_privacy_dialog = PrivacyDialogScene.instantiate() as Control
 		if dialog_layer:
@@ -296,6 +294,8 @@ func _show_privacy_dialog() -> void:
 			_privacy_dialog.accepted.connect(_on_privacy_accepted)
 		if _privacy_dialog.has_signal("view_policy"):
 			_privacy_dialog.view_policy.connect(_on_view_privacy_policy)
+		if _privacy_dialog.has_signal("view_terms"):
+			_privacy_dialog.view_terms.connect(_on_view_terms_of_service)
 	if dialog_layer:
 		dialog_layer.visible = true
 		dialog_layer.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -311,37 +311,38 @@ func _show_privacy_dialog() -> void:
 	set_process(false)
 
 func _on_privacy_accepted() -> void:
-	print("[TitleSplash] Privacy accepted")
 	if ProfileService:
 		var prefs: Dictionary = ProfileService.profile.get("preferences", {})
 		prefs["privacy_acknowledged"] = true
-		# Do NOT set onboarding_completed here – let Tutorial + first Result handle it
-		# This allows the guided Witness tutorial to run on first launch
+		prefs["privacy_policy_version"] = POLICY_VERSION
 		ProfileService.profile["preferences"] = prefs
 		ProfileService.save()
 	if SettingsService:
 		SettingsService.set_value("privacy_acknowledged", true)
-		SettingsService.set_value("first_launch_completed", true)
+		SettingsService.set_value("privacy_policy_version", POLICY_VERSION)
 	if AnalyticsService:
 		AnalyticsService.log_event("privacy_acknowledged")
 	if dialog_layer:
 		dialog_layer.visible = false
 	if _privacy_dialog:
 		_privacy_dialog.visible = false
-	# Continue boot flow – will check tutorial gate, then home
+	# Continue boot flow to Home. Challenge Type tutorials are gated when a family is first entered.
 	_is_navigating = false
 	_elapsed = MIN_DISPLAY_TIME
 	set_process(true)
 
 func _on_view_privacy_policy() -> void:
 	if OS.shell_open(PRIVACY_POLICY_URL) != OK:
-		print("[TitleSplash] Unable to open privacy policy URL: %s" % PRIVACY_POLICY_URL)
+		pass
+
+func _on_view_terms_of_service() -> void:
+	if OS.shell_open(TERMS_OF_SERVICE_URL) != OK:
+		pass
 
 func _navigate_home() -> void:
 	if _is_navigating:
 		return
 	_is_navigating = true
-	print("[TitleSplash] Navigating to Home – seamless hero transition")
 	# Eye wake-up: slow the pulse, then settle – "instrument waking up"
 	if _should_animate() and eye_rect:
 		# Stop the fast breathe loop

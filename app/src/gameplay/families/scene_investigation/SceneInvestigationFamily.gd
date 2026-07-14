@@ -82,7 +82,7 @@ func _init() -> void:
 			"witness_level_required": 1,
 			"recommendation_weight": 1.10,
 			"estimated_round_seconds": 15,
-			"preview_image": "res://assets/gameplay/featured_desk_scene_landscape.png"
+			"preview_image": "res://assets/gameplay/scene_investigation_preview.svg"
 		}
 	})
 

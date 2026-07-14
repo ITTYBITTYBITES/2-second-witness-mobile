@@ -54,14 +54,18 @@ func _draw() -> void:
 		return
 	var palette: Dictionary = _scene.get("theme", {})
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
-	var backdrop := Color.BLACK if high_contrast else Color(str(palette.get("surface", "#D8D1C5"))).darkened(0.30)
+	var backdrop := Color.BLACK if high_contrast else Color(str(palette.get("surface", "#D8D1C5"))).darkened(0.36)
 	draw_rect(Rect2(Vector2.ZERO, size), backdrop, true)
+	if not high_contrast:
+		draw_circle(Vector2(size.x * 0.18, size.y * 0.18), maxf(size.x, size.y) * 0.26, Color(0.42, 0.24, 1.0, 0.10))
+		draw_circle(Vector2(size.x * 0.84, size.y * 0.82), maxf(size.x, size.y) * 0.30, Color(1.0, 0.72, 0.30, 0.10))
 	var reveal := not _highlights.is_empty() or bool(_scene.get("reveal_mode", false))
 	var response := str(_scene.get("interaction_phase", "presentation")) == "response"
 	var mode := str(_scene.get("mode", "side_by_side"))
 	if mode == "sequential" and not reveal and not response:
+		_draw_title_band("WATCH FOR THE CHANGE")
 		var margin: float = size.x * 0.055
-		var rect := Rect2(margin, size.y * 0.08, size.x - margin * 2.0, size.y * 0.84)
+		var rect := Rect2(margin, size.y * 0.13, size.x - margin * 2.0, size.y * 0.79)
 		var state_duration := maxf(float(_scene.get("state_duration", 2.5)), 0.1)
 		var showing_first := _elapsed < state_duration
 		_draw_panel(rect, _scene.get("objects_a", []) if showing_first else _scene.get("objects_b", []), "FIRST" if showing_first else "SECOND")
@@ -69,16 +73,26 @@ func _draw() -> void:
 	_draw_paired(reveal)
 
 func _draw_paired(reveal: bool) -> void:
+	_draw_title_band("SPOT THE DIFFERENCE" if not reveal else "CHANGE REVEALED")
 	var panel_gap: float = size.x * 0.04
 	var panel_width: float = (size.x - panel_gap * 3.0) * 0.5
-	var top: float = size.y * 0.08
-	var panel_height: float = size.y * 0.86
+	var top: float = size.y * 0.13
+	var panel_height: float = size.y * 0.79
 	var rect_a := Rect2(panel_gap, top, panel_width, panel_height)
 	var rect_b := Rect2(panel_gap * 2.0 + panel_width, top, panel_width, panel_height)
 	_draw_panel(rect_a, _scene.get("objects_a", []), "A")
 	_draw_panel(rect_b, _scene.get("objects_b", []), "B")
 	if reveal:
 		_draw_reveal_regions()
+
+func _draw_title_band(text: String) -> void:
+	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
+	var title_color := Color.WHITE if high_contrast else Color("#F5F3FA")
+	var accent := Color.WHITE if high_contrast else Color("#FFB84D")
+	var band := Rect2(size.x * 0.08, size.y * 0.035, size.x * 0.84, maxf(34.0, size.y * 0.055))
+	draw_rect(band, Color(0, 0, 0, 0.28), true)
+	draw_line(Vector2(band.position.x, band.end.y), Vector2(band.end.x, band.end.y), Color(accent, 0.72), 2.0)
+	draw_string(ThemeDB.fallback_font, band.position + Vector2(0, band.size.y * 0.68), text, HORIZONTAL_ALIGNMENT_CENTER, band.size.x, 18, title_color)
 
 func _draw_panel(rect: Rect2, objects_value: Variant, label: String) -> void:
 	var palette: Dictionary = _scene.get("theme", {})
@@ -87,11 +101,15 @@ func _draw_panel(rect: Rect2, objects_value: Variant, label: String) -> void:
 	var surface := Color("#D8D8D8") if high_contrast else Color(str(palette.get("surface", "#E2D8C5")))
 	var border := Color.BLACK if high_contrast else Color(str(palette.get("line", "#766F82")))
 	var accent := Color.BLACK if high_contrast else Color(str(palette.get("accent", "#B99A62")))
+	draw_rect(Rect2(rect.position + Vector2(0, 6), rect.size), Color(0, 0, 0, 0.28), true)
 	draw_rect(rect, background, true)
 	draw_rect(Rect2(rect.position + Vector2(0, rect.size.y * 0.78), Vector2(rect.size.x, rect.size.y * 0.22)), surface, true)
 	draw_rect(rect, border, false, 3.0)
+	draw_rect(rect.grow(4.0), Color(accent, 0.18), false, 2.0)
 	_draw_panel_texture(rect, accent)
-	draw_string(ThemeDB.fallback_font, rect.position + Vector2(12, 27), label, HORIZONTAL_ALIGNMENT_LEFT, -1, 19, border)
+	var pill := Rect2(rect.position + Vector2(10, 10), Vector2(76, 28))
+	draw_rect(pill, Color(accent, 0.22), true)
+	draw_string(ThemeDB.fallback_font, pill.position + Vector2(0, 20), label, HORIZONTAL_ALIGNMENT_CENTER, pill.size.x, 17, border)
 	if not (objects_value is Array):
 		return
 	for value: Variant in objects_value:

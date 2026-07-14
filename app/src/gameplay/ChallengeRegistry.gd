@@ -14,7 +14,7 @@ var _challenges: Dictionary = {}
 var _ordered_ids: Array[String] = []
 
 func _ready() -> void:
-	print("[ChallengeRegistry] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -22,7 +22,6 @@ func initialize() -> void:
 	_load_registry()
 	_initialized = true
 	var all_challenges := get_all_challenges()
-	print("[ChallengeRegistry] Initialized - %d challenges" % all_challenges.size())
 	challenges_loaded.emit(all_challenges)
 	registry_updated.emit(all_challenges)
 

@@ -1,12 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#14151d"/><stop offset="1" stop-color="#24212d"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".4"/></filter></defs>
-  <rect width="960" height="540" rx="32" fill="url(#bg)"/>
-  <text x="480" y="56" fill="#c9b8ff" font-family="sans-serif" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="4">REMEMBER THE SET</text>
-  <rect x="70" y="88" width="820" height="382" rx="30" fill="#e9e3d7" stroke="#6d6578" stroke-width="6" filter="url(#s)"/>
-  <g font-family="sans-serif" font-size="17" fill="#292631" text-anchor="middle">
-    <g transform="translate(130 150)"><rect width="190" height="250" rx="22" fill="#fffdf8" stroke="#b8afbf" stroke-width="3"/><rect x="45" y="53" width="100" height="72" rx="10" fill="#5b7fd0" stroke="#292631" stroke-width="4"/><circle cx="95" cy="89" r="27" fill="#e9e3d7" stroke="#292631" stroke-width="4"/><text x="95" y="205">CAMERA</text></g>
-    <g transform="translate(385 150)"><rect width="190" height="250" rx="22" fill="#fffdf8" stroke="#ffb84d" stroke-width="7"/><path d="M95 42l55 60-55 61-55-61z" fill="#4e9a72" stroke="#292631" stroke-width="4"/><path d="M95 60v88" stroke="#292631" stroke-width="4"/><text x="95" y="205">LEAF</text></g>
-    <g transform="translate(640 150)"><rect width="190" height="250" rx="22" fill="#fffdf8" stroke="#b8afbf" stroke-width="3"/><path d="M95 38l14 42 44 1-35 26 13 42-36-25-36 25 13-42-35-26 44-1z" fill="#c7a548" stroke="#292631" stroke-width="4"/><text x="95" y="205">STAR</text></g>
-  </g>
-  <circle cx="575" cy="145" r="22" fill="#ffb84d"/><path d="M565 145l8 8 15-19" fill="none" stroke="#191720" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+<defs>
+  <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#FFD27A"/><stop offset="1" stop-color="#B98537"/></linearGradient>
+</defs><linearGradient id="wood" x1="0" x2="1"><stop offset="0" stop-color="#241712"/><stop offset="1" stop-color="#4A3022"/></linearGradient><rect width="960" height="540" rx="40" fill="url(#wood)"/><path d="M0 110h960M0 230h960M0 370h960" stroke="#7A563C" opacity=".25" stroke-width="5"/>
+<g filter="url(#softShadow)"><rect x="105" y="150" width="750" height="250" rx="30" fill="#1B1A20" stroke="#A98768" stroke-width="5"/><rect x="145" y="190" width="180" height="150" rx="18" fill="#EFE7D5"/><rect x="390" y="190" width="180" height="150" rx="18" fill="#EFE7D5"/><rect x="635" y="190" width="180" height="150" rx="18" fill="#EFE7D5"/>
+<g stroke="#292631" stroke-width="5"><circle cx="235" cy="265" r="42" fill="#5B7FD0"/><path d="M480 220l50 90h-100z" fill="#C7A548"/><path d="M725 218c45 18 55 66 5 100c-46-36-42-83-5-100z" fill="#4E9A72"/></g></g>
+<text x="84" y="502" fill="#F5F3FA" font-size="34" font-family="sans-serif" font-weight="700">OBJECT RECALL</text><text x="84" y="70" fill="#E4C99B" font-size="18" font-family="sans-serif" letter-spacing="4">ARCHIVE TRAY</text>
 </svg>

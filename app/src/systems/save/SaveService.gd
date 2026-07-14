@@ -15,7 +15,7 @@ const BACKUP_SUFFIX := ".bak"
 var _initialized: bool = false
 
 func _ready() -> void:
-	print("[SaveService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -25,7 +25,6 @@ func initialize() -> void:
 	_cleanup_stale_temporary(PROFILE_FILE)
 	_cleanup_stale_temporary(SETTINGS_FILE)
 	_initialized = true
-	print("[SaveService] Initialized - Dir: %s" % SAVE_DIR)
 
 func save_json(path: String, data: Dictionary, _encrypt: bool = false) -> bool:
 	var directory := path.get_base_dir()
@@ -175,7 +174,6 @@ func _recover_backup(path: String, backup_path: String, default_data: Dictionary
 
 func _migrate(data: Dictionary, from_version: int, to_version: int) -> Dictionary:
 	var migrated := data.duplicate(true)
-	print("[SaveService] Migrating save %d -> %d" % [from_version, to_version])
 	if from_version <= 1 and to_version >= 2:
 		if migrated.has("player_name") and not migrated.has("display_name"):
 			migrated["display_name"] = migrated["player_name"]

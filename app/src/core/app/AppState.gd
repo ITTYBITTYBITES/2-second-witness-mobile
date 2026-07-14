@@ -24,12 +24,10 @@ var _state: Dictionary = {}
 
 func _ready() -> void:
 	session_start_time = Time.get_ticks_msec()
-	print("[AppState] Ready - Phase: BOOT")
 	EventBus.app_initialized.connect(_on_app_initialized)
 
 func _on_app_initialized() -> void:
 	is_initialized = true
-	print("[AppState] App Initialized")
 
 func set_phase(new_phase: AppPhase) -> void:
 	if new_phase == current_phase:
@@ -38,7 +36,6 @@ func set_phase(new_phase: AppPhase) -> void:
 	previous_phase = old
 	current_phase = new_phase
 	phase_changed.emit(new_phase, old)
-	print("[AppState] Phase %s -> %s" % [AppPhase.keys()[old], AppPhase.keys()[new_phase]])
 
 func set_loading(loading: bool, msg: String = "") -> void:
 	is_loading = loading

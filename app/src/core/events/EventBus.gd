@@ -29,7 +29,7 @@ var _event_log: Array[Dictionary] = []
 const MAX_LOG_SIZE := 200
 
 func _ready() -> void:
-	print("[EventBus] Initialized")
+	pass
 
 func emit_routed(signal_name: String, args: Array = []) -> void:
 	_log_event(signal_name, args)
@@ -90,4 +90,3 @@ func publish_accessibility_changed(settings: Dictionary) -> void:
 func publish_error(code: String, message: String, context: Dictionary = {}) -> void:
 	_log_event("error_occurred", [code, message, context])
 	error_occurred.emit(code, message, context)
-	print("[EventBus][Error] %s: %s %s" % [code, message, str(context)])

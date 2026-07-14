@@ -43,7 +43,7 @@ const DEFAULT_CONFIG := {
 }
 
 func _ready() -> void:
-	print("[ConfigService] Ready")
+	pass
 
 func initialize() -> void:
 	if _is_loaded:
@@ -58,11 +58,9 @@ func initialize() -> void:
 			var parsed = JSON.parse_string(file.get_as_text())
 			if parsed is Dictionary:
 				_merge_config(_config, parsed)
-				print("[ConfigService] Loaded override from %s" % path)
 
 	_is_loaded = true
 	config_loaded.emit(_config)
-	print("[ConfigService] Initialized with %d keys" % _config.size())
 
 func get_value(path: String, default: Variant = null) -> Variant:
 	# Supports dot notation: "feature_flags.analytics_enabled"

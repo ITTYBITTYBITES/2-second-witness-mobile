@@ -45,11 +45,12 @@ const DEFAULT_SETTINGS := {
 	# System
 	"language": "en",
 	"first_launch_completed": false,
-	"privacy_acknowledged": false
+	"privacy_acknowledged": false,
+	"privacy_policy_version": ""
 }
 
 func _ready() -> void:
-	print("[SettingsService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -58,10 +59,8 @@ func initialize() -> void:
 	var loaded := SaveService.load_settings() if SaveService else {}
 	if loaded.is_empty():
 		_settings = DEFAULT_SETTINGS.duplicate(true)
-		print("[SettingsService] Using defaults")
 	else:
 		_settings = _merge_defaults(loaded)
-		print("[SettingsService] Loaded %d settings" % _settings.size())
 
 	_initialized = true
 	settings_loaded.emit(_settings)
@@ -103,7 +102,6 @@ func set_value(key: String, value: Variant) -> bool:
 	if AnalyticsService and not key.begins_with("volume"):
 		AnalyticsService.log_event("setting_changed", {"key": key})
 
-	print("[SettingsService] %s = %s" % [key, str(value)])
 	return true
 
 func _save() -> bool:
@@ -121,7 +119,6 @@ func reset_to_defaults() -> void:
 	_settings = DEFAULT_SETTINGS.duplicate(true)
 	_save()
 	settings_reset.emit()
-	print("[SettingsService] Reset to defaults")
 	for k in _settings.keys():
 		setting_changed.emit(k, _settings[k])
 

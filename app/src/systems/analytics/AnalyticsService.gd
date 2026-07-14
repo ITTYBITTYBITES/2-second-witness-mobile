@@ -16,7 +16,7 @@ const BUFFER_FILE := "user://analytics_buffer.jsonl"
 const ANALYTICS_VERSION := 1
 
 func _ready() -> void:
-	print("[AnalyticsService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -28,7 +28,6 @@ func initialize() -> void:
 		SettingsService.setting_changed.connect(_on_setting_changed)
 
 	_initialized = true
-	print("[AnalyticsService] Initialized - Session: %s Enabled: %s" % [_session_id, str(_is_enabled)])
 
 	if _is_enabled:
 		log_event("session_start", {
@@ -42,7 +41,6 @@ func _on_setting_changed(key: String, value: Variant) -> void:
 		_is_enabled = bool(value)
 		if not _is_enabled:
 			clear_buffer()
-		print("[AnalyticsService] Enabled set to %s" % str(_is_enabled))
 
 func log_event(event_name: String, params: Dictionary = {}) -> void:
 	if not _is_enabled:
@@ -69,7 +67,7 @@ func log_event(event_name: String, params: Dictionary = {}) -> void:
 
 	# Debug print in dev
 	if ConfigService and ConfigService.get_value("environment") == "development":
-		print("[Analytics] %s %s" % [event_name, str(params)])
+		pass
 
 func log_screen_view(screen_name: String, params: Dictionary = {}) -> void:
 	var merged := {"screen": screen_name}

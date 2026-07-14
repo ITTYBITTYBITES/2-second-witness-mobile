@@ -28,9 +28,7 @@ No external font file, stock-art package, stock-audio package, advertising SDK, 
 
 ## Android plugin review
 
-Google Play Billing plugin scaffolding exists under the local Android project directory for possible future work. It is not enabled in either production export preset, no billing API is used by the application, and billing is outside the version 4.0.0 product scope.
-
-Before release, inspect the final AAB dependency report and confirm that inactive plugin dependencies are absent. If billing or another third-party component is enabled later, add its required notices before shipping that version.
+No third-party Android plugin is enabled by the production export presets. If billing or another third-party component is enabled later, add its required notices before shipping that version.
 
 ## Release responsibility
 

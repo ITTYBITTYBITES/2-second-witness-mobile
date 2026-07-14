@@ -110,7 +110,6 @@ const LIGHT_TOKENS := {
 }
 
 func _ready() -> void:
-	print("[ThemeService] Ready")
 	if SettingsService:
 		SettingsService.setting_changed.connect(_on_setting_changed)
 
@@ -128,7 +127,6 @@ func initialize() -> void:
 		_:
 			set_theme_mode(ThemeMode.DARK)
 
-	print("[ThemeService] Initialized - Theme: %s" % current_theme_name)
 
 func set_theme_mode(mode: ThemeMode) -> void:
 	current_mode = mode
@@ -147,7 +145,6 @@ func set_theme_mode(mode: ThemeMode) -> void:
 	_apply_accessibility_tokens()
 	theme_changed.emit(current_theme_name, tokens)
 	EventBus.publish_theme_changed(current_theme_name)
-	print("[ThemeService] Theme changed to %s" % current_theme_name)
 
 func get_color(token_name: String, fallback: Color = Color.WHITE) -> Color:
 	return tokens.get(token_name, fallback)

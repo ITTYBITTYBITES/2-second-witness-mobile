@@ -247,6 +247,6 @@ func _region_options(objects: Array[Dictionary]) -> Array[Dictionary]:
 func _shuffle(values: Array, rng: RandomNumberGenerator) -> void:
 	for index: int in range(values.size() - 1, 0, -1):
 		var swap_index: int = rng.randi_range(0, index)
-		var temporary: Variant = values[index]
+		var swap_value: Variant = values[index]
 		values[index] = values[swap_index]
-		values[swap_index] = temporary
+		values[swap_index] = swap_value

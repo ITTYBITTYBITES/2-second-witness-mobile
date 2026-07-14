@@ -4,6 +4,7 @@ extends Control
 
 signal accepted()
 signal view_policy()
+signal view_terms()
 
 @onready var scrim: ColorRect = $Scrim
 @onready var panel: PanelContainer = $Margin/CenterVBox/DialogPanel
@@ -12,6 +13,7 @@ signal view_policy()
 @onready var bullets_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body/Bullets
 @onready var footer_label: Label = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Body/Footer
 @onready var policy_btn: Button = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions/PolicyButton
+@onready var terms_btn: Button = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions/TermsButton
 @onready var accept_btn: Button = $Margin/CenterVBox/DialogPanel/InnerMargin/Scroll/VBox/Actions/AcceptButton
 
 func _ready() -> void:
@@ -49,6 +51,8 @@ func _connect() -> void:
 		accept_btn.pressed.connect(_on_accept)
 	if policy_btn and not policy_btn.pressed.is_connected(_on_policy):
 		policy_btn.pressed.connect(_on_policy)
+	if terms_btn and not terms_btn.pressed.is_connected(_on_terms):
+		terms_btn.pressed.connect(_on_terms)
 
 func _apply_theme() -> void:
 	var tokens := ThemeService.tokens if ThemeService else {}
@@ -71,7 +75,7 @@ func _apply_theme() -> void:
 		panel.add_theme_stylebox_override("panel", style)
 
 	if title_label:
-		title_label.text = "Privacy & Terms"
+		title_label.text = "Terms & Privacy"
 		if ThemeService:
 			ThemeService.apply_label_style(title_label, "title", "text_primary")
 		title_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -95,7 +99,7 @@ func _apply_theme() -> void:
 		bullets_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 	if footer_label:
-		footer_label.text = "By continuing, you acknowledge these terms."
+		footer_label.text = "By continuing, you accept the Terms of Service and Privacy Policy."
 		if ThemeService:
 			ThemeService.apply_label_style(footer_label, "caption", "text_tertiary")
 		footer_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -110,8 +114,16 @@ func _apply_theme() -> void:
 			tokens.get("text_on_primary", Color.WHITE),
 			tokens.get("radius_md", 12))
 	if policy_btn:
-		policy_btn.text = "Privacy Policy"
+		policy_btn.text = "VIEW PRIVACY POLICY"
 		_apply_button_style(policy_btn,
+			Color.TRANSPARENT,
+			Color(tokens.get("surface_elevated", Color("#2A2A36"))),
+			tokens.get("text_secondary", Color.GRAY),
+			tokens.get("radius_md", 12),
+			true)
+	if terms_btn:
+		terms_btn.text = "VIEW TERMS OF SERVICE"
+		_apply_button_style(terms_btn,
 			Color.TRANSPARENT,
 			Color(tokens.get("surface_elevated", Color("#2A2A36"))),
 			tokens.get("text_secondary", Color.GRAY),
@@ -182,3 +194,8 @@ func _on_policy() -> void:
 	if AudioService:
 		AudioService.play_ui("ui_click")
 	view_policy.emit()
+
+func _on_terms() -> void:
+	if AudioService:
+		AudioService.play_ui("ui_click")
+	view_terms.emit()

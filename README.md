@@ -79,7 +79,7 @@ All gameplay launch paths enter `ChallengeSessionService`. The five fixed challe
 - Challenge History
 - Ten persisted achievements
 - Reading Comfort Mode and complete settings surface
-- Programs and Collections future-ready placeholders
+- Programs and Collections surfaces prepared for curated progression
 - Sponsor-first boot and redesigned loading states
 - Responsive phone/tablet/foldable layouts and safe-area scaling
 - Text Size, High Contrast, Reduced Motion, and Color Assistance

@@ -12,7 +12,7 @@ var _initialized: bool = false
 var _definitions: Array[Dictionary] = []
 
 func _ready() -> void:
-	print("[ProgramService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -20,7 +20,6 @@ func initialize() -> void:
 	_load_definitions()
 	_ensure_profile_fields()
 	_initialized = true
-	print("[ProgramService] Initialized - %d programs" % _definitions.size())
 
 func get_definitions() -> Array[Dictionary]:
 	_ensure_initialized()

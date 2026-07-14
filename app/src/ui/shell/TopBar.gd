@@ -116,6 +116,9 @@ func _apply_theme() -> void:
 	style.content_margin_right = 0
 	style.content_margin_top = 0
 	style.content_margin_bottom = 0
+	style.shadow_color = Color(0, 0, 0, 0.22)
+	style.shadow_size = 12
+	style.shadow_offset = Vector2(0, 3)
 	add_theme_stylebox_override("panel", style)
 
 	var touch_min: int = tokens.get("touch_target_min", 48) as int

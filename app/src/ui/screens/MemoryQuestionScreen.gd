@@ -2,10 +2,10 @@ extends Control
 ## Generic interaction host retained at the established Recall route.
 ## Family meaning and correctness remain in family ScoringPolicy code.
 
-@onready var brand_label: Label = $MainMargin/Content/Header/BrandLabel
-@onready var subtitle_label: Label = $MainMargin/Content/Header/SubtitleLabel
-@onready var question_label: Label = $MainMargin/Content/QuestionLabel
-@onready var options_container: VBoxContainer = $MainMargin/Content/OptionsContainer
+@onready var brand_label: Label = $MainMargin/Scroll/Content/Header/BrandLabel
+@onready var subtitle_label: Label = $MainMargin/Scroll/Content/Header/SubtitleLabel
+@onready var question_label: Label = $MainMargin/Scroll/Content/QuestionLabel
+@onready var options_container: VBoxContainer = $MainMargin/Scroll/Content/OptionsContainer
 @onready var background_rect: ColorRect = $Background
 
 var _challenge_data: Dictionary = {}

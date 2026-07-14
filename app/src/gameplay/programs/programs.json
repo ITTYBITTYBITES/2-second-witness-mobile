@@ -9,7 +9,8 @@
       "round_count": 3,
       "required_level": 1,
       "schedule": "daily",
-      "accent": "#6A3DFF"
+      "accent": "#6A3DFF",
+      "artwork": "res://assets/programs/daily_witness.svg"
     },
     {
       "id": "observation_bootcamp",
@@ -24,7 +25,8 @@
       "round_count": 5,
       "required_level": 1,
       "schedule": "always",
-      "accent": "#2EE6A6"
+      "accent": "#2EE6A6",
+      "artwork": "res://assets/programs/observation_bootcamp.svg"
     },
     {
       "id": "rapid_recall",
@@ -39,7 +41,8 @@
       "round_count": 5,
       "required_level": 2,
       "schedule": "always",
-      "accent": "#5DA9E9"
+      "accent": "#5DA9E9",
+      "artwork": "res://assets/programs/rapid_recall.svg"
     },
     {
       "id": "mixed_rotation",
@@ -49,7 +52,8 @@
       "round_count": 6,
       "required_level": 2,
       "schedule": "always",
-      "accent": "#FFC84D"
+      "accent": "#FFC84D",
+      "artwork": "res://assets/programs/mixed_rotation.svg"
     },
     {
       "id": "challenge_favorites",
@@ -59,7 +63,8 @@
       "round_count": 4,
       "required_level": 1,
       "schedule": "always",
-      "accent": "#FF6B9A"
+      "accent": "#FF6B9A",
+      "artwork": "res://assets/programs/challenge_favorites.svg"
     },
     {
       "id": "weekend_challenge",
@@ -69,7 +74,8 @@
       "round_count": 8,
       "required_level": 3,
       "schedule": "weekend",
-      "accent": "#FF9F5A"
+      "accent": "#FF9F5A",
+      "artwork": "res://assets/programs/weekend_challenge.svg"
     },
     {
       "id": "detail_detective",
@@ -83,7 +89,8 @@
       "round_count": 5,
       "required_level": 1,
       "schedule": "always",
-      "accent": "#F29A66"
+      "accent": "#F29A66",
+      "artwork": "res://assets/programs/detail_detective.svg"
     },
     {
       "id": "set_and_sequence",
@@ -98,7 +105,8 @@
       "round_count": 6,
       "required_level": 2,
       "schedule": "always",
-      "accent": "#9A7BFF"
+      "accent": "#9A7BFF",
+      "artwork": "res://assets/programs/set_and_sequence.svg"
     },
     {
       "id": "five_type_tour",
@@ -108,7 +116,8 @@
       "round_count": 10,
       "required_level": 3,
       "schedule": "always",
-      "accent": "#50C8B0"
+      "accent": "#50C8B0",
+      "artwork": "res://assets/programs/five_type_tour.svg"
     }
   ]
 }

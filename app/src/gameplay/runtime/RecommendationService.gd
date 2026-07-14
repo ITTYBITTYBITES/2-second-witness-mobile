@@ -7,13 +7,12 @@ signal recommendation_created(recommendation: Dictionary)
 var _initialized: bool = false
 
 func _ready() -> void:
-	print("[RecommendationService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
 		return
 	_initialized = true
-	print("[RecommendationService] Initialized")
 
 func recommend_start(player_state: Dictionary) -> Dictionary:
 	var available: Array[Dictionary] = get_available_challenge_types(player_state)

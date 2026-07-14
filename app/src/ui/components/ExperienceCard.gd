@@ -51,6 +51,9 @@ func _apply_theme() -> void:
 	style.corner_radius_top_right = radius
 	style.corner_radius_bottom_left = radius
 	style.corner_radius_bottom_right = radius
+	style.shadow_color = Color(0, 0, 0, 0.30)
+	style.shadow_size = 14
+	style.shadow_offset = Vector2(0, 5)
 	style.border_color = (
 		tokens.get("warning", Color("#FFC84D"))
 		if bool(manifest.get("locked", manifest.get("is_locked", false)))
@@ -158,6 +161,7 @@ func _refresh_ui() -> void:
 	artwork.texture = null
 	if not image_path.is_empty() and ResourceLoader.exists(image_path):
 		artwork.texture = load(image_path) as Texture2D
+	artwork.modulate = Color.WHITE if artwork.texture != null else Color(0.42, 0.24, 1.0, 0.28)
 
 	var tutorial_profile: Dictionary = manifest.get("tutorial_profile", {})
 	tutorial_button.visible = not tutorial_profile.is_empty()

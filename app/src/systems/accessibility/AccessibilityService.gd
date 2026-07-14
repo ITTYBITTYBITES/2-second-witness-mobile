@@ -15,7 +15,7 @@ var _screen_reader_hints: bool = false
 var _initialized: bool = false
 
 func _ready() -> void:
-	print("[AccessibilityService] Ready")
+	pass
 
 func initialize() -> void:
 	if _initialized:
@@ -31,8 +31,6 @@ func initialize() -> void:
 		SettingsService.setting_changed.connect(_on_setting_changed)
 
 	_initialized = true
-	var summary := "[AccessibilityService] Initialized - font_scale=%.2f reduced_motion=%s"
-	print(summary % [_font_scale, str(_reduced_motion)])
 	_accessibility_updated()
 
 func _on_setting_changed(key: String, value: Variant) -> void:
@@ -111,7 +109,7 @@ func vibrate(duration_ms: int = 50, _amplitude: float = 0.5) -> void:
 		# Input.vibrate_handheld exists in Godot 4
 		Input.vibrate_handheld(duration_ms)
 	else:
-		# Desktop placeholder
+		# Desktop fallback: no haptic device is available
 		pass
 
 func get_settings_snapshot() -> Dictionary:
