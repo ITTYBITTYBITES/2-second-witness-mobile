@@ -7,7 +7,7 @@ signal theme_tokens_updated()
 
 enum ThemeMode { DARK, LIGHT, SYSTEM }
 
-var current_mode: ThemeMode = ThemeMode.DARK
+var current_mode: int = ThemeMode.DARK
 var current_theme_name: String = "dark"
 var tokens: Dictionary = {}
 
@@ -128,7 +128,7 @@ func initialize() -> void:
 			set_theme_mode(ThemeMode.DARK)
 
 
-func set_theme_mode(mode: ThemeMode) -> void:
+func set_theme_mode(mode: int) -> void:
 	current_mode = mode
 	match mode:
 		ThemeMode.DARK:

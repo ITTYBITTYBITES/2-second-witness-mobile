@@ -244,7 +244,7 @@ func stop_bgm_track(fade_seconds: float = 0.4) -> void:
 
 func play_sound(
 	sound_id: String,
-	bus: Bus = Bus.SFX,
+	bus: int = Bus.SFX,
 	volume_linear: float = 1.0,
 	_loop: bool = false
 ) -> void:
@@ -322,7 +322,7 @@ func _load_stream(sound_id: String) -> AudioStream:
 			return load(path) as AudioStream
 	return null
 
-func set_volume(bus: Bus, linear: float) -> void:
+func set_volume(bus: int, linear: float) -> void:
 	var bus_name: String = BUS_NAMES[bus]
 	_volumes[bus_name] = clamp(linear, 0.0, 1.0)
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index(bus_name), linear_to_db(_volumes[bus_name]))
@@ -330,10 +330,10 @@ func set_volume(bus: Bus, linear: float) -> void:
 	if SettingsService:
 		SettingsService.set_value("volume_%s" % bus_name.to_lower(), _volumes[bus_name])
 
-func get_volume(bus: Bus) -> float:
+func get_volume(bus: int) -> float:
 	return _volumes.get(BUS_NAMES[bus], 1.0)
 
-func set_muted(bus: Bus, muted: bool) -> void:
+func set_muted(bus: int, muted: bool) -> void:
 	var bus_name: String = BUS_NAMES[bus]
 	_muted[bus_name] = muted
 	AudioServer.set_bus_mute(AudioServer.get_bus_index(bus_name), muted)
@@ -341,7 +341,7 @@ func set_muted(bus: Bus, muted: bool) -> void:
 	if SettingsService:
 		SettingsService.set_value("mute_%s" % bus_name.to_lower(), muted)
 
-func is_muted(bus: Bus) -> bool:
+func is_muted(bus: int) -> bool:
 	return _muted.get(BUS_NAMES[bus], false)
 
 func _apply_all_volumes() -> void:
@@ -383,7 +383,7 @@ func _exit_tree() -> void:
 	_stream_cache.clear()
 
 func _on_audio_requested(bus: String, sound_id: String, params: Dictionary) -> void:
-	var b: Bus = Bus.SFX
+	var b: int = Bus.SFX
 	match bus.to_lower():
 		"bgm": b = Bus.BGM
 		"ui": b = Bus.UI

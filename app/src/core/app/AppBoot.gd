@@ -2,9 +2,7 @@ extends Node
 ## AppBoot - Clean startup flow orchestrator
 ## Phases: Preload configs -> Init systems -> Load saves -> Ready
 
-@warning_ignore("unused_signal")
 signal boot_step_started(step: String)
-@warning_ignore("unused_signal")
 signal boot_step_completed(step: String, duration_ms: int)
 signal boot_completed()
 signal boot_failed(reason: String)
@@ -51,7 +49,7 @@ func start_boot() -> void:
 	boot_completed.emit()
 	EventBus.publish_app_initialized()
 
-func _run_step(step_name: String, _step: BootStep, callable: Callable) -> void:
+func _run_step(step_name: String, _step: int, callable: Callable) -> void:
 	var start := Time.get_ticks_msec()
 	boot_step_started.emit(step_name)
 	AppState.set_loading(true, "Loading %s..." % step_name.capitalize())
