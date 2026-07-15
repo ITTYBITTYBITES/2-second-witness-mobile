@@ -1,15 +1,22 @@
 extends Control
 class_name PatternRecallView
 ## Discrete pattern presentation and complete numbered evidence reveal.
+##
+## Asset pipeline: uses VisualStyleSystem to render sprite textures for known
+## symbol kinds, with full vector fallback for kinds without assets yet.
 
 var _scene: Dictionary = {}
 var _elapsed: float = 0.0
 var _highlights: Array[String] = []
 var _last_step: int = -1
+var _style: VisualStyleSystem
+var _family_id: String = "pattern_recall"
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	resized.connect(queue_redraw)
+	_style = VisualStyleSystem.new()
+	_style.scan_assets()
 	set_process(not _scene.is_empty() and _highlights.is_empty())
 	_setup_background()
 
@@ -85,23 +92,25 @@ func _draw_grid_presentation(sequence: Array) -> void:
 	for row: int in range(grid_size):
 		for column: int in range(grid_size):
 			var token := "%s%d" % [char(65 + row), column + 1]
-			var rect := Rect2(origin + Vector2(column * cell, row * cell), Vector2(cell, cell)).grow(-6.0)
+			var cell_rect := Rect2(origin + Vector2(column * cell, row * cell), Vector2(cell, cell)).grow(-6.0)
 			var active := token == str(sequence[index])
 			var accumulated := revealed_tokens.has(token)
 			var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
 			
-			# Blueprint theme: glowing accents on dark blue
-			var fill := Color("#BFAEFF") if active and high_contrast else Color("#8A68FF") if active else Color("#5B2CCB") if accumulated and high_contrast else Color("#4A3B8C") if accumulated else Color("#111111") if high_contrast else Color("#1A2A4A")
-			draw_rect(rect, fill, true)
-			draw_rect(rect, Color.WHITE if high_contrast else Color("#BFAEFF"), false, 2.0 if high_contrast else 1.5)
+			# Grounded palette: warm earth tones replace purple blueprint
+			var accent := _style.accent_color(_family_id)
+			var fill := Color("#BFAEFF") if active and high_contrast else Color(accent) if active else Color("#5B2CCB") if accumulated and high_contrast else Color("#6B5D4F") if accumulated else Color("#111111") if high_contrast else Color("#3D3630")
+			draw_rect(cell_rect, fill, true)
+			draw_rect(cell_rect, Color.WHITE if high_contrast else Color(accent, 0.72), false, 2.0 if high_contrast else 1.5)
 			
 			var text_color := Color.WHITE if not active else Color("#FDFCFB")
-			draw_string(ThemeDB.fallback_font, rect.position + Vector2(0, rect.size.y * 0.64), token, HORIZONTAL_ALIGNMENT_CENTER, rect.size.x, 18, text_color)
+			draw_string(ThemeDB.fallback_font, cell_rect.position + Vector2(0, cell_rect.size.y * 0.64), token, HORIZONTAL_ALIGNMENT_CENTER, cell_rect.size.x, 18, text_color)
 	if style == "cumulative_build" and index > 0:
 		var points := PackedVector2Array()
 		for step: int in range(index + 1):
 			points.append(_token_center(str(sequence[step]), grid_size, origin, cell))
-		draw_polyline(points, Color("#F3C969"), 4.0)
+		var accent := _style.accent_color(_family_id)
+		draw_polyline(points, Color(accent), 4.0)
 	_draw_step_counter(index + 1, sequence.size())
 
 func _draw_shape_presentation(sequence: Array) -> void:
@@ -110,15 +119,17 @@ func _draw_shape_presentation(sequence: Array) -> void:
 	var token := str(sequence[index])
 	var panel := Rect2(size.x * 0.10, size.y * 0.10, size.x * 0.80, size.y * 0.76)
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
-	draw_rect(panel, Color("#111111") if high_contrast else Color("#242533"), true)
-	draw_rect(panel, Color.WHITE if high_contrast else Color("#69677D"), false, 4.0 if high_contrast else 3.0)
-	_draw_symbol(panel.get_center(), minf(panel.size.x, panel.size.y) * 0.28, token, Color("#BFAEFF") if high_contrast else Color("#A98CFF"))
+	draw_rect(panel, Color("#111111") if high_contrast else Color("#3D3630"), true)
+	var accent := _style.accent_color(_family_id)
+	draw_rect(panel, Color.WHITE if high_contrast else Color(accent, 0.55), false, 4.0 if high_contrast else 3.0)
+	_draw_symbol(panel.get_center(), minf(panel.size.x, panel.size.y) * 0.28, token, Color(accent) if not high_contrast else Color("#BFAEFF"))
 	draw_string(ThemeDB.fallback_font, panel.position + Vector2(0, panel.size.y - 28), token, HORIZONTAL_ALIGNMENT_CENTER, panel.size.x, 22, Color("#F5F3FA"))
 	_draw_step_counter(index + 1, sequence.size())
 
 func _draw_reveal(sequence: Array, mode: String) -> void:
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
-	draw_string(ThemeDB.fallback_font, Vector2(size.x * 0.10, size.y * 0.09), "THE PATTERN, IN ORDER", HORIZONTAL_ALIGNMENT_CENTER, size.x * 0.80, 18, Color("#C8B9F7"))
+	var accent := _style.accent_color(_family_id)
+	draw_string(ThemeDB.fallback_font, Vector2(size.x * 0.10, size.y * 0.09), "THE PATTERN, IN ORDER", HORIZONTAL_ALIGNMENT_CENTER, size.x * 0.80, 18, Color(accent, 0.85))
 	if mode == "shapes":
 		var columns: int = mini(sequence.size(), 3)
 		var rows: int = ceili(float(sequence.size()) / float(columns))
@@ -128,9 +139,9 @@ func _draw_reveal(sequence: Array, mode: String) -> void:
 			var row: int = floori(float(index) / float(columns))
 			var column: int = index % columns
 			var card := Rect2(size.x * 0.10 + column * card_width, size.y * 0.16 + row * card_height, card_width, card_height).grow(-7.0)
-			draw_rect(card, Color("#111111") if high_contrast else Color("#282938"), true)
-			draw_rect(card, Color.WHITE if high_contrast else Color("#6E6982"), false, 3.0 if high_contrast else 2.0)
-			_draw_symbol(card.get_center(), minf(card.size.x, card.size.y) * 0.24, str(sequence[index]), Color("#A98CFF"))
+			draw_rect(card, Color("#111111") if high_contrast else Color("#3D3630"), true)
+			draw_rect(card, Color.WHITE if high_contrast else Color(accent, 0.50), false, 3.0 if high_contrast else 2.0)
+			_draw_symbol(card.get_center(), minf(card.size.x, card.size.y) * 0.24, str(sequence[index]), Color(accent))
 			_draw_number_badge(card.position + Vector2(20, 20), index + 1)
 			draw_string(ThemeDB.fallback_font, card.position + Vector2(4, card.size.y - 12), str(sequence[index]), HORIZONTAL_ALIGNMENT_CENTER, card.size.x - 8, 14, Color.WHITE)
 		return
@@ -142,17 +153,17 @@ func _draw_reveal(sequence: Array, mode: String) -> void:
 	for token_value: Variant in sequence:
 		points.append(_token_center(str(token_value), grid_size, origin, cell))
 	if points.size() > 1:
-		draw_polyline(points, Color(1.0, 0.72, 0.30, 0.82), 7.0)
+		draw_polyline(points, Color(accent, 0.82), 7.0)
 	for row: int in range(grid_size):
 		for column: int in range(grid_size):
 			var token := "%s%d" % [char(65 + row), column + 1]
-			var rect := Rect2(origin + Vector2(column * cell, row * cell), Vector2(cell, cell)).grow(-6.0)
+			var cell_rect := Rect2(origin + Vector2(column * cell, row * cell), Vector2(cell, cell)).grow(-6.0)
 			var sequence_index: int = sequence.find(token)
-			draw_rect(rect, Color("#352254") if sequence_index >= 0 and high_contrast else Color("#51406F") if sequence_index >= 0 else Color("#111111") if high_contrast else Color("#292934"), true)
-			draw_rect(rect, Color.WHITE if high_contrast else Color("#77758A"), false, 3.0 if high_contrast else 2.0)
-			draw_string(ThemeDB.fallback_font, rect.position + Vector2(0, rect.size.y * 0.64), token, HORIZONTAL_ALIGNMENT_CENTER, rect.size.x, 18, Color.WHITE)
+			draw_rect(cell_rect, Color("#352254") if sequence_index >= 0 and high_contrast else Color("#6B5D4F") if sequence_index >= 0 else Color("#111111") if high_contrast else Color("#2A2520"), true)
+			draw_rect(cell_rect, Color.WHITE if high_contrast else Color(accent, 0.48), false, 3.0 if high_contrast else 2.0)
+			draw_string(ThemeDB.fallback_font, cell_rect.position + Vector2(0, cell_rect.size.y * 0.64), token, HORIZONTAL_ALIGNMENT_CENTER, cell_rect.size.x, 18, Color.WHITE)
 			if sequence_index >= 0:
-				_draw_number_badge(rect.position + Vector2(20, 20), sequence_index + 1)
+				_draw_number_badge(cell_rect.position + Vector2(20, 20), sequence_index + 1)
 
 func _grid_geometry(grid_size: int) -> Dictionary:
 	var side: float = minf(size.x * 0.88, size.y * 0.82)
@@ -172,10 +183,19 @@ func _draw_step_counter(current: int, total: int) -> void:
 	draw_string(ThemeDB.fallback_font, Vector2(size.x * 0.10, size.y * 0.95), "STEP %d OF %d" % [current, total], HORIZONTAL_ALIGNMENT_CENTER, size.x * 0.80, 17, Color("#D3CCE8"))
 
 func _draw_number_badge(center: Vector2, number: int) -> void:
-	draw_circle(center, 16.0, Color("#FFB84D"))
+	var accent := _style.accent_color(_family_id)
+	draw_circle(center, 16.0, accent)
 	draw_string(ThemeDB.fallback_font, center + Vector2(-12, 6), str(number), HORIZONTAL_ALIGNMENT_CENTER, 24.0, 14, Color("#191720"))
 
 func _draw_symbol(center: Vector2, extent: float, token: String, color: Color) -> void:
+	# ── ASSET PIPELINE: try sprite texture first ──
+	if _style.has_sprite(token):
+		var symbol_size := Vector2(extent * 2.0, extent * 2.0)
+		var symbol_rect := Rect2(center - symbol_size * 0.5, symbol_size)
+		if _style.draw_sprite_object(self, token, symbol_rect):
+			return
+
+	# ── VECTOR FALLBACK ──
 	var outline := Color("#F5F3FA")
 	match token:
 		"Circle":

@@ -39,7 +39,7 @@ const CANVAS_BASE := Color("#2A2520")  # warm dark neutral
 # Maps visual_kind → {sprite_path, available}
 # "available" is false until the sprite file exists on disk.
 # ────────────────────────────────────────────────────────────
-const MASTER_MANIFEST: Dictionary = {
+var MASTER_MANIFEST: Dictionary = {
 	# ── Scene Investigation (65 kinds) ──
 	"banana":         {"sprite": "banana.png",         "available": true},
 	"basket":         {"sprite": "basket.png",         "available": true},

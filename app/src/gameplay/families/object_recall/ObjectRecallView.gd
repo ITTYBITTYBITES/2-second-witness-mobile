@@ -1,15 +1,22 @@
 extends Control
 class_name ObjectRecallView
 ## Illustrated, label-reinforced object tray with explicit result evidence.
+##
+## Asset pipeline: uses VisualStyleSystem to render sprite textures for known
+## visual_kinds, with full vector fallback for kinds without assets yet.
 
 var _scene: Dictionary = {}
 var _highlights: Array[String] = []
 var _reveal_elapsed: float = 0.0
+var _style: VisualStyleSystem
+var _family_id: String = "object_recall"
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	resized.connect(queue_redraw)
 	set_process(false)
+	_style = VisualStyleSystem.new()
+	_style.scan_assets()
 	_setup_background()
 
 func _setup_background() -> void:
@@ -64,7 +71,8 @@ func _draw() -> void:
 		draw_rect(tray, Color.WHITE, false, 3.0)
 	else:
 		draw_rect(tray, Color(0.03, 0.02, 0.03, 0.18), true)
-		draw_rect(tray, Color(1.0, 0.82, 0.52, 0.34), false, 2.0)
+		var accent := _style.accent_color(_family_id)
+		draw_rect(tray, Color(accent, 0.34), false, 2.0)
 
 	var header := "EVIDENCE" if reveal else "REMEMBER THE SET"
 	var header_color := Color.WHITE if high_contrast else Color("#F4E6CF")
@@ -114,29 +122,39 @@ func _draw_object(tray: Rect2, data: Dictionary, use_position: bool) -> void:
 		draw_rect(card, Color.BLACK, false, 2.0)
 	else:
 		draw_circle(icon_center, icon_extent * 1.55, Color(0.03, 0.02, 0.04, 0.72))
+		var accent := _style.accent_color(_family_id)
 		draw_arc(
 			icon_center,
 			icon_extent * 1.55,
 			0,
 			TAU,
 			28,
-			Color(1.0, 0.86, 0.66, 0.24),
+			Color(accent, 0.24),
 			1.5
 		)
 	if selected:
+		var accent := _style.accent_color(_family_id)
 		draw_rect(
 			card.grow(4.0 + pulse * 2.0),
-			Color(1.0, 0.72, 0.30, pulse * 0.5),
+			Color(accent, pulse * 0.5),
 			false,
 			4.0
 		)
 
-	_draw_icon(
-		icon_center,
-		icon_extent,
-		str(data.get("kind", "circle")),
-		Color(str(data.get("color", "#5B7FD0")))
-	)
+	var kind := str(data.get("kind", "circle"))
+	var kind_color := Color(str(data.get("color", "#5B7FD0")))
+
+	# ── ASSET PIPELINE: try sprite texture first ──
+	if _style.has_sprite(kind):
+		var icon_size := Vector2(icon_extent * 2.0, icon_extent * 2.0)
+		var sprite_rect := Rect2(icon_center - icon_size * 0.5, icon_size)
+		# Draw shadow under sprite
+		if not high_contrast:
+			_style.draw_shadow(self, icon_center, icon_size, size)
+		_style.draw_sprite_object(self, kind, sprite_rect)
+	else:
+		# ── VECTOR FALLBACK ──
+		_draw_icon(icon_center, icon_extent, kind, kind_color)
 
 	var label_text := str(data.get("label", "Object"))
 	var label_color := Color.BLACK if high_contrast else Color("#FFF4E2")
@@ -153,9 +171,10 @@ func _draw_object(tray: Rect2, data: Dictionary, use_position: bool) -> void:
 	)
 
 func _draw_missing_evidence(items: Array[Dictionary]) -> void:
+	var accent := _style.accent_color(_family_id)
 	var band := Rect2(size.x * 0.05, size.y * 0.74, size.x * 0.90, size.y * 0.22)
 	draw_rect(band, Color("#24212D"), true)
-	draw_rect(band, Color("#FFB84D"), false, 3.0)
+	draw_rect(band, accent, false, 3.0)
 	draw_string(
 		ThemeDB.fallback_font,
 		band.position + Vector2(0, 22),
@@ -163,7 +182,7 @@ func _draw_missing_evidence(items: Array[Dictionary]) -> void:
 		HORIZONTAL_ALIGNMENT_CENTER,
 		band.size.x,
 		16,
-		Color("#FFCF7A")
+		Color(accent, 0.85)
 	)
 	var spacing: float = band.size.x / float(items.size() + 1)
 	for index: int in range(items.size()):
@@ -215,10 +234,10 @@ func _draw_icon(center: Vector2, extent: float, kind: String, color: Color) -> v
 			]), color)
 			draw_line(center + Vector2(0, -extent * 0.65), center + Vector2(0, extent * 0.75), outline, 2.0)
 		"book", "folder", "map", "flag":
-			var rect := Rect2(center - Vector2(extent, extent * 0.72), Vector2(extent * 2.0, extent * 1.44))
-			draw_rect(rect, color, true)
-			draw_rect(rect, outline, false, 2.0)
-			draw_line(Vector2(rect.position.x + rect.size.x * 0.24, rect.position.y), Vector2(rect.position.x + rect.size.x * 0.24, rect.end.y), outline, 2.0)
+			var icon_rect := Rect2(center - Vector2(extent, extent * 0.72), Vector2(extent * 2.0, extent * 1.44))
+			draw_rect(icon_rect, color, true)
+			draw_rect(icon_rect, outline, false, 2.0)
+			draw_line(Vector2(icon_rect.position.x + icon_rect.size.x * 0.24, icon_rect.position.y), Vector2(icon_rect.position.x + icon_rect.size.x * 0.24, icon_rect.end.y), outline, 2.0)
 		"pencil", "brush", "spoon", "key", "comb", "scissors":
 			draw_line(center + Vector2(-extent, extent * 0.35), center + Vector2(extent, -extent * 0.35), outline, 7.0)
 			draw_line(center + Vector2(-extent, extent * 0.35), center + Vector2(extent, -extent * 0.35), color, 4.0)
@@ -244,9 +263,9 @@ func _draw_icon(center: Vector2, extent: float, kind: String, color: Color) -> v
 			if kind in ["cup", "mug"]:
 				draw_arc(center + Vector2(extent * 0.66, 0), extent * 0.32, -PI * 0.5, PI * 0.5, 12, outline, 3.0)
 		"camera", "lamp", "magnet", "drum", "basket":
-			var rect := Rect2(center - Vector2(extent, extent * 0.66), Vector2(extent * 2.0, extent * 1.32))
-			draw_rect(rect, color, true)
-			draw_rect(rect, outline, false, 2.0)
+			var icon_rect := Rect2(center - Vector2(extent, extent * 0.66), Vector2(extent * 2.0, extent * 1.32))
+			draw_rect(icon_rect, color, true)
+			draw_rect(icon_rect, outline, false, 2.0)
 			if kind == "camera":
 				draw_circle(center, extent * 0.42, Color("#E9E3D7"))
 				draw_arc(center, extent * 0.42, 0, TAU, 20, outline, 2.0)
