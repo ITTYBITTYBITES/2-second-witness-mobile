@@ -4,8 +4,6 @@ extends PanelContainer
 ## Primary action: "Start Witness Round"
 
 signal start_requested()
-signal tutorial_requested(family_id: String)
-
 var _data: Dictionary = {}
 var _is_locked: bool = false
 
@@ -31,7 +29,7 @@ func set_recommendation(recommendation: Dictionary, available: Array = []) -> vo
 	_data = recommendation.duplicate(true)
 	
 	# Resolve full item for extra metadata (mastery, duration)
-	var full_item := _find_full_item(available)
+	var full_item: Dictionary = _find_full_item(available)
 	if not full_item.is_empty():
 		_data.merge(full_item, false)
 	
@@ -42,7 +40,7 @@ func set_continue_recommendation(continue_rec: Dictionary, available: Array = []
 	# Optional: allow parent to indicate this is primarily a "continue" action
 	if not continue_rec.is_empty():
 		_data = continue_rec.duplicate(true)
-		var full_item := _find_full_item(available)
+		var full_item: Dictionary = _find_full_item(available)
 		if not full_item.is_empty():
 			_data.merge(full_item, false)
 		_data["is_continue"] = true
@@ -50,7 +48,7 @@ func set_continue_recommendation(continue_rec: Dictionary, available: Array = []
 		_refresh_ui()
 
 func _find_full_item(available: Array) -> Dictionary:
-	var family_id := str(_data.get("family_id", ""))
+	var family_id: String = str(_data.get("family_id", ""))
 	for item in available:
 		if item is Dictionary and str(item.get("family_id", "")) == family_id:
 			return item.duplicate(true)
@@ -73,19 +71,19 @@ func _refresh_ui() -> void:
 	reason_label.text = reason
 	
 	# Duration
-	var est := int(_data.get("estimated_duration_sec", 120))
-	var mins := max(1, int(round(est / 60.0)))
+	var est: int = int(_data.get("estimated_duration_sec", 120))
+	var mins: int = maxi(1, int(round(float(est) / 60.0)))
 	duration_label.text = "%d min" % mins
 	
 	# Mastery
 	var progress: Dictionary = _data.get("progress", {})
-	var mastery := clampf(float(progress.get("mastery", 0.0)), 0.0, 100.0)
+	var mastery: float = clampf(float(progress.get("mastery", 0.0)), 0.0, 100.0)
 	mastery_label.text = "Mastery %d%%" % int(round(mastery))
 	
 	# Button + eyebrow state (premium focused copy)
 	start_button.disabled = _is_locked
 	if _is_locked:
-		var req := int(_data.get("required_level", 1))
+		var req: int = int(_data.get("required_level", 1))
 		start_button.text = "LEVEL %d REQUIRED" % req
 		eyebrow.text = "TODAY'S WITNESS EXPERIENCE"
 	elif is_continue:
@@ -134,6 +132,14 @@ func _apply_theme() -> void:
 	
 	# Start button - dominant primary
 	_style_start_button(tokens)
+	_apply_text_layout_guards()
+
+func _apply_text_layout_guards() -> void:
+	for label: Label in [eyebrow, duration_label, mastery_label]:
+		if label:
+			label.autowrap_mode = TextServer.AUTOWRAP_OFF
+			label.clip_text = true
+			label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 
 func _style_start_button(tokens: Dictionary) -> void:
 	var normal := StyleBoxFlat.new()
@@ -179,7 +185,7 @@ func set_disabled(disabled: bool) -> void:
 		if _data.is_empty():
 			start_button.text = "START"
 		elif _is_locked:
-			var req := int(_data.get("required_level", 1))
+			var req: int = int(_data.get("required_level", 1))
 			start_button.text = "LEVEL %d REQUIRED" % req
 		else:
 			start_button.text = "START WITNESS ROUND"
