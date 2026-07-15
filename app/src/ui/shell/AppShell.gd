@@ -32,7 +32,7 @@ const SCREEN_SCENES := {
 	"about":           "res://src/ui/screens/AboutScreen.tscn",
 	"achievements":    "res://src/ui/screens/AchievementsScreen.tscn",
 	"programs":        "res://src/ui/screens/ProgramsScreen.tscn",
-	"home":            "res://src/ui/screens/HomeScreen.tscn",
+	"home":            "res://src/ui/screens/HomeV2Screen.tscn",
 	"experiences":     "res://src/ui/screens/ExperiencesScreen.tscn",
 	"profile":         "res://src/ui/screens/ProfileScreen.tscn",
 	"settings":        "res://src/ui/screens/SettingsScreen.tscn"
