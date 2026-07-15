@@ -123,18 +123,18 @@ func _draw_object(data: Dictionary, canvas_size: Vector2) -> void:
 	# ── ASSET PIPELINE: try sprite texture first ──
 	if _style.has_sprite(kind):
 		draw_set_transform(center, object_rotation, Vector2.ONE)
-		var rect := Rect2(-object_size * 0.5, object_size)
-		_style.draw_sprite_object(self, kind, rect)
+		var sprite_rect := Rect2(-object_size * 0.5, object_size)
+		_style.draw_sprite_object(self, kind, sprite_rect)
 		# Highlight overlay on top of sprite
 		if _highlight_ids.has(str(data.get("instance_id", ""))):
 			var pulse: float = 0.72 + 0.28 * sin(_reveal_elapsed * 4.5)
 			var accent := _style.accent_color(_family_id)
-			var focus_rect := rect.grow(8.0 + pulse * 3.0)
+			var focus_rect := sprite_rect.grow(8.0 + pulse * 3.0)
 			draw_rect(focus_rect, Color(accent, pulse), false, 5.0)
 			draw_rect(focus_rect.grow(5.0), Color(accent, 0.18 * pulse), false, 3.0)
 		if high_contrast:
-			draw_rect(rect.grow(6.0), Color.BLACK, false, 3.0)
-			draw_rect(rect.grow(3.0), Color.WHITE, false, 2.0)
+			draw_rect(sprite_rect.grow(6.0), Color.BLACK, false, 3.0)
+			draw_rect(sprite_rect.grow(3.0), Color.WHITE, false, 2.0)
 		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 		return
 	# ── VECTOR FALLBACK: original rendering for kinds without sprites ──

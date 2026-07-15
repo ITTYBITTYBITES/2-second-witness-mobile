@@ -1,6 +1,10 @@
 extends Control
 class_name FlashWordsSceneView
 ## Family typography renderer for observation sequences and result comparison.
+##
+## Asset pipeline: Flash Words is text-only, so no sprite rendering is needed.
+## The grounded-realistic migration updates the background palette and decorative
+## accents from purple/cartoon to warm earth tones.
 
 var _scene_data: Dictionary = {}
 var _elapsed: float = 0.0
@@ -9,11 +13,14 @@ var _word_card: PanelContainer
 var _word_label: Label
 var _detail_label: Label
 var _position_label: Label
+var _style: VisualStyleSystem
+var _family_id: String = "flash_words"
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	if not resized.is_connected(_on_resized):
 		resized.connect(_on_resized)
+	_style = VisualStyleSystem.new()
 	_build_ui()
 	_apply_scene()
 	queue_redraw()
@@ -62,7 +69,7 @@ func _build_ui() -> void:
 	_word_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_word_label.autowrap_mode = TextServer.AUTOWRAP_OFF
 	_word_label.add_theme_color_override("font_color", Color("#F5F3FA"))
-	_word_label.add_theme_color_override("font_shadow_color", Color(0.54, 0.41, 1.0, 0.75))
+	_word_label.add_theme_color_override("font_shadow_color", Color(0.78, 0.66, 0.42, 0.75))
 	_word_label.add_theme_constant_override("shadow_offset_x", 0)
 	_word_label.add_theme_constant_override("shadow_offset_y", 3)
 	_word_card.add_child(_word_label)
@@ -70,12 +77,13 @@ func _build_ui() -> void:
 	_detail_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_detail_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_detail_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_detail_label.add_theme_color_override("font_color", Color("#B8B8CC"))
+	_detail_label.add_theme_color_override("font_color", Color("#C8BFB0"))
 	_detail_label.add_theme_font_size_override("font_size", 22)
 	stack.add_child(_detail_label)
 	_position_label = Label.new()
 	_position_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	_position_label.add_theme_color_override("font_color", Color("#8A68FF"))
+	var accent := _style.accent_color(_family_id) if _style else Color("#C8A96E")
+	_position_label.add_theme_color_override("font_color", accent)
 	_position_label.add_theme_font_size_override("font_size", 18)
 	stack.add_child(_position_label)
 
@@ -84,17 +92,21 @@ func _on_resized() -> void:
 	queue_redraw()
 
 func _draw() -> void:
-	var rect := Rect2(Vector2.ZERO, size)
+	var canvas_rect := Rect2(Vector2.ZERO, size)
 	var high_contrast := AccessibilityService.is_high_contrast_enabled() if AccessibilityService else false
-	draw_rect(rect, Color.BLACK if high_contrast else Color("#100D18"), true)
+	# Grounded warm dark canvas replacing old dark purple
+	var bg_color := Color.BLACK if high_contrast else (_style.canvas_background(_family_id) if _style else Color("#2A2520"))
+	draw_rect(canvas_rect, bg_color, true)
 	if high_contrast:
 		return
-	var band_color := Color(0.42, 0.24, 1.0, 0.16)
-	draw_circle(Vector2(size.x * 0.18, size.y * 0.20), maxf(size.x, size.y) * 0.24, band_color)
-	draw_circle(Vector2(size.x * 0.86, size.y * 0.78), maxf(size.x, size.y) * 0.30, Color(1.0, 0.72, 0.30, 0.10))
+	# Subtle warm ambient glow replacing old purple/orange blobs
+	var warm_glow := Color(0.78, 0.65, 0.42, 0.12)
+	draw_circle(Vector2(size.x * 0.18, size.y * 0.20), maxf(size.x, size.y) * 0.24, warm_glow)
+	draw_circle(Vector2(size.x * 0.86, size.y * 0.78), maxf(size.x, size.y) * 0.30, Color(0.72, 0.58, 0.38, 0.08))
+	# Faint horizontal texture lines in warm tone
 	for i in range(5):
 		var y := size.y * (0.18 + float(i) * 0.15)
-		draw_line(Vector2(size.x * 0.08, y), Vector2(size.x * 0.92, y + size.y * 0.04), Color(0.74, 0.68, 1.0, 0.05), 2.0)
+		draw_line(Vector2(size.x * 0.08, y), Vector2(size.x * 0.92, y + size.y * 0.04), Color(0.78, 0.68, 0.52, 0.04), 2.0)
 
 func _apply_scene() -> void:
 	if not _word_label:
