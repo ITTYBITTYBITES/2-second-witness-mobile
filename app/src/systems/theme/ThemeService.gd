@@ -177,7 +177,10 @@ func apply_label_style(label: Label, style: String, color_token: String = "text_
 		return
 	apply_typography(label, style)
 	label.add_theme_color_override("font_color", get_color(color_token))
-	if not label.autowrap_mode:
+	# Preserve each label's scene/code wrapping choice. Forcing autowrap on every
+	# label made short home-screen labels wrap awkwardly in narrow containers.
+	# Long copy that has not opted into wrapping still gets a safe default.
+	if label.autowrap_mode == TextServer.AUTOWRAP_OFF and label.text.length() > 80:
 		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 
 func get_safe_area() -> Rect2i:

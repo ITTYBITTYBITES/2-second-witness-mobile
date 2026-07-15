@@ -246,8 +246,8 @@ func _needs_privacy_acknowledgment() -> bool:
 func _get_intro_family_id() -> String:
 	if not ChallengeFamilyRegistry:
 		return ""
-	var visible: Array[String] = ChallengeFamilyRegistry.get_visible_family_ids()
-	return visible[0] if not visible.is_empty() else ""
+	var visible_family_ids: Array[String] = ChallengeFamilyRegistry.get_visible_family_ids()
+	return visible_family_ids[0] if not visible_family_ids.is_empty() else ""
 
 func _get_intro_template_id(family_id: String) -> String:
 	if not ChallengeFamilyRegistry or family_id.is_empty():

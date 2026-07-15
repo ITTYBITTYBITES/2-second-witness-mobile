@@ -12,12 +12,37 @@ const MIN_LINEAR_VOLUME: float = 0.0001
 ## Minimum dB value for volume_db (effectively silent)
 const MIN_VOLUME_DB: float = -80.0
 
-## Converts linear volume (0.0-1.0) to decibels, clamping to avoid -inf/NaN
+## Converts linear volume (0.0-1.0) to decibels, clamping to avoid -inf/NaN.
 static func linear_to_db(linear: float) -> float:
-	if linear <= 0.0:
+	if is_nan(linear) or is_inf(linear) or linear <= 0.0:
 		return MIN_VOLUME_DB
-	var safe_linear: float = maxf(linear, MIN_LINEAR_VOLUME)
-	return 20.0 * (log(safe_linear) / log(10.0))
+	var safe_linear: float = clampf(linear, MIN_LINEAR_VOLUME, 1.0)
+	var db: float = 20.0 * (log(safe_linear) / log(10.0))
+	if is_nan(db) or is_inf(db):
+		return MIN_VOLUME_DB
+	return clampf(db, MIN_VOLUME_DB, 0.0)
+
+static func _sanitize_linear_volume(value: Variant, fallback: float = 1.0) -> float:
+	var safe_value: float = fallback
+	var value_type: int = typeof(value)
+	if value_type == TYPE_FLOAT or value_type == TYPE_INT:
+		safe_value = float(value)
+	elif value_type == TYPE_STRING:
+		safe_value = str(value).to_float()
+	if is_nan(safe_value) or is_inf(safe_value):
+		safe_value = fallback
+	if is_nan(safe_value) or is_inf(safe_value):
+		safe_value = 1.0
+	return clampf(safe_value, 0.0, 1.0)
+
+static func _sanitize_db(value: float, fallback: float = MIN_VOLUME_DB) -> float:
+	var safe_value: float = fallback if is_nan(value) or is_inf(value) else value
+	return clampf(safe_value, MIN_VOLUME_DB, 24.0)
+
+static func _sanitize_duration(seconds: float, fallback: float = 0.05) -> float:
+	if is_nan(seconds) or is_inf(seconds) or seconds <= 0.0:
+		return fallback
+	return maxf(0.05, seconds)
 
 enum Bus { MASTER, BGM, SFX, UI }
 
@@ -142,10 +167,10 @@ func initialize() -> void:
 
 	# Load settings
 	if SettingsService:
-		_volumes["Master"] = SettingsService.get_value("volume_master", 0.95)
-		_volumes["BGM"] = SettingsService.get_value("volume_bgm", 0.62)
-		_volumes["SFX"] = SettingsService.get_value("volume_sfx", 0.78)
-		_volumes["UI"] = SettingsService.get_value("volume_ui", 0.58)
+		_volumes["Master"] = _sanitize_linear_volume(SettingsService.get_value("volume_master", 0.95), 0.95)
+		_volumes["BGM"] = _sanitize_linear_volume(SettingsService.get_value("volume_bgm", 0.62), 0.62)
+		_volumes["SFX"] = _sanitize_linear_volume(SettingsService.get_value("volume_sfx", 0.78), 0.78)
+		_volumes["UI"] = _sanitize_linear_volume(SettingsService.get_value("volume_ui", 0.58), 0.58)
 		_muted["Master"] = SettingsService.get_value("mute_master", false)
 		_muted["BGM"] = SettingsService.get_value("mute_bgm", false)
 		_muted["SFX"] = SettingsService.get_value("mute_sfx", false)
@@ -206,29 +231,30 @@ func _fade_bgm(stream: AudioStream, fade_seconds: float) -> void:
 	_bgm_player.play()
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	var target_linear: float = _volumes.get("BGM", 0.62) * BGM_PLAYBACK_GAIN
-	tween.tween_property(_bgm_player, "volume_db", linear_to_db(target_linear), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_OUT)
+	var target_linear: float = _sanitize_linear_volume(_volumes.get("BGM", 0.62), 0.62) * BGM_PLAYBACK_GAIN
+	tween.tween_property(_bgm_player, "volume_db", linear_to_db(target_linear), _sanitize_duration(fade_seconds)).set_ease(Tween.EASE_OUT)
 
 func duck_bgm(amount_db: float = -8.0, fade_seconds: float = 0.15) -> void:
 	if not _bgm_player or not _bgm_player.playing:
 		return
 	if _duck_tween and _duck_tween.is_valid():
 		_duck_tween.kill()
-	_duck_target_db = amount_db
+	_duck_target_db = _sanitize_db(amount_db, -8.0)
 	_duck_tween = create_tween()
 	_duck_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	var current_db: float = _bgm_player.volume_db
-	_duck_tween.tween_property(_bgm_player, "volume_db", maxf(current_db + amount_db, -40.0), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_OUT)
+	var current_db: float = _sanitize_db(_bgm_player.volume_db, linear_to_db(_sanitize_linear_volume(_volumes.get("BGM", 0.62), 0.62) * BGM_PLAYBACK_GAIN))
+	var ducked_db: float = _sanitize_db(current_db + _duck_target_db, -40.0)
+	_duck_tween.tween_property(_bgm_player, "volume_db", maxf(ducked_db, -40.0), _sanitize_duration(fade_seconds)).set_ease(Tween.EASE_OUT)
 
 func unduck_bgm(fade_seconds: float = 0.25) -> void:
 	if not _bgm_player or not _bgm_player.playing:
 		return
 	if _duck_tween and _duck_tween.is_valid():
 		_duck_tween.kill()
-	var target_linear: float = _volumes.get("BGM", 0.62) * BGM_PLAYBACK_GAIN
+	var target_linear: float = _sanitize_linear_volume(_volumes.get("BGM", 0.62), 0.62) * BGM_PLAYBACK_GAIN
 	_duck_tween = create_tween()
 	_duck_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	_duck_tween.tween_property(_bgm_player, "volume_db", linear_to_db(target_linear), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_OUT)
+	_duck_tween.tween_property(_bgm_player, "volume_db", linear_to_db(target_linear), _sanitize_duration(fade_seconds)).set_ease(Tween.EASE_OUT)
 
 func stop_bgm_track(fade_seconds: float = 0.4) -> void:
 	if not _bgm_player or not _bgm_player.playing:
@@ -236,7 +262,7 @@ func stop_bgm_track(fade_seconds: float = 0.4) -> void:
 		return
 	var tween := create_tween()
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
-	tween.tween_property(_bgm_player, "volume_db", linear_to_db(0.0), maxf(0.05, fade_seconds)).set_ease(Tween.EASE_IN)
+	tween.tween_property(_bgm_player, "volume_db", linear_to_db(0.0), _sanitize_duration(fade_seconds)).set_ease(Tween.EASE_IN)
 	tween.tween_callback(func() -> void:
 		if _bgm_player:
 			_bgm_player.stop()
@@ -259,17 +285,20 @@ func play_sound(
 	if stream == null:
 		return
 
-	var normalized_volume: float = clampf(volume_linear * float(SOUND_GAINS.get(sound_id, 1.0)), 0.0, 1.0)
+	var input_volume: float = _sanitize_linear_volume(volume_linear, 1.0)
+	var sound_gain: float = _sanitize_linear_volume(SOUND_GAINS.get(sound_id, 1.0), 1.0)
+	var bus_volume: float = _sanitize_linear_volume(_volumes.get(bus_name, 1.0), 1.0)
+	var normalized_volume: float = clampf(input_volume * sound_gain, 0.0, 1.0)
 	match bus:
 		Bus.BGM:
 			_prepare_stream_for_loop(stream, _loop)
 			_bgm_player.stream = stream
-			_bgm_player.volume_db = linear_to_db(normalized_volume * _volumes[bus_name] * BGM_PLAYBACK_GAIN)
+			_bgm_player.volume_db = linear_to_db(normalized_volume * bus_volume * BGM_PLAYBACK_GAIN)
 			_bgm_player.play()
 		Bus.UI:
 			_prepare_stream_for_loop(stream, false)
 			_ui_player.stream = stream
-			_ui_player.volume_db = linear_to_db(normalized_volume * _volumes[bus_name])
+			_ui_player.volume_db = linear_to_db(normalized_volume * bus_volume)
 			_ui_player.play()
 		_:
 			# Find free player in pool
@@ -277,7 +306,7 @@ func play_sound(
 			if player:
 				_prepare_stream_for_loop(stream, false)
 				player.stream = stream
-				player.volume_db = linear_to_db(normalized_volume * _volumes[bus_name])
+				player.volume_db = linear_to_db(normalized_volume * bus_volume)
 				player.play()
 
 	sound_played.emit(sound_id, bus_name)
@@ -323,21 +352,27 @@ func _load_stream(sound_id: String) -> AudioStream:
 			return load(path) as AudioStream
 	return null
 
-func set_volume(bus: int, linear: float) -> void:
+func set_volume(bus: int, linear: Variant) -> void:
 	var bus_name: String = BUS_NAMES[bus]
-	_volumes[bus_name] = clamp(linear, 0.0, 1.0)
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index(bus_name), linear_to_db(_volumes[bus_name]))
-	volume_changed.emit(bus_name, linear_to_db(_volumes[bus_name]), _volumes[bus_name])
+	var safe_linear: float = _sanitize_linear_volume(linear, _sanitize_linear_volume(_volumes.get(bus_name, 1.0), 1.0))
+	_volumes[bus_name] = safe_linear
+	var safe_db: float = linear_to_db(safe_linear)
+	var bus_idx: int = AudioServer.get_bus_index(bus_name)
+	if bus_idx != -1:
+		AudioServer.set_bus_volume_db(bus_idx, safe_db)
+	volume_changed.emit(bus_name, safe_db, safe_linear)
 	if SettingsService:
-		SettingsService.set_value("volume_%s" % bus_name.to_lower(), _volumes[bus_name])
+		SettingsService.set_value("volume_%s" % bus_name.to_lower(), safe_linear)
 
 func get_volume(bus: int) -> float:
-	return _volumes.get(BUS_NAMES[bus], 1.0)
+	return _sanitize_linear_volume(_volumes.get(BUS_NAMES[bus], 1.0), 1.0)
 
 func set_muted(bus: int, muted: bool) -> void:
 	var bus_name: String = BUS_NAMES[bus]
 	_muted[bus_name] = muted
-	AudioServer.set_bus_mute(AudioServer.get_bus_index(bus_name), muted)
+	var bus_idx: int = AudioServer.get_bus_index(bus_name)
+	if bus_idx != -1:
+		AudioServer.set_bus_mute(bus_idx, muted)
 	bus_muted.emit(bus_name, muted)
 	if SettingsService:
 		SettingsService.set_value("mute_%s" % bus_name.to_lower(), muted)
@@ -347,17 +382,20 @@ func is_muted(bus: int) -> bool:
 
 func _apply_all_volumes() -> void:
 	for b in BUS_NAMES.values():
-		var idx := AudioServer.get_bus_index(b)
+		var bus_name: String = str(b)
+		var idx: int = AudioServer.get_bus_index(bus_name)
 		if idx != -1:
-			AudioServer.set_bus_volume_db(idx, linear_to_db(_volumes.get(b, 1.0)))
-			AudioServer.set_bus_mute(idx, _muted.get(b, false))
+			var safe_linear: float = _sanitize_linear_volume(_volumes.get(bus_name, 1.0), 1.0)
+			_volumes[bus_name] = safe_linear
+			AudioServer.set_bus_volume_db(idx, linear_to_db(safe_linear))
+			AudioServer.set_bus_mute(idx, _muted.get(bus_name, false))
 
 func _on_setting_changed(key: String, value: Variant) -> void:
 	match key:
-		"volume_master": set_volume(Bus.MASTER, float(value))
-		"volume_bgm": set_volume(Bus.BGM, float(value))
-		"volume_sfx": set_volume(Bus.SFX, float(value))
-		"volume_ui": set_volume(Bus.UI, float(value))
+		"volume_master": set_volume(Bus.MASTER, value)
+		"volume_bgm": set_volume(Bus.BGM, value)
+		"volume_sfx": set_volume(Bus.SFX, value)
+		"volume_ui": set_volume(Bus.UI, value)
 		"mute_master": set_muted(Bus.MASTER, bool(value))
 		"mute_bgm": set_muted(Bus.BGM, bool(value))
 		"mute_sfx": set_muted(Bus.SFX, bool(value))

@@ -92,6 +92,24 @@ func _apply_theme() -> void:
 	# Buttons
 	_style_secondary_button(see_all_button, tokens)
 	_style_secondary_button(programs_button, tokens)
+	_apply_text_layout_guards()
+
+func _apply_text_layout_guards() -> void:
+	for label: Label in [greeting_label, rank_label, level_text, discovery_header_label, streak_value, streak_sub, ach_value, ach_sub]:
+		_set_single_line_label(label)
+	for path: String in [
+		"MainMargin/Scroll/Content/ProgressLayer/StreakPill/StreakMargin/StreakVBox/StreakLabel",
+		"MainMargin/Scroll/Content/ProgressLayer/AchievementPill/AchMargin/AchVBox/AchLabel",
+		"MainMargin/Scroll/Content/DiscoveryLayer/DiscoveryScroll/DiscoveryHBox/ProgramsCard/ProgramsMargin/ProgramsVBox/ProgramsTitle"
+	]:
+		_set_single_line_label(get_node_or_null(path) as Label)
+
+func _set_single_line_label(label: Label) -> void:
+	if not label:
+		return
+	label.autowrap_mode = TextServer.AUTOWRAP_OFF
+	label.clip_text = true
+	label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 
 func _style_pill(pill: PanelContainer, tokens: Dictionary) -> void:
 	var style := StyleBoxFlat.new()
