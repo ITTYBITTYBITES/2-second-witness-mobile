@@ -222,6 +222,7 @@ Do not make Update 1 gameplay or first-session code changes until this plan is r
 # Latest Repository State
 
 - **Latest Phase 0 implementation commit:** `a764a08` — `Phase 0: establish Witness foundation shell`
+- **Latest Phase 0.5 implementation commit:** `e020523` — `Phase 0.5: add mobile layout foundation`
 - **Pull request:** #38 — `Phase 0: Establish Witness Foundation Shell and Navigation Identity`
 - **Branch pushed:** `arena/019f6582-2-second-witness-mobile`
 - **Local status at closeout:** expected clean after documentation closeout commit
