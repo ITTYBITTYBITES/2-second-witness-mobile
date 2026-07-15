@@ -1,45 +1,54 @@
 # Visual Style Migration — CHANGELOG
 
-## Phase 2 — Scene Investigation asset pipeline
+## Phase 2 — Scene Investigation: COMPLETE
 
-### Resolution standard
-- Max 512×512 for all sprites (non-square within 512 bound)
-- Mobile VRAM: Godot ETC2 compression (`compress/mode=2`) on all imports
-- Individual files (not atlas) — simplicity wins, batch if profiling demands it
+### Coverage: 65/65 (100%)
+Every visual_kind referenced by the 5 Scene Investigation content JSONs
+has a matching sprite asset. Per-template coverage:
+- office_v1: 22/22
+- kitchen_v1: 21/21
+- workshop_v1: 21/21
+- travel_desk_v1: 19/19
+- garden_bench_v1: 21/21
 
-### Shadow rule (v2)
-- **Sprites are transparent cutouts with NO baked shadow.**
-- `draw_shadow()` in code provides consistent shadow direction/opacity/scale
-- Documented in `VisualStyleSystem.gd` header and `PROMPT.md`
+### Pipeline
+1. Generate on solid flat #FF00FF (magenta) background
+2. Connected-component flood-fill from 4 image corners (10% fuzz)
+3. RGBA PNG with transparent background, 512×512 max
+4. Godot ETC2 compression (compress/mode=2)
+5. Code-side draw_shadow() provides consistent shadows
+6. Vector fallback renders original shapes for any missing sprite
+
+### Assets (65 sprites, 3335KB total)
+See `app/assets/gameplay/sprites/scene_investigation_sprite_grid.png`
 
 ### Prompt lock
-- `app/assets/gameplay/sprites/PROMPT.md` — exact template for all object sprites
-- Isometric 3/4 top-down, realistic 3D illustration, muted palette, no shadow, transparent BG
+`app/assets/gameplay/sprites/PROMPT.md` (v2, magenta background)
 
-### Coverage gate
-- Scene Investigation NOT done until 65/65 content-referenced kinds have sprites
-- Current: 20/65 (31%) → 45 remaining
+### Processing script
+`tools/process_sprite.py` — flood-fill pipeline with 7-point verification
 
----
+### Files created
+- `app/src/gameplay/families/_shared/VisualStyleSystem.gd` (330 lines)
+- `app/tests/runtime/verify_visual_style_migration.py`
+- `app/assets/gameplay/sprites/PROMPT.md`
+- `tools/process_sprite.py`
+- 65 sprite PNGs + 65 .import files
+- 1 composite grid PNG
 
-## Batch 2 — 10 sprites (priority by frequency)
-| visual_kind | frequency | sprite |
-|---|---|---|
-| paper | 8x | ✓ |
-| hardware | 6x | ✓ |
-| glasses | 4x | ✓ |
-| towel | 4x | ✓ |
-| block | 3x | ✓ |
-| coil | 3x | ✓ |
-| fruit_round | 3x | ✓ |
-| board | 2x | ✓ |
-| bracket | 2x | ✓ |
-| brush | 2x | ✓ |
+### Files modified
+- `app/src/gameplay/families/scene_investigation/SceneInvestigationSceneView.gd`
+  (sprite-first draw with vector fallback, grounded canvas backgrounds,
+   warm gold accent, code-side drop shadows)
 
-## Batch 1 — 10 sprites (previously committed)
-phone, book, mug, folder, pencil, clock, calculator, stapler, bottle, scissors
+### Logic safety
+- 120 logic files verified byte-for-byte unchanged
+- All Python verification scripts pass
+- Generators, validators, policies, contracts, shared runtime: untouched
+- Data contract (generated_scene dict, set_scene_data signature): unchanged
 
-## Verification
-- verify_visual_style_migration.py: 107/107 logic files unchanged ✓
-- All sprites 512×512 max, ETC2 compressed
-- Manifest matching disk: 20/20 ✓
+### Next loops (deferred)
+- Flash Words
+- Object Recall
+- Pattern Recall
+- Spot the Difference (vector-only; color passthrough)
