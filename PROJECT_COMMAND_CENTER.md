@@ -7,6 +7,11 @@
 - **Status:** Planning complete; implementation not started
 - **Next Milestone:** Update 1 implementation plan
 
+## Owner Operating Guide
+
+- **Human workflow reference:** [Human Owner Operating Guide](docs/product/development-continuity/HUMAN_OWNER_OPERATING_GUIDE.md)
+- Use this guide for daily startup, AI session handoff, PR review, session shutdown, and recovery when project context becomes unclear.
+
 ## Current Situation
 
 The project has transitioned from discovery and direction into a structured "Flagship Evolution" roadmap. We have a solid baseline product with five challenge types, but the focus is now on establishing the "Scene Investigation" mode as the signature experience. The Flagship Evolution Master Plan (10 updates) is documented and authorized. We are currently at the start of Update 1, where the goal is to refine the first-session experience to be witness-centric. All continuity systems are initialized, and no production code has been modified in this phase yet.

@@ -2,6 +2,8 @@
 
 This document explains how the project owner manages the repository using the internal Command Center and AI-assisted development.
 
+For the full non-developer operating routine, including session startup, agent handoff, PR review, shutdown, and recovery steps, see [Human Owner Operating Guide](HUMAN_OWNER_OPERATING_GUIDE.md).
+
 ## The Simple Workflow
 
 1.  **Open `PROJECT_COMMAND_CENTER.md`**
