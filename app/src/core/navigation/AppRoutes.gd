@@ -46,7 +46,7 @@ const ROUTES := {
 
 	# Main app tabs
 	"home": {
-		"screen": "HomeScreen",
+		"screen": "HomeV2Screen",
 		"is_tab": true,
 		"requires_auth": false,
 		"icon": "home",
