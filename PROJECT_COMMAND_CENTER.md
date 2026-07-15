@@ -2,10 +2,10 @@
 
 ## Current Status
 
-- **Current Product Phase:** Phase 0 — Witness Foundation Shell implemented; Update 1 readiness next
+- **Current Product Phase:** Phase 0.5 — Mobile Layout Foundation added after APK validation feedback
 - **Active Flagship Update:** Update 1 — Witness Moment Foundation remains next roadmap implementation
-- **Status:** Phase 0 shell/navigation identity complete pending runtime/device validation; Update 1 implementation not started
-- **Next Milestone:** Update 1 first-session implementation plan using the new Witness shell
+- **Status:** Phase 0 shell/navigation identity implemented; Phase 0.5 mobile readability/layout corrections implemented; runtime/device re-validation pending
+- **Next Milestone:** Physical Android re-test of Phase 0/0.5, then Update 1 first-session implementation plan
 
 ## Owner Operating Guide
 
@@ -14,13 +14,14 @@
 
 ## Current Situation
 
-The project has transitioned from discovery and direction into a structured Flagship Evolution roadmap. A new **Phase 0: Witness Foundation Shell** has now refocused the existing app presentation around Witness, Record, and Settings without changing gameplay systems. The Library, Programs, Achievements, and existing challenge content remain available as secondary destinations. This shell prepares the app for Update 1, where the first Scene Investigation Witness Moment will be refined.
+The project has transitioned from discovery and direction into a structured Flagship Evolution roadmap. **Phase 0: Witness Foundation Shell** refocused the existing app presentation around Witness, Record, and Settings without changing gameplay systems. Android APK validation then revealed a foundational mobile usability gap, so **Phase 0.5: Mobile Layout Foundation** was added before Update 1. The Library, Programs, Achievements, and existing challenge content remain available as secondary destinations. The shell should be device-revalidated before first-session gameplay work begins.
 
 ## Roadmap
 
 Phase 0 foundation:
 
 - [x] **Phase 0: Witness Foundation Shell** — navigation and presentation identity refocused; no gameplay rewrite
+- [x] **Phase 0.5: Mobile Layout Foundation** — mobile scrolling, readability, card sizing, and touch foundations corrected; device re-test pending
 
 Progress through the ten flagship updates:
 
@@ -42,6 +43,7 @@ Progress through the ten flagship updates:
 - **Continuity System:** Initialized the development continuity system with decision logs, context bootstrap, and implementation state tracking.
 - **Baseline Assets:** Confirmed presence of production assets, package IDs, and Godot 4.x project structure.
 - **Phase 0 Witness Foundation Shell:** Simplified player-facing primary navigation to Witness / Record / Settings; refocused Home around the next observation; prepared reusable shell/reveal containers and future asset folders.
+- **Phase 0.5 Mobile Layout Foundation:** Added global scroll preparation, larger mobile typography/touch tokens, larger card/button sizing, and primary-screen scroll safety after Android APK validation feedback.
 
 ## Current Work
 

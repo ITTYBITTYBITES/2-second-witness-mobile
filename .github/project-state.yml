@@ -1,24 +1,26 @@
 project_state:
   current_update: 1
-  current_phase: "Phase 0 shell implemented; Update 1 planning next"
-  status: "Witness Foundation Shell implemented; runtime/device validation pending"
+  current_phase: "Phase 0.5 mobile foundation implemented; Update 1 planning next"
+  status: "Witness Foundation Shell and Mobile Layout Foundation implemented; physical Android re-validation pending"
   roadmap_progress: 0
   completed_milestones:
     - "Discovery & Direction"
     - "Flagship Evolution Master Plan"
     - "Development Continuity System Initialized"
     - "Phase 0 Witness Foundation Shell"
+    - "Phase 0.5 Mobile Layout Foundation"
   active_tasks:
-    - "Phase 0 PR review and runtime/device validation"
+    - "Phase 0/0.5 PR review and runtime/device re-validation"
     - "Update 1 Implementation Planning"
     - "Source code inspection for first-session routing"
   next_tasks:
-    - "Validate Witness / Record / Settings navigation on device"
+    - "Re-test Witness / Record / Settings navigation on physical Android"
+    - "Verify primary screens scroll and cards/text are readable on small phone"
     - "Produce Update 1 implementation plan"
     - "Begin Update 1 implementation after plan approval"
   blockers:
     - "Godot runtime/device validation not available in current sandbox"
   last_audit_date: "2026-07-15"
   repository_health:
-    documentation: "Updated for Phase 0"
+    documentation: "Updated for Phase 0.5"
     drift: "Minimal"

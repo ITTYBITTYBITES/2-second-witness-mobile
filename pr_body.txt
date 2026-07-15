@@ -1,6 +1,8 @@
 ## Summary
 
-Establishes Phase 0: the Witness Foundation Shell. The app shell is now organized around a focused Witness identity instead of a broad multi-feature hub:
+Establishes Phase 0 and Phase 0.5 for the Witness Foundation Shell.
+
+Phase 0 organizes the app around a focused Witness identity instead of a broad multi-feature hub:
 
 - primary navigation is now **Witness / Record / Settings**;
 - `home` remains the implementation route for the Witness landing surface;
@@ -10,14 +12,24 @@ Establishes Phase 0: the Witness Foundation Shell. The app shell is now organize
 - existing result content is wrapped in a structural `EvidenceRevealContainer` for future reveal work;
 - reusable shell foundation components and asset placeholder folders were added.
 
+Phase 0.5 responds to Android APK validation feedback by adding the missing mobile usability foundation:
+
+- primary scroll screens opt into mobile scroll preparation;
+- AppShell prepares nested scroll containers after route load;
+- typography and touch target tokens are raised for phone readability;
+- Daily/Experience/Program/App cards have larger mobile-first sizing and spacing;
+- result screens reserve additional bottom scroll space so actions remain reachable above bottom chrome.
+
 ## User Experience Impact
 
-The app now feels more like an intentional observation instrument:
+The app now feels more like an intentional observation instrument and less like a desktop-style menu squeezed onto a phone:
 
 - the first primary action is to begin a Witness observation;
 - Record is presented as the player’s personal observation history rather than a generic profile tab;
 - secondary destinations are still accessible, but quieter;
-- Home no longer foregrounds achievement/streak/program clutter as the main reason to open the app.
+- Home no longer foregrounds achievement/streak/program clutter as the main reason to open the app;
+- cards, buttons, and type are larger and more thumb/readability oriented on mobile;
+- long primary screens are prepared to scroll vertically instead of clipping.
 
 ## Technical Impact
 
@@ -28,8 +40,12 @@ The app now feels more like an intentional observation instrument:
   - `ScreenContainer.gd`
   - `ModalLayer.gd`
   - `EvidenceRevealContainer.gd`
+- Added mobile layout helpers in `ResponsiveLayout`:
+  - `prepare_mobile_scroll(...)`
+  - `prepare_scroll_descendants(...)`
+- Raised theme typography and touch target tokens while preserving accessibility scaling and high contrast paths.
 - Added future asset pipeline placeholders under `app/assets/{scenes,evidence,home,record,branding}`.
-- Updated Phase 0 documentation and store-preparation recommendations.
+- Updated Phase 0/0.5 documentation and store-preparation recommendations.
 
 ## Validation
 
@@ -37,6 +53,7 @@ Passed:
 
 ```bash
 git diff --check
+python3 app/tests/runtime/verify_phase05_mobile_layout.py
 python3 app/tests/runtime/verify_phase0_witness_shell.py
 python3 app/tests/runtime/verify_phase3_home_architecture.py
 python3 app/tests/runtime/verify_phase4_product_architecture.py
@@ -47,7 +64,7 @@ python3 app/tests/runtime/verify_flash_words_engine_unchanged.py
 Not run in this sandbox:
 
 - Godot runtime tests — no `godot` binary available on PATH.
-- Physical Android validation — remains a manual release/device gate.
+- Physical Android validation — remains required and is especially important for Phase 0.5 because the issue was found on APK/device review.
 
 ## Not Included
 
@@ -68,6 +85,8 @@ Explicitly deferred / not implemented:
 - ObservationChallengeScreen changes
 - MemoryQuestionScreen changes
 - TutorialScreen changes
+- observation timing changes
+- gameplay logic changes
 - full Evidence Reveal transformation
 
-Phase 0 is a shell and hierarchy foundation only; Update 1 remains the next gameplay/first-session planning step.
+Phase 0/0.5 are shell, hierarchy, and mobile presentation foundations only; Update 1 remains the next gameplay/first-session planning step after device re-validation.

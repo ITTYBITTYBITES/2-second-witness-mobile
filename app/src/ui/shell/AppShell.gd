@@ -132,6 +132,7 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 		_current_screen.visible = true
 		if _current_screen.has_method("on_navigated_to"):
 			_current_screen.call("on_navigated_to", params)
+		ResponsiveLayout.prepare_scroll_descendants(_current_screen)
 		ResponsiveLayout.enforce_touch_targets(_current_screen)
 		_animate_screen_in(route)
 		_record_screen_presented(route, CACHEABLE_ROUTES.has(route), started_at)
@@ -188,6 +189,7 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 				ErrorHandler.handle("SCREEN_LOAD_FAILED", "Failed to load %s" % route, {"route": route})
 	_current_route = route
 	if _current_screen:
+		ResponsiveLayout.prepare_scroll_descendants(_current_screen)
 		ResponsiveLayout.enforce_touch_targets(_current_screen)
 		_animate_screen_in(route)
 	_record_screen_presented(route, was_cached, started_at)

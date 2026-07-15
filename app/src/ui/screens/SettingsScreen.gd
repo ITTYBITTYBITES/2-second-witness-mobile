@@ -74,6 +74,10 @@ func _ensure_ui() -> void:
 
 func _apply_responsive_layout() -> void:
 	ResponsiveLayout.apply_centered_margin($Margin)
+	var bottom_spacer: Control = null
+	if vbox:
+		bottom_spacer = vbox.get_node_or_null("BottomSpacer") as Control
+	ResponsiveLayout.prepare_mobile_scroll(scroll, vbox, bottom_spacer)
 
 
 func _apply_theme() -> void:

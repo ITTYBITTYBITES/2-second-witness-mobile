@@ -18,15 +18,16 @@
 
 | Field | Current value |
 |---|---|
-| Master roadmap phase | Phase 0 shell implemented; Update 1 planning next |
+| Master roadmap phase | Phase 0.5 mobile foundation implemented; Update 1 planning next after device re-test |
 | Active update | **Update 1 — Witness Moment Foundation** remains next roadmap implementation |
 | Phase 0 status | **Implemented; static validation passed; runtime/device validation pending** |
+| Phase 0.5 status | **Implemented after Android APK validation feedback; static validation passed; physical re-test pending** |
 | Update 1 status | **Not started** |
-| Authorization state | Phase 0 presentation/navigation changes are implemented. Update 1 gameplay/first-session changes still require a scoped implementation plan before coding. |
+| Authorization state | Phase 0/0.5 presentation and mobile-layout changes are implemented. Update 1 gameplay/first-session changes still require a scoped implementation plan before coding. |
 
 ## Current product shell outcome
 
-Phase 0 establishes the production-preserving Witness Foundation Shell:
+Phase 0 establishes the production-preserving Witness Foundation Shell and Phase 0.5 adds the required mobile usability foundation discovered during Android APK validation:
 
 ```text
 Launch
@@ -42,6 +43,14 @@ Primary navigation is now player-facing:
 ```text
 Witness / Record / Settings
 ```
+
+Mobile layout foundation now includes:
+
+- prepared vertical scrolling for primary content screens;
+- global nested scroll preparation after route load;
+- larger mobile typography and touch target tokens;
+- larger mobile-first card/button minimum sizes;
+- extra result bottom padding for safe-area/bottom-nav reachability.
 
 Internal route names remain stable where possible:
 
@@ -64,6 +73,7 @@ Internal route names remain stable where possible:
 | 2026-07-15 | Development continuity system initialized | `docs/product/development-continuity/` |
 | 2026-07-15 | Project Command Center & Intelligence System | `PROJECT_COMMAND_CENTER.md`; `.github/project-state.yml` |
 | 2026-07-15 | **Phase 0: Witness Foundation Shell** | Witness / Record / Settings shell, Witness Home refocus, reveal container, asset placeholders, Phase 0 reports |
+| 2026-07-15 | **Phase 0.5: Mobile Layout Foundation** | Scroll preparation, card sizing, typography/touch tokens, mobile validation verifier, Phase 0.5 report |
 
 ## Baseline product capabilities still present
 
@@ -79,9 +89,9 @@ Internal route names remain stable where possible:
 
 ## Current work state
 
-Phase 0 shell implementation is complete in source. Gameplay/session logic was intentionally not modified.
+Phase 0 and Phase 0.5 implementations are complete in source. Gameplay/session logic was intentionally not modified.
 
-The next meaningful work is **Phase 0 runtime/device review** followed by **Update 1 planning to implementation readiness**.
+The next meaningful work is **Phase 0/0.5 runtime/device re-review** followed by **Update 1 planning to implementation readiness**.
 
 ## Next implementation planning task
 
@@ -141,16 +151,25 @@ Do not make Update 1 gameplay or first-session code changes until this plan is r
 
 - `app/src/core/navigation/AppRoutes.gd`
 - `app/src/systems/theme/ThemeService.gd`
+- `app/src/ui/layout/ResponsiveLayout.gd`
+- `app/src/ui/components/AppCard.gd`
 - `app/src/ui/components/DailyExperienceCard.gd`
 - `app/src/ui/components/DailyExperienceCard.tscn`
 - `app/src/ui/components/EvidenceRevealContainer.gd`
+- `app/src/ui/components/ExperienceCard.gd`
+- `app/src/ui/components/ExperienceCard.tscn`
 - `app/src/ui/components/ModalLayer.gd`
+- `app/src/ui/components/ProgramCard.gd`
+- `app/src/ui/components/ProgramCard.tscn`
 - `app/src/ui/components/ScreenContainer.gd`
+- `app/src/ui/screens/ExperiencesScreen.gd`
 - `app/src/ui/screens/HomeV2Screen.gd`
 - `app/src/ui/screens/HomeV2Screen.tscn`
+- `app/src/ui/screens/ProfileScreen.gd`
 - `app/src/ui/screens/ProfileScreen.tscn`
 - `app/src/ui/screens/ResultScreen.gd`
-- `app/src/ui/shell/AppShell.gd`
+- `app/src/ui/screens/SettingsScreen.gd`
+- `app/src/ui/shell/AppShell.gd
 - `app/src/ui/shell/AppShell.tscn`
 - `app/src/ui/shell/MainNavigation.gd`
 - `app/src/ui/shell/TopBar.gd`
@@ -161,10 +180,12 @@ Do not make Update 1 gameplay or first-session code changes until this plan is r
 - `app/assets/record/.gitkeep`
 - `app/assets/branding/.gitkeep`
 - `app/tests/runtime/verify_phase0_witness_shell.py`
+- `app/tests/runtime/verify_phase05_mobile_layout.py`
 - `app/tests/runtime/README.md`
 - `PROJECT_COMMAND_CENTER.md`
 - `docs/product/development-continuity/02_CURRENT_IMPLEMENTATION_STATE.md`
 - `docs/product/flagship-master-plan/PHASE_0_IMPLEMENTATION_REPORT.md`
+- `docs/product/flagship-master-plan/PHASE_0_5_MOBILE_LAYOUT_FOUNDATION_REPORT.md`
 - `docs/product/flagship-master-plan/PHASE_0_STORE_UPDATE_NOTES.md`
 
 **Explicitly unchanged/frozen:**
@@ -187,6 +208,7 @@ Do not make Update 1 gameplay or first-session code changes until this plan is r
 |---|---:|---|
 | Git whitespace validation | Pass | `git diff --check` |
 | Phase 0 static shell validation | Pass | `python3 app/tests/runtime/verify_phase0_witness_shell.py` |
+| Phase 0.5 mobile layout validation | Pass | `python3 app/tests/runtime/verify_phase05_mobile_layout.py` |
 | Phase 3 Home architecture | Pass | `python3 app/tests/runtime/verify_phase3_home_architecture.py` |
 | Phase 4 product architecture | Pass | `python3 app/tests/runtime/verify_phase4_product_architecture.py` |
 | Phase 5 architecture | Pass | `python3 app/tests/runtime/verify_phase5_architecture.py` |

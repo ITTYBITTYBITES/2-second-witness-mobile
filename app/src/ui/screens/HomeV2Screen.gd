@@ -280,6 +280,11 @@ func _style_level_pill(pill: PanelContainer, tokens: Dictionary) -> void:
 
 func _apply_responsive_layout() -> void:
 	ResponsiveLayout.apply_centered_margin($MainMargin)
+	ResponsiveLayout.prepare_mobile_scroll(
+		$MainMargin/Scroll,
+		$MainMargin/Scroll/Content,
+		$MainMargin/Scroll/Content/BottomSpacer
+	)
 
 func _refresh_data() -> void:
 	var player_state: Dictionary = PlayerProgressService.get_player_state() if PlayerProgressService else {}

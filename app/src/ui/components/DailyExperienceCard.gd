@@ -179,7 +179,7 @@ func _style_start_button(tokens: Dictionary) -> void:
 	start_button.add_theme_stylebox_override("focus", hover)
 	start_button.add_theme_color_override("font_color", tokens.get("text_on_primary", Color.WHITE))
 	start_button.add_theme_font_size_override("font_size", ThemeService.get_font_size("button") if ThemeService else 18)
-	start_button.custom_minimum_size.y = 64
+	start_button.custom_minimum_size.y = 72
 
 func _on_start_pressed() -> void:
 	if _data.is_empty() or start_button.disabled:

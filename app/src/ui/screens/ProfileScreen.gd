@@ -75,6 +75,7 @@ func _ready() -> void:
 
 func _apply_responsive_layout() -> void:
 	ResponsiveLayout.apply_centered_margin($Margin)
+	ResponsiveLayout.prepare_mobile_scroll($Margin/Scroll, $Margin/Scroll/VBox, $Margin/Scroll/VBox/BottomSpacer)
 
 
 func _apply_theme() -> void:

@@ -47,19 +47,19 @@ const DARK_TOKENS := {
 	"spacing_md": 16,
 	"spacing_lg": 24,
 	"spacing_xl": 32,
-	"touch_target_min": 48,
+	"touch_target_min": 56,
 	"safe_area_top": 0,
 	"safe_area_bottom": 0,
 	"typography": {
-		"display": {"size": 34, "weight": 700},
-		"headline": {"size": 26, "weight": 700},
-		"title": {"size": 22, "weight": 600},
-		"body": {"size": 18, "weight": 400},
-		"body_small": {"size": 16, "weight": 400},
-		"caption": {"size": 14, "weight": 500},
-		"label": {"size": 16, "weight": 600},
-		"label_small": {"size": 14, "weight": 600},
-		"button": {"size": 18, "weight": 600}
+		"display": {"size": 38, "weight": 700},
+		"headline": {"size": 30, "weight": 700},
+		"title": {"size": 25, "weight": 600},
+		"body": {"size": 20, "weight": 400},
+		"body_small": {"size": 18, "weight": 400},
+		"caption": {"size": 15, "weight": 500},
+		"label": {"size": 17, "weight": 600},
+		"label_small": {"size": 15, "weight": 600},
+		"button": {"size": 20, "weight": 600}
 	}
 }
 
@@ -96,19 +96,19 @@ const LIGHT_TOKENS := {
 	"spacing_md": 16,
 	"spacing_lg": 24,
 	"spacing_xl": 32,
-	"touch_target_min": 48,
+	"touch_target_min": 56,
 	"safe_area_top": 0,
 	"safe_area_bottom": 0,
 	"typography": {
-		"display": {"size": 34, "weight": 700},
-		"headline": {"size": 26, "weight": 700},
-		"title": {"size": 22, "weight": 600},
-		"body": {"size": 18, "weight": 400},
-		"body_small": {"size": 16, "weight": 400},
-		"caption": {"size": 14, "weight": 500},
-		"label": {"size": 16, "weight": 600},
-		"label_small": {"size": 14, "weight": 600},
-		"button": {"size": 18, "weight": 600}
+		"display": {"size": 38, "weight": 700},
+		"headline": {"size": 30, "weight": 700},
+		"title": {"size": 25, "weight": 600},
+		"body": {"size": 20, "weight": 400},
+		"body_small": {"size": 18, "weight": 400},
+		"caption": {"size": 15, "weight": 500},
+		"label": {"size": 17, "weight": 600},
+		"label_small": {"size": 15, "weight": 600},
+		"button": {"size": 20, "weight": 600}
 	}
 }
 

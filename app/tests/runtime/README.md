@@ -149,6 +149,8 @@ python app/tests/runtime/verify_documentation.py
 
 `verify_phase0_witness_shell.py` verifies the Phase 0 Witness Foundation Shell boundaries: Witness/Record/Settings primary navigation, secondary Library access, reusable shell/reveal components, asset placeholders, and unchanged frozen gameplay/session files.
 
+`verify_phase05_mobile_layout.py` verifies the Phase 0.5 mobile usability foundation: primary screens opt into mobile scroll preparation, nested tutorial scrolls are prepared by the shell, typography/touch tokens are raised for phone readability, core cards have larger mobile-first minimums, and frozen gameplay/session files remain unchanged.
+
 `test_phase35_production_polish.gd` verifies sponsor boot configuration, portrait lock, safe-area scaling, responsive device profiles, 48-pixel touch targets, 140% text, 7:1 High Contrast, Reduced Motion, Reading Comfort, Color Assistance, and local performance/memory budgets.
 
 `verify_phase35_production_polish.py` statically enforces Android system-splash attributes, responsive screens, accessibility wiring, performance instrumentation, bounded texture imports, and Phase 3.5 deliverables.

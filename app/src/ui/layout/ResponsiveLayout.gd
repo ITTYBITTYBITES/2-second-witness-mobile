@@ -12,6 +12,7 @@ class_name ResponsiveLayout
 ## This is a mobile game, not a responsive website. Screens must feel native.
 
 const DEFAULT_GUTTER: float = 20.0
+const MOBILE_BOTTOM_SCROLL_PADDING: float = 88.0
 ## Widths at or below this value get only the base edge gutter — no centering.
 ## 1280 sits above every common phone portrait logical width (incl. the 720
 ## design viewport and large phablets) while still catching tablet / foldable
@@ -20,7 +21,7 @@ const CENTERING_BREAKPOINT: float = 1280.0
 ## On very wide displays, keep content near the design width so cards and
 ## type remain comfortable. Only used when width > CENTERING_BREAKPOINT.
 const MAX_CONTENT_WIDTH: float = 720.0
-const MIN_TOUCH_TARGET: float = 48.0
+const MIN_TOUCH_TARGET: float = 56.0
 
 static func apply_centered_margin(
 	margin: MarginContainer,
@@ -48,6 +49,43 @@ static func horizontal_gutter(
 		return base_gutter
 	# Tablets / foldables / wide editor: center a design-width content column.
 	return maxf(base_gutter, (viewport_width - max_content_width) * 0.5)
+
+static func prepare_mobile_scroll(
+	scroll: ScrollContainer,
+	content: Control = null,
+	bottom_spacer: Control = null,
+	bottom_padding: float = MOBILE_BOTTOM_SCROLL_PADDING
+) -> void:
+	if scroll == null:
+		return
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
+	scroll.follow_focus = true
+	scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	var content_node: Control = content
+	if content_node == null:
+		for child: Node in scroll.get_children():
+			if child is Control:
+				content_node = child as Control
+				break
+	if content_node:
+		content_node.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		content_node.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
+		content_node.custom_minimum_size.x = maxf(content_node.custom_minimum_size.x, scroll.size.x)
+	var spacer: Control = bottom_spacer
+	if spacer == null and content_node:
+		spacer = content_node.get_node_or_null("BottomSpacer") as Control
+	if spacer:
+		spacer.custom_minimum_size.y = maxf(spacer.custom_minimum_size.y, bottom_padding)
+
+static func prepare_scroll_descendants(node: Node) -> void:
+	if node == null:
+		return
+	if node is ScrollContainer:
+		prepare_mobile_scroll(node as ScrollContainer)
+	for child: Node in node.get_children():
+		prepare_scroll_descendants(child)
 
 static func scale_safe_area_insets(
 	safe_area: Rect2i,

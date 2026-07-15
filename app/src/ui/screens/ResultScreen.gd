@@ -29,7 +29,13 @@ func _ready() -> void:
 	_ensure_wired()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($MainMargin, 16.0)
+	ResponsiveLayout.apply_centered_margin($MainMargin, 20.0)
+	ResponsiveLayout.prepare_mobile_scroll(
+		$MainMargin/Scroll,
+		$MainMargin/Scroll/Content,
+		$MainMargin/Scroll/Content/BottomSpacer,
+		104.0
+	)
 
 func _ensure_wired() -> void:
 	if replay_btn and not replay_btn.pressed.is_connected(_on_replay):
@@ -105,7 +111,7 @@ func _style_button(btn: Button, primary: bool, tokens: Dictionary, ghost: bool =
 		btn.add_theme_color_override("font_color", tokens.get("text_tertiary", Color("#8A8AA3")) if not tokens.is_empty() else Color("#8A8AA3"))
 		btn.add_theme_stylebox_override("hover", normal)
 		btn.add_theme_stylebox_override("pressed", normal)
-		btn.custom_minimum_size.y = 48
+		btn.custom_minimum_size.y = 56
 	else:
 		normal.bg_color = tokens.get("surface_elevated", Color("#2A2A36")) if not tokens.is_empty() else Color("#2A2A36")
 		normal.border_color = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")

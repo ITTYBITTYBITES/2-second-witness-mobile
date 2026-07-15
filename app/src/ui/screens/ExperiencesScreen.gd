@@ -32,6 +32,7 @@ func _ready() -> void:
 
 func _apply_responsive_layout() -> void:
 	ResponsiveLayout.apply_centered_margin($MainMargin)
+	ResponsiveLayout.prepare_mobile_scroll(scroll, $MainMargin/Scroll/Content, $MainMargin/Scroll/Content/BottomSpacer)
 
 func _apply_theme() -> void:
 	var tokens: Dictionary = ThemeService.tokens if ThemeService else {}
