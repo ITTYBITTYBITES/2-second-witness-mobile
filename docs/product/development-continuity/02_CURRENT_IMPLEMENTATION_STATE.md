@@ -186,6 +186,7 @@ Do not make Update 1 gameplay or first-session code changes until this plan is r
 - `docs/product/development-continuity/02_CURRENT_IMPLEMENTATION_STATE.md`
 - `docs/product/flagship-master-plan/PHASE_0_IMPLEMENTATION_REPORT.md`
 - `docs/product/flagship-master-plan/PHASE_0_5_MOBILE_LAYOUT_FOUNDATION_REPORT.md`
+- `docs/product/flagship-master-plan/PHASE_0_5_ANDROID_REVALIDATION_CHECKLIST.md`
 - `docs/product/flagship-master-plan/PHASE_0_STORE_UPDATE_NOTES.md`
 
 **Explicitly unchanged/frozen:**
@@ -223,7 +224,8 @@ Do not make Update 1 gameplay or first-session code changes until this plan is r
 
 - **Latest Phase 0 implementation commit:** `a764a08` — `Phase 0: establish Witness foundation shell`
 - **Latest Phase 0.5 implementation commit:** `e020523` — `Phase 0.5: add mobile layout foundation`
-- **Pull request:** #38 — `Phase 0: Establish Witness Foundation Shell and Navigation Identity`
+- **Latest device-checklist update:** `docs: add Phase 0.5 Android revalidation checklist`
+- **Pull request:** #38 — `Phase 0/0.5: Establish Witness Foundation Shell and Mobile Layout Foundation`
 - **Branch pushed:** `arena/019f6582-2-second-witness-mobile`
 - **Local status at closeout:** expected clean after documentation closeout commit
 
