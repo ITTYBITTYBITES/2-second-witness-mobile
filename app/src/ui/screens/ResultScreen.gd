@@ -19,6 +19,7 @@ extends Control
 var _result_data: Dictionary = {}
 var _is_correct: bool = false
 var _reveal_view: Control = null
+var _reveal_container: Control = null
 
 func _ready() -> void:
 	_apply_responsive_layout()
@@ -28,7 +29,13 @@ func _ready() -> void:
 	_ensure_wired()
 
 func _apply_responsive_layout() -> void:
-	ResponsiveLayout.apply_centered_margin($MainMargin, 16.0)
+	ResponsiveLayout.apply_centered_margin($MainMargin, 20.0)
+	ResponsiveLayout.prepare_mobile_scroll(
+		$MainMargin/Scroll,
+		$MainMargin/Scroll/Content,
+		$MainMargin/Scroll/Content/BottomSpacer,
+		104.0
+	)
 
 func _ensure_wired() -> void:
 	if replay_btn and not replay_btn.pressed.is_connected(_on_replay):
@@ -104,7 +111,7 @@ func _style_button(btn: Button, primary: bool, tokens: Dictionary, ghost: bool =
 		btn.add_theme_color_override("font_color", tokens.get("text_tertiary", Color("#8A8AA3")) if not tokens.is_empty() else Color("#8A8AA3"))
 		btn.add_theme_stylebox_override("hover", normal)
 		btn.add_theme_stylebox_override("pressed", normal)
-		btn.custom_minimum_size.y = 48
+		btn.custom_minimum_size.y = 56
 	else:
 		normal.bg_color = tokens.get("surface_elevated", Color("#2A2A36")) if not tokens.is_empty() else Color("#2A2A36")
 		normal.border_color = tokens.get("border", Color("#2E2E3A")) if not tokens.is_empty() else Color("#2E2E3A")
@@ -268,6 +275,13 @@ func _show_reveal(reveal_value: Variant) -> void:
 	var vbox := result_card.get_node_or_null("Margin/VBox") as VBoxContainer
 	if vbox == null:
 		return
+	_reveal_container = _create_reveal_container()
+	vbox.add_child(_reveal_container)
+	vbox.move_child(_reveal_container, detail_label.get_index())
+	if _reveal_container.has_method("set_heading"):
+		_reveal_container.call("set_heading", "Look again.", "EVIDENCE REVEAL")
+	if _reveal_container.has_method("set_explanation"):
+		_reveal_container.call("set_explanation", "Existing result evidence is shown here. A fuller reveal sequence remains deferred.")
 	if not renderer_script.is_empty() and ResourceLoader.exists(renderer_script):
 		var script: Script = load(renderer_script)
 		_reveal_view = Control.new()
@@ -275,8 +289,10 @@ func _show_reveal(reveal_value: Variant) -> void:
 		_reveal_view.custom_minimum_size = Vector2(0, clampf(size.y * 0.24, 260.0, 360.0))
 		_reveal_view.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		_reveal_view.set_script(script)
-		vbox.add_child(_reveal_view)
-		vbox.move_child(_reveal_view, detail_label.get_index())
+		if _reveal_container.has_method("mount_reveal_view"):
+			_reveal_container.call("mount_reveal_view", _reveal_view)
+		else:
+			_reveal_container.add_child(_reveal_view)
 		_reveal_view.call("set_scene_data", scene, reveal.get("highlight_ids", []))
 		return
 	var image_path := str(scene.get("image_path", ""))
@@ -288,12 +304,26 @@ func _show_reveal(reveal_value: Variant) -> void:
 		texture_view.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		texture_view.texture = load(image_path) as Texture2D
 		_reveal_view = texture_view
-		vbox.add_child(_reveal_view)
-		vbox.move_child(_reveal_view, detail_label.get_index())
+		if _reveal_container.has_method("mount_reveal_view"):
+			_reveal_container.call("mount_reveal_view", _reveal_view)
+		else:
+			_reveal_container.add_child(_reveal_view)
+
+func _create_reveal_container() -> Control:
+	var script: Script = load("res://src/ui/components/EvidenceRevealContainer.gd")
+	var container := PanelContainer.new()
+	container.name = "EvidenceRevealContainer"
+	container.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	if script:
+		container.set_script(script)
+	return container
 
 func _clear_reveal() -> void:
-	if is_instance_valid(_reveal_view):
+	if is_instance_valid(_reveal_container):
+		_reveal_container.queue_free()
+	elif is_instance_valid(_reveal_view):
 		_reveal_view.queue_free()
+	_reveal_container = null
 	_reveal_view = null
 
 func _play_feedback() -> void:

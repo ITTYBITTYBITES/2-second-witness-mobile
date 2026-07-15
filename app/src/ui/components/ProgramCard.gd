@@ -54,7 +54,7 @@ func _apply_theme() -> void:
 		ThemeService.apply_label_style(description_label, "body_small", "text_secondary")
 		ThemeService.apply_label_style(detail_label, "caption", "text_secondary")
 		ThemeService.apply_typography(action_button, "button")
-	action_button.custom_minimum_size.y = 52
+	action_button.custom_minimum_size.y = 64
 	action_button.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
 	var button_style := StyleBoxFlat.new()
 	button_style.bg_color = Color(accent, 0.28) if bool(program.get("available", false)) else tokens.get("background_tertiary", Color("#24242C"))

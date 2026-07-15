@@ -6,9 +6,12 @@ extends Control
 @onready var content_container: Control = $ContentLayer/ContentContainer
 @onready var nav_bar: Control = $NavigationLayer/MainNavigation
 @onready var top_bar: Control = $TopBarLayer/TopBar
+@onready var overlay_layer: Control = $OverlayLayer
 @onready var loading_overlay: Control = $OverlayLayer/LoadingOverlay
 @onready var error_banner: Control = $OverlayLayer/ErrorBanner
 @onready var background_layer: Control = $BackgroundLayer
+
+var modal_layer: Control = null
 
 var _current_screen: Control = null
 var _screen_cache: Dictionary = {}
@@ -62,6 +65,7 @@ func _ready() -> void:
 	_apply_theme()
 	_setup_loading_overlay()
 	_setup_error_banner()
+	_ensure_modal_layer()
 
 	if top_bar:
 		if top_bar.has_signal("back_pressed") and not top_bar.back_pressed.is_connected(_on_topbar_back):
@@ -128,6 +132,7 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 		_current_screen.visible = true
 		if _current_screen.has_method("on_navigated_to"):
 			_current_screen.call("on_navigated_to", params)
+		ResponsiveLayout.prepare_scroll_descendants(_current_screen)
 		ResponsiveLayout.enforce_touch_targets(_current_screen)
 		_animate_screen_in(route)
 		_record_screen_presented(route, CACHEABLE_ROUTES.has(route), started_at)
@@ -184,6 +189,7 @@ func _load_screen(route: String, params: Dictionary = {}) -> void:
 				ErrorHandler.handle("SCREEN_LOAD_FAILED", "Failed to load %s" % route, {"route": route})
 	_current_route = route
 	if _current_screen:
+		ResponsiveLayout.prepare_scroll_descendants(_current_screen)
 		ResponsiveLayout.enforce_touch_targets(_current_screen)
 		_animate_screen_in(route)
 	_record_screen_presented(route, was_cached, started_at)
@@ -272,13 +278,13 @@ func _update_chrome(route: String) -> void:
 			"splash": "",
 			"observation": "Observe",
 			"memory_question": "Recall",
-			"result": "Result",
-			"home": "Two Second Witness",
-			"experiences": "Challenge Library",
-			"profile": "Profile",
+			"result": "Evidence Reveal",
+			"home": "Witness",
+			"experiences": "Explore Experiences",
+			"profile": "Witness Record",
 			"settings": "Settings",
 			"about": "About",
-			"achievements": "Achievements",
+			"achievements": "Milestones",
 			"programs": "Programs"
 		}
 		if top_bar.has_method("set_title"):
@@ -504,6 +510,23 @@ func _apply_safe_area() -> void:
 	if ThemeService and ThemeService.tokens:
 		ThemeService.tokens["safe_area_top"] = top
 		ThemeService.tokens["safe_area_bottom"] = bottom
+
+func _ensure_modal_layer() -> void:
+	if modal_layer and is_instance_valid(modal_layer):
+		return
+	if not overlay_layer:
+		return
+	var script: Script = load("res://src/ui/components/ModalLayer.gd")
+	if not script:
+		return
+	modal_layer = Control.new()
+	modal_layer.name = "ModalLayer"
+	modal_layer.visible = false
+	modal_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	modal_layer.set_anchors_preset(Control.PRESET_FULL_RECT)
+	modal_layer.set_script(script)
+	overlay_layer.add_child(modal_layer)
+	overlay_layer.move_child(modal_layer, max(0, overlay_layer.get_child_count() - 1))
 
 func _setup_loading_overlay() -> void:
 	if not loading_overlay or not ThemeService:

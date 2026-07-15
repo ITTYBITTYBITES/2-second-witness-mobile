@@ -2,10 +2,10 @@
 
 ## Current Status
 
-- **Current Product Phase:** Pre-implementation after flagship planning completion
-- **Active Flagship Update:** Update 1 — Witness Moment Foundation
-- **Status:** Planning complete; implementation not started
-- **Next Milestone:** Update 1 implementation plan
+- **Current Product Phase:** Phase 0.5 — Mobile Layout Foundation added after APK validation feedback
+- **Active Flagship Update:** Update 1 — Witness Moment Foundation remains next roadmap implementation
+- **Status:** Phase 0 shell/navigation identity implemented; Phase 0.5 mobile readability/layout corrections implemented; runtime/device re-validation pending
+- **Next Milestone:** Physical Android re-test of Phase 0/0.5, then Update 1 first-session implementation plan
 
 ## Owner Operating Guide
 
@@ -14,13 +14,18 @@
 
 ## Current Situation
 
-The project has transitioned from discovery and direction into a structured "Flagship Evolution" roadmap. We have a solid baseline product with five challenge types, but the focus is now on establishing the "Scene Investigation" mode as the signature experience. The Flagship Evolution Master Plan (10 updates) is documented and authorized. We are currently at the start of Update 1, where the goal is to refine the first-session experience to be witness-centric. All continuity systems are initialized, and no production code has been modified in this phase yet.
+The project has transitioned from discovery and direction into a structured Flagship Evolution roadmap. **Phase 0: Witness Foundation Shell** refocused the existing app presentation around Witness, Record, and Settings without changing gameplay systems. Android APK validation then revealed a foundational mobile usability gap, so **Phase 0.5: Mobile Layout Foundation** was added before Update 1. The Library, Programs, Achievements, and existing challenge content remain available as secondary destinations. The shell should be device-revalidated before first-session gameplay work begins.
 
 ## Roadmap
 
+Phase 0 foundation:
+
+- [x] **Phase 0: Witness Foundation Shell** — navigation and presentation identity refocused; no gameplay rewrite
+- [x] **Phase 0.5: Mobile Layout Foundation** — mobile scrolling, readability, card sizing, and touch foundations corrected; device re-test pending
+
 Progress through the ten flagship updates:
 
-- [ ] **Update 1: Witness Moment Foundation** (Active)
+- [ ] **Update 1: Witness Moment Foundation** (Next)
 - [ ] **Update 2: Evidence Reveal Transformation**
 - [ ] **Update 3: Scene Quality Pipeline**
 - [ ] **Update 4: Witness Brief System**
@@ -37,19 +42,23 @@ Progress through the ten flagship updates:
 - **Master Plan:** Established the 10-update Flagship Evolution Roadmap.
 - **Continuity System:** Initialized the development continuity system with decision logs, context bootstrap, and implementation state tracking.
 - **Baseline Assets:** Confirmed presence of production assets, package IDs, and Godot 4.x project structure.
+- **Phase 0 Witness Foundation Shell:** Simplified player-facing primary navigation to Witness / Record / Settings; refocused Home around the next observation; prepared reusable shell/reveal containers and future asset folders.
+- **Phase 0.5 Mobile Layout Foundation:** Added global scroll preparation, larger mobile typography/touch tokens, larger card/button sizing, and primary-screen scroll safety after Android APK validation feedback.
 
 ## Current Work
 
-- **Update 1 Implementation Planning:**
-    - Inspecting first-session and tutorial routing in the source code.
-    - Identifying exact code and content files for modification.
-    - Drafting a scoped implementation plan for "Witness Moment Foundation."
+- **Phase 0 validation and PR review:**
+    - Static Phase 0 verification passed.
+    - Godot runtime/device validation remains a manual gate in this environment.
+- **Update 1 Planning Next:**
+    - Inspect first-session and tutorial routing against the new Witness shell.
+    - Produce the scoped Update 1 implementation plan before changing gameplay or first-session logic.
 
 ## Next Actions
 
-1. **Source Inspection:** Trace the current `AppRoutes.gd` and tutorial logic to map out the Update 1 changes.
-2. **Draft Plan:** Produce the Update 1 implementation plan as specified in `CURRENT_IMPLEMENTATION_STATE.md`.
-3. **Workflow Integration:** Finalize the repository intelligence system (this PR).
+1. **Review Phase 0 PR:** Confirm Witness / Record / Settings hierarchy and secondary Library access.
+2. **Manual Runtime Validation:** Validate launch, privacy, Witness Home, Record, Settings, Explore Experiences, and a full gameplay loop on Godot/Android.
+3. **Update 1 Source Inspection:** Trace first-session/tutorial/runtime/result behavior and draft the Update 1 implementation plan.
 
 ## Locked Decisions
 
@@ -61,17 +70,19 @@ Refer to the [Permanent Decision Log](docs/product/development-continuity/05_DEC
 
 ## Deferred Items
 
+- **Update 1 gameplay/first-session changes:** Not included in Phase 0.
+- **Full Evidence Reveal transformation:** Deferred to Update 2; Phase 0 only added a structural container.
 - **Witness Threads Narrative Layer:** Deferred until after core retention and device gates are passed (Update 9).
 - **New Challenge Types:** No new types until flagship quality is proven (Update 11+).
 - **Social/Economy Features:** Intentionally excluded from the flagship roadmap.
 
 ## Risks
 
-- **Tutorial Alignment:** Potential mismatch between legacy tutorial code and the new flagship vision.
-- **Device Validation:** Godot runtime validation on physical Android devices is currently a manual gate.
-- **Scope Drift:** Risk of adding features (like narrative) too early before the core loop is validated.
-- **Technical Debt:** Legacy "Flashwords" and "ExperienceRegistry" code may cause confusion during implementation.
+- **Manual Device Gate:** Godot runtime and physical Android validation were not available in this sandbox and must be completed before treating Phase 0 as release-ready.
+- **Tutorial Alignment:** Potential mismatch between legacy tutorial code and the new flagship first-session vision remains for Update 1 planning.
+- **Scope Drift:** Risk of turning Update 1 into another shell redesign; Phase 0 should now be treated as the shell baseline unless validation reveals a blocker.
+- **Technical Debt:** Legacy Flashwords and ExperienceRegistry code may cause confusion during implementation; current active launch path remains ChallengeSessionService.
 
 ---
 
-*This document is the project's external memory. It is updated at the end of every session.*
+*This document is the project's external memory. It is updated at the end of every meaningful session.*

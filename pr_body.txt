@@ -1,29 +1,92 @@
-### Description
-This PR establishes a comprehensive internal project management and repository intelligence system for the Two Second Witness project. It transforms the repository into an 'external memory' for both the human project owner and future AI coding sessions.
+## Summary
 
-### What was created:
-1.  **PROJECT_COMMAND_CENTER.md**: A root-level human-readable dashboard showing current status, roadmap progress, and next actions.
-2.  **.github/project-state.yml**: A machine-readable file for AI agents to track project state.
-3.  **docs/product/development-continuity/AUTOMATED_PROJECT_AUDIT.md**: A human-friendly audit report (baseline created; automated workflow template provided).
-4.  **docs/product/development-continuity/START_NEXT_SESSION.md**: A tool to generate the recommended prompt for bootstrapping future AI sessions.
-5.  **docs/product/development-continuity/HUMAN_PROJECT_WORKFLOW.md**: A guide for the project owner on how to use these new tools.
-6.  **Updates to existing continuity docs**: Integrated the new systems into the Context Bootstrap and Implementation State documents.
+Establishes Phase 0 and Phase 0.5 for the Witness Foundation Shell.
 
-*Note: The GitHub workflow file (.github/workflows/project-audit.yml) could not be automatically created due to GitHub App permission restrictions. A template has been provided in the documentation for manual installation.*
+Phase 0 organizes the app around a focused Witness identity instead of a broad multi-feature hub:
 
-### Why it exists:
-To allow for seamless development continuity. As the project evolves through its 10-update roadmap, this system ensures that no context is lost between sessions and that both humans and AI agents always know 'Where are we?', 'What is next?', and 'What decisions are protected?'.
+- primary navigation is now **Witness / Record / Settings**;
+- `home` remains the implementation route for the Witness landing surface;
+- `profile` remains the implementation route for Witness Record;
+- Library/Experiences, Programs, and Achievements remain available as secondary destinations;
+- Witness Home now emphasizes the next observation with “Observe what others miss” and “Begin Observation” copy;
+- existing result content is wrapped in a structural `EvidenceRevealContainer` for future reveal work;
+- reusable shell foundation components and asset placeholder folders were added.
 
-### How humans use it:
-1. Open `PROJECT_COMMAND_CENTER.md` to see current status.
-2. Use `START_NEXT_SESSION.md` to kick off an AI agent.
-3. Review PRs against the roadmap and locked decisions.
+Phase 0.5 responds to Android APK validation feedback by adding the missing mobile usability foundation:
 
-### How future AI sessions use it:
-AI agents are instructed by the bootstrap prompt to read the Command Center and State file first. This provides them with immediate context on the current milestone and prevents them from making unrelated or unauthorized changes.
+- primary scroll screens opt into mobile scroll preparation;
+- AppShell prepares nested scroll containers after route load;
+- typography and touch target tokens are raised for phone readability;
+- Daily/Experience/Program/App cards have larger mobile-first sizing and spacing;
+- result screens reserve additional bottom scroll space so actions remain reachable above bottom chrome.
 
-### Final Validation:
-- [x] No app code changed.
-- [x] No runtime behavior changed.
-- [x] Documents link correctly.
-- [x] Dashboard reflects actual repository state.
+## User Experience Impact
+
+The app now feels more like an intentional observation instrument and less like a desktop-style menu squeezed onto a phone:
+
+- the first primary action is to begin a Witness observation;
+- Record is presented as the player’s personal observation history rather than a generic profile tab;
+- secondary destinations are still accessible, but quieter;
+- Home no longer foregrounds achievement/streak/program clutter as the main reason to open the app;
+- cards, buttons, and type are larger and more thumb/readability oriented on mobile;
+- long primary screens are prepared to scroll vertically instead of clipping.
+
+## Technical Impact
+
+- Kept the existing `AppShell`, `NavigationService`, `AppRoutes`, and route history model.
+- Kept internal route names stable where possible.
+- Removed `experiences` from bottom-tab navigation only; the route and screen remain intact.
+- Added lightweight reusable components:
+  - `ScreenContainer.gd`
+  - `ModalLayer.gd`
+  - `EvidenceRevealContainer.gd`
+- Added mobile layout helpers in `ResponsiveLayout`:
+  - `prepare_mobile_scroll(...)`
+  - `prepare_scroll_descendants(...)`
+- Raised theme typography and touch target tokens while preserving accessibility scaling and high contrast paths.
+- Added future asset pipeline placeholders under `app/assets/{scenes,evidence,home,record,branding}`.
+- Updated Phase 0/0.5 documentation and store-preparation recommendations.
+
+## Validation
+
+Passed:
+
+```bash
+git diff --check
+python3 app/tests/runtime/verify_phase05_mobile_layout.py
+python3 app/tests/runtime/verify_phase0_witness_shell.py
+python3 app/tests/runtime/verify_phase3_home_architecture.py
+python3 app/tests/runtime/verify_phase4_product_architecture.py
+python3 app/tests/runtime/verify_phase5_architecture.py
+python3 app/tests/runtime/verify_flash_words_engine_unchanged.py
+```
+
+Not run in this sandbox:
+
+- Godot runtime tests — no `godot` binary available on PATH.
+- Physical Android validation — remains required and is especially important for Phase 0.5 because the issue was found on APK/device review.
+
+## Not Included
+
+Explicitly deferred / not implemented:
+
+- Witness Threads
+- Story Mode
+- new challenge types
+- economies, shops, currencies, or reward systems
+- social systems
+- accounts
+- leaderboards
+- monetization changes
+- analytics schema changes
+- Android/export changes
+- new scenarios/content
+- ChallengeSessionService changes
+- ObservationChallengeScreen changes
+- MemoryQuestionScreen changes
+- TutorialScreen changes
+- observation timing changes
+- gameplay logic changes
+- full Evidence Reveal transformation
+
+Phase 0/0.5 are shell, hierarchy, and mobile presentation foundations only; Update 1 remains the next gameplay/first-session planning step after device re-validation.

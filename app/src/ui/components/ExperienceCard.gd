@@ -67,7 +67,7 @@ func _apply_theme() -> void:
 	if ThemeService:
 		ThemeService.apply_label_style(title_label, "title", "text_primary")
 		favorite_button.flat = true
-		favorite_button.custom_minimum_size = Vector2(48, 48)
+		favorite_button.custom_minimum_size = Vector2(56, 56)
 		favorite_button.add_theme_font_size_override("font_size", ThemeService.get_font_size("title"))
 		favorite_button.add_theme_color_override("font_color", tokens.get("warning", Color("#FFC84D")))
 		ThemeService.apply_label_style(lock_label, "label_small", "warning")
@@ -98,10 +98,10 @@ func _style_button(button: Button, primary: bool, tokens: Dictionary) -> void:
 	normal.corner_radius_top_right = 12
 	normal.corner_radius_bottom_left = 12
 	normal.corner_radius_bottom_right = 12
-	normal.content_margin_left = 14
-	normal.content_margin_right = 14
-	normal.content_margin_top = 10
-	normal.content_margin_bottom = 10
+	normal.content_margin_left = 18
+	normal.content_margin_right = 18
+	normal.content_margin_top = 13
+	normal.content_margin_bottom = 13
 	var hover: StyleBoxFlat = normal.duplicate()
 	hover.bg_color = normal.bg_color.lightened(0.08)
 	var pressed: StyleBoxFlat = normal.duplicate()
@@ -112,9 +112,10 @@ func _style_button(button: Button, primary: bool, tokens: Dictionary) -> void:
 	button.add_theme_stylebox_override("focus", hover)
 	button.add_theme_color_override("font_color", tokens.get("text_primary", Color.WHITE))
 	button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	button.custom_minimum_size.y = maxf(button.custom_minimum_size.y, 60.0)
 	button.add_theme_font_size_override(
 		"font_size",
-		ThemeService.get_scaled_size(14) if ThemeService else 14
+		ThemeService.get_font_size("label") if ThemeService else 17
 	)
 
 func _style_mastery_bar(tokens: Dictionary) -> void:

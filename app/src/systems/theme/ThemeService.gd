@@ -13,15 +13,18 @@ var tokens: Dictionary = {}
 
 const DARK_TOKENS := {
 	"name": "dark",
-	"background": Color("#0F0F12"),
-	"background_secondary": Color("#1A1A1F"),
-	"background_tertiary": Color("#24242C"),
-	"surface": Color("#1E1E26"),
-	"surface_elevated": Color("#2A2A36"),
+	"background": Color("#0B0B10"),
+	"background_secondary": Color("#14141B"),
+	"background_tertiary": Color("#20202A"),
+	"surface": Color("#181820"),
+	"surface_elevated": Color("#242430"),
+	"witness_surface": Color("#111119"),
+	"evidence_surface": Color("#1F1A12"),
 	"primary": Color("#6A3DFF"),
-	"primary_variant": Color("#8A68FF"),
+	"primary_variant": Color("#9B7CFF"),
 	"secondary": Color("#2EE6A6"),
-	"accent": Color("#FF6B6B"),
+	"evidence": Color("#D6A84F"),
+	"accent": Color("#D6A84F"),
 	"text_primary": Color("#FFFFFF"),
 	"text_secondary": Color("#B8B8CC"),
 	"text_tertiary": Color("#8A8AA3"),
@@ -44,19 +47,19 @@ const DARK_TOKENS := {
 	"spacing_md": 16,
 	"spacing_lg": 24,
 	"spacing_xl": 32,
-	"touch_target_min": 48,
+	"touch_target_min": 56,
 	"safe_area_top": 0,
 	"safe_area_bottom": 0,
 	"typography": {
-		"display": {"size": 34, "weight": 700},
-		"headline": {"size": 26, "weight": 700},
-		"title": {"size": 22, "weight": 600},
-		"body": {"size": 18, "weight": 400},
-		"body_small": {"size": 16, "weight": 400},
-		"caption": {"size": 14, "weight": 500},
-		"label": {"size": 16, "weight": 600},
-		"label_small": {"size": 14, "weight": 600},
-		"button": {"size": 18, "weight": 600}
+		"display": {"size": 38, "weight": 700},
+		"headline": {"size": 30, "weight": 700},
+		"title": {"size": 25, "weight": 600},
+		"body": {"size": 20, "weight": 400},
+		"body_small": {"size": 18, "weight": 400},
+		"caption": {"size": 15, "weight": 500},
+		"label": {"size": 17, "weight": 600},
+		"label_small": {"size": 15, "weight": 600},
+		"button": {"size": 20, "weight": 600}
 	}
 }
 
@@ -93,19 +96,19 @@ const LIGHT_TOKENS := {
 	"spacing_md": 16,
 	"spacing_lg": 24,
 	"spacing_xl": 32,
-	"touch_target_min": 48,
+	"touch_target_min": 56,
 	"safe_area_top": 0,
 	"safe_area_bottom": 0,
 	"typography": {
-		"display": {"size": 34, "weight": 700},
-		"headline": {"size": 26, "weight": 700},
-		"title": {"size": 22, "weight": 600},
-		"body": {"size": 18, "weight": 400},
-		"body_small": {"size": 16, "weight": 400},
-		"caption": {"size": 14, "weight": 500},
-		"label": {"size": 16, "weight": 600},
-		"label_small": {"size": 14, "weight": 600},
-		"button": {"size": 18, "weight": 600}
+		"display": {"size": 38, "weight": 700},
+		"headline": {"size": 30, "weight": 700},
+		"title": {"size": 25, "weight": 600},
+		"body": {"size": 20, "weight": 400},
+		"body_small": {"size": 18, "weight": 400},
+		"caption": {"size": 15, "weight": 500},
+		"label": {"size": 17, "weight": 600},
+		"label_small": {"size": 15, "weight": 600},
+		"button": {"size": 20, "weight": 600}
 	}
 }
 

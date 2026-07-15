@@ -109,7 +109,7 @@ text="Settings"
 [node name="ProfileButton" type="Button" parent="TopBarLayer/TopBar/Margin/HBox/Actions"]
 custom_minimum_size=Vector2(40, 40)
 layout_mode=2
-text="Profile"
+text="Record"
 
 [node name="MainNavigation" type="Panel" parent="NavigationLayer"]
 layout_mode=1
@@ -142,9 +142,10 @@ alignment=1
 custom_minimum_size=Vector2(0, 60)
 layout_mode=2
 size_flags_horizontal=3
-text="Home"
+text="Begin\nWitness"
 
 [node name="experiences_Container" type="VBoxContainer" parent="NavigationLayer/MainNavigation/Margin/HBox"]
+visible = false
 layout_mode=2
 size_flags_horizontal=3
 alignment=1
@@ -153,7 +154,7 @@ alignment=1
 custom_minimum_size=Vector2(0, 60)
 layout_mode=2
 size_flags_horizontal=3
-text="Library"
+text="Explore\nLibrary"
 
 [node name="profile_Container" type="VBoxContainer" parent="NavigationLayer/MainNavigation/Margin/HBox"]
 layout_mode=2
@@ -164,7 +165,7 @@ alignment=1
 custom_minimum_size=Vector2(0, 60)
 layout_mode=2
 size_flags_horizontal=3
-text="Profile"
+text="Yours\nRecord"
 
 [node name="settings_Container" type="VBoxContainer" parent="NavigationLayer/MainNavigation/Margin/HBox"]
 layout_mode=2

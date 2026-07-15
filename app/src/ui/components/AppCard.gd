@@ -11,7 +11,7 @@ extends PanelContainer
 ## Or in a .tscn: set script = ExtResource("AppCard.gd") on a PanelContainer
 
 @export var elevated: bool = false
-@export var padding: int = 16  # 16 = standard, use 24 for hero cards
+@export var padding: int = 20  # mobile standard; use 28 for hero cards
 
 func _ready() -> void:
 	_apply_theme()

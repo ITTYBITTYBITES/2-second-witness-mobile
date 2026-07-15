@@ -4,9 +4,8 @@ extends Control
 signal tab_selected(route: String)
 
 const TABS := [
-	{"route": "home", "label": "Home", "eyebrow": "Start"},
-	{"route": "experiences", "label": "Library", "eyebrow": "Types"},
-	{"route": "profile", "label": "Profile", "eyebrow": "Stats"},
+	{"route": "home", "label": "Witness", "eyebrow": "Begin"},
+	{"route": "profile", "label": "Record", "eyebrow": "Yours"},
 	{"route": "settings", "label": "Settings", "eyebrow": "Tune"},
 ]
 
@@ -62,6 +61,16 @@ func _ensure_ui() -> void:
 		_buttons[tab["route"]] = btn
 
 func _wire_existing_buttons() -> void:
+	var active_routes: Array[String] = []
+	for tab in TABS:
+		active_routes.append(str(tab["route"]))
+	for child: Node in get_node("Margin/HBox").get_children():
+		var child_name := str(child.name)
+		if child_name.ends_with("_Container"):
+			var route_name := child_name.trim_suffix("_Container")
+			var child_control := child as Control
+			if child_control:
+				child_control.visible = active_routes.has(route_name)
 	for tab in TABS:
 		var route: String = tab["route"]
 		var path := "Margin/HBox/%s_Container/%s_Button" % [route, route]
