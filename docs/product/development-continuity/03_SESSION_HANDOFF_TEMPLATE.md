@@ -107,6 +107,8 @@
 
 ## Required Documentation Updates Completed
 
+- [ ] `PROJECT_COMMAND_CENTER.md`
+- [ ] `.github/project-state.yml`
 - [ ] `02_CURRENT_IMPLEMENTATION_STATE.md`
 - [ ] `05_DECISION_LOG.md` (if decision made)
 - [ ] `06_ARCHITECTURE_CHANGE_LOG.md` (if architecture/system changed)

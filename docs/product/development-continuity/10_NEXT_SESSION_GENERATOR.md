@@ -8,13 +8,15 @@
 
 Before writing the next prompt:
 
-1. Update `02_CURRENT_IMPLEMENTATION_STATE.md` with actual status, files, tests, issues, and next tasks.
-2. Update `07_UPDATE_PROGRESS_TRACKER.md` with active update/status/evidence gate.
-3. Add permanent product/scope decisions to `05_DECISION_LOG.md`.
-4. Add architecture/system changes to `06_ARCHITECTURE_CHANGE_LOG.md`.
-5. Complete a handoff using `03_SESSION_HANDOFF_TEMPLATE.md`.
-6. Identify exactly one recommended next action that is inside active update scope.
-7. Include all blockers and tests that the next agent must understand before implementation.
+1. Update `PROJECT_COMMAND_CENTER.md` at the repository root.
+2. Update `.github/project-state.yml`.
+3. Update `02_CURRENT_IMPLEMENTATION_STATE.md` with actual status, files, tests, issues, and next tasks.
+4. Update `07_UPDATE_PROGRESS_TRACKER.md` with active update/status/evidence gate.
+5. Add permanent product/scope decisions to `05_DECISION_LOG.md`.
+6. Add architecture/system changes to `06_ARCHITECTURE_CHANGE_LOG.md`.
+7. Complete a handoff using `03_SESSION_HANDOFF_TEMPLATE.md`.
+8. Identify exactly one recommended next action that is inside active update scope.
+9. Include all blockers and tests that the next agent must understand before implementation.
 
 The generator must not create a vague “continue where we left off” prompt. It must make a new session feel like a shift handover.
 
@@ -47,6 +49,8 @@ Known blockers / risks:
 - [Required device/human/test evidence]
 
 Before making changes, read:
+- PROJECT_COMMAND_CENTER.md (root)
+- .github/project-state.yml (root)
 - docs/product/development-continuity/01_PROJECT_CONTEXT_BOOTSTRAP.md
 - docs/product/development-continuity/02_CURRENT_IMPLEMENTATION_STATE.md
 - docs/product/development-continuity/05_DECISION_LOG.md

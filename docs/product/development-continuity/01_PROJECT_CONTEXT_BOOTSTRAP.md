@@ -199,10 +199,21 @@ Never create new systems just to make these planning labels literal.
 
 ---
 
-# 6. Required reading order for a new agent
+# 6. Project Command Center and Intelligence
 
-1. This bootstrap document.
-2. `02_CURRENT_IMPLEMENTATION_STATE.md`.
+The repository uses an internal management system to maintain continuity:
+
+- **PROJECT_COMMAND_CENTER.md:** The primary human-readable dashboard at the root. Start here.
+- **.github/project-state.yml:** Machine-readable state for automation and AI tracking.
+- **docs/product/development-continuity/START_NEXT_SESSION.md:** Use this to generate the prompt for new AI sessions.
+- **docs/product/development-continuity/HUMAN_PROJECT_WORKFLOW.md:** The official workflow for project owners.
+
+# 7. Required reading order for a new agent
+
+1. **PROJECT_COMMAND_CENTER.md** (at root).
+2. This bootstrap document.
+3. `02_CURRENT_IMPLEMENTATION_STATE.md`.
+
 3. `07_UPDATE_PROGRESS_TRACKER.md`.
 4. `05_DECISION_LOG.md` and `09_CHANGE_CONTROL_RULES.md`.
 5. Current update section in `../flagship-master-plan/03_FLAGSHIP_EVOLUTION_ROADMAP.md`.
