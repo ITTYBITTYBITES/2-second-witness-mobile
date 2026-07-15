@@ -1,7 +1,7 @@
 extends Control
-## Home V2 — Focused daily cognitive experience.
-## "What is my next Witness experience?"
-## Reuses all existing services. No new data logic.
+## Witness Home — Phase 0 focused landing surface.
+## "What should I witness now?"
+## Reuses all existing services. No new gameplay or data logic.
 
 @onready var brand_eye: TextureRect = $MainMargin/Scroll/Content/IdentityLayer/BrandRow/Eye
 @onready var greeting_label: Label = $MainMargin/Scroll/Content/IdentityLayer/Greeting
@@ -52,8 +52,44 @@ func _wire_buttons() -> void:
 	
 	if see_all_button and not see_all_button.pressed.is_connected(_on_library):
 		see_all_button.pressed.connect(_on_library)
-	if programs_button and not programs_button.pressed.is_connected(_on_programs):
-		programs_button.pressed.connect(_on_programs)
+	if programs_button and not programs_button.pressed.is_connected(_on_record):
+		programs_button.pressed.connect(_on_record)
+	_ensure_secondary_settings_action()
+
+func _ensure_secondary_settings_action() -> void:
+	var host := get_node_or_null("MainMargin/Scroll/Content/DiscoveryLayer/DiscoveryScroll/DiscoveryHBox") as HBoxContainer
+	if host == null or host.has_node("SettingsCard"):
+		return
+	var card := PanelContainer.new()
+	card.name = "SettingsCard"
+	card.custom_minimum_size = Vector2(220, 0)
+	host.add_child(card)
+	var margin := MarginContainer.new()
+	margin.name = "SettingsMargin"
+	margin.add_theme_constant_override("margin_left", 14)
+	margin.add_theme_constant_override("margin_right", 14)
+	margin.add_theme_constant_override("margin_top", 12)
+	margin.add_theme_constant_override("margin_bottom", 12)
+	card.add_child(margin)
+	var stack := VBoxContainer.new()
+	stack.name = "SettingsVBox"
+	stack.add_theme_constant_override("separation", 4)
+	margin.add_child(stack)
+	var title := Label.new()
+	title.name = "SettingsTitle"
+	title.text = "SETTINGS"
+	stack.add_child(title)
+	var copy := Label.new()
+	copy.name = "SettingsCopy"
+	copy.text = "Comfort, sound, accessibility"
+	copy.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	stack.add_child(copy)
+	var button := Button.new()
+	button.name = "SettingsButton"
+	button.text = "OPEN"
+	button.custom_minimum_size = Vector2(0, 40)
+	button.pressed.connect(_on_settings)
+	stack.add_child(button)
 
 func _apply_theme() -> void:
 	var tokens: Dictionary = ThemeService.tokens if ThemeService else {}
@@ -88,6 +124,7 @@ func _apply_theme() -> void:
 	_style_pill(streak_pill, tokens)
 	_style_pill(ach_pill, tokens)
 	_style_programs_card(tokens)
+	_style_settings_card(tokens)
 	
 	# Buttons
 	_style_secondary_button(see_all_button, tokens)
@@ -172,6 +209,29 @@ func _style_programs_card(tokens: Dictionary) -> void:
 		if prog_title:
 			ThemeService.apply_label_style(prog_title, "label", "text_primary")
 		ThemeService.apply_label_style(programs_copy, "caption", "text_secondary")
+		ThemeService.apply_typography(programs_button, "label_small")
+
+func _style_settings_card(tokens: Dictionary) -> void:
+	var card := get_node_or_null("MainMargin/Scroll/Content/DiscoveryLayer/DiscoveryScroll/DiscoveryHBox/SettingsCard") as PanelContainer
+	if not card:
+		return
+	var style := StyleBoxFlat.new()
+	style.bg_color = tokens.get("surface", Color("#1E1E26"))
+	style.border_color = tokens.get("border", Color("#2E2E3A"))
+	style.border_width_left = 1
+	style.border_width_right = 1
+	style.border_width_top = 1
+	style.border_width_bottom = 1
+	style.corner_radius_top_left = 16
+	style.corner_radius_top_right = 16
+	style.corner_radius_bottom_left = 16
+	style.corner_radius_bottom_right = 16
+	card.add_theme_stylebox_override("panel", style)
+	if ThemeService:
+		ThemeService.apply_label_style(card.get_node("SettingsMargin/SettingsVBox/SettingsTitle") as Label, "label", "text_primary")
+		ThemeService.apply_label_style(card.get_node("SettingsMargin/SettingsVBox/SettingsCopy") as Label, "caption", "text_secondary")
+		ThemeService.apply_typography(card.get_node("SettingsMargin/SettingsVBox/SettingsButton") as Button, "label_small")
+	_style_secondary_button(card.get_node("SettingsMargin/SettingsVBox/SettingsButton") as Button, tokens)
 
 func _style_secondary_button(btn: Button, tokens: Dictionary) -> void:
 	if not btn:
@@ -233,18 +293,13 @@ func _refresh_data() -> void:
 func _refresh_identity() -> void:
 	var summary: Dictionary = _home_data.get("witness_summary", {})
 	
-	# Personalized greeting using profile display_name when available
-	var display_name: String = "Witness"
-	if ProfileService and ProfileService.profile is Dictionary:
-		display_name = str(ProfileService.profile.get("display_name", "Witness"))
-	greeting_label.text = "Ready, %s?" % display_name
-	
-	rank_label.text = str(summary.get("rank", "Observer"))
+	greeting_label.text = "Witness"
+	rank_label.text = "Observe what others miss."
 	level_text.text = "LVL %d" % int(summary.get("level", 1))
-	
-	var progress_points := int(summary.get("progress_points", 0))
-	var level_progress := progress_points % 100
-	progress_bar.value = level_progress
+	if level_pill:
+		level_pill.visible = false
+	if progress_bar:
+		progress_bar.visible = false
 	
 	# Simple brand eye modulation
 	if brand_eye:
@@ -275,32 +330,35 @@ func _refresh_daily_experience() -> void:
 			daily_card.set_recommendation(play_now, available)
 
 func _refresh_progress() -> void:
-	var summary: Dictionary = _home_data.get("witness_summary", {})
-	var current := int(summary.get("current_streak", 0))
-	var best := int(summary.get("best_streak", 0))
-	
-	streak_value.text = str(current)
+	var record: Dictionary = PlayerProgressService.get_observation_record() if PlayerProgressService else {}
+	var moments := int(record.get("total_plays", 0))
+	var accuracy := int(round(float(record.get("accuracy", 0.0)) * 100.0))
+	var rank := str(record.get("witness_rank", "Observer"))
+	var level := int(record.get("witness_level", 1))
+	var streak_label_node := get_node_or_null("MainMargin/Scroll/Content/ProgressLayer/StreakPill/StreakMargin/StreakVBox/StreakLabel") as Label
+	var ach_label_node := get_node_or_null("MainMargin/Scroll/Content/ProgressLayer/AchievementPill/AchMargin/AchVBox/AchLabel") as Label
+	if streak_label_node:
+		streak_label_node.text = "MOMENTS WITNESSED"
+	if ach_label_node:
+		ach_label_node.text = "WITNESS RECORD"
+	streak_value.text = str(moments)
 	if streak_sub:
-		streak_sub.text = "best %d" % best if best > 0 else "start today"
-	
-	var unlocked := AchievementService.get_unlocked_count() if AchievementService else 0
-	var total := AchievementService.get_definitions().size() if AchievementService else 26
-	ach_value.text = "%d / %d" % [unlocked, total]
-	
+		streak_sub.text = "completed observations" if moments != 1 else "completed observation"
+	ach_value.text = "%d%%" % accuracy if moments > 0 else "New"
 	if ach_sub:
-		var in_progress: Array = _home_data.get("achievements_in_progress", [])
-		ach_sub.text = "%d in progress" % in_progress.size() if in_progress.size() > 0 else "all unlocked"
+		ach_sub.text = "%s · Level %d" % [rank, level]
 
 func _refresh_discovery() -> void:
-	var featured_program: Dictionary = _home_data.get("featured_program", {})
-	var program_count: int = int(_home_data.get("program_count", 0))
-	
-	if not featured_program.is_empty():
-		programs_copy.text = str(featured_program.get("title", "Curated run"))
-	else:
-		programs_copy.text = "Curated challenge journeys"
-	
-	programs_button.disabled = program_count == 0
+	if discovery_header_label:
+		discovery_header_label.text = "SECONDARY"
+	if see_all_button:
+		see_all_button.text = "Explore Experiences"
+	var title := programs_card.get_node_or_null("ProgramsMargin/ProgramsVBox/ProgramsTitle") as Label
+	if title:
+		title.text = "YOUR RECORD"
+	programs_copy.text = "Review observations, accuracy, and personal milestones."
+	programs_button.text = "OPEN RECORD"
+	programs_button.disabled = false
 
 func on_navigated_to(_params: Dictionary = {}) -> void:
 	_launch_pending = false
@@ -339,10 +397,15 @@ func _on_library() -> void:
 	if NavigationService:
 		NavigationService.navigate_to("experiences")
 
-func _on_programs() -> void:
+func _on_record() -> void:
 	_play_feedback()
 	if NavigationService:
-		NavigationService.navigate_to("programs")
+		NavigationService.navigate_to("profile")
+
+func _on_settings() -> void:
+	_play_feedback()
+	if NavigationService:
+		NavigationService.navigate_to("settings")
 
 func _play_feedback() -> void:
 	if AccessibilityService:

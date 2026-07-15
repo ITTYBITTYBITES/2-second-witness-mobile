@@ -36,8 +36,8 @@ func _ensure_ui() -> void:
 				back_button.pressed.connect(_on_back)
 		if profile_button:
 			profile_button.custom_minimum_size = Vector2(touch_min, touch_min)
-			profile_button.text = "Me"
-			profile_button.tooltip_text = "Profile"
+			profile_button.text = "Record"
+			profile_button.tooltip_text = "Witness Record"
 			if not profile_button.pressed.is_connected(_on_profile):
 				profile_button.pressed.connect(_on_profile)
 		if settings_button:
@@ -87,7 +87,7 @@ func _ensure_ui() -> void:
 
 	var prof := Button.new()
 	prof.name = "ProfileButton"
-	prof.text = "Me"
+	prof.text = "Record"
 	prof.custom_minimum_size = Vector2(touch_min, touch_min)
 	prof.visible = show_profile
 	actions.add_child(prof)

@@ -44,27 +44,29 @@ const ROUTES := {
 		"requires_auth": false
 	},
 
-	# Main app tabs
+	# Primary app destinations. Phase 0 keeps route names stable while changing
+	# player-facing hierarchy to Witness / Record / Settings. The Library route
+	# remains available as a secondary destination, not a bottom tab.
 	"home": {
 		"screen": "HomeV2Screen",
 		"is_tab": true,
 		"requires_auth": false,
 		"icon": "home",
-		"label": "Home"
+		"label": "Witness"
 	},
 	"experiences": {
 		"screen": "ExperiencesScreen",
-		"is_tab": true,
+		"is_tab": false,
 		"requires_auth": false,
 		"icon": "grid",
-		"label": "Library"
+		"label": "Explore Experiences"
 	},
 	"profile": {
 		"screen": "ProfileScreen",
 		"is_tab": true,
 		"requires_auth": false,
 		"icon": "person",
-		"label": "Profile"
+		"label": "Record"
 	},
 	"settings": {
 		"screen": "SettingsScreen",
@@ -91,7 +93,7 @@ const ROUTES := {
 
 }
 
-const TAB_ORDER := ["home", "experiences", "profile", "settings"]
+const TAB_ORDER := ["home", "profile", "settings"]
 
 # First-run is handled by a modal over the title/loading screen, not a routed flow.
 const FIRST_RUN_FLOW: Array[String] = []

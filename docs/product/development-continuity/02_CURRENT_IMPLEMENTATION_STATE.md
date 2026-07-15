@@ -1,8 +1,8 @@
 # Current Implementation State
 
 **Living status document.** Update after every meaningful implementation, validation, release-preparation, or scope decision session.
-**Last initialized:** 2026-07-15
-**Current branch:** `arena/019f6571-2-second-witness-mobile`
+**Last updated:** 2026-07-15
+**Current branch:** `arena/019f6582-2-second-witness-mobile`
 
 ---
 
@@ -18,28 +18,37 @@
 
 | Field | Current value |
 |---|---|
-| Master roadmap phase | Pre-implementation after flagship planning completion |
-| Active update | **Update 1 — Witness Moment Foundation** |
-| Status | **Planning complete; implementation not started** |
-| Product-code baseline | `45df4f4d1e86021bb0e972d3204d70d43b8cf778` (`main` baseline used for discovery) |
-| Latest planning commit before this continuity package | `ee29445 docs: add flagship evolution master plan` |
-| Authorization state | No application-code change is authorized by this document alone. First create/review a narrowly scoped Update 1 implementation plan. |
+| Master roadmap phase | Phase 0 shell implemented; Update 1 planning next |
+| Active update | **Update 1 — Witness Moment Foundation** remains next roadmap implementation |
+| Phase 0 status | **Implemented; static validation passed; runtime/device validation pending** |
+| Update 1 status | **Not started** |
+| Authorization state | Phase 0 presentation/navigation changes are implemented. Update 1 gameplay/first-session changes still require a scoped implementation plan before coding. |
 
-## Current update outcome
+## Current product shell outcome
 
-Update 1 must make the first Scene Investigation Witness Moment clear, fair, and distinct:
+Phase 0 establishes the production-preserving Witness Foundation Shell:
 
 ```text
-One intentional first session
-→ one concise witness contract
-→ novice-safe first scene
-→ observation
-→ one recall question
-→ evidence-first result
-→ one truthful continuation
+Launch
+→ Witness
+→ Begin Observation
+→ Witness Moment
+→ Evidence Reveal shell
+→ Witness Record
 ```
 
-It must not become a full Home redesign, progression overhaul, content expansion, new game mechanic, or narrative layer.
+Primary navigation is now player-facing:
+
+```text
+Witness / Record / Settings
+```
+
+Internal route names remain stable where possible:
+
+- `home` = Witness landing surface;
+- `profile` = Witness Record route;
+- `settings` = Settings;
+- `experiences` = secondary Explore Experiences / Library route.
 
 ---
 
@@ -47,20 +56,21 @@ It must not become a full Home redesign, progression overhaul, content expansion
 
 | Date | Work completed | Key output / commit |
 |---|---|---|
-| 2026-07-15 | Product Reconstruction Discovery | `docs/product/discovery/`; `a281117` |
-| 2026-07-15 | Core Experience Direction | `docs/product/direction/`; `4e785c2` |
-| 2026-07-15 | Flagship Experience Reconstruction | `docs/product/flagship-experience/`; `cab0122` |
-| 2026-07-15 | Witness Threads future-concept package | `docs/product/witness-threads/`; `e29d389` |
-| 2026-07-15 | Flagship Evolution Master Plan | `docs/product/flagship-master-plan/`; `ee29445` |
-| 2026-07-15 | Development continuity system initialized | `docs/product/development-continuity/`; `e171078` |
+| 2026-07-15 | Product Reconstruction Discovery | `docs/product/discovery/`; historical planning |
+| 2026-07-15 | Core Experience Direction | `docs/product/direction/`; historical planning |
+| 2026-07-15 | Flagship Experience Reconstruction | `docs/product/flagship-experience/`; historical planning |
+| 2026-07-15 | Witness Threads future-concept package | `docs/product/witness-threads/`; documentation-only |
+| 2026-07-15 | Flagship Evolution Master Plan | `docs/product/flagship-master-plan/` |
+| 2026-07-15 | Development continuity system initialized | `docs/product/development-continuity/` |
 | 2026-07-15 | Project Command Center & Intelligence System | `PROJECT_COMMAND_CENTER.md`; `.github/project-state.yml` |
+| 2026-07-15 | **Phase 0: Witness Foundation Shell** | Witness / Record / Settings shell, Witness Home refocus, reveal container, asset placeholders, Phase 0 reports |
 
-## Baseline product capabilities already present
+## Baseline product capabilities still present
 
 - Five production Challenge Types and 20 templates.
-- Scene Investigation with five ordinary scene worlds, seeded generation, validator, policy, tutorial, renderer, and evidence reveal.
+- Scene Investigation with five ordinary scene worlds, seeded generation, validator, policy, tutorial, renderer, and evidence reveal data.
 - ChallengeSessionService lifecycle, generic family registry/contracts/adapters.
-- Home V2, Library, Programs, Profile, Achievements, Settings, local progress/history/favorites.
+- Explore Experiences / Library, Programs, Profile/Witness Record, Achievements, Settings, local progress/history/favorites.
 - Atomic local saves/recovery, offline defaults, audio/haptics, accessibility controls, Android export configuration.
 
 ---
@@ -69,21 +79,21 @@ It must not become a full Home redesign, progression overhaul, content expansion
 
 ## Current work state
 
-Continuity system initialization is complete. No application code, content, assets, export settings, tests, or runtime architecture has been changed.
+Phase 0 shell implementation is complete in source. Gameplay/session logic was intentionally not modified.
 
-The next meaningful work session is **Update 1 planning to implementation readiness**. It must begin with the repository checklist and source trace; it is not yet an authorized implementation session.
+The next meaningful work is **Phase 0 runtime/device review** followed by **Update 1 planning to implementation readiness**.
 
 ## Next implementation planning task
 
-Prepare a **Update 1 implementation plan** that:
+Prepare the **Update 1 implementation plan** that:
 
-1. traces current first launch → privacy → title/intro tutorial → Scene Investigation tutorial/practice → Result → Home behavior;
+1. traces current launch → privacy → Witness Home → tutorial gating → Scene Investigation → Result → Witness Record/Home behavior;
 2. identifies exact code/content/test files required to make the first Witness Moment explicit and non-duplicative;
 3. confirms all player launches remain through ChallengeSessionService;
 4. names migration/save/profile impact (expected: none or compatible additive only);
 5. lists human/device validation needed before Update 1 can be called complete.
 
-Do not make Update 1 code changes until this plan is reviewed/approved in the active conversation.
+Do not make Update 1 gameplay or first-session code changes until this plan is reviewed/approved.
 
 ---
 
@@ -91,11 +101,12 @@ Do not make Update 1 code changes until this plan is reviewed/approved in the ac
 
 ## Immediate
 
-- [ ] Read `01_PROJECT_CONTEXT_BOOTSTRAP.md` and the Update 1 section of the master roadmap.
-- [ ] Run `08_REPO_ANALYSIS_CHECKLIST.md` in a new implementation session.
-- [ ] Inspect active first-session/tutorial routing in current source.
-- [ ] Produce a scoped Update 1 implementation plan with exact files and tests.
-- [ ] Update this document and handoff documents after that planning session.
+- [ ] Review the Phase 0 PR.
+- [ ] Run Godot runtime validation when Godot is available.
+- [ ] Validate physical Android phone layout, aspect ratios, safe areas, theme switching, accessibility settings, privacy persistence, and profile persistence.
+- [ ] Confirm Witness → Begin Observation → Observation → Question → Result → Return Home.
+- [ ] Confirm Witness → Explore Experiences → Library remains reachable.
+- [ ] Begin Update 1 source trace and implementation plan.
 
 ## After Update 1 is implemented and validated
 
@@ -109,49 +120,80 @@ Do not make Update 1 code changes until this plan is reviewed/approved in the ac
 
 ## Current product/experience risks
 
+- Phase 0 runtime/device validation is still required; static verification is not release proof.
 - First-session tutorial flow is not fully aligned between source comments/docs and intended flagship path.
-- Current Home “today” language, balanced recommendation, featured type, Continue, and Program semantics overlap.
-- Evidence reveal is technically present but competes with score/progress/achievement/continuation elements.
+- Evidence reveal is structurally prepared but not emotionally complete; Update 2 remains required.
 - Scene Investigation is a flagship hypothesis; human first-session and 20/50-round validation is still required.
-- Five-family portfolio can dilute scene-first identity if equal first-session prominence is preserved.
+- Five-family portfolio can still dilute scene-first identity if Update 1 does not intentionally lead Scene Investigation.
 
 ## Current technical/validation risks
 
-- Godot runtime/device validation was not available in prior discovery environment; GitHub CI currently validates import rather than full runtime suite.
-- Historical static verifier baselines had drift after Home/mobile/visual changes; reconcile intentionally before treating suite as release-green.
+- Godot binary was not available in this sandbox; runtime tests could not be executed here.
 - Physical Android sponsor boot, observation timing, touch, audio/haptics, safe areas, accessibility, save upgrade, and signed AAB gates remain open.
+- Historical static verifier baselines may need intentional adjustment if they assume the old four-tab primary navigation.
 - Legacy `ExperienceRegistry`/foundation Flashword content exists beside the active Challenge Family architecture; do not treat it as the active extension path without audit.
 
 ---
 
 # Files Changed in Current Session
 
-**Continuity system initialization:**
+**Phase 0 implementation:**
 
-- `docs/product/development-continuity/01_PROJECT_CONTEXT_BOOTSTRAP.md`
+- `app/src/core/navigation/AppRoutes.gd`
+- `app/src/systems/theme/ThemeService.gd`
+- `app/src/ui/components/DailyExperienceCard.gd`
+- `app/src/ui/components/DailyExperienceCard.tscn`
+- `app/src/ui/components/EvidenceRevealContainer.gd`
+- `app/src/ui/components/ModalLayer.gd`
+- `app/src/ui/components/ScreenContainer.gd`
+- `app/src/ui/screens/HomeV2Screen.gd`
+- `app/src/ui/screens/HomeV2Screen.tscn`
+- `app/src/ui/screens/ProfileScreen.tscn`
+- `app/src/ui/screens/ResultScreen.gd`
+- `app/src/ui/shell/AppShell.gd`
+- `app/src/ui/shell/AppShell.tscn`
+- `app/src/ui/shell/MainNavigation.gd`
+- `app/src/ui/shell/TopBar.gd`
+- `app/assets/README.md`
+- `app/assets/scenes/.gitkeep`
+- `app/assets/evidence/.gitkeep`
+- `app/assets/home/.gitkeep`
+- `app/assets/record/.gitkeep`
+- `app/assets/branding/.gitkeep`
+- `app/tests/runtime/verify_phase0_witness_shell.py`
+- `app/tests/runtime/README.md`
+- `PROJECT_COMMAND_CENTER.md`
 - `docs/product/development-continuity/02_CURRENT_IMPLEMENTATION_STATE.md`
-- `docs/product/development-continuity/03_SESSION_HANDOFF_TEMPLATE.md`
-- `docs/product/development-continuity/04_AGENT_STARTUP_PROMPT.md`
-- `docs/product/development-continuity/05_DECISION_LOG.md`
-- `docs/product/development-continuity/06_ARCHITECTURE_CHANGE_LOG.md`
-- `docs/product/development-continuity/07_UPDATE_PROGRESS_TRACKER.md`
-- `docs/product/development-continuity/08_REPO_ANALYSIS_CHECKLIST.md`
-- `docs/product/development-continuity/09_CHANGE_CONTROL_RULES.md`
-- `docs/product/development-continuity/10_NEXT_SESSION_GENERATOR.md`
+- `docs/product/flagship-master-plan/PHASE_0_IMPLEMENTATION_REPORT.md`
+- `docs/product/flagship-master-plan/PHASE_0_STORE_UPDATE_NOTES.md`
 
-No application code files are changed by this session.
+**Explicitly unchanged/frozen:**
+
+- `app/src/gameplay/runtime/ChallengeSessionService.gd`
+- `app/src/ui/screens/ObservationChallengeScreen.gd`
+- `app/src/ui/screens/MemoryQuestionScreen.gd`
+- `app/src/ui/screens/TutorialScreen.gd`
+- Android/export configuration
+- Gameplay family/content logic
+- Save/profile service logic
+- Analytics schema
+- Monetization systems
 
 ---
 
 # Testing Status
 
 | Area | Status | Notes |
-|---|---|---|
-| Continuity docs package structure | Pass | Required 10-file package, headings, status references, and `git diff --check` validated during initialization. |
-| Application code tests | Not run in continuity initialization | No application code changed. |
-| Current full runtime suite | Not current-session verified | Requires Godot environment and Update 1 validation plan. |
-| GitHub import CI | Historical baseline passed | Import-only signal; not a substitute for full device/runtime validation. |
-| Physical Android / signed artifact | Open | Required before flagship release. |
+|---|---:|---|
+| Git whitespace validation | Pass | `git diff --check` |
+| Phase 0 static shell validation | Pass | `python3 app/tests/runtime/verify_phase0_witness_shell.py` |
+| Phase 3 Home architecture | Pass | `python3 app/tests/runtime/verify_phase3_home_architecture.py` |
+| Phase 4 product architecture | Pass | `python3 app/tests/runtime/verify_phase4_product_architecture.py` |
+| Phase 5 architecture | Pass | `python3 app/tests/runtime/verify_phase5_architecture.py` |
+| Engine baseline allowlist | Pass | `python3 app/tests/runtime/verify_flash_words_engine_unchanged.py` |
+| Gameplay frozen-file check | Pass | Included in Phase 0 verifier for ChallengeSessionService, Observation, Question, Tutorial |
+| Godot runtime tests | Not run | `godot` binary not available in sandbox PATH |
+| Physical Android / signed artifact | Open | Required before release/store use |
 
 ---
 

@@ -63,7 +63,7 @@ stretch_mode = 5
 
 [node name="Greeting" type="Label" parent="MainMargin/Scroll/Content/IdentityLayer"]
 layout_mode = 2
-text = "Good to see you, Witness."
+text = "Witness"
 horizontal_alignment = 1
 
 [node name="RankRow" type="HBoxContainer" parent="MainMargin/Scroll/Content/IdentityLayer"]
@@ -73,7 +73,7 @@ theme_override_constants/separation = 8
 
 [node name="RankLabel" type="Label" parent="MainMargin/Scroll/Content/IdentityLayer/RankRow"]
 layout_mode = 2
-text = "Observer"
+text = "Observe what others miss."
 horizontal_alignment = 1
 
 [node name="LevelPill" type="PanelContainer" parent="MainMargin/Scroll/Content/IdentityLayer/RankRow"]
@@ -129,7 +129,7 @@ theme_override_constants/separation = 1
 
 [node name="StreakLabel" type="Label" parent="MainMargin/Scroll/Content/ProgressLayer/StreakPill/StreakMargin/StreakVBox"]
 layout_mode = 2
-text = "STREAK"
+text = "MOMENTS WITNESSED"
 horizontal_alignment = 1
 
 [node name="StreakValue" type="Label" parent="MainMargin/Scroll/Content/ProgressLayer/StreakPill/StreakMargin/StreakVBox"]
@@ -139,7 +139,7 @@ horizontal_alignment = 1
 
 [node name="StreakSub" type="Label" parent="MainMargin/Scroll/Content/ProgressLayer/StreakPill/StreakMargin/StreakVBox"]
 layout_mode = 2
-text = "best 0"
+text = "completed observations"
 horizontal_alignment = 1
 
 [node name="AchievementPill" type="PanelContainer" parent="MainMargin/Scroll/Content/ProgressLayer"]
@@ -160,17 +160,17 @@ theme_override_constants/separation = 1
 
 [node name="AchLabel" type="Label" parent="MainMargin/Scroll/Content/ProgressLayer/AchievementPill/AchMargin/AchVBox"]
 layout_mode = 2
-text = "MILESTONES"
+text = "WITNESS RECORD"
 horizontal_alignment = 1
 
 [node name="AchValue" type="Label" parent="MainMargin/Scroll/Content/ProgressLayer/AchievementPill/AchMargin/AchVBox"]
 layout_mode = 2
-text = "0 / 26"
+text = "New"
 horizontal_alignment = 1
 
 [node name="AchSub" type="Label" parent="MainMargin/Scroll/Content/ProgressLayer/AchievementPill/AchMargin/AchVBox"]
 layout_mode = 2
-text = "3 in progress"
+text = "Observer · Level 1"
 horizontal_alignment = 1
 
 [node name="DiscoveryLayer" type="VBoxContainer" parent="MainMargin/Scroll/Content"]
@@ -183,11 +183,11 @@ layout_mode = 2
 [node name="HeaderLabel" type="Label" parent="MainMargin/Scroll/Content/DiscoveryLayer/DiscoveryHeader"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "DISCOVER MORE"
+text = "SECONDARY"
 
 [node name="SeeAllButton" type="Button" parent="MainMargin/Scroll/Content/DiscoveryLayer/DiscoveryHeader"]
 layout_mode = 2
-text = "Library"
+text = "Explore Experiences"
 
 [node name="DiscoveryScroll" type="ScrollContainer" parent="MainMargin/Scroll/Content/DiscoveryLayer"]
 layout_mode = 2
@@ -215,17 +215,17 @@ theme_override_constants/separation = 4
 
 [node name="ProgramsTitle" type="Label" parent="MainMargin/Scroll/Content/DiscoveryLayer/DiscoveryScroll/DiscoveryHBox/ProgramsCard/ProgramsMargin/ProgramsVBox"]
 layout_mode = 2
-text = "PROGRAMS"
+text = "YOUR RECORD"
 
 [node name="ProgramsCopy" type="Label" parent="MainMargin/Scroll/Content/DiscoveryLayer/DiscoveryScroll/DiscoveryHBox/ProgramsCard/ProgramsMargin/ProgramsVBox"]
 layout_mode = 2
-text = "Curated runs"
+text = "Review observations, accuracy, and personal milestones."
 autowrap_mode = 2
 
 [node name="ProgramsButton" type="Button" parent="MainMargin/Scroll/Content/DiscoveryLayer/DiscoveryScroll/DiscoveryHBox/ProgramsCard/ProgramsMargin/ProgramsVBox"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-text = "BROWSE"
+text = "OPEN RECORD"
 
 [node name="BottomSpacer" type="Control" parent="MainMargin/Scroll/Content"]
 custom_minimum_size = Vector2(0, 32)
