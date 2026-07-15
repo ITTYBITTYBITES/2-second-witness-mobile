@@ -2,7 +2,15 @@
 
 **Living status document.** Update after every meaningful implementation, validation, release-preparation, or scope decision session.
 **Last initialized:** 2026-07-15
-**Current branch:** `arena/019f6520-2-second-witness-mobile`
+**Current branch:** `arena/019f6571-2-second-witness-mobile`
+
+---
+
+# Repository Intelligence
+
+- **Dashboard:** [PROJECT_COMMAND_CENTER.md](../../../PROJECT_COMMAND_CENTER.md)
+- **Machine State:** [.github/project-state.yml](../../../.github/project-state.yml)
+- **Automated Audit:** [AUTOMATED_PROJECT_AUDIT.md](AUTOMATED_PROJECT_AUDIT.md)
 
 ---
 
@@ -45,6 +53,7 @@ It must not become a full Home redesign, progression overhaul, content expansion
 | 2026-07-15 | Witness Threads future-concept package | `docs/product/witness-threads/`; `e29d389` |
 | 2026-07-15 | Flagship Evolution Master Plan | `docs/product/flagship-master-plan/`; `ee29445` |
 | 2026-07-15 | Development continuity system initialized | `docs/product/development-continuity/`; `e171078` |
+| 2026-07-15 | Project Command Center & Intelligence System | `PROJECT_COMMAND_CENTER.md`; `.github/project-state.yml` |
 
 ## Baseline product capabilities already present
 
