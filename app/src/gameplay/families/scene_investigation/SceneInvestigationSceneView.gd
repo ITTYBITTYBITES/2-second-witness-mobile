@@ -1,16 +1,24 @@
 extends Control
 class_name SceneInvestigationSceneView
-## Family-specific vector renderer for generated Scene Investigation scene data.
+## Family-specific renderer for generated Scene Investigation scene data.
+##
+## Asset pipeline: uses VisualStyleSystem to render sprite textures for known
+## visual_kinds, with full vector fallback for kinds without assets yet.
+## Data contract, shape geometry, highlight logic remain unchanged.
 
 var _scene_data: Dictionary = {}
 var _highlight_ids: Array[String] = []
 var _background_texture: Texture2D = null
 var _reveal_elapsed: float = 0.0
+var _style: VisualStyleSystem
+var _family_id: String = "scene_investigation"
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	resized.connect(queue_redraw)
 	set_process(false)
+	_style = VisualStyleSystem.new()
+	_style.scan_assets()
 
 func _process(delta: float) -> void:
 	_reveal_elapsed += delta
@@ -39,12 +47,19 @@ func _draw() -> void:
 	if canvas_size.x <= 0.0 or canvas_size.y <= 0.0:
 		return
 	var background: Dictionary = _scene_data.get("background", {})
-	var top_color := Color(str(background.get("top", "#D8E0E7")))
-	var surface_color := Color(str(background.get("surface", "#A98261")))
-	var line_color := Color(str(background.get("line", "#6E5848")))
+	var template_id := str(_scene_data.get("template_id", ""))
+	var grounded_bg := _style.ground_background(template_id, background)
+	var top_color := Color(str(grounded_bg.get("top", "#B0B8BF")))
+	var surface_color := Color(str(grounded_bg.get("surface", "#8B7355")))
+	var line_color := Color(str(grounded_bg.get("line", "#5C4A3D")))
+
+	# Warm grounded canvas base
+	draw_rect(Rect2(Vector2.ZERO, canvas_size), _style.canvas_background(_family_id), true)
 
 	if _background_texture:
 		draw_texture_rect(_background_texture, Rect2(Vector2.ZERO, canvas_size), false)
+		# Subtle warm overlay to harmonize background textures with grounded palette
+		draw_rect(Rect2(Vector2.ZERO, canvas_size), Color(0.96, 0.92, 0.84, 0.10), true)
 	else:
 		draw_rect(Rect2(Vector2.ZERO, canvas_size), top_color, true)
 		var surface_y := canvas_size.y * float(background.get("surface_y", 0.22))
@@ -101,6 +116,29 @@ func _draw_object(data: Dictionary, canvas_size: Vector2) -> void:
 	var detail := body.lightened(0.35 if high_contrast else 0.28)
 	var kind := str(data.get("visual_kind", "evidence_marker"))
 
+	# Draw grounding shadow under object (before the object itself)
+	if not high_contrast:
+		_style.draw_shadow(self, center, object_size, canvas_size)
+
+	# ── ASSET PIPELINE: try sprite texture first ──
+	if _style.has_sprite(kind):
+		draw_set_transform(center, object_rotation, Vector2.ONE)
+		var rect := Rect2(-object_size * 0.5, object_size)
+		_style.draw_sprite_object(self, kind, rect)
+		# Highlight overlay on top of sprite
+		if _highlight_ids.has(str(data.get("instance_id", ""))):
+			var pulse: float = 0.72 + 0.28 * sin(_reveal_elapsed * 4.5)
+			var accent := _style.accent_color(_family_id)
+			var focus_rect := rect.grow(8.0 + pulse * 3.0)
+			draw_rect(focus_rect, Color(accent, pulse), false, 5.0)
+			draw_rect(focus_rect.grow(5.0), Color(accent, 0.18 * pulse), false, 3.0)
+		if high_contrast:
+			draw_rect(rect.grow(6.0), Color.BLACK, false, 3.0)
+			draw_rect(rect.grow(3.0), Color.WHITE, false, 2.0)
+		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+		return
+	# ── VECTOR FALLBACK: original rendering for kinds without sprites ──
+
 	draw_set_transform(center, object_rotation, Vector2.ONE)
 	var rect := Rect2(-object_size * 0.5, object_size)
 
@@ -137,9 +175,10 @@ func _draw_object(data: Dictionary, canvas_size: Vector2) -> void:
 		draw_rect(rect.grow(3.0), Color.WHITE, false, 2.0)
 	if _highlight_ids.has(str(data.get("instance_id", ""))):
 		var pulse: float = 0.72 + 0.28 * sin(_reveal_elapsed * 4.5)
+		var accent := _style.accent_color(_family_id)
 		var focus_rect := rect.grow(8.0 + pulse * 3.0)
-		draw_rect(focus_rect, Color(0.42, 0.24, 1.0, pulse), false, 5.0)
-		draw_rect(focus_rect.grow(5.0), Color(0.42, 0.24, 1.0, 0.18 * pulse), false, 3.0)
+		draw_rect(focus_rect, Color(accent, pulse), false, 5.0)
+		draw_rect(focus_rect.grow(5.0), Color(accent, 0.18 * pulse), false, 3.0)
 	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 
 func _draw_evidence_marker(rect: Rect2, body: Color, detail: Color, outline: Color) -> void:
